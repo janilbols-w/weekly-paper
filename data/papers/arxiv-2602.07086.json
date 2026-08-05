@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2602.07086",
+  "title": "RAG Strategies for Natural Language-Based SQL Query and REST API Call Generation",
+  "abstract": "Enterprise software systems commonly expose business functionality through both relational databases and REST APIs. Accessing these interfaces requires specialized technical knowledge, as users must determine whether a request requires a database query or an API operation and understand the corresponding schemas, endpoints, and parameters. This creates demand for natural language interfaces that translate user requests into SQL queries and REST API calls. While large language models (LLMs) show promise for structured code generation, they typically lack reliable knowledge of enterprise-specific schemas, endpoints, and documentation. Retrieval-augmented generation (RAG) addresses this limitation by grounding generation in external documentation. However, prior work largely studies SQL query generation and REST API call generation separately, despite enterprise documentation environments often containing both database schemas and API specifications. We systematically evaluate standard RAG, Self-RAG, and CoRAG across SQL query generation, REST API call generation, and a combined task requiring routing between both operation types. Using SAP Transactional Banking as a realistic enterprise use case, we constructed an execution-validated dataset and compared retrieval strategies under database-only, API-only, and mixed-documentation settings. Retrieval augmentation proved essential for reliable enterprise structured generation, substantially improving performance over a no-retrieval baseline. CoRAG achieved the best results in the combined SQL query and REST API call setting, with statistically significant improvements in exact-match accuracy over standard RAG, primarily driven by stronger SQL query generation under mixed-documentation retrieval conditions. Overall, findings show that retrieval strategy substantially affects structured generation performance under mixed-documentation settings.",
+  "url": "https://arxiv.org/abs/2602.07086",
+  "pdf_url": "https://arxiv.org/pdf/2602.07086",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Tim Schlippe",
+    "Simon Martin",
+    "Michael Marketsm\\\"uller"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Enterprise software systems commonly expose business functionality through both relational databases and REST APIs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.07086",
+      "url": "https://arxiv.org/abs/2602.07086"
+    }
+  ]
+}

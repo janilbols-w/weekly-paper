@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2603.13418",
+  "title": "GPrune-LLM: Generalization-Aware Structured Pruning for Large Language Models",
+  "abstract": "Structured pruning is widely applied to compress large language models (LLMs), but its performance depends heavily on how neuron importance is estimated. Most existing methods rely on activation statistics from a single calibration set, which introduces calibration bias and degrades downstream cross-task generalization. We observe that neurons exhibit heterogeneous distribution sensitivity, ranging from maintaining relatively stable rankings across calibration datasets to showing substantially larger cross-dataset variation. Ignoring this heterogeneity, existing methods rank all neurons in shared spaces with a uniform scoring source, so calibration-specific neurons dominate the ranking and weakly-activated neurons are scored unreliably. To address this, we propose GPrune-LLM, a structured pruning framework that reduces calibration bias by measuring and exploiting the cross-distribution behavior of neurons for fair comparison. Specifically, we restructure the neuron ranking space into behavior-consistent local spaces, adapt the scoring source where the calibration signal is unreliable, and learn per-module sparsity allocation under a global budget. Experiments across multiple models and downstream tasks show that GPrune-LLM improves the generalization of its base pruning metrics, with gains most pronounced at high sparsity, and reduces dependence on the choice of importance metric.",
+  "url": "https://arxiv.org/abs/2603.13418",
+  "pdf_url": "https://arxiv.org/pdf/2603.13418",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Xiaoyun Liu",
+    "Divya Saxena",
+    "Jiannong Cao",
+    "Yuqing Zhao",
+    "Yiying Dong",
+    "Penghui Ruan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Structured pruning is widely applied to compress large language models (LLMs), but its performance depends heavily on how neuron importance is estimated.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.13418",
+      "url": "https://arxiv.org/abs/2603.13418"
+    }
+  ]
+}

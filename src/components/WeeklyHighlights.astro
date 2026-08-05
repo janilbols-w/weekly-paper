@@ -1,0 +1,49 @@
+---
+import papers from '../data/papers.json';
+import weeks from '../data/weeks.json';
+import stats from '../data/stats.json';
+import type { PaperRecord, StatsRecord, WeekRecord } from '../types';
+
+const paperData = papers as unknown as PaperRecord[];
+const weekData = weeks as unknown as WeekRecord[];
+const siteStats = stats as unknown as StatsRecord;
+const safeId = (value: string) => value.replace(/[^a-zA-Z0-9._-]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+const latest = [...weekData].sort((a, b) => b.week.localeCompare(a.week))[0];
+const byId = new Map(paperData.map((paper) => [paper.id, paper]));
+const featured = latest ? latest.featured_ids.map((id) => byId.get(id)).filter((paper): paper is PaperRecord => Boolean(paper)) : [];
+---
+
+<section class="metric-grid" aria-label="Knowledge base metrics">
+  <article class="metric-card"><strong>{siteStats.total_papers}</strong><span>累计论文</span></article>
+  <article class="metric-card"><strong>{siteStats.total_weeks}</strong><span>覆盖周数</span></article>
+  <article class="metric-card"><strong>{siteStats.featured_total}</strong><span>历史精选</span></article>
+  <article class="metric-card"><strong>{siteStats.code_available}</strong><span>发现代码</span></article>
+</section>
+
+<section class="latest-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Latest briefing</p>
+      <h2>{latest ? `${latest.week} 本周精选` : '等待首期数据'}</h2>
+    </div>
+    {latest && <a href={`./weekly/${latest.week.toLowerCase()}/`}>完整周报 →</a>}
+  </div>
+  <div class="paper-card-grid">
+    {featured.map((paper, index) => (
+      <article class="paper-card">
+        <div class="paper-card-meta">
+          <span class="rank">#{index + 1}</span>
+          <span>{paper.primary_category.leaf_zh}</span>
+          <span>{paper.score}/100</span>
+        </div>
+        <h3><a href={`./papers/${safeId(paper.id)}/`}>{paper.title}</a></h3>
+        <p>{paper.summary_zh || paper.summary_en}</p>
+        <div class="paper-card-footer">
+          <span>{paper.source}</span>
+          <span>{paper.published}</span>
+          {paper.code_url && <a href={paper.code_url}>Code</a>}
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

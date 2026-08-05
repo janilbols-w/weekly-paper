@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2608.00595",
+  "title": "A Time-Multiplexed Spiking Neural Network Accelerator with Pipelined Readout for FPGA Inference",
+  "abstract": "Spiking Neural Networks (SNNs) provide a power-efficient neuromorphic alternative to traditional artificial neural networks by processing information through discrete temporal events. This paper presents the design and Field-Programmable Gate Array (FPGA) implementation of an inference-only SNN accelerator optimized for MNIST digit classification. To address the physical routing constraints and timing bottlenecks inherent in low-cost devices, we propose an optimized hardware microarchitecture featuring a time-multiplexed 1-bit spike-feeding mechanism governed by a finite state machine (FSM), localized distributed memory for weight storage, and an integer-based Leaky Integrate-and-Fire (LIF) neuron model with register widths selected to prevent overflow. In addition, a multi-cycle pipelined argmax and tie-breaker readout module eliminates the dominant combinational critical path. Implemented on an entry-level AMD Artix-7 FPGA (XC7A200T) using a 784-64-10 network topology, the proposed pipelined architecture increases the maximum operating frequency (Fmax) from 13.3 MHz to 167 MHz. Hardware evaluation demonstrates a sequential processing latency of 82 {\\mu}s per image, enabling a 1,000-sample VHDL simulation batch to be completed in 0.082 s. Vivado post-implementation vector-based power analysis estimates the total on-chip power consumption at 0.336 W and the energy efficiency at approximately 36,300 samples per joule. These results demonstrate that the proposed microarchitecture provides a resource-efficient solution for real-time neuromorphic edge inference, provided that the network size remains within the practical limits of time-multiplexed execution.",
+  "url": "https://arxiv.org/abs/2608.00595",
+  "pdf_url": "https://arxiv.org/pdf/2608.00595",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Reza Ansari",
+    "Maciej Wielgosz"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator",
+    "edge inference"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator, edge inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Spiking Neural Networks (SNNs) provide a power-efficient neuromorphic alternative to traditional artificial neural networks by processing information through discrete temporal events.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.00595",
+      "url": "https://arxiv.org/abs/2608.00595"
+    }
+  ]
+}

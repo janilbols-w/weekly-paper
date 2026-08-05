@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2604.15622",
+  "title": "AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference",
+  "abstract": "Always-on contextual AI runs language-aligned vision foundation models (VFMs) on edge devices, where the on-device model is the dominant continuous compute cost under strict latency and power limits. Due to an observed low-frequency shift in scene context and its relevant vocabulary, we present AdaDINO, an adaptive framework that makes on-device VFM inference efficient by matching execution to the current scene and task. We build on a known phenomenon, that the accuracy drop of shrinking model sizes depends on the task, and turn it into task-level adaptive execution. AdaDINO integrates neural architecture search (NAS) into a language-aligned VFM backbone distilled from DINOv2, training a single family of subnets for efficient execution during runtime. A multimodal large language model (LLM) on the cloud, invoked at low frequency, refines the candidate class set from scene context, while a learned selector activates the least-cost subnet predicted to retain a target fraction of accuracy. With the backbone and semantic pipeline held fixed, learned selection alone reduces average compute by $37\\%$ over the best fixed subnet at equal segmentation accuracy. Across zero-shot classification and open-vocabulary segmentation, AdaDINO establishes a strong accuracy-efficiency frontier, improving over evaluated models of comparable sizes by up to $7.9\\%$ in acc@1 on IN1K and $5.2\\%$ mIoU on ADE20K, and reducing average FLOPs by up to $74.9\\%$ at similar accuracy.",
+  "url": "https://arxiv.org/abs/2604.15622",
+  "pdf_url": "https://arxiv.org/pdf/2604.15622",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Yiwei Zhao",
+    "Yi Zheng",
+    "Huapeng Su",
+    "Jieyu Lin",
+    "Stefano Ambrogio",
+    "Cijo Jose",
+    "Michael Ramamonjisoa",
+    "Patrick Labatut",
+    "Barbara De Salvo",
+    "Chiao Liu",
+    "Phillip B. Gibbons",
+    "Ziyun Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "edge inference"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: edge inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Always-on contextual AI runs language-aligned vision foundation models (VFMs) on edge devices, where the on-device model is the dominant continuous compute cost under strict latency and power limits.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.15622",
+      "url": "https://arxiv.org/abs/2604.15622"
+    }
+  ]
+}

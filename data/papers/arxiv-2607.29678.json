@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2607.29678",
+  "title": "TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving",
+  "abstract": "LLM serving stacks cache prompt KV state, yet the front end still re-tokenizes the full request text on every call. Coding agents pay the most: each call resubmits a long transcript after a small append, and reuse is hard because a short append can move token boundaries near the end of the prior sequence. Across 153,951 agent calls, the median append is 1.4K characters; only 1.0-3.6% of calls start or rebuild a session, but those carry multi-million-character contexts. At the fleet's 94.1% prompt-cache hit rate approaching 0.99, tokenization grows from 10% to 64% of time to first token. TokTier is a stateful CPU+GPU tokenization service for this two-mode workload with one contract: emitted token IDs are always identical to full reference tokenization of the request text. For session continuations it re-tokenizes a small window around the append and splices only when a per-request check finds a stable pre-tokenization boundary, else it widens or falls back. For calls without a reusable prefix it decomposes GPT-family regex pre-tokenization into run-local rules and runs exact pre-tokenization and BPE on a GPU. A sampled shadow verifier re-checks live traffic. Differential campaigns over 17 production tokenizer families ($1.5\\times10^{10}$ split checks, a 12.4TB real-text corpus, 93,000+ replayed agent steps) show zero divergence. Incremental repair takes 0.5-1.1ms from 100K to 3M characters, up to $437\\times$ faster than HF tokenization and $2.1\\times$ faster at 1M characters than the strongest cache-based baseline (Gigatoken) fully prewarmed. GPU full tokenization encodes 1M characters in 0.87ms, $491\\times$ below HF and $23.4\\times$ below the fastest published CPU method. With vLLM, median time to first token drops 16-34% and P99 23%; under a 50ms P99 objective, four repair cores plus one GPU sustain 1,821 requests/s where a 16-core stateless front end saturates at 40.",
+  "url": "https://arxiv.org/abs/2607.29678",
+  "pdf_url": "https://arxiv.org/pdf/2607.29678",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Zhenyu Zhang",
+    "Zhichao Cao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.DC",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM serving stacks cache prompt KV state, yet the front end still re-tokenizes the full request text on every call.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.29678",
+      "url": "https://arxiv.org/abs/2607.29678"
+    }
+  ]
+}

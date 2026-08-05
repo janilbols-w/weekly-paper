@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2608.00008",
+  "title": "Energy Efficiency of Locally Deployed LLMs: A Preliminary Quantitative GPU Power Benchmark on Consumer Hardware",
+  "abstract": "The local deployment of large language models (LLMs) is gaining traction due to privacy concerns and the desire for on-premise inference. However, the energy costs on consumer hardware remain poorly characterized, as most benchmarks focus solely on accuracy. This paper presents a reproducible, hardware-level energy benchmark of nine open-source LLMs (1B to 7B parameters) executed on a single consumer GPU (RTX 4060Ti 16GB). Using the Ollama inference engine, GPU power draw was sampled at 2Hz via nvidia-smi across a fixed prompt set. We evaluate mean/peak power, total energy per prompt (J/prompt), energy per output token (J/token), and throughput (tok/s). Our findings suggest that factors beyond raw parameter count, including model architecture and quantization strategy, drive energy efficiency. Specifically, gemma3:1b and llama3.2:1b achieve the lowest energy cost (0.56 J/token and 0.65 J/token) and the highest throughput (>170 tok/s). In contrast, the 7B-Mistral model consumes up to 4.4x more energy per token than the most efficient model. Notably, qwen3.5:2b exhibits anomalously high per-prompt energy due to extended internal reasoning, highlighting the need to distinguish between token generation modes in efficiency metrics.",
+  "url": "https://arxiv.org/abs/2608.00008",
+  "pdf_url": "https://arxiv.org/pdf/2608.00008",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Philipp M. Z\\\"ahl",
+    "Anika Hennig"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.ET",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The local deployment of large language models (LLMs) is gaining traction due to privacy concerns and the desire for on-premise inference.",
+  "summary_zh": "在单张 RTX 4060 Ti 上对 9 个 1B–7B 开源 LLM 进行 Ollama 推理能耗测试，同时报告功率、每提示/每输出 token 能耗与吞吐，结果显示架构和量化方式比参数量更能解释能效差异。",
+  "why_it_matters_zh": "它把本地部署的比较指标从单纯吞吐扩展到 J/token，并揭示推理模式、量化和模型架构会显著改变成本，适合用于端侧选型与容量规划。",
+  "limitations_zh": "仅覆盖单一消费级 GPU、固定提示集和 2Hz 功耗采样；内部推理长度会混淆每提示能耗，结论尚不能直接外推到数据中心 GPU 或在线并发负载。",
+  "reading_depth": "abstract",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [
+    "2026-W32"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.00008",
+      "url": "https://arxiv.org/abs/2608.00008"
+    }
+  ]
+}

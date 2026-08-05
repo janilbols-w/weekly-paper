@@ -1,0 +1,102 @@
+timezone: Asia/Shanghai
+top_n: 5
+shortlist_size: 15
+archive_threshold: 38
+feature_threshold: 45
+max_same_leaf: 2
+request_timeout_seconds: 30
+fetch_workers: 6
+user_agent: WeeklyPaper/0.1 (+https://github.com/janilbols-w/weekly-paper)
+
+arxiv:
+  enabled: true
+  endpoint: https://export.arxiv.org/api/query
+  categories:
+    - cs.DC
+    - cs.PF
+    - cs.AR
+    - cs.OS
+    - cs.NI
+    - cs.LG
+    - cs.CL
+    - stat.ML
+  query_terms:
+    - large language model
+    - LLM inference
+    - model serving
+    - inference serving
+    - KV cache
+    - speculative decoding
+    - quantization
+    - low precision
+    - GPU scheduling
+    - accelerator
+    - distributed inference
+    - disaggregated serving
+    - batching
+    - kernel optimization
+    - AI infrastructure
+    - machine learning systems
+    - distributed training
+    - checkpointing
+    - RDMA
+    - mixture of experts
+  page_size: 200
+  max_results: 1200
+  request_timeout_seconds: 90
+  retry_attempts: 3
+  retry_backoff_seconds: 10
+  request_delay_seconds: 3.0
+
+arxiv_rss:
+  enabled: true
+  url_template: https://rss.arxiv.org/rss/{category}
+  categories:
+    - cs.DC
+    - cs.PF
+    - cs.AR
+    - cs.OS
+    - cs.NI
+    - cs.LG
+    - cs.CL
+    - stat.ML
+
+openalex:
+  enabled: true
+  requires_api_key: true
+  endpoint: https://api.openalex.org/works
+  arxiv_source_id: S4306400194
+  max_results_per_query: 100
+  queries:
+    - LLM inference serving quantization KV cache speculative decoding
+    - AI infrastructure distributed training GPU scheduling machine learning systems
+
+openreview:
+  enabled: true
+  endpoint: https://api2.openreview.net/notes
+  venues:
+    - id: ICLR.cc/2026/Conference
+      name: ICLR 2026
+    - id: NeurIPS.cc/2026/Conference
+      name: NeurIPS 2026
+    - id: MLSys.org/2026/Conference
+      name: MLSys 2026
+  max_results_per_venue: 1000
+
+# These sources are discovery signals only. An item must still match the
+# taxonomy and quality gates before it is archived.
+rss_sources:
+  - name: NVIDIA Technical Blog
+    url: https://developer.nvidia.com/blog/feed/
+    priority: 2
+  - name: PyTorch Blog
+    url: https://pytorch.org/feed/
+    priority: 2
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    priority: 1
+
+site:
+  title: Efficient Inference & AI Infra Papers
+  repository: janilbols-w/weekly-paper
+  production_url: https://janilbols-w.github.io/weekly-paper/

@@ -1,0 +1,131 @@
+version: 1
+domains:
+  - id: efficient-inference
+    name: LLM Efficient Inference
+    name_zh: LLM 高效推理
+    groups:
+      - id: model-algorithm
+        name: Model & Algorithm Efficiency
+        name_zh: 模型与算法效率
+        leaves:
+          - id: quantization-low-precision
+            name: Quantization & Low Precision
+            name_zh: 量化与低精度
+            keywords: [quantization, quantized, low precision, fp8, fp6, fp4, int8, int4, mixed precision, microscaling]
+          - id: compression-sparsity-distillation
+            name: Compression, Sparsity & Distillation
+            name_zh: 压缩、稀疏与蒸馏
+            keywords: [pruning, sparsity, sparse inference, distillation, compressed model, weight sharing]
+          - id: speculative-decoding
+            name: Speculative Decoding
+            name_zh: 推测解码
+            keywords: [speculative decoding, draft model, verification decoding, lookahead decoding, parallel decoding]
+          - id: moe-efficiency
+            name: MoE Efficiency
+            name_zh: MoE 路由与专家优化
+            keywords: [mixture of experts, moe inference, expert parallel, expert routing, expert offloading]
+      - id: runtime-memory
+        name: Runtime & Memory Efficiency
+        name_zh: Runtime 与内存效率
+        leaves:
+          - id: attention-kv-cache
+            name: Attention & KV Cache
+            name_zh: Attention 与 KV Cache
+            keywords: [kv cache, kv-cache, attention kernel, flash attention, paged attention, prefix caching, context cache]
+          - id: kernels-operators
+            name: Kernels & Operator Fusion
+            name_zh: Kernel 与算子融合
+            keywords: [gpu kernel, kernel optimization, operator fusion, fused kernel, triton kernel, cuda kernel, kernel generation]
+          - id: compiler-graph
+            name: Compiler & Graph Optimization
+            name_zh: 编译器与计算图优化
+            keywords: [compiler optimization, graph optimization, code generation, tensor compiler, ahead of time compilation, torch compile]
+          - id: cache-offload-memory
+            name: Cache, Offload & Memory Management
+            name_zh: 缓存、换入换出与内存管理
+            keywords: [offloading, memory management, memory pool, gpu memory, unified memory, cpu offload, memory tiering]
+      - id: serving-distributed
+        name: Serving & Distributed Inference
+        name_zh: Serving 与分布式推理
+        leaves:
+          - id: batching-scheduling
+            name: Batching & Request Scheduling
+            name_zh: Batching 与请求调度
+            keywords: [continuous batching, dynamic batching, request scheduling, iteration scheduling, inference scheduler, serving scheduler]
+          - id: prefill-decode-disaggregation
+            name: Prefill-Decode Disaggregation
+            name_zh: Prefill-Decode 解耦
+            keywords: [prefill decode, prefill-decode, disaggregated inference, disaggregated serving, remote kv cache]
+          - id: parallelism-communication
+            name: Parallelism & Communication
+            name_zh: 并行与通信
+            keywords: [tensor parallel, pipeline parallel, sequence parallel, distributed inference, collective communication, all reduce, rdma inference]
+          - id: hardware-edge
+            name: Hardware-aware & Edge Inference
+            name_zh: 硬件感知与边缘推理
+            keywords: [hardware-aware, accelerator, edge inference, heterogeneous inference, npu inference, tpu inference, asic inference]
+  - id: ai-infrastructure
+    name: AI Infrastructure
+    name_zh: AI 基础设施
+    groups:
+      - id: serving-platform
+        name: Serving Platforms
+        name_zh: 服务平台
+        leaves:
+          - id: serving-engine
+            name: Serving Engines & Runtimes
+            name_zh: Serving Engine 与 Runtime
+            keywords: [model serving, llm serving, inference engine, serving runtime, online inference, generative model serving]
+          - id: gateway-routing-autoscaling
+            name: Gateway, Routing & Autoscaling
+            name_zh: Gateway、路由与弹性
+            keywords: [model routing, request routing, llm router, autoscaling, scale to zero, inference gateway, load balancing]
+          - id: multitenancy-slo-reliability
+            name: Multi-tenancy, SLO & Reliability
+            name_zh: 多租户、SLO 与可靠性
+            keywords: [multi-tenant, multitenancy, service level objective, slo, tail latency, interference isolation, reliable serving]
+          - id: observability-benchmarking
+            name: Observability & Benchmarking
+            name_zh: 可观测性与 Benchmark
+            keywords: [inference benchmark, serving benchmark, performance profiling, observability, workload characterization, trace analysis]
+      - id: cluster-resource
+        name: Cluster & Resource Systems
+        name_zh: 集群与资源系统
+        leaves:
+          - id: gpu-scheduling-virtualization
+            name: GPU Scheduling & Virtualization
+            name_zh: GPU 调度与虚拟化
+            keywords: [gpu scheduling, gpu scheduler, gpu sharing, gpu virtualization, accelerator scheduling, cluster scheduling]
+          - id: resource-disaggregation
+            name: Resource Disaggregation
+            name_zh: 资源解耦
+            keywords: [resource disaggregation, gpu disaggregation, memory disaggregation, composable infrastructure, cxl memory]
+          - id: network-interconnect
+            name: Network, RDMA & Interconnect
+            name_zh: 网络、RDMA 与互联
+            keywords: [rdma, roce, infiniband, interconnect, collective network, network fabric, congestion control]
+          - id: storage-data-plane
+            name: Storage & Data Plane
+            name_zh: 存储与数据平面
+            keywords: [storage system, data plane, distributed storage, object storage, data loading, checkpoint storage]
+      - id: training-datacenter
+        name: Training & Datacenter Infrastructure
+        name_zh: 训练与数据中心基础设施
+        leaves:
+          - id: distributed-training-checkpoint
+            name: Distributed Training & Checkpointing
+            name_zh: 分布式训练与 Checkpoint
+            keywords: [distributed training, large model training, checkpointing, checkpoint, training parallelism, optimizer sharding]
+          - id: data-pipeline
+            name: Data Pipelines
+            name_zh: 数据管线
+            keywords: [training data pipeline, data processing system, dataset pipeline, data loader, feature store, input pipeline]
+          - id: fault-tolerance-elasticity
+            name: Fault Tolerance & Elasticity
+            name_zh: 容错与弹性
+            keywords: [fault tolerance, failure recovery, elastic training, straggler, silent data corruption, resilient training]
+          - id: energy-cost-thermal
+            name: Energy, Cost & Thermal Efficiency
+            name_zh: 能耗、成本与散热
+            keywords: [energy efficiency, power management, carbon aware, cost optimization, thermal management, datacenter cooling, total cost of ownership]
+

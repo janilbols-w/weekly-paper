@@ -1,0 +1,56 @@
+name: Send weekly paper briefing to WeCom
+
+on:
+  schedule:
+    - cron: '0 14 * * 5'
+      timezone: Asia/Shanghai
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Send again even if this weekly digest was delivered
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-paper-notification
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Send existing briefing
+        env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+        run: |
+          args=()
+          if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
+          python -m weekly_paper.notify \
+            --reference-date "$(TZ=Asia/Shanghai date +%F)" \
+            "${args[@]}"
+
+      - name: Persist delivery state
+        run: |
+          if [[ ! -f data/state/deliveries.json ]]; then exit 0; fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/state/deliveries.json
+          if ! git diff --cached --quiet; then
+            git commit -m "state: record weekly WeCom delivery"
+            git push
+          fi

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2607.17143",
+  "title": "EdgeCoInfer: Hierarchical Collaborative Inference for On-Device Multimodal Large Models",
+  "abstract": "To deliver ubiquitous intelligence, modern mobile applications increasingly execute concurrent Multimodal Large Language Models (MLLMs) on edge devices, presenting severe challenges under multi-task concurrency and tight resource constraints. To address this, we propose EdgeCoInfer, a hierarchical collaborative inference framework enabling efficient on-device MLLM inference through coarse-to-fine orchestration. Coarsely, EdgeCoInfer decomposes MLLMs into functional modules for inter-task sharing, avoiding redundant model loading. Finely, it partitions models at the neural network layer level and distributes segments across devices and servers. We jointly optimize layer partitioning, module sharing, and resource allocation under tight constraints. To tackle the non-differentiable combinatorial explosion, we propose a Hybrid Evolutionary Hierarchical Reinforcement Learning (HE-HRL) framework. HE-HRL synchronizes a gradient-free genetic algorithm for discrete partitioning and sharing decisions with a gradient-based soft actor-critic agent for continuous resource refinement. We further embed a constructive cut-step decoder with pre-act pruning and a two-phase curriculum to improve feasibility and accelerate convergence. Experimental results show that EdgeCoInfer breaks the edge memory wall and prevents catastrophic out-of-memory and task failures under high concurrency, reducing memory demand by 53.53\\% and system cost by 59.86\\% compared to existing methods.",
+  "url": "https://arxiv.org/abs/2607.17143",
+  "pdf_url": "https://arxiv.org/pdf/2607.17143",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Lin Tan",
+    "Songtao Guo",
+    "Mingyan Li",
+    "David K. Y. Yau"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "To deliver ubiquitous intelligence, modern mobile applications increasingly execute concurrent Multimodal Large Language Models (MLLMs) on edge devices, presenting severe challenges under multi-task concurrency and tight resource constraints.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.17143",
+      "url": "https://arxiv.org/abs/2607.17143"
+    }
+  ]
+}

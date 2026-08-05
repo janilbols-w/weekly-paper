@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2608.00867",
+  "title": "NUNA: Characterizing and Mitigating Non-Uniform Network Access in Multi-Die GPU Scale-Up Systems",
+  "abstract": "Graphics processing unit (GPU) architectures are growing in size to meet the increasing compute and memory requirements. As GPU sizes increase, intra-socket wire transfer delay increases significantly. While previous research has optimized for compute and memory locality within a socket, the spatial impact on inter-GPU communication has not been well-studied. We introduce the term non-uniform network access (NUNA) to describe this emerging optimization dimension in multi-GPU systems. We specifically focus on latency-sensitive collective communication, common in machine learning inference. First, we highlight the need for NUNA-aware routing (NAR), choosing optimized, spatially-aware inter-GPU paths in large scale-up network topologies. Second, we introduce NUNA-aware placement (NAP), placing threadblocks and data near I/O to optimize the inter-GPU traffic. We demonstrate that the NAP optimizations alone offer up to 1.5x collective speedups over a locality-unaware baseline. Combining NAP with NAR yields up to 1.8x faster collectives over the locality-unaware baseline. This leads to 7% mean (28% max) time per output token speedup in machine learning inference.",
+  "url": "https://arxiv.org/abs/2608.00867",
+  "pdf_url": "https://arxiv.org/pdf/2608.00867",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Conor James Green",
+    "William Won",
+    "Tuan Ta",
+    "Bradford M. Beckmann"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "parallelism-communication",
+    "leaf": "Parallelism & Communication",
+    "leaf_zh": "并行与通信"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "collective communication"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: collective communication",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Graphics processing unit (GPU) architectures are growing in size to meet the increasing compute and memory requirements.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.00867",
+      "url": "https://arxiv.org/abs/2608.00867"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+---
+import papers from '../data/papers.json';
+import taxonomy from '../data/taxonomy.json';
+import stats from '../data/stats.json';
+import type { PaperRecord, StatsRecord, Taxonomy } from '../types';
+
+const paperData = papers as unknown as PaperRecord[];
+const taxonomyData = taxonomy as unknown as Taxonomy;
+const siteStats = stats as unknown as StatsRecord;
+const safeId = (value: string) => value.replace(/[^a-zA-Z0-9._-]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+const sortedPapers = [...paperData].sort((a, b) => b.published.localeCompare(a.published) || b.score - a.score);
+---
+
+<div id="paper-explorer" class="explorer-shell">
+  <aside class="mindmap-panel">
+    <div class="panel-title">
+      <p class="eyebrow">Three-level taxonomy</p>
+      <h2>知识树</h2>
+    </div>
+    <button class="tree-reset" type="button" data-reset-filter>全部论文 <span>{paperData.length}</span></button>
+    <div class="taxonomy-tree">
+      {taxonomyData.domains.map((domain) => (
+        <details open>
+          <summary>
+            <button type="button" data-domain-filter={domain.id}>{domain.name_zh}</button>
+            <span>{siteStats.domain_counts[domain.id] || 0}</span>
+          </summary>
+          {domain.groups.map((group) => (
+            <details>
+              <summary>{group.name_zh}</summary>
+              <div class="leaf-list">
+                {group.leaves.map((leaf) => (
+                  <button type="button" data-leaf-filter={leaf.id}>
+                    <span>{leaf.name_zh}</span><strong>{siteStats.leaf_counts[leaf.id] || 0}</strong>
+                  </button>
+                ))}
+              </div>
+            </details>
+          ))}
+        </details>
+      ))}
+    </div>
+  </aside>
+
+  <section class="paper-table-panel">
+    <div class="explorer-filters">
+      <label>
+        <span>搜索</span>
+        <input type="search" data-paper-search placeholder="标题、摘要、作者、标签…" />
+      </label>
+      <label>
+        <span>一级领域</span>
+        <select data-domain-select>
+          <option value="">全部</option>
+          {taxonomyData.domains.map((domain) => <option value={domain.id}>{domain.name_zh}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>三级分类</span>
+        <select data-leaf-select>
+          <option value="">全部</option>
+          {taxonomyData.domains.flatMap((domain) => domain.groups.flatMap((group) =>
+            group.leaves.map((leaf) => <option value={leaf.id}>{leaf.name_zh}</option>)
+          ))}
+        </select>
+      </label>
+      <label>
+        <span>最低评分</span>
+        <select data-score-select>
+          <option value="0">不限</option>
+          <option value="38">归档线 38</option>
+          <option value="45">精选线 45</option>
+          <option value="50">高分 50</option>
+          <option value="60">LLM 复评 60+</option>
+        </select>
+      </label>
+      <label class="checkbox-filter"><input type="checkbox" data-code-only /> 仅看有代码</label>
+    </div>
+    <p class="result-count"><strong data-result-count>{paperData.length}</strong> 篇论文</p>
+    <div class="table-scroll">
+      <table class="paper-table">
+        <thead><tr><th>论文</th><th>分类</th><th>时间</th><th>评分</th><th>Artifact</th></tr></thead>
+        <tbody>
+          {sortedPapers.map((paper) => (
+            <tr
+              data-paper-row
+              data-search={`${paper.title} ${paper.abstract} ${paper.authors.join(' ')} ${paper.keyword_evidence.join(' ')}`.toLowerCase()}
+              data-domain={paper.primary_category.domain_id}
+              data-leaf={paper.primary_category.leaf_id}
+              data-score={paper.score}
+              data-code={paper.code_url ? 'true' : 'false'}
+            >
+              <td><a href={`../papers/${safeId(paper.id)}/`}>{paper.title}</a><small>{paper.source}</small></td>
+              <td><span class="topic-pill">{paper.primary_category.leaf_zh}</span></td>
+              <td>{paper.published}</td>
+              <td><strong>{paper.score}</strong></td>
+              <td>{paper.code_url ? <a href={paper.code_url}>Code</a> : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+  // @ts-nocheck
+  const root = document.querySelector('#paper-explorer');
+  if (root) {
+    const rows = [...root.querySelectorAll('[data-paper-row]')];
+    const search = root.querySelector('[data-paper-search]');
+    const domain = root.querySelector('[data-domain-select]');
+    const leaf = root.querySelector('[data-leaf-select]');
+    const score = root.querySelector('[data-score-select]');
+    const codeOnly = root.querySelector('[data-code-only]');
+    const count = root.querySelector('[data-result-count]');
+    const apply = () => {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+      for (const row of rows) {
+        const matches = (!query || row.dataset.search.includes(query))
+          && (!domain.value || row.dataset.domain === domain.value)
+          && (!leaf.value || row.dataset.leaf === leaf.value)
+          && Number(row.dataset.score) >= Number(score.value)
+          && (!codeOnly.checked || row.dataset.code === 'true');
+        row.hidden = !matches;
+        if (matches) visible += 1;
+      }
+      count.textContent = String(visible);
+    };
+    for (const input of [search, domain, leaf, score, codeOnly]) input.addEventListener('input', apply);
+    root.querySelectorAll('[data-domain-filter]').forEach((button) => button.addEventListener('click', () => {
+      domain.value = button.dataset.domainFilter;
+      leaf.value = '';
+      apply();
+    }));
+    root.querySelectorAll('[data-leaf-filter]').forEach((button) => button.addEventListener('click', () => {
+      leaf.value = button.dataset.leafFilter;
+      apply();
+    }));
+    root.querySelector('[data-reset-filter]').addEventListener('click', () => {
+      search.value = ''; domain.value = ''; leaf.value = ''; score.value = '0'; codeOnly.checked = false; apply();
+    });
+  }
+</script>

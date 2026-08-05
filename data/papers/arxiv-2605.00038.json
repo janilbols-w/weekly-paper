@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2605.00038",
+  "title": "Lottery BP: Unlocking Quantum Error Decoding at Scale",
+  "abstract": "During a QEC cycle, quantum error decoding stands on the critical path. To enable fault tolerance on millions of qubits in real time, scalable decoding is necessary, which motivates this paper. Existing decoding algorithms (decoders), such as clustering, matching, belief propagation (BP), and neural networks, suffer from one or more of inaccuracy, costliness, and incompatibility, upon a broad set of quantum error correction codes, such as surface code and bivariate bicycle code. Therefore, there exists a gap between existing decoders and an ideal decoder that is accurate, fast, general, and scalable simultaneously. To move closer to the goal above, this paper contributes in three aspects, including decoder algorithm, decoder architecture, and decoding simulator. First, we propose Lottery BP, a lightweight decoder that introduces guided randomness to break the symmetric deadlock caused by quantum degeneracy during decoding. Lottery BP improves the decoding accuracy over BP by up to 6 orders. Second, we design a PolyQec architecture that implements Lottery BP as a local decoder and ordered statistics decoding (OSD) as a global decoder, exemplifying a hierarchical decoder architecture. PolyQec is configurable for surface code and X/Z check. Since Lottery BP boosts the local decoding accuracy, PolyQec invokes the costly global OSD decoder less frequently over BP+OSD to enhance the scalability, e.g., up to 4 orders of magnitude less for surface codes. Third, we develop Syndrilla, a modular PyTorch-based decoding simulator that enables fair, extensible decoder evaluation with unified accuracy and performance metrics. On GPUs, Syndrilla runs 1 order of magnitude faster than CUDAQX.",
+  "url": "https://arxiv.org/abs/2605.00038",
+  "pdf_url": "https://arxiv.org/pdf/2605.00038",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Yanzhang Zhu",
+    "Chen-Yu Peng",
+    "Yun Hao Chen",
+    "Yeong-Luh Ueng",
+    "Di Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "quant-ph"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fault tolerance"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fault tolerance",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "During a QEC cycle, quantum error decoding stands on the critical path.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.00038",
+      "url": "https://arxiv.org/abs/2605.00038"
+    }
+  ]
+}

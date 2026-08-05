@@ -1,0 +1,45 @@
+---
+title: "How Much Does a Reasoning Summary Reveal? An Observability Ladder for Large Language Models"
+description: "Large language models often show users a final response and a short reasoning summary while the full reasoning trace stays hidden."
+---
+
+**评分：39/100** · AI 基础设施 > 服务平台 > 可观测性与 Benchmark
+
+[论文原文](https://arxiv.org/abs/2608.02089) · [PDF](https://arxiv.org/pdf/2608.02089)
+
+## 一句话摘要
+
+Large language models often show users a final response and a short reasoning summary while the full reasoning trace stays hidden.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Large language models often show users a final response and a short reasoning summary while the full reasoning trace stays hidden. We introduce an observability ladder that holds each completed run fixed and varies only what a reader inspects to judge whether the answer is correct: the response, a self-summary the model writes from the trace, the trace itself, and internal signals, each with and without the prompt. Across three benchmarks and five open-weight Qwen3 and gpt-oss models, we train matched linear correctness predictors on each access level. Without the prompt, summaries carry most of the trace's ranking signal (mean AUROC 0.774 versus 0.813) and add +0.156 over the response alone. With the prompt visible, the summary's gain collapses to +0.019, while the trace still adds +0.041. Even at equal length, the trace's last words predict correctness as well as summaries, or slightly better, and carry denser and more discriminative uncertainty and self-correction cues. On MMLU-Pro questions with both correct and incorrect runs, linear summary readers are near chance and trace readers retain only modest signal, both with and without the prompt (prompt-withheld AUROC 0.503-0.545 versus 0.544-0.590). With the prompt withheld, a GPT-5-mini reader recovers substantially more signal from both summaries and traces on gpt-oss-20b, and even then the trace keeps a small +0.034 advantage. Much of the linear readers' trace signal is associated with length. In the common case where users already hold the prompt, summaries are less helpful than the full trace for monitoring correctness. Monitorability is thus a joint property of the display and the reader, so any monitorability claim, including for faithfulness, should specify both.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 16 |
+| novelty | 6 |
+| rigor | 7 |
+| practical impact | 5 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: observability
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Andres Algaba, Francesca Carlon, Lynn Delcon, Marthe Ballon, Bert Verbruggen, Vincent Ginis
+- 发布：2026-08-04；更新：2026-08-04
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -1,0 +1,36 @@
+---
+import stats from '../data/stats.json';
+import taxonomy from '../data/taxonomy.json';
+import type { StatsRecord, Taxonomy } from '../types';
+
+const siteStats = stats as unknown as StatsRecord;
+const taxonomyData = taxonomy as unknown as Taxonomy;
+const maximum = Math.max(1, ...Object.values(siteStats.leaf_counts));
+const weeks = Object.entries(siteStats.week_counts).sort(([a], [b]) => b.localeCompare(a));
+---
+
+<section class="metric-grid">
+  <article class="metric-card"><strong>{siteStats.total_papers}</strong><span>累计论文</span></article>
+  <article class="metric-card"><strong>{siteStats.total_weeks}</strong><span>覆盖周数</span></article>
+  <article class="metric-card"><strong>{siteStats.featured_total}</strong><span>历史精选</span></article>
+  <article class="metric-card"><strong>{siteStats.total_papers ? Math.round(siteStats.code_available / siteStats.total_papers * 100) : 0}%</strong><span>代码发现率</span></article>
+</section>
+
+<h2>三级分类分布</h2>
+<div class="bar-chart">
+  {taxonomyData.domains.flatMap((domain) => domain.groups.flatMap((group) => group.leaves.map((leaf) => {
+    const value = siteStats.leaf_counts[leaf.id] || 0;
+    return (
+      <div class="bar-row">
+        <span>{leaf.name_zh}</span>
+        <div><i style={`width:${value / maximum * 100}%`}></i></div>
+        <strong>{value}</strong>
+      </div>
+    );
+  })))}
+</div>
+
+<h2>每周收录</h2>
+<div class="week-stat-grid">
+  {weeks.map(([week, value]) => <article><strong>{value}</strong><span>{week}</span></article>)}
+</div>

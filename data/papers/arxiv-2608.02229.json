@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2608.02229",
+  "title": "Constrained Co-Design for Photonic Bayesian Neural Networks",
+  "abstract": "Classical neural networks frequently produce overconfident predictions on ambiguous or out-of-distribution (OOD) data, a liability that grows with each AI system deployed in safety-critical real-world scenarios. Bayesian neural networks (BNNs) provide a principled framework for uncertainty-aware prediction by replacing deterministic parameters with probability distributions, but repeated sampling increases latency, memory traffic, and energy consumption. Photonic probabilistic computing offers a promising alternative by exploiting intrinsic optical stochasticity for fast and parallel sampling. However, photonic BNNs are not ideal samplers: analog constraints on quantization, programming error, dynamic range, and representable mean and variance restrict the variational families that can be implemented in hardware. In this work, we study which hardware-imposed constraints limit scalable photonic BNN inference, how these constraints can be represented, and which ranges can be tolerated by photonic BNNs beyond small proof-of-concept networks. We formulate photonic BNN inference as constrained stochastic variational inference and perform a systematic ablation study over stochasticity location, stochasticity modality, quantization, programming error, and mean/variance bounds. From these results, we derive concrete co-design guidelines that distinguish hardware constraints that can be compensated by training from those requiring hardware or architecture intervention. We validate these guidelines under coupled, hardware-realistic constraints on Dirty-MNIST, CIFAR-10, and CINIC-10, using Fashion-MNIST and SVHN as OOD benchmarks, showing that hardware-aware training recovers predictive performance and uncertainty quality whenever the required variational family remains representable, whereas violations of representational limits require targeted hardware modifications.",
+  "url": "https://arxiv.org/abs/2608.02229",
+  "pdf_url": "https://arxiv.org/pdf/2608.02229",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Hendrik Borras",
+    "Xiao Wang",
+    "Bernhard Klein",
+    "Robin Janssen",
+    "Frank Br\\\"uckerhoff-Pl\\\"uckelmann",
+    "Wolfram Pernice",
+    "Holger Fr\\\"oning"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "hardware-aware"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: hardware-aware",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Classical neural networks frequently produce overconfident predictions on ambiguous or out-of-distribution (OOD) data, a liability that grows with each AI system deployed in safety-critical real-world scenarios.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.02229",
+      "url": "https://arxiv.org/abs/2608.02229"
+    }
+  ]
+}

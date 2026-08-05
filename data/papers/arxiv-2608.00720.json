@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2608.00720",
+  "title": "CascadeLUT: Information-Ordered Streaming Inference for Bandwidth-Constrained FPGAs",
+  "abstract": "Mapping neural networks to FPGAs enables low-latency, energy-efficient inference, particularly for lookup table (LUT)-based models that eliminate multipliers and map directly to reconfigurable fabric. While prior work achieves high compute efficiency, it typically assumes full-sample availability, causing pipeline stalls in bandwidth-limited streaming scenarios. Here, the bottleneck shifts from computation to data movement, as large input transfers limit throughput and energy efficiency. We present CascadeLUT, an information-structured inference framework organized around bandwidth constraints. Instead of buffering the full input, features are partitioned into ordered subsets and predictions are progressively refined as subsets arrive. The cascade statically controls which layers consume incoming features, enabling deterministic streaming inference without runtime branching. By co-designing feature scheduling with hardware dataflow, CascadeLUT reduces data movement while maintaining accuracy. Across datasets, it achieves 4.0 to 12.5 times lower latency, 3.0 to 5.0 times higher throughput and up to 13.8 times lower energy/sample than prior LUT baselines, using 1.2 to 4.4 times the LUTs of the smallest DWN baseline per task. We also demonstrate on-device input quantization integrated with LUT-based inference and present end-to-end FPGA results on real-world workloads, with 5 times reductions in quantization overhead.",
+  "url": "https://arxiv.org/abs/2608.00720",
+  "pdf_url": "https://arxiv.org/pdf/2608.00720",
+  "published": "2026-08-04",
+  "updated": "2026-08-04",
+  "authors": [
+    "Oliver Cassidy",
+    "Marta Andronic",
+    "George A. Constantinides"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mapping neural networks to FPGAs enables low-latency, energy-efficient inference, particularly for lookup table (LUT)-based models that eliminate multipliers and map directly to reconfigurable fabric.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T02:30:52+00:00",
+  "last_seen": "2026-08-05T02:36:35+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.00720",
+      "url": "https://arxiv.org/abs/2608.00720"
+    }
+  ]
+}
