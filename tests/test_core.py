@@ -7,6 +7,8 @@ from tempfile import TemporaryDirectory
 
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
+from weekly_paper.event_collectors import parse_acl_anthology_xml
+from weekly_paper.event_pipeline import _in_event_scope, detect_due_events, load_events, run_event
 from weekly_paper.models import Paper
 from weekly_paper.pipeline import run
 from weekly_paper.storage import save_papers
@@ -143,6 +145,60 @@ class CoreTests(unittest.TestCase):
             self.assertEqual(summary["source_errors"], 0)
             self.assertTrue((root / "src" / "data" / "papers.json").exists())
             self.assertTrue((root / "reports" / "2026-W32.md").exists())
+
+    def test_event_detector_uses_event_week_window(self) -> None:
+        config = load_events(ROOT / "config" / "events.yaml")
+        due = detect_due_events(config, date(2026, 7, 3))
+        self.assertIn("acl-2026", {item["id"] for item in due})
+        self.assertNotIn("acl-2026", {item["id"] for item in detect_due_events(config, date(2026, 8, 5))})
+
+    def test_event_scope_rejects_generic_code_generation(self) -> None:
+        generic = paper(
+            "acl:generic",
+            "An Agent for Scientific Code Generation",
+            "A large language model reduces computational cost for theorem proving.",
+        )
+        systems = paper(
+            "acl:systems",
+            "A GPU Kernel Generator",
+            "We optimize inference throughput and latency for large language models.",
+        )
+        self.assertFalse(_in_event_scope(generic))
+        self.assertTrue(_in_event_scope(systems))
+
+    def test_acl_xml_parser_extracts_official_paper(self) -> None:
+        payload = b"""<collection id='2026.acl'><volume id='long'><paper id='1'>
+        <title>Fast <fixed-case>LLM</fixed-case> Serving</title><author><first>Ada</first><last>Lovelace</last></author>
+        <abstract>We evaluate speculative decoding for large language model inference.</abstract>
+        </paper></volume></collection>"""
+        event = {"id": "acl-2026", "short_name": "ACL 2026", "start_date": "2026-07-02", "volumes": ["long"]}
+        values, total = parse_acl_anthology_xml(payload, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.id, "acl:2026.acl-long.1")
+        self.assertEqual(values[0].paper.authors, ["Ada Lovelace"])
+
+        findings = payload.replace(b"id='2026.acl'", b"id='2026.findings'").replace(
+            b"id='long'", b"id='acl'"
+        )
+        values, _ = parse_acl_anthology_xml(findings, {**event, "volumes": ["acl"]})
+        self.assertEqual(values[0].paper.id, "acl:2026.findings-acl.1")
+        self.assertEqual(values[0].track, "Findings")
+
+    def test_event_fixture_generates_independent_page(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "config" / "event_editorial").mkdir(parents=True)
+            summary = run_event(
+                root=root,
+                config_path=ROOT / "config" / "events.yaml",
+                taxonomy_path=ROOT / "config" / "taxonomy.yaml",
+                event_id="acl-2026",
+                reference_date=date(2026, 8, 5),
+                fixture_path=ROOT / "tests" / "fixtures" / "acl-2026-papers.json",
+            )
+            self.assertGreater(summary["relevant_total"], 0)
+            self.assertTrue((root / "src" / "content" / "docs" / "events" / "acl-2026.md").exists())
+            self.assertFalse((root / "data" / "papers").exists())
 
 
 if __name__ == "__main__":

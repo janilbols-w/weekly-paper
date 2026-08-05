@@ -20,6 +20,7 @@ export default defineConfig({
           { label: '方法与评分', slug: 'methodology' }
         ]},
         { label: '每周简报', items: [{ autogenerate: { directory: 'weekly' } }] },
+        { label: '会议与活动', items: [{ autogenerate: { directory: 'events' } }] },
         { label: '三级主题', items: [{ autogenerate: { directory: 'topics' } }] },
         { label: '论文详情', collapsed: true, items: [{ autogenerate: { directory: 'papers' } }] }
       ]

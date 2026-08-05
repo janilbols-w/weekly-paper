@@ -1,0 +1,80 @@
+acl:2026.acl-long.83:
+  summary_zh: LongSpec 把推测解码扩展到长上下文：用恒定大小 KV Cache 的草稿模型、位置校正和混合树注意力降低长序列草拟与验证开销。
+  why_it_matters_zh: 它直接处理长上下文 agent 场景中“草稿模型自身也被 KV Cache 拖垮”的问题；作者报告相对 FlashAttention 基线最高 3.26× 加速。
+  limitations_zh: 性能数字来自论文指定模型与任务；服务并发、batch 和不同 GPU 上的收益仍需单独验证。
+  reading_depth: abstract+results
+acl:2026.acl-long.353:
+  summary_zh: HCSpec 按草拟位置的边际价值设计两级异构草稿模块，把高容量放在早期位置、轻量模块放在后续位置。
+  why_it_matters_zh: 这是对 speculative decoding 草稿架构的系统/算法协同设计；论文报告相对 EAGLE-3 再提升 15%–30%，相对自回归最高 3.72×。
+  limitations_zh: 需要确认草稿模块训练和部署复杂度，以及在生产 serving engine 中的调度开销。
+  reading_depth: abstract+results
+acl:2026.acl-long.285:
+  summary_zh: UniSpec 通过设备校准、候选置信度和树扩展策略，提供无需训练、跨语言和跨硬件的无损推测解码。
+  why_it_matters_zh: 无需训练和设备感知降低了部署门槛；作者在多语言、多模型和多硬件上报告最高 2.6× 加速，并公开代码与 benchmark。
+  limitations_zh: 训练免费不等于运维免费，首次设备校准和 workload 漂移下的稳定性仍需测量。
+  reading_depth: abstract+results
+acl:2026.acl-long.859:
+  summary_zh: SpecCache 用轻量 speculative model 的深层特征预测 RAG 中需重算的关键 token，以较低成本提高 KV Cache 复用质量。
+  why_it_matters_zh: 直接优化 RAG 长上下文的 TTFT；作者报告 TTFT 降低 2.17–3.95×、吞吐提升 2.7–5.2×，工程信号很强。
+  limitations_zh: 摘要级证据尚不足以判断索引更新、不同检索语料及多租户并发下的收益。
+  reading_depth: abstract+results
+acl:2026.acl-long.1210:
+  summary_zh: EQUIP 将 token 淘汰与后续插入合并为 KV Cache 原地替换，并缓存 RoPE 计算，减少 pruning 后的搬移与重算。
+  why_it_matters_zh: 它关注多数 pruning 论文忽略的数据移动成本，并给出 CPU/GPU 与 PagedAttention 组合的端到端速度数据。
+  limitations_zh: 需要在常见 vLLM/SGLang 工作负载与不同页大小下复现实装收益。
+  reading_depth: abstract+results
+acl:2026.acl-long.1842:
+  summary_zh: PDTrim 根据 prefill 与 decode 的不同敏感性选择可删 block，把结构化剪枝与 Prefill-Decode 解耦部署联合优化。
+  why_it_matters_zh: 论文把模型压缩决策与实际 serving 架构结合，提示两个阶段不应使用同一剪枝方案。
+  limitations_zh: 摘要未提供足够的硬件、吞吐和精度权衡数字，暂不应直接外推到生产集群。
+  reading_depth: abstract
+  primary_category:
+    domain_id: efficient-inference
+    domain: LLM Efficient Inference
+    domain_zh: LLM 高效推理
+    group_id: serving-distributed
+    group: Serving & Distributed Inference
+    group_zh: Serving 与分布式推理
+    leaf_id: prefill-decode-disaggregation
+    leaf: Prefill-Decode Disaggregation
+    leaf_zh: Prefill-Decode 解耦
+acl:2026.acl-long.1767:
+  summary_zh: BDQ 从 outlier 的 Flatness 指标推导双向对角变换，改善 LLM 的 W4A4 与更低比特后训练量化。
+  why_it_matters_zh: 作者报告 Llama-3-8B W4A4 精度下降低于 1%，并覆盖 70B reasoning 模型，具备部署相关性。
+  limitations_zh: 精度结果不能替代真实 kernel 加速；需确认具体硬件是否具有匹配的低比特算子。
+  reading_depth: abstract+results
+acl:2026.acl-long.276:
+  summary_zh: OCP 用 outlier 敏感度、注意力信号和分层动态稀疏率改进输入自适应结构化剪枝。
+  why_it_matters_zh: 方法强调硬件友好结构，并报告在 Llama/OPT 上以 1.6× 加速获得更低 perplexity。
+  limitations_zh: 在线 probe 与动态稀疏控制会引入额外开销，需核对端到端 latency 而非仅模型计算量。
+  reading_depth: abstract+results
+acl:2026.acl-long.1653:
+  summary_zh: GISP 用全局 loss-based 重要度迭代删除 attention head 与 MLP channel，生成可“剪一次、多档部署”的嵌套子网。
+  why_it_matters_zh: 嵌套子网对多硬件档位部署有吸引力，并覆盖通用与任务对齐两类校准目标。
+  limitations_zh: 当前证据更偏模型质量；实际 kernel 规则性、吞吐和内存收益仍需单独评估。
+  reading_depth: abstract
+acl:2026.findings-acl.494:
+  summary_zh: OjaKV 以在线 PCA 更新低秩 KV 子空间，并保留少量全秩 anchor，使长上下文压缩能适应分布变化。
+  why_it_matters_zh: 它兼容 FlashAttention，并把静态低秩压缩改成 prefill/decode 在线适配，适合变化较大的长上下文流量。
+  limitations_zh: 属于 Findings；在线子空间更新的实际 GPU 开销和高并发下的状态管理需要复核。
+  reading_depth: abstract
+acl:2026.acl-long.632:
+  summary_zh: ARRoL 在 RLVR 生成过程中预测部分 rollout 的成功率，提前剪枝并重新组 batch，减少无效采样和训练计算。
+  why_it_matters_zh: 它把 rollout 选择嵌入 inference engine；作者在 Qwen/Llama 训练上报告最高 1.7× 加速且平均准确率上升。
+  limitations_zh: 质量头的泛化、错误早停偏差和分布式训练通信占比需要更完整复现。
+  reading_depth: abstract+results
+  primary_category:
+    domain_id: ai-infrastructure
+    domain: AI Infrastructure
+    domain_zh: AI 基础设施
+    group_id: training-datacenter
+    group: Training & Datacenter Infrastructure
+    group_zh: 训练与数据中心基础设施
+    leaf_id: distributed-training-checkpoint
+    leaf: Distributed Training & Checkpointing
+    leaf_zh: 分布式训练与 Checkpoint
+acl:2026.acl-long.76:
+  summary_zh: ZoomR 将冗长推理压成多粒度摘要，再按查询动态取回细节 KV，从而避免每步关注完整 reasoning cache。
+  why_it_matters_zh: 它针对长输出而非只针对长输入，论文报告推理 KV 内存降低超过 4×。
+  limitations_zh: 摘要生成本身的计算成本，以及压缩后复杂推理的稳定性需要进一步核验。
+  reading_depth: abstract+results

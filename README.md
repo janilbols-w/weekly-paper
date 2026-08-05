@@ -3,6 +3,7 @@
 每周收集、分类和筛选 LLM 高效推理与 AI Infrastructure 论文。系统会生成：
 
 - 最多 5 篇的中文精选简报；
+- 重要会议 / event 的独立调研、动态篇数精选和年度日历；
 - 其他合格论文的累计知识库；
 - 一级领域 → 二级方向 → 三级技术路径的知识树和统计表；
 - GitHub Pages 静态网站；
@@ -17,6 +18,8 @@ Collectors → Canonical IDs & dedupe → Taxonomy → Evidence-aware scoring
 
 核心数据保存在 `data/papers/*.json` 和 `data/weeks/*.json`。周报、论文详情、主题页、统计与 Mindmap 都从这些记录生成，不需要维护多套目录。
 
+会议数据独立保存在 `data/events/<event-id>/`，复用同一套三级技术分类和质量评分，但不会把大型 proceedings 强行写入周报论文库。完整目标与重构边界见 [EVENTS_COLLECTION_GOAL.md](EVENTS_COLLECTION_GOAL.md)。
+
 ## 本地运行
 
 ```bash
@@ -29,6 +32,17 @@ npm install
 npm run build
 npm run dev
 ```
+
+独立生成会议页面（ACL 2026 测试快照）：
+
+```bash
+.venv/bin/python -m weekly_paper.event_cli \
+  --event acl-2026 \
+  --fixture tests/fixtures/acl-2026-papers.json \
+  --reference-date 2026-08-05
+```
+
+生产采集省略 `--fixture`，会读取官方 ACL Anthology XML；每周扫描使用 `python -m weekly_paper.event_cli --scan`。
 
 没有 `OPENAI_API_KEY` 时，采集、规则分类、可解释评分和网站构建仍会工作；定向 PDF 阅读和中文编辑增强会跳过。正式企业微信发送要求精选论文具有完整中文摘要，因此不会发送占位内容。
 

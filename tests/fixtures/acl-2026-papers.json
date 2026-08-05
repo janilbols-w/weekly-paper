@@ -1,0 +1,103 @@
+{
+  "corpus_total": 12,
+  "papers": [
+    {
+      "id": "acl:2026.acl-long.83",
+      "title": "LongSpec: Long-Context Lossless Speculative Decoding with Efficient Drafting and Verification",
+      "abstract": "LongSpec provides lossless speculative decoding for long-context large language model inference. It uses a memory-efficient draft model with a constant-sized KV cache, position indices for the training-inference mismatch, and efficient tree attention. Experiments report up to 3.26x speedup over Flash Attention baselines and lower wall-clock time for reasoning workloads.",
+      "url": "https://aclanthology.org/2026.acl-long.83/",
+      "pdf_url": "https://aclanthology.org/2026.acl-long.83.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02",
+      "authors": ["Penghui Yang", "Cunxiao Du", "Fengzhuo Zhang", "Haonan Wang", "Tianyu Pang", "Chao Du", "Bo An"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.353",
+      "title": "HCSpec: Two-Tier Horizontal Cascade Speculative Decoding for High-Efficiency Large Language Model Inference",
+      "abstract": "HCSpec proposes heterogeneous position-specialized draft modules for speculative decoding. Evaluation on Qwen and Llama models reports 15-30% higher end-to-end speedup than EAGLE-3 and up to 3.72x acceleration over autoregressive decoding across multiple tasks and inference configurations.",
+      "url": "https://aclanthology.org/2026.acl-long.353/", "pdf_url": "https://aclanthology.org/2026.acl-long.353.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Yizhou Zhang", "Siming Chen", "Hao Ye", "Erhu Feng"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.285",
+      "title": "UniSpec: Training-Free Speculative Decoding for Robust LLM Acceleration Across Languages and Hardware",
+      "abstract": "UniSpec is a training-free lossless speculative decoding framework with device-aware draft-size calibration, confidence-based candidate retention, and tree expansion. Experiments across languages, model architectures and hardware report up to 2.6x speedup with identical output quality and provide code and a benchmark.",
+      "url": "https://aclanthology.org/2026.acl-long.285/", "pdf_url": "https://aclanthology.org/2026.acl-long.285.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Truong Dinh Do", "Nguyen-Khang Le", "Le-Minh Nguyen"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.859",
+      "title": "SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving",
+      "abstract": "SpecCache addresses high prefill latency in long-context RAG serving for large language models. It uses deep-layer features from a lightweight speculative model to select critical tokens for target-model KV cache recomputation. The authors report 2.17-3.95x lower time-to-first-token and 2.7-5.2x higher inference throughput with negligible quality degradation.",
+      "url": "https://aclanthology.org/2026.acl-long.859/", "pdf_url": "https://aclanthology.org/2026.acl-long.859.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": [],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.1210",
+      "title": "EQUIP: EQUivariant preserving In-Place updates for Efficient Token Pruning",
+      "abstract": "EQUIP optimizes token pruning for large language model inference through in-place KV cache replacement, cached rotary position operations and re-indexing. Evaluation reports CPU and GPU speedups over StreamingLLM and H2O, and up to 4.18x CPU and 2.61x GPU speedup when combined with Paged Attention.",
+      "url": "https://aclanthology.org/2026.acl-long.1210/", "pdf_url": "https://aclanthology.org/2026.acl-long.1210.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": [],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.1842",
+      "title": "PDTrim: Targeted Pruning for Prefill-Decode Disaggregation in Inference",
+      "abstract": "PDTrim integrates model pruning with prefill-decode disaggregated LLM inference. It analyzes stage-specific pruning sensitivity and removes different blocks for prefill and decode, with evaluation in both disaggregated serving and unified deployment settings.",
+      "url": "https://aclanthology.org/2026.acl-long.1842/", "pdf_url": "https://aclanthology.org/2026.acl-long.1842.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Hao Zhang", "Lyu Mengsi", "Zhuo Chen", "Yulong Ao", "Yonghua Lin"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.1767",
+      "title": "Theory-optimal Quantization Based on Flatness",
+      "abstract": "This work studies activation outliers in post-training quantization for large language models and proposes Bidirectional Diagonal Quantization. Experiments report less than 1% accuracy drop for W4A4 on Llama-3-8B and improved low-bit accuracy for a 70B reasoning model.",
+      "url": "https://aclanthology.org/2026.acl-long.1767/", "pdf_url": "https://aclanthology.org/2026.acl-long.1767.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": [],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.276",
+      "title": "OCP: Outlier-Centric Probing for Dynamic Structured Pruning of LLMs",
+      "abstract": "OCP provides hardware-friendly dynamic structured pruning for efficient LLM inference using sensitivity-weighted FFN probing, attention-accumulated probing and adaptive layer sparsity. Experiments on Llama and OPT report up to 25% perplexity reduction at 1.6x speedup.",
+      "url": "https://aclanthology.org/2026.acl-long.276/", "pdf_url": "https://aclanthology.org/2026.acl-long.276.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Yang Ji", "Ying Sun"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.1653",
+      "title": "From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models",
+      "abstract": "GISP is an iterative global structured pruning method for hardware-friendly LLM inference. It removes attention heads and MLP channels with loss-based importance, produces nested subnetworks for prune-once deploy-many operation, and evaluates task-aligned calibration across Llama, Mistral, DeepSeek and Qwen models.",
+      "url": "https://aclanthology.org/2026.acl-long.1653/", "pdf_url": "https://aclanthology.org/2026.acl-long.1653.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Ziyan Wang", "Enmao Diao", "Qi Le", "Pu Wang", "Minwoo Lee", "Shu-ping Yeh", "Evgeny Stupachenko", "Hao Feng", "Li Yang"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.findings-acl.494",
+      "title": "OjaKV: Context-Aware Online Low-Rank KV Cache Compression",
+      "abstract": "OjaKV combines high-fidelity anchor tokens with online low-rank KV cache compression for long-context LLM inference. The projection adapts during prefill and decode, remains compatible with FlashAttention, and is evaluated under high compression ratios and distribution shifts.",
+      "url": "https://aclanthology.org/2026.findings-acl.494/", "pdf_url": "https://aclanthology.org/2026.findings-acl.494.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Yuxuan Zhu", "David H. Yang", "Mohammad Mohammadi Amiri", "Keerthiram Murugesan", "Tejaswini Pedapati", "Pin-Yu Chen"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Findings"
+    },
+    {
+      "id": "acl:2026.acl-long.632",
+      "title": "Prune as You Generate: Online Rollout Pruning for Faster and Better RLVR",
+      "abstract": "ARRoL reduces distributed training cost for large language models trained with reinforcement learning with verifiable rewards. It prunes low-value rollouts inside the inference engine and performs dynamic batching of survivors for policy updates. Across Qwen and Llama workloads it reports up to 1.7x training speedup while improving average accuracy.",
+      "url": "https://aclanthology.org/2026.acl-long.632/", "pdf_url": "https://aclanthology.org/2026.acl-long.632.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["Haobo Xu", "Sirui Chen", "Ruizhong Qiu", "Yuchen Yan", "Chen Luo", "Monica Xiao Cheng", "Jingrui He", "Hanghang Tong"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    },
+    {
+      "id": "acl:2026.acl-long.76",
+      "title": "ZoomR: Memory Efficient Reasoning through Multi-Granularity Key Value Retrieval",
+      "abstract": "ZoomR targets long-output reasoning for large language models with adaptive summary compression and hierarchical KV cache retrieval. Experiments on math and reasoning workloads report competitive quality while reducing inference memory requirements by more than 4x.",
+      "url": "https://aclanthology.org/2026.acl-long.76/", "pdf_url": "https://aclanthology.org/2026.acl-long.76.pdf",
+      "published": "2026-07-02", "updated": "2026-07-02", "authors": ["David H. Yang", "Yuxuan Zhu", "Mohammad Mohammadi Amiri", "Keerthiram Murugesan", "Tejaswini Pedapati", "Subhajit Chaudhury", "Pin-Yu Chen"],
+      "source": "ACL Anthology", "source_type": "proceedings", "venue": "ACL 2026", "track": "Main · Long"
+    }
+  ]
+}

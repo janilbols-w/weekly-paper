@@ -7,7 +7,7 @@ from .models import Paper
 from .taxonomy import classify
 
 
-URL_RE = re.compile(r"https?://(?:www\.)?github\.com/[^\s),;]+", re.IGNORECASE)
+URL_RE = re.compile(r"https?://(?:www\.)?github\.com/[^\s)\],;]+", re.IGNORECASE)
 NUMBER_CLAIM_RE = re.compile(
     r"\b(?:\d+(?:\.\d+)?\s*[x×%]|\d+(?:\.\d+)?\s*(?:times|percent))\b", re.IGNORECASE
 )
@@ -129,4 +129,3 @@ def select_featured(
         domain = paper.primary_category.get("domain_id", "")
         domain_counts[domain] = domain_counts.get(domain, 0) + 1
     return selected
-
