@@ -25,9 +25,16 @@
 .paper-card-meta .rank { color: var(--sl-color-accent); font-weight: 800; }
 .paper-card-footer { margin-top: auto; padding-top: 1rem; }
 
-.explorer-shell { display: grid; grid-template-columns: minmax(235px, 290px) minmax(0, 1fr); gap: 1rem; align-items: start; }
+/* The explorer is a data workspace rather than a prose page. Give it the
+   horizontal room normally reserved for Starlight's article TOC. */
+main:has(#paper-explorer) .sl-container { width: 100%; max-width: 88rem; }
+main:has(#paper-explorer) > .content-panel:first-of-type { padding-bottom: .75rem; }
+main:has(#paper-explorer) > .content-panel:first-of-type h1 { letter-spacing: -.025em; }
+
+.explorer-shell { display: grid; grid-template-columns: minmax(290px, 340px) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
 .mindmap-panel, .paper-table-panel { border: 1px solid var(--paper-border); border-radius: .85rem; padding: 1rem; background: var(--sl-color-bg); }
 .mindmap-panel { position: sticky; top: 5rem; max-height: calc(100vh - 7rem); overflow: auto; }
+.paper-table-panel { min-width: 0; overflow: hidden; }
 .panel-title h2 { margin: 0 0 .8rem; }
 .tree-reset, .taxonomy-tree button { appearance: none; border: 0; color: inherit; background: transparent; cursor: pointer; font: inherit; text-align: left; }
 .tree-reset { display: flex; justify-content: space-between; width: 100%; border-radius: .45rem; padding: .45rem .55rem; font-weight: 700; }
@@ -40,17 +47,22 @@
 .leaf-list button { display: flex; justify-content: space-between; gap: .5rem; border-radius: .4rem; padding: .35rem .45rem; font-size: .78rem; }
 .leaf-list strong { color: var(--sl-color-gray-3); }
 
-.explorer-filters { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: .65rem; align-items: end; }
+.explorer-filters { display: grid; grid-template-columns: minmax(13rem, 1.7fr) repeat(3, minmax(7.5rem, 1fr)); gap: .65rem; align-items: end; }
 .explorer-filters label { display: grid; gap: .25rem; color: var(--sl-color-gray-3); font-size: .72rem; }
 .explorer-filters input, .explorer-filters select { min-width: 0; border: 1px solid var(--paper-border); border-radius: .45rem; padding: .52rem .58rem; color: var(--sl-color-text); background: var(--sl-color-bg); }
 .explorer-filters .checkbox-filter { display: flex; align-items: center; grid-column: 1 / -1; }
 .result-count { margin: 1rem 0 .5rem; font-size: .8rem; color: var(--sl-color-gray-3); }
-.table-scroll { overflow-x: auto; }
-.paper-table { width: 100%; font-size: .78rem; }
+.table-scroll { width: 100%; overflow-x: auto; scrollbar-gutter: stable; }
+.paper-table { width: 100%; min-width: 48rem; table-layout: fixed; font-size: .78rem; }
 .paper-table th { white-space: nowrap; }
-.paper-table td:first-child { min-width: 19rem; }
+.paper-table th:first-child { width: 47%; }
+.paper-table th:nth-child(2) { width: 20%; }
+.paper-table th:nth-child(3) { width: 13%; }
+.paper-table th:nth-child(4) { width: 8%; }
+.paper-table th:nth-child(5) { width: 12%; }
+.paper-table td { vertical-align: top; overflow-wrap: anywhere; }
 .paper-table td small { display: block; margin-top: .25rem; color: var(--sl-color-gray-3); }
-.topic-pill { display: inline-block; border-radius: 999px; padding: .2rem .48rem; background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); white-space: nowrap; }
+.topic-pill { display: inline-block; max-width: 100%; border-radius: 999px; padding: .2rem .48rem; background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); white-space: normal; line-height: 1.35; }
 
 .bar-chart { display: grid; gap: .55rem; }
 .bar-row { display: grid; grid-template-columns: minmax(9rem, 1fr) 3fr 2rem; gap: .7rem; align-items: center; font-size: .8rem; }
@@ -61,14 +73,19 @@
 .week-stat-grid strong, .week-stat-grid span { display: block; }
 .week-stat-grid span { color: var(--sl-color-gray-3); font-size: .75rem; }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .metric-grid, .paper-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .explorer-shell { grid-template-columns: 1fr; }
   .mindmap-panel { position: static; max-height: none; }
+  .taxonomy-tree { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem 1.5rem; }
+  .taxonomy-tree > details { margin-block: 0; }
   .explorer-filters { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .taxonomy-tree { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
   .metric-grid, .paper-card-grid, .explorer-filters { grid-template-columns: 1fr; }
 }
-
