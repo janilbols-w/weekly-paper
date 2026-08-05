@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 from collections import Counter
 from pathlib import Path
@@ -22,6 +23,22 @@ def _category(item: EventPaper) -> str:
     return " > ".join(filter(None, [path.get("domain_zh"), path.get("group_zh"), path.get("leaf_zh")]))
 
 
+EVENT_STATUS = {
+    "待跟踪": ("tracking", "🔵"),
+    "即将举行": ("upcoming", "🟡"),
+    "进行中": ("active", "🟢"),
+    "已归档": ("archived", "⚪"),
+}
+
+
+def _status_badge(status: str) -> str:
+    style, emoji = EVENT_STATUS.get(status, ("unknown", "⚪"))
+    return (
+        f'<span class="event-status event-status--{style}">'
+        f'<span aria-hidden="true">{emoji}</span> {html.escape(status)}</span>'
+    )
+
+
 def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
     selected = sorted(
         [item for item in papers if item.selected],
@@ -33,7 +50,7 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
     lines = [
         _frontmatter(f"{event['short_name']} · 高效推理与 AI Infra 精选", event.get("summary_zh", "")),
         f"> **{event['start_date']} — {event['end_date']} · {event['location']}**",
-        f"> 状态：{event.get('status', '已归档')} · 相关论文 {len(papers)} 篇 · 精选 {len(selected)} 篇 · 更新于 {event.get('generated_at', '')[:10]}",
+        f"> 状态：{_status_badge(event.get('status', '已归档'))} · 相关论文 {len(papers)} 篇 · 精选 {len(selected)} 篇 · 更新于 {event.get('generated_at', '')[:10]}",
         "",
         f"[会议官网]({event['official_url']}) · [会议议程]({event.get('program_url', event['official_url'])}) · [官方录用列表]({event.get('accepted_papers_url', event['official_url'])})",
         "",
@@ -119,7 +136,7 @@ def _index_markdown(events: List[Dict[str, Any]]) -> str:
         label = f"[{event['short_name']}](./{event['id']}/)" if local else f"[{event['short_name']}]({event['official_url']})"
         lines.append(
             f"| {label} | {event.get('start_date', '')} — {event.get('end_date', '')} | "
-            f"{event.get('domain', '')} / {event.get('community', '')} | {event.get('location', '')} | {event.get('status', '待跟踪')} |"
+        f"{event.get('domain', '')} / {event.get('community', '')} | {event.get('location', '')} | {_status_badge(event.get('status', '待跟踪'))} |"
         )
     lines.extend(
         [

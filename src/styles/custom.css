@@ -73,6 +73,37 @@ main:has(#paper-explorer) > .content-panel:first-of-type h1 { letter-spacing: -.
 .week-stat-grid strong, .week-stat-grid span { display: block; }
 .week-stat-grid span { color: var(--sl-color-gray-3); font-size: .75rem; }
 
+/* Conference lifecycle states: keep the last column readable even when the
+   article column becomes narrow, and use both emoji and color for redundancy. */
+.sl-markdown-content table:has(.event-status) th:last-child,
+.sl-markdown-content table:has(.event-status) td:last-child {
+  min-width: 7.4rem;
+  white-space: nowrap;
+}
+.event-status {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: .2rem .58rem;
+  font-size: .78rem;
+  font-weight: 700;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+.event-status--tracking { border-color: #93c5fd; color: #1d4ed8; background: #eff6ff; }
+.event-status--upcoming { border-color: #fcd34d; color: #92400e; background: #fffbeb; }
+.event-status--active { border-color: #86efac; color: #166534; background: #f0fdf4; }
+.event-status--archived,
+.event-status--unknown { border-color: #cbd5e1; color: #475569; background: #f8fafc; }
+
+:root[data-theme='dark'] .event-status--tracking { border-color: #1d4ed8; color: #bfdbfe; background: #172554; }
+:root[data-theme='dark'] .event-status--upcoming { border-color: #a16207; color: #fde68a; background: #422006; }
+:root[data-theme='dark'] .event-status--active { border-color: #15803d; color: #bbf7d0; background: #052e16; }
+:root[data-theme='dark'] .event-status--archived,
+:root[data-theme='dark'] .event-status--unknown { border-color: #475569; color: #cbd5e1; background: #1e293b; }
+
 @media (max-width: 1400px) {
   .metric-grid, .paper-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .explorer-shell { grid-template-columns: 1fr; }

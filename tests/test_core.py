@@ -198,6 +198,9 @@ class CoreTests(unittest.TestCase):
             )
             self.assertGreater(summary["relevant_total"], 0)
             self.assertTrue((root / "src" / "content" / "docs" / "events" / "acl-2026.md").exists())
+            index = (root / "src" / "content" / "docs" / "events" / "index.md").read_text()
+            self.assertIn("event-status--archived", index)
+            self.assertIn("event-status--tracking", index)
             self.assertFalse((root / "data" / "papers").exists())
 
 

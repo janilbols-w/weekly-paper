@@ -7,24 +7,24 @@ description: "LLM 高效推理与 AI Infra 会议日历及独立精选"
 
 | 会议 | 日期 | 领域 / 社区 | 地点 | 状态 |
 |---|---|---|---|---|
-| [NeurIPS 2026](https://neurips.cc/) | 2026-12-06 — 2026-12-13 | Machine Learning / NeurIPS | Sydney / Atlanta / Paris | 待跟踪 |
-| [EMNLP 2026](https://2026.emnlp.org/) | 2026-10-24 — 2026-10-29 | LLM / NLP / ACL Family | Budapest | 待跟踪 |
-| [COLM 2026](https://colmweb.org/) | 2026-10-06 — 2026-10-09 | LLM / NLP / COLM | San Francisco | 待跟踪 |
-| [SOSP 2026](https://sigops.org/s/conferences/sosp/2026/) | 2026-09-29 — 2026-10-02 | Systems / ACM SIGOPS | Prague | 待跟踪 |
-| [OSDI 2026](https://www.usenix.org/conference/osdi26) | 2026-07-13 — 2026-07-15 | Systems / USENIX | Seattle | 待跟踪 |
-| [ICML 2026](https://icml.cc/Conferences/2026) | 2026-07-06 — 2026-07-11 | Machine Learning / ICML | Seoul | 待跟踪 |
-| [ACL 2026](./acl-2026/) | 2026-07-02 — 2026-07-07 | LLM / NLP / ACL Family | San Diego, California, United States | 已归档 |
-| [ISCA 2026](https://iscaconf.org/isca2026/) | 2026-06-27 — 2026-07-01 | Architecture / HPC / SIGARCH / IEEE | Raleigh | 待跟踪 |
-| [CAIS 2026](https://2026.cais-conf.org/) | 2026-05-26 — 2026-05-29 | ML Systems / AI Systems | San Jose | 待跟踪 |
-| [MLSys 2026](https://mlsys.org/Conferences/2026) | 2026-05-18 — 2026-05-22 | ML Systems / MLSys | Bellevue | 待跟踪 |
-| [NSDI 2026](https://www.usenix.org/conference/nsdi26) | 2026-05-04 — 2026-05-06 | Systems / USENIX | Renton | 待跟踪 |
-| [EuroSys 2026](https://2026.eurosys.org/) | 2026-04-27 — 2026-04-30 | Systems / EuroSys | Edinburgh | 待跟踪 |
-| [ICLR 2026](https://iclr.cc/) | 2026-04-23 — 2026-04-27 | Machine Learning / ICLR | Rio de Janeiro | 待跟踪 |
-| [ASPLOS 2026](https://www.asplos-conference.org/asplos2026/) | 2026-03-22 — 2026-03-26 | Architecture / HPC / SIGARCH / SIGPLAN | Pittsburgh | 待跟踪 |
-| [NVIDIA GTC 2026](https://www.nvidia.com/gtc/) | 2026-03-16 — 2026-03-19 | Industry / NVIDIA | San Jose | 待跟踪 |
-| [FAST 2026](https://www.usenix.org/conference/fast26) | 2026-02-24 — 2026-02-26 | Systems / USENIX | Santa Clara | 待跟踪 |
-| [PPoPP 2026](https://conf.researchr.org/home/ppopp-2026) | 2026-01-31 — 2026-02-04 | Architecture / HPC / SIGPLAN | Sydney | 待跟踪 |
-| [HPCA 2026](https://hpca-conf.org/2026/) | 2026-01-31 — 2026-02-04 | Architecture / HPC / IEEE TCCA | Sydney | 待跟踪 |
+| [NeurIPS 2026](https://neurips.cc/) | 2026-12-06 — 2026-12-13 | Machine Learning / NeurIPS | Sydney / Atlanta / Paris | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [EMNLP 2026](https://2026.emnlp.org/) | 2026-10-24 — 2026-10-29 | LLM / NLP / ACL Family | Budapest | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [COLM 2026](https://colmweb.org/) | 2026-10-06 — 2026-10-09 | LLM / NLP / COLM | San Francisco | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [SOSP 2026](https://sigops.org/s/conferences/sosp/2026/) | 2026-09-29 — 2026-10-02 | Systems / ACM SIGOPS | Prague | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [OSDI 2026](https://www.usenix.org/conference/osdi26) | 2026-07-13 — 2026-07-15 | Systems / USENIX | Seattle | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [ICML 2026](https://icml.cc/Conferences/2026) | 2026-07-06 — 2026-07-11 | Machine Learning / ICML | Seoul | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [ACL 2026](./acl-2026/) | 2026-07-02 — 2026-07-07 | LLM / NLP / ACL Family | San Diego, California, United States | <span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> |
+| [ISCA 2026](https://iscaconf.org/isca2026/) | 2026-06-27 — 2026-07-01 | Architecture / HPC / SIGARCH / IEEE | Raleigh | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [CAIS 2026](https://2026.cais-conf.org/) | 2026-05-26 — 2026-05-29 | ML Systems / AI Systems | San Jose | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [MLSys 2026](https://mlsys.org/Conferences/2026) | 2026-05-18 — 2026-05-22 | ML Systems / MLSys | Bellevue | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [NSDI 2026](https://www.usenix.org/conference/nsdi26) | 2026-05-04 — 2026-05-06 | Systems / USENIX | Renton | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [EuroSys 2026](https://2026.eurosys.org/) | 2026-04-27 — 2026-04-30 | Systems / EuroSys | Edinburgh | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [ICLR 2026](https://iclr.cc/) | 2026-04-23 — 2026-04-27 | Machine Learning / ICLR | Rio de Janeiro | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [ASPLOS 2026](https://www.asplos-conference.org/asplos2026/) | 2026-03-22 — 2026-03-26 | Architecture / HPC / SIGARCH / SIGPLAN | Pittsburgh | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [NVIDIA GTC 2026](https://www.nvidia.com/gtc/) | 2026-03-16 — 2026-03-19 | Industry / NVIDIA | San Jose | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [FAST 2026](https://www.usenix.org/conference/fast26) | 2026-02-24 — 2026-02-26 | Systems / USENIX | Santa Clara | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [PPoPP 2026](https://conf.researchr.org/home/ppopp-2026) | 2026-01-31 — 2026-02-04 | Architecture / HPC / SIGPLAN | Sydney | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [HPCA 2026](https://hpca-conf.org/2026/) | 2026-01-31 — 2026-02-04 | Architecture / HPC / IEEE TCCA | Sydney | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
 
 ## 触发规则
 
