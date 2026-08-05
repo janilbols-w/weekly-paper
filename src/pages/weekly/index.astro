@@ -1,0 +1,24 @@
+---
+import weeks from '../../data/weeks.json';
+import type { WeekRecord } from '../../types';
+
+const latest = [...(weeks as WeekRecord[])].sort((a, b) => b.week.localeCompare(a.week))[0];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const destination = latest ? `${base}/weekly/${latest.week.toLowerCase()}/` : `${base}/`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <meta name="robots" content="noindex" />
+    <title>正在前往最新周报</title>
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+  </head>
+  <body>
+    <a href={destination}>正在前往最新周报…</a>
+  </body>
+</html>
