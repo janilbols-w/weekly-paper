@@ -5,10 +5,12 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **4** 篇。
+累计收录 **6** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KernelBrain: Coarse-to-Fine, Budget-Aware Search for Agentic GPU Kernel Optimization](../../papers/arxiv-2608.02611/) | 2026-08-05 | 54 |
+| [ComFuse: Fusing Complex Memory-Intensive Subgraphs with Compute-Intensive Kernels For Modern GPU Architectures](../../papers/arxiv-2608.03537/) | 2026-08-05 | 39 |
 | [LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation](../../papers/arxiv-2608.01804/) | 2026-08-04 | 53 |
 | [Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference](../../papers/arxiv-2608.01536/) | 2026-08-04 | 50 |
 | [Bole: Efficient Tree Speculation for Hybrid-Attention Language Models](../../papers/arxiv-2608.01651/) | 2026-08-04 | 46 |

@@ -5,10 +5,11 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **4** 篇。
+累计收录 **5** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Image classification via a quantum-inspired strategy involving a mixture of experts](../../papers/arxiv-2607.07754/) | 2026-08-05 | 41 |
 | [ThAME: 3D Memory-Enabled Heterogeneous Accelerator for LLM Mixture of Experts](../../papers/arxiv-2607.17074/) | 2026-08-04 | 54 |
 | [TEAM: Temporal-Spatial Consistency Guided Expert Activation for MoE Diffusion Language Model Acceleration](../../papers/arxiv-2602.08404/) | 2026-08-04 | 47 |
 | [Broadcast Rate Limits in Wi-Fi: A Forgotten Bottleneck for Collaborative Edge LLM Inference](../../papers/arxiv-2608.02341/) | 2026-08-04 | 44 |

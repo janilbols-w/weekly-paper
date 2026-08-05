@@ -39,7 +39,7 @@ Sparse Autoencoders (SAEs) extract interpretable features from Large Language Mo
 ## 元数据
 
 - 作者：Bartosz Wieciech, Zmnako Awrahman, Marcin Czelej, Victor Hugo Jaramillo Velasquez, Wioletta Stobieniecka
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-04；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

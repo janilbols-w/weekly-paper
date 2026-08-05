@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2608.03796",
+  "title": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
+  "abstract": "Small language models are often the only option for deployment under tight latency, cost, and on-premises constraints, but they are rarely trained from scratch: a compressed model is usually recovered through knowledge distillation (KD). This recovery step largely decides the final quality, yet it is expensive. We present a practitioner's study of how to make distillation training efficient, organised around two systems contributions. First, we show that offline KD (caching the teacher's top-$K$ logits once and training the student against the cache) matches online distillation at near-identical training loss while removing the teacher from memory, running about 29\\% faster per iteration, and reaching up to 41\\% higher throughput on a single H200 GPU. Second, we introduce a \\emph{fused, chunked KL loss} that never materialises the full vocabulary-sized logit tensor, making peak memory linear in the sequence length. This removes the memory spike that otherwise caps context length and lets us train at four times the context (32{,}768 tokens) on a single GPU. A separate output-head-only toy benchmark isolates the loss kernel and confirms its memory and iteration-rate scaling from 4K to 256K tokens. Together these make large-scale healing and hundreds of ablations affordable. We also report supporting ablations on loss design and sequence packing. We release our chunked-loss implementation: https://github.com/CompactifAI/Full-Chunked-KL-Loss.",
+  "url": "https://arxiv.org/abs/2608.03796",
+  "pdf_url": "https://arxiv.org/pdf/2608.03796",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Bakbergen Ryskulov",
+    "Iker Garc\\'ia-Ferrero",
+    "David Montero",
+    "David Jansen",
+    "Ali Hashemi",
+    "Jezabel R. Garcia",
+    "Antonio Tiene",
+    "Rom\\'an Or\\'us"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/CompactifAI/Full-Chunked-KL-Loss",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "compressed model",
+    "distillation"
+  ],
+  "score": 57,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: compressed model, distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Small language models are often the only option for deployment under tight latency, cost, and on-premises constraints, but they are rarely trained from scratch: a compressed model is usually recovered through knowledge distillation (KD).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [
+    "2026-W32"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.03796",
+      "url": "https://arxiv.org/abs/2608.03796"
+    }
+  ]
+}

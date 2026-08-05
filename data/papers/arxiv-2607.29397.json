@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2607.29397",
+  "title": "Studying quantization trade-offs for efficient inference deployment in machine translation",
+  "abstract": "Deploying large language models in realistic server environments poses challenges, as the system needs to provide high-quality responses with low latency. Quantization is a common approach to reduce the memory footprint and improve inference efficiency, yet its impact on latency and throughput is rarely evaluated under controlled, orchestration-level workloads. In this work we study the quantization trade-offs of two translation model families, EuroLLM \\citep{martins2025eurollm} and Hy-MT2 \\citep{zheng2026hy} across five models ranging from 1.7B to 22B for efficient deployment on a single A100 or H100 GPU. We demonstrate that combining a document-chunking strategy with W4A8 or W8A8 quantization improves the latency-throughput Pareto-curve under a wide range of workloads. Furthermore, since standard machine translation (MT) benchmarks rely on isolated sentences and fail to capture long-context dynamics, we introduce a document-level evaluation from WMT24++ to assess how text chunking strategies affect translation quality under quantization. Our results reveal that standard segment-level evaluation can fail to predict the interaction between quantization and long-context document translation. While Hy-MT2 remains robust under quantization, EuroLLM shows strong sensitivity and translation quality collapses rapidly for all considered quantization formats. Overall, our experiments show that the trade-off between inference efficiency and translation quality depends not only on the quantization format, but also on the choice of text chunking strategy.",
+  "url": "https://arxiv.org/abs/2607.29397",
+  "pdf_url": "https://arxiv.org/pdf/2607.29397",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Jim Zhao",
+    "Sohir Maskey",
+    "Koen Oostermeijer",
+    "Douglas Orr",
+    "Teryn Jones"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 15,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Deploying large language models in realistic server environments poses challenges, as the system needs to provide high-quality responses with low latency.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [
+    "2026-W32"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.29397",
+      "url": "https://arxiv.org/abs/2607.29397"
+    }
+  ]
+}

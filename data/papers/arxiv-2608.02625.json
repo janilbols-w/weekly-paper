@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2608.02625",
+  "title": "Speculative Correction: Draft-then-Refine Decoding for Diffusion Language Models",
+  "abstract": "Diffusion language models (DLMs) can revise tokens bidirectionally, but standard decoding procedures often adapt them to left-to-right generation by producing text block by block. We study a simple plug-and-play inference pattern: first generate a complete draft, then refine the full response using bidirectional diffusion. Using LLaDA2.1-Flash and LLaDA2.1-Mini, we evaluate two configurations. In Flash-Flash, the same Flash model serves as both drafter and refiner, testing whether an existing model can improve its own block-autoregressive output through global refinement. In Mini-Flash, inspired by speculative decoding, we introduce speculative correction: Mini drafts a full response, and Flash revises it as an editable initialization. Flash-Flash improves GSM8K-384 accuracy from 0.848 to 0.899 while running 1.20 times faster than the selected Flash block-autoregressive baseline, and improves MBPP-384 from 0.545 to 0.693. Latency-window-matched Flash-only controls indicate that these gains persist after targeted tuning of block-autoregressive decoding. Causal ablations indicate that completed drafts provide useful initializations: refinement from a fully masked span performs poorly, full global refinement provides a clear additional gain on GSM8K, and local refinement captures much of the gain on MBPP and MATH. Mini-Flash provides useful quality-latency trade-offs, including MATH-384 performance of 0.294 versus 0.300 for Flash while running 2.17 times faster. These results support a Pareto-frontier interpretation rather than the claim that the heterogeneous cascade uniformly matches Flash quality. Overall, same-model draft-and-refine provides evidence that bidirectional refinement is a useful decoding primitive for DLMs, while speculative correction demonstrates a training-free route to fast DLM generation.",
+  "url": "https://arxiv.org/abs/2608.02625",
+  "pdf_url": "https://arxiv.org/pdf/2608.02625",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Brian K Chen",
+    "Chong Wu",
+    "Kenji Kawaguchi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Diffusion language models (DLMs) can revise tokens bidirectionally, but standard decoding procedures often adapt them to left-to-right generation by producing text block by block.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.02625",
+      "url": "https://arxiv.org/abs/2608.02625"
+    }
+  ]
+}

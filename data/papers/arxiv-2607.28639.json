@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2607.28639",
+  "title": "The Asymmetric Effects of Knowledge Distillation on Bias in Small Language Models",
+  "abstract": "We show that knowledge distillation (KD) in small instruction-tuned language models has asymmetric effects on bias, and that measuring them correctly requires accounting for where refusal mass moves and what the parser can legitimately score. On unambiguous tasks (BBQ-disambig), response-based distillation from a Mistral-7B teacher genuinely improves context-following for the most context-biased baseline (SmolLM2-1.7B-Instruct): among committed (non-abstaining) answers, the rate of overriding correct context with a stereotype falls from 44.5% to 37.2%, with accuracy rising from 0.55 to 0.61. On ambiguous tasks (BBQ-ambig), the same distillation degrades conditional refusal: 15% of the cases where the baseline correctly abstained instead receive stereotype answers (silence-loss), and the distilled refusal pattern only weakly preserves the baseline's (Spearman rho=0.44). The harm reproduces, aggravated, on a second student family (OLMo-2-1B-Instruct): silence-loss reaches 49% and filled-silence accounts for 95% of new bias. Two apparently stronger results are artifacts. An unconditioned override metric reports a 44% -> 23% improvement under a Gemma-2-9B teacher that shrinks to 44.5% -> 39.8% once conditioned on committed answers: the model abstains on 43% of items and its accuracy collapses from 0.55 to 0.35. An apparent cross-condition independence reverses to a positive correlation (rho=0.58, p<0.01) on the valid 19-configuration grid once parser-invalid logit-KD configurations are excluded and the parser is corrected. Aggregate metrics (CrowS-Pairs, overall BBQ Stereotype Reliance Score) average over both effects and conceal the per-item harm. We propose Per-Condition Calibration Diagnosis (PCCD), a three-step protocol evaluating refusal-pattern preservation, committed-answer context-following, and capability preservation. No configuration in our grid passes all three steps.",
+  "url": "https://arxiv.org/abs/2607.28639",
+  "pdf_url": "https://arxiv.org/pdf/2607.28639",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Plawan Kumar Rath"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.CY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We show that knowledge distillation (KD) in small instruction-tuned language models has asymmetric effects on bias, and that measuring them correctly requires accounting for where refusal mass moves and what the parser can legitimately score.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.28639",
+      "url": "https://arxiv.org/abs/2607.28639"
+    }
+  ]
+}

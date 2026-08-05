@@ -1,0 +1,80 @@
+{
+  "id": "arxiv:2602.11456",
+  "title": "AuroraRL: Fast, Fault-Tolerant, and Cost-Efficient Reinforcement Learning over Decentralized Network",
+  "abstract": "LLM reinforcement learning (RL) requires frequent synchronization of large model parameters between the trainer and distributed rollout actors. High-throughput RL post-training therefore relies on dedicated RDMA HPC/cloud clusters, an infrastructure cost most organizations cannot absorb. A natural alternative is to aggregate loosely-coupled GPUs over standard Ethernet and WAN links, but this commodity connectivity cannot sustain full-weight broadcasts: synchronizing an 8B model can take over 100~seconds on bandwidth-limited links, while rollout generation typically takes tens of seconds. Toward making RL practical in this regime, we observe that RL fine-tuning yields highly sparse per-step updates, with only around 1\\% of parameter elements changing. On top of this insight, we present AuroraRL, a novel high-performance RL training system that preserves bit-exact updates without dropping or quantizing information, designed for commodity-networked, loosely-coupled GPU resources. AuroraRL represents each step as a sparse delta checkpoint, pipelines delta extraction with multi-stream transmission, overlaps transfer with rollout generation, and coordinates heterogeneous workers with throughput- and bandwidth-aware scheduling plus lease-based fault tolerance. Across Qwen3 4B--14B models deployed in up to four geographic regions, AuroraRL shrinks per-step weight transfer by 79$\\times$ on Qwen3-8B, delivers 1.3--9.5$\\times$ higher throughput than dense-broadcast baselines (PrimeRL-Full, async-tolerant, multi-stream variants), and brings end-to-end training within 8.91\\% of an ideal RDMA single-datacenter baseline, while transparently tolerating common failures and preserving training accuracy. By leveraging on-demand, cross-cloud GPUs over commodity links, AuroraRL delivers 1.21--1.59$\\times$ higher tokens per dollar than reserved RDMA clusters at comparable throughput.",
+  "url": "https://arxiv.org/abs/2602.11456",
+  "pdf_url": "https://arxiv.org/pdf/2602.11456",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Chaoyi Ruan",
+    "Geng Luo",
+    "Xinyi Wan",
+    "Long Zhao",
+    "Qinghe Wang",
+    "Jiaan Zhu",
+    "Duling Xu",
+    "Guanbin Xu",
+    "Dehui Wei",
+    "Xiang Liu",
+    "Cheng Li",
+    "Haifeng Sun",
+    "Liang Luo",
+    "Congcong Miao",
+    "Jialin Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM reinforcement learning (RL) requires frequent synchronization of large model parameters between the trainer and distributed rollout actors.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.11456",
+      "url": "https://arxiv.org/abs/2602.11456"
+    }
+  ]
+}

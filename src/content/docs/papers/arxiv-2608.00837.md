@@ -39,7 +39,7 @@ Byte Pair Encoding (BPE) is widely used for subword tokenization, but standard B
 ## 元数据
 
 - 作者：Kenny Shao
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-04；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

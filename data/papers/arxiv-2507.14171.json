@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2507.14171",
+  "title": "IPPRO: Importance-based Pruning with PRojective Offset for Magnitude-indifferent Structural Pruning",
+  "abstract": "Importance-based structured pruning overwhelmingly relies on filter magnitude. This proxy is fundamentally flawed: due to scale invariance, functionally identical filters can receive arbitrarily different importance scores under rescaling. We propose IPPRO (Importance-based Pruning with PROjective Offset), a scale-invariant pruning framework grounded in projective geometry. By embedding filters into real projective space ($\\mathbb{RP}^N$), IPPRO resolves the singularity at the origin, placing all filters at an equal angular distance from the zero filter. We define PROscore, which captures functional importance by measuring a filter's angular displacement toward zero under a single gradient step (directional collapse). We further connect PROscore to exact $L_0$ relaxation, proving this one-shot criterion reliably predicts multi-step pruning dynamics. Extensive experiments across CNNs, Vision Transformers, and LLMs (e.g., ResNet, DeiT, LLaMA) demonstrate that IPPRO consistently outperforms existing methods, yielding particularly striking gains under high compression and no-fine-tuning regimes, IPPRO establishes a robust, architecture-agnostic paradigm for neural network compression.",
+  "url": "https://arxiv.org/abs/2507.14171",
+  "pdf_url": "https://arxiv.org/pdf/2507.14171",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Jaeheun Jung",
+    "Jaehyuk Lee",
+    "Yeajin Lee",
+    "Donghun Lee"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Importance-based structured pruning overwhelmingly relies on filter magnitude.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2507.14171",
+      "url": "https://arxiv.org/abs/2507.14171"
+    }
+  ]
+}

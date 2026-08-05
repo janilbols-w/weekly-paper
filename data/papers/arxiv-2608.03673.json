@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2608.03673",
+  "title": "CausalOPD: First-Wrong-Step Supervision for Distilling Causal Chain Reasoning",
+  "abstract": "Many critical reasoning tasks, including clinical diagnosis, legal judgment, and industrial fault diagnosis, require step-dependent causal chains in which early errors propagate and correct conclusions can mask invalid reasoning. Although large language models perform well on such tasks, privacy, latency, and controllability motivate distillation into locally deployable models. Standard trajectory imitation does not correct process errors on the student's own rollout distribution. We propose CausalOPD, a curriculum online process distillation framework. A knowledge-augmented teacher first provides trajectories grounded in domain-specific causal rules, entity relations, and structural constraints. The student then generates on-policy trajectories, and the teacher identifies the first wrong step, defined as the earliest transition that verifiably violates available constraints. Starting from the verified prefix, short-horizon reinforcement learning repairs this localized failure. A causal-stage curriculum advances from evidence-level to mechanism-level and conclusion-level errors, following their propagation order. Across three domains, CausalOPD improves average path correctness by 23.4 percentage points over sequence-level online process distillation and reduces the right-label-wrong-reasoning rate from 15.7% to 4.4%. The domain-specific 8B students also surpass both evaluated proprietary references in path correctness across all domains.",
+  "url": "https://arxiv.org/abs/2608.03673",
+  "pdf_url": "https://arxiv.org/pdf/2608.03673",
+  "published": "2026-08-05",
+  "updated": "2026-08-05",
+  "authors": [
+    "Jian Zhang",
+    "Bingyi Wang",
+    "Yizhi Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Many critical reasoning tasks, including clinical diagnosis, legal judgment, and industrial fault diagnosis, require step-dependent causal chains in which early errors propagate and correct conclusions can mask invalid reasoning.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-05T05:32:02+00:00",
+  "last_seen": "2026-08-05T05:32:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.03673",
+      "url": "https://arxiv.org/abs/2608.03673"
+    }
+  ]
+}
