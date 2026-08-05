@@ -6,6 +6,27 @@
   --paper-surface: color-mix(in srgb, var(--sl-color-gray-7) 24%, transparent);
 }
 
+/* Starlight expects the accent scale to run in the opposite luminance
+   direction in dark mode. A dedicated scale keeps links and navigation from
+   falling back to the low-contrast dark green used by the light theme. */
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #123c31;
+  --sl-color-accent: #5ee0ac;
+  --sl-color-accent-high: #d1fae5;
+}
+
+:root[data-theme='dark'] .sl-markdown-content a:not(.sl-anchor-link) {
+  color: #6ee7b7;
+  text-decoration-color: color-mix(in srgb, #6ee7b7 65%, transparent);
+  text-underline-offset: .16em;
+}
+
+:root[data-theme='dark'] .sl-markdown-content a:not(.sl-anchor-link):hover,
+:root[data-theme='dark'] .sl-markdown-content a:not(.sl-anchor-link):focus-visible {
+  color: #d1fae5;
+  text-decoration-color: currentColor;
+}
+
 .hero { padding-block: 4.5rem 3rem; }
 .hero h1 { max-width: 17ch; letter-spacing: -0.04em; }
 .eyebrow { margin: 0 0 .25rem; color: var(--sl-color-accent); font-size: .74rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
