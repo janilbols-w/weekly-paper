@@ -39,7 +39,7 @@ Diffusion language models (dLLMs) can predict many tokens in parallel, but accur
 ## 元数据
 
 - 作者：Xiaocheng Lu, Hualei Zhang, Shuhan Guo, Jie Zhang, Xiaoyi Pang, Jian Liu, Haoxi Li, Bohai Gu, Haoxuan Che, Jingcai Guo, Song Guo
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

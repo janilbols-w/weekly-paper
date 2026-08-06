@@ -39,7 +39,7 @@ Recent advances in multimodal large language models (MLLMs) have significantly i
 ## 元数据
 
 - 作者：Kaiwen Zheng, Junchen Fu, Wenhao Deng, Hu Han, Joemon M. Jose, Xuri Ge
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/GAIR-Lab/Light-MER](https://github.com/GAIR-Lab/Light-MER)
 - 阅读深度：metadata

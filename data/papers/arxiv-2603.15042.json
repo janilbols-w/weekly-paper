@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2603.15042",
+  "title": "Determinism-Preserving GPU Spatial Sharing with Vitamin-E",
+  "abstract": "GPU sharing faces a determinism--utilization tradeoff: fixed bindings can strand capacity as demand fluctuates, while resource-driven kernel reshaping improves utilization by altering a launch's parallel structure, potentially changing output bits. We rethink modern GPU scheduling and observe that it decouples logical structure from physical width: one unmodified launch spans a family of widths through changes in block placement and wave count. From this observation, we derive the parallel-structure invariant: for fixed-structure deterministic workloads, keeping each launch immutable makes its output bits independent of physical width. Guided by this invariant, Vitamin-E late-binds immutable launches to pooled physical contexts, preserving bitwise equality across allocations, whereas resource-driven reshaping can alter the selected token under temperature-zero greedy decoding. Across all workload--baseline comparisons, Vitamin-E achieves up to 3.50$\\times$ the aggregate normalized LLM training throughput, 62.5\\% lower inference p99 latency, and 1.43$\\times$ the background-training throughput. With the same mechanism, \\textsc{TPOT-First} reduces TPOT SLO violations by up to 46.1\\% over \\textsc{Throughput-Oriented} on three serving workloads, demonstrating mechanism effectiveness and policy flexibility.",
+  "url": "https://arxiv.org/abs/2603.15042",
+  "pdf_url": "https://arxiv.org/pdf/2603.15042",
+  "published": "2026-08-06",
+  "updated": "2026-08-06",
+  "authors": [
+    "Zhenyuan Yang",
+    "Wenxin Zheng",
+    "Mingyu Li",
+    "Haibo Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "gpu-scheduling-virtualization",
+    "leaf": "GPU Scheduling & Virtualization",
+    "leaf_zh": "GPU 调度与虚拟化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu scheduling",
+    "gpu sharing"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu scheduling, gpu sharing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "GPU sharing faces a determinism--utilization tradeoff: fixed bindings can strand capacity as demand fluctuates, while resource-driven kernel reshaping improves utilization by altering a launch's parallel structure, potentially changing output bits.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-06T05:33:34+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.15042",
+      "url": "https://arxiv.org/abs/2603.15042"
+    }
+  ]
+}

@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **5** 篇。
+累计收录 **6** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Architectural Implications of Agentic AI Workflows](../../papers/arxiv-2608.04458/) | 2026-08-06 | 44 |
 | [AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents](../../papers/arxiv-2608.00009/) | 2026-08-04 | 49 |
 | [Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training](../../papers/arxiv-2608.02391/) | 2026-08-04 | 46 |
 | [Gecko: Fast Private Inference via Secure Public Encoder Offloading](../../papers/arxiv-2608.02378/) | 2026-08-04 | 45 |

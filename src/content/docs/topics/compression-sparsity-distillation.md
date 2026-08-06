@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **39** 篇。
+累计收录 **43** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BnBERT-iPET: Sparse Few-Shot Language Modeling for Bengali via Lottery Ticket Pruning](../../papers/arxiv-2608.05104/) | 2026-08-06 | 47 |
+| [Agentic Reinforcement Learning with Observation-Calibrated Self-Distillation](../../papers/arxiv-2608.04788/) | 2026-08-06 | 46 |
+| [DIVE: Dynamic Iterative Visual Evidence Construction for Efficient Vision-Language Models](../../papers/arxiv-2608.04496/) | 2026-08-06 | 44 |
+| [SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System](../../papers/arxiv-2608.05033/) | 2026-08-06 | 43 |
 | [Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss](../../papers/arxiv-2608.03796/) | 2026-08-05 | 57 |
 | [GSTEP: Global Spatio-Temporal Density-Driven Visual Token Pruning for Efficient Video Large Language Models](../../papers/arxiv-2608.03083/) | 2026-08-05 | 47 |
 | [TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning](../../papers/arxiv-2608.04007/) | 2026-08-05 | 46 |

@@ -39,7 +39,7 @@ Small language models are often the only option for deployment under tight laten
 ## 元数据
 
 - 作者：Bakbergen Ryskulov, Iker Garc\'ia-Ferrero, David Montero, David Jansen, Ali Hashemi, Jezabel R. Garcia, Antonio Tiene, Rom\'an Or\'us
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/CompactifAI/Full-Chunked-KL-Loss](https://github.com/CompactifAI/Full-Chunked-KL-Loss)
 - 阅读深度：metadata

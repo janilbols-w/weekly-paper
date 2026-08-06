@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **10** 篇。
+累计收录 **13** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Recurrent Residual Quantization: A Progressive Multi-Precision Representation for LLMs](../../papers/arxiv-2608.04048/) | 2026-08-06 | 48 |
+| [RiboSphere: Learning Unified and Efficient Representations of RNA Structures](../../papers/arxiv-2603.19636/) | 2026-08-06 | 42 |
+| [Tropical Algebraic Geometry for Neuronal Representations: An Arakelov-Green Measure Based Descriptor for Graph Learning](../../papers/arxiv-2608.04460/) | 2026-08-06 | 38 |
 | [Studying quantization trade-offs for efficient inference deployment in machine translation](../../papers/arxiv-2607.29397/) | 2026-08-05 | 53 |
 | [Heterogeneity-Aware Microscaling for Efficient Low-Bit LLM Inference](../../papers/arxiv-2608.03867/) | 2026-08-05 | 49 |
 | [ARCHead: Activation-Metric Residual Correction for Large Language Model Output Heads](../../papers/arxiv-2608.02703/) | 2026-08-05 | 46 |

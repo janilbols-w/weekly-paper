@@ -39,7 +39,7 @@ Tool-Integrated Reasoning (TIR) enables LLMs to solve complex tasks through iter
 ## 元数据
 
 - 作者：Changle Qu, Sunhao Dai, Hengyi Cai, Yuqi Zhou, Xinran Chen, Simon, Jun Xu
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/quchangle1/TurnSight](https://github.com/quchangle1/TurnSight)
 - 阅读深度：metadata

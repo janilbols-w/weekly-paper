@@ -39,7 +39,7 @@ The key-value (KV) cache is the primary memory bottleneck in long-context LLM in
 ## 元数据
 
 - 作者：Malik Khalaf, Yara Shamshoum, Nitzan Hodos, Yuval Sieradzki, Assaf Schuster
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

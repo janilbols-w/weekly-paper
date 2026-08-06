@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **14** 篇。
+累计收录 **15** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Spend Bits Where Queries Look: KV Cache Vector Quantization with Attention-Preserving Transforms](../../papers/arxiv-2608.04074/) | 2026-08-06 | 40 |
 | [Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse](../../papers/arxiv-2608.03893/) | 2026-08-05 | 43 |
 | [AnchorKV: Anchor-Residual KV Cache Compression](../../papers/arxiv-2608.02901/) | 2026-08-05 | 43 |
 | [Output-Aware Rotation for INT2 KV-Cache Quantization](../../papers/arxiv-2608.02691/) | 2026-08-05 | 41 |

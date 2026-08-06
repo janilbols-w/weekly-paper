@@ -1,12 +1,1099 @@
 [
   {
+    "id": "arxiv:2608.04048",
+    "title": "Recurrent Residual Quantization: A Progressive Multi-Precision Representation for LLMs",
+    "abstract": "Serving large language models (LLMs) under diverse deployment constraints requires flexible trade-offs between accuracy, memory footprint, and throughput. However, conventional quantization methods typically require a separate checkpoint for each target bit-width. We introduce Recurrent Residual Quantization (RRQ), a post-training quantization (PTQ) framework that represents weights as a low-bit quantized base together with a sequence of quantized residual corrections, enabling multiple effective precisions from a single checkpoint. Starting from a 2-bit model obtained via post-training quantization (PTQ) or round-to-nearest (RTN), RRQ progressively adds lightweight 2-bit residuals generated via RTN to construct 4-, 6-, and 8-bit representations. The method is calibration-free and avoids joint multi-bit optimization. In our Qwen3-8B setup, the full all-RTN 2-/4-/6-/8-bit package is constructed in 1,293 seconds, 3.3 times faster than the measured MatGPTQ construction. Experiments on six recent LLMs show competitive accuracy at 6 and 8 bits, with model-dependent behavior at 4 bits. The code will be made publicly available upon publication.",
+    "url": "https://arxiv.org/abs/2608.04048",
+    "pdf_url": "https://arxiv.org/pdf/2608.04048",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Yu Luo",
+      "Bo Dong",
+      "Wenhua Cheng",
+      "Haihao Shen"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization",
+      "quantized"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization, quantized",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Serving large language models (LLMs) under diverse deployment constraints requires flexible trade-offs between accuracy, memory footprint, and throughput.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04048",
+        "url": "https://arxiv.org/abs/2608.04048"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.23933",
+    "title": "SpecBox: Speculative Sandbox Scheduling for Efficient LLM Agent Serving",
+    "abstract": "As LLM agents increasingly rely on the Model Context Protocol (MCP) to invoke isolated external sandboxes, disaggregated sandbox deployment introduces a fundamental tension between resource utilization and interactive tail latency. Persistent long-lived sandbox reservations incur excessive memory overhead at scale, while lazy on-demand instantiation generates severe cold-start penalties that degrade response performance under multi-tenant, multi-turn agent workloads. To resolve this dilemma, we present SpecBox, a runtime built around speculative sandbox preallocation tailored for dynamic LLM agent execution pipelines. At its core, SpecBox implements keyword matching and streaming semantic embedding to enable intent-driven sandbox prewarming, which identifies pending tool execution demands mid-LLM token generation and fully overlaps sandbox bootstrapping with model inference. To extend prewarming windows across sequential agent steps, the framework leverages context-aware stochastic prefetching atop a sandbox dependency graph to probabilistically forecast future sandbox switches ahead of execution. We complement these speculative mechanisms with two orthogonal optimizations: a semantic result cache that prunes redundant repeated sandbox invocations, and a dedicated out-of-band shared-memory transport plane that bypasses conventional network serialization to deliver zero-copy artifact transfers. Evaluated on high-concurrency multi-turn agent traces, our prototype demonstrates that SpecBox cuts P99 end-to-end latency by up to $2.9\\times$ relative to the on-demand sandbox baseline, while slashing peak memory consumption by $45.9\\%$ compared to permanently reserved sandbox deployments.",
+    "url": "https://arxiv.org/abs/2607.23933",
+    "pdf_url": "https://arxiv.org/pdf/2607.23933",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Yihui Zhang (Beihang University)",
+      "Tianyu Wo (Beihang University)",
+      "Jinghao Wang (Beihang University)",
+      "Xiaoyang Sun (University of Leeds)",
+      "Menghao Zhang (Beihang University)",
+      "Cangzhou Yuan (Beihang University)",
+      "Li Li (Beihang University)",
+      "Chunming Hu (Beihang University)",
+      "Albert Y. Zomaya (The University of Sydney)",
+      "Renyu Yang (Beihang University)"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.DC",
+      "cs.LG",
+      "cs.PF"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "multitenancy-slo-reliability",
+      "leaf": "Multi-tenancy, SLO & Reliability",
+      "leaf_zh": "多租户、SLO 与可靠性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "multi-tenant",
+      "tail latency"
+    ],
+    "score": 47,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 5,
+      "rigor": 11,
+      "practical_impact": 11,
+      "reproducibility": 3,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: multi-tenant, tail latency",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "As LLM agents increasingly rely on the Model Context Protocol (MCP) to invoke isolated external sandboxes, disaggregated sandbox deployment introduces a fundamental tension between resource utilization and interactive tail latency.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.23933",
+        "url": "https://arxiv.org/abs/2607.23933"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.05104",
+    "title": "BnBERT-iPET: Sparse Few-Shot Language Modeling for Bengali via Lottery Ticket Pruning",
+    "abstract": "Deep neural networks have shown impressive success in NLP tasks owing to their complex structure and huge number of edges. Achieving state-of-the-art performance in natural language processing with a large pre-trained model such as BERT is expensive and time-consuming, carries a large carbon footprint, and is difficult to realize on machines with minimal computational capability. This creates a barrier to training complex models for resource-constrained languages such as Bengali. However, in a complex neural model, not all edges are equally impactful, and the contributions of some of them can be neglected. Pruning promises to reduce the memory footprint of regular networks, shorten the training time of ever-growing networks, and increase inference efficiency without sacrificing comparable performance. In this work, we introduce BnBERT-iPET, a sparse few-shot language modeling approach for Bengali, and experimentally show that a lightweight few-shot-learned language model retaining only 10% of the edges of an initial model such as BERT can perform neck and neck with much larger models on challenging tasks for a resource-constrained language such as Bengali. By learning from few shots through iterative pattern exploiting training and achieving 90% sparsity with the Lottery Ticket Hypothesis pruning technique, our pruned BnBERT-iPET model proves to be a tough competitor to state-of-the-art language models such as Bangla Electra, Indic-BERT, and XLM-RoBERTa on downstream tasks over standard benchmark datasets of the Bengali language.",
+    "url": "https://arxiv.org/abs/2608.05104",
+    "pdf_url": "https://arxiv.org/pdf/2608.05104",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Sajib Hossain",
+      "Md Kamrus Samad",
+      "Anan Ghosh",
+      "Labib Imam Chowdhury",
+      "Nabeel Mohammed"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning",
+      "sparsity"
+    ],
+    "score": 47,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning, sparsity",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Deep neural networks have shown impressive success in NLP tasks owing to their complex structure and huge number of edges.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.05104",
+        "url": "https://arxiv.org/abs/2608.05104"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04788",
+    "title": "Agentic Reinforcement Learning with Observation-Calibrated Self-Distillation",
+    "abstract": "Large language model agents are commonly trained through reinforcement learning with sparse trajectory-level rewards, which offer limited guidance on how strongly individual tokens should be updated. On-Policy Self-Distillation (OPSD) addresses this by re-scoring generated tokens under a privileged replay view to obtain dense, token-level supervision. However, we identify a confounding issue: the resulting support may reflect both the privileged information contained in the replay view and score shifts induced by the replay scaffold, making it difficult to attribute the support specifically to that information. This issue is especially pronounced when future environment observations serve as privileged information, since replaying them requires reconstructing an extended scaffold that itself perturbs token scores. To resolve this confounding, we propose Observation-Calibrated Self-Distillation (OCSD), which contrasts two structurally matched replay views, Full and Observation-Ablated, differing only in whether the actual future observation is present, to derive an observation residual that discounts score changes shared by the replay scaffold. OCSD then applies this residual to modulate token-level GRPO updates at high-uncertainty steps, while preserving the trajectory-level update direction. Experiments on ALFWorld, WebShop, and Search-QA across three Qwen3 model scales show that OCSD consistently outperforms strong baselines. Diagnostic analyses further confirm that the calibrated residual aligns better with local environment feedback. Our code is publicly available at https://github.com/yiy1x/OCSD.",
+    "url": "https://arxiv.org/abs/2608.04788",
+    "pdf_url": "https://arxiv.org/pdf/2608.04788",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Yi Yang",
+      "Cong Qin",
+      "Xiaodan Liu",
+      "Chishui Chen",
+      "Qing Dong",
+      "Yan Zhang",
+      "Cao Liu",
+      "Zhao Yang",
+      "Lu Pan",
+      "Jiaye Lin",
+      "Yi Feng"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/yiy1x/OCSD",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Large language model agents are commonly trained through reinforcement learning with sparse trajectory-level rewards, which offer limited guidance on how strongly individual tokens should be updated.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04788",
+        "url": "https://arxiv.org/abs/2608.04788"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2603.15042",
+    "title": "Determinism-Preserving GPU Spatial Sharing with Vitamin-E",
+    "abstract": "GPU sharing faces a determinism--utilization tradeoff: fixed bindings can strand capacity as demand fluctuates, while resource-driven kernel reshaping improves utilization by altering a launch's parallel structure, potentially changing output bits. We rethink modern GPU scheduling and observe that it decouples logical structure from physical width: one unmodified launch spans a family of widths through changes in block placement and wave count. From this observation, we derive the parallel-structure invariant: for fixed-structure deterministic workloads, keeping each launch immutable makes its output bits independent of physical width. Guided by this invariant, Vitamin-E late-binds immutable launches to pooled physical contexts, preserving bitwise equality across allocations, whereas resource-driven reshaping can alter the selected token under temperature-zero greedy decoding. Across all workload--baseline comparisons, Vitamin-E achieves up to 3.50$\\times$ the aggregate normalized LLM training throughput, 62.5\\% lower inference p99 latency, and 1.43$\\times$ the background-training throughput. With the same mechanism, \\textsc{TPOT-First} reduces TPOT SLO violations by up to 46.1\\% over \\textsc{Throughput-Oriented} on three serving workloads, demonstrating mechanism effectiveness and policy flexibility.",
+    "url": "https://arxiv.org/abs/2603.15042",
+    "pdf_url": "https://arxiv.org/pdf/2603.15042",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Zhenyuan Yang",
+      "Wenxin Zheng",
+      "Mingyu Li",
+      "Haibo Chen"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.OS"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "cluster-resource",
+      "group": "Cluster & Resource Systems",
+      "group_zh": "集群与资源系统",
+      "leaf_id": "gpu-scheduling-virtualization",
+      "leaf": "GPU Scheduling & Virtualization",
+      "leaf_zh": "GPU 调度与虚拟化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "gpu scheduling",
+      "gpu sharing"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: gpu scheduling, gpu sharing",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "GPU sharing faces a determinism--utilization tradeoff: fixed bindings can strand capacity as demand fluctuates, while resource-driven kernel reshaping improves utilization by altering a launch's parallel structure, potentially changing output bits.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2603.15042",
+        "url": "https://arxiv.org/abs/2603.15042"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04496",
+    "title": "DIVE: Dynamic Iterative Visual Evidence Construction for Efficient Vision-Language Models",
+    "abstract": "Visual inputs in vision-language models (VLMs) are often encoded into substantially longer token sequences than text, making visual tokens a major bottleneck for efficient inference. Abundant recent methods address this bottleneck by scoring token importance and pruning low-scoring tokens in a single pass. However, one-shot scoring is insufficient because a token's prompt-relevant usefulness depends on the evidence already retained. Motivated by this insight, we introduce DIVE (Dynamic Iterative Visual Evidence Construction), a training-free framework that recasts visual-token pruning as dynamic evidence construction. DIVE repeatedly selects the remaining token with the highest residual-conditioned score, updates the visual and prompt residuals to discount the evidence already explained, and re-evaluates the remaining tokens. This select-update-re-evaluate process builds a retained set of complementary, prompt-relevant evidence. Experiments across eight image-understanding benchmarks show that DIVE consistently preserves performance across token budgets. With an 88.9% reduction in visual tokens, DIVE retains 98.2% of the uncompressed model's average performance. Code is available at https://github.com/Zhong-Chenchen/DIVE.git.",
+    "url": "https://arxiv.org/abs/2608.04496",
+    "pdf_url": "https://arxiv.org/pdf/2608.04496",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Chen Zhong",
+      "Xiao An",
+      "Zijie Wang",
+      "Jiepan Li",
+      "Guangyi Yang",
+      "Wei He"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/Zhong-Chenchen/DIVE.git",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 5,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Visual inputs in vision-language models (VLMs) are often encoded into substantially longer token sequences than text, making visual tokens a major bottleneck for efficient inference.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04496",
+        "url": "https://arxiv.org/abs/2608.04496"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04458",
+    "title": "Architectural Implications of Agentic AI Workflows",
+    "abstract": "Agentic AI is emerging in datacenters, but its architectural implications remain unexplored. We organize agentic workflows in a taxonomy and present its first architectural characterization with a production study at Microsoft Azure and a controlled study of open-source frameworks. We show that agentic execution is fragmented and heterogeneous. Requests expand into a workflow of LLM inferences, tool invocations, and orchestration decisions that repeatedly cross the CPU-GPU boundary. Our taxonomy explains how this fragmentation turns into resource demand. As orchestration and tools run on the host, the CPU sits on the critical path. Execution structure sets the load over time, which stays low with sudden spikes. Model composition sets how evenly the workflow uses the GPUs. Diversity in tasks and tools widens this range even further. These characteristics expose architectural mismatches of conventional uniform servers. Fragmented execution strands CPU and GPU capacity despite bursty demand. Different software roles make homogeneous CPU provisioning inefficient. Finally, multiplexing many agents onto shared cores degrades microarchitectural locality. Guided by our findings, we derive implications for agentic servers and examine them through Agora, our prototype for commodity servers. Agora dynamically harvests idle CPU cores for co-located throughput work, while protecting agentic tail latency against tool spikes. It oversubscribes GPU memory by placing more agents on each GPU, prefetching the next agent's state to hide swap latency. To match the machine to the heterogeneous roles, Agora pools cores by role and applies affinity-aware scheduling to restore locality. It automatically tunes mechanisms to the workload. Agora improves utilization and server throughput while preserving agent tail latency. Our insights also identify key directions for future server architectures for agentic AI.",
+    "url": "https://arxiv.org/abs/2608.04458",
+    "pdf_url": "https://arxiv.org/pdf/2608.04458",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Jirong Yang",
+      "Peizhe Liu",
+      "Chaojie Zhang",
+      "Jovan Stojkovic"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.AR",
+      "cs.OS"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "gpu memory"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 13,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: gpu memory",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Agentic AI is emerging in datacenters, but its architectural implications remain unexplored.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04458",
+        "url": "https://arxiv.org/abs/2608.04458"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.05033",
+    "title": "SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System",
+    "abstract": "Sparse matrix kernels are fundamental to scientific computing, graph analytics, and machine learning. Their GPU performance depends strongly on the input sparsity pattern and execution strategy. For the same SpMM on the same matrix, cuSPARSE exhibits a 350x performance gap between CSR and Blocked-ELL. Our study of multiple data formats, specialized systems, and sparse compilers shows that no single implementation consistently dominates across sparsity patterns and operators. This motivates a system that can adapt its representation, execution strategy, and hardware mapping to each workload and target GPU. We present SparseDitto, an LLM-based system that constructs a GPU kernel for each matrix, operator, and target GPU. SparseDitto supports SpMV, SpMM, and SpGEMM within a unified design framework. A lightweight additive model ranks established strategies using structural features of the input matrix. An architecture-aware planner then proposes several candidate designs. Coding and verification agents implement and refine them using measurements from the target GPU. Across three sparse operators and a diverse set of matrices, SparseDitto achieves a geometric-mean speedup of 2.68x over cuSPARSE on an NVIDIA RTX PRO 6000 GPU, with a maximum of 146.61x. On an NVIDIA H200 GPU, it achieves 2.79x, with a maximum of 78.5x. Its generated SpMM kernels also accelerate full-batch GCN training by up to 3.39x.",
+    "url": "https://arxiv.org/abs/2608.05033",
+    "pdf_url": "https://arxiv.org/pdf/2608.05033",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Shiyang Li",
+      "Guangyan Sun",
+      "Jinwei Tang",
+      "Yanzhi Wang",
+      "Mingyi Hong",
+      "Caiwen Ding"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "sparsity"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: sparsity",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Sparse matrix kernels are fundamental to scientific computing, graph analytics, and machine learning.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.05033",
+        "url": "https://arxiv.org/abs/2608.05033"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04962",
+    "title": "SpecRoll: Fast-Slow Verifier-Feedback Adaptation for Speculative Reinforcement Learning Rollouts",
+    "abstract": "Reinforcement learning (RL) post-training improves the reasoning capabilities of large language models, but autoregressive rollout generation remains a major efficiency bottleneck. Speculative decoding can accelerate generation, yet applying it during RL is difficult because the target policy continually evolves: static proposers become stale, while frequent drafter updates add substantial overhead. We introduce SpecRoll, a speculative rollout engine that preserves the target model's sampling distribution while adapting at two timescales. Lightweight future-token heads generate parallel proposals, while our proposed Reflex module uses delayed verifier feedback to perform bounded, trajectory-local hidden-state corrections without backpropagation. A complementary slow path updates the head parameters only when sustained degradation is detected. SpecRoll combines these mechanisms with concurrency-aware sparse-tree verification and exact target verification, leaving the target rollout distribution and GRPO objective unchanged. Across five models ranging from 1.5B to 14B and three mathematical reasoning datasets, SpecRoll achieves 1.26-2.15x generation speedup and 1.21-2.04x end-to-end speedup over vanilla GRPO. It also outperforms FastGRPO in both generation and end-to-end time across all 15 matched settings, with an average pairwise end-to-end gain of 1.18x. Controlled ablations show that the fast and slow adaptation paths provide complementary benefits. Our source code is available at https://anonymous.4open.science/r/SpecRoll-26062006.",
+    "url": "https://arxiv.org/abs/2608.04962",
+    "pdf_url": "https://arxiv.org/pdf/2608.04962",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Nhat Minh Pham",
+      "Duy Tung Doan",
+      "Thi Duyen Ngo",
+      "Vinh Van Nguyen",
+      "Khac-Hoai Nam Bui"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "speculative-decoding",
+      "leaf": "Speculative Decoding",
+      "leaf_zh": "推测解码"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "speculative decoding"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: speculative decoding",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Reinforcement learning (RL) post-training improves the reasoning capabilities of large language models, but autoregressive rollout generation remains a major efficiency bottleneck.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04962",
+        "url": "https://arxiv.org/abs/2608.04962"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2603.19636",
+    "title": "RiboSphere: Learning Unified and Efficient Representations of RNA Structures",
+    "abstract": "Accurate RNA structure modeling remains difficult because RNA backbones are highly flexible, non-canonical interactions are prevalent, and experimentally determined 3D structures are comparatively scarce. We introduce RiboSphere, a framework that learns discrete geometric representations of RNA by combining vector quantization with flow matching. Our design is motivated by the modular organization of RNA architecture: complex folds are composed from recurring structural motifs. RiboSphere uses a geometric transformer encoder trained using mean-centered coordinates and random rotation augmentation to produce geometry-aware features, which are discretized with finite scalar quantization (FSQ) into a finite vocabulary of latent codes. Conditioned on these discrete codes, a flow-matching decoder reconstructs atomic coordinates, enabling high-fidelity structure generation. We find that the learned code indices are enriched for specific RNA motifs, suggesting that the model captures motif-level compositional structure rather than acting as a purely compressive bottleneck. Across benchmarks, RiboSphere achieves strong performance in structure reconstruction (RMSD 1.25,{\\AA}, TM-score 0.84), and its pretrained discrete representations transfer effectively to inverse folding and RNA--ligand binding prediction, with robust generalization in data-scarce regimes. Code is available at https://github.com/Zhangz312/RiboSphere.",
+    "url": "https://arxiv.org/abs/2603.19636",
+    "pdf_url": "https://arxiv.org/pdf/2603.19636",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Zhou Zhang",
+      "Hanqun Cao",
+      "Cheng Tan",
+      "Fang Wu",
+      "Pheng Ann Heng",
+      "Tianfan Fu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/Zhangz312/RiboSphere",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Accurate RNA structure modeling remains difficult because RNA backbones are highly flexible, non-canonical interactions are prevalent, and experimentally determined 3D structures are comparatively scarce.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2603.19636",
+        "url": "https://arxiv.org/abs/2603.19636"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04035",
+    "title": "CheckOne: Lightweight Fault Detection and Mitigation for Vision Transformers",
+    "abstract": "The wide adoption of Vision Transformers (ViTs) in safety-critical applications raises reliability concerns related to hardware faults. Algorithm-Based Fault Tolerance (ABFT) methods have emerged as lightweight and symmetric protection mechanisms for DNNs. However, they are particularly challenging for ViTs due to their significant computational requirements. This work comprehensively evaluates the reliability of ViTs, emphasizing the need for symmetric protection in their layers. Furthermore, we present CheckOne, a novel, cost-effective method for fault detection and mitigation in ViTs that significantly reduces the computational cost compared to conventional ABFT. Through extensive experiments with multiple ViTs, CheckOne mitigates critical faults by up to $26\\times$ and achieves an average 3.8x higher performance than ABFT in ViTs.",
+    "url": "https://arxiv.org/abs/2608.04035",
+    "pdf_url": "https://arxiv.org/pdf/2608.04035",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Mohammad Hasan Ahmadilivani",
+      "Sven-Markus Loorits",
+      "Jaan Raik"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "fault-tolerance-elasticity",
+      "leaf": "Fault Tolerance & Elasticity",
+      "leaf_zh": "容错与弹性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "fault tolerance"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: fault tolerance",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "The wide adoption of Vision Transformers (ViTs) in safety-critical applications raises reliability concerns related to hardware faults.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04035",
+        "url": "https://arxiv.org/abs/2608.04035"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04074",
+    "title": "Spend Bits Where Queries Look: KV Cache Vector Quantization with Attention-Preserving Transforms",
+    "abstract": "Long-context LLM decoding reads the key-value (KV) cache at every step. Loading it takes longer than computing attention over it, so throughput is bandwidth-bound. Hence, reducing the cache size can raise both decoding speed and serving capacity. The challenge is to reduce cache size while preserving the attention products, keeping reconstruction cheap, and using a fixed per-token bit count. At two bits per element, the most competitive methods rely on orthogonal transforms. However, existing techniques are either data-oblivious or use the query statistics without deriving the transform from a distortion criterion. Moreover, they rely on transforms built on top of random or Hadamard rotations, which equalize variances across entries rather than compacting energy, and fixed-width scalar quantizers, which are suboptimal at low rates. In this paper, we formulate KV cache quantization as a transform coding problem in which distortion is the error in the attention products. We derive closed-form optimal transforms for keys and values from calibration statistics, under a high-resolution model. We show that the optimal key transform is not orthogonal and satisfies a generalized Parseval relation: the attention-aware distortion becomes mean-squared error (MSE) in the transform domain. Thus, we can use MSE-optimal vector quantizers applied directly to the transformed key coefficients. To meet the fixed-width layout requirement, we show that grouping coefficients into equal-volume partitions makes equal-size codebooks attain the variable-rate optimum under the same high-resolution model. At two bits per element, our method, termed NOVA-KV, recovers most of the long-context retrieval accuracy lost by scalar quantization methods at comparable throughput.",
+    "url": "https://arxiv.org/abs/2608.04074",
+    "pdf_url": "https://arxiv.org/pdf/2608.04074",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Samuel Fern\\'andez-Mendui\\~na",
+      "Amir Ziashahabi",
+      "Eduardo Pavez",
+      "Antonio Ortega",
+      "Salman Avestimehr"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.IT",
+      "eess.SP",
+      "math.IT"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [
+      "quantization-low-precision"
+    ],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 5,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Long-context LLM decoding reads the key-value (KV) cache at every step.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04074",
+        "url": "https://arxiv.org/abs/2608.04074"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04173",
+    "title": "Understanding Fault Tolerance of Adversarially Robust Pruned Models",
+    "abstract": "Deep neural networks (DNNs) deployed on resource-constrained neuromorphic hardware face three concurrent challenges: the need for model compression through pruning, vulnerability to adversarial input perturbations, and susceptibility to hardware-induced weight faults such as stuck-at-zero errors. While each of these factors has been studied in isolation, their combined effects on model reliability have received little attention. This paper presents an empirical investigation of how pruning, adversarial training, and hardware fault injection interact to affect the robustness of convolutional neural networks. Using a compact three-layer CNN trained on MNIST, we conduct three experiments: (1) comparing the fault tolerance of naturally and adversarially trained models under simultaneous hardware faults and adversarial attacks, (2) evaluating how pruning affects adversarial robustness, and (3) characterizing the joint accuracy surface across fault rates, adversarial perturbation magnitudes, and pruning levels. Our results show that adversarial training improves robustness against input perturbations but increases sensitivity to stuck-at-zero weight faults. Contrary to intuition, pruning did not significantly increase fault sensitivity, and varying the pruning level had little effect across fault rates and attack strengths. These results highlight the need to jointly consider adversarial robustness and hardware reliability.",
+    "url": "https://arxiv.org/abs/2608.04173",
+    "pdf_url": "https://arxiv.org/pdf/2608.04173",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Manali Dangarikar",
+      "Cory Merkel"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.CR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "fault-tolerance-elasticity",
+      "leaf": "Fault Tolerance & Elasticity",
+      "leaf_zh": "容错与弹性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "fault tolerance"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: fault tolerance",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Deep neural networks (DNNs) deployed on resource-constrained neuromorphic hardware face three concurrent challenges: the need for model compression through pruning, vulnerability to adversarial input perturbations, and susceptibility to hardware-induced weight faults such as stuck-at-zero errors.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04173",
+        "url": "https://arxiv.org/abs/2608.04173"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04460",
+    "title": "Tropical Algebraic Geometry for Neuronal Representations: An Arakelov-Green Measure Based Descriptor for Graph Learning",
+    "abstract": "The quantitative analysis of 3D neuronal morphologies requires capturing both graph topology and spatial geometry. Current message-passing Graph Neural Networks (GNNs) are bounded by the 1-Weisfeiler-Lehman (1-WL) test, limiting their ability to capture cycles induced by spatial proximities. To address this, we propose a training-free geometric prior based on tropical algebraic geometry. We apply the recently established tropical Abel-Jacobi transform and polarization distances to machine learning on tree-structured data. We introduce a structural transformation pipeline, comprising cycle space augmentation and quotient space construction, to convert spatial trees into cyclic metric graphs suitable for embedding into the Tropical Jacobian. Computing exact tropical polarization distances requires solving the NP-Hard Closest Vector Problem (CVP) on integer lattices. Instead of relying on explicit approximations with quantization errors (e.g., Babai's rounding), we adopt a continuous relaxation on the universal cover of the Albanese torus. We show that the discrete Arakelov-Green measure, computed in closed form via the graph Laplacian's generalized inverse, decomposes exactly into the intrinsic path metric minus the unquantized polarization distance on this cover, avoiding integer lattice searches. This metric yields two descriptors: eigenvectors provide node-level structural coordinates, and the permutation-invariant eigenvalue spectrum provides a graph-level signature. On the BREC benchmark, the eigenvector formulation demonstrates expressivity beyond the 1-WL limit. On 3D morphology datasets (ACT-4, JML-4, BIL-6), the spectrum seamlessly integrates into standard architectures (VAEs, GNNs, Tree-LSTMs) without additional trainable parameters, outperforming explicit lattice approximations and improving classification accuracy over existing spatial models.",
+    "url": "https://arxiv.org/abs/2608.04460",
+    "pdf_url": "https://arxiv.org/pdf/2608.04460",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Yuyang Zhang",
+      "Weihan Xu",
+      "Xuehai Zhou",
+      "Shucheng Cao",
+      "Qihuang Zhang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "The quantitative analysis of 3D neuronal morphologies requires capturing both graph topology and spatial geometry.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04460",
+        "url": "https://arxiv.org/abs/2608.04460"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.04502",
+    "title": "AFD-Ledger: Deployment Provisioning for Attention--FFN Disaggregation",
+    "abstract": "Attention--Feed-Forward Network (FFN) Disaggregation (AFD) is emerging as a promising architecture for serving Mixture-of-Experts (MoE) language models. While existing AFD systems improve the efficiency of disaggregated execution, they leave a deployment question unanswered: under the same model, workload, time-per-output-token (TPOT) service-level objective (SLO), hardware budget, hardware catalog, and runtime capabilities, does AFD provide higher throughput than the best collocated deployment? Answering this question requires jointly optimizing hardware assignment and deployment organization for both architectures, making exhaustive provisioning prohibitively expensive. We present AFD-Ledger, an offline analytical provisioning system that independently provisions AFD and collocated deployments using an analytical execution model and an evaluation-bounded hardware search. Across deployment spaces where exhaustive provisioning is feasible, AFD-Ledger reduces complete deployment evaluations by 68.8%--83.5% while still recovering the globally optimal deployment. On three physical LongCat 2.0 deployments, it preserves the correct architecture decision while predicting AFD-to-collocated throughput within 6.6%--9.6% of measurement. Using this validated framework, we show that homogeneous AFD improves fixed-budget throughput in only a minority of the studied settings, heterogeneous AFD requires deployment-level hardware complementarity rather than heuristic device selection, and role-specific hardware improvements matter primarily when they enable better deployment organizations by crossing deployment capability--price boundaries.",
+    "url": "https://arxiv.org/abs/2608.04502",
+    "pdf_url": "https://arxiv.org/pdf/2608.04502",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Chengyu Qiu",
+      "Xiao Fu",
+      "Fengcun Li",
+      "Yulei Qian",
+      "Yuchen Xie",
+      "Xunliang Cai",
+      "Yingdi Shan",
+      "Yongwei Wu",
+      "Mingxing Zhang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "multitenancy-slo-reliability",
+      "leaf": "Multi-tenancy, SLO & Reliability",
+      "leaf_zh": "多租户、SLO 与可靠性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "slo"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: slo",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Attention--Feed-Forward Network (FFN) Disaggregation (AFD) is emerging as a promising architecture for serving Mixture-of-Experts (MoE) language models.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-06T05:33:34+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.04502",
+        "url": "https://arxiv.org/abs/2608.04502"
+      }
+    ]
+  },
+  {
     "id": "arxiv:2608.03796",
     "title": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
     "abstract": "Small language models are often the only option for deployment under tight latency, cost, and on-premises constraints, but they are rarely trained from scratch: a compressed model is usually recovered through knowledge distillation (KD). This recovery step largely decides the final quality, yet it is expensive. We present a practitioner's study of how to make distillation training efficient, organised around two systems contributions. First, we show that offline KD (caching the teacher's top-$K$ logits once and training the student against the cache) matches online distillation at near-identical training loss while removing the teacher from memory, running about 29\\% faster per iteration, and reaching up to 41\\% higher throughput on a single H200 GPU. Second, we introduce a \\emph{fused, chunked KL loss} that never materialises the full vocabulary-sized logit tensor, making peak memory linear in the sequence length. This removes the memory spike that otherwise caps context length and lets us train at four times the context (32{,}768 tokens) on a single GPU. A separate output-head-only toy benchmark isolates the loss kernel and confirms its memory and iteration-rate scaling from 4K to 256K tokens. Together these make large-scale healing and hundreds of ablations affordable. We also report supporting ablations on loss design and sequence packing. We release our chunked-loss implementation: https://github.com/CompactifAI/Full-Chunked-KL-Loss.",
     "url": "https://arxiv.org/abs/2608.03796",
     "pdf_url": "https://arxiv.org/pdf/2608.03796",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Bakbergen Ryskulov",
       "Iker Garc\\'ia-Ferrero",
@@ -65,7 +1152,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -140,7 +1227,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -159,7 +1246,7 @@
     "url": "https://arxiv.org/abs/2607.29397",
     "pdf_url": "https://arxiv.org/pdf/2607.29397",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Jim Zhao",
       "Sohir Maskey",
@@ -213,7 +1300,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -294,7 +1381,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -366,7 +1453,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -383,7 +1470,7 @@
     "url": "https://arxiv.org/abs/2608.03083",
     "pdf_url": "https://arxiv.org/pdf/2608.03083",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Mengjie Zhang",
       "Qihui Zhu",
@@ -402,8 +1489,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.CV",
-      "cs.CL"
+      "cs.CL",
+      "cs.CV"
     ],
     "doi": "",
     "venue": "",
@@ -445,7 +1532,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -523,7 +1610,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -540,7 +1627,7 @@
     "url": "https://arxiv.org/abs/2608.04007",
     "pdf_url": "https://arxiv.org/pdf/2608.04007",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Changle Qu",
       "Sunhao Dai",
@@ -553,8 +1640,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.CL",
-      "cs.AI"
+      "cs.AI",
+      "cs.CL"
     ],
     "doi": "",
     "venue": "",
@@ -596,7 +1683,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -613,7 +1700,7 @@
     "url": "https://arxiv.org/abs/2608.02975",
     "pdf_url": "https://arxiv.org/pdf/2608.02975",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Bhavin Jawade",
       "Cameron R. Wolfe"
@@ -665,7 +1752,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -735,7 +1822,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -752,7 +1839,7 @@
     "url": "https://arxiv.org/abs/2607.12787",
     "pdf_url": "https://arxiv.org/pdf/2607.12787",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Kaiwen Zheng",
       "Junchen Fu",
@@ -809,7 +1896,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -826,7 +1913,7 @@
     "url": "https://arxiv.org/abs/2608.02703",
     "pdf_url": "https://arxiv.org/pdf/2608.02703",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "\\c{S}uayp Talha Kocabay",
       "Talha R\\\"uzgar Akku\\c{s}",
@@ -880,7 +1967,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -897,7 +1984,7 @@
     "url": "https://arxiv.org/abs/2608.02625",
     "pdf_url": "https://arxiv.org/pdf/2608.02625",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Brian K Chen",
       "Chong Wu",
@@ -906,8 +1993,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.CL",
-      "cs.AI"
+      "cs.AI",
+      "cs.CL"
     ],
     "doi": "",
     "venue": "",
@@ -949,7 +2036,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -966,7 +2053,7 @@
     "url": "https://arxiv.org/abs/2608.03854",
     "pdf_url": "https://arxiv.org/pdf/2608.03854",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Anton Rasmussen",
       "Hong Qin"
@@ -1018,7 +2105,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1094,7 +2181,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1111,7 +2198,7 @@
     "url": "https://arxiv.org/abs/2608.03929",
     "pdf_url": "https://arxiv.org/pdf/2608.03929",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Yuanshen Guan",
       "Zipeng Feng",
@@ -1121,8 +2208,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.CV"
+      "cs.CV",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -1164,7 +2251,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1181,7 +2268,7 @@
     "url": "https://arxiv.org/abs/2605.30580",
     "pdf_url": "https://arxiv.org/pdf/2605.30580",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Nirajan Paudel",
       "Michael Ginn",
@@ -1235,7 +2322,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1309,7 +2396,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1326,7 +2413,7 @@
     "url": "https://arxiv.org/abs/2608.02942",
     "pdf_url": "https://arxiv.org/pdf/2608.02942",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Xiaocheng Lu",
       "Hualei Zhang",
@@ -1385,7 +2472,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1402,7 +2489,7 @@
     "url": "https://arxiv.org/abs/2608.03610",
     "pdf_url": "https://arxiv.org/pdf/2608.03610",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Yuan Xie",
       "Jiaqi Song",
@@ -1458,7 +2545,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1529,7 +2616,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1603,7 +2690,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1620,7 +2707,7 @@
     "url": "https://arxiv.org/abs/2608.02901",
     "pdf_url": "https://arxiv.org/pdf/2608.02901",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Malik Khalaf",
       "Yara Shamshoum",
@@ -1676,7 +2763,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1748,7 +2835,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1815,7 +2902,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1884,7 +2971,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1955,7 +3042,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2029,7 +3116,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2104,7 +3191,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2173,7 +3260,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2190,15 +3277,15 @@
     "url": "https://arxiv.org/abs/2607.28639",
     "pdf_url": "https://arxiv.org/pdf/2607.28639",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Plawan Kumar Rath"
     ],
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.CL",
       "cs.AI",
+      "cs.CL",
       "cs.CY"
     ],
     "doi": "",
@@ -2241,7 +3328,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2313,7 +3400,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2391,7 +3478,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2460,7 +3547,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2542,7 +3629,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2559,7 +3646,7 @@
     "url": "https://arxiv.org/abs/2608.03930",
     "pdf_url": "https://arxiv.org/pdf/2608.03930",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Jo-Ku Cheng",
       "Nikolaos Aletras",
@@ -2613,7 +3700,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2683,7 +3770,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2751,7 +3838,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2825,7 +3912,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2905,7 +3992,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2922,7 +4009,7 @@
     "url": "https://arxiv.org/abs/2608.02947",
     "pdf_url": "https://arxiv.org/pdf/2608.02947",
     "published": "2026-08-05",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Shun-ichiro Hayashi",
       "Daichi Mukunoki",
@@ -2975,7 +4062,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3052,7 +4139,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3120,7 +4207,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3195,7 +4282,7 @@
     "limitations_zh": "摘要未说明真实流片、仿真精度、模型规模和对比系统配置；3D 集成、FeFET 成熟度及动态路由下的热设计成本仍需结合正文和硬件实现核验。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -3270,7 +4357,7 @@
     "limitations_zh": "摘要未给出具体基准、GPU、绝对通过率、编译成本或代码链接；该工作主要提高 Kernel 生成模型的训练效率，并不直接证明生成 Kernel 的端到端运行时优势。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -3349,7 +4436,7 @@
     "limitations_zh": "当前元数据只说明将发布代码，尚未发现 Artifact；收益依赖具体硬件、模型和缩放策略，而且工作聚焦训练效率，不能等同于部署阶段的 FP8 推理收益。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -3420,7 +4507,7 @@
     "limitations_zh": "仅覆盖单一消费级 GPU、固定提示集和 2Hz 功耗采样；内部推理长度会混淆每提示能耗，结论尚不能直接外推到数据中心 GPU 或在线并发负载。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -3492,7 +4579,7 @@
     "limitations_zh": "5.3× 结果依赖尚未商品化的专用 SIMT Core及 70% 双稀疏；需进一步核验稀疏化精度损失、格式转换、不同模型形状和批量负载下的端到端收益。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -3565,7 +4652,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3632,7 +4719,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3700,7 +4787,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3776,7 +4863,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3850,7 +4937,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3919,7 +5006,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3988,7 +5075,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4068,7 +5155,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4137,7 +5224,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4207,7 +5294,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4281,7 +5368,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4348,7 +5435,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4422,7 +5509,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4491,7 +5578,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4565,7 +5652,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4644,7 +5731,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4715,7 +5802,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4732,7 +5819,7 @@
     "url": "https://arxiv.org/abs/2608.02139",
     "pdf_url": "https://arxiv.org/pdf/2608.02139",
     "published": "2026-08-04",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Shijie Ren",
       "Xiting Wang",
@@ -4793,7 +5880,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4863,7 +5950,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4933,7 +6020,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5000,7 +6087,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5072,7 +6159,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5142,7 +6229,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5213,7 +6300,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5286,7 +6373,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5355,7 +6442,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5428,7 +6515,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5502,7 +6589,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5575,7 +6662,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5643,7 +6730,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5716,7 +6803,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5788,7 +6875,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5858,7 +6945,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5925,7 +7012,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5997,7 +7084,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6067,7 +7154,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6084,7 +7171,7 @@
     "url": "https://arxiv.org/abs/2608.00837",
     "pdf_url": "https://arxiv.org/pdf/2608.00837",
     "published": "2026-08-04",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Kenny Shao"
     ],
@@ -6134,7 +7221,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6204,7 +7291,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6272,7 +7359,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6344,7 +7431,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6422,7 +7509,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6495,7 +7582,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6571,7 +7658,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6643,7 +7730,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6721,7 +7808,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6790,7 +7877,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6867,7 +7954,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6935,7 +8022,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7008,7 +8095,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7081,7 +8168,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7155,7 +8242,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7225,7 +8312,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7298,7 +8385,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7368,7 +8455,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7450,7 +8537,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7523,7 +8610,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7591,7 +8678,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7667,7 +8754,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7738,7 +8825,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7804,7 +8891,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7877,7 +8964,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7954,7 +9041,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8025,7 +9112,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8094,7 +9181,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8165,7 +9252,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8236,7 +9323,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8310,7 +9397,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8377,7 +9464,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8457,7 +9544,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8529,7 +9616,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8598,7 +9685,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8668,7 +9755,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8741,7 +9828,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8811,7 +9898,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8881,7 +9968,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8955,7 +10042,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9065,7 +10152,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9082,7 +10169,7 @@
     "url": "https://arxiv.org/abs/2608.01867",
     "pdf_url": "https://arxiv.org/pdf/2608.01867",
     "published": "2026-08-04",
-    "updated": "2026-08-05",
+    "updated": "2026-08-06",
     "authors": [
       "Haosi Mo",
       "Zihao Yan",
@@ -9137,7 +10224,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-05T05:32:02+00:00",
+    "last_seen": "2026-08-06T05:33:34+00:00",
     "featured_weeks": [],
     "source_records": [
       {

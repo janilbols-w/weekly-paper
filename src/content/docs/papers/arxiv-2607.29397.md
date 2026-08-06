@@ -39,7 +39,7 @@ Deploying large language models in realistic server environments poses challenge
 ## 元数据
 
 - 作者：Jim Zhao, Sohir Maskey, Koen Oostermeijer, Douglas Orr, Teryn Jones
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
