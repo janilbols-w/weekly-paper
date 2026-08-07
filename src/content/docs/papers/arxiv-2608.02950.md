@@ -39,7 +39,7 @@ Checkpoint staffing requires accurate forecasts of when screening demand will oc
 ## 元数据
 
 - 作者：Yinxiao Zhang, Sen Wang, Yi Gao
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-03；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

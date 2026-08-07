@@ -4,7 +4,7 @@
   "abstract": "Attention--Feed-Forward Network (FFN) Disaggregation (AFD) is emerging as a promising architecture for serving Mixture-of-Experts (MoE) language models. While existing AFD systems improve the efficiency of disaggregated execution, they leave a deployment question unanswered: under the same model, workload, time-per-output-token (TPOT) service-level objective (SLO), hardware budget, hardware catalog, and runtime capabilities, does AFD provide higher throughput than the best collocated deployment? Answering this question requires jointly optimizing hardware assignment and deployment organization for both architectures, making exhaustive provisioning prohibitively expensive. We present AFD-Ledger, an offline analytical provisioning system that independently provisions AFD and collocated deployments using an analytical execution model and an evaluation-bounded hardware search. Across deployment spaces where exhaustive provisioning is feasible, AFD-Ledger reduces complete deployment evaluations by 68.8%--83.5% while still recovering the globally optimal deployment. On three physical LongCat 2.0 deployments, it preserves the correct architecture decision while predicting AFD-to-collocated throughput within 6.6%--9.6% of measurement. Using this validated framework, we show that homogeneous AFD improves fixed-budget throughput in only a minority of the studied settings, heterogeneous AFD requires deployment-level hardware complementarity rather than heuristic device selection, and role-specific hardware improvements matter primarily when they enable better deployment organizations by crossing deployment capability--price boundaries.",
   "url": "https://arxiv.org/abs/2608.04502",
   "pdf_url": "https://arxiv.org/pdf/2608.04502",
-  "published": "2026-08-06",
+  "published": "2026-08-05",
   "updated": "2026-08-06",
   "authors": [
     "Chengyu Qiu",
@@ -20,13 +20,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.DC",
-    "cs.AI"
+    "cs.AI",
+    "cs.DC"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "14 pages, 14 figures, 2 tables",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -63,9 +63,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-06T05:33:34+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.04502v1",
+      "url": "http://arxiv.org/abs/2608.04502v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.04502",

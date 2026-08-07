@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2608.01130",
+  "title": "When Do Surrogate Updates Improve Decisions? A Local Theory of Trajectory-Wise Transfer",
+  "abstract": "A broad range of models face the mismatch where they are updated through trajectory losses but are evaluated by downstream task reward. Here, a trajectory is a training instance that induces a surrogate loss whose reduction might not track the model's decision utility update. Theoretically, we ask when one step of trajectory training reduces both population surrogate loss and decision risk, and how transfer accumulates along repeated updates. To formalize this, we first fix a checkpoint and a restricted update space, and define the reductions in population surrogate risk and decision risk induced by a trajectory as its learnability and decision utility, respectively. On this basis, our theory yields four main results. First, a one-step transfer bound separates their discrepancy into first-order gradient misalignment after nonnegative calibration and second-order curvature; and a pathwise extension accumulates the same terms over repeated updates. Second, when the accessible surrogate gradient is nonzero, universal first-order transfer over every accessible direction holds exactly when the accessible surrogate and decision gradients are positively collinear. Third, the calibration gap bounds the decision regret of learnability-based trajectory selection, while a candidate-difference refinement tightens this guarantee by retaining only directions that affect pairwise rankings. Finally, we establish an approximation--calibration trade-off across nested update spaces. Controlled gridworld and LLM post-training experiments yield results consistent with our predictions.",
+  "url": "http://arxiv.org/abs/2608.01130v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.01130v1",
+  "published": "2026-08-02",
+  "updated": "2026-08-02",
+  "authors": [
+    "Yuyang Shen"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "22 pages in total, including references and appendices; 3 composite figures (9 panels) and 4 tables. Code is available at https://github.com/Ethan-Shen-Individual-Lab/surrogate-to-decision-transfer",
+  "code_url": "https://github.com/Ethan-Shen-Individual-Lab/surrogate-to-decision-transfer",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "A broad range of models face the mismatch where they are updated through trajectory losses but are evaluated by downstream task reward.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-07T05:08:23+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.01130v1",
+      "url": "http://arxiv.org/abs/2608.01130v1"
+    }
+  ]
+}

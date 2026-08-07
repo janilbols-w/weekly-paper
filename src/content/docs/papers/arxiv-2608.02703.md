@@ -38,8 +38,8 @@ Weight-only quantization substantially reduces the storage of large language mod
 
 ## 元数据
 
-- 作者：\c{S}uayp Talha Kocabay, Talha R\"uzgar Akku\c{s}, Kamer Ali Yuksel
-- 发布：2026-08-05；更新：2026-08-06
+- 作者：Şuayp Talha Kocabay, Talha Rüzgar Akkuş, Kamer Ali Yuksel
+- 发布：2026-08-03；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/suayptalha/archead](https://github.com/suayptalha/archead)
 - 阅读深度：metadata

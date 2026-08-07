@@ -39,7 +39,7 @@ Sparse attention is widely deployed in long-context serving stacks, yet no frame
 ## 元数据
 
 - 作者：Xingyu Ren, Youran Sun, Chugang Yi, Haizhao Yang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

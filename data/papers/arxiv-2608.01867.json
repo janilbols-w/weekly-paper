@@ -4,7 +4,7 @@
   "abstract": "Large language models (LLMs) are increasingly extended into deep search agents that solve complex questions through multi-step interaction with external search and browsing tools. However, existing agents often incur substantial computational and interaction costs, generating lengthy trajectories that contain redundant queries, inefficient exploration, and irrelevant observations. Existing efficiency-oriented methods usually encourage agents to use tools less frequently, but treating all tool interactions uniformly may also suppress steps that gather necessary evidence. In this paper, we propose CRISP, a framework for training efficient deep search agents through critical step perception. Unlike prior efficiency methods that uniformly penalize tool use, CRISP distinguishes interactions that gather necessary evidence from redundant ones and shapes the training reward to preserve the former while pruning the latter, improving efficiency without sacrificing the evidence needed for correct answers. Specifically, CRISP first constructs critical-step labels with Backward Evidence Induction: starting from the final answer, a strong model traverses a completed search trajectory backward and judges whether each tool-interaction step provides or preserves evidence for the final answer. We then distill these step-wise judgments into a smaller critical-step recognizer, enabling full-trajectory analysis in a single pass. During policy optimization, an efficiency-aware reward is applied only to successful rollouts. Experiments on BrowseComp and HLE-Verified show that CRISP maintains competitive final-answer accuracy while reducing average interaction turns by 15.1% and 33.2%, respectively, demonstrating substantial improvements in interaction efficiency.",
   "url": "https://arxiv.org/abs/2608.01867",
   "pdf_url": "https://arxiv.org/pdf/2608.01867",
-  "published": "2026-08-04",
+  "published": "2026-08-03",
   "updated": "2026-08-06",
   "authors": [
     "Haosi Mo",
@@ -23,7 +23,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "15 pages, 6 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-05T02:30:52+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.01867v2",
+      "url": "http://arxiv.org/abs/2608.01867v2"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.01867",

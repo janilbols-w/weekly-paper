@@ -3,7 +3,7 @@ title: "ET-Prune: Evidence-Aware Dynamic Budgeting for Visual Token Pruning in T
 description: "Visual token pruning reduces the inference cost of multimodal large language models, but a fixed token ratio is poorly matched to text-rich inputs."
 ---
 
-**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：47/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2608.01979) · [PDF](https://arxiv.org/pdf/2608.01979)
 
@@ -27,19 +27,19 @@ Visual token pruning reduces the inference cost of multimodal large language mod
 | novelty | 5 |
 | rigor | 9 |
 | practical impact | 7 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: pruning
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Zizhong Ding, Junxian Li, Kai Liu, Shaoqiu Zhang, Xiao Xiao, Linghe Kong, Yulun Zhang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/Labyrinth0419/ET-Prune](https://github.com/Labyrinth0419/ET-Prune)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Prefix Key-Value (KV) reuse avoids repeated prefill in Large Language Model (LLM
 ## 元数据
 
 - 作者：Zhiyu Wang, Rajkumar Buyya
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

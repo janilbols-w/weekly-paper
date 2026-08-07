@@ -39,7 +39,7 @@ Language model benchmarking is a difficult task. Outcome reasoning alone does no
 ## 元数据
 
 - 作者：Tyler Ashoff, Jordan Rodu
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

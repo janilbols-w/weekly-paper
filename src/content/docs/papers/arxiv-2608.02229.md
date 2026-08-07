@@ -38,8 +38,8 @@ Classical neural networks frequently produce overconfident predictions on ambigu
 
 ## 元数据
 
-- 作者：Hendrik Borras, Xiao Wang, Bernhard Klein, Robin Janssen, Frank Br\"uckerhoff-Pl\"uckelmann, Wolfram Pernice, Holger Fr\"oning
-- 发布：2026-08-04；更新：2026-08-04
+- 作者：Hendrik Borras, Xiao Wang, Bernhard Klein, Robin Janssen, Frank Brückerhoff-Plückelmann, Wolfram Pernice, Holger Fröning
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

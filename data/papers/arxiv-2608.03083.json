@@ -4,7 +4,7 @@
   "abstract": "Video large language models (VideoLLMs) achieve strong video understanding performance, but their inference remains expensive due to the large number of redundant spatio-temporal visual tokens in long videos. Existing token pruning methods alleviate this cost by reducing redundant tokens, yet most of them rely on segment-level local pruning, where videos are partitioned into isolated segments and tokens are selected independently within each segment. Such designs may under-preserve short but semantically dense segments and discard tokens that appear non-salient locally but remain critical from a global perspective. To address this issue, we propose GSTEP (Global Spatio-Temporal Density Pruning), a plug-and-play pruning framework that models video as a continuous spatio-temporal information flow. GSTEP constructs a token-level spatio-temporal density by combining a continuous temporal density, obtained from a smoothed centered frame-level change signal, with intra-frame spatial density, and then performs global token sampling by jointly balancing information density and coverage. Extensive experiments on multiple VideoLLMs and public benchmarks demonstrate that GSTEP consistently achieves strong accuracy-efficiency trade-offs and generalizes well across model architectures and evaluation settings. On LLaVA-OneVision-7B, GSTEP prunes 75% of visual tokens, preserves up to 100.2% of the original average performance across benchmarks, and achieves a 1.17 end-to-end speedup.",
   "url": "https://arxiv.org/abs/2608.03083",
   "pdf_url": "https://arxiv.org/pdf/2608.03083",
-  "published": "2026-08-05",
+  "published": "2026-08-04",
   "updated": "2026-08-06",
   "authors": [
     "Mengjie Zhang",
@@ -30,7 +30,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "4 figures, accepted to ACM MM 26'",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -67,9 +67,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-05T05:32:02+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.03083v1",
+      "url": "http://arxiv.org/abs/2608.03083v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.03083",

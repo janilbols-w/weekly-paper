@@ -4,7 +4,7 @@
   "abstract": "Omni models unify text, speech, image, and multimodal reasoning in a single serving backend, but this unified deployment exposes a new scheduling problem. Requests with different output modalities may share an initial multimodal backbone and then diverge into downstream generation stages, creating heterogeneous first-response metrics and service-level objective (SLO) targets on the same GPU. Existing large language model (LLM) and multimodal serving systems mainly optimize token progress or input-side processing, and they do not jointly control temporal sharing in the shared stage and spatial sharing among co-running stages. This paper presents HorizonServe, a single-GPU omni-model serving system that coordinates request admission and GPU allocation under heterogeneous SLOs. HorizonServe profiles per-class first-response latency, protects requests with limited slack, rotates shared-stage opportunities across execution paths, and throttles the shared-stage streaming multiprocessor (SM) allocation when downstream stages are active. Across three omni-model workloads and two GPU platforms, HorizonServe improves SLO attainment by up to 4.9$\\times$ in arrival-rate sweeps and 7.0$\\times$ under downstream-heavy traffic, and reduces per-class first-response latency by 38.4--63.7\\%.",
   "url": "https://arxiv.org/abs/2608.01785",
   "pdf_url": "https://arxiv.org/pdf/2608.01785",
-  "published": "2026-08-04",
+  "published": "2026-08-03",
   "updated": "2026-08-04",
   "authors": [
     "Yuning Zhang",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-05T02:30:52+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.01785v1",
+      "url": "http://arxiv.org/abs/2608.01785v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.01785",

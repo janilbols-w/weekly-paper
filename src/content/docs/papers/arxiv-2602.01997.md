@@ -39,7 +39,7 @@ Recent work has shown that layer pruning can effectively compress large language
 ## 元数据
 
 - 作者：Safal Shrestha, Anubhav Shrestha, Minwu Kim, Aadim Nepal, Keith Ross
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-05；更新：2026-08-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

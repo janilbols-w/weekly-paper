@@ -38,8 +38,8 @@ Long-context LLM decoding reads the key-value (KV) cache at every step. Loading 
 
 ## 元数据
 
-- 作者：Samuel Fern\'andez-Mendui\~na, Amir Ziashahabi, Eduardo Pavez, Antonio Ortega, Salman Avestimehr
-- 发布：2026-08-06；更新：2026-08-06
+- 作者：Samuel Fernández-Menduiña, Amir Ziashahabi, Eduardo Pavez, Antonio Ortega, Salman Avestimehr
+- 发布：2026-08-04；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

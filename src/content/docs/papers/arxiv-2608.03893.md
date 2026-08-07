@@ -39,7 +39,7 @@ Production deployments often swap between different-sized models in a family for
 ## 元数据
 
 - 作者：Taekyung Heo, Rasoul Shafipour, Ritchie Zhao, Maximilian Golub, Mohammad Mahdi Kamani, Ritika Borkar, Makesh Tarun Chandran, Pantea Zardoshti, Bita Darvish Rouhani
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-04；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

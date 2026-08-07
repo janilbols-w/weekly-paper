@@ -39,7 +39,7 @@ Analog compute-in-memory (CIM) enables energy-efficient neural network inference
 ## 元数据
 
 - 作者：Yizhe Chen, Wenshuai Yao, Saiya Wang, Yuannuo Feng, Wenbo Qi, Kechao Tang, Ngai Wong, Wenyong Zhou, Wang Kang
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-03；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

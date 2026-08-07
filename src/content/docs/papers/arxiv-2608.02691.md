@@ -39,7 +39,7 @@ The key-value (KV) cache has become a major memory and bandwidth bottleneck in l
 ## 元数据
 
 - 作者：Vincent-Daniel Yun, Woosang Lim, Minsoo Cheong, Sunwoo Lee, Murali Annavaram, Sai Praneeth Karimireddy, Sungjoo Yoo
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-03；更新：2026-08-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ We propose ScaleQ-1.58, a scalable ternary post-training quantization (PTQ) fram
 ## 元数据
 
 - 作者：Shigeng Wang, Chao Li, Yangyuxuan Kang, Jiawei Fan, Anbang Yao
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-02；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/IntelChina-AI/BitTern](https://github.com/IntelChina-AI/BitTern)
 - 阅读深度：metadata

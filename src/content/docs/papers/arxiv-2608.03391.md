@@ -3,7 +3,7 @@ title: "TimeRLM: Recursive Language Models Enable Precise Anomaly Localization i
 description: "Precise anomaly localization over long-context time series is a crucial task in monitoring applications across clinical care, industrial operations, financial services, and logistics, where brief evidence may hide inside long spans of high-frequency data."
 ---
 
-**评分：38/100** · AI 基础设施 > 服务平台 > 可观测性与 Benchmark
+**评分：46/100** · AI 基础设施 > 服务平台 > 可观测性与 Benchmark
 
 [论文原文](https://arxiv.org/abs/2608.03391) · [PDF](https://arxiv.org/pdf/2608.03391)
 
@@ -25,21 +25,21 @@ Precise anomaly localization over long-context time series is a crucial task in 
 |---|---:|
 | relevance | 12 |
 | novelty | 5 |
-| rigor | 11 |
+| rigor | 13 |
 | practical impact | 5 |
-| reproducibility | 2 |
+| reproducibility | 8 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: observability
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Nicolas Zumarraga, Lorenzo Steno, Ning Wang, Max Rosenblattl, Thomas Kaar, Maxwell A. Xu, Kevin O'Sullivan, Markus Kreft, Elgar Fleisch, Paul Schmiedmayer, Patrick Langer, Robert Jakob
-- 发布：2026-08-05；更新：2026-08-05
+- 发布：2026-08-04；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/OpenTSLM/TimeRLM](https://github.com/OpenTSLM/TimeRLM)
 - 阅读深度：metadata

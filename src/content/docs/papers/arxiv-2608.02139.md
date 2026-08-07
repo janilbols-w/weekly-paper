@@ -39,7 +39,7 @@ Large language models (LLMs) capable of self-improvement require not only effect
 ## 元数据
 
 - 作者：Shijie Ren, Xiting Wang, Meng Li, Yujie Guo, Yunhang Yao, Ziheng Peng, Xunlong Wang, Yuetan Chen, Haoyang Zhou, Yunlong Liang, Fandong Meng
-- 发布：2026-08-04；更新：2026-08-06
+- 发布：2026-08-03；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/rrrsj/SPEE](https://github.com/rrrsj/SPEE)
 - 阅读深度：metadata

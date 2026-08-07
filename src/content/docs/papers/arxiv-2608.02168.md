@@ -39,7 +39,7 @@ Credit risk detection, particularly mitigating individual fraud, is crucial for 
 ## 元数据
 
 - 作者：Xin Liu, Xiyuan Chen, Chenglong Wu, Xuan Zong, Jun Zhou, Dawei Cheng
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ On-policy distillation (OPD) samples trajectories from the current student polic
 ## 元数据
 
 - 作者：Leyan Xue, Feng Xiong, Mingjun Ma, Changqing Zhang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-04；更新：2026-08-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

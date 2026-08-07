@@ -1,19 +1,19 @@
 ---
 title: "Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference"
-description: "Celty 针对权重与激活双稀疏形成的 SpMspV 负载，协同设计 RLC-CSC 压缩格式、GPU Kernel 和稀疏 SIMT Core；软件 Kernel 相比 cuBLAS 最高 2.8×，专用核心在 70% 稀疏度下最高 5.3×。"
+description: "Large Language Models (LLMs) increasingly rely on sparsity to reduce inference cost, but most prior work targets a single sparsity source-either weight or activation-and optimizes for batched multi-user inference."
 ---
 
-**评分：50/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
+**评分：55/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
 
 [论文原文](https://arxiv.org/abs/2608.01536) · [PDF](https://arxiv.org/pdf/2608.01536)
 
 ## 一句话摘要
 
-Celty 针对权重与激活双稀疏形成的 SpMspV 负载，协同设计 RLC-CSC 压缩格式、GPU Kernel 和稀疏 SIMT Core；软件 Kernel 相比 cuBLAS 最高 2.8×，专用核心在 70% 稀疏度下最高 5.3×。
+Large Language Models (LLMs) increasingly rely on sparsity to reduce inference cost, but most prior work targets a single sparsity source-either weight or activation-and optimizes for batched multi-user inference.
 
 ## 为什么值得关注
 
-单用户解码难以靠大 Batch 隐藏访存开销，双稀疏又不适配现有 GPU Kernel；该工作展示了数据格式、软件 Kernel 与微架构共同设计的潜在上限。
+待编辑增强。
 
 ## 摘要原文
 
@@ -27,20 +27,19 @@ Large Language Models (LLMs) increasingly rely on sparsity to reduce inference c
 | novelty | 6 |
 | rigor | 7 |
 | practical impact | 16 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: gpu kernel
 - quantitative claim detected
-- no code link detected in metadata
-- 限制：5.3× 结果依赖尚未商品化的专用 SIMT Core及 70% 双稀疏；需进一步核验稀疏化精度损失、格式转换、不同模型形状和批量负载下的端到端收益。
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Ruokai Yin, Priyadarshini Panda
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-02；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
-- 阅读深度：abstract
+- 代码：[https://github.com/RuokaiYin/Celty](https://github.com/RuokaiYin/Celty)
+- 阅读深度：metadata

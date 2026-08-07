@@ -38,8 +38,8 @@ While modern tabular learners excel at capturing statistical patterns, they freq
 
 ## 元数据
 
-- 作者：G\"unther Schindler, Maximilian Schambach, Johannes H\"ohne
-- 发布：2026-08-05；更新：2026-08-05
+- 作者：Günther Schindler, Maximilian Schambach, Johannes Höhne
+- 发布：2026-08-04；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

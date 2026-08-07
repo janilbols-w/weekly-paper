@@ -39,7 +39,7 @@ Large language model agents are commonly trained through reinforcement learning 
 ## 元数据
 
 - 作者：Yi Yang, Cong Qin, Xiaodan Liu, Chishui Chen, Qing Dong, Yan Zhang, Cao Liu, Zhao Yang, Lu Pan, Jiaye Lin, Yi Feng
-- 发布：2026-08-06；更新：2026-08-06
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/yiy1x/OCSD](https://github.com/yiy1x/OCSD)
 - 阅读深度：metadata

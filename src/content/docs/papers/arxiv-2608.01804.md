@@ -1,6 +1,6 @@
 ---
 title: "LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation"
-description: "LEAP 面向 CUDA Kernel 生成的多轮强化学习，用难度条件剪枝跳过过易或灾难性任务，并以组内排序奖励缓解二值验证稀疏、编译反馈昂贵和多轮奖励稀释问题。"
+description: "Post-training large language models (LLMs) via reinforcement learning (RL) has significantly advanced code generation capabilities."
 ---
 
 **评分：53/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
@@ -9,11 +9,11 @@ description: "LEAP 面向 CUDA Kernel 生成的多轮强化学习，用难度条
 
 ## 一句话摘要
 
-LEAP 面向 CUDA Kernel 生成的多轮强化学习，用难度条件剪枝跳过过易或灾难性任务，并以组内排序奖励缓解二值验证稀疏、编译反馈昂贵和多轮奖励稀释问题。
+Post-training large language models (LLMs) via reinforcement learning (RL) has significantly advanced code generation capabilities.
 
 ## 为什么值得关注
 
-自动生成高性能 Kernel 的瓶颈之一是大量真实编译与硬件验证开销；按任务价值分配探索预算，有望提升代码模型后训练的样本效率和系统吞吐。
+待编辑增强。
 
 ## 摘要原文
 
@@ -35,12 +35,11 @@ Post-training large language models (LLMs) via reinforcement learning (RL) has s
 - taxonomy keywords: cuda kernel, gpu kernel, kernel generation
 - no quantitative claim in metadata
 - no code link detected in metadata
-- 限制：摘要未给出具体基准、GPU、绝对通过率、编译成本或代码链接；该工作主要提高 Kernel 生成模型的训练效率，并不直接证明生成 Kernel 的端到端运行时优势。
 
 ## 元数据
 
 - 作者：Tankun Li, Zhi Chen, Yaohua Tang
-- 发布：2026-08-04；更新：2026-08-05
+- 发布：2026-08-03；更新：2026-08-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：abstract
+- 阅读深度：metadata

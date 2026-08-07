@@ -39,7 +39,7 @@ Serving large language models (LLMs) under diverse deployment constraints requir
 ## 元数据
 
 - 作者：Yu Luo, Bo Dong, Wenhua Cheng, Haihao Shen
-- 发布：2026-08-06；更新：2026-08-06
+- 发布：2026-08-04；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

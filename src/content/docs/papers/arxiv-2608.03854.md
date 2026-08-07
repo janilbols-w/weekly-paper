@@ -39,7 +39,7 @@ When decoder language models are used as classifiers, predicted class probabilit
 ## 元数据
 
 - 作者：Anton Rasmussen, Hong Qin
-- 发布：2026-08-05；更新：2026-08-06
+- 发布：2026-08-04；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

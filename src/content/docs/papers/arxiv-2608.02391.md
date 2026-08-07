@@ -39,7 +39,7 @@ Tool-using large language model (LLM) agents produce long, multi-turn trajectori
 ## 元数据
 
 - 作者：Zhiyuan Wang, Shengcai Liu, Jiahao Wu, Ning Lu, Hui Ouyang, Shaofeng Zhang, Haoze Lv, Ke Tang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/MetaronWang/CoPES](https://github.com/MetaronWang/CoPES)
 - 阅读深度：metadata

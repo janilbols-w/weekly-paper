@@ -39,7 +39,7 @@ Kubernetes, as a container orchestration engine, has been widely used in cloud-n
 ## 元数据
 
 - 作者：Jake Watson, Sadaf R Alam, Christopher Woods, Abdelwahab Kawafi, Thomas Green, Ian Johnson, Ellis Pires, Jessica R. Jones, Utz-Uwe Haus
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-01；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

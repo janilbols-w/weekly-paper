@@ -4,7 +4,7 @@
   "abstract": "Spiking Neural Networks (SNNs) provide a power-efficient neuromorphic alternative to traditional artificial neural networks by processing information through discrete temporal events. This paper presents the design and Field-Programmable Gate Array (FPGA) implementation of an inference-only SNN accelerator optimized for MNIST digit classification. To address the physical routing constraints and timing bottlenecks inherent in low-cost devices, we propose an optimized hardware microarchitecture featuring a time-multiplexed 1-bit spike-feeding mechanism governed by a finite state machine (FSM), localized distributed memory for weight storage, and an integer-based Leaky Integrate-and-Fire (LIF) neuron model with register widths selected to prevent overflow. In addition, a multi-cycle pipelined argmax and tie-breaker readout module eliminates the dominant combinational critical path. Implemented on an entry-level AMD Artix-7 FPGA (XC7A200T) using a 784-64-10 network topology, the proposed pipelined architecture increases the maximum operating frequency (Fmax) from 13.3 MHz to 167 MHz. Hardware evaluation demonstrates a sequential processing latency of 82 {\\mu}s per image, enabling a 1,000-sample VHDL simulation batch to be completed in 0.082 s. Vivado post-implementation vector-based power analysis estimates the total on-chip power consumption at 0.336 W and the energy efficiency at approximately 36,300 samples per joule. These results demonstrate that the proposed microarchitecture provides a resource-efficient solution for real-time neuromorphic edge inference, provided that the network size remains within the practical limits of time-multiplexed execution.",
   "url": "https://arxiv.org/abs/2608.00595",
   "pdf_url": "https://arxiv.org/pdf/2608.00595",
-  "published": "2026-08-04",
+  "published": "2026-08-01",
   "updated": "2026-08-04",
   "authors": [
     "Reza Ansari",
@@ -56,9 +56,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-05T02:30:52+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.00595v1",
+      "url": "http://arxiv.org/abs/2608.00595v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.00595",

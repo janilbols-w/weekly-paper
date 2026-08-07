@@ -11,7 +11,7 @@ description: "Kernels & Operator Fusion"
 |---|---|---:|
 | [KernelBrain: Coarse-to-Fine, Budget-Aware Search for Agentic GPU Kernel Optimization](../../papers/arxiv-2608.02611/) | 2026-08-05 | 54 |
 | [ComFuse: Fusing Complex Memory-Intensive Subgraphs with Compute-Intensive Kernels For Modern GPU Architectures](../../papers/arxiv-2608.03537/) | 2026-08-05 | 39 |
-| [LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation](../../papers/arxiv-2608.01804/) | 2026-08-04 | 53 |
-| [Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference](../../papers/arxiv-2608.01536/) | 2026-08-04 | 50 |
-| [Bole: Efficient Tree Speculation for Hybrid-Attention Language Models](../../papers/arxiv-2608.01651/) | 2026-08-04 | 46 |
 | [Kernel Foundry: A Diagnosis-driven Evolutionary Kernel Optimizer with Multi-Experts](../../papers/arxiv-2605.30359/) | 2026-08-04 | 39 |
+| [LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation](../../papers/arxiv-2608.01804/) | 2026-08-03 | 53 |
+| [Bole: Efficient Tree Speculation for Hybrid-Attention Language Models](../../papers/arxiv-2608.01651/) | 2026-08-03 | 46 |
+| [Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference](../../papers/arxiv-2608.01536/) | 2026-08-02 | 55 |

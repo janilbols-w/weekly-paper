@@ -39,7 +39,7 @@ LLM inference has become a global-scale, heterogeneous workload spanning agents,
 ## 元数据
 
 - 作者：Siddhant Ray, Nick Feamster, Junchen Jiang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-02；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

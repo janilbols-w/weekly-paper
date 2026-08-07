@@ -4,7 +4,7 @@
   "abstract": "Large Language Models (LLMs) increasingly rely on sparsity to reduce inference cost, but most prior work targets a single sparsity source-either weight or activation-and optimizes for batched multi-user inference. Dual-sparsity, which combines unstructured weight pruning with runtime activation sparsity, offers a compelling tradeoff among model size, accuracy, and latency for single-user decoding, but formulates as a Sparse Matrix-Sparse Vector (spMspV) workload that existing GPU kernels handle poorly. We propose Celty, a co-designed sparse format, GPU kernel, and SIMT microarchitecture for efficient spMspV in LLM inference. At the kernel level, Celty introduces a Run-Length Compressed CSC (RLC-CSC) format that enables vectorized loading of compressed weight columns and exploits both sparsity sources to skip unnecessary memory accesses, with shared memory used for scattered partial-product accumulation. At the microarchitecture level, the Celty Sparse SIMT Core integrates a pipelined RLC decoder to eliminate software-level index reconstruction and repurposes local register files for conflict-free accumulation-operating directly on the same RLC-CSC format without data layout changes. The Celty GPU kernel achieves up to 2.8x speedup over cuBLAS and 2.4x over Flash-LLM. With the Sparse SIMT Core, speedups reach up to 5.3x over cuBLAS at 70% dual-sparsity.",
   "url": "https://arxiv.org/abs/2608.01536",
   "pdf_url": "https://arxiv.org/pdf/2608.01536",
-  "published": "2026-08-04",
+  "published": "2026-08-02",
   "updated": "2026-08-04",
   "authors": [
     "Ruokai Yin",
@@ -19,8 +19,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "ICCAD 2026. Will update with the camera-ready version once ready. The code is available on Github at https://github.com/RuokaiYin/Celty",
+  "code_url": "https://github.com/RuokaiYin/Celty",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -38,31 +38,36 @@
   "keyword_evidence": [
     "gpu kernel"
   ],
-  "score": 50,
+  "score": 55,
   "score_components": {
     "relevance": 16,
     "novelty": 6,
     "rigor": 7,
     "practical_impact": 16,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: gpu kernel",
     "quantitative claim detected",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Large Language Models (LLMs) increasingly rely on sparsity to reduce inference cost, but most prior work targets a single sparsity source-either weight or activation-and optimizes for batched multi-user inference.",
-  "summary_zh": "Celty 针对权重与激活双稀疏形成的 SpMspV 负载，协同设计 RLC-CSC 压缩格式、GPU Kernel 和稀疏 SIMT Core；软件 Kernel 相比 cuBLAS 最高 2.8×，专用核心在 70% 稀疏度下最高 5.3×。",
-  "why_it_matters_zh": "单用户解码难以靠大 Batch 隐藏访存开销，双稀疏又不适配现有 GPU Kernel；该工作展示了数据格式、软件 Kernel 与微架构共同设计的潜在上限。",
-  "limitations_zh": "5.3× 结果依赖尚未商品化的专用 SIMT Core及 70% 双稀疏；需进一步核验稀疏化精度损失、格式转换、不同模型形状和批量负载下的端到端收益。",
-  "reading_depth": "abstract",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
   "first_seen": "2026-08-05T02:30:52+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [
     "2026-W32"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.01536v1",
+      "url": "http://arxiv.org/abs/2608.01536v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.01536",

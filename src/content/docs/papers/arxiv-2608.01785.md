@@ -39,7 +39,7 @@ Omni models unify text, speech, image, and multimodal reasoning in a single serv
 ## 元数据
 
 - 作者：Yuning Zhang, Dong Yuan
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

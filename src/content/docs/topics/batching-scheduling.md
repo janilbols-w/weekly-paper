@@ -9,4 +9,4 @@ description: "Batching & Request Scheduling"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [HorizonServe: Coordinating Request Scheduling with GPU Sharing for Omni-Model Serving](../../papers/arxiv-2608.01785/) | 2026-08-04 | 41 |
+| [HorizonServe: Coordinating Request Scheduling with GPU Sharing for Omni-Model Serving](../../papers/arxiv-2608.01785/) | 2026-08-03 | 41 |

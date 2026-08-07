@@ -3,7 +3,7 @@ title: "Unleashing the Potential of Large Language Models: A Blueprint for Real-
 description: "Large language models deployed in real-time, regulated settings face knowledge staleness, catastrophic forgetting, hallucination, and weak feedback loops."
 ---
 
-**评分：38/100** · AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性
+**评分：41/100** · AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性
 
 [论文原文](https://arxiv.org/abs/2608.00419) · [PDF](https://arxiv.org/pdf/2608.00419)
 
@@ -28,7 +28,7 @@ Large language models deployed in real-time, regulated settings face knowledge s
 | rigor | 7 |
 | practical impact | 9 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -38,8 +38,8 @@ Large language models deployed in real-time, regulated settings face knowledge s
 
 ## 元数据
 
-- 作者：Muhammad Faizan Raza (Luna), Shuo (Luna), Yang, Satish Mahadevan Srinivasan, Joanna F. DeFranco
-- 发布：2026-08-04；更新：2026-08-04
-- 来源：arXiv RSS；Venue：未确认
+- 作者：Muhammad Faizan Raza, Shuo, Yang, Satish Mahadevan Srinivasan, Joanna F. DeFranco
+- 发布：2026-08-01；更新：2026-08-04
+- 来源：arXiv RSS；Venue：Computer, vol. 59, no. 4, pp. 195-199, April 2026
 - 代码：未发现
 - 阅读深度：metadata

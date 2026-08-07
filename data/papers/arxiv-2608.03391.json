@@ -4,7 +4,7 @@
   "abstract": "Precise anomaly localization over long-context time series is a crucial task in monitoring applications across clinical care, industrial operations, financial services, and logistics, where brief evidence may hide inside long spans of high-frequency data. Time-Series Language Models (TSLMs) are able to ingest time series data and verbalize findings on anomalies in natural language; however, recent benchmarks report a decrease in retrieval performance at long contexts, mirroring failure modes in text, vision, and audio. In the text domain, Recursive Language Models (RLMs) can recover much of this lost performance by keeping context external to the large language model (LLM), allowing the model to query it through code. We present TimeRLM, an RLM formulation for time-series that sequentially manipulates the signal using code and vision capabilities. We further introduce AnomalyXL, a synthetic long-context anomaly localization benchmark with programmatically injected anomalies that require precise retrieval. We implement five different task categories and two variants: AnomalyXL-MCQ and AnomalyXL-Localize. TimeRLM outperforms every evaluated TSLM and single-pass baseline on four of the five AnomalyXL-Localize tasks, reaching 0.682 IoU on localization and 0.745 on classify-with-evidence, versus at most 0.329 and 0.072 across all baselines. We post-train TimeRLM using reinforcement learning. The resulting model further improves performance and requires approximately one-third as many agent interaction turns as its untrained base model to produce a final answer. On unseen real-world ECG, sleep and software observability recordings, the post-trained TimeRLM retains or improves performance, surpassing TSLMs despite being trained exclusively on synthetic data. Our findings suggest recursive interaction with time-series is an effective approach for long-horizon retrieval.",
   "url": "https://arxiv.org/abs/2608.03391",
   "pdf_url": "https://arxiv.org/pdf/2608.03391",
-  "published": "2026-08-05",
+  "published": "2026-08-04",
   "updated": "2026-08-05",
   "authors": [
     "Nicolas Zumarraga",
@@ -28,8 +28,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "Open source code and datasets: https://github.com/OpenTSLM/TimeRLM",
+  "code_url": "https://github.com/OpenTSLM/TimeRLM",
   "primary_category": {
     "domain_id": "ai-infrastructure",
     "domain": "AI Infrastructure",
@@ -45,19 +45,19 @@
   "keyword_evidence": [
     "observability"
   ],
-  "score": 38,
+  "score": 46,
   "score_components": {
     "relevance": 12,
     "novelty": 5,
-    "rigor": 11,
+    "rigor": 13,
     "practical_impact": 5,
-    "reproducibility": 2,
+    "reproducibility": 8,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: observability",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Precise anomaly localization over long-context time series is a crucial task in monitoring applications across clinical care, industrial operations, financial services, and logistics, where brief evidence may hide inside long spans of high-frequency data.",
   "summary_zh": "",
@@ -65,9 +65,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-05T05:32:02+00:00",
-  "last_seen": "2026-08-06T05:33:34+00:00",
+  "last_seen": "2026-08-07T05:08:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.03391v1",
+      "url": "http://arxiv.org/abs/2608.03391v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.03391",

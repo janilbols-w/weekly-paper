@@ -39,7 +39,7 @@ Agentic AI is emerging in datacenters, but its architectural implications remain
 ## 元数据
 
 - 作者：Jirong Yang, Peizhe Liu, Chaojie Zhang, Jovan Stojkovic
-- 发布：2026-08-06；更新：2026-08-06
+- 发布：2026-08-05；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

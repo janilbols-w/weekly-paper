@@ -39,7 +39,7 @@ Serving Mixture-of-Experts (MoE) large language models across distributed edge s
 ## 元数据
 
 - 作者：Ning Li, Shuting Bai, Xin Yuan, Wenchao Xu, Athanasios V. Vasilakos, Song Guo, Haijun Zhang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-01；更新：2026-08-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

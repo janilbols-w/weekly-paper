@@ -39,7 +39,7 @@ Pre-pretraining language models (LMs) on symbolic data can accelerate and improv
 ## 元数据
 
 - 作者：Jo-Ku Cheng, Nikolaos Aletras, Marco Valentino
-- 发布：2026-08-05；更新：2026-08-06
+- 发布：2026-08-04；更新：2026-08-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
