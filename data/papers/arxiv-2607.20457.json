@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2607.20457",
+  "title": "Dropping the Anchor: Statistical Context Summarization for Distributed Systems via Pulsar Attention",
+  "abstract": "Inference with large language models (LLMs) on long sequences is computationally expensive due to the quadratic complexity of self-attention. Distributed blockwise methods such as Star Attention reduce this cost by sharding context across hosts, but rely on prepending a static, content-blind copy of the first block to every host. We propose Pulsar Attention, which replaces the static anchor with two lightweight, content-aware components: a small attention-sink prefix that stabilizes softmax, and compact cross-block summaries built via a Max-IDF heuristic that selects chunks containing globally rare tokens. This reduces the Phase 1 per-GPU FLOPs by up to 3.3x over Star Attention while retaining an identical KV cache footprint. On RULER with Llama-3.1-8B-Instruct, Pulsar Attention outperforms Star Attention at sequence lengths up to 128K tokens and remains competitive with dense attention across most tasks, with task-dependent absolute gains of up to 4.7% over the dense baseline.",
+  "url": "https://arxiv.org/abs/2607.20457",
+  "pdf_url": "https://arxiv.org/pdf/2607.20457",
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "authors": [
+    "Aryan Sood",
+    "Shantanu Acharya",
+    "Gaurav Kumar Nayak"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Inference with large language models (LLMs) on long sequences is computationally expensive due to the quadratic complexity of self-attention.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-10T05:04:42+00:00",
+  "last_seen": "2026-08-10T05:04:42+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.20457",
+      "url": "https://arxiv.org/abs/2607.20457"
+    }
+  ]
+}

@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **6** 篇。
+累计收录 **8** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Rethinking Unified Memory for NPU-PIM Systems: Dual-View Memory for Dynamic Inference of LLM](../../papers/arxiv-2608.06989/) | 2026-08-10 | 48 |
+| [Joint Optimization of Reasoning and Dual-Memory for Self-Learning Diagnostic Agent](../../papers/arxiv-2604.07269/) | 2026-08-10 | 43 |
 | [Architectural Implications of Agentic AI Workflows](../../papers/arxiv-2608.04458/) | 2026-08-05 | 44 |
 | [AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents](../../papers/arxiv-2608.00009/) | 2026-08-04 | 49 |
 | [Gecko: Fast Private Inference via Secure Public Encoder Offloading](../../papers/arxiv-2608.02378/) | 2026-08-04 | 45 |

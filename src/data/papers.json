@@ -1,5 +1,2299 @@
 [
   {
+    "id": "arxiv:2608.07009",
+    "title": "HiSparse: Scaling Sparse-Attention Decoding with Hierarchical KV Cache Management",
+    "abstract": "Top-k sparse attention makes long-context LLM decoding cheap to compute: each step reads only a few thousand selected KV entries rather than the full context. Serving systems, however, typically keep the entire KV cache in GPU HBM so that every position stays selectable, so a request's memory bill still grows with its full context length--decoding hits a capacity wall long before it runs out of compute, and a context whose KV cache exceeds HBM cannot be served at all. We present HiSparse, an exact, indexer-agnostic hierarchical KV cache for sparse-attention serving. HiSparse keeps each request's full KV history in host memory and bounds its decode footprint with a small, fixed-size GPU cache; a fused CUDA kernel resolves each layer's selections--hit detection, LRU replacement, and host-to-device fetches--inside the decode CUDA graph; and, for models that share selections across layers, exact layer-wise prefetching hides roughly half of the remaining miss overhead. Because only KV placement changes, model outputs are unchanged. HiSparse is merged into upstream SGLang and evaluated across three sparse-attention families (DSA, NSA, and Quest) on H200, B200, and GH200 platforms: it improves peak generation throughput by up to 4.7x on long-context workloads while preserving comparable per-token latency and reducing time-to-first-token at high load--and a no-IO oracle shows the resolution mechanism itself adds no measurable per-token cost, leaving host-device IO as the only price of bounded residency.",
+    "url": "https://arxiv.org/abs/2608.07009",
+    "pdf_url": "https://arxiv.org/pdf/2608.07009",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Zhiqiang Xie",
+      "Zhangheng Huang",
+      "Tingwei Huang",
+      "Ziyi Xu",
+      "Ruiyang Ma",
+      "Christos Kozyrakis"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 52,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 16,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Top-k sparse attention makes long-context LLM decoding cheap to compute: each step reads only a few thousand selected KV entries rather than the full context.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07009",
+        "url": "https://arxiv.org/abs/2608.07009"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.07169",
+    "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+    "abstract": "Memory systems have shown promise for improving agent performance, but their potential remains largely unexplored for small language models, which struggle to generate sufficient successful trajectories on their own. We propose Agent Memory Distillation (AMD), a training-free framework that transfers structured knowledge from a large teacher agent to a small student agent through hierarchical memory. AMD constructs three complementary memory types from successful teacher trajectories: Workflow memory encodes task-level strategies, Subtask memory provides concrete behavioral examples at an intermediate granularity, and Function memory captures per-function calling conventions and common pitfalls. Workflow and Subtask memories are injected proactively at the start of each task, while Function memory is retrieved reactively upon tool-calling errors. We evaluate AMD on three tool-use benchmarks using four student models (4B-8B parameters) with GPT-5-mini as the teacher, achieving average accuracy gains of 27.2%p, 11.2%p, and 3.4%p on AppWorld, BFCL V3, and ToolSandbox, while consistently outperforming existing memory-based baselines. Further analysis shows that Subtask memory contributes the largest gains, teacher effectiveness depends on both teacher capability and student compatibility, and 4B-sized students benefit most from AMD.",
+    "url": "https://arxiv.org/abs/2608.07169",
+    "pdf_url": "https://arxiv.org/pdf/2608.07169",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Taeil Kim",
+      "Kangsan Kim",
+      "Sung Ju Hwang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 49,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 11,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Memory systems have shown promise for improving agent performance, but their potential remains largely unexplored for small language models, which struggle to generate sufficient successful trajectories on their own.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07169",
+        "url": "https://arxiv.org/abs/2608.07169"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.28803",
+    "title": "{\\Omega}-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling",
+    "abstract": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive. Prior quantization efforts offer only partial solutions, compressing the LLM backbone while leaving the DiT action head at full precision, or resorting to mixed-precision schemes, driven by the belief that uniformly quantizing the action head is inherently unstable. We challenge this assumption with Omega-QVLA, the first training-free post-training quantization framework that compresses both the language backbone and the entire diffusion action head of a VLA model to a uniform W4A4 precision, eliminating the need for mixed-precision allocation. Omega-QVLA combines a composite SVD-Hadamard rotation that equalizes per-channel weight energy while diffusing residual activation outliers with per-step DiT activation scaling quantization that absorbs dynamic-range drift across denoising steps. On LIBERO, Omega-QVLA compresses Pi 0.5 and GR00T N1.5 to W4A4 with 98.0% and 87.8% task success rates, matching or exceeding their FP16 references of 97.1% and 87.0%, while reducing the static memory footprint by 71.3%. Real-world manipulation experiments further confirm smooth, accurate manipulation where prior methods fail. Code is available at https://github.com/UCMP13753/Omega-QVLA.",
+    "url": "https://arxiv.org/abs/2605.28803",
+    "pdf_url": "https://arxiv.org/pdf/2605.28803",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Xinyu Wang",
+      "Mingze Li",
+      "Sicheng Lyu",
+      "Dongxiu Liu",
+      "Kaicheng Yang",
+      "Ziyu Zhao",
+      "Yufei Cui",
+      "Xiao-Wen Chang",
+      "Peng Lu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/UCMP13753/Omega-QVLA",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 9,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.28803",
+        "url": "https://arxiv.org/abs/2605.28803"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06989",
+    "title": "Rethinking Unified Memory for NPU-PIM Systems: Dual-View Memory for Dynamic Inference of LLM",
+    "abstract": "Heterogeneous architectures that combine neural processing unit (NPU) and processing-in-memory (PIM) are increasingly adopted to accelerate LLM inference. Prior work focuses on building a unified memory that allows NPUs and PIM to share data without duplication. However, these designs implicitly assume that each tensor is bound to a fixed execution device, and therefore rely on static, device-biased data mappings. We observe that this assumption does not hold in modern LLM workloads. Due to phase changes (e.g., prefill vs. decode) and dynamic behaviors such as MoE routing, the optimal execution device for the same tensor can change at runtime. Under such dynamic execution, device-biased mappings become mismatched to access patterns, leading to substantial bandwidth underutilization and performance loss. This paper presents PFM (PIM-as-Flexible-Memory), a dual-view memory system that decouples physical data layout from accessor-visible logical views. PFM stores data in a jointly optimized physical layout and exposes different logical interpretations to NPUs and PIM, enabling efficient access across devices without data duplication or relayout. We further design accessor-aware address translation and runtime scheduling mechanisms to support dynamic execution when LLM workloads fluctuate and the optimal execution device dynamically changes. Our evaluation across LLMs shows that PFM improves end-to-end throughput by up to 2.32$\\times$, demonstrating its effectiveness and broad applicability as a unified memory management solution for NPU-PIM systems.",
+    "url": "https://arxiv.org/abs/2608.06989",
+    "pdf_url": "https://arxiv.org/pdf/2608.06989",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Shixin Zhao",
+      "Lian Liu",
+      "Tianhua Han",
+      "Mengdi Wang",
+      "Yinhe Han",
+      "Ying Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "memory management",
+      "unified memory"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: memory management, unified memory",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Heterogeneous architectures that combine neural processing unit (NPU) and processing-in-memory (PIM) are increasingly adopted to accelerate LLM inference.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06989",
+        "url": "https://arxiv.org/abs/2608.06989"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06901",
+    "title": "Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models",
+    "abstract": "Vision-language models (VLMs) have achieved remarkable generalization across diverse multimodal tasks through large-scale pre-training, yet their rapidly increasing computational and memory requirements pose significant challenges for deployment in constrained environments. Existing pruning strategies often depend on task-specific criteria or LLM-oriented importance measures, making them unsuitable for task-agnostic pruning, where no task-specific samples are available at pruning time and the pruned model remains broadly applicable. We introduce a retraining-free VLM pruning framework called PORTA that derives a task- and modality-agnostic importance formulation based on activation variation, estimated from generic calibration data, which reliably captures feature-level representation utility across modalities. PORTA further incorporates an adaptive sparsity allocation mechanism that assigns layer-wise pruning ratios based on output feature variability, avoiding the limitations of uniform sparsity and reducing performance degradation at high compression levels. Extensive experiments across VLM architectures, such as CLIP, BLIP, and Qwen2-VL, demonstrate that PORTA achieves competitive downstream performance under high sparsity without requiring any retraining, supporting efficient VLM compression. Code is available at https://github.com/cau-hai-lab/PORTA.git.",
+    "url": "https://arxiv.org/abs/2608.06901",
+    "pdf_url": "https://arxiv.org/pdf/2608.06901",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Minseok Kang",
+      "Hyunwoo Kim",
+      "Chanyoung Kim",
+      "Minwoo Kim",
+      "Jaekoo Lee",
+      "Dahuin Jung"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/cau-hai-lab/PORTA.git",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning",
+      "sparsity"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 7,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning, sparsity",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Vision-language models (VLMs) have achieved remarkable generalization across diverse multimodal tasks through large-scale pre-training, yet their rapidly increasing computational and memory requirements pose significant challenges for deployment in constrained environments.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06901",
+        "url": "https://arxiv.org/abs/2608.06901"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06557",
+    "title": "Cascade: Exploiting SLO-Aware latency budget for fair and high goodput LLM inference serving",
+    "abstract": "The reasoning and agentic capabilities of large language models have expanded the range of applications they support, from short interactive exchanges to long, compute-heavy requests. LLM serving platforms today define response-latency service-level objectives, even though requests within the same service can differ by orders of magnitude in input length, generation length, execution cost, and the availability of reusable KV-cache state. As a result, requests governed by the same service level objective have different urgency: after accounting for the time required to execute them, some have substantial latency headroom while others have almost none. We define this headroom---the difference between a request's service level objective and its predicted remaining service time---as its per-request latency budget. We present Cascade, an LLM serving system that estimates and continuously updates this budget from request characteristics, KV-cache state, and current system load. Unlike prior SLO-aware schedulers that use deadlines to govern request ordering alone, Cascade uses a single per-request budget to jointly coordinate request scheduling and KV-cache management across the memory hierarchy. Its scheduler prioritizes requests with little remaining budget, while its memory manager uses the same budget to decide whether non-resident KV state should be restored or prefetched from a deeper tier, retained in HBM, or recomputed. By directing queueing and data-movement overhead toward requests that can absorb it, Cascade improves SLO-satisfied goodput while preserving fairness across heterogeneous request classes. On production traces across three large language models, Cascade improves goodput by up to2.4x and reduces SLO violations by 40% relative to the default vLLM first-come, first-served scheduler.",
+    "url": "https://arxiv.org/abs/2608.06557",
+    "pdf_url": "https://arxiv.org/pdf/2608.06557",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Muhammad Adnan",
+      "Rohan Mahapatra",
+      "Prashant J. Nair",
+      "Daniel Berger",
+      "Pantea Zardoshti",
+      "Rodrigo Fonseca",
+      "Esha Choukse"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "multitenancy-slo-reliability",
+      "leaf": "Multi-tenancy, SLO & Reliability",
+      "leaf_zh": "多租户、SLO 与可靠性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "service level objective",
+      "slo"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 6,
+      "rigor": 5,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: service level objective, slo",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "The reasoning and agentic capabilities of large language models have expanded the range of applications they support, from short interactive exchanges to long, compute-heavy requests.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06557",
+        "url": "https://arxiv.org/abs/2608.06557"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2504.17584",
+    "title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+    "abstract": "Attention-FC Disaggregated (AFD) LLM inference systems offload memory-bound Attention operations to memory-rich accelerators (e.g., CPUs, HBM-PIM) while retaining compute-bound Fully-Connected (FC) operations on GPUs. In this paper, we first design a Disaggregated Roofline Model (DRM) to characterize AFD performance, revealing that system throughput is constrained by the accelerator's limiting factor: either memory bandwidth or capacity. We observe that prior AFD systems often overlook these constraints and fail to balance them, leading to resource underutilization or constrained throughput. Therefore, we propose CHIME, the first AFD system integrating DIMM-PIM, which is a case of the new accelerator that strikes the balance with scalable capacity and bandwidth. To address the synchronization challenges inherent to the distributed cooperating DRAM chips in DIMM-PIM, CHIME employs bubble-free pipelining and hybrid-grained re-layout for efficient attention computation. Furthermore, it maximizes cross-device resource utilization via rankset-granular communication-computation overlapping and alignment-predicting scheduling. Evaluations show CHIME achieves up to 5.15$\\times$ speedup over state-of-the-art HBM-PIM solutions.",
+    "url": "https://arxiv.org/abs/2504.17584",
+    "pdf_url": "https://arxiv.org/pdf/2504.17584",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Qingyuan Liu",
+      "Liyan Chen",
+      "Haocheng Wang",
+      "Yanning Yang",
+      "Dong Du",
+      "Zhigang Mao",
+      "Naifeng Jing",
+      "Yubin Xia",
+      "Haibo Chen"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "prefill-decode-disaggregation",
+      "leaf": "Prefill-Decode Disaggregation",
+      "leaf_zh": "Prefill-Decode 解耦"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "disaggregated inference"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 13,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: disaggregated inference",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Attention-FC Disaggregated (AFD) LLM inference systems offload memory-bound Attention operations to memory-rich accelerators (e.g., CPUs, HBM-PIM) while retaining compute-bound Fully-Connected (FC) operations on GPUs.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2504.17584",
+        "url": "https://arxiv.org/abs/2504.17584"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.07193",
+    "title": "An AI4AI Framework for Visual Token Pruning",
+    "abstract": "Visual-token pruning can substantially reduce the inference cost of multimodal large language models (MLLMs), yet existing methods largely rely on fixed, handcrafted heuristics and costly expert trial and error. As pruning objectives, budgets, and model architectures diversify, manually navigating the expanding design space becomes increasingly difficult. This paper aims to build an AI4AI framework for visual-token pruning by addressing a natural question: Can large language models automatically design effective visual-token reduction algorithms? Although LLMs possess broad algorithmic knowledge and strong reasoning capabilities, translating such general knowledge into effective solutions for a specialized task remains nontrivial. We argue that the key lies in designing an appropriate search-state representation that connects the internal knowledge of LLMs with the structural requirements and constraints of visual-token pruning. Based on this insight, we propose AutoPrune, a training-free framework for LLM-driven visual-token pruning policy design. At its core, AutoPrune introduces a Token Pruning Domain-Specific Language (TPDSL) comprising 131 reusable atoms for budget control, token scoring, selection constraints, and token reassembly. A key property of TPDSL is that it represents each search state as a residual modification of a strong base policy. This residual formulation narrows the search space and directs the LLM's attention toward the policy components that are most consequential for performance. Experiments on 14 multimodal benchmarks and three MLLM backbones demonstrate the effectiveness, efficiency, and transferability of AutoPrune. Even when removing 94.4% of visual tokens, AutoPrune preserves more than 99% of full-token performance while reducing FLOPs by 9.9x and prefill latency by 6.4x.",
+    "url": "https://arxiv.org/abs/2608.07193",
+    "pdf_url": "https://arxiv.org/pdf/2608.07193",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Zhen Liu",
+      "Wenli Huang",
+      "Wei Song",
+      "Yuhan Liu",
+      "Zhiqin Yang",
+      "Jingwen Fu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Visual-token pruning can substantially reduce the inference cost of multimodal large language models (MLLMs), yet existing methods largely rely on fixed, handcrafted heuristics and costly expert trial and error.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07193",
+        "url": "https://arxiv.org/abs/2608.07193"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06791",
+    "title": "HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation",
+    "abstract": "Application-specific FPGA accelerators offer substantial performance and energy-efficiency gains across many application domains, but developing them is costly, often requiring months of specialized effort. Even with high-level synthesis (HLS), designers still need extensive hardware expertise to build high-performance accelerators. Although large language models (LLMs) have demonstrated strong software-generation capabilities, even frontier models lack the hardware intuition and procedural knowledge needed to reliably translate baseline C/C++ programs into high-performance HLS designs: they struggle to identify effective architectures, follow the optimization processes used by HLS experts, and apply hardware transformations consistently across diverse kernels. We present HLSmith, an expert-guided framework for translating C/C++ programs into optimized HLS accelerators. HLSmith combines three components: an HLS optimization expertise library that encodes guarded transformation recipes, their applicability and prerequisite conditions, and unsafe cases to avoid; a staged, feedback-driven orchestration flow modeled on expert HLS development practice that guides agents through synthesis, bottleneck analysis, and optimization; and a tool-grounded model-adaptation pipeline that converts optimization trajectories from commercial frontier models into training data for fine-tuning open-weight LLMs. We evaluate HLSmith on PolyBench against ChatHLS, a leading prior agent-orchestration framework for HLS accelerator development. HLSmith achieves a geometric mean speedup of 4.24x over ChatHLS while producing functionally correct designs, in both software and RTL simulation, for every benchmark, compared with ChatHLS's 57% valid-design rate. It further reaches speedups of up to 252x and 138x with commercial frontier models and open-weight models, respectively.",
+    "url": "https://arxiv.org/abs/2608.06791",
+    "pdf_url": "https://arxiv.org/pdf/2608.06791",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Yuebo Luo",
+      "Ahmad Sedigh Baroughi",
+      "Philip Stachura",
+      "Le Chen",
+      "Venkatram Vishwanath",
+      "Zhenman Fang",
+      "Caiwen Ding"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "accelerator"
+    ],
+    "score": 47,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 11,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: accelerator",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Application-specific FPGA accelerators offer substantial performance and energy-efficiency gains across many application domains, but developing them is costly, often requiring months of specialized effort.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06791",
+        "url": "https://arxiv.org/abs/2608.06791"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06630",
+    "title": "The Sparsity Whisperer",
+    "abstract": "Pruning reduces the inference cost of large language models, but existing criteria primarily preserve large activations or reconstruct layer outputs. We argue that this overlooks a key computation performed by particularly sparsity-sensitive neurons in the MLP up and gate projections: separating similar inputs into dissimilar outputs. This suggests that effective pruning should preserve not only activations, but also the differences between outputs more broadly. We introduce a family of difference-informed pruning methods built upon this principle. Wisp is a first-order, update-free method that scores weights using input-difference norms, and Wisp+ refines this score neuronwise using the input pairs each neuron separates most strongly. Finally, Whisper is a second-order method that uses a lightly regularized difference Hessian as its reconstruction objective. Across Llama 2 and 3.1 models from 7B to 405B parameters, our second-order variant consistently improves over strong reconstruction-based baselines, while our update-free variants improve over activation-aware baselines, especially in constrained settings. The improvements over Wanda and SparseGPT extend to structured sparsity, downstream evaluations, and other model families. Augmenting stronger techniques such as RIA and ALPS with our difference-informed criteria yields further improvements, shifting the overall accuracy-runtime frontier outward at negligible additional cost. These results suggest that preserving output differences is a broadly useful and composable signal for post-training LLM sparsification.",
+    "url": "https://arxiv.org/abs/2608.06630",
+    "pdf_url": "https://arxiv.org/pdf/2608.06630",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Linghao Kong",
+      "Inimai Subramanian",
+      "Micah Adler",
+      "Dan Alistarh",
+      "Dan Gutfreund",
+      "Nir Shavit"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning",
+      "sparsity"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 7,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning, sparsity",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Pruning reduces the inference cost of large language models, but existing criteria primarily preserve large activations or reconstruct layer outputs.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06630",
+        "url": "https://arxiv.org/abs/2608.06630"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06628",
+    "title": "Retrofitting Linear Attention into Diffusion Language Models",
+    "abstract": "Diffusion language models (dLLMs) offer a promising alternative to autoregressive models by accelerating inference through parallel decoding. Recent dLLMs commonly use blockwise semi-autoregressive decoding, generating blocks autoregressively while denoising tokens within each active block in parallel. However, despite KV caching, each denoising step still attends to all previous blocks, repeatedly incurring prefix-attention cost. Motivated by this bottleneck, we ask whether dLLM inference can be further accelerated by linearizing attention over previous blocks. We introduce block-hybrid attention, which retains exact softmax attention within the active denoising block while applying linear attention over previous blocks. We show that this hybrid attention can be retrofitted into a pretrained dLLM with minimal post-training: LLaDA-Hybrid replaces 6 of the 20 attention layers in LLaDA~2.1, a 16B open-source dLLM, largely following LoLCAT (Zhang et al, 2024). The conversion takes only approximately 60 hours while preserving benchmark performance: 72.0% vs. 75.6% on HumanEval, 63.0% vs. 57.7% on MBPP+, and 86.7% vs. 88.3% on CMATH. With a Triton implementation, LLaDA-Hybrid achieves up to $1.7\\times$ higher decoding throughput and supports more concurrent requests before exhausting memory, showing that pretrained dLLMs can be efficiently linearized for faster inference. Our code is available at: https://github.com/Diuven/LLaDA-Hybrid.",
+    "url": "https://arxiv.org/abs/2608.06628",
+    "pdf_url": "https://arxiv.org/pdf/2608.06628",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Jinha Kim",
+      "Younghun Roh",
+      "Jaeyeon Kim"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/Diuven/LLaDA-Hybrid",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "speculative-decoding",
+      "leaf": "Speculative Decoding",
+      "leaf_zh": "推测解码"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "parallel decoding"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 11,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: parallel decoding",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Diffusion language models (dLLMs) offer a promising alternative to autoregressive models by accelerating inference through parallel decoding.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06628",
+        "url": "https://arxiv.org/abs/2608.06628"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06916",
+    "title": "MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model",
+    "abstract": "Quantized Neural Networks~(QNN) with low-bitwidth data have proven promising in efficient storage and computation on edge devices. To mitigate accuracy degradation while maximizing speedup, layer-wise mixed-precision quantization~(MPQ) becomes a popular solution. However, existing algorithms for exploring MPQ schemes are limited in flexibility and efficiency. Comprehending the complex impacts of different MPQ schemes on post-training quantization and quantization-aware training results is a challenge for conventional methods. Furthermore, an end-to-end framework for the optimization and deployment of MPQ models is missing in existing work. To address these challenges, we propose the MiCo framework, a holistic MPQ exploration and deployment framework for edge AI applications. The framework adopts a novel optimization algorithm to search for accuracy-optimal quantization configurations under strict latency constraints. We further extended the framework to MiCoPro, which introduces a robust Hardware-Aware Proxy (HAP) model to enhance prediction accuracy and hardware versatility. By leveraging target-specific latency modeling, MiCoPro enables rapid exploration and direct deployment from PyTorch models to bare-metal C code. We demonstrate the versatility of our framework on both the BitFusion accelerator and SIMD-extended RISC-V processors, achieving up to 40\\% of latency reduction with less than 3\\% of accuracy drop.",
+    "url": "https://arxiv.org/abs/2608.06916",
+    "pdf_url": "https://arxiv.org/pdf/2608.06916",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Zijun Jiang",
+      "Yangdi Lyu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [
+      "hardware-edge"
+    ],
+    "keyword_evidence": [
+      "mixed precision",
+      "quantization",
+      "quantized"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 20,
+      "novelty": 7,
+      "rigor": 5,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: mixed precision, quantization, quantized",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Quantized Neural Networks~(QNN) with low-bitwidth data have proven promising in efficient storage and computation on edge devices.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06916",
+        "url": "https://arxiv.org/abs/2608.06916"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.07226",
+    "title": "Dual-Node NVIDIA DGX Spark over Tailscale: A Remote-Access Testbed for Distributed LLM Training and Cyber-Threat-Intelligence Fine-Tuning",
+    "abstract": "Compact AI systems make local language-model experimentation increasingly accessible, yet practical evidence for multi-node training on desktop-class accelerators remains limited. This report presents a proof-of-concept deployment of distributed NanoChat pretraining across two NVIDIA DGX Spark systems, each with a GB10 Grace Blackwell system-on-chip and 128 GB of unified memory, administered remotely over a Tailscale mesh VPN and connected for training by a dedicated 200 Gb/s QSFP56 direct fiber link. PyTorch torchrun, DDP, and NCCL were configured with one process per node, a depth-20 NanoChat model, a local batch size of 32 per node, and a 2,048-token context, giving a global batch of 131,072 tokens per step. The run sustained a step time of about 69.4 s (about 1,890 tokens/s), processing about 653 million tokens over four days. We document link configuration, container setup, interface binding, a step-zero evaluation bug that triggered NCCL timeouts, checkpointing, and troubleshooting lessons, as a reproducibility reference for small labs. We also built a cybersecurity fine-tuning dataset from 77 CISA advisories (338 training, 37 validation conversations) and ran a 17-question held-out evaluation comparing a baseline SFT checkpoint against a CTI-augmented checkpoint with an Ollama-hosted LLM judge. CTI-specific categories improved while general-knowledge categories regressed, for a small overall change from 2.06 to 2.29 on a 0-10 scale. The same cluster supports a 400-level AI course (CS 426) and a query engine for CompTIA Security+ POGIL activities in CBS 255, showing modest local infrastructure can serve both research and teaching. The study establishes feasibility rather than a scaling-efficiency claim, since single-node throughput used for comparison was estimated, not measured under matched conditions. Runbook and scripts are available (see Code Availability).",
+    "url": "https://arxiv.org/abs/2608.07226",
+    "pdf_url": "https://arxiv.org/pdf/2608.07226",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Vasanth Iyer"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "distributed-training-checkpoint",
+      "leaf": "Distributed Training & Checkpointing",
+      "leaf_zh": "分布式训练与 Checkpoint"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "checkpoint",
+      "checkpointing"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 5,
+      "rigor": 13,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: checkpoint, checkpointing",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Compact AI systems make local language-model experimentation increasingly accessible, yet practical evidence for multi-node training on desktop-class accelerators remains limited.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07226",
+        "url": "https://arxiv.org/abs/2608.07226"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.28633",
+    "title": "Topology-Aware Data Movement for Disaggregated GPU Inference",
+    "abstract": "Disaggregated LLM inference creates a datacenter networking problem that no existing system solves correctly. When prefill and decode run on separate GPU pools, the KV cache must be transferred between them. For a 70B model this is 1.3 GB per request, exceeding 100 GB/s aggregate at production scale. Yet DistServe, Splitwise, and Mooncake all use uniform RDMA, ignoring that bandwidth between two GPUs varies by 72x depending on their physical relationship: 900 GB/s via NVLink 4.0 within a domain (1.8 TB/s on NVLink 5, widening the gap to 144x), 50 GB/s via InfiniBand across nodes, 12.5 GB/s via TCP across data centers. We design a topology-aware transfer orchestrator that discovers interconnect hierarchy at startup and selects optimal transport per transfer. Three mechanisms work together: (1) pipelined layer-by-layer transfer that overlaps transmission with ongoing prefill, hiding 76 to 100 percent of transfer latency behind computation depending on transport, with NVLink and PCIe transfers hidden entirely; (2) NVLink domain-aware placement for Mixture-of-Experts models that co-optimizes expert dispatch with KV cache locality; and (3) CXL 3.0 memory expanders as a shared overflow tier providing 6x capacity at 86x lower latency than NVMe. Full evaluation requires multi-node clusters with heterogeneous interconnects and CXL 3.0 hardware that is beyond academic resources and not yet available in GPU clouds. We present analytical bandwidth models, component implementations, and projected analysis across three architectures showing 3 to 18x transfer latency reduction over uniform RDMA.",
+    "url": "https://arxiv.org/abs/2607.28633",
+    "pdf_url": "https://arxiv.org/pdf/2607.28633",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Sanjeev Rao Ganjihal"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.PF"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "cluster-resource",
+      "group": "Cluster & Resource Systems",
+      "group_zh": "集群与资源系统",
+      "leaf_id": "network-interconnect",
+      "leaf": "Network, RDMA & Interconnect",
+      "leaf_zh": "网络、RDMA 与互联"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "infiniband",
+      "interconnect",
+      "rdma"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: infiniband, interconnect, rdma",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Disaggregated LLM inference creates a datacenter networking problem that no existing system solves correctly.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.28633",
+        "url": "https://arxiv.org/abs/2607.28633"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2511.22481",
+    "title": "OmniInfer: System-Wide Acceleration Techniques for Optimizing LLM Serving Throughput and Latency",
+    "abstract": "Large Language Models drive a wide range of modern AI applications but impose substantial challenges on large-scale serving systems due to intensive computation, strict latency constraints, and throughput bottlenecks. We introduce OmniInfer, a unified system-level acceleration framework designed to maximize end-to-end serving efficiency through fine-grained optimization of expert placement, cache compression, and scheduling. OmniInfer integrates three complementary components: OmniPlacement for load-aware Mixture-of-Experts scheduling, OmniAttn for sparse attention acceleration, and OmniProxy for disaggregation-aware request scheduling. Built atop vLLM, OmniInfer delivers system-wide performance gains through adaptive resource disaggregation, efficient sparsity exploitation, and global coordination across prefill and decode phases. Evaluated on DeepSeek-R1 within a 10-node Ascend 910C cluster, OmniInfer achieves 616 QPM, where the unified framework reduces TPOT by 36\\%, and the superimposition of OmniProxy further slashes TTFT by 38\\%. The project is open-sourced at [this https URL](https://gitee.com/omniai/omniinfer).",
+    "url": "https://arxiv.org/abs/2511.22481",
+    "pdf_url": "https://arxiv.org/pdf/2511.22481",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Jun Wang",
+      "Yunxiang Yao",
+      "Wenwei Kuang",
+      "Runze Mao",
+      "Zhenhao Sun",
+      "Zhuang Tao",
+      "Ziyang Zhang",
+      "Dengyu Li",
+      "Jiajun Chen",
+      "Zhili Wang",
+      "Kai Cui",
+      "Congzhi Cai",
+      "Longwen Lan",
+      "Ken Zhang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "serving-engine",
+      "leaf": "Serving Engines & Runtimes",
+      "leaf_zh": "Serving Engine 与 Runtime"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "llm serving"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: llm serving",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large Language Models drive a wide range of modern AI applications but impose substantial challenges on large-scale serving systems due to intensive computation, strict latency constraints, and throughput bottlenecks.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2511.22481",
+        "url": "https://arxiv.org/abs/2511.22481"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2604.07269",
+    "title": "Joint Optimization of Reasoning and Dual-Memory for Self-Learning Diagnostic Agent",
+    "abstract": "Clinical expertise improves not only by acquiring medical knowledge, but by accumulating experience that yields reusable diagnostic patterns. Recent LLMs-based diagnostic agents have shown promising progress in clinical reasoning for decision support. However, most approaches treat cases independently, limiting experience reuse and continual adaptation. We propose SEA, a self-learning diagnostic agent with cognitively inspired dual-memory module. We design a reinforcement training framework tailored to our designed agent for joint optimization of reasoning and memory management. We evaluate SEA in two complementary settings. On standard evaluation with MedCaseReasoning dataset, SEA achieves 92.46% accuracy, outperforming the strongest baseline by +19.6%, demonstrating the benefit of jointly optimizing reasoning and memory. On the long-horizon with ER-Reason dataset, SEA attains the best final accuracy (0.7214) and the largest improvement (+0.35 Acc@100), while baseline methods show limited or unstable gains. Expert evaluation further indicates that rules consolidated from SEA show strong clinical correctness, usefulness and trust, suggesting that the induced rules in dual-memory module are reliable and practically meaningful. Overall, SEA improves both diagnostic reasoning ability and continual learning by effectively transforming experience into reusable knowledge.",
+    "url": "https://arxiv.org/abs/2604.07269",
+    "pdf_url": "https://arxiv.org/pdf/2604.07269",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Bingxuan Li",
+      "Simo Du",
+      "Yue Guo"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "memory management"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 13,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: memory management",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Clinical expertise improves not only by acquiring medical knowledge, but by accumulating experience that yields reusable diagnostic patterns.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2604.07269",
+        "url": "https://arxiv.org/abs/2604.07269"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2511.07885",
+    "title": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
+    "abstract": "Large language model (LLM) queries are predominantly processed by frontier models in centralized cloud infrastructure. Demand growth strains this paradigm faster than providers can scale. Two advances create an opportunity to rethink it: small, local LMs (<=20B active parameters) now achieve competitive performance to frontier models on many tasks, and local accelerators (e.g., Apple M4 Max) can host these models at interactive latencies. This raises the question: can local inference viably redistribute demand from centralized infrastructure? This requires measuring both whether local LMs can accurately answer real-world queries and whether they can do so efficiently on power-constrained devices (e.g., laptops). We propose intelligence per watt (IPW), task accuracy per unit of power, as a unified metric for the capability and efficiency of local inference across model-accelerator configurations. We evaluate 20+ state-of-the-art local LMs, 8 hardware accelerators (local and cloud), and 1M real-world single-turn chat and reasoning queries. For each query, we measure accuracy (local LM win rate against frontier models), energy, latency, and power. We find three key results. First, local LMs successfully answer 88.7% of these queries, with accuracy varying by domain. Second, longitudinal analysis from 2023-2025 shows IPW improved 5.3x, driven by both algorithmic and accelerator advances, with locally-serviceable query coverage rising from 23.2% to 71.3%. Third, local accelerators achieve at least 1.4x lower IPW than cloud accelerators running identical models, revealing significant headroom for local accelerator optimization. These findings demonstrate that local inference can meaningfully redistribute demand from centralized infrastructure for a substantial subset of queries, with IPW serving as the critical metric for tracking this transition.",
+    "url": "https://arxiv.org/abs/2511.07885",
+    "pdf_url": "https://arxiv.org/pdf/2511.07885",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Jon Saad-Falcon",
+      "Avanika Narayan",
+      "Hakki Orhun Akengin",
+      "J. Wes Griffin",
+      "Herumb Shandilya",
+      "Adrian Gamarra Lafuente",
+      "Medhya Goel",
+      "Rebecca Joseph",
+      "Shlok Natarajan",
+      "Etash Kumar Guha",
+      "Shang Zhu",
+      "Ben Athiwaratkun",
+      "John Hennessy",
+      "Azalia Mirhoseini",
+      "Christopher R\\'e"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "accelerator"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: accelerator",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large language model (LLM) queries are predominantly processed by frontier models in centralized cloud infrastructure.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2511.07885",
+        "url": "https://arxiv.org/abs/2511.07885"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06564",
+    "title": "Quantization Damage Is Multiplicative, Not Additive",
+    "abstract": "Quantization is how large language models are actually deployed, and below four bits it is known to hurt. What nobody can say is which of the model's decisions will change at a given bit-width. The damage is silent: a compressed agent stops calling its tools, then loses half its safety refusals, yet benchmark scores barely move. Prior work assumes quantization adds noise of a roughly fixed size, which would make confident decisions safe. We measure the decision itself instead. The margin of a two-way decision is the model's score for the option it picks minus the score of its best alternative; we track it before and after quantization across 16 models from 8 model families, three quantization methods, and bit-widths from 8 down to 2. Quantization does not add fixed-size noise to the margin. It multiplies the margin by a factor that collapses with bit-width (median 0.86 at 4 bits, 0.33 at 3, 0.00 at 2); we call this margin shrinkage. This contraction reduces the protection a large margin affords; the model's own small biases pick the direction of failure: at 3 bits the decision to call a tool collapses toward inaction while the choice of which tool is untouched. In fitted statistical comparison, additive-noise accounts never win on the damaged tool and safety decisions. The fitted relation predicts flip rates within a median of 1.8 percentage points on held-out decisions, though no flip was used in the fit; per decision, the predicted flip probabilities are calibrated uncertainty estimates (expected calibration error 0.004 over 131,758 predictions). The same form holds in every model we measure, but the constants are each model's own and do not transfer. A small paired margin set, measured per model and bit-width, estimates which decisions break without full generative evaluation; under our cost-matched tests, nothing repairs damage more cheaply than one more bit.",
+    "url": "https://arxiv.org/abs/2608.06564",
+    "pdf_url": "https://arxiv.org/pdf/2608.06564",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Zekun Wu",
+      "Swati Dhiman",
+      "Adriano Koshiyama"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Quantization is how large language models are actually deployed, and below four bits it is known to hurt.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06564",
+        "url": "https://arxiv.org/abs/2608.06564"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.07463",
+    "title": "MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation",
+    "abstract": "Recent advances in video diffusion models (VDMs) have enabled high-fidelity video synthesis. However, generating mirror reflections remains challenging because the content within a mirror must remain consistent with the surrounding scene. Existing VDMs are not specifically designed to model scene-to-mirror relationships, which can lead to reflections with incorrect content or inconsistent spatial arrangements. We observe that mirror reflection generation involves two complementary challenges: determining what scene content should be reflected and how the reflected content should be spatially arranged within the mirror region. Motivated by this observation, we propose MirrorWorld, a reflection-aware video inpainting framework that models scene-to-mirror relationships during generation. Specifically, we introduce Semantic Relation Distillation (SRD), which transfers relational information from a frozen visual foundation model to encourage semantic associations between visible scene content and mirror regions. We further propose Geometric Transformation Alignment (GTA), which learns a transformation that guides the spatial arrangement of reflected content. The two components play complementary roles, with SRD modeling what should be reflected and GTA modeling how it should be arranged. To facilitate research on this problem, we construct a benchmark for video mirror reflection generation by repurposing four existing video mirror datasets into a unified reflection reconstruction task. Experimental results show that MirrorWorld achieves improved reflection reconstruction quality over representative image-based reflection generation methods and strong video inpainting baselines.",
+    "url": "https://arxiv.org/abs/2608.07463",
+    "pdf_url": "https://arxiv.org/pdf/2608.07463",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Youjun Zhao",
+      "Alex Warren",
+      "Gary K. L. Tam",
+      "Rynson W. H. Lau"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 13,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Recent advances in video diffusion models (VDMs) have enabled high-fidelity video synthesis.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07463",
+        "url": "https://arxiv.org/abs/2608.07463"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2606.21257",
+    "title": "An Empirical Study of openPangu Quantization on Ascend NPUs",
+    "abstract": "openPangu models are attractive targets for private and domestic large-language-model deployment, yet their robustness under aggressive post-training quantization on Ascend NPUs has not been systematically characterized. This paper conducts a controlled empirical study of openPangu 1B and 7B models on Huawei Ascend 910B1 NPUs. We evaluate representative weight-only and weight-activation post-training quantization methods, including RTN, GPTQ, AWQ, SmoothQuant, GPTAQ, BiLLM, and SliM-LLM, under a unified calibration and evaluation protocol. Across 18 evaluation tasks, we find that 8-bit weight-only quantization is effectively lossless for both models, while 4-bit quantization remains practical for the 7B model but is visibly more harmful for the 1B model on reasoning, math, and code tasks. Ultra-low precision remains challenging: most 2-bit and binary settings collapse to near-random behavior, and W4A4 SmoothQuant produces non-finite perplexity in our evaluation. These results provide an NPU-oriented accuracy map for selecting openPangu quantization settings and highlight the persistent difficulty of extreme low-bit compression.",
+    "url": "https://arxiv.org/abs/2606.21257",
+    "pdf_url": "https://arxiv.org/pdf/2606.21257",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Tong Shi",
+      "Jiacheng Wang",
+      "Hui Xie",
+      "Ying Li",
+      "Aishan Liu",
+      "Jinyang Guo",
+      "Xianglong Liu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "low precision",
+      "quantization"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: low precision, quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "openPangu models are attractive targets for private and domestic large-language-model deployment, yet their robustness under aggressive post-training quantization on Ascend NPUs has not been systematically characterized.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2606.21257",
+        "url": "https://arxiv.org/abs/2606.21257"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.18079",
+    "title": "The Expressive Power of Low Precision Softmax Transformers with (Summarized) Chain-of-Thought",
+    "abstract": "Existing expressivity results for transformers typically rely on hardmax attention, high precision, and other architectural modifications that disconnect them from the models used in practice. We bridge this gap by analyzing standard transformer decoders with softmax attention and rounding of activations and attention weights, while allowing depth and width to grow logarithmically with the context length. As an intermediate step, we construct hardmax transformers with ternary activations and well-separated attention scores that simulate Turing machines using Chain-of-Thought (CoT). This lets us convert the constructions to equivalent softmax transformers without the unrealistic parameter magnitudes or activation precision that prior approaches would require. Using the same technique, we analyze a recently proposed summarized CoT paradigm and show that it simulates Turing machines more efficiently, with model size scaling logarithmically in a space bound rather than a time bound. We empirically test predictions made by our results on a Sudoku reasoning task and find better alignment with learnability than for prior high-precision results. Our code is available at https://github.com/moritzbroe/transformer-expressivity.",
+    "url": "https://arxiv.org/abs/2605.18079",
+    "pdf_url": "https://arxiv.org/pdf/2605.18079",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Moritz Br\\\"osamle",
+      "Stephan Eckstein"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CC",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/moritzbroe/transformer-expressivity",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "low precision"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 5,
+      "practical_impact": 5,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: low precision",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Existing expressivity results for transformers typically rely on hardmax attention, high precision, and other architectural modifications that disconnect them from the models used in practice.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.18079",
+        "url": "https://arxiv.org/abs/2605.18079"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06723",
+    "title": "Multi-Level Modeling of Large Language Model Inference Latency and Energy via Hybrid Analytical--Machine-Learning Predictors",
+    "abstract": "The rapid scaling of Large Language Models (LLMs) has significantly increased computational cost, energy consumption, and inference latency, making accurate estimation essential for sustainable artificial intelligence deployment and hardware-aware design. In this work, we introduce Hybrid Modeling for Energy and Latency of LLMs (HYMELL), a hybrid three-level framework for estimating LLM inference latency and energy by combining analytical modeling with machine learning (ML). HYMELL models LLM execution through a three-level hierarchy: analytical estimation of primitive operations, ML prediction of higher-level components, and an end-to-end model that captures system-level overheads across both prefill and decode phases. The framework supports diverse architectures, including dense and mixture-of-experts (MoE) feed-forward networks (FFNs), as well as multi-head attention (MHA) and grouped-query attention (GQA) mechanisms. Evaluated on an NVIDIA H100 graphics processing unit (GPU), HYMELL achieves high predictive accuracy; notably, for LLaMA 3 8B, it attains less than 5% error for both prefill and decode phases. By predicting execution costs directly from architectural parameters, it enables fast, hardware-free design space exploration and energy-efficient optimization.",
+    "url": "https://arxiv.org/abs/2608.06723",
+    "pdf_url": "https://arxiv.org/pdf/2608.06723",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Saeid Shokoufa",
+      "Mohammad Erfan Sadeghi",
+      "Mehdi Kamal",
+      "Massoud Pedram"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "hardware-aware"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: hardware-aware",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "The rapid scaling of Large Language Models (LLMs) has significantly increased computational cost, energy consumption, and inference latency, making accurate estimation essential for sustainable artificial intelligence deployment and hardware-aware design.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06723",
+        "url": "https://arxiv.org/abs/2608.06723"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.20457",
+    "title": "Dropping the Anchor: Statistical Context Summarization for Distributed Systems via Pulsar Attention",
+    "abstract": "Inference with large language models (LLMs) on long sequences is computationally expensive due to the quadratic complexity of self-attention. Distributed blockwise methods such as Star Attention reduce this cost by sharding context across hosts, but rely on prepending a static, content-blind copy of the first block to every host. We propose Pulsar Attention, which replaces the static anchor with two lightweight, content-aware components: a small attention-sink prefix that stabilizes softmax, and compact cross-block summaries built via a Max-IDF heuristic that selects chunks containing globally rare tokens. This reduces the Phase 1 per-GPU FLOPs by up to 3.3x over Star Attention while retaining an identical KV cache footprint. On RULER with Llama-3.1-8B-Instruct, Pulsar Attention outperforms Star Attention at sequence lengths up to 128K tokens and remains competitive with dense attention across most tasks, with task-dependent absolute gains of up to 4.7% over the dense baseline.",
+    "url": "https://arxiv.org/abs/2607.20457",
+    "pdf_url": "https://arxiv.org/pdf/2607.20457",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Aryan Sood",
+      "Shantanu Acharya",
+      "Gaurav Kumar Nayak"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Inference with large language models (LLMs) on long sequences is computationally expensive due to the quadratic complexity of self-attention.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.20457",
+        "url": "https://arxiv.org/abs/2607.20457"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.07430",
+    "title": "Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits",
+    "abstract": "Diffusion Large Language Models (DLLMs) replace autoregressive next-token prediction with iterative parallel denoising, yet their internal safety mechanisms remain poorly understood. In this work, we investigate DLLMs both as targets and as adversaries, exposing mechanistic vulnerabilities in diffusion-based alignment. We first show that safety alignment in DLLMs remains sparse and transferable across architectures. DLLMs initialized from autoregressive predecessors inherit the same mechanistic safety footprint as their source models, enabling transfer attacks via direct safety neuron mapping and pruning. Self-pruning increases attack success rates (ASR) from 2.6% to 73.8% on LLaDA and from 1.9% to 86.6% on Dream, while transfer pruning from Qwen2.5 increases ASR from 1.9% to 73.2% on Dream and from 7.0% to 86.3% on Fast-dLLM. Building on these findings, we introduce SN-Guided Diffusion, a fully offline black-box jailbreak framework that steers the diffusion process away from safety-triggering regions using a weighted safety neuron loss, which achieves near-perfect prompt separability (AUROC = 1.0 for benign-vs-jailbreak discrimination). Across multiple open and proprietary targets, our method achieves a transfer ASR of up to 77.1% on Llama-3-8B-Instruct, 86.9% on Qwen2.5-7B-Instruct, and 74.3% against Gemini-2.5-Flash-Lite, while requiring only 20 generation episodes per prompt. Compared to prior jailbreaking frameworks, our method achieves competitive transferability with orders-of-magnitude lower generation cost. Our codebase is available at https://github.com/ellyoana/sn-guided-diffusion.",
+    "url": "https://arxiv.org/abs/2608.07430",
+    "pdf_url": "https://arxiv.org/pdf/2608.07430",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Elena Dumitrescu",
+      "Gert Lek",
+      "Lydia Y. Chen",
+      "J\\'er\\'emie Decouchant"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/ellyoana/sn-guided-diffusion",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 5,
+      "practical_impact": 7,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Diffusion Large Language Models (DLLMs) replace autoregressive next-token prediction with iterative parallel denoising, yet their internal safety mechanisms remain poorly understood.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07430",
+        "url": "https://arxiv.org/abs/2608.07430"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06763",
+    "title": "CubicQuant: Parametric Non-Uniform Codebooks for High-Throughput LLM Inference with 1-8-Bit Weights",
+    "abstract": "Weight quantization for large-language-model inference must balance adaptive reconstruction levels with representations regular enough for efficient GPU execution. Uniform integers constrain each group to a linear grid. Low-bit floating-point formats use a fixed exponent-mantissa structure, while learned codebooks gain flexibility at the cost of irregular decoding and additional metadata. We introduce CubicQuant, a parametric non-uniform scalar format that preserves a dense integer code stream while adapting reconstruction levels within each weight group. A monotonic cubic curve, specified by two shape parameters and one scale, maps uniformly spaced magnitude codes to non-uniform levels. The family spans 1-8-bit weight payloads, contains symmetric uniform integer quantization as an exact special case, and has effective width B + 64/G bits per weight for payload width B and group size G. We derive population distortion under Uniform, Gaussian, and Laplace distributions, formulate continuous and Dynamic-A8-carrier-aware fitting objectives, and describe direct packed-weight GPU execution. For finite groups of G=128 with 15,360 samples per distribution, W4 CubicQuant reduced reconstruction RMSE relative to optimally clipped four-bit uniform integer quantization by 3.90% on Uniform, 13.49% on Gaussian, and 28.14% on Laplace samples. Relative to the best enumerated four-bit finite floating-point format, the reductions were 3.90%, 9.44%, and 6.27%. Preliminary H200 kernel measurements show a workload-dependent crossover: model-dtype execution is faster for narrow GEMV, while Dynamic A8 becomes favorable as row count grows. The results establish the format's representational promise and direct executability; downstream model quality and cross-device end-to-end performance remain open evaluation questions.",
+    "url": "https://arxiv.org/abs/2608.06763",
+    "pdf_url": "https://arxiv.org/pdf/2608.06763",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Xuetian Gao"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Weight quantization for large-language-model inference must balance adaptive reconstruction levels with representations regular enough for efficient GPU execution.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06763",
+        "url": "https://arxiv.org/abs/2608.06763"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06849",
+    "title": "Autonomy-of-Heads: Data-Free Sparse Attention from Frozen Query-Key Geometry",
+    "abstract": "Long-context LLM inference is bottlenecked by quadratic attention computation and growing KV-cache costs. Existing sparse attention and KV-compression methods typically decide which tokens or heads to preserve from runtime attention scores, observation windows, calibration prompts, or learned gates, making head diagnosis input-dependent and costly to deploy. We propose Autonomy-of-Heads (AoH), a data-free method that identifies retrieval and streaming heads from the spectral geometry of query-key projections. AoH defines the kernel attention operator $M_h = W_K^{h\\top}W_Q^h$ and uses its effective-rank as a weight-space measure of head function: concentrated spectra indicate a small number of dominant query-key matching directions and are associated with retrieval heads, whereas diffuse spectra indicate the absence of a dominant global matching direction and are associated with streaming heads. We further derive an efficient $d_\\text{head}$-dimensional computation that avoids constructing the full $d_\\text{model}\\times d_\\text{model}$ matrix. We conducted extensive experiments across models demonstrating that at 50\\% sparsity, AoH retains 96.5\\% of Full Attention performance on average while reducing prefill and decode latency by up to 41.4\\% and 66.0\\%, respectively, and KV-cache memory by 50.0\\% at 256K tokens.",
+    "url": "https://arxiv.org/abs/2608.06849",
+    "pdf_url": "https://arxiv.org/pdf/2608.06849",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Yehan Yang",
+      "Junyuan Shang",
+      "Yang Li",
+      "Guanqun Zhao",
+      "Shuohuan Wang",
+      "Dianhai Yu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv-cache"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv-cache",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Long-context LLM inference is bottlenecked by quadratic attention computation and growing KV-cache costs.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06849",
+        "url": "https://arxiv.org/abs/2608.06849"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06439",
+    "title": "A Low-Latency ASIC Architecture for Real-Time Line Segment Detection",
+    "abstract": "Line segment detection is a critical preprocessing step in embedded vision applications such as autonomous navigation, visual SLAM, and industrial inspection. Deep learning methods achieve high accuracy but require substantial resources, limiting their deployment on resource-constrained platforms. Classical algorithms are efficient but exhibit content-dependent latency. This paper presents a low-latency ASIC architecture for real-time line segment detection. The proposed design is based on the step-length algorithm and incorporates five ASIC-specific features: register-based line buffering with data reuse, multiplierless MCM-based filtering, 8-class angle quantization, a CAM-like associative memory for single-cycle matching, and an optimized duplicate removal mechanism. The architecture is fully pipelined and processes one pixel per clock cycle with deterministic latency. Synthesized in a 45nm CMOS process, the design achieves 325 FPS at VGA resolution and 48 FPS at Full HD, with 25.54 mW power consumption and 0.412 mm\\textsuperscript{2} area. At 125 MHz, the throughput increases to 406 FPS at VGA resolution with 31.48 mW power consumption. Compared with a 90nm ASIC implementation based on the Line Hough Transform, the proposed design reduces power consumption by 49\\% and delivers over 1.6 times higher frame rate. The architecture is well suited for edge-computing applications requiring real-time performance, low power, and minimal area.",
+    "url": "https://arxiv.org/abs/2608.06439",
+    "pdf_url": "https://arxiv.org/pdf/2608.06439",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Amir Hossein Jalilvand",
+      "Parsa Hassani Shariat Panahi",
+      "M. Hassan Najafi"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 5,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Line segment detection is a critical preprocessing step in embedded vision applications such as autonomous navigation, visual SLAM, and industrial inspection.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06439",
+        "url": "https://arxiv.org/abs/2608.06439"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06529",
+    "title": "Lost in Interpolation: Why Predictive Feedback Fails in Diffusion Language Models",
+    "abstract": "Soft-masking accelerates the convergence of Masked Diffusion Language Models (MDLMs). Existing formulations build this blend with linear interpolation (LERP) in the raw embedding space, which implicitly treats that space as Euclidean. We analyze the embedding space of MDLMs and find that the mask and predicted-token embeddings maintain a near-constant angle of (\\approx 73^\\circ) throughout training, while embedding norms remain essentially flat across vocabulary-frequency rank. These indicate a hyperspherical geometry, for which LERP is the wrong interpolation primitive. We introduce Spherical Soft-Masking (S-SM), a drop-in replacement that aggregates the top-(k) predictions with a Fr'echet mean on the hypersphere and blends this mean with the mask direction using spherical linear interpolation (SLERP), then restores the native mask norm. We evaluate S-SM on continued pre-training of a released 169M-parameter MDLM checkpoint across a wide range of inference-time step budgets, SLERP feedback avoids the training degradation that LERP feedback induces and delivers MAUVE gains of up to 2x over the vanilla MDLM baseline and 27.5-56.1% over TopK/LERP at various sampling budgets, alongside consistently lower generative perplexity (16.9-19.6% over the baseline), while leaving output entropy and convergence essentially unchanged.",
+    "url": "https://arxiv.org/abs/2608.06529",
+    "pdf_url": "https://arxiv.org/pdf/2608.06529",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Lavanya Nigam",
+      "Ishaan Bansal",
+      "Aryan Sood",
+      "Vidit Aggarwal",
+      "Gaurav Kumar Nayak"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "distributed-training-checkpoint",
+      "leaf": "Distributed Training & Checkpointing",
+      "leaf_zh": "分布式训练与 Checkpoint"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "checkpoint"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 8,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: checkpoint",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Soft-masking accelerates the convergence of Masked Diffusion Language Models (MDLMs).",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06529",
+        "url": "https://arxiv.org/abs/2608.06529"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.06867",
+    "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+    "abstract": "No single large language model (LLM) is optimal across all queries and budget constraints, making model routing essential for cost-effective deployment. Existing routers adopt diverse formulations and implementations, making fair comparison and extension difficult. We present a unified formulation of LLM routing as a sequential decision process characterized by five components: context encoders, model encoders, scoring functions, decision rules, and learning signals, covering single-turn, multi-turn, and personalized routing. Based on this formulation, we develop an automated pipeline for constructing routing supervision and evaluating routers jointly on response quality and inference cost. The resulting benchmark, xRouteBench, spans generic LLM, memory-augmented, vision, time-series, and personalized routing tasks. We further introduce LLMRouter, an open-source modular infrastructure with more than 16 representative routers. Our empirical study shows that learned routers outperform the strongest fixed-model baseline by 14.6% relatively, lightweight routers become more competitive under tight cost constraints, and user-conditioned routing consistently improves personalization.",
+    "url": "https://arxiv.org/abs/2608.06867",
+    "pdf_url": "https://arxiv.org/pdf/2608.06867",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Tao Feng",
+      "Fangxu Yu",
+      "Haozhen Zhang",
+      "Zhongjie Dai",
+      "Liangqi Yuan",
+      "Zijie Lei",
+      "Weizhi Zhang",
+      "Kunlun Zhu",
+      "Haodong Yue",
+      "Keyang Xuan",
+      "Ge Liu",
+      "Jiaxuan You"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "gateway-routing-autoscaling",
+      "leaf": "Gateway, Routing & Autoscaling",
+      "leaf_zh": "Gateway、路由与弹性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "model routing"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: model routing",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "No single large language model (LLM) is optimal across all queries and budget constraints, making model routing essential for cost-effective deployment.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.06867",
+        "url": "https://arxiv.org/abs/2608.06867"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.07001",
+    "title": "Every Cache Entry Earns Its Place: Global Allocation of Resolution and Coverage for KV Cache Compression",
+    "abstract": "As large language models (LLMs) process increasingly long contexts, KV cache storage and repeated access have become a major bottleneck. Existing KV cache compression methods rely on predefined, fixed compression rules and are typically developed around either token eviction or merging. As a result, cache resources can neither flow freely across layers, heads, and context slots, nor be jointly allocated to balance local resolution and information coverage. Therefore, we propose GraceKV, a global approach for the allocation of resolution and coverage in KV cache compression, and formulate the compression process as a global resource allocation problem under a fixed cache budget. GraceKV treats each layer-KV head-slot combination as an atomic unit and builds a prototype tree. Leaf nodes correspond to token-level KV entries, while each internal node uses a single prototype to compress the KV space covered by its children. A set of non-overlapping nodes in the tree forms the representation of an atomic unit. Adding the root of a new tree expands information coverage, whereas splitting a selected node improves local resolution. All candidate actions compete globally for a shared cache budget. Finally, the nodes retained across all trees form the compressed KV cache. This process adaptively determines the allocation of cache resources among atomic units globally and the balance between resolution and coverage. GraceKV requires no additional training, and the entire compression and inference process is performed on the GPU. Systematic experiments across diverse long-context tasks and compression ratios show that GraceKV ranks first in 24 of 32 settings and remains robust up to 128-fold compression. These results validate the effectiveness of global budget allocation in coordinating information coverage and local resolution.",
+    "url": "https://arxiv.org/abs/2608.07001",
+    "pdf_url": "https://arxiv.org/pdf/2608.07001",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Haolin Tian",
+      "Yuzhe Liu",
+      "Tonghan Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "As large language models (LLMs) process increasingly long contexts, KV cache storage and repeated access have become a major bottleneck.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.07001",
+        "url": "https://arxiv.org/abs/2608.07001"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2601.19897",
+    "title": "Self-Distillation Enables Continual Learning",
+    "abstract": "Continual learning, enabling models to acquire new skills and knowledge without degrading existing capabilities, remains a fundamental challenge for foundation models. While on-policy reinforcement learning can reduce forgetting, it requires explicit reward functions that are often unavailable. Learning from expert demonstrations, the primary alternative, is dominated by supervised fine-tuning (SFT), which is inherently off-policy. We introduce Self-Distillation Fine-Tuning (SDFT), a simple method that enables on-policy learning directly from demonstrations. SDFT leverages in-context learning by using a demonstration-conditioned model as its own teacher, generating on-policy training signals that preserve prior capabilities while acquiring new skills. Across skill learning and knowledge acquisition tasks, SDFT consistently outperforms SFT, achieving higher new-task accuracy while substantially reducing catastrophic forgetting. In sequential learning experiments, SDFT enables a single model to accumulate multiple skills over time without performance regression, establishing on-policy distillation as a practical path to continual learning from demonstrations.",
+    "url": "https://arxiv.org/abs/2601.19897",
+    "pdf_url": "https://arxiv.org/pdf/2601.19897",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Idan Shenfeld",
+      "Mehul Damani",
+      "Jonas H\\\"ubotter",
+      "Pulkit Agrawal"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Continual learning, enabling models to acquire new skills and knowledge without degrading existing capabilities, remains a fundamental challenge for foundation models.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2601.19897",
+        "url": "https://arxiv.org/abs/2601.19897"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2602.09373",
+    "title": "AfriNLLB: Efficient Translation Models for African Languages",
+    "abstract": "In this work, we present AfriNLLB, a series of lightweight models for efficient translation from and into African languages. AfriNLLB supports 15 language pairs (30 translation directions), including Swahili, Hausa, Yoruba, Amharic, Somali, Zulu, Lingala, Afrikaans, Wolof, and Egyptian Arabic, as well as other African Union official languages such as Arabic (MSA), French, Portuguese, and Spanish. Our training data covers bidirectional translation between English and 13 languages, and between French and two languages (Lingala and Wolof). AfriNLLB models are based on NLLB-200 600M, which we compress using iterative layer pruning and quantization. We fine-tune the pruned models on parallel corpora we curated for African languages, employing knowledge distillation from a larger teacher model. Our work aims at enabling efficient deployment of translation models for African languages in resource-constrained settings. Our evaluation results demonstrate that AfriNLLB models achieve performance comparable to the baseline while being significantly faster. We release two versions of the AfriNLLB models, a Transformers version that allows further fine-tuning and a CTranslate2 version for efficient inference. Moreover, we release all the training data that we used for fine-tuning the baseline and pruned models to facilitate further research.",
+    "url": "https://arxiv.org/abs/2602.09373",
+    "pdf_url": "https://arxiv.org/pdf/2602.09373",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "authors": [
+      "Yasmin Moslem",
+      "Aman Kassahun Wassie",
+      "Amanuel Gizachew Abebe"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation",
+      "pruning"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation, pruning",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "In this work, we present AfriNLLB, a series of lightweight models for efficient translation from and into African languages.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-10T05:04:42+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2602.09373",
+        "url": "https://arxiv.org/abs/2602.09373"
+      }
+    ]
+  },
+  {
     "id": "arxiv:2601.07568",
     "title": "d3LLM: Ultra-Fast Diffusion LLM using Pseudo-Trajectory Distillation",
     "abstract": "Diffusion large language models (dLLMs) offer capabilities beyond those of autoregressive (AR) LLMs, such as parallel decoding and random-order generation. However, realizing these benefits in practice is non-trivial, as dLLMs inherently face an accuracy-parallelism trade-off. Despite increasing interest, existing methods typically focus on only one-side of the coin, targeting either efficiency or accuracy. To address this limitation, we propose d3LLM (Pseudo-Distilled Diffusion Large Language Model), striking a balance between accuracy and parallelism: (i) during training, we introduce pseudo-trajectory distillation to teach the model which tokens can be decoded confidently at early steps, thereby improving parallelism; (ii) during inference, we employ entropy-based multi-block decoding with a KV-cache refresh mechanism to achieve high parallelism while maintaining accuracy. To better evaluate dLLMs, we also introduce AUP (Accuracy Under Parallelism), a new metric that jointly measures accuracy and parallelism. Experiments demonstrate that our d3LLM achieves up to 10$\\times$ speedup over vanilla LLaDA/Dream, and 5$\\times$ speedup over AR models without much accuracy drop. Our code is available at https://github.com/hao-ai-lab/d3LLM.",
@@ -62,7 +2356,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -134,7 +2428,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -210,7 +2504,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -283,7 +2577,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -355,7 +2649,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -424,7 +2718,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -495,7 +2789,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -565,7 +2859,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -638,7 +2932,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -708,7 +3002,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -782,7 +3076,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -866,7 +3160,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -934,7 +3228,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1010,7 +3304,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1081,7 +3375,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1153,7 +3447,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1223,7 +3517,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1296,7 +3590,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1372,7 +3666,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1448,7 +3742,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1517,7 +3811,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1588,7 +3882,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1661,7 +3955,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1734,7 +4028,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1805,7 +4099,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1886,7 +4180,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -1961,7 +4255,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -2034,7 +4328,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -2109,7 +4403,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2186,7 +4480,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2264,7 +4558,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2334,7 +4628,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2401,7 +4695,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2475,7 +4769,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2553,7 +4847,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2627,7 +4921,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2697,7 +4991,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2768,7 +5062,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2844,7 +5138,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2916,7 +5210,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2995,7 +5289,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3068,7 +5362,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3141,7 +5435,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3213,7 +5507,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3284,7 +5578,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3356,7 +5650,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3427,7 +5721,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3501,7 +5795,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3570,7 +5864,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3638,7 +5932,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3711,7 +6005,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3783,7 +6077,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3861,7 +6155,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3929,7 +6223,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4016,7 +6310,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4086,7 +6380,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4154,7 +6448,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4228,7 +6522,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4308,7 +6602,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4380,7 +6674,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4460,7 +6754,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4540,7 +6834,7 @@
     "limitations_zh": "摘要未说明真实流片、仿真精度、模型规模和对比系统配置；3D 集成、FeFET 成熟度及动态路由下的热设计成本仍需结合正文和硬件实现核验。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -4619,7 +6913,7 @@
     "limitations_zh": "当前元数据只说明将发布代码，尚未发现 Artifact；收益依赖具体硬件、模型和缩放策略，而且工作聚焦训练效率，不能等同于部署阶段的 FP8 推理收益。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -4690,7 +6984,7 @@
     "limitations_zh": "仅覆盖单一消费级 GPU、固定提示集和 2Hz 功耗采样；内部推理长度会混淆每提示能耗，结论尚不能直接外推到数据中心 GPU 或在线并发负载。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -4763,7 +7057,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4842,7 +7136,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4914,7 +7208,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4990,7 +7284,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5064,7 +7358,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5135,7 +7429,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5209,7 +7503,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5278,7 +7572,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5358,7 +7652,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5430,7 +7724,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5514,7 +7808,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5597,7 +7891,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5672,7 +7966,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5749,7 +8043,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5823,7 +8117,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5902,7 +8196,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5976,7 +8270,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6045,7 +8339,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6120,7 +8414,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6190,13 +8484,82 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
         "source": "arXiv RSS",
         "id": "2608.02378",
         "url": "https://arxiv.org/abs/2608.02378"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.29678",
+    "title": "TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving",
+    "abstract": "LLM serving caches prompt KV state, yet most front ends still re-tokenize the full request on every call. Coding agents pay most: sessions repeatedly submit a long transcript after a small append, which can shift token boundaries near the end of the prior sequence. Across 153,951 calls the median append is ~1.4K characters; only 1.0-3.6% of calls start or rebuild a session, yet those carrymulti-million-character contexts. Fleet prompt-cache hit rate is 94.1%, and as it approaches 0.99, tokenization grows from 10% to 64% of time to first token (TTFT) in component measurements. TokTier is a stateful CPU+GPU tokenization service for this two-mode workload, under one contract: emitted token IDs are always identical to full reference tokenization. For session continuations it re-tokenizes a small window around the append and splices only when a per-request check finds a stable pre-tokenization boundary; failed checks widen the window or fall back to full reference tokenization. For calls without a reusable prefix it runs exact GPT-family regex pre-tokenization and BPE on a GPU. A sampled shadow verifier re-checks live traffic. Across 17 production tokenizer families, differential campaigns cover 1.5x10^10 split checks, a 12.4 TB real-text corpus, and 93,000+ replayed agent steps, with zero divergence. Incremental repair takes 0.5-1.1 ms from 100K to 3M characters, up to 437x faster than HF tokenization and 2.1x faster at 1M characters than the strongest cache-based baseline (Gigatoken) fully prewarmed. GPU tokenization encodes a 1M-character request in 0.87 ms, up to 491x below HF and 23.4x below the fastest published CPU method on the same protocol. With vLLM, median TTFT drops 16-34% and P99 TTFT 23% under recorded bursts. Under a 50 ms P99 objective, a four-core repair pool plus one GPU sustains 1,821 requests/s, where a 16-core stateless front end saturates at 40 requests/s.",
+    "url": "https://arxiv.org/abs/2607.29678",
+    "pdf_url": "https://arxiv.org/pdf/2607.29678",
+    "published": "2026-08-04",
+    "updated": "2026-08-10",
+    "authors": [
+      "Zhenyu Zhang",
+      "Zhichao Cao"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.DC",
+      "cs.PF"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "serving-engine",
+      "leaf": "Serving Engines & Runtimes",
+      "leaf_zh": "Serving Engine 与 Runtime"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "llm serving"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 8,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: llm serving",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "LLM serving caches prompt KV state, yet most front ends still re-tokenize the full request on every call.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-05T02:30:52+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.29678",
+        "url": "https://arxiv.org/abs/2607.29678"
       }
     ]
   },
@@ -6260,7 +8623,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6331,7 +8694,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6404,7 +8767,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6477,7 +8840,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6551,7 +8914,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6622,7 +8985,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6700,7 +9063,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6774,7 +9137,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6849,7 +9212,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6916,7 +9279,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6986,7 +9349,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7053,7 +9416,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7121,7 +9484,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7193,7 +9556,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7269,7 +9632,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7347,82 +9710,13 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
         "source": "arXiv RSS",
         "id": "2604.15622",
         "url": "https://arxiv.org/abs/2604.15622"
-      }
-    ]
-  },
-  {
-    "id": "arxiv:2607.29678",
-    "title": "TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving",
-    "abstract": "LLM serving stacks cache prompt KV state, yet the front end still re-tokenizes the full request text on every call. Coding agents pay the most: each call resubmits a long transcript after a small append, and reuse is hard because a short append can move token boundaries near the end of the prior sequence. Across 153,951 agent calls, the median append is 1.4K characters; only 1.0-3.6% of calls start or rebuild a session, but those carry multi-million-character contexts. At the fleet's 94.1% prompt-cache hit rate approaching 0.99, tokenization grows from 10% to 64% of time to first token. TokTier is a stateful CPU+GPU tokenization service for this two-mode workload with one contract: emitted token IDs are always identical to full reference tokenization of the request text. For session continuations it re-tokenizes a small window around the append and splices only when a per-request check finds a stable pre-tokenization boundary, else it widens or falls back. For calls without a reusable prefix it decomposes GPT-family regex pre-tokenization into run-local rules and runs exact pre-tokenization and BPE on a GPU. A sampled shadow verifier re-checks live traffic. Differential campaigns over 17 production tokenizer families ($1.5\\times10^{10}$ split checks, a 12.4TB real-text corpus, 93,000+ replayed agent steps) show zero divergence. Incremental repair takes 0.5-1.1ms from 100K to 3M characters, up to $437\\times$ faster than HF tokenization and $2.1\\times$ faster at 1M characters than the strongest cache-based baseline (Gigatoken) fully prewarmed. GPU full tokenization encodes 1M characters in 0.87ms, $491\\times$ below HF and $23.4\\times$ below the fastest published CPU method. With vLLM, median time to first token drops 16-34% and P99 23%; under a 50ms P99 objective, four repair cores plus one GPU sustain 1,821 requests/s where a 16-core stateless front end saturates at 40.",
-    "url": "https://arxiv.org/abs/2607.29678",
-    "pdf_url": "https://arxiv.org/pdf/2607.29678",
-    "published": "2026-08-04",
-    "updated": "2026-08-04",
-    "authors": [
-      "Zhenyu Zhang",
-      "Zhichao Cao"
-    ],
-    "source": "arXiv RSS",
-    "source_type": "preprint",
-    "categories": [
-      "cs.CL",
-      "cs.DC",
-      "cs.PF"
-    ],
-    "doi": "",
-    "venue": "",
-    "journal_ref": "",
-    "comment": "",
-    "code_url": "",
-    "primary_category": {
-      "domain_id": "ai-infrastructure",
-      "domain": "AI Infrastructure",
-      "domain_zh": "AI 基础设施",
-      "group_id": "serving-platform",
-      "group": "Serving Platforms",
-      "group_zh": "服务平台",
-      "leaf_id": "serving-engine",
-      "leaf": "Serving Engines & Runtimes",
-      "leaf_zh": "Serving Engine 与 Runtime"
-    },
-    "secondary_tags": [],
-    "keyword_evidence": [
-      "llm serving"
-    ],
-    "score": 41,
-    "score_components": {
-      "relevance": 16,
-      "novelty": 6,
-      "rigor": 9,
-      "practical_impact": 5,
-      "reproducibility": 2,
-      "credibility": 3
-    },
-    "score_evidence": [
-      "taxonomy keywords: llm serving",
-      "no quantitative claim in metadata",
-      "no code link detected in metadata"
-    ],
-    "summary_en": "LLM serving stacks cache prompt KV state, yet the front end still re-tokenizes the full request text on every call.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
-    "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
-    "featured_weeks": [],
-    "source_records": [
-      {
-        "source": "arXiv RSS",
-        "id": "2607.29678",
-        "url": "https://arxiv.org/abs/2607.29678"
       }
     ]
   },
@@ -7493,7 +9787,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7566,7 +9860,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7640,7 +9934,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7713,7 +10007,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7795,7 +10089,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7868,7 +10162,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7944,7 +10238,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8020,7 +10314,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8086,7 +10380,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8159,7 +10453,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8236,7 +10530,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8305,7 +10599,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8379,7 +10673,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8450,7 +10744,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8535,7 +10829,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8606,7 +10900,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8675,7 +10969,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8745,7 +11039,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8815,7 +11109,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8885,7 +11179,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8995,7 +11289,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9063,7 +11357,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9141,7 +11435,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9219,7 +11513,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9293,7 +11587,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9372,7 +11666,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9456,7 +11750,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9532,7 +11826,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9615,7 +11909,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9696,7 +11990,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9768,7 +12062,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9842,7 +12136,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9923,7 +12217,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10001,7 +12295,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10078,7 +12372,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10155,7 +12449,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10229,7 +12523,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10312,7 +12606,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10389,7 +12683,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10467,7 +12761,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10547,7 +12841,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10622,7 +12916,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10697,7 +12991,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10770,7 +13064,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10846,7 +13140,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10922,7 +13216,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10998,7 +13292,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11070,7 +13364,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11147,7 +13441,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11222,7 +13516,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11299,7 +13593,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11374,7 +13668,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -11452,7 +13746,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11529,7 +13823,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11602,7 +13896,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11673,7 +13967,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11747,7 +14041,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11826,7 +14120,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11899,7 +14193,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11973,7 +14267,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12045,7 +14339,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12123,7 +14417,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12198,7 +14492,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12276,7 +14570,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12349,7 +14643,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12430,7 +14724,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-07T05:08:23+00:00",
+    "last_seen": "2026-08-10T05:04:42+00:00",
     "featured_weeks": [],
     "source_records": [
       {

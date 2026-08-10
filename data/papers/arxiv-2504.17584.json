@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2504.17584",
+  "title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+  "abstract": "Attention-FC Disaggregated (AFD) LLM inference systems offload memory-bound Attention operations to memory-rich accelerators (e.g., CPUs, HBM-PIM) while retaining compute-bound Fully-Connected (FC) operations on GPUs. In this paper, we first design a Disaggregated Roofline Model (DRM) to characterize AFD performance, revealing that system throughput is constrained by the accelerator's limiting factor: either memory bandwidth or capacity. We observe that prior AFD systems often overlook these constraints and fail to balance them, leading to resource underutilization or constrained throughput. Therefore, we propose CHIME, the first AFD system integrating DIMM-PIM, which is a case of the new accelerator that strikes the balance with scalable capacity and bandwidth. To address the synchronization challenges inherent to the distributed cooperating DRAM chips in DIMM-PIM, CHIME employs bubble-free pipelining and hybrid-grained re-layout for efficient attention computation. Furthermore, it maximizes cross-device resource utilization via rankset-granular communication-computation overlapping and alignment-predicting scheduling. Evaluations show CHIME achieves up to 5.15$\\times$ speedup over state-of-the-art HBM-PIM solutions.",
+  "url": "https://arxiv.org/abs/2504.17584",
+  "pdf_url": "https://arxiv.org/pdf/2504.17584",
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "authors": [
+    "Qingyuan Liu",
+    "Liyan Chen",
+    "Haocheng Wang",
+    "Yanning Yang",
+    "Dong Du",
+    "Zhigang Mao",
+    "Naifeng Jing",
+    "Yubin Xia",
+    "Haibo Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "prefill-decode-disaggregation",
+    "leaf": "Prefill-Decode Disaggregation",
+    "leaf_zh": "Prefill-Decode 解耦"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "disaggregated inference"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: disaggregated inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Attention-FC Disaggregated (AFD) LLM inference systems offload memory-bound Attention operations to memory-rich accelerators (e.g., CPUs, HBM-PIM) while retaining compute-bound Fully-Connected (FC) operations on GPUs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-10T05:04:42+00:00",
+  "last_seen": "2026-08-10T05:04:42+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2504.17584",
+      "url": "https://arxiv.org/abs/2504.17584"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2511.22481",
+  "title": "OmniInfer: System-Wide Acceleration Techniques for Optimizing LLM Serving Throughput and Latency",
+  "abstract": "Large Language Models drive a wide range of modern AI applications but impose substantial challenges on large-scale serving systems due to intensive computation, strict latency constraints, and throughput bottlenecks. We introduce OmniInfer, a unified system-level acceleration framework designed to maximize end-to-end serving efficiency through fine-grained optimization of expert placement, cache compression, and scheduling. OmniInfer integrates three complementary components: OmniPlacement for load-aware Mixture-of-Experts scheduling, OmniAttn for sparse attention acceleration, and OmniProxy for disaggregation-aware request scheduling. Built atop vLLM, OmniInfer delivers system-wide performance gains through adaptive resource disaggregation, efficient sparsity exploitation, and global coordination across prefill and decode phases. Evaluated on DeepSeek-R1 within a 10-node Ascend 910C cluster, OmniInfer achieves 616 QPM, where the unified framework reduces TPOT by 36\\%, and the superimposition of OmniProxy further slashes TTFT by 38\\%. The project is open-sourced at [this https URL](https://gitee.com/omniai/omniinfer).",
+  "url": "https://arxiv.org/abs/2511.22481",
+  "pdf_url": "https://arxiv.org/pdf/2511.22481",
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "authors": [
+    "Jun Wang",
+    "Yunxiang Yao",
+    "Wenwei Kuang",
+    "Runze Mao",
+    "Zhenhao Sun",
+    "Zhuang Tao",
+    "Ziyang Zhang",
+    "Dengyu Li",
+    "Jiajun Chen",
+    "Zhili Wang",
+    "Kai Cui",
+    "Congzhi Cai",
+    "Longwen Lan",
+    "Ken Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large Language Models drive a wide range of modern AI applications but impose substantial challenges on large-scale serving systems due to intensive computation, strict latency constraints, and throughput bottlenecks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-10T05:04:42+00:00",
+  "last_seen": "2026-08-10T05:04:42+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2511.22481",
+      "url": "https://arxiv.org/abs/2511.22481"
+    }
+  ]
+}

@@ -5,10 +5,18 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **53** 篇。
+累计收录 **61** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](../../papers/arxiv-2608.07169/) | 2026-08-10 | 49 |
+| [Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models](../../papers/arxiv-2608.06901/) | 2026-08-10 | 48 |
+| [An AI4AI Framework for Visual Token Pruning](../../papers/arxiv-2608.07193/) | 2026-08-10 | 48 |
+| [The Sparsity Whisperer](../../papers/arxiv-2608.06630/) | 2026-08-10 | 46 |
+| [MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation](../../papers/arxiv-2608.07463/) | 2026-08-10 | 42 |
+| [Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits](../../papers/arxiv-2608.07430/) | 2026-08-10 | 41 |
+| [Self-Distillation Enables Continual Learning](../../papers/arxiv-2601.19897/) | 2026-08-10 | 39 |
+| [AfriNLLB: Efficient Translation Models for African Languages](../../papers/arxiv-2602.09373/) | 2026-08-10 | 38 |
 | [d3LLM: Ultra-Fast Diffusion LLM using Pseudo-Trajectory Distillation](../../papers/arxiv-2601.07568/) | 2026-08-07 | 49 |
 | [SODA: Semi On-Policy Black-Box Distillation for Large Language Models](../../papers/arxiv-2604.03873/) | 2026-08-07 | 48 |
 | [Invariant Representation Learning for Source-Free Time Series Forecasting with LLM-Centric Proxy Denoising](../../papers/arxiv-2510.05589/) | 2026-08-07 | 47 |

@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **16** 篇。
+累计收录 **20** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HiSparse: Scaling Sparse-Attention Decoding with Hierarchical KV Cache Management](../../papers/arxiv-2608.07009/) | 2026-08-10 | 52 |
+| [Dropping the Anchor: Statistical Context Summarization for Distributed Systems via Pulsar Attention](../../papers/arxiv-2607.20457/) | 2026-08-10 | 41 |
+| [Autonomy-of-Heads: Data-Free Sparse Attention from Frozen Query-Key Geometry](../../papers/arxiv-2608.06849/) | 2026-08-10 | 41 |
+| [Every Cache Entry Earns Its Place: Global Allocation of Resolution and Coverage for KV Cache Compression](../../papers/arxiv-2608.07001/) | 2026-08-10 | 40 |
 | [Fractal KV-Cache Archives: Lossless Symbolic Storage with In-Place Retrieval for Long-Context LLM Inference](../../papers/arxiv-2607.07144/) | 2026-08-07 | 45 |
 | [NVLLM: A 3D NAND-Centric Architecture Enabling Edge on-Device LLM Inference](../../papers/arxiv-2604.25699/) | 2026-08-05 | 40 |
 | [HERALD: High-Throughput Block Diffusion LLM Serving via CPU-GPU Cooperative KV Cache Retrieval](../../papers/arxiv-2606.21633/) | 2026-08-04 | 46 |
