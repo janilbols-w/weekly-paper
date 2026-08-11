@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2510.07651",
+  "title": "OBCache: Optimal Brain KV Cache Pruning for Efficient Long-Context LLM Inference",
+  "abstract": "Large language models (LLMs) with extended context windows enable powerful applications but impose significant memory overhead, as caching all key-value (KV) states scales linearly with sequence length and batch size. Existing cache eviction methods address this by exploiting attention sparsity, yet they typically rank tokens heuristically using accumulated attention weights without considering their true impact on attention outputs. We propose Optimal Brain Cache (OBCache), a principled framework that formulates cache eviction as a layer-wise structured pruning problem. Building upon the Optimal Brain Damage (OBD) theory, OBCache quantifies token saliency by measuring the perturbation in attention outputs induced by pruning tokens, with closed-form scores derived for isolated keys, isolated values, and joint key-value pairs. Our scores account not only for attention weights but also for information from value states and attention outputs, thereby enhancing existing eviction strategies with output-aware signals. Experiments on LLaMA and Qwen models demonstrate that replacing the heuristic scores in existing works, which estimate token saliency across different query positions, with OBCache's output-aware scores consistently improves long-context accuracy. Code is available at https://github.com/DreamSoul-AI/OBCache.",
+  "url": "https://arxiv.org/abs/2510.07651",
+  "pdf_url": "https://arxiv.org/pdf/2510.07651",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Yuzhe Gu",
+    "Xiyu Liang",
+    "Jiaojiao Zhao",
+    "Enmao Diao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/DreamSoul-AI/OBCache",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [
+    "attention-kv-cache"
+  ],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Large language models (LLMs) with extended context windows enable powerful applications but impose significant memory overhead, as caching all key-value (KV) states scales linearly with sequence length and batch size.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.07651",
+      "url": "https://arxiv.org/abs/2510.07651"
+    }
+  ]
+}

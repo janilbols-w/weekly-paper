@@ -17,7 +17,7 @@ Modern LLM-based ASR systems have established multilingual capability as a stand
 
 ## 摘要原文
 
-Modern LLM-based ASR systems have established multilingual capability as a standard feature, leveraging large-scale multilingual corpora and LLMs' cross-lingual knowledge to achieve competitive performance across multilingual benchmarks. However, joint modeling of languages with heterogeneous acoustic, phonological, and lexical characteristics inevitably introduces optimization conflicts, undermining language-wise specialization. To address this challenge, we propose Language-Specialized Multi-Teacher On-Policy Distillation (LS-MOPD), which decouples language-specific knowledge acquisition from multilingual capability integration: language-specialized teachers are independently optimized via reinforcement learning (RL), after which their expertise is integrated into a generalist multilingual student through language routing and token-level multi-teacher distillation, thereby reducing direct cross-lingual optimization conflicts. We further explore two acoustic-prefix configurations, static and dynamic, to examine how teacher--student prefix consistency influences the efficacy of on-policy distillation. Experiments on benchmarks covering Mandarin, Mandarin subdialects, Cantonese, and English demonstrate that LS-MOPD substantially outperforms RL baselines and consistently surpasses the empirical performance envelope defined by best-performing RL teachers, revealing its potential to generalize beyond all teachers in multilingual ASR.
+Modern LLM-based ASR systems have established multilingual capability as a standard feature, leveraging large-scale multilingual corpora and LLMs' cross-lingual knowledge to achieve competitive performance across multilingual benchmarks. However, jointly modeling languages with heterogeneous acoustic, phonological, and lexical characteristics inevitably introduces optimization conflicts, undermining language-wise specialization. To address this challenge, we propose Language-Specialized Multi-Teacher On-Policy Distillation (LS-MOPD), which decouples language-specific knowledge acquisition from multilingual capability integration: language-specialized teachers are independently optimized via reinforcement learning (RL), with their expertise then integrated into a generalist multilingual student through language routing and token-level multi-teacher distillation, thereby reducing direct cross-lingual optimization conflicts. We further explore static and dynamic acoustic-prefix configurations to examine how teacher-student prefix consistency influences the efficacy of on-policy distillation. Experiments on benchmarks covering Mandarin, Mandarin subdialects, Cantonese, and English demonstrate that LS-MOPD substantially outperforms RL baselines and surpasses the empirical performance envelope defined by the best-performing RL teachers on nearly all benchmarks, revealing its potential to generalize beyond all teachers in multilingual ASR.
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ Modern LLM-based ASR systems have established multilingual capability as a stand
 ## 元数据
 
 - 作者：Yuan Xie, Jiaqi Song, Xianliang Wang, Ming Lei, Jie Gao, Jie Wu
-- 发布：2026-08-05；更新：2026-08-06
+- 发布：2026-08-05；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

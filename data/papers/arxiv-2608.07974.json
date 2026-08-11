@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2608.07974",
+  "title": "ZeroLock: Concurrent Memory-Efficient LLM Training via Modular Update Decoupling",
+  "abstract": "Large language model (LLM) fine-tuning at the edge adapts the model to scenario-specific data while preserving privacy. Although existing studies proposed pipeline parallelism to address the limited memory and computing resources of edge devices, they commonly rely on backpropagation (BP) training, which has a fundamental limitation of update locking and could experience severe throughput and memory bottlenecks. In this work, we propose a BP-free algorithm, called ZeroLock, that decouples the model updates into independent chunk updates by local objective construction. It breaks the update locking of BP and hence can improve throughput at the algorithm level and lower memory usage by reducing activation storage. To the best of our knowledge, we provide the first theoretical framework for such local objective construction-based approaches under general model chunk division by mapping local objectives to the global objective. We prove that ZeroLock has a convergence rate of $\\tilde{\\mathcal{O}}(1/\\sqrt{T})$, which differs from BP only by polylogarithmic factors. We design a system for ZeroLock and build real-world prototypes, incorporating techniques such as early forwarding and failure recovery for efficient and robust implementation. Experiments on the prototype show that compared to BP-based baselines, ZeroLock reduces the memory by 26.5% and improves throughput by 4.9%.",
+  "url": "https://arxiv.org/abs/2608.07974",
+  "pdf_url": "https://arxiv.org/pdf/2608.07974",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Wentao Dai",
+    "Xuanran Li",
+    "Yuxiang Zhang",
+    "Ming Tang",
+    "Chao Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "failure recovery"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: failure recovery",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language model (LLM) fine-tuning at the edge adapts the model to scenario-specific data while preserving privacy.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.07974",
+      "url": "https://arxiv.org/abs/2608.07974"
+    }
+  ]
+}

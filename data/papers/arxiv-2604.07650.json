@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2604.07650",
+  "title": "A Statistical Framework for Auditing Behavioral Dependence and Induced Bias in LLM Judges",
+  "abstract": "The rapid growth of the large language model (LLM) ecosystem raises a critical question: are seemingly diverse models truly independent? Shared pretraining data, distillation, and alignment pipelines can induce hidden behavioral dependencies, or latent entanglement, that undermine multi-model systems such as LLM-as-a-judge pipelines and ensemble verification, which implicitly assume independent signals. In practice, this manifests as correlated reasoning patterns and synchronized failures, where apparent agreement reflects shared error modes rather than independent validation. To address this, we develop a statistical framework for auditing behavioral entanglement among black-box LLMs. Our approach introduces a multi-resolution hierarchy that characterizes the joint failure manifold through two information-theoretic metrics: (i) a Difficulty-Weighted Behavioral Entanglement Index (BEI), which amplifies synchronized failures on easy tasks, and (ii) a Cumulative Information Gain (CIG) metric, which captures directional alignment in erroneous responses. Through experiments on 18 LLMs from six model families, we identify statistically significant behavioral entanglement. Such behavioral dependence is associated with judge over-endorsement bias on a disjoint MMLU-Pro evaluation set (rho = 0.508 for BEI and rho = 0.520 for CIG; p < 0.01). The association further transfers to the MATH-500 benchmark (rho = 0.441 for BEI and rho = 0.457 for CIG; p < 0.05), providing cross-benchmark evidence that the identified dependency structure generalizes beyond the data and response format used for its estimation. Finally, we demonstrate a practical use case of entanglement through de-entangled verifier ensemble reweighting, achieving 3.5 and 2.6 percentage-point gains in accuracy and precision, respectively, over majority voting.",
+  "url": "https://arxiv.org/abs/2604.07650",
+  "pdf_url": "https://arxiv.org/pdf/2604.07650",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Chenchen Kuai",
+    "Jiwan Jiang",
+    "Zihao Zhu",
+    "Hao Wang",
+    "Keshu Wu",
+    "Zihao Li",
+    "Yunlong Zhang",
+    "Chenxi Liu",
+    "Zhengzhong Tu",
+    "Zhiwen Fan",
+    "Yang Zhou"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The rapid growth of the large language model (LLM) ecosystem raises a critical question: are seemingly diverse models truly independent?",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.07650",
+      "url": "https://arxiv.org/abs/2604.07650"
+    }
+  ]
+}

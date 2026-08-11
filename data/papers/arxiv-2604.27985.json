@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2604.27985",
+  "title": "Exploring Sparse Matrix Multiplication Kernels on the Cerebras CS-3",
+  "abstract": "In recent years, novel AI accelerators have emerged as promising alternatives to GPUs for AI model training and inference. One such accelerator, the Cerebras CS-3, has demonstrated strong performance on machine learning as well as scientific applications, such as molecular dynamics and seismic simulations. While the benefits of Cerebras systems for dense workloads have been well demonstrated, their potential for sparse workloads is not yet understood, particularly for large matrices that cannot fit on the device when represented in dense format. Yet, many applications, such as linear solvers and graph neural networks, rely on large sparse matrices. In this work, we make a step toward a better understanding of the use of CS-3 platforms for sparse operations. To this end, we explore two key sparse linear algebra kernels, sparse-dense matrix multiplication (SpMM) and sampled dense-dense matrix multiplication (SDDMM), on the Cerebras CS-3. We propose low-level CS-3 designs for these operations and optimize them to improve I/O performance, memory footprint, and scalability to large matrices. We evaluate speedup relative to the CPU. The results show that our CS-3 kernels can outperform the CPU by up to 100$\\times$ for SpMM on 90\\% sparse matrices, with performance improving as matrix dimensionality increases. SDDMM on the CS-3 can outperform the CPU by up to 20$\\times$ on 90\\% sparse matrices. However, as sparsity increases beyond 99\\%, our kernels suffer performance degradation, approaching the performance of state-of-the-art CPU libraries or even underperforming them.",
+  "url": "https://arxiv.org/abs/2604.27985",
+  "pdf_url": "https://arxiv.org/pdf/2604.27985",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Milan Shah",
+    "Sheng Di",
+    "Michela Becchi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "In recent years, novel AI accelerators have emerged as promising alternatives to GPUs for AI model training and inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.27985",
+      "url": "https://arxiv.org/abs/2604.27985"
+    }
+  ]
+}

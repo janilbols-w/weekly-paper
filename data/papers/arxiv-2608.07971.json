@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2608.07971",
+  "title": "ElastiCo: Elastic Configuration and Interference-Aware Orchestration for GPU Clusters",
+  "abstract": "Modern GPU clusters must simultaneously serve deep learning training and offline large language model inference workloads, yet existing schedulers treat these as isolated resource consumers with rigid, static allocations. This leaves substantial GPU capacity underutilized: training jobs reserve entire devices despite periodic idle phases, while offline inference tasks over-provision GPUs despite bursty demand patterns. We present ElastiCo, an elastic co-location framework that enables training and inference workloads to safely share GPUs through three integrated mechanisms. First, Resource Shape Transformation exposes each job as a family of feasible resource-performance configurations. Second, Elastic Shadow Pricing decomposes the resulting multi-resource allocation problem into per-job configuration selection subproblems via dynamic per-resource shadow prices. Third, Interference-Aware Co-location uses a predictor trained on hardware-counter and task-level features to estimate pairwise performance degradation under GPU sharing. Implemented as native Kubernetes middleware requiring no user-code modifications, ElastiCo is evaluated on a 64-GPU testbed and through large-scale trace-driven simulations (up to 512 GPUs), reducing the average JCT by up to 2.94x, increasing the cluster throughput by 2.02x, and increasing the GPU utilization from approximately 25% to 46%.",
+  "url": "https://arxiv.org/abs/2608.07971",
+  "pdf_url": "https://arxiv.org/pdf/2608.07971",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Jinghao Wang",
+    "Yihang Zhou",
+    "Xiaoyang Sun",
+    "Chunming Hu",
+    "Tianyu Wo",
+    "Xu Wang",
+    "Albert Y. Zomaya",
+    "Renyu Yang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "gpu-scheduling-virtualization",
+    "leaf": "GPU Scheduling & Virtualization",
+    "leaf_zh": "GPU 调度与虚拟化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu sharing"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu sharing",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern GPU clusters must simultaneously serve deep learning training and offline large language model inference workloads, yet existing schedulers treat these as isolated resource consumers with rigid, static allocations.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.07971",
+      "url": "https://arxiv.org/abs/2608.07971"
+    }
+  ]
+}

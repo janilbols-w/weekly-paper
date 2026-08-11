@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2608.08382",
+  "title": "LLMVisor: A Real-Time Latency Attribution Model for Multi-Tenant LLM Serving",
+  "abstract": "As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throughput but obscures per-tenant usage and limits control. Enabling fractional sharing of the inference engine requires a real-time, per-request attribution primitive that is accurate and light enough to run inside the scheduling loop. We present LLMVisor, a roofline-guided latency attribution model that captures the memory-bound and compute-bound phases via a concise piecewise-linear form over features proportional to FLOPs and memory I/O traffic. LLMVisor decomposes batch latency into additive, per-request shares and runs efficiently at microsecond scale. We evaluate LLMVisor across Llama 3.1-8B and Qwen 2.5-14B/32B on A100/H100 GPUs under varying tensor parallelism and workload mixes. Compared to a token-count baseline, LLMVisor attains near-perfect R-squared and reduces relative error by up to 2.5x and 3.3x at p90 and p99, respectively, for prefill, and by up to 3.5x and 4.4x for decode, despite batching variability and sequence divergence.",
+  "url": "https://arxiv.org/abs/2608.08382",
+  "pdf_url": "https://arxiv.org/pdf/2608.08382",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Shuowei Jin",
+    "Xueshen Liu",
+    "Jiaxin Shan",
+    "Le Xu",
+    "Tieying Zhang",
+    "Liguang Xie",
+    "Z. Morley Mao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [
+    "multitenancy-slo-reliability"
+  ],
+  "keyword_evidence": [
+    "inference engine",
+    "llm serving"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: inference engine, llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throughput but obscures per-tenant usage and limits control.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [
+    "2026-W33"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.08382",
+      "url": "https://arxiv.org/abs/2608.08382"
+    }
+  ]
+}

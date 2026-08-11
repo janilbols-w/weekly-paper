@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2510.19366",
+  "title": "MoE-Prism: Disentangling Monolithic Experts for Elastic MoE Services via Model-System Co-Designs",
+  "abstract": "Mixture-of-Experts (MoE) scales model capacity through sparse activation, and is becoming an important architecture for large language models (LLMs). However, existing MoE serving systems typically execute all requests under a fixed routing configuration, limiting their ability to exploit heterogeneous computation requirements across requests. Routing top-$k$, which determines the number of routed experts activated per token, directly controls routed-expert computation and provides a natural mechanism for request-level compute elasticity. Realizing this capability, however, requires finer-grained routing units and efficient runtime execution for heterogeneous routing budgets. We present \\textsc{MoE-Prism}, a model and system support framework for request-level compute elasticity in MoE serving. \\textsc{MoE-Prism}decomposes monolithic experts into fine-grained sub-experts to expose denser routing operating points and provides a $k$-aware serving runtime that effectively serves heterogeneous routing budgets under both throughput-oriented and latency-sensitive workloads. We implement \\textsc{MoE-Prism} on top of vLLM and evaluate it on three representative MoE models. \\textsc{MoE-Prism} expands the number of available routing operating points by $4\\times$, improves offline inference throughput by up to 33.9\\%, and reduces online serving TTFT under heterogeneous workloads. These results demonstrate practical elastic MoE serving with request-level routing targets.",
+  "url": "https://arxiv.org/abs/2510.19366",
+  "pdf_url": "https://arxiv.org/pdf/2510.19366",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Xinfeng Xia",
+    "Xiaofeng Hou",
+    "Jiacheng Liu",
+    "Wenfeng Wang",
+    "Mingxuan Zhang",
+    "Peng Tang",
+    "Chao Li",
+    "Minyi Guo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "serving runtime"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: serving runtime",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) scales model capacity through sparse activation, and is becoming an important architecture for large language models (LLMs).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.19366",
+      "url": "https://arxiv.org/abs/2510.19366"
+    }
+  ]
+}

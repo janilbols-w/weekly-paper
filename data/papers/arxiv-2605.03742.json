@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2605.03742",
+  "title": "Benchmarking Parameter-Efficient Fine-Tuning of Large Language Models for Low-Resource Tajik Text Generation with the Tajik Web Corpus",
+  "abstract": "We release the Tajik Web Corpus (319k docs, 1.11B chars) and benchmark generative LLMs on prompt continuation in Tajik, a low-resource Cyrillic-script language. Seventeen configurations across nine architectures are evaluated under three fine-tuning strategies: full fine-tuning, LoRA, and QLoRA (ranks 8 and 16). Because perplexity is not directly comparable across model families with different tokenizers, generation quality is assessed through perplexity interpreted within each family, complemented by qualitative analysis performed by a native Tajik speaker. Computational cost is measured via GPU memory and training time. The best quality-cost trade-off is achieved by Mistral 7B with QLoRA rank 8: perplexity 5.11 (within its tokenizer family), coherent Tajik output confirmed by the native speaker, 14.21 GB GPU memory, and approximately 33 minutes of training. Increasing the rank to 16 yields a negligible improvement for Mistral (perplexity 5.03, pairwise p > 0.05) while consuming about 1 GB more memory. Full fine-tuning of small GPT-2 models obtains lower numeric perplexity but leads to catastrophic forgetting (English or gibberish output); in contrast, QLoRA preserves multilingual pretrained knowledge and generates meaningful Tajik text. Encoder-only models perform worst (perplexity approximately 59), confirming their unsuitability for autoregressive generation. To our knowledge, this is the first systematic PEFT benchmark for Tajik text generation. Practical recommendations include using Mistral 7B with QLoRA r=8, avoiding full fine-tuning of small GPT-2 models, and adopting the released corpus and benchmark.",
+  "url": "https://arxiv.org/abs/2605.03742",
+  "pdf_url": "https://arxiv.org/pdf/2605.03742",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Mullosharaf K. Arabov"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We release the Tajik Web Corpus (319k docs, 1.11B chars) and benchmark generative LLMs on prompt continuation in Tajik, a low-resource Cyrillic-script language.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.03742",
+      "url": "https://arxiv.org/abs/2605.03742"
+    }
+  ]
+}

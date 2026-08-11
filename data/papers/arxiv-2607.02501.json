@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2607.02501",
+  "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+  "abstract": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do not satisfy the runtime contract of embodied deployment: multi-rate execution inside closed-loop control, latency-first batch-1 inference on heterogeneous hardware, and extensible embodied interfaces beyond fixed token I/O. We present Embodied$.$cpp, a portable C++ inference runtime for embodied models. Based on an architectural analysis of representative VLA models and WAMs, Embodied$.$cpp captures a shared execution path and organizes it into five layers: input adapters, sequence builders, backbone execution, head plugins, and deployment adapters. The runtime provides modular multi-rate execution, latency-first fused inference, and extensible operator and I/O support, enabling deployment across heterogeneous devices, robots, and simulators through one backend abstraction. We evaluate Embodied$.$cpp on three VLA and two WAM models, using normalized comparisons across Python and C++ quantization configurations. Overall, Embodied$.$cpp achieves 1.05x-2.70x inference speedups and 7\\%-77\\% lower VRAM relative to Python baselines, while maintaining near-baseline success for most configurations. These results show that Embodied$.$cpp improves deployment efficiency while preserving high control quality across diverse embodied model architectures. Project Link: https://github.com/SEU-PAISys/Embodied.cpp",
+  "url": "https://arxiv.org/abs/2607.02501",
+  "pdf_url": "https://arxiv.org/pdf/2607.02501",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Ling Xu",
+    "Borui Li",
+    "Hao Wu",
+    "Chuyu Han",
+    "Xiangyu Li",
+    "Mohan Hua",
+    "Shiqi Jiang",
+    "Ting Cao",
+    "Chuanyou Li",
+    "Sheng Zhong",
+    "Shuai Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/SEU-PAISys/Embodied.cpp",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.02501",
+      "url": "https://arxiv.org/abs/2607.02501"
+    }
+  ]
+}

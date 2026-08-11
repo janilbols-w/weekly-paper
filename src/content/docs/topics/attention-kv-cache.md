@@ -5,10 +5,16 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **20** 篇。
+累计收录 **26** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Rethinking KV Cache Eviction via a Unified Information-Theoretic Objective](../../papers/arxiv-2604.25975/) | 2026-08-11 | 48 |
+| [DistillCache: KL-Guided Adaptive KV-Cache Eviction for Memory-Efficient LLM Inference](../../papers/arxiv-2608.08878/) | 2026-08-11 | 48 |
+| [OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching](../../papers/arxiv-2608.08097/) | 2026-08-11 | 46 |
+| [SPECTRA: Pushing the KV Cache Beyond the 2-Bit Cliff via Spectral Transform Coding](../../papers/arxiv-2608.07915/) | 2026-08-11 | 45 |
+| [RippleKV: Cross-Layer KV Cache Allocation via Perturbation Propagation](../../papers/arxiv-2608.08684/) | 2026-08-11 | 43 |
+| [Length-MAX Tokenizer for Language Models](../../papers/arxiv-2511.20849/) | 2026-08-11 | 39 |
 | [HiSparse: Scaling Sparse-Attention Decoding with Hierarchical KV Cache Management](../../papers/arxiv-2608.07009/) | 2026-08-10 | 52 |
 | [Dropping the Anchor: Statistical Context Summarization for Distributed Systems via Pulsar Attention](../../papers/arxiv-2607.20457/) | 2026-08-10 | 41 |
 | [Autonomy-of-Heads: Data-Free Sparse Attention from Frozen Query-Key Geometry](../../papers/arxiv-2608.06849/) | 2026-08-10 | 41 |

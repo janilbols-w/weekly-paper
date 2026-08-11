@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2608.09703",
+  "title": "Matryoshka Language Model Suites",
+  "abstract": "Training a language model suite classically requires training each model separately and serving them independently. We improve both training and inference efficiency by stacking sub-models of increasing size into a single nested architecture trained end-to-end. This Matryoshka training framework reduces the total parameter count of the suite, enables low-cost distillation from the largest to all smaller sub-models at every training step, and is well-suited for speculative decoding as the draft model is contained within the verifier. We validate our approach by training a Matryoshka suite comprising 500M, 1.5B, and 3B sub-models. Our suite is on par with independently trained baselines on benchmark performance and validation and out-of-domain perplexities, while using 36% less training compute and improving the throughput of speculative decoding by 14-26%. We also ablate key architectural choices, offering guidance for building strong Matryoshka LM suites.",
+  "url": "https://arxiv.org/abs/2608.09703",
+  "pdf_url": "https://arxiv.org/pdf/2608.09703",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Nathan Godey",
+    "Yoav Artzi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "draft model",
+    "speculative decoding"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: draft model, speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Training a language model suite classically requires training each model separately and serving them independently.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.09703",
+      "url": "https://arxiv.org/abs/2608.09703"
+    }
+  ]
+}

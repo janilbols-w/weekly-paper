@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2608.08237",
+  "title": "SAGE: SLO-Aware Adaptive Retrieval for Production RAG Systems",
+  "abstract": "Retrieval-Augmented Generation (RAG) systems in production operate under strict service level objectives (SLOs) on tail latency and infrastructure cost. However, standard retrieval pipelines rely on fixed retrieval budgets that ignore query difficulty, over-retrieving for easy queries and under-serving hard ones, forcing operators to trade answer quality against SLO compliance. This paper proposes SAGE, a learned SLO-aware adaptive retrieval policy that dynamically selects the number of passages k per query. SAGE uses lightweight features derived from initial retrieval (e.g., score distributions, rank gaps, lexical signals) and is trained offline via imitation learning from an oracle that approximates optimal latency-quality trade-offs. At inference, it adds no LLM calls and minimal overhead. On Natural Questions, under a 5s P95 latency SLO, SAGE achieves 95% SLO compliance versus 30% for the best static baseline (k=20), reduces P95 latency by 36% and retrieval cost by 51% with only 2 percentage points Exact Match (EM) loss. A single policy trained on Natural Questions generalizes across HotpotQA, UnSeenTimeQA, and four LLM families (Llama, Qwen, Mistral, Gemma), consistently yielding +45-52 point SLO improvements without quality degradation.",
+  "url": "https://arxiv.org/abs/2608.08237",
+  "pdf_url": "https://arxiv.org/pdf/2608.08237",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Muhammad Faizan Raza (Luna)",
+    "Shuo (Luna)",
+    "Yang",
+    "Satish Mahadevan Srinivasan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.DC",
+    "cs.IR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "slo",
+    "tail latency"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: slo, tail latency",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Retrieval-Augmented Generation (RAG) systems in production operate under strict service level objectives (SLOs) on tail latency and infrastructure cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.08237",
+      "url": "https://arxiv.org/abs/2608.08237"
+    }
+  ]
+}

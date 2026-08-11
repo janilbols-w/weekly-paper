@@ -5,10 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **9** 篇。
+累计收录 **13** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FSGen: Agile Fused and Sparse Accelerator Generator with Accurate Power Model for LLM Applications](../../papers/arxiv-2608.09252/) | 2026-08-11 | 46 |
+| [BitFair: A 12-nm Bit-Serial CNN Accelerator with Learnable Early Termination and Adaptive Bit Ordering for Ultra-Low-Power XR Vision](../../papers/arxiv-2607.05445/) | 2026-08-11 | 45 |
+| [AraSSM: A bidirectional state-space encoder for Arabic masked language modeling](../../papers/arxiv-2608.08256/) | 2026-08-11 | 41 |
+| [Advancing Intelligent Sequence Modeling: Evolution, Trade-offs, and Applications of State-Space Architectures from S4 to Mamba](../../papers/arxiv-2503.18970/) | 2026-08-11 | 38 |
 | [HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation](../../papers/arxiv-2608.06791/) | 2026-08-10 | 47 |
 | [Intelligence per Watt: Measuring Intelligence Efficiency of Local AI](../../papers/arxiv-2511.07885/) | 2026-08-10 | 43 |
 | [Multi-Level Modeling of Large Language Model Inference Latency and Energy via Hybrid Analytical--Machine-Learning Predictors](../../papers/arxiv-2608.06723/) | 2026-08-10 | 41 |

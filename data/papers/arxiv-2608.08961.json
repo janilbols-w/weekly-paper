@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2608.08961",
+  "title": "Gradient Under Microscope: Benchmarking Resource Utilization of Memory-Efficient Gradient Computation Methods",
+  "abstract": "AI training's rising resource intensity is straining electricity supplies and carbon budgets, motivating systematic study of memory-efficient training on constrained hardware. We benchmark five gradient optimizers (SGD, Adam, Adagrad, Adadelta, and Conjugate Gradient Descent) under three memory strategies (standard training, gradient checkpointing, and gradient accumulation) across four transformer architectures (ViT, ModernBERT, Llama 3.1 1B, and NanoVLM), measuring training loss, GPU utilization, training time, and memory usage. Gradient accumulation emerges as the most reliable strategy, cutting training loss by roughly an order of magnitude on the vision-language model and about four-fold on the language model without additional GPU memory. Contrary to common practice, Adam is not universally superior: Adadelta and SGD outperform it on the encoder and autoregressive architectures. Gradient checkpointing's effect is strongly architecture-dependent, improving vision transformer loss while severely degrading the encoder model, and it increases training time by up to 60% on memory-bound models. GPU utilization is governed primarily by architecture, ranging from 8-15% for the memory-bound language model to 96-99% for compute-bound vision models. These findings provide practical guidelines for optimizer and gradient-strategy selection in resource-efficient model training and deployment.",
+  "url": "https://arxiv.org/abs/2608.08961",
+  "pdf_url": "https://arxiv.org/pdf/2608.08961",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Sarthak Mahapatra",
+    "Zihan Zhou",
+    "Khatoon Khedri",
+    "Mehdi Hosseinzadeh",
+    "Reza Rawassizadeh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "AI training's rising resource intensity is straining electricity supplies and carbon budgets, motivating systematic study of memory-efficient training on constrained hardware.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.08961",
+      "url": "https://arxiv.org/abs/2608.08961"
+    }
+  ]
+}

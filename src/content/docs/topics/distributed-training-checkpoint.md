@@ -5,10 +5,13 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **13** 篇。
+累计收录 **16** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards](../../papers/arxiv-2608.07531/) | 2026-08-11 | 46 |
+| [Training Variable Long Sequences with Data-Centric Parallel](../../papers/arxiv-2608.07524/) | 2026-08-11 | 39 |
+| [Tevatron-Elastic: A Unified Abstraction for Training Elastic Retrievers and Rerankers](../../papers/arxiv-2608.08809/) | 2026-08-11 | 38 |
 | [Dual-Node NVIDIA DGX Spark over Tailscale: A Remote-Access Testbed for Distributed LLM Training and Cyber-Threat-Intelligence Fine-Tuning](../../papers/arxiv-2608.07226/) | 2026-08-10 | 46 |
 | [Lost in Interpolation: Why Predictive Feedback Fails in Diffusion Language Models](../../papers/arxiv-2608.06529/) | 2026-08-10 | 40 |
 | [FLARE: Diffusion for Hybrid Language Model](../../papers/arxiv-2606.01774/) | 2026-08-05 | 40 |

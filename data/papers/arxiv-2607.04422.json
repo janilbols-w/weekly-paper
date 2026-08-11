@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2607.04422",
+  "title": "Full-Stack FP4: Stable LLM Pretraining with Quantized Projections, Optimizers, and Attention",
+  "abstract": "Recent NVFP4 pretraining work has primarily optimized Transformer linear projections, leaving persistent optimizer states, optimizer computation, and low-precision attention forward--backward paths less explored. We present \\textbf{Full-Stack FP4}, a modular NVFP4 framework with separate recipes for projections, AdamW states, Root/Muon computation, and attention. \\textbf{LoRA-SVD} protects a compact projection subspace in BF16 while retaining full-shape NVFP4 computation, reducing the linear-only loss gap from \\textbf{1.40\\%} to \\textbf{0.61\\%}. An ordered square-root, tile-mean, and Hadamard pipeline enables stable NVFP4 AdamW momentum storage; shape-dependent coefficients and clipping stabilize direct NVFP4 Root iterations; and mixed-precision attention retains softmax-sensitive operations in BF16. On 3B pretraining with 64B tokens, BF16 and Full-Stack FP4 reach losses of \\textbf{2.267} and \\textbf{2.286}, a \\textbf{0.838\\%} gap. Their average zero-shot perplexities are 26.675 and 26.665, respectively, with Full-Stack FP4 averaging 0.10 percentage points lower in accuracy. Native four-block measurements on one RTX 5090 show 2.50--2.83$\\times$ Root speedups over optimized BF16 and 37.9--42.5\\% lower AdamW peak memory.",
+  "url": "https://arxiv.org/abs/2607.04422",
+  "pdf_url": "https://arxiv.org/pdf/2607.04422",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Siyu Ding",
+    "Mingchuan Ma",
+    "Jiabo Tong",
+    "Xingrun Xing",
+    "Ziming Wang",
+    "Guoqi Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp4",
+    "quantized"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp4, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Recent NVFP4 pretraining work has primarily optimized Transformer linear projections, leaving persistent optimizer states, optimizer computation, and low-precision attention forward--backward paths less explored.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.04422",
+      "url": "https://arxiv.org/abs/2607.04422"
+    }
+  ]
+}

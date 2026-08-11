@@ -5,10 +5,30 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **61** 篇。
+累计收录 **81** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [High-Layer Attention Pruning with Rescaling](../../papers/arxiv-2507.01900/) | 2026-08-11 | 54 |
+| [UnionSparse: An Index-Efficient Sparsity Framework for Low-Bit Sparse LLM Inference on Edge](../../papers/arxiv-2608.09291/) | 2026-08-11 | 52 |
+| [Unified Static-Dynamic Pruning for Efficient LLM Inference](../../papers/arxiv-2607.21985/) | 2026-08-11 | 51 |
+| [OBCache: Optimal Brain KV Cache Pruning for Efficient Long-Context LLM Inference](../../papers/arxiv-2510.07651/) | 2026-08-11 | 48 |
+| [Matching Supervision to the Student's Learning Capacity: A Unified Framework for On-Policy Self-Distillation](../../papers/arxiv-2608.08176/) | 2026-08-11 | 48 |
+| [Mismatch Matters: On-Policy Distillation Beyond Token Agreement](../../papers/arxiv-2608.09836/) | 2026-08-11 | 46 |
+| [DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation](../../papers/arxiv-2605.15532/) | 2026-08-11 | 45 |
+| [LegoLM: Structured Weight Sharing for Large Language Models](../../papers/arxiv-2608.08652/) | 2026-08-11 | 44 |
+| [Exploring Sparse Matrix Multiplication Kernels on the Cerebras CS-3](../../papers/arxiv-2604.27985/) | 2026-08-11 | 44 |
+| [Dynamic Coalition Formation and Communication Pricing in Skill-Based Agentic AI Systems](../../papers/arxiv-2608.07532/) | 2026-08-11 | 43 |
+| [Adaptive Supervised Anchoring for On-Policy Self-Distillation](../../papers/arxiv-2608.07935/) | 2026-08-11 | 42 |
+| [Hybrid Policy Distillation for LLMs](../../papers/arxiv-2604.20244/) | 2026-08-11 | 41 |
+| [UI-MOPD: Multi-Platform On-Policy Distillation for Unified GUI Agents](../../papers/arxiv-2607.04425/) | 2026-08-11 | 40 |
+| [SR-OPSD: Self-Referenced On-Policy Self-Distillation](../../papers/arxiv-2608.09745/) | 2026-08-11 | 40 |
+| [Proxy OPD: On-Policy Distillation with Transferable Relative Proxy Update](../../papers/arxiv-2607.11505/) | 2026-08-11 | 40 |
+| [EFFEKT: Efficient Federated Knowledge Transfer to Foundation Models](../../papers/arxiv-2608.08138/) | 2026-08-11 | 40 |
+| [RSPO: Reward-Swap Policy Optimization for Multi-Turn LLM Agents](../../papers/arxiv-2607.04713/) | 2026-08-11 | 39 |
+| [Toward Metacognitive One-Shot Indirect Prompt Injection: Strategy Abstraction Via Outcome-Conditioned Reflection](../../papers/arxiv-2608.08795/) | 2026-08-11 | 38 |
+| [Memorization Dynamics in Knowledge Distillation for Language Models](../../papers/arxiv-2601.15394/) | 2026-08-11 | 38 |
+| [A Statistical Framework for Auditing Behavioral Dependence and Induced Bias in LLM Judges](../../papers/arxiv-2604.07650/) | 2026-08-11 | 38 |
 | [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](../../papers/arxiv-2608.07169/) | 2026-08-10 | 49 |
 | [Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models](../../papers/arxiv-2608.06901/) | 2026-08-10 | 48 |
 | [An AI4AI Framework for Visual Token Pruning](../../papers/arxiv-2608.07193/) | 2026-08-10 | 48 |
@@ -26,8 +46,8 @@ description: "Compression, Sparsity & Distillation"
 | [APQF: Agentic Profiling-Guided Structured Pruning and Mixed-Precision Quantization with Adaptive Fine-Tuning](../../papers/arxiv-2608.05499/) | 2026-08-06 | 49 |
 | [RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer](../../papers/arxiv-2608.06347/) | 2026-08-06 | 47 |
 | [BnBERT-iPET: Sparse Few-Shot Language Modeling for Bengali via Lottery Ticket Pruning](../../papers/arxiv-2608.05104/) | 2026-08-06 | 47 |
+| [On-Policy Self-Distillation without Any Supervision](../../papers/arxiv-2608.06296/) | 2026-08-06 | 45 |
 | [DIVE: Dynamic Iterative Visual Evidence Construction for Efficient Vision-Language Models](../../papers/arxiv-2608.04496/) | 2026-08-06 | 44 |
-| [On-Policy Self-Distillation without Any Supervision](../../papers/arxiv-2608.06296/) | 2026-08-06 | 40 |
 | [Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss](../../papers/arxiv-2608.03796/) | 2026-08-05 | 57 |
 | [TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning](../../papers/arxiv-2608.04007/) | 2026-08-05 | 46 |
 | [Do We Really Need Multimodal Emotion Language Models Larger Than 1B Parameters?](../../papers/arxiv-2607.12787/) | 2026-08-05 | 46 |

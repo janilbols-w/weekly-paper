@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2608.08176",
+  "title": "Matching Supervision to the Student's Learning Capacity: A Unified Framework for On-Policy Self-Distillation",
+  "abstract": "On-policy self-distillation (OPSD) improves the reasoning abilities of LLMs by internalizing privileged context into model parameters through self-distillation. Two recent research lines promote vanilla OPSD by choosing which tokens to learn from and by controlling how much privileged information the teacher receives, respectively. However, we show that each line optimizes one variable while holding the other fixed, which leads to a suboptimal solution. We argue that the two variables are coupled through the student's learning capacity: the privileged information sets the per-token divergence the teacher prescribes, while token weighting selects which of these the student must absorb. We formalize the two lines of work into a unified optimization framework, which maximizes the aggregate teacher--student divergence, subject to a budget on the aggregate learning difficulty the student can absorb. Under this modelling, we propose Unified On-Policy Self-Distillation (USD), a lightweight online algorithm to solve the Lagrangian. USD reveals that a single dual variable governs both decisions: at one price for learning difficulty, it simultaneously sets the token-selection threshold and the direction of privileged-information adjustment, keeping supervision matched to the student's evolving capacity. Through extensive experiments, USD consistently demonstrates superior performance over OPSD and token- and PI-side baselines across various model scales on various reasoning benchmarks. Code is available at https://github.com/lauvlalala/USD.",
+  "url": "https://arxiv.org/abs/2608.08176",
+  "pdf_url": "https://arxiv.org/pdf/2608.08176",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Yongkang Yang",
+    "Zhezheng Hao",
+    "Hong Zhang",
+    "Yi Liu",
+    "Xiankun Lin",
+    "Wence Ji",
+    "Fanjunduo Wei",
+    "Jiarui Yu",
+    "Qiang Lin",
+    "Xiaoyun Liang",
+    "Hande Dong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/lauvlalala/USD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "On-policy self-distillation (OPSD) improves the reasoning abilities of LLMs by internalizing privileged context into model parameters through self-distillation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.08176",
+      "url": "https://arxiv.org/abs/2608.08176"
+    }
+  ]
+}

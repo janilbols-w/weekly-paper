@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2608.08239",
+  "title": "The Replay Gap: Static Evaluation of Model Switching in LLM Agents Scores the Wrong World",
+  "abstract": "LLM routers promise efficiency by matching each request to the cheapest adequate model, and are increasingly applied per step inside multi-step agents. Yet agentic routers are evaluated like single-turn routers: by replaying logged trajectories and substituting another model's recorded outputs, assuming the rest of the trajectory is unaffected. We test this assumption with branching rollouts: we fork live SWE-bench agent trajectories at controlled points, rebuild the environment, continue each fork with a different model, and compare against same-model control forks that isolate sampling and replay noise. Across six paired runs (~900 rollouts), swaps exceed their matched control floors by +0.25 to +0.66 normalized edit distance (multiplicity-corrected CIs exclude zero), rewriting 61-94% of post-fork actions; 74-77% of early swaps diverge at the first post-fork action, versus 6-35% of controls, leaving only 3% of replayed states valid. Divergence decreases with fork depth in both directions. All five outcome flips we observe occur in swap arms, upgrades rescuing unsolved instances and a downgrade losing the sole solve, and zero occur across 359 control forks. Scoring these same swaps with a log-stitching replay evaluator, replay mispredicts every success-relevant outcome call and predicts patches with 0.00-0.11 similarity to reality. Auditing the noise floor, temperature-0 \"determinism\" is configuration-dependent: FP8-served controls diverge on over 90% of forks while AWQ-served ones remain near-identical; and under tight budgets the stronger model more often exhausts its steps without submitting. Replay-based benchmarks score the wrong world for agentic routing; we release our harness and all trajectories.",
+  "url": "https://arxiv.org/abs/2608.08239",
+  "pdf_url": "https://arxiv.org/pdf/2608.08239",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Ashritha Gonuguntla"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp8"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM routers promise efficiency by matching each request to the cheapest adequate model, and are increasingly applied per step inside multi-step agents.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.08239",
+      "url": "https://arxiv.org/abs/2608.08239"
+    }
+  ]
+}

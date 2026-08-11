@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2608.06296",
   "title": "On-Policy Self-Distillation without Any Supervision",
-  "abstract": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose Unsupervised On-Policy Self-Distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo-solution by majority vote under a self-consistency threshold. It then conditions a teacher distribution on the shortest pseudo-solution and distills it into prefixes of the model's longest incorrect completion, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT), such as OPSD and GRPO. On AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at the 4B and 8B scales, respectively, and outperforms OPSD by an average of 3.2% and 2.3%. In thinking mode, U-OPSD remains on par with OPSD, outperforming it by 0.9% at 4B and matching it at 8B, while surpassing GRPO by 0.7% and 1.1%, respectively.",
+  "abstract": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs). However, existing methods still rely heavily on external supervision, including ground-truth signals, environmental feedback, or guidance from larger models, and therefore fall short of genuine \"self\"-distillation. In this study, we show that on-policy self-distillation can be achieved using only a model's own generations via internal consistency. We propose unsupervised on-policy self-distillation (U-OPSD). U-OPSD first samples multiple rollouts and constructs a pseudo solution by majority vote under a self-consistency threshold. It then conditions the model's distribution on the pseudo-solution and distills itself on the disagreeing completions, allowing the model to correct itself precisely where it is confidently wrong. Across diverse benchmarks, base models, and training settings, U-OPSD consistently improves over the base models and matches or surpasses supervised methods with ground truth (GT) such as OPSD and GRPO. On five mathematical reasoning benchmarks, i.e., AIME24, AIME25, HMMT25, MATH500, and AMC23, U-OPSD improves over the base model by 8.5% and 10.7% on Qwen3 non-thinking mode at 4B and 8B scales, and outperforms OPSD by 3.2% and 2.3% on average, respectively. In thinking mode, U-OPSD stays on par with OPSD, ahead by 0.9% at 4B and level at 8B and surpassing GRPO by 0.7% and 1.1%, respectively. Code is available at [https://github.com/williamium3000/u-opsd](https://github.com/williamium3000/u-opsd).",
   "url": "https://arxiv.org/abs/2608.06296",
   "pdf_url": "https://arxiv.org/pdf/2608.06296",
   "published": "2026-08-06",
-  "updated": "2026-08-07",
+  "updated": "2026-08-11",
   "authors": [
     "Yijiang Li",
     "Bingyang Wang",
@@ -23,7 +23,7 @@
   "venue": "",
   "journal_ref": "",
   "comment": "",
-  "code_url": "",
+  "code_url": "https://github.com/williamium3000/u-opsd",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -39,19 +39,19 @@
   "keyword_evidence": [
     "distillation"
   ],
-  "score": 40,
+  "score": 45,
   "score_components": {
     "relevance": 16,
     "novelty": 7,
     "rigor": 7,
     "practical_impact": 5,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: distillation",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "On-policy (Self-)Distillation (OPD / OPSD) has shown strong potential for post-training large language models (LLMs).",
   "summary_zh": "",
@@ -59,7 +59,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-07T05:08:23+00:00",
-  "last_seen": "2026-08-10T05:04:42+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
   "featured_weeks": [],
   "source_records": [
     {

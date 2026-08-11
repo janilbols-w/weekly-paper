@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2605.02404",
+  "title": "Statistically-Lossless Quantization of Large Language Models",
+  "abstract": "Model quantization has become essential for efficient large language model deployment, yet existing approaches present clear trade-offs: methods such as GPTQ and AWQ achieve practical compression but are lossy, while lossless techniques preserve fidelity but lack inference acceleration. This paper explores the middle ground of statistically-lossless compression, examining three complementary aspects of what losslessness means for quantized LLMs. First, task-lossless compression preserves zero-shot benchmark accuracy within natural sampling variance and is achievable at aggressive bitwidths. Second, we formalize the stricter notion of distribution-lossless compression, requiring the quantized model's next-token distribution to be practically indistinguishable from the original, and propose the Expected Acceptance Rate (EAR), the maximum token-agreement probability under optimal coupling, as a directly interpretable fidelity metric. For example, EAR >= 0.99 means 99% agreement. Third, we prove a gamma-squared variance law showing that symmetric quantization inflates noise variance by gamma^2 relative to asymmetric quantization, making asymmetric quantization a prerequisite for distribution-lossless fidelity but not for task-level preservation. Through SLQ, a layer-wise non-uniform method with asymmetric quantization and wide bitwidth search, we obtain task-lossless compression at well below 4 bits per parameter, as low as 3.3 bits depending on the model, distribution-lossless compression at 5-6 bits per parameter on average, and inference speedups of 1.7-3.7x compared to FP16 using optimized kernels. Source code is available at [https://github.com/IST-DASLab/SLQ](https://github.com/IST-DASLab/SLQ).",
+  "url": "https://arxiv.org/abs/2605.02404",
+  "pdf_url": "https://arxiv.org/pdf/2605.02404",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Michael Helcig",
+    "Eldar Kurtic",
+    "Dan Alistarh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/IST-DASLab/SLQ",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Model quantization has become essential for efficient large language model deployment, yet existing approaches present clear trade-offs: methods such as GPTQ and AWQ achieve practical compression but are lossy, while lossless techniques preserve fidelity but lack inference acceleration.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.02404",
+      "url": "https://arxiv.org/abs/2605.02404"
+    }
+  ]
+}

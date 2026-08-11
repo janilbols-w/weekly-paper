@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2607.11505",
+  "title": "Proxy OPD: On-Policy Distillation with Transferable Relative Proxy Update",
+  "abstract": "Post-training for large language models typically couples policy exploration with model optimization, hindering the reuse of high-reward behaviors from policy exploration. While on-policy distillation alleviates this by consolidating independently optimized experts, its reliance on matching absolute expert distributions can yield suboptimal supervision, especially when the target model possesses a different prior or already surpasses the expert's capabilities. To alleviate this, we introduce Proxy OPD (P-OPD), an asynchronous post-training framework that transfers reward-induced policy improvements rather than absolute policy distributions. P-OPD first optimizes a proxy policy via reward feedback. It then extracts the relative distributional changes between the proxy's initial and optimized states, transferring these directional updates through the target model's own on-policy trajectories while retaining the target policy as the reference. This decoupled formulation requires the proxy to provide merely a useful direction of improvement rather than superior absolute capability, enabling update signals from older or weaker proxies to remain highly effective. Systematic experiments on Qwen3-family models across mathematical reasoning and code generation demonstrate that P-OPD consistently enhances already strong target models. Furthermore, transfer intensity can be dynamically modulated through signal scaling, making the extracted update signals seamlessly reusable across diverse model variants and training configurations. These results establish relative policy updates as highly reusable, adjustable assets for scalable, reward-based post-training.",
+  "url": "https://arxiv.org/abs/2607.11505",
+  "pdf_url": "https://arxiv.org/pdf/2607.11505",
+  "published": "2026-08-11",
+  "updated": "2026-08-11",
+  "authors": [
+    "Daocheng Fu",
+    "Rong Wu",
+    "Yu Yang",
+    "Jianbiao Mei",
+    "Licheng Wen",
+    "Pinlong Cai",
+    "Xuemeng Yang",
+    "Yong Liu",
+    "Botian Shi",
+    "Yu Qiao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Post-training for large language models typically couples policy exploration with model optimization, hindering the reuse of high-reward behaviors from policy exploration.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-11T04:54:40+00:00",
+  "last_seen": "2026-08-11T04:54:40+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.11505",
+      "url": "https://arxiv.org/abs/2607.11505"
+    }
+  ]
+}
