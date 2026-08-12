@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **26** 篇。
+累计收录 **30** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Adaptive Filtering of the KV Cache: Diagnosing and Correcting Structural-Role Bias in LLM Inference](../../papers/arxiv-2607.13205/) | 2026-08-12 | 47 |
+| [Scheduling Mixed RL Rollouts Beyond Prefix Locality](../../papers/arxiv-2608.11152/) | 2026-08-12 | 40 |
+| [TideRL: Boosting Agentic RL Goodput with Readiness-Aware Scheduling](../../papers/arxiv-2608.10402/) | 2026-08-12 | 38 |
+| [ImpactHO: Importance-Aware KV Cache Transfer for Multi-User Edge LLM Handover](../../papers/arxiv-2608.10545/) | 2026-08-12 | 38 |
 | [Rethinking KV Cache Eviction via a Unified Information-Theoretic Objective](../../papers/arxiv-2604.25975/) | 2026-08-11 | 48 |
 | [DistillCache: KL-Guided Adaptive KV-Cache Eviction for Memory-Efficient LLM Inference](../../papers/arxiv-2608.08878/) | 2026-08-11 | 48 |
 | [OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching](../../papers/arxiv-2608.08097/) | 2026-08-11 | 46 |

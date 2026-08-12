@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2604.08849",
+  "title": "SatIR: Scalable High-Recall Constraint-Satisfaction-Based Information Retrieval for Clinical Trials Matching",
+  "abstract": "Many real-world retrieval and matching problems require more than topical relevance: a candidate must satisfy the specific constraints of one profile among many, not just be relevant to it. Clinical trials are a high-stakes instance of this challenge: they are central to evidence-based medicine, yet many struggle to meet enrollment targets, despite the availability of over half a million trials listed on ClinicalTrials.gov, which attracts approximately two million users monthly. Existing retrieval techniques, largely based on keyword and embedding-similarity matching, treat eligibility constraints as soft signals rather than binding requirements, resulting in low recall, low precision, and limited interpretability. We propose SatIR, a scalable, efficient, high-precision, high-recall, interpretable clinical trial retrieval method based on formal constraint satisfaction. Leveraging established medical ontologies, we use Large Language Models (LLMs) to convert informal reasoning -- regarding ambiguity, implicit clinical assumptions, and incomplete patient records -- into explicit, precise, controllable, and interpretable formal Satisfiability Modulo Theories (SMT) constraints. For scalable and efficient retrieval, we project the SMT matching problem onto relational algebra, enabling an efficient database implementation that retains high recall while sacrificing little precision. SatIR consistently improves eligibility-aware retrieval over similarity-based baselines on the SIGIR 2016 dataset and a benchmark derived from TREC 2022. Relative to TrialGPT-style retrieval, SatIR retrieves 32%-72% more relevant-and-eligible trials per patient on SIGIR 2016 and achieves 1.8-3.2x higher eligible-trial recall on the TREC benchmark. Retrieval is fast, requiring only 146 milliseconds per patient over 3,621 SIGIR trials.",
+  "url": "https://arxiv.org/abs/2604.08849",
+  "pdf_url": "https://arxiv.org/pdf/2604.08849",
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "authors": [
+    "Zikai Zhou",
+    "Yufei Jin",
+    "Yilin Xu",
+    "Yu-Chiang Wang",
+    "Chieh-Ju Chao",
+    "Monica S. Lam"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.DB",
+    "cs.MA",
+    "cs.SC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "low precision"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: low precision",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Many real-world retrieval and matching problems require more than topical relevance: a candidate must satisfy the specific constraints of one profile among many, not just be relevant to it.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-12T05:09:02+00:00",
+  "last_seen": "2026-08-12T05:09:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.08849",
+      "url": "https://arxiv.org/abs/2604.08849"
+    }
+  ]
+}

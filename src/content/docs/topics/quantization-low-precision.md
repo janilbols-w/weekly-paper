@@ -5,10 +5,16 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **37** 篇。
+累计收录 **42** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SatIR: Scalable High-Recall Constraint-Satisfaction-Based Information Retrieval for Clinical Trials Matching](../../papers/arxiv-2604.08849/) | 2026-08-12 | 42 |
+| [When Do Anchor-Based Pointwise LLM Rerankers Help? Retriever Quality, Statistical Scope, and Anchor Design](../../papers/arxiv-2608.10528/) | 2026-08-12 | 39 |
+| [ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization](../../papers/arxiv-2608.11045/) | 2026-08-12 | 39 |
+| [CurveFP: Rational-Radix Logarithmic Datatypes with Closed Products for Language Models](../../papers/arxiv-2608.10010/) | 2026-08-12 | 39 |
+| [The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs](../../papers/arxiv-2608.09941/) | 2026-08-12 | 38 |
+| [Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms](../../papers/arxiv-2608.11016/) | 2026-08-12 | 38 |
 | [Statistically-Lossless Quantization of Large Language Models](../../papers/arxiv-2605.02404/) | 2026-08-11 | 51 |
 | [Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots](../../papers/arxiv-2607.02501/) | 2026-08-11 | 49 |
 | [Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation](../../papers/arxiv-2606.09864/) | 2026-08-11 | 48 |
@@ -18,7 +24,6 @@ description: "Quantization & Low Precision"
 | [HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks](../../papers/arxiv-2607.18867/) | 2026-08-11 | 40 |
 | [The Replay Gap: Static Evaluation of Model Switching in LLM Agents Scores the Wrong World](../../papers/arxiv-2608.08239/) | 2026-08-11 | 39 |
 | [Hidden Language Consistency Phenomena in Reasoning LLMs](../../papers/arxiv-2608.08447/) | 2026-08-11 | 38 |
-| [{\Omega}-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling](../../papers/arxiv-2605.28803/) | 2026-08-10 | 48 |
 | [MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model](../../papers/arxiv-2608.06916/) | 2026-08-10 | 46 |
 | [An Empirical Study of openPangu Quantization on Ascend NPUs](../../papers/arxiv-2606.21257/) | 2026-08-10 | 42 |
 | [The Expressive Power of Low Precision Softmax Transformers with (Summarized) Chain-of-Thought](../../papers/arxiv-2605.18079/) | 2026-08-10 | 41 |

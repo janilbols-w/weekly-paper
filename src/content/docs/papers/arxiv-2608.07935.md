@@ -39,7 +39,7 @@ On-policy self-distillation (OPSD) adapts a language model by distilling guidanc
 ## 元数据
 
 - 作者：Meilin Yang (Renmin University of China, Beijing, China), Zixuan Ding (Renmin University of China, Beijing, China), Jianhao Nie (Renmin University of China, Beijing, China), Weite Zhang (Renmin University of China, Beijing, China), Yuxin Zhang (Renmin University of China, Beijing, China), Zhiming Shao (Renmin University of China, Beijing, China), Li Yu (Renmin University of China, Beijing, China), Zhe Fu (Renmin University of China, Beijing, China)
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-11；更新：2026-08-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

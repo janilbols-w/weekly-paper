@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2605.02329",
+  "title": "Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference",
+  "abstract": "In production environments, large language model (LLM) serving is required to meet stringent service-level objectives (SLOs) amid highly variable request patterns. In practice, request lengths follow a long-tail distribution, which gives rise to head-of-line blocking on the prefill side and underutilization caused by stragglers on the decode side in disaggregated serving architectures. Current systems, which adopt first-come-first-served (FCFS) scheduling for prefill and continuous batching for decode, lack the ability to adapt to this imbalance, resulting in compromised SLO attainment and reduced throughput. To address these challenges, we propose Kairos, an SLO-aware scheduling system equipped with two complementary mechanisms. On the prefill side, Kairos employs urgency-based priority scheduling: it predicts prefill completion times and dynamically selects requests to maximize the attainment of time-to-first-token (TTFT) SLOs. On the decode side, Kairos introduces slack-guided adaptive batching, which leverages the gap between per-step decode time and the time-per-output-token (TPOT) SLO to greedily pack short requests. This approach maximizes throughput while strictly adhering to SLO requirements. We implement Kairos and conduct evaluations using an online serving dataset and a state-of-the-art LLM. Experimental results demonstrate that, compared with state-of-the-art baselines, Kairos improves TTFT SLO attainment by up to 23.9\\%, TPOT SLO attainment by up to 27.1\\%, end-to-end SLO attainment by up to 33.8\\%, and decode throughput by up to 19.3\\%.",
+  "url": "https://arxiv.org/abs/2605.02329",
+  "pdf_url": "https://arxiv.org/pdf/2605.02329",
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "authors": [
+    "Qipeng Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "slo"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 13,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: slo",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "In production environments, large language model (LLM) serving is required to meet stringent service-level objectives (SLOs) amid highly variable request patterns.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-12T05:09:02+00:00",
+  "last_seen": "2026-08-12T05:09:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.02329",
+      "url": "https://arxiv.org/abs/2605.02329"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2608.11034",
+  "title": "SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training",
+  "abstract": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin. Existing diagnosis often relies on in-process monitors that cannot report after the trainer blocks or terminates, or on post-mortem logs that preserve only synchronized symptoms; offline health tests lose the workload and operating conditions that triggered the failure. We present SCOUT, a unified runtime failure-localization framework built on one design principle: identify outliers through strict-majority consensus among equivalent replicas. SCOUT aligns replica progress, timing, and numerical evidence, then uses its Consensus Collective Communication (C3) abstraction to identify ranks whose compact signatures disagree with their peers. An out-of-band CPU observer remains responsive when training hangs, whereas in-situ replay exercises recurring stragglers and silent data corruption (SDC) beside the live job with its model state, kernels, allocations, communication path, and thermal and memory pressure present. Collective fingerprints expose rank-local protocol divergence. Clean replay coverage certifies checkpoint numerical integrity, preventing recovery from selecting state corrupted by SDC. SCOUT integrates with PyTorch, TorchTitan, Megatron-Core, and DeepSpeed without training-loop or framework-source modifications. SCOUT is open source at https://github.com/LMResiliency/lm-resiliency.",
+  "url": "https://arxiv.org/abs/2608.11034",
+  "pdf_url": "https://arxiv.org/pdf/2608.11034",
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "authors": [
+    "Zhuang Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/LMResiliency/lm-resiliency",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 8,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-12T05:09:02+00:00",
+  "last_seen": "2026-08-12T05:09:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.11034",
+      "url": "https://arxiv.org/abs/2608.11034"
+    }
+  ]
+}

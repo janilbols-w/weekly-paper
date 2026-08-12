@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.14047",
+  "title": "Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation",
+  "abstract": "Vision Transformers (ViTs) achieve state-of-the-art performance on challenging vision tasks, but their deployment on edge devices is severely hindered by the computational complexity and global reduction bottleneck imposed by layer normalization. Recent methods attempt to bypass this by replacing normalization layers with hardware-friendly scalar approximations. However, these homogeneous replacements do not optimally fit to all layers' behaviour and rely on expensive model retraining. In this work, we propose a highly efficient, hardware-aware framework that utilizes genetic programming (GP) to evolve heterogeneous, layer-specific scalar functions directly from pre-trained weights. Coupled with a novel post-training re-alignment strategy, our approach eliminates the need to retrain models from scratch entirely. Our evolved expressions accurately approximate the target normalization behaviours, capturing $90\\%$ of the variance ($R^2$) compared to only $70.2\\%$ for homogeneous baselines, allowing our modified architecture to recover $84.32\\%$ Top-1 ImageNet-1K accuracy in only 20 epochs. By preserving this performance while eliminating the global reduction bottleneck, our approach achieves a strict reduction in both arithmetic complexity and off-chip memory traffic compared to standard LayerNorm, removing a primary barrier to the efficient deployment of ViTs on edge accelerators.",
+  "url": "https://arxiv.org/abs/2605.14047",
+  "pdf_url": "https://arxiv.org/pdf/2605.14047",
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "authors": [
+    "Kieran Carrigg",
+    "Sigur de Vries",
+    "Amirhossein Sadough",
+    "Marcel van Gerven"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "hardware-aware"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: hardware-aware",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Vision Transformers (ViTs) achieve state-of-the-art performance on challenging vision tasks, but their deployment on edge devices is severely hindered by the computational complexity and global reduction bottleneck imposed by layer normalization.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-12T05:09:02+00:00",
+  "last_seen": "2026-08-12T05:09:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.14047",
+      "url": "https://arxiv.org/abs/2605.14047"
+    }
+  ]
+}

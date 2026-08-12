@@ -1,5 +1,1926 @@
 [
   {
+    "id": "arxiv:2608.11116",
+    "title": "You Only Charge Once 2.0 : A End-to-End Analog Computing-in-Memory Architecture with Reconfigurable Switched Capacitors",
+    "abstract": "Analog Computing-in-Memory (ACiM) accelerates deep neural networks by keeping weights inside memory arrays and executing dot products in the analog domain. However, modern ACiM accelerators are often limited by the \"ADC wall\": analog-to-digital converters consume a large fraction of energy and area, while bit-sliced execution repeatedly invokes these converters. Existing designs reduce this cost with low-resolution readout or time multiplexing, but they either lose output fidelity or introduce serialization overhead. Charge-CIM addresses this bottleneck by using switched-capacitor charge redistribution as a unified computing and conversion substrate. The same capacitor fabric performs input conversion, analog MAC, weighted shift-and-add, and readout quantization, reducing both standalone converter overhead and intermediate ADC invocations. A differential readout path further combines paired partial sums during ADC quantization, providing a highly compact and energy-efficient solution for array integration. With dataflow architecture support, we evaluated Charge-CIM on a suite of DNN benchmarks, from CNNs to Transformer models, and experimental results show that Charge-CIM reduces ADC energy by 91.7% under our evaluation setup and improves energy efficiency by 2.7x and throughput by 2.0x compared to the state-of-the-art charge-domain CIM accelerator.",
+    "url": "https://arxiv.org/abs/2608.11116",
+    "pdf_url": "https://arxiv.org/pdf/2608.11116",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Zihao Xuan",
+      "Yewen Li",
+      "Jia Chen",
+      "Wei Xuan",
+      "Xiao Huo",
+      "Fengbin Tu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "energy-cost-thermal",
+      "leaf": "Energy, Cost & Thermal Efficiency",
+      "leaf_zh": "能耗、成本与散热"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "energy efficiency"
+    ],
+    "score": 51,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 13,
+      "practical_impact": 16,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: energy efficiency",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Analog Computing-in-Memory (ACiM) accelerates deep neural networks by keeping weights inside memory arrays and executing dot products in the analog domain.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11116",
+        "url": "https://arxiv.org/abs/2608.11116"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.02329",
+    "title": "Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference",
+    "abstract": "In production environments, large language model (LLM) serving is required to meet stringent service-level objectives (SLOs) amid highly variable request patterns. In practice, request lengths follow a long-tail distribution, which gives rise to head-of-line blocking on the prefill side and underutilization caused by stragglers on the decode side in disaggregated serving architectures. Current systems, which adopt first-come-first-served (FCFS) scheduling for prefill and continuous batching for decode, lack the ability to adapt to this imbalance, resulting in compromised SLO attainment and reduced throughput. To address these challenges, we propose Kairos, an SLO-aware scheduling system equipped with two complementary mechanisms. On the prefill side, Kairos employs urgency-based priority scheduling: it predicts prefill completion times and dynamically selects requests to maximize the attainment of time-to-first-token (TTFT) SLOs. On the decode side, Kairos introduces slack-guided adaptive batching, which leverages the gap between per-step decode time and the time-per-output-token (TPOT) SLO to greedily pack short requests. This approach maximizes throughput while strictly adhering to SLO requirements. We implement Kairos and conduct evaluations using an online serving dataset and a state-of-the-art LLM. Experimental results demonstrate that, compared with state-of-the-art baselines, Kairos improves TTFT SLO attainment by up to 23.9\\%, TPOT SLO attainment by up to 27.1\\%, end-to-end SLO attainment by up to 33.8\\%, and decode throughput by up to 19.3\\%.",
+    "url": "https://arxiv.org/abs/2605.02329",
+    "pdf_url": "https://arxiv.org/pdf/2605.02329",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Qipeng Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "multitenancy-slo-reliability",
+      "leaf": "Multi-tenancy, SLO & Reliability",
+      "leaf_zh": "多租户、SLO 与可靠性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "slo"
+    ],
+    "score": 50,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 13,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: slo",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "In production environments, large language model (LLM) serving is required to meet stringent service-level objectives (SLOs) amid highly variable request patterns.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.02329",
+        "url": "https://arxiv.org/abs/2605.02329"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2604.26508",
+    "title": "Progressive Semantic Communication for Efficient Edge-Cloud Vision-Language Models",
+    "abstract": "Deploying Vision-Language Models (VLMs) on edge devices remains challenging due to their substantial computational and memory demands, which exceed the capabilities of resource-constrained embedded platforms. Conversely, fully offloading inference to the cloud is often impractical in bandwidth-limited environments, where transmitting raw visual data introduces substantial latency overhead. While recent edge-cloud collaborative architectures attempt to partition VLM workloads across devices, they typically rely on transmitting fixed-size representations, lacking adaptability to dynamic network conditions and failing to fully exploit semantic redundancy. In this paper, we propose a progressive semantic communication framework for edge-cloud VLM inference, using a Meta AutoEncoder that compresses visual tokens into adaptive, progressively refinable representations, enabling plug-and-play deployment with off-the-shelf VLMs without additional fine-tuning. This design allows flexible transmission at different information levels, providing a controllable trade-off between communication cost and semantic fidelity. We implement a full end-to-end edge-cloud system comprising an embedded NXP i.MX95 platform and a GPU server, communicating over bandwidth-constrained networks. Experimental results show that, at 1 Mbps uplink, the proposed progressive scheme significantly reduces network latency compared to full-edge and full-cloud solutions, while maintaining high semantic consistency even under high compression. The implementation code will be released upon publication at https://github.com/open-ep/ProSemComVLM.",
+    "url": "https://arxiv.org/abs/2604.26508",
+    "pdf_url": "https://arxiv.org/pdf/2604.26508",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Cyril Shih-Huan Hsu",
+      "Wig Yuan-Cheng Cheng",
+      "Chrysa Papagianni"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CV",
+      "cs.DC",
+      "cs.LG",
+      "cs.NI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/open-ep/ProSemComVLM",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "offloading"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 11,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: offloading",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Deploying Vision-Language Models (VLMs) on edge devices remains challenging due to their substantial computational and memory demands, which exceed the capabilities of resource-constrained embedded platforms.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2604.26508",
+        "url": "https://arxiv.org/abs/2604.26508"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.13205",
+    "title": "Adaptive Filtering of the KV Cache: Diagnosing and Correcting Structural-Role Bias in LLM Inference",
+    "abstract": "Attention-based KV cache eviction (H2O and its descendants) compresses the memory-constrained state of a long-context model by ranking tokens on accumulated attention mass, treated here as signal energy, and keeping the heaviest. On schema-dense input streams such as nested JSON, this score acts as a non-stationary filter that disproportionately retains noise: a non-content sink role (delimiters or whitespace) carries an order of magnitude more energy than any content role, and structural KEY tokens are over-retained at roughly 1.8x the rate of the answer-carrying VALUE tokens, collapsing exact-match accuracy from 88% to 0% at a 5% budget as the signal-to-noise ratio of the retained state degrades. A counterfactual experiment establishes that suppressing KEY tokens is the best deployable filter. Our retraining-free, role-conditional allocation over SnapKV's windowed score, governed by a single tuned hyperparameter, closes 63-98% of the H2O gap at sub-20% budgets and, at higher budgets, modestly matches or exceeds full-cache accuracy -- a small, seed-sensitive denoising effect (borderline significant at B=0.50; not distinguishable from zero at B=0.30 over four seeds). A 15 MB linear role probe supplies these labels at negligible inference cost, though matching parser-level downstream accuracy remains open.",
+    "url": "https://arxiv.org/abs/2607.13205",
+    "pdf_url": "https://arxiv.org/pdf/2607.13205",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Soumil Mandal"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 47,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Attention-based KV cache eviction (H2O and its descendants) compresses the memory-constrained state of a long-context model by ranking tokens on accumulated attention mass, treated here as signal energy, and keeping the heaviest.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.13205",
+        "url": "https://arxiv.org/abs/2607.13205"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2508.03611",
+    "title": "Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling",
+    "abstract": "This paper presents Astrolabe, a randomized prediction-guided scheduler for one-shot request dispatch in multi-instance large language model (LLM) serving. Astrolabe improves load balancing without relying on migration-based rebalancing, whose KV-cache transfers can introduce substantial overhead and network contention under high load. It combines response-length estimation, per-instance simulation-based latency prediction, and a power-of-two-choices dispatch policy to balance load while avoiding request herding. On the default Llama-2-7B/ShareGPT setup, Astrolabe matches the SLO capacity of the best load-aware baseline (31.6 versus 31.5 QPS), while reducing mean time-to-first-token (TTFT) by 8 to 36 percent, P99 TTFT by 16 to 77 percent, and mean end-to-end (E2E) latency by up to 5.6 percent, with approximately six times fewer preemptions once capacity is reached. Under configuration shifts, Astrolabe improves SLO capacity by up to 6 percent on Qwen2-7B and 7.1 percent under tight batching, reduces mean E2E latency by 6 to 9 percent under bursty arrivals, and achieves an approximately 2.8-fold reduction in per-predictor CPU usage relative to full fanout. With migration enabled on A100 GPUs, Astrolabe outperforms Llumnix by up to 2.6 times in throughput while achieving orders-of-magnitude lower per-token latency at saturation.",
+    "url": "https://arxiv.org/abs/2508.03611",
+    "pdf_url": "https://arxiv.org/pdf/2508.03611",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Wei Da",
+      "Evangelia Kalyvianaki"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "serving-engine",
+      "leaf": "Serving Engines & Runtimes",
+      "leaf_zh": "Serving Engine 与 Runtime"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "llm serving"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: llm serving",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "This paper presents Astrolabe, a randomized prediction-guided scheduler for one-shot request dispatch in multi-instance large language model (LLM) serving.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2508.03611",
+        "url": "https://arxiv.org/abs/2508.03611"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2511.19436",
+    "title": "VDC-Agent: When Video Detailed Captioners Evolve Themselves via Agentic Self-Reflection",
+    "abstract": "Existing Video Detailed Captioning (VDC) methods predominantly rely on costly human annotations or distillation from powerful proprietary models, creating a dependency on external supervision. In this paper, we propose VDC-Agent, an autonomous self-evolving framework that empowers a single Multimodal Large Language Model (MLLM) to generate and refine high-quality captions through principle-guided self-reflection. To overcome the inference latency inherent in iterative refinement, we further propose to internalize this reflective capability into the model. Specifically, we construct VDC-Agent-19K, a preference dataset derived from the agent's self-scored trajectories, and introduce a Curriculum Direct Preference Optimization (DPO) strategy. This strategy leverages the quality gap between generated candidates to progressively align the model from easy to hard samples. Extensive experiments demonstrate that VDC-Agent achieves state-of-the-art performance on VDC and DREAM-1K benchmarks, generating captions with superior detail and faithfulness. Crucially, our internalization strategy retains the inference efficiency of the base model while significantly enhancing its generalization capabilities, as validated by both quantitative metrics and human evaluation.",
+    "url": "https://arxiv.org/abs/2511.19436",
+    "pdf_url": "https://arxiv.org/pdf/2511.19436",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Qiang Wang",
+      "Xinyuan Gao",
+      "Yuhang He",
+      "Jizhou Han",
+      "Jiangyang Li",
+      "SongLin Dong",
+      "Zhiheng Ma",
+      "Yihong Gong"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "cs.MM"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 13,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Existing Video Detailed Captioning (VDC) methods predominantly rely on costly human annotations or distillation from powerful proprietary models, creating a dependency on external supervision.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2511.19436",
+        "url": "https://arxiv.org/abs/2511.19436"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10362",
+    "title": "MemSpec: Memory-Aware Runtime for Adaptive Draft Scheduling in Speculative Decoding on Edge Devices",
+    "abstract": "Speculative decoding accelerates autoregressive large language model (LLM) inference by using a lightweight draft model to speculate multiple tokens, reducing expensive target model decoding steps. Its effectiveness depends heavily on draft selection, motivating adaptive methods that exploit variation across inputs and generation stages. On memory-constrained edge devices, however, these methods often fail to improve end-to-end throughput due to the overhead of switching between draft models. We identify a key limitation in this setting: the mismatch between draft selection and draft availability under tight memory budgets. To address this challenge, we present MemSpec, a prediction-guided, memory-aware runtime for adaptive speculative decoding on edge devices. MemSpec decouples draft selection from execution through proactive resident working-set management. A lightweight predictor estimates draft effectiveness from prompt and generation context, while a memory-aware scheduler reduces reactive model loading overhead. Experiments on a Jetson Orin Nano show that MemSpec improves steady-state generation throughput by 40.7% on average over state-of-the-art bandit-based adaptive methods while closely approaching the oracle upper bound.",
+    "url": "https://arxiv.org/abs/2608.10362",
+    "pdf_url": "https://arxiv.org/pdf/2608.10362",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Eunjeong Kim",
+      "Yeong Jun Jeon",
+      "Myeonggyun Han"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.OS",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "speculative-decoding",
+      "leaf": "Speculative Decoding",
+      "leaf_zh": "推测解码"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "draft model",
+      "speculative decoding"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: draft model, speculative decoding",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Speculative decoding accelerates autoregressive large language model (LLM) inference by using a lightweight draft model to speculate multiple tokens, reducing expensive target model decoding steps.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10362",
+        "url": "https://arxiv.org/abs/2608.10362"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10532",
+    "title": "Benchmarking LLM-Guided Control-Plane Policies for Backend Fault Isolation in HAProxy",
+    "abstract": "Static load balancers cannot mitigate a backend that is degraded rather than down: round-robin and least-connections keep routing traffic to a server returning HTTP 500s until an operator intervenes. We ask whether a Large Language Model can replace the static routing policy itself, reading HAProxy and Prometheus telemetry every 10 seconds and isolating faulty servers through guardrailed calls to the HAProxy Data Plane API. On a reproducible benchmark with a persistent structural fault built into roughly one-third of a heterogeneous fleet, we sweep 15 open-weight models across five families (0.35B to 35B total parameters; dense, mixture-of-experts, and efficient-sparse architectures), reasoning modes, fleet scales of 3 to 9 backends, and two routing algorithms, totaling 240 runs. We find a capability threshold near 3B active parameters. Below it, LLM policies are typically unreliable and sometimes worse than no policy; above it, every model, regardless of architecture, saturates near an 88% reduction in client-perceived 5xx errors over the static baseline. The threshold is approximate: Gemma 4 E2B clears it with 2B active parameters, while the dense 3B Granite 4.0 Micro does not. The availability gain has costs. Draining concentrates load onto surviving servers, inflating tail latency 2.6 to 2.8 times, and enabling reasoning multiplies token spend roughly tenfold, overrunning the control interval and degrading effectiveness. The efficient operating point is a supra-threshold model in its cheapest non-reasoning mode, wrapped inside deterministic guardrails.",
+    "url": "https://arxiv.org/abs/2608.10532",
+    "pdf_url": "https://arxiv.org/pdf/2608.10532",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Aman Chauhan",
+      "Vishnu Pendyala"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.NI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "multitenancy-slo-reliability",
+      "leaf": "Multi-tenancy, SLO & Reliability",
+      "leaf_zh": "多租户、SLO 与可靠性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "tail latency"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 12,
+      "reproducibility": 3,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: tail latency",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Static load balancers cannot mitigate a backend that is degraded rather than down: round-robin and least-connections keep routing traffic to a server returning HTTP 500s until an operator intervenes.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10532",
+        "url": "https://arxiv.org/abs/2608.10532"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2604.08849",
+    "title": "SatIR: Scalable High-Recall Constraint-Satisfaction-Based Information Retrieval for Clinical Trials Matching",
+    "abstract": "Many real-world retrieval and matching problems require more than topical relevance: a candidate must satisfy the specific constraints of one profile among many, not just be relevant to it. Clinical trials are a high-stakes instance of this challenge: they are central to evidence-based medicine, yet many struggle to meet enrollment targets, despite the availability of over half a million trials listed on ClinicalTrials.gov, which attracts approximately two million users monthly. Existing retrieval techniques, largely based on keyword and embedding-similarity matching, treat eligibility constraints as soft signals rather than binding requirements, resulting in low recall, low precision, and limited interpretability. We propose SatIR, a scalable, efficient, high-precision, high-recall, interpretable clinical trial retrieval method based on formal constraint satisfaction. Leveraging established medical ontologies, we use Large Language Models (LLMs) to convert informal reasoning -- regarding ambiguity, implicit clinical assumptions, and incomplete patient records -- into explicit, precise, controllable, and interpretable formal Satisfiability Modulo Theories (SMT) constraints. For scalable and efficient retrieval, we project the SMT matching problem onto relational algebra, enabling an efficient database implementation that retains high recall while sacrificing little precision. SatIR consistently improves eligibility-aware retrieval over similarity-based baselines on the SIGIR 2016 dataset and a benchmark derived from TREC 2022. Relative to TrialGPT-style retrieval, SatIR retrieves 32%-72% more relevant-and-eligible trials per patient on SIGIR 2016 and achieves 1.8-3.2x higher eligible-trial recall on the TREC benchmark. Retrieval is fast, requiring only 146 milliseconds per patient over 3,621 SIGIR trials.",
+    "url": "https://arxiv.org/abs/2604.08849",
+    "pdf_url": "https://arxiv.org/pdf/2604.08849",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Zikai Zhou",
+      "Yufei Jin",
+      "Yilin Xu",
+      "Yu-Chiang Wang",
+      "Chieh-Ju Chao",
+      "Monica S. Lam"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.DB",
+      "cs.MA",
+      "cs.SC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "low precision"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 8,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: low precision",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Many real-world retrieval and matching problems require more than topical relevance: a candidate must satisfy the specific constraints of one profile among many, not just be relevant to it.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2604.08849",
+        "url": "https://arxiv.org/abs/2604.08849"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11034",
+    "title": "SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training",
+    "abstract": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin. Existing diagnosis often relies on in-process monitors that cannot report after the trainer blocks or terminates, or on post-mortem logs that preserve only synchronized symptoms; offline health tests lose the workload and operating conditions that triggered the failure. We present SCOUT, a unified runtime failure-localization framework built on one design principle: identify outliers through strict-majority consensus among equivalent replicas. SCOUT aligns replica progress, timing, and numerical evidence, then uses its Consensus Collective Communication (C3) abstraction to identify ranks whose compact signatures disagree with their peers. An out-of-band CPU observer remains responsive when training hangs, whereas in-situ replay exercises recurring stragglers and silent data corruption (SDC) beside the live job with its model state, kernels, allocations, communication path, and thermal and memory pressure present. Collective fingerprints expose rank-local protocol divergence. Clean replay coverage certifies checkpoint numerical integrity, preventing recovery from selecting state corrupted by SDC. SCOUT integrates with PyTorch, TorchTitan, Megatron-Core, and DeepSpeed without training-loop or framework-source modifications. SCOUT is open source at https://github.com/LMResiliency/lm-resiliency.",
+    "url": "https://arxiv.org/abs/2608.11034",
+    "pdf_url": "https://arxiv.org/pdf/2608.11034",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Zhuang Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/LMResiliency/lm-resiliency",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "distributed-training-checkpoint",
+      "leaf": "Distributed Training & Checkpointing",
+      "leaf_zh": "分布式训练与 Checkpoint"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "checkpoint"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 7,
+      "reproducibility": 8,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: checkpoint",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11034",
+        "url": "https://arxiv.org/abs/2608.11034"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.14047",
+    "title": "Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation",
+    "abstract": "Vision Transformers (ViTs) achieve state-of-the-art performance on challenging vision tasks, but their deployment on edge devices is severely hindered by the computational complexity and global reduction bottleneck imposed by layer normalization. Recent methods attempt to bypass this by replacing normalization layers with hardware-friendly scalar approximations. However, these homogeneous replacements do not optimally fit to all layers' behaviour and rely on expensive model retraining. In this work, we propose a highly efficient, hardware-aware framework that utilizes genetic programming (GP) to evolve heterogeneous, layer-specific scalar functions directly from pre-trained weights. Coupled with a novel post-training re-alignment strategy, our approach eliminates the need to retrain models from scratch entirely. Our evolved expressions accurately approximate the target normalization behaviours, capturing $90\\%$ of the variance ($R^2$) compared to only $70.2\\%$ for homogeneous baselines, allowing our modified architecture to recover $84.32\\%$ Top-1 ImageNet-1K accuracy in only 20 epochs. By preserving this performance while eliminating the global reduction bottleneck, our approach achieves a strict reduction in both arithmetic complexity and off-chip memory traffic compared to standard LayerNorm, removing a primary barrier to the efficient deployment of ViTs on edge accelerators.",
+    "url": "https://arxiv.org/abs/2605.14047",
+    "pdf_url": "https://arxiv.org/pdf/2605.14047",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Kieran Carrigg",
+      "Sigur de Vries",
+      "Amirhossein Sadough",
+      "Marcel van Gerven"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CV",
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "hardware-aware"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: hardware-aware",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Vision Transformers (ViTs) achieve state-of-the-art performance on challenging vision tasks, but their deployment on edge devices is severely hindered by the computational complexity and global reduction bottleneck imposed by layer normalization.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.14047",
+        "url": "https://arxiv.org/abs/2605.14047"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2606.11470",
+    "title": "The Periodic Table of LLM Reasoning: A Structured Survey of Reasoning Paradigms, Methods, and Failure Modes",
+    "abstract": "Reasoning has become central to how Large Language Models (LLMs) are evaluated and interpreted, spanning Chain-of-Thought (CoT), mathematical problem-solving, multi-hop question answering, code generation, retrieval-augmented reasoning, tool use, and multimodal decision-making. In this survey, we introduce the Periodic Table of LLM Reasoning, a framework organizing 300+ recent papers by reasoning paradigm, methodological mechanism, evaluation setting, and failure mode. We classify LLM reasoning into nine paradigms: Chain-of-Thought, Multi-Hop, Mathematical, Commonsense, Visual and Temporal, Code and Algorithmic, Retrieval-Augmented, Tool-Augmented or Agentic, and Reinforcement Learning-based reasoning. For each, we review approaches, including prompting, architectural interventions, supervised fine-tuning, verifier-guided inference, reward modeling, retrieval, tool interfaces, agentic workflows, and benchmark design. We argue that LLM reasoning is not a single emergent capability but a family of scaffolded behaviors shaped by model scale, task structure, external memory, supervision, and evaluation protocols. We synthesize recurring failure modes, including hallucinated reasoning, brittle multi-step inference, spurious rationales, weak causal grounding, poor out-of-distribution generalization, benchmark contamination, and unreliable self-verification. Progress is difficult to compare across paradigms because gains may arise from prompting, retrieval, verifier design, or benchmark structure rather than general reasoning ability. The survey connects methods to their assumptions, strengths, and failure modes, providing a reference map of the field and a diagnostic framework for future work. We conclude that robust LLM reasoning will require meta-reasoning, multimodal and temporal grounding, adaptive tool use, and principled evaluation under distribution shift.",
+    "url": "https://arxiv.org/abs/2606.11470",
+    "pdf_url": "https://arxiv.org/pdf/2606.11470",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Avinash Anand",
+      "Mahisha Ramesh",
+      "Avni Mittal",
+      "Ashutosh Kumar",
+      "Rishitej Reddy Vyalla",
+      "Erik Cambria",
+      "Zhengkui Wang",
+      "Timothy Liu",
+      "Aik Beng Ng",
+      "Simon See",
+      "Rajiv Ratn Shah"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "compiler-graph",
+      "leaf": "Compiler & Graph Optimization",
+      "leaf_zh": "编译器与计算图优化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "code generation"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: code generation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Reasoning has become central to how Large Language Models (LLMs) are evaluated and interpreted, spanning Chain-of-Thought (CoT), mathematical problem-solving, multi-hop question answering, code generation, retrieval-augmented reasoning, tool use, and multimodal decision-making.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2606.11470",
+        "url": "https://arxiv.org/abs/2606.11470"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.26444",
+    "title": "StrataCL: Fabric-Native Communication Library for Production Supernodes",
+    "abstract": "Modern distributed AI workloads run across hundreds of accelerators, making communication a major bottleneck. Existing communication libraries remain largely buffer-centric because user and communication buffers are managed separately, causing redundant data copies or costly user-buffer registration. This paper presents StrataCL, a zero-redundancy and fabric-native communication library for production supernodes. StrataCL introduces registration-on-allocation to realize user-buffer direct communication, and designs communication operators with workload-balanced NPU-core partitioning and NPU-driven SDMA offloading to exploit supernode architecture features. On the Huawei CloudMatrix384, StrataCL improves collective bus bandwidth by up to 1.6x and improves MoE dispatch/combine bus bandwidth by up to 1.4x. Across three production workloads, StrataCL improves LLM inference throughput by 1.9x, reduces P99 TTFT by 2.2x, and reduces LLM and Recsys training iteration time by 1.4x and 1.3x, respectively.",
+    "url": "https://arxiv.org/abs/2607.26444",
+    "pdf_url": "https://arxiv.org/pdf/2607.26444",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Tiancheng Hu",
+      "Jin Qin",
+      "Yuzheng Wang",
+      "Ke Liu",
+      "TangShengsheng Li",
+      "Sheng Wang",
+      "Zhongzhe Hu",
+      "Tianlun Hu",
+      "Wei Wang",
+      "Lijun Li",
+      "Jingbin Zhou",
+      "Xiaoming Bao",
+      "Hongwei Sun",
+      "Jieru Zhao",
+      "Huimin Cui",
+      "Tao Xie",
+      "Chenxi Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "offloading"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: offloading",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Modern distributed AI workloads run across hundreds of accelerators, making communication a major bottleneck.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.26444",
+        "url": "https://arxiv.org/abs/2607.26444"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10149",
+    "title": "REATS: LLM Reasoning-based Ensemble Learning for Adaptive Time Series Forecasting",
+    "abstract": "Due to the diversity of real-world time series, no single forecasting model consistently dominates across all samples. Ensemble learning addresses this by combining complementary model strengths, yet existing methods rely on fixed rules or black-box models based solely on numerical inputs, failing to leverage LLM reasoning for interpretable weighting decisions. We propose REATS, which leverages LLM reasoning capabilities as an intelligent ensemble router that jointly processes textual temporal pattern descriptions and numerical features to produce interpretable, sample-adaptive ensemble weights through chain-of-thought reasoning. To enable effective LLM-based ensembling, we study its key design choices and propose: (i) a structured input pipeline that transforms raw time series into hybrid textual--numerical representations with fixed token cost, enabling rule-based chain-of-thought construction without API dependency, augmented with retrieved similar-sample priors; (ii) a diverse multi-row weight supervision scheme coupled with a token-efficient percentage-table format that reduces numerical complexity and mitigates LLM hallucinations; and (iii) a two-stage fine-tuning framework combining SFT with GRPO, where a reciprocal reward mapping transforms the continuous unbounded MSE gap into bounded signals with amplified near-oracle sensitivity, addressing the uniform sensitivity and outlier-dominated advantage compression inherent in naive reward designs for regression-based GRPO. Experiments on eight benchmarks demonstrate that REATS outperforms competitive ensemble baselines while providing natural language explanations and demonstrating strong transfer learning and out-of-domain generalization to unseen candidate models.",
+    "url": "https://arxiv.org/abs/2608.10149",
+    "pdf_url": "https://arxiv.org/pdf/2608.10149",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Xu Zhang",
+      "Chang Xu",
+      "Hui Sun",
+      "Nan Ma",
+      "Zijian Zhang",
+      "Peng Wang",
+      "Wei Wang",
+      "Li Zhao"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "data-pipeline",
+      "leaf": "Data Pipelines",
+      "leaf_zh": "数据管线"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "input pipeline"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: input pipeline",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Due to the diversity of real-world time series, no single forecasting model consistently dominates across all samples.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10149",
+        "url": "https://arxiv.org/abs/2608.10149"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.02829",
+    "title": "Wiring Beats Blending: What Transfers Between Transformer Sizes -- and What Doesn't",
+    "abstract": "Model families are typically trained size by size, each from scratch. Can apretrained large model instead be converted into a smaller sibling? Wecharacterize the 1.4B->410M conversion in the Pythia family end to end.Representations align strongly across sizes (ridge R^2=0.84) while parametersalign weakly. Dense weight projection is functionally destructive, and abit-exact reconstruction control shows this is not an assembly artifact: basismixing breaks rotary, per-head, GELU, and LayerNorm structure. After the best-fitlinear operator, weight residuals are statistically indistinguishable from noiseunder shuffle controls. Conversion value therefore lives in initialization. Inmatched-budget continued pre-training we decompose conversion into twoindependent levers: least-squares compensation (a function lever, best zero-shot)and variance-preserving rescale (a dynamics lever, best endpoints). Compensationis a token-efficient, low-budget win rather than a universal one. At 30M tokens itbeats the strongest subcloning variant on both a width-reduced pair (84.0 +/- 1.8vs. 89.7 +/- 3.7, 3/3 seeds) and a held-out depth-reduced pair (109.3 vs. 117.9,3/3 seeds), reaching a given quality with fewer tokens. At a 33x larger budget thetwo converge to parity (40.0 vs. 40.0), both far ahead of from-scratch, whichtransfer initialization always beats: by up to 18x at low budget, with the marginnarrowing at convergence and at the largest scale. We also map the method'sboundary. At about 5x the donor scale (6.9B->1.4B) stacking both leversover-corrects, consistent with ill-conditioning of the compensation solve at largewidth, which points to dimension-aware regularization as a fix. At matched budgetour initialization also beats structured pruning with distillation, the standardpipeline for this task, and improves further when combined with it. Code,checkpoints, and the frozen evaluation corpus are released.",
+    "url": "https://arxiv.org/abs/2608.02829",
+    "pdf_url": "https://arxiv.org/pdf/2608.02829",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Ravi Satya Durga Prasad Yenugula"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation",
+      "pruning"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 8,
+      "reproducibility": 3,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation, pruning",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Model families are typically trained size by size, each from scratch.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.02829",
+        "url": "https://arxiv.org/abs/2608.02829"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11152",
+    "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
+    "abstract": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms. Prefix-aware routing improves inference efficiency through cache reuse and load balancing, but it does not control how heterogeneous rollout sessions compete for KV-cache capacity. When reinforcement learning with verifiable rewards (RLVR), reinforcement learning from human feedback (RLHF), and agentic rollouts share an asynchronous inference service, their distinct sequence structures, interaction patterns, and KV-residency times create substantially different serving demands. Rollout scheduling must account for this heterogeneity without distorting the workload mixture specified by the trainer. We present MISA-T, a routing-layer admission policy for mixed rollout serving. MISA-T combines adaptive session admission, workload-aware KV-capacity allocation, and residency-time-aware KV accounting. In rollout-only ablations on Step3.7 and Qwen3.6-35B-A3B, MISA-T improves rollout throughput over a sweep-tuned cache-aware vLLM Router by 53.3% and 43.6%, respectively, while maintaining high prefix-cache hit rates. In a matched 50-iteration Step3.7 experiment, it increases rollout throughput by 35.6% and reduces mean iteration time by 22.8%, while keeping the consumed workload mixture close to the trainer target and achieving comparable task scores.",
+    "url": "https://arxiv.org/abs/2608.11152",
+    "pdf_url": "https://arxiv.org/pdf/2608.11152",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Zetao Hong",
+      "Song Yuan",
+      "Yuanhao Ding",
+      "Yibo Zhu",
+      "Daxin Jiang",
+      "Zhibin Wang",
+      "Chen Tian"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv-cache"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv-cache",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11152",
+        "url": "https://arxiv.org/abs/2608.11152"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10823",
+    "title": "MoE Proxy Models for Low-Cost Failure Reproduction and Diagnosis in LLM RL Post-Training",
+    "abstract": "Reinforcement learning (RL) post-training of large language models (LLMs) is computationally intensive and involves complex system pipelines with substantial debugging overhead. In practice, factors such as framework adaptation, numerical precision, and operator implementation can cause failures, including gradient overflow and loss divergence. Reproducing such failures directly on large models requires considerable time and computational resources. This paper systematically analyzes failures encountered during large-scale RL training on the Huawei Ascend platform, summarizes representative failure types, and identifies three model-side factors relevant to fault reproduction. Based on these factors, we propose a proxy-model construction method for low-cost fault investigation and auxiliary diagnosis. It employs structure-preserving, clustering-based expert pruning to select representative experts while retaining the model's backbone architecture, routing mechanism, and basic task capabilities. Our experimental results show that the proxy models reduce accelerator requirements by 50%-87.5% and achieve up to a 33.3x reduction in per-step NPU-hour cost, while preserving major training dynamics and reproducing fault responses consistent with the original models. Overall, the proxy models can serve as low-cost surrogates for fault reproduction, targeted validation, and auxiliary diagnosis in RL post-training.",
+    "url": "https://arxiv.org/abs/2608.10823",
+    "pdf_url": "https://arxiv.org/pdf/2608.10823",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Yikai Wang",
+      "Chuansai Zhou",
+      "Yuhang Zhou",
+      "Weiqiang Wu",
+      "Cong Wu",
+      "Yue Deng",
+      "Ben Feng",
+      "Mingming Zhu",
+      "Beirong Zhou",
+      "Zhibin Wang",
+      "Sheng Zhong",
+      "Chen Tian",
+      "Wangze Zhang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "pruning"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: pruning",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Reinforcement learning (RL) post-training of large language models (LLMs) is computationally intensive and involves complex system pipelines with substantial debugging overhead.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10823",
+        "url": "https://arxiv.org/abs/2608.10823"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10528",
+    "title": "When Do Anchor-Based Pointwise LLM Rerankers Help? Retriever Quality, Statistical Scope, and Anchor Design",
+    "abstract": "Anchor-based pointwise LLM reranking scores each candidate against a shared reference passage to recover cross-document context at pointwise cost. We study when this actually helps, using GCCP/PAGC as a representative method. Our study is reproduction-first. We use reproduction as a starting point for a controlled component-level stress test of anchor-based pointwise reranking. Our initial reimplementation, based only on the paper text, achieves 0.24 nDCG@10 instead of the reported 0.66, revealing that several undocumented implementation details are necessary to reproduce the method. After identifying and recovering eight such details, we reproduce the reported results within 1.6% and use the validated implementation for controlled analysis. We find that the core contrastive scoring idea is robust under rigorous statistical correction. However, two design choices held fixed in the original paper are less reliable. First, we find that combining the contrastive score with the standard pointwise relevance score helps when the first-stage retriever is BM25, but gives little or no benefit when the first-stage retriever is a stronger dense model such as E5. Second, the paper's more complex method for constructing the anchor is unnecessary. A much simpler anchor, built by interleaving the top-ranked sentences, matches or outperforms it across datasets. These findings are consistent across different LLM backbones, including a 4-bit quantized 72B model. Overall, anchor-based pointwise reranking is effective, but its gains come mainly from contrastive scoring rather than from the more complex aggregation and anchor-construction choices, and they appear under narrower conditions than the original evaluation suggests.",
+    "url": "https://arxiv.org/abs/2608.10528",
+    "pdf_url": "https://arxiv.org/pdf/2608.10528",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Utshab Kumar Ghosh",
+      "Shubham Chatterjee"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.IR",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantized"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantized",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Anchor-based pointwise LLM reranking scores each candidate against a shared reference passage to recover cross-document context at pointwise cost.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10528",
+        "url": "https://arxiv.org/abs/2608.10528"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2604.02621",
+    "title": "Reinforcement Learning-based Semi-supervised Knowledge Distillation with LLM-as-a-Judge",
+    "abstract": "Reinforcement Learning (RL) substantially improves the reasoning capabilities of language models, but most existing RL fine-tuning approaches rely entirely on ground-truth verifiable rewards and thus labeled datasets with verifiable answers. To overcome this, we propose a RL framework for reasoning distillation that leverages continuous, LLM-based rewards. Our method employs an efficient mechanism that computes a continuous CoT reward (CCR) directly from a single-token logit of a judge LLM, evaluating the student model's reasoning trajectory. This formulation provides an effective and scalable online training signal that can be applied to large volumes of unlabeled data. We demonstrate that, when paired with a strong judge, simply using CCR achieves performance comparable to that of ground-truth or pseudo-label verifiable rewards, and even surpasses them as the amount of unlabeled data increases. Furthermore, we find that combining them in a semi-supervised setup is highly synergistic: verifiable rewards help stabilize the CCR, while CCR improves the generalizability of verifiable rewards to related tasks. We also provide a comprehensive empirical comparison of various reward sources across multiple model architectures and dataset sizes. Our results show that this semi-supervised approach consistently enhances mathematical reasoning, yielding an absolute improvement of 5-10% on multiple reasoning tasks.",
+    "url": "https://arxiv.org/abs/2604.02621",
+    "pdf_url": "https://arxiv.org/pdf/2604.02621",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Yiyang Shen",
+      "Lifu Tu",
+      "Weiran Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Reinforcement Learning (RL) substantially improves the reasoning capabilities of language models, but most existing RL fine-tuning approaches rely entirely on ground-truth verifiable rewards and thus labeled datasets with verifiable answers.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2604.02621",
+        "url": "https://arxiv.org/abs/2604.02621"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11045",
+    "title": "ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization",
+    "abstract": "ReRound (Reconstructive Rounding) is a post-training quantization method that addresses the midpoint ambiguity inherent in standard round-to-nearest (RTN) schemes when quantizing weights near the centers of quantization intervals. Starting from a pretrained LLM, ReRound trains a conditional diffusion model to produce continuous reconstructions of low-bit weights for the LLM. These reconstructed weights act as a guidance signal to disambiguate the rounding direction of weights located close to interval midpoints. To integrate this reconstruction-guided rounding with conventional RTN, ReRound introduces a tolerance metric measuring how far the quantized weight (not the final quantized integer) is away from the midpoint: quantized weights within a tolerance region around midpoints are quantized using diffusion-based reconstructions, whereas weights closer to quantization boundaries are quantized with RTN. By sweeping the tolerance parameter, ReRound generates multiple candidate quantized integer weight matrices and selects the de-quantized weight matrix candidate whose leading singular values most closely match those of the original full-precision weights. This selected candidate determines the tolerance parameter ReRound uses. ReRound is particularly effective for smaller LLMs. Across a range of such models, it consistently outperforms standard RTN for 3-bit and 4-bit weight quantization. ReRound achieves superior accuracy compared to an extensive set of calibration-free methods, remains competitive with calibration-dependent approaches, and operates entirely offline, introducing no additional overhead during low-bit inference. The ReRound strategy represents a new approach for low-bit quantization. The method applies to AI models beyond LLMs. This paper focuses on its applications to small LLMs.",
+    "url": "https://arxiv.org/abs/2608.11045",
+    "pdf_url": "https://arxiv.org/pdf/2608.11045",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "He-Yen Hsieh",
+      "H. T. Kung"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization",
+      "quantized"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 6,
+      "rigor": 5,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization, quantized",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "ReRound (Reconstructive Rounding) is a post-training quantization method that addresses the midpoint ambiguity inherent in standard round-to-nearest (RTN) schemes when quantizing weights near the centers of quantization intervals.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11045",
+        "url": "https://arxiv.org/abs/2608.11045"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.09934",
+    "title": "LLM Agents Factory: Retrieval of Domain-Specific LLM Agents",
+    "abstract": "Large language model (LLM) agents improve task performance by decomposing problems into role-specialized behaviors. However, their practical deployment is often limited by the computational cost and instability associated with the on-the-fly agent design for each user request. To address this, we present LLM Agents Factory, a retrieval-based framework that constructs domain-specific and Wikipedia-grounded agents on demand using a base of over 20K predetermined agent profiles. Our framework supports two modes: (1) agent profile retrieval via semantic search and (2) distillation into a compact model fine-tuned for direct agent generation. Experiments on MMLU, BIG-bench, and BIG-bench Hard in a single-agent scenario demonstrate that our retrieval-based agent construction surpasses non-agent baselines in accuracy while matching AutoGen generation quality with a 120B backbone at a substantially lower inference cost. Our work reveals that retrieval from a structured agent repository provides a cost-efficient, accurate, and controllable alternative to dynamic agent generation, responding to the strict demands of industrial applications. We provide the implementation code and the agent base in https://huggingface.co/frontier-ai/llm-agent-factory.",
+    "url": "https://arxiv.org/abs/2608.09934",
+    "pdf_url": "https://arxiv.org/pdf/2608.09934",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Vitalii Belov",
+      "Artyom Sosedka",
+      "Andrey Sakhovskiy",
+      "Elizaveta Kovtun",
+      "Artyom Boyarskikh",
+      "Semen Budennyy"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 3,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large language model (LLM) agents improve task performance by decomposing problems into role-specialized behaviors.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.09934",
+        "url": "https://arxiv.org/abs/2608.09934"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10010",
+    "title": "CurveFP: Rational-Radix Logarithmic Datatypes with Closed Products for Language Models",
+    "abstract": "Low-precision datatypes reduce language-model cost, but most formats optimize scalar fidelity while leaving the arithmetic induced by their products unchanged. We introduce CurveFP, a closed-product codebook family that distributes quantized magnitudes across interleaved logarithmic curves under compact block scales. A rational radix tunes dynamic range against local resolution, while uniform curve indices make every nonzero product algebraically closed. Product formation becomes an exact sign XOR and integer-index update, and a derived finite phase count determines the accumulation schedule. We instantiate this algebra as CurveFP eight E4C3/E5C2 for training and CurveFP seven E3C3 for compact deployment. In evaluation, CurveFP seven beats tensor-wise FP8 perplexity on four 7B--9B models with one fewer element bit and stays within 1.32\\% of native quality. CurveFP eight lowers operand NMSE in all 36 paired forward and backward GEMM comparisons. Across three matched 128.3M-parameter triplets, every mode completes 3B-token pretraining per seed; CurveFP eight reaches mean BF16-inference perplexity 22.5366 versus 22.5407 for FP8 and incurs a lower format-induced penalty in all three seeds. A 36-cell downstream matrix finds lower WikiText-103 perplexity for the CurveFP eight-trained checkpoints in all 12 seed-format comparisons, with mixed PG-19 and task deltas. Together, these results establish CurveFP as an arithmetic co-design that combines FP8-class numerical behavior, seven-bit inference, and a substantially simpler product path.",
+    "url": "https://arxiv.org/abs/2608.10010",
+    "pdf_url": "https://arxiv.org/pdf/2608.10010",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Ye Qiao"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "fp8",
+      "quantized"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: fp8, quantized",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Low-precision datatypes reduce language-model cost, but most formats optimize scalar fidelity while leaving the arithmetic induced by their products unchanged.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10010",
+        "url": "https://arxiv.org/abs/2608.10010"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10402",
+    "title": "TideRL: Boosting Agentic RL Goodput with Readiness-Aware Scheduling",
+    "abstract": "Reinforcement learning (RL) for large language models is moving toward multi-turn agentic workloads, where rollout tasks repeatedly pause for external environments, resume with growing contexts, and finish at highly variable times. In this setting, RL training goodput, measured by training throughput, matters more than raw GPU occupancy: GPU waiting and repeated prefill recomputation are pure overhead. We present TideRL, a readiness-aware elastic RL system with Continuous Task Batching, Resource-Aware Ref-Actor Pipelining, and Elastic Resource Scaling. CTB preserves useful rollout state, $\\textrm{RA}^2\\textrm{P}$ selects between decoupled streaming and colocated aggregation from the ready backlog and arrival interval, and ERS moves ranks between rollout and training using the same readiness signals. Across text-only and multi-modal agentic workloads, TideRL improves RL training goodput by up to 5.6$\\times$ over synchronous baselines and over 33% over asynchronous baselines, while reaching similar task performance. It also improves KV cache hit rate by 1.58$\\times$, reduces per-step training time by up to 44.3%, and cuts total waiting time by up to 77.6%.",
+    "url": "https://arxiv.org/abs/2608.10402",
+    "pdf_url": "https://arxiv.org/pdf/2608.10402",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Yanyu Ren",
+      "Xizheng Wang",
+      "Xiao Liu",
+      "Bowen Lv",
+      "Hanchen Zhang",
+      "Shudan Zhang",
+      "Hanyu Lai",
+      "Shuai Wang",
+      "Li Chen",
+      "Dan Li",
+      "Jie Tang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Reinforcement learning (RL) for large language models is moving toward multi-turn agentic workloads, where rollout tasks repeatedly pause for external environments, resume with growing contexts, and finish at highly variable times.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10402",
+        "url": "https://arxiv.org/abs/2608.10402"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.09941",
+    "title": "The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs",
+    "abstract": "While 4-bit weight quantization is critical for deploying Small Language Models (SLMs) on edge devices, evaluations of the resulting performance degradation-the quantization tax-remain overwhelmingly English-centric. We present a zero-shot multilingual evaluation of 4-bit quantization across the Gemma 4 and Qwen 3.5 architectures. Evaluating on eight typo-logically diverse languages using MMLU ProX Lite and GlobalPIQA, we show parameter truncation exposes deep pre-training inequalities. We identify four phenomena: (1) Typological Fragility: low-resource and specific non-Latin scripts suffer representational collapse via architecture-specific double dissociations, failing to generate valid task logits; (2) Home Language Fragility Paradox: foundational pre-training pathways provide limited precision loss protection; (3) Domain-Specific Forgetting: multi-step cross-lingual routing degrades while associative soft-science recall remains robust; and (4) Quantization Resistance: highly saturated, typologically aligned domains resist deterministic degradation, with post-quantization performance gains bounded by statistical noise.",
+    "url": "https://arxiv.org/abs/2608.09941",
+    "pdf_url": "https://arxiv.org/pdf/2608.09941",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Mohammad Wathiq Soualhi"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "While 4-bit weight quantization is critical for deploying Small Language Models (SLMs) on edge devices, evaluations of the resulting performance degradation-the quantization tax-remain overwhelmingly English-centric.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.09941",
+        "url": "https://arxiv.org/abs/2608.09941"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10545",
+    "title": "ImpactHO: Importance-Aware KV Cache Transfer for Multi-User Edge LLM Handover",
+    "abstract": "Edge LLMs must preserve inference continuity when a user hands over between edge nodes, requiring key-value (KV) cache transfer to the target node. However, simultaneous handovers saturate the backhaul, preventing full cache delivery within the mobility-imposed transfer window. Rather than allocating bandwidth as if all cache entries were equally valuable, we order each user's KV cache by importance and transmit only its most informative fraction, turning token-level sparsity into communication savings. We cast the transfer as a multi-user backhaul allocation problem that maximizes average accuracy across users. Each user's partial-cache accuracy serves as its utility: a sigmoid that fits measurements on the RULER benchmark with $R^2>0.99$ across models and context lengths. Because importance ordering front-loads the high-value entries, the concave region of the accuracy curve spans nearly the entire cache. Our proposed allocator keeps served users within this region, making each per-slot allocation problem convex. The optimum is derived via a closed-form weighted water-filling solution that generalizes information-theoretic water-filling and enables online scheduling. The proposed allocator attains over 93.7% average accuracy in a 500ms transfer window, within 0.5pp of the full-cache ceiling, and reaches 98.2-99.5% of a clairvoyant upper bound.",
+    "url": "https://arxiv.org/abs/2608.10545",
+    "pdf_url": "https://arxiv.org/pdf/2608.10545",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Minwoo Kim",
+      "Soochang Song",
+      "Namyoon Lee",
+      "Bang Chul Jung",
+      "Yongjune Kim"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.DC",
+      "cs.NI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv cache"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv cache",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Edge LLMs must preserve inference continuity when a user hands over between edge nodes, requiring key-value (KV) cache transfer to the target node.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10545",
+        "url": "https://arxiv.org/abs/2608.10545"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11016",
+    "title": "Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms",
+    "abstract": "Clustering is a fundamental class of data analysis techniques with the most important representatives being centroid-based methods like $k$-means. Such methods are strongly connected to quantization problems, which aim to approximate general probability measures with discrete ones. For example, $k$-means corresponds to quantization with respect to the Wasserstein distance. While Wasserstein quantization clusters points within a fixed space, this paper studies Gromov-Wasserstein (GW) quantization, which additionally aims at clustering the ambient geometry of the space. We show existence of solutions to the GW quantization problem and give a characterization that justifies an analogue to the $k$-means algorithm (Lloyd's algorithm) to approximate them numerically. We further calculate the quantization rate for usual Euclidean geometries that are used in the GW context, and relate it to standard Wasserstein quantization rates. Finally, numerical experiments show that GW quantization opens up many modeling possibilities beyond normal clustering methods (e.g., for geodesic distances of 3D shapes or structured pruning of neural networks) and that the introduced algorithm leads to useful numerical solutions with approximation quality often in line with theoretically optimal rates.",
+    "url": "https://arxiv.org/abs/2608.11016",
+    "pdf_url": "https://arxiv.org/pdf/2608.11016",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Florian Beier",
+      "Stephan Eckstein"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "math.OC",
+      "cs.CG",
+      "cs.LG",
+      "math.PR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Clustering is a fundamental class of data analysis techniques with the most important representatives being centroid-based methods like $k$-means.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11016",
+        "url": "https://arxiv.org/abs/2608.11016"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.10605",
+    "title": "Compute-Optimal Is Not Cluster-Optimal: Systems-Aware Scaling for Sparse Mixture-of-Experts",
+    "abstract": "In large-scale pretraining, the algorithm, architecture, and systems decisions are conventionally made in disconnected stages. A scaling law stage selects an architecture and training recipe, optimizing loss under compute constraints, and a separate systems stage then optimizes the implementation for hardware efficiency. In this work, we develop MOSAIC, which formulates model architecture and systems co-design as an optimization problem. MOSAIC couples a predictive scaling law with a calibrated performance model that estimates Model FLOPs Utilization (MFU), communication cost, memory footprint, and the best parallel layout. We instantiate the framework for sparse Mixture-of-Experts (MoE) language models, where expert count, routing sparsity, and other MoE layer dimensions affect both the loss and systems efficiency. We fit a scaling law on sparse MoE models trained on text data, whose scaling dimensions include the sparsity factor, which is the fraction of model parameters inactive per token in a forward pass. The scaling law sweeps in our work span active parameters from $104$ million to $2.7$ billion and total model sizes reaching $79$ billion parameters. We show that, within the calibrated sparsity range, an efficiency-agnostic model-FLOPs budget admits no interior optimal sparsity. The fitted loss decreases monotonically with sparser models and the compute optimum lies at the upper boundary of the data support. An optimal sparsity in MoE models instead emerges under the cluster's systems constraints, as captured by MOSAIC. Our results argue for a shift towards unified architecture and systems co-design for frontier language model training.",
+    "url": "https://arxiv.org/abs/2608.10605",
+    "pdf_url": "https://arxiv.org/pdf/2608.10605",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "authors": [
+      "Soumajyoti Sarkar",
+      "Yuxin Tang",
+      "Sheng Zha"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "sparsity"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 5,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: sparsity",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "In large-scale pretraining, the algorithm, architecture, and systems decisions are conventionally made in disconnected stages.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.10605",
+        "url": "https://arxiv.org/abs/2608.10605"
+      }
+    ]
+  },
+  {
     "id": "arxiv:2606.26453",
     "title": "Optimizing CUDA like a Human: Micro-Profiling Tools as Expert Surrogates for LLM-Based GPU Kernel Optimization",
     "abstract": "We present KernelPro, a closed-loop multi-agent system that automatically generates, profiles, and iteratively optimizes GPU kernel code by integrating large language model (LLM) code generation with hardware profiler feedback and pluggable bottleneck detection tools. KernelPro introduces four contributions: (1) a semantic feedback operator that encodes expert heuristics as pluggable micro-profiling tools, transforming raw hardware metrics into actionable natural language guidance; (2) a two-stage tool invocation architecture where roofline-based bottleneck classification filters which specialized analysis tools execute, combining kernel-level (ncu), instruction-level (SASS), and system-level (nsys) profiling; (3) a domain-adapted MCTS with progressive widening, asymmetric branching, log-reward calibration, dead-end pruning, and search memory for cross-iteration learning; and (4) direct CuTe source-level code generation via autonomous code search over the CUTLASS/CuTe codebase. On KernelBench, KernelPro achieves geometric mean speedups of 2.42x/4.69x/5.30x on Levels 1/2/3, establishing state-of-the-art performance across all difficulty levels. On VeOmni's expert-optimized MoE training kernels, KernelPro achieves 1.23x over hand-tuned Triton by generating a from-scratch raw-CUDA+CuTe Hopper WGMMA kernel. Ablation studies demonstrate that each design component independently and significantly improves optimization quality: micro-profiling tools (p < 0.0001 vs raw metrics), MCTS search (26% higher geometric mean vs greedy, p = 0.004), and proactive tool orchestration (23% improvement, p = 0.035). Finally, KernelPro is the first CUDA kernel coding agent to optimize energy efficiency beyond the speed-only focus of prior systems, demonstrating an 11.6% measured energy reduction at matched speed.",
@@ -65,7 +1986,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -142,7 +2063,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -212,7 +2133,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -290,7 +2211,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -367,7 +2288,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -447,7 +2368,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -519,7 +2440,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -588,7 +2509,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -666,7 +2587,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -745,7 +2666,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -817,7 +2738,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -890,7 +2811,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -967,7 +2888,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1040,7 +2961,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1108,7 +3029,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1188,7 +3109,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1261,7 +3182,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1337,7 +3258,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1413,7 +3334,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1486,7 +3407,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1557,7 +3478,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1630,7 +3551,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1698,7 +3619,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1770,7 +3691,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1839,7 +3760,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1913,7 +3834,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1982,7 +3903,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2056,7 +3977,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2127,7 +4048,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2200,7 +4121,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2270,7 +4191,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2337,7 +4258,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2405,7 +4326,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2478,7 +4399,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2547,7 +4468,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2623,7 +4544,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2698,7 +4619,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2769,7 +4690,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2837,7 +4758,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2908,7 +4829,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2977,7 +4898,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3046,7 +4967,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3116,7 +5037,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3133,7 +5054,7 @@
     "url": "https://arxiv.org/abs/2608.07935",
     "pdf_url": "https://arxiv.org/pdf/2608.07935",
     "published": "2026-08-11",
-    "updated": "2026-08-11",
+    "updated": "2026-08-12",
     "authors": [
       "Meilin Yang (Renmin University of China",
       "Beijing",
@@ -3205,7 +5126,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3281,7 +5202,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3351,7 +5272,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3417,7 +5338,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3485,7 +5406,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3565,7 +5486,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3642,7 +5563,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3718,7 +5639,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3794,7 +5715,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3868,7 +5789,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3942,7 +5863,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4011,7 +5932,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4081,7 +6002,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4151,7 +6072,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4218,7 +6139,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4290,7 +6211,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4360,7 +6281,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4430,7 +6351,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4500,7 +6421,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4569,7 +6490,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4635,7 +6556,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4709,7 +6630,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4775,7 +6696,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4847,7 +6768,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4921,7 +6842,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4989,7 +6910,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5059,7 +6980,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5131,7 +7052,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5201,7 +7122,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5274,7 +7195,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5351,7 +7272,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5422,7 +7343,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -5493,7 +7414,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -5502,83 +7423,6 @@
         "source": "arXiv RSS",
         "id": "2608.07169",
         "url": "https://arxiv.org/abs/2608.07169"
-      }
-    ]
-  },
-  {
-    "id": "arxiv:2605.28803",
-    "title": "{\\Omega}-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling",
-    "abstract": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive. Prior quantization efforts offer only partial solutions, compressing the LLM backbone while leaving the DiT action head at full precision, or resorting to mixed-precision schemes, driven by the belief that uniformly quantizing the action head is inherently unstable. We challenge this assumption with Omega-QVLA, the first training-free post-training quantization framework that compresses both the language backbone and the entire diffusion action head of a VLA model to a uniform W4A4 precision, eliminating the need for mixed-precision allocation. Omega-QVLA combines a composite SVD-Hadamard rotation that equalizes per-channel weight energy while diffusing residual activation outliers with per-step DiT activation scaling quantization that absorbs dynamic-range drift across denoising steps. On LIBERO, Omega-QVLA compresses Pi 0.5 and GR00T N1.5 to W4A4 with 98.0% and 87.8% task success rates, matching or exceeding their FP16 references of 97.1% and 87.0%, while reducing the static memory footprint by 71.3%. Real-world manipulation experiments further confirm smooth, accurate manipulation where prior methods fail. Code is available at https://github.com/UCMP13753/Omega-QVLA.",
-    "url": "https://arxiv.org/abs/2605.28803",
-    "pdf_url": "https://arxiv.org/pdf/2605.28803",
-    "published": "2026-08-10",
-    "updated": "2026-08-10",
-    "authors": [
-      "Xinyu Wang",
-      "Mingze Li",
-      "Sicheng Lyu",
-      "Dongxiu Liu",
-      "Kaicheng Yang",
-      "Ziyu Zhao",
-      "Yufei Cui",
-      "Xiao-Wen Chang",
-      "Peng Lu"
-    ],
-    "source": "arXiv RSS",
-    "source_type": "preprint",
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "doi": "",
-    "venue": "",
-    "journal_ref": "",
-    "comment": "",
-    "code_url": "https://github.com/UCMP13753/Omega-QVLA",
-    "primary_category": {
-      "domain_id": "efficient-inference",
-      "domain": "LLM Efficient Inference",
-      "domain_zh": "LLM 高效推理",
-      "group_id": "model-algorithm",
-      "group": "Model & Algorithm Efficiency",
-      "group_zh": "模型与算法效率",
-      "leaf_id": "quantization-low-precision",
-      "leaf": "Quantization & Low Precision",
-      "leaf_zh": "量化与低精度"
-    },
-    "secondary_tags": [],
-    "keyword_evidence": [
-      "quantization"
-    ],
-    "score": 48,
-    "score_components": {
-      "relevance": 16,
-      "novelty": 6,
-      "rigor": 7,
-      "practical_impact": 9,
-      "reproducibility": 7,
-      "credibility": 3
-    },
-    "score_evidence": [
-      "taxonomy keywords: quantization",
-      "no quantitative claim in metadata",
-      "code/artifact link detected"
-    ],
-    "summary_en": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
-    "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
-    "featured_weeks": [
-      "2026-W33"
-    ],
-    "source_records": [
-      {
-        "source": "arXiv RSS",
-        "id": "2605.28803",
-        "url": "https://arxiv.org/abs/2605.28803"
       }
     ]
   },
@@ -5644,7 +7488,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5717,7 +7561,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -5793,7 +7637,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -5870,7 +7714,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5942,7 +7786,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6015,7 +7859,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6087,7 +7931,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6155,7 +7999,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6226,7 +8070,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6294,7 +8138,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6364,7 +8208,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6443,7 +8287,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6511,7 +8355,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6594,7 +8438,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6664,7 +8508,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6738,7 +8582,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6807,7 +8651,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6877,7 +8721,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6946,7 +8790,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7016,7 +8860,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7083,7 +8927,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7155,7 +8999,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7223,7 +9067,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7293,7 +9137,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7370,7 +9214,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7438,7 +9282,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7507,7 +9351,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7576,7 +9420,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7645,7 +9489,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7718,7 +9562,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -7792,7 +9636,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -7870,7 +9714,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7943,7 +9787,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8015,8 +9859,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [
+      "2026-W32"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -8084,7 +9930,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8155,7 +10001,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8225,7 +10071,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8298,7 +10144,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8368,7 +10214,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8442,8 +10288,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [
+      "2026-W32"
+    ],
     "source_records": [
       {
         "source": "arXiv",
@@ -8526,8 +10374,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-12T05:09:02+00:00",
+    "featured_weeks": [
+      "2026-W32"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -8594,7 +10444,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8670,7 +10520,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8741,7 +10591,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8817,7 +10667,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8889,7 +10739,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8959,7 +10809,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9032,7 +10882,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9108,7 +10958,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9184,7 +11034,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9253,7 +11103,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9321,7 +11171,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9394,7 +11244,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9465,7 +11315,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9546,7 +11396,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -9621,7 +11471,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -9694,7 +11544,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -9769,7 +11619,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9846,7 +11696,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9924,7 +11774,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9994,7 +11844,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10061,7 +11911,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10135,7 +11985,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10213,7 +12063,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10287,7 +12137,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10357,7 +12207,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10428,7 +12278,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10504,7 +12354,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10576,7 +12426,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10655,7 +12505,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10728,7 +12578,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10801,7 +12651,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10873,7 +12723,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10944,7 +12794,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11016,7 +12866,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11087,7 +12937,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11161,7 +13011,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11230,7 +13080,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11298,7 +13148,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11371,7 +13221,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11443,7 +13293,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11521,7 +13371,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11589,7 +13439,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11676,7 +13526,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11746,7 +13596,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11814,7 +13664,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11888,7 +13738,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11968,7 +13818,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12040,7 +13890,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12120,7 +13970,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12200,7 +14050,7 @@
     "limitations_zh": "摘要未说明真实流片、仿真精度、模型规模和对比系统配置；3D 集成、FeFET 成熟度及动态路由下的热设计成本仍需结合正文和硬件实现核验。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -12279,7 +14129,7 @@
     "limitations_zh": "当前元数据只说明将发布代码，尚未发现 Artifact；收益依赖具体硬件、模型和缩放策略，而且工作聚焦训练效率，不能等同于部署阶段的 FP8 推理收益。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -12350,7 +14200,7 @@
     "limitations_zh": "仅覆盖单一消费级 GPU、固定提示集和 2Hz 功耗采样；内部推理长度会混淆每提示能耗，结论尚不能直接外推到数据中心 GPU 或在线并发负载。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -12423,7 +14273,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12502,7 +14352,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12574,7 +14424,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12650,7 +14500,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12724,7 +14574,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12795,7 +14645,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12869,7 +14719,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12938,7 +14788,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13018,7 +14868,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13090,7 +14940,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13174,7 +15024,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13257,7 +15107,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13332,7 +15182,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13409,7 +15259,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13483,7 +15333,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13562,7 +15412,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13636,7 +15486,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13705,7 +15555,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13780,7 +15630,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13850,7 +15700,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13919,7 +15769,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13989,7 +15839,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14060,7 +15910,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14133,7 +15983,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14206,7 +16056,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14280,7 +16130,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14351,7 +16201,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14429,7 +16279,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14503,7 +16353,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14578,7 +16428,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14645,7 +16495,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14715,7 +16565,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14782,7 +16632,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14850,7 +16700,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14922,7 +16772,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14998,7 +16848,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15076,7 +16926,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15153,7 +17003,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15226,7 +17076,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15300,7 +17150,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15373,7 +17223,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15455,7 +17305,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15528,7 +17378,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15604,7 +17454,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15680,7 +17530,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15746,7 +17596,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15819,7 +17669,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15896,7 +17746,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15965,7 +17815,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16039,7 +17889,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16110,7 +17960,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16195,7 +18045,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16266,7 +18116,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16335,7 +18185,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16405,7 +18255,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16475,7 +18325,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16545,7 +18395,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16655,7 +18505,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16723,7 +18573,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16801,7 +18651,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16879,7 +18729,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16953,7 +18803,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17032,7 +18882,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17116,7 +18966,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17192,7 +19042,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17275,7 +19125,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17356,7 +19206,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17428,7 +19278,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17502,7 +19352,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17583,7 +19433,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17661,7 +19511,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17738,7 +19588,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17815,7 +19665,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17889,7 +19739,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17972,7 +19822,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18049,7 +19899,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18127,7 +19977,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18207,7 +20057,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18282,7 +20132,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18357,7 +20207,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18430,7 +20280,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18506,7 +20356,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18582,7 +20432,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18658,7 +20508,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18730,7 +20580,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18807,7 +20657,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18882,7 +20732,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18959,7 +20809,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19034,7 +20884,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -19112,7 +20962,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19189,7 +21039,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19262,7 +21112,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19333,7 +21183,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19407,7 +21257,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19486,7 +21336,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19559,7 +21409,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19633,7 +21483,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19705,7 +21555,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19783,7 +21633,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19858,7 +21708,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19936,7 +21786,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20009,7 +21859,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20090,7 +21940,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-11T04:54:40+00:00",
+    "last_seen": "2026-08-12T05:09:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {

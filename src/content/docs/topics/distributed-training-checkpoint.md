@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **16** 篇。
+累计收录 **17** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training](../../papers/arxiv-2608.11034/) | 2026-08-12 | 42 |
 | [Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards](../../papers/arxiv-2608.07531/) | 2026-08-11 | 46 |
 | [Training Variable Long Sequences with Data-Centric Parallel](../../papers/arxiv-2608.07524/) | 2026-08-11 | 39 |
 | [Tevatron-Elastic: A Unified Abstraction for Training Elastic Retrievers and Rerankers](../../papers/arxiv-2608.08809/) | 2026-08-11 | 38 |

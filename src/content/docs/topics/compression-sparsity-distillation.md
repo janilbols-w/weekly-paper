@@ -5,10 +5,16 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **81** 篇。
+累计收录 **87** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [VDC-Agent: When Video Detailed Captioners Evolve Themselves via Agentic Self-Reflection](../../papers/arxiv-2511.19436/) | 2026-08-12 | 45 |
+| [Wiring Beats Blending: What Transfers Between Transformer Sizes -- and What Doesn't](../../papers/arxiv-2608.02829/) | 2026-08-12 | 40 |
+| [MoE Proxy Models for Low-Cost Failure Reproduction and Diagnosis in LLM RL Post-Training](../../papers/arxiv-2608.10823/) | 2026-08-12 | 40 |
+| [Reinforcement Learning-based Semi-supervised Knowledge Distillation with LLM-as-a-Judge](../../papers/arxiv-2604.02621/) | 2026-08-12 | 39 |
+| [LLM Agents Factory: Retrieval of Domain-Specific LLM Agents](../../papers/arxiv-2608.09934/) | 2026-08-12 | 39 |
+| [Compute-Optimal Is Not Cluster-Optimal: Systems-Aware Scaling for Sparse Mixture-of-Experts](../../papers/arxiv-2608.10605/) | 2026-08-12 | 38 |
 | [High-Layer Attention Pruning with Rescaling](../../papers/arxiv-2507.01900/) | 2026-08-11 | 54 |
 | [UnionSparse: An Index-Efficient Sparsity Framework for Low-Bit Sparse LLM Inference on Edge](../../papers/arxiv-2608.09291/) | 2026-08-11 | 52 |
 | [Unified Static-Dynamic Pruning for Efficient LLM Inference](../../papers/arxiv-2607.21985/) | 2026-08-11 | 51 |

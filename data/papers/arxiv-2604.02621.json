@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2604.02621",
+  "title": "Reinforcement Learning-based Semi-supervised Knowledge Distillation with LLM-as-a-Judge",
+  "abstract": "Reinforcement Learning (RL) substantially improves the reasoning capabilities of language models, but most existing RL fine-tuning approaches rely entirely on ground-truth verifiable rewards and thus labeled datasets with verifiable answers. To overcome this, we propose a RL framework for reasoning distillation that leverages continuous, LLM-based rewards. Our method employs an efficient mechanism that computes a continuous CoT reward (CCR) directly from a single-token logit of a judge LLM, evaluating the student model's reasoning trajectory. This formulation provides an effective and scalable online training signal that can be applied to large volumes of unlabeled data. We demonstrate that, when paired with a strong judge, simply using CCR achieves performance comparable to that of ground-truth or pseudo-label verifiable rewards, and even surpasses them as the amount of unlabeled data increases. Furthermore, we find that combining them in a semi-supervised setup is highly synergistic: verifiable rewards help stabilize the CCR, while CCR improves the generalizability of verifiable rewards to related tasks. We also provide a comprehensive empirical comparison of various reward sources across multiple model architectures and dataset sizes. Our results show that this semi-supervised approach consistently enhances mathematical reasoning, yielding an absolute improvement of 5-10% on multiple reasoning tasks.",
+  "url": "https://arxiv.org/abs/2604.02621",
+  "pdf_url": "https://arxiv.org/pdf/2604.02621",
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "authors": [
+    "Yiyang Shen",
+    "Lifu Tu",
+    "Weiran Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reinforcement Learning (RL) substantially improves the reasoning capabilities of language models, but most existing RL fine-tuning approaches rely entirely on ground-truth verifiable rewards and thus labeled datasets with verifiable answers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-12T05:09:02+00:00",
+  "last_seen": "2026-08-12T05:09:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.02621",
+      "url": "https://arxiv.org/abs/2604.02621"
+    }
+  ]
+}

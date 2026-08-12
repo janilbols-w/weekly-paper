@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **13** 篇。
+累计收录 **14** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation](../../papers/arxiv-2605.14047/) | 2026-08-12 | 42 |
 | [FSGen: Agile Fused and Sparse Accelerator Generator with Accurate Power Model for LLM Applications](../../papers/arxiv-2608.09252/) | 2026-08-11 | 46 |
 | [BitFair: A 12-nm Bit-Serial CNN Accelerator with Learnable Early Termination and Adaptive Bit Ordering for Ultra-Low-Power XR Vision](../../papers/arxiv-2607.05445/) | 2026-08-11 | 45 |
 | [AraSSM: A bidirectional state-space encoder for Arabic masked language modeling](../../papers/arxiv-2608.08256/) | 2026-08-11 | 41 |

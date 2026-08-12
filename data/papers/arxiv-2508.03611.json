@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2508.03611",
+  "title": "Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling",
+  "abstract": "This paper presents Astrolabe, a randomized prediction-guided scheduler for one-shot request dispatch in multi-instance large language model (LLM) serving. Astrolabe improves load balancing without relying on migration-based rebalancing, whose KV-cache transfers can introduce substantial overhead and network contention under high load. It combines response-length estimation, per-instance simulation-based latency prediction, and a power-of-two-choices dispatch policy to balance load while avoiding request herding. On the default Llama-2-7B/ShareGPT setup, Astrolabe matches the SLO capacity of the best load-aware baseline (31.6 versus 31.5 QPS), while reducing mean time-to-first-token (TTFT) by 8 to 36 percent, P99 TTFT by 16 to 77 percent, and mean end-to-end (E2E) latency by up to 5.6 percent, with approximately six times fewer preemptions once capacity is reached. Under configuration shifts, Astrolabe improves SLO capacity by up to 6 percent on Qwen2-7B and 7.1 percent under tight batching, reduces mean E2E latency by 6 to 9 percent under bursty arrivals, and achieves an approximately 2.8-fold reduction in per-predictor CPU usage relative to full fanout. With migration enabled on A100 GPUs, Astrolabe outperforms Llumnix by up to 2.6 times in throughput while achieving orders-of-magnitude lower per-token latency at saturation.",
+  "url": "https://arxiv.org/abs/2508.03611",
+  "pdf_url": "https://arxiv.org/pdf/2508.03611",
+  "published": "2026-08-12",
+  "updated": "2026-08-12",
+  "authors": [
+    "Wei Da",
+    "Evangelia Kalyvianaki"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "This paper presents Astrolabe, a randomized prediction-guided scheduler for one-shot request dispatch in multi-instance large language model (LLM) serving.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-12T05:09:02+00:00",
+  "last_seen": "2026-08-12T05:09:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2508.03611",
+      "url": "https://arxiv.org/abs/2508.03611"
+    }
+  ]
+}

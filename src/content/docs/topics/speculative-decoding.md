@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **13** 篇。
+累计收录 **14** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MemSpec: Memory-Aware Runtime for Adaptive Draft Scheduling in Speculative Decoding on Edge Devices](../../papers/arxiv-2608.10362/) | 2026-08-12 | 44 |
 | [SimSD: Simple Speculative Decoding in Diffusion Language Models](../../papers/arxiv-2606.02544/) | 2026-08-11 | 48 |
 | [LibraSpec: Dynamic Diffusion-Based Speculative Decoding via Marginal-Gain-Driven Optimization](../../papers/arxiv-2608.08721/) | 2026-08-11 | 46 |
 | [Goose: Anisotropic Speculation Trees for Training-Free Speculative Decoding](../../papers/arxiv-2604.02047/) | 2026-08-11 | 45 |
