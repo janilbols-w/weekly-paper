@@ -1,5 +1,1665 @@
 [
   {
+    "id": "arxiv:2608.11742",
+    "title": "Ripple-Pivot Search: Active Parallel Decoding for Diffusion Large Language Models",
+    "abstract": "Diffusion Large Language Models (dLLMs) have emerged as a competitive alternative to autoregressive language models, offering the potential for substantially faster inference through parallel decoding. Existing parallel decoding schedulers typically commit positions only after they meet a per-position criterion, overlooking how early commitments may benefit subsequent decoding. We identify a ripple effect in dLLM decoding: proactively committing a mid-entropy pivot position can induce a pronounced reduction in uncertainty across the remaining masked positions. This uncertainty reduction allows subsequent steps to unmask more tokens in parallel, thereby accelerating the overall decoding process. To exploit the ripple effect, we propose Ripple-Pivot Search (RPS), a novel training-free decoding method that seeks mid-entropy positions as promising candidate pivots (where to decode), and determines their token assignment that yields the greatest downstream benefit via lookahead evaluation (what to decode). Across 3 dLLMs and 4 reasoning and code-generation benchmarks, RPS achieves 4-10$\\times$ wall-clock speedup over the standard decoder while preserving generation quality, and improves accuracy over the previous lookahead baseline by up to 5.49% while delivering higher throughput in most settings. When integrated with KV caching, RPS further achieves up to 18$\\times$ wall-clock speedup over the standard decoder.",
+    "url": "https://arxiv.org/abs/2608.11742",
+    "pdf_url": "https://arxiv.org/pdf/2608.11742",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Yushi Ye",
+      "Xu Chen",
+      "Haoyun Jiang",
+      "Jinsong Lan",
+      "Haihong Tang",
+      "Bo Han",
+      "Ivor Tsang",
+      "Yanfeng Wang",
+      "Bo Zheng",
+      "Jiangchao Yao"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "speculative-decoding",
+      "leaf": "Speculative Decoding",
+      "leaf_zh": "推测解码"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "parallel decoding"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 11,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: parallel decoding",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Diffusion Large Language Models (dLLMs) have emerged as a competitive alternative to autoregressive language models, offering the potential for substantially faster inference through parallel decoding.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11742",
+        "url": "https://arxiv.org/abs/2608.11742"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11919",
+    "title": "LazyTrain: Limited-resource Allocation toward Zero-waste Yield Optimization in Large Language Model Training",
+    "abstract": "Training large language models on limited hardware is increasingly a scheduling problem across GPU compute, host memory, PCIe transfer, and storage bandwidth. Existing offloading systems reduce GPU residency, and MegaTrain shows that a CPU-master layer-streaming executor can train large models on a single GPU, but fixed checkpointing and placement heuristics still leave communication exposed on the critical path. We propose LazyTrain, an optimization layer over a layer-streaming executor. LazyTrain formulates checkpoint selection, activation placement, recomputation, and CPU-GPU-NVMe communication overlap as a mixed-integer scheduling problem, then executes the solved policy during training. It further couples 8-bit optimizer states with fast gradient clipping as a single Hybrid 8-bit operator: state compression reduces optimizer-state memory, while fast clipping counteracts the additional CPU-side update overhead. Across H800 experiments from Qwen2.5-3B to Qwen3.6-27B, LazyTrain improves sustained TFLOPS over matched baselines runs by approximately 1.24$\\times$; RTX 3090 experiments likewise increase the maximum feasible batch size by one at each model scale. In the primary Qwen3.6-27B H800 MetaMathQA run, LazyTrain reaches 219.95 TFLOPS and 1361 tokens/s at batch size 72, peaks at 68.84\\,GB of GPU memory, and obtains 95.42\\% exact-match accuracy on the full evaluation split. The source code is available at https://github.com/DataArcTech/LazyTrain.",
+    "url": "https://arxiv.org/abs/2608.11919",
+    "pdf_url": "https://arxiv.org/pdf/2608.11919",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Xiaojun Wu",
+      "Cehao Yang",
+      "Honghao Liu",
+      "Xueyuan Lin",
+      "Xuhui Jiang",
+      "Chengjin Xu",
+      "Jia Li",
+      "Jian Guo"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/DataArcTech/LazyTrain",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [
+      "distributed-training-checkpoint"
+    ],
+    "keyword_evidence": [
+      "gpu memory",
+      "offloading"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: gpu memory, offloading",
+      "no quantitative claim in metadata",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Training large language models on limited hardware is increasingly a scheduling problem across GPU compute, host memory, PCIe transfer, and storage bandwidth.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11919",
+        "url": "https://arxiv.org/abs/2608.11919"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2606.25156",
+    "title": "ATMA: Long-Context Language Modeling via Polar Attention and Gated-Delta Compression Memory",
+    "abstract": "Length extrapolation in language models involves competing objectives: retrieval fidelity, long-document likelihood, short-context quality, and inference cost. We present ATMA, a 378M-parameter hybrid recipe that combines Polar Attention with gated-delta recurrent memory, and study these objectives as a Pareto problem rather than claiming general architectural dominance. Polar Attention separates a normalized direction channel from a bounded participation-ratio magnitude channel. We select the recipe with a complete 120-cell, 1B-token factorial sweep, then train matched NoPE, RoPE, and Polar variants for 9.816B tokens at length 2K and evaluate them through 256K. Across the factorial, memory improves Polar's 64K retrieval score in all 20 matched cells (mean +47.8 points), whereas its effect on NoPE is small and inconsistent. At 256K, Polar retains 34.4% teacher-forced target-token accuracy and 9.0% exact five-token accuracy; exact retrieval is 18.0% on synthetic contexts but 0.0% on FinePDFs contexts. Polar also limits mean fixed-target bits-per-byte degradation to 1.26 times, at a 1.9-point mean cost on eight short-context tasks. Raven baselines lead BABILong and have length-independent decode state, illustrating a different point on the frontier. Finally, a post-hoc checkpoint audit shows that nearly identical 2K validation curves can conceal a 6.70-nat difference at 256K. Because those runs were neither seed-paired nor randomized across devices, we interpret this as checkpoint variability associated with an infrastructure transition, not a causal hardware effect. Code: https://github.com/kreasof-ai/atma",
+    "url": "https://arxiv.org/abs/2606.25156",
+    "pdf_url": "https://arxiv.org/pdf/2606.25156",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Habibullah Akbar"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/kreasof-ai/atma",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "distributed-training-checkpoint",
+      "leaf": "Distributed Training & Checkpointing",
+      "leaf_zh": "分布式训练与 Checkpoint"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "checkpoint"
+    ],
+    "score": 48,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 9,
+      "practical_impact": 12,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: checkpoint",
+      "quantitative claim detected",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Length extrapolation in language models involves competing objectives: retrieval fidelity, long-document likelihood, short-context quality, and inference cost.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2606.25156",
+        "url": "https://arxiv.org/abs/2606.25156"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.12099",
+    "title": "RT-SEMamba: Real-Time Speech Enhancement Mamba via Progressive Knowledge Distillation",
+    "abstract": "We present RT-SEMamba, a fully causal speech enhancement (SE) model built upon causal time-frequency Mamba blocks. Unlike Transformer-based architectures that rely on a growing key-value cache, Mamba propagates a fixed-size recurrent state per layer, enabling memory- and bandwidth-efficient long-form inference. We further introduce a progressive knowledge distillation (KD) strategy that compresses an 8-layer teacher into a shallow 1-layer student by jointly distilling complex spectral outputs and intermediate representations. On Voicebank-DEMAND, the 8-layer RT-SEMamba achieves 3.32 PESQ with a 25 ms algorithmic latency constraint, and the distilled 1-layer student improves over a naive 1-layer baseline from 3.06 to 3.18 PESQ while preserving the same steady-state RTF, delivering a 2.75x speedup over the teacher. These results demonstrate that state-space models with progressive KD provide a competitive quality-latency trade-off for real-time SE.",
+    "url": "https://arxiv.org/abs/2608.12099",
+    "pdf_url": "https://arxiv.org/pdf/2608.12099",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Rong Chao",
+      "Sung-Feng Huang",
+      "Moreno La Quatra",
+      "Sabato Marco Siniscalchi",
+      "Wen-Huang Cheng",
+      "Szu-Wei Fu",
+      "Yu Tsao"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.SD",
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 47,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "We present RT-SEMamba, a fully causal speech enhancement (SE) model built upon causal time-frequency Mamba blocks.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.12099",
+        "url": "https://arxiv.org/abs/2608.12099"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.09825",
+    "title": "Pretraining large language models with MXFP4 on Native FP4 Hardware",
+    "abstract": "Why does full-pipeline FP4 training of large language models often diverge, even when forward activations and activation gradients remain stable? We address this question through a controlled study of MXFP4 quantization in transformer training, progressively enabling FP4 across forward propagation (Fprop), activation gradients (Dgrad), and weight gradients (Wgrad) while holding all other factors fixed. In full pretraining of Llama 3.1-8B on the C4 dataset, we observe that quantizing Wgrad is the primary driver of convergence degradation, whereas FP4 in Fprop and Dgrad alone introduces only modest additional token requirements. To interpret this behavior, we evaluate both structured and stochastic interventions under a controlled experimental setting. We find that stochastic rounding and randomized Hadamard rotations fail to stabilize training once Wgrad is quantized, whereas deterministic Hadamard rotations consistently restore stable optimization. These results suggest that FP4 training instability is driven by structured micro-scaling errors along sensitive gradient paths, rather than by insufficient stochasticity. We run experiments with native MXFP4 support on AMD Instinct MI355X GPUs, enabling controlled investigation of these effects without reliance on software emulation.",
+    "url": "https://arxiv.org/abs/2605.09825",
+    "pdf_url": "https://arxiv.org/pdf/2605.09825",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Musa Cim",
+      "Sarthak Arora",
+      "Poovaiah Palangappa",
+      "Miro Hodak",
+      "Ravi Dwivedula",
+      "Meena Arunachalam",
+      "Mahmut Taylan Kandemir"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "fp4",
+      "quantization",
+      "quantized"
+    ],
+    "score": 46,
+    "score_components": {
+      "relevance": 20,
+      "novelty": 5,
+      "rigor": 11,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: fp4, quantization, quantized",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Why does full-pipeline FP4 training of large language models often diverge, even when forward activations and activation gradients remain stable?",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.09825",
+        "url": "https://arxiv.org/abs/2605.09825"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11840",
+    "title": "User-Assisted Collaborative Distributed Inference for Efficient QoS-Aware Autoscaling",
+    "abstract": "Growing demand for artificial intelligence (AI) inference services requires scalable infrastructure, yet centralized serving costs rise with demand. We propose a collaborative distributed inference system combining dedicated infrastructure with resources contributed by service users. Dedicated resources provide baseline capacity for maintaining quality of service (QoS), while volunteered resources absorb increasing demand without proportional growth in centralized infrastructure. To capture stochastic and dynamic interactions among users, resources, tasks, and policies, we develop a high-dimensional generative Markov model with structured temporal factorization. The model supports simulation and provides a foundation for task scheduling and QoS-aware resource allocation optimization. We evaluate the system across user populations, resource capacities, and centralized and distributed scheduling policies. Simulations show that distributed scheduling becomes increasingly advantageous as the user population grows, improving request completion and P99 latency while substantially reducing dedicated resource consumption. These results demonstrate the feasibility of user-assisted collaborative inference for infrastructure-efficient autoscaling.",
+    "url": "https://arxiv.org/abs/2608.11840",
+    "pdf_url": "https://arxiv.org/pdf/2608.11840",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Alfreds Lapkovskis",
+      "Ali Beikmohammadi",
+      "Sindri Magn\\'usson",
+      "Praveen Kumar Donta"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.DC",
+      "cs.LG",
+      "cs.NI",
+      "cs.PF"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "gateway-routing-autoscaling",
+      "leaf": "Gateway, Routing & Autoscaling",
+      "leaf_zh": "Gateway、路由与弹性"
+    },
+    "secondary_tags": [
+      "parallelism-communication"
+    ],
+    "keyword_evidence": [
+      "autoscaling"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: autoscaling",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Growing demand for artificial intelligence (AI) inference services requires scalable infrastructure, yet centralized serving costs rise with demand.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11840",
+        "url": "https://arxiv.org/abs/2608.11840"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11693",
+    "title": "Spec Sheets Are Not Kernels: An ISA- and Source-Level Audit of INT8 Availability on NVIDIA Blackwell Ultra",
+    "abstract": "NVIDIA's published specifications give the Blackwell Ultra GPU (B300) a dense-compute ratio of roughly 30:1 between FP8 and INT8 tensor-core throughput; its predecessors, H200 and B200, both provide 1:1. We audit what this deprioritization means in practice by tracing INT8 W8A8 support through four layers of the stack: the published specifications, the PTX ISA, NVIDIA's CUTLASS kernel library, and the two major open-source LLM serving engines (vLLM and SGLang). We find a consistent, layered withdrawal: (i) the PTX ISA never exposes the fifth-generation tensor-core integer path (tcgen05.mma with .kind::i8) on sm_103a, even though the same PTX revision extends the FP4 kinds to that target, leaving legacy warp-level IMMA as the only architecturally legal integer tensor-core path on B300; (ii) CUTLASS's kernel generator explicitly skips INT8 UMMA generation for any build targeting 103a, while generating FP8 unconditionally; (iii) vLLM ships no INT8 GEMM for Blackwell and fails with a hard runtime error at the first forward pass, after the model has loaded; and (iv) SGLang's ahead-of-time INT8 GEMM stops at Sm90, while its FP8 tuning configurations already cover B200. We document an escape hatch (rerouting vLLM's INT8 path to a JIT-compiled Triton backend via an environment variable), a false-negative trap in the obvious profiler methodology for detecting \"native INT8\" on sm_103, and the practical failure semantics that make naive testing expensive. Together, these findings show that a quantization format's availability is a property of the whole stack rather than of the model or the spec sheet. Four distinct layers, three of them NVIDIA's own, withdrew INT8 support in mutually consistent ways, and a format that is nominally present on the datasheet is, by default, undeployable on this hardware.",
+    "url": "https://arxiv.org/abs/2608.11693",
+    "pdf_url": "https://arxiv.org/pdf/2608.11693",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Teng-Ruei Chen"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "fp4",
+      "fp8",
+      "int8",
+      "quantization"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 22,
+      "novelty": 6,
+      "rigor": 5,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: fp4, fp8, int8, quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "NVIDIA's published specifications give the Blackwell Ultra GPU (B300) a dense-compute ratio of roughly 30:1 between FP8 and INT8 tensor-core throughput; its predecessors, H200 and B200, both provide 1:1.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11693",
+        "url": "https://arxiv.org/abs/2608.11693"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.17154",
+    "title": "OrderMoE: An expert similarity driven distributed edge MoE inference",
+    "abstract": "Although mixture-of-experts, MoE, models have been increasingly adopted to scale large language models with moderate computation cost, it remains challenging to deploy MoE inference over resource-constrained and bandwidth-limited edge infrastructures. Existing distributed MoE serving methods mainly rely on exact expert placement, caching, replication, or communication scheduling, while overlooking the functional similarity among experts, which provides an opportunity to reduce cross-server token transmission. Therefore, this paper introduces a similarity-aware expert allocation and distributed deployment framework, dubbed OrderMoE, which aims to accelerate edge MoE inference while balancing inference latency, communication overhead, server workload, and inference quality. OrderMoE first constructs an expert similarity model based on router-induced logits representations and partitions experts in each MoE layer into multiple similarity groups. Then, it develops a similarity-aware expert grouping and deployment strategy to improve local similarity coverage across edge servers. Since reducing remote expert invocation and preserving exact inference quality are conflicting objectives, OrderMoE further designs a quality-aware and trajectory-aware runtime server-expert selection algorithm to decide whether a token should invoke its remote target expert or use a feasible local substitute expert. Experimental results on a real distributed edge testbed show that OrderMoE significantly reduces average latency, tail latency, cross-server traffic, and remote expert invocation ratio, while introducing only small and controllable inference quality degradation.",
+    "url": "https://arxiv.org/abs/2607.17154",
+    "pdf_url": "https://arxiv.org/pdf/2607.17154",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Xin Yuan",
+      "Ning Li",
+      "Quan Chen",
+      "Wenchao Xu",
+      "Song Guo"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC",
+      "cs.LG",
+      "cs.NI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "moe-efficiency",
+      "leaf": "MoE Efficiency",
+      "leaf_zh": "MoE 路由与专家优化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "moe inference"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: moe inference",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Although mixture-of-experts, MoE, models have been increasingly adopted to scale large language models with moderate computation cost, it remains challenging to deploy MoE inference over resource-constrained and bandwidth-limited edge infrastructures.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.17154",
+        "url": "https://arxiv.org/abs/2607.17154"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11967",
+    "title": "LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation",
+    "abstract": "Large language model agents increasingly rely on long-horizon reasoning to solve complex tasks involving planning, tool use, and memory. A critical capability in such settings is reflection: assessing trajectory progress, identifying missing evidence and unreliable intermediate states, and deciding whether to continue, revise, or abandon the current branch. Learning effective reflection, however, is challenging because reflection is performed locally within the current branch, whereas its utility can only be determined by its contribution to the final trajectory outcome. This local-global mismatch makes outcome-based reinforcement learning provide only local, sparse and delayed supervision for reflective decisions. To solve these, we propose LoongReflect, a training framework that formulates reflection as a memory-control policy. The agent operates over a reversible trajectory tree using explicit reflect and backtrack actions. Reflection consolidates verified facts, missing evidence, and branch-specific risks into working memory, while backtracking removes an unreliable branch from the active context and preserves a concise corrective lesson. To learn this policy, LoongReflect combines two complementary signals through a look-ahead, extragradient-style coordination mechanism. A fast channel distills globally informed reflective behavior from a privileged teacher, with supervision restricted to reflection and backtracking tokens. A slow channel optimizes complete trajectories using outcome-based GRPO, aligning local control decisions with final task success. Experiments on multi-hop retrieval-augmented generation and mathematical reasoning benchmarks demonstrate consistent improvements over outcome-only reinforcement learning and self-distillation baselines.",
+    "url": "https://arxiv.org/abs/2608.11967",
+    "pdf_url": "https://arxiv.org/pdf/2608.11967",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Zhixin Zhang",
+      "Xinke Jiang",
+      "Zhibang Yang",
+      "Weixuan Xu",
+      "Guohong Qiu",
+      "Xu Chu",
+      "Junfeng Zhao",
+      "Yasha Wang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large language model agents increasingly rely on long-horizon reasoning to solve complex tasks involving planning, tool use, and memory.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11967",
+        "url": "https://arxiv.org/abs/2608.11967"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11668",
+    "title": "A Full-Stack Characterization of High-Bandwidth Flash for KV-Centric LLM Serving",
+    "abstract": "High-Bandwidth Flash (HBF) stacks NAND behind a wide, package-local interface, giving flash-scale capacity with far better read latency and bandwidth than an SSD. This makes it tempting to keep an SSD-style Mooncake KV-offloading stack and swap only the backing tier for HBF. We test that substitution with an extended TokenSim, four complete two-hour Qwen-Bailian production traces, five dense and mixture-of-experts models, and H100/B200 profiles. Serving gets worse, not better, and a cost-benefit model explains why. A faster far tier helps only when read I/O is the serving bottleneck, reads outweigh writes, and delivered bandwidth is sustainable. All three must hold together, and transient KV fails every one. The package trade that buys flash costs GPU near-tier capacity and bandwidth, so average end-to-end latency rises 2--5.5x and maximum SLO goodput falls 1.1--2.7x across H100 and B200. Serving is almost insensitive to HBF's own read/write latency, and base-die near-memory compute does not raise the flash tier's share of the critical path. The two-tier hierarchy keeps reuse in the near tier and hands HBF a write-heavy stream, so writes outnumber reads on every trace. A 3D-ICE model shows that stream drives the stack to its thermal limit well below peak bandwidth, and a TLC tier wears out sooner than a capacity-matched SSD pool. The faster device yields a slower system because the package gives up more than the medium returns. HBF is not the problem; using it as a faster SSD for transient KV is. It belongs in serving as a selective, reuse-aware, write-budgeted, and thermally coordinated tier, not as a drop-in SSD replacement.",
+    "url": "https://arxiv.org/abs/2608.11668",
+    "pdf_url": "https://arxiv.org/pdf/2608.11668",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Zhuoran Li",
+      "Zhuohang Bian",
+      "Xin Huang",
+      "Yibo Zhao",
+      "Guangyu Sun",
+      "Youwei Zhuo"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "serving-engine",
+      "leaf": "Serving Engines & Runtimes",
+      "leaf_zh": "Serving Engine 与 Runtime"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "llm serving"
+    ],
+    "score": 45,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 5,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: llm serving",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "High-Bandwidth Flash (HBF) stacks NAND behind a wide, package-local interface, giving flash-scale capacity with far better read latency and bandwidth than an SSD.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11668",
+        "url": "https://arxiv.org/abs/2608.11668"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.05639",
+    "title": "TokenStack: A Heterogeneous HBM-PIM Architecture and Runtime for Efficient LLM Inference",
+    "abstract": "Large language model (LLM) serving is now limited by the key-value (KV) cache. During decode, each new token rereads prior KV state, so attention becomes a bandwidth- and capacity-heavy memory task. HBM-PIM helps by moving attention closer to memory, but current stack organizations still waste resources. In practice, only hot KV blocks benefit from near-memory compute. Weights, activations, and cold KV mainly need dense storage and GPU-visible bandwidth. A uniform HBM-PIM stack makes all layers pay for PIM logic, while a dedicated-PIM design such as AttAcc recovers capacity but shrinks the HBM bandwidth left for GPU-side work. We propose TokenStack, a vertically heterogeneous HBM-PIM architecture for KV-centric LLM serving that leverages HBM4's logic-die substrate. TokenStack separates each stack into dense capacity layers and PIM-enabled compute layers, then uses the logic base die as a stack-local control point that manages cross-layer movement without host-side overhead. The base-die controller handles cross-layer DMA, layered address translation, attention-side gather/broadcast coordination, and inline quantization during migration. On top of this hardware, TokenStack uses topology-aware KV placement, workload-aware eviction, and bounded replication to keep hot KV near PIM compute while moving colder state to dense layers. Using production-derived traces across four models, completed multi-QPS runs show that TokenStack increases geometric-mean token throughput by 1.62x and SLO-compliant serving capacity by 1.70x over AttAcc, and reduces per-token energy by 30-47%.",
+    "url": "https://arxiv.org/abs/2605.05639",
+    "pdf_url": "https://arxiv.org/pdf/2605.05639",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Zhuoran Li",
+      "Zhuohang Bian",
+      "Zihao Huang",
+      "Yibo Zhao",
+      "Xueqi Li",
+      "Guangyu Sun",
+      "Youwei Zhuo"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "multitenancy-slo-reliability",
+      "leaf": "Multi-tenancy, SLO & Reliability",
+      "leaf_zh": "多租户、SLO 与可靠性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "slo"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 14,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: slo",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large language model (LLM) serving is now limited by the key-value (KV) cache.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.05639",
+        "url": "https://arxiv.org/abs/2605.05639"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2603.20895",
+    "title": "LLM Router: Rethinking Routing with Prefill Activations",
+    "abstract": "Existing routers rely on semantic query features or handcrafted features, which often fail to capture model-specific failures or intrinsic task difficulty. We instead route using internal LLM activations, specifically the residual stream. Our key idea, Encoder-Target Decoupling, separates the model that produces the predictive signal (the Encoder) from the model whose correctness is being estimated (the Target), allowing open-weight encoders to predict the performance of closed-source target models. We evaluate layerwise geometric probes, finding that Fisher Separability ($J$) effectively identifies informative layers, supported by Effective Dimensionality ($d_{\\mathrm{eff}}$) diagnostics. We then utilize a SharedTrunkNet, a joint multi-output MLP that predicts simultaneous correctness probabilities across candidate models using concatenated prefill features. In our experiments, SharedTrunkNet consistently outperforms semantic baselines. At its best, SharedTrunkNet closes 45.58% of the gap between the strongest standalone model and the oracle while achieving 74.31% cost savings relative to the most expensive model. These results demonstrate that prefill activations provide a robust routing signal, establishing activation-based routing as a high-performance alternative to purely semantic selection.",
+    "url": "https://arxiv.org/abs/2603.20895",
+    "pdf_url": "https://arxiv.org/pdf/2603.20895",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Tanay Varshney",
+      "Annie Surla",
+      "Michelle Xu",
+      "Gomathy Venkata Krishnan",
+      "Maximilian Jeblick",
+      "David Austin",
+      "Neal Vaidya",
+      "Davide Onofrio"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "gateway-routing-autoscaling",
+      "leaf": "Gateway, Routing & Autoscaling",
+      "leaf_zh": "Gateway、路由与弹性"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "llm router"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 11,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: llm router",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Existing routers rely on semantic query features or handcrafted features, which often fail to capture model-specific failures or intrinsic task difficulty.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2603.20895",
+        "url": "https://arxiv.org/abs/2603.20895"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11513",
+    "title": "Do Influence Tactics Matter? Investigating Prompt Framing Effects in LLM Code Generation",
+    "abstract": "Large Language Models (LLMs) are increasingly integrated into software engineering workflows, helping developers write, debug, test, and maintain code. While prompt wording and structure are known to influence model performance, the impact of psychologically inspired prompt framings remains unexplored. This study investigates whether different psychology-based communication strategies that humans use to persuade or motivate others can lead to more effective prompt framing, which may, in turn, affect LLM behaviour in coding tasks. Drawing on Yukl & Falbe's well-known taxonomy, we operationalized eight influence tactics (like rational persuasion, ingratiation, and exchange) into reproducible prompt templates. These prompt templates were evaluated across five leading open-weight LLMs using two widely adopted benchmarks: LiveCodeBench and SWE-bench Verified. We assessed the resulting code output on four key software quality dimensions: functional correctness, quality, maintainability, and security. Our results show that certain influence-induced prompt framings, particularly those emphasizing urgency, were associated with reduced correctness and security. This work presents the first large-scale empirical study of influence-induced prompt framing in software engineering tasks, offering insights into how linguistic cues may shape LLM outputs. We conclude with practical insights for designing transparent and interpretable human-AI interactions in code generation.",
+    "url": "https://arxiv.org/abs/2608.11513",
+    "pdf_url": "https://arxiv.org/pdf/2608.11513",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Alex Deaconu",
+      "Anubhav Gupta",
+      "Manaal Basha",
+      "Nicholas Haydu",
+      "Gema Rodr\\'iguez-P\\'erez"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "compiler-graph",
+      "leaf": "Compiler & Graph Optimization",
+      "leaf_zh": "编译器与计算图优化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "code generation"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 3,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: code generation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large Language Models (LLMs) are increasingly integrated into software engineering workflows, helping developers write, debug, test, and maintain code.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11513",
+        "url": "https://arxiv.org/abs/2608.11513"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11937",
+    "title": "Distillation of Foundation Models for Time-dependent PDEs",
+    "abstract": "Foundation models for time-dependent partial differential equations (PDEs) are trained on large and diverse collections of physical systems and can generalize effectively to new downstream tasks. After fine-tuning on only a few trajectories from a target domain, they can achieve strong accuracy in low-data regimes. However, these models are typically large and computationally intensive, limiting their usefulness as fast surrogates for numerical solvers. We propose Teacher Rollout Extension (TREX), a knowledge distillation framework that transfers the predictive capability of a pretrained foundation model into a compact and efficient student. Starting from a fine-tuned teacher, TREX augments limited downstream data by generating long synthetic trajectories through teacher rollouts, optionally with periodic noise injection. This procedure samples from the teacher-induced rollout distribution without requiring explicit knowledge of the initial-condition distribution, while exposing the student to long-horizon states and local recovery behavior around states encountered during autoregressive prediction. The student can further incorporate task-specific inductive biases, such as equivariance, that the teacher does not necessarily enforce. We evaluate TREX on multiple PDE benchmarks. The resulting students can match or surpass the teacher's accuracy while reducing the number of parameters by several orders of magnitude and achieving more than an order-of-magnitude speedup in inference.",
+    "url": "https://arxiv.org/abs/2608.11937",
+    "pdf_url": "https://arxiv.org/pdf/2608.11937",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Daniel Musekamp",
+      "Boshra Ariguib",
+      "Andrei Manolache",
+      "Mathias Niepert"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Foundation models for time-dependent partial differential equations (PDEs) are trained on large and diverse collections of physical systems and can generalize effectively to new downstream tasks.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11937",
+        "url": "https://arxiv.org/abs/2608.11937"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2511.18191",
+    "title": "Accelerating Time Series Foundation Models with Speculative Decoding",
+    "abstract": "Time series forecasting drives operational decisions under tight latency budgets, and autoregressive time series foundation models (TSFMs) increasingly deliver the most accurate forecasts. That accuracy is paid for at inference, since a horizon of $H$ steps takes $\\lceil H / P\\rceil$ sequential forward passes of a large model, so latency grows with exactly the long horizons these models are prized for. Yet a far cheaper model predicts most next patches nearly as well as the large one, and causal models can verify a block of future patches in one parallel pass even though they generate them one at a time. These are precisely the conditions under which speculative decoding thrives in LLMs, but its ingredients are all defined over discrete vocabularies. We therefore develop speculative decoding for continuous patch autoregression. A cheap draft proposes $K$ future patches, and the target verifies all of them in a single causal pass, accepting each by a log-domain Gaussian likelihood-ratio test and correcting the first rejection with its own prediction. We prove that the accelerated output stays within a squared-error radius of target-only decoding set by an acceptance temperature, and that throughput follows a capped-geometric law that makes speedups predictable before deployment. The method delivers up to $3.0 \\times$ inference speedup at accuracy between target and draft across five TSFM families, and we characterize which architectures admit single-pass verification and when speculation does not pay.",
+    "url": "https://arxiv.org/abs/2511.18191",
+    "pdf_url": "https://arxiv.org/pdf/2511.18191",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Pranav Subbaraman",
+      "Fang Sun",
+      "Jinxi Yu",
+      "Yue Yao",
+      "Huacong Tang",
+      "Xiao Luo",
+      "Yizhou Sun"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "speculative-decoding",
+      "leaf": "Speculative Decoding",
+      "leaf_zh": "推测解码"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "speculative decoding"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 5,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: speculative decoding",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Time series forecasting drives operational decisions under tight latency budgets, and autoregressive time series foundation models (TSFMs) increasingly deliver the most accurate forecasts.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2511.18191",
+        "url": "https://arxiv.org/abs/2511.18191"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2510.26690",
+    "title": "LoRAQuant: Mixed-Precision Quantization of LoRA to Ultra-Low Bits",
+    "abstract": "Low-Rank Adaptation (LoRA) has become a popular technique for parameter-efficient fine-tuning of large language models (LLMs). In many real-world scenarios, multiple adapters are loaded simultaneously to enable LLM customization for personalized user experiences or to support a diverse range of tasks. Although each adapter is lightweight in isolation, their aggregate cost becomes substantial at scale. To address this, we propose LoRAQuant, a mixed-precision post-training quantization method tailored to LoRA. Specifically, LoRAQuant reparameterizes each adapter by singular value decomposition (SVD) to concentrate the most important information into specific rows and columns. This makes it possible to quantize the important components to higher precision, while quantizing the rest to ultra-low bitwidth. We conduct comprehensive experiments with LLaMA 2-7B, LLaMA 2-13B, and Mistral 7B models on mathematical reasoning, coding, and summarization tasks. Results show that our LoRAQuant uses significantly lower bits than other quantization methods, but achieves comparable or even higher performance.",
+    "url": "https://arxiv.org/abs/2510.26690",
+    "pdf_url": "https://arxiv.org/pdf/2510.26690",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Amir Reza Mirzaei",
+      "Yuqiao Wen",
+      "Yanshuai Cao",
+      "Lili Mou"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Low-Rank Adaptation (LoRA) has become a popular technique for parameter-efficient fine-tuning of large language models (LLMs).",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2510.26690",
+        "url": "https://arxiv.org/abs/2510.26690"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.12026",
+    "title": "SoftWater: Class-Aware Rate Allocation for Softmax Quantization",
+    "abstract": "Post-training quantization pipelines routinely leave the softmax output layer in high precision. Yet in small LLMs with modern vocabularies, the head holds 15--30\\% of all parameters, so a nominal ``2-bit'' model with an fp16 head can store several times as many bits per weight. We pose softmax-layer quantization as a rate-distortion problem under the KL divergence between the original and quantized output distributions. A second-order analysis reveals a class-aware geometry: quantization error is weighted jointly by feature covariance and class-specific softmax curvature. A separability approximation replaces the $Kn\\times Kn$ Cholesky with one $n\\times n$ factorization rescaled per class, making the lattice encodable by successive interference cancellation, with both statistics from a single forward pass. The resulting method, SoftWater, gives fine grids to frequent, low-variance classes and coarse grids to rare ones, a large gap under Zipfian token distributions. Across five models from 1B to 32B, SoftWater outperforms the released WaterSIC quantizer (near-optimal under linear-layer WMSE but not output KL) at matched head rates on 59 of 60 test points, using none of that pipeline's refinements and cutting head-induced KL by $6.5\\times$--$8.3\\times$ at 2 bits. On Llama-3.2-1B-Instruct with quantized bodies, a 2-bit head removes 45--60\\% of stored bytes for a $2.9$--$3.7\\%$ perplexity increase. Because the class-side statistic comes from calibration data, matching calibration to the deployment domain gives the lowest KL on that domain throughout. On a tied model, a 4-bit head is near-lossless and a 2-bit head costs under 4\\% perplexity, making head quantization of such models practical.",
+    "url": "https://arxiv.org/abs/2608.12026",
+    "pdf_url": "https://arxiv.org/pdf/2608.12026",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Joao V. Cavalcanti",
+      "Ashia C. Wilson"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "quantization-low-precision",
+      "leaf": "Quantization & Low Precision",
+      "leaf_zh": "量化与低精度"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "quantization",
+      "quantized"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 5,
+      "rigor": 5,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: quantization, quantized",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Post-training quantization pipelines routinely leave the softmax output layer in high precision.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.12026",
+        "url": "https://arxiv.org/abs/2608.12026"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2505.03818",
+    "title": "Program Semantic Inequivalence Game with Large Language Models",
+    "abstract": "Large Language Models (LLMs) can achieve strong performance on everyday coding tasks, but they can fail on complex tasks that require non-trivial reasoning about program semantics. Finding training examples to teach LLMs to solve these tasks can be challenging. In this work, we explore a method to synthetically generate code reasoning training data based on a semantic inequivalence game (SInQ): a generator agent creates program variants that are semantically distinct, derived from a dataset of real-world programming tasks, while an evaluator agent has to identify input examples for which they behave differently. The agents train each other semi-adversarially, improving their ability to understand the underlying logic of code. We evaluated our approach on multiple code generation and understanding benchmarks, including cross-language vulnerability detection (Lu et al., 2021),, where our method improves vulnerability detection in C/C++ code despite being trained exclusively on Python code, and the challenging Python builtin identifier swap benchmark (Miceli Barone et al., 2023),, showing that whereas modern LLMs still struggle with this benchmark, our approach yields substantial improvements. We release the code needed to replicate the experiments, as well as the generated synthetic data, which can be used to fine-tune LLMs.",
+    "url": "https://arxiv.org/abs/2505.03818",
+    "pdf_url": "https://arxiv.org/pdf/2505.03818",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Antonio Valerio Miceli-Barone",
+      "Vaishak Belle",
+      "Ali Payani"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.PL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "compiler-graph",
+      "leaf": "Compiler & Graph Optimization",
+      "leaf_zh": "编译器与计算图优化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "code generation"
+    ],
+    "score": 40,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 13,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: code generation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large Language Models (LLMs) can achieve strong performance on everyday coding tasks, but they can fail on complex tasks that require non-trivial reasoning about program semantics.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2505.03818",
+        "url": "https://arxiv.org/abs/2505.03818"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11669",
+    "title": "Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL",
+    "abstract": "Reinforcement learning against rubrics, lists of criteria graded by an LLM judge, has become a standard way to post-train language models on tasks with no deterministic answer. The rubric, however, is a fixed proxy for quality, never a complete description of it, and a policy trained against it long enough will learn to exploit the difference. We measure this directly. Training Qwen3-8B with Group Relative Policy Optimization (GRPO) on medical and science rubrics and grading out-of-distribution (OOD) benchmarks with both the training judge and a stronger gold judge, we find that the two scores diverge during training. The training judge's score keeps climbing while the gold judge's score peaks and then falls, by 3 points on HealthBench-Hard and by 22 points on ResearchQA. A judge with a fixed bias would shift the gold curve by a constant, not send it down while the training score rises, so the divergence is reward hacking, not judge noise. We propose Rubric Dropout, a one-line fix borrowed from neuron dropout. At every step, we randomly drop a subset of the rubric's criteria before computing the reward, so the policy never optimizes the same rubric twice. The dropped subset is shared across each rollout group, so GRPO's group-relative advantages stay comparable, and evaluation always uses the full rubric. Comparing no dropout against dropout at 30% and 50% on both benchmark pairs, dropout raises the OOD gold score at every matched checkpoint (+1 to +2 points on HealthBench-Hard, +6 to +7 points on ResearchQA), lowers the two hacking measures we track, and costs nothing in domain. Sweeping the dropout fraction shows a broad 30-50% sweet spot, while the natural alternative, reweighting criteria by how useful they are to training, performs worse than no intervention at all in our setting.",
+    "url": "https://arxiv.org/abs/2608.11669",
+    "pdf_url": "https://arxiv.org/pdf/2608.11669",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Minglai Yang",
+      "Xinyu Guo",
+      "Utkarsh Tyagi",
+      "Mian Zhang",
+      "Razvan Dumitru",
+      "Sunjie Hou",
+      "Yunzhong He",
+      "Daniel Yue Zhang",
+      "Ying Liu"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "training-datacenter",
+      "group": "Training & Datacenter Infrastructure",
+      "group_zh": "训练与数据中心基础设施",
+      "leaf_id": "distributed-training-checkpoint",
+      "leaf": "Distributed Training & Checkpointing",
+      "leaf_zh": "分布式训练与 Checkpoint"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "checkpoint"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: checkpoint",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Reinforcement learning against rubrics, lists of criteria graded by an LLM judge, has become a standard way to post-train language models on tasks with no deterministic answer.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11669",
+        "url": "https://arxiv.org/abs/2608.11669"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.26722",
+    "title": "DREvo: Distilling Recalibrated Historical Experience for Harness Self-Evolution",
+    "abstract": "Harness plays a critical role in large language model agent performance, and building a high-performing harness requires substantial expert effort. Therefore, recent research has increasingly explored harness self-evolution, which iteratively proposes, evaluates, and improves harnesses using historical trial experience. However, accumulated historical experience does not always translate into stable search guidance, and performance often fluctuates substantially across evolution iterations, making it difficult to reliably discover high-performing harnesses under a limited evolution budget. We identify two limitations in how existing harness self-evolution methods leverage historical experience: (1) Lack of dynamic reassessment of whether historical experience remains valid for the current harness, and (2) Lack of explicit mechanisms for translating valid historical experience into actionable search directions. To address these limitations, we propose a new harness self-evolution method, named DREvo, which integrates function-level evidence anchoring, state-dependent evidence recalibration, and role-conditioned search intent distillation to determine which historical evidence remains valid and where the harness should evolve next. Under limited evolution budgets, DREvo exhibits smoother evolution trajectories, achieves the highest accuracy on all five benchmarks, and delivers average gains of 16.2% and 14.2% over the evaluated baselines on domain reasoning and agentic tasks, respectively.",
+    "url": "https://arxiv.org/abs/2607.26722",
+    "pdf_url": "https://arxiv.org/pdf/2607.26722",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Hanghui Guo",
+      "Weijie Shi",
+      "Zhangze Chen",
+      "Shengxiang Xu",
+      "Yishu Wang",
+      "Yimei Zhang",
+      "Wangze Ni",
+      "Jia Zhu",
+      "Shimin Di"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.MA",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 11,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Harness plays a critical role in large language model agent performance, and building a high-performing harness requires substantial expert effort.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.26722",
+        "url": "https://arxiv.org/abs/2607.26722"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11981",
+    "title": "Benchmarking Trustworthiness of SLMs: Pre-trained vs. Compressed",
+    "abstract": "Small Language Models (SLMs) have emerged as a more efficient alternative to traditional Large Language Models (LLMs), offering promising potential in resource-constrained scenarios. Existing approaches to building SLMs typically follow two paths: training compact models from scratch, or compressing larger pre-trained models using methods such as pruning, quantization, or distillation. As language models become increasingly integrated into real-world applications, ensuring their trustworthiness has become a critical concern. However, how to build trustworthy SLMs remains an underexplored question. In this work, we present a comprehensive evaluation of SLM trustworthiness across multiple dimensions, including fairness, robustness, privacy, and ethics. We first examine the effects of pruning and quantization, and find that quantization is significantly more effective in preserving trustworthiness compared to pruning. More importantly, we demonstrate that compressing a reliable large model via quantization can produce SLMs with superior trustworthiness and adaptability compared to using small models trained from scratch. Furthermore, knowledge distillation from trustworthy teacher models can further enhance the reliability of SLMs. We hope our findings provide practical guidance and a foundation for future research into the development and deployment of trustworthy small language models.",
+    "url": "https://arxiv.org/abs/2608.11981",
+    "pdf_url": "https://arxiv.org/pdf/2608.11981",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Haokun Lin",
+      "Kaijie Zhu",
+      "Haobo Xu",
+      "Yichen Wu",
+      "Zhichao Lu",
+      "Qingfu Zhang",
+      "Zhenan Sun"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation",
+      "pruning"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 14,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation, pruning",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Small Language Models (SLMs) have emerged as a more efficient alternative to traditional Large Language Models (LLMs), offering promising potential in resource-constrained scenarios.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11981",
+        "url": "https://arxiv.org/abs/2608.11981"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.11402",
+    "title": "An Event-Driven Cloud-Native Wearable Analytics Framework for Real-Time Clinical Workloads",
+    "abstract": "Continuous physiological monitoring using consumer-grade wearables offers a transformative opportunity for clinical care and research, yet integration remains hindered by device heterogeneity, proprietary data formats, and strict regulatory requirements. We present an event-driven, cloud-native system designed to ingest, normalize, and analyze high-frequency vital signs from wearables at scale and without vendor lock-in. The system design proposes a multi-layered microservice architecture using cluster orchestration. Data acquisition is handled via a cross-platform mobile application that leverages native health frameworks, ensuring compatibility across fragmented device ecosystems. To address interoperability, we implement an event-driven transformation pipeline using stream processing engines and specialized services to map raw measurements to the FHIR standard for medical interoperability. Our novel dependency-aware FHIR minimization scheme reduces storage overhead while maintaining lossless resource reconstruction. Furthermore, the platform integrates a modular data analytics and machine learning layer based on a medallion lakehouse architecture, supporting the full machine learning lifecycle from real-time stream processing to model serving. Performance evaluation demonstrates that the ingestion pipeline sustains 50 full ingestion requests per second with median response times under 8 ms, satisfying the low-latency requirements for real-time patient monitoring. Our open-source implementation adheres to regulatory compliance standards through role-based access control and secure service-to-service communication, providing a robust foundation for deploying wearable-based monitoring in institutional healthcare settings for clinical decision support and research workloads.",
+    "url": "https://arxiv.org/abs/2608.11402",
+    "pdf_url": "https://arxiv.org/pdf/2608.11402",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Elias Gr\\\"unewald",
+      "Daniil Cherepko",
+      "Linus Gustafsson",
+      "Jakob M\\\"ohler",
+      "Oskar Rabe",
+      "Paul Robin Reichelt",
+      "Constantin Stahl",
+      "Lukasz Sztukiewicz",
+      "Louis Agha-Mir-Salim",
+      "Felix Balzer"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "ai-infrastructure",
+      "domain": "AI Infrastructure",
+      "domain_zh": "AI 基础设施",
+      "group_id": "serving-platform",
+      "group": "Serving Platforms",
+      "group_zh": "服务平台",
+      "leaf_id": "serving-engine",
+      "leaf": "Serving Engines & Runtimes",
+      "leaf_zh": "Serving Engine 与 Runtime"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "model serving"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 9,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: model serving",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Continuous physiological monitoring using consumer-grade wearables offers a transformative opportunity for clinical care and research, yet integration remains hindered by device heterogeneity, proprietary data formats, and strict regulatory requirements.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.11402",
+        "url": "https://arxiv.org/abs/2608.11402"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.12501",
+    "title": "Gauge-Fixing the Forward-Forward Objective: A Whitened Goodness Derived from a Likelihood-Ratio Account",
+    "abstract": "The Forward-Forward algorithm trains each layer locally, so that a scalar goodness - the sum of squared activations - is high on real inputs and low on contrastive ones. Under an explicit generative model this goodness is the sufficient statistic of a likelihood-ratio test, and the pairwise form of the objective admits a gauge: a layer can lower its loss by inflating the scale of its weights rather than by separating the two populations. The analysis prescribes the repair - a whitened, scale-invariant goodness trained online within each layer - which we evaluate as a training procedure. Across three corpora, three depths and a fourfold range of layer width (13 seeds per cell), it raises linear-probe accuracy over the standard pairwise objective in every measured cell - by 4 to 7 points on eight of nine corpus-depth combinations - and closes 16-61% of the gap to end-to-end backpropagation. A control isolates the mechanism: Hinton's fixed-threshold loss also bounds the runaway, to a factor of 1.4 against 133, yet tracks the unmodified baseline - invariance to the gauge, not a bound on it, is what pays. Against the strongest published alternative - a sparse, top-k goodness - the derived objective is statistically indistinguishable on two corpora of three, yet only it removes the runaway: sparsity and gauge-invariance are independent axes, and the published variant recovers accuracy while leaving the pathology in place. We state the boundaries we measured, and every prediction was recorded before its experiment with the refutations reported.",
+    "url": "https://arxiv.org/abs/2607.12501",
+    "pdf_url": "https://arxiv.org/pdf/2607.12501",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "authors": [
+      "Paolo Giannitrapani"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "eess.IV",
+      "stat.ML"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "sparsity"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 11,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: sparsity",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "The Forward-Forward algorithm trains each layer locally, so that a scalar goodness - the sum of squared activations - is high on real inputs and low on contrastive ones.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-13T05:09:53+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.12501",
+        "url": "https://arxiv.org/abs/2607.12501"
+      }
+    ]
+  },
+  {
     "id": "arxiv:2608.11116",
     "title": "You Only Charge Once 2.0 : A End-to-End Analog Computing-in-Memory Architecture with Reconfigurable Switched Capacitors",
     "abstract": "Analog Computing-in-Memory (ACiM) accelerates deep neural networks by keeping weights inside memory arrays and executing dot products in the analog domain. However, modern ACiM accelerators are often limited by the \"ADC wall\": analog-to-digital converters consume a large fraction of energy and area, while bit-sliced execution repeatedly invokes these converters. Existing designs reduce this cost with low-resolution readout or time multiplexing, but they either lose output fidelity or introduce serialization overhead. Charge-CIM addresses this bottleneck by using switched-capacitor charge redistribution as a unified computing and conversion substrate. The same capacitor fabric performs input conversion, analog MAC, weighted shift-and-add, and readout quantization, reducing both standalone converter overhead and intermediate ADC invocations. A differential readout path further combines paired partial sums during ADC quantization, providing a highly compact and energy-efficient solution for array integration. With dataflow architecture support, we evaluated Charge-CIM on a suite of DNN benchmarks, from CNNs to Transformer models, and experimental results show that Charge-CIM reduces ADC energy by 91.7% under our evaluation setup and improves energy efficiency by 2.7x and throughput by 2.0x compared to the state-of-the-art charge-domain CIM accelerator.",
@@ -60,7 +1720,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -126,7 +1786,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -198,7 +1858,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -266,7 +1926,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -334,7 +1994,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -410,7 +2070,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -480,7 +2140,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -548,7 +2208,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -623,7 +2283,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -690,7 +2350,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -760,7 +2420,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -836,7 +2496,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -918,7 +2578,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -991,7 +2651,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1060,7 +2720,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1133,7 +2793,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1211,7 +2871,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1228,7 +2888,7 @@
     "url": "https://arxiv.org/abs/2608.10528",
     "pdf_url": "https://arxiv.org/pdf/2608.10528",
     "published": "2026-08-12",
-    "updated": "2026-08-12",
+    "updated": "2026-08-13",
     "authors": [
       "Utshab Kumar Ghosh",
       "Shubham Chatterjee"
@@ -1279,7 +2939,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1348,7 +3008,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1417,7 +3077,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1489,80 +3149,13 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
         "source": "arXiv RSS",
         "id": "2608.09934",
         "url": "https://arxiv.org/abs/2608.09934"
-      }
-    ]
-  },
-  {
-    "id": "arxiv:2608.10010",
-    "title": "CurveFP: Rational-Radix Logarithmic Datatypes with Closed Products for Language Models",
-    "abstract": "Low-precision datatypes reduce language-model cost, but most formats optimize scalar fidelity while leaving the arithmetic induced by their products unchanged. We introduce CurveFP, a closed-product codebook family that distributes quantized magnitudes across interleaved logarithmic curves under compact block scales. A rational radix tunes dynamic range against local resolution, while uniform curve indices make every nonzero product algebraically closed. Product formation becomes an exact sign XOR and integer-index update, and a derived finite phase count determines the accumulation schedule. We instantiate this algebra as CurveFP eight E4C3/E5C2 for training and CurveFP seven E3C3 for compact deployment. In evaluation, CurveFP seven beats tensor-wise FP8 perplexity on four 7B--9B models with one fewer element bit and stays within 1.32\\% of native quality. CurveFP eight lowers operand NMSE in all 36 paired forward and backward GEMM comparisons. Across three matched 128.3M-parameter triplets, every mode completes 3B-token pretraining per seed; CurveFP eight reaches mean BF16-inference perplexity 22.5366 versus 22.5407 for FP8 and incurs a lower format-induced penalty in all three seeds. A 36-cell downstream matrix finds lower WikiText-103 perplexity for the CurveFP eight-trained checkpoints in all 12 seed-format comparisons, with mixed PG-19 and task deltas. Together, these results establish CurveFP as an arithmetic co-design that combines FP8-class numerical behavior, seven-bit inference, and a substantially simpler product path.",
-    "url": "https://arxiv.org/abs/2608.10010",
-    "pdf_url": "https://arxiv.org/pdf/2608.10010",
-    "published": "2026-08-12",
-    "updated": "2026-08-12",
-    "authors": [
-      "Ye Qiao"
-    ],
-    "source": "arXiv RSS",
-    "source_type": "preprint",
-    "categories": [
-      "cs.LG"
-    ],
-    "doi": "",
-    "venue": "",
-    "journal_ref": "",
-    "comment": "",
-    "code_url": "",
-    "primary_category": {
-      "domain_id": "efficient-inference",
-      "domain": "LLM Efficient Inference",
-      "domain_zh": "LLM 高效推理",
-      "group_id": "model-algorithm",
-      "group": "Model & Algorithm Efficiency",
-      "group_zh": "模型与算法效率",
-      "leaf_id": "quantization-low-precision",
-      "leaf": "Quantization & Low Precision",
-      "leaf_zh": "量化与低精度"
-    },
-    "secondary_tags": [],
-    "keyword_evidence": [
-      "fp8",
-      "quantized"
-    ],
-    "score": 39,
-    "score_components": {
-      "relevance": 14,
-      "novelty": 6,
-      "rigor": 7,
-      "practical_impact": 7,
-      "reproducibility": 2,
-      "credibility": 3
-    },
-    "score_evidence": [
-      "taxonomy keywords: fp8, quantized",
-      "no quantitative claim in metadata",
-      "no code link detected in metadata"
-    ],
-    "summary_en": "Low-precision datatypes reduce language-model cost, but most formats optimize scalar fidelity while leaving the arithmetic induced by their products unchanged.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
-    "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
-    "featured_weeks": [],
-    "source_records": [
-      {
-        "source": "arXiv RSS",
-        "id": "2608.10010",
-        "url": "https://arxiv.org/abs/2608.10010"
       }
     ]
   },
@@ -1633,7 +3226,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1699,7 +3292,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1771,7 +3364,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1841,7 +3434,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1910,7 +3503,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1986,7 +3579,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -2063,7 +3656,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -2133,7 +3726,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -2211,7 +3804,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -2288,7 +3881,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -2368,7 +3961,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2440,7 +4033,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2509,7 +4102,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2587,7 +4180,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2666,7 +4259,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2738,7 +4331,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2811,7 +4404,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2888,7 +4481,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2961,7 +4554,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3029,7 +4622,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3109,7 +4702,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3182,7 +4775,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3258,7 +4851,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3334,7 +4927,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3407,7 +5000,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3478,7 +5071,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3551,7 +5144,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3619,7 +5212,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3691,7 +5284,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3760,7 +5353,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3834,7 +5427,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3903,7 +5496,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3977,7 +5570,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4048,7 +5641,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4121,7 +5714,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4191,7 +5784,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4258,7 +5851,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4326,7 +5919,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4399,7 +5992,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4468,7 +6061,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4544,7 +6137,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4619,7 +6212,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4690,7 +6283,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4758,7 +6351,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4829,7 +6422,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4898,7 +6491,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4967,7 +6560,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5037,7 +6630,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5126,7 +6719,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5202,7 +6795,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5272,7 +6865,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5338,7 +6931,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5406,7 +6999,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5486,7 +7079,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5563,7 +7156,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5639,7 +7232,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5715,7 +7308,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5789,7 +7382,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5863,7 +7456,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5932,7 +7525,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6002,7 +7595,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6072,7 +7665,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6139,7 +7732,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6211,7 +7804,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6281,7 +7874,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6351,7 +7944,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6421,7 +8014,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6490,7 +8083,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6556,7 +8149,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6630,7 +8223,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6696,7 +8289,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6768,7 +8361,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6842,7 +8435,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6910,7 +8503,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6980,7 +8573,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7052,7 +8645,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7122,7 +8715,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7195,7 +8788,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7272,7 +8865,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7343,7 +8936,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -7414,7 +9007,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -7488,7 +9081,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7561,7 +9154,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -7637,7 +9230,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -7714,7 +9307,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7786,7 +9379,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7859,7 +9452,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7931,7 +9524,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7999,7 +9592,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8070,7 +9663,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8138,7 +9731,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8208,7 +9801,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8287,7 +9880,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8355,7 +9948,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8438,7 +10031,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8508,7 +10101,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8582,7 +10175,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8651,7 +10244,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8721,7 +10314,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8790,7 +10383,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8860,7 +10453,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8927,7 +10520,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8999,7 +10592,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9067,7 +10660,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9137,7 +10730,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9214,7 +10807,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9282,7 +10875,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9351,7 +10944,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9420,7 +11013,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9489,7 +11082,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9562,7 +11155,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -9636,7 +11229,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -9714,8 +11307,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [
+      "2026-W32"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -9787,7 +11382,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9859,7 +11454,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -9930,8 +11525,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-13T05:09:53+00:00",
+    "featured_weeks": [
+      "2026-W32"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -10001,7 +11598,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10071,7 +11668,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10144,7 +11741,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10214,7 +11811,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10288,7 +11885,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -10374,7 +11971,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -10444,7 +12041,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10520,7 +12117,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10591,7 +12188,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10667,7 +12264,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10739,7 +12336,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10809,7 +12406,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10882,7 +12479,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10958,7 +12555,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11034,7 +12631,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11103,7 +12700,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11171,7 +12768,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11244,7 +12841,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11315,7 +12912,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11396,7 +12993,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -11471,7 +13068,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -11544,7 +13141,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -11619,7 +13216,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11696,7 +13293,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11774,7 +13371,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11844,7 +13441,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11911,7 +13508,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11985,7 +13582,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12063,7 +13660,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12137,7 +13734,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12207,7 +13804,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12278,7 +13875,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12354,7 +13951,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12426,7 +14023,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12505,7 +14102,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12578,7 +14175,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12651,7 +14248,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12723,7 +14320,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12794,7 +14391,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12866,7 +14463,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12937,7 +14534,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13011,7 +14608,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13080,7 +14677,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13148,7 +14745,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13221,7 +14818,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13293,7 +14890,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13371,7 +14968,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13439,7 +15036,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13526,7 +15123,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13596,7 +15193,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13664,7 +15261,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13738,7 +15335,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13818,7 +15415,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13890,7 +15487,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13970,7 +15567,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14050,7 +15647,7 @@
     "limitations_zh": "摘要未说明真实流片、仿真精度、模型规模和对比系统配置；3D 集成、FeFET 成熟度及动态路由下的热设计成本仍需结合正文和硬件实现核验。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -14129,7 +15726,7 @@
     "limitations_zh": "当前元数据只说明将发布代码，尚未发现 Artifact；收益依赖具体硬件、模型和缩放策略，而且工作聚焦训练效率，不能等同于部署阶段的 FP8 推理收益。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -14200,7 +15797,7 @@
     "limitations_zh": "仅覆盖单一消费级 GPU、固定提示集和 2Hz 功耗采样；内部推理长度会混淆每提示能耗，结论尚不能直接外推到数据中心 GPU 或在线并发负载。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -14273,7 +15870,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14352,7 +15949,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14424,7 +16021,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14500,7 +16097,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14574,7 +16171,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14645,7 +16242,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14719,7 +16316,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14788,7 +16385,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14868,7 +16465,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14940,7 +16537,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15024,7 +16621,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15107,7 +16704,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15182,7 +16779,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15259,7 +16856,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15333,7 +16930,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15412,7 +17009,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15486,7 +17083,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15555,7 +17152,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15630,7 +17227,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15700,7 +17297,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15769,7 +17366,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15839,7 +17436,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15910,7 +17507,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15983,7 +17580,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16056,7 +17653,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16130,7 +17727,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16201,7 +17798,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16279,7 +17876,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16353,7 +17950,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16428,7 +18025,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16495,7 +18092,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16565,7 +18162,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16632,7 +18229,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16700,7 +18297,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16772,7 +18369,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16848,7 +18445,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16926,7 +18523,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17003,7 +18600,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17076,7 +18673,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17150,7 +18747,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17223,7 +18820,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17305,7 +18902,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17378,7 +18975,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17454,7 +19051,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17530,7 +19127,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17596,7 +19193,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17669,7 +19266,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17746,7 +19343,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17815,7 +19412,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17889,7 +19486,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17960,7 +19557,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18045,7 +19642,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18116,7 +19713,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18185,7 +19782,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18255,7 +19852,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18325,7 +19922,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18395,7 +19992,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18505,7 +20102,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18573,7 +20170,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18651,7 +20248,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18729,7 +20326,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18803,7 +20400,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18882,7 +20479,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18966,7 +20563,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19042,7 +20639,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19125,7 +20722,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19206,7 +20803,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19278,7 +20875,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19352,7 +20949,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19433,7 +21030,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19511,7 +21108,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19588,7 +21185,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19665,7 +21262,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19739,7 +21336,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19822,7 +21419,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19899,7 +21496,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19977,7 +21574,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20057,7 +21654,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20132,7 +21729,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20207,7 +21804,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20280,7 +21877,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20302,7 +21899,7 @@
     "url": "https://arxiv.org/abs/2608.02168",
     "pdf_url": "https://arxiv.org/pdf/2608.02168",
     "published": "2026-08-03",
-    "updated": "2026-08-04",
+    "updated": "2026-08-13",
     "authors": [
       "Xin Liu",
       "Xiyuan Chen",
@@ -20356,7 +21953,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20432,7 +22029,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20508,7 +22105,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20580,7 +22177,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20657,7 +22254,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20732,7 +22329,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20809,7 +22406,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20884,7 +22481,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -20962,7 +22559,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21039,7 +22636,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21112,7 +22709,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21183,7 +22780,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21257,7 +22854,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21336,7 +22933,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21409,7 +23006,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21483,7 +23080,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21555,7 +23152,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21577,7 +23174,7 @@
     "url": "https://arxiv.org/abs/2608.00573",
     "pdf_url": "https://arxiv.org/pdf/2608.00573",
     "published": "2026-08-01",
-    "updated": "2026-08-04",
+    "updated": "2026-08-13",
     "authors": [
       "Ning Li",
       "Shuting Bai",
@@ -21633,7 +23230,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21708,7 +23305,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21786,7 +23383,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21859,7 +23456,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21940,7 +23537,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-12T05:09:02+00:00",
+    "last_seen": "2026-08-13T05:09:53+00:00",
     "featured_weeks": [],
     "source_records": [
       {

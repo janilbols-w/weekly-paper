@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **11** 篇。
+累计收录 **13** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Do Influence Tactics Matter? Investigating Prompt Framing Effects in LLM Code Generation](../../papers/arxiv-2608.11513/) | 2026-08-13 | 43 |
+| [Program Semantic Inequivalence Game with Large Language Models](../../papers/arxiv-2505.03818/) | 2026-08-13 | 40 |
 | [The Periodic Table of LLM Reasoning: A Structured Survey of Reasoning Paradigms, Methods, and Failure Modes](../../papers/arxiv-2606.11470/) | 2026-08-12 | 41 |
 | [FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](../../papers/arxiv-2601.04203/) | 2026-08-11 | 53 |
 | [Themis: Training Robust Multilingual Code Reward Models for Flexible Multi-Criteria Scoring](../../papers/arxiv-2605.00754/) | 2026-08-11 | 43 |

@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **14** 篇。
+累计收录 **15** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LazyTrain: Limited-resource Allocation toward Zero-waste Yield Optimization in Large Language Model Training](../../papers/arxiv-2608.11919/) | 2026-08-13 | 48 |
 | [Progressive Semantic Communication for Efficient Edge-Cloud Vision-Language Models](../../papers/arxiv-2604.26508/) | 2026-08-12 | 48 |
 | [StrataCL: Fabric-Native Communication Library for Production Supernodes](../../papers/arxiv-2607.26444/) | 2026-08-12 | 41 |
 | [LGNNIC: Acceleration of Large-Scale GNN Training using SmartNICs](../../papers/arxiv-2608.07733/) | 2026-08-11 | 48 |

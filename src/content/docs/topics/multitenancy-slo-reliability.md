@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **11** 篇。
+累计收录 **12** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TokenStack: A Heterogeneous HBM-PIM Architecture and Runtime for Efficient LLM Inference](../../papers/arxiv-2605.05639/) | 2026-08-13 | 44 |
 | [Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference](../../papers/arxiv-2605.02329/) | 2026-08-12 | 50 |
 | [Benchmarking LLM-Guided Control-Plane Policies for Backend Fault Isolation in HAProxy](../../papers/arxiv-2608.10532/) | 2026-08-12 | 44 |
 | [SAGE: SLO-Aware Adaptive Retrieval for Production RAG Systems](../../papers/arxiv-2608.08237/) | 2026-08-11 | 44 |

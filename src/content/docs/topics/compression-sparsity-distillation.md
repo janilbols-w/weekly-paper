@@ -5,10 +5,16 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **87** 篇。
+累计收录 **93** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RT-SEMamba: Real-Time Speech Enhancement Mamba via Progressive Knowledge Distillation](../../papers/arxiv-2608.12099/) | 2026-08-13 | 47 |
+| [LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation](../../papers/arxiv-2608.11967/) | 2026-08-13 | 45 |
+| [Distillation of Foundation Models for Time-dependent PDEs](../../papers/arxiv-2608.11937/) | 2026-08-13 | 43 |
+| [DREvo: Distilling Recalibrated Historical Experience for Harness Self-Evolution](../../papers/arxiv-2607.26722/) | 2026-08-13 | 39 |
+| [Benchmarking Trustworthiness of SLMs: Pre-trained vs. Compressed](../../papers/arxiv-2608.11981/) | 2026-08-13 | 39 |
+| [Gauge-Fixing the Forward-Forward Objective: A Whitened Goodness Derived from a Likelihood-Ratio Account](../../papers/arxiv-2607.12501/) | 2026-08-13 | 38 |
 | [VDC-Agent: When Video Detailed Captioners Evolve Themselves via Agentic Self-Reflection](../../papers/arxiv-2511.19436/) | 2026-08-12 | 45 |
 | [Wiring Beats Blending: What Transfers Between Transformer Sizes -- and What Doesn't](../../papers/arxiv-2608.02829/) | 2026-08-12 | 40 |
 | [MoE Proxy Models for Low-Cost Failure Reproduction and Diagnosis in LLM RL Post-Training](../../papers/arxiv-2608.10823/) | 2026-08-12 | 40 |

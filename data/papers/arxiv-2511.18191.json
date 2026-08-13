@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2511.18191",
+  "title": "Accelerating Time Series Foundation Models with Speculative Decoding",
+  "abstract": "Time series forecasting drives operational decisions under tight latency budgets, and autoregressive time series foundation models (TSFMs) increasingly deliver the most accurate forecasts. That accuracy is paid for at inference, since a horizon of $H$ steps takes $\\lceil H / P\\rceil$ sequential forward passes of a large model, so latency grows with exactly the long horizons these models are prized for. Yet a far cheaper model predicts most next patches nearly as well as the large one, and causal models can verify a block of future patches in one parallel pass even though they generate them one at a time. These are precisely the conditions under which speculative decoding thrives in LLMs, but its ingredients are all defined over discrete vocabularies. We therefore develop speculative decoding for continuous patch autoregression. A cheap draft proposes $K$ future patches, and the target verifies all of them in a single causal pass, accepting each by a log-domain Gaussian likelihood-ratio test and correcting the first rejection with its own prediction. We prove that the accelerated output stays within a squared-error radius of target-only decoding set by an acceptance temperature, and that throughput follows a capped-geometric law that makes speedups predictable before deployment. The method delivers up to $3.0 \\times$ inference speedup at accuracy between target and draft across five TSFM families, and we characterize which architectures admit single-pass verification and when speculation does not pay.",
+  "url": "https://arxiv.org/abs/2511.18191",
+  "pdf_url": "https://arxiv.org/pdf/2511.18191",
+  "published": "2026-08-13",
+  "updated": "2026-08-13",
+  "authors": [
+    "Pranav Subbaraman",
+    "Fang Sun",
+    "Jinxi Yu",
+    "Yue Yao",
+    "Huacong Tang",
+    "Xiao Luo",
+    "Yizhou Sun"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Time series forecasting drives operational decisions under tight latency budgets, and autoregressive time series foundation models (TSFMs) increasingly deliver the most accurate forecasts.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-13T05:09:53+00:00",
+  "last_seen": "2026-08-13T05:09:53+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2511.18191",
+      "url": "https://arxiv.org/abs/2511.18191"
+    }
+  ]
+}

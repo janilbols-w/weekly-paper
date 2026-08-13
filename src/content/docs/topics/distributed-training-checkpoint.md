@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **17** 篇。
+累计收录 **19** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ATMA: Long-Context Language Modeling via Polar Attention and Gated-Delta Compression Memory](../../papers/arxiv-2606.25156/) | 2026-08-13 | 48 |
+| [Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL](../../papers/arxiv-2608.11669/) | 2026-08-13 | 39 |
 | [SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training](../../papers/arxiv-2608.11034/) | 2026-08-12 | 42 |
 | [Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards](../../papers/arxiv-2608.07531/) | 2026-08-11 | 46 |
 | [Training Variable Long Sequences with Data-Centric Parallel](../../papers/arxiv-2608.07524/) | 2026-08-11 | 39 |

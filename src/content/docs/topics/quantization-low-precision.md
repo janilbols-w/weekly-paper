@@ -5,14 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **42** 篇。
+累计收录 **45** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Pretraining large language models with MXFP4 on Native FP4 Hardware](../../papers/arxiv-2605.09825/) | 2026-08-13 | 46 |
+| [Spec Sheets Are Not Kernels: An ISA- and Source-Level Audit of INT8 Availability on NVIDIA Blackwell Ultra](../../papers/arxiv-2608.11693/) | 2026-08-13 | 45 |
+| [LoRAQuant: Mixed-Precision Quantization of LoRA to Ultra-Low Bits](../../papers/arxiv-2510.26690/) | 2026-08-13 | 41 |
+| [SoftWater: Class-Aware Rate Allocation for Softmax Quantization](../../papers/arxiv-2608.12026/) | 2026-08-13 | 40 |
 | [SatIR: Scalable High-Recall Constraint-Satisfaction-Based Information Retrieval for Clinical Trials Matching](../../papers/arxiv-2604.08849/) | 2026-08-12 | 42 |
 | [When Do Anchor-Based Pointwise LLM Rerankers Help? Retriever Quality, Statistical Scope, and Anchor Design](../../papers/arxiv-2608.10528/) | 2026-08-12 | 39 |
 | [ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization](../../papers/arxiv-2608.11045/) | 2026-08-12 | 39 |
-| [CurveFP: Rational-Radix Logarithmic Datatypes with Closed Products for Language Models](../../papers/arxiv-2608.10010/) | 2026-08-12 | 39 |
 | [The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs](../../papers/arxiv-2608.09941/) | 2026-08-12 | 38 |
 | [Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms](../../papers/arxiv-2608.11016/) | 2026-08-12 | 38 |
 | [Statistically-Lossless Quantization of Large Language Models](../../papers/arxiv-2605.02404/) | 2026-08-11 | 51 |

@@ -5,10 +5,12 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **14** 篇。
+累计收录 **16** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Full-Stack Characterization of High-Bandwidth Flash for KV-Centric LLM Serving](../../papers/arxiv-2608.11668/) | 2026-08-13 | 45 |
+| [An Event-Driven Cloud-Native Wearable Analytics Framework for Real-Time Clinical Workloads](../../papers/arxiv-2608.11402/) | 2026-08-13 | 39 |
 | [Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling](../../papers/arxiv-2508.03611/) | 2026-08-12 | 46 |
 | [LLMVisor: A Real-Time Latency Attribution Model for Multi-Tenant LLM Serving](../../papers/arxiv-2608.08382/) | 2026-08-11 | 53 |
 | [MoE-Prism: Disentangling Monolithic Experts for Elastic MoE Services via Model-System Co-Designs](../../papers/arxiv-2510.19366/) | 2026-08-11 | 40 |
