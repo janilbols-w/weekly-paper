@@ -167,6 +167,9 @@ def run_event(
     elif event.get("collector") == "acl_anthology_xml":
         collected, corpus_total = collect_acl_anthology(event)
         corpus_source = "ACL Anthology XML"
+    elif event.get("collector") == "official_program":
+        collected, corpus_total = [], 0
+        corpus_source = event.get("program_source_name", "Official program")
     else:
         raise ValueError(f"event {event_id} has no proceedings collector")
 
@@ -180,7 +183,18 @@ def run_event(
         require_editorial=bool(config.get("selection_requires_editorial", True)),
     )
     timestamp = now_utc_iso()
-    digest = stable_digest([item.to_dict() for item in relevant])
+    digest_value: Any = [item.to_dict() for item in relevant]
+    if event.get("collector") == "official_program":
+        digest_value = {
+            "program_released_date": event.get("program_released_date", ""),
+            "event_stats": event.get("event_stats", []),
+            "key_programs": event.get("key_programs", []),
+            "sources": [
+                {key: value for key, value in source.items() if key != "checked_at"}
+                for source in event.get("sources", [])
+            ],
+        }
+    digest = stable_digest(digest_value)
     event.update(
         {
             "status": _status(event, reference_date),

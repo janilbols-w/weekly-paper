@@ -20,6 +20,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--scan", action="store_true", help="Run configured events in the event-week window")
     parser.add_argument("--reference-date", type=date.fromisoformat, default=date.today())
     parser.add_argument("--fixture", type=Path, help="Use a local event paper fixture")
+    parser.add_argument(
+        "--trigger-type",
+        choices=(
+            "announced",
+            "papers_released",
+            "program_released",
+            "event_week",
+            "awards_released",
+            "manual_backfill",
+        ),
+        default="manual_backfill",
+        help="Lifecycle trigger recorded for an explicit --event run",
+    )
     return parser.parse_args()
 
 
@@ -30,7 +43,15 @@ def main() -> int:
         summaries = []
         if args.event:
             summaries.append(
-                run_event(ROOT, args.config, args.taxonomy, args.event, args.reference_date, args.fixture)
+                run_event(
+                    ROOT,
+                    args.config,
+                    args.taxonomy,
+                    args.event,
+                    args.reference_date,
+                    args.fixture,
+                    trigger_type=args.trigger_type,
+                )
             )
         elif args.scan:
             for event in detect_due_events(config, args.reference_date):

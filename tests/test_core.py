@@ -203,6 +203,51 @@ class CoreTests(unittest.TestCase):
             self.assertIn("event-status--tracking", index)
             self.assertFalse((root / "data" / "papers").exists())
 
+    def test_official_program_event_generates_briefing_without_papers(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            config_path = root / "events.yaml"
+            config_path.write_text(
+                """version: 1
+events:
+  - id: program-2026
+    short_name: Program 2026
+    name: Program 2026
+    domain: ML Systems
+    community: Test
+    event_type: Workshop
+    tier: 1
+    start_date: 2026-12-01
+    end_date: 2026-12-02
+    location: Test City
+    official_url: https://example.com
+    program_url: https://example.com/program
+    collector: official_program
+    program_released_date: 2026-08-10
+    summary_zh: 官方议程已发布。
+    relevance_zh: 与 AI Infra 相关。
+    key_programs:
+      - {title: Systems Workshop, date: 2026-12-02, url: https://example.com/systems, focus_zh: 调度与显存。}
+    sources:
+      - {label: Official program, url: https://example.com/program, checked_at: 2026-08-14}
+""",
+                encoding="utf-8",
+            )
+            summary = run_event(
+                root=root,
+                config_path=config_path,
+                taxonomy_path=ROOT / "config" / "taxonomy.yaml",
+                event_id="program-2026",
+                reference_date=date(2026, 8, 14),
+                trigger_type="program_released",
+            )
+            self.assertEqual(summary["corpus_total"], 0)
+            self.assertEqual(summary["selected_total"], 0)
+            page = (root / "src" / "content" / "docs" / "events" / "program-2026.md").read_text()
+            self.assertIn("重点议程 1 项", page)
+            self.assertIn("program_released", page)
+            self.assertNotIn("## 精选论文", page)
+
 
 if __name__ == "__main__":
     unittest.main()

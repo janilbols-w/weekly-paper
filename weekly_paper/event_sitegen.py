@@ -40,6 +40,17 @@ def _status_badge(status: str) -> str:
 
 
 def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
+    program_briefing = event.get("collector") == "official_program"
+    page_title = (
+        f"{event['short_name']} · Workshop 议程观察"
+        if program_briefing
+        else f"{event['short_name']} · 高效推理与 AI Infra 精选"
+    )
+    source_links = (
+        f"[会议官网]({event['official_url']}) · [官方 Workshop 公告]({event.get('program_url', event['official_url'])})"
+        if program_briefing
+        else f"[会议官网]({event['official_url']}) · [会议议程]({event.get('program_url', event['official_url'])}) · [官方录用列表]({event.get('accepted_papers_url', event['official_url'])})"
+    )
     selected = sorted(
         [item for item in papers if item.selected],
         key=lambda item: item.paper.score,
@@ -47,12 +58,17 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
     )
     counts = Counter(item.paper.primary_category.get("leaf_zh", "未分类") for item in papers)
     stats = event.get("official_totals", {})
+    status_detail = (
+        f"重点议程 {len(event.get('key_programs', []))} 项"
+        if program_briefing
+        else f"相关论文 {len(papers)} 篇 · 精选 {len(selected)} 篇"
+    )
     lines = [
-        _frontmatter(f"{event['short_name']} · 高效推理与 AI Infra 精选", event.get("summary_zh", "")),
+        _frontmatter(page_title, event.get("summary_zh", "")),
         f"> **{event['start_date']} — {event['end_date']} · {event['location']}**",
-        f"> 状态：{_status_badge(event.get('status', '已归档'))} · 相关论文 {len(papers)} 篇 · 精选 {len(selected)} 篇 · 更新于 {event.get('generated_at', '')[:10]}",
+        f"> 状态：{_status_badge(event.get('status', '已归档'))} · {status_detail} · 更新于 {event.get('generated_at', '')[:10]}",
         "",
-        f"[会议官网]({event['official_url']}) · [会议议程]({event.get('program_url', event['official_url'])}) · [官方录用列表]({event.get('accepted_papers_url', event['official_url'])})",
+        source_links,
         "",
         "## 一分钟结论",
         "",
@@ -61,6 +77,14 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
         event.get("relevance_zh", ""),
         "",
     ]
+    if program_briefing and event.get("current_stage_zh"):
+        lines.extend(["## 当前阶段", "", event["current_stage_zh"], ""])
+    event_stats = event.get("event_stats", [])
+    if program_briefing and event_stats:
+        lines.extend(["## 官方规模", "", "| 指标 | 官方数据 |", "|---|---:|"])
+        for item in event_stats:
+            lines.append(f"| {item['label']} | {item['value']} |")
+        lines.append("")
     if stats:
         lines.extend(
             [
@@ -77,49 +101,76 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
         )
     programs = event.get("key_programs", [])
     if programs:
-        lines.extend(["## 关键议程", "", "| 环节 | 日期 |", "|---|---|"])
-        for item in programs:
-            lines.append(f"| [{item['title']}]({item['url']}) | {item['date']} |")
+        if program_briefing:
+            lines.extend(["## 关键议程", "", "| 环节 | 日期 / 地点 | 工程观察 |", "|---|---|---|"])
+            for item in programs:
+                when = item.get("date", "待公布")
+                if item.get("location"):
+                    when += f"<br>{item['location']}"
+                lines.append(
+                    f"| [{item['title']}]({item['url']}) | {when} | {item.get('focus_zh', '待公布')} |"
+                )
+        else:
+            lines.extend(["## 关键议程", "", "| 环节 | 日期 |", "|---|---|"])
+            for item in programs:
+                lines.append(f"| [{item['title']}]({item['url']}) | {item['date']} |")
         lines.append("")
-    lines.extend(["## 精选论文", ""])
-    for index, item in enumerate(selected, 1):
-        paper = item.paper
-        label = _category(item)
-        award = f" · {' / '.join(item.awards)}" if item.awards else ""
+    if not program_briefing:
+        lines.extend(["## 精选论文", ""])
+        for index, item in enumerate(selected, 1):
+            paper = item.paper
+            label = _category(item)
+            award = f" · {' / '.join(item.awards)}" if item.awards else ""
+            lines.extend(
+                [
+                    f"### {index}. [{paper.title}]({paper.url})",
+                    "",
+                    f"**{paper.score}/100 · {label} · {item.track}{award}**",
+                    "",
+                    paper.summary_zh or paper.summary_en,
+                    "",
+                    f"**为什么值得关注：** {paper.why_it_matters_zh or item.selection_reason_zh}",
+                    "",
+                    f"**边界：** {paper.limitations_zh or '当前为摘要级核验，部署结论仍需结合硬件、模型和工作负载复核。'}",
+                    "",
+                    f"[PDF]({paper.pdf_url})" + (f" · [代码]({paper.code_url})" if paper.code_url else ""),
+                    "",
+                ]
+            )
+        lines.extend(["## 技术分布", "", "| 三级技术路径 | 论文数 |", "|---|---:|"])
+        for label, count in counts.most_common():
+            lines.append(f"| {label} | {count} |")
+        lines.extend(["", "## 全部相关论文", "", "| 论文 | Track | 分类 | 评分 |", "|---|---|---|---:|"])
+        for item in sorted(papers, key=lambda value: (value.paper.score, value.paper.title), reverse=True):
+            paper = item.paper
+            lines.append(f"| [{paper.title}]({paper.url}) | {item.track} | {_category(item)} | {paper.score} |")
+    if program_briefing:
+        lines.extend(["## 来源与核验范围", ""])
+        for source in event.get("sources", []):
+            note = f"；{source['note_zh']}" if source.get("note_zh") else ""
+            lines.append(
+                f"- [{source['label']}]({source['url']})（核验于 {source.get('checked_at', event.get('generated_at', '')[:10])}{note}）。"
+            )
         lines.extend(
             [
-                f"### {index}. [{paper.title}]({paper.url})",
                 "",
-                f"**{paper.score}/100 · {label} · {item.track}{award}**",
-                "",
-                paper.summary_zh or paper.summary_en,
-                "",
-                f"**为什么值得关注：** {paper.why_it_matters_zh or item.selection_reason_zh}",
-                "",
-                f"**边界：** {paper.limitations_zh or '当前为摘要级核验，部署结论仍需结合硬件、模型和工作负载复核。'}",
-                "",
-                f"[PDF]({paper.pdf_url})" + (f" · [代码]({paper.code_url})" if paper.code_url else ""),
-                "",
+                f"- 触发类型：`{event.get('trigger_type', 'program_released')}`；来源摘要：`{event.get('source_digest', '')[:12]}`。",
+                "- 本页记录的是 workshop 正式名单与主办方已公开议程，不把 workshop CFP 当作正式论文 proceedings。",
+                "- 尚未公布的讲题、录用论文与最终日程明确标为待更新，不据此推断性能结论或奖项。",
             ]
         )
-    lines.extend(["## 技术分布", "", "| 三级技术路径 | 论文数 |", "|---|---:|"])
-    for label, count in counts.most_common():
-        lines.append(f"| {label} | {count} |")
-    lines.extend(["", "## 全部相关论文", "", "| 论文 | Track | 分类 | 评分 |", "|---|---|---|---:|"])
-    for item in sorted(papers, key=lambda value: (value.paper.score, value.paper.title), reverse=True):
-        paper = item.paper
-        lines.append(f"| [{paper.title}]({paper.url}) | {item.track} | {_category(item)} | {paper.score} |")
-    lines.extend(
-        [
-            "",
-            "## 来源与覆盖范围",
-            "",
-            f"- 官方事实：[ACL 2026 官网]({event['official_url']})、[Program]({event.get('program_url', event['official_url'])})、[Awards]({event.get('awards_url', event['official_url'])})。",
-            f"- 论文元数据：{event.get('corpus_source', 'ACL Anthology')}；原始覆盖 {event.get('corpus_total', '未记录')} 篇，主题过滤后保留 {len(papers)} 篇。",
-            f"- 触发类型：`{event.get('trigger_type', 'manual_backfill')}`；来源摘要：`{event.get('source_digest', '')[:12]}`。",
-            "- 精选不是奖项预测；评分只反映本站主题相关性、证据完整性和潜在工程影响。",
-        ]
-    )
+    else:
+        lines.extend(
+            [
+                "",
+                "## 来源与覆盖范围",
+                "",
+                f"- 官方事实：[ACL 2026 官网]({event['official_url']})、[Program]({event.get('program_url', event['official_url'])})、[Awards]({event.get('awards_url', event['official_url'])})。",
+                f"- 论文元数据：{event.get('corpus_source', 'ACL Anthology')}；原始覆盖 {event.get('corpus_total', '未记录')} 篇，主题过滤后保留 {len(papers)} 篇。",
+                f"- 触发类型：`{event.get('trigger_type', 'manual_backfill')}`；来源摘要：`{event.get('source_digest', '')[:12]}`。",
+                "- 精选不是奖项预测；评分只反映本站主题相关性、证据完整性和潜在工程影响。",
+            ]
+        )
     return "\n".join(lines) + "\n"
 
 
