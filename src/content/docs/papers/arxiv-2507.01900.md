@@ -1,6 +1,6 @@
 ---
 title: "High-Layer Attention Pruning with Rescaling"
-description: "Pruning is a highly effective approach for compressing large language models (LLMs), significantly reducing inference latency."
+description: "提出免训练的高层注意力头剪枝方法 HARP，优先移除网络高层的注意力头，并用自适应缩放校正剪枝后 token 表征幅度；实验覆盖 4 个 LLM 和 27 个生成、判别数据集。"
 ---
 
 **评分：54/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
@@ -9,11 +9,11 @@ description: "Pruning is a highly effective approach for compressing large langu
 
 ## 一句话摘要
 
-Pruning is a highly effective approach for compressing large language models (LLMs), significantly reducing inference latency.
+提出免训练的高层注意力头剪枝方法 HARP，优先移除网络高层的注意力头，并用自适应缩放校正剪枝后 token 表征幅度；实验覆盖 4 个 LLM 和 27 个生成、判别数据集。
 
 ## 为什么值得关注
 
-待编辑增强。
+相比跨层统一按启发式分数剪枝，该方法显式利用层位置并补偿表征尺度，提供了一条无需再训练的结构化压缩路径；若执行栈能利用剪枝结构，可降低推理计算开销。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Pruning is a highly effective approach for compressing large language models (LL
 - taxonomy keywords: pruning
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：摘要未给出剪枝比例、硬件、端到端延迟或吞吐数字，只报告任务质量优于既有方法；实际加速仍取决于模型结构及运行时对裁剪后注意力形状的支持。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Pruning is a highly effective approach for compressing large language models (LL
 - 发布：2026-08-11；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/SongtaoLiu0823/HARP](https://github.com/SongtaoLiu0823/HARP)
-- 阅读深度：metadata
+- 阅读深度：abstract

@@ -1,6 +1,6 @@
 ---
 title: "FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback"
-description: "We present FronTalk, a benchmark for front-end code generation that pioneers the study of a unique interaction dynamic: conversational code generation with multi-modal feedback."
+description: "FronTalk 收集 100 组真实网站衍生的多轮前端开发对话，为每轮提供等价的文本与视觉指令，并以 Web Agent 同时评估功能和体验；20 个模型的测试暴露了遗忘与视觉反馈理解问题。"
 ---
 
 **评分：53/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
@@ -9,11 +9,11 @@ description: "We present FronTalk, a benchmark for front-end code generation tha
 
 ## 一句话摘要
 
-We present FronTalk, a benchmark for front-end code generation that pioneers the study of a unique interaction dynamic: conversational code generation with multi-modal feedback.
+FronTalk 收集 100 组真实网站衍生的多轮前端开发对话，为每轮提供等价的文本与视觉指令，并以 Web Agent 同时评估功能和体验；20 个模型的测试暴露了遗忘与视觉反馈理解问题。
 
 ## 为什么值得关注
 
-待编辑增强。
+它为多轮、多模态代码智能体提供了可复用的回归评测基础设施；AceCoder 通过逐轮复查历史指令，展示了用自动化验证抑制功能覆盖和遗忘的可行路径。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ We present FronTalk, a benchmark for front-end code generation that pioneers the
 - taxonomy keywords: code generation
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：数据仅含 100 组前端对话，难以代表更广泛的软件工程任务；评测依赖 Web Agent，且工作不衡量推理成本、延迟或部署效率，因此与高效推理的关联有限。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ We present FronTalk, a benchmark for front-end code generation that pioneers the
 - 发布：2026-08-11；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/shirley-wu/frontalk](https://github.com/shirley-wu/frontalk)
-- 阅读深度：metadata
+- 阅读深度：abstract

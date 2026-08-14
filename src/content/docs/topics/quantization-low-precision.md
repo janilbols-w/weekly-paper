@@ -30,8 +30,8 @@ description: "Quantization & Low Precision"
 | [MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model](../../papers/arxiv-2608.06916/) | 2026-08-10 | 46 |
 | [An Empirical Study of openPangu Quantization on Ascend NPUs](../../papers/arxiv-2606.21257/) | 2026-08-10 | 42 |
 | [The Expressive Power of Low Precision Softmax Transformers with (Summarized) Chain-of-Thought](../../papers/arxiv-2605.18079/) | 2026-08-10 | 41 |
-| [CubicQuant: Parametric Non-Uniform Codebooks for High-Throughput LLM Inference with 1-8-Bit Weights](../../papers/arxiv-2608.06763/) | 2026-08-10 | 41 |
 | [A Low-Latency ASIC Architecture for Real-Time Line Segment Detection](../../papers/arxiv-2608.06439/) | 2026-08-10 | 41 |
+| [CubicQuant: Parametric Non-Uniform Codebooks for High-Throughput LLM Inference with 1-8-Bit Weights](../../papers/arxiv-2608.06763/) | 2026-08-10 | 41 |
 | [Which Decisions Low-Bit Quantization Breaks, and How to Predict Them](../../papers/arxiv-2608.06564/) | 2026-08-10 | 38 |
 | [Recti-Q: Feature-Space Rectification for Out-of-Distribution-Robust Quantized Perception in Edge Robotics](../../papers/arxiv-2607.18540/) | 2026-08-07 | 44 |
 | [GROM: Gradient-Free Rapid One-Shot Machine Unlearning](../../papers/arxiv-2608.05783/) | 2026-08-06 | 43 |

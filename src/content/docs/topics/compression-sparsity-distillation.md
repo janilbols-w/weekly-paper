@@ -28,19 +28,19 @@ description: "Compression, Sparsity & Distillation"
 | [Matching Supervision to the Student's Learning Capacity: A Unified Framework for On-Policy Self-Distillation](../../papers/arxiv-2608.08176/) | 2026-08-11 | 48 |
 | [Mismatch Matters: On-Policy Distillation Beyond Token Agreement](../../papers/arxiv-2608.09836/) | 2026-08-11 | 46 |
 | [DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation](../../papers/arxiv-2605.15532/) | 2026-08-11 | 45 |
-| [LegoLM: Structured Weight Sharing for Large Language Models](../../papers/arxiv-2608.08652/) | 2026-08-11 | 44 |
 | [Exploring Sparse Matrix Multiplication Kernels on the Cerebras CS-3](../../papers/arxiv-2604.27985/) | 2026-08-11 | 44 |
+| [LegoLM: Structured Weight Sharing for Large Language Models](../../papers/arxiv-2608.08652/) | 2026-08-11 | 44 |
 | [Dynamic Coalition Formation and Communication Pricing in Skill-Based Agentic AI Systems](../../papers/arxiv-2608.07532/) | 2026-08-11 | 43 |
 | [Adaptive Supervised Anchoring for On-Policy Self-Distillation](../../papers/arxiv-2608.07935/) | 2026-08-11 | 42 |
 | [Hybrid Policy Distillation for LLMs](../../papers/arxiv-2604.20244/) | 2026-08-11 | 41 |
 | [UI-MOPD: Multi-Platform On-Policy Distillation for Unified GUI Agents](../../papers/arxiv-2607.04425/) | 2026-08-11 | 40 |
-| [SR-OPSD: Self-Referenced On-Policy Self-Distillation](../../papers/arxiv-2608.09745/) | 2026-08-11 | 40 |
 | [Proxy OPD: On-Policy Distillation with Transferable Relative Proxy Update](../../papers/arxiv-2607.11505/) | 2026-08-11 | 40 |
 | [EFFEKT: Efficient Federated Knowledge Transfer to Foundation Models](../../papers/arxiv-2608.08138/) | 2026-08-11 | 40 |
+| [SR-OPSD: Self-Referenced On-Policy Self-Distillation](../../papers/arxiv-2608.09745/) | 2026-08-11 | 40 |
 | [RSPO: Reward-Swap Policy Optimization for Multi-Turn LLM Agents](../../papers/arxiv-2607.04713/) | 2026-08-11 | 39 |
-| [Toward Metacognitive One-Shot Indirect Prompt Injection: Strategy Abstraction Via Outcome-Conditioned Reflection](../../papers/arxiv-2608.08795/) | 2026-08-11 | 38 |
 | [Memorization Dynamics in Knowledge Distillation for Language Models](../../papers/arxiv-2601.15394/) | 2026-08-11 | 38 |
 | [A Statistical Framework for Auditing Behavioral Dependence and Induced Bias in LLM Judges](../../papers/arxiv-2604.07650/) | 2026-08-11 | 38 |
+| [Toward Metacognitive One-Shot Indirect Prompt Injection: Strategy Abstraction Via Outcome-Conditioned Reflection](../../papers/arxiv-2608.08795/) | 2026-08-11 | 38 |
 | [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](../../papers/arxiv-2608.07169/) | 2026-08-10 | 49 |
 | [Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models](../../papers/arxiv-2608.06901/) | 2026-08-10 | 48 |
 | [An AI4AI Framework for Visual Token Pruning](../../papers/arxiv-2608.07193/) | 2026-08-10 | 48 |
@@ -56,19 +56,19 @@ description: "Compression, Sparsity & Distillation"
 | [Woodpecker Distillation: Weak Models Diagnose Reasoning Bugs in Strong Models](../../papers/arxiv-2608.05168/) | 2026-08-07 | 42 |
 | [On-Policy Delta Distillation for Multilingual Math Reasoning](../../papers/arxiv-2608.05802/) | 2026-08-07 | 38 |
 | [APQF: Agentic Profiling-Guided Structured Pruning and Mixed-Precision Quantization with Adaptive Fine-Tuning](../../papers/arxiv-2608.05499/) | 2026-08-06 | 49 |
-| [RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer](../../papers/arxiv-2608.06347/) | 2026-08-06 | 47 |
 | [BnBERT-iPET: Sparse Few-Shot Language Modeling for Bengali via Lottery Ticket Pruning](../../papers/arxiv-2608.05104/) | 2026-08-06 | 47 |
+| [RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer](../../papers/arxiv-2608.06347/) | 2026-08-06 | 47 |
 | [On-Policy Self-Distillation without Any Supervision](../../papers/arxiv-2608.06296/) | 2026-08-06 | 45 |
 | [DIVE: Dynamic Iterative Visual Evidence Construction for Efficient Vision-Language Models](../../papers/arxiv-2608.04496/) | 2026-08-06 | 44 |
 | [Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss](../../papers/arxiv-2608.03796/) | 2026-08-05 | 57 |
-| [TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning](../../papers/arxiv-2608.04007/) | 2026-08-05 | 46 |
 | [Do We Really Need Multimodal Emotion Language Models Larger Than 1B Parameters?](../../papers/arxiv-2607.12787/) | 2026-08-05 | 46 |
+| [TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning](../../papers/arxiv-2608.04007/) | 2026-08-05 | 46 |
 | [Agentic Reinforcement Learning with Observation-Calibrated Self-Distillation](../../papers/arxiv-2608.04788/) | 2026-08-05 | 46 |
 | [Latent Reward Registers for Diffusion Preference Alignment](../../papers/arxiv-2608.03929/) | 2026-08-05 | 45 |
-| [SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System](../../papers/arxiv-2608.05033/) | 2026-08-05 | 43 |
 | [Pruning-Aware Multi-Cluster Co-Inference for Large AI Models in AI-RANs](../../papers/arxiv-2608.03026/) | 2026-08-05 | 43 |
 | [Language-Specialized Multi-Teacher On-Policy Distillation for Multilingual LLM-Based ASR](../../papers/arxiv-2608.03610/) | 2026-08-05 | 43 |
 | [FinReportBench: Measuring and Improving Institution-Grade Financial Report Generation](../../papers/arxiv-2608.04374/) | 2026-08-05 | 43 |
+| [SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System](../../papers/arxiv-2608.05033/) | 2026-08-05 | 43 |
 | [On the Limits of Layer Pruning for Generative Reasoning in Large Language Models](../../papers/arxiv-2602.01997/) | 2026-08-05 | 42 |
 | [The Asymmetric Effects of Knowledge Distillation on Bias in Small Language Models](../../papers/arxiv-2607.28639/) | 2026-08-05 | 40 |
 | [IPPRO: Importance-based Pruning with PRojective Offset for Magnitude-indifferent Structural Pruning](../../papers/arxiv-2507.14171/) | 2026-08-05 | 39 |
@@ -80,17 +80,17 @@ description: "Compression, Sparsity & Distillation"
 | [Cloud to Edge: Benchmarking LLM Inference On Hardware-Accelerated Single-Board Computers](../../papers/arxiv-2604.24785/) | 2026-08-04 | 44 |
 | [Quick on the Uptake: Eliciting Implicit Intents from Human Demonstrations for Personalized Mobile-Use Agents](../../papers/arxiv-2508.08645/) | 2026-08-04 | 43 |
 | [GPrune-LLM: Generalization-Aware Structured Pruning for Large Language Models](../../papers/arxiv-2603.13418/) | 2026-08-04 | 43 |
-| [Stop When Memory Suffices: Evidence-Conditioned Progressive Execution for LLM Agents](../../papers/arxiv-2608.01285/) | 2026-08-04 | 42 |
-| [Pruned BPE: Post-training Visibility Pruning and Token Reallocation for Byte Pair Encoding](../../papers/arxiv-2608.00837/) | 2026-08-04 | 42 |
 | [CriPO: Enhancing Rubric-based RL via Self-Distillation](../../papers/arxiv-2607.18082/) | 2026-08-04 | 42 |
-| [Learning What to Remember: Test-Time Training via Context Distillation](../../papers/arxiv-2608.01672/) | 2026-08-04 | 41 |
-| [Group-Reflective Self-Distillation for Agentic Reinforcement Learning](../../papers/arxiv-2607.28076/) | 2026-08-04 | 41 |
+| [Pruned BPE: Post-training Visibility Pruning and Token Reallocation for Byte Pair Encoding](../../papers/arxiv-2608.00837/) | 2026-08-04 | 42 |
+| [Stop When Memory Suffices: Evidence-Conditioned Progressive Execution for LLM Agents](../../papers/arxiv-2608.01285/) | 2026-08-04 | 42 |
 | [DRIFT: Difficulty Routing Self-DIstillation with Rhythm-Gated Exploration and Success BuFfer Training](../../papers/arxiv-2606.30345/) | 2026-08-04 | 41 |
+| [Group-Reflective Self-Distillation for Agentic Reinforcement Learning](../../papers/arxiv-2607.28076/) | 2026-08-04 | 41 |
+| [Learning What to Remember: Test-Time Training via Context Distillation](../../papers/arxiv-2608.01672/) | 2026-08-04 | 41 |
 | [LM-mixup: Text Data Augmentation via Language Model based Mixup](../../papers/arxiv-2510.20449/) | 2026-08-04 | 40 |
 | [Distill What the Student Can See: Fisher-Projected On-Policy Distillation for Vision-Language Models](../../papers/arxiv-2608.01263/) | 2026-08-04 | 40 |
-| [Logic Before Language: Pre-pretraining on Formal Derivations Fosters Skill Acquisition and Compressibility](../../papers/arxiv-2608.03930/) | 2026-08-04 | 39 |
-| [EdgeCoInfer: Hierarchical Collaborative Inference for On-Device Multimodal Large Models](../../papers/arxiv-2607.17143/) | 2026-08-04 | 39 |
 | [Distilling Drifting Transformers with Representation Autoencoders](../../papers/arxiv-2606.15553/) | 2026-08-04 | 39 |
+| [EdgeCoInfer: Hierarchical Collaborative Inference for On-Device Multimodal Large Models](../../papers/arxiv-2607.17143/) | 2026-08-04 | 39 |
+| [Logic Before Language: Pre-pretraining on Formal Derivations Fosters Skill Acquisition and Compressibility](../../papers/arxiv-2608.03930/) | 2026-08-04 | 39 |
 | [Sign-Aware Gated Sparse Autoencoders: Modeling Anticorrelated Features with Bi-Jump-ReLU Activations](../../papers/arxiv-2605.28149/) | 2026-08-04 | 38 |
 | [DiffusionGemma Technical Report](../../papers/arxiv-2608.00146/) | 2026-08-04 | 38 |
 | [CausalOPD: First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](../../papers/arxiv-2608.03673/) | 2026-08-04 | 38 |

@@ -1,6 +1,6 @@
 ---
 title: "Optimizing CUDA like a Human: Micro-Profiling Tools as Expert Surrogates for LLM-Based GPU Kernel Optimization"
-description: "We present KernelPro, a closed-loop multi-agent system that automatically generates, profiles, and iteratively optimizes GPU kernel code by integrating large language model (LLM) code generation with hardware profiler feedback and pluggable bottleneck detection tools."
+description: "KernelPro 将 LLM 代码生成、硬件分析器、可插拔微性能诊断和 MCTS 组成闭环，先按 Roofline 判别瓶颈，再调用 ncu、SASS 与 nsys 等工具指导 CUDA/CuTe 内核迭代。"
 ---
 
 **评分：56/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
@@ -9,11 +9,11 @@ description: "We present KernelPro, a closed-loop multi-agent system that automa
 
 ## 一句话摘要
 
-We present KernelPro, a closed-loop multi-agent system that automatically generates, profiles, and iteratively optimizes GPU kernel code by integrating large language model (LLM) code generation with hardware profiler feedback and pluggable bottleneck detection tools.
+KernelPro 将 LLM 代码生成、硬件分析器、可插拔微性能诊断和 MCTS 组成闭环，先按 Roofline 判别瓶颈，再调用 ncu、SASS 与 nsys 等工具指导 CUDA/CuTe 内核迭代。
 
 ## 为什么值得关注
 
-待编辑增强。
+它把专家性能分析规则转成模型可执行的语义反馈，有望减少 GPU 内核调优对人工经验的依赖；KernelBench 与一个 MoE 内核实验同时给出了速度和能耗方面的证据。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ We present KernelPro, a closed-loop multi-agent system that automatically genera
 - taxonomy keywords: cuda kernel, gpu kernel, kernel optimization
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：结果主要来自 KernelBench 和 VeOmni 的特定 MoE 内核，尚不能代表完整模型或更多算子；元数据未发现公开代码，且 Hopper 专用 CuTe/WGMMA 路径的可迁移性仍待验证。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ We present KernelPro, a closed-loop multi-agent system that automatically genera
 - 发布：2026-08-11；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

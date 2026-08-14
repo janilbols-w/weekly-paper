@@ -30,8 +30,8 @@ description: "Attention & KV Cache"
 | [RAP: KV-Cache Compression via RoPE-Aligned Pruning](../../papers/arxiv-2602.02599/) | 2026-08-04 | 43 |
 | [Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse](../../papers/arxiv-2608.03893/) | 2026-08-04 | 43 |
 | [Keyless Attention: Value-Space Routing and Value-Only Caching for Efficient Transformers](../../papers/arxiv-2606.21848/) | 2026-08-04 | 42 |
-| [Spend Bits Where Queries Look: KV Cache Vector Quantization with Attention-Preserving Transforms](../../papers/arxiv-2608.04074/) | 2026-08-04 | 40 |
 | [Enhancing Tabular Learners with Context-Aware Semantic Embeddings](../../papers/arxiv-2608.03565/) | 2026-08-04 | 40 |
+| [Spend Bits Where Queries Look: KV Cache Vector Quantization with Attention-Preserving Transforms](../../papers/arxiv-2608.04074/) | 2026-08-04 | 40 |
 | [AnchorKV: Anchor-Residual KV Cache Compression](../../papers/arxiv-2608.02901/) | 2026-08-03 | 43 |
 | [Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection](../../papers/arxiv-2608.02560/) | 2026-08-03 | 42 |
 | [Output-Aware Rotation for INT2 KV-Cache Quantization](../../papers/arxiv-2608.02691/) | 2026-08-03 | 41 |

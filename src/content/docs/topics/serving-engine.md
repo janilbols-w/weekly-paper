@@ -23,5 +23,5 @@ description: "Serving Engines & Runtimes"
 | [T-TAMER: Provably Taming Trade-offs in ML Serving](../../papers/arxiv-2509.22992/) | 2026-08-04 | 42 |
 | [Efficiency and Cost Alignment in Batched LLM Serving via Resource-Fair Scheduling](../../papers/arxiv-2608.02244/) | 2026-08-03 | 46 |
 | [PrefixPlace: Provable Prefix Key-Value Placement for Large Language Model Serving under Heterogeneous Compute and Transfer Costs](../../papers/arxiv-2608.01655/) | 2026-08-03 | 44 |
-| [TELLER: Non-intrusive Cross-Layer Root-Cause Analysis for LLM Inference](../../papers/doi-10.1145-3832783.3837440/) | 2026-08-03 | 42 |
 | [Energy-Efficient LLM Serving via Disaggregated Attention--FFN and Flexible Frequency Scaling](../../papers/arxiv-2608.01891/) | 2026-08-03 | 42 |
+| [TELLER: Non-intrusive Cross-Layer Root-Cause Analysis for LLM Inference](../../papers/doi-10.1145-3832783.3837440/) | 2026-08-03 | 42 |

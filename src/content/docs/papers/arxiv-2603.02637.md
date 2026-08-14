@@ -1,6 +1,6 @@
 ---
 title: "StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning"
-description: "Modern machine learning (ML) workloads increasingly rely on GPUs, yet achieving high end-to-end performance remains challenging due to dependencies on both GPU kernel efficiency and host-side settings."
+description: "StitchCUDA 以 Planner、Coder 和 Verifier 协作生成端到端 GPU 程序，并用真实执行反馈与 rubric 奖励训练 Coder，覆盖主机侧设置、内核融合和 cuBLAS epilogue 等优化。"
 ---
 
 **评分：55/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
@@ -9,11 +9,11 @@ description: "Modern machine learning (ML) workloads increasingly rely on GPUs, 
 
 ## 一句话摘要
 
-Modern machine learning (ML) workloads increasingly rely on GPUs, yet achieving high end-to-end performance remains challenging due to dependencies on both GPU kernel efficiency and host-side settings.
+StitchCUDA 以 Planner、Coder 和 Verifier 协作生成端到端 GPU 程序，并用真实执行反馈与 rubric 奖励训练 Coder，覆盖主机侧设置、内核融合和 cuBLAS epilogue 等优化。
 
 ## 为什么值得关注
 
-待编辑增强。
+该工作把自动优化从单个 GPU 内核扩展到主机代码与内核协同的完整程序，并把正确性检查、Nsys/NCU 分析纳入闭环，更接近实际 GPU 应用的调优流程。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Modern machine learning (ML) workloads increasingly rely on GPUs, yet achieving 
 - taxonomy keywords: gpu kernel, kernel generation, kernel optimization
 - quantitative claim detected
 - code/artifact link detected
+- 限制：接近 100% 的成功率和加速结果均基于 KernelBench；基准对真实应用依赖、长时间运行稳定性及跨硬件迁移的代表性，摘要中尚无充分证据。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Modern machine learning (ML) workloads increasingly rely on GPUs, yet achieving 
 - 发布：2026-08-11；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/UMN-APEX-Lab/StitchCUDA](https://github.com/UMN-APEX-Lab/StitchCUDA)
-- 阅读深度：metadata
+- 阅读深度：abstract

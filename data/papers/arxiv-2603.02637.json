@@ -58,10 +58,10 @@
     "code/artifact link detected"
   ],
   "summary_en": "Modern machine learning (ML) workloads increasingly rely on GPUs, yet achieving high end-to-end performance remains challenging due to dependencies on both GPU kernel efficiency and host-side settings.",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "StitchCUDA 以 Planner、Coder 和 Verifier 协作生成端到端 GPU 程序，并用真实执行反馈与 rubric 奖励训练 Coder，覆盖主机侧设置、内核融合和 cuBLAS epilogue 等优化。",
+  "why_it_matters_zh": "该工作把自动优化从单个 GPU 内核扩展到主机代码与内核协同的完整程序，并把正确性检查、Nsys/NCU 分析纳入闭环，更接近实际 GPU 应用的调优流程。",
+  "limitations_zh": "接近 100% 的成功率和加速结果均基于 KernelBench；基准对真实应用依赖、长时间运行稳定性及跨硬件迁移的代表性，摘要中尚无充分证据。",
+  "reading_depth": "abstract",
   "first_seen": "2026-08-11T04:54:40+00:00",
   "last_seen": "2026-08-13T05:09:53+00:00",
   "featured_weeks": [

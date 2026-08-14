@@ -1,6 +1,6 @@
 ---
 title: "LLMVisor: A Real-Time Latency Attribution Model for Multi-Tenant LLM Serving"
-description: "As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throughput but obscures per-tenant usage and limits control."
+description: "提出面向多租户 LLM 服务的实时请求级延迟归因模型 LLMVisor，以 Roofline 分析刻画 Prefill 与 Decode 的访存和计算阶段，并把批次延迟分解为可加的单请求份额。"
 ---
 
 **评分：53/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
@@ -9,11 +9,11 @@ description: "As LLM inference shifts to multi-tenant GPU clusters, co-batching 
 
 ## 一句话摘要
 
-As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throughput but obscures per-tenant usage and limits control.
+提出面向多租户 LLM 服务的实时请求级延迟归因模型 LLMVisor，以 Roofline 分析刻画 Prefill 与 Decode 的访存和计算阶段，并把批次延迟分解为可加的单请求份额。
 
 ## 为什么值得关注
 
-待编辑增强。
+细粒度共享需要低开销、可解释的请求级计量才能进入调度闭环；该模型以微秒级开销运行，并在两类模型和 A100/H100 实验中比 token 数基线更准确地归因尾部延迟。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throu
 - taxonomy keywords: inference engine, llm serving
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：实验仅覆盖两类模型、A100/H100 和给定并行配置；摘要尚未证明更准确的归因会直接改善端到端吞吐、SLO 隔离或多租户公平性。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ As LLM inference shifts to multi-tenant GPU clusters, co-batching improves throu
 - 发布：2026-08-11；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract
