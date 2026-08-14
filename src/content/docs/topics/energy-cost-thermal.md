@@ -9,7 +9,7 @@ description: "Energy, Cost & Thermal Efficiency"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [You Only Charge Once 2.0 : A End-to-End Analog Computing-in-Memory Architecture with Reconfigurable Switched Capacitors](../../papers/arxiv-2608.11116/) | 2026-08-12 | 51 |
+| [You Only Charge Once 2.0 : A End-to-End Analog Computing-in-Memory Architecture with Reconfigurable Switched Capacitors](../../papers/arxiv-2608.11116/) | 2026-08-11 | 51 |
 | [Self-Attention to Operator Learning-based 3D-IC Thermal Simulation](../../papers/arxiv-2510.15968/) | 2026-08-11 | 43 |
 | [Enhancing AI Interpretability with Localised Architectures](../../papers/arxiv-2606.07998/) | 2026-08-11 | 42 |
 | [From Independent to Correlated Diffusion: Generalized Generative Modeling with Probabilistic Computers](../../papers/arxiv-2603.27996/) | 2026-08-11 | 38 |

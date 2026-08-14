@@ -39,7 +39,7 @@ Test-time scaling often uses an external verifier, such as compilers and test ca
 ## 元数据
 
 - 作者：Lecheng Kong, Like Hui, Haitao Mao, Jun Huan
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-10；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

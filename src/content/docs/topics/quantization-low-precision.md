@@ -5,34 +5,36 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **45** 篇。
+累计收录 **47** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [Pretraining large language models with MXFP4 on Native FP4 Hardware](../../papers/arxiv-2605.09825/) | 2026-08-13 | 46 |
-| [Spec Sheets Are Not Kernels: An ISA- and Source-Level Audit of INT8 Availability on NVIDIA Blackwell Ultra](../../papers/arxiv-2608.11693/) | 2026-08-13 | 45 |
+| [YAVIN: A Unified Architecture for Secure Edge Processing in Memory](../../papers/arxiv-2608.13496/) | 2026-08-13 | 44 |
+| [The Impact of Temporal Context Length and Encoding Strategies on Self-Supervised ECG Representation Learning](../../papers/arxiv-2608.12695/) | 2026-08-13 | 43 |
 | [LoRAQuant: Mixed-Precision Quantization of LoRA to Ultra-Low Bits](../../papers/arxiv-2510.26690/) | 2026-08-13 | 41 |
-| [SoftWater: Class-Aware Rate Allocation for Softmax Quantization](../../papers/arxiv-2608.12026/) | 2026-08-13 | 40 |
+| [Lonic: Algorithm-Hardware Co-Design for Energy-Efficient Fully Local Online SNN Training with INT4 Precision](../../papers/arxiv-2608.12500/) | 2026-08-12 | 51 |
+| [Spec Sheets Are Not Kernels: An ISA- and Source-Level Audit of INT8 Availability on NVIDIA Blackwell Ultra](../../papers/arxiv-2608.11693/) | 2026-08-12 | 45 |
 | [SatIR: Scalable High-Recall Constraint-Satisfaction-Based Information Retrieval for Clinical Trials Matching](../../papers/arxiv-2604.08849/) | 2026-08-12 | 42 |
-| [When Do Anchor-Based Pointwise LLM Rerankers Help? Retriever Quality, Statistical Scope, and Anchor Design](../../papers/arxiv-2608.10528/) | 2026-08-12 | 39 |
-| [ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization](../../papers/arxiv-2608.11045/) | 2026-08-12 | 39 |
+| [SoftWater: Class-Aware Rate Allocation for Softmax Quantization](../../papers/arxiv-2608.12026/) | 2026-08-12 | 40 |
 | [The Multilingual Quantization Tax: Structural Collapse and Typological Fragility in Edge SLMs](../../papers/arxiv-2608.09941/) | 2026-08-12 | 38 |
-| [Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms](../../papers/arxiv-2608.11016/) | 2026-08-12 | 38 |
 | [Statistically-Lossless Quantization of Large Language Models](../../papers/arxiv-2605.02404/) | 2026-08-11 | 51 |
 | [Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots](../../papers/arxiv-2607.02501/) | 2026-08-11 | 49 |
 | [Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation](../../papers/arxiv-2606.09864/) | 2026-08-11 | 48 |
 | [Full-Stack FP4: Stable LLM Pretraining with Quantized Projections, Optimizers, and Attention](../../papers/arxiv-2607.04422/) | 2026-08-11 | 46 |
 | [Attn-QAT: 4-Bit Attention With Quantization-Aware Training](../../papers/arxiv-2603.00040/) | 2026-08-11 | 45 |
-| [Quantization Degradation in Large Language Models: A Signal-Noise Perspective](../../papers/arxiv-2608.08188/) | 2026-08-11 | 41 |
 | [HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks](../../papers/arxiv-2607.18867/) | 2026-08-11 | 40 |
+| [When Do Anchor-Based Pointwise LLM Rerankers Help? Retriever Quality, Statistical Scope, and Anchor Design](../../papers/doi-10.1145-3799682.3841055/) | 2026-08-11 | 39 |
 | [The Replay Gap: Static Evaluation of Model Switching in LLM Agents Scores the Wrong World](../../papers/arxiv-2608.08239/) | 2026-08-11 | 39 |
-| [Hidden Language Consistency Phenomena in Reasoning LLMs](../../papers/arxiv-2608.08447/) | 2026-08-11 | 38 |
+| [ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization](../../papers/arxiv-2608.11045/) | 2026-08-11 | 39 |
+| [Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms](../../papers/arxiv-2608.11016/) | 2026-08-11 | 38 |
 | [MiCoPro: End-to-End Mixed Precision HW/SW Co-design with HW-aware Proxy Model](../../papers/arxiv-2608.06916/) | 2026-08-10 | 46 |
 | [An Empirical Study of openPangu Quantization on Ascend NPUs](../../papers/arxiv-2606.21257/) | 2026-08-10 | 42 |
 | [The Expressive Power of Low Precision Softmax Transformers with (Summarized) Chain-of-Thought](../../papers/arxiv-2605.18079/) | 2026-08-10 | 41 |
-| [A Low-Latency ASIC Architecture for Real-Time Line Segment Detection](../../papers/arxiv-2608.06439/) | 2026-08-10 | 41 |
 | [CubicQuant: Parametric Non-Uniform Codebooks for High-Throughput LLM Inference with 1-8-Bit Weights](../../papers/arxiv-2608.06763/) | 2026-08-10 | 41 |
-| [Which Decisions Low-Bit Quantization Breaks, and How to Predict Them](../../papers/arxiv-2608.06564/) | 2026-08-10 | 38 |
+| [A Low-Latency ASIC Architecture for Real-Time Line Segment Detection](../../papers/arxiv-2608.06439/) | 2026-08-10 | 41 |
+| [Hidden Language Consistency Phenomena in Reasoning LLMs](../../papers/arxiv-2608.08447/) | 2026-08-09 | 38 |
+| [Quantization Degradation in Large Language Models: A Signal-Noise Perspective](../../papers/arxiv-2608.08188/) | 2026-08-08 | 41 |
 | [Recti-Q: Feature-Space Rectification for Out-of-Distribution-Robust Quantized Perception in Edge Robotics](../../papers/arxiv-2607.18540/) | 2026-08-07 | 44 |
 | [GROM: Gradient-Free Rapid One-Shot Machine Unlearning](../../papers/arxiv-2608.05783/) | 2026-08-06 | 43 |
 | [BaKron: Efficient Quantization with Kronecker-Factored Hessians](../../papers/arxiv-2608.06291/) | 2026-08-06 | 43 |

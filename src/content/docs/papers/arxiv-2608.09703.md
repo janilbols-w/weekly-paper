@@ -39,7 +39,7 @@ Training a language model suite classically requires training each model separat
 ## 元数据
 
 - 作者：Nathan Godey, Yoav Artzi
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-10；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

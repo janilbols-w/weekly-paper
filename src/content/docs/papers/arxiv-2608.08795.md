@@ -39,7 +39,7 @@ Tool-using large language model (LLM) agents are vulnerable to indirect prompt i
 ## 元数据
 
 - 作者：Sihan Hou, Xinmeng Hou, Zhijun Zhang, Zehao Wang, Xuhong Ren, Sibo Qin, Kuntharrgyal Khysru, Qing Guo
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-09；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

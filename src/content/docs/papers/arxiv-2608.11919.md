@@ -39,7 +39,7 @@ Training large language models on limited hardware is increasingly a scheduling 
 ## 元数据
 
 - 作者：Xiaojun Wu, Cehao Yang, Honghao Liu, Xueyuan Lin, Xuhui Jiang, Chengjin Xu, Jia Li, Jian Guo
-- 发布：2026-08-13；更新：2026-08-13
+- 发布：2026-08-12；更新：2026-08-13
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/DataArcTech/LazyTrain](https://github.com/DataArcTech/LazyTrain)
 - 阅读深度：metadata

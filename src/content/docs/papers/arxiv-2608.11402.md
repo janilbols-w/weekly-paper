@@ -38,8 +38,8 @@ Continuous physiological monitoring using consumer-grade wearables offers a tran
 
 ## 元数据
 
-- 作者：Elias Gr\"unewald, Daniil Cherepko, Linus Gustafsson, Jakob M\"ohler, Oskar Rabe, Paul Robin Reichelt, Constantin Stahl, Lukasz Sztukiewicz, Louis Agha-Mir-Salim, Felix Balzer
-- 发布：2026-08-13；更新：2026-08-13
+- 作者：Elias Grünewald, Daniil Cherepko, Linus Gustafsson, Jakob Möhler, Oskar Rabe, Paul Robin Reichelt, Constantin Stahl, Lukasz Sztukiewicz, Louis Agha-Mir-Salim, Felix Balzer
+- 发布：2026-08-11；更新：2026-08-13
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

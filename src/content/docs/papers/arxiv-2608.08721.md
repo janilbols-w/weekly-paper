@@ -39,7 +39,7 @@ Speculative decoding accelerates large language model inference by drafting mult
 ## 元数据
 
 - 作者：Zexun Lin, Yuan Feng, Junlin Lv, Kevin S. Zhou, Xike Xie
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-09；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

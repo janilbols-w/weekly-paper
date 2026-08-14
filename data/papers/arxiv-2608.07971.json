@@ -4,7 +4,7 @@
   "abstract": "Modern GPU clusters must simultaneously serve deep learning training and offline large language model inference workloads, yet existing schedulers treat these as isolated resource consumers with rigid, static allocations. This leaves substantial GPU capacity underutilized: training jobs reserve entire devices despite periodic idle phases, while offline inference tasks over-provision GPUs despite bursty demand patterns. We present ElastiCo, an elastic co-location framework that enables training and inference workloads to safely share GPUs through three integrated mechanisms. First, Resource Shape Transformation exposes each job as a family of feasible resource-performance configurations. Second, Elastic Shadow Pricing decomposes the resulting multi-resource allocation problem into per-job configuration selection subproblems via dynamic per-resource shadow prices. Third, Interference-Aware Co-location uses a predictor trained on hardware-counter and task-level features to estimate pairwise performance degradation under GPU sharing. Implemented as native Kubernetes middleware requiring no user-code modifications, ElastiCo is evaluated on a 64-GPU testbed and through large-scale trace-driven simulations (up to 512 GPUs), reducing the average JCT by up to 2.94x, increasing the cluster throughput by 2.02x, and increasing the GPU utilization from approximately 25% to 46%.",
   "url": "https://arxiv.org/abs/2608.07971",
   "pdf_url": "https://arxiv.org/pdf/2608.07971",
-  "published": "2026-08-11",
+  "published": "2026-08-08",
   "updated": "2026-08-11",
   "authors": [
     "Jinghao Wang",
@@ -24,7 +24,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "27 pages, 9 figures, 9 tables. Submitted to Performance Evaluation",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -41,11 +41,11 @@
   "keyword_evidence": [
     "gpu sharing"
   ],
-  "score": 44,
+  "score": 46,
   "score_components": {
     "relevance": 12,
     "novelty": 6,
-    "rigor": 9,
+    "rigor": 11,
     "practical_impact": 12,
     "reproducibility": 2,
     "credibility": 3
@@ -61,9 +61,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-11T04:54:40+00:00",
-  "last_seen": "2026-08-13T05:09:53+00:00",
+  "last_seen": "2026-08-14T05:09:59+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.07971v1",
+      "url": "http://arxiv.org/abs/2608.07971v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.07971",

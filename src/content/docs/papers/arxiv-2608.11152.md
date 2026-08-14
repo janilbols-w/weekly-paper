@@ -39,7 +39,7 @@ Modern reinforcement learning (RL) post-training pipelines for large language mo
 ## 元数据
 
 - 作者：Zetao Hong, Song Yuan, Yuanhao Ding, Yibo Zhu, Daxin Jiang, Zhibin Wang, Chen Tian
-- 发布：2026-08-12；更新：2026-08-12
+- 发布：2026-08-11；更新：2026-08-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

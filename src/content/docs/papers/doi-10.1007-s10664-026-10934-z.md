@@ -3,7 +3,7 @@ title: "Do Influence Tactics Matter? Investigating Prompt Framing Effects in LLM
 description: "Large Language Models (LLMs) are increasingly integrated into software engineering workflows, helping developers write, debug, test, and maintain code."
 ---
 
-**评分：43/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
+**评分：46/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
 
 [论文原文](https://arxiv.org/abs/2608.11513) · [PDF](https://arxiv.org/pdf/2608.11513)
 
@@ -28,7 +28,7 @@ Large Language Models (LLMs) are increasingly integrated into software engineeri
 | rigor | 9 |
 | practical impact | 5 |
 | reproducibility | 3 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -38,8 +38,8 @@ Large Language Models (LLMs) are increasingly integrated into software engineeri
 
 ## 元数据
 
-- 作者：Alex Deaconu, Anubhav Gupta, Manaal Basha, Nicholas Haydu, Gema Rodr\'iguez-P\'erez
-- 发布：2026-08-13；更新：2026-08-13
-- 来源：arXiv RSS；Venue：未确认
+- 作者：Alex Deaconu, Anubhav Gupta, Manaal Basha, Nicholas Haydu, Gema Rodríguez-Pérez
+- 发布：2026-08-11；更新：2026-08-13
+- 来源：arXiv RSS；Venue：Empirical Software Engineering 32 (2026) 13
 - 代码：未发现
 - 阅读深度：metadata

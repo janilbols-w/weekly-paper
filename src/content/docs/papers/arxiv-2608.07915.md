@@ -39,7 +39,7 @@ Large language models (LLMs) increasingly read long inputs in the agentic era, f
 ## 元数据
 
 - 作者：Jiamu Zhang, Liang Wu, Kelly Wan, Hanjie Chen, Liangjie Hong
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-08；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

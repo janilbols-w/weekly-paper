@@ -5,18 +5,19 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **14** 篇。
+累计收录 **15** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Where Should Optimizer State Live? Tiered State Allocation for Memory-Efficient Mixture-of-Experts Training](../../papers/arxiv-2607.19058/) | 2026-08-14 | 41 |
 | [Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation](../../papers/arxiv-2605.14047/) | 2026-08-12 | 42 |
-| [FSGen: Agile Fused and Sparse Accelerator Generator with Accurate Power Model for LLM Applications](../../papers/arxiv-2608.09252/) | 2026-08-11 | 46 |
 | [BitFair: A 12-nm Bit-Serial CNN Accelerator with Learnable Early Termination and Adaptive Bit Ordering for Ultra-Low-Power XR Vision](../../papers/arxiv-2607.05445/) | 2026-08-11 | 45 |
-| [AraSSM: A bidirectional state-space encoder for Arabic masked language modeling](../../papers/arxiv-2608.08256/) | 2026-08-11 | 41 |
 | [Advancing Intelligent Sequence Modeling: Evolution, Trade-offs, and Applications of State-Space Architectures from S4 to Mamba](../../papers/arxiv-2503.18970/) | 2026-08-11 | 38 |
 | [HLSmith: An Expert-Guided Agentic Framework for C/C++-to-HLS Translation](../../papers/arxiv-2608.06791/) | 2026-08-10 | 47 |
+| [FSGen: Agile Fused and Sparse Accelerator Generator with Accurate Power Model for LLM Applications](../../papers/arxiv-2608.09252/) | 2026-08-10 | 46 |
 | [Intelligence per Watt: Measuring Intelligence Efficiency of Local AI](../../papers/arxiv-2511.07885/) | 2026-08-10 | 43 |
 | [Multi-Level Modeling of Large Language Model Inference Latency and Energy via Hybrid Analytical--Machine-Learning Predictors](../../papers/arxiv-2608.06723/) | 2026-08-10 | 41 |
+| [AraSSM: A bidirectional state-space encoder for Arabic masked language modeling](../../papers/arxiv-2608.08256/) | 2026-08-08 | 41 |
 | [BALANCE: Hybrid Autoregressive-Speculative LLM Inference in Wireless Edge Networks](../../papers/arxiv-2608.05926/) | 2026-08-06 | 43 |
 | [A Switch-Centric In-Network Architecture for Accelerating LLM Inference in Shared-Memory Network](../../papers/arxiv-2603.28239/) | 2026-08-05 | 43 |
 | [AdaDINO: Context-Adaptive DINO-Distilled Vision Foundation Models for Efficient Open-Vocabulary Edge Inference](../../papers/arxiv-2604.15622/) | 2026-08-04 | 42 |

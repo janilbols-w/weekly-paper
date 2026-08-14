@@ -4,7 +4,7 @@
   "abstract": "Long-context LLM inference is bottlenecked by KV cache memory, yet distributing a limited cache budget across layers remains challenging. Existing methods rely on proxies such as layer depth, attention statistics, or representation change. These proxies do not measure how perturbations at each layer propagate to the output and may therefore cause sensitive layers to be underallocated while tolerant layers are overallocated. To address this issue, we propose RippleKV, which allocates cache across layers by estimating how perturbations to each layer's value cache affect the final predictive distribution. RippleKV independently injects norm-adaptive perturbations into each layer's value cache and measures the induced KL divergence at the model output over a small calibration set. Averaging these responses yields a sensitivity profile specific to the model that need not vary monotonically with depth. RippleKV then converts the sensitivity profile into layer budget multipliers by normalizing the sensitivity scores and applying an exponential mapping. A ratio parameter controls the allocation disparity between sensitive and tolerant layers, while a final normalization preserves the KV cache budget. Experiments on LongBench demonstrate that RippleKV achieves the highest average performance among the evaluated KV cache compression methods under matched cache budgets.",
   "url": "https://arxiv.org/abs/2608.08684",
   "pdf_url": "https://arxiv.org/pdf/2608.08684",
-  "published": "2026-08-11",
+  "published": "2026-08-09",
   "updated": "2026-08-11",
   "authors": [
     "Dongjie Xu",
@@ -20,8 +20,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
@@ -63,9 +63,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-11T04:54:40+00:00",
-  "last_seen": "2026-08-13T05:09:53+00:00",
+  "last_seen": "2026-08-14T05:09:59+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.08684v1",
+      "url": "http://arxiv.org/abs/2608.08684v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.08684",

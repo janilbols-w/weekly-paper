@@ -9,4 +9,4 @@ description: "Storage & Data Plane"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [OpRAG: A Resource-Deterministic Runtime for GPU-Backed Multi-Stage RAG Workflows](../../papers/arxiv-2608.08340/) | 2026-08-11 | 43 |
+| [OpRAG: A Resource-Deterministic Runtime for GPU-Backed Multi-Stage RAG Workflows](../../papers/arxiv-2608.08340/) | 2026-08-08 | 43 |

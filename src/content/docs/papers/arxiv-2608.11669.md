@@ -39,7 +39,7 @@ Reinforcement learning against rubrics, lists of criteria graded by an LLM judge
 ## 元数据
 
 - 作者：Minglai Yang, Xinyu Guo, Utkarsh Tyagi, Mian Zhang, Razvan Dumitru, Sunjie Hou, Yunzhong He, Daniel Yue Zhang, Ying Liu
-- 发布：2026-08-13；更新：2026-08-13
+- 发布：2026-08-12；更新：2026-08-13
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

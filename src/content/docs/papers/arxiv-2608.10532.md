@@ -39,7 +39,7 @@ Static load balancers cannot mitigate a backend that is degraded rather than dow
 ## 元数据
 
 - 作者：Aman Chauhan, Vishnu Pendyala
-- 发布：2026-08-12；更新：2026-08-12
+- 发布：2026-08-11；更新：2026-08-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

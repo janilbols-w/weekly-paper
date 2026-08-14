@@ -39,7 +39,7 @@ Small Language Models (SLMs) have emerged as a more efficient alternative to tra
 ## 元数据
 
 - 作者：Haokun Lin, Kaijie Zhu, Haobo Xu, Yichen Wu, Zhichao Lu, Qingfu Zhang, Zhenan Sun
-- 发布：2026-08-13；更新：2026-08-13
+- 发布：2026-08-12；更新：2026-08-13
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

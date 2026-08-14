@@ -39,7 +39,7 @@ Diffusion Large Language Models (dLLMs) have emerged as a competitive alternativ
 ## 元数据
 
 - 作者：Yushi Ye, Xu Chen, Haoyun Jiang, Jinsong Lan, Haihong Tang, Bo Han, Ivor Tsang, Yanfeng Wang, Bo Zheng, Jiangchao Yao
-- 发布：2026-08-13；更新：2026-08-13
+- 发布：2026-08-12；更新：2026-08-13
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ A single model scale challenges the flexibility of a production retrieval system
 ## 元数据
 
 - 作者：Yu Wang, Shengyao Zhuang, Xueguang Ma, Zongyu Wu, Jimmy Lin, Vivek Srikumar, Zhichao Xu
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-09；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

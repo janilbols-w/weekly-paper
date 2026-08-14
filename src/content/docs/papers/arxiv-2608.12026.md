@@ -39,7 +39,7 @@ Post-training quantization pipelines routinely leave the softmax output layer in
 ## 元数据
 
 - 作者：Joao V. Cavalcanti, Ashia C. Wilson
-- 发布：2026-08-13；更新：2026-08-13
+- 发布：2026-08-12；更新：2026-08-13
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

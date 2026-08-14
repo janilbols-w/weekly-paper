@@ -39,7 +39,7 @@ Reinforcement learning (RL) for large language models is moving toward multi-tur
 ## 元数据
 
 - 作者：Yanyu Ren, Xizheng Wang, Xiao Liu, Bowen Lv, Hanchen Zhang, Shudan Zhang, Hanyu Lai, Shuai Wang, Li Chen, Dan Li, Jie Tang
-- 发布：2026-08-12；更新：2026-08-12
+- 发布：2026-08-11；更新：2026-08-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

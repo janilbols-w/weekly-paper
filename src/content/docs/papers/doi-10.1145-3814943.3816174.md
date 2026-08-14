@@ -3,7 +3,7 @@ title: "MemSpec: Memory-Aware Runtime for Adaptive Draft Scheduling in Speculati
 description: "Speculative decoding accelerates autoregressive large language model (LLM) inference by using a lightweight draft model to speculate multiple tokens, reducing expensive target model decoding steps."
 ---
 
-**评分：44/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
+**评分：47/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
 
 [论文原文](https://arxiv.org/abs/2608.10362) · [PDF](https://arxiv.org/pdf/2608.10362)
 
@@ -28,7 +28,7 @@ Speculative decoding accelerates autoregressive large language model (LLM) infer
 | rigor | 7 |
 | practical impact | 9 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Speculative decoding accelerates autoregressive large language model (LLM) infer
 ## 元数据
 
 - 作者：Eunjeong Kim, Yeong Jun Jeon, Myeonggyun Han
-- 发布：2026-08-12；更新：2026-08-12
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-08-11；更新：2026-08-12
+- 来源：arXiv RSS；Venue：Proc. ACM LCTES 2026, 180-192 (2026)
 - 代码：未发现
 - 阅读深度：metadata

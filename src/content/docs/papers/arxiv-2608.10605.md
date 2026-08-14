@@ -39,7 +39,7 @@ In large-scale pretraining, the algorithm, architecture, and systems decisions a
 ## 元数据
 
 - 作者：Soumajyoti Sarkar, Yuxin Tang, Sheng Zha
-- 发布：2026-08-12；更新：2026-08-12
+- 发布：2026-08-11；更新：2026-08-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

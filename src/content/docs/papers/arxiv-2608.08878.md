@@ -39,7 +39,7 @@ Transformer-based large language models (LLMs) achieve strong performance across
 ## 元数据
 
 - 作者：Asaad Althoubi
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-09；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

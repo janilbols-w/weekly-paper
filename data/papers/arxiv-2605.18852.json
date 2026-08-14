@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.18852",
+  "title": "Robust Checkpoint Selection for Multimodal LLMs via Agentic Evaluation and Stability-Aware Ranking",
+  "abstract": "Selecting a final checkpoint for multimodal large language models (MLLMs) is challenging when late-stage candidates are closely matched and downstream evaluation signals are noisy. Small observed differences can be comparable to variability introduced by finite evaluation samples, LLM-based judges, and ambiguous multimodal evidence, while validation loss may not identify the checkpoint preferred by downstream evaluation. We formulate late-stage checkpoint selection as a stability-aware decision problem under evaluation uncertainty and propose a progressive framework combining pointwise filtering, listwise ranking, and pairwise refinement. Repeated evaluation-set subsampling is used to characterize ranking stability, while percentile-based aggregation accounts for lower- and upper-tail behavior. Experiments show that multimodal data evaluability is critical: quality-aware curation of OCR-heavy inputs reduces ranking flip rate from 32.5\\% to 11.2\\% and increases inter-run agreement from 0.61 to 0.84. We further observe divergence between validation-loss progression and downstream checkpoint preference in two independent MLLM settings. An additional public Qwen2.5-VL-7B reproduction across 11 checkpoints shows tightly clustered pointwise scores and frequently tie-dominated final pairwise comparisons, while repeated evaluation most often selects an intermediate rather than the final checkpoint. These results suggest that reliable MLLM checkpoint selection should quantify and reserve evaluation uncertainty rather than force decisions from small differences in a single metric.",
+  "url": "https://arxiv.org/abs/2605.18852",
+  "pdf_url": "https://arxiv.org/pdf/2605.18852",
+  "published": "2026-08-14",
+  "updated": "2026-08-14",
+  "authors": [
+    "Qinwu Xu",
+    "Zhuoheng Li",
+    "Jessie Salas"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Selecting a final checkpoint for multimodal large language models (MLLMs) is challenging when late-stage candidates are closely matched and downstream evaluation signals are noisy.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-14T05:09:59+00:00",
+  "last_seen": "2026-08-14T05:09:59+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.18852",
+      "url": "https://arxiv.org/abs/2605.18852"
+    }
+  ]
+}

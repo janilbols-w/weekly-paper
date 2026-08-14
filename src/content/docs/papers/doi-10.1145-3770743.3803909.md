@@ -39,7 +39,7 @@ The scaling-up of large language models (LLMs) necessitates computing systems to
 ## 元数据
 
 - 作者：Jiayi Li, Di Wu, Qingxu Li, Hongxiao Zhao, Jiaqi Yang, Anjunyi Fan, Wenbin Zhang, Boqiang Wu, Shuting Liu, Shifeng Fang, Jianbo Dong, Dimin Niu, Bonan Yan
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-09；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Selinaee/C2C-Explorer](https://github.com/Selinaee/C2C-Explorer)
 - 阅读深度：metadata

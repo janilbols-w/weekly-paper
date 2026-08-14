@@ -9,5 +9,5 @@ description: "GPU Scheduling & Virtualization"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [ElastiCo: Elastic Configuration and Interference-Aware Orchestration for GPU Clusters](../../papers/arxiv-2608.07971/) | 2026-08-11 | 44 |
+| [ElastiCo: Elastic Configuration and Interference-Aware Orchestration for GPU Clusters](../../papers/arxiv-2608.07971/) | 2026-08-08 | 46 |
 | [Determinism-Preserving GPU Spatial Sharing with Vitamin-E](../../papers/arxiv-2603.15042/) | 2026-08-06 | 45 |

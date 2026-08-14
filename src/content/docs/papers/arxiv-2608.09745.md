@@ -39,7 +39,7 @@ On-policy self-distillation (OPSD) converts feedback into dense token-level supe
 ## 元数据
 
 - 作者：Zhuo Sun, Entong Li, Yanlong Zhao, Xiaoyuan Cheng, Wenxuan Yuan, Kaiyu Li, Che Liu, Huihang Liu, Harrison Bo Hua Zhu, Li Zeng
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-10；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

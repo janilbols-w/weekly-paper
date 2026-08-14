@@ -3,7 +3,7 @@ title: "ElastiCo: Elastic Configuration and Interference-Aware Orchestration for
 description: "Modern GPU clusters must simultaneously serve deep learning training and offline large language model inference workloads, yet existing schedulers treat these as isolated resource consumers with rigid, static allocations."
 ---
 
-**评分：44/100** · AI 基础设施 > 集群与资源系统 > GPU 调度与虚拟化
+**评分：46/100** · AI 基础设施 > 集群与资源系统 > GPU 调度与虚拟化
 
 [论文原文](https://arxiv.org/abs/2608.07971) · [PDF](https://arxiv.org/pdf/2608.07971)
 
@@ -25,7 +25,7 @@ Modern GPU clusters must simultaneously serve deep learning training and offline
 |---|---:|
 | relevance | 12 |
 | novelty | 6 |
-| rigor | 9 |
+| rigor | 11 |
 | practical impact | 12 |
 | reproducibility | 2 |
 | credibility | 3 |
@@ -39,7 +39,7 @@ Modern GPU clusters must simultaneously serve deep learning training and offline
 ## 元数据
 
 - 作者：Jinghao Wang, Yihang Zhou, Xiaoyang Sun, Chunming Hu, Tianyu Wo, Xu Wang, Albert Y. Zomaya, Renyu Yang
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-08；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

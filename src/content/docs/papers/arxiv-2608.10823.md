@@ -39,7 +39,7 @@ Reinforcement learning (RL) post-training of large language models (LLMs) is com
 ## 元数据
 
 - 作者：Yikai Wang, Chuansai Zhou, Yuhang Zhou, Weiqiang Wu, Cong Wu, Yue Deng, Ben Feng, Mingming Zhu, Beirong Zhou, Zhibin Wang, Sheng Zhong, Chen Tian, Wangze Zhang
-- 发布：2026-08-12；更新：2026-08-12
+- 发布：2026-08-11；更新：2026-08-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

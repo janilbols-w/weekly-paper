@@ -39,7 +39,7 @@ AI training's rising resource intensity is straining electricity supplies and ca
 ## 元数据
 
 - 作者：Sarthak Mahapatra, Zihan Zhou, Khatoon Khedri, Mehdi Hosseinzadeh, Reza Rawassizadeh
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-09；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

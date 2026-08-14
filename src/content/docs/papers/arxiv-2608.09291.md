@@ -39,7 +39,7 @@ Edge LLM inference combines sparsity and low-bit quantization to meet device mem
 ## 元数据
 
 - 作者：Tianhao Jiang, Hang Gu, Teng Wang, Qianyu Cheng, ZhenDong Zheng, Cheng Tang, Qiyue Su, Wenqi Lou, Lei Gong, Chao Wang, Xi Li, Xuehai Zhou
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-10；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Victor-Alen/UnionSparse](https://github.com/Victor-Alen/UnionSparse)
 - 阅读深度：metadata

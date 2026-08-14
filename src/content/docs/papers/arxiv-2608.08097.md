@@ -39,7 +39,7 @@ Large language model (LLM) inference serving is increasingly constrained by memo
 ## 元数据
 
 - 作者：Can Xiao, Sukmin Cho, Junbong We, Zhixiong Niu, Jianyi Cheng, Yiren Zhao, Youngjin Kwon, Yongqiang Xiong, Rui Ma, Junyi Liu
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-08；更新：2026-08-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
