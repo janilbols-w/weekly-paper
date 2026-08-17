@@ -39,7 +39,7 @@ Modern heterogeneous System-on-Chip designs integrate CPU cores and a GPU that s
 ## 元数据
 
 - 作者：Tianhong Xu, Saion K. Roy, Ruyi Ding, Aidong Adam Ding, Yunsi Fei
-- 发布：2026-08-10；更新：2026-08-11
+- 发布：2026-08-10；更新：2026-08-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

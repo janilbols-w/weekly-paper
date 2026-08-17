@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **101** 篇。
+累计收录 **105** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation](../../papers/arxiv-2607.13124/) | 2026-08-17 | 44 |
+| [CutClean: Neural Network Pruning for Privacy-Preserving Inference](../../papers/arxiv-2608.13773/) | 2026-08-17 | 43 |
+| [Training-Free Knowledge Transfer Across Model Scales through Activation-Guided Pruning](../../papers/arxiv-2608.13596/) | 2026-08-17 | 39 |
+| [Evaluating Agentic Learning Harness Capabilities Without Labels via the Scaling Hypothesis](../../papers/arxiv-2608.13608/) | 2026-08-17 | 39 |
 | [Constitutional On-Policy Safe Distillation](../../papers/arxiv-2606.03089/) | 2026-08-14 | 44 |
 | [SAF3R: Dynamic Sparse Attention for Feed-Forward 3D Reconstruction Transformers](../../papers/arxiv-2607.03612/) | 2026-08-14 | 42 |
 | [Continual Distillation Learning for Rehearsal-Free Class-Incremental Learning via Decoupled Prompting](../../papers/arxiv-2407.13911/) | 2026-08-14 | 42 |

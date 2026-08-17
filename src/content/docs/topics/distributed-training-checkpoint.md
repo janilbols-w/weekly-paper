@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **21** 篇。
+累计收录 **22** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Nanbeige4.2-3B on Apple Silicon: Fixing Deployment Bugs and Decreasing Looped Transformer Memory Overhead](../../papers/arxiv-2608.13987/) | 2026-08-17 | 45 |
 | [Robust Checkpoint Selection for Multimodal LLMs via Agentic Evaluation and Stability-Aware Ranking](../../papers/arxiv-2605.18852/) | 2026-08-14 | 40 |
 | [ATMA: Long-Context Language Modeling via Polar Attention and Gated-Delta Compression Memory](../../papers/arxiv-2606.25156/) | 2026-08-13 | 48 |
 | [Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL](../../papers/arxiv-2608.11669/) | 2026-08-12 | 39 |

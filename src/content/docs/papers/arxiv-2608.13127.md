@@ -39,7 +39,7 @@ LLM serving is increasingly constrained by memory capacity as model weights, KV 
 ## 元数据
 
 - 作者：Yihan Yin, Yinlun Zhao, Zhixin Yun, Guanying Wu, Feng Zhu, Kai Tao, Shu Li, Fei Huang, Zhe Zhang, Shuangchen Li, Hongzhong Zheng
-- 发布：2026-08-13；更新：2026-08-14
+- 发布：2026-08-13；更新：2026-08-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

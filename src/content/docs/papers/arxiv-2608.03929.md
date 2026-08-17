@@ -1,6 +1,6 @@
 ---
 title: "Latent Reward Registers for Diffusion Preference Alignment"
-description: "Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, presenting a severe temporal credit-assignment challenge across the multi-step denoising process."
+description: "Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, which creates a severe temporal credit-assignment problem across the denoising process."
 ---
 
 **评分：45/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
@@ -9,7 +9,7 @@ description: "Aligning diffusion models with human preferences usually relies on
 
 ## 一句话摘要
 
-Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, presenting a severe temporal credit-assignment challenge across the multi-step denoising process.
+Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, which creates a severe temporal credit-assignment problem across the denoising process.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ Aligning diffusion models with human preferences usually relies on a sparse term
 
 ## 摘要原文
 
-Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, presenting a severe temporal credit-assignment challenge across the multi-step denoising process. We propose Latent Reward Registers, a mechanism that estimates terminal preference directly from intermediate noisy latents by prepending learnable, position-free register tokens to the input sequence of a frozen Diffusion Transformer (DiT). This independent readout mechanism extracts latent reward evidence without altering the generator's hidden states or velocity field. The resulting dense, differentiable reward signal throughout the full denoising process facilitates two alignment strategies. For training, Reward-Gradient On-Policy Distillation (RG-OPD) distills reward-guided updates along on-policy trajectories, bypassing the computationally expensive rollouts of standard policy gradients. For inference, Reward-Guided Sampling (RGS) steers trajectories via magnitude-matched reward gradients without parameter updates. Empirically, at high noise levels (u = 0.8), the registers reach the highest pairwise accuracy among the evaluated latent reward models. Furthermore, RG-OPD outperforms online reinforcement learning baselines while reducing GPU hours by up to 33x, and RGS establishes a new state-of-the-art among training-free methods, strictly enhancing both alignment and perceptual metrics. Code and weights are available at https://github.com/Guanys-dar/latent-reward-register
+Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, which creates a severe temporal credit-assignment problem across the denoising process. We propose Latent Reward Registers, a mechanism that estimates terminal preference directly from intermediate noisy latents. Learnable, position-free register tokens are appended as an auxiliary read path to a frozen Diffusion Transformer (DiT), extracting preference signals without altering the generator's hidden states or velocity field. The resulting dense, differentiable reward field spans the full denoising trajectory and supports two alignment strategies. For training, Reward-Gradient On-Policy Distillation (RG-OPD) converts this dense reward field into per-step targets at states visited by the current generator, replacing rollout-intensive policy gradients with direct on-policy distillation. For inference, Reward-Guided Sampling (RGS) steers trajectories with magnitude-matched reward-gradient corrections and no parameter updates. Empirically, at high noise levels (t=0.8) the registers reach the highest pairwise accuracy among the evaluated latent reward models. RG-OPD outperforms online reinforcement learning baselines while reducing GPU hours by up to 33x. RGS achieves significant reward improvement with a favorable reward-quality balance against training-free baselines. Code and weights are to be available at https://github.com/Guanys-dar/latent-reward-register
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ Aligning diffusion models with human preferences usually relies on a sparse term
 ## 元数据
 
 - 作者：Yuanshen Guan, Zipeng Feng, Zhiwei Xiong, Peiqin Sun
-- 发布：2026-08-05；更新：2026-08-06
+- 发布：2026-08-05；更新：2026-08-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Guanys-dar/latent-reward-register](https://github.com/Guanys-dar/latent-reward-register)
 - 阅读深度：metadata

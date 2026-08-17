@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **32** 篇。
+累计收录 **33** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Capacity: Scalable MoE LLM Inference via High-Bandwidth Flash with Direct GPU and HBM Paths](../../papers/arxiv-2608.14333/) | 2026-08-17 | 46 |
 | [Do Transformers Need Three Projections? Systematic Study of QKV Variants](../../papers/arxiv-2606.04032/) | 2026-08-14 | 43 |
 | [vToken: Token-Level Virtualization for Reclaimable KV Caches](../../papers/arxiv-2608.13263/) | 2026-08-13 | 40 |
 | [Adaptive Filtering of the KV Cache: Diagnosing and Correcting Structural-Role Bias in LLM Inference](../../papers/arxiv-2607.13205/) | 2026-08-12 | 47 |

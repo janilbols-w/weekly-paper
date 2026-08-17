@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **15** 篇。
+累计收录 **16** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BCIJelly: An integrated ecosystem for brain-computer interface research](../../papers/arxiv-2608.13576/) | 2026-08-17 | 38 |
 | [Where Should Optimizer State Live? Tiered State Allocation for Memory-Efficient Mixture-of-Experts Training](../../papers/arxiv-2607.19058/) | 2026-08-14 | 41 |
 | [Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation](../../papers/arxiv-2605.14047/) | 2026-08-12 | 42 |
 | [BitFair: A 12-nm Bit-Serial CNN Accelerator with Learnable Early Termination and Adaptive Bit Ordering for Ultra-Low-Power XR Vision](../../papers/arxiv-2607.05445/) | 2026-08-11 | 45 |

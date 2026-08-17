@@ -39,7 +39,7 @@ In this paper, we study how to perform statistical inference for quantile tempor
 ## 元数据
 
 - 作者：Zijie Cheng, Yang Peng, Zhihua Zhang
-- 发布：2026-08-14；更新：2026-08-14
+- 发布：2026-08-14；更新：2026-08-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

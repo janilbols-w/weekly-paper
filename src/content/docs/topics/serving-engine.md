@@ -5,10 +5,13 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **18** 篇。
+累计收录 **21** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Kalypso: Relational LLM Serving](../../papers/arxiv-2607.23815/) | 2026-08-17 | 51 |
+| [MoE Expert Execution in Disaggregated LLM Serving with a High-Bandwidth ReRAM Near-Memory Architecture](../../papers/arxiv-2608.13962/) | 2026-08-17 | 45 |
+| [RL-Index: Reinforcement Learning for Retrieval Index Reasoning](../../papers/arxiv-2606.16316/) | 2026-08-17 | 39 |
 | [Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 39 |
 | [Potential Applications of HBF in LLM Serving Systems](../../papers/arxiv-2608.13127/) | 2026-08-13 | 41 |
 | [Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling](../../papers/arxiv-2508.03611/) | 2026-08-12 | 46 |

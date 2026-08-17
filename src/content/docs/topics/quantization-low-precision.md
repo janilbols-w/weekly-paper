@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **47** 篇。
+累计收录 **50** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [The Integer Alibi: Localizing Cross-Kernel Divergence in INT8-Quantized LLM Inference](../../papers/arxiv-2608.13756/) | 2026-08-17 | 50 |
+| [QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction](../../papers/arxiv-2608.13966/) | 2026-08-17 | 41 |
+| [Post-training Quantization for Hybrid Iterative Generative Models](../../papers/arxiv-2608.13932/) | 2026-08-17 | 41 |
 | [Pretraining large language models with MXFP4 on Native FP4 Hardware](../../papers/arxiv-2605.09825/) | 2026-08-13 | 46 |
 | [YAVIN: A Unified Architecture for Secure Edge Processing in Memory](../../papers/arxiv-2608.13496/) | 2026-08-13 | 44 |
 | [The Impact of Temporal Context Length and Encoding Strategies on Self-Supervised ECG Representation Learning](../../papers/arxiv-2608.12695/) | 2026-08-13 | 43 |
