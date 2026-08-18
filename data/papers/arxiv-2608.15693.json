@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2608.15693",
+  "title": "Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment",
+  "abstract": "Running large AI models on resource-constrained edge devices requires model compression to reduce model size and computation. What compresses well, however, need not deploy well. We survey dozens of recent works that report compression results on real hardware and extract practical deployment guidelines from them. Following these guidelines, we deploy compact language and image models on GPU, CPU, and Raspberry Pi platforms across question answering and image segmentation. No single technique wins across tasks. For question answering, Qwen3.5 0.8B reaches 93.85 SQuAD F1 and 92 EM under Q5_K_M GGUF quantization, while structured pruning at the same precision costs 16 F1 at a 1% ratio. For segmentation, the ranking reverses: default quantization leaves parameters and MACs unchanged, whereas pruning cuts model size by nearly 80% at near-constant mIoU. Pruning can even inflate the deployed artifact by 21-49% by breaking k-quant super-block alignment; combined with longer, less format-compliant outputs, this raises Raspberry Pi latency up to 3.4x. Compression can also manufacture the appearance of competence rather than destroy it visibly: one LoRA-recovered variant stays fully parseable and holds 71% strict BoolQ accuracy while sending 97 of 100 predictions to a single class, at 52.6% balanced accuracy. We explain these effects through neural-flow graph analysis and prefill-decode-level latency decomposition, and condense them into task-specific deployment research directions. The right technique depends on the task, the model, and the hardware. Our experiment code and artifacts are open-sourced at https://github.com/Arnavvvkumar/deployment",
+  "url": "https://arxiv.org/abs/2608.15693",
+  "pdf_url": "https://arxiv.org/pdf/2608.15693",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Subhransu Das",
+    "Jiaming Cheng",
+    "Arnav Kumar",
+    "Sadia Afrose",
+    "Mingzhe Han",
+    "Michael Silagy",
+    "Shreya Palande",
+    "Brijesh Soni",
+    "Rajiv Ramnath"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/Arnavvvkumar/deployment",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 8,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Running large AI models on resource-constrained edge devices requires model compression to reduce model size and computation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15693",
+      "url": "https://arxiv.org/abs/2608.15693"
+    }
+  ]
+}

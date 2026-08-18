@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2603.06952",
+  "title": "Not All Neighbors Matter: Understanding the Impact of Graph Sparsification on GNN Pipelines",
+  "abstract": "As graphs scale to billions of nodes and edges, graph Machine Learning workloads are constrained by the cost of multi-hop traversals over exponentially growing neighborhoods. While various system-level and algorithmic optimizations have been proposed to accelerate Graph Neural Network (GNN) pipelines, data management and movement remain the primary bottlenecks at scale. In this paper, we explore whether graph sparsification, a well-established technique that reduces edges to create sparser neighborhoods, can serve as a lightweight pre-processing step to address these bottlenecks while preserving accuracy on node classification tasks. We develop an extensible experimental framework that enables systematic evaluation of how different sparsification methods affect the performance and accuracy of GNN models. We conduct the first comprehensive study of GNN training and inference on sparsified graphs, revealing several key findings. First, sparsification often preserves or even improves predictive performance. As an example, random sparsification raises the accuracy of the GAT model by 6.8% on the PubMed graph. Second, benefits increase with scale, substantially accelerating both training and inference. Our results show that the K-Neighbor sparsifier improves model serving performance on the Products graph by 11.7x with only a 0.7% accuracy drop. Importantly, we find that the computational overhead of sparsification is quickly amortized, making it practical for very large graphs.",
+  "url": "https://arxiv.org/abs/2603.06952",
+  "pdf_url": "https://arxiv.org/pdf/2603.06952",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Yuhang Song",
+    "Naima Abrar Shami",
+    "Romaric Duvignau",
+    "Vasiliki Kalavri"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.DB"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "model serving"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: model serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As graphs scale to billions of nodes and edges, graph Machine Learning workloads are constrained by the cost of multi-hop traversals over exponentially growing neighborhoods.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.06952",
+      "url": "https://arxiv.org/abs/2603.06952"
+    }
+  ]
+}

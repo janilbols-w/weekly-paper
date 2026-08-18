@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2608.14653",
+  "title": "Do Uncertainty Signals Help? A Systematic Study of Uncertainty-Aware Decoding with Rollback Mechanisms",
+  "abstract": "Prediction uncertainty is a widely adopted metric for quantifying model confidence, with downstream applications spanning model explanation, data selection, and prediction rollback. Despite its demonstrated utility, the potential of uncertainty quantification to enhance code generation in large language models (LLMs) remains largely underexplored, raising a critical question: to what extent can uncertainty serve as an effective signal for improving LLM-based code generation? To answer this question, we study uncertainty-aware rollback decoding, an inference-time strategy that uses uncertainty signals to identify unreliable generation regions and roll back to earlier valid prefixes without retraining the model. We evaluate this framework on seven code LLMs, five code generation benchmarks, and eight token-level uncertainty signals under a unified decoding setup. Our results show that the complete rollback framework improves over equal-budget restart across the evaluated benchmarks and model settings, with gains of up to 0.26 in pass@1 and 0.35 in AvgTestPassRate on functional code generation benchmarks, and an absolute improvement of up to 6.4\\% in Patch-Aligned Safe Rate on Dsec-Python. Among the evaluated signals, information-theoretic measures such as token entropy and negative log-likelihood show the most favorable overall trend, frequently achieving the best or near-best results on standard benchmarks. A component-controlled ablation further shows that feedback-guided rollback provides the main improvement, while uncertainty localization provides an additional gain when checking, budget, rollback, and branch decay are held fixed.",
+  "url": "https://arxiv.org/abs/2608.14653",
+  "pdf_url": "https://arxiv.org/pdf/2608.14653",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Xianzong Wu",
+    "Xiaohong Li",
+    "Yuejun Guo",
+    "Xinyang Liu",
+    "Tianlin Li",
+    "Junjie Wang",
+    "Qiang Hu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Prediction uncertainty is a widely adopted metric for quantifying model confidence, with downstream applications spanning model explanation, data selection, and prediction rollback.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.14653",
+      "url": "https://arxiv.org/abs/2608.14653"
+    }
+  ]
+}

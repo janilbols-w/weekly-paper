@@ -5,10 +5,15 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **50** 篇。
+累计收录 **55** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Anatomy of a Quantized Agent: VRAM Stability and Forecasting in Code-Synthesis Agentic Workloads](../../papers/arxiv-2608.15117/) | 2026-08-18 | 47 |
+| [SchurQuant: Groupwise Discrete Optimization for Layer-Wise LLM Quantization](../../papers/arxiv-2608.15567/) | 2026-08-18 | 45 |
+| [CodeQuant: Unified Clustering and Quantization for Enhanced Outlier Smoothing in Low-Precision Mixture-of-Experts](../../papers/arxiv-2604.10496/) | 2026-08-18 | 43 |
+| [p-Spin Glass Network Efficient Single-Batch Continual Learning](../../papers/arxiv-2608.14774/) | 2026-08-18 | 38 |
+| [Hardware-in-the-Loop Phase-Aware CNN for Real-Time 5G Channel Estimation](../../papers/arxiv-2608.14709/) | 2026-08-18 | 38 |
 | [The Integer Alibi: Localizing Cross-Kernel Divergence in INT8-Quantized LLM Inference](../../papers/arxiv-2608.13756/) | 2026-08-17 | 50 |
 | [QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction](../../papers/arxiv-2608.13966/) | 2026-08-17 | 41 |
 | [Post-training Quantization for Hybrid Iterative Generative Models](../../papers/arxiv-2608.13932/) | 2026-08-17 | 41 |

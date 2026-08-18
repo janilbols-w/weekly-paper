@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2608.14728",
+  "title": "Tail-Aware Top-$k$ On-Policy Distillation",
+  "abstract": "On-policy distillation (OPD) has emerged as an effective paradigm for transferring knowledge between language models, where a student is trained to align its next-token distribution with the teacher's along its own trajectories. To provide dense supervision at tractable cost, many works minimize the reverse Kullback-Leibler (KL) divergence between the student and teacher's normalized distributions over the teacher's top-$k$ tokens. However, this normalized objective discards the information about tail probability: the total probability outside the teacher's top-$k$ tokens. As a result, the optimization can steadily increase the student's tail probability and entropy, empirically degrading downstream accuracy. To address this issue, we propose Tail-Aware Top-$k$ OPD (\\textbf{TA-OPD}), a novel distillation method that restores the missing tail probability signal. In particular, TA-OPD minimizes the reverse KL divergence over the top-$k$ tokens plus a tail token that carries the tail probability. In effect, TA-OPD better aligns the student's next-token distribution with the teacher's, preventing the increase in tail probability and entropy caused by top-$k$ normalization. Extensive experiments demonstrate the superiority of TA-OPD, improving Avg@8 by up to 8.05 points on common benchmarks. Our code is available at https://github.com/HuipengHuang/TA-OPD.",
+  "url": "https://arxiv.org/abs/2608.14728",
+  "pdf_url": "https://arxiv.org/pdf/2608.14728",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Huipeng Huang",
+    "Hongxin Wei"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/HuipengHuang/TA-OPD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "On-policy distillation (OPD) has emerged as an effective paradigm for transferring knowledge between language models, where a student is trained to align its next-token distribution with the teacher's along its own trajectories.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.14728",
+      "url": "https://arxiv.org/abs/2608.14728"
+    }
+  ]
+}

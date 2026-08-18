@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **33** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Q-First: Attention and Feed-Forward Concurrency at the Smallest Change to the Block](../../papers/arxiv-2608.15473/) | 2026-08-18 | 42 |
+| [Discovering KV Cache Eviction Policies via LLM-Guided Program Evolution](../../papers/arxiv-2608.14555/) | 2026-08-18 | 41 |
+| [Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN](../../papers/arxiv-2608.16477/) | 2026-08-18 | 40 |
+| [LOCAL: Enabling Learning On-device Contiguously for Agent LLMs](../../papers/arxiv-2608.15241/) | 2026-08-18 | 38 |
 | [Beyond Capacity: Scalable MoE LLM Inference via High-Bandwidth Flash with Direct GPU and HBM Paths](../../papers/arxiv-2608.14333/) | 2026-08-17 | 46 |
 | [Do Transformers Need Three Projections? Systematic Study of QKV Variants](../../papers/arxiv-2606.04032/) | 2026-08-14 | 43 |
 | [vToken: Token-Level Virtualization for Reclaimable KV Caches](../../papers/arxiv-2608.13263/) | 2026-08-13 | 40 |

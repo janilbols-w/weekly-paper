@@ -5,10 +5,18 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **15** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NPU Offloading of a Frozen Visual Encoder for Robot Policy Training](../../papers/arxiv-2608.15002/) | 2026-08-18 | 51 |
+| [From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems](../../papers/arxiv-2608.15127/) | 2026-08-18 | 45 |
+| [Every Expert Counts: ExactMoE for Memory-Efficient W4A16 Inference](../../papers/arxiv-2608.15383/) | 2026-08-18 | 45 |
+| [AdaSprite: Resource-efficient Online Co-Adaptation for V2I Systems Under Large-scale Data Drifts](../../papers/arxiv-2608.16188/) | 2026-08-18 | 43 |
+| [TERRA: A Hierarchical Parallel Training and Memory Orchestration Framework for High-Resolution AI-based Earth Modeling](../../papers/arxiv-2608.15211/) | 2026-08-18 | 42 |
+| [BrainLinear: A Linear Model for Brain Network Analysis in Sparse Tangent Subspaces](../../papers/arxiv-2608.15266/) | 2026-08-18 | 42 |
+| [OceanLight: Efficient Global Ocean Forecasting via Geometry-Adaptive Unstructured Mesh Representation](../../papers/arxiv-2608.16070/) | 2026-08-18 | 40 |
+| [Efficient Block-Layer Parallel Inference for Vision-Language-Action on Hybrid Architectures](../../papers/arxiv-2608.14586/) | 2026-08-18 | 38 |
 | [Progressive Semantic Communication for Efficient Edge-Cloud Vision-Language Models](../../papers/arxiv-2604.26508/) | 2026-08-12 | 48 |
 | [LazyTrain: Limited-resource Allocation toward Zero-waste Yield Optimization in Large Language Model Training](../../papers/arxiv-2608.11919/) | 2026-08-12 | 48 |
 | [StrataCL: Fabric-Native Communication Library for Production Supernodes](../../papers/arxiv-2607.26444/) | 2026-08-12 | 41 |

@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2608.15602",
+  "title": "FluxBin: Flexible LUT-based Ultra-low-bit LLM Inference by Algorithm-Kernel Synergy",
+  "abstract": "While binary quantization theoretically promises extreme compression and acceleration for Large Language Models (LLMs), existing research often overlooks the necessity of specialized hardware kernels, thus failing to unleash the full acceleration potential due to persistent reliance on expensive floating-point arithmetic or runtime dequantization overheads. To bridge this gap, we propose FluxBin (\\textbf{F}lexible \\textbf{L}UT-based \\textbf{U}ltra-low-bit e\\textbf{X}ecution with \\textbf{Bin}ary bases), an algorithm-kernel co-design that synergizes post-training quantization with a highly optimized CUDA kernel. Algorithmically, we introduce Decoupled Row-Column Binary Decomposition to enhance representational capacity while maintaining hardware efficiency, complemented by a Hessian-guided saliency-aware hybrid bases that preserve critical information. At the kernel level, we implement a Lookup Table Building Approach with Scale Fusion to reduce floating-point arithmetic, featuring a Virtual Columnar Mapping that transforms irregular, sparse, and salient matrices into dense execution. Extensive evaluations demonstrate FluxBin achieves up to $5.92\\times$ speedup and $10.19\\times$ energy savings across diverse model architectures, delivering comparable accuracy to heavily fine-tuned methods. This effectively enables the deployment of 70B-scale models on one single A100 GPU with a $4\\times$ memory reduction. Code is available at https://github.com/nicyyyy/FluxBin.",
+  "url": "https://arxiv.org/abs/2608.15602",
+  "pdf_url": "https://arxiv.org/pdf/2608.15602",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Qingyao Yang",
+    "Runming Yang",
+    "He Xiao",
+    "Wendong Xu",
+    "Junyu Chen",
+    "Haobo Liu",
+    "Chenchen Ding",
+    "Ruihan Hu",
+    "Yik-Chung Wu",
+    "Ngai Wong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/nicyyyy/FluxBin",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "cuda kernel"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: cuda kernel",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "While binary quantization theoretically promises extreme compression and acceleration for Large Language Models (LLMs), existing research often overlooks the necessity of specialized hardware kernels, thus failing to unleash the full acceleration potential due to persistent reliance on expensive floating-point arithmetic or runtime dequantization overheads.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15602",
+      "url": "https://arxiv.org/abs/2608.15602"
+    }
+  ]
+}

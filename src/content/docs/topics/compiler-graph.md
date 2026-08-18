@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **18** 篇。
+累计收录 **20** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [When Uncertainty Isn't Enough: An Empirical Study of Self-Correction in Code Generation](../../papers/arxiv-2608.14659/) | 2026-08-18 | 44 |
+| [Do Uncertainty Signals Help? A Systematic Study of Uncertainty-Aware Decoding with Rollback Mechanisms](../../papers/arxiv-2608.14653/) | 2026-08-18 | 38 |
 | [Detecting Contaminated Code-Generation Prompt Batches via Influence Functions](../../papers/arxiv-2608.14303/) | 2026-08-17 | 43 |
 | [Does ISO-Grounded NFR Specification Improve LLM Code Generation? A Comparison of Rich and Structured Interventions against a Natural-Language Baseline](../../papers/arxiv-2608.13742/) | 2026-08-17 | 42 |
 | [No Universal Signal Predicts Sample-Level LLM Regression under Version Updates](../../papers/arxiv-2608.13607/) | 2026-08-17 | 41 |

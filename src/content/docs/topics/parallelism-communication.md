@@ -5,8 +5,10 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **1** 篇。
+累计收录 **3** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KV-Pipe: On the Relation Between KV Sharing and Pipeline Parallel Efficiency in LLMs](../../papers/arxiv-2608.15943/) | 2026-08-18 | 45 |
+| [Collective Communication for Distributed LLM Systems: Planning, Runtime Adaptation, and Computation Coordination](../../papers/arxiv-2608.15118/) | 2026-08-18 | 40 |
 | [NUNA: Characterizing and Mitigating Non-Uniform Network Access in Multi-Die GPU Scale-Up Systems](../../papers/arxiv-2608.00867/) | 2026-08-04 | 45 |

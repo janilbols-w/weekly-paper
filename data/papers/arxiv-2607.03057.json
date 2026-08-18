@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2607.03057",
+  "title": "LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression",
+  "abstract": "The rapid growth in the parameter scale of large language models (LLMs) has created a strong demand for efficient compression techniques. As a hardware-agnostic and highly compatible approach, low-rank compression has been widely adopted to reduce both memory footprint and computational cost. However, existing SVD-based methods are still largely driven by local reconstruction objectives, overlooking two critical limitations: rank budgets are often allocated without explicitly considering layer-wise loss sensitivity, and local approximation errors can propagate and accumulate through the residual stream, leading to amplified global deviations from the original model. To address these issues, we propose LACE-SVD, a Loss-Aware SVD framework with Cumulative Error correction for LLM compression. LACE-SVD first estimates the calibration negative-log-likelihood increase induced by candidate layer-wise compression ratios and solves a budget-constrained allocation problem to assign rank budgets. It then refines the compressed model with closed-form local updates and introduces a propagation-aware correction for residual-stream output modules, reducing layer-output discrepancy as a proxy for cumulative error propagation. Experimental results demonstrate that at a high compression ratio (0.6), the WikiText-2 PPL of our method on LLaMA-7B (32.57) is significantly better than that of Dobi-SVD (46.18).",
+  "url": "https://arxiv.org/abs/2607.03057",
+  "pdf_url": "https://arxiv.org/pdf/2607.03057",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Zhuowen Liu",
+    "Longkun Hao",
+    "Shiyu Feng",
+    "Xiaowen Chang",
+    "Ruiqun Li",
+    "Changqun Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "compressed model"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: compressed model",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The rapid growth in the parameter scale of large language models (LLMs) has created a strong demand for efficient compression techniques.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.03057",
+      "url": "https://arxiv.org/abs/2607.03057"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2608.15171",
+  "title": "P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving",
+  "abstract": "Long-context LLM applications such as retrieval-augmented generation (RAG) and agentic systems often process tens of thousands of input tokens to produce short outputs, making end-to-end request latency an important serving objective. We show that the maximum number of batched tokens (MBT), which controls the token scheduling budget in vLLM, has a scheduling-pressure-dependent effect on latency. Larger token budgets can reduce latency under low scheduling pressure, while smaller budgets become preferable under higher pressure. Consequently, no single static MBT performs best across load regimes. We introduce Prefill-Pressure Adaptive Scheduling (P-PAS), a lightweight policy that dynamically adapts the scheduling budget based on concurrent prefill and decode state. P-PAS retains a large token budget under low pressure and constrains prefill work as pressure increases. Across models, workloads, and GPUs, P-PAS maintains low end-to-end latency across changing load regimes, avoiding the limitations of a fixed MBT. Kernel-level profiling shows that large prefill chunks can improve execution efficiency under low scheduling pressure, but that this advantage varies across model--hardware configurations. As scheduling pressure increases, smaller chunks can instead reduce interference with active decoding, explaining the observed load-dependent MBT sensitivity. Code and artifacts for reproducing our results are available at https://github.com/TimoSaemann/ppas-vllm .",
+  "url": "https://arxiv.org/abs/2608.15171",
+  "pdf_url": "https://arxiv.org/pdf/2608.15171",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Timo S\\\"amann"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/TimoSaemann/ppas-vllm",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 8,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Long-context LLM applications such as retrieval-augmented generation (RAG) and agentic systems often process tens of thousands of input tokens to produce short outputs, making end-to-end request latency an important serving objective.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15171",
+      "url": "https://arxiv.org/abs/2608.15171"
+    }
+  ]
+}

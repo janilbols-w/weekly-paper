@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2608.16188",
+  "title": "AdaSprite: Resource-efficient Online Co-Adaptation for V2I Systems Under Large-scale Data Drifts",
+  "abstract": "The rise of vehicle-infrastructure (V2I) collaboration enables safer and broader perception. To process large-scale V2I video streams, vision-language models (VLMs) are promising as they unify multi-view vision into end-to-end task grounding, reducing handcrafted design. We use Vision Mixture-of-Experts (V-MoE) as the distributed visual backbone of VLMs, leveraging sparse expert routing to enable conditional computation across diverse viewpoints under resource constraints. Yet, V-MoEs face a critical challenge: large-scale data shifts over minutes to hours in V2I systems, amplified by agnostic participants and biased features propagating through experts. To maintain accuracy efficiently, we find it beneficial to co-adapt multiple V-MoEs on edge servers, avoiding the latency and privacy risks of cloud offloading and the accuracy sacrifices of on-device methods. However, the resource-constrained edge poses challenges for efficient co-adaptation: i) DRAM fragmentation and imbalance limit expert parallelism, ii) memory-I/O bottlenecks restrict computation reuse, and iii) asynchronous adaptation increases task-switch overhead. Also, prior work rarely explores the upper bound of concurrent tasks under limited edge resources, a critical factor for practical V2I deployment. To address these, we present AdaSprite. By combining cooperative elastic scaling with multi-level multiplexing, AdaSprite optimizes expert lifespans to reduce DRAM fragmentation, exploits predictable activation patterns for efficient I/O reuse, and employs twin-buffer scheduling to leverage sparsity. On a weak edge, AdaSprite supports up to 17 concurrent V2I tasks (vs. up to 6 for baselines), improving SLO attainment by 1.6x and throughput by 2.1x. Also, it allows users to trade accuracy and concurrency for second-level adaptation.",
+  "url": "https://arxiv.org/abs/2608.16188",
+  "pdf_url": "https://arxiv.org/pdf/2608.16188",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Lehao Wang",
+    "Zhiwen Yu",
+    "Sicong Liu",
+    "Kefan Chen",
+    "Fengmin Wu",
+    "Bin Guo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "offloading"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: offloading",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The rise of vehicle-infrastructure (V2I) collaboration enables safer and broader perception.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.16188",
+      "url": "https://arxiv.org/abs/2608.16188"
+    }
+  ]
+}

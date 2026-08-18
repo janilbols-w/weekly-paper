@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2608.15266",
+  "title": "BrainLinear: A Linear Model for Brain Network Analysis in Sparse Tangent Subspaces",
+  "abstract": "Functional connectome analysis examines brain-region interactions to understand and identify disorders such as autism spectrum disorder and Alzheimer's disease. Existing methods typically use GNNs and Transformers to model the full functional connectivity matrix. However, processing tens of thousands of connections introduces redundancy and noise, increases computational cost, and limits connection-level interpretability. This raises a central question: do we really need complex interaction modeling, or is identifying a small set of disease-relevant connectivity patterns sufficient? To answer this question, we propose BrainLinear, a lightweight geometry-aware framework for mining disease-discriminative connectome patterns. BrainLinear first maps each functional connectivity matrix to a shared tangent space centered at the Fr\\'echet mean of the training set, capturing subject-specific deviations while respecting matrix geometry. It then scores each ROI-pair tangent direction by its classification contribution and disease--control difference, retaining Top-$K$ directions as a compact representation. Finally, a shallow multilayer perceptron performs classification on the selected representation. Experiments on ABIDE and ADNI show that BrainLinear matches or exceeds strong GNN and Transformer baselines at a fraction of their cost: it improves AUC and ACC over the best baseline for each metric by up to $3.54$ and $1.39$ percentage points, while reducing runtime and peak GPU memory by $84.0\\%$ and $68.4\\%$ relative to the closest baseline in AUC. The selected directions are directionally consistent with between-group displacements and organized across major functional systems, supporting connection-level interpretation.",
+  "url": "https://arxiv.org/abs/2608.15266",
+  "pdf_url": "https://arxiv.org/pdf/2608.15266",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Sijing Wu",
+    "Dongyuan Li",
+    "Miaoting Huang",
+    "Weiwei Ye",
+    "Ying Zhang",
+    "Feng Xia",
+    "Renhe Jiang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.GR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Functional connectome analysis examines brain-region interactions to understand and identify disorders such as autism spectrum disorder and Alzheimer's disease.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15266",
+      "url": "https://arxiv.org/abs/2608.15266"
+    }
+  ]
+}

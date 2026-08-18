@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2605.26632",
+  "title": "RT-Lynx: Putting GEMM Sparsity in the Right Place for Diffusion Models",
+  "abstract": "Diffusion Transformers (DiT) achieve strong performance in image generation but incur substantial inference costs. While prior work has reduced this cost via quantization and distillation, semi-structured sparsity, which can nearly halve FLOPs, remains underexplored. A key reason is that most existing approaches focus on weight sparsification, and pruning 50% of the weights can remove critical model capacity and degrade generation quality. Our study, however, shows that DiT activations are intrinsically sparse and significantly more robust to N:M semi-structured sparsification than weights. Motivated by this observation, we advocate a paradigm shift from weight sparsification to activation sparsification. We propose RT-Lynx, which applies N:M sparsification to activations and incorporates error-compensation techniques to mitigate accuracy loss. We further implement highly optimized CUDA kernels tailored to this setting, achieving up to a 1.55x speedup on average in linear layers. Extensive experiments across multiple diffusion models demonstrate that our method preserves the generation quality of the original models while substantially accelerating inference.",
+  "url": "https://arxiv.org/abs/2605.26632",
+  "pdf_url": "https://arxiv.org/pdf/2605.26632",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Xing Cong",
+    "Hanlin Tang",
+    "Kan Liu",
+    "Tao Lan",
+    "Lin Qu",
+    "Chenhao Xie"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation",
+    "pruning",
+    "sparsity"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation, pruning, sparsity",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Diffusion Transformers (DiT) achieve strong performance in image generation but incur substantial inference costs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.26632",
+      "url": "https://arxiv.org/abs/2605.26632"
+    }
+  ]
+}

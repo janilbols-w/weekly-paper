@@ -5,10 +5,13 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **9** 篇。
+累计收录 **12** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs](../../papers/arxiv-2608.14614/) | 2026-08-18 | 41 |
+| [Lightweight Deep Learning-Based Channel Estimation for RIS-Aided Extremely Large-Scale MIMO Systems on Resource-Limited Edge Devices](../../papers/arxiv-2507.09627/) | 2026-08-18 | 40 |
+| [Deep Reinforcement Learning for 6G AI-RAN: A Comprehensive Survey](../../papers/arxiv-2608.14877/) | 2026-08-18 | 39 |
 | [You Only Charge Once 2.0 : A End-to-End Analog Computing-in-Memory Architecture with Reconfigurable Switched Capacitors](../../papers/arxiv-2608.11116/) | 2026-08-11 | 51 |
 | [Self-Attention to Operator Learning-based 3D-IC Thermal Simulation](../../papers/arxiv-2510.15968/) | 2026-08-11 | 43 |
 | [Enhancing AI Interpretability with Localised Architectures](../../papers/arxiv-2606.07998/) | 2026-08-11 | 42 |

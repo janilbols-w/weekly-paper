@@ -39,7 +39,7 @@ Diffusion large language models (dLLMs) accelerate language generation by predic
 ## 元数据
 
 - 作者：Yuji Ren, Chenkai Xu, Zhuocheng Gong, Jianguo Li, Zhijie Deng
-- 发布：2026-08-17；更新：2026-08-17
+- 发布：2026-08-17；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/inclusionAI/dFactory](https://github.com/inclusionAI/dFactory)
 - 阅读深度：metadata

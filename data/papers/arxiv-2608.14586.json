@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2608.14586",
+  "title": "Efficient Block-Layer Parallel Inference for Vision-Language-Action on Hybrid Architectures",
+  "abstract": "Vision-Language-Action (VLA) models are becoming a promising paradigm for autonomous driving, but their deployment on existing vehicle platforms remains difficult because they introduce both high inference latency and strong GPU-side resource pressure. In a full autonomous driving stack, this problem is even more pronounced: legacy vehicle platforms were provisioned for modular pipelines, yet after several planning-related functions are absorbed into a unified VLA model, part of the original CPU budget becomes underutilized, while the visual encoder and the main reasoning path still concentrate most computation and memory demand on the GPU. As a result, directly deploying VLA together with the rest of the onboard system can be hard under realistic GPU memory constraints. To address this issue, we present a hybrid CPU--GPU inference framework with flexible resource scheduling for autonomous driving. Our design partitions the VLA backbone at the block-layer granularity, executes the visual encoder and LLM prefix on the GPU, and offloads the LLM suffix to the CPU through a cross-frame asynchronous pipeline, thereby exposing a schedulable boundary for redistributing compute and memory pressure across heterogeneous processors. We evaluate the proposed framework on two representative driving VLA models, Orion and MindDrive. On Bench2Drive, our method reduces average latency from 521ms to 408.0ms for Orion and from 443ms to 306.2ms for MindDrive, corresponding to 21.7% and 30.9% reduction, respectively. For Orion, the estimated peak GPU memory is further reduced from 45GB to 29GB. In real-vehicle deployment under coexistence with Autoware.Universe, native Orion cannot run because the onboard GPU memory budget is insufficient, whereas the hybrid version runs successfully together with the full vehicle stack.",
+  "url": "https://arxiv.org/abs/2608.14586",
+  "pdf_url": "https://arxiv.org/pdf/2608.14586",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Haibo HU",
+    "Lianming Huang",
+    "Qiao Li",
+    "Nan Guan",
+    "Chun Jason Xue"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Vision-Language-Action (VLA) models are becoming a promising paradigm for autonomous driving, but their deployment on existing vehicle platforms remains difficult because they introduce both high inference latency and strong GPU-side resource pressure.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.14586",
+      "url": "https://arxiv.org/abs/2608.14586"
+    }
+  ]
+}

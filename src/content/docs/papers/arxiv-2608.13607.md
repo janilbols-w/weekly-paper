@@ -39,7 +39,7 @@ Frontier LLMs are updated frequently and typically outperform their predecessors
 ## 元数据
 
 - 作者：Jia Sheng, Yiwei Lu
-- 发布：2026-08-17；更新：2026-08-17
+- 发布：2026-08-17；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/jiashengsally/llm-regression-signals](https://github.com/jiashengsally/llm-regression-signals)
 - 阅读深度：metadata

@@ -1,0 +1,81 @@
+{
+  "id": "arxiv:2608.15127",
+  "title": "From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems",
+  "abstract": "Agentic applications are shifting AI serving from isolated model inference to long-running workloads in which LLMs coordinate tools, environments, and persistent state. However, the system behavior of these workloads---where latency, cost, and bottlenecks arise---remains poorly characterized, leaving serving systems to rely on assumptions built for conventional inference. We present AgentSysBench, a benchmark suite and measurement toolkit with ten representative agentic applications and unified systems-level instrumentation. Across controlled deployments and production traces, we identify six properties that distinguish agentic workloads from conventional LLM serving: (1) execution is heavyweight and stateful, with non-LLM components dominating latency in 5 of 10 applications and sandbox working-set memory peaking at 28 GB per session; (2) applications compose components with heterogeneous resource affinity---GPU-bound inference, memory-bound retrieval, CPU-bound sandboxes---whose task latencies diverge by up to 32x; (3) bottlenecks shift across requests, models, and deployments; (4) production sessions hold state idle for minutes to hours between active steps; (5) a control-plane tax---auxiliary LLM calls and context overhead from tool schemas and observations---crowds out productive compute and context; and (6) production traces from three applications reveal heavy cross-request redundancy in search queries and web fetches, exposing a large caching opportunity. Four design explorations demonstrate that these findings are actionable: task-aware serving reduces latency by 29--40%, communication-aware placement by up to 4.5x, state offloading reduces memory usage by 4.6x, and tool-result caching removes 35.2% of redundant search calls and saves 19.3% of aggregate search latency.",
+  "url": "https://arxiv.org/abs/2608.15127",
+  "pdf_url": "https://arxiv.org/pdf/2608.15127",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Chaokun Chang",
+    "Yukun Zhou",
+    "Kaihua Fu",
+    "Dakai An",
+    "Tianyu Feng",
+    "Hanfeng Lu",
+    "Sheng Yao",
+    "Pu Guo",
+    "Yinghao Yu",
+    "Yizhou Shan",
+    "Bo Li",
+    "Binhang Yuan",
+    "Wei Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC",
+    "cs.MA",
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "offloading"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: offloading",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Agentic applications are shifting AI serving from isolated model inference to long-running workloads in which LLMs coordinate tools, environments, and persistent state.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15127",
+      "url": "https://arxiv.org/abs/2608.15127"
+    }
+  ]
+}

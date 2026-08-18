@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2608.15531",
+  "title": "FlashQuant: Sparse-Dense Fusion for Memory-Efficient Outlier-Aware LLM Inference",
+  "abstract": "Low-bit quantization reduces the memory footprint and computational cost of large language model (LLM) inference. However, high-magnitude outlier weights can induce substantial quantization errors and degrade model accuracy. Outlier-aware quantization addresses this issue by retaining outliers in high precision while quantizing the remaining weights, resulting in a low-bit dense GEMM path and a high-precision sparse SpMM path. Existing implementations execute these paths in separate GPU kernels, despite their shared activations and outputs, thereby missing opportunities for intra-operator reuse and incurring redundant global-memory accesses. This inefficiency is particularly pronounced in memory-bound decoding workloads. We propose FlashQuant, a content-sharing execution framework for outlier-aware W4A16 decoding. FlashQuant fuses the dense GEMM and sparse outlier SpMM paths into a single GPU kernel, enabling on-chip reuse of activation and output tiles across heterogeneous computations. It introduces three key techniques: sparse-dense tiling, which aligns outlier processing with dense GEMM tiles; Tile-COO outlier encoding, which enables efficient sparse access and reduces shared-memory bank conflicts; and pipelined scheduling, which overlaps computation with data movement. Experiments show that FlashQuant reduces outlier-processing overhead, achieving $2.74\\times - 4.18\\times$ speedup over cuBLAS BF16 and up to $1.53\\times$ speedup over the strongest unfused outlier-aware baseline.",
+  "url": "https://arxiv.org/abs/2608.15531",
+  "pdf_url": "https://arxiv.org/pdf/2608.15531",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Junqing Lin",
+    "Jingwei Sun",
+    "Zhengding Hu",
+    "Guangzhong Sun"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Low-bit quantization reduces the memory footprint and computational cost of large language model (LLM) inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15531",
+      "url": "https://arxiv.org/abs/2608.15531"
+    }
+  ]
+}

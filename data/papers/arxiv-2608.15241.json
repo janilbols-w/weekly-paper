@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2608.15241",
+  "title": "LOCAL: Enabling Learning On-device Contiguously for Agent LLMs",
+  "abstract": "On-device LLM agents interact repeatedly with users on local hardware, producing private traces that are valuable for adaptation but should not be sent to a remote trainer. Ideally, such agents would learn contiguously---adapting from every interaction without pausing or suspending user-facing inference---yet existing inference runtimes assume stable weights and existing RL systems assume separated resources, so neither can support this continuity. We present LOCAL, the first single-GPU runtime that enables contiguous on-device learning for LLM agents. The key insight is that GPU scheduling, adapter version management, and KV-cache validity cannot be handled by independent subsystems: adapter updates invalidate cached KV tensors from older versions, and cache retention affects the memory available for training. LOCAL makes adapter version, task priority, and cache state visible to three cooperating components---a cooperative scheduler, a version-aware KV-cache manager, and a multi-agent model runtime---that share this state to keep scheduling, execution, and cache maintenance mutually consistent. On a single 24 GB GPU with 7B-class models, LOCAL lowers foreground queue-wait p95 by 3.1x over FIFO, lowers p95 time-to-first-token (TTFT) by 1.55x versus non-preemptible training, cuts post-publish first-hit prefill p99 by 25.6% and cross-agent TTFT p99 by 21.9%, and keeps background learning progressing under tight KV budgets.",
+  "url": "https://arxiv.org/abs/2608.15241",
+  "pdf_url": "https://arxiv.org/pdf/2608.15241",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Xinxin Liu",
+    "Jiaxin Li",
+    "Zibo Wang",
+    "Yun Ji",
+    "Zhangqi Zhu",
+    "Qing Hu",
+    "Zhibin Wang",
+    "Rong Gu",
+    "Sheng Zhong",
+    "Chen Tian"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On-device LLM agents interact repeatedly with users on local hardware, producing private traces that are valuable for adaptation but should not be sent to a remote trainer.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.15241",
+      "url": "https://arxiv.org/abs/2608.15241"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Structured pruning is a hardware-friendly way to compress LLMs, but it is mostly
 ## 元数据
 
 - 作者：Qingyu Zhang, Qianhao Yuan, Hongyu Lin, Yaojie Lu, Xianpei Han, Le Sun, Ming Xu, Jiarui Li
-- 发布：2026-08-17；更新：2026-08-17
+- 发布：2026-08-17；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

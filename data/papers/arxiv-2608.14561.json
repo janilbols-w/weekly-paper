@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2608.14561",
+  "title": "A Biophysically-Inspired Feedback Controller for Multi-Class Cache Fairness",
+  "abstract": "Cache replacement under multi-tenant LLM-serving conditions is a multi-class problem: short, high-reuse system prompts; long, moderate-reuse user documents; medium-length code context; and bursty conversation history share a single eviction pool. Under skewed multi-class arrivals, conventional flat-LRU policies expose the worst-served-class miss ratio ($m_{\\max}$) only as a fixed point. We introduce a class of cache-replacement policies parameterised by a per-class flux formula, where three structural commitments -- a single global token-mass imbalance signal, $K$ parallel rectified per-class promotion accumulators, and an age-ordered eviction backstop -- produce emergent multi-class fairness. We instantiate this class with a linear V-coupled rectified flux and a Goldman-Hodgkin-Katz extension whose $V \\to 0$ limit is exactly the linear form. Across four skew levels on synthetic multi-class workloads, the policy class closes 27--72\\,\\% of the LRU$\\to$Belady gap on $m_{\\max}$, with linear and GHK interchangeable on the headline objective within search variance. The fairness/throughput tradeoff is exposed as a tunable knob on a single hyperparameter axis. We position this against the LeCaR feedback-controller lineage and the formal-control-theory cache-decay lineage as a novel combination of known ingredients. Code and reproduction scripts: https://github.com/flatmax/membrane.cache",
+  "url": "https://arxiv.org/abs/2608.14561",
+  "pdf_url": "https://arxiv.org/pdf/2608.14561",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Matt R. Flax"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.OS",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/flatmax/membrane.cache",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "multi-tenant"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: multi-tenant",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Cache replacement under multi-tenant LLM-serving conditions is a multi-class problem: short, high-reuse system prompts; long, moderate-reuse user documents; medium-length code context; and bursty conversation history share a single eviction pool.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.14561",
+      "url": "https://arxiv.org/abs/2608.14561"
+    }
+  ]
+}

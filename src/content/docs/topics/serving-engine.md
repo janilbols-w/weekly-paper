@@ -5,10 +5,17 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **21** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Binary Priorities: Multi-Tier SLA Scheduling for Large Language Model Serving](../../papers/arxiv-2608.16336/) | 2026-08-18 | 53 |
+| [Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving](../../papers/arxiv-2608.15762/) | 2026-08-18 | 50 |
+| [E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments](../../papers/arxiv-2606.03770/) | 2026-08-18 | 49 |
+| [P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving](../../papers/arxiv-2608.15171/) | 2026-08-18 | 47 |
+| [ReMP: Low-Downtime Runtime Model-Parallelism Reconfiguration for LLM Serving](../../papers/arxiv-2606.18741/) | 2026-08-18 | 44 |
+| [Not All Neighbors Matter: Understanding the Impact of Graph Sparsification on GNN Pipelines](../../papers/arxiv-2603.06952/) | 2026-08-18 | 44 |
+| [Analytical Provisioning for Attention-FFN Disaggregated LLM Serving under Stochastic Workloads](../../papers/arxiv-2601.21351/) | 2026-08-18 | 42 |
 | [Kalypso: Relational LLM Serving](../../papers/arxiv-2607.23815/) | 2026-08-17 | 51 |
 | [MoE Expert Execution in Disaggregated LLM Serving with a High-Bandwidth ReRAM Near-Memory Architecture](../../papers/arxiv-2608.13962/) | 2026-08-17 | 45 |
 | [RL-Index: Reinforcement Learning for Retrieval Index Reasoning](../../papers/arxiv-2606.16316/) | 2026-08-17 | 39 |

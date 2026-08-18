@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2412.04504",
+  "title": "Multi-Bin Batching for Increasing LLM Inference Throughput",
+  "abstract": "As large language models (LLMs) grow in popularity for their diverse capabilities, improving the efficiency of their inference systems has become increasingly critical. Batching LLM requests is a critical step in scheduling the inference jobs on servers (e.g. GPUs), enabling the system to maximize throughput by allowing multiple requests to be processed in parallel. However, requests often have varying generation lengths, causing resource underutilization, as hardware must wait for the longest-running request in the batch to complete before moving to the next batch. We formalize this problem from a queueing-theoretic perspective, and aim to design a control policy which is throughput-optimal under a static-batching framework. We propose Multi-Bin Batching, a simple yet effective method that can provably improve LLM inference throughput under this framework by grouping requests with similar (predicted) execution times into predetermined bins. Through a combination of theoretical analysis and experiments, including real-world LLM inference scenarios with static and continuous-batching baselines, we demonstrate that multi-bin batching substantially improves throughput over static batching and quantify the remaining gap to native continuous batching under both oracle and estimated length information.",
+  "url": "https://arxiv.org/abs/2412.04504",
+  "pdf_url": "https://arxiv.org/pdf/2412.04504",
+  "published": "2026-08-18",
+  "updated": "2026-08-18",
+  "authors": [
+    "Ozgur Guldogan",
+    "Jackson Kunde",
+    "Kangwook Lee",
+    "Ramtin Pedarsani"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.DC",
+    "cs.LG",
+    "cs.SY",
+    "eess.SY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "batching-scheduling",
+    "leaf": "Batching & Request Scheduling",
+    "leaf_zh": "Batching 与请求调度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "continuous batching"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: continuous batching",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As large language models (LLMs) grow in popularity for their diverse capabilities, improving the efficiency of their inference systems has become increasingly critical.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-18T04:45:47+00:00",
+  "last_seen": "2026-08-18T04:45:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2412.04504",
+      "url": "https://arxiv.org/abs/2412.04504"
+    }
+  ]
+}
