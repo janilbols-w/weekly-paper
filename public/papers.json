@@ -1,5 +1,926 @@
 [
   {
+    "id": "arxiv:2608.17379",
+    "title": "PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
+    "abstract": "We introduce PTXBench, a benchmark for evaluating and adapting large language models (LLMs) to use architecture-specific PTX for GPU kernel optimization. PTXBench measures functional correctness, whether selected target instructions execute at runtime, and speedup over frontier libraries across GEMM and attention workloads on H100 and B200 GPUs. Our evaluation shows that architecture-specific PTX capability remains uneven: success rates fall substantially on complex attention backward workloads, and executing the target instructions does not necessarily translate into competitive performance. No evaluated model consistently matches frontier libraries across the suite. We further adapt Qwen3.6-27B using supervised fine-tuning. Repair-conditioned training improves several tasks, but generalization remains uneven; data coverage, balance, and the quality of the reasoning teacher matter in addition to dataset size. PTXBench provides an auditable testbed for measuring and improving LLMs' ability to exploit evolving GPU architectures.",
+    "url": "https://arxiv.org/abs/2608.17379",
+    "pdf_url": "https://arxiv.org/pdf/2608.17379",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Genghan Zhang",
+      "Yixin Dong",
+      "Chengze Fan",
+      "Zhichen Zeng",
+      "Yueming Yuan",
+      "Shaowei Zhu",
+      "Kunle Olukotun"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "kernels-operators",
+      "leaf": "Kernels & Operator Fusion",
+      "leaf_zh": "Kernel 与算子融合"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "gpu kernel",
+      "kernel optimization"
+    ],
+    "score": 55,
+    "score_components": {
+      "relevance": 22,
+      "novelty": 6,
+      "rigor": 15,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: gpu kernel, kernel optimization",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "We introduce PTXBench, a benchmark for evaluating and adapting large language models (LLMs) to use architecture-specific PTX for GPU kernel optimization.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [
+      "2026-W34"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.17379",
+        "url": "https://arxiv.org/abs/2608.17379"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2607.08642",
+    "title": "DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding",
+    "abstract": "Speculative decoding accelerates LLM inference by drafting tokens and verifying them in parallel. Block-diffusion drafters such as DFlash model only per-position marginals, and tree methods such as DDTree expand candidate trees from those marginals. The released Domino drafter adds a GRU-based causal correction making each draft token's distribution path-dependent, a structure DDTree's factorized formulation cannot represent. We introduce DominoTree, a training-free best-first draft tree scored by Domino's conditional (non-factorized) correction along each root-to-node path, made practical by restricting the per-node correction to a candidate top-M. We evaluate it on eight benchmarks in a single-stream harness, and in SGLang, where it runs as an out-of-tree plugin against AR, DFlash, EAGLE-3 and Domino under identical flags. DominoTree attains the highest mean accepted length in every serving cell - two model sizes, single-request and concurrent load, context to 32K - and the highest Overall accepted length at every temperature in the research harness (21 of 24 per-dataset cells). A three-arm decomposition holding drafter, budget and verifier fixed separates the gain from applying the correction at all (+10.1% accepted length) from that of recomputing it along each candidate's realized path (+4.7% more), the part this paper adds. Where the round is verify-dominated, throughput follows: up to 7.3x over AR on Qwen3-8B, beating the released Domino decoder at its CUDA-graph best at every temperature, and inside SGLang winning single-request throughput by +12% over Domino on Qwen3-8B. On HELMET long context it beats Domino by +29-36% accepted length and +10-34% throughput at every length and both model sizes. Past a memory-constrained card's admission cap the chain wins goodput, and at our longest context, where prefill dominates, our lead over EAGLE-3 narrows to a tie.",
+    "url": "https://arxiv.org/abs/2607.08642",
+    "pdf_url": "https://arxiv.org/pdf/2607.08642",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Saw S. Lin (Zhiqi Zhang)",
+      "Jyh-Shing Roger Jang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "speculative-decoding",
+      "leaf": "Speculative Decoding",
+      "leaf_zh": "推测解码"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "speculative decoding"
+    ],
+    "score": 51,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 11,
+      "practical_impact": 12,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: speculative decoding",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Speculative decoding accelerates LLM inference by drafting tokens and verifying them in parallel.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [
+      "2026-W34"
+    ],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2607.08642",
+        "url": "https://arxiv.org/abs/2607.08642"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2510.09932",
+    "title": "Automatically Generating ML Compiler Backends from Tensor Accelerator ISA Descriptions",
+    "abstract": "Machine learning (ML) compilers play a key role in enabling high-performance implementations of ML workloads. These compilers use existing CPU and GPU backends to generate device-specific code. In recent years, many tensor accelerators (or AI accelerators) have been designed to further accelerate these workloads, with commercial products like AWS Trainium publicly available. However, compared to commodity hardware, a majority of tensor accelerators do not have mature ML compiler backends with robust code generation support. Moreover, tensor accelerator designs are subject to fast iteration cycles, making it difficult to manually develop and maintain ML compiler backends. Therefore, to enable faster integration of novel tensor accelerator designs in ML infrastructure, we need to make the compiler backend construction process more agile. We introduce ACT, a compiler backend generator that automatically generates compiler backends for tensor accelerators, given just the instruction set architecture (ISA) descriptions. These backends are integrated with XLA, a production ML compiler. ACT uses a novel ISA-parameterized compilation algorithm to generate a compiler backend with an equality-saturation-based instruction selection phase and a constraint-programming-based memory allocation phase. We generated compiler backends for 6 accelerator platforms from industry (e.g., AWS Trainium, Intel AMX) and academia (e.g., Gemmini). We showed that these generated backends match or outperform commercial compiler backends and expert-written kernel libraries, while maintaining low compilation overheads. Notably, ACT-generated backend for AWS NKI ISA improved the code generation coverage for AWS Trainium by 2.3x compared with AWS's production compiler, neuronx-cc. ACT is part of a larger open-source ecosystem (https://github.com/act-compiler/act) built around our ISA description language, TAIDL.",
+    "url": "https://arxiv.org/abs/2510.09932",
+    "pdf_url": "https://arxiv.org/pdf/2510.09932",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Devansh Jain",
+      "Akash Pardeshi",
+      "Marco Frigo",
+      "Kaustubh Khulbe",
+      "Krut Patel",
+      "Saatvik Lochan",
+      "Jai Arora",
+      "Charith Mendis"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.PL",
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "https://github.com/act-compiler/act",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "accelerator"
+    ],
+    "score": 50,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 10,
+      "reproducibility": 7,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: accelerator",
+      "quantitative claim detected",
+      "code/artifact link detected"
+    ],
+    "summary_en": "Machine learning (ML) compilers play a key role in enabling high-performance implementations of ML workloads.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2510.09932",
+        "url": "https://arxiv.org/abs/2510.09932"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.16953",
+    "title": "DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models",
+    "abstract": "DTX is a throughput-first training accelerator for diffusion and transformer models. Any summation serialized through a single FP32 adder is a loop-carried dependence that pins a machine near 2 FLOP/cycle regardless of physical design; DTX is built so no such chain exists anywhere -- every reduction is a pipelined binary tree, every FP operator a two-stage pipeline with initiation interval 1. An 8x8 weight-stationary systolic array with a fused bias/activation/cast epilogue, an 8-lane vector unit, an 8-lane fused AdamW pipeline, and a pipelined Philox Gaussian source are co-issued by a 4-slot VLIW word over a unified 64 KB tile space: 216 FLOP/cycle, roughly 108x the loop-carried floor per clock. With no canonical sum order, verification is tolerance-based against an FP64 golden model, with exact-equality carve-outs and a demonstrably tight bound (a premise-violating program measured 5,340x over budget; 17/17 tests, 107,108 elements, zero failures). Semantic gates confirm an on-device diffusion-MLP run reduces its loss (56.4 to 26.0), counter-level proof shows compute/DMA overlap sustains the peak, an analytical iso-node decomposition bounds the GPU comparison at 6-10x throughput per watt, and a sky130 campaign hardens the systolic array to DRC-clean GDS at 83.3 MHz post-route -- 1.9x an optimized loop-carried MAC baseline on the same node and flow.",
+    "url": "https://arxiv.org/abs/2608.16953",
+    "pdf_url": "https://arxiv.org/pdf/2608.16953",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Shashank"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "accelerator"
+    ],
+    "score": 44,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: accelerator",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "DTX is a throughput-first training accelerator for diffusion and transformer models.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.16953",
+        "url": "https://arxiv.org/abs/2608.16953"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.16873",
+    "title": "A Data-Efficient Analytical Prior Machine Learning Framework for Sound Reduction Frequency Prediction in Helmholtz Resonators",
+    "abstract": "High-fidelity finite-element simulations can provide accurate numerical predictions for side-branch resonators, but large simulation datasets are expensive to generate and purely data-driven surrogates may become unreliable when simulation-labelled data are scarce. This study develops an analytical-prior learning framework that reuses a low-cost analytical model to improve data efficiency under limited high-fidelity simulation budgets. Two complementary routes are considered. When the analytical model remains available at inference, it is retained as an explicit baseline and the simulation data are used to learn only the analytical-to-simulation discrepancy. When a self-contained predictor is required, the analytical mapping is first distilled from abundant low-cost evaluations into a learned prior and then calibrated with the limited simulation data. The framework is evaluated on rectangular side-branch Helmholtz resonators using 86 simulation-labelled geometries and 8,998 non-overlapping analytical-only geometries. The analytical model achieved a mean absolute error (MAE) of 1.333 Hz. Direct support vector regression (SVR) achieved 3.375 Hz, while residual SVR reduced the MAE to 0.426 Hz. A direct multilayer perceptron (MLP) achieved 1.109 Hz, whereas analytical-prior pretraining reduced the error to 0.556 Hz with frozen-prior residual adaptation and 0.371 Hz with full-model fine-tuning. Across training budgets of 20 to 70 simulation-labelled cases, both analytical correction and analytical-prior pretraining consistently improved data efficiency relative to direct learning. These results show that analytical prior information can substantially improve high-fidelity prediction when simulation data are scarce, with explicit correction and prior distillation serving complementary deployment needs.",
+    "url": "https://arxiv.org/abs/2608.16873",
+    "pdf_url": "https://arxiv.org/pdf/2608.16873",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Jiaming Li"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 43,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 13,
+      "practical_impact": 7,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "High-fidelity finite-element simulations can provide accurate numerical predictions for side-branch resonators, but large simulation datasets are expensive to generate and purely data-driven surrogates may become unreliable when simulation-labelled data are scarce.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.16873",
+        "url": "https://arxiv.org/abs/2608.16873"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.17865",
+    "title": "ESR-HGNN: Eliminating Semantic Redundancy for Efficient Mini-batch HGNN Inference",
+    "abstract": "Heterogeneous graph neural networks (HGNNs) are highly effective in processing heterogeneous graph data and have been widely adopted in critical domains. As real-world graph data continues to scale, performing direct inference on entire graphs becomes increasingly infeasible, making mini-batch methods the standard approach. However, in end-to-end HGNN inference, metapath-based mini-batch sampling constitutes a significant performance bottleneck due to the extensive random memory accesses induced by the irregular traversal of graph structures. Existing sampling paradigms suffer from excessive redundant traversals caused by inherent semantic redundancy, severely degrading sampling efficiency and, consequently, leading to suboptimal mini-batch inference performance. In this work, we propose a redundancy-aware HGNN sampling paradigm that leverages a metapath trie to reuse traversal paths, effectively eliminating redundant memory accesses. We then map it onto a multi-channel hardware sampling unit denominated ESR-HGNN. Furthermore, we introduce a reusability-driven metapath grouping technique that optimally clusters metapaths to maximize reusable traversal paths within hardware channels, enhancing efficiency in scenarios with semantic parallelism. Extensive experimental results demonstrate that ESR-HGNN achieves an average sampling performance improvement of one order of magnitude over CPU and GPU, accompanied by significant energy savings. Additionally, it delivers substantial speedup in end-to-end mini-batch inference when integrated with GPU and state-of-the-art HGNN inference accelerator.",
+    "url": "https://arxiv.org/abs/2608.17865",
+    "pdf_url": "https://arxiv.org/pdf/2608.17865",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Dengke Han",
+      "Mingyu Yan",
+      "Duo Wang",
+      "Wenming Li",
+      "Xiaochun Ye",
+      "Dongrui Fan"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "serving-distributed",
+      "group": "Serving & Distributed Inference",
+      "group_zh": "Serving 与分布式推理",
+      "leaf_id": "hardware-edge",
+      "leaf": "Hardware-aware & Edge Inference",
+      "leaf_zh": "硬件感知与边缘推理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "accelerator"
+    ],
+    "score": 42,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: accelerator",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Heterogeneous graph neural networks (HGNNs) are highly effective in processing heterogeneous graph data and have been widely adopted in critical domains.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.17865",
+        "url": "https://arxiv.org/abs/2608.17865"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.18062",
+    "title": "TokEval: A Tokenizer Evaluation Suite",
+    "abstract": "Language model tokenizers are typically selected with minimal evaluation, despite the fact that their design choices directly impact model capabilities. This can be partly attributed to a limited understanding of which tokenizer properties affect which aspects of downstream performance. We introduce TokEval, a framework of tokenizer evaluation metrics that goes beyond standard measures like fertility and compression rate to capture linguistically and structurally meaningful properties, e.g., UTF-8 character boundary integrity and digit place-value boundary alignment for mathematics. To validate whether these metrics are predictive of downstream model performance, we conduct controlled language model pretraining experiments, varying solely the tokenizers' training data mixture, pretokenization strategy, and training algorithm. We evaluate the resulting models on bits-per-byte (a tokenizer-agnostic version of perplexity) and several benchmarks, spanning linguistic understanding, mathematical reasoning, and code generation. Our experiments suggest that different intrinsic properties have different impacts on model abilities: information-theoretic metrics predict language modeling abilities (Spearman rho up to 0.80), while structure-sensitive metrics, such as those measuring digit and line-break handling, correlate with task accuracy. We hope TokEval enables more principled tokenizer evaluation, replacing pretraining sweeps with intrinsic measurement wherever the two agree.",
+    "url": "https://arxiv.org/abs/2608.18062",
+    "pdf_url": "https://arxiv.org/pdf/2608.18062",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Clara Meister"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "compiler-graph",
+      "leaf": "Compiler & Graph Optimization",
+      "leaf_zh": "编译器与计算图优化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "code generation"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 13,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: code generation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Language model tokenizers are typically selected with minimal evaluation, despite the fact that their design choices directly impact model capabilities.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.18062",
+        "url": "https://arxiv.org/abs/2608.18062"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2604.15794",
+    "title": "Self-Distillation as a Performance Recovery Mechanism for LLMs: Counteracting Compression and Catastrophic Forgetting",
+    "abstract": "Large Language Models (LLMs) have achieved remarkable success, underpinning diverse AI applications. However, they often suffer from performance degradation due to factors such as catastrophic forgetting during Supervised Fine-Tuning (SFT), quantization, and pruning. In this work, we introduce a performance recovery framework based on Self-Distillation Fine-Tuning (SDFT) that effectively restores model capabilities. Complementing this practical contribution, we provide a rigorous theoretical explanation for the underlying recovery mechanism. We posit that an LLM's generative capability fundamentally relies on the high-dimensional manifold constructed by its hidden layers. To investigate this, we employ Centered Kernel Alignment (CKA) to quantify the alignment between student and teacher activation trajectories, leveraging its invariance to orthogonal transformations and scaling. Our experiments demonstrate a strong correlation between performance recovery and manifold alignment, substantiating the claim that self-distillation effectively aligns the student's high-dimensional manifold with the optimal structure represented by the teacher. This study bridges the gap between practical recovery frameworks and geometric representation theory, offering new insights into the internal mechanisms of self-distillation.",
+    "url": "https://arxiv.org/abs/2604.15794",
+    "pdf_url": "https://arxiv.org/pdf/2604.15794",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Chi Liu",
+      "Xin Chen",
+      "Xu Zhou",
+      "Fangbo Tu",
+      "Srinivasan Manoharan"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation",
+      "pruning"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 18,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation, pruning",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Large Language Models (LLMs) have achieved remarkable success, underpinning diverse AI applications.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2604.15794",
+        "url": "https://arxiv.org/abs/2604.15794"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2605.24930",
+    "title": "H$^{2}$MT: Semantic Hierarchy-Aware Hierarchical Memory Transformer",
+    "abstract": "Transformer-based LLMs achieve strong results on many language tasks; however, long inputs remain challenging because context windows are finite, and prefill latency and memory grow rapidly with prompt length. Flat token-stream processing and chunk-based retrieval can therefore spend substantial computation and context budget on text unrelated to the query. Offline-indexed RAG additionally introduces external storage and index management overhead, and typically appends retrieved evidence as raw text, increasing prefill cost and latency. H^{2}MT makes long-context inference structure-aware: it builds a semantic hierarchy offline, computes a memory embedding for each node via bottom-up post-order aggregation, and routes queries coarse-to-fine at inference to prune irrelevant branches early. On LongBench QA (NarrativeQA, HotpotQA, QASPER) and two structured technical-document settings, H MT achieves favorable quality efficiency trade-offs, delivering competitive ROUGE-L and F1 (where applicable) with lower peak GPU memory and time-to-first-token (TTFT) than prompt compression, memory-token methods, and retrieval-augmented generation baselines.",
+    "url": "https://arxiv.org/abs/2605.24930",
+    "pdf_url": "https://arxiv.org/pdf/2605.24930",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Maryam Haghifam",
+      "Zifan He",
+      "Jason Cong",
+      "Yizhou Sun"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "gpu memory"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 11,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: gpu memory",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Transformer-based LLMs achieve strong results on many language tasks; however, long inputs remain challenging because context windows are finite, and prefill latency and memory grow rapidly with prompt length.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2605.24930",
+        "url": "https://arxiv.org/abs/2605.24930"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.17826",
+    "title": "Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State",
+    "abstract": "Hierarchical KV-cache systems can retain long-context LLM execution state beyond GPU memory, but retention capacity does not determine the local memory required to make that state executable again. We isolate this second resource as the restoration working set (RWS): the peak local staging state whose lifetimes overlap during restoration. In the pinned upstream LMCache whole-plan path, measured full-reuse points for 1.956, 7.823, and 15.646 GiB/rank states first succeed at 2, 8, and 16 GiB L1 rungs, with successful L1 peaks of 1.956, 7.824, and 15.648 GiB/rank. We introduce Bounded-State Restoration (BSR), which separates complete discovery from local residency. BSR probes the complete reusable prefix without materializing the whole hit in L1, then installs confirmed state through a reusable window of at most $W$ chunks. Under bounded auxiliary state, peak restoration capacity is $O(W)$ while total transfer and installation work remains $\\Theta(|S|)$. Because reusable state spans heterogeneous allocator groups and tensor-parallel ranks, BSR uses a request-level commit rule: partial installation is never exposed as a valid reusable prefix; failures invalidate the advertised prefix and fall back to a lower valid tier or deterministic recomputation. On DeepSeek-V4-Flash with TP=2 across two DGX Spark nodes, a clean no-resume sweep grows external state from 1.956 to 31.277 GiB/rank while measured L1 RWS remains exactly 500.75 MiB/rank at $W=32$, a 63.959x largest-state external-to-live-staging ratio. A second fresh 524K-token run repeats the largest-state acceptance result. Evaluated tier and rank-asymmetric failures expose either complete reuse or zero external reuse before fallback. A matched SSD optimization reduces 512K restore TTFT from 43.1 to 17.6 seconds without changing RWS.",
+    "url": "https://arxiv.org/abs/2608.17826",
+    "pdf_url": "https://arxiv.org/pdf/2608.17826",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Zixuan Li (China Academy of Railway Sciences Corporation Limited",
+      "Beijing",
+      "China)"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "attention-kv-cache",
+      "leaf": "Attention & KV Cache",
+      "leaf_zh": "Attention 与 KV Cache"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "kv-cache"
+    ],
+    "score": 41,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 7,
+      "rigor": 7,
+      "practical_impact": 10,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: kv-cache",
+      "quantitative claim detected",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Hierarchical KV-cache systems can retain long-context LLM execution state beyond GPU memory, but retention capacity does not determine the local memory required to make that state executable again.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.17826",
+        "url": "https://arxiv.org/abs/2608.17826"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.16934",
+    "title": "SeqFeed: Improving Agentic RTL Code Generation with Sequential Behavior Feedback",
+    "abstract": "RTL code generation is a critical stage in hardware design, and the emergence of agentic systems offers new opportunities to automate this process. To generate correct RTL code, agents must understand sequential behavior, including how signals evolve and propagate over multiple clock cycles. However, effectively conveying such temporal information to agents remains a significant challenge. RTL code does not expose cycle-level signal behavior for a specific execution, whereas full simulation waveforms are too voluminous and noisy for effective LLM analysis. To address these limitations, we study how human engineers reason about sequential behavior and identify three requirements for effective feedback: it should be event-addressable, dependency-traceable, and iteratively-queryable. Guided by these requirements, we propose \\textit{SeqFeed}, which comprises two complementary mechanisms: (1) \\textit{SeQuery}, an SQL-like waveform query language that enables agents to anchor queries to semantic events and sample signal values at relative time points; and (2) \\textit{SeGraph}, a dependency graph that tracks signal propagation across clock cycles. Experimental results across multiple LLMs demonstrate the effectiveness of SeqFeed in improving pass rates. SeQuery and SeGraph are each effective independently and provide complementary benefits when used together.",
+    "url": "https://arxiv.org/abs/2608.16934",
+    "pdf_url": "https://arxiv.org/pdf/2608.16934",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Yuxin Du",
+      "Juxin Niu",
+      "Tao Hu",
+      "Xi Wang",
+      "Zhe Jiang",
+      "Nan Guan"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AR",
+      "cs.CL"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "compiler-graph",
+      "leaf": "Compiler & Graph Optimization",
+      "leaf_zh": "编译器与计算图优化"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "code generation"
+    ],
+    "score": 39,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 6,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: code generation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "RTL code generation is a critical stage in hardware design, and the emergence of agentic systems offers new opportunities to automate this process.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.16934",
+        "url": "https://arxiv.org/abs/2608.16934"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2603.24472",
+    "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+    "abstract": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces. However, in mathematical reasoning, we find that it can reduce response length while degrading performance. We trace this degradation to the suppression of epistemic verbalization - the model's expression of uncertainty during reasoning. Through controlled experiments varying conditioning context richness and task coverage, we show that conditioning the teacher on rich information suppresses uncertainty expression, enabling rapid in-domain optimization with limited task coverage but harming OOD performance, where unseen problems benefit from expressing uncertainty and adjusting accordingly. Across Qwen3-1.7B/8B, DeepSeek-Distill-Qwen-7B, and Olmo3-7B-Instruct, we observe performance drops of up to 40%. Our findings highlight that exposing appropriate levels of uncertainty is crucial for robust reasoning and underscore the importance of optimizing reasoning behavior beyond merely reinforcing correct answer traces.",
+    "url": "https://arxiv.org/abs/2603.24472",
+    "pdf_url": "https://arxiv.org/pdf/2603.24472",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Jeonghye Kim",
+      "Xufang Luo",
+      "Minbeom Kim",
+      "Sangmook Lee",
+      "Dohyung Kim",
+      "Jiwon Jeon",
+      "Dongsheng Li",
+      "Yuqing Yang"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "model-algorithm",
+      "group": "Model & Algorithm Efficiency",
+      "group_zh": "模型与算法效率",
+      "leaf_id": "compression-sparsity-distillation",
+      "leaf": "Compression, Sparsity & Distillation",
+      "leaf_zh": "压缩、稀疏与蒸馏"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "distillation"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 16,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 5,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: distillation",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2603.24472",
+        "url": "https://arxiv.org/abs/2603.24472"
+      }
+    ]
+  },
+  {
+    "id": "arxiv:2608.17616",
+    "title": "MoNe: Modular Neural Memory for Efficient Long Context Inference",
+    "abstract": "We present MoNe, a lightweight modular neural memory that attaches to any frozen pretrained Transformer to enable long-context inference without retraining. MoNe reads context in fixed-size segments via test-time learning of fast-weight neural memory networks with layer-localized gradient updates; at inference, the memory generates keys and values from the query tokens alone, with no context tokens re-read. This two-phase design decouples inference cost from context length, achieving $O(N)$ preprocessing and $O(1)$ query cost with peak GPU memory that does not grow with $N$. At 128K tokens, MoNe reduces both compute and peak GPU memory by approximately 80% compared to ICL with only 6.4% parameter overhead. MoNe generalizes to context lengths far beyond the backbone's native window, achieving strong performance on needle-in-a-haystack and word extraction benchmarks from RULER, where ICL degrades sharply.",
+    "url": "https://arxiv.org/abs/2608.17616",
+    "pdf_url": "https://arxiv.org/pdf/2608.17616",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "authors": [
+      "Wonguk Cho",
+      "Kyubyung Chae",
+      "Tribhuvanesh Orekondy",
+      "Sunghyun Park",
+      "Hyoungwoo Park",
+      "Jeongho Kim",
+      "Arash Behboodi",
+      "Kyuwoong Hwang",
+      "Sungrack Yun"
+    ],
+    "source": "arXiv RSS",
+    "source_type": "preprint",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "doi": "",
+    "venue": "",
+    "journal_ref": "",
+    "comment": "",
+    "code_url": "",
+    "primary_category": {
+      "domain_id": "efficient-inference",
+      "domain": "LLM Efficient Inference",
+      "domain_zh": "LLM 高效推理",
+      "group_id": "runtime-memory",
+      "group": "Runtime & Memory Efficiency",
+      "group_zh": "Runtime 与内存效率",
+      "leaf_id": "cache-offload-memory",
+      "leaf": "Cache, Offload & Memory Management",
+      "leaf_zh": "缓存、换入换出与内存管理"
+    },
+    "secondary_tags": [],
+    "keyword_evidence": [
+      "gpu memory"
+    ],
+    "score": 38,
+    "score_components": {
+      "relevance": 12,
+      "novelty": 5,
+      "rigor": 7,
+      "practical_impact": 9,
+      "reproducibility": 2,
+      "credibility": 3
+    },
+    "score_evidence": [
+      "taxonomy keywords: gpu memory",
+      "no quantitative claim in metadata",
+      "no code link detected in metadata"
+    ],
+    "summary_en": "We present MoNe, a lightweight modular neural memory that attaches to any frozen pretrained Transformer to enable long-context inference without retraining.",
+    "summary_zh": "",
+    "why_it_matters_zh": "",
+    "limitations_zh": "",
+    "reading_depth": "metadata",
+    "first_seen": "2026-08-19T04:46:02+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [],
+    "source_records": [
+      {
+        "source": "arXiv RSS",
+        "id": "2608.17616",
+        "url": "https://arxiv.org/abs/2608.17616"
+      }
+    ]
+  },
+  {
     "id": "arxiv:2608.14575",
     "title": "HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving",
     "abstract": "Modern large language model (LLM) serving platforms deploy multiple models across different GPUs, requiring routers to direct incoming queries to appropriate LLMs. However, existing routing approaches primarily rely on static model attributes such as size or FLOPs to estimate serving costs. This static cost modeling fails to capture the dynamic behavior of real deployments, where the same model can exhibit vastly different inference latencies depending on hardware type (e.g., H100 vs. V100), current system load (e.g., running and waiting queue lengths), and resource contention (e.g., KV-cache usage and GPU utilization). Such hardware-agnostic routing leads to suboptimal decisions, resulting in SLO violations, queue buildup, and underutilized GPUs. To address these challenges, we present HW-Router, a dynamic routing framework that integrates real-time hardware signals into model selection to enable accurate latency prediction and intelligent, SLO-aware routing decisions. Our approach incorporates model-specific features (architecture, size, input length) alongside hardware metrics including queue lengths, KV-cache utilization, and recent TTFT/TPOT performance, and uses a lightweight latency predictor to estimate per-model-per-GPU serving time. Evaluations across diverse workloads show that HW-Router achieves 3.4-3.9x lower end-to-end latency, 46-48 percentage points higher SLO attainment, 6-8x lower GPU load skew, and a 3.1-3.4x reduction in waiting-queue fraction compared to state-of-the-art router baselines, CARROT and IRT, with only ~200 us of additional routing overhead and no loss in output quality. These results highlight the importance of real-time hardware feedback for scalable, predictable, and well-balanced multi-LLM serving. Code is available at https://github.com/UCF-ML-Research/HW-Router.",
@@ -60,7 +981,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -79,7 +1000,7 @@
     "url": "https://arxiv.org/abs/2608.15975",
     "pdf_url": "https://arxiv.org/pdf/2608.15975",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Ravi Satya Durga Prasad Yenugula"
     ],
@@ -131,7 +1052,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -150,7 +1071,7 @@
     "url": "https://arxiv.org/abs/2608.16336",
     "pdf_url": "https://arxiv.org/pdf/2608.16336",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Anders Vestrum",
       "Arya Raeesi",
@@ -206,7 +1127,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -225,7 +1146,7 @@
     "url": "https://arxiv.org/abs/2608.15002",
     "pdf_url": "https://arxiv.org/pdf/2608.15002",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Hyojun Yun",
       "Seungjae Won",
@@ -279,7 +1200,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -298,7 +1219,7 @@
     "url": "https://arxiv.org/abs/2605.26632",
     "pdf_url": "https://arxiv.org/pdf/2605.26632",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Xing Cong",
       "Hanlin Tang",
@@ -354,7 +1275,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -371,7 +1292,7 @@
     "url": "https://arxiv.org/abs/2608.15762",
     "pdf_url": "https://arxiv.org/pdf/2608.15762",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Weinan Liu",
       "Zeyuan Ding",
@@ -432,7 +1353,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -449,7 +1370,7 @@
     "url": "https://arxiv.org/abs/2608.14728",
     "pdf_url": "https://arxiv.org/pdf/2608.14728",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Huipeng Huang",
       "Hongxin Wei"
@@ -457,8 +1378,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -500,7 +1421,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -572,7 +1493,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -641,7 +1562,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -707,7 +1628,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -724,7 +1645,7 @@
     "url": "https://arxiv.org/abs/2608.15693",
     "pdf_url": "https://arxiv.org/pdf/2608.15693",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Subhransu Das",
       "Jiaming Cheng",
@@ -782,7 +1703,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -799,7 +1720,7 @@
     "url": "https://arxiv.org/abs/2608.15602",
     "pdf_url": "https://arxiv.org/pdf/2608.15602",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Qingyao Yang",
       "Runming Yang",
@@ -815,8 +1736,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -858,7 +1779,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -875,7 +1796,7 @@
     "url": "https://arxiv.org/abs/2608.15117",
     "pdf_url": "https://arxiv.org/pdf/2608.15117",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Anubhab Banerjee"
     ],
@@ -927,7 +1848,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -944,7 +1865,7 @@
     "url": "https://arxiv.org/abs/2608.15567",
     "pdf_url": "https://arxiv.org/pdf/2608.15567",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Gunjun Lee",
       "Sehwan Son",
@@ -998,7 +1919,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1069,7 +1990,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1086,7 +2007,7 @@
     "url": "https://arxiv.org/abs/2603.12222",
     "pdf_url": "https://arxiv.org/pdf/2603.12222",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Andy Li",
       "Aiden Durrant",
@@ -1140,7 +2061,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1221,7 +2142,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1290,7 +2211,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1307,7 +2228,7 @@
     "url": "https://arxiv.org/abs/2608.15383",
     "pdf_url": "https://arxiv.org/pdf/2608.15383",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Amjad Saab"
     ],
@@ -1356,7 +2277,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1430,7 +2351,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1447,7 +2368,7 @@
     "url": "https://arxiv.org/abs/2608.14659",
     "pdf_url": "https://arxiv.org/pdf/2608.14659",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Pranav Rakasi",
       "Maanas Lalwani",
@@ -1504,7 +2425,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1521,7 +2442,7 @@
     "url": "https://arxiv.org/abs/2608.15516",
     "pdf_url": "https://arxiv.org/pdf/2608.15516",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Pengyu Wang",
       "Baochen Xiong",
@@ -1576,7 +2497,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1649,7 +2570,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1666,7 +2587,7 @@
     "url": "https://arxiv.org/abs/2603.06952",
     "pdf_url": "https://arxiv.org/pdf/2603.06952",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Yuhang Song",
       "Naima Abrar Shami",
@@ -1676,8 +2597,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.DB"
+      "cs.DB",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -1719,7 +2640,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1736,7 +2657,7 @@
     "url": "https://arxiv.org/abs/2608.14684",
     "pdf_url": "https://arxiv.org/pdf/2608.14684",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Dingyao Yu",
       "Tong Zhang",
@@ -1748,8 +2669,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -1791,7 +2712,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1808,7 +2729,7 @@
     "url": "https://arxiv.org/abs/2608.14644",
     "pdf_url": "https://arxiv.org/pdf/2608.14644",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Zihan Li",
       "Feifei Li",
@@ -1817,8 +2738,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.CL"
+      "cs.CL",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -1860,7 +2781,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1877,7 +2798,7 @@
     "url": "https://arxiv.org/abs/2604.10496",
     "pdf_url": "https://arxiv.org/pdf/2604.10496",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Xiangyang Yin",
       "Xingyu Liu",
@@ -1933,7 +2854,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -1950,7 +2871,7 @@
     "url": "https://arxiv.org/abs/2608.16010",
     "pdf_url": "https://arxiv.org/pdf/2608.16010",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Zhaocen Liu",
       "Satvik Praveen",
@@ -1959,8 +2880,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.CV"
+      "cs.CV",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -2003,7 +2924,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2074,7 +2995,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2142,7 +3063,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2218,7 +3139,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2285,7 +3206,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2302,7 +3223,7 @@
     "url": "https://arxiv.org/abs/2608.15266",
     "pdf_url": "https://arxiv.org/pdf/2608.15266",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Sijing Wu",
       "Dongyuan Li",
@@ -2358,7 +3279,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2375,7 +3296,7 @@
     "url": "https://arxiv.org/abs/2601.21351",
     "pdf_url": "https://arxiv.org/pdf/2601.21351",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Chendong Song",
       "Meixuan Wang",
@@ -2389,8 +3310,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -2432,7 +3353,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2449,7 +3370,7 @@
     "url": "https://arxiv.org/abs/2608.14929",
     "pdf_url": "https://arxiv.org/pdf/2608.14929",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Aman Singh Thakur",
       "Rayan Khoury"
@@ -2500,7 +3421,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2517,7 +3438,7 @@
     "url": "https://arxiv.org/abs/2608.14685",
     "pdf_url": "https://arxiv.org/pdf/2608.14685",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Shizhen Li",
       "Zhiyu Shen",
@@ -2573,7 +3494,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2590,7 +3511,7 @@
     "url": "https://arxiv.org/abs/2412.04504",
     "pdf_url": "https://arxiv.org/pdf/2412.04504",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Ozgur Guldogan",
       "Jackson Kunde",
@@ -2646,7 +3567,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2663,7 +3584,7 @@
     "url": "https://arxiv.org/abs/2608.14614",
     "pdf_url": "https://arxiv.org/pdf/2608.14614",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Zeyu Cao",
       "Xuan Guo",
@@ -2719,7 +3640,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2788,7 +3709,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2805,7 +3726,7 @@
     "url": "https://arxiv.org/abs/2608.15046",
     "pdf_url": "https://arxiv.org/pdf/2608.15046",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Amogh Singh"
     ],
@@ -2854,7 +3775,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2928,7 +3849,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -2945,7 +3866,7 @@
     "url": "https://arxiv.org/abs/2608.16477",
     "pdf_url": "https://arxiv.org/pdf/2608.16477",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Tianhang Ding",
       "Jianchun Liu",
@@ -2997,7 +3918,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3014,7 +3935,7 @@
     "url": "https://arxiv.org/abs/2608.16070",
     "pdf_url": "https://arxiv.org/pdf/2608.16070",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Wei Wu",
       "Xiang Wang",
@@ -3026,8 +3947,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -3069,7 +3990,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3086,7 +4007,7 @@
     "url": "https://arxiv.org/abs/2507.09627",
     "pdf_url": "https://arxiv.org/pdf/2507.09627",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Muhammad Kamran Saeed",
       "Ashfaq Khokhar",
@@ -3141,7 +4062,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3158,7 +4079,7 @@
     "url": "https://arxiv.org/abs/2607.03057",
     "pdf_url": "https://arxiv.org/pdf/2607.03057",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Zhuowen Liu",
       "Longkun Hao",
@@ -3170,8 +4091,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -3213,7 +4134,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3284,7 +4205,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3380,7 +4301,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3397,7 +4318,7 @@
     "url": "https://arxiv.org/abs/2608.15351",
     "pdf_url": "https://arxiv.org/pdf/2608.15351",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Mohammed Ahnouch",
       "Lotfi Elaachak"
@@ -3448,7 +4369,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3519,7 +4440,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3536,7 +4457,7 @@
     "url": "https://arxiv.org/abs/2608.14635",
     "pdf_url": "https://arxiv.org/pdf/2608.14635",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Jiecheng Zhou",
       "Qinghao Hu",
@@ -3592,7 +4513,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3609,7 +4530,7 @@
     "url": "https://arxiv.org/abs/2608.14774",
     "pdf_url": "https://arxiv.org/pdf/2608.14774",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Vladimer Khasia"
     ],
@@ -3658,7 +4579,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3675,7 +4596,7 @@
     "url": "https://arxiv.org/abs/2608.15299",
     "pdf_url": "https://arxiv.org/pdf/2608.15299",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Lie Li",
       "Wen Li",
@@ -3685,8 +4606,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -3728,7 +4649,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3803,7 +4724,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3820,7 +4741,7 @@
     "url": "https://arxiv.org/abs/2608.14709",
     "pdf_url": "https://arxiv.org/pdf/2608.14709",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Javad Zolfaghari-Bengar",
       "Rakibul Rony",
@@ -3832,10 +4753,10 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "eess.SP",
       "cs.CV",
       "cs.IT",
       "cs.LG",
+      "eess.SP",
       "math.IT"
     ],
     "doi": "",
@@ -3878,7 +4799,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3949,7 +4870,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -3966,7 +4887,7 @@
     "url": "https://arxiv.org/abs/2608.14653",
     "pdf_url": "https://arxiv.org/pdf/2608.14653",
     "published": "2026-08-18",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Xianzong Wu",
       "Xiaohong Li",
@@ -3979,8 +4900,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
     "doi": "",
     "venue": "",
@@ -4022,7 +4943,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-18T04:45:47+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4094,7 +5015,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -4165,7 +5086,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -4235,7 +5156,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -4304,7 +5225,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -4379,7 +5300,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W34"
     ],
@@ -4458,7 +5379,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4535,7 +5456,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4607,7 +5528,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4676,7 +5597,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4747,7 +5668,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4816,7 +5737,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4888,7 +5809,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -4958,7 +5879,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5027,7 +5948,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5098,7 +6019,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5175,7 +6096,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5247,7 +6168,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5329,7 +6250,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-17T04:48:20+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5402,8 +6323,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -5479,7 +6402,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5550,7 +6473,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5623,7 +6546,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5692,7 +6615,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5759,7 +6682,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5829,7 +6752,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5898,7 +6821,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -5968,7 +6891,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6035,7 +6958,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -6110,8 +7033,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -6182,8 +7107,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
     "source_records": [
       {
         "source": "arXiv",
@@ -6262,8 +7189,10 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
-    "featured_weeks": [],
+    "last_seen": "2026-08-19T04:46:02+00:00",
+    "featured_weeks": [
+      "2026-W33"
+    ],
     "source_records": [
       {
         "source": "arXiv RSS",
@@ -6332,7 +7261,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6404,7 +7333,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6476,7 +7405,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6553,7 +7482,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6627,7 +7556,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6697,7 +7626,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6771,7 +7700,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6843,7 +7772,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6914,7 +7843,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -6996,7 +7925,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7070,7 +7999,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7144,7 +8073,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7219,7 +8148,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7288,7 +8217,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7363,7 +8292,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7443,7 +8372,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7635,7 +8564,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7708,7 +8637,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7776,7 +8705,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -7848,7 +8777,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -7921,7 +8850,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -7998,7 +8927,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8075,7 +9004,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -8153,7 +9082,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -8228,7 +9157,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8296,7 +9225,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8372,7 +9301,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8447,7 +9376,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8521,7 +9450,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8600,7 +9529,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8680,7 +9609,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8750,7 +9679,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8826,7 +9755,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8908,7 +9837,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8981,7 +9910,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -8998,7 +9927,7 @@
     "url": "https://arxiv.org/abs/2608.02829",
     "pdf_url": "https://arxiv.org/pdf/2608.02829",
     "published": "2026-08-12",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Ravi Satya Durga Prasad Yenugula"
     ],
@@ -9050,7 +9979,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9118,7 +10047,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9194,7 +10123,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9275,7 +10204,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9349,7 +10278,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9421,7 +10350,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9494,7 +10423,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9565,7 +10494,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -9641,7 +10570,7 @@
     "limitations_zh": "结果主要来自 KernelBench 和 VeOmni 的特定 MoE 内核，尚不能代表完整模型或更多算子；元数据未发现公开代码，且 Hopper 专用 CuTe/WGMMA 路径的可迁移性仍待验证。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -9718,7 +10647,7 @@
     "limitations_zh": "接近 100% 的成功率和加速结果均基于 KernelBench；基准对真实应用依赖、长时间运行稳定性及跨硬件迁移的代表性，摘要中尚无充分证据。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -9788,7 +10717,7 @@
     "limitations_zh": "摘要未给出剪枝比例、硬件、端到端延迟或吞吐数字，只报告任务质量优于既有方法；实际加速仍取决于模型结构及运行时对裁剪后注意力形状的支持。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -9865,7 +10794,7 @@
     "limitations_zh": "数据仅含 100 组前端对话，难以代表更广泛的软件工程任务；评测依赖 Web Agent，且工作不衡量推理成本、延迟或部署效率，因此与高效推理的关联有限。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -9938,7 +10867,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -10017,7 +10946,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10086,7 +11015,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10164,7 +11093,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10243,7 +11172,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10315,7 +11244,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10388,7 +11317,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10465,7 +11394,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10538,7 +11467,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10611,7 +11540,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10681,7 +11610,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10703,7 +11632,7 @@
     "url": "https://arxiv.org/abs/2608.07531",
     "pdf_url": "https://arxiv.org/pdf/2608.07531",
     "published": "2026-08-11",
-    "updated": "2026-08-11",
+    "updated": "2026-08-19",
     "authors": [
       "Cheng Ruoxi",
       "Ma Haoxuan",
@@ -10719,8 +11648,8 @@
     "source": "arXiv RSS",
     "source_type": "preprint",
     "categories": [
-      "cs.CL",
-      "cs.AI"
+      "cs.AI",
+      "cs.CL"
     ],
     "doi": "",
     "venue": "",
@@ -10762,7 +11691,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10835,7 +11764,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10908,7 +11837,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -10980,7 +11909,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11054,7 +11983,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11128,7 +12057,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11197,7 +12126,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11271,7 +12200,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11344,7 +12273,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11412,7 +12341,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11480,7 +12409,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11554,7 +12483,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11630,7 +12559,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11698,7 +12627,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11765,7 +12694,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11839,7 +12768,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11928,7 +12857,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -11998,7 +12927,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12064,7 +12993,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12144,7 +13073,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12217,7 +13146,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12298,7 +13227,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12374,7 +13303,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12448,7 +13377,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12526,7 +13455,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12605,7 +13534,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12674,7 +13603,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12691,7 +13620,7 @@
     "url": "https://arxiv.org/abs/2608.10528",
     "pdf_url": "https://arxiv.org/pdf/2608.10528",
     "published": "2026-08-11",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "authors": [
       "Utshab Kumar Ghosh",
       "Shubham Chatterjee"
@@ -12742,7 +13671,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12817,7 +13746,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12884,7 +13813,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -12956,7 +13885,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13026,7 +13955,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13095,7 +14024,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13170,7 +14099,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13240,7 +14169,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13309,7 +14238,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13375,7 +14304,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13450,7 +14379,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-13T05:09:53+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13532,7 +14461,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13611,7 +14540,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13683,7 +14612,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13758,7 +14687,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13835,7 +14764,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13905,7 +14834,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -13974,7 +14903,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-12T05:09:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14052,7 +14981,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14129,7 +15058,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14207,7 +15136,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14283,7 +15212,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -14354,7 +15283,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -14428,7 +15357,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14501,7 +15430,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -14577,7 +15506,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -14654,7 +15583,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14726,7 +15655,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14799,7 +15728,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14871,7 +15800,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -14939,7 +15868,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15010,7 +15939,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15078,7 +16007,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15151,7 +16080,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15221,7 +16150,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15292,7 +16221,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15365,7 +16294,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15444,7 +16373,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15512,7 +16441,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15595,7 +16524,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15665,7 +16594,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15734,7 +16663,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15809,7 +16738,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15888,7 +16817,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -15957,7 +16886,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16027,7 +16956,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16096,7 +17025,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16166,7 +17095,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16233,7 +17162,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16305,7 +17234,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16373,7 +17302,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16450,7 +17379,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16525,7 +17454,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16602,7 +17531,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16670,7 +17599,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16739,7 +17668,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16808,7 +17737,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-10T05:04:42+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -16884,7 +17813,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W33"
     ],
@@ -16959,7 +17888,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17044,7 +17973,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17120,7 +18049,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17195,7 +18124,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17267,7 +18196,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17347,7 +18276,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17419,7 +18348,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-14T05:09:59+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17493,7 +18422,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17564,7 +18493,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17641,7 +18570,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17714,7 +18643,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17789,7 +18718,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17870,7 +18799,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -17948,7 +18877,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18025,7 +18954,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18101,7 +19030,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18177,7 +19106,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18258,7 +19187,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18331,7 +19260,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18406,7 +19335,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-11T04:54:40+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18484,7 +19413,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -18558,7 +19487,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -18636,7 +19565,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -18711,7 +19640,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18783,7 +19712,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -18854,7 +19783,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -18927,7 +19856,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -18997,7 +19926,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19070,7 +19999,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19140,7 +20069,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19214,7 +20143,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -19300,7 +20229,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -19370,7 +20299,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19446,7 +20375,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19517,7 +20446,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19593,7 +20522,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19665,7 +20594,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19735,7 +20664,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19808,7 +20737,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19884,7 +20813,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -19960,7 +20889,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20029,7 +20958,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20097,7 +21026,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20170,7 +21099,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20241,7 +21170,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20322,7 +21251,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -20397,7 +21326,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -20470,7 +21399,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -20545,7 +21474,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20622,7 +21551,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20700,7 +21629,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20770,7 +21699,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20837,7 +21766,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20911,7 +21840,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -20989,7 +21918,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21063,7 +21992,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21133,7 +22062,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21204,7 +22133,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21280,7 +22209,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21352,7 +22281,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21431,7 +22360,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21504,7 +22433,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21577,7 +22506,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21649,7 +22578,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21720,7 +22649,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21792,7 +22721,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21863,7 +22792,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -21937,7 +22866,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22006,7 +22935,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22074,7 +23003,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22147,7 +23076,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22219,7 +23148,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22297,7 +23226,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22365,7 +23294,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22452,7 +23381,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22522,7 +23451,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22590,7 +23519,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22664,7 +23593,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22744,7 +23673,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22816,7 +23745,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22896,7 +23825,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -22976,7 +23905,7 @@
     "limitations_zh": "摘要未说明真实流片、仿真精度、模型规模和对比系统配置；3D 集成、FeFET 成熟度及动态路由下的热设计成本仍需结合正文和硬件实现核验。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -23055,7 +23984,7 @@
     "limitations_zh": "当前元数据只说明将发布代码，尚未发现 Artifact；收益依赖具体硬件、模型和缩放策略，而且工作聚焦训练效率，不能等同于部署阶段的 FP8 推理收益。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -23126,7 +24055,7 @@
     "limitations_zh": "仅覆盖单一消费级 GPU、固定提示集和 2Hz 功耗采样；内部推理长度会混淆每提示能耗，结论尚不能直接外推到数据中心 GPU 或在线并发负载。",
     "reading_depth": "abstract",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -23199,7 +24128,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23278,7 +24207,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23350,7 +24279,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23426,7 +24355,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23443,7 +24372,7 @@
     "url": "https://arxiv.org/abs/2605.07725",
     "pdf_url": "https://arxiv.org/pdf/2605.07725",
     "published": "2026-08-04",
-    "updated": "2026-08-04",
+    "updated": "2026-08-19",
     "authors": [
       "Qiyong Zhong",
       "Mao Zheng",
@@ -23500,7 +24429,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23571,7 +24500,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23645,7 +24574,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23714,7 +24643,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23794,7 +24723,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23866,7 +24795,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -23950,7 +24879,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24033,7 +24962,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24108,7 +25037,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24185,7 +25114,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24259,7 +25188,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24338,7 +25267,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24412,7 +25341,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24481,7 +25410,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24556,7 +25485,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24626,7 +25555,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24695,7 +25624,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24765,7 +25694,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24836,7 +25765,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24909,7 +25838,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -24982,7 +25911,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25056,7 +25985,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25127,7 +26056,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25205,7 +26134,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25279,7 +26208,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25354,7 +26283,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25421,7 +26350,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25491,7 +26420,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25558,7 +26487,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25626,7 +26555,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25698,7 +26627,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25774,7 +26703,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25852,7 +26781,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -25929,7 +26858,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26002,7 +26931,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26076,7 +27005,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26149,7 +27078,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26231,7 +27160,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26304,7 +27233,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26380,7 +27309,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-06T05:33:34+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26456,7 +27385,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26522,7 +27451,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26595,7 +27524,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26672,7 +27601,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26741,7 +27670,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26815,7 +27744,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26886,7 +27815,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -26971,7 +27900,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27042,7 +27971,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27111,7 +28040,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27181,7 +28110,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27251,7 +28180,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27321,7 +28250,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27431,7 +28360,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27499,7 +28428,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27577,7 +28506,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27655,7 +28584,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27729,7 +28658,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27808,7 +28737,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27892,7 +28821,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -27968,7 +28897,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28051,7 +28980,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28132,7 +29061,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28204,7 +29133,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28278,7 +29207,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28359,7 +29288,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28437,7 +29366,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28514,7 +29443,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28591,7 +29520,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28665,7 +29594,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28748,7 +29677,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28825,7 +29754,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28903,7 +29832,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -28983,7 +29912,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29058,7 +29987,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29133,7 +30062,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29206,7 +30135,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29282,7 +30211,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29358,7 +30287,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29434,7 +30363,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29506,7 +30435,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29583,7 +30512,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29658,7 +30587,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T05:32:02+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29735,7 +30664,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29810,7 +30739,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [
       "2026-W32"
     ],
@@ -29888,7 +30817,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -29965,7 +30894,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30038,7 +30967,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30109,7 +31038,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30183,7 +31112,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30262,7 +31191,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30335,7 +31264,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30409,7 +31338,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30481,7 +31410,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30559,7 +31488,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30634,7 +31563,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30712,7 +31641,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30785,7 +31714,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-05T02:30:52+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {
@@ -30866,7 +31795,7 @@
     "limitations_zh": "",
     "reading_depth": "metadata",
     "first_seen": "2026-08-07T05:08:23+00:00",
-    "last_seen": "2026-08-18T04:45:47+00:00",
+    "last_seen": "2026-08-19T04:46:02+00:00",
     "featured_weeks": [],
     "source_records": [
       {

@@ -39,7 +39,7 @@ Vision Transformers require significant computational resources and memory bandw
 ## 元数据
 
 - 作者：Andy Li, Aiden Durrant, Milan Markovic, Georgios Leontidis
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **23** 篇。
+累计收录 **25** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [H$^{2}$MT: Semantic Hierarchy-Aware Hierarchical Memory Transformer](../../papers/arxiv-2605.24930/) | 2026-08-19 | 41 |
+| [MoNe: Modular Neural Memory for Efficient Long Context Inference](../../papers/arxiv-2608.17616/) | 2026-08-19 | 38 |
 | [NPU Offloading of a Frozen Visual Encoder for Robot Policy Training](../../papers/arxiv-2608.15002/) | 2026-08-18 | 51 |
 | [From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems](../../papers/arxiv-2608.15127/) | 2026-08-18 | 45 |
 | [Every Expert Counts: ExactMoE for Memory-Efficient W4A16 Inference](../../papers/arxiv-2608.15383/) | 2026-08-18 | 45 |

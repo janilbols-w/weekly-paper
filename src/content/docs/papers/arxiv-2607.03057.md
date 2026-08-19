@@ -39,7 +39,7 @@ The rapid growth in the parameter scale of large language models (LLMs) has crea
 ## 元数据
 
 - 作者：Zhuowen Liu, Longkun Hao, Shiyu Feng, Xiaowen Chang, Ruiqun Li, Changqun Li
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

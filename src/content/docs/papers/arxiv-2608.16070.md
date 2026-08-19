@@ -39,7 +39,7 @@ Reliable global ocean forecasting is critical for climate monitoring, marine nav
 ## 元数据
 
 - 作者：Wei Wu, Xiang Wang, Hongze Leng, Qingye Min, Junxing Zhu, Junqiang Song
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

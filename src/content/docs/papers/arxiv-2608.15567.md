@@ -39,7 +39,7 @@ Weight-only post-training quantization (PTQ) enables the deployment of large lan
 ## 元数据
 
 - 作者：Gunjun Lee, Sehwan Son, Younjoo Lee, Byungjun Kim, Jung Ho Ahn
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Modern LLM serving deployments must simultaneously satisfy heterogeneous service
 ## 元数据
 
 - 作者：Anders Vestrum, Arya Raeesi, Hanna Roed
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

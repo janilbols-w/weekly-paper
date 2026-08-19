@@ -39,7 +39,7 @@ Tool-integrated reasoning (TIR) is difficult to scale to small language models d
 ## 元数据
 
 - 作者：Qiyong Zhong, Mao Zheng, Mingyang Song, Xin Lin, Jie Sun, Houcheng Jiang, Xiang Wang, Junfeng Fang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-04；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/YoungZ365/SOD](https://github.com/YoungZ365/SOD)
 - 阅读深度：metadata

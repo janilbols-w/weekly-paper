@@ -39,7 +39,7 @@ Outliers have emerged as a fundamental bottleneck in preserving accuracy for low
 ## 元数据
 
 - 作者：Xiangyang Yin, Xingyu Liu, Tianhua Xia, Bo Bao, Vithursan Thangarasa, Valavan Manohararajah, Eric Sather, Sai Qian Zhang
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/SAI-Lab-NYU/CodeQuant](https://github.com/SAI-Lab-NYU/CodeQuant)
 - 阅读深度：metadata

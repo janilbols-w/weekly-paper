@@ -39,7 +39,7 @@ Real-world LLM deployments increasingly rely on runtime-injected prohibitions--e
 ## 元数据
 
 - 作者：Zihan Li, Feifei Li, Wenhui Que
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

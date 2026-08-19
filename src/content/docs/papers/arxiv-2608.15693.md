@@ -39,7 +39,7 @@ Running large AI models on resource-constrained edge devices requires model comp
 ## 元数据
 
 - 作者：Subhransu Das, Jiaming Cheng, Arnav Kumar, Sadia Afrose, Mingzhe Han, Michael Silagy, Shreya Palande, Brijesh Soni, Rajiv Ramnath
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Arnavvvkumar/deployment](https://github.com/Arnavvvkumar/deployment)
 - 阅读深度：metadata

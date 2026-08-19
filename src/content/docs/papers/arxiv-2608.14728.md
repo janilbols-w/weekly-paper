@@ -39,7 +39,7 @@ On-policy distillation (OPD) has emerged as an effective paradigm for transferri
 ## 元数据
 
 - 作者：Huipeng Huang, Hongxin Wei
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/HuipengHuang/TA-OPD](https://github.com/HuipengHuang/TA-OPD)
 - 阅读深度：metadata

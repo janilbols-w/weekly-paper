@@ -39,7 +39,7 @@ Attentio-FFN disaggregation (AFD) is an emerging architecture for LLM decoding t
 ## 元数据
 
 - 作者：Chendong Song, Meixuan Wang, Hang Zhou, Hong Liang, Yuan Lyu, Zixi Chen, Yuwei Fan, Zijie Zhou
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

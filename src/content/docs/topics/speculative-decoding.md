@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **17** 篇。
+累计收录 **18** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding](../../papers/arxiv-2607.08642/) | 2026-08-19 | 51 |
 | [CForce: Boosting Parallel Decoding for dLLMs via Consistency Forcing](../../papers/arxiv-2608.13925/) | 2026-08-17 | 44 |
 | [Accelerating Time Series Foundation Models with Speculative Decoding](../../papers/arxiv-2511.18191/) | 2026-08-13 | 43 |
 | [Ripple-Pivot Search: Active Parallel Decoding for Diffusion Large Language Models](../../papers/arxiv-2608.11742/) | 2026-08-12 | 48 |

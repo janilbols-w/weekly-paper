@@ -39,7 +39,7 @@ While binary quantization theoretically promises extreme compression and acceler
 ## 元数据
 
 - 作者：Qingyao Yang, Runming Yang, He Xiao, Wendong Xu, Junyu Chen, Haobo Liu, Chenchen Ding, Ruihan Hu, Yik-Chung Wu, Ngai Wong
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/nicyyyy/FluxBin](https://github.com/nicyyyy/FluxBin)
 - 阅读深度：metadata

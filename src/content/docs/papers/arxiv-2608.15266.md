@@ -39,7 +39,7 @@ Functional connectome analysis examines brain-region interactions to understand 
 ## 元数据
 
 - 作者：Sijing Wu, Dongyuan Li, Miaoting Huang, Weiwei Ye, Ying Zhang, Feng Xia, Renhe Jiang
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

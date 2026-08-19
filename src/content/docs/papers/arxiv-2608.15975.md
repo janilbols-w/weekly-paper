@@ -39,7 +39,7 @@ Labeling large text corpora with LLM teachers has become a practical route to tr
 ## 元数据
 
 - 作者：Ravi Satya Durga Prasad Yenugula
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

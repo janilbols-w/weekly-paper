@@ -5,10 +5,13 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **120** 篇。
+累计收录 **123** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Data-Efficient Analytical Prior Machine Learning Framework for Sound Reduction Frequency Prediction in Helmholtz Resonators](../../papers/arxiv-2608.16873/) | 2026-08-19 | 43 |
+| [Self-Distillation as a Performance Recovery Mechanism for LLMs: Counteracting Compression and Catastrophic Forgetting](../../papers/arxiv-2604.15794/) | 2026-08-19 | 41 |
+| [Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?](../../papers/arxiv-2603.24472/) | 2026-08-19 | 38 |
 | [A Scalable Pipeline for LLM-Teacher Distillation Labeling: Work-Stealing Job Scheduling and Memory-Aware GPU Concurrency](../../papers/arxiv-2608.15975/) | 2026-08-18 | 55 |
 | [RT-Lynx: Putting GEMM Sparsity in the Right Place for Diffusion Models](../../papers/arxiv-2605.26632/) | 2026-08-18 | 50 |
 | [Tail-Aware Top-$k$ On-Policy Distillation](../../papers/arxiv-2608.14728/) | 2026-08-18 | 49 |

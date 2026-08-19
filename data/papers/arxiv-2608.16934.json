@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2608.16934",
+  "title": "SeqFeed: Improving Agentic RTL Code Generation with Sequential Behavior Feedback",
+  "abstract": "RTL code generation is a critical stage in hardware design, and the emergence of agentic systems offers new opportunities to automate this process. To generate correct RTL code, agents must understand sequential behavior, including how signals evolve and propagate over multiple clock cycles. However, effectively conveying such temporal information to agents remains a significant challenge. RTL code does not expose cycle-level signal behavior for a specific execution, whereas full simulation waveforms are too voluminous and noisy for effective LLM analysis. To address these limitations, we study how human engineers reason about sequential behavior and identify three requirements for effective feedback: it should be event-addressable, dependency-traceable, and iteratively-queryable. Guided by these requirements, we propose \\textit{SeqFeed}, which comprises two complementary mechanisms: (1) \\textit{SeQuery}, an SQL-like waveform query language that enables agents to anchor queries to semantic events and sample signal values at relative time points; and (2) \\textit{SeGraph}, a dependency graph that tracks signal propagation across clock cycles. Experimental results across multiple LLMs demonstrate the effectiveness of SeqFeed in improving pass rates. SeQuery and SeGraph are each effective independently and provide complementary benefits when used together.",
+  "url": "https://arxiv.org/abs/2608.16934",
+  "pdf_url": "https://arxiv.org/pdf/2608.16934",
+  "published": "2026-08-19",
+  "updated": "2026-08-19",
+  "authors": [
+    "Yuxin Du",
+    "Juxin Niu",
+    "Tao Hu",
+    "Xi Wang",
+    "Zhe Jiang",
+    "Nan Guan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "RTL code generation is a critical stage in hardware design, and the emergence of agentic systems offers new opportunities to automate this process.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-19T04:46:02+00:00",
+  "last_seen": "2026-08-19T04:46:02+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.16934",
+      "url": "https://arxiv.org/abs/2608.16934"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Search-augmented language agents should retrieve external information only when 
 ## 元数据
 
 - 作者：Cheng Ruoxi, Ma Haoxuan, Zhang Hongyi, Zhang Junming, Duan Ranjie, Xia Qiaolin, Wang Hao, Lu Yu, Shi Haibo, Ma Xingjun
-- 发布：2026-08-11；更新：2026-08-11
+- 发布：2026-08-11；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Rosy0912/Search-G1](https://github.com/Rosy0912/Search-G1)
 - 阅读深度：metadata

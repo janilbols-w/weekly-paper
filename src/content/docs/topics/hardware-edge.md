@@ -5,10 +5,13 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **18** 篇。
+累计收录 **21** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Automatically Generating ML Compiler Backends from Tensor Accelerator ISA Descriptions](../../papers/arxiv-2510.09932/) | 2026-08-19 | 50 |
+| [DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models](../../papers/arxiv-2608.16953/) | 2026-08-19 | 44 |
+| [ESR-HGNN: Eliminating Semantic Redundancy for Efficient Mini-batch HGNN Inference](../../papers/arxiv-2608.17865/) | 2026-08-19 | 42 |
 | [HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving](../../papers/arxiv-2608.14575/) | 2026-08-18 | 56 |
 | [RAPID-LLM: Resilience-Aware Performance analysis of Infrastructure for Distributed LLM Training and Inference](../../papers/arxiv-2512.19606/) | 2026-08-18 | 40 |
 | [BCIJelly: An integrated ecosystem for brain-computer interface research](../../papers/arxiv-2608.13576/) | 2026-08-17 | 38 |

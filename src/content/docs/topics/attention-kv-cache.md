@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **37** 篇。
+累计收录 **38** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State](../../papers/arxiv-2608.17826/) | 2026-08-19 | 41 |
 | [Q-First: Attention and Feed-Forward Concurrency at the Smallest Change to the Block](../../papers/arxiv-2608.15473/) | 2026-08-18 | 42 |
 | [Discovering KV Cache Eviction Policies via LLM-Guided Program Evolution](../../papers/arxiv-2608.14555/) | 2026-08-18 | 41 |
 | [Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN](../../papers/arxiv-2608.16477/) | 2026-08-18 | 40 |

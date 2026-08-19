@@ -39,7 +39,7 @@ Vision-Language Models (VLMs) have demonstrated strong performance in multimodal
 ## 元数据
 
 - 作者：Pengyu Wang, Baochen Xiong, Xiaoshan Yang, Yifan Xu, Zhang Qimeng, Haifeng Chen, Changsheng Xu
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/wangpengyu2004/UniFed-VLM](https://github.com/wangpengyu2004/UniFed-VLM)
 - 阅读深度：metadata

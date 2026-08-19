@@ -39,7 +39,7 @@ As large language models (LLMs) grow in popularity for their diverse capabilitie
 ## 元数据
 
 - 作者：Ozgur Guldogan, Jackson Kunde, Kangwook Lee, Ramtin Pedarsani
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Model families are typically trained size by size, each from scratch. Can a pret
 ## 元数据
 
 - 作者：Ravi Satya Durga Prasad Yenugula
-- 发布：2026-08-12；更新：2026-08-18
+- 发布：2026-08-12；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

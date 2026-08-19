@@ -39,7 +39,7 @@ Container-granularity scheduling leaves abundant short-lived idle slices within 
 ## 元数据
 
 - 作者：Weinan Liu, Zeyuan Ding, Dian Ding, Chengcheng Wan, Lu Tang, Guangtao Xue, Jiwu Shu, Yiming Zhang
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

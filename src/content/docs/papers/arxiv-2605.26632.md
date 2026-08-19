@@ -39,7 +39,7 @@ Diffusion Transformers (DiT) achieve strong performance in image generation but 
 ## 元数据
 
 - 作者：Xing Cong, Hanlin Tang, Kan Liu, Tao Lan, Lin Qu, Chenhao Xie
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

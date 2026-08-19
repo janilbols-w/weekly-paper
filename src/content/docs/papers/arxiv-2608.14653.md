@@ -39,7 +39,7 @@ Prediction uncertainty is a widely adopted metric for quantifying model confiden
 ## 元数据
 
 - 作者：Xianzong Wu, Xiaohong Li, Yuejun Guo, Xinyang Liu, Tianlin Li, Junjie Wang, Qiang Hu
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
