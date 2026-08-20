@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **25** 篇。
+累计收录 **26** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD](../../papers/arxiv-2607.20145/) | 2026-08-20 | 47 |
 | [DepTGL: A Parallel Framework for Memory-based TGNN Training with Adaptive Temporal Data Dependency Management](../../papers/arxiv-2608.16305/) | 2026-08-18 | 45 |
 | [Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification](../../papers/arxiv-2608.14929/) | 2026-08-18 | 41 |
 | [Spectral Rank Certification for Foundation Model Adapters](../../papers/arxiv-2608.15351/) | 2026-08-18 | 39 |

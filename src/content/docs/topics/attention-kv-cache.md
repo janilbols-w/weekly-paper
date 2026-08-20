@@ -5,12 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **38** 篇。
+累计收录 **40** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems](../../papers/arxiv-2607.29076/) | 2026-08-20 | 49 |
+| [Fractional Decay KV-Cache: Ownership-Aware Memory Management for Improved Inference Relevancy in Dialog Systems](../../papers/arxiv-2608.18098/) | 2026-08-20 | 47 |
 | [Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State](../../papers/arxiv-2608.17826/) | 2026-08-19 | 41 |
-| [Q-First: Attention and Feed-Forward Concurrency at the Smallest Change to the Block](../../papers/arxiv-2608.15473/) | 2026-08-18 | 42 |
+| [Q-First: Most of Attention Needs Only the Query in Disaggregated LLM Decoding](../../papers/arxiv-2608.15473/) | 2026-08-18 | 42 |
 | [Discovering KV Cache Eviction Policies via LLM-Guided Program Evolution](../../papers/arxiv-2608.14555/) | 2026-08-18 | 41 |
 | [Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN](../../papers/arxiv-2608.16477/) | 2026-08-18 | 40 |
 | [LOCAL: Enabling Learning On-device Contiguously for Agent LLMs](../../papers/arxiv-2608.15241/) | 2026-08-18 | 38 |

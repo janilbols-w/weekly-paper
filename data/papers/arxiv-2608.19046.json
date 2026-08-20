@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2608.19046",
+  "title": "APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference",
+  "abstract": "Spiking Neural Networks (SNNs) have emerged as an energy-efficient alternative to Artificial Neural Networks (ANNs), leveraging sparse accumulate operations in the place of power-hungry multiply-and-accumulate operations. ANN-SNN conversion is a widely adopted approach to realize deep SNNs with accuracy comparable to that of ANNs. The Quantization-Clip-Floor-Shift (QCFS) activation minimizes conversion error, yet requires a large number of inference timesteps to match the source ANN accuracy on real-world vision datasets. PASCAL addresses this by proposing the Precise ANN-SNN Conversion Integrate-and-Fire (PASC-IF) neuron, which guarantees mathematical equivalence between the converted SNN and the source ANN, thereby achieving ANN-equivalent accuracy at significantly reduced timesteps. Despite this algorithmic advancement, the hardware implications of deploying the PASC-IF neuron remain unexplored. In this work, we present APEX, a dual-sparsity SNN inference accelerator that integrates the PASC-IF neuron into the LoAS hardware framework. The three-stage PASC-IF datapath is realized as a fully combinational circuit with no additional latency cost. APEX exploits dual sparsity in both input spikes and weights through a fully temporal-parallel dataflow, enabling efficient sparse computation and reduced memory traffic. Across all evaluated models, the PASC-IF neuron on average achieves up to 3% higher accuracy than the standard IF neuron, with a power overhead of only 1.3%-5.4%, an area overhead of 2.1%-2.7%, and 40% energy reduction for best accuracy configurations.",
+  "url": "https://arxiv.org/abs/2608.19046",
+  "pdf_url": "https://arxiv.org/pdf/2608.19046",
+  "published": "2026-08-20",
+  "updated": "2026-08-20",
+  "authors": [
+    "Devgokul Bawa Venkatesh",
+    "Sreeram Radhakrishnan",
+    "Rajshekhar Rakshit",
+    "Gopalakrishnan Srinivasan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [
+    "hardware-edge"
+  ],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Spiking Neural Networks (SNNs) have emerged as an energy-efficient alternative to Artificial Neural Networks (ANNs), leveraging sparse accumulate operations in the place of power-hungry multiply-and-accumulate operations.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-20T04:46:29+00:00",
+  "last_seen": "2026-08-20T04:46:29+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.19046",
+      "url": "https://arxiv.org/abs/2608.19046"
+    }
+  ]
+}

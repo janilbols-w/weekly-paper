@@ -5,10 +5,12 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **28** 篇。
+累计收录 **30** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TokenPowerSandbox: Evidence-Gated CPU-First Screening for Energy-Aware LLM Serving](../../papers/arxiv-2608.18149/) | 2026-08-20 | 47 |
+| [rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation](../../papers/arxiv-2608.18952/) | 2026-08-20 | 41 |
 | [Beyond Binary Priorities: Multi-Tier SLA Scheduling for Large Language Model Serving](../../papers/arxiv-2608.16336/) | 2026-08-18 | 53 |
 | [Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving](../../papers/arxiv-2608.15762/) | 2026-08-18 | 50 |
 | [E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments](../../papers/arxiv-2606.03770/) | 2026-08-18 | 49 |

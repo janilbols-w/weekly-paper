@@ -39,7 +39,7 @@ Large Language Models (LLMs) have achieved remarkable success, underpinning dive
 ## 元数据
 
 - 作者：Chi Liu, Xin Chen, Xu Zhou, Fangbo Tu, Srinivasan Manoharan
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

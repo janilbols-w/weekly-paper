@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **55** 篇。
+累计收录 **59** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](../../papers/arxiv-2608.18578/) | 2026-08-20 | 57 |
+| [Efficient INT8 Inference of Small NLP Models on Server CPUs with PyTorch Native Stack](../../papers/arxiv-2608.18182/) | 2026-08-20 | 55 |
+| [FlashAttention for Scalable Vector Architectures](../../papers/arxiv-2608.18656/) | 2026-08-20 | 47 |
+| [GQ-FSL: Green Quantized Federated Split Learning Framework for Wireless Edge Networks](../../papers/arxiv-2607.29659/) | 2026-08-20 | 45 |
 | [Anatomy of a Quantized Agent: VRAM Stability and Forecasting in Code-Synthesis Agentic Workloads](../../papers/arxiv-2608.15117/) | 2026-08-18 | 47 |
 | [SchurQuant: Groupwise Discrete Optimization for Layer-Wise LLM Quantization](../../papers/arxiv-2608.15567/) | 2026-08-18 | 45 |
 | [CodeQuant: Unified Clustering and Quantization for Enhanced Outlier Smoothing in Low-Precision Mixture-of-Experts](../../papers/arxiv-2604.10496/) | 2026-08-18 | 43 |

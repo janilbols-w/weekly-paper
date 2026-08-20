@@ -5,10 +5,13 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **123** 篇。
+累计收录 **126** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models](../../papers/arxiv-2608.18849/) | 2026-08-20 | 52 |
+| [APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference](../../papers/arxiv-2608.19046/) | 2026-08-20 | 49 |
+| [DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents](../../papers/arxiv-2608.18524/) | 2026-08-20 | 46 |
 | [A Data-Efficient Analytical Prior Machine Learning Framework for Sound Reduction Frequency Prediction in Helmholtz Resonators](../../papers/arxiv-2608.16873/) | 2026-08-19 | 43 |
 | [Self-Distillation as a Performance Recovery Mechanism for LLMs: Counteracting Compression and Catastrophic Forgetting](../../papers/arxiv-2604.15794/) | 2026-08-19 | 41 |
 | [Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?](../../papers/arxiv-2603.24472/) | 2026-08-19 | 38 |

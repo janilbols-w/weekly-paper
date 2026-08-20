@@ -39,7 +39,7 @@ Language model tokenizers are typically selected with minimal evaluation, despit
 ## 元数据
 
 - 作者：Clara Meister
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

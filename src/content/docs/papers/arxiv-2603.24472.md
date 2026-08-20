@@ -39,7 +39,7 @@ Self-distillation has emerged as an effective post-training paradigm for LLMs, o
 ## 元数据
 
 - 作者：Jeonghye Kim, Xufang Luo, Minbeom Kim, Sangmook Lee, Dohyung Kim, Jiwon Jeon, Dongsheng Li, Yuqing Yang
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

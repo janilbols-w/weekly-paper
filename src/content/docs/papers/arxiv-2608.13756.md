@@ -39,7 +39,7 @@ Two GPU kernels implementing the same scaled INT8 GEMM interface are usually tre
 ## 元数据
 
 - 作者：Teng-Ruei Chen
-- 发布：2026-08-17；更新：2026-08-17
+- 发布：2026-08-17；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

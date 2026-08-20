@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2607.29076",
+  "title": "Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems",
+  "abstract": "Analog compute-in-memory (CIM) arrays have emerged as a promising substrate for energy-efficient LLM inference, particularly for weight-stationary computations in linear layers. However, extending analog CIM to attention mechanisms introduces a fundamental challenge: KV cache operations demand repeated in-situ weight updates, and the resulting mismatch with the weight-stationary paradigm exposes dynamic computations to significant hardware noise, a critical problem that remains largely unexplored. In this paper, we present the first systematic study of dynamic attention computation on analog CIM arrays, revealing that initial and recent tokens exhibit disproportionate vulnerability to hardware noise. Motivated by this token-level insight, we propose a hierarchical token protection strategy that keeps sink tokens and a sliding recent-token window on a higher-precision digital path while processing the bulk KV cache on analog CIM. A co-designed scheduler combines analog programming, ownership transition, and bulk-MVM tile formation to bound digital overhead. Evaluations on nine LLMs show that our approach lowers average perplexity under analog noise from 33.91 to 11.95, close to the clean baseline of 11.06, while improving dynamic-KV programming-row utilization from 23.1\\% to 91.2\\%.",
+  "url": "https://arxiv.org/abs/2607.29076",
+  "pdf_url": "https://arxiv.org/pdf/2607.29076",
+  "published": "2026-08-20",
+  "updated": "2026-08-20",
+  "authors": [
+    "Yuannuo Feng",
+    "Wenyong Zhou",
+    "Yuang Ma",
+    "Yizhe Chen",
+    "Wenshuai Yao",
+    "Yuxin Xie",
+    "Ngai Wong",
+    "Wang Kang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 8,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Analog compute-in-memory (CIM) arrays have emerged as a promising substrate for energy-efficient LLM inference, particularly for weight-stationary computations in linear layers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-20T04:46:29+00:00",
+  "last_seen": "2026-08-20T04:46:29+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.29076",
+      "url": "https://arxiv.org/abs/2607.29076"
+    }
+  ]
+}

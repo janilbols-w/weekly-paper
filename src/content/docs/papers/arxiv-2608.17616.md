@@ -39,7 +39,7 @@ We present MoNe, a lightweight modular neural memory that attaches to any frozen
 ## 元数据
 
 - 作者：Wonguk Cho, Kyubyung Chae, Tribhuvanesh Orekondy, Sunghyun Park, Hyoungwoo Park, Jeongho Kim, Arash Behboodi, Kyuwoong Hwang, Sungrack Yun
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
