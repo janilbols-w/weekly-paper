@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2608.19296",
+  "title": "HyperCut: Fast Inter-Layer Scheduling via Directed Hypergraph and Early Filtering",
+  "abstract": "As deep neural networks (DNNs) continue to scale, inter-layer scheduling, which orchestrates the spatial allocation of compute resources and the temporal execution order across layers, has become a decisive factor in sustaining high utilization and energy efficiency on tiled accelerators. However, existing inter-layer schedulers defer cost feedback until a complete fine-grained intra-layer scheduling has been resolved. The resulting decoupled flow repeatedly explores sub-optimal or even infeasible inter-layer schedules, and the absence of early pruning during the inter-layer phase remains a critical bottleneck for design-space exploration (DSE) in DNN compilers. Our key observation is that the cost of an intra-layer scheduling can be tightly upper-bounded once the inter-layer cut fixes the sub-mesh shape, which lets us cost every inter-layer candidate without solving the intra-layer problem. Hence, we propose a hierarchical partitioning-and-mapping framework, HyperCut, that enables early filtering of inter-layer schedules based on hypergraph partitioning. Based on the directed hypergraph (DHG) abstraction of DNN, we introduce a unified representation, State, that jointly encodes the DHG partition, tile mesh allocation and tensor batch splitting. Thereby, partitioning and mapping are coupled into a union optimization object. For a DNN with N layers, the resulting theoretical design space is bounded by O(N), compared with O(9.899^N) for the state-of-the-art open-source scheduler SET. Across 10 evaluated cases, HyperCut achieves 2.0x performance improvement and 80.47% exploration time reduction over the SET baseline, measured by geometric mean.",
+  "url": "https://arxiv.org/abs/2608.19296",
+  "pdf_url": "https://arxiv.org/pdf/2608.19296",
+  "published": "2026-08-19",
+  "updated": "2026-08-21",
+  "authors": [
+    "Ziang Wei",
+    "Zirui Xu",
+    "Sufeng Guo",
+    "Chuanchao Gao",
+    "Yiyang Gao",
+    "Arvind Easwaran",
+    "Yuxiang Fu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "8 pages, 10 figures, 1 table",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As deep neural networks (DNNs) continue to scale, inter-layer scheduling, which orchestrates the spatial allocation of compute resources and the temporal execution order across layers, has become a decisive factor in sustaining high utilization and energy efficiency on tiled accelerators.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-21T04:47:28+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.19296v1",
+      "url": "http://arxiv.org/abs/2608.19296v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2608.19296",
+      "url": "https://arxiv.org/abs/2608.19296"
+    }
+  ]
+}

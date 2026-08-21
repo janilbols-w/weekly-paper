@@ -39,7 +39,7 @@ Agentic applications are shifting AI serving from isolated model inference to lo
 ## 元数据
 
 - 作者：Chaokun Chang, Yukun Zhou, Kaihua Fu, Dakai An, Tianyu Feng, Hanfeng Lu, Sheng Yao, Pu Guo, Yinghao Yu, Yizhou Shan, Bo Li, Binhang Yuan, Wei Wang
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-15；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

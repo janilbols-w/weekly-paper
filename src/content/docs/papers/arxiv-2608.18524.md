@@ -39,7 +39,7 @@ Equipping Large Language Models (LLMs) with multi-turn tool-calling capabilities
 ## 元数据
 
 - 作者：Hangrui Xu, Jiarui Wang, Yang Yang, Chuanbo Zhu, Fangda Chen, Ziqi Wu, Jingming Cai, Yan Song
-- 发布：2026-08-20；更新：2026-08-20
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

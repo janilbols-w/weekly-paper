@@ -39,7 +39,7 @@ Small NLP models, especially BERT-family encoders, remain important in industria
 ## 元数据
 
 - 作者：Weiwen Xia, Yuxin Cui, E Cao
-- 发布：2026-08-20；更新：2026-08-20
+- 发布：2026-08-18；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

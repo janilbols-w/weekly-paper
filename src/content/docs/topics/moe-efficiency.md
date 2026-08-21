@@ -5,12 +5,14 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **8** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Towards Efficient Pareto Set Approximation via Mixture of Experts Based Model Fusion](../../papers/arxiv-2406.09770/) | 2026-08-21 | 45 |
 | [TiMi: Empower Time Series Transformers with Multimodal Mixture of Experts](../../papers/arxiv-2602.21693/) | 2026-08-20 | 43 |
 | [DeaMoE: Efficient MoE Structure for Fast Small-Batch Decoding](../../papers/arxiv-2608.14385/) | 2026-08-17 | 44 |
+| [A Declarative-Procedural Perspective on Expert Routing in Bilingual Mixture-of-Experts Language Models](../../papers/arxiv-2608.15102/) | 2026-08-15 | 44 |
 | [OrderMoE: An expert similarity driven distributed edge MoE inference](../../papers/arxiv-2607.17154/) | 2026-08-13 | 45 |
 | [Image classification via a quantum-inspired strategy involving a mixture of experts](../../papers/arxiv-2607.07754/) | 2026-08-05 | 41 |
 | [ThAME: 3D Memory-Enabled Heterogeneous Accelerator for LLM Mixture of Experts](../../papers/arxiv-2607.17074/) | 2026-08-04 | 54 |

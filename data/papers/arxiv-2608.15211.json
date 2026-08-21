@@ -4,7 +4,7 @@
   "abstract": "Training high-resolution AI-based Earth forecasting models is memory-intensive. Window-based Swin Transformers reduce the quadratic cost of global attention, but existing distributed systems such as AERIS primarily target pixel-level models and do not jointly support convolutional sampling modules and shifted-window execution. Long-lead rollout finetuning further increases activation memory. To address these challenges, we present TERRA, a hierarchical parallel training framework for high-resolution Earth forecasting. TERRA introduces Sampling-Aware Window, Sequence, and Tensor Parallelism (SAWSTP), which preserves spatially contiguous layouts for sampling modules and routes tokens into topology-aware ragged window layouts for Transformer execution. For long-lead finetuning, Memory Orchestration (MO) provides rollout-aware checkpoint planning and combines input buffering with budget-constrained activation offloading. Experiments on the $1/12^\\circ$ GLORYS-based Wenhai workload show that TERRA supports models with up to 11.4B parameters on 96 H200 GPUs and sustains up to $39.76$ PFLOPS, achieving $65.0\\%$ strong-scaling and $94.1\\%$ weak-scaling efficiency. Compared with checkpoint-only policies, MO further reduces peak allocated GPU memory by $32.2\\%$--$51.8\\%$ with at most $20.0\\%$ step-time overhead, which makes finetuning with smaller patch sizes and longer rollouts feasible for improved forecasting accuracy.",
   "url": "https://arxiv.org/abs/2608.15211",
   "pdf_url": "https://arxiv.org/pdf/2608.15211",
-  "published": "2026-08-18",
+  "published": "2026-08-15",
   "updated": "2026-08-18",
   "authors": [
     "Ruohan Wu",
@@ -26,8 +26,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "15 pages, 16 figures, 6 tables, and 2 algorithms. Submitted to IEEE Transactions on Parallel and Distributed Systems (TPDS). Code is available at https://github.com/ruohan12345/TERRA",
+  "code_url": "https://github.com/ruohan12345/TERRA",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -44,19 +44,19 @@
     "gpu memory",
     "offloading"
   ],
-  "score": 42,
+  "score": 47,
   "score_components": {
     "relevance": 14,
     "novelty": 5,
     "rigor": 9,
     "practical_impact": 9,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: gpu memory, offloading",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Training high-resolution AI-based Earth forecasting models is memory-intensive.",
   "summary_zh": "",
@@ -64,9 +64,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-18T04:45:47+00:00",
-  "last_seen": "2026-08-20T04:46:29+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.15211v1",
+      "url": "http://arxiv.org/abs/2608.15211v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.15211",

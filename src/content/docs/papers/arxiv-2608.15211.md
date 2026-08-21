@@ -3,7 +3,7 @@ title: "TERRA: A Hierarchical Parallel Training and Memory Orchestration Framewo
 description: "Training high-resolution AI-based Earth forecasting models is memory-intensive."
 ---
 
-**评分：42/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
+**评分：47/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
 
 [论文原文](https://arxiv.org/abs/2608.15211) · [PDF](https://arxiv.org/pdf/2608.15211)
 
@@ -27,19 +27,19 @@ Training high-resolution AI-based Earth forecasting models is memory-intensive. 
 | novelty | 5 |
 | rigor | 9 |
 | practical impact | 9 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: gpu memory, offloading
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Ruohan Wu, Ziqi Zhu, Yang Zhao, Jiarui Tang, Yingzhe Cui, Junshi Chen, Zhao Jing, Jun Shi, Hong An
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-15；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/ruohan12345/TERRA](https://github.com/ruohan12345/TERRA)
 - 阅读深度：metadata

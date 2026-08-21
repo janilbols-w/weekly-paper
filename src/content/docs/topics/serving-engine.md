@@ -5,22 +5,27 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **30** 篇。
+累计收录 **35** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation](../../papers/arxiv-2608.19628/) | 2026-08-21 | 44 |
+| [FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving](../../papers/arxiv-2608.19758/) | 2026-08-20 | 51 |
 | [TokenPowerSandbox: Evidence-Gated CPU-First Screening for Energy-Aware LLM Serving](../../papers/arxiv-2608.18149/) | 2026-08-20 | 47 |
-| [rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation](../../papers/arxiv-2608.18952/) | 2026-08-20 | 41 |
-| [Beyond Binary Priorities: Multi-Tier SLA Scheduling for Large Language Model Serving](../../papers/arxiv-2608.16336/) | 2026-08-18 | 53 |
-| [Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving](../../papers/arxiv-2608.15762/) | 2026-08-18 | 50 |
+| [CacheRoute: Planned Prefix-Affinity Routing for Large-Scale LLM Serving](../../papers/arxiv-2608.19677/) | 2026-08-20 | 45 |
+| [When to Retrain: An Empirical Study of Retraining Policies for Streaming ML Under Concept Drift, Budget, and Latency Constraints](../../papers/arxiv-2608.19488/) | 2026-08-19 | 50 |
+| [rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation](../../papers/arxiv-2608.18952/) | 2026-08-19 | 41 |
+| [Flama: a Python framework for development and deployment of production-ready APIs, machine learning, and LLM services](../../papers/arxiv-2608.18733/) | 2026-08-19 | 39 |
 | [E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments](../../papers/arxiv-2606.03770/) | 2026-08-18 | 49 |
-| [P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving](../../papers/arxiv-2608.15171/) | 2026-08-18 | 47 |
 | [ReMP: Low-Downtime Runtime Model-Parallelism Reconfiguration for LLM Serving](../../papers/arxiv-2606.18741/) | 2026-08-18 | 44 |
 | [Not All Neighbors Matter: Understanding the Impact of Graph Sparsification on GNN Pipelines](../../papers/arxiv-2603.06952/) | 2026-08-18 | 44 |
 | [Analytical Provisioning for Attention-FFN Disaggregated LLM Serving under Stochastic Workloads](../../papers/arxiv-2601.21351/) | 2026-08-18 | 42 |
+| [Beyond Binary Priorities: Multi-Tier SLA Scheduling for Large Language Model Serving](../../papers/arxiv-2608.16336/) | 2026-08-17 | 53 |
 | [Kalypso: Relational LLM Serving](../../papers/arxiv-2607.23815/) | 2026-08-17 | 51 |
 | [MoE Expert Execution in Disaggregated LLM Serving with a High-Bandwidth ReRAM Near-Memory Architecture](../../papers/arxiv-2608.13962/) | 2026-08-17 | 45 |
 | [RL-Index: Reinforcement Learning for Retrieval Index Reasoning](../../papers/arxiv-2606.16316/) | 2026-08-17 | 39 |
+| [Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving](../../papers/arxiv-2608.15762/) | 2026-08-16 | 50 |
+| [P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving](../../papers/arxiv-2608.15171/) | 2026-08-15 | 47 |
 | [Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 39 |
 | [Potential Applications of HBF in LLM Serving Systems](../../papers/arxiv-2608.13127/) | 2026-08-13 | 41 |
 | [Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling](../../papers/arxiv-2508.03611/) | 2026-08-12 | 46 |

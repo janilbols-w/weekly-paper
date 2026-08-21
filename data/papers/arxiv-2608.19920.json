@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2608.19920",
+  "title": "Learning how to Forget: Fine-tuning for Long-Context Sparse Attention",
+  "abstract": "A lot of prior work addressed key-value (KV) cache selection and compression by sparse attention to enable long-context inference for transformer language models without excessive hardware budgets. We provide a new method for fine-tuning models with sparse attention. It works for any KV cache policy, runs on a moderate hardware budget (e.g., a single Nvidia A100 GPU with 40 GB RAM), and allows the model to co-adapt with the policy, often outperforming models trained with exact attention (sequence parallelism). We also provide an efficient implementation of H2O sparse attention (the leading policy in our experiments) with dedicated scaled dot product attention kernel support. KeysAndValues (https://github.com/awslabs/keys_values), a new open source library for long-context inference and fine-tuning, provides easy-to-use and performant code for all methods discussed here.",
+  "url": "https://arxiv.org/abs/2608.19920",
+  "pdf_url": "https://arxiv.org/pdf/2608.19920",
+  "published": "2026-08-20",
+  "updated": "2026-08-21",
+  "authors": [
+    "Matthias Seeger",
+    "Zeyu Zhang",
+    "Vihang Patil",
+    "Konstantinos Benidis",
+    "Sebastian Schelter"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "39 pages, no figures",
+  "code_url": "https://github.com/awslabs/keys_values",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "attention kernel",
+    "kv cache"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 8,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: attention kernel, kv cache",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "A lot of prior work addressed key-value (KV) cache selection and compression by sparse attention to enable long-context inference for transformer language models without excessive hardware budgets.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-21T04:47:28+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.19920v1",
+      "url": "http://arxiv.org/abs/2608.19920v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2608.19920",
+      "url": "https://arxiv.org/abs/2608.19920"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2608.19662",
+  "title": "ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents",
+  "abstract": "Agentic language models repeatedly encode tool and skill schemas that recur across requests in different combinations and orders, preventing standard prefix caching from reusing their key--value (KV) states. We introduce \\textbf{ReCache}, a framework for independently caching resource representations while reducing their inference-time computational and memory overhead. Resource-wise attention removes cross-resource interactions and assigns resource-local positions, producing composition-invariant KV blocks. ReCache then restricts resource visibility to contribution-selected layer--KV-head-group routes and retains only invocation-critical fields through structural and semantic pruning. We evaluate ReCache on a benchmark assembled from seven public tool- and skill-use datasets, including resource-disjoint tests. Resource-wise attention matches dense invocation performance (82.3\\% versus 82.4\\% Inv-F1) while providing a 3.655$\\times$ time-to-first-token speedup. The complete framework reduces allocated KV-tensor memory by 92.43\\% and accelerates attention by 1.423$\\times$. These results show that separating reusable schema encoding from selective resource access substantially reduces agentic inference costs with limited effectiveness loss. The code is available at https://github.com/EIT-NLP/ReCache.",
+  "url": "https://arxiv.org/abs/2608.19662",
+  "pdf_url": "https://arxiv.org/pdf/2608.19662",
+  "published": "2026-08-20",
+  "updated": "2026-08-21",
+  "authors": [
+    "Yichu Fang",
+    "Sitong Wei",
+    "Haozhe Hu",
+    "Xiaoyu Shen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "17 pages, 4 figures",
+  "code_url": "https://github.com/EIT-NLP/ReCache",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache",
+    "prefix caching"
+  ],
+  "score": 57,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, prefix caching",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Agentic language models repeatedly encode tool and skill schemas that recur across requests in different combinations and orders, preventing standard prefix caching from reusing their key--value (KV) states.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-21T04:47:28+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
+  "featured_weeks": [
+    "2026-W34"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.19662v1",
+      "url": "http://arxiv.org/abs/2608.19662v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2608.19662",
+      "url": "https://arxiv.org/abs/2608.19662"
+    }
+  ]
+}

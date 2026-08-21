@@ -38,8 +38,8 @@ Inference with transformer models on CPUs is increasingly important, especially 
 
 ## 元数据
 
-- 作者：Sonia Rani Gupta, Nikela Papadopoulou, Miquel Peric\`as
-- 发布：2026-08-20；更新：2026-08-20
+- 作者：Sonia Rani Gupta, Nikela Papadopoulou, Miquel Pericàs
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

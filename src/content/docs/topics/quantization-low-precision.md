@@ -5,22 +5,24 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **59** 篇。
+累计收录 **61** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](../../papers/arxiv-2608.18578/) | 2026-08-20 | 57 |
-| [Efficient INT8 Inference of Small NLP Models on Server CPUs with PyTorch Native Stack](../../papers/arxiv-2608.18182/) | 2026-08-20 | 55 |
-| [FlashAttention for Scalable Vector Architectures](../../papers/arxiv-2608.18656/) | 2026-08-20 | 47 |
+| [RequestRouter: Request-Boundary Routing for Efficient Single-GPU LLM Inference](../../papers/arxiv-2605.23057/) | 2026-08-21 | 53 |
 | [GQ-FSL: Green Quantized Federated Split Learning Framework for Wireless Edge Networks](../../papers/arxiv-2607.29659/) | 2026-08-20 | 45 |
-| [Anatomy of a Quantized Agent: VRAM Stability and Forecasting in Code-Synthesis Agentic Workloads](../../papers/arxiv-2608.15117/) | 2026-08-18 | 47 |
-| [SchurQuant: Groupwise Discrete Optimization for Layer-Wise LLM Quantization](../../papers/arxiv-2608.15567/) | 2026-08-18 | 45 |
+| [A Resource-Efficient CNN-Based EEG Auditory Attention Decoding ASIC](../../papers/arxiv-2608.20198/) | 2026-08-20 | 40 |
+| [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](../../papers/arxiv-2608.18578/) | 2026-08-19 | 57 |
+| [FlashAttention for Scalable Vector Architectures](../../papers/arxiv-2608.18656/) | 2026-08-19 | 47 |
+| [Efficient INT8 Inference of Small NLP Models on Server CPUs with PyTorch Native Stack](../../papers/arxiv-2608.18182/) | 2026-08-18 | 55 |
 | [CodeQuant: Unified Clustering and Quantization for Enhanced Outlier Smoothing in Low-Precision Mixture-of-Experts](../../papers/arxiv-2604.10496/) | 2026-08-18 | 43 |
 | [p-Spin Glass Network Efficient Single-Batch Continual Learning](../../papers/arxiv-2608.14774/) | 2026-08-18 | 38 |
 | [Hardware-in-the-Loop Phase-Aware CNN for Real-Time 5G Channel Estimation](../../papers/arxiv-2608.14709/) | 2026-08-18 | 38 |
 | [The Integer Alibi: Localizing Cross-Kernel Divergence in INT8-Quantized LLM Inference](../../papers/arxiv-2608.13756/) | 2026-08-17 | 50 |
 | [QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction](../../papers/arxiv-2608.13966/) | 2026-08-17 | 41 |
 | [Post-training Quantization for Hybrid Iterative Generative Models](../../papers/arxiv-2608.13932/) | 2026-08-17 | 41 |
+| [SchurQuant: Groupwise Discrete Optimization for Layer-Wise LLM Quantization](../../papers/arxiv-2608.15567/) | 2026-08-16 | 45 |
+| [Anatomy of a Quantized Agent: VRAM Stability and Forecasting in Code-Synthesis Agentic Workloads](../../papers/arxiv-2608.15117/) | 2026-08-15 | 47 |
 | [Pretraining large language models with MXFP4 on Native FP4 Hardware](../../papers/arxiv-2605.09825/) | 2026-08-13 | 46 |
 | [YAVIN: A Unified Architecture for Secure Edge Processing in Memory](../../papers/arxiv-2608.13496/) | 2026-08-13 | 44 |
 | [The Impact of Temporal Context Length and Encoding Strategies on Self-Supervised ECG Representation Learning](../../papers/arxiv-2608.12695/) | 2026-08-13 | 43 |

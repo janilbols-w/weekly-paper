@@ -5,35 +5,41 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **126** 篇。
+累计收录 **132** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Teacher-free Latent Self-distillation and Class-separable Representations for Lightweight IoT Attack Detection](../../papers/arxiv-2403.15509/) | 2026-08-21 | 41 |
+| [Clustering and Token Denoising for Faster and More Robust VLMs](../../papers/arxiv-2608.19285/) | 2026-08-21 | 40 |
+| [Automatic bioinformatic software named entity recognition from literature](../../papers/arxiv-2608.19201/) | 2026-08-21 | 38 |
 | [GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models](../../papers/arxiv-2608.18849/) | 2026-08-20 | 52 |
-| [APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference](../../papers/arxiv-2608.19046/) | 2026-08-20 | 49 |
-| [DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents](../../papers/arxiv-2608.18524/) | 2026-08-20 | 46 |
+| [Phantom Gains: Auditing Self-Improvement Against a Measured Null](../../papers/arxiv-2608.20290/) | 2026-08-20 | 46 |
+| [APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference](../../papers/arxiv-2608.19046/) | 2026-08-19 | 49 |
+| [HyperCut: Fast Inter-Layer Scheduling via Directed Hypergraph and Early Filtering](../../papers/arxiv-2608.19296/) | 2026-08-19 | 47 |
+| [DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents](../../papers/arxiv-2608.18524/) | 2026-08-19 | 46 |
 | [A Data-Efficient Analytical Prior Machine Learning Framework for Sound Reduction Frequency Prediction in Helmholtz Resonators](../../papers/arxiv-2608.16873/) | 2026-08-19 | 43 |
 | [Self-Distillation as a Performance Recovery Mechanism for LLMs: Counteracting Compression and Catastrophic Forgetting](../../papers/arxiv-2604.15794/) | 2026-08-19 | 41 |
 | [Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?](../../papers/arxiv-2603.24472/) | 2026-08-19 | 38 |
-| [A Scalable Pipeline for LLM-Teacher Distillation Labeling: Work-Stealing Job Scheduling and Memory-Aware GPU Concurrency](../../papers/arxiv-2608.15975/) | 2026-08-18 | 55 |
 | [RT-Lynx: Putting GEMM Sparsity in the Right Place for Diffusion Models](../../papers/arxiv-2605.26632/) | 2026-08-18 | 50 |
 | [Tail-Aware Top-$k$ On-Policy Distillation](../../papers/arxiv-2608.14728/) | 2026-08-18 | 49 |
 | [HieraSparse: Hierarchical Semi-Structured Sparse KV Attention](../../papers/arxiv-2604.16864/) | 2026-08-18 | 48 |
-| [Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment](../../papers/arxiv-2608.15693/) | 2026-08-18 | 47 |
 | [HiAP: A Multi-Granular Stochastic Auto-Pruning Framework for Vision Transformers](../../papers/arxiv-2603.12222/) | 2026-08-18 | 45 |
-| [UniFed-VLM: Federated Instruction Tuning for Vision-Language Models with Multiple Heterogeneity](../../papers/arxiv-2608.15516/) | 2026-08-18 | 44 |
 | [Mitigating Rubric Interference in LLM Judges via On-Policy Self-Distillation](../../papers/arxiv-2608.14684/) | 2026-08-18 | 43 |
 | [DUET: Dual-Teacher On-Policy Distillation via Same-Weight Disagreement for Prohibition Compliance](../../papers/arxiv-2608.14644/) | 2026-08-18 | 43 |
 | [Breaking the Compression Barrier: Cross-Architecture Compression Boundary Learning via Reverse Regrowth](../../papers/arxiv-2608.16010/) | 2026-08-18 | 43 |
 | [Rethinking Reverse KL as Adaptive Entropy Distillation](../../papers/arxiv-2608.14685/) | 2026-08-18 | 41 |
 | [Certifying Compressed Language Models: An Audit and a Statistical Toolkit](../../papers/arxiv-2608.15046/) | 2026-08-18 | 41 |
 | [LACE-SVD: Loss-Aware SVD with Cumulative Error Correction for LLM Compression](../../papers/arxiv-2607.03057/) | 2026-08-18 | 40 |
-| [DB-SpMSpV: Dual-View Blocked Sparse Matrix-Sparse Vector Multiplication for Dynamic GPU Workloads](../../papers/arxiv-2608.16308/) | 2026-08-18 | 40 |
-| [MAPLE: MoE Adaptive Plug-and-play Layer-wise Expert allocation](../../papers/arxiv-2608.15299/) | 2026-08-18 | 38 |
+| [A Scalable Pipeline for LLM-Teacher Distillation Labeling: Work-Stealing Job Scheduling and Memory-Aware GPU Concurrency](../../papers/arxiv-2608.15975/) | 2026-08-17 | 61 |
 | [ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation](../../papers/arxiv-2607.13124/) | 2026-08-17 | 44 |
 | [CutClean: Neural Network Pruning for Privacy-Preserving Inference](../../papers/arxiv-2608.13773/) | 2026-08-17 | 43 |
+| [Every Coin Has Two Sides: On the Dual Nature of Generalization in On-Policy Distillation of Large Language Models](../../papers/arxiv-2608.16647/) | 2026-08-17 | 40 |
+| [DB-SpMSpV: Dual-View Blocked Sparse Matrix-Sparse Vector Multiplication for Dynamic GPU Workloads](../../papers/arxiv-2608.16308/) | 2026-08-17 | 40 |
 | [Training-Free Knowledge Transfer Across Model Scales through Activation-Guided Pruning](../../papers/arxiv-2608.13596/) | 2026-08-17 | 39 |
 | [Evaluating Agentic Learning Harness Capabilities Without Labels via the Scaling Hypothesis](../../papers/arxiv-2608.13608/) | 2026-08-17 | 39 |
+| [Large Models for Small Devices: Recent Advances and Empirical Analysis of Edge AI Deployment](../../papers/arxiv-2608.15693/) | 2026-08-16 | 47 |
+| [UniFed-VLM: Federated Instruction Tuning for Vision-Language Models with Multiple Heterogeneity](../../papers/arxiv-2608.15516/) | 2026-08-16 | 44 |
+| [MAPLE: MoE Adaptive Plug-and-play Layer-wise Expert allocation](../../papers/arxiv-2608.15299/) | 2026-08-15 | 38 |
 | [Constitutional On-Policy Safe Distillation](../../papers/arxiv-2606.03089/) | 2026-08-14 | 44 |
 | [SAF3R: Dynamic Sparse Attention for Feed-Forward 3D Reconstruction Transformers](../../papers/arxiv-2607.03612/) | 2026-08-14 | 42 |
 | [Continual Distillation Learning for Rehearsal-Free Class-Incremental Learning via Decoupled Prompting](../../papers/arxiv-2407.13911/) | 2026-08-14 | 42 |

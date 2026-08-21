@@ -39,7 +39,7 @@ Sparse Matrix-Sparse Vector Multiplication (SpMSpV) is a core primitive in graph
 ## 元数据
 
 - 作者：Xing Cong, Chenhao Xie, Rui Wang, Zhongzhi Luan, Yi Liu, Depei Qian
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-17；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

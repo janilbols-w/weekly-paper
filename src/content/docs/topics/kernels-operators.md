@@ -9,9 +9,9 @@ description: "Kernels & Operator Fusion"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX](../../papers/arxiv-2608.17379/) | 2026-08-19 | 55 |
-| [FluxBin: Flexible LUT-based Ultra-low-bit LLM Inference by Algorithm-Kernel Synergy](../../papers/arxiv-2608.15602/) | 2026-08-18 | 47 |
-| [FlashQuant: Sparse-Dense Fusion for Memory-Efficient Outlier-Aware LLM Inference](../../papers/arxiv-2608.15531/) | 2026-08-18 | 45 |
+| [PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX](../../papers/arxiv-2608.17379/) | 2026-08-18 | 55 |
+| [FluxBin: Flexible LUT-based Ultra-low-bit LLM Inference by Algorithm-Kernel Synergy](../../papers/arxiv-2608.15602/) | 2026-08-16 | 47 |
+| [FlashQuant: Sparse-Dense Fusion for Memory-Efficient Outlier-Aware LLM Inference](../../papers/arxiv-2608.15531/) | 2026-08-16 | 45 |
 | [Optimizing CUDA like a Human: Micro-Profiling Tools as Expert Surrogates for LLM-Based GPU Kernel Optimization](../../papers/arxiv-2606.26453/) | 2026-08-11 | 56 |
 | [StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning](../../papers/arxiv-2603.02637/) | 2026-08-11 | 55 |
 | [KernelBrain: Coarse-to-Fine, Budget-Aware Search for Agentic GPU Kernel Optimization](../../papers/arxiv-2608.02611/) | 2026-08-05 | 54 |

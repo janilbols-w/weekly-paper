@@ -39,7 +39,7 @@ When a robot policy is trained for a new task or dataset, its visual encoder can
 ## 元数据
 
 - 作者：Hyojun Yun, Seungjae Won, Hyungpil Moon
-- 发布：2026-08-18；更新：2026-08-19
+- 发布：2026-08-15；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

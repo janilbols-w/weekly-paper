@@ -5,18 +5,22 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **40** 篇。
+累计收录 **44** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents](../../papers/arxiv-2608.19662/) | 2026-08-20 | 57 |
 | [Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems](../../papers/arxiv-2607.29076/) | 2026-08-20 | 49 |
 | [Fractional Decay KV-Cache: Ownership-Aware Memory Management for Improved Inference Relevancy in Dialog Systems](../../papers/arxiv-2608.18098/) | 2026-08-20 | 47 |
-| [Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State](../../papers/arxiv-2608.17826/) | 2026-08-19 | 41 |
-| [Q-First: Most of Attention Needs Only the Query in Disaggregated LLM Decoding](../../papers/arxiv-2608.15473/) | 2026-08-18 | 42 |
+| [Learning how to Forget: Fine-tuning for Long-Context Sparse Attention](../../papers/arxiv-2608.19920/) | 2026-08-20 | 42 |
 | [Discovering KV Cache Eviction Policies via LLM-Guided Program Evolution](../../papers/arxiv-2608.14555/) | 2026-08-18 | 41 |
-| [Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN](../../papers/arxiv-2608.16477/) | 2026-08-18 | 40 |
-| [LOCAL: Enabling Learning On-device Contiguously for Agent LLMs](../../papers/arxiv-2608.15241/) | 2026-08-18 | 38 |
+| [Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State](../../papers/arxiv-2608.17826/) | 2026-08-18 | 41 |
 | [Beyond Capacity: Scalable MoE LLM Inference via High-Bandwidth Flash with Direct GPU and HBM Paths](../../papers/arxiv-2608.14333/) | 2026-08-17 | 46 |
+| [Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN](../../papers/arxiv-2608.16477/) | 2026-08-17 | 40 |
+| [Q-First: Most of Attention Needs Only the Query in Disaggregated LLM Decoding](../../papers/arxiv-2608.15473/) | 2026-08-16 | 42 |
+| [KV-Rescue: Recovering Reasoning Language Model KV Eviction Loss via Stepwise Interleaving](../../papers/arxiv-2608.15797/) | 2026-08-16 | 39 |
+| [Aborted but Not Forgotten: KV-Cache Retention Breaks Rollback Consistency in Language Agents](../../papers/arxiv-2608.15939/) | 2026-08-16 | 39 |
+| [LOCAL: Enabling Learning On-device Contiguously for Agent LLMs](../../papers/arxiv-2608.15241/) | 2026-08-15 | 38 |
 | [Do Transformers Need Three Projections? Systematic Study of QKV Variants](../../papers/arxiv-2606.04032/) | 2026-08-14 | 43 |
 | [vToken: Token-Level Virtualization for Reclaimable KV Caches](../../papers/arxiv-2608.13263/) | 2026-08-13 | 40 |
 | [Adaptive Filtering of the KV Cache: Diagnosing and Correcting Structural-Role Bias in LLM Inference](../../papers/arxiv-2607.13205/) | 2026-08-12 | 47 |

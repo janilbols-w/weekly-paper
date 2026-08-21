@@ -9,6 +9,6 @@ description: "Parallelism & Communication"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [KV-Pipe: On the Relation Between KV Sharing and Pipeline Parallel Efficiency in LLMs](../../papers/arxiv-2608.15943/) | 2026-08-18 | 45 |
-| [Collective Communication for Distributed LLM Systems: Planning, Runtime Adaptation, and Computation Coordination](../../papers/arxiv-2608.15118/) | 2026-08-18 | 40 |
+| [KV-Pipe: On the Relation Between KV Sharing and Pipeline Parallel Efficiency in LLMs](../../papers/arxiv-2608.15943/) | 2026-08-16 | 45 |
+| [Collective Communication for Distributed LLM Systems: Planning, Runtime Adaptation, and Computation Coordination](../../papers/arxiv-2608.15118/) | 2026-08-15 | 40 |
 | [NUNA: Characterizing and Mitigating Non-Uniform Network Access in Multi-Die GPU Scale-Up Systems](../../papers/arxiv-2608.00867/) | 2026-08-04 | 45 |

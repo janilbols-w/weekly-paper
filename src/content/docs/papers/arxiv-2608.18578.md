@@ -38,8 +38,8 @@ Proactive interference (PI) is a documented failure mode in large language model
 
 ## 元数据
 
-- 作者：Shayan Shahrabi-Farahani (Shahid Beheshti University, Tehran, Iran), Dara Rahmati (Shahid Beheshti University, Tehran, Iran)
-- 发布：2026-08-20；更新：2026-08-20
+- 作者：Shayan Shahrabi-Farahani, Dara Rahmati
+- 发布：2026-08-19；更新：2026-08-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/ShayanShahrabi/compress-and-forget](https://github.com/ShayanShahrabi/compress-and-forget)
 - 阅读深度：metadata

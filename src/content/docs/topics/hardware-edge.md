@@ -10,11 +10,11 @@ description: "Hardware-aware & Edge Inference"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [Automatically Generating ML Compiler Backends from Tensor Accelerator ISA Descriptions](../../papers/arxiv-2510.09932/) | 2026-08-19 | 50 |
-| [DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models](../../papers/arxiv-2608.16953/) | 2026-08-19 | 44 |
-| [ESR-HGNN: Eliminating Semantic Redundancy for Efficient Mini-batch HGNN Inference](../../papers/arxiv-2608.17865/) | 2026-08-19 | 42 |
 | [HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving](../../papers/arxiv-2608.14575/) | 2026-08-18 | 56 |
+| [ESR-HGNN: Eliminating Semantic Redundancy for Efficient Mini-batch HGNN Inference](../../papers/arxiv-2608.17865/) | 2026-08-18 | 42 |
 | [RAPID-LLM: Resilience-Aware Performance analysis of Infrastructure for Distributed LLM Training and Inference](../../papers/arxiv-2512.19606/) | 2026-08-18 | 40 |
 | [BCIJelly: An integrated ecosystem for brain-computer interface research](../../papers/arxiv-2608.13576/) | 2026-08-17 | 38 |
+| [DTX: A Throughput-First Training Accelerator for Diffusion and Transformer Models](../../papers/arxiv-2608.16953/) | 2026-08-16 | 44 |
 | [Where Should Optimizer State Live? Tiered State Allocation for Memory-Efficient Mixture-of-Experts Training](../../papers/arxiv-2607.19058/) | 2026-08-14 | 41 |
 | [Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation](../../papers/arxiv-2605.14047/) | 2026-08-12 | 42 |
 | [BitFair: A 12-nm Bit-Serial CNN Accelerator with Learnable Early Termination and Adaptive Bit Ordering for Ultra-Low-Power XR Vision](../../papers/arxiv-2607.05445/) | 2026-08-11 | 45 |

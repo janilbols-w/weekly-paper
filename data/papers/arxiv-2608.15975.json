@@ -4,7 +4,7 @@
   "abstract": "Labeling large text corpora with LLM teachers has become a practical route to training data at scale. At millions of items, hand-labeling every batch is not feasible, and two questions dominate: what label quality a teacher buys per dollar, and how to keep a fleet of GPU workers busy under skewed, failure-prone workloads. We present a simple, reproducible pipeline that addresses both. First, a work-stealing ring pool: each worker owns a queue, drains it first, and then steals from ring successors, with exactly-once task claims via atomic conditional writes and crash tolerance via stale-claim sweeping. The claim protocol requires only a compare-and-set primitive from its storage layer; we implement it on a single SQLite file, which makes the reference implementation dependency-free and the experiments reproducible on one machine. Second, a memory-aware concurrency rule that sizes per-node parallelism by how many model copies fit on the GPU, so the same code runs safely across device sizes. Third, a relabeling benchmark methodology in which the teacher relabels a public dataset that already has gold labels, so quality reduces to an agreement measurement and cost follows from measured throughput. Under skewed load the pool sustains up to 3.4 times the throughput of static sharding while matching it at zero skew, loses 0 of 2,000 tasks when half the workers are killed mid-run (static sharding loses 953), and yields measured quality and cost points for an instruction-tuned teacher on irony and sentiment tasks. All experiments run on public data and commodity hardware; code, tests, and run logs are released.",
   "url": "https://arxiv.org/abs/2608.15975",
   "pdf_url": "https://arxiv.org/pdf/2608.15975",
-  "published": "2026-08-18",
+  "published": "2026-08-17",
   "updated": "2026-08-19",
   "authors": [
     "Ravi Satya Durga Prasad Yenugula"
@@ -20,8 +20,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "8 pages, 1 figure, 3 tables. Code, tests, and all run artifacts: https://github.com/rsdpyenugula/hybrid-labeling-training",
+  "code_url": "https://github.com/rsdpyenugula/hybrid-labeling-training",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -37,19 +37,19 @@
   "keyword_evidence": [
     "distillation"
   ],
-  "score": 55,
+  "score": 61,
   "score_components": {
     "relevance": 16,
     "novelty": 6,
     "rigor": 13,
     "practical_impact": 14,
-    "reproducibility": 3,
+    "reproducibility": 9,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: distillation",
     "quantitative claim detected",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Labeling large text corpora with LLM teachers has become a practical route to training data at scale.",
   "summary_zh": "",
@@ -57,11 +57,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-18T04:45:47+00:00",
-  "last_seen": "2026-08-20T04:46:29+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
   "featured_weeks": [
     "2026-W34"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.15975v1",
+      "url": "http://arxiv.org/abs/2608.15975v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.15975",

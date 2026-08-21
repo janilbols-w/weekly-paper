@@ -4,7 +4,7 @@
   "abstract": "Heterogeneous graph neural networks (HGNNs) are highly effective in processing heterogeneous graph data and have been widely adopted in critical domains. As real-world graph data continues to scale, performing direct inference on entire graphs becomes increasingly infeasible, making mini-batch methods the standard approach. However, in end-to-end HGNN inference, metapath-based mini-batch sampling constitutes a significant performance bottleneck due to the extensive random memory accesses induced by the irregular traversal of graph structures. Existing sampling paradigms suffer from excessive redundant traversals caused by inherent semantic redundancy, severely degrading sampling efficiency and, consequently, leading to suboptimal mini-batch inference performance. In this work, we propose a redundancy-aware HGNN sampling paradigm that leverages a metapath trie to reuse traversal paths, effectively eliminating redundant memory accesses. We then map it onto a multi-channel hardware sampling unit denominated ESR-HGNN. Furthermore, we introduce a reusability-driven metapath grouping technique that optimally clusters metapaths to maximize reusable traversal paths within hardware channels, enhancing efficiency in scenarios with semantic parallelism. Extensive experimental results demonstrate that ESR-HGNN achieves an average sampling performance improvement of one order of magnitude over CPU and GPU, accompanied by significant energy savings. Additionally, it delivers substantial speedup in end-to-end mini-batch inference when integrated with GPU and state-of-the-art HGNN inference accelerator.",
   "url": "https://arxiv.org/abs/2608.17865",
   "pdf_url": "https://arxiv.org/pdf/2608.17865",
-  "published": "2026-08-19",
+  "published": "2026-08-18",
   "updated": "2026-08-19",
   "authors": [
     "Dengke Han",
@@ -22,7 +22,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "14 pages, 12 figures, to apear in IEEE TPDS (just accepted)",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-19T04:46:02+00:00",
-  "last_seen": "2026-08-20T04:46:29+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.17865v1",
+      "url": "http://arxiv.org/abs/2608.17865v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.17865",

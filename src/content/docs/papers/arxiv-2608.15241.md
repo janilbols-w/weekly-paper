@@ -39,7 +39,7 @@ On-device LLM agents interact repeatedly with users on local hardware, producing
 ## 元数据
 
 - 作者：Xinxin Liu, Jiaxin Li, Zibo Wang, Yun Ji, Zhangqi Zhu, Qing Hu, Zhibin Wang, Rong Gu, Sheng Zhong, Chen Tian
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-15；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -38,8 +38,8 @@ Hierarchical KV-cache systems can retain long-context LLM execution state beyond
 
 ## 元数据
 
-- 作者：Zixuan Li (China Academy of Railway Sciences Corporation Limited, Beijing, China)
-- 发布：2026-08-19；更新：2026-08-19
+- 作者：Zixuan Li
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

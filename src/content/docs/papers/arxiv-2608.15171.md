@@ -38,8 +38,8 @@ Long-context LLM applications such as retrieval-augmented generation (RAG) and a
 
 ## 元数据
 
-- 作者：Timo S\"amann
-- 发布：2026-08-18；更新：2026-08-18
+- 作者：Timo Sämann
+- 发布：2026-08-15；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/TimoSaemann/ppas-vllm](https://github.com/TimoSaemann/ppas-vllm)
 - 阅读深度：metadata

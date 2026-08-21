@@ -39,7 +39,7 @@ The rise of vehicle-infrastructure (V2I) collaboration enables safer and broader
 ## 元数据
 
 - 作者：Lehao Wang, Zhiwen Yu, Sicong Liu, Kefan Chen, Fengmin Wu, Bin Guo
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-17；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

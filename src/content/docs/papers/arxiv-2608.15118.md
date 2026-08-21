@@ -38,8 +38,8 @@ Distributed large language model (LLM) systems increasingly rely on collective c
 
 ## 元数据
 
-- 作者：Xuebin Song (School of Software, Beihang University, Beijing, China), Menghao Zhang (School of Software, Beihang University, Beijing, China), Yuezheng Liu (School of Software, Beihang University, Beijing, China), Jinyi Xia (School of Software, Beihang University, Beijing, China), Shucan Yang (School of Software, Beihang University, Beijing, China), Xiaohe Hu (Infrawaves, Beijing, China), Chunming Hu (School of Software, Beihang University, Beijing, China), Mingwei Xu (State Key Laboratory of Internet Architecture, Tsinghua University, Beijing, China)
-- 发布：2026-08-18；更新：2026-08-18
+- 作者：Xuebin Song, Menghao Zhang, Yuezheng Liu, Jinyi Xia, Shucan Yang, Xiaohe Hu, Chunming Hu, Mingwei Xu
+- 发布：2026-08-15；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -4,7 +4,7 @@
   "abstract": "Memory-based Temporal Graph Neural Networks (M-TGNNs) maintain recursively updated node states to capture fine-grained temporal interactions. However, existing distributed frameworks lack effective mechanisms for managing the temporal data dependencies inherent in these models. As a result, they must enforce strict chronological updates, incur substantial remote synchronization overhead, and experience severe load imbalance when temporal event streams are skewed. We propose DepTGL, a scalable distributed training framework that restructures temporal-dependency management for M-TGNNs from a data-centric perspective. First, DepTGL introduces a hybrid temporal-dependency management scheme that explicitly balances communication and caching overhead via temporal-event caching, supplemented by selective dependency-driven communication. Next, DepTGL incorporates a gradient-aware cache-synchronization policy that adaptively suppresses boundary updates as model optimization stabilizes, thereby reducing redundant synchronization. Finally, DepTGL integrates a load-aware temporal-pruning strategy that eliminates auxiliary replay events under skew-induced load spikes, reducing redundant data processing and mitigating straggler effects. Experiments on six real-world temporal graphs show that DepTGL achieves an average speedup of 4.99x over state-of-the-art baselines, while maintaining comparable accuracy.",
   "url": "https://arxiv.org/abs/2608.16305",
   "pdf_url": "https://arxiv.org/pdf/2608.16305",
-  "published": "2026-08-18",
+  "published": "2026-08-17",
   "updated": "2026-08-18",
   "authors": [
     "Linfang Chen",
@@ -25,7 +25,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "14 pages, 6 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -62,9 +62,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-18T04:45:47+00:00",
-  "last_seen": "2026-08-20T04:46:29+00:00",
+  "last_seen": "2026-08-21T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.16305v1",
+      "url": "http://arxiv.org/abs/2608.16305v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.16305",

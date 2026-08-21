@@ -4,7 +4,7 @@
   "abstract": "Small NLP models, especially BERT-family encoders, remain important in industrial workloads such as classification, ranking, and retrieval even in the era of large language models. On server CPUs, INT8 quantization offers an attractive latency-throughput-cost trade-off, but users increasingly expect such acceleration to be available directly in the native PyTorch stack. We integrate SmoothQuant into TorchAO and optimize the resulting inference path for Intel Xeon CPUs through graph-level fusion in TorchInductor and efficient INT8 GEMM kernel selection across oneDNN-, AVX512_VNNI-, and AMX-based implementations. Across BERT, DistilBERT, and XLM-RoBERTa benchmarks, the approach delivers up to 5.8x end-to-end throughput speedup with negligible---and in some cases no measurable---accuracy loss relative to the FP32 baseline. We also validated our work by detailed performance analysis with roofline models. The implementation has been upstreamed to PyTorch and TorchAO, enabling out-of-the-box deployment with native PyTorch tooling",
   "url": "https://arxiv.org/abs/2608.18182",
   "pdf_url": "https://arxiv.org/pdf/2608.18182",
-  "published": "2026-08-20",
+  "published": "2026-08-18",
   "updated": "2026-08-20",
   "authors": [
     "Weiwen Xia",
@@ -19,7 +19,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "13 pages",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,11 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-20T04:46:29+00:00",
-  "last_seen": "2026-08-20T04:46:29+00:00",
-  "featured_weeks": [
-    "2026-W34"
-  ],
+  "last_seen": "2026-08-21T04:47:28+00:00",
+  "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.18182v1",
+      "url": "http://arxiv.org/abs/2608.18182v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.18182",

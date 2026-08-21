@@ -5,15 +5,17 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **26** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD](../../papers/arxiv-2607.20145/) | 2026-08-20 | 47 |
-| [DepTGL: A Parallel Framework for Memory-based TGNN Training with Adaptive Temporal Data Dependency Management](../../papers/arxiv-2608.16305/) | 2026-08-18 | 45 |
 | [Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification](../../papers/arxiv-2608.14929/) | 2026-08-18 | 41 |
-| [Spectral Rank Certification for Foundation Model Adapters](../../papers/arxiv-2608.15351/) | 2026-08-18 | 39 |
+| [GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction](../../papers/arxiv-2608.18234/) | 2026-08-18 | 40 |
 | [Nanbeige4.2-3B on Apple Silicon: Fixing Deployment Bugs and Decreasing Looped Transformer Memory Overhead](../../papers/arxiv-2608.13987/) | 2026-08-17 | 45 |
+| [DepTGL: A Parallel Framework for Memory-based TGNN Training with Adaptive Temporal Data Dependency Management](../../papers/arxiv-2608.16305/) | 2026-08-17 | 45 |
+| [Gathered, Not Admitted: How Attention Brings a Latent Variable into Verbalizable Form](../../papers/arxiv-2608.15022/) | 2026-08-15 | 42 |
+| [Spectral Rank Certification for Foundation Model Adapters](../../papers/arxiv-2608.15351/) | 2026-08-15 | 39 |
 | [Robust Checkpoint Selection for Multimodal LLMs via Agentic Evaluation and Stability-Aware Ranking](../../papers/arxiv-2605.18852/) | 2026-08-14 | 40 |
 | [ATMA: Long-Context Language Modeling via Polar Attention and Gated-Delta Compression Memory](../../papers/arxiv-2606.25156/) | 2026-08-13 | 48 |
 | [Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL](../../papers/arxiv-2608.11669/) | 2026-08-12 | 39 |

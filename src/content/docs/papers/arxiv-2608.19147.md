@@ -39,7 +39,7 @@ Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified
 ## 元数据
 
 - 作者：Tate Berenbaum, Muthaiah Venkatachalam
-- 发布：2026-08-20；更新：2026-08-20
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/labscommunity/pipeline-sharded-inference-paper](https://github.com/labscommunity/pipeline-sharded-inference-paper)
 - 阅读深度：metadata

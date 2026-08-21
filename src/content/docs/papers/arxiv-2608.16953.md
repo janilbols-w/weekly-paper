@@ -39,7 +39,7 @@ DTX is a throughput-first training accelerator for diffusion and transformer mod
 ## 元数据
 
 - 作者：Shashank
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-16；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

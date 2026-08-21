@@ -39,7 +39,7 @@ Memory-based Temporal Graph Neural Networks (M-TGNNs) maintain recursively updat
 ## 元数据
 
 - 作者：Linfang Chen, Zhen Song, Lei Liu, Yu Gu, Yushuai Li, Yanfeng Zhang, Lizhen Cui, Ge Yu, Tianyi Li
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-17；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Sparsely-activated Mixture-of-Experts (MoE) Transformers universally fix the sam
 ## 元数据
 
 - 作者：Lie Li, Wen Li, Junxiao Shen, Gusheng Hu
-- 发布：2026-08-18；更新：2026-08-19
+- 发布：2026-08-15；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

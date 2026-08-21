@@ -39,7 +39,7 @@ Large language models can improve recommendation quality by reasoning explicitly
 ## 元数据
 
 - 作者：Minh Hoang Nguyen, Tung Le, Huy Tien Nguyen
-- 发布：2026-08-20；更新：2026-08-20
+- 发布：2026-08-19；更新：2026-08-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

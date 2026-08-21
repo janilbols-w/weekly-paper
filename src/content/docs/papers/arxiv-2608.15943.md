@@ -39,7 +39,7 @@ Pipeline parallelism (PP) is widely used to scale large language model (LLM) tra
 ## 元数据
 
 - 作者：Maryam Dialameh, Hossein Rajabzadeh, Harish Krishnamoorthy Murali, Walid Ahmed, Weiwei Zhang, Hyock Ju Kwon
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-16；更新：2026-08-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

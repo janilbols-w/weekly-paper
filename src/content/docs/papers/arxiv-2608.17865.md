@@ -39,7 +39,7 @@ Heterogeneous graph neural networks (HGNNs) are highly effective in processing h
 ## 元数据
 
 - 作者：Dengke Han, Mingyu Yan, Duo Wang, Wenming Li, Xiaochun Ye, Dongrui Fan
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-18；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

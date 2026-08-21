@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **13** 篇。
+累计收录 **14** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FleetSieve: Decision-Critical Profiling for SLO-Aware LLM Fleet Configuration](../../papers/arxiv-2608.19659/) | 2026-08-21 | 40 |
 | [A Biophysically-Inspired Feedback Controller for Multi-Class Cache Fairness](../../papers/arxiv-2608.14561/) | 2026-08-18 | 43 |
 | [TokenStack: A Heterogeneous HBM-PIM Architecture and Runtime for Efficient LLM Inference](../../papers/arxiv-2605.05639/) | 2026-08-13 | 44 |
 | [Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference](../../papers/arxiv-2605.02329/) | 2026-08-12 | 50 |

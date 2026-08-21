@@ -3,7 +3,7 @@ title: "A Scalable Pipeline for LLM-Teacher Distillation Labeling: Work-Stealing
 description: "Labeling large text corpora with LLM teachers has become a practical route to training data at scale."
 ---
 
-**评分：55/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：61/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2608.15975) · [PDF](https://arxiv.org/pdf/2608.15975)
 
@@ -27,19 +27,19 @@ Labeling large text corpora with LLM teachers has become a practical route to tr
 | novelty | 6 |
 | rigor | 13 |
 | practical impact | 14 |
-| reproducibility | 3 |
+| reproducibility | 9 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: distillation
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Ravi Satya Durga Prasad Yenugula
-- 发布：2026-08-18；更新：2026-08-19
+- 发布：2026-08-17；更新：2026-08-19
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/rsdpyenugula/hybrid-labeling-training](https://github.com/rsdpyenugula/hybrid-labeling-training)
 - 阅读深度：metadata
