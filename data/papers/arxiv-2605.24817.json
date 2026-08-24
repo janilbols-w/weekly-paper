@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2605.24817",
+  "title": "RouteScan: A Non-Intrusive Approach to Auditing MoE LLMs Safety via Expert Routing Telemetry",
+  "abstract": "As Mixture-of-Experts (MoE) architectures are increasingly adopted for scaling Large Language Models (LLMs), safety auditing becomes necessary to verify whether these models produce or facilitate harmful behaviors during operation. However, existing content-based auditing methods typically require access to user prompts, model internals, or outputs, potentially exposing sensitive user information and creating a tension between LLM safety and user privacy. On the other hand, we observe that, in MoE models, different inputs induce different sparse expert-routing patterns, which produce measurable footprints in low-level GPU execution telemetry. We refer to these hardware-observable signals induced by expert-routing decisions as expert routing telemetry; they are derived from GPU execution rather than from router logits or token-level routing assignments. Inspired by this observation, we propose RouteScan, a non-intrusive auditing framework for detecting harmful behaviors through such routing-induced GPU telemetry. Specifically, RouteScan utilizes the number of active GPU threads allocated to expert modules during the prefilling phase as a discriminative micro-architectural fingerprint, and builds a lightweight detection pipeline that isolates cross-domain invariant risk indicators for the precise identification of malicious prompts. Comprehensive evaluations on four open-source MoE LLMs with distinct routing designs demonstrate that RouteScan achieves strong generalization, with an AUROC exceeding 0.91 on unseen harmful domains. Moreover, privacy stress tests show that, although aggregated execution telemetry retains input-related attribute information, full prompts and exact sensitive fields cannot be reliably recovered under the evaluated attacks.",
+  "url": "https://arxiv.org/abs/2605.24817",
+  "pdf_url": "https://arxiv.org/pdf/2605.24817",
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "authors": [
+    "Bo Lv",
+    "Zhiheng Xu",
+    "KeDong Xiu",
+    "Ruyi Ding",
+    "Tianhang Zheng",
+    "Zhibo Wang",
+    "Kui Ren"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.CL",
+    "cs.CR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "moe-efficiency",
+    "leaf": "MoE Efficiency",
+    "leaf_zh": "MoE 路由与专家优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "expert routing"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: expert routing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As Mixture-of-Experts (MoE) architectures are increasingly adopted for scaling Large Language Models (LLMs), safety auditing becomes necessary to verify whether these models produce or facilitate harmful behaviors during operation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-24T04:48:23+00:00",
+  "last_seen": "2026-08-24T04:48:23+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.24817",
+      "url": "https://arxiv.org/abs/2605.24817"
+    }
+  ]
+}

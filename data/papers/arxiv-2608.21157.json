@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2608.21157",
+  "title": "HIERA: Workload-Aware Planning Across Implementation Spaces for GPU Kernel Optimization",
+  "abstract": "High-performance GPU kernels underpin modern deep learning and scientific computing. As workloads become increasingly diverse and GPU hardware evolves rapidly, developing efficient methods for automated GPU kernel generation and optimization has become increasingly important. Existing LLM-based methods typically optimize within a fixed implementation space, limiting either optimization flexibility or search efficiency. We propose \\textsc{HIERA}, a hierarchical search-space planning framework for GPU kernel optimization. \\textsc{HIERA} constructs contract-augmented task specifications, selects an appropriate implementation space across PyTorch operators, CUDA libraries, and custom CUDA kernels, and uses profiling feedback and expert knowledge to guide structured iterative refinement. Experiments on KernelBench across multiple various workload levels and base LLMs show that \\textsc{HIERA} delivers stronger overall implementation validity, sample efficiency, and optimization performance than existing training-free methods, while remaining competitive with the training-based CUDA-L1 without additional model training. A case study on a specialized stencil operator from scientific computing further achieves a \\(1.53\\times\\) speedup over cuDNN, demonstrating the potentiality of the general framework beyond standard machine-learning workloads.",
+  "url": "https://arxiv.org/abs/2608.21157",
+  "pdf_url": "https://arxiv.org/pdf/2608.21157",
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "authors": [
+    "Jinghao Wang",
+    "Qiqi Gu",
+    "Chenpeng Wu",
+    "Jianguo Yao",
+    "Haibing Guan",
+    "Xijun Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel",
+    "kernel generation",
+    "kernel optimization"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 24,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel, kernel generation, kernel optimization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "High-performance GPU kernels underpin modern deep learning and scientific computing.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-24T04:48:23+00:00",
+  "last_seen": "2026-08-24T04:48:23+00:00",
+  "featured_weeks": [
+    "2026-W35"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.21157",
+      "url": "https://arxiv.org/abs/2608.21157"
+    }
+  ]
+}

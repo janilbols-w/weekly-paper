@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **44** 篇。
+累计收录 **46** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TokenCake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications](../../papers/arxiv-2510.18586/) | 2026-08-24 | 50 |
+| [AgentDecarbonizer: Carbon-Aware Execution for AI Agents](../../papers/arxiv-2608.20566/) | 2026-08-24 | 40 |
 | [ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents](../../papers/arxiv-2608.19662/) | 2026-08-20 | 57 |
 | [Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems](../../papers/arxiv-2607.29076/) | 2026-08-20 | 49 |
 | [Fractional Decay KV-Cache: Ownership-Aware Memory Management for Improved Inference Relevancy in Dialog Systems](../../papers/arxiv-2608.18098/) | 2026-08-20 | 47 |

@@ -5,10 +5,19 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **132** 篇。
+累计收录 **141** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [STS: Efficient Sparse Attention with Speculative Token Sparsity](../../papers/arxiv-2605.15508/) | 2026-08-24 | 48 |
+| [SafeSteer: Localized On-Policy Distillation for Efficient Safety Alignment](../../papers/arxiv-2606.02530/) | 2026-08-24 | 46 |
+| [COEC: Calibrated Orthogonal-Equivalence Compensation for Structured Pruning of Large Language Models](../../papers/arxiv-2608.21142/) | 2026-08-24 | 45 |
+| [BF1: A Causal Dyadic Sparse-Attention Retrofit for Efficient Long-Context Transformers](../../papers/arxiv-2608.20427/) | 2026-08-24 | 43 |
+| [Scale or Reason? A Compute-Equivalent Analysis of Reasoning Distillation](../../papers/arxiv-2509.22193/) | 2026-08-24 | 42 |
+| [Event-triggered Implicit Perturbation for Zeroth-Order Fine-Tuning of Spiking Transformers](../../papers/arxiv-2608.21223/) | 2026-08-24 | 42 |
+| [When Better Teachers Don't Make Better Students: Revisiting Knowledge Distillation for CLIP Models in VQA](../../papers/arxiv-2511.17886/) | 2026-08-24 | 41 |
+| [aiXamine: Unified Black-Box Evaluation of Cross-Dimensional Trade-offs in LLM Safety, Security, and Privacy](../../papers/arxiv-2608.20554/) | 2026-08-24 | 39 |
+| [Sparse Token Routing in Efficient Transformers](../../papers/arxiv-2608.20632/) | 2026-08-24 | 38 |
 | [Teacher-free Latent Self-distillation and Class-separable Representations for Lightweight IoT Attack Detection](../../papers/arxiv-2403.15509/) | 2026-08-21 | 41 |
 | [Clustering and Token Denoising for Faster and More Robust VLMs](../../papers/arxiv-2608.19285/) | 2026-08-21 | 40 |
 | [Automatic bioinformatic software named entity recognition from literature](../../papers/arxiv-2608.19201/) | 2026-08-21 | 38 |

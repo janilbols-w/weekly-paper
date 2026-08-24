@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2501.10375",
+  "title": "DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference",
+  "abstract": "Mixture-of-Experts (MoE) models, though highly effective for various machine learning tasks, face significant deployment challenges on memory-constrained devices. While GPUs offer fast inference, their limited memory compared to CPUs means not all experts can be stored on the GPU simultaneously, necessitating frequent, costly data transfers from CPU memory, often negating GPU speed advantages. To address this, we present DAOP, an on-device MoE inference engine to optimize parallel GPU-CPU execution. DAOP dynamically allocates experts between CPU and GPU based on per-sequence activation patterns, and selectively pre-calculates predicted experts on CPUs to minimize transfer latency. This approach enables efficient resource utilization across various expert cache ratios while maintaining model accuracy through a novel graceful degradation mechanism. Comprehensive evaluations across various datasets show that DAOP outperforms traditional expert caching and prefetching methods by up to 8.20x and offloading techniques by 1.35x while maintaining accuracy.",
+  "url": "https://arxiv.org/abs/2501.10375",
+  "pdf_url": "https://arxiv.org/pdf/2501.10375",
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "authors": [
+    "Yujie Zhang",
+    "Shivam Aggarwal",
+    "Tulika Mitra"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [
+    "moe-efficiency"
+  ],
+  "keyword_evidence": [
+    "offloading"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: offloading",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) models, though highly effective for various machine learning tasks, face significant deployment challenges on memory-constrained devices.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-24T04:48:23+00:00",
+  "last_seen": "2026-08-24T04:48:23+00:00",
+  "featured_weeks": [
+    "2026-W35"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2501.10375",
+      "url": "https://arxiv.org/abs/2501.10375"
+    }
+  ]
+}

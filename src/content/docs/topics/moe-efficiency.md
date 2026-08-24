@@ -5,10 +5,13 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **10** 篇。
+累计收录 **13** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SPICE: Speculative Prefetching with Low-Rank Expert Surrogates and Heterogeneous Orchestration for MoE Inference Acceleration](../../papers/arxiv-2608.21240/) | 2026-08-24 | 46 |
+| [RARE: Decoupling Representation Steering from Expert Routing in Mixture-of-Experts Language Models](../../papers/arxiv-2608.21236/) | 2026-08-24 | 42 |
+| [RouteScan: A Non-Intrusive Approach to Auditing MoE LLMs Safety via Expert Routing Telemetry](../../papers/arxiv-2605.24817/) | 2026-08-24 | 41 |
 | [Towards Efficient Pareto Set Approximation via Mixture of Experts Based Model Fusion](../../papers/arxiv-2406.09770/) | 2026-08-21 | 45 |
 | [TiMi: Empower Time Series Transformers with Multimodal Mixture of Experts](../../papers/arxiv-2602.21693/) | 2026-08-20 | 43 |
 | [DeaMoE: Efficient MoE Structure for Fast Small-Batch Decoding](../../papers/arxiv-2608.14385/) | 2026-08-17 | 44 |

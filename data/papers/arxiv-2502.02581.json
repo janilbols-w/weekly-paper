@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2502.02581",
+  "title": "Themis: Efficient Sparse Model Training Through Fully Sharded Sparse Data Parallelism",
+  "abstract": "Mixture-of-Experts (MoE) scales large language models cost-effectively, but expert-parallel training suffers severe straggler effects from skewed expert loads. Current systems frequently rearrange expert placement to mitigate stragglers, inflating memory footprint and migration overhead, potentially negating the benefits of load balancing. We present Fully Sharded Sparse Data Parallelism (FSSDP), a sparse-native MoE training approach that enables in-situ load balancing on every training iteration, overlapping the balancing with computation and eliminating explicit expert rearrangement together with its migration traffic and memory reserves. FSSDP keeps MoE layers sharded and sparsely materializes an ephemeral, load-balancing placement each iteration, with re-materialization to reuse available memory across layers. FSSDP is complemented by heterogeneous sharding to shift memory imbalance from the device level to the layer level, maintaining uniform memory budgets while enabling per-layer placement optimization. We realize FSSDP in Themis with co-designed topology-aware placement algorithms. Across 2 clusters and diverse workloads, Themis achieves 1.26-2.42x speedup over state-of-the-art expert-rearrangement systems.",
+  "url": "https://arxiv.org/abs/2502.02581",
+  "pdf_url": "https://arxiv.org/pdf/2502.02581",
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "authors": [
+    "Yuhao Qing",
+    "Guichao Zhu",
+    "Lintian Lei",
+    "Fanxin Li",
+    "Shixiong Zhao",
+    "Zekai Sun",
+    "Xiuxian Guan",
+    "Xusheng Chen",
+    "Dong Huang",
+    "Ping Luo",
+    "Yiming Qiu",
+    "Heming Cui"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "straggler"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: straggler",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) scales large language models cost-effectively, but expert-parallel training suffers severe straggler effects from skewed expert loads.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-24T04:48:23+00:00",
+  "last_seen": "2026-08-24T04:48:23+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2502.02581",
+      "url": "https://arxiv.org/abs/2502.02581"
+    }
+  ]
+}

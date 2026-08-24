@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **35** 篇。
+累计收录 **36** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf](../../papers/arxiv-2608.20370/) | 2026-08-24 | 40 |
 | [A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation](../../papers/arxiv-2608.19628/) | 2026-08-21 | 44 |
 | [FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving](../../papers/arxiv-2608.19758/) | 2026-08-20 | 51 |
 | [TokenPowerSandbox: Evidence-Gated CPU-First Screening for Energy-Aware LLM Serving](../../papers/arxiv-2608.18149/) | 2026-08-20 | 47 |

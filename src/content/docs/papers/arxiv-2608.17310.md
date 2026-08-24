@@ -39,7 +39,7 @@ Reinforcement Learning (RL) has been promising in single-turn LLM fine-tuning. H
 ## 元数据
 
 - 作者：Zhi Zheng, Rongsheng Chen, Yunpeng Ba, Zhenkun Wang, Yee Whye Teh, Wee Sun Lee
-- 发布：2026-08-20；更新：2026-08-20
+- 发布：2026-08-20；更新：2026-08-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

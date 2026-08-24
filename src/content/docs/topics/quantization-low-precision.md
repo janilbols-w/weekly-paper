@@ -5,10 +5,15 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **61** 篇。
+累计收录 **66** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs](../../papers/arxiv-2608.20953/) | 2026-08-24 | 48 |
+| [Nothing Changed but the Model: CellFill -- Bounded In-Cell Learning for Bit-Identical, Revocable Updates to Quantized LLMs](../../papers/arxiv-2608.20873/) | 2026-08-24 | 46 |
+| [Target-Aware Calibration Data Selection for Preserving Uncertainty in Quantized Language Models](../../papers/arxiv-2608.21019/) | 2026-08-24 | 41 |
+| [Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs](../../papers/arxiv-2608.21134/) | 2026-08-24 | 39 |
+| [Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models](../../papers/arxiv-2608.20988/) | 2026-08-24 | 39 |
 | [RequestRouter: Request-Boundary Routing for Efficient Single-GPU LLM Inference](../../papers/arxiv-2605.23057/) | 2026-08-21 | 53 |
 | [GQ-FSL: Green Quantized Federated Split Learning Framework for Wireless Edge Networks](../../papers/arxiv-2607.29659/) | 2026-08-20 | 45 |
 | [A Resource-Efficient CNN-Based EEG Auditory Attention Decoding ASIC](../../papers/arxiv-2608.20198/) | 2026-08-20 | 40 |

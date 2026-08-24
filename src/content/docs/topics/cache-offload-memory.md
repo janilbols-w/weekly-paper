@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **27** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference](../../papers/arxiv-2501.10375/) | 2026-08-24 | 52 |
 | [Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements](../../papers/arxiv-2608.17310/) | 2026-08-20 | 41 |
 | [Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets](../../papers/arxiv-2608.19147/) | 2026-08-19 | 49 |
 | [H$^{2}$MT: Semantic Hierarchy-Aware Hierarchical Memory Transformer](../../papers/arxiv-2605.24930/) | 2026-08-19 | 41 |

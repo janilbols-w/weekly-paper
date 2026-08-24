@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2510.18586",
+  "title": "TokenCake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications",
+  "abstract": "Large Language Models (LLMs) are increasingly deployed in complex multi-agent applications that rely on external function calls. This workload creates severe performance challenges for the KV Cache: spatial contention leads to the eviction of critical agents' caches and temporal underutilization leaves the cache of agents stalled on long-running function calls idling in GPU memory. We present TokenCake, a KV-Cache-centric serving framework that bridges this gap by co-optimizing scheduling and memory management through an agent-aware design. TokenCake's Temporal Scheduler employs an event-driven, opportunistic policy to proactively offload idle KV Caches during function calls and uses predictive uploading to hide data transfer latency. TokenCake's Spatial Scheduler uses dynamic memory partitioning, guided by a hybrid priority metric combining graph structure and runtime state, to reserve GPU memory for critical-path agents. Our evaluation on representative multi-agent benchmarks shows that TokenCake reduces end-to-end latency by over 47.06% and improves effective GPU memory utilization by up to 16.9% compared to vLLM.",
+  "url": "https://arxiv.org/abs/2510.18586",
+  "pdf_url": "https://arxiv.org/pdf/2510.18586",
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "authors": [
+    "Zhuohang Bian",
+    "Feiyang Wu",
+    "Zhuoran Li",
+    "Teng Ma",
+    "Youwei Zhuo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "cache-offload-memory"
+  ],
+  "keyword_evidence": [
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large Language Models (LLMs) are increasingly deployed in complex multi-agent applications that rely on external function calls.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-24T04:48:23+00:00",
+  "last_seen": "2026-08-24T04:48:23+00:00",
+  "featured_weeks": [
+    "2026-W35"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.18586",
+      "url": "https://arxiv.org/abs/2510.18586"
+    }
+  ]
+}

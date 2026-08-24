@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **11** 篇。
+累计收录 **12** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HIERA: Workload-Aware Planning Across Implementation Spaces for GPU Kernel Optimization](../../papers/arxiv-2608.21157/) | 2026-08-24 | 51 |
 | [PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX](../../papers/arxiv-2608.17379/) | 2026-08-18 | 55 |
 | [FluxBin: Flexible LUT-based Ultra-low-bit LLM Inference by Algorithm-Kernel Synergy](../../papers/arxiv-2608.15602/) | 2026-08-16 | 47 |
 | [FlashQuant: Sparse-Dense Fusion for Memory-Efficient Outlier-Aware LLM Inference](../../papers/arxiv-2608.15531/) | 2026-08-16 | 45 |
