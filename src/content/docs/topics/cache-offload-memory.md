@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **28** 篇。
+累计收录 **31** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [CMI-Mem: Toward Generalizable Long-Term Memory Management via CMI-Augmented Reinforcement Learning](../../papers/arxiv-2607.20553/) | 2026-08-25 | 48 |
+| [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](../../papers/arxiv-2608.22215/) | 2026-08-25 | 44 |
+| [NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching](../../papers/arxiv-2608.22643/) | 2026-08-25 | 39 |
 | [DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference](../../papers/arxiv-2501.10375/) | 2026-08-24 | 52 |
 | [Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements](../../papers/arxiv-2608.17310/) | 2026-08-20 | 41 |
 | [Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets](../../papers/arxiv-2608.19147/) | 2026-08-19 | 49 |

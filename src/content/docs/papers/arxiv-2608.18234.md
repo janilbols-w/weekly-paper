@@ -5,7 +5,7 @@ description: "Whole-body motion tracking policies turn a humanoid into a robust 
 
 **评分：40/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
 
-[论文原文](http://arxiv.org/abs/2608.18234v1) · [PDF](https://arxiv.org/pdf/2608.18234v1)
+[论文原文](https://arxiv.org/abs/2608.18234) · [PDF](https://arxiv.org/pdf/2608.18234)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ Whole-body motion tracking policies turn a humanoid into a robust control interf
 ## 元数据
 
 - 作者：Ziyang Cheng, Tianshu Tang, Jinxin Lan, Xinze Chen, Yuhan Gong, Zhichao Liu, Changzhong Wu, Yahao Mao, Zongyan Deng, Mingxuan Ma, Huasen Xi, Yilong Liu, Yutong Wu, Xiaofeng Wang, Yang Wang, Yun Ye, Guan Huang, Xiaojie Jin, Zheng Zhu, Jiwen Lu
-- 发布：2026-08-18；更新：2026-08-18
-- 来源：arXiv；Venue：未确认
+- 发布：2026-08-18；更新：2026-08-25
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

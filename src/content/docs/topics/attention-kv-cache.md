@@ -5,10 +5,19 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **46** 篇。
+累计收录 **55** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms](../../papers/arxiv-2607.12550/) | 2026-08-25 | 51 |
+| [Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models](../../papers/arxiv-2608.22753/) | 2026-08-25 | 50 |
+| [Benchmarking Composable Compression Techniques in Mixture-of-Experts LLMs](../../papers/arxiv-2608.21693/) | 2026-08-25 | 48 |
+| [FlashAccel: Leveraging High-Bandwidth Flash (HBF) for High-Throughput LLM Inference](../../papers/arxiv-2607.10186/) | 2026-08-25 | 44 |
+| [Accelerating Diffusion Language Models via Structured Suffix Modeling](../../papers/arxiv-2608.23167/) | 2026-08-25 | 44 |
+| [WnW: Waxing-and-Waning KV Cache for Long-Form Speech LLMs](../../papers/arxiv-2608.22704/) | 2026-08-25 | 43 |
+| [When Less Latent Leads to Better Relay: Information-Preserving Compression for Latent Multi-Agent LLM Collaboration](../../papers/arxiv-2604.13349/) | 2026-08-25 | 43 |
+| [Last But Not Least: Boundary Attention CalibratiON for Multimodal KV Cache Compression](../../papers/arxiv-2606.14782/) | 2026-08-25 | 43 |
+| [Sigmoid Attention as a Better Substrate for Learned KV Cache Eviction](../../papers/arxiv-2608.23296/) | 2026-08-25 | 40 |
 | [TokenCake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications](../../papers/arxiv-2510.18586/) | 2026-08-24 | 50 |
 | [AgentDecarbonizer: Carbon-Aware Execution for AI Agents](../../papers/arxiv-2608.20566/) | 2026-08-24 | 40 |
 | [ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents](../../papers/arxiv-2608.19662/) | 2026-08-20 | 57 |

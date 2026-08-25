@@ -39,7 +39,7 @@ Large Language Models (LLMs) have become integral to modern applications, yet th
 ## 元数据
 
 - 作者：Truong-Thanh Le, Amir Taherkordi, Hoang-Loc La, Frank Eliassen, Phuong Hoai Ha, Peiyuan Guan
-- 发布：2026-08-18；更新：2026-08-18
+- 发布：2026-08-18；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

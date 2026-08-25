@@ -5,10 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **21** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Model Compression and Hardware-Aware Acceleration for Deep Learning on FPGAs: A Co-Design Taxonomy and Comparative Analysis](../../papers/arxiv-2608.21657/) | 2026-08-25 | 46 |
+| [Tensor Seeks Layout: Formalizing Layout Selection for ML Compilers](../../papers/arxiv-2608.21555/) | 2026-08-25 | 39 |
 | [Automatically Generating ML Compiler Backends from Tensor Accelerator ISA Descriptions](../../papers/arxiv-2510.09932/) | 2026-08-19 | 50 |
 | [HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving](../../papers/arxiv-2608.14575/) | 2026-08-18 | 56 |
 | [ESR-HGNN: Eliminating Semantic Redundancy for Efficient Mini-batch HGNN Inference](../../papers/arxiv-2608.17865/) | 2026-08-18 | 42 |

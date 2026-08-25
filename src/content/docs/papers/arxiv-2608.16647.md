@@ -5,7 +5,7 @@ description: "On-policy distillation (OPD) transfers teacher capabilities by sup
 
 **评分：40/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
-[论文原文](http://arxiv.org/abs/2608.16647v1) · [PDF](https://arxiv.org/pdf/2608.16647v1)
+[论文原文](https://arxiv.org/abs/2608.16647) · [PDF](https://arxiv.org/pdf/2608.16647)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ On-policy distillation (OPD) transfers teacher capabilities by supervising traje
 ## 元数据
 
 - 作者：Zhaoyi Li, Deyang Kong, Yuan Wei, Evan Yang, Ranran Shen, Mahardika Krisna Ihsani, Ming Yang, Wei Zhang, Chuan Hao, Jian Yang, Ran Tao, Bryan Dai, Shikun Zhang, Wei Ye, Ying Wei, Defu Lian
-- 发布：2026-08-17；更新：2026-08-17
-- 来源：arXiv；Venue：未确认
+- 发布：2026-08-17；更新：2026-08-25
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

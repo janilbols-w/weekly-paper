@@ -5,10 +5,24 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **141** 篇。
+累计收录 **155** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SelFusion: Self-distillation for Diffusion Language Models](../../papers/arxiv-2608.22898/) | 2026-08-25 | 48 |
+| [Reservoir of Importance: Learning Semi-Structured Sparsity with Differentiable Subset Sampling](../../papers/arxiv-2608.23048/) | 2026-08-25 | 47 |
+| [Thinking at the Right Size: Amortized Distillation Across Post-Trained LLMs](../../papers/arxiv-2608.22854/) | 2026-08-25 | 44 |
+| [TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts](../../papers/arxiv-2608.22788/) | 2026-08-25 | 43 |
+| [A Reproducible, License-Aware Distillation Recipe for CPUDeployable Safety Classification](../../papers/arxiv-2608.21570/) | 2026-08-25 | 43 |
+| [Revisiting the Effectiveness of LLM Pruning for Test-Time Scaling](../../papers/arxiv-2604.25098/) | 2026-08-25 | 42 |
+| [EDGE: Experience-Distillation for Guided Exploration in Agentic Reinforcement Learning](../../papers/arxiv-2608.21946/) | 2026-08-25 | 42 |
+| [Interpretable AI with Local Distillation](../../papers/arxiv-2608.23538/) | 2026-08-25 | 41 |
+| [Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents](../../papers/arxiv-2608.22963/) | 2026-08-25 | 41 |
+| [SocraticPO: Policy Optimization via Interactive Guidance](../../papers/arxiv-2606.09887/) | 2026-08-25 | 40 |
+| [Cross-Domain, Multi-Task Data-to-Text Generation without In-Domain Training Data](../../papers/arxiv-2608.23391/) | 2026-08-25 | 40 |
+| [Soft-NBCE: Entropy-Weighted Chunk Fusion for Long-Context](../../papers/arxiv-2606.01101/) | 2026-08-25 | 39 |
+| [DIAG: Diagnostic Iterative Alignment and Generation for Data-Efficient Mathematical Preference Distillation](../../papers/arxiv-2608.22806/) | 2026-08-25 | 39 |
+| [Beyond the Harness: End-to-End Optimization of Context Artifacts for Enterprise Text-to-SQL](../../papers/arxiv-2608.22830/) | 2026-08-25 | 39 |
 | [STS: Efficient Sparse Attention with Speculative Token Sparsity](../../papers/arxiv-2605.15508/) | 2026-08-24 | 48 |
 | [SafeSteer: Localized On-Policy Distillation for Efficient Safety Alignment](../../papers/arxiv-2606.02530/) | 2026-08-24 | 46 |
 | [COEC: Calibrated Orthogonal-Equivalence Compensation for Structured Pruning of Large Language Models](../../papers/arxiv-2608.21142/) | 2026-08-24 | 45 |

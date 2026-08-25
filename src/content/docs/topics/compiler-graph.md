@@ -5,10 +5,13 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **29** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MOSAIC: Modular Orchestration for Structured Agentic Intelligence and Composition](../../papers/arxiv-2606.00708/) | 2026-08-25 | 43 |
+| [Execution-Anchored Hallucination Calibration Reranking for Verilog Code Generation](../../papers/arxiv-2608.22938/) | 2026-08-25 | 41 |
+| [LongWoF-Bench: Evaluating EvoMap Genes for Verifiable Long-Workflow Tasks](../../papers/arxiv-2608.23200/) | 2026-08-25 | 40 |
 | [When to Ponder: Adaptive Compute Allocation for Code Generation via Test-Time Training](../../papers/arxiv-2601.00894/) | 2026-08-24 | 41 |
 | [Library Hallucinations in LLM-Generated Code: A Risk Analysis Grounded in Developer Queries](../../papers/arxiv-2509.22202/) | 2026-08-24 | 39 |
 | [AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning](../../papers/arxiv-2508.14313/) | 2026-08-24 | 39 |

@@ -1,6 +1,6 @@
 ---
-title: "Quantization Effects on Biomedical LLM Reliability"
-description: "When decoder language models are used as classifiers, predicted class probabilities depend on implementation choices, including the prompt template, verbalizer (label-to-token mapping), and scoring rule, that are rarely treated as experimental variables."
+title: "When Calibration Depends on the Scoring Rule: Quantized Biomedical LLM Classification"
+description: "Quantized large language models enable on-premises processing of sensitive data, but their confidence estimates must be trustworthy."
 ---
 
 **评分：45/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,7 +9,7 @@ description: "When decoder language models are used as classifiers, predicted cl
 
 ## 一句话摘要
 
-When decoder language models are used as classifiers, predicted class probabilities depend on implementation choices, including the prompt template, verbalizer (label-to-token mapping), and scoring rule, that are rarely treated as experimental variables.
+Quantized large language models enable on-premises processing of sensitive data, but their confidence estimates must be trustworthy.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ When decoder language models are used as classifiers, predicted class probabilit
 
 ## 摘要原文
 
-When decoder language models are used as classifiers, predicted class probabilities depend on implementation choices, including the prompt template, verbalizer (label-to-token mapping), and scoring rule, that are rarely treated as experimental variables. We present a controlled evaluation of three Mistral-7B variants (Base, BioMistral, and Instruct) on PubMed RCT sentence classification (n=2000) under FP16, INT8, and INT4 precision using four answer-text prompt templates. Our primary finding is that the probability extraction protocol dominates apparent calibration. Switching from summed to mean token log-likelihood scoring reverses the calibration ranking between models: BioMistral average expected calibration error increases from 0.097 to 0.289, whereas Instruct decreases from 0.237 to 0.096, while accuracy changes by less than 1 percentage point for the specialized models but 4-6 percentage points for the base model. Prompt template choice produces accuracy differences of 7-24 percentage points, comparable to or larger than model-level effects. On one template, BioMistral outperforms Instruct although the overall mean favors Instruct by only 1.3 percentage points. For BioMistral and Instruct, INT8 quantization changes accuracy and F1 by only 1-2 percentage points relative to FP16, whereas the base model shows larger INT8 effects on some templates (up to +4.2 percentage points). INT4 produces heterogeneous but non-catastrophic effects. Temperature scaling reduces expected calibration error under summed scoring for both models but only for that scoring rule. A fine-tuned PubMedBERT reference achieves 82.7% accuracy but uses about 176000 labeled training examples, precluding direct comparison. These results demonstrate that prompt template design and scoring normalization are first-order experimental decisions when evaluating decoder language model calibration.
+Quantized large language models enable on-premises processing of sensitive data, but their confidence estimates must be trustworthy. Reliability depends on implementation choices--prompt template, label wording, and scoring normalization--that are seldom treated as experimental variables. We evaluate three 7-billion-parameter Mistral variants (base, BioMistral, and instruction-tuned) at FP16, INT8, and INT4 on five-class sentence classification in medical abstracts. Two primary templates are evaluated on n=2,000 test sentences and two auxiliary templates on n=200 validation sentences. Because the primary templates were selected using 100 test-derived examples and a preliminary scorer later found to have a token-boundary error, results involving them are exploratory. Within this design, candidate-scoring normalization dominates apparent calibration: switching from summed to mean-token log-likelihood reverses which model appears better calibrated (BioMistral's mean calibration error nearly triples, while the instruction-tuned model's drops by more than half), yet accuracy changes by at most 1.4 percentage points for the two specialized models. Negative log-likelihood and Brier score confirm the reversal. Across the two primary templates, prompt choice changes mean accuracy by 2.9--17.8 percentage points, depending on the model. INT8 changes accuracy by at most 1.1 percentage points for the specialized models; INT4 effects are mixed but non-catastrophic. Post-hoc temperature scaling improves calibration under summed scoring but has not been validated under the alternative normalization that reverses the ranking. These exploratory results indicate that scoring normalization and prompt design should be first-order experimental decisions in calibration comparisons of decoder-based classifiers.
 
 ## 质量评分
 
@@ -32,14 +32,14 @@ When decoder language models are used as classifiers, predicted class probabilit
 
 ## 证据与限制
 
-- taxonomy keywords: int4, int8, quantization
+- taxonomy keywords: int4, int8, quantized
 - no quantitative claim in metadata
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Anton Rasmussen, Hong Qin
-- 发布：2026-08-04；更新：2026-08-06
+- 发布：2026-08-04；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

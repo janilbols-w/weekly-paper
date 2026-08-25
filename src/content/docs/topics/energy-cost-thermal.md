@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **15** 篇。
+累计收录 **16** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference](../../papers/arxiv-2608.22613/) | 2026-08-25 | 49 |
 | [Faults That Fortify: CNN Adversarial Robustness via GPU Undervolting](../../papers/arxiv-2608.20572/) | 2026-08-24 | 38 |
 | [A Fast Locality Simulator for GEMM Design-Space Exploration on Multi-Chiplet GPUs](../../papers/arxiv-2606.11716/) | 2026-08-21 | 48 |
 | [An Inclusive and Lightweight Approach to Federated Continual Learning for Cultural Heritage](../../papers/arxiv-2608.20038/) | 2026-08-21 | 39 |

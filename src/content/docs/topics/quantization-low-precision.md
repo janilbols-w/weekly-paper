@@ -5,12 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **66** 篇。
+累计收录 **68** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference](../../papers/arxiv-2608.21362/) | 2026-08-25 | 48 |
+| [What actually runs: a measurement study of language model placement and decode speed on the Apple Neural Engine](../../papers/arxiv-2608.22110/) | 2026-08-25 | 43 |
+| [SplitLite: Low-Rank Residual Compression for Split Learning](../../papers/arxiv-2608.23018/) | 2026-08-25 | 41 |
 | [Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs](../../papers/arxiv-2608.20953/) | 2026-08-24 | 48 |
-| [Nothing Changed but the Model: CellFill -- Bounded In-Cell Learning for Bit-Identical, Revocable Updates to Quantized LLMs](../../papers/arxiv-2608.20873/) | 2026-08-24 | 46 |
 | [Target-Aware Calibration Data Selection for Preserving Uncertainty in Quantized Language Models](../../papers/arxiv-2608.21019/) | 2026-08-24 | 41 |
 | [Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs](../../papers/arxiv-2608.21134/) | 2026-08-24 | 39 |
 | [Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models](../../papers/arxiv-2608.20988/) | 2026-08-24 | 39 |
@@ -69,7 +71,7 @@ description: "Quantization & Low Precision"
 | [Heterogeneity-Aware Microscaling for Efficient Low-Bit LLM Inference](../../papers/arxiv-2608.03867/) | 2026-08-04 | 49 |
 | [TempoNet: Slack-Quantized Transformer-Guided Reinforcement Scheduler for Adaptive Deadline-Centric Real-Time Dispatchs](../../papers/arxiv-2602.18109/) | 2026-08-04 | 48 |
 | [Recurrent Residual Quantization: A Progressive Multi-Precision Representation for LLMs](../../papers/arxiv-2608.04048/) | 2026-08-04 | 48 |
-| [Quantization Effects on Biomedical LLM Reliability](../../papers/arxiv-2608.03854/) | 2026-08-04 | 45 |
+| [When Calibration Depends on the Scoring Rule: Quantized Biomedical LLM Classification](../../papers/arxiv-2608.03854/) | 2026-08-04 | 45 |
 | [Rethinking Federated Graph Foundation Models: A Graph-Language Alignment-based Approach](../../papers/arxiv-2601.21369/) | 2026-08-04 | 41 |
 | [ARCHead: Activation-Metric Residual Correction for Large Language Model Output Heads](../../papers/arxiv-2608.02703/) | 2026-08-03 | 46 |
 | [NANQ: Noise-Floor-Aware Mixed-Precision Non-Uniform Quantization for Analog Compute-in-Memory](../../papers/arxiv-2608.02700/) | 2026-08-03 | 45 |
