@@ -39,7 +39,7 @@ Self-supervised electrocardiogram (ECG) models are often trained on a few second
 ## 元数据
 
 - 作者：Ahmed Sameh, Ramzi Al-Sharawi, Yogatheesan Varatharajah
-- 发布：2026-08-13；更新：2026-08-14
+- 发布：2026-08-13；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/muha-0/ecg-ssl-representation-learning](https://github.com/muha-0/ecg-ssl-representation-learning)
 - 阅读深度：metadata

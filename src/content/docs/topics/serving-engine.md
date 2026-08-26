@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **37** 篇。
+累计收录 **38** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems](../../papers/arxiv-2608.24650/) | 2026-08-26 | 45 |
 | [PowerSlider: Exploiting Phase Asymmetry for LLM Serving under Demand Response](../../papers/arxiv-2608.21719/) | 2026-08-25 | 48 |
 | [Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf](../../papers/arxiv-2608.20370/) | 2026-08-24 | 40 |
 | [A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation](../../papers/arxiv-2608.19628/) | 2026-08-21 | 44 |
@@ -31,7 +32,7 @@ description: "Serving Engines & Runtimes"
 | [Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 39 |
 | [Potential Applications of HBF in LLM Serving Systems](../../papers/arxiv-2608.13127/) | 2026-08-13 | 41 |
 | [Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling](../../papers/arxiv-2508.03611/) | 2026-08-12 | 46 |
-| [HBF Sucks! A Full-Stack Characterization of High-Bandwidth Flash for KV-Centric LLM Serving](../../papers/arxiv-2608.11668/) | 2026-08-12 | 40 |
+| [HBF Sucks? A Full-Stack Characterization of High-Bandwidth Flash for KV-Centric LLM Serving](../../papers/arxiv-2608.11668/) | 2026-08-12 | 40 |
 | [MoE-Prism: Disentangling Monolithic Experts for Elastic MoE Services via Model-System Co-Designs](../../papers/arxiv-2510.19366/) | 2026-08-11 | 40 |
 | [An Event-Driven Cloud-Native Wearable Analytics Framework for Real-Time Clinical Workloads](../../papers/arxiv-2608.11402/) | 2026-08-11 | 39 |
 | [OmniInfer: System-Wide Acceleration Techniques for Optimizing LLM Serving Throughput and Latency](../../papers/arxiv-2511.22481/) | 2026-08-10 | 43 |

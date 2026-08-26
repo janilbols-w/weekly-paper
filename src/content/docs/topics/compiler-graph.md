@@ -5,10 +5,13 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **32** 篇。
+累计收录 **35** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Markets, Not Planners: Decentralized Orchestration of LLM Agents with Private Information](../../papers/arxiv-2608.23867/) | 2026-08-26 | 39 |
+| [LLM Agents Perform Controlled Experiments Using Simulation Models](../../papers/arxiv-2608.23622/) | 2026-08-26 | 39 |
+| [Exploit More, Explore Smarter for Budget-Constrained Agentic Search](../../papers/arxiv-2608.23848/) | 2026-08-26 | 39 |
 | [MOSAIC: Modular Orchestration for Structured Agentic Intelligence and Composition](../../papers/arxiv-2606.00708/) | 2026-08-25 | 43 |
 | [Execution-Anchored Hallucination Calibration Reranking for Verilog Code Generation](../../papers/arxiv-2608.22938/) | 2026-08-25 | 41 |
 | [LongWoF-Bench: Evaluating EvoMap Genes for Verifiable Long-Workflow Tasks](../../papers/arxiv-2608.23200/) | 2026-08-25 | 40 |

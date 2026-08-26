@@ -5,10 +5,16 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **68** 篇。
+累计收录 **74** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Quantization Effects on Bangla Language Understanding in Large Language Models: A Systematic Evaluation](../../papers/arxiv-2608.24615/) | 2026-08-26 | 49 |
+| [QABBA: Error-Guaranteed Symbolic Time-Series Compression via Integer-Quantized Aggregation](../../papers/arxiv-2411.15209/) | 2026-08-26 | 48 |
+| [Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and Machine Translation](../../papers/arxiv-2608.23582/) | 2026-08-26 | 47 |
+| [Compression Trinity: Exploring Sparsity, Quantization, and Low-Rank Approximations for LLM Compression](../../papers/arxiv-2608.24070/) | 2026-08-26 | 47 |
+| [Low-Rank Ternary Adaptation for Fine-Tuning Transformers](../../papers/arxiv-2608.24469/) | 2026-08-26 | 44 |
+| [Can Large Language Models Still Explain Themselves? Investigating the Impact of Quantization on Self-Explanations](../../papers/arxiv-2601.00282/) | 2026-08-26 | 39 |
 | [KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference](../../papers/arxiv-2608.21362/) | 2026-08-25 | 48 |
 | [What actually runs: a measurement study of language model placement and decode speed on the Apple Neural Engine](../../papers/arxiv-2608.22110/) | 2026-08-25 | 43 |
 | [SplitLite: Low-Rank Residual Compression for Split Learning](../../papers/arxiv-2608.23018/) | 2026-08-25 | 41 |

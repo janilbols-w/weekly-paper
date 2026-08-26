@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **31** 篇。
+累计收录 **33** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [WiCi: Wireless GPU Computing Infrastructure](../../papers/arxiv-2608.24204/) | 2026-08-26 | 39 |
+| [Deep Feature Pyramid Convolutional Networks with In-Place Activated Batch Normalization for Automated Skin Lesion Boundary Segmentation](../../papers/arxiv-1812.00877/) | 2026-08-26 | 39 |
 | [CMI-Mem: Toward Generalizable Long-Term Memory Management via CMI-Augmented Reinforcement Learning](../../papers/arxiv-2607.20553/) | 2026-08-25 | 48 |
 | [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](../../papers/arxiv-2608.22215/) | 2026-08-25 | 44 |
 | [NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching](../../papers/arxiv-2608.22643/) | 2026-08-25 | 39 |

@@ -5,10 +5,16 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **155** 篇。
+累计收录 **161** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TaLK: Text-attributed Graph Dataset Distillation via Coupling Language Model with Graph-Aware Kernel](../../papers/arxiv-2606.22975/) | 2026-08-26 | 47 |
+| [On-policy Distillation with Verifiable Reward](../../papers/arxiv-2608.24696/) | 2026-08-26 | 47 |
+| [Skill-Conditioned Gated Self-Distillation for LLM Reasoning](../../papers/arxiv-2605.28791/) | 2026-08-26 | 41 |
+| [DiD It in 87 Minutes: A Label-Free Softmax-to-Linear Adaptation of Vision Transformers for Object Detection](../../papers/arxiv-2608.22368/) | 2026-08-26 | 41 |
+| [Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution](../../papers/arxiv-2607.08960/) | 2026-08-26 | 40 |
+| [RecurSE: Bounded Recursive Self-Evaluation for LLM Rubric Judges](../../papers/arxiv-2608.24231/) | 2026-08-26 | 39 |
 | [SelFusion: Self-distillation for Diffusion Language Models](../../papers/arxiv-2608.22898/) | 2026-08-25 | 48 |
 | [Reservoir of Importance: Learning Semi-Structured Sparsity with Differentiable Subset Sampling](../../papers/arxiv-2608.23048/) | 2026-08-25 | 47 |
 | [Thinking at the Right Size: Amortized Distillation Across Post-Trained LLMs](../../papers/arxiv-2608.22854/) | 2026-08-25 | 44 |

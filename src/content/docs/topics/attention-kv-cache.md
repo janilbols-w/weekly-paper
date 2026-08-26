@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **55** 篇。
+累计收录 **57** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PuzzleKV: Page-Wise Low-Rank Decomposition for KV Cache Compression](../../papers/arxiv-2608.23843/) | 2026-08-26 | 47 |
+| [Elastic KV Cache for LLM Serving:A Working Reclamation Mechanism, and Why Chunked Prefill Already Closes the Gap](../../papers/arxiv-2608.23658/) | 2026-08-26 | 47 |
 | [A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms](../../papers/arxiv-2607.12550/) | 2026-08-25 | 51 |
 | [Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models](../../papers/arxiv-2608.22753/) | 2026-08-25 | 50 |
 | [Benchmarking Composable Compression Techniques in Mixture-of-Experts LLMs](../../papers/arxiv-2608.21693/) | 2026-08-25 | 48 |

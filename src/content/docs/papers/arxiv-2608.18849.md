@@ -39,7 +39,7 @@ Tabular foundation models (TFMs) achieve strong performance through in-context l
 ## 元数据
 
 - 作者：Qi Qin, Jiajie Zhu, Dali Chen, Yuzhao Zhang, Jia-Xing Han, Yu Su, Peng Zhang, Ying Yan, Yifan Sun
-- 发布：2026-08-20；更新：2026-08-20
+- 发布：2026-08-20；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **29** 篇。
+累计收录 **31** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ShardMeter: Sharded and Geo-Distributed Training Without the Guesswork](../../papers/arxiv-2608.23840/) | 2026-08-26 | 49 |
+| [Delayed Optimizer-State Transport Shapes Short-Horizon Training Decisions](../../papers/arxiv-2608.24593/) | 2026-08-26 | 38 |
 | [Evaluation Awareness in Language Models: Representation, Verbalization, and Control](../../papers/arxiv-2608.21766/) | 2026-08-25 | 38 |
 | [SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD](../../papers/arxiv-2607.20145/) | 2026-08-20 | 47 |
 | [Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification](../../papers/arxiv-2608.14929/) | 2026-08-18 | 41 |

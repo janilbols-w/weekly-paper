@@ -39,7 +39,7 @@ Large language models are increasingly expected to execute complex workflows who
 ## 元数据
 
 - 作者：Xiao Zhang, Qumeng Sun, Jihao Li, Yiming Ren, Xiang Liu, Haoyang Zhang, Junjie Wang
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-25；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
