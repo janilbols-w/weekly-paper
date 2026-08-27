@@ -5,10 +5,12 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **16** 篇。
+累计收录 **18** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning](../../papers/arxiv-2602.01990/) | 2026-08-27 | 44 |
+| [The Von-Neumann State-Space Transformer for neural decoding](../../papers/arxiv-2608.25088/) | 2026-08-27 | 39 |
 | [SiftMoE: Similarity-Aware Energy-Efficient Expert Selection for Wireless Distributed MoE Inference](../../papers/arxiv-2603.23888/) | 2026-08-26 | 48 |
 | [A Heterogeneous Mixture of Experts Framework for Interpretable Machine Learning](../../papers/arxiv-2608.24195/) | 2026-08-26 | 42 |
 | [SAEM: Stage-Aware Expert Management for Memory-Efficient MoE Inference in Chain-of-Thought Reasoning](../../papers/arxiv-2608.21614/) | 2026-08-25 | 52 |

@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **22** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs](../../papers/arxiv-2608.26004/) | 2026-08-27 | 49 |
 | [AgentSpec: Speculative Decoding for Batch Inference of LLM Agents](../../papers/arxiv-2608.24004/) | 2026-08-26 | 46 |
 | [HiViS: Hiding Visual Tokens from the Drafter for Speculative Decoding in Vision-Language Models](../../papers/arxiv-2509.23928/) | 2026-08-25 | 43 |
 | [GRAFT: Adaptive DLM-Based Draft Tree Construction with Target-Distilled Edge Scoring](../../papers/arxiv-2608.20375/) | 2026-08-24 | 41 |

@@ -39,7 +39,7 @@ Test-time scaling strategies for Large Language Models predominantly rely on eit
 ## 元数据
 
 - 作者：Can Jin, Yang Zhou, Qixin Zhang, Hongwu Peng, Di Zhang, Zihan Dong, Marco Pavone, Ligong Han, Zhang-Wei Hong, Tong Che, Dimitris N. Metaxas
-- 发布：2026-08-24；更新：2026-08-24
+- 发布：2026-08-24；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2604.15416",
+  "title": "StoSignSGD: Unbiased Structural Stochasticity Fixes SignSGD for Training Large Language Models",
+  "abstract": "Sign-based optimization algorithms, such as SignSGD, have garnered attention for their performance in distributed learning and training large foundation models. Despite their empirical superiority, SignSGD is known to diverge on non-smooth objectives, which are ubiquitous due to ReLUs, max-pools, and mixture-of-experts. To overcome this limitation, we propose StoSignSGD, an algorithm that injects structural stochasticity into the sign operator while maintaining an unbiased update step. In the regime of (online) convex optimization, StoSignSGD rigorously resolves the non-convergence issues of SignSGD, achieving a sharp convergence rate matching the lower bound. For the more challenging non-convex non-smooth optimization, we introduce generalized stationary measures that encompass prior definitions, proving that StoSignSGD improves upon the best-known complexity bounds by dimensional factors. Empirically, StoSignSGD is stable and efficient across diverse large language model (LLM) training regimes. In aggressive low-precision pretraining, which spans both FP8 and the far more demanding FP4 regime where AdamW fails catastrophically, StoSignSGD stays stable and consistently performs the best. It attains a 1.44x to 2.14x speedup over established baselines under FP8. Under 4-bit precision, it improves downstream accuracy on the largest OLMo2-370M model by 1.13 points over the strongest stable baseline, and this advantage grows as both the model size and the data scale up. When fine-tuning 7B LLMs on mathematical reasoning tasks, StoSignSGD also delivers clear gains over both AdamW and SignSGD. Finally, to explain why it works, we develop a sign conversion framework that turns any general optimizer into its unbiased, sign-based counterpart. Using this framework, we decompose the core components of StoSignSGD and run a comprehensive ablation study to validate our design choices.",
+  "url": "https://arxiv.org/abs/2604.15416",
+  "pdf_url": "https://arxiv.org/pdf/2604.15416",
+  "published": "2026-08-27",
+  "updated": "2026-08-27",
+  "authors": [
+    "Dingzhi Yu",
+    "Rui Pan",
+    "Yuxing Liu",
+    "Difan Zou",
+    "Tong Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "math.OC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp4",
+    "fp8"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp4, fp8",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Sign-based optimization algorithms, such as SignSGD, have garnered attention for their performance in distributed learning and training large foundation models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-27T06:48:56+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.15416",
+      "url": "https://arxiv.org/abs/2604.15416"
+    }
+  ]
+}

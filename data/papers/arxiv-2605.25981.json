@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2605.25981",
+  "title": "AgentDiff: Meaning-Bearing Rewrites Trigger Deeper Divergence than Presentation Changes in LLM Agents",
+  "abstract": "LLM agents should respond to what an input means, not how it is presented. We show that they do not treat these two kinds of variation equally. AgentDiff measures the difference between answer changes caused by meaning-bearing rewrites (paraphrase and synonym substitution) and presentation changes (reordering, formatting, and distractors), while matching perturbation severity. Across 68 model--benchmark--scaffold cells spanning ten LLMs from seven architecture families, three benchmarks, 1{,}530 original questions, and approximately 11{,}150 variants, meaning-bearing rewrites produce a $+19.69$ percentage-point higher inconsistency rate (paired $t=9.58$, $p<0.0001$; 64/68 cells positive). The result is stable under four severity proxies ($+18.9$ to $+20.9$~pp, all $p<0.0001$) and remains $+11.10$~pp on the 48 cells outside the qwen family. A fully held-out qwen2.5-14B-Instruct evaluation then tests the structure of this effect on 1{,}800 new trajectories: the pre-registered capable-and-tractable partition is positive in 3/4 held-out cells and remains sharply separated after pooling (Welch $t=3.81$, $p=9.6\\!\\times\\!10^{-4}$). Trace analysis explains how the difference propagates. Meaning-bearing rewrites preserve the first action but reduce thought similarity from step 2 onward by $5.6$--$10.5$ points and extend the resulting cascade by $0.17$ steps (paired $t=7.69$, $p=2.5\\!\\times\\!10^{-14}$), a pattern we call \\emph{stealth divergence}. AgentDiff therefore establishes a reproducible directional robustness gap, identifies the regime in which it is most reliable, and connects final-answer inconsistency to a distinct trajectory-level signature. Code, perturbations, trajectories, and analysis scripts are released for review at https://anonymous.4open.science/r/agentdiff-emnlp-0BB4/",
+  "url": "https://arxiv.org/abs/2605.25981",
+  "pdf_url": "https://arxiv.org/pdf/2605.25981",
+  "published": "2026-08-27",
+  "updated": "2026-08-27",
+  "authors": [
+    "Liyun Zhang",
+    "Jiayi Guo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "observability-benchmarking",
+    "leaf": "Observability & Benchmarking",
+    "leaf_zh": "可观测性与 Benchmark"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "trace analysis"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: trace analysis",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM agents should respond to what an input means, not how it is presented.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-27T06:48:56+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.25981",
+      "url": "https://arxiv.org/abs/2605.25981"
+    }
+  ]
+}

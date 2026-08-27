@@ -39,7 +39,7 @@ Large-scale rollouts have become a core component of modern LLM systems, spannin
 ## 元数据
 
 - 作者：Tianqi Xu, Lu Lv, Haoyang Huang, Wenjie Huang, Zhanming Shen, Yuhao Shen, Baolin Zhang, Xinyi Hu, Shuang Ge, Jun Dai, Tianyu Liu, Suorong Yang, Zhikai Li, Ye Bai, Jun Zhang, Lei Chen, Yue Li, Mingchen Wan
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-25；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

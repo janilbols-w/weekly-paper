@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **24** 篇。
+累计收录 **25** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration](../../papers/arxiv-2608.25062/) | 2026-08-27 | 43 |
 | [RetrievalFormer: A Dual-Encoder Transformer for Efficient Approximate Nearest Neighbor Retrieval and Cold-Item Recommendation](../../papers/arxiv-2608.24079/) | 2026-08-26 | 40 |
 | [Model Compression and Hardware-Aware Acceleration for Deep Learning on FPGAs: A Co-Design Taxonomy and Comparative Analysis](../../papers/arxiv-2608.21657/) | 2026-08-25 | 46 |
 | [Tensor Seeks Layout: Formalizing Layout Selection for ML Compilers](../../papers/arxiv-2608.21555/) | 2026-08-25 | 39 |

@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **35** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RTLGuard: A Lightweight Teacher-Student Defense for Poisoned RTL Code Generation Models](../../papers/arxiv-2608.26049/) | 2026-08-27 | 41 |
+| [Think Short, Defer Smart, Act, and Repeat: Calibrated Reasoning and Uncertainty-Aware Deferral for Edge LLM Agents](../../papers/arxiv-2607.26865/) | 2026-08-27 | 39 |
 | [Markets, Not Planners: Decentralized Orchestration of LLM Agents with Private Information](../../papers/arxiv-2608.23867/) | 2026-08-26 | 39 |
 | [LLM Agents Perform Controlled Experiments Using Simulation Models](../../papers/arxiv-2608.23622/) | 2026-08-26 | 39 |
 | [Exploit More, Explore Smarter for Budget-Constrained Agentic Search](../../papers/arxiv-2608.23848/) | 2026-08-26 | 39 |

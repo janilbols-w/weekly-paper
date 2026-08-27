@@ -5,10 +5,14 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **33** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Multi-Turn Reasoning LLMs for Task Offloading in Mobile Edge Computing](../../papers/arxiv-2604.07148/) | 2026-08-27 | 45 |
+| [DataKernelBench: Can LLMs Optimize Database Queries on GPUs?](../../papers/arxiv-2608.25061/) | 2026-08-27 | 43 |
+| [BanglaMamba: Exploring State Space Models for Bangla Fake News Detection](../../papers/arxiv-2608.25190/) | 2026-08-27 | 43 |
+| [JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution](../../papers/arxiv-2608.25593/) | 2026-08-27 | 38 |
 | [WiCi: Wireless GPU Computing Infrastructure](../../papers/arxiv-2608.24204/) | 2026-08-26 | 39 |
 | [Deep Feature Pyramid Convolutional Networks with In-Place Activated Batch Normalization for Automated Skin Lesion Boundary Segmentation](../../papers/arxiv-1812.00877/) | 2026-08-26 | 39 |
 | [CMI-Mem: Toward Generalizable Long-Term Memory Management via CMI-Augmented Reinforcement Learning](../../papers/arxiv-2607.20553/) | 2026-08-25 | 48 |

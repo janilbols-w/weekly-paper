@@ -5,10 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **74** 篇。
+累计收录 **81** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FAMPWQ: Fisher Information-based Adaptive Mixed Precision Weight Quantization for Effective LLM Inference](../../papers/arxiv-2608.24945/) | 2026-08-27 | 53 |
+| [Beyond Dense Adam States: Adaptive Log-Space Quantization for Memory-Efficient Optimizers](../../papers/arxiv-2608.22322/) | 2026-08-27 | 49 |
+| [When Personality Meets Quantization: A Layer-wise MBTI Analysis of Quantized LLMs](../../papers/arxiv-2608.25977/) | 2026-08-27 | 48 |
+| [StoSignSGD: Unbiased Structural Stochasticity Fixes SignSGD for Training Large Language Models](../../papers/arxiv-2604.15416/) | 2026-08-27 | 45 |
+| [MODE: Modality-Decomposed Expert-Level Mixed-Precision Quantization for MoE Multimodal LLMs](../../papers/arxiv-2606.17118/) | 2026-08-27 | 45 |
+| [Transforms for LLM Quantization: The Great Inversion and Format Co-Design](../../papers/arxiv-2608.25188/) | 2026-08-27 | 43 |
+| [Clearing the Underbrush: AI-Enhanced RF Interference Suppression](../../papers/arxiv-2608.24974/) | 2026-08-27 | 38 |
 | [Quantization Effects on Bangla Language Understanding in Large Language Models: A Systematic Evaluation](../../papers/arxiv-2608.24615/) | 2026-08-26 | 49 |
 | [QABBA: Error-Guaranteed Symbolic Time-Series Compression via Integer-Quantized Aggregation](../../papers/arxiv-2411.15209/) | 2026-08-26 | 48 |
 | [Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and Machine Translation](../../papers/arxiv-2608.23582/) | 2026-08-26 | 47 |

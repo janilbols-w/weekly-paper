@@ -5,10 +5,18 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **161** 篇。
+累计收录 **169** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [APT: Accelerating Diffusion Transformers via Attention Probability-Guided Pruning and Quantization](../../papers/arxiv-2608.25380/) | 2026-08-27 | 54 |
+| [When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs](../../papers/arxiv-2608.25941/) | 2026-08-27 | 48 |
+| [Resource-Efficient Pruning for Transformer via Low-Rank Importance Estimation](../../papers/arxiv-2608.24973/) | 2026-08-27 | 43 |
+| [MoganBert-TR: A Turkish Encoder Foundation Model Trained from Scratch with a CLM-to-MLM Curriculum](../../papers/arxiv-2608.25768/) | 2026-08-27 | 42 |
+| [Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs](../../papers/arxiv-2608.26069/) | 2026-08-27 | 42 |
+| [Physics-Informed Foresight Pruning for Sparse PINN Solvers of Nonlinear PDEs](../../papers/arxiv-2608.25564/) | 2026-08-27 | 41 |
+| [One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation](../../papers/arxiv-2608.25936/) | 2026-08-27 | 40 |
+| [Distance Is Not Enough: Forget-Retain Alignment Gap Predicts LLM Relearning Robustness](../../papers/arxiv-2608.25429/) | 2026-08-27 | 38 |
 | [TaLK: Text-attributed Graph Dataset Distillation via Coupling Language Model with Graph-Aware Kernel](../../papers/arxiv-2606.22975/) | 2026-08-26 | 47 |
 | [On-policy Distillation with Verifiable Reward](../../papers/arxiv-2608.24696/) | 2026-08-26 | 47 |
 | [Skill-Conditioned Gated Self-Distillation for LLM Reasoning](../../papers/arxiv-2605.28791/) | 2026-08-26 | 41 |
@@ -18,10 +26,10 @@ description: "Compression, Sparsity & Distillation"
 | [SelFusion: Self-distillation for Diffusion Language Models](../../papers/arxiv-2608.22898/) | 2026-08-25 | 48 |
 | [Reservoir of Importance: Learning Semi-Structured Sparsity with Differentiable Subset Sampling](../../papers/arxiv-2608.23048/) | 2026-08-25 | 47 |
 | [Thinking at the Right Size: Amortized Distillation Across Post-Trained LLMs](../../papers/arxiv-2608.22854/) | 2026-08-25 | 44 |
+| [EDGE: Experience-Distillation for Guided Exploration in Agentic Reinforcement Learning](../../papers/arxiv-2608.21946/) | 2026-08-25 | 44 |
 | [TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts](../../papers/arxiv-2608.22788/) | 2026-08-25 | 43 |
 | [A Reproducible, License-Aware Distillation Recipe for CPUDeployable Safety Classification](../../papers/arxiv-2608.21570/) | 2026-08-25 | 43 |
 | [Revisiting the Effectiveness of LLM Pruning for Test-Time Scaling](../../papers/arxiv-2604.25098/) | 2026-08-25 | 42 |
-| [EDGE: Experience-Distillation for Guided Exploration in Agentic Reinforcement Learning](../../papers/arxiv-2608.21946/) | 2026-08-25 | 42 |
 | [Interpretable AI with Local Distillation](../../papers/arxiv-2608.23538/) | 2026-08-25 | 41 |
 | [Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents](../../papers/arxiv-2608.22963/) | 2026-08-25 | 41 |
 | [SocraticPO: Policy Optimization via Interactive Guidance](../../papers/arxiv-2606.09887/) | 2026-08-25 | 40 |

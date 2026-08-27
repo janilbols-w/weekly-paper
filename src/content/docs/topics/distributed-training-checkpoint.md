@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **31** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Ladder Up, Memory Down: Low-Cost Fine-Tuning With Side Nets](../../papers/arxiv-2512.14237/) | 2026-08-27 | 38 |
 | [ShardMeter: Sharded and Geo-Distributed Training Without the Guesswork](../../papers/arxiv-2608.23840/) | 2026-08-26 | 49 |
 | [Delayed Optimizer-State Transport Shapes Short-Horizon Training Decisions](../../papers/arxiv-2608.24593/) | 2026-08-26 | 38 |
 | [Evaluation Awareness in Language Models: Representation, Verbalization, and Control](../../papers/arxiv-2608.21766/) | 2026-08-25 | 38 |

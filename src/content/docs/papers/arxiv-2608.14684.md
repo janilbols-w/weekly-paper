@@ -39,7 +39,7 @@ LLM judges increasingly evaluate responses against fine-grained rubric checklist
 ## 元数据
 
 - 作者：Dingyao Yu, Tong Zhang, Yutao Mou, Yunxiao Zhang, Wei Ye, Shikun Zhang
-- 发布：2026-08-18；更新：2026-08-19
+- 发布：2026-08-18；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
