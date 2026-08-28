@@ -39,7 +39,7 @@ Practical deployment of large language models (LLMs) requires families of post-t
 ## 元数据
 
 - 作者：Yan Zhou, Sara Kangaslahti, Jonathan Geuter, Nihal V. Nayak, Marco Fumero, Francesco Locatello, David Alvarez-Melis
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-24；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

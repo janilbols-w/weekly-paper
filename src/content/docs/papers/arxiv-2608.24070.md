@@ -39,7 +39,7 @@ Prohibitive computational and environmental costs impede the scalable deployment
 ## 元数据
 
 - 作者：Mohammad Mozaffari
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-25；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

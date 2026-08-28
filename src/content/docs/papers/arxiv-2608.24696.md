@@ -39,7 +39,7 @@ Reinforcement Learning with Verifiable Rewards (RLVR) and on-policy distillation
 ## 元数据
 
 - 作者：Wenze Lin, Jiale Zhao, Xitai Jiang, Songde Rao, Yining Li, Shenzhi Wang, Bingxiang He, Gao Huang
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-25；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LeapLabTHU/OPDVR](https://github.com/LeapLabTHU/OPDVR)
 - 阅读深度：metadata

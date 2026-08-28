@@ -9,8 +9,8 @@ description: "Energy, Cost & Thermal Efficiency"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference](../../papers/arxiv-2608.22613/) | 2026-08-25 | 49 |
 | [Faults That Fortify: CNN Adversarial Robustness via GPU Undervolting](../../papers/arxiv-2608.20572/) | 2026-08-24 | 38 |
+| [NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference](../../papers/arxiv-2608.22613/) | 2026-08-23 | 49 |
 | [A Fast Locality Simulator for GEMM Design-Space Exploration on Multi-Chiplet GPUs](../../papers/arxiv-2606.11716/) | 2026-08-21 | 48 |
 | [An Inclusive and Lightweight Approach to Federated Continual Learning for Cultural Heritage](../../papers/arxiv-2608.20038/) | 2026-08-21 | 39 |
 | [DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs](../../papers/arxiv-2608.14614/) | 2026-08-18 | 41 |

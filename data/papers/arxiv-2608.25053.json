@@ -4,7 +4,7 @@
   "abstract": "Edge LLM deployment is shaped by more than model size and precision: inference backend, hardware platform, memory traffic, and power management all affect latency and efficiency. We present Hydra, a common-schema, phase-aware workload characterization framework for LLM inference on edge SoCs. Hydra instruments HuggingFace Transformers and llama.cpp with a shared per-prompt timing schema and fuses those records with hardware telemetry, enabling a multi-dimensional characterization of performance, system-resource utilization, and efficiency across prefill and decode phases. Using Hydra, we evaluate three consecutive edge System-on-Chip (SoC) generations (AGX Xavier, AGX Orin, and AGX Thor), 13 instruction-tuned LLMs from seven families, five execution formats, and consider input/output-length sensitivity. The resulting artifact contains roughly 107K per-prompt records and is publicly released with Hydra. Our analysis shows that aggregate latency alone hides key deployment effects: backend structure changes where latency is introduced, quantization reduces memory traffic and energy but does not predict power monotonically, and SoC generation changes how utilization and efficiency should be interpreted. By connecting phase-level timing with system-resource utilization and efficiency metrics, Hydra enables reproducible, phase-aware characterization of edge LLM inference. Hydra's source code and the collected per-prompt trace corpus are available open-source at: https://github.com/amirtaherin/hydra",
   "url": "https://arxiv.org/abs/2608.25053",
   "pdf_url": "https://arxiv.org/pdf/2608.25053",
-  "published": "2026-08-27",
+  "published": "2026-08-25",
   "updated": "2026-08-27",
   "authors": [
     "Amir Taherin",
@@ -15,7 +15,7 @@
     "Zlatan Feric",
     "Nicolas Bohm Agostini",
     "Pu Zhao",
-    "Jos\\'e Cano",
+    "José Cano",
     "Bin Ren",
     "Yanzhi Wang",
     "David Kaeli"
@@ -31,7 +31,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted at the IEEE International Symposium on Workload Characterization (IISWC 2026)",
   "code_url": "https://github.com/amirtaherin/hydra",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -70,11 +70,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-27T06:48:56+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [
     "2026-W35"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.25053v1",
+      "url": "http://arxiv.org/abs/2608.25053v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.25053",

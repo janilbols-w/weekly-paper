@@ -39,7 +39,7 @@ The rapid evolution of hybrid large language models (LLMs), which interleave gro
 ## 元数据
 
 - 作者：In-Jun Jung, Jaeha Min, Joo-Young Kim
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-23；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

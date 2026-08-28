@@ -39,7 +39,7 @@ Large-kernel Convolutional Neural Networks (CNNs) deliver remarkable performance
 ## 元数据
 
 - 作者：Hao Luo, Yiting Yang, Wenyi Zhao, Man Jiang, Zhijun Lin, Ghulam Mohiuddin, Ting Jiang, Kunming Luo, Zihao Zhang, Qingsen Yan, Guoqing Wang, Wei Dong, Peng Wang
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-27；更新：2026-08-28
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

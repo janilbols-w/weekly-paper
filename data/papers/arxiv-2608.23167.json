@@ -4,7 +4,7 @@
   "abstract": "Diffusion Language Models (DLMs) exhibit strong parallel decoding capabilities by denoising multiple tokens in a single generation step. However, this parallelism comes with substantial computational overhead, as each step requires interactions with all suffix tokens. Existing methods typically reduce this cost by retaining only a local suffix window as a substitute for the full suffix. Despite their effectiveness, these methods overlook the structural heterogeneity across suffix regions and re-initialize suffix tokens with identical representations at each timestep. To this end, we propose a structured suffix modeling method for efficient DLM inference. Specifically, we divide the suffix into three regions, i.e., the local, middle, and tail regions, and retain different numbers of suffix tokens in each region according to their structural roles. Moreover, we incorporate the decoding results from the previous step into the suffix token representations at the current step, allowing them to carry evolving denoising information across generation steps. Notably, our method is training-free and orthogonal to several existing acceleration techniques, such as parallel decoding strategies and KV cache. Empirical results across multiple benchmarks on three DLMs demonstrate that our method can further accelerate DLM inference and improve performance in most cases. In particular, in long-sequence inference, our method achieves up to a \\(72.81\\times\\) speedup when combined with other acceleration techniques. Our code is available at https://github.com/zifengcheng/SSM.",
   "url": "https://arxiv.org/abs/2608.23167",
   "pdf_url": "https://arxiv.org/pdf/2608.23167",
-  "published": "2026-08-25",
+  "published": "2026-08-24",
   "updated": "2026-08-25",
   "authors": [
     "Zifeng Cheng",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-25T04:47:21+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.23167v1",
+      "url": "http://arxiv.org/abs/2608.23167v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.23167",

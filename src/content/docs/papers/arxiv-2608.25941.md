@@ -39,7 +39,7 @@ Sparse autoencoders (SAEs) are widely used to interpret the internal representat
 ## 元数据
 
 - 作者：Suchit Gupte, Xueru Zhang, Mohammad Mahdi Khalili
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-26；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/osu-srml/sae-robustness-under-pruning/tree/main](https://github.com/osu-srml/sae-robustness-under-pruning/tree/main)
 - 阅读深度：metadata

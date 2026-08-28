@@ -4,7 +4,7 @@
   "abstract": "Physics-informed neural networks (PINNs) often rely on over-parameterized models to optimize coupled solution and differential-residual objectives, leaving unclear how much capacity is necessary and what pruning should preserve. We study foresight pruning at initialization for sparse PirateNet PDE solvers. Standard neural tangent kernel spectrum-aware pruning (NTK-SAP) aims to preserve output-side training dynamics but may overlook parameters whose main influence arises through derivatives in the governing equations. We introduce physics-informed spectrum-aware pruning (PI-SAP), which assigns saliency using sensitivity of the PDE residual. Experiments on the Gray-Scott equations, complex Ginzburg-Landau equation, Burgers' equation, and linear convection equation show that PI-SAP more consistently preserves Gray-Scott residual fidelity and is competitive under aggressive sparsity. However, no criterion is uniformly optimal across equations or sparsity levels. Small-batch PINN-NTK diagnostics further show that residual fidelity, solution accuracy, and kernel conditioning are distinct objectives, motivating pruning methods that explicitly balance solution-side and residual-side training dynamics during optimization.",
   "url": "https://arxiv.org/abs/2608.25564",
   "pdf_url": "https://arxiv.org/pdf/2608.25564",
-  "published": "2026-08-27",
+  "published": "2026-08-26",
   "updated": "2026-08-27",
   "authors": [
     "Ahmad Ishaque Karimi",
@@ -14,13 +14,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "7 pages, 1 figure, 6 Tables. Submitted to the AI4S 2026 Workshop, Scientific Machine Learning track",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-27T06:48:56+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.25564v1",
+      "url": "http://arxiv.org/abs/2608.25564v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.25564",

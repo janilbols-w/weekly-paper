@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) models provide a flexible framework for partitioning co
 ## 元数据
 
 - 作者：Soham Chatterjee, Rwitobroto Dey, Smarajit Bose
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-25；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

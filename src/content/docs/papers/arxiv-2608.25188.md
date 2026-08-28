@@ -39,7 +39,7 @@ Most competitive 4-bit LLM research pipelines now open the same way: apply a lin
 ## 元数据
 
 - 作者：Ehsan Jokar
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-25；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

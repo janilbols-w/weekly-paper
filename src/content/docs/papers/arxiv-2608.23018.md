@@ -39,7 +39,7 @@ Federated fine-tuning of on-device large language models (LLMs) faces a signific
 ## 元数据
 
 - 作者：Tao Li, Yulin Tang, Qi Guo, Xianhao Chen
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-24；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

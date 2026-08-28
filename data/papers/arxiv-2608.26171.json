@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2608.26171",
+  "title": "Mitigating Fabrication in Multi-Stage LLM Pipelines for Hiring: An Empirical Evaluation of Prompt Guardrails and Human-in-the-Loop Checkpoints",
+  "abstract": "Multi-stage LLM hiring pipelines (resume improvement, interview question generation, answer feedback) can fabricate credentials, inflate qualifiers, and invent experience. We evaluate two mitigations, prompt guardrails and human-in-the-loop (HITL) checkpoints, against a fully automated baseline. In a controlled experiment (10 synthetic resumes x 2 job descriptions x 3 repetitions x 3 conditions; 180 runs), the baseline (C1) produced at least one unsupported claim in 96.7% of outputs (mean 6.80 findings/output). Prompt guardrails (C2) reduced finding density by 86% (6.80 to 0.92/output), but 50.0% of outputs still contained a fabrication, showing prompt-level mitigation alone is insufficient. A human checkpoint after resume improvement (C3) eliminated all identity fabrications, reduced finding density by 59% (6.88 to 2.82/output), reduced item-level fabrication from 96.7% to 75.0% (p=.022), and cut capture of JD-embedded trap requirements from 47% to 2% (vs. 5% under the guardrail). An exploratory analysis of multi-specialty resumes shows contamination rising monotonically with domain distance between specialties, suggesting career changers are especially exposed. The reviewer in this study caught all flagrant fabrications, but subtle qualifier drops and plausible new claims survived review roughly half the time (54.5% removal). Neither mitigation degraded the deliverable: claim retention exceeded 99% under both. The interventions are complementary: the guardrail eliminates unprompted additions and qualifier inflation cheaply, while the checkpoint gives near-categorical guarantees against the most severe failures, invented identities and JD-baited claims. These results support a layered architecture combining guardrails with a human checkpoint. A supplementary run with a newer-generation model (90.0% baseline fabrication rate) suggests the problem is not resolved by model progress alone.",
+  "url": "https://arxiv.org/abs/2608.26171",
+  "pdf_url": "https://arxiv.org/pdf/2608.26171",
+  "published": "2026-08-28",
+  "updated": "2026-08-28",
+  "authors": [
+    "Hiroko Takano"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CY",
+    "cs.CL",
+    "cs.HC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Multi-stage LLM hiring pipelines (resume improvement, interview question generation, answer feedback) can fabricate credentials, inflate qualifiers, and invent experience.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-28T07:02:23+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.26171",
+      "url": "https://arxiv.org/abs/2608.26171"
+    }
+  ]
+}

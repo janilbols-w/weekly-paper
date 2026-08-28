@@ -9,7 +9,7 @@ description: "Kernels & Operator Fusion"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory](../../papers/arxiv-2608.25570/) | 2026-08-27 | 44 |
+| [Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory](../../papers/arxiv-2608.25570/) | 2026-08-26 | 44 |
 | [Prime Agent: A Self-Improving RLM Harness](../../papers/arxiv-2608.23552/) | 2026-08-25 | 39 |
 | [HIERA: Workload-Aware Planning Across Implementation Spaces for GPU Kernel Optimization](../../papers/arxiv-2608.21157/) | 2026-08-24 | 51 |
 | [PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX](../../papers/arxiv-2608.17379/) | 2026-08-18 | 55 |

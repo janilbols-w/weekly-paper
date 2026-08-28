@@ -10,15 +10,15 @@ description: "Cache, Offload & Memory Management"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [Multi-Turn Reasoning LLMs for Task Offloading in Mobile Edge Computing](../../papers/arxiv-2604.07148/) | 2026-08-27 | 45 |
-| [DataKernelBench: Can LLMs Optimize Database Queries on GPUs?](../../papers/arxiv-2608.25061/) | 2026-08-27 | 43 |
 | [BanglaMamba: Exploring State Space Models for Bangla Fake News Detection](../../papers/arxiv-2608.25190/) | 2026-08-27 | 43 |
 | [JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution](../../papers/arxiv-2608.25593/) | 2026-08-27 | 38 |
-| [WiCi: Wireless GPU Computing Infrastructure](../../papers/arxiv-2608.24204/) | 2026-08-26 | 39 |
 | [Deep Feature Pyramid Convolutional Networks with In-Place Activated Batch Normalization for Automated Skin Lesion Boundary Segmentation](../../papers/arxiv-1812.00877/) | 2026-08-26 | 39 |
 | [CMI-Mem: Toward Generalizable Long-Term Memory Management via CMI-Augmented Reinforcement Learning](../../papers/arxiv-2607.20553/) | 2026-08-25 | 48 |
-| [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](../../papers/arxiv-2608.22215/) | 2026-08-25 | 44 |
-| [NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching](../../papers/arxiv-2608.22643/) | 2026-08-25 | 39 |
+| [DataKernelBench: Can LLMs Optimize Database Queries on GPUs?](../../papers/arxiv-2608.25061/) | 2026-08-25 | 45 |
+| [WiCi: Wireless GPU Computing Infrastructure](../../papers/arxiv-2608.24204/) | 2026-08-25 | 39 |
 | [DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference](../../papers/arxiv-2501.10375/) | 2026-08-24 | 52 |
+| [NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching](../../papers/doi-10.1145-3832810.3832862/) | 2026-08-23 | 44 |
+| [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](../../papers/arxiv-2608.22215/) | 2026-08-23 | 44 |
 | [Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements](../../papers/arxiv-2608.17310/) | 2026-08-20 | 41 |
 | [Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets](../../papers/arxiv-2608.19147/) | 2026-08-19 | 49 |
 | [H$^{2}$MT: Semantic Hierarchy-Aware Hierarchical Memory Transformer](../../papers/arxiv-2605.24930/) | 2026-08-19 | 41 |

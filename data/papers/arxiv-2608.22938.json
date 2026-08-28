@@ -4,7 +4,7 @@
   "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in code generation, yet their performance degrades significantly on low-resource Hardware Description Languages such as Verilog. While multi-candidate sampling improves the likelihood of generating correct solutions, au-tomatically selecting the optimal candidate remains an open challenge. Through a systematic empirical study across nine models and two benchmarks, we identify two critical limitations:(1) existing execution-based reranking methods, which rely on testbench pass/fail outcomes, exhibit poor domain transferability due to low-quality generated testbenches; and (2) LLM-as-a-Judge suffers from reasoning hallucination, producing incon-sistent judgments for execution-equivalent code. These findings reveal two signal types with orthogonal errors: execution signals(deterministic but testbench coverage limited)and reasoning signals (semantically rich but hallucination-prone). Their orthog-onality suggests combining the two signals, yet in our experiments letting the reasoner directly observe execution results merely anchors its judgments on test outcomes; we therefore acquire the two signals independently and fuse them only at the decision stage. Based on these insights, we propose EAHC, an Execution-Anchored Hallucination Calibration reranking framework that anchors reasoning judgments to execution behavior so that execution-equivalent candidates receive consistent scores, which implements a dual-channel architecture: EAHC-R, a 4B reasoning discriminator; and EAHC-T, a testbench generator leveraging RAG for execution verification.",
   "url": "https://arxiv.org/abs/2608.22938",
   "pdf_url": "https://arxiv.org/pdf/2608.22938",
-  "published": "2026-08-25",
+  "published": "2026-08-24",
   "updated": "2026-08-25",
   "authors": [
     "Guang Yang",
@@ -16,8 +16,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.SE",
-    "cs.AR"
+    "cs.AR",
+    "cs.SE"
   ],
   "doi": "",
   "venue": "",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-25T04:47:21+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.22938v1",
+      "url": "http://arxiv.org/abs/2608.22938v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.22938",

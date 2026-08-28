@@ -39,7 +39,7 @@ Semi-structured $N$:$M$ sparsity has emerged as a practical direction for accele
 ## 元数据
 
 - 作者：Ha Dinh, Xuan Duy Ta, Khoat Than, Khac-Hoai Nam Bui
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-24；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

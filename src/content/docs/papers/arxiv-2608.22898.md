@@ -39,7 +39,7 @@ Diffusion language models (DLMs) alleviate the inherent latency bottleneck of au
 ## 元数据
 
 - 作者：Hyeongsoo Lim, Jinyoung Kim, Eunseo Seo, Minho Jang, Jiwon Yoon
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-24；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/scai-research/SelFusion_official](https://github.com/scai-research/SelFusion_official)
 - 阅读深度：metadata

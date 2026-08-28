@@ -3,7 +3,7 @@ title: "What actually runs: a measurement study of language model placement and 
 description: "We ask what gets a language model onto the Apple Neural Engine (ANE) and what makes it fast there, and we answer with three measurements."
 ---
 
-**评分：43/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：48/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2608.22110) · [PDF](https://arxiv.org/pdf/2608.22110)
 
@@ -27,19 +27,19 @@ We ask what gets a language model onto the Apple Neural Engine (ANE) and what ma
 | novelty | 6 |
 | rigor | 5 |
 | practical impact | 12 |
-| reproducibility | 3 |
+| reproducibility | 8 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: int8, quantized
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Shahir M A
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-22；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/shershah1024/ane-llm-measurements](https://github.com/shershah1024/ane-llm-measurements)
 - 阅读深度：metadata

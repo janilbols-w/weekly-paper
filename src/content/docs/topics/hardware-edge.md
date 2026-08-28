@@ -9,9 +9,9 @@ description: "Hardware-aware & Edge Inference"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration](../../papers/arxiv-2608.25062/) | 2026-08-27 | 43 |
-| [RetrievalFormer: A Dual-Encoder Transformer for Efficient Approximate Nearest Neighbor Retrieval and Cold-Item Recommendation](../../papers/arxiv-2608.24079/) | 2026-08-26 | 40 |
+| [Redwood: A Frontier AI Accelerator Designed, Verified, and Deployed from Scratch in 2 Weeks by AI](../../papers/arxiv-2608.26418/) | 2026-08-26 | 48 |
 | [Model Compression and Hardware-Aware Acceleration for Deep Learning on FPGAs: A Co-Design Taxonomy and Comparative Analysis](../../papers/arxiv-2608.21657/) | 2026-08-25 | 46 |
+| [FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration](../../papers/arxiv-2608.25062/) | 2026-08-25 | 43 |
 | [Tensor Seeks Layout: Formalizing Layout Selection for ML Compilers](../../papers/arxiv-2608.21555/) | 2026-08-25 | 39 |
 | [Automatically Generating ML Compiler Backends from Tensor Accelerator ISA Descriptions](../../papers/arxiv-2510.09932/) | 2026-08-19 | 50 |
 | [HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving](../../papers/arxiv-2608.14575/) | 2026-08-18 | 56 |

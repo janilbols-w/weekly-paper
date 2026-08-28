@@ -5,24 +5,25 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **58** 篇。
+累计收录 **59** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NestedKV: Nested Memory Routing for Long-Context KV Cache Compression](../../papers/arxiv-2605.26678/) | 2026-08-28 | 39 |
 | [From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression](../../papers/arxiv-2606.02559/) | 2026-08-27 | 47 |
-| [PuzzleKV: Page-Wise Low-Rank Decomposition for KV Cache Compression](../../papers/arxiv-2608.23843/) | 2026-08-26 | 47 |
-| [Elastic KV Cache for LLM Serving:A Working Reclamation Mechanism, and Why Chunked Prefill Already Closes the Gap](../../papers/arxiv-2608.23658/) | 2026-08-26 | 47 |
 | [A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms](../../papers/arxiv-2607.12550/) | 2026-08-25 | 51 |
-| [Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models](../../papers/arxiv-2608.22753/) | 2026-08-25 | 50 |
-| [Benchmarking Composable Compression Techniques in Mixture-of-Experts LLMs](../../papers/arxiv-2608.21693/) | 2026-08-25 | 48 |
 | [FlashAccel: Leveraging High-Bandwidth Flash (HBF) for High-Throughput LLM Inference](../../papers/arxiv-2607.10186/) | 2026-08-25 | 44 |
-| [Accelerating Diffusion Language Models via Structured Suffix Modeling](../../papers/arxiv-2608.23167/) | 2026-08-25 | 44 |
-| [WnW: Waxing-and-Waning KV Cache for Long-Form Speech LLMs](../../papers/arxiv-2608.22704/) | 2026-08-25 | 43 |
 | [When Less Latent Leads to Better Relay: Information-Preserving Compression for Latent Multi-Agent LLM Collaboration](../../papers/arxiv-2604.13349/) | 2026-08-25 | 43 |
 | [Last But Not Least: Boundary Attention CalibratiON for Multimodal KV Cache Compression](../../papers/arxiv-2606.14782/) | 2026-08-25 | 43 |
-| [Sigmoid Attention as a Better Substrate for Learned KV Cache Eviction](../../papers/arxiv-2608.23296/) | 2026-08-25 | 40 |
 | [TokenCake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications](../../papers/arxiv-2510.18586/) | 2026-08-24 | 50 |
+| [Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models](../../papers/arxiv-2608.22753/) | 2026-08-24 | 50 |
+| [PuzzleKV: Page-Wise Low-Rank Decomposition for KV Cache Compression](../../papers/arxiv-2608.23843/) | 2026-08-24 | 47 |
+| [Elastic KV Cache for LLM Serving:A Working Reclamation Mechanism, and Why Chunked Prefill Already Closes the Gap](../../papers/arxiv-2608.23658/) | 2026-08-24 | 47 |
+| [Accelerating Diffusion Language Models via Structured Suffix Modeling](../../papers/arxiv-2608.23167/) | 2026-08-24 | 44 |
+| [WnW: Waxing-and-Waning KV Cache for Long-Form Speech LLMs](../../papers/arxiv-2608.22704/) | 2026-08-24 | 43 |
+| [Sigmoid Attention as a Better Substrate for Learned KV Cache Eviction](../../papers/arxiv-2608.23296/) | 2026-08-24 | 40 |
 | [AgentDecarbonizer: Carbon-Aware Execution for AI Agents](../../papers/arxiv-2608.20566/) | 2026-08-24 | 40 |
+| [Benchmarking Composable Compression Techniques in Mixture-of-Experts LLMs](../../papers/arxiv-2608.21693/) | 2026-08-22 | 48 |
 | [ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents](../../papers/arxiv-2608.19662/) | 2026-08-20 | 57 |
 | [Selective KV Cache Protection for Noise-Resilient LLM Inference on Analog Compute-In-Memory Systems](../../papers/arxiv-2607.29076/) | 2026-08-20 | 49 |
 | [Fractional Decay KV-Cache: Ownership-Aware Memory Management for Improved Inference Relevancy in Dialog Systems](../../papers/arxiv-2608.18098/) | 2026-08-20 | 47 |

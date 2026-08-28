@@ -4,7 +4,7 @@
   "abstract": "Both capability and safety benchmarks rest upon the assumption that the behavior of language models undergoing a test is informative about their behavior in deployment. This assumption can fail, should models infer that they are being evaluated and condition their response on such context. This hypothesis, termed ``evaluation awareness'', has been observed in frontier and open-weight language models alike. We provide a systematic study of this phenomenon, by probing for it across six language models (from four families and three sizes) and three metrics. More precisely, we examine whether (i) being under evaluation is linearly represented within the models' activations space, (ii) it is verbalized in their output tokens (as scored by an LLM-as-judge), and (iii) steering causally affects their behavior. For the open-checkpoint Olmo models, we further test these measures at every training stage. In doing so, we report that evaluation awareness is linearly decodable from the residual streams of every model (best AUROC $\\geq 0.7$). By contrast, these representations align only in part with verbalization: their correlations and mutual information are nonzero in some settings, yet vary substantially across models, layers, and readout choices. Nevertheless, steering along probe-derived directions can shift the verbalization scores. Finally, a comparison across the Olmo checkpoints reveals that evaluation awareness is already present within base models, becomes amplified throughout the stages of supervised fine-tuning, and remains stable thereafter---unlike the effects of steering, that grow more pronounced at every successive training stage. These results show the need for evaluations to account for the disjunction between what models represent internally, what they verbalize, and their steering.",
   "url": "https://arxiv.org/abs/2608.21766",
   "pdf_url": "https://arxiv.org/pdf/2608.21766",
-  "published": "2026-08-25",
+  "published": "2026-08-22",
   "updated": "2026-08-25",
   "authors": [
     "Farzaneh Heidari",
@@ -14,13 +14,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
-    "cs.AI"
+    "cs.AI",
+    "cs.CL"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "The first two authors contributed equally",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -37,10 +37,10 @@
   "keyword_evidence": [
     "checkpoint"
   ],
-  "score": 38,
+  "score": 39,
   "score_components": {
     "relevance": 12,
-    "novelty": 5,
+    "novelty": 6,
     "rigor": 11,
     "practical_impact": 5,
     "reproducibility": 2,
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-25T04:47:21+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.21766v1",
+      "url": "http://arxiv.org/abs/2608.21766v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.21766",

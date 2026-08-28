@@ -3,7 +3,7 @@ title: "NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetchin
 description: "Deploying large language models on edge devices is increasingly limited by a widening gap between model size and available memory."
 ---
 
-**评分：39/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
+**评分：44/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
 
 [论文原文](https://arxiv.org/abs/2608.22643) · [PDF](https://arxiv.org/pdf/2608.22643)
 
@@ -27,19 +27,19 @@ Deploying large language models on edge devices is increasingly limited by a wid
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 12 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: offloading
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Nobel Dhar, Md Romyull Islam, Xuechen Zhang, Gongjin Sun, Sahidul Islam, Bobin Deng, Kun Suo
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-23；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/nobeldhar/NeuroPrefetcher](https://github.com/nobeldhar/NeuroPrefetcher)
 - 阅读深度：metadata

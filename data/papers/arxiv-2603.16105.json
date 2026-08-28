@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2603.16105",
+  "title": "Frequency Matters: Fast Model-Agnostic Data Curation for Pruning and Quantization",
+  "abstract": "Post-training model compression is essential for enhancing the portability of Large Language Models (LLMs) while preserving their performance. While several compression approaches have been proposed, less emphasis has been placed on selecting the most suitable set of data (the so-called \\emph{calibration data}) for finding the compressed model configuration. The choice of calibration data is a critical step in preserving model capabilities both intra- and inter-tasks. In this work, we address the challenge of identifying high-performance calibration sets for both pruning and quantization by analyzing intrinsic data properties rather than model-specific signals. We introduce ZipCal, a model-agnostic data curation strategy that maximizes lexical diversity based on Zipfian power laws. Experiments demonstrate that our method outperforms standard uniform random sampling across various pruning benchmarks. Notably, it also performs on par, in terms of downstream performance, with a state-of-the-art method that relies on model perplexity. The latter becomes prohibitively expensive for large-scale models and datasets, while ZipCal is on average $\\sim$240$\\times$ faster due to its tractable linear complexity. We make the code and the experiments available at https://github.com/FrancescoMonaco/ZipCal.",
+  "url": "https://arxiv.org/abs/2603.16105",
+  "pdf_url": "https://arxiv.org/pdf/2603.16105",
+  "published": "2026-08-28",
+  "updated": "2026-08-28",
+  "authors": [
+    "Francesco Pio Monaco",
+    "Elia Cunegatti",
+    "Flavio Vella",
+    "Giovanni Iacca"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/FrancescoMonaco/ZipCal",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [
+    "quantization-low-precision"
+  ],
+  "keyword_evidence": [
+    "compressed model",
+    "pruning"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: compressed model, pruning",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Post-training model compression is essential for enhancing the portability of Large Language Models (LLMs) while preserving their performance.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-28T07:02:23+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.16105",
+      "url": "https://arxiv.org/abs/2603.16105"
+    }
+  ]
+}

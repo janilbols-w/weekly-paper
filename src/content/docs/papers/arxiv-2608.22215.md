@@ -39,7 +39,7 @@ Large language model (LLM) agents operate in dynamic environments where knowledg
 ## 元数据
 
 - 作者：Wenzhi Li, Dong Nie, Rui Lan, Tongtong Lyu, Peiyao Wang, Lingzi Hong, Weihang Pan, Boyuan Pan, Yao Hu
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-23；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

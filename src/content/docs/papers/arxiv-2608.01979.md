@@ -39,7 +39,7 @@ Visual token pruning reduces the inference cost of multimodal large language mod
 ## 元数据
 
 - 作者：Zizhong Ding, Junxian Li, Kai Liu, Shaoqiu Zhang, Xiao Xiao, Linghe Kong, Yulun Zhang
-- 发布：2026-08-03；更新：2026-08-04
+- 发布：2026-08-03；更新：2026-08-28
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Labyrinth0419/ET-Prune](https://github.com/Labyrinth0419/ET-Prune)
 - 阅读深度：metadata

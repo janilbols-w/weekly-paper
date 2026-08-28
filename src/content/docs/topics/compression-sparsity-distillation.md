@@ -5,46 +5,54 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **169** 篇。
+累计收录 **177** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [APT: Accelerating Diffusion Transformers via Attention Probability-Guided Pruning and Quantization](../../papers/arxiv-2608.25380/) | 2026-08-27 | 54 |
-| [When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs](../../papers/arxiv-2608.25941/) | 2026-08-27 | 48 |
+| [Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy](../../papers/arxiv-2606.09080/) | 2026-08-28 | 51 |
+| [Frequency Matters: Fast Model-Agnostic Data Curation for Pruning and Quantization](../../papers/arxiv-2603.16105/) | 2026-08-28 | 50 |
+| [MENTOR: Reinforcement Learning via Flexible Teacher-Optimized Rewards for Tool-Use Distillation](../../papers/arxiv-2510.18383/) | 2026-08-28 | 43 |
+| [MCCE: A Framework for Multi-LLM Collaborative Search in Discrete Spaces with Similarity-Filtered Preference Learning](../../papers/arxiv-2510.06270/) | 2026-08-28 | 41 |
+| [HINT-SD: Targeted Hindsight Self-Distillation for Long-Horizon Agents](../../papers/arxiv-2605.17873/) | 2026-08-28 | 41 |
 | [Resource-Efficient Pruning for Transformer via Low-Rank Importance Estimation](../../papers/arxiv-2608.24973/) | 2026-08-27 | 43 |
+| [Surgical Alignment in Knowledge Graph Training for Clinical Diagnosis with Large Language Models](../../papers/arxiv-2608.26587/) | 2026-08-27 | 42 |
 | [MoganBert-TR: A Turkish Encoder Foundation Model Trained from Scratch with a CLM-to-MLM Curriculum](../../papers/arxiv-2608.25768/) | 2026-08-27 | 42 |
 | [Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs](../../papers/arxiv-2608.26069/) | 2026-08-27 | 42 |
-| [Physics-Informed Foresight Pruning for Sparse PINN Solvers of Nonlinear PDEs](../../papers/arxiv-2608.25564/) | 2026-08-27 | 41 |
+| [TTPO: Test-Time Policy Optimization](../../papers/arxiv-2608.27448/) | 2026-08-27 | 40 |
 | [One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation](../../papers/arxiv-2608.25936/) | 2026-08-27 | 40 |
 | [Distance Is Not Enough: Forget-Retain Alignment Gap Predicts LLM Relearning Robustness](../../papers/arxiv-2608.25429/) | 2026-08-27 | 38 |
+| [Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms](../../papers/arxiv-2608.27409/) | 2026-08-27 | 38 |
+| [APT: Accelerating Diffusion Transformers via Attention Probability-Guided Pruning and Quantization](../../papers/doi-10.1145-3831252.3834102/) | 2026-08-26 | 54 |
+| [When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs](../../papers/arxiv-2608.25941/) | 2026-08-26 | 48 |
 | [TaLK: Text-attributed Graph Dataset Distillation via Coupling Language Model with Graph-Aware Kernel](../../papers/arxiv-2606.22975/) | 2026-08-26 | 47 |
-| [On-policy Distillation with Verifiable Reward](../../papers/arxiv-2608.24696/) | 2026-08-26 | 47 |
 | [Skill-Conditioned Gated Self-Distillation for LLM Reasoning](../../papers/arxiv-2605.28791/) | 2026-08-26 | 41 |
+| [Physics-Informed Foresight Pruning for Sparse PINN Solvers of Nonlinear PDEs](../../papers/arxiv-2608.25564/) | 2026-08-26 | 41 |
 | [DiD It in 87 Minutes: A Label-Free Softmax-to-Linear Adaptation of Vision Transformers for Object Detection](../../papers/arxiv-2608.22368/) | 2026-08-26 | 41 |
 | [Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution](../../papers/arxiv-2607.08960/) | 2026-08-26 | 40 |
 | [RecurSE: Bounded Recursive Self-Evaluation for LLM Rubric Judges](../../papers/arxiv-2608.24231/) | 2026-08-26 | 39 |
-| [SelFusion: Self-distillation for Diffusion Language Models](../../papers/arxiv-2608.22898/) | 2026-08-25 | 48 |
-| [Reservoir of Importance: Learning Semi-Structured Sparsity with Differentiable Subset Sampling](../../papers/arxiv-2608.23048/) | 2026-08-25 | 47 |
-| [Thinking at the Right Size: Amortized Distillation Across Post-Trained LLMs](../../papers/arxiv-2608.22854/) | 2026-08-25 | 44 |
+| [On-policy Distillation with Verifiable Reward](../../papers/arxiv-2608.24696/) | 2026-08-25 | 47 |
 | [EDGE: Experience-Distillation for Guided Exploration in Agentic Reinforcement Learning](../../papers/arxiv-2608.21946/) | 2026-08-25 | 44 |
-| [TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts](../../papers/arxiv-2608.22788/) | 2026-08-25 | 43 |
 | [A Reproducible, License-Aware Distillation Recipe for CPUDeployable Safety Classification](../../papers/arxiv-2608.21570/) | 2026-08-25 | 43 |
 | [Revisiting the Effectiveness of LLM Pruning for Test-Time Scaling](../../papers/arxiv-2604.25098/) | 2026-08-25 | 42 |
 | [Interpretable AI with Local Distillation](../../papers/arxiv-2608.23538/) | 2026-08-25 | 41 |
-| [Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents](../../papers/arxiv-2608.22963/) | 2026-08-25 | 41 |
 | [SocraticPO: Policy Optimization via Interactive Guidance](../../papers/arxiv-2606.09887/) | 2026-08-25 | 40 |
-| [Cross-Domain, Multi-Task Data-to-Text Generation without In-Domain Training Data](../../papers/arxiv-2608.23391/) | 2026-08-25 | 40 |
 | [Soft-NBCE: Entropy-Weighted Chunk Fusion for Long-Context](../../papers/arxiv-2606.01101/) | 2026-08-25 | 39 |
-| [DIAG: Diagnostic Iterative Alignment and Generation for Data-Efficient Mathematical Preference Distillation](../../papers/arxiv-2608.22806/) | 2026-08-25 | 39 |
 | [Beyond the Harness: End-to-End Optimization of Context Artifacts for Enterprise Text-to-SQL](../../papers/arxiv-2608.22830/) | 2026-08-25 | 39 |
+| [SelFusion: Self-distillation for Diffusion Language Models](../../papers/arxiv-2608.22898/) | 2026-08-24 | 48 |
 | [STS: Efficient Sparse Attention with Speculative Token Sparsity](../../papers/arxiv-2605.15508/) | 2026-08-24 | 48 |
+| [Reservoir of Importance: Learning Semi-Structured Sparsity with Differentiable Subset Sampling](../../papers/arxiv-2608.23048/) | 2026-08-24 | 47 |
 | [SafeSteer: Localized On-Policy Distillation for Efficient Safety Alignment](../../papers/arxiv-2606.02530/) | 2026-08-24 | 46 |
 | [COEC: Calibrated Orthogonal-Equivalence Compensation for Structured Pruning of Large Language Models](../../papers/arxiv-2608.21142/) | 2026-08-24 | 45 |
+| [Thinking at the Right Size: Amortized Distillation Across Post-Trained LLMs](../../papers/arxiv-2608.22854/) | 2026-08-24 | 44 |
+| [TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts](../../papers/arxiv-2608.22788/) | 2026-08-24 | 43 |
 | [BF1: A Causal Dyadic Sparse-Attention Retrofit for Efficient Long-Context Transformers](../../papers/arxiv-2608.20427/) | 2026-08-24 | 43 |
 | [Scale or Reason? A Compute-Equivalent Analysis of Reasoning Distillation](../../papers/arxiv-2509.22193/) | 2026-08-24 | 42 |
 | [Event-triggered Implicit Perturbation for Zeroth-Order Fine-Tuning of Spiking Transformers](../../papers/arxiv-2608.21223/) | 2026-08-24 | 42 |
 | [When Better Teachers Don't Make Better Students: Revisiting Knowledge Distillation for CLIP Models in VQA](../../papers/arxiv-2511.17886/) | 2026-08-24 | 41 |
+| [Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents](../../papers/arxiv-2608.22963/) | 2026-08-24 | 41 |
+| [Cross-Domain, Multi-Task Data-to-Text Generation without In-Domain Training Data](../../papers/arxiv-2608.23391/) | 2026-08-24 | 40 |
 | [aiXamine: Unified Black-Box Evaluation of Cross-Dimensional Trade-offs in LLM Safety, Security, and Privacy](../../papers/arxiv-2608.20554/) | 2026-08-24 | 39 |
+| [DIAG: Diagnostic Iterative Alignment and Generation for Data-Efficient Mathematical Preference Distillation](../../papers/arxiv-2608.22806/) | 2026-08-24 | 39 |
 | [Sparse Token Routing in Efficient Transformers](../../papers/arxiv-2608.20632/) | 2026-08-24 | 38 |
 | [Teacher-free Latent Self-distillation and Class-separable Representations for Lightweight IoT Attack Detection](../../papers/arxiv-2403.15509/) | 2026-08-21 | 41 |
 | [Clustering and Token Denoising for Faster and More Robust VLMs](../../papers/arxiv-2608.19285/) | 2026-08-21 | 40 |

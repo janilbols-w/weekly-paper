@@ -1,10 +1,10 @@
 {
-  "id": "arxiv:2608.25380",
+  "id": "doi:10.1145/3831252.3834102",
   "title": "APT: Accelerating Diffusion Transformers via Attention Probability-Guided Pruning and Quantization",
   "abstract": "Recent advances in generative AI have significantly increased the demand for high-resolution image and video generation, positioning diffusion models as a core technology. Among them, Diffusion Transformers (DiTs) have emerged as the state-of-the-art (SOTA) models due to their scalability and output quality. However, self-attention in DiTs incurs significant computational overhead, leading to excessively long latency as the complexity grows with the fourth power of the output resolution. While prior works have attempted to mitigate this cost using sparsity and quantization techniques, they fall short of effectively reducing the computational cost in high-resolution DiTs. In this paper, we present APT, a software-hardware co-designed accelerator for high-resolution DiTs. APT leverages attention probabilities as a unified importance metric to jointly optimize computation through fine-grained pruning and adaptive precision scaling. At the algorithm level, we propose Attention Probability-guided Adaptive Dual Thresholding (APDT), which dynamically performs element selection and precision assignment using dual thresholds. To ensure compatibility with memory-efficient FlashAttention, we introduce Timestep-Aware FlashAttention (TAFA), which predicts attention probabilities across timesteps by exploiting temporal similarity. At the architecture level, we co-design a specialized accelerator that efficiently supports irregular sparsity and dual-precision execution, featuring dynamic mask management, address translation, dual-precision compute units, and a tile-based dataflow. Finally, we evaluate APT on SOTA DiT models, including PixArt-$\\alpha$, Stable Diffusion 3, and FLUX. APT achieves up to 8.16$\\times$ speedup and 14.98$\\times$ higher energy efficiency over NVIDIA A100, and up to 3.01$\\times$ speedup and 2.04$\\times$ higher energy efficiency over EXION, a SOTA diffusion model accelerator.",
   "url": "https://arxiv.org/abs/2608.25380",
   "pdf_url": "https://arxiv.org/pdf/2608.25380",
-  "published": "2026-08-27",
+  "published": "2026-08-26",
   "updated": "2026-08-27",
   "authors": [
     "Sungyeob Yoo",
@@ -18,10 +18,10 @@
   "categories": [
     "cs.AR"
   ],
-  "doi": "",
+  "doi": "10.1145/3831252.3834102",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "9 pages, 17 figures, 3 tables. Accepted to the IEEE/ACM International Conference on Computer-Aided Design (ICCAD 2026)",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -60,12 +60,17 @@
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
-  "first_seen": "2026-08-27T06:48:56+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "first_seen": "2026-08-28T07:02:23+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [
     "2026-W35"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.25380v1",
+      "url": "http://arxiv.org/abs/2608.25380v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.25380",

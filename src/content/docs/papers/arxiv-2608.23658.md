@@ -39,7 +39,7 @@ An LLM serving engine sizes its key-value (KV) cache once, at startup, permanent
 ## 元数据
 
 - 作者：Sathishkumar Sivashanmugam
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-24；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Large language models (LLMs) excel at text understanding and generation, yet sti
 ## 元数据
 
 - 作者：Bohan Yu, Pengfei Cao, Chen Han, Chenxi Zhou, Zhiheng Zhang, Zhiyang Xie, Wenhao Teng, Xiangwen Liao, Jun Zhao, Kang Liu
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-24；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/SharkSpicy-NLP/Beyond-Factual-Knowledge](https://github.com/SharkSpicy-NLP/Beyond-Factual-Knowledge)
 - 阅读深度：metadata

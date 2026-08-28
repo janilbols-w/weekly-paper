@@ -10,10 +10,10 @@ description: "MoE Efficiency"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning](../../papers/arxiv-2602.01990/) | 2026-08-27 | 44 |
-| [The Von-Neumann State-Space Transformer for neural decoding](../../papers/arxiv-2608.25088/) | 2026-08-27 | 39 |
 | [SiftMoE: Similarity-Aware Energy-Efficient Expert Selection for Wireless Distributed MoE Inference](../../papers/arxiv-2603.23888/) | 2026-08-26 | 48 |
-| [A Heterogeneous Mixture of Experts Framework for Interpretable Machine Learning](../../papers/arxiv-2608.24195/) | 2026-08-26 | 42 |
 | [SAEM: Stage-Aware Expert Management for Memory-Efficient MoE Inference in Chain-of-Thought Reasoning](../../papers/arxiv-2608.21614/) | 2026-08-25 | 52 |
+| [A Heterogeneous Mixture of Experts Framework for Interpretable Machine Learning](../../papers/arxiv-2608.24195/) | 2026-08-25 | 42 |
+| [The Von-Neumann State-Space Transformer for neural decoding](../../papers/arxiv-2608.25088/) | 2026-08-25 | 39 |
 | [SPICE: Speculative Prefetching with Low-Rank Expert Surrogates and Heterogeneous Orchestration for MoE Inference Acceleration](../../papers/arxiv-2608.21240/) | 2026-08-24 | 46 |
 | [RARE: Decoupling Representation Steering from Expert Routing in Mixture-of-Experts Language Models](../../papers/arxiv-2608.21236/) | 2026-08-24 | 42 |
 | [RouteScan: A Non-Intrusive Approach to Auditing MoE LLMs Safety via Expert Routing Telemetry](../../papers/arxiv-2605.24817/) | 2026-08-24 | 41 |

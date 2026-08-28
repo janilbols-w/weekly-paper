@@ -39,7 +39,7 @@ System-level simulation is an essential tool for exploring the rapidly expanding
 ## 元数据
 
 - 作者：Wonung Kim, Hyunmin Choi, Minsu Kim, Jaehong Cho, Yeongwook Kim, Jongse Park
-- 发布：2026-08-26；更新：2026-08-27
+- 发布：2026-08-25；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

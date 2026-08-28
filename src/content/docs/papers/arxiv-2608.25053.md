@@ -38,8 +38,8 @@ Edge LLM deployment is shaped by more than model size and precision: inference b
 
 ## 元数据
 
-- 作者：Amir Taherin, Sana Taghipour Anvari, Charles Amante, Yixiao Chen, Ruben Noroian, Zlatan Feric, Nicolas Bohm Agostini, Pu Zhao, Jos\'e Cano, Bin Ren, Yanzhi Wang, David Kaeli
-- 发布：2026-08-27；更新：2026-08-27
+- 作者：Amir Taherin, Sana Taghipour Anvari, Charles Amante, Yixiao Chen, Ruben Noroian, Zlatan Feric, Nicolas Bohm Agostini, Pu Zhao, José Cano, Bin Ren, Yanzhi Wang, David Kaeli
+- 发布：2026-08-25；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/amirtaherin/hydra](https://github.com/amirtaherin/hydra)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ AI inference clusters are increasingly constrained by instantaneous power, not j
 ## 元数据
 
 - 作者：Yueying Li, Jiayang Chen, Yuanfan Chen, Leo Han, Haoran Qiu, Esha Choukse, Rodrigo Fonseca, Udit Gupta
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-22；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -38,8 +38,8 @@ Training large-scale AI models often outgrows a single data center, demanding sh
 
 ## 元数据
 
-- 作者：Tim Beringer (Technical University of Darmstadt), Patrick Diem (Technical University of Darmstadt), Felix Wolf (Technical University of Darmstadt), Arya Mazaheri (Technical University of Darmstadt, PanocularAI)
-- 发布：2026-08-26；更新：2026-08-26
+- 作者：Tim Beringer, Patrick Diem, Felix Wolf, Arya Mazaheri
+- 发布：2026-08-24；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

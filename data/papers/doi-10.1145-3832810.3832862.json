@@ -1,10 +1,10 @@
 {
-  "id": "arxiv:2608.22643",
+  "id": "doi:10.1145/3832810.3832862",
   "title": "NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching",
   "abstract": "Deploying large language models on edge devices is increasingly limited by a widening gap between model size and available memory. Existing approaches such as quantization, smaller models, and offloading can raise the effective memory limit, but they still assume that the model can be compressed or partitioned to fit within some budget. We target the harder model-exceeds-memory setting, in which the model remains larger than resident memory throughout execution and storage becomes an active source of weights on the critical path. We observe that MLP activity during autoregressive decoding has strong temporal locality: approximately 82-85% of active neurons persist from one token to the next. This means that most sparse weights needed for the current token are already resident, and only the newly needed rows must be fetched from storage. We present NeuroPrefetcher, a storage-backed LLM inference system that exploits this property through predictive delta prefetching. After layer 0, a single GPU-resident predictor, occupying 2.86% of base model parameters, predicts sparse activity for all downstream MLP layers in one forward pass. The runtime compares these predictions against resident GPU buffers and issues application-scheduled NVMe reads only for incoming delta rows, replacing reactive operating-system demand paging with explicit, model-aware weight movement. On real unified-memory edge hardware, NeuroPrefetcher achieves 7.9-12.0x speedup over llama.cpp across constrained memory budgets.",
   "url": "https://arxiv.org/abs/2608.22643",
   "pdf_url": "https://arxiv.org/pdf/2608.22643",
-  "published": "2026-08-25",
+  "published": "2026-08-23",
   "updated": "2026-08-25",
   "authors": [
     "Nobel Dhar",
@@ -21,11 +21,11 @@
     "cs.DC",
     "cs.LG"
   ],
-  "doi": "",
+  "doi": "10.1145/3832810.3832862",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "10 pages, 10 figures. Accepted at the 55th International Conference on Parallel Processing (ACM ICPP 2026), Singapore. Code, training pipeline, and measured data: https://github.com/nobeldhar/NeuroPrefetcher",
+  "code_url": "https://github.com/nobeldhar/NeuroPrefetcher",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -41,29 +41,34 @@
   "keyword_evidence": [
     "offloading"
   ],
-  "score": 39,
+  "score": 44,
   "score_components": {
     "relevance": 12,
     "novelty": 5,
     "rigor": 5,
     "practical_impact": 12,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: offloading",
     "quantitative claim detected",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Deploying large language models on edge devices is increasingly limited by a widening gap between model size and available memory.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
-  "first_seen": "2026-08-25T04:47:21+00:00",
-  "last_seen": "2026-08-27T06:48:56+00:00",
+  "first_seen": "2026-08-28T07:02:23+00:00",
+  "last_seen": "2026-08-28T07:02:23+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.22643v1",
+      "url": "http://arxiv.org/abs/2608.22643v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.22643",

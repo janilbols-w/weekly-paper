@@ -39,7 +39,7 @@ Ternary transformers offer extreme memory and compute efficiency, but existing l
 ## 元数据
 
 - 作者：Alexandru-Dragos Manolache, Yunqiang Li, Jan van Gemert
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-25；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/alexmanoo/ternary_adaptation](https://github.com/alexmanoo/ternary_adaptation)
 - 阅读深度：metadata

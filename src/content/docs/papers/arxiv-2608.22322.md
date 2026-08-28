@@ -3,7 +3,7 @@ title: "Beyond Dense Adam States: Adaptive Log-Space Quantization for Memory-Eff
 description: "Low-precision optimizer-state methods are commonly designed and evaluated for dense Adam-style first and second moments."
 ---
 
-**评分：49/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：57/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2608.22322) · [PDF](https://arxiv.org/pdf/2608.22322)
 
@@ -25,21 +25,21 @@ Low-precision optimizer-state methods are commonly designed and evaluated for de
 |---|---:|
 | relevance | 18 |
 | novelty | 6 |
-| rigor | 13 |
+| rigor | 15 |
 | practical impact | 7 |
-| reproducibility | 2 |
+| reproducibility | 8 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: quantization, quantized
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Yan Wang
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-23；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/yanfeiwong/adafactor-8bit](https://github.com/yanfeiwong/adafactor-8bit)
 - 阅读深度：metadata

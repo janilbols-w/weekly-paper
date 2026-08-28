@@ -39,7 +39,7 @@ Cortical computation is strikingly low-dimensional: a handful of latent variable
 ## 元数据
 
 - 作者：Morteza Sarafyazd
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-25；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

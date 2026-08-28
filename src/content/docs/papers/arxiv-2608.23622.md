@@ -38,8 +38,8 @@ Large language models (LLMs) have shown strong capabilities in reasoning, planni
 
 ## 元数据
 
-- 作者：Yuchen Xia, Michael Weyrich, Nasser Jazdi, Johannes St\"umpfle, Johannes Sigel, Akshay Narla, Gavin K. Reynolds, Anna Jawor-Baczynska, Pol Llopart
-- 发布：2026-08-26；更新：2026-08-26
+- 作者：Yuchen Xia, Michael Weyrich, Nasser Jazdi, Johannes Stümpfle, Johannes Sigel, Akshay Narla, Gavin K. Reynolds, Anna Jawor-Baczynska, Pol Llopart
+- 发布：2026-08-22；更新：2026-08-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

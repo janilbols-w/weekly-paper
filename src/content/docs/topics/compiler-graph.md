@@ -5,22 +5,24 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **37** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [RTLGuard: A Lightweight Teacher-Student Defense for Poisoned RTL Code Generation Models](../../papers/arxiv-2608.26049/) | 2026-08-27 | 41 |
+| [Exploring the Role of LLMs in HPC Programming: A Survey](../../papers/arxiv-2608.26110/) | 2026-08-28 | 40 |
 | [Think Short, Defer Smart, Act, and Repeat: Calibrated Reasoning and Uncertainty-Aware Deferral for Edge LLM Agents](../../papers/arxiv-2607.26865/) | 2026-08-27 | 39 |
+| [The Reasoning Tax: Token Economics of LLM Reasoning Across Task Types and Deployment Contexts](../../papers/arxiv-2608.26235/) | 2026-08-26 | 43 |
+| [RTLGuard: A Lightweight Teacher-Student Defense for Poisoned RTL Code Generation Models](../../papers/doi-10.1145-3831252.3834219/) | 2026-08-26 | 41 |
 | [Markets, Not Planners: Decentralized Orchestration of LLM Agents with Private Information](../../papers/arxiv-2608.23867/) | 2026-08-26 | 39 |
-| [LLM Agents Perform Controlled Experiments Using Simulation Models](../../papers/arxiv-2608.23622/) | 2026-08-26 | 39 |
 | [Exploit More, Explore Smarter for Budget-Constrained Agentic Search](../../papers/arxiv-2608.23848/) | 2026-08-26 | 39 |
 | [MOSAIC: Modular Orchestration for Structured Agentic Intelligence and Composition](../../papers/arxiv-2606.00708/) | 2026-08-25 | 43 |
-| [Execution-Anchored Hallucination Calibration Reranking for Verilog Code Generation](../../papers/arxiv-2608.22938/) | 2026-08-25 | 41 |
-| [LongWoF-Bench: Evaluating EvoMap Genes for Verifiable Long-Workflow Tasks](../../papers/arxiv-2608.23200/) | 2026-08-25 | 40 |
 | [When to Ponder: Adaptive Compute Allocation for Code Generation via Test-Time Training](../../papers/arxiv-2601.00894/) | 2026-08-24 | 41 |
+| [Execution-Anchored Hallucination Calibration Reranking for Verilog Code Generation](../../papers/arxiv-2608.22938/) | 2026-08-24 | 41 |
+| [LongWoF-Bench: Evaluating EvoMap Genes for Verifiable Long-Workflow Tasks](../../papers/arxiv-2608.23200/) | 2026-08-24 | 40 |
 | [Library Hallucinations in LLM-Generated Code: A Risk Analysis Grounded in Developer Queries](../../papers/arxiv-2509.22202/) | 2026-08-24 | 39 |
 | [AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning](../../papers/arxiv-2508.14313/) | 2026-08-24 | 39 |
 | [Beyond Prompt Engineering: A Systematic Analysis of Prompt Lexical Sensitivity and Its Impacts on Quality](../../papers/arxiv-2608.20349/) | 2026-08-24 | 38 |
+| [LLM Agents Perform Controlled Experiments Using Simulation Models](../../papers/arxiv-2608.23622/) | 2026-08-22 | 39 |
 | [LLM as Detector: An In-context Learning Approach for Tabular Anomaly Detection](../../papers/arxiv-2608.19463/) | 2026-08-21 | 41 |
 | [Large Language Model for Verilog Code Generation: Literature Review and the Road Ahead](../../papers/arxiv-2512.00020/) | 2026-08-20 | 40 |
 | [Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning](../../papers/arxiv-2608.19009/) | 2026-08-19 | 42 |

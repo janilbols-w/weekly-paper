@@ -3,7 +3,7 @@ title: "Evaluation Awareness in Language Models: Representation, Verbalization, 
 description: "Both capability and safety benchmarks rest upon the assumption that the behavior of language models undergoing a test is informative about their behavior in deployment."
 ---
 
-**评分：38/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+**评分：39/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
 
 [论文原文](https://arxiv.org/abs/2608.21766) · [PDF](https://arxiv.org/pdf/2608.21766)
 
@@ -24,7 +24,7 @@ Both capability and safety benchmarks rest upon the assumption that the behavior
 | 维度 | 得分 |
 |---|---:|
 | relevance | 12 |
-| novelty | 5 |
+| novelty | 6 |
 | rigor | 11 |
 | practical impact | 5 |
 | reproducibility | 2 |
@@ -39,7 +39,7 @@ Both capability and safety benchmarks rest upon the assumption that the behavior
 ## 元数据
 
 - 作者：Farzaneh Heidari, Amin Memarian, Guillaume Rabusseau
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-22；更新：2026-08-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

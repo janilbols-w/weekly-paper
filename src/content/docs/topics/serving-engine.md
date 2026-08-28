@@ -5,14 +5,15 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **39** 篇。
+累计收录 **40** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [TOPAS: Workflow-Aware Prefix-State Scheduling for Multi-Agent LLM Serving](../../papers/arxiv-2608.25523/) | 2026-08-27 | 44 |
-| [Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems](../../papers/arxiv-2608.24650/) | 2026-08-26 | 45 |
-| [PowerSlider: Exploiting Phase Asymmetry for LLM Serving under Demand Response](../../papers/arxiv-2608.21719/) | 2026-08-25 | 48 |
+| [Characterizing CPU-Induced Slowdowns in Multi-GPU LLM Inference](../../papers/arxiv-2603.22774/) | 2026-08-28 | 44 |
+| [TOPAS: Workflow-Aware Prefix-State Scheduling for Multi-Agent LLM Serving](../../papers/arxiv-2608.25523/) | 2026-08-26 | 44 |
+| [Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems](../../papers/arxiv-2608.24650/) | 2026-08-25 | 45 |
 | [Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf](../../papers/arxiv-2608.20370/) | 2026-08-24 | 40 |
+| [PowerSlider: Exploiting Phase Asymmetry for LLM Serving under Demand Response](../../papers/arxiv-2608.21719/) | 2026-08-22 | 48 |
 | [A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation](../../papers/arxiv-2608.19628/) | 2026-08-21 | 44 |
 | [FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving](../../papers/arxiv-2608.19758/) | 2026-08-20 | 51 |
 | [TokenPowerSandbox: Evidence-Gated CPU-First Screening for Energy-Aware LLM Serving](../../papers/arxiv-2608.18149/) | 2026-08-20 | 47 |

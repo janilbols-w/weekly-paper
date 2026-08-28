@@ -39,7 +39,7 @@ Recent years have witnessed remarkable achievements of Large Language Models (LL
 ## 元数据
 
 - 作者：Gongwei Lee, Ji Liu, Juncheng Jia, Ji Wu
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-24；更新：2026-08-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
