@@ -1,20 +1,23 @@
 from __future__ import annotations
 
 import unittest
+import os
 from datetime import date
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from unittest.mock import Mock, patch
 
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
 from weekly_paper.event_collectors import parse_acl_anthology_xml, parse_usenix_schedule_html
 from weekly_paper.event_pipeline import _in_event_scope, detect_due_events, load_events, run_event
 from weekly_paper.models import Paper
+from weekly_paper.notify import select_delivery_week, site_readiness_error
 from weekly_paper.pipeline import run
 from weekly_paper.storage import save_papers
 from weekly_paper.taxonomy import load_taxonomy
 from weekly_paper.utils import edition_bounds, edition_week_id
-from weekly_paper.wecom import split_markdown
+from weekly_paper.wecom import send_wecom, split_markdown
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,6 +108,38 @@ class CoreTests(unittest.TestCase):
         chunks = split_markdown("标题\n" + "中文内容" * 2000, limit=300)
         self.assertGreater(len(chunks), 1)
         self.assertTrue(all(len(chunk.encode("utf-8")) <= 300 for chunk in chunks))
+
+    def test_wecom_error_does_not_leak_webhook_secret(self) -> None:
+        response = Mock(ok=False, status_code=500)
+        secret_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=super-secret"
+        with patch.dict(os.environ, {"WECOM_WEBHOOK_URL": secret_url}), patch(
+            "weekly_paper.wecom.requests.post", return_value=response
+        ):
+            with self.assertRaises(RuntimeError) as raised:
+                send_wecom("hello", {"request_timeout_seconds": 1}, retries=1)
+        self.assertNotIn("super-secret", str(raised.exception))
+        self.assertIn("HTTP 500", str(raised.exception))
+
+    def test_notify_selects_latest_closed_week_after_delayed_schedule(self) -> None:
+        weeks = [
+            {"week": "2026-W35", "end_date": "2026-08-28"},
+            {"week": "2026-W36", "end_date": "2026-09-04"},
+        ]
+        selected = select_delivery_week(weeks, date(2026, 8, 29), latest_closed=True)
+        self.assertEqual(selected["week"], "2026-W35")
+
+    def test_notify_site_health_check_retries_until_digest_is_live(self) -> None:
+        stale = Mock(status_code=200, text="old page")
+        current = Mock(status_code=200, text="digest-123456 and ready")
+        with patch("weekly_paper.notify.requests.get", side_effect=[stale, current]) as request:
+            error = site_readiness_error(
+                "https://example.com/weekly/2026-w36/",
+                "digest-1234567890",
+                timeout_seconds=1,
+                attempts=2,
+            )
+        self.assertIsNone(error)
+        self.assertEqual(request.call_count, 2)
 
     def test_paper_store_prunes_records_outside_current_dataset(self) -> None:
         with TemporaryDirectory() as directory:

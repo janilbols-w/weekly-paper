@@ -35,6 +35,8 @@ def send_wecom(markdown: str, config: Dict[str, Any], retries: int = 3) -> None:
     webhook = os.getenv("WECOM_WEBHOOK_URL", "").strip()
     if not webhook.startswith("https://qyapi.weixin.qq.com/cgi-bin/webhook/send?"):
         raise ValueError("WECOM_WEBHOOK_URL is missing or is not a recognized WeCom robot webhook")
+    if retries < 1:
+        raise ValueError("retries must be at least 1")
     for index, chunk in enumerate(split_markdown(markdown), start=1):
         content = chunk if index == 1 else f"**周报续 {index}**\n{chunk}"
         last_error: Exception = RuntimeError("unknown WeCom error")
@@ -45,14 +47,27 @@ def send_wecom(markdown: str, config: Dict[str, Any], retries: int = 3) -> None:
                     json={"msgtype": "markdown", "markdown": {"content": content}},
                     timeout=int(config["request_timeout_seconds"]),
                 )
-                response.raise_for_status()
-                result = response.json()
+                if not response.ok:
+                    raise RuntimeError(f"WeCom returned HTTP {response.status_code}")
+                try:
+                    result = response.json()
+                except ValueError as exc:
+                    raise RuntimeError("WeCom returned an invalid JSON response") from exc
                 if result.get("errcode") != 0:
-                    raise RuntimeError(f"WeCom rejected message: {result.get('errmsg', 'unknown error')}")
+                    raise RuntimeError(
+                        f"WeCom rejected message ({result.get('errcode')}): "
+                        f"{result.get('errmsg', 'unknown error')}"
+                    )
                 break
-            except Exception as exc:
+            except requests.RequestException as exc:
+                # requests exceptions may contain the full webhook URL, including
+                # its secret key. Keep the diagnostic useful without leaking it.
+                last_error = RuntimeError(f"WeCom request failed: {type(exc).__name__}")
+                if attempt + 1 == retries:
+                    raise last_error from exc
+                time.sleep(2**attempt)
+            except RuntimeError as exc:
                 last_error = exc
                 if attempt + 1 == retries:
                     raise last_error
                 time.sleep(2**attempt)
-

@@ -46,7 +46,7 @@ npm run dev
 
 没有 `OPENAI_API_KEY` 时，采集、规则分类、可解释评分和网站构建仍会工作；定向 PDF 阅读和中文编辑增强会跳过。正式企业微信发送要求精选论文具有完整中文摘要，因此不会发送占位内容。
 
-当前部署采用无 API Key 模式：周五 12:30 GitHub Actions 完成采集，13:00 由 Codex 按 [CODEX_EDITORIAL.md](CODEX_EDITORIAL.md) 完成 Top 5 中文编辑并推送，main 分支更新触发 Pages 部署，14:00 企业微信在中文字段和线上 digest 均匹配后发送。
+当前部署采用无 API Key 模式：周五 12:30 GitHub Actions 启动采集，16:00 由 Codex 按 [CODEX_EDITORIAL.md](CODEX_EDITORIAL.md) 完成 Top 5 中文编辑并推送，main 分支更新触发 Pages 部署；Pages 部署成功后企业微信在中文字段和线上 digest 均匹配时发送，周五 19:00 另有一次兜底检查。
 
 默认来源采用双层容错：arXiv Atom API 负责整周检索，arXiv 官方分类 RSS 在工作日逐日补充；OpenReview、NVIDIA/PyTorch/Hugging Face RSS 用于会议与生态信号。OpenAlex 是可选的 arXiv 索引增强源，设置 `OPENALEX_API_KEY` 后会自动启用。
 
@@ -77,7 +77,13 @@ npm run dev
 
 可选变量 `OPENAI_MODEL` 默认是 `gpt-5-mini`。Webhook 不应写入 `.env.example` 之外的任何已跟踪文件，也不要粘贴到 Issue 或 Actions 日志。
 
-推送工作流周五 14:00 运行，先检查本周页面已经部署，再发送并记录摘要哈希，防止重复投递。
+推送工作流由周报 Pages 部署成功事件触发，周五 19:00 再兜底检查一次。采集或中文编辑尚未完成时会安全跳过，后续部署继续重试；Webhook 配置或真实发送错误仍会使工作流失败。发送前会检查线上 digest，成功后记录摘要哈希以防重复投递。
+
+可在不发送消息、不写入送达状态的情况下验证完整推送链路：
+
+```bash
+.venv/bin/python -m weekly_paper.notify --reference-date YYYY-MM-DD --latest-closed-week --dry-run
+```
 
 ## 质量保护
 

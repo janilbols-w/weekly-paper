@@ -2,8 +2,12 @@ name: Send weekly paper briefing to WeCom
 
 on:
   schedule:
-    - cron: '0 14 * * 5'
+    # Fallback in case a Pages workflow_run event is delayed or unavailable.
+    - cron: '0 19 * * 5'
       timezone: Asia/Shanghai
+  workflow_run:
+    workflows: [Deploy GitHub Pages]
+    types: [completed]
   workflow_dispatch:
     inputs:
       force:
@@ -20,10 +24,13 @@ concurrency:
 
 jobs:
   notify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,6 +49,10 @@ jobs:
           if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
           python -m weekly_paper.notify \
             --reference-date "$(TZ=Asia/Shanghai date +%F)" \
+            --latest-closed-week \
+            --allow-not-ready \
+            --health-check-attempts 6 \
+            --health-check-interval-seconds 10 \
             "${args[@]}"
 
       - name: Persist delivery state
@@ -52,5 +63,6 @@ jobs:
           git add data/state/deliveries.json
           if ! git diff --cached --quiet; then
             git commit -m "state: record weekly WeCom delivery"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
