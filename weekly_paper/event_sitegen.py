@@ -86,19 +86,27 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             lines.append(f"| {item['label']} | {item['value']} |")
         lines.append("")
     if stats:
-        lines.extend(
-            [
-                "## 会议规模",
-                "",
-                "| 指标 | 官方数据 |",
-                "|---|---:|",
-                f"| 唯一投稿 | {stats.get('submissions', '—')} |",
-                f"| Main 录用 | {stats.get('main_accepted', '—')}（{stats.get('main_acceptance_rate', '—')}） |",
-                f"| Findings 录用 | {stats.get('findings_accepted', '—')}（{stats.get('findings_acceptance_rate', '—')}） |",
-                f"| Main oral | {stats.get('main_oral', '—')} |",
-                "",
-            ]
-        )
+        labels = {
+            "submissions": "唯一投稿",
+            "main_accepted": "Main 录用",
+            "findings_accepted": "Findings 录用",
+            "main_oral": "Main oral",
+            "accepted_papers": "正式论文",
+            "operational_systems_papers": "Operational Systems 论文",
+            "best_paper_awards": "Best Paper",
+            "distinguished_artifact_awards": "Distinguished Artifact Award",
+        }
+        hidden = {"main_acceptance_rate", "findings_acceptance_rate"}
+        lines.extend(["## 会议规模", "", "| 指标 | 官方数据 |", "|---|---:|"])
+        for key, value in stats.items():
+            if key in hidden:
+                continue
+            if key == "main_accepted" and stats.get("main_acceptance_rate"):
+                value = f"{value}（{stats['main_acceptance_rate']}）"
+            if key == "findings_accepted" and stats.get("findings_acceptance_rate"):
+                value = f"{value}（{stats['findings_acceptance_rate']}）"
+            lines.append(f"| {labels.get(key, key.replace('_', ' ').title())} | {value} |")
+        lines.append("")
     programs = event.get("key_programs", [])
     if programs:
         if program_briefing:
@@ -160,13 +168,22 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             ]
         )
     else:
+        lines.extend(["", "## 来源与覆盖范围", ""])
+        sources = event.get("sources", [])
+        if sources:
+            for source in sources:
+                lines.append(
+                    f"- [{source['label']}]({source['url']})（核验于 {source.get('checked_at', event.get('generated_at', '')[:10])}）。"
+                )
+        else:
+            lines.append(
+                f"- 官方事实：[{event['short_name']} 官网]({event['official_url']})、"
+                f"[Program]({event.get('program_url', event['official_url'])})、"
+                f"[Awards]({event.get('awards_url', event['official_url'])})。"
+            )
         lines.extend(
             [
-                "",
-                "## 来源与覆盖范围",
-                "",
-                f"- 官方事实：[ACL 2026 官网]({event['official_url']})、[Program]({event.get('program_url', event['official_url'])})、[Awards]({event.get('awards_url', event['official_url'])})。",
-                f"- 论文元数据：{event.get('corpus_source', 'ACL Anthology')}；原始覆盖 {event.get('corpus_total', '未记录')} 篇，主题过滤后保留 {len(papers)} 篇。",
+                f"- 论文元数据：{event.get('corpus_source', 'official proceedings')}；原始覆盖 {event.get('corpus_total', '未记录')} 篇，主题过滤后保留 {len(papers)} 篇。",
                 f"- 触发类型：`{event.get('trigger_type', 'manual_backfill')}`；来源摘要：`{event.get('source_digest', '')[:12]}`。",
                 "- 精选不是奖项预测；评分只反映本站主题相关性、证据完整性和潜在工程影响。",
             ]

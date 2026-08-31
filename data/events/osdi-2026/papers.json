@@ -1,0 +1,2303 @@
+[
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:xie-zhiqiang",
+      "title": "Strata: Hierarchical Context Caching for Long Context Language Model Serving",
+      "abstract": "Long-context large language models (LLMs) enable applications that reason over hundreds of thousands to millions of tokens, but serving these workloads efficiently is challenging. Modern systems cache key-value (KV) states and rely on hierarchical context caching across GPU HBM, CPU memory, and SSDs. We show that naïve designs often become I/O-bound: fragmented KV layouts lead to small transfers that underutilize bandwidth, cache loading stalls prefill, and schedulers that ignore cache-loading latency and delay hits (concurrent requests for the same context during a cache miss) suffer severe throughput degradation. We present Strata, a hierarchical context caching framework for long-context LLM serving. Strata introduces a GPU-assisted I/O mechanism that decouples GPU and host layouts to enable efficient large transfers, and a cache-aware scheduler that mitigates delay hits, balances batches to hide cache-loading latency, and opportunistically overlaps complementary work. Implemented as part of SGLang and deployed in production, Strata improves throughput by up to 5× over vLLM-LMCache and 3.75× over NVIDIA TensorRT-LLM, without hurting short-context performance.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xie-zhiqiang",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-xie-zhiqiang.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Zhiqiang Xie",
+        "Ziyi Xu",
+        "Mark Zhao",
+        "Yuwei An",
+        "Vikram Sharma Mailthody",
+        "Scott Mahlke",
+        "Michael Garland",
+        "Christos Kozyrakis"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving",
+        "model serving"
+      ],
+      "score": 53,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving, model serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Long-context large language models (LLMs) enable applications that reason over hundreds of thousands to millions of tokens, but serving these workloads efficiently is challenging.",
+      "summary_zh": "Strata 把长上下文 KV Cache 的 GPU HBM、CPU 内存和 SSD 多级缓存作为统一系统处理，用 GPU-assisted I/O 合并碎片化小传输，并让调度器显式感知缓存加载时延与 delay hit。",
+      "why_it_matters_zh": "它已集成 SGLang 并进入生产；作者在指定长上下文模型和工作负载上报告吞吐最高为 vLLM-LMCache 的 5×、TensorRT-LLM 的 3.75×，同时保持短上下文性能。",
+      "limitations_zh": "GPU-assisted I/O 会占用少量 SM；收益依赖缓存命中、页布局、CPU-GPU 互联和长上下文比例，峰值加速不能直接外推到任意在线流量。",
+      "reading_depth": "abstract+methods+results+limitations",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "xie-zhiqiang",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/xie-zhiqiang"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "KV Cache and Long Context",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "长上下文 serving 的关键瓶颈已从单纯显存容量转向跨层 I/O 与调度协同，且有 SGLang 和生产部署证据。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:liu-guangda",
+      "title": "ECHO: Efficient KV Cache Offloading with Lossless Prefetching for Serving Native Sparse Attention LLMs",
+      "abstract": "Native sparse attention has emerged as a promising approach for efficient long-context LLM inference without compromising accuracy. While it significantly reduces the attention computation and KV cache access costs, the KV cache size exhibits steeper linear growth with the context length. As a result, GPU HBM capacity becomes the bottleneck, limiting the concurrency of long-context requests and leading to poor hardware utilization and low generation throughput. We introduce ECHO, a serving system designed for native sparse-attention LLMs that employs KV cache offloading to overcome GPU HBM capacity limits. ECHO incorporates a graph-friendly cache manager that enables efficient dynamic KV cache eviction and recall entirely within GPU graphs, minimizing management overhead. Furthermore, by exploiting the numerical predictability of index scores and the sequential processing of queries, ECHO enables lossless intra-query prefetching for decoding and inter-query prefetching for prefill. By applying a fully pipelined fused GPU kernel, ECHO overlaps the recall overhead with indexer computation. Experiments show that ECHO delivers up to 2.1× higher generation throughput than state-of-the-art systems such as SGLang and vLLM under long-context workloads, while maintaining comparable latency under light load.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-liu-guangda.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Guangda Liu",
+        "Wenhao Chen",
+        "Chengwei Li",
+        "Zhenyu Ning",
+        "Jing Lin",
+        "Yiwu Yao",
+        "Quan Chen",
+        "Shixuan Sun",
+        "Jieru Zhao",
+        "Minyi Guo"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [
+        "cache-offload-memory"
+      ],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 56,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Native sparse attention has emerged as a promising approach for efficient long-context LLM inference without compromising accuracy.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "liu-guangda",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/liu-guangda"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "KV Cache and Long Context",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:luo",
+      "title": "No Buffer, No Bottleneck: Efficient Zero-Copy KV Cache Offloading for Long-Context LLMs",
+      "abstract": "Long-context large language models (LLMs) store computed attention key and value (KV) matrices from previous decoding steps to avoid full-sequence recomputation. While this reuse reduces computation, the KV cache grows linearly with sequence length, exerting significant pressure on GPU memory capacity. Existing offloading stores KV blocks in CPU memory but requires extra GPU buffers, wasting GPU memory and doubling CPU–GPU transfers, which creates capacity and bandwidth bottlenecks. We present DirectKV, to our knowledge, the first zero-copy KV cache offloading system for modern heterogeneous CPU–GPU platforms such as NVIDIA GH200/GB200 with high-bandwidth NVLink-C2C interconnects. By leveraging NVLink-C2C instead of PCIe, DirectKV makes CPU memory a practical extension of GPU KV-cache capacity during long-context inference. DirectKV eliminates the GPU staging buffer (no buffer) by enabling GPU kernels to directly access CPU-resident KV cache, and substantially reduces the CPU– GPU data-movement bottleneck (no bottleneck) through CPU-memory-aware CUDA kernels tailored for heterogeneous CPU–GPU platforms. It further fuses KV generation with attention computation into a single CUDA kernel and employs warp-level pipelining to overlap KV fetching, computation, and write-back, thereby hiding stalls caused by CPU memory access. On GH200, DirectKV reduces CPU–GPU transfer volume by up to 50%, cuts GPU memory usage by 43%, and improves end-to-end performance by up to 1.2× compared to existing solutions.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/luo",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-luo.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Shutian Luo",
+        "Haiying Shen"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [
+        "cache-offload-memory"
+      ],
+      "keyword_evidence": [
+        "kv cache",
+        "kv-cache"
+      ],
+      "score": 48,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache, kv-cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Long-context large language models (LLMs) store computed attention key and value (KV) matrices from previous decoding steps to avoid full-sequence recomputation.",
+      "summary_zh": "DirectKV 面向 Grace Hopper/Blackwell 类 CPU-GPU 一致互联平台，让 GPU kernel 直接访问 CPU-resident KV Cache，取消 GPU staging buffer，并用融合与流水隐藏 CPU 内存访问。",
+      "why_it_matters_zh": "在 GH200 上，作者报告 CPU-GPU 传输量最高减少 50%、GPU 内存占用降低 43%、端到端性能最高提升 1.2×，直接对应长上下文容量与带宽瓶颈。",
+      "limitations_zh": "目前主要是节点内优化；跨节点 context parallel、多级存储层和 host-memory pressure 仍需额外 runtime 支持，退化到 pageable 或磁盘层后 zero-copy 优势会减弱。",
+      "reading_depth": "abstract+methods+results+limitations",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "luo",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/luo"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "KV Cache and Long Context",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "这是面向 NVLink-C2C 异构内存的明确系统路径，硬件前提与边界清楚。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:zhang-dingyan",
+      "title": "Simple Is Better: Multiplication May Be All You Need for LLM Request Scheduling",
+      "abstract": "High-quality LLM request scheduling requires meeting two key objectives: ensuring the routed instance has KV$ to accelerate request execution, and ensuring that the workload is balanced across instances. Achieving both objectives is challenging because pursuing one may compromise the other. Current approaches use various combinators (e.g., linear combinations) to compute a scheduling score that combines indicators for the two objectives. These approaches are complex: they either require significant workload-specific hyperparameter tuning or model-hardware-aware simulator development, yet could still lead to suboptimal performance. In this paper, we show that using a simple multiplication of two carefully chosen indicators—one KV$-aware (new prefill tokens if routed to an instance) and one load-balancing-aware (current batch size of the instance)—as the scheduling score (LMetric) can achieve both objectives simultaneously without any hyperparameter tuning. The key idea is that the simply multiplied score considers both objectives in a manner similar to a linear combination, but the original hyperparameters cancel out during comparison, so no tuning is needed to find the best parameters. The two indicators are chosen based on our analysis of LLM characteristics. Our extensive experiments show that this simple approach can reduce TTFT by 92% and 39%, and TPOT by 24% and 51%, compared to vLLM-v1 and an in-production scheduler on real-world workloads covering chatbots and coding agents. We also derive the mathematical conditions under which multiplication may fail, and find that such conditions are extremely rare in practice and can be detected (and mitigated) beforehand. LMetric has been deployed in production and canary release confirms its effectiveness.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-dingyan",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-zhang-dingyan.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Dingyan Zhang",
+        "Jinbo Han",
+        "Kaixi Zhang",
+        "Xingda Wei",
+        "Sijie Shen",
+        "Chenguang Fang",
+        "Wenyuan Yu",
+        "Jingren Zhou",
+        "Rong Chen"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "batching-scheduling",
+        "leaf": "Batching & Request Scheduling",
+        "leaf_zh": "Batching 与请求调度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "request scheduling"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: request scheduling",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "High-quality LLM request scheduling requires meeting two key objectives: ensuring the routed instance has KV$ to accelerate request execution, and ensuring that the workload is balanced across instances.",
+      "summary_zh": "LMetric 用“新 prefill token 数 × 当前 batch size”这一乘法分数同时表达 KV Cache 亲和性与负载均衡，避免线性组合的 workload-specific 调参和模拟器依赖。",
+      "why_it_matters_zh": "作者在聊天与 coding-agent 生产流量上报告，相对 vLLM-v1 和生产调度器，TTFT 分别最高降低 92% 和 39%，TPOT 最高降低 24% 和 51%，并已 canary 部署。",
+      "limitations_zh": "结果依赖论文选择的两个指标、模型和 trace；作者虽给出乘法失效条件与检测方法，但跨引擎、跨缓存策略和强突发流量仍需复现。",
+      "reading_depth": "abstract+methods+results",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "zhang-dingyan",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-dingyan"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "KV Cache and Long Context",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "方法极简、无需超参，并有生产 canary，是请求路由与缓存感知调度中很实用的基线。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:yu-shan",
+      "title": "Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning",
+      "abstract": "Inference providers must maintain availability for many LLMs, including low-volume but essential models, making resource efficiency increasingly important as token prices fall. Analysis of production traces reveals a dynamic bursty-group pattern in which sets of models become active together and shift over time; existing space- and time-sharing approaches lack principled mechanisms to adapt to this variability, forcing trade-offs between SLO adherence and efficiency. We observe that elastic memory allocation can unify spatial and temporal sharing. Based on this insight, we have developed Prism, a memory-centric LLM co-serving framework that applies memory ballooning to reclaim memory across models and support both forms of sharing under a single scheme. Prism’s balloon driver, referred to as kvcached , has been open-sourced at https://github.com/ovg-project/kvcached , and deployed in production environments across 10K+ GPUs.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yu-shan",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-yu-shan.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Shan Yu",
+        "Yifan Qiao",
+        "Mingyuan Ma",
+        "Yangmin Li",
+        "Shuo Yang",
+        "Xinyuan Tong",
+        "Yang Wang",
+        "Zhiqiang Xie",
+        "Yuwei An",
+        "Shiyi Cao",
+        "Ke Bao",
+        "Deepak Vij",
+        "Xiaoning Ding",
+        "Yichen Wang",
+        "Qingda Lu",
+        "Zhong Wang",
+        "Gao Gao",
+        "Harry Xu",
+        "Junyi Shu",
+        "Jiarong Xing",
+        "Ying Sheng"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "https://github.com/ovg-project/kvcached",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [
+        "serving-engine"
+      ],
+      "keyword_evidence": [
+        "gpu memory"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu memory",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Inference providers must maintain availability for many LLMs, including low-volume but essential models, making resource efficiency increasingly important as token prices fall.",
+      "summary_zh": "Prism 用 GPU memory ballooning 在多模型之间统一空间共享和时间共享；其 kvcached 驱动作为 inference engine 与 GPU 内存之间的 shim，按流量变化回收和重新分配显存。",
+      "why_it_matters_zh": "kvcached 已开源并部署到 10K+ GPU；论文报告在同等 GPU 数下 SLO 达标率显著提升，在同等 SLO 下成本最高降低超过 2×。",
+      "limitations_zh": "核心假设是生产流量存在动态 bursty-group；接入需要 engine/runtime 与显存回收语义配合，隔离、抖动和不同模型内存布局下的收益需实测。",
+      "reading_depth": "abstract+methods+results+artifact",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "yu-shan",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/yu-shan"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "KV Cache and Long Context",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "多模型低流量常驻是推理平台的真实成本问题，Prism 同时具备 10K+ GPU 部署与可检查代码。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:hu-weifang",
+      "title": "Tessera: A Holistic Pipeline Parallelism Framework for Trillion-Parameter Heterogeneous MoE Training (Operational Systems)",
+      "abstract": "Training trillion-parameter models relies on pipeline parallelism to scale across thousands of accelerators. However, architectures exemplified by the Qwen family are evolving from uniform Transformer blocks into heterogeneous compositions that combine sparse Mixture-of-Experts (MoE) with different attention variants. This heterogeneity breaks the uniformity assumption behind existing pipeline systems: partitions chosen from serial layer costs become imbalanced after communication is overlapped with computation, because different layer combinations hide different fractions of their communication. Furthermore, at the scale of 10K+ GPUs, MoE routing variation adds a runtime source of stalls, creating transient idle slots that static plans cannot anticipate. We present Tessera, a framework that co-optimizes partitioning and overlap scheduling for heterogeneous pipeline training, and adapts to runtime dynamics. Tessera introduces: (1) an overlap scheduler that synthesizes fine-grained interleavings for each layer combination; (2) an overlap-aware partitioner that uses profiled post-overlap cost to select partitions balanced for parallel execution; and (3) a dynamic bubble optimizer that fills routing-induced idle slots with movable tasks at runtime. Deployed on production clusters for pre-training Qwen3 and Qwen3-Next, Tessera improves throughput by 20%–33% over our production baseline across five workloads at scales from 4,096 to 12,288 GPUs, reaching 39% MFU on a trillion-parameter model. In controlled experiments against Megatron-Core MoE with public recipes, Tessera achieves up to 1.24× higher MFU.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hu-weifang",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-hu-weifang.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Weifang Hu",
+        "Langshi Chen",
+        "Man Yuan",
+        "Youyang Yao",
+        "Xiulong Yuan",
+        "Li Tian",
+        "Yong Li",
+        "Wei Lin",
+        "Xuanhua Shi",
+        "Zhengping Qian",
+        "Jingren Zhou"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "distributed training checkpointing pipeline parallel large model training distributed training checkpointing pipeline parallel large model training",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "distributed-training-checkpoint",
+        "leaf": "Distributed Training & Checkpointing",
+        "leaf_zh": "分布式训练与 Checkpoint"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "checkpointing",
+        "distributed training",
+        "large model training"
+      ],
+      "score": 53,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 11,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: checkpointing, distributed training, large model training",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Training trillion-parameter models relies on pipeline parallelism to scale across thousands of accelerators.",
+      "summary_zh": "Tessera 面向异构 MoE/attention block 的超大模型训练，联合优化 pipeline partition 与 compute-communication overlap，并在运行时用 dynamic bubble optimizer 填补 MoE 路由造成的瞬时空洞。",
+      "why_it_matters_zh": "系统用于 Qwen3 与 Qwen3-Next 生产预训练；在 4,096–12,288 GPU 的五个工作负载上，作者报告吞吐提升 20%–33%，万亿参数模型达到 39% MFU。",
+      "limitations_zh": "主要证据来自阿里生产栈和特定 Qwen 异构结构；与 Megatron-Core 的公开对照规模和生产基线并不完全相同，迁移到其他模型/互联需重新 profile。",
+      "reading_depth": "abstract+methods+results",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "hu-weifang",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/hu-weifang"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "LLM Training at Scale · Operational Systems",
+    "presentation": "Operational Systems Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "它给出了万卡级异构 MoE pipeline 的生产证据，覆盖静态分区与动态路由两类气泡来源。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:chen-luofan",
+      "title": "Teaching the Old Dog New Tricks: Building Efficient Data Pipelines for Large-Scale LLM Pre-Training (Operational Systems)",
+      "abstract": "Data pipelines play a critical role in the performance of large-scale pre-training jobs running on thousands of GPUs. In this work, we present a comprehensive quantitative analysis of data access patterns from production workloads and reveal three previously underreported bottlenecks. First, cross-datacenter traffic emerges as a major source of latency when evaluating in-training models using remote checkpoints. Second, checkpoint loading during startup phases frequently suffers from I/O contention that delays job initialization. Third, data transformation during loading becomes a significant and CPU-intensive bottleneck for multimodal models. Guided by these findings, we introduce three optimizations: global-namespace-based predictive checkpoint replication, proactive hot-file replication, and offloading data transformation to storage-tier CPU resources. Crucially, we demonstrate that these optimizations are not system-specific but address fundamental architectural mismatches in the LLM era. They are broadly applicable to both legacy and modern storage systems, offering a high-return path to upgrade infrastructure with minimal engineering intrusion. Together, these techniques reduce wasted GPU hours per evaluation from 16,800 to 4,000, shorten checkpoint loading time at each training start by 40.8%, and reduce training stalls caused by dataloading by 63.2%.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chen-luofan",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-chen-luofan.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Luofan Chen",
+        "Chenhan Wang",
+        "Weidong Zhang",
+        "Jinxin Chi",
+        "Hequan Zhang",
+        "Zanbo Wang",
+        "Chenyuan Wang",
+        "Lishu Luo",
+        "Sijin Wu",
+        "Junqi Hu",
+        "Jun Wang",
+        "Cheng Chen",
+        "Lixin Huang",
+        "Liyang Zhao",
+        "Yong Tian",
+        "Jun Guo",
+        "Youhui Bai",
+        "Wencong Xiao",
+        "Kang Chen",
+        "Cheng Li"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "data-pipeline",
+        "leaf": "Data Pipelines",
+        "leaf_zh": "数据管线"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "offloading"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 7,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: offloading",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Data pipelines play a critical role in the performance of large-scale pre-training jobs running on thousands of GPUs.",
+      "summary_zh": "这篇 Best Paper 从大规模预训练生产 trace 提炼出跨数据中心 checkpoint、启动加载 I/O 风暴和多模态数据变换三个瓶颈，并分别采用预测复制、hot-file 预复制与存储侧 CPU offload。",
+      "why_it_matters_zh": "作者报告单次评估浪费的 GPU-hours 从 16,800 降至 4,000、启动 checkpoint 加载缩短 40.8%、dataloading stall 降低 63.2%，说明“旧存储系统”可通过接口协同获得高回报。",
+      "limitations_zh": "方案依赖训练框架提前暴露 world size、文件热度和访问计划；生产数字来自特定存储拓扑与训练流程，复制成本和跨团队改造量需单独核算。",
+      "reading_depth": "abstract+methods+results",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "chen-luofan",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/chen-luofan"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "LLM Training at Scale · Operational Systems",
+    "presentation": "Operational Systems Paper",
+    "awards": [
+      "Jay Lepreau Best Paper Award"
+    ],
+    "selected": true,
+    "selection_reason_zh": "获 Jay Lepreau Best Paper，且把训练数据管线的生产瓶颈、机制和 GPU-hour 收益连成了完整证据链。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:zhong",
+      "title": "Breaking the Reward Barrier: Accelerating Tree-of-Thought Reasoning via Speculative Exploration",
+      "abstract": "Tree-of-Thought (ToT) reasoning structures Large Language Model (LLM) inference as a tree-based search, demonstrating strong potential for solving complex mathematical and programming tasks. However, its efficiency is constrained by the reward dependency barrier —a synchronization bottleneck caused by sequential reward-guided exploration that limits search parallelism and introduces substantial latency. Prior system optimizations, mainly designed for linear Chain-of-Thought (CoT) reasoning, cannot address these challenges, leaving the efficiency of ToT underexplored. To enhance ToT reasoning efficiency, we observe that the reasoning paths can be explored speculatively to break the reward synchronization barrier. Therefore, in this paper, we propose SPEX and introduce three key techniques: (i) intra-query speculative path selection to predict and expand high-potential branches of ToT, (ii) inter-query budget allocation to balance speculative resource allocation across queries dynamically, and (iii) adaptive early termination to prune deep and redundant branches for a skewed search tree. We implement SPEX on top of the SGLang framework and evaluate it across diverse ToT algorithms and LLMs. Extensive experiments show that SPEX achieves 1.2 3 × speedup for different ToT reasoning algorithms. Moreover, SPEX synergizes with token-level speculative decoding, achieving cumulative speedups of up to 4.1×. Ablation studies further confirm the contributions of each technique. Overall, SPEX represents a significant step toward efficient and scalable ToT reasoning, unlocking the parallelism required for high-performance inference-time scaling for LLMs.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhong",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-zhong.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Shuzhang Zhong",
+        "Haochen Huang",
+        "Shengxuan Qiu",
+        "Pengfei Zuo",
+        "Runsheng Wang",
+        "Meng Li"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 11,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Tree-of-Thought (ToT) reasoning structures Large Language Model (LLM) inference as a tree-based search, demonstrating strong potential for solving complex mathematical and programming tasks.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "zhong",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/zhong"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Testing, Debugging, Root Causing",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:chaudhry",
+      "title": "Murakkab: Resource-Efficient Agentic Workflow Orchestration in Cloud Platforms",
+      "abstract": "Agentic workflows commonly coordinate multiple models and tools with complex control logic. They are quickly becoming the dominant paradigm for AI applications. However, serving them remains inefficient with today’s frameworks. The key problem is that they expose workflows as opaque sequences of model and tool calls that tightly couple agent logic with model and hardware choices. This prevents systems from holistically reasoning about trade-offs across accuracy, latency, energy, and cost. This leads to resource waste and degraded service-level objectives (SLOs). We present Murakkab, a resource-efficient serving system for agentic workflows. Murakkab introduces a declarative abstraction that decouples workflow specification from execution configuration. A profile-guided optimizer and adaptive runtime jointly manage the full stack: orchestrating workflow components, mapping them to models and hardware, and dynamically reconfiguring execution to satisfy user-defined SLOs. By exposing the internal structure of agentic workflows, Murakkab enables cross-layer optimization that existing frameworks and cloud schedulers cannot achieve. Our evaluation on diverse workflows shows that, compared to state-of-the-art systems, Murakkab reduces GPU usage by up to 2.8×, energy consumption by 3.7×, and cost by 4.3× while maintaining SLOs.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chaudhry",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-chaudhry.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Gohar Irfan Chaudhry",
+        "Esha Choukse",
+        "Haoran Qiu",
+        "Íñigo Goiri",
+        "Rodrigo Fonseca",
+        "Adam Belay",
+        "Ricardo Bianchini"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "large language model serving inference latency throughput request routing autoscaling service level objective large language model serving inference latency throughput request routing autoscaling service level objective",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "gateway-routing-autoscaling",
+        "leaf": "Gateway, Routing & Autoscaling",
+        "leaf_zh": "Gateway、路由与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "autoscaling",
+        "request routing"
+      ],
+      "score": 51,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: autoscaling, request routing",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Agentic workflows commonly coordinate multiple models and tools with complex control logic.",
+      "summary_zh": "Murakkab 用声明式 agent workflow 抽象解耦逻辑、模型和硬件，再以 profile-guided optimizer 与 adaptive runtime 跨层选择模型、硬件和执行配置。",
+      "why_it_matters_zh": "对 agent 系统而言，单次 model call 优化不够；作者在多类 workflow 上报告 GPU 用量最高降低 2.8×、能耗 3.7×、成本 4.3×，同时满足 SLO。",
+      "limitations_zh": "收益依赖 workflow 可声明、可 profile，且需要把质量约束转化为优化器可用目标；工具调用延迟、模型漂移和未见过的 workflow 可能削弱离线 profile。",
+      "reading_depth": "abstract+methods+results",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "chaudhry",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/chaudhry"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Agentic AI and LLM Operations",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "它把 agent orchestration 从应用逻辑问题提升为端到端 serving 资源优化问题。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:wu-haonan",
+      "title": "StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference (Operational Systems)",
+      "abstract": "Large Language Model (LLM) inference services in production operate under stringent, fine-grained Service Level Objectives (SLOs). Unlike throughput-oriented LLM training, even sporadic performance anomalies during inference can violate SLOs, underscoring the need for improved tracing and diagnosis solutions. However, existing solutions face two primary limitations: (1) existing tracing tools incur prohibitive overhead; (2) training-centric diagnosis tools are ill-suited for capturing sporadic inference anomalies. To bridge these gaps, we propose StriaTrace, a novel tracing and diagnosis system tailored for online LLM inference. StriaTrace is built upon three principles distilled from production experience: (1) tracing key synchronization points, (2) tracing critical paths, and (3) detailed tracing only during abnormalities. StriaTrace further constructs a dynamic regression-based roofline model and correlation-based diagnosis to identify why each LLM inference abnormality happens. Evaluations show that StriaTrace reduces tracing overhead by 97.8% relative to alternatives. StriaTrace has been widely used in our development, testing, and production release cycles, and has successfully diagnosed hundreds of abnormalities spanning 19 distinct root causes.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/wu-haonan",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-wu-haonan.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Haonan Wu",
+        "Yanqing Chen",
+        "Kun Qian",
+        "Xue Li",
+        "Jingbo Xu",
+        "Erci Xu",
+        "Ennan Zhai",
+        "Wenyuan Yu",
+        "Guangtao Xue",
+        "Jingren Zhou"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "inference benchmark performance profiling observability trace analysis inference benchmark performance profiling observability trace analysis",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "observability-benchmarking",
+        "leaf": "Observability & Benchmarking",
+        "leaf_zh": "可观测性与 Benchmark"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "inference benchmark",
+        "observability",
+        "performance profiling",
+        "trace analysis"
+      ],
+      "score": 53,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 7,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: inference benchmark, observability, performance profiling, trace analysis",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Large Language Model (LLM) inference services in production operate under stringent, fine-grained Service Level Objectives (SLOs).",
+      "summary_zh": "StriaTrace 只持续跟踪关键同步点和 critical path，在异常时再加深 tracing，并用动态回归 roofline 与相关性诊断定位在线 LLM 推理的偶发 SLO 抖动。",
+      "why_it_matters_zh": "系统已用于开发、测试和生产发布，覆盖 19 类根因；论文报告相对替代方案 tracing 开销降低 97.8%，完整方案约 1% 级开销。",
+      "limitations_zh": "设计针对特定线上 inference stack 的同步边界与根因库；跨 serving engine、异步执行图和新硬件时需要重新定义 instrumentation 与诊断模型。",
+      "reading_depth": "abstract+methods+results+limitations",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "wu-haonan",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/wu-haonan"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Agentic AI and LLM Operations · Operational Systems",
+    "presentation": "Operational Systems Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "它补齐了训练诊断工具难以处理的动态 batch、变长序列和瞬时 inference anomaly。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:qin",
+      "title": "Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning",
+      "abstract": "Reinforcement Learning (RL) has emerged as a critical technique for advancing modern Large Language Models (LLMs), yet existing synchronous RL systems face severe performance bottlenecks. The rollout phase, which dominates end-to-end iteration time, suffers from substantial long-tail latency and poor resource utilization due to inherent workload imbalance. We present Seer, a novel context learning RL system that addresses these challenges through a key observation: requests sharing the same prompt exhibit strong similarities in output lengths and response patterns. Leveraging this insight, Seer introduces three coordinated techniques: (1) divided rollout for dynamic load balancing, (2) context-aware scheduling to mitigate long-tail request delays, and (3) adaptive grouped speculative decoding to accelerate generation. These mechanisms work in concert to markedly reduce long-tail latency and improve resource efficiency during rollout. Evaluations on production-grade RL workloads demonstrate that Seer achieves up to 2.04× end-to-end rollout throughput improvement compared to the state-of-the-art synchronous RL systems, while notably reducing long-tail latency by 72–94%.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/qin",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-qin.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Ruoyu Qin",
+        "Weiran He",
+        "Weixiao Huang",
+        "Yangkun Zhang",
+        "Yikai Zhao",
+        "Bo Pang",
+        "Xinran Xu",
+        "Yingdi Shan",
+        "Yongwei Wu",
+        "Mingxing Zhang"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "gateway-routing-autoscaling",
+        "leaf": "Gateway, Routing & Autoscaling",
+        "leaf_zh": "Gateway、路由与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "load balancing"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: load balancing",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Reinforcement Learning (RL) has emerged as a critical technique for advancing modern Large Language Models (LLMs), yet existing synchronous RL systems face severe performance bottlenecks.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "qin",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/qin"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "RL Training at Scale",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:zhou-yang",
+      "title": "UCCL-Tran: An Extensible Software Transport Layer for GPU Networking",
+      "abstract": "Fast-evolving machine learning (ML) workloads have increasing requirements for networking. However, host network transport on RDMA NICs is hard to evolve, causing problems for ML workloads. For example, single-path RDMA traffic is prone to flow collisions that severely degrade collective communication performance. We present UCCL-Tran, an extensible software transport layer to evolve GPU networking. UCCL-Tran decouples the data path and control path of existing RDMA NICs and efficiently runs the control-path transport on host CPUs. This software extensibility brings in transport innovations that cannot be achieved in hardware for ML workloads, e.g., a multipath transport to resolve flow collisions. ML collectives atop UCCL-Tran achieve up to 4.5× higher performance compared to existing RDMA NICs.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhou-yang",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-zhou-yang.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Yang Zhou",
+        "Zhongjie Chen",
+        "Ziming Mao",
+        "ChonLam Lao",
+        "Shuo Yang",
+        "Pravein Govindan Kannan",
+        "Xizhi Zhang",
+        "Jiaqi Gao",
+        "Yilong Zhao",
+        "Yongji Wu",
+        "Kaichao You",
+        "Fengyuan Ren",
+        "Zhiying Xu",
+        "Costin Raiciu",
+        "Ion Stoica"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group": "Cluster & Resource Systems",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "network-interconnect",
+        "leaf": "Network, RDMA & Interconnect",
+        "leaf_zh": "网络、RDMA 与互联"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "rdma"
+      ],
+      "score": 41,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: rdma",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Fast-evolving machine learning (ML) workloads have increasing requirements for networking.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "zhou-yang",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/zhou-yang"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Expert Mixture",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:zheng",
+      "title": "SDCs in the Wild: Characterizing and Diagnosing SDC-Defective GPUs in Production LLM Training (Operational Systems)",
+      "abstract": "Silent Data Corruption (SDC) has emerged as a critical reliability bottleneck in Large Language Model (LLM) training, where hardware faults are frequently indistinguishable from software anomalies. While standard industry practice relies on synthetic microbenchmarks for fault isolation, our experience shows these methods miss over 60% of defective devices. To understand this gap, we present a comprehensive characterization of 23 SDC-defective GPUs harvested from a large-scale production cluster. Our analysis reveals three key insights: (1) SDCs are not confined to new hardware but often arise later due to aging; (2) SDCs are highly data-dependent and unit-specific, meaning devices that pass general stress tests often fail under specific training input data; and (3) standard ECC and thermal protections fail to capture these logic-level bit flips. Driven by these findings, we propose SDCHunter, an automated diagnosis system for detecting SDC-defective GPUs in a large-scale training cluster. Instead of relying on generic benchmarks, SDCHunter employs execution replay with the exact training workload and input data that triggered the failure. Deployed at ByteDance, SDCHunter successfully mitigated 40 SDC incidents in production.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zheng",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-zheng.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Wenxin Zheng",
+        "Wenxiao Wang",
+        "Yun Zhang",
+        "Mingcong Han",
+        "Bin Xu",
+        "Jinyu Gu",
+        "Xingda Wei",
+        "Haibo Chen",
+        "Zuquan Song",
+        "Gaohong Liu",
+        "Yucheng Nie",
+        "Zhe Nan",
+        "Zhuolin Zheng",
+        "Huan Yu",
+        "Shuguang Wang",
+        "Ziming Zhou",
+        "Hang Zhu",
+        "Wencong Xiao",
+        "Xin Liu"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "silent data corruption fault tolerance resilient distributed training GPU accelerator silent data corruption fault tolerance resilient distributed training GPU accelerator",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "fault-tolerance-elasticity",
+        "leaf": "Fault Tolerance & Elasticity",
+        "leaf_zh": "容错与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "fault tolerance",
+        "silent data corruption"
+      ],
+      "score": 46,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: fault tolerance, silent data corruption",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Silent Data Corruption (SDC) has emerged as a critical reliability bottleneck in Large Language Model (LLM) training, where hardware faults are frequently indistinguishable from software anomalies.",
+      "summary_zh": "SDCs in the Wild 分析 23 块生产集群中的 SDC-defective GPU，发现老化、数据依赖和功能单元依赖会让设备通过常规压力测试却在真实训练输入上出错，并提出基于触发工作负载 replay 的 SDCHunter。",
+      "why_it_matters_zh": "作者称标准行业测试漏掉超过 60% 的缺陷设备；SDCHunter 在 ByteDance 生产环境处理了 40 起 SDC 事件，为大模型集群验收和故障隔离提供了更贴近 workload 的路径。",
+      "limitations_zh": "样本只有 23 块缺陷 GPU，来自单一生产环境；replay 依赖保留触发输入与执行条件，不能替代通用硬件健康检查，也未证明对所有 GPU 代际同样有效。",
+      "reading_depth": "abstract+methods+results",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "zheng",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/zheng"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Training Reliability and Silent Errors · Operational Systems",
+    "presentation": "Operational Systems Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "这是少见的真实缺陷 GPU 样本与生产事件证据，直接影响训练集群稳定性和验收方法。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:lei",
+      "title": "Safeguarding LLM Training at Scale: Online SDC Detection and Insights from 35 Million GPU Hours",
+      "abstract": "Silent Data Corruption (SDC) poses a critical threat to large-scale LLM training. Existing offline tests and online detection methods provide solutions for large-scale systems, yet they suffer from high overhead or low detection accuracy in LLM training. This paper presents AEGIS, an online SDC detection framework for large-scale LLM training. We introduce a two-stage cSensor-cVerifier abstraction that decouples SDC detection into lightweight corruption sensing and definitive corruption verification. Based on this abstraction, AEGIS co-designs new detection techniques by integrating the inherent features of LLM training with GPU characteristics, enabling practical online SDC detection. In a production deployment spanning 3.5 × 10 7 GPU-hours, AEGIS identified 18 real-world SDC incidents and 13 faulty GPUs while incurring only 0.86% performance overhead, enabling a systematic empirical characterization of SDCs in large-scale LLM training.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/lei",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-lei.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Kinman Lei",
+        "Liyan Zheng",
+        "Xiang Li",
+        "Hongmin Chen",
+        "Yun Zhang",
+        "Gaohong Liu",
+        "Zuquan Song",
+        "Zixuan Ma",
+        "Zhiyu Xue",
+        "Minghui Yu",
+        "Shuguang Wang",
+        "Wencong Xiao",
+        "Haibin Lin",
+        "Yuyang Jin",
+        "Jidong Zhai",
+        "Bo Liu",
+        "Xin Liu"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "fault-tolerance-elasticity",
+        "leaf": "Fault Tolerance & Elasticity",
+        "leaf_zh": "容错与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "silent data corruption"
+      ],
+      "score": 40,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: silent data corruption",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Silent Data Corruption (SDC) poses a critical threat to large-scale LLM training.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "lei",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/lei"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Training Reliability and Silent Errors",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:chen-zhenqian",
+      "title": "RobustRL: Role-Based Fault Tolerance System for RL Post-Training",
+      "abstract": "RL post-training for LLMs has been widely scaled to enhance reasoning and tool-using capabilities. However, RL post-training interleaves training and inference workloads, exposing the system to faults from both sides. Existing fault tolerance frameworks for LLMs target either training or inference, leaving the optimization potential in the asynchronous execution unexplored for RL. Our key insight is role-based fault isolation so the failure in one machine does not affect the others. We treat trainer, rollout, and other management roles in RL training as distinct distributed sub-tasks. Instead of restarting the entire task in pretrain robust system ByteRobust, we recover only the failed role and reconnect it to living ones, thereby eliminating the full-restart overhead including rollout replay and initialization delay. We present RobustRL, the first comprehensive robust system to handle GPU machine errors for RL post-training ETTR (Effective Training Time Ratio) improvement via a Detect-Restart-Reconnect paradigm. (1) Detect . We implement role-aware monitoring to distinguish actual failures from role-specific behaviors to avoid the false positive and delayed detection. (2) Restart . For trainers, we implement a non-disruptive recovery where rollouts persist state and continue trajectory generation, while the trainer is rapidly restored via rollout warm standbys. For rollout, we perform isolated machine replacement without interrupting the RL task. (3) Reconnect . We replace static collective communication with dynamic, UCX-based (Unified Communication X) point-to-point communication, enabling immediate weight synchronization between recovered roles. In an RL training task on a 256-GPU cluster with Qwen3-8B-Math workload under 10% failure injection frequency, RobustRL can achieve an ETTR of over 80% compared with the 60% in ByteRobust and achieves 8.4%-17.4% faster in end-to-end training time.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-chen-zhenqian.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Zhenqian Chen",
+        "Baoquan Zhong",
+        "Xiang Li",
+        "Qing Dai",
+        "Xinkui Zhao",
+        "Miao Ye",
+        "Ren Cheng",
+        "Lufei Zhang",
+        "Jianwei Yin"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "fault-tolerance-elasticity",
+        "leaf": "Fault Tolerance & Elasticity",
+        "leaf_zh": "容错与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "fault tolerance"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 7,
+        "rigor": 7,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: fault tolerance",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "RL post-training for LLMs has been widely scaled to enhance reasoning and tool-using capabilities.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "chen-zhenqian",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/chen-zhenqian"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Training Reliability and Silent Errors",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:chen-guanyi",
+      "title": "CoPilotIO: CPU as a Co-Pilot for GPU I/O to Free GPU Compute",
+      "abstract": "Limited GPU memory increasingly forces modern AI and data analytics workloads to access terabyte-scale datasets and model states from storage, making efficient GPU I/O critical. Existing GPU I/O engines are either CPU-centric or GPU-centric. CPU-centric approaches avoid consuming GPU resources but often fail to provide high-throughput, on-demand GPU access due to kernel overheads and limited parallelism. GPU-centric approaches enable fine-grained on-demand I/O but require intensive I/O polling that consumes valuable GPU resources and introduces intra-warp, inter-warp, and inter-SM I/O stalls. We present CoPilotIO, a novel GPU I/O engine that delivers high-throughput, on-demand storage access without sacrificing GPU compute resources. CoPilotIO adopts an asynchronous GPU I/O architecture in which GPUs initiate I/O while CPU cores act as I/O co-pilots responsible for completion polling. To enable efficient coordination, CoPilotIO introduces a split SQ/CQ architecture, hardware barrier-based synchronization, a lock-free barrier-table, and adaptive CPU-GPU co-polling. Across microbenchmarks and real applications, including GoFS, LLM Mixture-of-Experts (MoE) inference, and Deep Learning Recommendation Models (DLRM), CoPilotIO reduces I/O-induced stalls by up to 55.5%, requires 50% fewer SMs to saturate the GPU PCIe bandwidth, accelerates GoFS by up to 17.4%, and improves application performance by up to 85%.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/chen-guanyi",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-chen-guanyi.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Guanyi Chen",
+        "Qi Chen",
+        "Shu Yin",
+        "Jian Zhang"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "gpu memory"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 11,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu memory",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Limited GPU memory increasingly forces modern AI and data analytics workloads to access terabyte-scale datasets and model states from storage, making efficient GPU I/O critical.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "chen-guanyi",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/chen-guanyi"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Filesystems and I/O Acceleration",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:heer",
+      "title": "RoCE BALBOA: Service-Enhanced RDMA Offload Engine for Data Center SmartNICs",
+      "abstract": "Remote Direct Memory Access (RDMA) has become the de facto standard for high-performance data center networking. However, current deployments rely heavily on fixed-function, commercial NICs. These \"black box\" commercial hardware implementations prevent researchers and system architects from modifying the transport layer for specialized tasks. In parallel, research on NICs often lacks offloaded networking stacks or uses simplified protocol implementations, limiting insight into novel networking solutions in realistic settings. In this paper, we bridge this gap by introducing BALBOA, an open-source, 100 Gbps RDMA offload engine designed for research on networking and fully compatible with commercial RNICs. Unlike prior stack implementations which lack scalability and bandwidth, or struggle with data center interoperability and miss strict protocol compliance, BALBOA supports hundreds of Queue Pairs in switched network environments and allows for line-rate offloads, making it a viable platform for realistic data center research. We describe the system architecture, detailing how BALBOA overcomes FPGA memory and timing bottlenecks through a decoupled state architecture and streaming control-data separation. We evaluate BALBOA on a hardware cluster with FPGAs, RNICs, and switches, showing that it matches the performance of commercial ASICs while offering full customization. Finally, we showcase BALBOA’s potential through novel case studies: protocol enhancements for infrastructure purposes (encryption, deep packet inspection) and an offloaded preprocessing pipeline for deep learning recommender systems, which applies streaming transformations to the incoming data before feeding it directly to a GPU for model serving.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/heer",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-heer.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Maximilian Jakob Heer",
+        "Benjamin Ramhorst",
+        "Yu Zhu",
+        "Luhao Liu",
+        "Zhiyi Hu",
+        "Jonas Dann",
+        "Gustavo Alonso"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group": "Cluster & Resource Systems",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "network-interconnect",
+        "leaf": "Network, RDMA & Interconnect",
+        "leaf_zh": "网络、RDMA 与互联"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "rdma",
+        "roce"
+      ],
+      "score": 56,
+      "score_components": {
+        "relevance": 22,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: rdma, roce",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Remote Direct Memory Access (RDMA) has become the de facto standard for high-performance data center networking.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "heer",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/heer"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Close to the Network",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:du",
+      "title": "Efficient LLM Serving on Commodity GPU Clusters with Data-Reduced Cross-Instance Orchestration",
+      "abstract": "Existing LLM serving strategies can be categorized by whether prefill and decode phases are disaggregated: non-disaggregated (NoDG) or fully disaggregated (FuDG). However, they neither fit commodity GPU clusters, which remain widely deployed as mainstream AI infrastructure. NoDG suffers from severe prefill–decode interference, while FuDG depends heavily on high-performance interconnects that such clusters lack. We present EcoServe, an LLM serving system tailored to commodity GPU clusters. It enables a data-reduced collaboration among inference instances to mitigate prefill-decode interference, termed the partially disaggregated (PaDG) strategy. Particularly, within a single instance, PaDG disaggregates the prefill and decode phases along the time dimension to mitigate interference and enhance throughput. Next, it coordinates multiple instances and cyclically activates them to ensure the continuous availability of prefill processing, thereby rescuing latency. Thus, EcoServe’s basic serving unit is the macro instance, within which multiple instances collaborate. It further incorporates an adaptive scheduling algorithm to route requests in a macro instance and a mitosis scaling approach for fine-grained capacity adjustments in online scenario. On a 32-GPU NVIDIA L20 cluster over Ethernet, EcoServe improves goodput by 1.96×, 1.99×, 2.51×, and 2.40× when serving 30B- and 70B-scale LLMs, compared to four representative NoDG and FuDG systems, vLLM, Sarathi, DistServe, and MoonCake. EcoServe remains competitive even on an NVIDIA H100 cluster with NVLink and InfiniBand. Our code is released at https://github.com/MLSysU/EcoServe .",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/du",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-du.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Jiangsu Du",
+        "Hongbin Zhang",
+        "Taosheng Wei",
+        "Zhenyi Zheng",
+        "Jiazhi Jiang",
+        "Kaiyi Wu",
+        "Zhiguang Chen",
+        "Yutong Lu"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "https://github.com/MLSysU/EcoServe",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "prefill-decode-disaggregation",
+        "leaf": "Prefill-Decode Disaggregation",
+        "leaf_zh": "Prefill-Decode 解耦"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Existing LLM serving strategies can be categorized by whether prefill and decode phases are disaggregated: non-disaggregated (NoDG) or fully disaggregated (FuDG).",
+      "summary_zh": "EcoServe 为缺少高速互联的 commodity GPU 集群设计 partially disaggregated serving：单实例内按时间解耦 prefill/decode，再让多个实例循环协作，并配合自适应路由与细粒度扩缩容。",
+      "why_it_matters_zh": "在 32 张 L20、Ethernet 互联、30B/70B 模型上，作者报告 goodput 相对 vLLM、Sarathi、DistServe、MoonCake 提升 1.96×–2.51×，代码已公开。",
+      "limitations_zh": "最大收益来自 L20+Ethernet 的带宽约束场景；在 H100+NVLink+InfiniBand 上只称“保持竞争力”，不同网络与模型下应重新比较 NoDG/FuDG 成本。",
+      "reading_depth": "abstract+methods+results+artifact",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "du",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/du"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Resource-Efficient LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "它面向大量仍在使用的普通 GPU+Ethernet 集群，并给出可复现代码和清晰硬件条件。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:hwang",
+      "title": "Revisiting Pipeline Parallelism for LLM Serving",
+      "abstract": "As the memory capacity of a single GPU is insufficient to accommodate large language models (LLMs), model parallelism has become the standard approach for serving LLMs across multiple GPUs. In online serving environments, tensor parallelism has become the de facto way in single-node multi-GPU systems because it can reduce the computation latency through parallel execution. Although pipeline parallelism can offer higher throughput, it suffers from pipeline imbalance that is exacerbated under online workloads, leading to resource underutilization and performance degradation. In this study, we revisit pipeline parallelism for serving LLMs. Our analysis shows that computational imbalance between pipeline stages becomes exacerbated in online serving. To address these pipeline inefficiencies, we propose three techniques: two mechanisms, greedy and predictive schemes, that dynamically adjust the chunk size to mitigate prefill-induced bubbles, and a delay scheduling technique that dynamically rebalances decode workloads across pipeline stages to further reduce pipeline bubbles. We implement our techniques on top of SGLang and demonstrate that, for Qwen2.5 32B and 14B on four NVIDIA A100 40GB GPUs, pipeline parallelism with our mechanisms outperforms tensor parallelism.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/hwang",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-hwang.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Soonjae Hwang",
+        "Jeongseob Ahn"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 54,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "As the memory capacity of a single GPU is insufficient to accommodate large language models (LLMs), model parallelism has become the standard approach for serving LLMs across multiple GPUs.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "hwang",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/hwang"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Resource-Efficient LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:yao",
+      "title": "OpenTela: Unifying Decentralized Computing Resources for Heterogeneous LLM Serving (Operational Systems)",
+      "abstract": "Large language models (LLMs) are becoming critical to a variety of public services, motivating sovereign AI initiatives that seek to serve models on infrastructure they control. Yet much of this infrastructure is built as HPC clusters optimized for batch jobs rather than interactive, always-on inference services. Existing LLM serving engines efficiently execute requests on GPUs, but rely on an external control plane (e.g., Kubernetes in cloud environments) for service discovery, routing, health monitoring, and load balancing. In HPC environments, these primitives are often unavailable: resources are managed by schedulers such as Slurm, allocations are transient, compute nodes may be unreachable from outside the cluster, and GPU capacity is fragmented across heterogeneous clusters and administrative domains. We present OpenTela, a user-space orchestration overlay that turns existing fragmented HPC clusters into a unified, cross-institutional serving platform. OpenTela provides fault-tolerant service discovery via a CRDT-based gossip network, a unified API over heterogeneous cluster managers and serving engines, and a heterogeneity-aware scheduler, all in user-space without root privileges or cluster reconfiguration. OpenTela has been deployed for over 22 months, serving 13 million requests and 15 billion tokens across 142 models to over 1000 researchers across multiple institutions. We open-source the system and release an anonymized production trace to facilitate further research into real-world LLM serving workloads, and provide a replicable blueprint for other sovereign AI initiatives to harness their own federated GPU infrastructure.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/yao",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-yao.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Xiaozhe Yao",
+        "Youhe Jiang",
+        "Ilia Badanin",
+        "Qinghao Hu",
+        "Robert Matthew Smith",
+        "Binhang Yuan",
+        "Imanol Schlag",
+        "Eiko Yoneki",
+        "Ana Klimovic"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Large language models (LLMs) are becoming critical to a variety of public services, motivating sovereign AI initiatives that seek to serve models on infrastructure they control.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "yao",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/yao"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Resource-Efficient LLM Serving · Operational Systems",
+    "presentation": "Operational Systems Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:jiang-yapeng",
+      "title": "Kairox: Adaptive GPU-CPU Hybrid LLM Inference via Online Neuron Balancing",
+      "abstract": "Hybrid LLM inference systems exploit both GPU and CPU for computation and memory but are bottlenecked by the CPU’s lower computational capabilities. Recent approaches leverage activation sparsity by offline partitioning FFN neurons into \"hot\" (frequently activated) and \"cold\" (rarely activated) sets. This approach retains critical computations on the GPU, yet static partitioning struggles to adapt to runtime activation changes, leading to suboptimal throughput. We present Kairox, an adaptive GPU-CPU hybrid inference system that addresses these limitations through online neuron balancing, a mechanism that dynamically redistributes neurons between the GPU and CPU based on activation patterns. To realize this, Kairox introduces a Live Pipeline designed to prefetch neurons by predicting next-layer activation patterns. Furthermore, leveraging activation locality, we develop a Temporal Activation Momentum cache policy to prioritize neurons with sustained utility while minimizing transient, wasteful transfers. Finally, an Adaptive Neuron Balancer modulates the balancing intensity according to runtime resource conditions, maintaining an optimal equilibrium between competing system bottlenecks. For standard completion on consumer-grade PCs, Kairox improves end-to-end throughput by up to 7.57×, 3.70×, 6.35×, and 3.76× over llama.cpp, PowerInfer, Neuralink, and Q-Infer, respectively. Across all evaluated settings, it achieves geomean speedups of 3.15× and 3.93× over llama.cpp on two representative PCs and around 2.1× over the three sparse baselines.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/jiang-yapeng",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-jiang-yapeng.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Yapeng Jiang",
+        "Minghao Gan",
+        "Zicong Hong",
+        "Wuhui Chen",
+        "Junyuan Liang",
+        "Yue Yu",
+        "Meng Guo",
+        "Zibin Zheng"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "sparsity"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: sparsity",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Hybrid LLM inference systems exploit both GPU and CPU for computation and memory but are bottlenecked by the CPU’s lower computational capabilities.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "jiang-yapeng",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/jiang-yapeng"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Resource-Efficient LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:liu-yao",
+      "title": "ADAngel: Accelerating Arbitrary-Precision Quantized LLMs with Adaptive Computing Mapping",
+      "abstract": "Arbitrary-Precision Quantization (APQ), which uses asymmetric bit-widths for weights and activations (e.g., W4A8), is a prevalent technique for LLM inference because of its excellent accuracy-performance balance. APQ transforms the general matrix multiplications (GEMM), the core of LLM computation, into mixed-precision GEMM (mpGEMM) whose two operand matrices have different quantization bit-widths. However, we identify that the computation paradigms of mpGEMM in current APQ LLM inference systems are sub-optimal because the shapes and bit-widths of mpGEMM tasks in APQ LLM are highly variable, whereas existing static and workload-unaware paradigms can only accelerate mpGEMM tasks with the same or similar shapes and bit-widths. Based on this finding, we propose ADAngel, a framework for creating a workload-adaptive mpGEMM computation core for target LLMs. The theoretical foundation of ADAngel is the DPR (Decomposition-Partial Product-Reconstruction) computation model, which enables systematic generation of a diverse portfolio of mpGEMM algorithms by specifying different bit-partition schemes. Guided by this model, ADAngel constructs a Computation Strategy Set comprising several highly optimized mpGEMM kernels, and exhaustively analyzes the strategy set to create an Oracle Policy Map, which enables a lightweight dispatcher to select and execute the optimal kernel for runtime mpGEMM tasks with negligible overhead. Our evaluation shows that the ADAngel-specialized engine achieves up to a 5.10× speedup in decode throughput over llama.cpp; while in the prefill stage, it demonstrates its adaptivity by delivering speedups ranging from 1.17× to 2.38× over TensorRT-LLM in Time-To-First-Token (TTFT).",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/liu-yao",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-liu-yao.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Yao Liu",
+        "Wenjie Wang",
+        "Yifei Feng",
+        "Bo Peng",
+        "Jianguo Yao",
+        "Haibing Guan"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization",
+        "quantized"
+      ],
+      "score": 55,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 7,
+        "rigor": 9,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization, quantized",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Arbitrary-Precision Quantization (APQ), which uses asymmetric bit-widths for weights and activations (e.g., W4A8), is a prevalent technique for LLM inference because of its excellent accuracy-performance balance.",
+      "summary_zh": "ADAngel 用 DPR 模型系统生成多种 mixed-precision GEMM 策略，再针对目标模型离线穷举形成 Oracle Policy Map，由轻量 dispatcher 为运行时不同 shape/bit-width 选择 kernel。",
+      "why_it_matters_zh": "它处理 W4A8 等 arbitrary-precision 推理中“静态 kernel 无法覆盖形状与位宽异质性”的问题；作者报告 decode 相对 llama.cpp 最高 5.10×，prefill TTFT 相对 TensorRT-LLM 提升 1.17×–2.38×。",
+      "limitations_zh": "需要为目标模型和硬件做离线穷举与专用策略集；收益不能脱离具体 bit-width、shape、GPU/edge 平台与基线版本解释。",
+      "reading_depth": "abstract+methods+results",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "liu-yao",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/liu-yao"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Resource-Efficient LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "它把低比特 GEMM 从单一 kernel 优化推进到 workload-adaptive kernel portfolio，直接对应量化部署。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:cheng",
+      "title": "MPK: A Compiler and Runtime for Mega-Kernelizing Tensor Programs",
+      "abstract": "We introduce Mirage Persistent Kernel (MPK), the first compiler and runtime system that automatically transforms multi-GPU model inference into a single high-performance mega-kernel. MPK introduces an SM-level graph representation that captures data dependencies at the granularity of individual streaming multiprocessors (SMs), enabling cross-operator software pipelining, fine-grained overlap of computation and communication, and other optimizations that are infeasible under the conventional kernel-per-operator execution model. The MPK compiler lowers tensor programs into optimized SM-level task graphs and generates fast CUDA implementations for each task, while the MPK in-kernel parallel runtime executes these tasks within a single persistent mega-kernel using decentralized scheduling across SMs. Together, these components provide end-to-end kernel fusion with minimal developer effort, while preserving the flexibility of existing programming models. Our evaluation shows that MPK significantly outperforms existing kernel-per-operator LLM serving systems, achieving up to 1.7× lower end-to-end inference latency and pushing LLM inference performance close to the limits of the underlying hardware. MPK is publicly available at https://github.com/mirage-project/mirage .",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/cheng",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-cheng.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Xinhao Cheng",
+        "Zhihao Zhang",
+        "Yu Zhou",
+        "Jianan Ji",
+        "Jinchen Jiang",
+        "Zepeng Zhao",
+        "Ziruo Xiao",
+        "Zihao Ye",
+        "Yingyi Huang",
+        "Ruihang Lai",
+        "Hongyi Jin",
+        "Bohan Hou",
+        "Mengdi Wu",
+        "Yixin Dong",
+        "Anthony Yip",
+        "Zihao Ye",
+        "Songting Wang",
+        "Wenqin Yang",
+        "Xupeng Miao",
+        "Tianqi Chen",
+        "Zhihao Jia"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "https://github.com/mirage-project/mirage",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 7,
+        "rigor": 7,
+        "practical_impact": 7,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "We introduce Mirage Persistent Kernel (MPK), the first compiler and runtime system that automatically transforms multi-GPU model inference into a single high-performance mega-kernel.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "cheng",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/cheng"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "GPU Compilers and Kernels",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:zhang-yangyu",
+      "title": "MoonBright: A GPU Memory Allocator with Device-Side Page Table Materialization and Deferred TLB Coherence",
+      "abstract": "Modern GPU workloads increasingly rely on dynamic and fine-grained memory allocation, yet GPU memory management remains CPU-centric. In current GPU runtimes, allocation metadata updates, page-table construction, translation-state propagation, and TLB shootdowns are largely serialized through the host control path, introducing substantial latency. We present MoonBright, a GPU memory allocator that enables device-side page-table materialization and deferred TLB coherence on commodity GPUs. MoonBright keeps validation and allocation metadata on the host, but moves bulk page-table construction to the GPU, turning translation updates into data-parallel device-memory operations. To avoid costly TLB shootdowns on the common path, MoonBright assigns fresh virtual addresses to new mappings, ensuring that no stale same-address TLB entries can exist. Our evaluation shows that MoonBright reduces allocation latency, improves LLM inference performance, and mitigates allocator-level external fragmentation across diverse workloads. Unlike application-specific memory managers, MoonBright requires no GPU hardware modifications and runs on commodity NVIDIA and AMD GPUs with software-only changes. MoonBright is publicly available at https://github.com/MoonBright-project .",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-yangyu",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-zhang-yangyu.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Yangyu Zhang",
+        "Lei Chen",
+        "Chunwei Xia",
+        "Shuaijiang Li",
+        "Shuoming Zhang",
+        "Zhicheng Li",
+        "Qianqi Sun",
+        "Jiawei Xiao",
+        "Ruiyuan Xu",
+        "Ao Chen",
+        "Guangli Li",
+        "Xiaobing Feng",
+        "Huimin Cui",
+        "Chenxi Wang",
+        "Jiacheng Zhao"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "https://github.com/MoonBright-project",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "gpu memory",
+        "memory management"
+      ],
+      "score": 60,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 11,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu memory, memory management",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Modern GPU workloads increasingly rely on dynamic and fine-grained memory allocation, yet GPU memory management remains CPU-centric.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "zhang-yangyu",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/zhang-yangyu"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Accelerator and Device Virtualization",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:xu-yechen",
+      "title": "Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs",
+      "abstract": "Consumer machines are increasingly running large ML workloads such as large language models (LLMs), text-to-image generation, and interactive image editing. Unlike datacenter GPUs, consumer GPUs serve single-user, rapidly changing workloads, and each model’s working set often nearly fills the GPU memory. As a result, existing sharing mechanisms, such as NVIDIA Unified Virtual Memory (UVM), suffer from severe memory thrashing and consume excessive CPU pinned memory when multiple applications are active. We design and implement Nixie, a system service that enables efficient and transparent temporal multiplexing on consumer GPUs without requiring any application or driver changes. Nixie coordinates GPU memory allocation and kernel launch behavior to efficiently utilize the CPU-GPU bi-directional bandwidth and CPU pinned memory. A lightweight scheduler in Nixie further improves responsiveness by automatically prioritizing latency-sensitive interactive jobs using MLFQ-inspired techniques. Our evaluations show that, compared to UVM-based approaches, Nixie improves the latency of interactive code-completion tasks co-located with a long-running LLM by up to 3.8x and reduces CPU pinned memory usage by up to 66.8% under the same latency requirement.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xu-yechen",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-xu-yechen.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Yechen Xu",
+        "Yifei Wang",
+        "Nathanael Ren",
+        "Yiran Chen",
+        "Danyang Zhuo"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "gpu memory"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 12,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu memory",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Consumer machines are increasingly running large ML workloads such as large language models (LLMs), text-to-image generation, and interactive image editing.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "xu-yechen",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/xu-yechen"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Accelerator and Device Virtualization",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:li-suyi",
+      "title": "Heterogeneity at Hyperscale: Characterization and Scheduling of Large Production AI Clusters at Alibaba (Operational Systems)",
+      "abstract": "The rapid scaling of generative AI (GenAI), alongside the continued reliance on classical deep neural networks (DNNs), has pushed production AI infrastructure toward massive, heterogeneous GPU fleets. We present a comprehensive characterization of Alibaba Serverless Infrastructure (ASI), a hyperscale production cluster, based on a six-month trace covering 155,410 GPUs of multiple vendors and generations and jobs from 81 departments, spanning ad-hoc development, training, and online and offline inference. Our central finding is that high GPU demand does not yield high effective utilization: idle GPUs frequently become unallocatable because free capacity is stranded across nodes, lacks matching CPUs, or violates network-locality constraints, and because users reserve ample headroom for production safety. Notably, fractional-GPU fragmentation, a focus of prior work, is now negligible, as GPU sharing is rarely used. We detail deployed solutions that recover this capacity: a practical GPU defragmentation algorithm that cuts the number of nodes with slack resources by 20.2%, and SpotGPU, a preemption-cost-aware scheduling framework that safely harvests idle resources and raises the GPU allocation ratio from 68% to 93%. We further surface open challenges in skewed multi-vendor GPU adoption, bandwidth bottlenecks between heterogeneous GPUs, and interference among colocated workloads. We release the ASI trace, the most comprehensive to date in workload diversity and cluster scale, to support future research.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/li-suyi",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-li-suyi.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Suyi Li",
+        "Lingyun Yang",
+        "Haoxuan Yu",
+        "Sheng Yao",
+        "Tianyuan Wu",
+        "Xiaoxiao Jiang",
+        "Hanfeng Lu",
+        "Kangjin Wang",
+        "Chenhao Wang",
+        "Shenglin Xu",
+        "Lun Wang",
+        "Qingyang Duan",
+        "Shenghao Liang",
+        "Xiu Lin",
+        "Meng Zhang",
+        "Wenchao Wu",
+        "Yinghao Yu",
+        "Guodong Yang",
+        "Liping Zhang",
+        "Wei Wang"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group": "Cluster & Resource Systems",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "gpu-scheduling-virtualization",
+        "leaf": "GPU Scheduling & Virtualization",
+        "leaf_zh": "GPU 调度与虚拟化"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "gpu sharing"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu sharing",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "The rapid scaling of generative AI (GenAI), alongside the continued reliance on classical deep neural networks (DNNs), has pushed production AI infrastructure toward massive, heterogeneous GPU fleets.",
+      "summary_zh": "论文发布阿里 ASI 六个月、155,410 张多厂商多代 GPU 的生产 trace，指出不可分配空闲主要来自跨节点碎片、CPU 配比、网络 locality 与安全余量，而非 fractional-GPU 碎片。",
+      "why_it_matters_zh": "部署的 defragmentation 使有空闲资源的节点数下降 20.2%，SpotGPU 将 GPU allocation ratio 从 68% 提升到 93%；公开 trace 也为异构调度研究提供罕见基线。",
+      "limitations_zh": "trace 不含专用集群上的大规模 foundation-model 预训练，job subtype 粒度较粗，且论文主要聚焦 GPU；结论不应直接代表所有训练集群。",
+      "reading_depth": "abstract+methods+results+limitations",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "li-suyi",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/li-suyi"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Fleet and Cluster Scheduling · Operational Systems",
+    "presentation": "Operational Systems Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "样本规模、异构性和公开 trace 都很突出，并明确纠正了“GPU sharing 是主要碎片来源”的常见假设。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
+      "id": "usenix:osdi-2026:xin",
+      "title": "Inference in the Shadows: Taming Memory Bandwidth Contention in Mobile LLM Inference with Sereno",
+      "abstract": "The proliferation of large language models (LLMs) on mobile devices introduces a new performance challenge: resource contention between compute-intensive inference and latency-sensitive foreground applications. We identify a severe and asymmetric interference where concurrent LLM inference substantially degrades foreground applications’ quality-of-service (QoS)—increasing the aggregate jank rate (the fraction of frames that appear as visible stutters) by 153%. In contrast, LLM throughput degrades by only 1.01% and 1.64% during prefill and decode stages, respectively. This imbalance arises because the hardware prioritizes NPU memory traffic—originally to guarantee critical media tasks (e.g., video recording)—a privilege that best-effort LLM inference inherits, causing aggressive bandwidth contention. To address this asymmetric degradation, we present SERENO, a foreground-QoS-friendly LLM inference framework that resolves bandwidth contention between foreground applications and background LLM inference, without hardware modification. SERENO repurposes speculative decoding to introduce fine-grained yield points for preemptible execution, letting the system detect memory contention and dynamically yield bandwidth to the foreground without losing inference progress. Extensive evaluations on commercial smartphones across diverse categories of popular applications demonstrate that SERENO reduces the foreground jank rate by up to 92.6% (58.5% on average) while boosting LLM throughput by up to 67.9% (26.4% on average). Compared with vanilla speculative decoding, SERENO can reduce the foreground jank rate by up to 72.1% while incurring only a 6.2% performance degradation.",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/xin",
+      "pdf_url": "https://www.usenix.org/system/files/osdi26-xin.pdf",
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "authors": [
+        "Tong Xin",
+        "Xinrui Shi",
+        "Mingkai Dong",
+        "Zeyu Mi"
+      ],
+      "source": "USENIX",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "",
+      "venue": "OSDI 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "The proliferation of large language models (LLMs) on mobile devices introduces a new performance challenge: resource contention between compute-intensive inference and latency-sensitive foreground applications.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "USENIX",
+          "id": "xin",
+          "url": "https://www.usenix.org/conference/osdi26/presentation/xin"
+        }
+      ]
+    },
+    "event_id": "osdi-2026",
+    "track": "Mobile and Edge Systems",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  }
+]

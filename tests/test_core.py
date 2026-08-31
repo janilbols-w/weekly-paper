@@ -7,7 +7,7 @@ from tempfile import TemporaryDirectory
 
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
-from weekly_paper.event_collectors import parse_acl_anthology_xml
+from weekly_paper.event_collectors import parse_acl_anthology_xml, parse_usenix_schedule_html
 from weekly_paper.event_pipeline import _in_event_scope, detect_due_events, load_events, run_event
 from weekly_paper.models import Paper
 from weekly_paper.pipeline import run
@@ -202,6 +202,38 @@ class CoreTests(unittest.TestCase):
             self.assertIn("event-status--archived", index)
             self.assertIn("event-status--tracking", index)
             self.assertFalse((root / "data" / "papers").exists())
+
+    def test_parse_usenix_schedule_html(self) -> None:
+        payload = b"""
+<article class="node node-session view-mode-schedule">
+  <h2 class="node-title">Resource-Efficient LLM Serving</h2>
+  <article class="node node-paper view-mode-schedule">
+    <h2><a href="/conference/osdi26/presentation/example">Example LLM Serving</a></h2>
+    <div class="field-name-field-paper-people-text"><p>Alice Smith and Bob Jones, <em>Example University</em><br><em>Awarded Best Paper!</em></p></div>
+    <div class="field-name-field-paper-sub-type">Operational Systems Paper</div>
+    <div class="field-name-field-paper-description-long"><p>We present an LLM serving system with lower latency and higher throughput.</p></div>
+  </article>
+  <article class="node node-paper view-mode-schedule">
+    <h2><a href="/conference/osdi26/presentation/keynote">Keynote</a></h2>
+    <div class="field-name-field-paper-description-long"><p>Not a proceedings paper.</p></div>
+  </article>
+</article>
+"""
+        event = {
+            "id": "osdi-2026",
+            "short_name": "OSDI 2026",
+            "start_date": "2026-07-13",
+            "publication_date": "2026-07-13",
+            "official_url": "https://www.usenix.org/conference/osdi26",
+            "pdf_url_template": "https://www.usenix.org/system/files/osdi26-{slug}.pdf",
+        }
+        values, total = parse_usenix_schedule_html(payload, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.id, "usenix:osdi-2026:example")
+        self.assertEqual(values[0].paper.authors, ["Alice Smith", "Bob Jones"])
+        self.assertEqual(values[0].track, "Resource-Efficient LLM Serving · Operational Systems")
+        self.assertEqual(values[0].awards, ["Jay Lepreau Best Paper Award"])
+        self.assertEqual(values[0].paper.pdf_url, "https://www.usenix.org/system/files/osdi26-example.pdf")
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

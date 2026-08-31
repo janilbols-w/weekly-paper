@@ -8,7 +8,7 @@ from typing import Any, Dict, List
 import yaml
 
 from .evaluation import evaluate
-from .event_collectors import collect_acl_anthology
+from .event_collectors import collect_acl_anthology, collect_usenix_schedule
 from .event_models import EventPaper
 from .event_sitegen import build_event_site
 from .models import Paper
@@ -36,7 +36,10 @@ EVENT_TITLE_RE = re.compile(
 def _in_event_scope(paper: Paper) -> bool:
     if EVENT_TITLE_RE.search(paper.title):
         return True
-    signals = {value.lower() for value in EVENT_SYSTEM_RE.findall(f"{paper.title} {paper.abstract}")}
+    signals = {
+        value.lower()
+        for value in EVENT_SYSTEM_RE.findall(f"{paper.title} {paper.abstract} {paper.comment}")
+    }
     return len(signals) >= 2
 
 
@@ -86,6 +89,10 @@ def _apply_editorial(root: Path, event_id: str, papers: List[EventPaper]) -> Non
         editorial = values.get(item.paper.id, values.get(item.paper.id.removeprefix("acl:"), {}))
         if not editorial:
             continue
+        if editorial.get("classification_hint"):
+            item.paper.comment = " ".join(
+                part for part in (item.paper.comment, str(editorial["classification_hint"])) if part
+            )
         for field in ("summary_zh", "why_it_matters_zh", "limitations_zh", "code_url", "reading_depth"):
             if field in editorial:
                 setattr(item.paper, field, editorial[field])
@@ -167,20 +174,28 @@ def run_event(
     elif event.get("collector") == "acl_anthology_xml":
         collected, corpus_total = collect_acl_anthology(event)
         corpus_source = "ACL Anthology XML"
+    elif event.get("collector") == "usenix_schedule":
+        collected, corpus_total = collect_usenix_schedule(event)
+        corpus_source = "USENIX technical sessions"
     elif event.get("collector") == "official_program":
         collected, corpus_total = [], 0
         corpus_source = event.get("program_source_name", "Official program")
     else:
         raise ValueError(f"event {event_id} has no proceedings collector")
 
+    # Event-specific classification hints recover clearly in-scope systems papers
+    # without widening the global weekly-paper taxonomy.
+    _apply_editorial(root, event_id, collected)
     relevant = _score(collected, taxonomy)
     _apply_editorial(root, event_id, relevant)
     _select(
         relevant,
-        threshold=int(config.get("selection_threshold", 54)),
-        cap=int(config.get("selection_cap", 12)),
-        max_same_leaf=int(config.get("max_same_leaf", 2)),
-        require_editorial=bool(config.get("selection_requires_editorial", True)),
+        threshold=int(event.get("selection_threshold", config.get("selection_threshold", 54))),
+        cap=int(event.get("selection_cap", config.get("selection_cap", 12))),
+        max_same_leaf=int(event.get("max_same_leaf", config.get("max_same_leaf", 2))),
+        require_editorial=bool(
+            event.get("selection_requires_editorial", config.get("selection_requires_editorial", True))
+        ),
     )
     timestamp = now_utc_iso()
     digest_value: Any = [item.to_dict() for item in relevant]

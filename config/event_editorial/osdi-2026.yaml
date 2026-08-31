@@ -1,0 +1,119 @@
+"usenix:osdi-2026:xie-zhiqiang":
+  summary_zh: Strata 把长上下文 KV Cache 的 GPU HBM、CPU 内存和 SSD 多级缓存作为统一系统处理，用 GPU-assisted I/O 合并碎片化小传输，并让调度器显式感知缓存加载时延与 delay hit。
+  why_it_matters_zh: 它已集成 SGLang 并进入生产；作者在指定长上下文模型和工作负载上报告吞吐最高为 vLLM-LMCache 的 5×、TensorRT-LLM 的 3.75×，同时保持短上下文性能。
+  limitations_zh: GPU-assisted I/O 会占用少量 SM；收益依赖缓存命中、页布局、CPU-GPU 互联和长上下文比例，峰值加速不能直接外推到任意在线流量。
+  selection_reason_zh: 长上下文 serving 的关键瓶颈已从单纯显存容量转向跨层 I/O 与调度协同，且有 SGLang 和生产部署证据。
+  reading_depth: abstract+methods+results+limitations
+  primary_category:
+    domain_id: efficient-inference
+    domain: LLM Efficient Inference
+    domain_zh: LLM 高效推理
+    group_id: runtime-memory
+    group: Runtime & Memory Efficiency
+    group_zh: Runtime 与内存效率
+    leaf_id: attention-kv-cache
+    leaf: Attention & KV Cache
+    leaf_zh: Attention 与 KV Cache
+
+"usenix:osdi-2026:luo":
+  summary_zh: DirectKV 面向 Grace Hopper/Blackwell 类 CPU-GPU 一致互联平台，让 GPU kernel 直接访问 CPU-resident KV Cache，取消 GPU staging buffer，并用融合与流水隐藏 CPU 内存访问。
+  why_it_matters_zh: 在 GH200 上，作者报告 CPU-GPU 传输量最高减少 50%、GPU 内存占用降低 43%、端到端性能最高提升 1.2×，直接对应长上下文容量与带宽瓶颈。
+  limitations_zh: 目前主要是节点内优化；跨节点 context parallel、多级存储层和 host-memory pressure 仍需额外 runtime 支持，退化到 pageable 或磁盘层后 zero-copy 优势会减弱。
+  selection_reason_zh: 这是面向 NVLink-C2C 异构内存的明确系统路径，硬件前提与边界清楚。
+  reading_depth: abstract+methods+results+limitations
+
+"usenix:osdi-2026:zhang-dingyan":
+  summary_zh: LMetric 用“新 prefill token 数 × 当前 batch size”这一乘法分数同时表达 KV Cache 亲和性与负载均衡，避免线性组合的 workload-specific 调参和模拟器依赖。
+  why_it_matters_zh: 作者在聊天与 coding-agent 生产流量上报告，相对 vLLM-v1 和生产调度器，TTFT 分别最高降低 92% 和 39%，TPOT 最高降低 24% 和 51%，并已 canary 部署。
+  limitations_zh: 结果依赖论文选择的两个指标、模型和 trace；作者虽给出乘法失效条件与检测方法，但跨引擎、跨缓存策略和强突发流量仍需复现。
+  selection_reason_zh: 方法极简、无需超参，并有生产 canary，是请求路由与缓存感知调度中很实用的基线。
+  reading_depth: abstract+methods+results
+
+"usenix:osdi-2026:yu-shan":
+  summary_zh: Prism 用 GPU memory ballooning 在多模型之间统一空间共享和时间共享；其 kvcached 驱动作为 inference engine 与 GPU 内存之间的 shim，按流量变化回收和重新分配显存。
+  why_it_matters_zh: kvcached 已开源并部署到 10K+ GPU；论文报告在同等 GPU 数下 SLO 达标率显著提升，在同等 SLO 下成本最高降低超过 2×。
+  limitations_zh: 核心假设是生产流量存在动态 bursty-group；接入需要 engine/runtime 与显存回收语义配合，隔离、抖动和不同模型内存布局下的收益需实测。
+  code_url: https://github.com/ovg-project/kvcached
+  selection_reason_zh: 多模型低流量常驻是推理平台的真实成本问题，Prism 同时具备 10K+ GPU 部署与可检查代码。
+  reading_depth: abstract+methods+results+artifact
+
+"usenix:osdi-2026:hu-weifang":
+  classification_hint: distributed training checkpointing pipeline parallel large model training
+  summary_zh: Tessera 面向异构 MoE/attention block 的超大模型训练，联合优化 pipeline partition 与 compute-communication overlap，并在运行时用 dynamic bubble optimizer 填补 MoE 路由造成的瞬时空洞。
+  why_it_matters_zh: 系统用于 Qwen3 与 Qwen3-Next 生产预训练；在 4,096–12,288 GPU 的五个工作负载上，作者报告吞吐提升 20%–33%，万亿参数模型达到 39% MFU。
+  limitations_zh: 主要证据来自阿里生产栈和特定 Qwen 异构结构；与 Megatron-Core 的公开对照规模和生产基线并不完全相同，迁移到其他模型/互联需重新 profile。
+  selection_reason_zh: 它给出了万卡级异构 MoE pipeline 的生产证据，覆盖静态分区与动态路由两类气泡来源。
+  reading_depth: abstract+methods+results
+
+"usenix:osdi-2026:chen-luofan":
+  summary_zh: 这篇 Best Paper 从大规模预训练生产 trace 提炼出跨数据中心 checkpoint、启动加载 I/O 风暴和多模态数据变换三个瓶颈，并分别采用预测复制、hot-file 预复制与存储侧 CPU offload。
+  why_it_matters_zh: 作者报告单次评估浪费的 GPU-hours 从 16,800 降至 4,000、启动 checkpoint 加载缩短 40.8%、dataloading stall 降低 63.2%，说明“旧存储系统”可通过接口协同获得高回报。
+  limitations_zh: 方案依赖训练框架提前暴露 world size、文件热度和访问计划；生产数字来自特定存储拓扑与训练流程，复制成本和跨团队改造量需单独核算。
+  selection_reason_zh: 获 Jay Lepreau Best Paper，且把训练数据管线的生产瓶颈、机制和 GPU-hour 收益连成了完整证据链。
+  reading_depth: abstract+methods+results
+  primary_category:
+    domain_id: ai-infrastructure
+    domain: AI Infrastructure
+    domain_zh: AI 基础设施
+    group_id: training-datacenter
+    group: Training & Datacenter Infrastructure
+    group_zh: 训练与数据中心基础设施
+    leaf_id: data-pipeline
+    leaf: Data Pipelines
+    leaf_zh: 数据管线
+
+"usenix:osdi-2026:chaudhry":
+  classification_hint: large language model serving inference latency throughput request routing autoscaling service level objective
+  summary_zh: Murakkab 用声明式 agent workflow 抽象解耦逻辑、模型和硬件，再以 profile-guided optimizer 与 adaptive runtime 跨层选择模型、硬件和执行配置。
+  why_it_matters_zh: 对 agent 系统而言，单次 model call 优化不够；作者在多类 workflow 上报告 GPU 用量最高降低 2.8×、能耗 3.7×、成本 4.3×，同时满足 SLO。
+  limitations_zh: 收益依赖 workflow 可声明、可 profile，且需要把质量约束转化为优化器可用目标；工具调用延迟、模型漂移和未见过的 workflow 可能削弱离线 profile。
+  selection_reason_zh: 它把 agent orchestration 从应用逻辑问题提升为端到端 serving 资源优化问题。
+  reading_depth: abstract+methods+results
+
+"usenix:osdi-2026:wu-haonan":
+  classification_hint: inference benchmark performance profiling observability trace analysis
+  summary_zh: StriaTrace 只持续跟踪关键同步点和 critical path，在异常时再加深 tracing，并用动态回归 roofline 与相关性诊断定位在线 LLM 推理的偶发 SLO 抖动。
+  why_it_matters_zh: 系统已用于开发、测试和生产发布，覆盖 19 类根因；论文报告相对替代方案 tracing 开销降低 97.8%，完整方案约 1% 级开销。
+  limitations_zh: 设计针对特定线上 inference stack 的同步边界与根因库；跨 serving engine、异步执行图和新硬件时需要重新定义 instrumentation 与诊断模型。
+  selection_reason_zh: 它补齐了训练诊断工具难以处理的动态 batch、变长序列和瞬时 inference anomaly。
+  reading_depth: abstract+methods+results+limitations
+
+"usenix:osdi-2026:zheng":
+  classification_hint: silent data corruption fault tolerance resilient distributed training GPU accelerator
+  summary_zh: SDCs in the Wild 分析 23 块生产集群中的 SDC-defective GPU，发现老化、数据依赖和功能单元依赖会让设备通过常规压力测试却在真实训练输入上出错，并提出基于触发工作负载 replay 的 SDCHunter。
+  why_it_matters_zh: 作者称标准行业测试漏掉超过 60% 的缺陷设备；SDCHunter 在 ByteDance 生产环境处理了 40 起 SDC 事件，为大模型集群验收和故障隔离提供了更贴近 workload 的路径。
+  limitations_zh: 样本只有 23 块缺陷 GPU，来自单一生产环境；replay 依赖保留触发输入与执行条件，不能替代通用硬件健康检查，也未证明对所有 GPU 代际同样有效。
+  selection_reason_zh: 这是少见的真实缺陷 GPU 样本与生产事件证据，直接影响训练集群稳定性和验收方法。
+  reading_depth: abstract+methods+results
+
+"usenix:osdi-2026:du":
+  summary_zh: EcoServe 为缺少高速互联的 commodity GPU 集群设计 partially disaggregated serving：单实例内按时间解耦 prefill/decode，再让多个实例循环协作，并配合自适应路由与细粒度扩缩容。
+  why_it_matters_zh: 在 32 张 L20、Ethernet 互联、30B/70B 模型上，作者报告 goodput 相对 vLLM、Sarathi、DistServe、MoonCake 提升 1.96×–2.51×，代码已公开。
+  limitations_zh: 最大收益来自 L20+Ethernet 的带宽约束场景；在 H100+NVLink+InfiniBand 上只称“保持竞争力”，不同网络与模型下应重新比较 NoDG/FuDG 成本。
+  code_url: https://github.com/MLSysU/EcoServe
+  selection_reason_zh: 它面向大量仍在使用的普通 GPU+Ethernet 集群，并给出可复现代码和清晰硬件条件。
+  reading_depth: abstract+methods+results+artifact
+  primary_category:
+    domain_id: efficient-inference
+    domain: LLM Efficient Inference
+    domain_zh: LLM 高效推理
+    group_id: serving-distributed
+    group: Serving & Distributed Inference
+    group_zh: Serving 与分布式推理
+    leaf_id: prefill-decode-disaggregation
+    leaf: Prefill-Decode Disaggregation
+    leaf_zh: Prefill-Decode 解耦
+
+"usenix:osdi-2026:liu-yao":
+  summary_zh: ADAngel 用 DPR 模型系统生成多种 mixed-precision GEMM 策略，再针对目标模型离线穷举形成 Oracle Policy Map，由轻量 dispatcher 为运行时不同 shape/bit-width 选择 kernel。
+  why_it_matters_zh: 它处理 W4A8 等 arbitrary-precision 推理中“静态 kernel 无法覆盖形状与位宽异质性”的问题；作者报告 decode 相对 llama.cpp 最高 5.10×，prefill TTFT 相对 TensorRT-LLM 提升 1.17×–2.38×。
+  limitations_zh: 需要为目标模型和硬件做离线穷举与专用策略集；收益不能脱离具体 bit-width、shape、GPU/edge 平台与基线版本解释。
+  selection_reason_zh: 它把低比特 GEMM 从单一 kernel 优化推进到 workload-adaptive kernel portfolio，直接对应量化部署。
+  reading_depth: abstract+methods+results
+
+"usenix:osdi-2026:li-suyi":
+  summary_zh: 论文发布阿里 ASI 六个月、155,410 张多厂商多代 GPU 的生产 trace，指出不可分配空闲主要来自跨节点碎片、CPU 配比、网络 locality 与安全余量，而非 fractional-GPU 碎片。
+  why_it_matters_zh: 部署的 defragmentation 使有空闲资源的节点数下降 20.2%，SpotGPU 将 GPU allocation ratio 从 68% 提升到 93%；公开 trace 也为异构调度研究提供罕见基线。
+  limitations_zh: trace 不含专用集群上的大规模 foundation-model 预训练，job subtype 粒度较粗，且论文主要聚焦 GPU；结论不应直接代表所有训练集群。
+  selection_reason_zh: 样本规模、异构性和公开 trace 都很突出，并明确纠正了“GPU sharing 是主要碎片来源”的常见假设。
+  reading_depth: abstract+methods+results+limitations
