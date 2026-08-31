@@ -1,6 +1,6 @@
 ---
 title: "Beyond Output Correctness: Benchmarking and Evaluating Large Language Model Reasoning in Coding Tasks"
-description: "Large language models (LLMs) increasingly rely on explicit reasoning to solve coding tasks, yet evaluating the quality of this reasoning remains challenging."
+description: "CodeRQ-Bench 面向代码生成、摘要和分类三类任务评估 LLM 推理过程质量；作者分析现有评估器的 1,069 个不一致案例并归纳五类局限，据此提出先做证据核验、再按歧义校正分数的两阶段评估器 VERA。摘要报告，VERA 在四个数据集上相对强基线最高提升 AUCROC 0.26、AUPRC 0.21。"
 ---
 
 **评分：51/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
@@ -9,11 +9,11 @@ description: "Large language models (LLMs) increasingly rely on explicit reasoni
 
 ## 一句话摘要
 
-Large language models (LLMs) increasingly rely on explicit reasoning to solve coding tasks, yet evaluating the quality of this reasoning remains challenging.
+CodeRQ-Bench 面向代码生成、摘要和分类三类任务评估 LLM 推理过程质量；作者分析现有评估器的 1,069 个不一致案例并归纳五类局限，据此提出先做证据核验、再按歧义校正分数的两阶段评估器 VERA。摘要报告，VERA 在四个数据集上相对强基线最高提升 AUCROC 0.26、AUPRC 0.21。
 
 ## 为什么值得关注
 
-待编辑增强。
+对代码模型和编程智能体，只有输出正确率难以定位推理失败。该基准与评估器为回归测试、模型选择和评测流水线增加了过程质量信号；其价值属于评测基础设施，而非推理吞吐优化。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Large language models (LLMs) increasingly rely on explicit reasoning to solve co
 - taxonomy keywords: code generation
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：结论基于摘要所述四个数据集，尚不能证明对更多语言、仓库级任务或真实开发流程的泛化；摘要也未说明评估器成本、标注一致性及证据质量。AUCROC/AUPRC 提升不等同于生成代码质量提升。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Large language models (LLMs) increasingly rely on explicit reasoning to solve co
 - 发布：2026-08-31；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/MrLYG/CodeRQ-Bench](https://github.com/MrLYG/CodeRQ-Bench)
-- 阅读深度：metadata
+- 阅读深度：abstract

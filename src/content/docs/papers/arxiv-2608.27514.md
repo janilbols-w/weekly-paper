@@ -1,6 +1,6 @@
 ---
 title: "Trajectory-Level Speculative Decoding for Diffusion Language Models"
-description: "Diffusion-based language models (dLLMs) enable parallel token generation through iterative denoising, but existing decoding strategies collapse to single-token generation under low confidence, severely limiting throughput."
+description: "该方法把扩散语言模型的推测单元从单个 token 扩展为带位置与解掩码顺序的去噪轨迹，通过按置信度分层的树搜索起草轨迹，再用双向注意力掩码做分块并行验证，并利用跨块前瞻。摘要报告，其在 Fast-dLLM 双缓存基础上减少 30%–40% 去噪迭代，将每步 token 数从 2.6 提至 4.3。"
 ---
 
 **评分：49/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
@@ -9,11 +9,11 @@ description: "Diffusion-based language models (dLLMs) enable parallel token gene
 
 ## 一句话摘要
 
-Diffusion-based language models (dLLMs) enable parallel token generation through iterative denoising, but existing decoding strategies collapse to single-token generation under low confidence, severely limiting throughput.
+该方法把扩散语言模型的推测单元从单个 token 扩展为带位置与解掩码顺序的去噪轨迹，通过按置信度分层的树搜索起草轨迹，再用双向注意力掩码做分块并行验证，并利用跨块前瞻。摘要报告，其在 Fast-dLLM 双缓存基础上减少 30%–40% 去噪迭代，将每步 token 数从 2.6 提至 4.3。
 
 ## 为什么值得关注
 
-待编辑增强。
+扩散语言模型在低置信度时退化为单 token 更新，削弱并行生成优势。轨迹级推测针对这一结构性瓶颈设计，并给出精确性条件，使推测解码从自回归模型扩展到双向去噪过程。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Diffusion-based language models (dLLMs) enable parallel token generation through
 - taxonomy keywords: speculative decoding
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：摘要所报 7–14 倍加速是相对原始 dLLM，较 Fast-dLLM 为 1.3 倍，基线差异需区分；方案依赖 Fast-dLLM 的双缓存，且并行度增加会带来轨迹漂移。摘要未说明模型、硬件、序列长度和实现开放情况。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Diffusion-based language models (dLLMs) enable parallel token generation through
 - 发布：2026-08-31；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

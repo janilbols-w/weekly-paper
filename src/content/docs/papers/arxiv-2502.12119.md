@@ -1,6 +1,6 @@
 ---
 title: "PRISM: Self-Pruning Intrinsic Selection Method for Training-Free Multimodal Data Selection"
-description: "Visual instruction tuning adapts pre-trained Multimodal Large Language Models (MLLMs) to follow human instructions for real-world applications."
+description: "PRISM 将视觉特征分布的各向异性归因于全局语义漂移，并用隐式重中心化提取内在视觉语义，在无需训练代理模型的情况下筛选视觉指令数据。摘要报告，其数据选择与模型微调总耗时为常规流程的 30%，且在八个多模态和三个语言理解基准上优于全量数据微调。"
 ---
 
 **评分：51/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
@@ -9,11 +9,11 @@ description: "Visual instruction tuning adapts pre-trained Multimodal Large Lang
 
 ## 一句话摘要
 
-Visual instruction tuning adapts pre-trained Multimodal Large Language Models (MLLMs) to follow human instructions for real-world applications.
+PRISM 将视觉特征分布的各向异性归因于全局语义漂移，并用隐式重中心化提取内在视觉语义，在无需训练代理模型的情况下筛选视觉指令数据。摘要报告，其数据选择与模型微调总耗时为常规流程的 30%，且在八个多模态和三个语言理解基准上优于全量数据微调。
 
 ## 为什么值得关注
 
-待编辑增强。
+它把数据筛选本身的训练与推理开销移出流程，可同时减少多模态模型的数据冗余和微调成本；对 AI 基础设施的价值主要在训练前的数据管线效率，而非在线推理加速。
 
 ## 摘要原文
 
@@ -35,11 +35,12 @@ Visual instruction tuning adapts pre-trained Multimodal Large Language Models (M
 - taxonomy keywords: pruning
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：摘要中的 101.7% 相对提升未交代所指指标与基线，不能据此推断普遍收益；也未说明数据集、模型规模、保留比例、硬件和选择阶段的独立耗时。效果是否迁移到其他模态或分布仍待验证。
 
 ## 元数据
 
 - 作者：Jinhe Bi, Aniri, Zengjie Jin, Yifan Wang, Danqi Yan, Wenke Huang, Xiaowen Ma, Sikuan Yan, Artur Hecker, Mang Ye, Xun Xiao, Hinrich Schuetze, Volker Tresp, Yunpu Ma
 - 发布：2026-08-31；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
-- 代码：[https://github.com/bibisbar/PRISM}{this](https://github.com/bibisbar/PRISM}{this)
-- 阅读深度：metadata
+- 代码：[https://github.com/bibisbar/PRISM](https://github.com/bibisbar/PRISM)
+- 阅读深度：abstract

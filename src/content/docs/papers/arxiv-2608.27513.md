@@ -1,6 +1,6 @@
 ---
 title: "DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization"
-description: "Softmax attention stores key and value vectors for every preceding token, causing inference memory to grow with sequence length."
+description: "DAMP 针对 GDN、KDA 语言模型的固定大小循环状态做训练后混合精度量化：离线校准结合量化误差能量与状态衰减持久性，将高风险通道保留为较高精度，其余使用 INT8。摘要报告，平均 9.9 bit/状态值时精度接近 FP32，并将状态存储降低 69.1%、更新内核最高加速 2.01 倍、整模 TPOT 最高降低 10.9%。"
 ---
 
 **评分：60/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,11 +9,11 @@ description: "Softmax attention stores key and value vectors for every preceding
 
 ## 一句话摘要
 
-Softmax attention stores key and value vectors for every preceding token, causing inference memory to grow with sequence length.
+DAMP 针对 GDN、KDA 语言模型的固定大小循环状态做训练后混合精度量化：离线校准结合量化误差能量与状态衰减持久性，将高风险通道保留为较高精度，其余使用 INT8。摘要报告，平均 9.9 bit/状态值时精度接近 FP32，并将状态存储降低 69.1%、更新内核最高加速 2.01 倍、整模 TPOT 最高降低 10.9%。
 
 ## 为什么值得关注
 
-待编辑增强。
+线性注意力模型虽避免随序列增长的 KV cache，却可能把瓶颈转移到 FP32 循环状态的容量与带宽。DAMP 直接压缩这一状态，并把内核收益传导到端到端解码延迟。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Softmax attention stores key and value vectors for every preceding token, causin
 - taxonomy keywords: fp8, int4, int8, quantization
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：实验范围限于摘要列出的 Qwen3.6-35B、Kimi-Linear-48B 和六个推理、代码基准；“接近 FP32”的平均精度可能掩盖单项退化。摘要未给出硬件、校准成本、序列长度敏感性或代码可用性。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Softmax attention stores key and value vectors for every preceding token, causin
 - 发布：2026-08-31；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

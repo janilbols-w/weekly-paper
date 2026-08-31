@@ -1,6 +1,6 @@
 ---
 title: "Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems"
-description: "FPGA-GPP heterogeneous systems combine software flexibility with the performance and energy efficiency of reconfigurable hardware."
+description: "Gen-TAS 将任务图分析、基于历史实现知识的 RAG、人工选择和确定性后端串成 FPGA-GPP 任务分配流程，按时延、通信、资源利用或功耗目标生成可解释方案。摘要报告，在 CNN 与 SDR 负载上，时延导向方案相对各自全 GPP 基线最高加速 2.45 倍和 92.53 倍。"
 ---
 
 **评分：45/100** · AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热
@@ -9,11 +9,11 @@ description: "FPGA-GPP heterogeneous systems combine software flexibility with t
 
 ## 一句话摘要
 
-FPGA-GPP heterogeneous systems combine software flexibility with the performance and energy efficiency of reconfigurable hardware.
+Gen-TAS 将任务图分析、基于历史实现知识的 RAG、人工选择和确定性后端串成 FPGA-GPP 任务分配流程，按时延、通信、资源利用或功耗目标生成可解释方案。摘要报告，在 CNN 与 SDR 负载上，时延导向方案相对各自全 GPP 基线最高加速 2.45 倍和 92.53 倍。
 
 ## 为什么值得关注
 
-待编辑增强。
+它把异构部署中的任务划分从专家驱动的设计空间探索转为有知识约束的辅助决策，为边缘与加速器 AI 系统按目标选择硬件映射提供了一条可落地路径。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ FPGA-GPP heterogeneous systems combine software flexibility with the performance
 - taxonomy keywords: energy efficiency
 - no quantitative claim in metadata
 - no code link detected in metadata
+- 限制：证据仅来自摘要所述 CNN、SDR 工作负载和 FPGA SoC 实现；两个加速倍数对应不同任务，不能直接横向比较或外推。摘要未说明平台覆盖、基线调优、搜索成本及人工选择敏感性。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ FPGA-GPP heterogeneous systems combine software flexibility with the performance
 - 发布：2026-08-31；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

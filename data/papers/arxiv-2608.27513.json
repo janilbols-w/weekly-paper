@@ -60,10 +60,10 @@
     "no code link detected in metadata"
   ],
   "summary_en": "Softmax attention stores key and value vectors for every preceding token, causing inference memory to grow with sequence length.",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "DAMP 针对 GDN、KDA 语言模型的固定大小循环状态做训练后混合精度量化：离线校准结合量化误差能量与状态衰减持久性，将高风险通道保留为较高精度，其余使用 INT8。摘要报告，平均 9.9 bit/状态值时精度接近 FP32，并将状态存储降低 69.1%、更新内核最高加速 2.01 倍、整模 TPOT 最高降低 10.9%。",
+  "why_it_matters_zh": "线性注意力模型虽避免随序列增长的 KV cache，却可能把瓶颈转移到 FP32 循环状态的容量与带宽。DAMP 直接压缩这一状态，并把内核收益传导到端到端解码延迟。",
+  "limitations_zh": "实验范围限于摘要列出的 Qwen3.6-35B、Kimi-Linear-48B 和六个推理、代码基准；“接近 FP32”的平均精度可能掩盖单项退化。摘要未给出硬件、校准成本、序列长度敏感性或代码可用性。",
+  "reading_depth": "abstract",
   "first_seen": "2026-08-31T04:42:49+00:00",
   "last_seen": "2026-08-31T04:42:49+00:00",
   "featured_weeks": [
