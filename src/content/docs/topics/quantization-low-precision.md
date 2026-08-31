@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **87** 篇。
+累计收录 **91** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization](../../papers/arxiv-2608.27513/) | 2026-08-31 | 60 |
+| [A Method for Layer Bit-Width Allocation in LLM Quantization via Performance Maximization Under a Quality-Degradation Constraint](../../papers/arxiv-2608.28003/) | 2026-08-31 | 47 |
+| [Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Validation--Deployment Gap](../../papers/arxiv-2608.27512/) | 2026-08-31 | 42 |
+| [H-Scale: Hessian-Guided Scale Refinement for NVFP4 Sub-Byte LLM Inference](../../papers/arxiv-2608.28113/) | 2026-08-31 | 41 |
 | [Pushing the Envelope of LLM Inference with Ultra-Low-Bit Quantized Models](../../papers/arxiv-2508.06753/) | 2026-08-28 | 51 |
 | [Refine-POI: Reinforcement Fine-Tuned Large Language Models for Next Point-of-Interest Recommendation](../../papers/arxiv-2506.21599/) | 2026-08-28 | 41 |
 | [Activation Outliers Matter: Robust Recovery for Quantized Multimodal LLMs](../../papers/arxiv-2608.26581/) | 2026-08-27 | 49 |

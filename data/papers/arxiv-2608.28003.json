@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2608.28003",
+  "title": "A Method for Layer Bit-Width Allocation in LLM Quantization via Performance Maximization Under a Quality-Degradation Constraint",
+  "abstract": "This paper proposes a layer bit allocation method for Gemma-3-1B, formulating the problem as performance maximization (latency decrease) given a degradation budget constraint (allowable level of generation quality loss). This approach is different from time- and resource-consuming uniform layer quantization methods that are used in the literature (like GPTQ or AWQ) or allocation methods without proven performance-accelerating effect (like MixLLM or TorchAO). The layer sensitivity profile resulting from our prior work SA-PTQ is applied using the activation pass-through mode inside TensorRT-LLM. For each layer precision is determined individually in blocks, according to a grouping introduced in the prior step (5+5, 10+10, all26), differentiating the contribution of FFN, Attention, and lm_head to the overall speedup. The clock speed was measured for 13 W8A8 variants on an RTX 5090. We find that for FFN and lm_head the time cost of quantization/dequantization is compensated for by the use of integer arithmetic, while for short context lengths, the opposite holds true for Attention: an additional step of quantization slows execution down. We propose a manual implementation of SmoothQuant for TensorRT-LLM which was necessary due to export failures, unavailable for lm_head. The best solution found under joint consideration of all three criteria with minimal degradation was FFN 5+5 with lm_head, providing an 11.0% reduction in latency with negligible quality loss (98.90% Top-1 agreement, +0.85% perplexity degradation). With acceptable quality loss for FFN all26 + lm_head, a speedup up to 19.1% was found possible. We suggest further optimizations: fused attention kernels in INT8, KV-cache quantization, using FP8 instead of INT8 and partial Attention quantization analogous to FFN.",
+  "url": "https://arxiv.org/abs/2608.28003",
+  "pdf_url": "https://arxiv.org/pdf/2608.28003",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Artem Safronov"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp8",
+    "int8",
+    "quantization"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8, int8, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "This paper proposes a layer bit allocation method for Gemma-3-1B, formulating the problem as performance maximization (latency decrease) given a degradation budget constraint (allowable level of generation quality loss).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.28003",
+      "url": "https://arxiv.org/abs/2608.28003"
+    }
+  ]
+}

@@ -5,10 +5,15 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **37** 篇。
+累计收录 **42** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Ampere: Communication-Efficient and High-Accuracy Split Federated Learning](../../papers/arxiv-2507.07130/) | 2026-08-31 | 48 |
+| [ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL](../../papers/arxiv-2608.28476/) | 2026-08-31 | 46 |
+| [MemoryCard: Topic-Aware Multi-Modal Clue Compression for Long-Video Question Answering](../../papers/arxiv-2606.05917/) | 2026-08-31 | 43 |
+| [Parser States Already Know: Structure-Conditioned KV Persistence for Structured Generation](../../papers/arxiv-2608.28276/) | 2026-08-31 | 42 |
+| [Accelerating Data Preprocessing for Efficient Vision Model Inference on Jetson Edge Device](../../papers/arxiv-2608.27655/) | 2026-08-31 | 42 |
 | [Multi-Turn Reasoning LLMs for Task Offloading in Mobile Edge Computing](../../papers/arxiv-2604.07148/) | 2026-08-27 | 45 |
 | [BanglaMamba: Exploring State Space Models for Bangla Fake News Detection](../../papers/arxiv-2608.25190/) | 2026-08-27 | 43 |
 | [JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution](../../papers/arxiv-2608.25593/) | 2026-08-27 | 38 |

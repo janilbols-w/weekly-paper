@@ -5,11 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **25** 篇。
+累计收录 **26** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding](../../papers/arxiv-2608.26112/) | 2026-08-28 | 44 |
+| [Trajectory-Level Speculative Decoding for Diffusion Language Models](../../papers/arxiv-2608.27514/) | 2026-08-31 | 49 |
+| [TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding](../../papers/arxiv-2608.26112/) | 2026-08-28 | 49 |
 | [Visual Information-Guided Parallel Decoding for Diffusion Multimodal Large Language Models](../../papers/arxiv-2608.26580/) | 2026-08-27 | 41 |
 | [AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs](../../papers/arxiv-2608.26004/) | 2026-08-26 | 49 |
 | [AgentSpec: Speculative Decoding for Batch Inference of LLM Agents](../../papers/arxiv-2608.24004/) | 2026-08-25 | 46 |

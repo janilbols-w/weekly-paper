@@ -5,10 +5,15 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **177** 篇。
+累计收录 **182** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PRISM: Self-Pruning Intrinsic Selection Method for Training-Free Multimodal Data Selection](../../papers/arxiv-2502.12119/) | 2026-08-31 | 51 |
+| [TokenPilot: Cache-Efficient Context Management for LLM Agents](../../papers/arxiv-2606.17016/) | 2026-08-31 | 45 |
+| [Self-Evaluation Is Already There: Eliciting Latent Judge Calibration in Base LLMs with Minimal Data](../../papers/arxiv-2606.05122/) | 2026-08-31 | 44 |
+| [Pruning Laws for Large Language Models](../../papers/arxiv-2504.04342/) | 2026-08-31 | 43 |
+| [Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey](../../papers/arxiv-2304.10891/) | 2026-08-31 | 42 |
 | [Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy](../../papers/arxiv-2606.09080/) | 2026-08-28 | 51 |
 | [Frequency Matters: Fast Model-Agnostic Data Curation for Pruning and Quantization](../../papers/arxiv-2603.16105/) | 2026-08-28 | 50 |
 | [MENTOR: Reinforcement Learning via Flexible Teacher-Optimized Rewards for Tool-Use Distillation](../../papers/arxiv-2510.18383/) | 2026-08-28 | 43 |

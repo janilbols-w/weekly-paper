@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2608.27512",
+  "title": "Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Validation--Deployment Gap",
+  "abstract": "Post-training quantization is often treated as a semantically neutral optimization for edge deployment of Large Language Models. When a full-precision source checkpoint is evaluated and quantization is applied downstream without equivalent re-evaluation, this workflow creates a structural validation--deployment gap: because quantization is a many-to-one mapping over parameter space, source-precision certification does not guarantee behavioral equivalence in the deployed configuration. We formalize this gap through Quantization Behavioral Equivalence Classes (QBECs) and prove that QBEC membership does not imply behavioral equivalence, providing a theoretical basis for quantization-triggered backdoor attacks. Building on a three-stage adversarial fine-tuning framework, we embed latent malicious payloads into models that satisfy the source-precision checks used in our evaluation, yet activate targeted adversarial behavior upon INT8 or 4-bit compression. We evaluate this threat in two operationally motivated scenarios, tactical machine translation and political content analysis, extending prior work from decoder-only causal LMs to multilingual encoder-decoder sequence-to-sequence models. Results show that backdoored translation models move from zero measured friend--foe corruption at repaired FP16 to up to 85.02% inversion after quantization, and that a paired stance classifier measures an ideological shift of up to $\\Delta\\mathrm{Bias}=0.33$ upon compression. A cross-quantizer transferability analysis further shows that attack persistence varies across quantization schemes and model architectures, rather than being determined by nominal bit-width alone. These findings demonstrate that source-precision auditing alone does not rule out quantization-triggered behavior and that the final deployed configuration must be included in behavioral certification for trustworthy edge AI.",
+  "url": "https://arxiv.org/abs/2608.27512",
+  "pdf_url": "https://arxiv.org/pdf/2608.27512",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Jacopo Dardini",
+    "Claudio Stanzione",
+    "Giordano Col\\`o",
+    "Giuseppe Fenza"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.CR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int8",
+    "quantization"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int8, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Post-training quantization is often treated as a semantically neutral optimization for edge deployment of Large Language Models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.27512",
+      "url": "https://arxiv.org/abs/2608.27512"
+    }
+  ]
+}

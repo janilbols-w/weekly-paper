@@ -5,7 +5,7 @@ description: "We investigate whether Mixture-of-Experts (MoE) language models de
 
 **评分：44/100** · LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化
 
-[论文原文](http://arxiv.org/abs/2608.15102v1) · [PDF](https://arxiv.org/pdf/2608.15102v1)
+[论文原文](https://arxiv.org/abs/2608.15102) · [PDF](https://arxiv.org/pdf/2608.15102)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ We investigate whether Mixture-of-Experts (MoE) language models develop linguist
 ## 元数据
 
 - 作者：Amrit Gopinath, Raghul, Durairaj Thenmozhi
-- 发布：2026-08-15；更新：2026-08-15
-- 来源：arXiv；Venue：未确认
+- 发布：2026-08-15；更新：2026-08-31
+- 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Amrit828/DP-Theory-MOE-Interpretability-Research](https://github.com/Amrit828/DP-Theory-MOE-Interpretability-Research)
 - 阅读深度：metadata

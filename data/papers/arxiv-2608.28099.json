@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2608.28099",
+  "title": "Speculative Probing: LLM Monitoring at Speculative-Decoding Cost",
+  "abstract": "Real-time classification during language model inference is valuable for safety filtering, behavioral analysis, and model monitoring, but current approaches force a trade-off between accuracy and efficiency. Hidden-state probes are fast but limited: they are either not context-aware: operating on a single vector and cannot model interactions across positions; or they are very costly: having dedicated classifier models (Llama Guard, Qwen Guard, LLM-as-judge) or performing computation on hidden states for all tokens and then pooling the results (MultiMax). This shows an intrinsic trade-off between efficiency and accuracy. However, we find that the speculative-decoding module in recent LLMs can be repurposed for efficient high-quality classification. By appending a trained soft prompt at the end of the target sequence, we can repurpose the speculative-decoding module into a sequence classifier. At inference time in a speculative-decoding pipeline, the KV cache is already in GPU memory, so classification adds negligible overhead. We evaluate on four classification tasks across four models (Qwen3.5-4B, 9B, 27B, MiniCPM4.1-8B). Our small probes consistently outperform zero-shot GPT-5.4-mini and, on multilingual prompt safety, match or beat specialized 8B safety classifiers (Qwen3Guard-Gen-8B, Llama-Guard-3-8B) without running a full LLM.",
+  "url": "https://arxiv.org/abs/2608.28099",
+  "pdf_url": "https://arxiv.org/pdf/2608.28099",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Collin Zhang",
+    "Tingwei Zhang",
+    "Vitaly Shmatikov"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Real-time classification during language model inference is valuable for safety filtering, behavioral analysis, and model monitoring, but current approaches force a trade-off between accuracy and efficiency.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.28099",
+      "url": "https://arxiv.org/abs/2608.28099"
+    }
+  ]
+}

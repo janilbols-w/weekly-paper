@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2608.28151",
+  "title": "Nested Byte-Level Vocabularies Are Cheap to Deploy and Expensive to Share: A Pre-Registered Negative Result",
+  "abstract": "A byte-level BPE tokenizer is an ordered list of merge rules, so applying only a prefix yields a vocabulary whose token identifiers are the first rows of the full vocabulary. This prefix nesting allows one language model to operate at several vocabulary sizes, use a control token to indicate the active size, and be deployed at any trained size by slicing its embedding and output head. We pre-registered five claims, including margins, seeds, contrasts, and a stop rule, and trained 30 models with 3.1M- and 10.6M-parameter bodies on 200M tokens each. Slicing is numerically exact: across 76 checks, a sliced model reproduces the restricted full model's logits bit for bit and removes 66% of deployed weights without changing latency. However, the shared model trails a fixed-cap specialist by 3.64% bits per byte at 32k against a 1% margin, and by 2.96% at 8k against a 2% margin. A 2x2 ablation separating the control token from output restriction finds that the token changes performance by +0.07% to +0.13%, with all intervals crossing zero, while output restriction costs +0.47% to +1.19%; the factors are substitutes rather than complements. Multi-cap training nevertheless improves robustness: under typographical noise, the same checkpoint degrades 12.5--15.4 points less in its fine mode and outperforms each fixed-cap specialist at that specialist's vocabulary size. A control with neither cap token nor output restriction is equally robust, attributing this benefit to multi-granularity training rather than conditioning. The per-cap penalty tracks each cap's share of training rows, yielding a falsifiable prediction for future work.",
+  "url": "https://arxiv.org/abs/2608.28151",
+  "pdf_url": "https://arxiv.org/pdf/2608.28151",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Christos Koutsiaris"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "A byte-level BPE tokenizer is an ordered list of merge rules, so applying only a prefix yields a vocabulary whose token identifiers are the first rows of the full vocabulary.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.28151",
+      "url": "https://arxiv.org/abs/2608.28151"
+    }
+  ]
+}

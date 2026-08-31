@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2608.27514",
+  "title": "Trajectory-Level Speculative Decoding for Diffusion Language Models",
+  "abstract": "Diffusion-based language models (dLLMs) enable parallel token generation through iterative denoising, but existing decoding strategies collapse to single-token generation under low confidence, severely limiting throughput. Unlike autoregressive models where speculative decoding operates on token sequences in a fixed left-to-right order, dLLMs require speculating over denoising trajectories-sequences of multi-token updates with explicit positions and unmasking orders. We develop a trajectory-level speculative framework that constructs draft denoising trajectories via confidence-stratified tree exploration and verifies them through blockwise parallel evaluation with bidirectional attention masking. Our method further introduces inter-block speculation, exploiting diffusion models' bidirectional structure to perform cross-block lookahead. We formally characterize when this approach is exact and identify trajectory drift as the fundamental cost of increased parallelism. Building on Fast-dLLM's dual-cache infrastructure, our framework reduces denoising iterations by 30-40% and increases tokens-per-step from 2.6 to 4.3, achieving 7-14x speedup over vanilla dLLMs and 1.3x over Fast-dLLM with less than 1% accuracy change across reasoning and code benchmarks.",
+  "url": "https://arxiv.org/abs/2608.27514",
+  "pdf_url": "https://arxiv.org/pdf/2608.27514",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Tianxiang Pan",
+    "Baitao Gong",
+    "Mo Guang",
+    "Hongwei Yong",
+    "Tianpeng Jiang",
+    "Yaqian Li",
+    "Zheng Cao",
+    "Kaiwen Long"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Diffusion-based language models (dLLMs) enable parallel token generation through iterative denoising, but existing decoding strategies collapse to single-token generation under low confidence, severely limiting throughput.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [
+    "2026-W36"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.27514",
+      "url": "https://arxiv.org/abs/2608.27514"
+    }
+  ]
+}

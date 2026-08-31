@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2504.04342",
+  "title": "Pruning Laws for Large Language Models",
+  "abstract": "Scaling up model parameters and training data consistently improves the performance of large language models (LLMs), but at the cost of rapidly growing memory and compute requirements, which makes deployment on resource-limited hardware infeasible. Model pruning, a widely used compression technique, reduces inference costs by removing redundant parameters. However, its impact on downstream performance remains unpredictable and is typically assessed only through costly empirical sweeps. To address this gap, we introduce pruning laws, simple and interpretable scaling relations that connect a pruned LLM's post-pruning performance to its unpruned performance and pruning ratio. Across ten LLMs (1.3B-30B parameters), a 20B mixture-of-experts model, three pruning strategies (unstructured, width, and depth), and eight diverse tasks, we show that pruning laws achieve strong predictive accuracy (average extrapolation error less than 7%), reliably quantify performance degradation, and identify critical pruning thresholds beyond which recovery is infeasible. Moreover, we demonstrate that the functional form transfers across dense and mixture-of-experts architectures, pruning methods, and unseen models in zero-shot and one-shot setups, with task- and method-specific coefficients that vary in interpretable ways. These results provide both researchers and practitioners with a principled framework to select pruning strategies, estimate safe pruning ratios without exhaustive tuning, and deploy LLMs efficiently under real-world compute and latency constraints.",
+  "url": "https://arxiv.org/abs/2504.04342",
+  "pdf_url": "https://arxiv.org/pdf/2504.04342",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Ayan Sengupta",
+    "Siddhant Chaudhary",
+    "Tanmoy Chakraborty"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Scaling up model parameters and training data consistently improves the performance of large language models (LLMs), but at the cost of rapidly growing memory and compute requirements, which makes deployment on resource-limited hardware infeasible.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2504.04342",
+      "url": "https://arxiv.org/abs/2504.04342"
+    }
+  ]
+}

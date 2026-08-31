@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2608.26112",
   "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
-  "abstract": "Speculative decoding accelerates large language model inference through a draft-then-verify paradigm. Building on this, tree-structured methods improve inference by organizing proposals into multiple candidate paths, increasing the accepted length. However, existing tree-structured methods use a single drafter for all drafting steps, creating a dilemma: a smaller drafter is fast but yields lower-quality trees, whereas a larger drafter improves tree quality but suffers from high latency. To address this, we propose TreeGraft, a multi-drafter framework in which drafters of different costs jointly construct a shared draft tree. TreeGraft uses the stronger drafter to rescore candidates by updating scores assigned by the weaker drafter, reselect grafting positions, and recover promising paths left unexplored. It also integrates stronger drafter expansions non-destructively, preserving existing branches that may still be accepted by the target model. Together, these designs improve the quality of the shared draft tree. To control the drafting cost, TreeGraft introduces a lightweight scheduler distilled from an offline value system to decide when to call the stronger drafter. Across 10 model pairs and 6 benchmarks, TreeGraft outperforms the better of the two fixed single-drafter endpoint strategies by 15.1% on average, reaching a maximum gain of 26.6%. Our code is available at https://anonymous.4open.science/r/TreeGraft-E983.",
+  "abstract": "Speculative decoding accelerates large language model inference through a draft-then-verify paradigm. Building on this, tree-structured methods improve inference by organizing proposals into multiple candidate paths, increasing the accepted length. However, existing tree-structured methods use a single drafter for all drafting steps, creating a dilemma: a smaller drafter is fast but yields lower-quality trees, whereas a larger drafter improves tree quality but suffers from high latency. To address this, we propose TreeGraft, a multi-drafter framework in which drafters of different costs jointly construct a shared draft tree. TreeGraft uses the stronger drafter to rescore candidates by updating scores assigned by the weaker drafter, reselect grafting positions, and recover promising paths left unexplored. It also integrates stronger drafter expansions non-destructively, preserving existing branches that may still be accepted by the target model. Together, these designs improve the quality of the shared draft tree. To control the drafting cost, TreeGraft introduces a lightweight scheduler distilled from an offline value system to decide when to call the stronger drafter. Across 10 model pairs and 6 benchmarks, TreeGraft outperforms the better of the two fixed single-drafter endpoint strategies by 15.1% on average, reaching a maximum gain of 26.6%. Our code is available at https://github.com/fjm9933/TreeGraft.",
   "url": "https://arxiv.org/abs/2608.26112",
   "pdf_url": "https://arxiv.org/pdf/2608.26112",
   "published": "2026-08-28",
-  "updated": "2026-08-28",
+  "updated": "2026-08-31",
   "authors": [
     "Jiaming Fan",
     "Daming Cao",
@@ -26,7 +26,7 @@
   "venue": "",
   "journal_ref": "",
   "comment": "",
-  "code_url": "",
+  "code_url": "https://github.com/fjm9933/TreeGraft",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -42,19 +42,19 @@
   "keyword_evidence": [
     "speculative decoding"
   ],
-  "score": 44,
+  "score": 49,
   "score_components": {
     "relevance": 16,
     "novelty": 7,
     "rigor": 7,
     "practical_impact": 9,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: speculative decoding",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Speculative decoding accelerates large language model inference through a draft-then-verify paradigm.",
   "summary_zh": "",
@@ -62,7 +62,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-28T07:02:23+00:00",
-  "last_seen": "2026-08-28T07:02:23+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
   "featured_weeks": [],
   "source_records": [
     {

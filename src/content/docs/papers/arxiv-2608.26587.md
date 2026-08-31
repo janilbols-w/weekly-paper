@@ -39,7 +39,7 @@ Biomedical knowledge graphs (KGs) offer structured medical knowledge that can gr
 ## 元数据
 
 - 作者：Saksham Khatwani, He Cheng, Majid Afshar, Dmitriy Dligach, Yanjun Gao
-- 发布：2026-08-27；更新：2026-08-28
+- 发布：2026-08-27；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LARK-NLP-Lab/Surgical-Alignment](https://github.com/LARK-NLP-Lab/Surgical-Alignment)
 - 阅读深度：metadata

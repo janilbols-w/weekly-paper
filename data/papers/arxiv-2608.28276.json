@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2608.28276",
+  "title": "Parser States Already Know: Structure-Conditioned KV Persistence for Structured Generation",
+  "abstract": "Structured generation underpins large language model (LLM) agents that produce JSON, SQL, and function calls, where a single wrong field can cause the downstream action to fail. Constrained decoding already tracks parser transitions to enforce formal validity, and these transitions expose how generated tokens participate in schema-critical decisions such as required fields, arguments, and structural boundaries under the active grammar. Existing KV compression largely leaves this task-relevant structural signal unused. We introduce PASK (Parser-Aware Structural KV Persistence), which turns parser-derived structure into layer-group-specific KV persistence decisions. PASK addresses the mismatch between model-side KV sensitivity and task-level structured risk by using task-error sensitivity to set minimum protection floors and attention-output distortion to allocate residual KV capacity. An offline calibration stage compiles these signals into a persistence policy, leaving only lightweight structure-conditioned lookup online. At a targe total KV budget of 0.33, PASK outperforms the strongest compressed baseline by 17.39 percentage points on average across eight BFCL non-live and Live subcategories on Qwen3-4B. In end-to-end serving, PASK achieves up to 2.2x higher throughput and 3.3x lower TPOT, while using 0.53x the peak GPU memory of Full KV.",
+  "url": "https://arxiv.org/abs/2608.28276",
+  "pdf_url": "https://arxiv.org/pdf/2608.28276",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "authors": [
+    "Linze Wu",
+    "Xinrui Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Structured generation underpins large language model (LLM) agents that produce JSON, SQL, and function calls, where a single wrong field can cause the downstream action to fail.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-08-31T04:42:49+00:00",
+  "last_seen": "2026-08-31T04:42:49+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.28276",
+      "url": "https://arxiv.org/abs/2608.28276"
+    }
+  ]
+}

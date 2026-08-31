@@ -5,10 +5,11 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **39** 篇。
+累计收录 **40** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Output Correctness: Benchmarking and Evaluating Large Language Model Reasoning in Coding Tasks](../../papers/arxiv-2604.12379/) | 2026-08-31 | 51 |
 | [Exploring the Role of LLMs in HPC Programming: A Survey](../../papers/arxiv-2608.26110/) | 2026-08-28 | 40 |
 | [Think Short, Defer Smart, Act, and Repeat: Calibrated Reasoning and Uncertainty-Aware Deferral for Edge LLM Agents](../../papers/arxiv-2607.26865/) | 2026-08-27 | 39 |
 | [The Reasoning Tax: Token Economics of LLM Reasoning Across Task Types and Deployment Contexts](../../papers/arxiv-2608.26235/) | 2026-08-26 | 43 |

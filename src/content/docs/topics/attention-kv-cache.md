@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **59** 篇。
+累计收录 **60** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Speculative Probing: LLM Monitoring at Speculative-Decoding Cost](../../papers/arxiv-2608.28099/) | 2026-08-31 | 38 |
 | [NestedKV: Nested Memory Routing for Long-Context KV Cache Compression](../../papers/arxiv-2605.26678/) | 2026-08-28 | 39 |
 | [From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression](../../papers/arxiv-2606.02559/) | 2026-08-27 | 47 |
 | [A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms](../../papers/arxiv-2607.12550/) | 2026-08-25 | 51 |
