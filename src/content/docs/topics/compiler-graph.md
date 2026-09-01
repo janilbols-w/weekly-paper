@@ -5,10 +5,15 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **40** 篇。
+累计收录 **45** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [QAQ: Bidirectional Semantic Coherence for Selecting High-Quality Synthetic Code Instructions](../../papers/arxiv-2603.12165/) | 2026-09-01 | 48 |
+| [Evaluating Tiny Recursive Models Across Training for Code Generation](../../papers/arxiv-2608.29376/) | 2026-09-01 | 43 |
+| [Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](../../papers/arxiv-2606.15932/) | 2026-09-01 | 43 |
+| [When to Adapt: Conditional Memory Adapters for Retention-Preserving Domain Specialization](../../papers/arxiv-2608.29327/) | 2026-09-01 | 41 |
+| [NeuReasoner: Theory-grounded Mapping of Reasoning Elicitation Boundaries](../../papers/arxiv-2606.29971/) | 2026-09-01 | 40 |
 | [Beyond Output Correctness: Benchmarking and Evaluating Large Language Model Reasoning in Coding Tasks](../../papers/arxiv-2604.12379/) | 2026-08-31 | 51 |
 | [Exploring the Role of LLMs in HPC Programming: A Survey](../../papers/arxiv-2608.26110/) | 2026-08-28 | 40 |
 | [Think Short, Defer Smart, Act, and Repeat: Calibrated Reasoning and Uncertainty-Aware Deferral for Edge LLM Agents](../../papers/arxiv-2607.26865/) | 2026-08-27 | 39 |

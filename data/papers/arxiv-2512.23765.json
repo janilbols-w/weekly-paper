@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2512.23765",
+  "title": "Entropy-Aware Token Rejection for Improving Speculative Decoding",
+  "abstract": "Speculative decoding (SD) accelerates large language model (LLM) inference by using a lightweight draft model to propose tokens and a stronger target model to verify them. However, standard SD is mainly designed for acceleration, and its output quality is typically constrained by the target model. In this work, we propose Entropy-Aware Speculative Decoding (EASD), a lightweight and training-free extension of SD that improves reasoning quality through token-level entropy-guided rejection. EASD detects cases where both draft and target models exhibit high uncertainty while strongly overlapping in their top predictions. In such uncertain-agreement cases, EASD rejects the aligned token and resamples from the target distribution, preventing low-confidence errors from propagating. Experiments on challenging reasoning benchmarks show that EASD consistently improves accuracy over standard SD and reward-guided variants while maintaining comparable inference efficiency. Notably, EASD can surpass the standalone performance of the target model, suggesting that speculative decoding can serve not only as an acceleration method but also as an effective mechanism for improving reasoning quality. The code is available at https://github.com/ECNU-Text-Computing/EASD.",
+  "url": "https://arxiv.org/abs/2512.23765",
+  "pdf_url": "https://arxiv.org/pdf/2512.23765",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Tiancheng Su",
+    "Meicong Zhang",
+    "Guoxiu He"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/ECNU-Text-Computing/EASD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "draft model",
+    "speculative decoding"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: draft model, speculative decoding",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Speculative decoding (SD) accelerates large language model (LLM) inference by using a lightweight draft model to propose tokens and a stronger target model to verify them.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2512.23765",
+      "url": "https://arxiv.org/abs/2512.23765"
+    }
+  ]
+}

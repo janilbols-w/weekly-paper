@@ -5,10 +5,15 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **26** 篇。
+累计收录 **31** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Verification-Aware Training for Speculative Decoding](../../papers/arxiv-2608.30135/) | 2026-09-01 | 49 |
+| [SpecPV: Improving Self-Speculative Decoding for Long-Context Generation via Partial Verification](../../papers/arxiv-2512.02337/) | 2026-09-01 | 48 |
+| [Entropy-Aware Token Rejection for Improving Speculative Decoding](../../papers/arxiv-2512.23765/) | 2026-09-01 | 48 |
+| [A rigor-matched audit of periodic-step layer skipping for efficient llm inference: conflayers versus swift, with a supplemental analysis of trained routing alternatives](../../papers/arxiv-2608.28846/) | 2026-09-01 | 43 |
+| [ReTrace: Rejected-Trajectory Conditioning for Speculative Decoding](../../papers/arxiv-2608.29748/) | 2026-09-01 | 42 |
 | [Trajectory-Level Speculative Decoding for Diffusion Language Models](../../papers/arxiv-2608.27514/) | 2026-08-31 | 49 |
 | [TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding](../../papers/arxiv-2608.26112/) | 2026-08-28 | 49 |
 | [Visual Information-Guided Parallel Decoding for Diffusion Multimodal Large Language Models](../../papers/arxiv-2608.26580/) | 2026-08-27 | 41 |

@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2606.10537",
+  "title": "Prefilling-dLLM: Predictive Prefilling for Long-Context Inference in Diffusion Language Models",
+  "abstract": "Diffusion large language models (dLLMs) re-encode the entire prefix at every denoising step, causing recomputation that scales quadratically with context length and becomes prohibitive for long-context scenarios. We propose Prefilling-dLLM, a training-free prefill-decode disaggregation framework for dLLMs that partitions the prefix into N chunks, caches their KV representations once, and selects the top-K most relevant chunks with intra-chunk token sparsity for decoding, showing that sparse prefilling can outperform dense attention while reducing per-step complexity from quadratic in the full sequence length to quadratic only in the decode length. On LongBench and InfiniteBench, Prefilling-dLLM achieves state-of-the-art quality among dLLM acceleration methods, and an attention kernel that parallelizes decoding over the non-contiguously cached chunk KV yields 9.1--28.0x speedup at 8K--32K contexts. We further show that beginning-of-sequence tokens prepended to each chunk act as periodic attention anchors that eliminate the lost-in-the-middle phenomenon. Code is available at https://github.com/menik1126/Prefilling-dLLM.",
+  "url": "https://arxiv.org/abs/2606.10537",
+  "pdf_url": "https://arxiv.org/pdf/2606.10537",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Jing Xiong",
+    "Qi Han",
+    "Shansan Gong",
+    "Yunta Hsieh",
+    "Boyuan Zheng",
+    "Chengyue Wu",
+    "Chaofan Tao",
+    "Chenyang Zhao",
+    "Ngai Wong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/menik1126/Prefilling-dLLM",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "attention kernel"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: attention kernel",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Diffusion large language models (dLLMs) re-encode the entire prefix at every denoising step, causing recomputation that scales quadratically with context length and becomes prohibitive for long-context scenarios.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.10537",
+      "url": "https://arxiv.org/abs/2606.10537"
+    }
+  ]
+}

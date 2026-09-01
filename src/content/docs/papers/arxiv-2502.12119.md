@@ -42,5 +42,5 @@ Visual instruction tuning adapts pre-trained Multimodal Large Language Models (M
 - 作者：Jinhe Bi, Aniri, Zengjie Jin, Yifan Wang, Danqi Yan, Wenke Huang, Xiaowen Ma, Sikuan Yan, Artur Hecker, Mang Ye, Xun Xiao, Hinrich Schuetze, Volker Tresp, Yunpu Ma
 - 发布：2026-08-31；更新：2026-08-31
 - 来源：arXiv RSS；Venue：未确认
-- 代码：[https://github.com/bibisbar/PRISM](https://github.com/bibisbar/PRISM)
+- 代码：[https://github.com/bibisbar/PRISM}{this](https://github.com/bibisbar/PRISM}{this)
 - 阅读深度：abstract

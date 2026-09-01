@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2608.20873",
+  "title": "In-Cell Learning: Language Models That Update Their Own Weights in Sequence Without Changing the File They Ship",
+  "abstract": "A 4-bit quantized weight specifies a rounding cell rather than a single full-precision value. We introduce in-cell learning, a paradigm for writing new knowledge only within these cells, so that re-quantizing the served weights reproduces the released integer codes and scales exactly. CellFill implements this idea with bounded trainable positions inside frozen quantization cells and ships the update as a separate, subtractively revocable file. Across published NF4 and W4A16 releases of Qwen3 and Gemma from 1.7B to 32B parameters, CellFill writes 83-99% of a real-fact corpus while returning the stored code on every constrained weight. The injected facts generalize to paraphrases and composition, and answer 78-88% of selected PopQA questions that the released model misses. Sequential experiments show that rehearsal preserves earlier knowledge, whereas available room and new-task plasticity decline across updates. Consolidation re-quantizes the learned weights to produce a declared major version, restoring room at a measured capability cost. A six-task write-rehearse-consolidate cycle retains at least 92.8% of first learning in two 8B runs and records zero code violations over 6.9 billion constrained weights at every fold. These results define a version-management protocol in which minor updates preserve the released quantized artifact bitwise and major updates are explicit, measurable, and verifiable.",
+  "url": "https://arxiv.org/abs/2608.20873",
+  "pdf_url": "https://arxiv.org/pdf/2608.20873",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Zifeng Liu",
+    "Yaxin Lu",
+    "Xuanhan Wu",
+    "Zhiyong Du",
+    "Yiming Mao",
+    "Zhenhe Wang",
+    "Wenqi Shi",
+    "Zhengkun Jing",
+    "Linwei Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "A 4-bit quantized weight specifies a rounding cell rather than a single full-precision value.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.20873",
+      "url": "https://arxiv.org/abs/2608.20873"
+    }
+  ]
+}

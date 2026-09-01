@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **17** 篇。
+累计收录 **19** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon](../../papers/arxiv-2608.28667/) | 2026-09-01 | 51 |
+| [ITP-STDP: A Hardware-Efficient Intrinsic-Timing Power-of-Two Synaptic Learning Engine for On-Chip SNNs](../../papers/arxiv-2606.06159/) | 2026-09-01 | 42 |
 | [Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems](../../papers/arxiv-2608.28160/) | 2026-08-31 | 45 |
 | [Faults That Fortify: CNN Adversarial Robustness via GPU Undervolting](../../papers/arxiv-2608.20572/) | 2026-08-24 | 38 |
 | [NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference](../../papers/arxiv-2608.22613/) | 2026-08-23 | 49 |

@@ -1,0 +1,87 @@
+{
+  "id": "arxiv:2608.28968",
+  "title": "Efficient GPU Retrieval for Semantic Search",
+  "abstract": "Semantic Search on LinkedIn must retrieve relevant profiles from a corpus of hundreds of millions in response to natural-language queries such as \"a fintech founder in Berlin who worked in payments.\" The deployed relevance policy is bottleneck-oriented: every active non-negotiable facet must be satisfied, and a pre-existing LLM Graded Relevance (GR) judge operationalizes this through a fixed min/median aggregation over facet grades. Cosine similarity instead averages evidence, letting a strong match on one facet mask failure on another, capping the recall of the first-stage (L0) retriever. We present a policy-aligned retrieval framework: embeddings are partitioned into eight category-supervised segments whose scores follow the same min/median rule at serving time; for multi-vector retrieval, this segment score is computed independently per tagged document slot and maximized across slots. A lightweight single-slot Stage-1 scorer generates high-recall candidates, while scale-invariant relative-norm gating keeps category activation consistent across training, evaluation, and serving. On 21K held-out queries, this representation improves offline relevance over a matched-capacity baseline, with gains broadly distributed across facet combinations. We serve this framework with a two-stage GPU architecture: an FP8 coarse ranker scores the full corpus, increasing per-shard capacity by 71% and Stage-1 matmul throughput by 36%, then an FP16 stage exactly re-ranks an oversampled candidate set, recovering 99.6-99.8% of full-FP16 recall at over 500 QPS per shard replica. In a member-randomized A/B test, exploratory-query Precision@10 under the unchanged GR judge rises from 63.7% to 79.0% and navigational Precision@1 from 65.5% to 74.7%, with a blinded human evaluation independently confirming the Precision@10 gain.",
+  "url": "https://arxiv.org/abs/2608.28968",
+  "pdf_url": "https://arxiv.org/pdf/2608.28968",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Dhritiman Das",
+    "Chujie Zheng",
+    "Ronak Kaoshik",
+    "Pratik Dixit",
+    "Vishal Shah",
+    "Yanbo Li",
+    "Jiahao Xu",
+    "Manika Agarwal",
+    "Chinmay Naik",
+    "Lingyu Zhang",
+    "Chetan Bhole",
+    "Chirag Bhanuprasad Mehta",
+    "Meng Zheng",
+    "Puneet Singh Ahluwalia",
+    "Shirisha Singh",
+    "Ping Jin",
+    "Manas Apte",
+    "Gokulraj Mohanasundaram",
+    "Tugrul Bingol",
+    "Raghavan Muthuregunathan",
+    "Fedor Borisyuk"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp8"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Semantic Search on LinkedIn must retrieve relevant profiles from a corpus of hundreds of millions in response to natural-language queries such as \"a fintech founder in Berlin who worked in payments.\" The deployed relevance policy is bottleneck-oriented: every active non-negotiable facet must be satisfied, and a pre-existing LLM Graded Relevance (GR) judge op",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.28968",
+      "url": "https://arxiv.org/abs/2608.28968"
+    }
+  ]
+}

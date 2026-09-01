@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2608.29376",
+  "title": "Evaluating Tiny Recursive Models Across Training for Code Generation",
+  "abstract": "Code generation increasingly relies on large transformer models, whose capability advances with scale. Yet such a scale is costly, creating demand for small models, especially where data is limited. Recursive models address this by reusing a single block to add depth rather than stacking independent layers. Such models are typically evaluated by teacher-forced fit (next-token loss on ground-truth prefixes) or task accuracy, at a single checkpoint, whereas code is produced by free-running generation, where the model extends its own output. Whether a teacher-forced advantage survives free-running generation, and whether it holds across training, remains open. To study both, we compare a ~28M-parameter autoregressive Tiny Recursive Model (TRM-AR) on natural-language-to-Python code generation against parameter-matched and depth-matched controls, tracking fit and generation across 40 epochs and three seeds. The fit ranking between the recursive model and the depth-matched control reverses twice. Selecting each checkpoint by validation loss and examining the trajectory yields a consistent comparison. At equal parameters, TRM-AR fits, generates, and generalizes better than the parameter-matched control while recovering approximately 45% of the validation-loss gap and 57% of the generation-quality gap between the two controls, at roughly 175 times the per-step cost of the parameter-matched control. However, at equal effective depth, the larger transformer fits and generates better at its validation optimum, suggesting TRM-AR's advantage lies in resistance to overfitting, not greater capability. These findings suggest that recursive code generation models should be evaluated jointly on fit and generation across the training trajectory rather than at a single checkpoint.",
+  "url": "https://arxiv.org/abs/2608.29376",
+  "pdf_url": "https://arxiv.org/pdf/2608.29376",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Anjani Sirivella",
+    "Aanisha Newaz",
+    "Glaucia Melo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Code generation increasingly relies on large transformer models, whose capability advances with scale.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.29376",
+      "url": "https://arxiv.org/abs/2608.29376"
+    }
+  ]
+}

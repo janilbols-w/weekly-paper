@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2601.03199",
+  "title": "DIP: Dynamic In-Context Planner For Diffusion Language Models",
+  "abstract": "Diffusion language models (DLMs) have shown strong potential for general natural language tasks with in-context examples. Existing In-Context Learning (ICL) approaches largely inherit the practice of autoregressive language models (ARLMs), incorporating all examples into a fixed prompt. However, applying this rigid, static-prompt paradigm to DLMs incurs substantial computational overhead, as the model must evaluate the maximum context length at every step. We address this inefficiency with a key discovery: the block-wise KV-cache mechanism inherent to DLM inference enables the \\textit{low-cost dynamic adjustment of the context}. Following this intuition, our core idea is to start generation with a minimal prompt and progressively insert additional examples on the fly only when the generated tokens are of low confidence. Through rigorous empirical evaluations, we observe that average verified token confidence correlates strongly with generation accuracy, making it a reliable and computationally efficient signal of token quality. Formally, we propose \\textbf{D}ynamic \\textbf{I}n-Context \\textbf{P}lanner (DIP), a context-optimization algorithm based on average verified confidence that dynamically ranks and inserts in-context examples during generation, rather than providing all examples up front. Experimental results on math and coding benchmarks with LLaDA-1.5 and LLaDA-8B-Instruct show that DIP achieves up to $1.59\\times$ and $1.36\\times$ speedups, respectively, while largely preserving the generation quality of the fixed-prompt baseline. Code: https://github.com/wmd3i/DIP",
+  "url": "https://arxiv.org/abs/2601.03199",
+  "pdf_url": "https://arxiv.org/pdf/2601.03199",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Yang Li",
+    "Han Meng",
+    "Chenan Wang",
+    "Zhenyu Bi",
+    "Xuan Wang",
+    "Haipeng Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/wmd3i/DIP",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 15,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Diffusion language models (DLMs) have shown strong potential for general natural language tasks with in-context examples.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [
+    "2026-W36"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2601.03199",
+      "url": "https://arxiv.org/abs/2601.03199"
+    }
+  ]
+}

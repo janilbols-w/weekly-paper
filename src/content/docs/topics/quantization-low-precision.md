@@ -5,10 +5,24 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **91** 篇。
+累计收录 **105** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Uncertainty Makes It Stable: Curiosity-Driven Quantized Mixture-of-Experts](../../papers/arxiv-2511.11743/) | 2026-09-01 | 53 |
+| [Investigating Social Bias Changes in Quantized Language Models](../../papers/arxiv-2602.06181/) | 2026-09-01 | 52 |
+| [Budget-Aware Compression Pipeline for Single-GPU LLM Inference: Methods, Trade-offs, and Coupling Effects](../../papers/arxiv-2608.30076/) | 2026-09-01 | 47 |
+| [Q-Strata: Hierarchical Bit Allocation for Mixed-Precision Quantization of Mixture-of-Experts LLMs](../../papers/arxiv-2608.30564/) | 2026-09-01 | 46 |
+| [SemKV: Semantic Mixed-Precision KV Cache Quantization Guided by the Quality Cliff for Long-Context LLM Inference](../../papers/arxiv-2608.28911/) | 2026-09-01 | 43 |
+| [Event-Driven Language Models with Sparse Neural Activity for Neuromorphic Hardware](../../papers/arxiv-2608.30439/) | 2026-09-01 | 43 |
+| [Faithfulness Is Not Free: Auditing Offline KV-Cache Quantization in Retrieval-Augmented Generation](../../papers/arxiv-2608.30996/) | 2026-09-01 | 42 |
+| [In-Cell Learning: Language Models That Update Their Own Weights in Sequence Without Changing the File They Ship](../../papers/arxiv-2608.20873/) | 2026-09-01 | 41 |
+| [A Target-Centric Survey of Quantization-Aware Training](../../papers/arxiv-2608.29667/) | 2026-09-01 | 40 |
+| [Efficient GPU Retrieval for Semantic Search](../../papers/arxiv-2608.28968/) | 2026-09-01 | 39 |
+| [Balancing Privacy, Utility, and Safety in LLM Alignment through Preference Optimization](../../papers/arxiv-2608.30141/) | 2026-09-01 | 39 |
+| [A.X K2 Technical Report](../../papers/arxiv-2608.30181/) | 2026-09-01 | 39 |
+| [Converse and Collision-Based Achievability for Node Localization with Hybrid Distance-Spectral Graph Positional Encodings](../../papers/arxiv-2608.30152/) | 2026-09-01 | 38 |
+| [ADMM-Q: An Improved Hessian-based Weight Quantizer for Post-Training Quantization of Large Language Models](../../papers/arxiv-2605.11222/) | 2026-09-01 | 38 |
 | [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization](../../papers/arxiv-2608.27513/) | 2026-08-31 | 60 |
 | [A Method for Layer Bit-Width Allocation in LLM Quantization via Performance Maximization Under a Quality-Degradation Constraint](../../papers/arxiv-2608.28003/) | 2026-08-31 | 47 |
 | [Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Validation--Deployment Gap](../../papers/arxiv-2608.27512/) | 2026-08-31 | 42 |

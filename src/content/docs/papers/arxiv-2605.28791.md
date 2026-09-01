@@ -39,7 +39,7 @@ On-policy self-distillation (SD) improves LLM reasoning by using teacher-side pr
 ## 元数据
 
 - 作者：Jiazhen Huang, Xiao Chen, Xiao Luo, Yong Dai, Senkang Hu, Yuzhi Zhao
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-26；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2608.29327",
+  "title": "When to Adapt: Conditional Memory Adapters for Retention-Preserving Domain Specialization",
+  "abstract": "Large language models deployed in specialized domains must improve in-domain performance without sacrificing general capabilities. Existing parameter-efficient fine-tuning methods are typically always on: their learned perturbations are applied to every input, which can degrade out-of-domain (OOD) performance. We propose Engram Adapter, a framework that repurposes pretraining-time conditional memory as a post-hoc adapter for frozen LLMs. It uses multi-channel matching over local n-gram patterns with explicit occupancy tracking as a lightweight selectivity prior, making residual injection more likely on in-domain inputs while a learned scalar gate suppresses incoherent OOD retrievals. We evaluate on Qwen3-4B and Qwen3-8B with AG-News and MedMCQA as adaptation tasks and OOD benchmarks spanning reasoning, translation, code generation, and legal reasoning. Engram Adapter improves in-domain accuracy while preserving 99.4%--100.1% of average OOD performance; on LegalBench it slightly exceeds the frozen base model on average, whereas comparable always-on baselines degrade sharply. Mechanistic analyses show that although OOD activations are non-zero, gate and projection attenuation reduce residuals to approximately 0.08% of hidden-state norm, yielding small KL drift and negligible accuracy change. These results suggest conditional activation is a promising route toward modular, retention-preserving domain specialization over frozen backbones.",
+  "url": "https://arxiv.org/abs/2608.29327",
+  "pdf_url": "https://arxiv.org/pdf/2608.29327",
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "authors": [
+    "Jiayu Hou",
+    "Lei Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models deployed in specialized domains must improve in-domain performance without sacrificing general capabilities.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-01T04:41:13+00:00",
+  "last_seen": "2026-09-01T04:41:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.29327",
+      "url": "https://arxiv.org/abs/2608.29327"
+    }
+  ]
+}

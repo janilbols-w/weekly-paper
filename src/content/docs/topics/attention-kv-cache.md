@@ -5,10 +5,19 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **60** 篇。
+累计收录 **69** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DIP: Dynamic In-Context Planner For Diffusion Language Models](../../papers/arxiv-2601.03199/) | 2026-09-01 | 52 |
+| [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](../../papers/arxiv-2608.30252/) | 2026-09-01 | 50 |
+| [GRKV: Global Regression for Training-Free KV Cache Compression in Long-Context LLMs](../../papers/arxiv-2605.31105/) | 2026-09-01 | 48 |
+| [Tail-Replay: Escaping the Curse of Linear Attention in Prefix Caching for Hybrid LLMs](../../papers/arxiv-2608.30310/) | 2026-09-01 | 45 |
+| [Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compression Masks Remove Answer Evidence](../../papers/arxiv-2608.29934/) | 2026-09-01 | 44 |
+| [Prefilling-dLLM: Predictive Prefilling for Long-Context Inference in Diffusion Language Models](../../papers/arxiv-2606.10537/) | 2026-09-01 | 43 |
+| [CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration](../../papers/arxiv-2608.30295/) | 2026-09-01 | 43 |
+| [A Universal Context-Reuse Layer for Cross-Model KV Sharing](../../papers/arxiv-2608.30963/) | 2026-09-01 | 40 |
+| [SALT: Salience-Aware Lexical Trie for Long-Context Compression](../../papers/arxiv-2607.17486/) | 2026-09-01 | 39 |
 | [Speculative Probing: LLM Monitoring at Speculative-Decoding Cost](../../papers/arxiv-2608.28099/) | 2026-08-31 | 38 |
 | [NestedKV: Nested Memory Routing for Long-Context KV Cache Compression](../../papers/arxiv-2605.26678/) | 2026-08-28 | 39 |
 | [From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression](../../papers/arxiv-2606.02559/) | 2026-08-27 | 47 |

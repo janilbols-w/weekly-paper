@@ -5,10 +5,29 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **182** 篇。
+累计收录 **201** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation](../../papers/arxiv-2608.29588/) | 2026-09-01 | 51 |
+| [World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning](../../papers/arxiv-2606.03603/) | 2026-09-01 | 47 |
+| [Masked Distillation: Internalizing the Chain-of-Thought in Language Models](../../papers/arxiv-2607.22629/) | 2026-09-01 | 47 |
+| [AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models](../../papers/arxiv-2608.29208/) | 2026-09-01 | 47 |
+| [OISD: On-Policy Internal Self-Distillation of Language Models](../../papers/arxiv-2605.29089/) | 2026-09-01 | 46 |
+| [Locality-Aware Redundancy Pruning for LLM Depth Compression](../../papers/arxiv-2605.27786/) | 2026-09-01 | 46 |
+| [An Efficient Sparse Fine-Tuning with Low Quantization Error via Neural Network Pruning](../../papers/arxiv-2502.11439/) | 2026-09-01 | 46 |
+| [ACTD: Anchor-Based Cross-Tokenizer Distillation with Residual Regularization](../../papers/arxiv-2608.29662/) | 2026-09-01 | 44 |
+| [MOONSHOT : A Framework for Multi-Objective Pruning of Vision and Large Language Models](../../papers/arxiv-2604.13287/) | 2026-09-01 | 43 |
+| [B$^3$-PWL: GPU-Batched Branch-and-Bound for Piecewise-Linear Optimization with SOS2 Constraints](../../papers/arxiv-2608.28988/) | 2026-09-01 | 43 |
+| [Generalist Graph Anomaly Detection via Prototype-Based Distillation](../../papers/arxiv-2605.26857/) | 2026-09-01 | 42 |
+| [Spectral Analysis for Sparse Matrix Computation: Insights and Potential](../../papers/arxiv-2608.29362/) | 2026-09-01 | 41 |
+| [FocusAgent: Simple Yet Effective Ways of Trimming the Large Context of Web Agents](../../papers/arxiv-2510.03204/) | 2026-09-01 | 41 |
+| [Stratified Consistency Distillation for Natural Language Formalization](../../papers/arxiv-2608.30258/) | 2026-09-01 | 40 |
+| [NanoVDR: Distilling a 2B Vision-Language Retriever into a 70M Text-Only Encoder for Visual Document Retrieval](../../papers/arxiv-2603.12824/) | 2026-09-01 | 40 |
+| [LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering](../../papers/arxiv-2608.31102/) | 2026-09-01 | 40 |
+| [Extracting Small Translation Specialists from LLMs by Aggressively Pruning Experts](../../papers/arxiv-2605.28042/) | 2026-09-01 | 40 |
+| [Watch your steps: Dormant Adversarial Behaviors that Activate upon LLM Finetuning](../../papers/arxiv-2505.16567/) | 2026-09-01 | 38 |
+| [PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents](../../papers/arxiv-2608.30760/) | 2026-09-01 | 38 |
 | [PRISM: Self-Pruning Intrinsic Selection Method for Training-Free Multimodal Data Selection](../../papers/arxiv-2502.12119/) | 2026-08-31 | 51 |
 | [TokenPilot: Cache-Efficient Context Management for LLM Agents](../../papers/arxiv-2606.17016/) | 2026-08-31 | 45 |
 | [Self-Evaluation Is Already There: Eliciting Latent Judge Calibration in Base LLMs with Minimal Data](../../papers/arxiv-2606.05122/) | 2026-08-31 | 44 |
