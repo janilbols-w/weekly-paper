@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **19** 篇。
+累计收录 **21** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LLM Inference on IMC-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism](../../papers/arxiv-2609.00857/) | 2026-09-02 | 44 |
+| [Recent Developments in Transformer Inference Deployment on FPGA Platforms: A Survey](../../papers/arxiv-2609.01212/) | 2026-09-02 | 38 |
 | [GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon](../../papers/arxiv-2608.28667/) | 2026-09-01 | 51 |
 | [ITP-STDP: A Hardware-Efficient Intrinsic-Timing Power-of-Two Synaptic Learning Engine for On-Chip SNNs](../../papers/arxiv-2606.06159/) | 2026-09-01 | 42 |
 | [Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems](../../papers/arxiv-2608.28160/) | 2026-08-31 | 45 |

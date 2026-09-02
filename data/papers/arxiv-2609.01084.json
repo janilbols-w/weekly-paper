@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.01084",
+  "title": "Hardware Acceleration of Block-Diffusion LLM for Edge Devices",
+  "abstract": "Single-stream (batch-one) edge inference cannot amortize weight traffic across requests. Full-attention diffusion LLMs recompute the entire sequence at every step; native block diffusion makes completed blocks immutable and exactly cacheable, yet refinement still streams prefix KV and FFN weights. We co-design WIFiV-LPDDR, a wide-I/O LPDDR system for precision-tagged reads, BRQ-KV for a canonical low-rank-plus-INT8-residual prefix with query-dependent per-entry precision, and DAT-FFN for drift-mapped canonical replacement, adjacent-stage-corrected low-bit delta, or cached-state carry while keeping live activations unquantized. Both map to an input-stationary mixed-precision systolic array. For the evaluated 1.5B/7B models on modeled Jetson-class platforms, the full stack provides arithmetic-mean energy-reduction factors of 3.79x/3.96x and arithmetic-mean latency speedups of 2.88x/4.44x at the reported DAT-FFN settings; every corresponding compressed model-benchmark score drops by less than one absolute percentage point from its baseline.",
+  "url": "https://arxiv.org/abs/2609.01084",
+  "pdf_url": "https://arxiv.org/pdf/2609.01084",
+  "published": "2026-09-02",
+  "updated": "2026-09-02",
+  "authors": [
+    "Wei-Hsing Huang",
+    "Kiseok Lee",
+    "Ming-Yen Lee",
+    "Weiyu Sun",
+    "Cheng-Jhih Shih",
+    "Gayatri Tanksali",
+    "Arpit Khandelwal",
+    "Pin-Jun Chen",
+    "Yingyan Celine Lin",
+    "Shimeng Yu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "compressed model"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: compressed model",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Single-stream (batch-one) edge inference cannot amortize weight traffic across requests.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-02T04:42:03+00:00",
+  "last_seen": "2026-09-02T04:42:03+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.01084",
+      "url": "https://arxiv.org/abs/2609.01084"
+    }
+  ]
+}

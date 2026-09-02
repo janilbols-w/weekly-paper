@@ -39,7 +39,7 @@ Root-of-trust (RoT) authentication verifies a DNN model at load time, but weight
 ## 元数据
 
 - 作者：Ruichen Qi, Xinting Jiang, Ema Dimitrova, Junyi Luo, Quan Cheng, Mehdi Saligane
-- 发布：2026-08-26；更新：2026-08-28
+- 发布：2026-08-26；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

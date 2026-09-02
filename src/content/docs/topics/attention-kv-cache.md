@@ -5,10 +5,15 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **69** 篇。
+累计收录 **74** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KV Cache Offloading for Context-Intensive Tasks](../../papers/arxiv-2604.08426/) | 2026-09-02 | 48 |
+| [S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring](../../papers/arxiv-2607.27913/) | 2026-09-02 | 44 |
+| [SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers](../../papers/arxiv-2609.01343/) | 2026-09-02 | 40 |
+| [Latent Recurrent Transformer: Architecture Exploration, Training Strategies, and Scaling Behavior](../../papers/arxiv-2605.26797/) | 2026-09-02 | 40 |
+| [Enabling KV Caching of Shared Prefix for Diffusion Language Models](../../papers/arxiv-2606.07571/) | 2026-09-02 | 40 |
 | [DIP: Dynamic In-Context Planner For Diffusion Language Models](../../papers/arxiv-2601.03199/) | 2026-09-01 | 52 |
 | [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](../../papers/arxiv-2608.30252/) | 2026-09-01 | 50 |
 | [GRKV: Global Regression for Training-Free KV Cache Compression in Long-Context LLMs](../../papers/arxiv-2605.31105/) | 2026-09-01 | 48 |

@@ -5,10 +5,20 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **201** 篇。
+累计收录 **211** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Token is Worth over 1,000 Tokens: Efficient Knowledge Distillation through Low-Rank Clone](../../papers/arxiv-2505.12781/) | 2026-09-02 | 53 |
+| [Faster Than Flash: Exploiting Attention Sparsity for Efficient Long-Context Decoding](../../papers/arxiv-2609.00097/) | 2026-09-02 | 52 |
+| [SinkPruner: Sink-Free Visual Token Pruning for Multimodal Large Language Models](../../papers/arxiv-2609.01004/) | 2026-09-02 | 48 |
+| [Hardware Acceleration of Block-Diffusion LLM for Edge Devices](../../papers/arxiv-2609.01084/) | 2026-09-02 | 47 |
+| [Is Human Annotation Necessary? Iterative MBR Distillation for Error Span Detection in Machine Translation](../../papers/arxiv-2603.12983/) | 2026-09-02 | 46 |
+| [QTEA: Ternary LLMs with Sparse Residual Salient Weight and By-Column Optimization](../../papers/arxiv-2609.00224/) | 2026-09-02 | 43 |
+| [Knowledge Distillation During Mid-Training Favors Reasoning over Factual Recall](../../papers/arxiv-2609.01532/) | 2026-09-02 | 42 |
+| [Is Knowledge Distillation Actually Greener? A Case Study in Machine Translation](../../papers/arxiv-2602.09691/) | 2026-09-02 | 40 |
+| [Instella-MoE Technical Report](../../papers/arxiv-2609.00791/) | 2026-09-02 | 40 |
+| [SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task](../../papers/arxiv-2609.00654/) | 2026-09-02 | 39 |
 | [Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation](../../papers/arxiv-2608.29588/) | 2026-09-01 | 51 |
 | [World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning](../../papers/arxiv-2606.03603/) | 2026-09-01 | 47 |
 | [Masked Distillation: Internalizing the Chain-of-Thought in Language Models](../../papers/arxiv-2607.22629/) | 2026-09-01 | 47 |

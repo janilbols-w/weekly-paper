@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2605.26797",
+  "title": "Latent Recurrent Transformer: Architecture Exploration, Training Strategies, and Scaling Behavior",
+  "abstract": "We study Latent Recurrent Transformer (LRT), a lightweight augmentation of autoregressive transformers that reuses a high-level source-layer hidden state from the previous token as recurrent memory for the next token. Because this state is already computed during ordinary decoding, LRT introduces a cross-token, cross-layer latent pathway while preserving the standard attention mechanism, KV-cache interface, and one model forward per generated token. To pretrain this recurrence without sequentially unrolling the full sequence, we introduce interleaved parallel training: one full-sequence initialization forward constructs a shared buffer, followed by sequential refinement of disjoint position subsets with parallel computation within each subset. This provides every token with recurrent-memory-aware supervision at approximately 2x ideal token compute. Across 1.3B- and 2.1B-parameter nanochat-style backbones and a wide range of training budgets, LRT improves both BPB and CORE under matched effective compute. Additionally, LRT outperforms two-forward PonderLM-2 and matches a three-loop Transformer in BPB, while retaining one-forward-per-token decoding with 9% latency overhead over the standard Transformer.",
+  "url": "https://arxiv.org/abs/2605.26797",
+  "pdf_url": "https://arxiv.org/pdf/2605.26797",
+  "published": "2026-09-02",
+  "updated": "2026-09-02",
+  "authors": [
+    "Zeyi Huang",
+    "Xuehai He",
+    "LiLiang Ren",
+    "Yiping Wang",
+    "Baolin Peng",
+    "Hao Cheng",
+    "Shuohang Wang",
+    "Pengcheng He",
+    "Jianfeng Gao",
+    "Yong Jae Lee",
+    "Yelong Shen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We study Latent Recurrent Transformer (LRT), a lightweight augmentation of autoregressive transformers that reuses a high-level source-layer hidden state from the previous token as recurrent memory for the next token.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-02T04:42:03+00:00",
+  "last_seen": "2026-09-02T04:42:03+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.26797",
+      "url": "https://arxiv.org/abs/2605.26797"
+    }
+  ]
+}

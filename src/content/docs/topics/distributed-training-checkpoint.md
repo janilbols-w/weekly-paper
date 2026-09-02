@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **38** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AgentProv: Auditing Agentic LLM API Providers via Tool-use Policy Probes](../../papers/arxiv-2609.00052/) | 2026-09-02 | 38 |
 | [Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment](../../papers/arxiv-2608.30633/) | 2026-09-01 | 42 |
 | [Bergson: An Open Source Library for Data Attribution](../../papers/arxiv-2606.11660/) | 2026-09-01 | 42 |
 | [TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models](../../papers/arxiv-2608.29999/) | 2026-09-01 | 41 |

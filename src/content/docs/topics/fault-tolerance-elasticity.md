@@ -5,10 +5,12 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **8** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Manifold-Aware General Coded Computing for Straggler-Resilient Distributed Computing](../../papers/arxiv-2609.00552/) | 2026-09-02 | 43 |
+| [FlexP-SFT: A Flexible Aggregation-Free Framework for On-Device Personalized Split Federated Fine-Tuning of LLMs](../../papers/arxiv-2508.10349/) | 2026-09-02 | 43 |
 | [TrainSDC: Characterizing and Mitigating Silent Data Corruption in Large Language Model Training](../../papers/arxiv-2608.30769/) | 2026-09-01 | 40 |
 | [Learning-Theoretic Foundation for General Coded Computing: The Straggler Setting](../../papers/arxiv-2608.28910/) | 2026-09-01 | 40 |
 | [Themis: Efficient Sparse Model Training Through Fully Sharded Sparse Data Parallelism](../../papers/arxiv-2502.02581/) | 2026-08-24 | 43 |

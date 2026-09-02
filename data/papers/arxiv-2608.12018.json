@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2608.12018",
+  "title": "Unified Multi-Dialectal Neural Machine Translation for Bangla Using the Dwadash Benchmark Corpus",
+  "abstract": "Neural Machine Translation (NMT) and Large Language Models (LLMs) excel at cross-lingual tasks but often fail to capture intra-lingual morphological variation, marginalizing dialectal speakers. In Bangla, existing translation frameworks commonly rely on Standard Colloquial Bangla (SCB) as an intermediate pivot, which can compound errors and reduce cross-dialectal nuance. To address this gap, we introduce a unified, multi-directional NMT system for direct translation between SCB and eleven regional variants. We first review prior dialectal NLP resources to identify existing technological gaps. As a foundational contribution, we construct and release a large multi-dialect parallel corpus for Bangla, comprising 14,562 aligned rows and 51,541 non-null sentence pairs through the integration of seven prior datasets and native-speaker-verified manual augmentation. Using this corpus, we benchmark state-of-the-art sequence-to-sequence architectures with parameter-efficient Weight-Decomposed Low-Rank Adaptation (DoRA). Results show that deep monolingual pre-training is more effective than large multilingual capacity for this task. The compact BanglaT5 model outperforms NLLB-200 and mBART-50 by up to 13.96 BLEU, achieving 29.26 BLEU, 57.26 chrF++, and 49.68 METEOR. A dataset scaling study shows diminishing returns beyond 3,000 parallel pairs and indicates that linguistic proximity to Standard Bangla is more important than raw data volume for translation quality. Finally, we deploy the optimized model as an INT8-quantized web application, providing a scalable, open-source framework for inclusive language technology and equitable digital access.",
+  "url": "https://arxiv.org/abs/2608.12018",
+  "pdf_url": "https://arxiv.org/pdf/2608.12018",
+  "published": "2026-09-02",
+  "updated": "2026-09-02",
+  "authors": [
+    "Rakib Ullah",
+    "Md. Ruhul Islam",
+    "Tanbir Ahmed",
+    "Nayan Kumar Nath"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int8",
+    "quantized"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int8, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Neural Machine Translation (NMT) and Large Language Models (LLMs) excel at cross-lingual tasks but often fail to capture intra-lingual morphological variation, marginalizing dialectal speakers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-02T04:42:03+00:00",
+  "last_seen": "2026-09-02T04:42:03+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.12018",
+      "url": "https://arxiv.org/abs/2608.12018"
+    }
+  ]
+}

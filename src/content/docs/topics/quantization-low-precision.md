@@ -5,10 +5,16 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **105** 篇。
+累计收录 **110** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-09-02 | 46 |
+| [Deterministic LLM Inference Across GPU Kernels: Power-of-Two INT8 Quantization Scales and the Limits of Tolerance-Based Conformance](../../papers/arxiv-2609.00363/) | 2026-09-02 | 45 |
+| [DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments](../../papers/arxiv-2609.00442/) | 2026-09-02 | 44 |
+| [Unified Multi-Dialectal Neural Machine Translation for Bangla Using the Dwadash Benchmark Corpus](../../papers/arxiv-2608.12018/) | 2026-09-02 | 40 |
+| [The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally](../../papers/arxiv-2609.01587/) | 2026-09-02 | 40 |
+| [REAL-Q: E2E LLM Quantization via Dynamic Gradient Descent](../../papers/arxiv-2609.00049/) | 2026-09-02 | 38 |
 | [Uncertainty Makes It Stable: Curiosity-Driven Quantized Mixture-of-Experts](../../papers/arxiv-2511.11743/) | 2026-09-01 | 53 |
 | [Investigating Social Bias Changes in Quantized Language Models](../../papers/arxiv-2602.06181/) | 2026-09-01 | 52 |
 | [Budget-Aware Compression Pipeline for Single-GPU LLM Inference: Methods, Trade-offs, and Coupling Effects](../../papers/arxiv-2608.30076/) | 2026-09-01 | 47 |
@@ -34,7 +40,7 @@ description: "Quantization & Low Precision"
 | [StoSignSGD: Unbiased Structural Stochasticity Fixes SignSGD for Training Large Language Models](../../papers/arxiv-2604.15416/) | 2026-08-27 | 45 |
 | [MODE: Modality-Decomposed Expert-Level Mixed-Precision Quantization for MoE Multimodal LLMs](../../papers/arxiv-2606.17118/) | 2026-08-27 | 45 |
 | [When Personality Meets Quantization: A Layer-wise MBTI Analysis of Quantized LLMs](../../papers/arxiv-2608.25977/) | 2026-08-26 | 48 |
-| [QABBA: Error-Guaranteed Symbolic Time-Series Compression via Integer-Quantized Aggregation](../../papers/arxiv-2411.15209/) | 2026-08-26 | 48 |
+| [QABBA: Symbolic Time-Series Compression via Integer-Quantized Aggregation](../../papers/arxiv-2411.15209/) | 2026-08-26 | 48 |
 | [Transformer Accelerator (TFA): A Macro-Op INT8 Hardware Chip for Transformer Inference and Machine Translation](../../papers/arxiv-2608.23582/) | 2026-08-26 | 47 |
 | [SILK: Closing the Time-of-Check-to-Time-of-Use Gap in RoT-Protected AI Systems](../../papers/arxiv-2608.26402/) | 2026-08-26 | 40 |
 | [Can Large Language Models Still Explain Themselves? Investigating the Impact of Quantization on Self-Explanations](../../papers/arxiv-2601.00282/) | 2026-08-26 | 39 |
@@ -51,7 +57,6 @@ description: "Quantization & Low Precision"
 | [TSWAP: A Multilingual Retrieval-Augmented Thai Wellness Advisor](../../papers/arxiv-2608.22917/) | 2026-08-24 | 39 |
 | [Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs](../../papers/arxiv-2608.21134/) | 2026-08-24 | 39 |
 | [Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models](../../papers/arxiv-2608.20988/) | 2026-08-24 | 39 |
-| [Beyond Dense Adam States: Adaptive Log-Space Quantization for Memory-Efficient Optimizers](../../papers/arxiv-2608.22322/) | 2026-08-23 | 57 |
 | [What actually runs: a measurement study of language model placement and decode speed on the Apple Neural Engine](../../papers/arxiv-2608.22110/) | 2026-08-22 | 48 |
 | [RequestRouter: Request-Boundary Routing for Efficient Single-GPU LLM Inference](../../papers/arxiv-2605.23057/) | 2026-08-21 | 53 |
 | [GQ-FSL: Green Quantized Federated Split Learning Framework for Wireless Edge Networks](../../papers/arxiv-2607.29659/) | 2026-08-20 | 45 |

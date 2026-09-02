@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **45** 篇。
+累计收录 **47** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation](../../papers/arxiv-2609.01601/) | 2026-09-02 | 49 |
+| [Predicting Program Exit Code with LLMs and Programming Language Semantics](../../papers/arxiv-2609.00579/) | 2026-09-02 | 42 |
 | [QAQ: Bidirectional Semantic Coherence for Selecting High-Quality Synthetic Code Instructions](../../papers/arxiv-2603.12165/) | 2026-09-01 | 48 |
 | [Evaluating Tiny Recursive Models Across Training for Code Generation](../../papers/arxiv-2608.29376/) | 2026-09-01 | 43 |
 | [Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](../../papers/arxiv-2606.15932/) | 2026-09-01 | 43 |

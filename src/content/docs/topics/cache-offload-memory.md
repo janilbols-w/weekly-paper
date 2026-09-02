@@ -5,10 +5,14 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **45** 篇。
+累计收录 **49** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [mzCache: On-Device LLM Memory Management under Multitasking](../../papers/arxiv-2609.01338/) | 2026-09-02 | 43 |
+| [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](../../papers/arxiv-2609.01457/) | 2026-09-02 | 41 |
+| [Beyond Static Summarization: Proactive Memory Extraction for LLM Agents](../../papers/arxiv-2601.04463/) | 2026-09-02 | 40 |
+| [Learning to Remember: End-to-End Training of Memory Agents for Long-Context Reasoning](../../papers/arxiv-2602.18493/) | 2026-09-02 | 39 |
 | [Hindsight Memory-PRM: Supervising Memory Management with Auditable Hindsight Credit](../../papers/arxiv-2608.29605/) | 2026-09-01 | 42 |
 | [Deploying DeepSeek 175B Locally on a Single Consumer-Grade RTX 4060 Laptop with 32GB RAM for 200k-Scale Protein-Ligand Virtual Screening](../../papers/arxiv-2608.30877/) | 2026-09-01 | 41 |
 | [A-MADiff: Attention-Guided Multi-Agent DRL with Diffusion Policies for Memory-Aware Task Orchestration in Mobile AIGC Networks](../../papers/arxiv-2608.29255/) | 2026-09-01 | 41 |

@@ -5,10 +5,16 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **31** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Tokens: Semantic-Aware Speculative Decoding for Efficient Inference by Probing Internal States](../../papers/arxiv-2602.03708/) | 2026-09-02 | 50 |
+| [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-09-02 | 49 |
+| [MineDraft: A Framework for Batch Parallel Speculative Decoding](../../papers/arxiv-2603.18016/) | 2026-09-02 | 45 |
+| [SFAD: Speculative Factuality-Aware Decoding](../../papers/arxiv-2609.00796/) | 2026-09-02 | 41 |
+| [OUTLETS: Output-Length Prediction from Speculative Decoding Backbones](../../papers/arxiv-2609.01068/) | 2026-09-02 | 41 |
+| [Reliability Challenges in Diffusion Vision-Language Models](../../papers/arxiv-2609.01318/) | 2026-09-02 | 39 |
 | [Verification-Aware Training for Speculative Decoding](../../papers/arxiv-2608.30135/) | 2026-09-01 | 49 |
 | [SpecPV: Improving Self-Speculative Decoding for Long-Context Generation via Partial Verification](../../papers/arxiv-2512.02337/) | 2026-09-01 | 48 |
 | [Entropy-Aware Token Rejection for Improving Speculative Decoding](../../papers/arxiv-2512.23765/) | 2026-09-01 | 48 |

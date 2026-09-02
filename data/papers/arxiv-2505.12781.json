@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2505.12781",
+  "title": "A Token is Worth over 1,000 Tokens: Efficient Knowledge Distillation through Low-Rank Clone",
+  "abstract": "Training high-performing Small Language Models (SLMs) remains costly, even with knowledge distillation and pruning from larger teacher models. Existing work often faces three key challenges: (1) information loss from hard pruning, (2) inefficient alignment of representations, and (3) underutilization of informative activations, particularly from Feed-Forward Networks (FFNs). To address these challenges, we introduce Low-Rank Clone (LRC), an efficient pre-training method that constructs SLMs aspiring to behavioral equivalence with strong teacher models. LRC trains a set of low-rank projection matrices that jointly enable soft pruning by compressing teacher weights, and activation clone by aligning student activations, including FFN signals, with those of the teacher. This unified design maximizes knowledge transfer while removing the need for explicit alignment modules. Extensive experiments with open-source teachers (e.g., Llama-3.2-3B-Instruct, Qwen2.5-3B/7B-Instruct) show that LRC matches or surpasses state-of-the-art models trained on trillions of tokens--while using only 20B tokens, achieving over 1,000x training efficiency. Our codes and model checkpoints are available at https://github.com/CURRENTF/LowRankClone and https://huggingface.co/collections/JitaiHao/low-rank-clone-lrc-6828389e96a93f1d4219dfaf.",
+  "url": "https://arxiv.org/abs/2505.12781",
+  "pdf_url": "https://arxiv.org/pdf/2505.12781",
+  "published": "2026-09-02",
+  "updated": "2026-09-02",
+  "authors": [
+    "Jitai Hao",
+    "Qiang Huang",
+    "Hao Liu",
+    "Xinyan Xiao",
+    "Zhaochun Ren",
+    "Jun Yu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/CURRENTF/LowRankClone",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation",
+    "pruning"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation, pruning",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Training high-performing Small Language Models (SLMs) remains costly, even with knowledge distillation and pruning from larger teacher models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-02T04:42:03+00:00",
+  "last_seen": "2026-09-02T04:42:03+00:00",
+  "featured_weeks": [
+    "2026-W36"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2505.12781",
+      "url": "https://arxiv.org/abs/2505.12781"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2609.01024",
+  "title": "PCoMoE: Shifting MoE Inference from Monolithic Expert Selection to Fine-Grained Path Composition",
+  "abstract": "Mixture-of-Experts (MoE) architectures scale Large Language Model (LLM) capacity efficiently by activating a sparse subset of experts per token. However, modern MoE inference remains heavily constrained by the rigid, whole-expert abstraction. Existing frameworks manage, schedule, or prune experts as atomic execution units, which fixes the optimization boundary too early and leaves fine-grained intra-expert computational redundancy underexplored. In this work, we present PCoMoE, a path-compositional execution framework that shifts MoE inference from coarse-grained expert selection to fine-grained path composition. PCoMoE incorporates a path-level formulation of expert computation, a compatibility-aware layer-wise pruning strategy to suppress low-value path combinations, and a hardware-friendly execution engine to exploit reusable sub-expert structures under strictly bounded overheads. Experimental results demonstrate that PCoMoE achieves up to a 1.31x end-to-end inference speedup while enhancing model accuracy by 10%. The code is available at https://github.com/gzyyy0/PCoMoE",
+  "url": "https://arxiv.org/abs/2609.01024",
+  "pdf_url": "https://arxiv.org/pdf/2609.01024",
+  "published": "2026-09-02",
+  "updated": "2026-09-02",
+  "authors": [
+    "Ziyan Gan",
+    "Fangxin Liu",
+    "Chenyang Guan",
+    "Junjie Wang",
+    "Ning Yang",
+    "Haomin Li",
+    "Xiang Li",
+    "Siran Yang",
+    "Jiamang Wang",
+    "Lin Qu",
+    "Zongwu Wang",
+    "Li Jiang",
+    "Haibing Guan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/gzyyy0/PCoMoE",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "moe-efficiency",
+    "leaf": "MoE Efficiency",
+    "leaf_zh": "MoE 路由与专家优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "moe inference"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: moe inference",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) architectures scale Large Language Model (LLM) capacity efficiently by activating a sparse subset of experts per token.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-02T04:42:03+00:00",
+  "last_seen": "2026-09-02T04:42:03+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.01024",
+      "url": "https://arxiv.org/abs/2609.01024"
+    }
+  ]
+}
