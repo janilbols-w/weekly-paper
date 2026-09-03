@@ -5,10 +5,23 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **211** 篇。
+累计收录 **224** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](../../papers/arxiv-2609.02253/) | 2026-09-03 | 47 |
+| [OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation](../../papers/arxiv-2605.29829/) | 2026-09-03 | 46 |
+| [Shiva-DiT: Residual-Based Differentiable Top-$k$ Selection for Efficient Diffusion Transformers](../../papers/arxiv-2602.05605/) | 2026-09-03 | 44 |
+| [On-Policy Distillation Meets Off-Policy GRPO: Training Compact Instruction-Following Rerankers](../../papers/arxiv-2609.01947/) | 2026-09-03 | 43 |
+| [Learn from Whoever Is Right: Answer-Verified Multi-Teacher Distillation for Multi-Domain LLMs](../../papers/arxiv-2609.02548/) | 2026-09-03 | 42 |
+| [SpCCL: A Sparsity-Aware Collective Communication Library for GPU Platforms](../../papers/arxiv-2607.04676/) | 2026-09-03 | 40 |
+| [SEAL: Reinforcing Global Safety in Mixture-of-Experts through Shared Expert ALignment](../../papers/arxiv-2609.02293/) | 2026-09-03 | 40 |
+| [MASkills: Continual Skills Optimization for Multi-Agent LLM Systems](../../papers/arxiv-2609.02094/) | 2026-09-03 | 40 |
+| [GONE: Structural Knowledge Unlearning via Neighborhood-Expanded Distribution Shaping](../../papers/arxiv-2603.12275/) | 2026-09-03 | 39 |
+| [EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction](../../papers/arxiv-2609.02783/) | 2026-09-03 | 39 |
+| [Debias-SparseGPT: Bias-Aware Pruning for Large Language Models](../../papers/arxiv-2609.02496/) | 2026-09-03 | 39 |
+| [SHARD: Safe and Helpful Alignment via Self-Reframing Distillation](../../papers/arxiv-2606.15517/) | 2026-09-03 | 38 |
+| [DLM-One: Diffusion Language Models for One-Step Sequence Generation](../../papers/arxiv-2506.00290/) | 2026-09-03 | 38 |
 | [A Token is Worth over 1,000 Tokens: Efficient Knowledge Distillation through Low-Rank Clone](../../papers/arxiv-2505.12781/) | 2026-09-02 | 53 |
 | [Faster Than Flash: Exploiting Attention Sparsity for Efficient Long-Context Decoding](../../papers/arxiv-2609.00097/) | 2026-09-02 | 52 |
 | [SinkPruner: Sink-Free Visual Token Pruning for Multimodal Large Language Models](../../papers/arxiv-2609.01004/) | 2026-09-02 | 48 |

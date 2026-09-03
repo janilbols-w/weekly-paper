@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **37** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [WhiFlash: Accelerating Speculative Decoding with Token-Level Cross-Paradigm Routing](../../papers/arxiv-2606.07710/) | 2026-09-03 | 45 |
+| [AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference](../../papers/arxiv-2609.02514/) | 2026-09-03 | 42 |
 | [Beyond Tokens: Semantic-Aware Speculative Decoding for Efficient Inference by Probing Internal States](../../papers/arxiv-2602.03708/) | 2026-09-02 | 50 |
 | [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-09-02 | 49 |
 | [MineDraft: A Framework for Batch Parallel Speculative Decoding](../../papers/arxiv-2603.18016/) | 2026-09-02 | 45 |

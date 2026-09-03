@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2607.04676",
+  "title": "SpCCL: A Sparsity-Aware Collective Communication Library for GPU Platforms",
+  "abstract": "Collective communication is essential to high performance computing and machine learning workloads, yet libraries such as NCCL do not exploit sparsity in message payloads. Sending only nonzero values can reduce network traffic, but explicitly handling sparsity introduces challenges such as compression and decompression overheads. We address these challenges with sparsity-exploiting versions of all-gather, reduce-scatter, and all-reduce collectives. Our implementations use a new bitvector-based format, Pici, designed for low space overhead and fast GPU-based compression and decompression. Further, our collective algorithms adapt to the degree of sparsity in data, modifying data representations during the course of the collective. At 99% input sparsity, our collectives achieve up to 5.25$\\times$, 2.5$\\times$, and 2.66$\\times$ speedups over NCCL for all-gather, reduce-scatter, and all-reduce, respectively. Integrating our collectives into a representative deep learning application, we achieve a 26% end-to-end speedup.",
+  "url": "https://arxiv.org/abs/2607.04676",
+  "pdf_url": "https://arxiv.org/pdf/2607.04676",
+  "published": "2026-09-03",
+  "updated": "2026-09-03",
+  "authors": [
+    "Lannie Dalton Hough",
+    "Emir Gencer",
+    "Hoffmann Muki",
+    "Abhinav Bhatele"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [
+    "parallelism-communication"
+  ],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Collective communication is essential to high performance computing and machine learning workloads, yet libraries such as NCCL do not exploit sparsity in message payloads.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-03T05:28:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.04676",
+      "url": "https://arxiv.org/abs/2607.04676"
+    }
+  ]
+}

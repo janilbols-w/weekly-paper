@@ -39,7 +39,7 @@ Text-attributed graphs (TAGs) are widely used in many real-world domains, and le
 ## 元数据
 
 - 作者：Yeongho Kim, Yeonje Choi, Kijung Shin
-- 发布：2026-08-26；更新：2026-08-26
+- 发布：2026-08-26；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

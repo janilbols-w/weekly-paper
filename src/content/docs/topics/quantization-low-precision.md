@@ -5,10 +5,12 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **110** 篇。
+累计收录 **112** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Unfolding the Leech Lattice: Fused Multi-Shell Decoding and VRAM Layouts for 2-Bit LLM Weights](../../papers/arxiv-2609.02652/) | 2026-09-03 | 44 |
+| [UE5M3 FP4 Block Scaling for Stable Language Model Pretraining](../../papers/arxiv-2609.02846/) | 2026-09-03 | 42 |
 | [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-09-02 | 46 |
 | [Deterministic LLM Inference Across GPU Kernels: Power-of-Two INT8 Quantization Scales and the Limits of Tolerance-Based Conformance](../../papers/arxiv-2609.00363/) | 2026-09-02 | 45 |
 | [DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments](../../papers/arxiv-2609.00442/) | 2026-09-02 | 44 |

@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **74** 篇。
+累计收录 **77** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding](../../papers/arxiv-2609.02780/) | 2026-09-03 | 44 |
+| [Stream-CQSA: Exact Out-of-Memory Recovery for Attention](../../papers/arxiv-2604.20819/) | 2026-09-03 | 39 |
+| [Multi-Turn LLM Conversations under the Least-Recently-Used Policy: Mean-Field Asymptotics and Hit Ratio Approximation](../../papers/arxiv-2609.02027/) | 2026-09-03 | 38 |
 | [KV Cache Offloading for Context-Intensive Tasks](../../papers/arxiv-2604.08426/) | 2026-09-02 | 48 |
 | [S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring](../../papers/arxiv-2607.27913/) | 2026-09-02 | 44 |
 | [SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers](../../papers/arxiv-2609.01343/) | 2026-09-02 | 40 |

@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **11** 篇。
+累计收录 **12** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GMTRouter: Personalized LLM Router over Multi-turn User Interactions](../../papers/arxiv-2511.08590/) | 2026-09-03 | 48 |
 | [Dynamic Model Routing and Cascading for Efficient LLM Inference: A Survey](../../papers/arxiv-2603.04445/) | 2026-09-01 | 39 |
 | [ABLE: Representing and Mapping LLMs via Attribution-Based Large-model Embedding](../../papers/arxiv-2606.07524/) | 2026-09-01 | 39 |
 | [VPP: Virtual Pipeline Parallelism for Efficient Chunked Prefill in Long-Context LLM Inference](../../papers/arxiv-2608.26523/) | 2026-08-27 | 43 |

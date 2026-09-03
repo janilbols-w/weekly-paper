@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **21** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions](../../papers/arxiv-2609.01948/) | 2026-09-03 | 44 |
+| [How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?](../../papers/arxiv-2609.01798/) | 2026-09-03 | 38 |
 | [LLM Inference on IMC-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism](../../papers/arxiv-2609.00857/) | 2026-09-02 | 44 |
 | [Recent Developments in Transformer Inference Deployment on FPGA Platforms: A Survey](../../papers/arxiv-2609.01212/) | 2026-09-02 | 38 |
 | [GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon](../../papers/arxiv-2608.28667/) | 2026-09-01 | 51 |

@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **39** 篇。
+累计收录 **41** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Post-Training Ternarization of Qwen3-4B Capability, Effective Bit Budget, Storage Compression, and Deployment](../../papers/arxiv-2609.01962/) | 2026-09-03 | 46 |
+| [SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology](../../papers/arxiv-2609.02292/) | 2026-09-03 | 41 |
 | [AgentProv: Auditing Agentic LLM API Providers via Tool-use Policy Probes](../../papers/arxiv-2609.00052/) | 2026-09-02 | 38 |
 | [Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment](../../papers/arxiv-2608.30633/) | 2026-09-01 | 42 |
 | [Bergson: An Open Source Library for Data Attribution](../../papers/arxiv-2606.11660/) | 2026-09-01 | 42 |

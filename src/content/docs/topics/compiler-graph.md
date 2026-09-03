@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **47** 篇。
+累计收录 **49** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](../../papers/arxiv-2609.01971/) | 2026-09-03 | 44 |
+| [CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation](../../papers/arxiv-2609.02774/) | 2026-09-03 | 38 |
 | [Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation](../../papers/arxiv-2609.01601/) | 2026-09-02 | 49 |
 | [Predicting Program Exit Code with LLMs and Programming Language Semantics](../../papers/arxiv-2609.00579/) | 2026-09-02 | 42 |
 | [QAQ: Bidirectional Semantic Coherence for Selecting High-Quality Synthetic Code Instructions](../../papers/arxiv-2603.12165/) | 2026-09-01 | 48 |
