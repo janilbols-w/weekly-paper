@@ -39,7 +39,7 @@ Single-stream (batch-one) edge inference cannot amortize weight traffic across r
 ## 元数据
 
 - 作者：Wei-Hsing Huang, Kiseok Lee, Ming-Yen Lee, Weiyu Sun, Cheng-Jhih Shih, Gayatri Tanksali, Arpit Khandelwal, Pin-Jun Chen, Yingyan Celine Lin, Shimeng Yu
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-01；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

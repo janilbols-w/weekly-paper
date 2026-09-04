@@ -3,7 +3,7 @@ title: "Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compressio
 description: "KV-cache compression reduces LLM inference memory by evicting context tokens, but when the evicted tokens contain answer-bearing evidence, the model may hallucinate instead of recognizing that the compressed context is insufficient."
 ---
 
-**评分：44/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：51/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2608.29934) · [PDF](https://arxiv.org/pdf/2608.29934)
 
@@ -25,21 +25,21 @@ KV-cache compression reduces LLM inference memory by evicting context tokens, bu
 |---|---:|
 | relevance | 12 |
 | novelty | 6 |
-| rigor | 11 |
+| rigor | 13 |
 | practical impact | 10 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: kv-cache
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Mohammadali Khodabandehlou, Bhaskar Krishnamachari
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-30；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/mali-kh/compression-aware-abstention](https://github.com/mali-kh/compression-aware-abstention)
 - 阅读深度：metadata

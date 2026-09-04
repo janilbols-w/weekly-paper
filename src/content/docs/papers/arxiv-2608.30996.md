@@ -39,7 +39,7 @@ Retrieval-augmented generation systems can precompute and store key-value caches
 ## 元数据
 
 - 作者：Atta Ul Asad, Ahsan Bilal, Muhammad Ali, Muhammad Haseeb, Dean F. Hougen
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

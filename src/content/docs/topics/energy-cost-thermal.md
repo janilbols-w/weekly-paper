@@ -5,16 +5,17 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **23** 篇。
+累计收录 **24** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions](../../papers/arxiv-2609.01948/) | 2026-09-03 | 44 |
-| [How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?](../../papers/arxiv-2609.01798/) | 2026-09-03 | 38 |
-| [LLM Inference on IMC-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism](../../papers/arxiv-2609.00857/) | 2026-09-02 | 44 |
-| [Recent Developments in Transformer Inference Deployment on FPGA Platforms: A Survey](../../papers/arxiv-2609.01212/) | 2026-09-02 | 38 |
+| [Para-Pipe: Exploiting Hierarchical Operator Parallelism of ML Computational Graphs on SoCs](../../papers/doi-10.1109-tcad.2025.3568348/) | 2026-09-03 | 43 |
 | [GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon](../../papers/arxiv-2608.28667/) | 2026-09-01 | 51 |
+| [LLM Inference on IMC-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism](../../papers/arxiv-2609.00857/) | 2026-09-01 | 44 |
+| [An Emerging NVM-Based On-Chip Training Architecture with Non-Ideality Mitigation Through Bipolar Weight Distributions](../../papers/arxiv-2609.01948/) | 2026-09-01 | 44 |
 | [ITP-STDP: A Hardware-Efficient Intrinsic-Timing Power-of-Two Synaptic Learning Engine for On-Chip SNNs](../../papers/arxiv-2606.06159/) | 2026-09-01 | 42 |
+| [Recent Developments in Transformer Inference Deployment on FPGA Platforms: A Survey](../../papers/doi-10.1016-j.sysarc.2026.103841/) | 2026-09-01 | 41 |
+| [How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?](../../papers/arxiv-2609.01798/) | 2026-09-01 | 38 |
 | [Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems](../../papers/arxiv-2608.28160/) | 2026-08-31 | 45 |
 | [Faults That Fortify: CNN Adversarial Robustness via GPU Undervolting](../../papers/arxiv-2608.20572/) | 2026-08-24 | 38 |
 | [NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference](../../papers/arxiv-2608.22613/) | 2026-08-23 | 49 |

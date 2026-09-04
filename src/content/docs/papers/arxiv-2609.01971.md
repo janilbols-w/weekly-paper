@@ -39,7 +39,7 @@ AI is rapidly advancing neuroscience, yet many laboratories fail to fully unleas
 ## 元数据
 
 - 作者：Wuche Liu, Yiran Qiao, Linlin Hou, Rui Yang, Shusen Pu, Song Wang, Jing Ma
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

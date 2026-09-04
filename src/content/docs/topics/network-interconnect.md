@@ -9,7 +9,7 @@ description: "Network, RDMA & Interconnect"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [CHIPSMORE: Compute-in-Interconnect and -Memory Chiplets for Multi-Mode Multi-Request LLM Inference Acceleration](../../papers/arxiv-2608.30509/) | 2026-09-01 | 48 |
+| [CHIPSMORE: Compute-in-Interconnect and -Memory Chiplets for Multi-Mode Multi-Request LLM Inference Acceleration](../../papers/arxiv-2608.30509/) | 2026-08-31 | 48 |
 | [Thermal Tuning Overhead in Wafer-Scale Optical Interconnects for LLM MoE Training: A Cross-Layer Analysis and Ferroelectric-Based Mitigation](../../papers/arxiv-2608.24637/) | 2026-08-25 | 43 |
 | [Topology-Aware Data Movement for Disaggregated GPU Inference](../../papers/arxiv-2607.28633/) | 2026-08-10 | 45 |
 | [C2C-Explorer: An Exploration Framework for Chip-to-Chip Interconnect Architectures in LLM Cloud Computing Systems](../../papers/doi-10.1145-3770743.3803909/) | 2026-08-09 | 48 |

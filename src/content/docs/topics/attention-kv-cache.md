@@ -5,28 +5,31 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **77** 篇。
+累计收录 **80** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding](../../papers/arxiv-2609.02780/) | 2026-09-03 | 44 |
+| [Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](../../papers/arxiv-2609.03430/) | 2026-09-03 | 47 |
+| [SGD-KV: Summarization Guided KV Cache Compression](../../papers/arxiv-2609.03235/) | 2026-09-03 | 43 |
 | [Stream-CQSA: Exact Out-of-Memory Recovery for Attention](../../papers/arxiv-2604.20819/) | 2026-09-03 | 39 |
-| [Multi-Turn LLM Conversations under the Least-Recently-Used Policy: Mean-Field Asymptotics and Hit Ratio Approximation](../../papers/arxiv-2609.02027/) | 2026-09-03 | 38 |
+| [Free Pause Tokens](../../papers/arxiv-2609.03807/) | 2026-09-03 | 38 |
 | [KV Cache Offloading for Context-Intensive Tasks](../../papers/arxiv-2604.08426/) | 2026-09-02 | 48 |
+| [ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding](../../papers/arxiv-2609.02780/) | 2026-09-02 | 44 |
 | [S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring](../../papers/arxiv-2607.27913/) | 2026-09-02 | 44 |
-| [SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers](../../papers/arxiv-2609.01343/) | 2026-09-02 | 40 |
 | [Latent Recurrent Transformer: Architecture Exploration, Training Strategies, and Scaling Behavior](../../papers/arxiv-2605.26797/) | 2026-09-02 | 40 |
 | [Enabling KV Caching of Shared Prefix for Diffusion Language Models](../../papers/arxiv-2606.07571/) | 2026-09-02 | 40 |
+| [Multi-Turn LLM Conversations under the Least-Recently-Used Policy: Mean-Field Asymptotics and Hit Ratio Approximation](../../papers/arxiv-2609.02027/) | 2026-09-02 | 38 |
 | [DIP: Dynamic In-Context Planner For Diffusion Language Models](../../papers/arxiv-2601.03199/) | 2026-09-01 | 52 |
-| [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](../../papers/arxiv-2608.30252/) | 2026-09-01 | 50 |
 | [GRKV: Global Regression for Training-Free KV Cache Compression in Long-Context LLMs](../../papers/arxiv-2605.31105/) | 2026-09-01 | 48 |
-| [Tail-Replay: Escaping the Curse of Linear Attention in Prefix Caching for Hybrid LLMs](../../papers/arxiv-2608.30310/) | 2026-09-01 | 45 |
-| [Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compression Masks Remove Answer Evidence](../../papers/arxiv-2608.29934/) | 2026-09-01 | 44 |
 | [Prefilling-dLLM: Predictive Prefilling for Long-Context Inference in Diffusion Language Models](../../papers/arxiv-2606.10537/) | 2026-09-01 | 43 |
-| [CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration](../../papers/arxiv-2608.30295/) | 2026-09-01 | 43 |
-| [A Universal Context-Reuse Layer for Cross-Model KV Sharing](../../papers/arxiv-2608.30963/) | 2026-09-01 | 40 |
+| [SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers](../../papers/arxiv-2609.01343/) | 2026-09-01 | 40 |
 | [SALT: Salience-Aware Lexical Trie for Long-Context Compression](../../papers/arxiv-2607.17486/) | 2026-09-01 | 39 |
+| [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](../../papers/arxiv-2608.30252/) | 2026-08-31 | 50 |
+| [CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration](../../papers/arxiv-2608.30295/) | 2026-08-31 | 46 |
+| [Tail-Replay: Escaping the Curse of Linear Attention in Prefix Caching for Hybrid LLMs](../../papers/arxiv-2608.30310/) | 2026-08-31 | 45 |
+| [A Universal Context-Reuse Layer for Cross-Model KV Sharing](../../papers/arxiv-2608.30963/) | 2026-08-31 | 40 |
 | [Speculative Probing: LLM Monitoring at Speculative-Decoding Cost](../../papers/arxiv-2608.28099/) | 2026-08-31 | 38 |
+| [Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compression Masks Remove Answer Evidence](../../papers/arxiv-2608.29934/) | 2026-08-30 | 51 |
 | [NestedKV: Nested Memory Routing for Long-Context KV Cache Compression](../../papers/arxiv-2605.26678/) | 2026-08-28 | 39 |
 | [From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression](../../papers/arxiv-2606.02559/) | 2026-08-27 | 47 |
 | [A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms](../../papers/arxiv-2607.12550/) | 2026-08-25 | 51 |

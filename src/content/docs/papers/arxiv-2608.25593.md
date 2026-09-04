@@ -39,7 +39,7 @@ Agent capability is not determined by the model alone. The agent harness, encomp
 ## 元数据
 
 - 作者：Guibin Zhang, Leo Lu, Fangzhou Xie, Kang Zhu, Junhao Wang, Zhifei Xie, Zhaochen Yu, Zihang Liu, Zhongxiang Sun, Qiankun Li, Yue Liao, Heng Chang, Xiaobin Hu, Qibing Ren, Wangchunshu Zhou, Shuicheng Yan
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-27；更新：2026-09-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

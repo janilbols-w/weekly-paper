@@ -5,11 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **28** 篇。
+累计收录 **29** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [H3DNAS: Hardware-Aware ONNX-Native 3D Point Cloud Model Compression](../../papers/arxiv-2609.02684/) | 2026-09-03 | 46 |
+| [AI-Assisted Design of a Post-Quantum Cryptographic Accelerator: A Deployed-Silicon Case Study](../../papers/arxiv-2609.04058/) | 2026-09-03 | 43 |
 | [Channel-Adaptive Edge AI: Maximizing Inference Throughput by Adapting Computational Complexity to Channel States](../../papers/arxiv-2603.03146/) | 2026-09-02 | 38 |
 | [Hardware-Software Co-Design for Event-Driven SNN Deployment on Low-Cost Neuromorphic FPGAs](../../papers/arxiv-2604.22179/) | 2026-08-31 | 43 |
 | [Redwood: A Frontier AI Accelerator Designed, Verified, and Deployed from Scratch in 2 Weeks by AI](../../papers/arxiv-2608.26418/) | 2026-08-26 | 48 |

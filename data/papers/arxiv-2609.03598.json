@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2609.03598",
+  "title": "RASER: Resilient Agent Scheduling and Execution Runtime for HPC Clusters",
+  "abstract": "The emergence of modern agents powered by large language models has created a demand for executing long-horizon, autonomous workflows in various domains that require significant computational resources. While High Performance Computing clusters provide the ideal infrastructure for these computation-intensive workloads, traditional HPC job schedulers such as Slurm are not designed for dynamic, agentic workflows characterized by unpredictable task durations, external API calls, and fault tolerance requirements of modern agents. This work presents RASER, a user-space framework that enables seamless execution of agentic workflows on production HPC clusters by extending Slurm's internal primitives. RASER introduces agentic job arrays with work stealing via shared filesystem queues, user-space checkpointing through application-level state serialization combined with Slurm requeue, and Apptainer container-based isolation without requiring any image modifications. Evaluations demonstrate that RASER reduces makespan by nearly 39% compared to static partitioning while achieving near-full CPU utilization. RASER provides resilience against preemption and failures while maintaining minimal checkpoint/restore overhead. It requires no kernel privileges or external database infrastructure, making it an accessible solution for deploying agentic workflows on existing HPC infrastructure.",
+  "url": "https://arxiv.org/abs/2609.03598",
+  "pdf_url": "https://arxiv.org/pdf/2609.03598",
+  "published": "2026-09-03",
+  "updated": "2026-09-04",
+  "authors": [
+    "Sima Attar-Khorasani",
+    "Matthias Lieber",
+    "Siavash Ghiasvand"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "12 pages, 5 figures",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint",
+    "checkpointing"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint, checkpointing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The emergence of modern agents powered by large language models has created a demand for executing long-horizon, autonomous workflows in various domains that require significant computational resources.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-04T04:47:28+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.03598v1",
+      "url": "http://arxiv.org/abs/2609.03598v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.03598",
+      "url": "https://arxiv.org/abs/2609.03598"
+    }
+  ]
+}

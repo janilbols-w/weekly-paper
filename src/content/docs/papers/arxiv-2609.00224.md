@@ -39,7 +39,7 @@ Weight-only post-training quantization (PTQ) can alleviate the computational bur
 ## 元数据
 
 - 作者：Yipin Guo, Arun M George, Jie Fu, Tareq Mahmoud, Sixue Xing, Siddharth Joshi
-- 发布：2026-09-02；更新：2026-09-03
+- 发布：2026-08-31；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Intelligent-Microsystems-Lab/QTEA](https://github.com/Intelligent-Microsystems-Lab/QTEA)
 - 阅读深度：metadata

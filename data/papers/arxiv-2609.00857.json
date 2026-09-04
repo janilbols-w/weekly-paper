@@ -4,7 +4,7 @@
   "abstract": "LLM inference has become an essential service, yet it imposes unprecedented demands on memory bandwidth, computational density, and communication efficiency. While IMC is a promising solution to the memory wall issue, the heterogeneous data dynamicity of LLM requires complementary resources to handle intermediate data generated during run-time. Furthermore, the massive number of parameters in LLM necessitates scale-up architectures where on-chip data movement is often the primary performance bottleneck. This article presents a hardware-software co-design framework that unifies distributed compute, memory, and communication into a seamless processing-communication fabric. On the hardware side, we propose a scalable architecture, named LEAP, that integrates IMC PE, NMC PE, and INC. This allows each hardware layer to execute specialized tasks: IMC for static weights, NMC for dynamic data, and INC for partial result reduction. On the software side, we introduce a partitioning, mapping, and scheduling framework optimized for key metrics in LLM serving, including throughput and latency. To address the distinct computational intensities of the prefill and decode phases, we present a prefill-decode disaggregation approach that dynamically reconfigures PE organizations to maximize resource utilization. Compared to commercial GPU platforms, the proposed architecture provides a throughput and an energy efficiency improvement of $\\geq{}1.52\\times$ and $24.91\\times$, respectively.",
   "url": "https://arxiv.org/abs/2609.00857",
   "pdf_url": "https://arxiv.org/pdf/2609.00857",
-  "published": "2026-09-02",
+  "published": "2026-09-01",
   "updated": "2026-09-02",
   "authors": [
     "Yimin Wang",
@@ -19,7 +19,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "11 pages, 15 figures, an extended version of LEAP ICCAD'2025",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -56,9 +56,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-02T04:42:03+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.00857v1",
+      "url": "http://arxiv.org/abs/2609.00857v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.00857",

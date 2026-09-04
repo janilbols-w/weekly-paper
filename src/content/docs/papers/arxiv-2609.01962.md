@@ -3,7 +3,7 @@ title: "Post-Training Ternarization of Qwen3-4B Capability, Effective Bit Budget
 description: "Ultra-low-bit language models can reduce storage and memory bandwidth, but a nominal \"1.58-bit\" label does not fully describe the stored representation, retained capability, or runtime behavior."
 ---
 
-**评分：46/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+**评分：50/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.01962) · [PDF](https://arxiv.org/pdf/2609.01962)
 
@@ -23,23 +23,23 @@ Ultra-low-bit language models can reduce storage and memory bandwidth, but a nom
 
 | 维度 | 得分 |
 |---|---:|
-| relevance | 12 |
+| relevance | 14 |
 | novelty | 5 |
-| rigor | 11 |
+| rigor | 13 |
 | practical impact | 12 |
 | reproducibility | 3 |
 | credibility | 3 |
 
 ## 证据与限制
 
-- taxonomy keywords: checkpoint
+- taxonomy keywords: quantization, quantized
 - quantitative claim detected
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Anirudh Malik, M Sparsh Mehra, Poojith Devan
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

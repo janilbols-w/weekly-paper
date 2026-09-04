@@ -5,24 +5,26 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **39** 篇。
+累计收录 **41** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Margins, Not Windows: Training-Free Per-Step Lossy Speculative Decoding](../../papers/arxiv-2609.02897/) | 2026-09-04 | 39 |
 | [WhiFlash: Accelerating Speculative Decoding with Token-Level Cross-Paradigm Routing](../../papers/arxiv-2606.07710/) | 2026-09-03 | 45 |
-| [AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference](../../papers/arxiv-2609.02514/) | 2026-09-03 | 42 |
+| [Unlocking Lossless Speedups in LLMs via Discrete Diffusion](../../papers/arxiv-2609.04010/) | 2026-09-03 | 43 |
 | [Beyond Tokens: Semantic-Aware Speculative Decoding for Efficient Inference by Probing Internal States](../../papers/arxiv-2602.03708/) | 2026-09-02 | 50 |
-| [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-09-02 | 49 |
 | [MineDraft: A Framework for Batch Parallel Speculative Decoding](../../papers/arxiv-2603.18016/) | 2026-09-02 | 45 |
-| [SFAD: Speculative Factuality-Aware Decoding](../../papers/arxiv-2609.00796/) | 2026-09-02 | 41 |
-| [OUTLETS: Output-Length Prediction from Speculative Decoding Backbones](../../papers/arxiv-2609.01068/) | 2026-09-02 | 41 |
+| [AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference](../../papers/arxiv-2609.02514/) | 2026-09-02 | 42 |
 | [Reliability Challenges in Diffusion Vision-Language Models](../../papers/arxiv-2609.01318/) | 2026-09-02 | 39 |
-| [Verification-Aware Training for Speculative Decoding](../../papers/arxiv-2608.30135/) | 2026-09-01 | 49 |
 | [SpecPV: Improving Self-Speculative Decoding for Long-Context Generation via Partial Verification](../../papers/arxiv-2512.02337/) | 2026-09-01 | 48 |
 | [Entropy-Aware Token Rejection for Improving Speculative Decoding](../../papers/arxiv-2512.23765/) | 2026-09-01 | 48 |
 | [A rigor-matched audit of periodic-step layer skipping for efficient llm inference: conflayers versus swift, with a supplemental analysis of trained routing alternatives](../../papers/arxiv-2608.28846/) | 2026-09-01 | 43 |
-| [ReTrace: Rejected-Trajectory Conditioning for Speculative Decoding](../../papers/arxiv-2608.29748/) | 2026-09-01 | 42 |
+| [SFAD: Speculative Factuality-Aware Decoding](../../papers/arxiv-2609.00796/) | 2026-09-01 | 41 |
+| [OUTLETS: Output-Length Prediction from Speculative Decoding Backbones](../../papers/arxiv-2609.01068/) | 2026-09-01 | 41 |
+| [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-08-31 | 49 |
+| [Verification-Aware Training for Speculative Decoding](../../papers/arxiv-2608.30135/) | 2026-08-31 | 49 |
 | [Trajectory-Level Speculative Decoding for Diffusion Language Models](../../papers/arxiv-2608.27514/) | 2026-08-31 | 49 |
+| [ReTrace: Rejected-Trajectory Conditioning for Speculative Decoding](../../papers/arxiv-2608.29748/) | 2026-08-30 | 42 |
 | [TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding](../../papers/arxiv-2608.26112/) | 2026-08-28 | 49 |
 | [Visual Information-Guided Parallel Decoding for Diffusion Multimodal Large Language Models](../../papers/arxiv-2608.26580/) | 2026-08-27 | 41 |
 | [AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs](../../papers/arxiv-2608.26004/) | 2026-08-26 | 49 |

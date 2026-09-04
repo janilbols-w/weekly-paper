@@ -38,8 +38,8 @@ The rapid development of LLMs incurs prohibitive memory footprints and intensive
 
 ## 元数据
 
-- 作者：Jiamin Song, Mengjie Zhao, Zijing Wang, Yongkang Liu, Qian Li, Shi Feng, Feiliang Ren, Daling Wang, Hinrich Sch\"utze
-- 发布：2026-09-01；更新：2026-09-01
+- 作者：Jiamin Song, Mengjie Zhao, Zijing Wang, Yongkang Liu, Qian Li, Shi Feng, Feiliang Ren, Daling Wang, Hinrich Schütze
+- 发布：2026-08-30；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

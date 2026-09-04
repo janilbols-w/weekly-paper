@@ -39,7 +39,7 @@ Timely post-disaster building damage assessment from satellite imagery is a crit
 ## 元数据
 
 - 作者：Kooroush Farahkhah, Umut Lagap, Taha Rezaei, Saman Ghaffarian
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

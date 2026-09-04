@@ -9,9 +9,9 @@ description: "MoE Efficiency"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [PCoMoE: Shifting MoE Inference from Monolithic Expert Selection to Fine-Grained Path Composition](../../papers/arxiv-2609.01024/) | 2026-09-02 | 48 |
-| [DynaNDE: Dynamic Near-Data Expert Scheduling for Batched MoE Inference](../../papers/arxiv-2609.00407/) | 2026-09-02 | 46 |
-| [WiSDoM: Wireless Sparse Decision Transformer with Mixture-of-Experts for Multi-Task Mobile Network Optimization](../../papers/arxiv-2609.00284/) | 2026-09-02 | 38 |
+| [PCoMoE: Shifting MoE Inference from Monolithic Expert Selection to Fine-Grained Path Composition](../../papers/arxiv-2609.01024/) | 2026-09-01 | 48 |
+| [DynaNDE: Dynamic Near-Data Expert Scheduling for Batched MoE Inference](../../papers/arxiv-2609.00407/) | 2026-08-31 | 46 |
+| [WiSDoM: Wireless Sparse Decision Transformer with Mixture-of-Experts for Multi-Task Mobile Network Optimization](../../papers/arxiv-2609.00284/) | 2026-08-31 | 38 |
 | [SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning](../../papers/arxiv-2602.01990/) | 2026-08-27 | 44 |
 | [SiftMoE: Similarity-Aware Energy-Efficient Expert Selection for Wireless Distributed MoE Inference](../../papers/arxiv-2603.23888/) | 2026-08-26 | 48 |
 | [SAEM: Stage-Aware Expert Management for Memory-Efficient MoE Inference in Chain-of-Thought Reasoning](../../papers/arxiv-2608.21614/) | 2026-08-25 | 52 |

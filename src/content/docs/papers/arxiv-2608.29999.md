@@ -39,7 +39,7 @@ Large audio-language models (LALMs) describe audio at the clip level but cannot 
 ## 元数据
 
 - 作者：Apoorva Kulkarni, Kaousheik Jayakumar, Sreyan Ghosh, Utathya Aich, Ramani Duraiswami, Dinesh Manocha
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-30；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

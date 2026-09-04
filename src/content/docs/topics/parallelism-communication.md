@@ -5,10 +5,12 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **4** 篇。
+累计收录 **6** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference](../../papers/arxiv-2609.03844/) | 2026-09-03 | 38 |
+| [BASP: Communication-Efficient Batch-Aware Sequence Parallelism for LLM Training](../../papers/arxiv-2609.03151/) | 2026-09-02 | 42 |
 | [DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference](../../papers/arxiv-2604.04750/) | 2026-08-24 | 51 |
 | [KV-Pipe: On the Relation Between KV Sharing and Pipeline Parallel Efficiency in LLMs](../../papers/arxiv-2608.15943/) | 2026-08-16 | 45 |
 | [Collective Communication for Distributed LLM Systems: Planning, Runtime Adaptation, and Computation Coordination](../../papers/arxiv-2608.15118/) | 2026-08-15 | 40 |

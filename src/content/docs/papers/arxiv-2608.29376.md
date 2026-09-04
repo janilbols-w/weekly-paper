@@ -39,7 +39,7 @@ Code generation increasingly relies on large transformer models, whose capabilit
 ## 元数据
 
 - 作者：Anjani Sirivella, Aanisha Newaz, Glaucia Melo
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-29；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

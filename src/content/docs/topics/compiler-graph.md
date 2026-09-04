@@ -5,20 +5,21 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **49** 篇。
+累计收录 **50** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](../../papers/arxiv-2609.01971/) | 2026-09-03 | 44 |
+| [CROCODIL: Cross-Model Code Editing with LLMs](../../papers/arxiv-2609.03894/) | 2026-09-03 | 40 |
 | [CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation](../../papers/arxiv-2609.02774/) | 2026-09-03 | 38 |
 | [Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation](../../papers/arxiv-2609.01601/) | 2026-09-02 | 49 |
-| [Predicting Program Exit Code with LLMs and Programming Language Semantics](../../papers/arxiv-2609.00579/) | 2026-09-02 | 42 |
+| [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](../../papers/arxiv-2609.01971/) | 2026-09-02 | 44 |
 | [QAQ: Bidirectional Semantic Coherence for Selecting High-Quality Synthetic Code Instructions](../../papers/arxiv-2603.12165/) | 2026-09-01 | 48 |
-| [Evaluating Tiny Recursive Models Across Training for Code Generation](../../papers/arxiv-2608.29376/) | 2026-09-01 | 43 |
 | [Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](../../papers/arxiv-2606.15932/) | 2026-09-01 | 43 |
-| [When to Adapt: Conditional Memory Adapters for Retention-Preserving Domain Specialization](../../papers/arxiv-2608.29327/) | 2026-09-01 | 41 |
+| [Predicting Program Exit Code with LLMs and Programming Language Semantics](../../papers/doi-10.1145-3843750.3843842/) | 2026-09-01 | 42 |
 | [NeuReasoner: Theory-grounded Mapping of Reasoning Elicitation Boundaries](../../papers/arxiv-2606.29971/) | 2026-09-01 | 40 |
 | [Beyond Output Correctness: Benchmarking and Evaluating Large Language Model Reasoning in Coding Tasks](../../papers/arxiv-2604.12379/) | 2026-08-31 | 51 |
+| [Evaluating Tiny Recursive Models Across Training for Code Generation](../../papers/arxiv-2608.29376/) | 2026-08-29 | 43 |
+| [When to Adapt: Conditional Memory Adapters for Retention-Preserving Domain Specialization](../../papers/arxiv-2608.29327/) | 2026-08-29 | 41 |
 | [Exploring the Role of LLMs in HPC Programming: A Survey](../../papers/arxiv-2608.26110/) | 2026-08-28 | 40 |
 | [Think Short, Defer Smart, Act, and Repeat: Calibrated Reasoning and Uncertainty-Aware Deferral for Edge LLM Agents](../../papers/arxiv-2607.26865/) | 2026-08-27 | 39 |
 | [The Reasoning Tax: Token Economics of LLM Reasoning Across Task Types and Deployment Contexts](../../papers/arxiv-2608.26235/) | 2026-08-26 | 43 |

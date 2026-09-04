@@ -3,7 +3,7 @@ title: "Recent Developments in Transformer Inference Deployment on FPGA Platform
 description: "With the rapid and continuous growth in the incorporation of machine learning models based on the Transformer architecture, capable deployment is in high demand."
 ---
 
-**评分：38/100** · AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热
+**评分：41/100** · AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热
 
 [论文原文](https://arxiv.org/abs/2609.01212) · [PDF](https://arxiv.org/pdf/2609.01212)
 
@@ -28,7 +28,7 @@ With the rapid and continuous growth in the incorporation of machine learning mo
 | rigor | 5 |
 | practical impact | 11 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ With the rapid and continuous growth in the incorporation of machine learning mo
 ## 元数据
 
 - 作者：Arjan Blankestijn, Uraz Odyurt, Amirreza Yousefzadeh
-- 发布：2026-09-02；更新：2026-09-02
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-09-01；更新：2026-09-02
+- 来源：arXiv RSS；Venue：Journal of Systems Architecture, Volume 177 (2026)
 - 代码：未发现
 - 阅读深度：metadata

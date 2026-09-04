@@ -39,7 +39,7 @@ Industrial post-training is a brownfield regime. Teams inherit a deployed checkp
 ## 元数据
 
 - 作者：Gopi Krishnan Rajbahadur, Amir M. Ebrahimi, Boyuan Chen, Ahmed E. Hassan
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

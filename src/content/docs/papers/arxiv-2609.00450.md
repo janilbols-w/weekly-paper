@@ -39,7 +39,7 @@ Block Quantization (BQ) is a promising approach for efficient deployment of larg
 ## 元数据
 
 - 作者：Chun-Ting Chen, Dongmin Han, Hangyeol Mun, Jake Hyun, Arnab Raha, Amit Agarwal, Mark Anders, Mohamed Abdelfattah, Jae-sun Seo
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-08-31；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

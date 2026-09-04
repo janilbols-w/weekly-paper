@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) is a scaling architecture for large language models tha
 ## 元数据
 
 - 作者：Qingyu Meng, Yiwei Zha, Jiahuan Pei, Koen Hindriks, Herbert Bos, Min Chen
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

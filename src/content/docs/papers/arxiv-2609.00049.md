@@ -3,7 +3,7 @@ title: "REAL-Q: E2E LLM Quantization via Dynamic Gradient Descent"
 description: "Post-training quantization (PTQ) is essential for deploying large language models (LLMs) under strict resource constraints."
 ---
 
-**评分：38/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：40/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.00049) · [PDF](https://arxiv.org/pdf/2609.00049)
 
@@ -25,7 +25,7 @@ Post-training quantization (PTQ) is essential for deploying large language model
 |---|---:|
 | relevance | 16 |
 | novelty | 7 |
-| rigor | 5 |
+| rigor | 7 |
 | practical impact | 5 |
 | reproducibility | 2 |
 | credibility | 3 |
@@ -39,7 +39,7 @@ Post-training quantization (PTQ) is essential for deploying large language model
 ## 元数据
 
 - 作者：Qian Zhang, Yaoming Li, Zhewen Tan, Yanshu Wang, Heng Lu, Kun Su, Zongwei Lv, Wenhan Yu, Yongge Ma, Yinjun Han, Ruikuang Liu, Tong Yang
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-08-30；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -4,7 +4,7 @@
   "abstract": "The major workloads in modern large language model (LLM) serving systems have shifted from single-shot LLM calls to multi-turn conversations, where new responses are generated based on the whole conversation history across all previous turns. The hit ratio, i.e., the average fraction of KV caches accessed directly from existing caches stored in high-bandwidth memory (HBM), is hence a crucial metric that governs system performance. Estimating the hit ratio is a highly nontrivial task due to the complex system dynamics, where the KV cache prefixes grow with turns and some must be evicted due to finite memory capacity. We formulate the system as a multi-turn conversation model under the least-recently-used (LRU) policy. Through a mean-field asymptotic framework, we prove that as the conversation arrival rate and the memory capacity grow proportionally to infinity, the hit ratio converges to a closed-form limit. Based on the characterization of the limit, we further propose a practical hit ratio estimator, and validate its accuracy by real LLM serving experiments on the Qwen3-8B model implemented on Ascend NPUs. Our results provide a theoretical foundation for the analysis of multi-turn LLM serving systems and a practical guideline for memory capacity provisioning.",
   "url": "https://arxiv.org/abs/2609.02027",
   "pdf_url": "https://arxiv.org/pdf/2609.02027",
-  "published": "2026-09-03",
+  "published": "2026-09-02",
   "updated": "2026-09-03",
   "authors": [
     "Heyuan Yao",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-03T05:28:10+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.02027v1",
+      "url": "http://arxiv.org/abs/2609.02027v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.02027",

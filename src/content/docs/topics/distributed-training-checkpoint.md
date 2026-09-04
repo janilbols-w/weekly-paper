@@ -5,17 +5,18 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **41** 篇。
+累计收录 **42** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Post-Training Ternarization of Qwen3-4B Capability, Effective Bit Budget, Storage Compression, and Deployment](../../papers/arxiv-2609.01962/) | 2026-09-03 | 46 |
-| [SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology](../../papers/arxiv-2609.02292/) | 2026-09-03 | 41 |
-| [AgentProv: Auditing Agentic LLM API Providers via Tool-use Policy Probes](../../papers/arxiv-2609.00052/) | 2026-09-02 | 38 |
-| [Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment](../../papers/arxiv-2608.30633/) | 2026-09-01 | 42 |
+| [RASER: Resilient Agent Scheduling and Execution Runtime for HPC Clusters](../../papers/arxiv-2609.03598/) | 2026-09-03 | 40 |
+| [DE-Venus: A Data-Efficient RLVR Framework for Large Language Models](../../papers/arxiv-2609.03324/) | 2026-09-03 | 38 |
+| [SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology](../../papers/arxiv-2609.02292/) | 2026-09-02 | 41 |
 | [Bergson: An Open Source Library for Data Attribution](../../papers/arxiv-2606.11660/) | 2026-09-01 | 42 |
-| [TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models](../../papers/arxiv-2608.29999/) | 2026-09-01 | 41 |
+| [Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment](../../papers/arxiv-2608.30633/) | 2026-08-31 | 42 |
 | [Nested Byte-Level Vocabularies Are Cheap to Deploy and Expensive to Share: A Pre-Registered Negative Result](../../papers/arxiv-2608.28151/) | 2026-08-31 | 39 |
+| [TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models](../../papers/arxiv-2608.29999/) | 2026-08-30 | 41 |
+| [AgentProv: Auditing Agentic LLM API Providers via Tool-use Policy Probes](../../papers/arxiv-2609.00052/) | 2026-08-30 | 38 |
 | [Mitigating Fabrication in Multi-Stage LLM Pipelines for Hiring: An Empirical Evaluation of Prompt Guardrails and Human-in-the-Loop Checkpoints](../../papers/arxiv-2608.26171/) | 2026-08-28 | 40 |
 | [Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling](../../papers/arxiv-2608.27413/) | 2026-08-27 | 46 |
 | [Ladder Up, Memory Down: Low-Cost Fine-Tuning With Side Nets](../../papers/arxiv-2512.14237/) | 2026-08-27 | 38 |

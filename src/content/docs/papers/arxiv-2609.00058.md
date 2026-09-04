@@ -39,7 +39,7 @@ Developing high-performance CUDA kernels demands specialized knowledge in algori
 ## 元数据
 
 - 作者：Qi Fan, An Zou, Yehan Ma
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-08-30；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

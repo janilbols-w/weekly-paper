@@ -39,7 +39,7 @@ Reasoning over text-attributed graphs (TAGs) requires large language models (LLM
 ## 元数据
 
 - 作者：Yilun Liu, Boyu Luo, Yanran Tang, Ruihong Qiu, Zi Huang
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-30；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/superallen13/CNY](https://github.com/superallen13/CNY)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Speculative decoding accelerates large language model inference by using a draft
 ## 元数据
 
 - 作者：Geonmo Gu, Byeongho Heo, HeeJae Jun, Yoohoon Kang, Sangmin Lee, Sangdoo Yun, Dongyoon Han
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/naver-ai/vat](https://github.com/naver-ai/vat)
 - 阅读深度：metadata

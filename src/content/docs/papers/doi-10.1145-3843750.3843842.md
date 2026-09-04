@@ -39,7 +39,7 @@ Large language models (LLMs) have shown proficiency in various software engineer
 ## 元数据
 
 - 作者：Lara Marinov, Aditya Thimmaiah, Jayanth Srinivasa, Junyi Jessy Li, Milos Gligoric
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-01；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/EngineeringSoftware/prex](https://github.com/EngineeringSoftware/prex)
 - 阅读深度：metadata

@@ -4,7 +4,7 @@
   "abstract": "Mixture-of-Experts (MoE) architectures scale Large Language Model (LLM) capacity efficiently by activating a sparse subset of experts per token. However, modern MoE inference remains heavily constrained by the rigid, whole-expert abstraction. Existing frameworks manage, schedule, or prune experts as atomic execution units, which fixes the optimization boundary too early and leaves fine-grained intra-expert computational redundancy underexplored. In this work, we present PCoMoE, a path-compositional execution framework that shifts MoE inference from coarse-grained expert selection to fine-grained path composition. PCoMoE incorporates a path-level formulation of expert computation, a compatibility-aware layer-wise pruning strategy to suppress low-value path combinations, and a hardware-friendly execution engine to exploit reusable sub-expert structures under strictly bounded overheads. Experimental results demonstrate that PCoMoE achieves up to a 1.31x end-to-end inference speedup while enhancing model accuracy by 10%. The code is available at https://github.com/gzyyy0/PCoMoE",
   "url": "https://arxiv.org/abs/2609.01024",
   "pdf_url": "https://arxiv.org/pdf/2609.01024",
-  "published": "2026-09-02",
+  "published": "2026-09-01",
   "updated": "2026-09-02",
   "authors": [
     "Ziyan Gan",
@@ -29,7 +29,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted to EMNLP 2026 Main Conference",
   "code_url": "https://github.com/gzyyy0/PCoMoE",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -66,9 +66,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-02T04:42:03+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.01024v1",
+      "url": "http://arxiv.org/abs/2609.01024v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.01024",

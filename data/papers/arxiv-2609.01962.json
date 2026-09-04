@@ -4,7 +4,7 @@
   "abstract": "Ultra-low-bit language models can reduce storage and memory bandwidth, but a nominal \"1.58-bit\" label does not fully describe the stored representation, retained capability, or runtime behavior. We study an end-to-end post-training conversion of Qwen, an instruction-tuned 4B-parameter model, using KOTMS rotation, E2M-ATQ ternarization, and GPTQ-style error compensation from TWLA. The experiment is weight-only: activations remain at 16-bit precision, so ILA-AMP is omitted. We evaluate effective bit accounting, task capability retention, perplexity, calibration sensitivity, checkpoint composition, and deployment behavior. The final conversion uses 1.641 effective bits per weight for quantized linear weights, with 81.62% of model parameters targeted. Across ten scored capability comparisons, accuracy falls from 64.5% to 54.7%. Degradation is uneven: BoolQ retains 84.6% chance-corrected teacher performance, while ARC-Challenge retains 43.8%. Perplexity rises from 13.639 to 18.748 on WikiText-2, 24.700 to 31.992 on PTB, and 19.831 to 28.966 on C4. A subsequent packing run preserves the ternary planes and scales, reducing reported model size from 8.29 GiB to 3.96 GiB with essentially unchanged perplexity. A separate third-party packing attempt was lossy and is excluded from the primary artifact claim. The packed artifact has not been benchmarked end-to-end for task accuracy or generation throughput. A preliminary Triton GEMV microbenchmark is 4.6x slower than FP16 cuBLAS on one tested shape. We therefore do not claim that compression alone yields faster inference.",
   "url": "https://arxiv.org/abs/2609.01962",
   "pdf_url": "https://arxiv.org/pdf/2609.01962",
-  "published": "2026-09-03",
+  "published": "2026-09-02",
   "updated": "2026-09-03",
   "authors": [
     "Anirudh Malik",
@@ -20,34 +20,35 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Weight-only post-training ternarization of a 4B-parameter instruction-tuned language model. Activation quantization and end-to-end generation throughput are outside the scope of the primary evaluation",
   "code_url": "",
   "primary_category": {
-    "domain_id": "ai-infrastructure",
-    "domain": "AI Infrastructure",
-    "domain_zh": "AI 基础设施",
-    "group_id": "training-datacenter",
-    "group": "Training & Datacenter Infrastructure",
-    "group_zh": "训练与数据中心基础设施",
-    "leaf_id": "distributed-training-checkpoint",
-    "leaf": "Distributed Training & Checkpointing",
-    "leaf_zh": "分布式训练与 Checkpoint"
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
   },
   "secondary_tags": [],
   "keyword_evidence": [
-    "checkpoint"
+    "quantization",
+    "quantized"
   ],
-  "score": 46,
+  "score": 50,
   "score_components": {
-    "relevance": 12,
+    "relevance": 14,
     "novelty": 5,
-    "rigor": 11,
+    "rigor": 13,
     "practical_impact": 12,
     "reproducibility": 3,
     "credibility": 3
   },
   "score_evidence": [
-    "taxonomy keywords: checkpoint",
+    "taxonomy keywords: quantization, quantized",
     "quantitative claim detected",
     "no code link detected in metadata"
   ],
@@ -57,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-03T05:28:10+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.01962v1",
+      "url": "http://arxiv.org/abs/2609.01962v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.01962",

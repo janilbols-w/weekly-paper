@@ -39,7 +39,7 @@ Modern large language models (LLMs) rely on reinforcement learning to build stro
 ## 元数据
 
 - 作者：Xixiang He, Xingming Li, Baiqi Wu, Qiyao Sun, Xuanyu Ji, Ao Cheng, Qingyong Hu
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/hexixiang/MT-SDPO](https://github.com/hexixiang/MT-SDPO)
 - 阅读深度：metadata

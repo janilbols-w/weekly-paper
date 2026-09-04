@@ -5,36 +5,40 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **112** 篇。
+累计收录 **116** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Unfolding the Leech Lattice: Fused Multi-Shell Decoding and VRAM Layouts for 2-Bit LLM Weights](../../papers/arxiv-2609.02652/) | 2026-09-03 | 44 |
-| [UE5M3 FP4 Block Scaling for Stable Language Model Pretraining](../../papers/arxiv-2609.02846/) | 2026-09-03 | 42 |
-| [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-09-02 | 46 |
+| [HARP: Hadamard-Preconditioned Adaptive Rotation Processor for Extreme LLM Quantization](../../papers/arxiv-2605.29843/) | 2026-09-04 | 43 |
+| [Post-Training Ternarization of Qwen3-4B Capability, Effective Bit Budget, Storage Compression, and Deployment](../../papers/arxiv-2609.01962/) | 2026-09-02 | 50 |
 | [Deterministic LLM Inference Across GPU Kernels: Power-of-Two INT8 Quantization Scales and the Limits of Tolerance-Based Conformance](../../papers/arxiv-2609.00363/) | 2026-09-02 | 45 |
-| [DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments](../../papers/arxiv-2609.00442/) | 2026-09-02 | 44 |
+| [Unfolding the Leech Lattice: Fused Multi-Shell Decoding and VRAM Layouts for 2-Bit LLM Weights](../../papers/arxiv-2609.02652/) | 2026-09-02 | 44 |
+| [UE5M3 FP4 Block Scaling for Stable Language Model Pretraining](../../papers/arxiv-2609.02846/) | 2026-09-02 | 42 |
 | [Unified Multi-Dialectal Neural Machine Translation for Bangla Using the Dwadash Benchmark Corpus](../../papers/arxiv-2608.12018/) | 2026-09-02 | 40 |
-| [The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally](../../papers/arxiv-2609.01587/) | 2026-09-02 | 40 |
-| [REAL-Q: E2E LLM Quantization via Dynamic Gradient Descent](../../papers/arxiv-2609.00049/) | 2026-09-02 | 38 |
 | [Uncertainty Makes It Stable: Curiosity-Driven Quantized Mixture-of-Experts](../../papers/arxiv-2511.11743/) | 2026-09-01 | 53 |
 | [Investigating Social Bias Changes in Quantized Language Models](../../papers/arxiv-2602.06181/) | 2026-09-01 | 52 |
-| [Budget-Aware Compression Pipeline for Single-GPU LLM Inference: Methods, Trade-offs, and Coupling Effects](../../papers/arxiv-2608.30076/) | 2026-09-01 | 47 |
-| [Q-Strata: Hierarchical Bit Allocation for Mixed-Precision Quantization of Mixture-of-Experts LLMs](../../papers/arxiv-2608.30564/) | 2026-09-01 | 46 |
+| [FORGE: Forward-Only Test-Time Adaptation for Integer-Only Vision Models on Microcontrollers](../../papers/arxiv-2609.01683/) | 2026-09-01 | 48 |
 | [SemKV: Semantic Mixed-Precision KV Cache Quantization Guided by the Quality Cliff for Long-Context LLM Inference](../../papers/arxiv-2608.28911/) | 2026-09-01 | 43 |
-| [Event-Driven Language Models with Sparse Neural Activity for Neuromorphic Hardware](../../papers/arxiv-2608.30439/) | 2026-09-01 | 43 |
-| [Faithfulness Is Not Free: Auditing Offline KV-Cache Quantization in Retrieval-Augmented Generation](../../papers/arxiv-2608.30996/) | 2026-09-01 | 42 |
 | [In-Cell Learning: Language Models That Update Their Own Weights in Sequence Without Changing the File They Ship](../../papers/arxiv-2608.20873/) | 2026-09-01 | 41 |
-| [A Target-Centric Survey of Quantization-Aware Training](../../papers/arxiv-2608.29667/) | 2026-09-01 | 40 |
+| [The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally](../../papers/arxiv-2609.01587/) | 2026-09-01 | 40 |
 | [Efficient GPU Retrieval for Semantic Search](../../papers/arxiv-2608.28968/) | 2026-09-01 | 39 |
-| [Balancing Privacy, Utility, and Safety in LLM Alignment through Preference Optimization](../../papers/arxiv-2608.30141/) | 2026-09-01 | 39 |
-| [A.X K2 Technical Report](../../papers/arxiv-2608.30181/) | 2026-09-01 | 39 |
-| [Converse and Collision-Based Achievability for Node Localization with Hybrid Distance-Spectral Graph Positional Encodings](../../papers/arxiv-2608.30152/) | 2026-09-01 | 38 |
 | [ADMM-Q: An Improved Hessian-based Weight Quantizer for Post-Training Quantization of Large Language Models](../../papers/arxiv-2605.11222/) | 2026-09-01 | 38 |
 | [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization](../../papers/arxiv-2608.27513/) | 2026-08-31 | 60 |
 | [A Method for Layer Bit-Width Allocation in LLM Quantization via Performance Maximization Under a Quality-Degradation Constraint](../../papers/arxiv-2608.28003/) | 2026-08-31 | 47 |
+| [Q-Strata: Hierarchical Bit Allocation for Mixed-Precision Quantization of Mixture-of-Experts LLMs](../../papers/arxiv-2608.30564/) | 2026-08-31 | 46 |
+| [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-08-31 | 46 |
+| [DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments](../../papers/arxiv-2609.00442/) | 2026-08-31 | 44 |
+| [Event-Driven Language Models with Sparse Neural Activity for Neuromorphic Hardware](../../papers/arxiv-2608.30439/) | 2026-08-31 | 43 |
 | [Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Validation--Deployment Gap](../../papers/arxiv-2608.27512/) | 2026-08-31 | 42 |
+| [Lot Machine: Multimodal Lot Extraction from Auction Catalogs](../../papers/arxiv-2608.30510/) | 2026-08-31 | 42 |
+| [Faithfulness Is Not Free: Auditing Offline KV-Cache Quantization in Retrieval-Augmented Generation](../../papers/arxiv-2608.30996/) | 2026-08-31 | 42 |
 | [H-Scale: Hessian-Guided Scale Refinement for NVFP4 Sub-Byte LLM Inference](../../papers/arxiv-2608.28113/) | 2026-08-31 | 41 |
+| [Balancing Privacy, Utility, and Safety in LLM Alignment through Preference Optimization](../../papers/arxiv-2608.30141/) | 2026-08-31 | 39 |
+| [A.X K2 Technical Report](../../papers/arxiv-2608.30181/) | 2026-08-31 | 39 |
+| [Converse and Collision-Based Achievability for Node Localization with Hybrid Distance-Spectral Graph Positional Encodings](../../papers/arxiv-2608.30152/) | 2026-08-31 | 38 |
+| [Budget-Aware Compression Pipeline for Single-GPU LLM Inference: Methods, Trade-offs, and Coupling Effects](../../papers/arxiv-2608.30076/) | 2026-08-30 | 47 |
+| [REAL-Q: E2E LLM Quantization via Dynamic Gradient Descent](../../papers/arxiv-2609.00049/) | 2026-08-30 | 40 |
+| [A Target-Centric Survey of Quantization-Aware Training](../../papers/arxiv-2608.29667/) | 2026-08-30 | 40 |
 | [Pushing the Envelope of LLM Inference with Ultra-Low-Bit Quantized Models](../../papers/arxiv-2508.06753/) | 2026-08-28 | 51 |
 | [Refine-POI: Reinforcement Fine-Tuned Large Language Models for Next Point-of-Interest Recommendation](../../papers/arxiv-2506.21599/) | 2026-08-28 | 41 |
 | [Activation Outliers Matter: Robust Recovery for Quantized Multimodal LLMs](../../papers/arxiv-2608.26581/) | 2026-08-27 | 49 |

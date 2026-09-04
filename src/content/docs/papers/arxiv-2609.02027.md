@@ -39,7 +39,7 @@ The major workloads in modern large language model (LLM) serving systems have sh
 ## 元数据
 
 - 作者：Heyuan Yao, Chutong Gao, Yuan Lyu, Izzy Grosof, David Simchi-Levi
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

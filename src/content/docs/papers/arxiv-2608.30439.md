@@ -39,7 +39,7 @@ Inference with transformer-based large language models (LLMs) is often limited b
 ## 元数据
 
 - 作者：Simon Richter, Ruhai Lin, Jason Yik, Taylor Kergan, Rui-Jie Zhu, Farshad Moradi, Jason Eshraghian
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

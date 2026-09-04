@@ -39,7 +39,7 @@ Mixed-precision quantization (MPQ) assigns a different bitwidth to each linear l
 ## 元数据
 
 - 作者：Deokjae Lee, Sihun Chu, Hyun Oh Song
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/snu-mllab/Q-Strata/tree/main](https://github.com/snu-mllab/Q-Strata/tree/main)
 - 阅读深度：metadata

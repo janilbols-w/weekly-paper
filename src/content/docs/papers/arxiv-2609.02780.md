@@ -39,7 +39,7 @@ Streaming video understanding is a critical capability for real-world applicatio
 ## 元数据
 
 - 作者：Jitai Hao, Ke Yang, Qiang Huang, Jun Yu
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/CURRENTF/ShallowStream](https://github.com/CURRENTF/ShallowStream)
 - 阅读深度：metadata

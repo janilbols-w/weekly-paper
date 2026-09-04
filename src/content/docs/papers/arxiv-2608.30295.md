@@ -3,7 +3,7 @@ title: "CateKV: On Sequential Consistency for Long-Context LLM Inference Acceler
 description: "Large language models (LLMs) have demonstrated strong capabilities in handling long-context tasks, but processing such long contexts remains challenging due to the substantial memory requirements and inference latency."
 ---
 
-**评分：43/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：46/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2608.30295) · [PDF](https://arxiv.org/pdf/2608.30295)
 
@@ -28,7 +28,7 @@ Large language models (LLMs) have demonstrated strong capabilities in handling l
 | rigor | 9 |
 | practical impact | 11 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Large language models (LLMs) have demonstrated strong capabilities in handling l
 ## 元数据
 
 - 作者：Haoyun Jiang, Haolin Li, Jianwei Zhang, Fei Huang, Qiang Hu, Minmin Sun, Shuai Xiao, Yong Li, Junyang Lin, Jiangchao Yao
-- 发布：2026-09-01；更新：2026-09-01
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-08-31；更新：2026-09-01
+- 来源：arXiv RSS；Venue：Proceedings of the 42nd International Conference on Machine Learning (ICML), PMLR 267:27569-27585, 2025
 - 代码：未发现
 - 阅读深度：metadata

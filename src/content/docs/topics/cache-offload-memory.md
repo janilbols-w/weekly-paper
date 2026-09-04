@@ -5,22 +5,23 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **49** 篇。
+累计收录 **50** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [mzCache: On-Device LLM Memory Management under Multitasking](../../papers/arxiv-2609.01338/) | 2026-09-02 | 43 |
-| [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](../../papers/arxiv-2609.01457/) | 2026-09-02 | 41 |
+| [Iapetus: Content-Aware Hierarchical Scheduling for Collaborative ViT Inference in LEO Satellite Networks](../../papers/arxiv-2609.03318/) | 2026-09-04 | 40 |
 | [Beyond Static Summarization: Proactive Memory Extraction for LLM Agents](../../papers/arxiv-2601.04463/) | 2026-09-02 | 40 |
 | [Learning to Remember: End-to-End Training of Memory Agents for Long-Context Reasoning](../../papers/arxiv-2602.18493/) | 2026-09-02 | 39 |
+| [mzCache: On-Device LLM Memory Management under Multitasking](../../papers/doi-10.1145-3795866.3844495/) | 2026-09-01 | 43 |
 | [Hindsight Memory-PRM: Supervising Memory Management with Auditable Hindsight Credit](../../papers/arxiv-2608.29605/) | 2026-09-01 | 42 |
-| [Deploying DeepSeek 175B Locally on a Single Consumer-Grade RTX 4060 Laptop with 32GB RAM for 200k-Scale Protein-Ligand Virtual Screening](../../papers/arxiv-2608.30877/) | 2026-09-01 | 41 |
+| [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](../../papers/arxiv-2609.01457/) | 2026-09-01 | 41 |
 | [A-MADiff: Attention-Guided Multi-Agent DRL with Diffusion Policies for Memory-Aware Task Orchestration in Mobile AIGC Networks](../../papers/arxiv-2608.29255/) | 2026-09-01 | 41 |
 | [Ampere: Communication-Efficient and High-Accuracy Split Federated Learning](../../papers/arxiv-2507.07130/) | 2026-08-31 | 48 |
 | [ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL](../../papers/arxiv-2608.28476/) | 2026-08-31 | 46 |
 | [MemoryCard: Topic-Aware Multi-Modal Clue Compression for Long-Video Question Answering](../../papers/arxiv-2606.05917/) | 2026-08-31 | 43 |
 | [Parser States Already Know: Structure-Conditioned KV Persistence for Structured Generation](../../papers/arxiv-2608.28276/) | 2026-08-31 | 42 |
 | [Accelerating Data Preprocessing for Efficient Vision Model Inference on Jetson Edge Device](../../papers/arxiv-2608.27655/) | 2026-08-31 | 42 |
+| [Deploying DeepSeek 175B Locally on a Single Consumer-Grade RTX 4060 Laptop with 32GB RAM for 200k-Scale Protein-Ligand Virtual Screening](../../papers/arxiv-2608.30877/) | 2026-08-31 | 41 |
 | [Multi-Turn Reasoning LLMs for Task Offloading in Mobile Edge Computing](../../papers/arxiv-2604.07148/) | 2026-08-27 | 45 |
 | [BanglaMamba: Exploring State Space Models for Bangla Fake News Detection](../../papers/arxiv-2608.25190/) | 2026-08-27 | 43 |
 | [JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution](../../papers/arxiv-2608.25593/) | 2026-08-27 | 38 |

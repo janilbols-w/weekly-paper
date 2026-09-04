@@ -39,7 +39,7 @@ Despite their strong multimodal understanding ability, multimodal large language
 ## 元数据
 
 - 作者：Shiyu Li, Zi-Yuan Hu, Shijia Huang, Yanyang Li, Yiwu Zhong, Liwei Wang
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-01；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LaVi-Lab/SinkPruner](https://github.com/LaVi-Lab/SinkPruner)
 - 阅读深度：metadata

@@ -3,7 +3,7 @@ title: "Debias-SparseGPT: Bias-Aware Pruning for Large Language Models"
 description: "Model compression techniques such as pruning and quantization facilitate the efficient deployment and acceleration of Large Language Models (LLMs)."
 ---
 
-**评分：39/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：44/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2609.02496) · [PDF](https://arxiv.org/pdf/2609.02496)
 
@@ -27,19 +27,19 @@ Model compression techniques such as pruning and quantization facilitate the eff
 | novelty | 6 |
 | rigor | 5 |
 | practical impact | 5 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: pruning, sparsity
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Irina Proskurina, Guillaume Metzler, Antoine Gourru, Julien Velcin
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/upunaprosk/debias-llm-compressor](https://github.com/upunaprosk/debias-llm-compressor)
 - 阅读深度：metadata

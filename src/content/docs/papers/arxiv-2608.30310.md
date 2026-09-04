@@ -39,7 +39,7 @@ Hybrid large language models interleave full-attention layers with linear-attent
 ## 元数据
 
 - 作者：Yirui Liu, Ruoling Qi, Xuaner Wu, Penghang Liu, Jian Chen
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

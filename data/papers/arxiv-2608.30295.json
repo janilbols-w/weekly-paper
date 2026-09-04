@@ -4,7 +4,7 @@
   "abstract": "Large language models (LLMs) have demonstrated strong capabilities in handling long-context tasks, but processing such long contexts remains challenging due to the substantial memory requirements and inference latency. In this work, we discover that certain attention heads exhibit sequential consistency in their attention patterns, which can be persistently identified using a coefficient-of-variation-based algorithm. Inspired by this observation, we propose CateKV, a hybrid KV cache method that retains only critical token information for consistent heads, thereby reducing KV cache size and computational overhead, while preserving the majority of KV pairs in adaptive heads to ensure high accuracy. We show the unique characteristics of our algorithm and its extension with existing acceleration methods. Comprehensive evaluations on long-context benchmarks show that, while maintaining accuracy comparable to full attention, CateKV reduces memory usage by up to $2.72\\times$ and accelerates decoding by $2.18\\times$ in single-sample inputs, and boosts throughput by $3.96\\times$ in batch scenarios.",
   "url": "https://arxiv.org/abs/2608.30295",
   "pdf_url": "https://arxiv.org/pdf/2608.30295",
-  "published": "2026-09-01",
+  "published": "2026-08-31",
   "updated": "2026-09-01",
   "authors": [
     "Haoyun Jiang",
@@ -21,13 +21,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
-  "journal_ref": "",
-  "comment": "",
+  "journal_ref": "Proceedings of the 42nd International Conference on Machine Learning (ICML), PMLR 267:27569-27585, 2025",
+  "comment": "Published at ICML 2025",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -44,14 +44,14 @@
   "keyword_evidence": [
     "kv cache"
   ],
-  "score": 43,
+  "score": 46,
   "score_components": {
     "relevance": 12,
     "novelty": 6,
     "rigor": 9,
     "practical_impact": 11,
     "reproducibility": 2,
-    "credibility": 3
+    "credibility": 6
   },
   "score_evidence": [
     "taxonomy keywords: kv cache",
@@ -64,9 +64,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-01T04:41:13+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.30295v1",
+      "url": "http://arxiv.org/abs/2608.30295v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.30295",

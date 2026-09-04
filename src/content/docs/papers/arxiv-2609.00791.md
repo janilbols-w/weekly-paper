@@ -39,7 +39,7 @@ In this work, we introduce Instella-MoE, a fully open Mixture-of-Experts (MoE) l
 ## 元数据
 
 - 作者：Jiang Liu, Sudhanshu Ranjan, Prakamya Mishra, Yonatan Dukler, Gowtham Ramesh, Jialian Wu, Ximeng Sun, Wen Xie, Chaojun Hou, Vikram Appia, Zhenyu Gu, Zicheng Liu, Emad Barsoum
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-01；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

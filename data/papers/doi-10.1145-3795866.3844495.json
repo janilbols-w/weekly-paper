@@ -1,10 +1,10 @@
 {
-  "id": "arxiv:2609.01338",
+  "id": "doi:10.1145/3795866.3844495",
   "title": "mzCache: On-Device LLM Memory Management under Multitasking",
   "abstract": "On-device mobile Large Language Model (LLM) inference is gaining significant attention. However, mobile devices operate in highly dynamic multitasking environments where users frequently switch between applications. This creates memory pressure, forcing LLM memory (model weights and KV cache) to be evicted by the operating system. When a new inference request arrives, the inference system must restore the evicted memory through slow storage reads or recompute the entire KV cache, severely degrading responsiveness. To address this, we present mzCache, an on-device LLM inference system with specialized memory management for multitasking environments. Under unpredictable memory pressure, mzCache elastically evicts LLM memory and leverages the unified memory of mobile SoCs to enable zero-wait inference on the GPU with concurrent CPU-side restoration. mzCache realizes this through restoration-oriented memory management: LLM memory is partitioned into fine-grained shared buffers to enable partial eviction and restoration with concurrent cross-processor access, while hybrid swap and backward-out eviction policies ensure low-latency restoration from any eviction state. Implemented on llama.cpp and deployed as an Android application, mzCache achieves 2.1-5.5$\\times$ reduction in Time-to-First-Token compared to storage-backed partial offload and demonstrates its effectiveness in real multitasking scenarios.",
   "url": "https://arxiv.org/abs/2609.01338",
   "pdf_url": "https://arxiv.org/pdf/2609.01338",
-  "published": "2026-09-02",
+  "published": "2026-09-01",
   "updated": "2026-09-02",
   "authors": [
     "Hongseung Yu",
@@ -19,10 +19,10 @@
     "cs.LG",
     "cs.OS"
   ],
-  "doi": "",
+  "doi": "10.1145/3795866.3844495",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "MobiCom 2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -59,10 +59,15 @@
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
-  "first_seen": "2026-09-02T04:42:03+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "first_seen": "2026-09-04T04:47:28+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.01338v1",
+      "url": "http://arxiv.org/abs/2609.01338v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.01338",

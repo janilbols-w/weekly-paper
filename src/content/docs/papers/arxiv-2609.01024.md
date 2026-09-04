@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) architectures scale Large Language Model (LLM) capacity
 ## 元数据
 
 - 作者：Ziyan Gan, Fangxin Liu, Chenyang Guan, Junjie Wang, Ning Yang, Haomin Li, Xiang Li, Siran Yang, Jiamang Wang, Lin Qu, Zongwu Wang, Li Jiang, Haibing Guan
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-01；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/gzyyy0/PCoMoE](https://github.com/gzyyy0/PCoMoE)
 - 阅读深度：metadata

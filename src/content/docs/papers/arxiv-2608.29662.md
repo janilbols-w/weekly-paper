@@ -39,7 +39,7 @@ Knowledge distillation effectively transfers reasoning capabilities from large l
 ## 元数据
 
 - 作者：Huiyi Zhang, Zijian Li, Xiaocheng Feng, Weitao Ma, Xiaoliang Yang, Yichong Huang, Bing Qin
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-30；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

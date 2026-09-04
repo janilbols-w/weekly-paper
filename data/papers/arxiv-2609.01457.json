@@ -4,7 +4,7 @@
   "abstract": "Large language model (LLM) fine-tuning is increasingly shifting toward data generated on edge devices, where memory, computation, bandwidth, and connectivity constraints make conventional federated learning difficult to sustain. Split federated fine-tuning (SFT) improves client-side efficiency by offloading most model parameters and computation to the server but requires step-by-step bidirectional communication loop across the split interface and forces continuous client involvement throughout training. In this paper, we present L-shaped SFT, a split fine-tuning framework that removes this bidirectional bottleneck. Our key insight is that weight tying in modern LLMs enables server-side hidden activations to be directly supervised using target embeddings, allowing the training loss to be computed on the server without returning server outputs to the client. To further eliminate the need for continuous client participation, based on L-shaped SFT, we introduce one-shot SFT, in which clients upload activations once and then go offline while the server continues optimization over cached representations. We implement our design in a real system testbed with heterogeneous edge clients, including commercial smartphones and NVIDIA developer boards. Experiments demonstrate that our schemes significantly reduce communication costs and client online time compared with existing SFT baselines.",
   "url": "https://arxiv.org/abs/2609.01457",
   "pdf_url": "https://arxiv.org/pdf/2609.01457",
-  "published": "2026-09-02",
+  "published": "2026-09-01",
   "updated": "2026-09-02",
   "authors": [
     "Jiaxiang Geng",
@@ -19,7 +19,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "10 pages, 8 figures, accepted by Mobihoc2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -56,9 +56,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-02T04:42:03+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.01457v1",
+      "url": "http://arxiv.org/abs/2609.01457v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.01457",

@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) models enable efficient scaling of large language model
 ## 元数据
 
 - 作者：Xiaoyang Lu, Belthangady Akash Vi Narayana Pai, Xian-He Sun
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-08-31；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

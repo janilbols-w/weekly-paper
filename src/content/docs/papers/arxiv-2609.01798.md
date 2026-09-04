@@ -39,7 +39,7 @@ Large language models (LLMs) are increasingly deployed on mobile devices, making
 ## 元数据
 
 - 作者：Wei Hu, Xiaolong Tu, Dawei Chen, Yitao Chen, Kyungtae Han, Haoxin Wang
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-01；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

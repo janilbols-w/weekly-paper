@@ -39,7 +39,7 @@ Graph positional encodings are widely used in graph neural networks and graph Tr
 ## 元数据
 
 - 作者：Zimo Yan, Yifan Li, Hao Li, Zheng Xie, Chang Liu, Zheming Tu, Yuan Wang
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

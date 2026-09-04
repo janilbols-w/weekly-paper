@@ -39,7 +39,7 @@ Deep research agents augment large language models with external tools to answer
 ## 元数据
 
 - 作者：Jie Ding, Rui Sun, Xinyuan Zhang, Zeyu Zhang, Xin Liu
-- 发布：2026-09-03；更新：2026-09-03
+- 发布：2026-09-02；更新：2026-09-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

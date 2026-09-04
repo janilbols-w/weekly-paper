@@ -39,7 +39,7 @@ Characterising AI workload performance on modern HPC systems requires understand
 ## 元数据
 
 - 作者：Jacopo Raffi, Thomas Pasquali, Lorenzo Piarulli, Filippo Spiga, Marco Faltelli, Andreas Herten, Domenico Siracusa, Daniele De Sensi, Flavio Vella
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-02；更新：2026-09-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

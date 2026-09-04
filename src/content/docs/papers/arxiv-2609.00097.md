@@ -39,7 +39,7 @@ The development of long-context Large Language Models (LLMs) is constrained by t
 ## 元数据
 
 - 作者：Zhigeng Liu, Zhiyuan Ning, Ruixiao Li, Xiaoran Liu, Yuerong Song, Min Zhang, Ziwei He, Xipeng Qiu
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-08-31；更新：2026-09-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/qluoluo/faster-flash-decoding](https://github.com/qluoluo/faster-flash-decoding)
 - 阅读深度：metadata

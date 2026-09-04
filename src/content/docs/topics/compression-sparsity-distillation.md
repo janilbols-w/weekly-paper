@@ -5,57 +5,64 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **224** 篇。
+累计收录 **231** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](../../papers/arxiv-2609.02253/) | 2026-09-03 | 47 |
+| [Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning](../../papers/arxiv-2606.20954/) | 2026-09-04 | 45 |
+| [CoMAP: Co-Evolving World Models and Agent Policies for LLM Agents](../../papers/arxiv-2606.02372/) | 2026-09-04 | 45 |
+| [EmoDistill: Offline Emotion Skill Distillation for Language Model Agents in Adversarial Negotiation](../../papers/arxiv-2605.26785/) | 2026-09-04 | 42 |
+| [Who Speaks for the Pruned? Visual Token Pruning as Coverage Optimization](../../papers/arxiv-2609.03158/) | 2026-09-04 | 40 |
+| [Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR](../../papers/arxiv-2609.04108/) | 2026-09-04 | 40 |
 | [OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation](../../papers/arxiv-2605.29829/) | 2026-09-03 | 46 |
 | [Shiva-DiT: Residual-Based Differentiable Top-$k$ Selection for Efficient Diffusion Transformers](../../papers/arxiv-2602.05605/) | 2026-09-03 | 44 |
 | [On-Policy Distillation Meets Off-Policy GRPO: Training Compact Instruction-Following Rerankers](../../papers/arxiv-2609.01947/) | 2026-09-03 | 43 |
-| [Learn from Whoever Is Right: Answer-Verified Multi-Teacher Distillation for Multi-Domain LLMs](../../papers/arxiv-2609.02548/) | 2026-09-03 | 42 |
+| [ALRA: Adaptive Local Relational Alignment for Logit-Based Pre-training Distillation of Autoregressive Language Models](../../papers/arxiv-2609.03355/) | 2026-09-03 | 43 |
+| [Rethinking On-Policy Distillation of Large Language Models II: One Training Example](../../papers/arxiv-2609.04172/) | 2026-09-03 | 41 |
 | [SpCCL: A Sparsity-Aware Collective Communication Library for GPU Platforms](../../papers/arxiv-2607.04676/) | 2026-09-03 | 40 |
-| [SEAL: Reinforcing Global Safety in Mixture-of-Experts through Shared Expert ALignment](../../papers/arxiv-2609.02293/) | 2026-09-03 | 40 |
 | [MASkills: Continual Skills Optimization for Multi-Agent LLM Systems](../../papers/arxiv-2609.02094/) | 2026-09-03 | 40 |
 | [GONE: Structural Knowledge Unlearning via Neighborhood-Expanded Distribution Shaping](../../papers/arxiv-2603.12275/) | 2026-09-03 | 39 |
 | [EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction](../../papers/arxiv-2609.02783/) | 2026-09-03 | 39 |
-| [Debias-SparseGPT: Bias-Aware Pruning for Large Language Models](../../papers/arxiv-2609.02496/) | 2026-09-03 | 39 |
 | [SHARD: Safe and Helpful Alignment via Self-Reframing Distillation](../../papers/arxiv-2606.15517/) | 2026-09-03 | 38 |
 | [DLM-One: Diffusion Language Models for One-Step Sequence Generation](../../papers/arxiv-2506.00290/) | 2026-09-03 | 38 |
 | [A Token is Worth over 1,000 Tokens: Efficient Knowledge Distillation through Low-Rank Clone](../../papers/arxiv-2505.12781/) | 2026-09-02 | 53 |
-| [Faster Than Flash: Exploiting Attention Sparsity for Efficient Long-Context Decoding](../../papers/arxiv-2609.00097/) | 2026-09-02 | 52 |
-| [SinkPruner: Sink-Free Visual Token Pruning for Multimodal Large Language Models](../../papers/arxiv-2609.01004/) | 2026-09-02 | 48 |
-| [Hardware Acceleration of Block-Diffusion LLM for Edge Devices](../../papers/arxiv-2609.01084/) | 2026-09-02 | 47 |
+| [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](../../papers/arxiv-2609.02253/) | 2026-09-02 | 47 |
 | [Is Human Annotation Necessary? Iterative MBR Distillation for Error Span Detection in Machine Translation](../../papers/arxiv-2603.12983/) | 2026-09-02 | 46 |
-| [QTEA: Ternary LLMs with Sparse Residual Salient Weight and By-Column Optimization](../../papers/arxiv-2609.00224/) | 2026-09-02 | 43 |
+| [Debias-SparseGPT: Bias-Aware Pruning for Large Language Models](../../papers/arxiv-2609.02496/) | 2026-09-02 | 44 |
+| [Learn from Whoever Is Right: Answer-Verified Multi-Teacher Distillation for Multi-Domain LLMs](../../papers/arxiv-2609.02548/) | 2026-09-02 | 42 |
 | [Knowledge Distillation During Mid-Training Favors Reasoning over Factual Recall](../../papers/arxiv-2609.01532/) | 2026-09-02 | 42 |
+| [SEAL: Reinforcing Global Safety in Mixture-of-Experts through Shared Expert ALignment](../../papers/arxiv-2609.02293/) | 2026-09-02 | 40 |
 | [Is Knowledge Distillation Actually Greener? A Case Study in Machine Translation](../../papers/arxiv-2602.09691/) | 2026-09-02 | 40 |
-| [Instella-MoE Technical Report](../../papers/arxiv-2609.00791/) | 2026-09-02 | 40 |
 | [SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task](../../papers/arxiv-2609.00654/) | 2026-09-02 | 39 |
-| [Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation](../../papers/arxiv-2608.29588/) | 2026-09-01 | 51 |
+| [SinkPruner: Sink-Free Visual Token Pruning for Multimodal Large Language Models](../../papers/arxiv-2609.01004/) | 2026-09-01 | 48 |
 | [World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning](../../papers/arxiv-2606.03603/) | 2026-09-01 | 47 |
 | [Masked Distillation: Internalizing the Chain-of-Thought in Language Models](../../papers/arxiv-2607.22629/) | 2026-09-01 | 47 |
-| [AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models](../../papers/arxiv-2608.29208/) | 2026-09-01 | 47 |
+| [Hardware Acceleration of Block-Diffusion LLM for Edge Devices](../../papers/arxiv-2609.01084/) | 2026-09-01 | 47 |
 | [OISD: On-Policy Internal Self-Distillation of Language Models](../../papers/arxiv-2605.29089/) | 2026-09-01 | 46 |
 | [Locality-Aware Redundancy Pruning for LLM Depth Compression](../../papers/arxiv-2605.27786/) | 2026-09-01 | 46 |
 | [An Efficient Sparse Fine-Tuning with Low Quantization Error via Neural Network Pruning](../../papers/arxiv-2502.11439/) | 2026-09-01 | 46 |
-| [ACTD: Anchor-Based Cross-Tokenizer Distillation with Residual Regularization](../../papers/arxiv-2608.29662/) | 2026-09-01 | 44 |
 | [MOONSHOT : A Framework for Multi-Objective Pruning of Vision and Large Language Models](../../papers/arxiv-2604.13287/) | 2026-09-01 | 43 |
-| [B$^3$-PWL: GPU-Batched Branch-and-Bound for Piecewise-Linear Optimization with SOS2 Constraints](../../papers/arxiv-2608.28988/) | 2026-09-01 | 43 |
 | [Generalist Graph Anomaly Detection via Prototype-Based Distillation](../../papers/arxiv-2605.26857/) | 2026-09-01 | 42 |
 | [Spectral Analysis for Sparse Matrix Computation: Insights and Potential](../../papers/arxiv-2608.29362/) | 2026-09-01 | 41 |
 | [FocusAgent: Simple Yet Effective Ways of Trimming the Large Context of Web Agents](../../papers/arxiv-2510.03204/) | 2026-09-01 | 41 |
-| [Stratified Consistency Distillation for Natural Language Formalization](../../papers/arxiv-2608.30258/) | 2026-09-01 | 40 |
 | [NanoVDR: Distilling a 2B Vision-Language Retriever into a 70M Text-Only Encoder for Visual Document Retrieval](../../papers/arxiv-2603.12824/) | 2026-09-01 | 40 |
-| [LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering](../../papers/arxiv-2608.31102/) | 2026-09-01 | 40 |
+| [Instella-MoE Technical Report](../../papers/arxiv-2609.00791/) | 2026-09-01 | 40 |
 | [Extracting Small Translation Specialists from LLMs by Aggressively Pruning Experts](../../papers/arxiv-2605.28042/) | 2026-09-01 | 40 |
 | [Watch your steps: Dormant Adversarial Behaviors that Activate upon LLM Finetuning](../../papers/arxiv-2505.16567/) | 2026-09-01 | 38 |
-| [PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents](../../papers/arxiv-2608.30760/) | 2026-09-01 | 38 |
+| [Faster Than Flash: Exploiting Attention Sparsity for Efficient Long-Context Decoding](../../papers/arxiv-2609.00097/) | 2026-08-31 | 52 |
 | [PRISM: Self-Pruning Intrinsic Selection Method for Training-Free Multimodal Data Selection](../../papers/arxiv-2502.12119/) | 2026-08-31 | 51 |
 | [TokenPilot: Cache-Efficient Context Management for LLM Agents](../../papers/arxiv-2606.17016/) | 2026-08-31 | 45 |
 | [Self-Evaluation Is Already There: Eliciting Latent Judge Calibration in Base LLMs with Minimal Data](../../papers/arxiv-2606.05122/) | 2026-08-31 | 44 |
+| [QTEA: Ternary LLMs with Sparse Residual Salient Weight and By-Column Optimization](../../papers/arxiv-2609.00224/) | 2026-08-31 | 43 |
 | [Pruning Laws for Large Language Models](../../papers/arxiv-2504.04342/) | 2026-08-31 | 43 |
 | [Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey](../../papers/arxiv-2304.10891/) | 2026-08-31 | 42 |
+| [Stratified Consistency Distillation for Natural Language Formalization](../../papers/arxiv-2608.30258/) | 2026-08-31 | 40 |
+| [LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering](../../papers/arxiv-2608.31102/) | 2026-08-31 | 40 |
+| [PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents](../../papers/arxiv-2608.30760/) | 2026-08-31 | 38 |
+| [Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation](../../papers/arxiv-2608.29588/) | 2026-08-30 | 51 |
+| [ACTD: Anchor-Based Cross-Tokenizer Distillation with Residual Regularization](../../papers/arxiv-2608.29662/) | 2026-08-30 | 44 |
+| [AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models](../../papers/arxiv-2608.29208/) | 2026-08-29 | 47 |
+| [B$^3$-PWL: GPU-Batched Branch-and-Bound for Piecewise-Linear Optimization with SOS2 Constraints](../../papers/arxiv-2608.28988/) | 2026-08-29 | 43 |
 | [Beyond FLOPs: Benchmarking Real Inference Acceleration of LLM Pruning under a GEMM-Centric Taxonomy](../../papers/arxiv-2606.09080/) | 2026-08-28 | 51 |
 | [Frequency Matters: Fast Model-Agnostic Data Curation for Pruning and Quantization](../../papers/arxiv-2603.16105/) | 2026-08-28 | 50 |
 | [MENTOR: Reinforcement Learning via Flexible Teacher-Optimized Rewards for Tool-Use Distillation](../../papers/arxiv-2510.18383/) | 2026-08-28 | 43 |

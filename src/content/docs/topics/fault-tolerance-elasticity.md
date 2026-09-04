@@ -11,8 +11,8 @@ description: "Fault Tolerance & Elasticity"
 |---|---|---:|
 | [Manifold-Aware General Coded Computing for Straggler-Resilient Distributed Computing](../../papers/arxiv-2609.00552/) | 2026-09-02 | 43 |
 | [FlexP-SFT: A Flexible Aggregation-Free Framework for On-Device Personalized Split Federated Fine-Tuning of LLMs](../../papers/arxiv-2508.10349/) | 2026-09-02 | 43 |
-| [TrainSDC: Characterizing and Mitigating Silent Data Corruption in Large Language Model Training](../../papers/arxiv-2608.30769/) | 2026-09-01 | 40 |
 | [Learning-Theoretic Foundation for General Coded Computing: The Straggler Setting](../../papers/arxiv-2608.28910/) | 2026-09-01 | 40 |
+| [TrainSDC: Characterizing and Mitigating Silent Data Corruption in Large Language Model Training](../../papers/arxiv-2608.30769/) | 2026-08-31 | 40 |
 | [Themis: Efficient Sparse Model Training Through Fully Sharded Sparse Data Parallelism](../../papers/arxiv-2502.02581/) | 2026-08-24 | 43 |
 | [Belayer: Efficient Fault Tolerance for LLM Agentic RL Training](../../papers/arxiv-2608.14635/) | 2026-08-18 | 39 |
 | [ZeroLock: Concurrent Memory-Efficient LLM Training via Modular Update Decoupling](../../papers/arxiv-2608.07974/) | 2026-08-08 | 42 |

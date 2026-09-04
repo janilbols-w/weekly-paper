@@ -4,7 +4,7 @@
   "abstract": "Inference with transformer-based large language models (LLMs) is often limited by the memory-bound KV cache and quadratic attention cost. State-space models (SSMs) mitigate this through linear attention and fixed-size recurrent states, but their large dense linear projections remain computationally expensive even after quantization. We introduce a method that induces sparse neural activity in heavily quantized linear-attention models with minimal performance loss. Activations below a per-projection trainable threshold ($\\pm \\Delta$) are nullified while preserving crucial outliers, achieving comparable performance to dense models with up to 4$\\times$ fewer effective arithmetic operations. Targeting a multi-core, multi-chip neuromorphic platform, where event-driven execution converts unstructured sparsity into throughput at both the compute and communication levels, a capability GPU architectures fundamentally lack, we project up to 37$\\times$ higher throughput and 16$\\times$ lower power versus edge GPU inference of a comparable transformer-based model, and up to 5.4$\\times$ improvements over the non-sparsified baseline. These results position sparse, quantized linear-attention models as a natural fit for deploying LLMs on event-driven multi-core platforms.",
   "url": "https://arxiv.org/abs/2608.30439",
   "pdf_url": "https://arxiv.org/pdf/2608.30439",
-  "published": "2026-09-01",
+  "published": "2026-08-31",
   "updated": "2026-09-01",
   "authors": [
     "Simon Richter",
@@ -18,13 +18,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.NE",
-    "cs.LG"
+    "cs.LG",
+    "cs.NE"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "8 pages, 4 figures, Accepted at IEEE MCSOC2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -62,9 +62,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-01T04:41:13+00:00",
-  "last_seen": "2026-09-03T05:28:10+00:00",
+  "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2608.30439v1",
+      "url": "http://arxiv.org/abs/2608.30439v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2608.30439",

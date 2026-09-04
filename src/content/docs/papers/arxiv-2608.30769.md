@@ -39,7 +39,7 @@ LLM training is increasingly vulnerable to silent data corruption (SDC), yet exi
 ## 元数据
 
 - 作者：Zhipeng Xia, Haotian Xu, Siyu Yun, Liqi Lin, Hu Liu, Yu Li, Cheng Zhuo
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

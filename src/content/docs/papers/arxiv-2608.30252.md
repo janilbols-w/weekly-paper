@@ -39,7 +39,7 @@ Long-context LLM applications such as document summarization and multi-turn agen
 ## 元数据
 
 - 作者：Tong Yuan, Chengxi Liao, Zeyi Wen
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-08-31；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
