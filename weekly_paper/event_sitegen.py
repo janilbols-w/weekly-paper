@@ -41,13 +41,15 @@ def _status_badge(status: str) -> str:
 
 def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
     program_briefing = event.get("collector") == "official_program"
+    briefing_title_suffix = event.get("briefing_title_suffix_zh", "Workshop 议程观察")
     page_title = (
-        f"{event['short_name']} · Workshop 议程观察"
+        f"{event['short_name']} · {briefing_title_suffix}"
         if program_briefing
         else f"{event['short_name']} · 高效推理与 AI Infra 精选"
     )
+    program_link_label = event.get("program_link_label_zh", "官方 Workshop 公告")
     source_links = (
-        f"[会议官网]({event['official_url']}) · [官方 Workshop 公告]({event.get('program_url', event['official_url'])})"
+        f"[会议官网]({event['official_url']}) · [{program_link_label}]({event.get('program_url', event['official_url'])})"
         if program_briefing
         else f"[会议官网]({event['official_url']}) · [会议议程]({event.get('program_url', event['official_url'])}) · [官方录用列表]({event.get('accepted_papers_url', event['official_url'])})"
     )
@@ -163,10 +165,16 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             [
                 "",
                 f"- 触发类型：`{event.get('trigger_type', 'program_released')}`；来源摘要：`{event.get('source_digest', '')[:12]}`。",
-                "- 本页记录的是 workshop 正式名单与主办方已公开议程，不把 workshop CFP 当作正式论文 proceedings。",
-                "- 尚未公布的讲题、录用论文与最终日程明确标为待更新，不据此推断性能结论或奖项。",
             ]
         )
+        methodology_notes = event.get(
+            "program_methodology_notes_zh",
+            [
+                "本页记录的是 workshop 正式名单与主办方已公开议程，不把 workshop CFP 当作正式论文 proceedings。",
+                "尚未公布的讲题、录用论文与最终日程明确标为待更新，不据此推断性能结论或奖项。",
+            ],
+        )
+        lines.extend(f"- {note}" for note in methodology_notes)
     else:
         lines.extend(["", "## 来源与覆盖范围", ""])
         sources = event.get("sources", [])

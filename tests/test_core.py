@@ -291,6 +291,8 @@ events:
     program_url: https://example.com/program
     collector: official_program
     program_released_date: 2026-08-10
+    briefing_title_suffix_zh: 活动议程观察
+    program_link_label_zh: 官方日程
     summary_zh: 官方议程已发布。
     relevance_zh: 与 AI Infra 相关。
     key_programs:
@@ -311,6 +313,8 @@ events:
             self.assertEqual(summary["corpus_total"], 0)
             self.assertEqual(summary["selected_total"], 0)
             page = (root / "src" / "content" / "docs" / "events" / "program-2026.md").read_text()
+            self.assertIn("Program 2026 · 活动议程观察", page)
+            self.assertIn("[官方日程](https://example.com/program)", page)
             self.assertIn("重点议程 1 项", page)
             self.assertIn("program_released", page)
             self.assertNotIn("## 精选论文", page)

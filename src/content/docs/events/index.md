@@ -11,6 +11,7 @@ description: "LLM 高效推理与 AI Infra 会议日历及独立精选"
 | [EMNLP 2026](https://2026.emnlp.org/) | 2026-10-24 — 2026-10-29 | LLM / NLP / ACL Family | Budapest | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
 | [COLM 2026](https://colmweb.org/) | 2026-10-06 — 2026-10-09 | LLM / NLP / COLM | San Francisco | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
 | [SOSP 2026](https://sigops.org/s/conferences/sosp/2026/) | 2026-09-29 — 2026-10-02 | Systems / ACM SIGOPS | Prague | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
+| [PyTorch Conference China 2026](./pytorchcon-china-2026/) | 2026-09-07 — 2026-09-09 | Industry / PyTorch / CNCF / OpenInfra | Shanghai, China | <span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> |
 | [OSDI 2026](./osdi-2026/) | 2026-07-13 — 2026-07-15 | Systems / USENIX | Seattle, Washington, United States | <span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> |
 | [ICML 2026](https://icml.cc/Conferences/2026) | 2026-07-06 — 2026-07-11 | Machine Learning / ICML | Seoul | <span class="event-status event-status--tracking"><span aria-hidden="true">🔵</span> 待跟踪</span> |
 | [ACL 2026](./acl-2026/) | 2026-07-02 — 2026-07-07 | LLM / NLP / ACL Family | San Diego, California, United States | <span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> |
