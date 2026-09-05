@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-import unittest
+import json
 import os
+import unittest
 from datetime import date
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -10,10 +11,12 @@ from unittest.mock import Mock, patch
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
 from weekly_paper.event_collectors import parse_acl_anthology_xml, parse_usenix_schedule_html
+from weekly_paper.event_notify import select_delivery_event
 from weekly_paper.event_pipeline import _in_event_scope, detect_due_events, load_events, run_event
 from weekly_paper.models import Paper
 from weekly_paper.notify import select_delivery_week, site_readiness_error
 from weekly_paper.pipeline import run
+from weekly_paper.render import render_event_wecom
 from weekly_paper.storage import save_papers
 from weekly_paper.taxonomy import load_taxonomy
 from weekly_paper.utils import edition_bounds, edition_week_id
@@ -140,6 +143,63 @@ class CoreTests(unittest.TestCase):
             )
         self.assertIsNone(error)
         self.assertEqual(request.call_count, 2)
+
+    def test_event_notify_selects_only_latest_recent_event(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            for event_id, generated_at, digest in (
+                ("old-2026", "2026-08-01T00:00:00+00:00", "old-digest"),
+                ("new-2026", "2026-09-04T00:00:00+00:00", "new-digest"),
+            ):
+                target = root / "data" / "events" / event_id
+                target.mkdir(parents=True)
+                (target / "event.json").write_text(
+                    json.dumps(
+                        {
+                            "id": event_id,
+                            "generated_at": generated_at,
+                            "source_digest": digest,
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+            runs = {
+                "old-2026:event_week": {"generated_at": "2026-08-01T00:00:00+00:00", "digest": "old-digest"},
+                "new-2026:event_week": {"generated_at": "2026-09-04T00:00:00+00:00", "digest": "new-digest"},
+            }
+            state = root / "data" / "state"
+            state.mkdir(parents=True)
+            (state / "event-runs.json").write_text(json.dumps(runs), encoding="utf-8")
+            selected = select_delivery_event(root, None, date(2026, 9, 5), max_age_days=7)
+            self.assertEqual(selected["id"], "new-2026")
+            self.assertIsNone(select_delivery_event(root, None, date(2026, 9, 20), max_age_days=7))
+
+    def test_event_wecom_renders_program_briefing(self) -> None:
+        event = {
+            "id": "program-2026",
+            "short_name": "Program 2026",
+            "start_date": "2026-09-07",
+            "end_date": "2026-09-09",
+            "location": "Shanghai",
+            "status": "即将举行",
+            "trigger_type": "event_week",
+            "collector": "official_program",
+            "official_url": "https://example.com",
+            "summary_zh": "官方议程已发布。",
+            "relevance_zh": "与 AI Infra 相关。",
+            "key_programs": [
+                {
+                    "title": "Serving Systems",
+                    "date": "2026-09-08",
+                    "url": "https://example.com/serving",
+                    "focus_zh": "推理服务与显存优化。",
+                }
+            ],
+        }
+        message = render_event_wecom(event, [], "https://example.com/site/")
+        self.assertIn("会议专题 · Program 2026", message)
+        self.assertIn("Serving Systems", message)
+        self.assertIn("https://example.com/site/events/program-2026/", message)
 
     def test_paper_store_prunes_records_outside_current_dataset(self) -> None:
         with TemporaryDirectory() as directory:

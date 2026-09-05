@@ -31,14 +31,19 @@ def split_markdown(markdown: str, limit: int = 3900) -> List[str]:
     return chunks
 
 
-def send_wecom(markdown: str, config: Dict[str, Any], retries: int = 3) -> None:
+def send_wecom(
+    markdown: str,
+    config: Dict[str, Any],
+    retries: int = 3,
+    continuation_label: str = "周报续",
+) -> None:
     webhook = os.getenv("WECOM_WEBHOOK_URL", "").strip()
     if not webhook.startswith("https://qyapi.weixin.qq.com/cgi-bin/webhook/send?"):
         raise ValueError("WECOM_WEBHOOK_URL is missing or is not a recognized WeCom robot webhook")
     if retries < 1:
         raise ValueError("retries must be at least 1")
     for index, chunk in enumerate(split_markdown(markdown), start=1):
-        content = chunk if index == 1 else f"**周报续 {index}**\n{chunk}"
+        content = chunk if index == 1 else f"**{continuation_label} {index}**\n{chunk}"
         last_error: Exception = RuntimeError("unknown WeCom error")
         for attempt in range(retries):
             try:

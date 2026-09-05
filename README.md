@@ -7,7 +7,7 @@
 - 其他合格论文的累计知识库；
 - 一级领域 → 二级方向 → 三级技术路径的知识树和统计表；
 - GitHub Pages 静态网站；
-- 周五 14:00 的企业微信群机器人推送。
+- 周报和会议专题发布后的企业微信群机器人推送。
 
 ## 架构
 
@@ -46,7 +46,7 @@ npm run dev
 
 没有 `OPENAI_API_KEY` 时，采集、规则分类、可解释评分和网站构建仍会工作；定向 PDF 阅读和中文编辑增强会跳过。正式企业微信发送要求精选论文具有完整中文摘要，因此不会发送占位内容。
 
-当前部署采用无 API Key 模式：周五 12:30 GitHub Actions 启动采集，16:00 由 Codex 按 [CODEX_EDITORIAL.md](CODEX_EDITORIAL.md) 完成 Top 5 中文编辑并推送，main 分支更新触发 Pages 部署；Pages 部署成功后企业微信在中文字段和线上 digest 均匹配时发送，周五 19:00 另有一次兜底检查。
+当前部署采用无 API Key 模式：周五 12:30 GitHub Actions 启动采集，16:00 由 Codex 按 [CODEX_EDITORIAL.md](CODEX_EDITORIAL.md) 完成 Top 5 中文编辑并推送，main 分支更新触发 Pages 部署；Pages 部署成功后，周报与最近生成的会议专题分别在线上 digest 匹配时发送，并各自记录摘要哈希防止重复投递。周报在周五 19:00、会议专题在周五 22:00 另有兜底检查。
 
 默认来源采用双层容错：arXiv Atom API 负责整周检索，arXiv 官方分类 RSS 在工作日逐日补充；OpenReview、NVIDIA/PyTorch/Hugging Face RSS 用于会议与生态信号。OpenAlex 是可选的 arXiv 索引增强源，设置 `OPENALEX_API_KEY` 后会自动启用。
 
@@ -77,12 +77,15 @@ npm run dev
 
 可选变量 `OPENAI_MODEL` 默认是 `gpt-5-mini`。Webhook 不应写入 `.env.example` 之外的任何已跟踪文件，也不要粘贴到 Issue 或 Actions 日志。
 
-推送工作流由周报 Pages 部署成功事件触发，周五 19:00 再兜底检查一次。采集或中文编辑尚未完成时会安全跳过，后续部署继续重试；Webhook 配置或真实发送错误仍会使工作流失败。发送前会检查线上 digest，成功后记录摘要哈希以防重复投递。
+推送工作流由 Pages 部署成功事件触发。周报在周五 19:00、会议专题在周五 22:00 再兜底检查一次。采集、中文编辑或页面发布尚未完成时会安全跳过，后续部署继续重试；Webhook 配置或真实发送错误仍会使工作流失败。发送前会检查对应页面的线上 digest，成功后分别在 `data/state/deliveries.json` 和 `data/state/event-deliveries.json` 记录摘要哈希以防重复投递。会议通知默认只检查最近 7 天内最后生成的专题，避免首次启用时补发历史会议。
+
+所有会写入 `main` 的自动工作流都会通过同一脚本在推送前执行 `pull --rebase`，遇到并发更新时最多重试三次，并确认远端已经包含本次提交。这样周报采集、会议调研和送达状态同时运行时能够吸收对方的最新提交，不会因一次非快进推送而遗留本地分叉。
 
 可在不发送消息、不写入送达状态的情况下验证完整推送链路：
 
 ```bash
 .venv/bin/python -m weekly_paper.notify --reference-date YYYY-MM-DD --latest-closed-week --dry-run
+.venv/bin/python -m weekly_paper.event_notify --reference-date YYYY-MM-DD --dry-run --skip-health-check
 ```
 
 ## 质量保护

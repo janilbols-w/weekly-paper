@@ -70,5 +70,5 @@ jobs:
           git add data reports src/data src/content/docs/weekly src/content/docs/topics src/content/docs/papers public/papers.json
           if ! git diff --cached --quiet; then
             git commit -m "data: update weekly paper briefing"
-            git push
+            bash .github/scripts/push-main.sh
           fi

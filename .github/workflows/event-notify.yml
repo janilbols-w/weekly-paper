@@ -1,17 +1,21 @@
-name: Send weekly paper briefing to WeCom
+name: Send event briefing to WeCom
 
 on:
   schedule:
     # Fallback in case a Pages workflow_run event is delayed or unavailable.
-    - cron: '0 19 * * 5'
+    - cron: '0 22 * * 5'
       timezone: Asia/Shanghai
   workflow_run:
     workflows: [Deploy GitHub Pages]
     types: [completed]
   workflow_dispatch:
     inputs:
+      event_id:
+        description: Optional event id; defaults to the latest recent briefing
+        required: false
+        default: ''
       force:
-        description: Send again even if this weekly digest was delivered
+        description: Send again even if this event digest was delivered
         type: boolean
         default: false
 
@@ -19,7 +23,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: weekly-paper-notification
+  group: weekly-paper-event-notification
   cancel-in-progress: false
 
 jobs:
@@ -41,27 +45,28 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Send existing briefing
+      - name: Send latest event briefing
         env:
           WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+          EVENT_ID: ${{ inputs.event_id }}
         run: |
           args=()
+          if [[ -n "$EVENT_ID" ]]; then args+=(--event "$EVENT_ID"); fi
           if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
-          python -m weekly_paper.notify \
+          python -m weekly_paper.event_notify \
             --reference-date "$(TZ=Asia/Shanghai date +%F)" \
-            --latest-closed-week \
             --allow-not-ready \
-            --health-check-attempts 6 \
+            --health-check-attempts 12 \
             --health-check-interval-seconds 10 \
             "${args[@]}"
 
-      - name: Persist delivery state
+      - name: Persist event delivery state
+        if: always() && hashFiles('data/state/event-deliveries.json') != ''
         run: |
-          if [[ ! -f data/state/deliveries.json ]]; then exit 0; fi
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add data/state/deliveries.json
+          git add data/state/event-deliveries.json
           if ! git diff --cached --quiet; then
-            git commit -m "state: record weekly WeCom delivery"
+            git commit -m "state: record event WeCom delivery"
             bash .github/scripts/push-main.sh
           fi

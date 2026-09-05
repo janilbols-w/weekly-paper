@@ -51,5 +51,5 @@ jobs:
           git add data/events data/state/event-runs.json reports/events src/data/events.json src/content/docs/events
           if ! git diff --cached --quiet; then
             git commit -m "data: update conference event research"
-            git push
+            bash .github/scripts/push-main.sh
           fi
