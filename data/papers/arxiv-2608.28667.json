@@ -54,10 +54,10 @@
     "no code link detected in metadata"
   ],
   "summary_en": "The rapid proliferation of Large Language Models (LLMs) has raised concerns about their environmental impact during inference.",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "GreenBench 面向 Apple Silicon 上的开源 LLM 推理，同时测量能耗、吞吐与碳排。作者在配备 48 GB 统一内存的 M4 Pro 上测试 5 个 3B—9B 模型和 3 类 NLP 任务；摘要报告整机功耗为 8—12 W，小模型相较 7B—9B 模型可取得 2.6—4.2 倍吞吐，并最多降低 62% 的单 token 能耗。",
+  "why_it_matters_zh": "该工作补充了数据中心 GPU 之外的本地推理能效证据，并把模型规模、吞吐、准确率与电网碳强度放在同一评估框架中，可用于边缘部署和单用户服务的硬件选型。",
+  "limitations_zh": "结论来自单台 M4 Pro、5 个中小规模模型和 3 类任务，不能直接外推到多用户连续批处理、服务器级负载或其他 Apple 芯片。摘要中的数据中心 GPU 能效对比也缺少统一硬件、负载与测量口径细节。",
+  "reading_depth": "abstract",
   "first_seen": "2026-09-01T04:41:13+00:00",
   "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [

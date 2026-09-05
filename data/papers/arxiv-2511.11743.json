@@ -59,10 +59,10 @@
     "no code link detected in metadata"
   ],
   "summary_en": "Deploying deep neural networks on resource-constrained devices faces two critical challenges: maintaining accuracy under aggressive quantization while ensuring predictable inference latency.",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "该工作用贝叶斯认知不确定性在不同精度专家之间路由样本，组合 BitNet 三值、1—16 bit BitLinear 与训练后量化。对三个音频分类数据集，摘要报告 4-bit 配置保留全精度模型 99.9% 的 F1，并相对 8-bit 节省 31% 能耗；高不确定样本会自动流向 8-bit 专家。",
+  "why_it_matters_zh": "按输入难度动态选择数值精度，可把混合精度从静态模型配置提升为运行时资源调度策略；其不确定性路由思路对需要兼顾精度、能耗和时延稳定性的边缘推理系统具有参考价值。",
+  "limitations_zh": "实验对象是 1.2M 参数的音频分类模型，而非语言模型；数据集、网络规模和算子形态都与 LLM 推理差异显著，不能直接外推到生成式模型。摘要也未给出路由器自身的时延和能耗开销。",
+  "reading_depth": "abstract",
   "first_seen": "2026-09-01T04:41:13+00:00",
   "last_seen": "2026-09-04T04:47:28+00:00",
   "featured_weeks": [

@@ -1,6 +1,6 @@
 ---
 title: "GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon"
-description: "The rapid proliferation of Large Language Models (LLMs) has raised concerns about their environmental impact during inference."
+description: "GreenBench 面向 Apple Silicon 上的开源 LLM 推理，同时测量能耗、吞吐与碳排。作者在配备 48 GB 统一内存的 M4 Pro 上测试 5 个 3B—9B 模型和 3 类 NLP 任务；摘要报告整机功耗为 8—12 W，小模型相较 7B—9B 模型可取得 2.6—4.2 倍吞吐，并最多降低 62% 的单 token 能耗。"
 ---
 
 **评分：51/100** · AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热
@@ -9,11 +9,11 @@ description: "The rapid proliferation of Large Language Models (LLMs) has raised
 
 ## 一句话摘要
 
-The rapid proliferation of Large Language Models (LLMs) has raised concerns about their environmental impact during inference.
+GreenBench 面向 Apple Silicon 上的开源 LLM 推理，同时测量能耗、吞吐与碳排。作者在配备 48 GB 统一内存的 M4 Pro 上测试 5 个 3B—9B 模型和 3 类 NLP 任务；摘要报告整机功耗为 8—12 W，小模型相较 7B—9B 模型可取得 2.6—4.2 倍吞吐，并最多降低 62% 的单 token 能耗。
 
 ## 为什么值得关注
 
-待编辑增强。
+该工作补充了数据中心 GPU 之外的本地推理能效证据，并把模型规模、吞吐、准确率与电网碳强度放在同一评估框架中，可用于边缘部署和单用户服务的硬件选型。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ The rapid proliferation of Large Language Models (LLMs) has raised concerns abou
 - taxonomy keywords: energy efficiency
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：结论来自单台 M4 Pro、5 个中小规模模型和 3 类任务，不能直接外推到多用户连续批处理、服务器级负载或其他 Apple 芯片。摘要中的数据中心 GPU 能效对比也缺少统一硬件、负载与测量口径细节。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ The rapid proliferation of Large Language Models (LLMs) has raised concerns abou
 - 发布：2026-09-01；更新：2026-09-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract
