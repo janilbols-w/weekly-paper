@@ -1,6 +1,11 @@
 name: Send event briefing to WeCom
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/event-notify.yml'
+      - 'data/events/**/event.json'
   schedule:
     # Fallback in case a Pages workflow_run event is delayed or unavailable.
     - cron: '0 22 * * 5'
