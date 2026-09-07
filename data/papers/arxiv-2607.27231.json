@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2607.27231",
+  "title": "KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation",
+  "abstract": "Modern AI systems depend on specialized accelerator kernels, whose development is complicated by increasingly diverse operators and hardware. LLMs and agentic systems promise to automate this work, but existing evaluations do not show whether their performance transfers across operator sources and hardware platforms, or what such transfer costs. We present KernelGenBench, the first unified multi-source and multi-chip infrastructure for evaluating LLM- and agent-generated Triton kernels. With a common Triton target spanning six hardware platforms, it provides the broadest cross-vendor hardware coverage among existing kernel-generation benchmarks. We report two controlled analytical views: KernelGenBench-MS (Multi-Source) covers 210 operators from PyTorch ATen, production vLLM operators, and proprietary cuBLAS routines, while KernelGenBench-MC (Multi-Chip) evaluates a semantically stable 110-operator subset across six hardware platforms. Our evaluation consumed over 15 billion tokens. Agentic execution improved correctness, but no method dominated across sources and platforms: vLLM posed the strongest correctness challenge, cuBLAS set the highest performance ceiling, and AutoKernel accuracy fell from 87% on NVIDIA to 25% on Iluvatar CoreX. These improvements were costly: specialized agents averaged 4.99 million tokens per successful operator, rising to 6.25 million for CUDA Optimized Skill. The results establish operator source, hardware platform, and agentic scaffold as distinct dimensions of kernel-generation capability, and show that success in a familiar source-hardware setting is not a reliable proxy for deployment readiness.",
+  "url": "https://arxiv.org/abs/2607.27231",
+  "pdf_url": "https://arxiv.org/pdf/2607.27231",
+  "published": "2026-09-07",
+  "updated": "2026-09-07",
+  "authors": [
+    "Peiyu Zang",
+    "Jian Tao",
+    "Jialing Zhang",
+    "Yichen Yuan",
+    "Wentao Zhang",
+    "Guang Liu",
+    "Yonghua Lin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kernel generation"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kernel generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern AI systems depend on specialized accelerator kernels, whose development is complicated by increasingly diverse operators and hardware.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-07T04:42:59+00:00",
+  "last_seen": "2026-09-07T04:42:59+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.27231",
+      "url": "https://arxiv.org/abs/2607.27231"
+    }
+  ]
+}

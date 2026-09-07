@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **41** 篇。
+累计收录 **42** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Adaptive Context Parallelism for Production LLM Serving](../../papers/arxiv-2609.04774/) | 2026-09-07 | 48 |
 | [RW-TTT: Batched Serving for Request-Owned Test-Time Training State](../../papers/arxiv-2605.28053/) | 2026-09-04 | 39 |
 | [Characterizing CPU-Induced Slowdowns in Multi-GPU LLM Inference](../../papers/arxiv-2603.22774/) | 2026-08-28 | 44 |
 | [TOPAS: Workflow-Aware Prefix-State Scheduling for Multi-Agent LLM Serving](../../papers/arxiv-2608.25523/) | 2026-08-26 | 44 |

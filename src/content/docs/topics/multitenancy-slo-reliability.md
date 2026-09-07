@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **17** 篇。
+累计收录 **18** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters](../../papers/arxiv-2609.04513/) | 2026-09-07 | 38 |
 | [Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy](../../papers/arxiv-2609.00817/) | 2026-09-02 | 40 |
 | [Scorpio: Serving Right Requests at the Right Time for Heterogeneous SLOs in LLM Inference](../../papers/arxiv-2505.23022/) | 2026-08-27 | 45 |
 | [Intent Engine: Natural-Language Intent Translation for Intent-Driven Orchestration in the Compute Continuum](../../papers/arxiv-2608.20388/) | 2026-08-24 | 39 |

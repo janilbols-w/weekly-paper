@@ -5,10 +5,16 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **116** 篇。
+累计收录 **122** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Golden Ruler: A Numeric Format Catalog with Bit-Exact Conformance Vectors for FP8, BF16, MXFP4, and Microscaling Formats](../../papers/arxiv-2606.09686/) | 2026-09-07 | 48 |
+| [Same Request, Different Answer: Quantization Amplifies Cache-Induced Divergence in LLM Serving](../../papers/arxiv-2609.04748/) | 2026-09-07 | 46 |
+| [FlexPosit: Tunable Fractional Precision for LLM Inference Accelerators](../../papers/arxiv-2609.04724/) | 2026-09-07 | 44 |
+| [Budgeting Bytes: A Windowed Storage Roofline and Dual-Budget Architecture Ablations for Storage-Bound LLM Decoding](../../papers/arxiv-2609.04238/) | 2026-09-07 | 44 |
+| [Scale-QLoRA: Code-Invariant Adapter Merging for Native 4-bit Microscaling LLMs](../../papers/arxiv-2609.04526/) | 2026-09-07 | 42 |
+| [Deep Learning-Driven Peptide Classification in Biological Nanopores](../../papers/arxiv-2509.14029/) | 2026-09-07 | 38 |
 | [HARP: Hadamard-Preconditioned Adaptive Rotation Processor for Extreme LLM Quantization](../../papers/arxiv-2605.29843/) | 2026-09-04 | 43 |
 | [Post-Training Ternarization of Qwen3-4B Capability, Effective Bit Budget, Storage Compression, and Deployment](../../papers/arxiv-2609.01962/) | 2026-09-02 | 50 |
 | [Deterministic LLM Inference Across GPU Kernels: Power-of-Two INT8 Quantization Scales and the Limits of Tolerance-Based Conformance](../../papers/arxiv-2609.00363/) | 2026-09-02 | 45 |

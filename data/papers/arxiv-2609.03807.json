@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.03807",
-  "title": "Free Pause Tokens",
+  "title": "Almost Free State Prediction Separation",
   "abstract": "A free pause token gives a language model extra compute to form each next-token prediction (as a pause, or thinking, token does) but carries that compute in a parallel prediction stream over a weight-shared backbone rather than as an extra token in the sequence. It improves next-token prediction by 2-3 centinats in practice on a 1B parameter model. Because the pause rides an existing position instead of adding one, it is free to use: at inference it adds no context length, no KV cache, and essentially no latency with the growth in inference flops typically irrelevant as it is not the active bottleneck on throughput. The only primary cost is in training, where additional training compute versus an optimized pretraining pipeline is reduced to as low as x1.14 while preserving most of the benefits. The result is an isoflop, isoparameter, and isotoken improvement over standard next token trained transformers.",
   "url": "https://arxiv.org/abs/2609.03807",
   "pdf_url": "https://arxiv.org/pdf/2609.03807",
   "published": "2026-09-03",
-  "updated": "2026-09-04",
+  "updated": "2026-09-07",
   "authors": [
     "John Langford",
     "Nathan Godey",
@@ -62,7 +62,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-04T04:47:28+00:00",
-  "last_seen": "2026-09-04T04:47:28+00:00",
+  "last_seen": "2026-09-07T04:42:59+00:00",
   "featured_weeks": [],
   "source_records": [
     {

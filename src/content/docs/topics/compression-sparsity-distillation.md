@@ -5,10 +5,18 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **231** 篇。
+累计收录 **239** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Lightweight Vision Transformer Compression for On-Device Plant Disease Detection in Resource-Constrained Agricultural Field Conditions](../../papers/arxiv-2609.05334/) | 2026-09-07 | 49 |
+| [Distill Globally, Adapt Locally: Reasoning Distillation and Product-Type Test-Time Training for Scalable Trade-Up Recommendation](../../papers/arxiv-2609.05363/) | 2026-09-07 | 44 |
+| [Compression Beyond the Uncompressed: A Two-Stage Training Recipe for Soft Context Compression in RAG](../../papers/arxiv-2609.05152/) | 2026-09-07 | 43 |
+| [Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal](../../papers/arxiv-2609.04482/) | 2026-09-07 | 42 |
+| [ConsensusBench: Benchmark of Consensus Nodes for LLM Reasoning via Outcome Reward Densifying](../../papers/arxiv-2609.04648/) | 2026-09-07 | 42 |
+| [Quantum-Assisted Memory-Efficient Training for Parameter-Intensive Wi-Fi-Based Human Activity Recognition](../../papers/arxiv-2609.04271/) | 2026-09-07 | 41 |
+| [Deep Microcompression: Structured Pruning and Bit-packed Quantization for Microcontrollers](../../papers/arxiv-2609.05081/) | 2026-09-07 | 39 |
+| [SPD: Single Pass Decoding for Generative Reranking](../../papers/arxiv-2609.01807/) | 2026-09-07 | 38 |
 | [Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning](../../papers/arxiv-2606.20954/) | 2026-09-04 | 45 |
 | [CoMAP: Co-Evolving World Models and Agent Policies for LLM Agents](../../papers/arxiv-2606.02372/) | 2026-09-04 | 45 |
 | [EmoDistill: Offline Emotion Skill Distillation for Language Model Agents in Adversarial Negotiation](../../papers/arxiv-2605.26785/) | 2026-09-04 | 42 |

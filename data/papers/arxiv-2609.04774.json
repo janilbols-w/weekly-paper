@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2609.04774",
+  "title": "Adaptive Context Parallelism for Production LLM Serving",
+  "abstract": "As LLM context windows expand and input sequences grow longer, serving systems face increasing computational and memory demands. Context parallelism (CP), which partitions the input sequence across multiple ranks to parallelize the computation, has therefore become increasingly important for efficient LLM serving. However, existing CP-enabled systems either rely on static CP configurations or adjust the CP degree only for active requests or batches. In this paper, we present Vertumnus, an adaptive CP serving system designed for heterogeneous and evolving workloads. At the request level, Vertumnus routes requests among workers with different CP degrees using a placement cost that combines predicted queuing delay, cache-aware prefill time, and GPU-time cost. At the cluster level, Vertumnus adapts the worker composition through seconds-scale split and merge operations as workload demand changes. Vertumnus further introduces a global prefix-cache management policy that coordinates cache placement and replication among workers with the same or different CP degrees, preserving cache locality as request assignments and worker composition change. Experiments on a 64-GPU cluster with public and production workloads show that, under the highest evaluated loads, Vertumnus reduces mean TTFT by up to 28.1% and improves token-weighted SLO attainment by up to 13.3 percentage points over the strongest baseline.",
+  "url": "https://arxiv.org/abs/2609.04774",
+  "pdf_url": "https://arxiv.org/pdf/2609.04774",
+  "published": "2026-09-07",
+  "updated": "2026-09-07",
+  "authors": [
+    "Jiarui Guo",
+    "Rongle Wang",
+    "Peijun Huang",
+    "Zongwei Lv",
+    "Ziqing Wang",
+    "Kan Liu",
+    "Tao Lan",
+    "Lin Qu",
+    "Xiaolin Wang",
+    "Tong Yang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As LLM context windows expand and input sequences grow longer, serving systems face increasing computational and memory demands.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-07T04:42:59+00:00",
+  "last_seen": "2026-09-07T04:42:59+00:00",
+  "featured_weeks": [
+    "2026-W37"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.04774",
+      "url": "https://arxiv.org/abs/2609.04774"
+    }
+  ]
+}

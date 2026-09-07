@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **50** 篇。
+累计收录 **51** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU](../../papers/arxiv-2609.04852/) | 2026-09-07 | 38 |
 | [Iapetus: Content-Aware Hierarchical Scheduling for Collaborative ViT Inference in LEO Satellite Networks](../../papers/arxiv-2609.03318/) | 2026-09-04 | 40 |
 | [Beyond Static Summarization: Proactive Memory Extraction for LLM Agents](../../papers/arxiv-2601.04463/) | 2026-09-02 | 40 |
 | [Learning to Remember: End-to-End Training of Memory Agents for Long-Context Reasoning](../../papers/arxiv-2602.18493/) | 2026-09-02 | 39 |

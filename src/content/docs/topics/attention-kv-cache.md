@@ -12,7 +12,7 @@ description: "Attention & KV Cache"
 | [Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](../../papers/arxiv-2609.03430/) | 2026-09-03 | 47 |
 | [SGD-KV: Summarization Guided KV Cache Compression](../../papers/arxiv-2609.03235/) | 2026-09-03 | 43 |
 | [Stream-CQSA: Exact Out-of-Memory Recovery for Attention](../../papers/arxiv-2604.20819/) | 2026-09-03 | 39 |
-| [Free Pause Tokens](../../papers/arxiv-2609.03807/) | 2026-09-03 | 38 |
+| [Almost Free State Prediction Separation](../../papers/arxiv-2609.03807/) | 2026-09-03 | 38 |
 | [KV Cache Offloading for Context-Intensive Tasks](../../papers/arxiv-2604.08426/) | 2026-09-02 | 48 |
 | [ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding](../../papers/arxiv-2609.02780/) | 2026-09-02 | 44 |
 | [S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring](../../papers/arxiv-2607.27913/) | 2026-09-02 | 44 |

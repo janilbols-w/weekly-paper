@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.05249",
+  "title": "Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC",
+  "abstract": "As spaceborne computing systems increasingly rely on neural network (NN) accelerators, the opacity of commercial, black-box architectures severely restricts the development of verifiable radiation mitigation strategies. Open-source, register-transfer level (RTL)-accessible accelerators resolve this limitation by enabling user-defined instrumentation, yet few have empirical radiation-response baselines. This work establishes a foundational system-level proton-irradiation baseline for an unmitigated open-source Tensil NN accelerator deployed on a Zynq UltraScale+ SoC executing ResNet-20 inference. Under 20 to 58 MeV proton irradiation, we delivered $4.29 \\times 10^{10}$ p/cm$^{2}$ within monitored operational windows. Seven workload interruptions required two restarts of the notebook process, four reboots or board resets, and one power-cycle sequence. Two output-corruption events returned incorrect CIFAR-10 classes without loss of service. In the longer event, the accelerator returned a class absent from the ten-image CIFAR-10 pool for 39 consecutive inputs at normal cadence. The process remained alive, while the kernel log, limited memory test, and sampled power showed no anomaly. Observation of the stuck-class sequence ended with scheduled bitstream reconfiguration. All nine onsets occurred under the nominal 4 cm beam, which exposed the SoC, LPDDR4, and additional board circuitry; none occurred under the 2 cm SoC-centered field. This pattern shows a field association but does not establish LPDDR4 as the cause because field size was confounded with run order and dose. Linux-managed accelerators require end-to-end content checks and recovery that reaches the state in which corruption can persist. This baseline documents availability loss and silent output corruption, supporting future software hardening of COTS FPGA-SoCs for neural-network inference in space systems.",
+  "url": "https://arxiv.org/abs/2609.05249",
+  "pdf_url": "https://arxiv.org/pdf/2609.05249",
+  "published": "2026-09-07",
+  "updated": "2026-09-07",
+  "authors": [
+    "Saad Memon",
+    "Rafal Graczyk",
+    "Jan Swako\\'n",
+    "Leszek Grzanka",
+    "Sebastian Kusyk",
+    "Mike Papadakis"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.ET",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As spaceborne computing systems increasingly rely on neural network (NN) accelerators, the opacity of commercial, black-box architectures severely restricts the development of verifiable radiation mitigation strategies.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-07T04:42:59+00:00",
+  "last_seen": "2026-09-07T04:42:59+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.05249",
+      "url": "https://arxiv.org/abs/2609.05249"
+    }
+  ]
+}

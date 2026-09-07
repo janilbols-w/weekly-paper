@@ -5,10 +5,12 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **16** 篇。
+累计收录 **18** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MaxKernel: Agentic Kernel Generation for TPUs](../../papers/arxiv-2609.04523/) | 2026-09-07 | 49 |
+| [KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation](../../papers/arxiv-2607.27231/) | 2026-09-07 | 45 |
 | [KernelFoundry: Hardware-aware evolutionary GPU kernel optimization](../../papers/arxiv-2603.12440/) | 2026-09-04 | 53 |
 | [CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language](../../papers/arxiv-2609.00058/) | 2026-08-30 | 48 |
 | [Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory](../../papers/arxiv-2608.25570/) | 2026-08-26 | 44 |

@@ -1,5 +1,5 @@
 ---
-title: "Free Pause Tokens"
+title: "Almost Free State Prediction Separation"
 description: "A free pause token gives a language model extra compute to form each next-token prediction (as a pause, or thinking, token does) but carries that compute in a parallel prediction stream over a weight-shared backbone rather than as an extra token in the sequence."
 ---
 
@@ -39,7 +39,7 @@ A free pause token gives a language model extra compute to form each next-token 
 ## 元数据
 
 - 作者：John Langford, Nathan Godey, Giovanni Monea, Yoav Artzi, Harry Dong, Ying Fan, Gustavo de Rosa, Zheng Zhan
-- 发布：2026-09-03；更新：2026-09-04
+- 发布：2026-09-03；更新：2026-09-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

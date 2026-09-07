@@ -5,10 +5,13 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **29** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Compute-in-Memory Attention: A Time-Domain Analog Softmax Circuit with RC-Tunable Temperature](../../papers/arxiv-2609.04266/) | 2026-09-07 | 43 |
+| [Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC](../../papers/arxiv-2609.05249/) | 2026-09-07 | 42 |
+| [Hardware-conscious Software Training for Deep Neural Network Inference Accelerator Chips to Recover Accuracy Degradation due to Hardware Variabilities](../../papers/arxiv-2609.04259/) | 2026-09-07 | 39 |
 | [H3DNAS: Hardware-Aware ONNX-Native 3D Point Cloud Model Compression](../../papers/arxiv-2609.02684/) | 2026-09-03 | 46 |
 | [AI-Assisted Design of a Post-Quantum Cryptographic Accelerator: A Deployed-Silicon Case Study](../../papers/arxiv-2609.04058/) | 2026-09-03 | 43 |
 | [Channel-Adaptive Edge AI: Maximizing Inference Throughput by Adapting Computational Complexity to Channel States](../../papers/arxiv-2603.03146/) | 2026-09-02 | 38 |

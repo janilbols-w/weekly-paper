@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2609.04523",
+  "title": "MaxKernel: Agentic Kernel Generation for TPUs",
+  "abstract": "Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-agents to handle planning, implementation, self-debugging, testing, and hardware profiling. We evaluate MaxKernel on JaxBench, a comprehensive suite of 50 diverse kernel tasks for TPUs, alongside complex, real-world workloads from state-of-the-art open-source models. We demonstrate that MaxKernel consistently generates highly optimized implementations, matching expert hand-tuned baselines and delivering significant performance across the benchmark. Our agent is open-sourced and available https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel.",
+  "url": "https://arxiv.org/abs/2609.04523",
+  "pdf_url": "https://arxiv.org/pdf/2609.04523",
+  "published": "2026-09-07",
+  "updated": "2026-09-07",
+  "authors": [
+    "Shangkun Wang",
+    "Nina Cai",
+    "Charles Hoong",
+    "Julian Walker",
+    "Gerson Kroiz",
+    "George Vanica",
+    "Deepak Patil",
+    "Andi Gavrilescu",
+    "Hassan Sipra",
+    "Sethu Sankaran"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.PF",
+    "cs.PL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kernel generation"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kernel generation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-07T04:42:59+00:00",
+  "last_seen": "2026-09-07T04:42:59+00:00",
+  "featured_weeks": [
+    "2026-W37"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.04523",
+      "url": "https://arxiv.org/abs/2609.04523"
+    }
+  ]
+}

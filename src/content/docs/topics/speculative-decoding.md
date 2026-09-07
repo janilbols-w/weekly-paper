@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **41** 篇。
+累计收录 **43** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Revisiting Lossy Verification in Speculative Decoding: Mechanisms, Trade-offs, and Failure Modes](../../papers/arxiv-2607.26627/) | 2026-09-07 | 51 |
+| [How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method](../../papers/arxiv-2609.05274/) | 2026-09-07 | 38 |
 | [Margins, Not Windows: Training-Free Per-Step Lossy Speculative Decoding](../../papers/arxiv-2609.02897/) | 2026-09-04 | 39 |
 | [WhiFlash: Accelerating Speculative Decoding with Token-Level Cross-Paradigm Routing](../../papers/arxiv-2606.07710/) | 2026-09-03 | 45 |
 | [Unlocking Lossless Speedups in LLMs via Discrete Diffusion](../../papers/arxiv-2609.04010/) | 2026-09-03 | 43 |

@@ -5,10 +5,11 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **50** 篇。
+累计收录 **51** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One](../../papers/arxiv-2609.04531/) | 2026-09-07 | 38 |
 | [CROCODIL: Cross-Model Code Editing with LLMs](../../papers/arxiv-2609.03894/) | 2026-09-03 | 40 |
 | [CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation](../../papers/arxiv-2609.02774/) | 2026-09-03 | 38 |
 | [Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation](../../papers/arxiv-2609.01601/) | 2026-09-02 | 49 |
