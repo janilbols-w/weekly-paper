@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2604.14345",
+  "title": "PAC-CF: Calibrating Irreversible Frontier Pruning in LLM-Guided Search",
+  "abstract": "LLM-guided search is usually adopted to solve complex tasks by ranking and pruning top-$K$ candidates based on evaluator scores. However, irreducible bias still exists even if popular methods, such as repeated sampling, are applied to reduce variance. Consequently, pruning may remove every continuation that can reach a valid solution. In this paper, we propose Probably Approximately Correct Conformal Filtering (PAC-CF), which formulates tree pruning as a PAC-guaranteed decision problem. Theoretical analysis establishes how irreducible bias reduces the score separation for certified elimination. Native-Trace path calibration derives a conformal margin from the score deficit of verifier-valid continuations on held-out Native traces. During deployment, PAC-CF uses this calibrated margin in a direct score-gap filtering rule. Across diverse domains and state-of-the-art controllers, PAC-CF improves utility at various budgets while reducing all five measured workload metrics. Especially on pruning-aware ToolTree under a 100-request budget, replacing native top-$K$ improves equal-domain utility by 4.38 points while reducing physical requests by $18.95\\%$ with a $23.76\\%$ token reduction.",
+  "url": "https://arxiv.org/abs/2604.14345",
+  "pdf_url": "https://arxiv.org/pdf/2604.14345",
+  "published": "2026-09-09",
+  "updated": "2026-09-09",
+  "authors": [
+    "Tianhao Qian",
+    "Jiayu Chen",
+    "Lixu Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "stat.ML"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM-guided search is usually adopted to solve complex tasks by ranking and pruning top-$K$ candidates based on evaluator scores.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-09T04:40:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.14345",
+      "url": "https://arxiv.org/abs/2604.14345"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.06506",
+  "title": "Sharing a Fabric with Collective Communication: Two Storage Penalties in Deep Learning Training",
+  "abstract": "Distributed DL training on HPC systems often shares one network fabric between NCCL/RCCL collective communication and parallel-filesystem I/O. Using a real GNN training workload on a Slingshot-11 system, we show that this sharing imposes two distinct costs. The primary cost is heavy-tailed DataLoader stalls: the typical DataLoader wait is just 15 ms at steady state, yet spikes to multiple seconds in 28% of Lustre iterations and 12% of VAST iterations. The secondary cost is traffic-class contention on collective communication: Lustre I/O stalls the all-reduce by up to 145$\\times$ in an isolated benchmark. The two costs arise from different mechanisms. I/O stall latency affects any storage path that traverses the shared fabric, whereas all-reduce network contention occurs only when storage and collective communication share the same traffic class. Their common root cause is that storage I/O traverses the shared fabric. This work shows that node-local NVMe staging via DYAD (Our code is publicly available at https://github.com/flux-framework/dyad) eliminates both effects by keeping storage I/O off that path. Across a full training epoch, DYAD achieves a 7.4 times speedup over direct Lustre reads and a 1.06 times speedup over VAST. By the second epoch, once the local cache is fully warmed, DataLoader stalls are eliminated entirely, allowing DYAD to reach a 1.31 times speedup over VAST.",
+  "url": "https://arxiv.org/abs/2609.06506",
+  "pdf_url": "https://arxiv.org/pdf/2609.06506",
+  "published": "2026-09-09",
+  "updated": "2026-09-09",
+  "authors": [
+    "Chen Wang",
+    "Wenzhao Wu",
+    "Hyojin Kim",
+    "Jae-Sung Yeom"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/flux-framework/dyad",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "network-interconnect",
+    "leaf": "Network, RDMA & Interconnect",
+    "leaf_zh": "网络、RDMA 与互联"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "network fabric"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: network fabric",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Distributed DL training on HPC systems often shares one network fabric between NCCL/RCCL collective communication and parallel-filesystem I/O.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-09T04:40:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.06506",
+      "url": "https://arxiv.org/abs/2609.06506"
+    }
+  ]
+}

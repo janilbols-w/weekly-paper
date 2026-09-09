@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2510.25183",
+  "title": "Sustained Performance and Energy Accounting for Nonlinear Forecasting Across Classical and Simulated Quantum Models",
+  "abstract": "Energy-efficient AI should be evaluated across the full application pipeline, not only by lowest error or shortest training time. We study this through nonlinear time-series forecasting using simulated quantum reservoir computing (QRC) as an emerging-computing case study. Our evaluation spans 33 forecasting configurations and 825 completed runs on NARMA-10, NARMA-20, Mackey--Glass, Lorenz-63, and Santa Fe laser data. The core benchmark includes 775 fully instrumented runs across statistical, linear, reservoir, neural, continuous-variable Gaussian QRC, and gate-based statevector QRC models, with 50 additional variational QNN runs extending the trainable-quantum comparison. We measure NRMSE, RMSE, MAE, wall time, inference latency, peak CPU/GPU memory, parameter count, operational energy, and carbon. Since a fixed QRC encoder can generate reusable features for multiple readouts, we report both cold-start and amortized costs. We also use a Sustainable Forecasting Score (SFS), a diagnostic geometric mean of normalized predictive skill and log-scaled carbon efficiency, while retaining raw measurements and Pareto analyses. The best mean NRMSE is achieved by continuous-variable QRC with a Transformer readout (0.332), followed closely by classical TCN (0.341) and QRC+TCN (0.340). However, ESN and ridge-lag deliver the strongest sustained efficiency, with average amortized carbon of 0.014 and 0.012 gCO2 per run and SFS values of 0.814 and 0.805. Larger QRC feature maps increase cost without improving average accuracy, while gate-based statevector simulation is not competitive. These results support three practices for emerging AI systems: expose stage-level energy, use reuse-aware accounting boundaries, and co-design the feature generator or accelerator with the classical readout.",
+  "url": "https://arxiv.org/abs/2510.25183",
+  "pdf_url": "https://arxiv.org/pdf/2510.25183",
+  "published": "2026-09-09",
+  "updated": "2026-09-09",
+  "authors": [
+    "Avyay Kodali",
+    "Priyanshi Singh",
+    "Pranay Pandey",
+    "Krishna Bhatia",
+    "Shalini Devendrababu",
+    "Srinjoy Ganguly"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "quant-ph",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Energy-efficient AI should be evaluated across the full application pipeline, not only by lowest error or shortest training time.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-09T04:40:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.25183",
+      "url": "https://arxiv.org/abs/2510.25183"
+    }
+  ]
+}

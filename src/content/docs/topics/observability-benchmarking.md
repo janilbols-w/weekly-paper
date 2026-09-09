@@ -5,10 +5,11 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **9** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games](../../papers/arxiv-2609.06563/) | 2026-09-09 | 42 |
 | [MedConceal: A Benchmark for Clinical Hidden-Concern Reasoning Under Partial Observability](../../papers/arxiv-2604.08788/) | 2026-09-01 | 40 |
 | [Using Grounded Theory for Agent Behavior Analysis at Scale](../../papers/arxiv-2608.30391/) | 2026-09-01 | 39 |
 | [AgentDiff: Meaning-Bearing Rewrites Trigger Deeper Divergence than Presentation Changes in LLM Agents](../../papers/arxiv-2605.25981/) | 2026-08-27 | 38 |

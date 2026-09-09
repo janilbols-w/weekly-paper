@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2603.01875",
+  "title": "KDFlow: A User-Friendly and Efficient Knowledge Distillation Framework for Large Language Models",
+  "abstract": "Knowledge distillation (KD) is widely used to compress and post-train large language models (LLMs), yet many existing frameworks execute teacher inference with the same training-oriented backend as student optimization, leading to suboptimal efficiency. In this paper, we propose KDFlow, a novel framework for LLM distillation that features a decoupled architecture and employs SGLang for teacher inference. KDFlow combines SGLang for teacher inference with PyTorch FSDP2 for student optimization, allowing each model to run on a backend tailored to its workload. To enable efficient full-vocabulary distillation in this decoupled architecture, KDFlow transfers the teacher's final hidden states via Ray's object store and recomputes teacher logits on each student worker using a frozen copy of the teacher's output head. Furthermore, our framework supports both off-policy and on-policy distillation and incorporates cross-tokenizer algorithms through highly extensible and user-friendly APIs. Experiments show that KDFlow achieves a 1.44$\\times$ to 6.36$\\times$ speedup over MS-SWIFT in off-policy distillation and a 1.43$\\times$ to 1.75$\\times$ speedup over verl in on-policy distillation. KDFlow further scales to 64 GPUs, achieving 3.68$\\times$ and 2.52$\\times$ strong-scaling speedups in two representative model configurations. The code and documentation are publicly available.",
+  "url": "https://arxiv.org/abs/2603.01875",
+  "pdf_url": "https://arxiv.org/pdf/2603.01875",
+  "published": "2026-09-09",
+  "updated": "2026-09-09",
+  "authors": [
+    "Songming Zhang",
+    "Xue Zhang",
+    "Tong Zhang",
+    "Bojie Hu",
+    "Yufeng Chen",
+    "Jinan Xu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Knowledge distillation (KD) is widely used to compress and post-train large language models (LLMs), yet many existing frameworks execute teacher inference with the same training-oriented backend as student optimization, leading to suboptimal efficiency.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-09T04:40:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.01875",
+      "url": "https://arxiv.org/abs/2603.01875"
+    }
+  ]
+}

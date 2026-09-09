@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **51** 篇。
+累计收录 **54** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Sustained Performance and Energy Accounting for Nonlinear Forecasting Across Classical and Simulated Quantum Models](../../papers/arxiv-2510.25183/) | 2026-09-09 | 46 |
+| [Towards Standardized Evaluation of GPU Memory Safety with GMSBench](../../papers/arxiv-2609.08871/) | 2026-09-09 | 44 |
+| [Streaming Hierarchical Inference with Tabular Foundation Models](../../papers/arxiv-2609.07956/) | 2026-09-09 | 43 |
 | [KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU](../../papers/arxiv-2609.04852/) | 2026-09-07 | 38 |
 | [Iapetus: Content-Aware Hierarchical Scheduling for Collaborative ViT Inference in LEO Satellite Networks](../../papers/arxiv-2609.03318/) | 2026-09-04 | 40 |
 | [Beyond Static Summarization: Proactive Memory Extraction for LLM Agents](../../papers/arxiv-2601.04463/) | 2026-09-02 | 40 |

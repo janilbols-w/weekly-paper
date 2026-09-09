@@ -5,10 +5,12 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **12** 篇。
+累计收录 **14** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Cost-Optimal LLM Routing with Limited User Feedback under User Satisfaction Guarantees](../../papers/arxiv-2606.19376/) | 2026-09-09 | 46 |
+| [HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving](../../papers/arxiv-2609.08306/) | 2026-09-09 | 44 |
 | [GMTRouter: Personalized LLM Router over Multi-turn User Interactions](../../papers/arxiv-2511.08590/) | 2026-09-03 | 48 |
 | [Dynamic Model Routing and Cascading for Efficient LLM Inference: A Survey](../../papers/arxiv-2603.04445/) | 2026-09-01 | 39 |
 | [ABLE: Representing and Mapping LLMs via Attribution-Based Large-model Embedding](../../papers/arxiv-2606.07524/) | 2026-09-01 | 39 |

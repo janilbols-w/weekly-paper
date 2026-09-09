@@ -5,10 +5,24 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **122** 篇。
+累计收录 **136** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [All for 1-Bit: Towards Genuine 1-Bit Post-Training Quantization for LLMs](../../papers/arxiv-2609.06161/) | 2026-09-09 | 53 |
+| [Accuracy is Not Enough: A Divergence-Based Approach to Evaluate Fidelity Loss in Quantized LLMs](../../papers/arxiv-2609.07664/) | 2026-09-09 | 49 |
+| [Steering Under Compression: Dose-Response, Capability Cost, and Failure Asymmetry in Quantized LLMs](../../papers/arxiv-2609.06473/) | 2026-09-09 | 48 |
+| [Spike-Aware INT8 Execution for Spiking Language Models on Commodity CPUs](../../papers/arxiv-2606.03026/) | 2026-09-09 | 47 |
+| [Interface-Aware KV Cache Quantization for Dense On-Chip NVM in Long-Context LLM Decoding](../../papers/arxiv-2609.05764/) | 2026-09-09 | 47 |
+| [Sustained 70B-Class AWQ Inference on a Single NVIDIA L20: Throughput, Stability, Energy, and Quality Characterization](../../papers/arxiv-2609.05420/) | 2026-09-09 | 45 |
+| [Squeeze10-LLM: Squeezing LLMs' Weights by 10 Times via a Staged Mixed-Precision Quantization Method](../../papers/arxiv-2507.18073/) | 2026-09-09 | 45 |
+| [Broken on Arrival: Silently Defective LLM Artifacts in Public Model Registries and How to Catch Them](../../papers/arxiv-2609.05881/) | 2026-09-09 | 44 |
+| [SQS: Bayesian DNN Compression through Sparse Quantized Sub-distributions](../../papers/arxiv-2510.08999/) | 2026-09-09 | 43 |
+| [Evaluating the Scalability and Adversarial Generalization of GRPO-Trained NLI Models](../../papers/arxiv-2504.18376/) | 2026-09-09 | 43 |
+| [A Measurement Study of LLM Inference Trade-offs Across Edge Continuum Hardware](../../papers/arxiv-2609.08307/) | 2026-09-09 | 42 |
+| [Reasoning-Aware Compression: Identifying and Protecting Vulnerable Reasoning Circuits for Energy-Efficient LLM Deployment](../../papers/arxiv-2609.05512/) | 2026-09-09 | 41 |
+| [Navigating the digital spectrum: Assessing political bias, stability, and downstream fairness in Large Language Models](../../papers/arxiv-2609.08637/) | 2026-09-09 | 40 |
+| [ModularPhaseNet: Finite-Cyclic Phase Geometry for Computable Semantic Hierarchy, Direction, and Context Consistency in Standard Transformers](../../papers/arxiv-2609.06000/) | 2026-09-09 | 39 |
 | [Golden Ruler: A Numeric Format Catalog with Bit-Exact Conformance Vectors for FP8, BF16, MXFP4, and Microscaling Formats](../../papers/arxiv-2606.09686/) | 2026-09-07 | 48 |
 | [Same Request, Different Answer: Quantization Amplifies Cache-Induced Divergence in LLM Serving](../../papers/arxiv-2609.04748/) | 2026-09-07 | 46 |
 | [FlexPosit: Tunable Fractional Precision for LLM Inference Accelerators](../../papers/arxiv-2609.04724/) | 2026-09-07 | 44 |

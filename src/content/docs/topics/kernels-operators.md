@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **18** 篇。
+累计收录 **19** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AdaExplore: Failure-Driven Adaptation and Diversity-Preserving Search for Efficient Kernel Generation](../../papers/arxiv-2604.16625/) | 2026-09-09 | 48 |
 | [MaxKernel: Agentic Kernel Generation for TPUs](../../papers/arxiv-2609.04523/) | 2026-09-07 | 49 |
 | [KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation](../../papers/arxiv-2607.27231/) | 2026-09-07 | 45 |
 | [KernelFoundry: Hardware-aware evolutionary GPU kernel optimization](../../papers/arxiv-2603.12440/) | 2026-09-04 | 53 |
@@ -26,4 +27,4 @@ description: "Kernels & Operator Fusion"
 | [Kernel Foundry: A Diagnosis-driven Evolutionary Kernel Optimizer with Multi-Experts](../../papers/arxiv-2605.30359/) | 2026-08-04 | 39 |
 | [LEAP: Lean Environment-Feedback via Adaptive Pruning for Code RL in GPU Kernel Generation](../../papers/arxiv-2608.01804/) | 2026-08-03 | 53 |
 | [Bole: Efficient Tree Speculation for Hybrid-Attention Language Models](../../papers/arxiv-2608.01651/) | 2026-08-03 | 46 |
-| [Celty: SpMspV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference](../../papers/arxiv-2608.01536/) | 2026-08-02 | 55 |
+| [Celty: SpMSpV GPU Kernel and SIMT Co-Design for Efficient Dual-Sparse LLM Inference](../../papers/arxiv-2608.01536/) | 2026-08-02 | 55 |

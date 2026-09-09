@@ -39,7 +39,7 @@ Visual-token pruning can substantially reduce the inference cost of multimodal l
 ## 元数据
 
 - 作者：Zhen Liu, Wenli Huang, Wei Song, Yuhan Liu, Zhiqin Yang, Jingwen Fu
-- 发布：2026-08-10；更新：2026-08-10
+- 发布：2026-08-10；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

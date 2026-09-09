@@ -1,0 +1,45 @@
+---
+title: "PruneGround: Plug-and-play Spatial Pruning for 3D Visual Grounding"
+description: "3D Visual Grounding (3DVG) aims to localize target objects in 3D scenes given natural language descriptions."
+---
+
+**评分：50/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+
+[论文原文](https://arxiv.org/abs/2606.31148) · [PDF](https://arxiv.org/pdf/2606.31148)
+
+## 一句话摘要
+
+3D Visual Grounding (3DVG) aims to localize target objects in 3D scenes given natural language descriptions.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+3D Visual Grounding (3DVG) aims to localize target objects in 3D scenes given natural language descriptions. Existing approaches typically perform reasoning over the entire scene, leading to ambiguous predictions and high computational cost, especially in cluttered environments. We observe that many referential expressions rely on local spatial context and often correspond to restricted spatial regions rather than the full scene. Motivated by this insight, we propose PruneGround, an effective plug-and-play framework for 3DVG built upon three key components. First, we introduce Language-Guided Spatial Pruning (LGSP), which leverages a frozen Vision Language Model (VLM) to identify language-relevant regions, thereby reducing spatial computation and grounding candidates in the narrower search space. Second, we propose MultiView-Conditioned Description Reformulation (MCDR), which decomposes complex expressions into simplified target--anchor relations and augments missing spatial cues through multi-view reasoning. Finally, we propose LLM-Grounder, which repurposes a detection-pretrained spatial LLM into a language-conditioned grounding model by aligning point cloud and linguistic representations within the pruned region. Extensive experiments on the three most popular point cloud benchmarks demonstrate that our method achieves state-of-the-art results on all three ScanRefer settings and on 9 out of 10 Nr3D/Sr3D settings. Code and models are publicly available: https://github.com/leduckhai/PruneGround
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 16 |
+| novelty | 8 |
+| rigor | 9 |
+| practical impact | 7 |
+| reproducibility | 7 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: pruning
+- no quantitative claim in metadata
+- code/artifact link detected
+
+## 元数据
+
+- 作者：Duc Cao Dinh, Khai Le-Duc, Florent Draye, Chris Ngo, Terry Jingchen Zhang, Bernhard Sch\"olkopf, Zhijing Jin
+- 发布：2026-09-09；更新：2026-09-09
+- 来源：arXiv RSS；Venue：未确认
+- 代码：[https://github.com/leduckhai/PruneGround](https://github.com/leduckhai/PruneGround)
+- 阅读深度：metadata

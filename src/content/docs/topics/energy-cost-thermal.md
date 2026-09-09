@@ -5,10 +5,13 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **25** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HDA-MoE: Hybrid Parallelism and Dynamic, Adaptive Scheduling for Mixture-of-Experts with 3D Near-Memory Processing](../../papers/arxiv-2609.08682/) | 2026-09-09 | 56 |
+| [WIP: Energy-Efficient LLM-Based Serving Cluster Formulation in Cell-Free Massive MIMO](../../papers/arxiv-2609.05725/) | 2026-09-09 | 39 |
+| [Gradient-Free Training of Spiking Neural Networks via Low-Rank Evolution Strategies](../../papers/arxiv-2605.30361/) | 2026-09-09 | 38 |
 | [Sustainable Edge Vision via Empirically Calibrated DVFS: Eliminating Thermal Throttling on Passively Cooled Hardware](../../papers/arxiv-2609.04705/) | 2026-09-07 | 45 |
 | [Para-Pipe: Exploiting Hierarchical Operator Parallelism of ML Computational Graphs on SoCs](../../papers/doi-10.1109-tcad.2025.3568348/) | 2026-09-03 | 43 |
 | [GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon](../../papers/arxiv-2608.28667/) | 2026-09-01 | 51 |

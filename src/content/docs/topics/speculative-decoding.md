@@ -5,10 +5,13 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **43** 篇。
+累计收录 **46** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Intra-Prompt Parallel Decoding for Common-Context Question Answering](../../papers/arxiv-2609.05707/) | 2026-09-09 | 48 |
+| [Speculation at a Distance: Where Edge-Cloud Speculative Decoding Actually Pays Off](../../papers/arxiv-2606.25091/) | 2026-09-09 | 46 |
+| [DFlow: Enabling Verifier Information Flow in Block Diffusion Speculative Decoding](../../papers/arxiv-2609.06498/) | 2026-09-09 | 42 |
 | [Revisiting Lossy Verification in Speculative Decoding: Mechanisms, Trade-offs, and Failure Modes](../../papers/arxiv-2607.26627/) | 2026-09-07 | 51 |
 | [How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method](../../papers/arxiv-2609.05274/) | 2026-09-07 | 38 |
 | [Margins, Not Windows: Training-Free Per-Step Lossy Speculative Decoding](../../papers/arxiv-2609.02897/) | 2026-09-04 | 39 |

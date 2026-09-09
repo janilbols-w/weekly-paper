@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2609.05420",
+  "title": "Sustained 70B-Class AWQ Inference on a Single NVIDIA L20: Throughput, Stability, Energy, and Quality Characterization",
+  "abstract": "Serving 70B-class open-weight language models is usually associated with 80GB accelerators, tensor-parallel multi-GPU systems, or vendor-managed inference profiles. This technical report evaluates whether a single NVIDIA L20 48GB GPU can sustain a useful 70B-class quantized serving workload. We measure Qwen2.5-72B-Instruct-AWQ served with vLLM 0.8.5.post1 and AWQ Marlin on one L20. Under a fixed workload of approximately 512 input tokens and 256 output tokens, a 24-hour concurrency-10 soak completed 36,740/36,740 requests with no request failures and no vLLM CUDA OOM, traceback, or killed-process signatures. The system sustained 108.84 output tokens/s, with p95 time-to-first-token of 6.61s and p95 end-to-end latency of 23.54s. GPU-board power sampled through nvidia-smi produced an estimated 7.92 kWh over the run, corresponding to 0.330 output tokens/J and 1.008 total tokens/J. Repeated fixed-shape runs at concurrency 1, 4, 8, and 16 completed 12/12 runs successfully; the concurrency-16 condition averaged 127.22 +/- 12.68 output tokens/s over three runs. The same AWQ endpoint also produced absolute quality scores of 0.8130 on MMLU, 0.8309 on CMMLU, and 0.8082 on GSM8K, plus 80/80 MT-Bench answer generations and a 60-item 8K LongBench subset. The evidence supports a narrow claim: a carefully configured single L20 can serve Qwen2.5-72B-Instruct-AWQ as a throughput-oriented 70B-class endpoint under the tested fixed-shape workload. It does not prove lossless AWQ quality retention, low-latency interactive serving, broad production SLA coverage, or equivalence to a BF16/FP16 baseline.",
+  "url": "https://arxiv.org/abs/2609.05420",
+  "pdf_url": "https://arxiv.org/pdf/2609.05420",
+  "published": "2026-09-09",
+  "updated": "2026-09-09",
+  "authors": [
+    "Yin Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Serving 70B-class open-weight language models is usually associated with 80GB accelerators, tensor-parallel multi-GPU systems, or vendor-managed inference profiles.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-09T04:40:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.05420",
+      "url": "https://arxiv.org/abs/2609.05420"
+    }
+  ]
+}

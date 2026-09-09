@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **51** 篇。
+累计收录 **53** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Do Dynamic Routers Need Memory? HeRo: History-Aware Routing for Efficient LLM Inference](../../papers/arxiv-2609.08189/) | 2026-09-09 | 43 |
+| [Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning](../../papers/arxiv-2604.02007/) | 2026-09-09 | 42 |
 | [Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One](../../papers/arxiv-2609.04531/) | 2026-09-07 | 38 |
 | [CROCODIL: Cross-Model Code Editing with LLMs](../../papers/arxiv-2609.03894/) | 2026-09-03 | 40 |
 | [CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation](../../papers/arxiv-2609.02774/) | 2026-09-03 | 38 |

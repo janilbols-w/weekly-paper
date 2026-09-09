@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.05425",
+  "title": "Measurement-Driven Diagnosis and Mitigation of Host-CPU Co-location Interference in Single-GPU LLM Serving on a Multi-GPU Server",
+  "abstract": "Host CPUs in GPU servers are often under-used during LLM inference. Co-locating CPU workloads can improve resource use, but it can also seriously hurt serving quality. Existing work mainly improves LLM serving engines or studies CPU-GPU boundary delays. It gives limited guidance on how external CPU workloads affect the serving path and how operators should choose protection policies. This paper studies host-CPU co-location interference in single-GPU LLM serving. We show that the main observed problem is not slower GPU kernels. Instead, CPU workloads amplify long tails in CPU-side serving stages before GPU work is submitted. To capture this effect, we introduce the Core Path Tail Index (CPTI) and Core Tail Suppression (CTS). Based on these metrics, we build CoTail, a measurement-driven diagnostic procedure that screens workload risk, profiles serving-stage tails, selects OS-level protections, and validates decode SLO compliance. In our primary setup, unprotected nginx co-location reduces throughput by 78.8%, increases TTFT by 429.5%, and increases TPOT by 362.4%. CoTail-guided protections improve nginx throughput by up to 4.4x and reduce TPOT by 4.5x. Under a common-baseline deployment SLO, CoTail satisfies all 12 oracle-feasible held-out cases, compared with 10/12 for Always-rt and 11/12 for Macro-only. It also reduces RT usage from 28 to 22 cases and lowers mean co-tenant slowdown from 56.65% to 51.21%.",
+  "url": "https://arxiv.org/abs/2609.05425",
+  "pdf_url": "https://arxiv.org/pdf/2609.05425",
+  "published": "2026-09-09",
+  "updated": "2026-09-09",
+  "authors": [
+    "Guanjie Cheng",
+    "Guowei Li",
+    "Yingying Wen",
+    "Xinkui Zhao",
+    "Zhe Liu",
+    "Shuiguang Deng"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Host CPUs in GPU servers are often under-used during LLM inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-09T04:40:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.05425",
+      "url": "https://arxiv.org/abs/2609.05425"
+    }
+  ]
+}

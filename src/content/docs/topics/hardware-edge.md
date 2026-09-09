@@ -5,10 +5,15 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **32** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FlexSpIM: An Event-Based Digital Compute-In-Memory Accelerator with Flexible Operand Resolution and Layer-Wise Hybrid Stationarity](../../papers/arxiv-2609.08446/) | 2026-09-09 | 52 |
+| [Toward Sustainable Distributed LLM Inference: A Systems Synthesis and Research Agenda for an Energy-, Carbon-, and Cache-Aware llm-d Control Plane](../../papers/arxiv-2609.05565/) | 2026-09-09 | 47 |
+| [EStream: Fast and Memory-Efficient MoE Prefill through Expert Virtualization on Mobile NPUs](../../papers/arxiv-2609.06551/) | 2026-09-09 | 43 |
+| [Numerical Kernels on a Spatial Accelerator: A Study of Tenstorrent Wormhole](../../papers/arxiv-2603.23343/) | 2026-09-09 | 40 |
+| [NoLoCo: No-all-reduce Low Communication Training Method for Large Models](../../papers/arxiv-2506.10911/) | 2026-09-09 | 40 |
 | [Compute-in-Memory Attention: A Time-Domain Analog Softmax Circuit with RC-Tunable Temperature](../../papers/arxiv-2609.04266/) | 2026-09-07 | 43 |
 | [Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC](../../papers/arxiv-2609.05249/) | 2026-09-07 | 42 |
 | [Hardware-conscious Software Training for Deep Neural Network Inference Accelerator Chips to Recover Accuracy Degradation due to Hardware Variabilities](../../papers/arxiv-2609.04259/) | 2026-09-07 | 39 |

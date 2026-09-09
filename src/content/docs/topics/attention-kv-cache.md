@@ -5,14 +5,21 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **80** 篇。
+累计收录 **87** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MetaKV: Adaptive KV Cache Compression for Constrained LLM Inference](../../papers/arxiv-2609.07966/) | 2026-09-09 | 54 |
+| [CONDUIT: A Unified Residual-Stream Restoration Framework for KV Cache Reuse in Vision-Language Models](../../papers/arxiv-2609.05821/) | 2026-09-09 | 47 |
+| [Unified AI Gateway: A Framework for Joint Model Routing and KV Cache Management](../../papers/arxiv-2609.06940/) | 2026-09-09 | 44 |
+| [Jacap: Robust KV Cache Eviction via Jacobian-Based Nonlinear Information Capacity Preservation](../../papers/arxiv-2609.08131/) | 2026-09-09 | 43 |
+| [ECOKV: Geometry-Aware KV Cache Eviction via Complementary Diversity Metrics](../../papers/arxiv-2609.06663/) | 2026-09-09 | 43 |
+| [RouteRelay: Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention](../../papers/arxiv-2609.07306/) | 2026-09-09 | 38 |
+| [FlashBack: Efficient Retrieval-Augmented Language Modeling for Fast Inference](../../papers/arxiv-2405.04065/) | 2026-09-09 | 38 |
 | [Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](../../papers/arxiv-2609.03430/) | 2026-09-03 | 47 |
 | [SGD-KV: Summarization Guided KV Cache Compression](../../papers/arxiv-2609.03235/) | 2026-09-03 | 43 |
+| [Almost Free State Prediction Separation](../../papers/arxiv-2609.03807/) | 2026-09-03 | 40 |
 | [Stream-CQSA: Exact Out-of-Memory Recovery for Attention](../../papers/arxiv-2604.20819/) | 2026-09-03 | 39 |
-| [Almost Free State Prediction Separation](../../papers/arxiv-2609.03807/) | 2026-09-03 | 38 |
 | [KV Cache Offloading for Context-Intensive Tasks](../../papers/arxiv-2604.08426/) | 2026-09-02 | 48 |
 | [ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding](../../papers/arxiv-2609.02780/) | 2026-09-02 | 44 |
 | [S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring](../../papers/arxiv-2607.27913/) | 2026-09-02 | 44 |
