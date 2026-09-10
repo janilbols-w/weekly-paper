@@ -39,7 +39,7 @@ We introduce HoneyRoute, an inference-serving layer that detects whether an inco
 ## 元数据
 
 - 作者：Han Jin
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

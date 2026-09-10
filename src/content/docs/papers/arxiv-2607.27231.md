@@ -1,9 +1,9 @@
 ---
-title: "KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation"
+title: "KernelGenBench: Can LLMs and Agents Write Efficient Kernels Across Operator Sources and Hardware Platforms?"
 description: "Modern AI systems depend on specialized accelerator kernels, whose development is complicated by increasingly diverse operators and hardware."
 ---
 
-**评分：45/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
+**评分：41/100** · LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理
 
 [论文原文](https://arxiv.org/abs/2607.27231) · [PDF](https://arxiv.org/pdf/2607.27231)
 
@@ -23,7 +23,7 @@ Modern AI systems depend on specialized accelerator kernels, whose development i
 
 | 维度 | 得分 |
 |---|---:|
-| relevance | 16 |
+| relevance | 12 |
 | novelty | 6 |
 | rigor | 11 |
 | practical impact | 7 |
@@ -32,14 +32,14 @@ Modern AI systems depend on specialized accelerator kernels, whose development i
 
 ## 证据与限制
 
-- taxonomy keywords: kernel generation
+- taxonomy keywords: accelerator
 - no quantitative claim in metadata
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Peiyu Zang, Jian Tao, Jialing Zhang, Yichen Yuan, Wentao Zhang, Guang Liu, Yonghua Lin
-- 发布：2026-09-07；更新：2026-09-07
+- 发布：2026-09-07；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

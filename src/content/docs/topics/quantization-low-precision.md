@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **136** 篇。
+累计收录 **139** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [EFQ-Softmax: Exp-Free Quantization for Softmax](../../papers/arxiv-2609.09721/) | 2026-09-10 | 49 |
+| [ESSA: Evolutionary Strategies for Scalable Alignment](../../papers/arxiv-2507.04453/) | 2026-09-10 | 41 |
+| [How Fragile Is Safety Alignment at Frontier Scale? A Single-Direction Attack on a 320B MoE](../../papers/arxiv-2609.09793/) | 2026-09-10 | 38 |
 | [All for 1-Bit: Towards Genuine 1-Bit Post-Training Quantization for LLMs](../../papers/arxiv-2609.06161/) | 2026-09-09 | 53 |
 | [Accuracy is Not Enough: A Divergence-Based Approach to Evaluate Fidelity Loss in Quantized LLMs](../../papers/arxiv-2609.07664/) | 2026-09-09 | 49 |
 | [Steering Under Compression: Dose-Response, Capability Cost, and Failure Asymmetry in Quantized LLMs](../../papers/arxiv-2609.06473/) | 2026-09-09 | 48 |

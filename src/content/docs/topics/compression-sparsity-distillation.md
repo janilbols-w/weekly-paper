@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **268** 篇。
+累计收录 **272** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Multimodal Data](../../papers/arxiv-2609.10321/) | 2026-09-10 | 49 |
+| [Forward-Free LLM Depth Pruning via Weight Redundancy](../../papers/arxiv-2609.09883/) | 2026-09-10 | 39 |
+| [Deep Neural Networks for Learning Intent from sEMG Signals to Support Hardware Devices for Post-Stroke Neurorehabilitation](../../papers/arxiv-2609.09971/) | 2026-09-10 | 39 |
+| [Data-Centric Post-Training for Financial Reasoning: Mining, Distillation, and Verifiable Learning](../../papers/arxiv-2609.10113/) | 2026-09-10 | 39 |
 | [Train Overcomplete, Deploy Compact: Scaling Recovery Capacity for Structured LLM Pruning](../../papers/arxiv-2609.06974/) | 2026-09-09 | 51 |
 | [PruneGround: Plug-and-play Spatial Pruning for 3D Visual Grounding](../../papers/arxiv-2606.31148/) | 2026-09-09 | 50 |
 | [ASDA: Automated Skill Distillation and Adaptation for Financial Reasoning](../../papers/arxiv-2603.16112/) | 2026-09-09 | 48 |

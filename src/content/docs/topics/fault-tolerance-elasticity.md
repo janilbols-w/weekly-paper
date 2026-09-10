@@ -5,10 +5,11 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **10** 篇。
+累计收录 **11** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HybridFLow: SDN-Orchestrated Client Partitioning for Hybrid Federated Learning](../../papers/arxiv-2609.10404/) | 2026-09-10 | 38 |
 | [Manifold-Aware General Coded Computing for Straggler-Resilient Distributed Computing](../../papers/arxiv-2609.00552/) | 2026-09-02 | 43 |
 | [FlexP-SFT: A Flexible Aggregation-Free Framework for On-Device Personalized Split Federated Fine-Tuning of LLMs](../../papers/arxiv-2508.10349/) | 2026-09-02 | 43 |
 | [Learning-Theoretic Foundation for General Coded Computing: The Straggler Setting](../../papers/arxiv-2608.28910/) | 2026-09-01 | 40 |

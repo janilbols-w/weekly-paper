@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2507.04453",
+  "title": "ESSA: Evolutionary Strategies for Scalable Alignment",
+  "abstract": "Online alignment of large language models (LLMs) is dominated by reinforcement learning from human feedback (RLHF) with gradient-based optimizers such as PPO or GRPO. While effective, these pipelines require backpropagation through long rollouts, gradient synchronization across devices, and careful hyperparameter tuning, all of which become increasingly costly at scale. We present ESSA (Evolutionary Strategies for Scalable Alignment), a gradient-free online alignment stage that follows supervised fine-tuning (SFT) and replaces the gradient loop with inference-only black-box search. ESSA optimizes only the singular values of low-rank adaptation (LoRA) factors after a short SFT warm-start, restricting the search to a compact, task-aligned subspace where evolutionary search is practical even for 72B-parameter models. Because the loop is inference-only, ESSA is compatible with INT4/INT8 weight quantization and reduces inter-GPU communication to a few bytes per iteration. Across instruction following (IFEval), preference-based assistant tuning (HelpSteer2, HH-RLHF), and mathematical reasoning (GSM8K, MATH500), ESSA matches or exceeds LoRA-GRPO in the reported LoRA comparisons; on GSM8K it also outperforms Online DPO and PPO, while remaining competitive with both methods on IFEval. At scale, ESSA reaches a fixed MATH500 accuracy on Qwen2.5-32B/PRM800K up to 7.8x faster than LoRA-GRPO on 128 GPUs.",
+  "url": "https://arxiv.org/abs/2507.04453",
+  "pdf_url": "https://arxiv.org/pdf/2507.04453",
+  "published": "2026-09-10",
+  "updated": "2026-09-10",
+  "authors": [
+    "Daria Korotyshova",
+    "Boris Shaposhnikov",
+    "Alexey Malakhov",
+    "Alexey Khokhulin",
+    "Nikita Surnachev",
+    "Kirill Ovcharenko",
+    "George Bredis",
+    "Alexey Gorbatovski",
+    "Viacheslav Sinii",
+    "Daniil Gavrilov"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int4",
+    "int8",
+    "quantization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int4, int8, quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Online alignment of large language models (LLMs) is dominated by reinforcement learning from human feedback (RLHF) with gradient-based optimizers such as PPO or GRPO.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-10T04:41:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2507.04453",
+      "url": "https://arxiv.org/abs/2507.04453"
+    }
+  ]
+}

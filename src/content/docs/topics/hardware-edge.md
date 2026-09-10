@@ -5,10 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **37** 篇。
+累计收录 **40** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Deep Learning-Based Detection of Electrical Faults and Power Quality Disturbances in Aerospace Power Systems](../../papers/arxiv-2609.10479/) | 2026-09-10 | 45 |
+| [HBFSim: Fast and Faithful Simulation of High-Bandwidth Flash Under Real GPU Execution](../../papers/arxiv-2609.09800/) | 2026-09-10 | 44 |
 | [FlexSpIM: An Event-Based Digital Compute-In-Memory Accelerator with Flexible Operand Resolution and Layer-Wise Hybrid Stationarity](../../papers/arxiv-2609.08446/) | 2026-09-09 | 52 |
 | [Toward Sustainable Distributed LLM Inference: A Systems Synthesis and Research Agenda for an Energy-, Carbon-, and Cache-Aware llm-d Control Plane](../../papers/arxiv-2609.05565/) | 2026-09-09 | 47 |
 | [EStream: Fast and Memory-Efficient MoE Prefill through Expert Virtualization on Mobile NPUs](../../papers/arxiv-2609.06551/) | 2026-09-09 | 43 |
@@ -16,6 +18,7 @@ description: "Hardware-aware & Edge Inference"
 | [NoLoCo: No-all-reduce Low Communication Training Method for Large Models](../../papers/arxiv-2506.10911/) | 2026-09-09 | 40 |
 | [Compute-in-Memory Attention: A Time-Domain Analog Softmax Circuit with RC-Tunable Temperature](../../papers/arxiv-2609.04266/) | 2026-09-07 | 43 |
 | [Proton Irradiation Characterization of an Open-Source ML Accelerator on a Zynq UltraScale+ MPSoC](../../papers/arxiv-2609.05249/) | 2026-09-07 | 42 |
+| [KernelGenBench: Can LLMs and Agents Write Efficient Kernels Across Operator Sources and Hardware Platforms?](../../papers/arxiv-2607.27231/) | 2026-09-07 | 41 |
 | [Hardware-conscious Software Training for Deep Neural Network Inference Accelerator Chips to Recover Accuracy Degradation due to Hardware Variabilities](../../papers/arxiv-2609.04259/) | 2026-09-07 | 39 |
 | [H3DNAS: Hardware-Aware ONNX-Native 3D Point Cloud Model Compression](../../papers/arxiv-2609.02684/) | 2026-09-03 | 46 |
 | [AI-Assisted Design of a Post-Quantum Cryptographic Accelerator: A Deployed-Silicon Case Study](../../papers/arxiv-2609.04058/) | 2026-09-03 | 43 |

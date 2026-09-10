@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **18** 篇。
+累计收录 **19** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HELIOS: Guardrailed LLM-Driven Evolution of Autonomous Resource Orchestration Policies for Multi-Cloud Distributed Systems](../../papers/arxiv-2609.09164/) | 2026-09-10 | 43 |
 | [Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters](../../papers/arxiv-2609.04513/) | 2026-09-07 | 38 |
 | [Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy](../../papers/arxiv-2609.00817/) | 2026-09-02 | 40 |
 | [Scorpio: Serving Right Requests at the Right Time for Heterogeneous SLOs in LLM Inference](../../papers/arxiv-2505.23022/) | 2026-08-27 | 45 |

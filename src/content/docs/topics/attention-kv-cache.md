@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **87** 篇。
+累计收录 **90** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints](../../papers/arxiv-2609.10266/) | 2026-09-10 | 46 |
+| [Shift-Accumulate Attention: Multiplier-Free Query--Key Products for Transformer Decoding](../../papers/arxiv-2609.09208/) | 2026-09-10 | 39 |
+| [Revisiting the Shape Convention of Transformer Language Models](../../papers/arxiv-2602.06471/) | 2026-09-10 | 38 |
 | [MetaKV: Adaptive KV Cache Compression for Constrained LLM Inference](../../papers/arxiv-2609.07966/) | 2026-09-09 | 54 |
 | [CONDUIT: A Unified Residual-Stream Restoration Framework for KV Cache Reuse in Vision-Language Models](../../papers/arxiv-2609.05821/) | 2026-09-09 | 47 |
 | [Unified AI Gateway: A Framework for Joint Model Routing and KV Cache Management](../../papers/arxiv-2609.06940/) | 2026-09-09 | 44 |

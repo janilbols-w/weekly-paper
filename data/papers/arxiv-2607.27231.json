@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2607.27231",
-  "title": "KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation",
+  "title": "KernelGenBench: Can LLMs and Agents Write Efficient Kernels Across Operator Sources and Hardware Platforms?",
   "abstract": "Modern AI systems depend on specialized accelerator kernels, whose development is complicated by increasingly diverse operators and hardware. LLMs and agentic systems promise to automate this work, but existing evaluations do not show whether their performance transfers across operator sources and hardware platforms, or what such transfer costs. We present KernelGenBench, the first unified multi-source and multi-chip infrastructure for evaluating LLM- and agent-generated Triton kernels. With a common Triton target spanning six hardware platforms, it provides the broadest cross-vendor hardware coverage among existing kernel-generation benchmarks. We report two controlled analytical views: KernelGenBench-MS (Multi-Source) covers 210 operators from PyTorch ATen, production vLLM operators, and proprietary cuBLAS routines, while KernelGenBench-MC (Multi-Chip) evaluates a semantically stable 110-operator subset across six hardware platforms. Our evaluation consumed over 15 billion tokens. Agentic execution improved correctness, but no method dominated across sources and platforms: vLLM posed the strongest correctness challenge, cuBLAS set the highest performance ceiling, and AutoKernel accuracy fell from 87% on NVIDIA to 25% on Iluvatar CoreX. These improvements were costly: specialized agents averaged 4.99 million tokens per successful operator, rising to 6.25 million for CUDA Optimized Skill. The results establish operator source, hardware platform, and agentic scaffold as distinct dimensions of kernel-generation capability, and show that success in a familiar source-hardware setting is not a reliable proxy for deployment readiness.",
   "url": "https://arxiv.org/abs/2607.27231",
   "pdf_url": "https://arxiv.org/pdf/2607.27231",
   "published": "2026-09-07",
-  "updated": "2026-09-07",
+  "updated": "2026-09-10",
   "authors": [
     "Peiyu Zang",
     "Jian Tao",
@@ -30,20 +30,20 @@
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
     "domain_zh": "LLM 高效推理",
-    "group_id": "runtime-memory",
-    "group": "Runtime & Memory Efficiency",
-    "group_zh": "Runtime 与内存效率",
-    "leaf_id": "kernels-operators",
-    "leaf": "Kernels & Operator Fusion",
-    "leaf_zh": "Kernel 与算子融合"
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
   },
   "secondary_tags": [],
   "keyword_evidence": [
-    "kernel generation"
+    "accelerator"
   ],
-  "score": 45,
+  "score": 41,
   "score_components": {
-    "relevance": 16,
+    "relevance": 12,
     "novelty": 6,
     "rigor": 11,
     "practical_impact": 7,
@@ -51,7 +51,7 @@
     "credibility": 3
   },
   "score_evidence": [
-    "taxonomy keywords: kernel generation",
+    "taxonomy keywords: accelerator",
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
@@ -61,7 +61,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-07T04:42:59+00:00",
-  "last_seen": "2026-09-09T04:40:54+00:00",
+  "last_seen": "2026-09-10T04:41:08+00:00",
   "featured_weeks": [],
   "source_records": [
     {

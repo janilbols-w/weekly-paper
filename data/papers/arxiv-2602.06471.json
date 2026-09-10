@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2602.06471",
+  "title": "Revisiting the Shape Convention of Transformer Language Models",
+  "abstract": "The architectural shape of dense Transformers has remained remarkably stable: narrow-wide-narrow feed-forward networks (FFNs) consume most non-embedding parameters. Motivated by theoretical and empirical evidences that residual wide-narrow-wide (hourglass) MLPs remain expressive despite bottlenecks, we revisit whether this architectural convention is necessary for dense language models. We study Hourglass Transformers, which replace the conventional FFN with residual stacks of hourglass sub-MLPs and use hourglass attention to decouple residual-stream width from attention width. This exposes a practical depth-width trade-off: compressing the FFN intermediate dimension allows wider hidden states and fewer layers at matched parameter budgets. Across model scales from 113M to 8B parameters, Hourglass Transformers achieve language-modeling and downstream performance comparable to conventional Transformers, while improving training compute efficiency by $8.7\\%$ at matched average downstream accuracy across the 906M, 3B, and 8B scales. After long-context extension, the 8B Hourglass model also outperforms its matched conventional baseline across 4k-64k context lengths. At 64k context, the reduced attention layer count lowers both computation and KV-cache requirements, yielding up to $1.93\\times$ faster token decoding and $50\\%$ lower KV-cache memory at the 1B scale. These results identify hourglass structures as a practical architecture-efficiency alternative for compute- and latency-conscious Transformer design.",
+  "url": "https://arxiv.org/abs/2602.06471",
+  "pdf_url": "https://arxiv.org/pdf/2602.06471",
+  "published": "2026-09-10",
+  "updated": "2026-09-10",
+  "authors": [
+    "Feng-Ting Liao",
+    "Guan-Ting Yi",
+    "Tzu-Quan Lin",
+    "Meng-Hsi Chen",
+    "Da-shan Shiu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The architectural shape of dense Transformers has remained remarkably stable: narrow-wide-narrow feed-forward networks (FFNs) consume most non-embedding parameters.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-10T04:41:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.06471",
+      "url": "https://arxiv.org/abs/2602.06471"
+    }
+  ]
+}
