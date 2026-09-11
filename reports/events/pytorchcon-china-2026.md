@@ -4,7 +4,7 @@ description: "PyTorch Conference China 2026 与 KubeCon、CloudNativeCon、OpenI
 ---
 
 > **2026-09-07 — 2026-09-09 · Shanghai, China**
-> 状态：<span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> · 重点议程 13 项 · 更新于 2026-09-04
+> 状态：<span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> · 重点议程 13 项 · 更新于 2026-09-11
 
 [会议官网](https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/) · [官方日程](https://www.lfopensource.cn/kubecon-cloudnativecon-openinfra-summit-pytorch-conference-china/program/schedule/)
 
