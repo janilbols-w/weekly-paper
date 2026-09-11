@@ -1,0 +1,83 @@
+sosp:sosp-2026:janusmultillmservingatproductionscale:
+  abstract: Janus is a production multi-LLM serving system that separates service-level model placement from engine-level memory management. It combines a slower steady-state scheduler with a faster elasticity loop and virtualizes device memory through xTensor so colocated models can share accelerators while respecting service objectives.
+  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  pdf_url: https://yangtonghome.github.io/uploads/Janus_SOSP2026.pdf
+  code_url: https://github.com/Janus2026/Janus
+  classification_hint: multi-LLM inference serving GPU scheduling autoscaling memory virtualization throughput latency production cluster
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 推理服务平台, leaf_id: gateway-routing-autoscaling, leaf_zh: 网关、路由与弹性伸缩}
+  summary_zh: Janus 用“服务级模型放置 + 引擎级显存管理”的双层设计承载生产多模型 serving：30 秒级稳态调度处理长期需求，0.5 秒级弹性环处理突发负载，xTensor 则把设备显存抽象为可伸缩资源。
+  why_it_matters_zh: 论文覆盖 768 张 Ascend 910C、62 个应用和每日 4560 万请求的生产轨迹；作者报告 SLO 达成率 0.97–1.0，并称每日可节省约 1.34 万 device-hours。它把多模型共置从局部 batching 问题提升为跨服务、跨时间尺度的容量编排问题。
+  limitations_zh: 结果来自特定 Ascend 910C 集群与生产工作负载；调度周期、节省比例和 xTensor 收益不能直接外推到 NVIDIA/AMD、不同模型组合或不同突发分布。开源仓库仍需复现实验核验。
+  reading_depth: full_text
+  selection_reason_zh: 生产规模、多租户调度与显存虚拟化证据完整。
+
+sosp:sosp-2026:tensorhubscalableandelasticweighttransferforllmrltraining:
+  abstract: TensorHub introduces reference-oriented storage for large-model weights so reinforcement-learning training and inference workers can exchange versions without repeatedly materializing redundant copies. It combines topology-aware transfer planning with consistency and fault-tolerance mechanisms for elastic RL pipelines.
+  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  pdf_url: https://arxiv.org/pdf/2604.09107
+  classification_hint: LLM reinforcement learning distributed training GPU topology weight transfer network interconnect elastic throughput
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: cluster-resource, group_zh: 集群与资源管理, leaf_id: network-interconnect, leaf_zh: 网络与互联}
+  summary_zh: TensorHub 把 RL 训练中的模型权重视为可引用对象，用 reference-oriented storage 避免反复复制，并按集群拓扑规划训练端到推理端的传输、版本一致性和故障恢复。
+  why_it_matters_zh: 作者报告独立权重传输相对 NCCL 最多减少 6.7× GPU stall、弹性权重更新相对 UCX 最多提升 4.8×，跨数据中心场景减少 19× stall；这正面命中大模型 RL 中被通信和版本切换吞噬的 GPU 时间。
+  limitations_zh: 峰值结果依赖具体网络拓扑、权重大小和并发模式；论文中的 1T 参数场景通过重复 260B 模型层构造，不能等同于真实 1T 模型训练。生产部署证据仍需结合公开 artifact 复核。
+  reading_depth: full_text
+  selection_reason_zh: 直击 RL 训练—推理权重同步的跨拓扑瓶颈。
+
+sosp:sosp-2026:afewgpusawholelottascalefaithfulllmtrainingemulationwithcrystalllm:
+  abstract: The paper presents a high-fidelity LLM training emulator that slices execution graphs and combines emulation with analytical modeling to predict large-cluster behavior using a small fraction of the target hardware.
+  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  pdf_url: https://arxiv.org/pdf/2605.15617
+  classification_hint: distributed LLM training GPU performance emulation inference benchmark performance profiling throughput memory scaling
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 推理服务平台, leaf_id: observability-benchmarking, leaf_zh: 可观测性与基准测试}
+  summary_zh: 官方议程将系统称为 CrystalLLM；对应预印本标题使用 PrismLLM。方法切分训练执行图，将少量真实 GPU 执行与解析模型结合，用小规模硬件重建大集群的迭代时间和显存行为。
+  why_it_matters_zh: 作者报告迭代时间误差 0.58%、峰值显存误差低于 0.01%，并以不足目标规模 1% 的物理 GPU 仿真最多 8192 GPU 配置；若可复现，可明显降低并行策略与集群规划的试错成本。
+  limitations_zh: 官方议程的 CrystalLLM 与预印本的 PrismLLM 存在命名差异，本页只因作者与论文内容对应而关联，不能视为官方别名确认。极端规模结果是仿真精度主张，不是实际 8192 GPU 训练吞吐证明。
+  reading_depth: full_text
+  selection_reason_zh: 用低资源仿真降低超大规模训练规划成本。
+
+sosp:sosp-2026:llm42enablingdeterminisminllminferencewithverifiedspeculation:
+  abstract: LLM-42 provides deterministic distributed inference through a decode-verify-rollback protocol. It allows workers to execute fast unchanged kernels speculatively, verifies results at synchronization points, and rolls back when nondeterministic execution diverges.
+  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  pdf_url: https://arxiv.org/pdf/2601.17768
+  code_url: https://github.com/microsoft/llm-42
+  classification_hint: deterministic distributed LLM inference serving speculative decode verify rollback GPU kernels latency throughput
+  primary_category: {domain_id: efficient-inference, domain_zh: 高效推理, group_id: serving-distributed, group_zh: 服务与分布式推理, leaf_id: batching-scheduling, leaf_zh: 批处理与调度}
+  summary_zh: LLM-42 通过 decode–verify–rollback 协议获得分布式推理的确定性：常态继续使用未经修改的高性能 kernel，在同步点验证结果，只有发现分歧时才回滚。
+  why_it_matters_zh: 它把“可复现”从禁用高性能 kernel 的静态约束改成运行时协议，适合调试、审计和跨副本一致性场景；公开实现基于 SGLang，可直接检查协议与系统集成方式。
+  limitations_zh: 确定性需要额外校验流量、状态管理与极端情况下的回滚；低开销结论依赖分歧稀少和特定运行配置。它保证执行结果可复现，不代表模型语义正确或服务天然容错。
+  reading_depth: full_text
+  selection_reason_zh: 在保留快 kernel 的同时解决推理可重复性。
+
+sosp:sosp-2026:aveguidingagenticgpuoptimizationusingdataflowinvariants:
+  abstract: The paper uses data-flow invariants to guide agentic GPU-kernel optimization. A compact assertion language expresses semantic constraints, while compile-time abstract interpretation and SMT-based checks reject invalid candidate kernels before expensive execution.
+  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  pdf_url: https://arxiv.org/pdf/2604.18616
+  classification_hint: agentic LLM GPU kernel optimization dataflow invariants compile time verification throughput inference
+  primary_category: {domain_id: efficient-inference, domain_zh: 高效推理, group_id: runtime-memory, group_zh: 运行时与内存, leaf_id: kernels-operators, leaf_zh: Kernel 与算子优化}
+  summary_zh: 官方议程称系统为 Ave；对应预印本标题使用 ARGUS。方法让开发者用紧凑 DSL 声明数据流不变量，再以抽象解释与 SMT 在编译期筛掉语义错误的 agent 生成 kernel。
+  why_it_matters_zh: 作者在 MI300X 上报告核心 kernel 达到手写实现 99%–104% 吞吐，并在 200 个 KernelBench 任务上取得 100% L1、90% L2 正确率；它说明 agentic 优化若配合可验证约束，可能兼顾搜索速度与正确性。
+  limitations_zh: 官方 Ave 与预印本 ARGUS 的命名并不一致，本页只按作者和内容对应关联。评估集中在 MI300X 与选定核心 kernel，DSL 断言质量、SMT 覆盖面和迁移到 CUDA/NVIDIA 的效果仍需单独验证。
+  reading_depth: full_text
+  selection_reason_zh: 用形式化不变量约束 agentic kernel 优化。
+
+sosp:sosp-2026:m2kmakingthemodelkernelinterfaceexplicitforreliablecudakernelverification:
+  abstract: M2K makes the model-kernel interface explicit for verifying CUDA kernels used by machine-learning frameworks. HFProbe derives interface behavior and cuKLEE symbolically checks kernel implementations against it to find silent correctness failures.
+  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  pdf_url: https://arxiv.org/pdf/2603.24595
+  code_url: https://github.com/system-pclub/M2K
+  classification_hint: LLM CUDA GPU kernel verification inference runtime memory operators correctness vLLM
+  primary_category: {domain_id: efficient-inference, domain_zh: 高效推理, group_id: runtime-memory, group_zh: 运行时与内存, leaf_id: kernels-operators, leaf_zh: Kernel 与算子优化}
+  summary_zh: M2K 显式建模 ML framework 与 CUDA kernel 之间容易遗漏的接口语义：HFProbe 探测框架行为，cuKLEE 通过符号执行验证 kernel，目标是在性能优化后捕获静默错误。
+  why_it_matters_zh: 作者称在 Hugging Face、vLLM 和定制 kernel 上发现 181 个此前未知问题，仅 9 个误报；向 vLLM 报告的 26 个问题中已有 8 个修复、4 个确认。它为快速迭代的推理 kernel 增加了可审计的正确性关口。
+  limitations_zh: 符号执行受路径爆炸、建模完备性和支持算子范围限制；发现的“问题”数量不能等同于生产故障数量，已修复或确认的子集才是更强证据。误报和漏报仍需人工与真实硬件测试补足。
+  reading_depth: full_text
+  selection_reason_zh: 为推理 kernel 优化建立显式、可验证的正确性接口。
+
+sosp:sosp-2026:sandhifinegrainedmergingformemoryefficientmultimodelserving:
+  classification_hint: multi-model inference serving GPU memory efficient model merging latency throughput
+
+sosp:sosp-2026:lmtracerfinegrainedandrealtimeperformanceprofilingforproductionllmsystems:
+  classification_hint: production LLM inference serving performance profiling observability GPU latency throughput
+
+sosp:sosp-2026:meshrtcompiletimegovernedwaferscaleruntimeforlowlatencyhighthroughputinference:
+  classification_hint: wafer-scale runtime LLM inference serving accelerator latency throughput compile time

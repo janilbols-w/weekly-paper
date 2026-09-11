@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import xml.etree.ElementTree as ET
 from typing import Any, Dict, List, Tuple
 from urllib.parse import urljoin
@@ -9,7 +10,7 @@ from bs4 import BeautifulSoup, Tag
 
 from .event_models import EventPaper
 from .models import Paper
-from .utils import clean_text
+from .utils import clean_text, normalized_title
 
 
 def _text(node: ET.Element | None) -> str:
@@ -179,3 +180,81 @@ def collect_usenix_schedule(event: Dict[str, Any], timeout: int = 90) -> Tuple[L
     )
     response.raise_for_status()
     return parse_usenix_schedule_html(response.content, event)
+
+
+def _sosp_authors(node: Tag | None) -> List[str]:
+    if node is None:
+        return []
+    value = clean_text(node.get_text(" ", strip=True))
+    value = re.sub(r"\s*\([^)]*\)", "", value)
+    value = value.replace(", and ", ", ").replace(" and ", ", ")
+    return [part.strip(" ;,") for part in value.split(",") if part.strip(" ;,")]
+
+
+def parse_sosp_schedule_html(payload: bytes, event: Dict[str, Any]) -> Tuple[List[EventPaper], int]:
+    """Parse research-paper rows from the official SOSP schedule.
+
+    The schedule is an accepted-program source, not the archival proceedings: PDF,
+    abstract, and code metadata are deliberately left empty for editorial enrichment.
+    """
+    soup = BeautifulSoup(payload, "html.parser")
+    publication_date = str(event.get("program_released_date", event["start_date"]))
+    schedule_url = str(event.get("program_url", event["official_url"]))
+    accepted_url = str(event.get("accepted_papers_url", schedule_url))
+    output: List[EventPaper] = []
+
+    for row in soup.select("tr.session-a, tr.session-b"):
+        heading = row.select_one(".session-title")
+        track = clean_text(heading.get_text(" ", strip=True)) if heading else ""
+        track = re.sub(r"^Session\s+\S+\s*[–—-]\s*", "", track, flags=re.IGNORECASE)
+        for entry in row.select("ul.papers > li"):
+            authors_node = entry.find("em")
+            if authors_node is None:
+                continue
+            title_parts: List[str] = []
+            for child in entry.children:
+                if child is authors_node or (isinstance(child, Tag) and child.find("em")):
+                    break
+                if isinstance(child, Tag) and child.name == "br":
+                    break
+                title_parts.append(child.get_text(" ", strip=True) if isinstance(child, Tag) else str(child))
+            title = clean_text(" ".join(title_parts)).strip(" ;")
+            if not title:
+                continue
+            slug = normalized_title(title)[:96]
+            paper = Paper(
+                id=f"sosp:{event['id']}:{slug}",
+                title=title,
+                abstract="",
+                url=accepted_url,
+                pdf_url="",
+                published=publication_date,
+                updated=publication_date,
+                authors=_sosp_authors(authors_node),
+                source="SOSP official program",
+                source_type="accepted_program",
+                venue=event["short_name"],
+                source_records=[
+                    {"source": "SOSP official program", "id": slug, "url": schedule_url},
+                    {"source": "SOSP accepted papers", "id": slug, "url": accepted_url},
+                ],
+            )
+            output.append(
+                EventPaper(
+                    paper=paper,
+                    event_id=event["id"],
+                    track=track,
+                    presentation="Research Paper",
+                )
+            )
+    return output, len(output)
+
+
+def collect_sosp_schedule(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[EventPaper], int]:
+    response = requests.get(
+        event["program_url"],
+        timeout=timeout,
+        headers={"User-Agent": "WeeklyPaper/0.2 (+https://github.com/janilbols-w/weekly-paper)"},
+    )
+    response.raise_for_status()
+    return parse_sosp_schedule_html(response.content, event)

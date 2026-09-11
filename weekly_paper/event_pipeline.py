@@ -8,7 +8,7 @@ from typing import Any, Dict, List
 import yaml
 
 from .evaluation import evaluate
-from .event_collectors import collect_acl_anthology, collect_usenix_schedule
+from .event_collectors import collect_acl_anthology, collect_sosp_schedule, collect_usenix_schedule
 from .event_models import EventPaper
 from .event_sitegen import build_event_site
 from .models import Paper
@@ -93,7 +93,16 @@ def _apply_editorial(root: Path, event_id: str, papers: List[EventPaper]) -> Non
             item.paper.comment = " ".join(
                 part for part in (item.paper.comment, str(editorial["classification_hint"])) if part
             )
-        for field in ("summary_zh", "why_it_matters_zh", "limitations_zh", "code_url", "reading_depth"):
+        for field in (
+            "abstract",
+            "url",
+            "pdf_url",
+            "summary_zh",
+            "why_it_matters_zh",
+            "limitations_zh",
+            "code_url",
+            "reading_depth",
+        ):
             if field in editorial:
                 setattr(item.paper, field, editorial[field])
         if "primary_category" in editorial:
@@ -111,11 +120,16 @@ def _score(papers: List[EventPaper], taxonomy: Dict[str, Any]) -> List[EventPape
             continue
         if not _in_event_scope(item.paper):
             continue
-        # Official proceedings are stronger evidence than discovery/preprint metadata.
+        # Official accepted programs and proceedings are stronger evidence than discovery metadata.
         old = item.paper.score_components.get("credibility", 0)
         item.paper.score_components["credibility"] = min(10, old + 4)
         item.paper.score += item.paper.score_components["credibility"] - old
-        item.event_score_evidence.append("official peer-reviewed proceedings")
+        evidence = (
+            "official peer-reviewed proceedings"
+            if item.paper.source_type == "proceedings"
+            else "official accepted-paper program"
+        )
+        item.event_score_evidence.append(evidence)
         relevant.append(item)
     return relevant
 
@@ -177,6 +191,9 @@ def run_event(
     elif event.get("collector") == "usenix_schedule":
         collected, corpus_total = collect_usenix_schedule(event)
         corpus_source = "USENIX technical sessions"
+    elif event.get("collector") == "sosp_schedule":
+        collected, corpus_total = collect_sosp_schedule(event)
+        corpus_source = "SOSP official schedule and accepted-paper list"
     elif event.get("collector") == "official_program":
         collected, corpus_total = [], 0
         corpus_source = event.get("program_source_name", "Official program")

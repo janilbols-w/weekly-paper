@@ -10,7 +10,11 @@ from unittest.mock import Mock, patch
 
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
-from weekly_paper.event_collectors import parse_acl_anthology_xml, parse_usenix_schedule_html
+from weekly_paper.event_collectors import (
+    parse_acl_anthology_xml,
+    parse_sosp_schedule_html,
+    parse_usenix_schedule_html,
+)
 from weekly_paper.event_notify import select_delivery_event
 from weekly_paper.event_pipeline import _in_event_scope, detect_due_events, load_events, run_event
 from weekly_paper.models import Paper
@@ -329,6 +333,33 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(values[0].track, "Resource-Efficient LLM Serving · Operational Systems")
         self.assertEqual(values[0].awards, ["Jay Lepreau Best Paper Award"])
         self.assertEqual(values[0].paper.pdf_url, "https://www.usenix.org/system/files/osdi26-example.pdf")
+
+    def test_parse_sosp_schedule_html(self) -> None:
+        payload = """
+<table><tr class="session-a"><td>
+  <div class="session-title">Session 1A - Model Serving at Scale</div>
+  <ul class="papers">
+    <li>Example LLM Serving<br><em>Alice Smith (Example University), and Bob Jones (Systems Lab)</em></li>
+    <li><a href="/src">Student Research Competition</a></li>
+  </ul>
+</td></tr></table>
+""".encode()
+        event = {
+            "id": "sosp-2026",
+            "short_name": "SOSP 2026",
+            "start_date": "2026-09-29",
+            "program_released_date": "2026-09-09",
+            "official_url": "https://sigops.org/s/conferences/sosp/2026/",
+            "program_url": "https://sigops.org/s/conferences/sosp/2026/schedule.html",
+            "accepted_papers_url": "https://sigops.org/s/conferences/sosp/2026/accepted.html",
+        }
+        values, total = parse_sosp_schedule_html(payload, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.title, "Example LLM Serving")
+        self.assertEqual(values[0].paper.authors, ["Alice Smith", "Bob Jones"])
+        self.assertEqual(values[0].track, "Model Serving at Scale")
+        self.assertEqual(values[0].paper.source_type, "accepted_program")
+        self.assertEqual(values[0].paper.pdf_url, "")
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

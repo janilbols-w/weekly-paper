@@ -131,6 +131,11 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             paper = item.paper
             label = _category(item)
             award = f" · {' / '.join(item.awards)}" if item.awards else ""
+            resource_links = []
+            if paper.pdf_url:
+                resource_links.append(f"[PDF]({paper.pdf_url})")
+            if paper.code_url:
+                resource_links.append(f"[代码]({paper.code_url})")
             lines.extend(
                 [
                     f"### {index}. [{paper.title}]({paper.url})",
@@ -143,7 +148,7 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
                     "",
                     f"**边界：** {paper.limitations_zh or '当前为摘要级核验，部署结论仍需结合硬件、模型和工作负载复核。'}",
                     "",
-                    f"[PDF]({paper.pdf_url})" + (f" · [代码]({paper.code_url})" if paper.code_url else ""),
+                    " · ".join(resource_links),
                     "",
                 ]
             )
