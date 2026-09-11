@@ -39,7 +39,7 @@ Vision-language models (VLMs) often answer new questions about recurring visual 
 ## 元数据
 
 - 作者：Pengan Chen, Kaisheng Zheng, Liang Hong, Lixia Yi, Jiyue Jiang, Jiayang Chen, Yixuan Wang, Yimin Fan, Xinyuan Liu, Jiayi Li, Zhanqiu Zhang, Yiwen Guo, Yu Li
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-05；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

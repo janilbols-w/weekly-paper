@@ -4,12 +4,12 @@
   "abstract": "Inference energy per token drives the cost and carbon footprint of deployed transformers. It is dominated by dense matrix products that incur fused multiply-accumulate (FMA) operations and memory traffic. To reduce these computations while retaining dense tensors for high GPU throughput, we develop a methodology from first principles to adapt structural complexity during training to maximize inference utility per unit compute. Channel penalties drive entire tensor slices to zero to enable physical removal while preserving density and the network function. The natural approach, penalizing the norm of operator components acting through each channel, is provably destabilized by gauge freedom. We resolve this pathology with GaugeLasso: additive symmetric group-lasso penalties that recover a monotone function of product-norms when the network converges to gauge balance. Our equilibrium analysis enables per-channel calibration to correctly suppress slices that under-perform in inference utility per unit compute. Under adaptive pressure, the network reorganizes into depth-dependent structural profiles that can be far smaller than the architecture required to learn the task. On polynomial long division over $\\mathbb{F}_{31}$, compute compresses from 148 to 255 times with perfect accuracy. On character-level language modeling, compressed models outperform the hand-designed baseline at equal FMA. On masked autoencoding, a compression trial exposes which axes were over-provisioned and which saturated, guiding a better second design. Compaction also accelerates training monotonically as the model progresses. Post-hoc pruning with the same utility ranking cannot reach these structures, showing that sustained pressure is central to discovery of efficient models. Retraining a discovered architecture recovers baseline quality on our statistical tasks, but fails on our exact algorithmic task.",
   "url": "https://arxiv.org/abs/2609.07264",
   "pdf_url": "https://arxiv.org/pdf/2609.07264",
-  "published": "2026-09-09",
+  "published": "2026-09-07",
   "updated": "2026-09-09",
   "authors": [
     "Jed A. Duersch",
-    "Na\\\"im Es-Sebbani",
-    "Nathana\\\"el Haas",
+    "Naïm Es-Sebbani",
+    "Nathanaël Haas",
     "Zied Bouraoui"
   ],
   "source": "arXiv RSS",
@@ -21,7 +21,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "10 pages main text, 28 pages total including appendices",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.07264v1",
+      "url": "http://arxiv.org/abs/2609.07264v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.07264",

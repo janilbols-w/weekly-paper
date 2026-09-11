@@ -1,0 +1,99 @@
+{
+  "id": "arxiv:2609.10715",
+  "title": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+  "abstract": "We introduce NCP-ArchPreview, a latent-space language model that pushes autoregressive pretraining beyond standard next-token prediction (NTP). Alongside NTP, the model learns through Next Concept Prediction (NCP) to predict discrete concepts that span multiple tokens, introducing an explicit and more challenging concept-level objective while preserving standard token-level autoregressive generation. NCP-ArchPreview builds a latent space by constructing a product-quantized concept vocabulary directly from its hidden states, and subsequently learns to predict future concepts via a dedicated Concept Module. These predicted concepts are then fed back to the token level to guide subsequent generation, with NTP and NCP trained jointly end-to-end. We scale this architecture to 8.9B parameters and train it on 5.73T tokens from the Dolma-3 dataset, marking the largest demonstration of a latent-space language model to date. Remarkably, by consuming only 51.3% of the total training tokens, NCP-ArchPreview achieves the final pretraining loss of OLMo-3-7B. Following full pretraining, it outperforms OLMo-3-7B by 2.45 points on the downstream macro-average, including a notable 5.99-point gain on GSM8K. Controlled experiments isolate a clear progression of performance gains stemming from both the latent architecture and the NCP objective. Furthermore, utilizing only 85% of the standard computation, NCP-ArchPreview approaches the training loss of a strictly parameter-aligned 8.9B baseline. The learned latent space remains highly valuable after the pretraining stage: updating just the 17M-parameter VQ module yields a novel, lightweight interface for domain adaptation, while a simple injection of concept representations into a DFlash2 drafter improves the mean accepted length by 4.17% with negligible overhead.",
+  "url": "https://arxiv.org/abs/2609.10715",
+  "pdf_url": "https://arxiv.org/pdf/2609.10715",
+  "published": "2026-09-09",
+  "updated": "2026-09-11",
+  "authors": [
+    "The Intern-NCP Team",
+    ":",
+    "Jiaqi Cao",
+    "Chiyu Chen",
+    "Shuang Cheng",
+    "Xu Cheng",
+    "Beiya Dai",
+    "Yufan Feng",
+    "Kewen Ge",
+    "Ruijun Ge",
+    "Jiayi Huang",
+    "Yang Jiao",
+    "Dahua Lin",
+    "Zhouhan Lin",
+    "Yifan Liu",
+    "Yuliang Liu",
+    "Biqing Qi",
+    "Mowen Ruan",
+    "Junzhe Shen",
+    "Yunchong Song",
+    "Hao Sun",
+    "Zhongbo Tian",
+    "Yixuan Wang",
+    "Rubin Wei",
+    "Jiaxin Xiong",
+    "Kangyu Yang",
+    "Qian Yao",
+    "Qi Zhang",
+    "Bowen Zhou"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We introduce NCP-ArchPreview, a latent-space language model that pushes autoregressive pretraining beyond standard next-token prediction (NTP).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-11T04:41:15+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.10715v1",
+      "url": "http://arxiv.org/abs/2609.10715v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.10715",
+      "url": "https://arxiv.org/abs/2609.10715"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Large language models (LLMs) are often considered fragile under aggressive spars
 ## 元数据
 
 - 作者：Hyeondo Jang, Kwanhee Lee, Dongyeop Lee, Namhoon Lee
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-06；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

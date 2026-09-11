@@ -4,7 +4,7 @@
   "abstract": "Depth pruning reduces large language model (LLM) inference cost by removing complete Transformer blocks. Activation-based methods collect hidden states through forward passes on calibration data, while existing forward-free methods score each Transformer block separately without measuring similarity between blocks. We propose Weight-Redundancy Pruning (WRP), a forward-free depth-pruning method that estimates inter-layer redundancy from checkpoint weights to select blocks without calibration data or model forward passes. WRP compares attention output and MLP down-projection weights across layers and combines their pairwise similarities with relative projection-scale information. The resulting all-pairs similarity matrix guides layer grouping and block selection. Across multiple pruning settings, model families, and downstream tasks, WRP consistently outperforms existing forward-free magnitude pruning and approaches the performance of activation-based methods.",
   "url": "https://arxiv.org/abs/2609.09883",
   "pdf_url": "https://arxiv.org/pdf/2609.09883",
-  "published": "2026-09-10",
+  "published": "2026-09-09",
   "updated": "2026-09-10",
   "authors": [
     "Vincent-Daniel Yun",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-10T04:41:08+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.09883v1",
+      "url": "http://arxiv.org/abs/2609.09883v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.09883",

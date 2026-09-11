@@ -4,7 +4,7 @@
   "abstract": "Block diffusion speculative decoding improves LLM inference efficiency by proposing a block of future tokens in parallel and verifying them with a single forward pass through the target model. However, existing methods retain only the accepted prefix and discard the rejected suffix, preventing the computation spent on these positions from benefiting subsequent drafting rounds and forcing the drafter to repeatedly reconstruct representations for future tokens from scratch. We observe that rejection only determines whether a proposed token can be committed, while the verifier representations at rejected positions can still provide useful information for subsequent predictions. Based on this observation, we propose DFlow, a simple yet effective framework that enables verifier information to flow across drafting rounds. DFlow reuses the hidden states produced by the target verifier for the rejected suffix to guide subsequent drafting without additional target computation. To effectively learn this information flow across drafting rounds, we introduce a self-condition train strategy that feeds verifier representations from earlier predictions back into subsequent predictions. Experiments on Qwen3 models across diverse benchmarks demonstrate that DFlow consistently improves draft quality and acceptance length over DFlash.",
   "url": "https://arxiv.org/abs/2609.06498",
   "pdf_url": "https://arxiv.org/pdf/2609.06498",
-  "published": "2026-09-09",
+  "published": "2026-09-06",
   "updated": "2026-09-09",
   "authors": [
     "Yaojie Zhang",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.06498v1",
+      "url": "http://arxiv.org/abs/2609.06498v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.06498",

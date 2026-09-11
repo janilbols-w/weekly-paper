@@ -4,7 +4,7 @@
   "abstract": "We introduce HoneyRoute, an inference-serving layer that detects whether an incoming request is malicious and, if so, routes it to a dedicated honeypot model, shielding production while the adversary's interaction is continuously harvested for intelligence. Existing defenses embed traps inside model memory or rebuild deception at the protocol layer, leaving the serving tier unprotected and feeding nothing back into detection. HoneyRoute couples (i) a streaming router (a frozen 0.8B-embedding backbone with per-domain MLP heads), (ii) a dual-implementation honeypot (a rule/prompt-engineered code honeypot or a dedicated same-family replica), and (iii) an analysis loop that converts trapped interactions into attacker fingerprints for router retraining. On a production trace plus a seven-domain attack corpus, the router reaches F1=.911 at 38 ms median added latency, matching 96% of a two-tier guard-LLM cascade's F1 at 1/385 of its latency with 0% evasion under 13 adversarial transformations; diverting the malicious share cuts production-model token consumption under concurrent flooding with real GCG-suffix payloads by 97.8%; the trained replica agrees with the production model on 92.9% of benign holdout requests, while naive unconditional bait injection collapses to 7.6% and selective camouflaged injection recovers to 88.9%, mapping the recoverable fidelity-traceability frontier; and a loop-trained correction head cuts misrouting of legitimate security research 9x while raising detection F1 to .933.",
   "url": "https://arxiv.org/abs/2609.08306",
   "pdf_url": "https://arxiv.org/pdf/2609.08306",
-  "published": "2026-09-09",
+  "published": "2026-09-08",
   "updated": "2026-09-10",
   "authors": [
     "Han Jin"
@@ -19,7 +19,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Preprint. 13 pages, 4 figures, 1 table, 23 references",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.08306v2",
+      "url": "http://arxiv.org/abs/2609.08306v2"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.08306",

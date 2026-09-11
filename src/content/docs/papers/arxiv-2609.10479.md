@@ -38,8 +38,8 @@ More Electric Aircraft require fast and reliable monitoring of high-frequency el
 
 ## 元数据
 
-- 作者：Ian C. Guzm\'an, Radu Babiceanu, Berker Pek\"oz
-- 发布：2026-09-10；更新：2026-09-10
+- 作者：Ian C. Guzmán, Radu Babiceanu, Berker Peköz
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

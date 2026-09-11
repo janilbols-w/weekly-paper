@@ -39,7 +39,7 @@ Ultra-low-bit language models promise reductions in storage and memory traffic, 
 ## 元数据
 
 - 作者：Anirudh Malik, M Sparsh Mehra, Poojith Devan
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-08；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

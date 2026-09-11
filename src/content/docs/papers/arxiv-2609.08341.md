@@ -39,7 +39,7 @@ On-Policy Distillation (OPD) facilitates the transfer of knowledge from domain e
 ## 元数据
 
 - 作者：Han Xiao, Yifan Niu, Dongyi Liu, Chang Luo, Jia Li
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-08；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

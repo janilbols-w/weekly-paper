@@ -38,8 +38,8 @@ Inference energy per token drives the cost and carbon footprint of deployed tran
 
 ## 元数据
 
-- 作者：Jed A. Duersch, Na\"im Es-Sebbani, Nathana\"el Haas, Zied Bouraoui
-- 发布：2026-09-09；更新：2026-09-09
+- 作者：Jed A. Duersch, Naïm Es-Sebbani, Nathanaël Haas, Zied Bouraoui
+- 发布：2026-09-07；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

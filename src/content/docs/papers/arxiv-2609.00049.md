@@ -39,7 +39,7 @@ Post-training quantization (PTQ) is essential for deploying large language model
 ## 元数据
 
 - 作者：Qian Zhang, Yaoming Li, Zhewen Tan, Yanshu Wang, Heng Lu, Kun Su, Zongwei Lv, Wenhan Yu, Yongge Ma, Yinjun Han, Ruikuang Liu, Tong Yang
-- 发布：2026-08-30；更新：2026-09-02
+- 发布：2026-08-30；更新：2026-09-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -4,7 +4,7 @@
   "abstract": "We propose ModularPhaseNet, a classical and integer-computable discretization of the continuous complex phase geometry introduced in QuantumPhaseNet. The real-valued hidden states of a standard Transformer are retained, while only an auxiliary phase channel is quantized into a cyclic subgroup G = of order q | (p-1) in the multiplicative group of F_p. A continuous phase e^{i phi} is represented by z = g^a mod p; phase composition becomes group multiplication, relative phase becomes group division, conceptual hierarchy is induced by a filtration of cyclic quotients, semantic direction is represented by oriented relative group elements, and contextual consistency is measured by gauge-invariant cycle holonomy. The method introduces three components into an otherwise standard Transformer: a finite-phase encoder, a quotient-filtration hierarchy module, and a group-valued connection module. Their outputs enter self-attention as real-valued bias terms. Training uses distributions in the real group algebra or straight-through Gumbel-Softmax, whereas inference uses exact modular exponentiation and precomputed tables. No quantum hardware, complex-valued matrix multiplication, or discrete-logarithm computation is required. We prove quantization-distortion bounds, nesting of quotient-induced partitions, gauge invariance, a discrete integrability result for flat connections, and boundedness of the resulting attention output. The central empirical hypothesis is that these exact discrete invariants improve hierarchy recovery, discourse alignment, contradiction detection, and calibrated hallucination-risk prediction under a controlled compute budget. This paper reports the theory together with a pre-registered evaluation plan; the experiments described in Section 14 have not yet been carried out, and no empirical result is claimed here.",
   "url": "https://arxiv.org/abs/2609.06000",
   "pdf_url": "https://arxiv.org/pdf/2609.06000",
-  "published": "2026-09-09",
+  "published": "2026-09-05",
   "updated": "2026-09-09",
   "authors": [
     "Kiyotaka Kasubuchi",
@@ -19,7 +19,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "16 pages, 1 figure. Extends arXiv:2602.14419 (WavePhaseNet) and arXiv:2608.15820 (QuantumPhaseNet). Theory and a pre-registered evaluation plan; no experimental results are reported",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.06000v1",
+      "url": "http://arxiv.org/abs/2609.06000v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.06000",

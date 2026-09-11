@@ -39,7 +39,7 @@ Speculative decoding is critical for accelerating LLM inference. However, the sp
 ## 元数据
 
 - 作者：Fengxiang Bie, Yuqing Jian, Yifan Yu, Zhongzhu Zhou, Zelei Shao, Ben Athiwaratkun, Shuaiwen Leon Song, Chenfeng Xu, Xiaoxia Wu, Tianyi Zhang
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-08；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LeanModels/Osprey](https://github.com/LeanModels/Osprey)
 - 阅读深度：metadata

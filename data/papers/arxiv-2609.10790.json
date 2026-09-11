@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2609.10790",
+  "title": "Composable CXL Memory as a Kubernetes-Native Shared Memory for LLM Serving",
+  "abstract": "We present a Kubernetes Dynamic Resource Allocation (DRA) driver that makes composable CXL memory a schedulable cluster resource, and evaluate the resulting shared-memory tier for cross-node KV-cache reuse in LLM serving. The driver composes CXL regions on demand, materializes them as DAX devices on each participating host, and injects them into pods under a single Container Device Interface (CDI) name so that pods on different nodes access the same physical region. A shared-memory connector for vLLM/llm-d uses that region as a KV-cache tier with a slot directory embedded inside the shared medium, which eliminates the need for an external metadata service. On a two-node cluster with a 512\\,GiB CXL appliance and Qwen2.5-7B-Instruct, cross-node prefix reuse reduces TTFT by 5.5$\\times$--36.6$\\times$ at an external hit rate of 95.4--99.5\\,\\%, while node-local tiers (GPU prefix caching, CPU-DRAM offload) fall back to full recompute. The sharing gap, defined as the latency ratio between cross-node and same-node reuse, is 1--4\\%, indicating that cross-node reuse incurs little additional latency relative to same-node reuse on our testbed. Both replicas run full engines; the study demonstrates memory disaggregation rather than prefill/decode disaggregation. We report this as a feasibility study rather than a performance evaluation.",
+  "url": "https://arxiv.org/abs/2609.10790",
+  "pdf_url": "https://arxiv.org/pdf/2609.10790",
+  "published": "2026-09-09",
+  "updated": "2026-09-11",
+  "authors": [
+    "Hongjian Fan",
+    "Kevin Zhang",
+    "David Habinsky",
+    "Sean Dykstra"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "23 pages, 9 figures, 9 tables",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "resource-disaggregation",
+    "leaf": "Resource Disaggregation",
+    "leaf_zh": "资源解耦"
+  },
+  "secondary_tags": [
+    "serving-engine",
+    "attention-kv-cache"
+  ],
+  "keyword_evidence": [
+    "cxl memory",
+    "memory disaggregation"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: cxl memory, memory disaggregation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We present a Kubernetes Dynamic Resource Allocation (DRA) driver that makes composable CXL memory a schedulable cluster resource, and evaluate the resulting shared-memory tier for cross-node KV-cache reuse in LLM serving.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-11T04:41:15+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.10790v1",
+      "url": "http://arxiv.org/abs/2609.10790v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.10790",
+      "url": "https://arxiv.org/abs/2609.10790"
+    }
+  ]
+}

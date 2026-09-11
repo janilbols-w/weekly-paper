@@ -39,7 +39,7 @@ LLM serving systems already reuse KV caches, but only when the reused text sits 
 ## 元数据
 
 - 作者：Xi Shi, Qian Lou
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

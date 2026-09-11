@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) architectures have become a key technique for scaling L
 ## 元数据
 
 - 作者：Haochen Huang, Shuzhang Zhong, Shengxuan Qiu, Zhe Zhang, Shuangchen Li, Cong Li, Dimin Niu, Hongzhong Zheng, Guangyu Sun, Runsheng Wang, Meng Li
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-08；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/PKU-SEC-Lab/HDA-MoE-TCAD26](https://github.com/PKU-SEC-Lab/HDA-MoE-TCAD26)
 - 阅读深度：metadata

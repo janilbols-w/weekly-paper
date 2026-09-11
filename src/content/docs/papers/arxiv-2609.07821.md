@@ -3,7 +3,7 @@ title: "A*-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM"
 description: "Chain-of-Thought (CoT) improves the reasoning ability of Large Language Models (LLMs) but incurs substantial computation and context costs."
 ---
 
-**评分：39/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：44/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2609.07821) · [PDF](https://arxiv.org/pdf/2609.07821)
 
@@ -27,19 +27,19 @@ Chain-of-Thought (CoT) improves the reasoning ability of Large Language Models (
 | novelty | 6 |
 | rigor | 9 |
 | practical impact | 7 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: pruning
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Xiaoang Xu, Siyuan Liu, Shuo Wang, Junlan Feng, Fanyu Meng, Zhu Zhang, Jixun Wang, Xiaorong Wang, Zihan Zhou, Xin Li, Chaojun Xiao, Yiming Zhang, Huijia Wu, Liuyu Xiang, Peipei Li, Zhaofeng He
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-07；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/AI9Stars/AStar-Thought](https://github.com/AI9Stars/AStar-Thought)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ With the rapid advancement of accelerator technologies, pre-training large langu
 ## 元数据
 
 - 作者：Xiaosong Chen, Shaoheng Nie, Zhongmin Zhao, Zizhao Mo, Jiapeng Chen, Huanle Xu, Zeren Li, Weiwei Sun, ChengZhong Xu
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-05；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,13 +5,15 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **45** 篇。
+累计收录 **47** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Epoch: Compiling Diffusion Blocks for Sparse MoE Serving](../../papers/arxiv-2609.09748/) | 2026-09-10 | 38 |
-| [Deadline-Aware Adaptive Prefill Chunking for Efficient Large Language Model Serving](../../papers/arxiv-2609.07883/) | 2026-09-09 | 50 |
+| [PATTON: Enabling Commodity PIM for Production LLM Serving](../../papers/arxiv-2609.11392/) | 2026-09-10 | 53 |
+| [Phase-Decoupled, Model-Calibrated Power Control for Disaggregated LLM Serving](../../papers/arxiv-2609.11133/) | 2026-09-10 | 51 |
 | [Measurement-Driven Diagnosis and Mitigation of Host-CPU Co-location Interference in Single-GPU LLM Serving on a Multi-GPU Server](../../papers/arxiv-2609.05425/) | 2026-09-09 | 46 |
+| [Epoch: Compiling Diffusion Blocks for Sparse MoE Serving](../../papers/arxiv-2609.09748/) | 2026-09-09 | 38 |
+| [Deadline-Aware Adaptive Prefill Chunking for Efficient Large Language Model Serving](../../papers/arxiv-2609.07883/) | 2026-09-07 | 50 |
 | [Adaptive Context Parallelism for Production LLM Serving](../../papers/arxiv-2609.04774/) | 2026-09-07 | 48 |
 | [RW-TTT: Batched Serving for Request-Owned Test-Time Training State](../../papers/arxiv-2605.28053/) | 2026-09-04 | 39 |
 | [Characterizing CPU-Induced Slowdowns in Multi-GPU LLM Inference](../../papers/arxiv-2603.22774/) | 2026-08-28 | 44 |

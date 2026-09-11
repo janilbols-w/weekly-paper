@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2605.12227",
+  "title": "A Recipe for Long-Context Reasoning in Large Language Models via On-Policy Optimization and Distillation",
+  "abstract": "Existing approaches to post-train models for long-context tasks face complementary limitations: (i) supervised fine-tuning (SFT) provides stable supervision but suffers from exposure bias; (ii) reinforcement learning methods such as Group Relative Policy Optimization (GRPO) train on model-generated trajectories but struggle with long-horizon credit assignment and sparse rewards; and (iii) on-policy distillation (OPD) provides dense token-level guidance but does not directly optimize task rewards. We study these complementary strategies for long-context alignment and derive a recipe that combines GRPO with OPD-style teacher guidance: the student learns from its own rollouts using outcome-level rewards, while a stronger teacher provides dense token-level regularization in place of the standard reference policy. This is especially useful when process-level supervision is difficult to obtain. To support this study, we introduce LongBlocks, a synthetic multilingual dataset spanning multi-hop reasoning, contextual grounding, and long-form generation. Through controlled ablations, we isolate the roles of cold-start initialization, teacher anchoring, and data mixing, showing that our recipe yields a more stable and effective path to long-context reasoning than GRPO or OPD while preserving short-context capabilities.",
+  "url": "https://arxiv.org/abs/2605.12227",
+  "pdf_url": "https://arxiv.org/pdf/2605.12227",
+  "published": "2026-09-11",
+  "updated": "2026-09-11",
+  "authors": [
+    "Miguel Moura Ramos",
+    "Duarte M. Alves",
+    "Andr\\'e F. T. Martins"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Existing approaches to post-train models for long-context tasks face complementary limitations: (i) supervised fine-tuning (SFT) provides stable supervision but suffers from exposure bias; (ii) reinforcement learning methods such as Group Relative Policy Optimization (GRPO) train on model-generated trajectories but struggle with long-horizon credit assignmen",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-11T04:41:15+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.12227",
+      "url": "https://arxiv.org/abs/2605.12227"
+    }
+  ]
+}

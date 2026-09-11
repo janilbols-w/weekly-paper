@@ -39,7 +39,7 @@ Deploying Large Language Models (LLMs) directly on mobile platforms at the edge 
 ## 元数据
 
 - 作者：Weisi Yang, Stephen Xia
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/imec-nu/PELM](https://github.com/imec-nu/PELM)
 - 阅读深度：metadata

@@ -5,20 +5,22 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **90** 篇。
+累计收录 **92** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints](../../papers/arxiv-2609.10266/) | 2026-09-10 | 46 |
-| [Shift-Accumulate Attention: Multiplier-Free Query--Key Products for Transformer Decoding](../../papers/arxiv-2609.09208/) | 2026-09-10 | 39 |
+| [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](../../papers/arxiv-2609.11744/) | 2026-09-10 | 47 |
+| [FlexComp: One Model for Every Ratio in Context Compression](../../papers/arxiv-2609.11192/) | 2026-09-10 | 40 |
 | [Revisiting the Shape Convention of Transformer Language Models](../../papers/arxiv-2602.06471/) | 2026-09-10 | 38 |
-| [MetaKV: Adaptive KV Cache Compression for Constrained LLM Inference](../../papers/arxiv-2609.07966/) | 2026-09-09 | 54 |
-| [CONDUIT: A Unified Residual-Stream Restoration Framework for KV Cache Reuse in Vision-Language Models](../../papers/arxiv-2609.05821/) | 2026-09-09 | 47 |
-| [Unified AI Gateway: A Framework for Joint Model Routing and KV Cache Management](../../papers/arxiv-2609.06940/) | 2026-09-09 | 44 |
-| [Jacap: Robust KV Cache Eviction via Jacobian-Based Nonlinear Information Capacity Preservation](../../papers/arxiv-2609.08131/) | 2026-09-09 | 43 |
-| [ECOKV: Geometry-Aware KV Cache Eviction via Complementary Diversity Metrics](../../papers/arxiv-2609.06663/) | 2026-09-09 | 43 |
+| [KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints](../../papers/arxiv-2609.10266/) | 2026-09-09 | 46 |
 | [RouteRelay: Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention](../../papers/arxiv-2609.07306/) | 2026-09-09 | 38 |
 | [FlashBack: Efficient Retrieval-Augmented Language Modeling for Fast Inference](../../papers/arxiv-2405.04065/) | 2026-09-09 | 38 |
+| [Jacap: Robust KV Cache Eviction via Jacobian-Based Nonlinear Information Capacity Preservation](../../papers/arxiv-2609.08131/) | 2026-09-08 | 43 |
+| [MetaKV: Adaptive KV Cache Compression for Constrained LLM Inference](../../papers/arxiv-2609.07966/) | 2026-09-07 | 54 |
+| [Unified AI Gateway: A Framework for Joint Model Routing and KV Cache Management](../../papers/arxiv-2609.06940/) | 2026-09-07 | 44 |
+| [ECOKV: Geometry-Aware KV Cache Eviction via Complementary Diversity Metrics](../../papers/arxiv-2609.06663/) | 2026-09-06 | 43 |
+| [CONDUIT: A Unified Residual-Stream Restoration Framework for KV Cache Reuse in Vision-Language Models](../../papers/arxiv-2609.05821/) | 2026-09-05 | 47 |
+| [Shift-Accumulate Attention: Multiplier-Free Query--Key Products for Transformer Decoding](../../papers/arxiv-2609.09208/) | 2026-09-05 | 39 |
 | [Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](../../papers/arxiv-2609.03430/) | 2026-09-03 | 47 |
 | [SGD-KV: Summarization Guided KV Cache Compression](../../papers/arxiv-2609.03235/) | 2026-09-03 | 43 |
 | [Almost Free State Prediction Separation](../../papers/arxiv-2609.03807/) | 2026-09-03 | 40 |

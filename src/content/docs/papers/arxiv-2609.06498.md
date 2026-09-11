@@ -39,7 +39,7 @@ Block diffusion speculative decoding improves LLM inference efficiency by propos
 ## 元数据
 
 - 作者：Yaojie Zhang, Linfeng Zhang, Bin Cui, Xupeng Miao
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-06；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

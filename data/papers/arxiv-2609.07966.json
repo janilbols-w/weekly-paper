@@ -4,7 +4,7 @@
   "abstract": "Key--value (KV) cache compression is an effective way to reduce the memory overhead of large language model (LLM) inference, particularly for long-context workloads. However, existing compression methods make different trade-offs among accuracy, inference latency, and peak KV cache memory utilization, making a single fixed configuration unsuitable across different prompts and resource constraints. We introduce MetaKV, an adaptive framework that selects a KV cache compression configuration for each input prompt based on user-specified latency and peak memory budgets. MetaKV uses lightweight prediction models to estimate the end-to-end latency, peak memory, and probability of a correct response for each candidate configuration, and selects the configuration that best satisfies the latency-memory constraints while preserving accuracy. We evaluate MetaKV across ten configurations from three representative KV cache compression methods, KVQuant, H$_2$O, and RocketKV, together with an uncompressed FP16 configuration, on four datasets covering mathematics, science, commonsense reasoning, and reading comprehension. Across a wide range of latency and peak memory constraints, MetaKV consistently outperforms the best static configuration, improving constrained success rate (CSR), the fraction of prompts answered correctly while satisfying both constraints, by approximately 0.07 on average and up to 0.135. These results demonstrate the benefit of adapting KV cache compression to individual prompts and latency-memory constraints. Code is available at https://github.com/MichaelWang0505/MetaKV.git",
   "url": "https://arxiv.org/abs/2609.07966",
   "pdf_url": "https://arxiv.org/pdf/2609.07966",
-  "published": "2026-09-09",
+  "published": "2026-09-07",
   "updated": "2026-09-09",
   "authors": [
     "Michael Wang",
@@ -56,11 +56,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [
     "2026-W37"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.07966v1",
+      "url": "http://arxiv.org/abs/2609.07966v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.07966",

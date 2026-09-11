@@ -4,7 +4,7 @@
   "abstract": "Developers increasingly run large language models locally by pulling quantized GGUF artifacts from public registries, yet nothing in the distribution pipeline functionally tests these conversions before they reach users. We executed 327 quantized code-capable model artifacts: 305 from the official Ollama library, spanning 15 model lines at every eligible quantization level at or under 8 GB, and 22 from the most-downloaded community repositories on HuggingFace. Each ran a 15-task smoke suite calibrated so that healthy artifacts pass while a known-broken one fails; suspects then faced full 164-task evaluation, a second inference backend, an independent distributor's conversion of the same model and quantization as referee, and, for community files, re-testing under the artifact's own template. The official library carries five silently defective artifacts, a batch of four Qwen2.5-Coder-3B conversions and one phi3.5-mini conversion, that solve zero of 164 tasks and zero of the smoke suite on both backends while independent conversions of the same models work: 1.6% of official artifacts, 2 of 29 model-and-size conversion groups. The adjudication chain cleared small-model artifacts that a naive threshold would condemn as broken when they are merely collapsed by extreme quantization, and it exposed two older community conversions that degrade badly on CUDA yet pass on Metal: not defective files but backend-dependent failures, a third phenomenon no registry currently tests for. Two confirmed defects produce output whose surface statistics sit inside the healthy range, invisible to any low-noise heuristic short of execution. We release the audit dataset, the quantcheck acceptance-testing tool, and disclosure reports for every confirmed defect (https://github.com/aditi-p31/quantcheck), and argue that model registries need the acceptance gate that package registries already run.",
   "url": "https://arxiv.org/abs/2609.05881",
   "pdf_url": "https://arxiv.org/pdf/2609.05881",
-  "published": "2026-09-09",
+  "published": "2026-09-05",
   "updated": "2026-09-09",
   "authors": [
     "Aditi Patodiya"
@@ -12,13 +12,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.SE",
-    "cs.LG"
+    "cs.LG",
+    "cs.SE"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Submitted to the IEEE International Conference on Big Data (IEEE BigData 2026). Code and data: https://github.com/aditi-p31/quantcheck",
   "code_url": "https://github.com/aditi-p31/quantcheck",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -56,9 +56,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.05881v1",
+      "url": "http://arxiv.org/abs/2609.05881v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.05881",

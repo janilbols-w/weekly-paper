@@ -39,7 +39,7 @@ Inference-time activation steering enables behavioral control of large language 
 ## 元数据
 
 - 作者：Saurav Bhandari, Benjamin Wade
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-06；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

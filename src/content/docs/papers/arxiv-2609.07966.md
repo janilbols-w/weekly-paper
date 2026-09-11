@@ -39,7 +39,7 @@ Key--value (KV) cache compression is an effective way to reduce the memory overh
 ## 元数据
 
 - 作者：Michael Wang, Keith Li, Roozbeh Bostandoost
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-07；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/MichaelWang0505/MetaKV.git](https://github.com/MichaelWang0505/MetaKV.git)
 - 阅读深度：metadata

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.10549",
+  "title": "Compass: Dissecting Communication and Computation Operators for Efficient LLM Training",
+  "abstract": "Overlapping communication and computation operators is a common practice to hide communication overheads, accelerating large language models (LLMs) training on GPU clusters. Existing systems achieve this through either intra-operator fusion (IntraFusion), which packs operators into a single large kernel, or inter-operator decomposition (InterDecom), which splits a tensor into multiple parts for pipelined execution. However, current IntraFusion methods underutilize network topology, causing suboptimal bandwidth usage on multi-GPU systems, while InterDecom struggles to determine the optimal number of decomposed parts for peak performance. To address these issues, we introduce Compass, which employs systematic optimization and comprehensive modeling. First, we design a novel IntraFusion algorithm leveraging double-ring communications to maximize bandwidth utilization in hybrid NVLink-PCIe systems, achieving 1.5x-2.5x speedups. Second, we develop a decomposition model that mathematically derives the optimal tensor decomposition degree for InterDecom, improving performance by up to 1.3x. Finally, we develop a unified performance framework that accurately determines the best strategy for different scenarios. We validate Compass through extensive evaluation across 288 configurations and end-to-end experiments on real-world applications. The results demonstrate that Compass consistently selects the optimal strategy, achieving up to a 1.42x end-to-end speedup compared to the Megatron-LM baseline.",
+  "url": "https://arxiv.org/abs/2609.10549",
+  "pdf_url": "https://arxiv.org/pdf/2609.10549",
+  "published": "2026-09-11",
+  "updated": "2026-09-11",
+  "authors": [
+    "Guangyu Xiang",
+    "Lin Zhang",
+    "Haoxuan Yu",
+    "Xinglin Pan",
+    "Shaohuai Shi",
+    "Xiaowen Chu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "operator fusion"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 8,
+    "rigor": 11,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: operator fusion",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Overlapping communication and computation operators is a common practice to hide communication overheads, accelerating large language models (LLMs) training on GPU clusters.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-11T04:41:15+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.10549",
+      "url": "https://arxiv.org/abs/2609.10549"
+    }
+  ]
+}

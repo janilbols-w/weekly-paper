@@ -9,11 +9,11 @@ description: "Compiler & Graph Optimization"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Retrofitting Code Using LLMs to Support Exceptional Behavior](../../papers/arxiv-2609.10397/) | 2026-09-10 | 41 |
-| [Benchmarking Agentic HLS Design Tasks With HLS-Eval](../../papers/arxiv-2609.09526/) | 2026-09-10 | 38 |
-| [$\Phi$-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?](../../papers/arxiv-2609.10226/) | 2026-09-10 | 38 |
-| [Do Dynamic Routers Need Memory? HeRo: History-Aware Routing for Efficient LLM Inference](../../papers/arxiv-2609.08189/) | 2026-09-09 | 43 |
 | [Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning](../../papers/arxiv-2604.02007/) | 2026-09-09 | 42 |
+| [Retrofitting Code Using LLMs to Support Exceptional Behavior](../../papers/arxiv-2609.10397/) | 2026-09-09 | 41 |
+| [$\Phi$-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?](../../papers/arxiv-2609.10226/) | 2026-09-09 | 38 |
+| [Do Dynamic Routers Need Memory? HeRo: History-Aware Routing for Efficient LLM Inference](../../papers/arxiv-2609.08189/) | 2026-09-08 | 43 |
+| [Benchmarking Agentic HLS Design Tasks With HLS-Eval](../../papers/arxiv-2609.09526/) | 2026-09-08 | 38 |
 | [Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One](../../papers/arxiv-2609.04531/) | 2026-09-07 | 38 |
 | [CROCODIL: Cross-Model Code Editing with LLMs](../../papers/arxiv-2609.03894/) | 2026-09-03 | 40 |
 | [CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation](../../papers/arxiv-2609.02774/) | 2026-09-03 | 38 |

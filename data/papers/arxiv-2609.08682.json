@@ -4,7 +4,7 @@
   "abstract": "Mixture-of-Experts (MoE) architectures have become a key technique for scaling Large Language Models (LLMs), enabling high model capacity with reduced computational cost. However, this efficiency comes at the expense of increased memory capacity and bandwidth demands. Recent 3D Near-Memory Processing (NMP) architectures, which vertically integrate memory and compute through hybrid bonding, provide high internal bandwidth and energy efficiency, making them attractive for accelerating MoE inference. Nevertheless, the distributed memory and compute organization of NMP systems introduces new challenges for mapping MoE workloads. Existing parallelization strategies, such as Tensor Parallelism (TP) and Expert Parallelism (EP), suffer from either high communication costs or unbalanced computation utilization, leading to inferior efficiency. In addition, the dynamic routing behavior of MoE models further complicates efficient deployment. To address these challenges, we present HDA-MoE, a framework that optimizes MoE execution on NMP architectures through hybrid parallel deployment and runtime scheduling. HDA-MoE integrates an offline hybrid parallel mapping algorithm with an online dynamic and adaptive scheduling mechanism to reduce communication overhead while improving computation utilization. Experimental results show that HDA-MoE achieves a speedup of 1.1x--3.4x over TP, 1.1x--1.5x over EP, 1.1x--3.7x over the Hybrid TP-EP compute-balanced baseline, and 1.1x--1.3x over HD-MoE. Source code is available at https://github.com/PKU-SEC-Lab/HDA-MoE-TCAD26.",
   "url": "https://arxiv.org/abs/2609.08682",
   "pdf_url": "https://arxiv.org/pdf/2609.08682",
-  "published": "2026-09-09",
+  "published": "2026-09-08",
   "updated": "2026-09-09",
   "authors": [
     "Haochen Huang",
@@ -27,7 +27,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "14 pages, 24 figures, 10 tables. Accepted by IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)",
   "code_url": "https://github.com/PKU-SEC-Lab/HDA-MoE-TCAD26",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -64,11 +64,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [
     "2026-W37"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.08682v1",
+      "url": "http://arxiv.org/abs/2609.08682v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.08682",

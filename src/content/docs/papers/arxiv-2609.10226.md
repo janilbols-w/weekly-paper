@@ -39,7 +39,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities in reason
 ## 元数据
 
 - 作者：Leilei Ding, Shumin Wang, Yuting Huang, Fanqi Wan, Yinmin Zhang, Qi Han, Yiming Xu, Feiyuan Zhang, Xiaomeng Chu, Guoliang You, Wuyang Zhang, Daxin Jiang, Yanyong Zhang
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

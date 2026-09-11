@@ -39,7 +39,7 @@ Exception Related Code (ERC), which includes throw statements, conditions (if st
 ## 元数据
 
 - 作者：Linghan Zhong, Jiyang Zhang, Jayanth Srinivasa, Junyi Jessy Li, Milos Gligoric
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -9,7 +9,7 @@ description: "Observability & Benchmarking"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability](../../papers/arxiv-2609.10036/) | 2026-09-10 | 43 |
+| [Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability](../../papers/arxiv-2609.10036/) | 2026-09-09 | 43 |
 | [MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games](../../papers/arxiv-2609.06563/) | 2026-09-09 | 42 |
 | [MedConceal: A Benchmark for Clinical Hidden-Concern Reasoning Under Partial Observability](../../papers/arxiv-2604.08788/) | 2026-09-01 | 40 |
 | [Using Grounded Theory for Agent Behavior Analysis at Scale](../../papers/arxiv-2608.30391/) | 2026-09-01 | 39 |

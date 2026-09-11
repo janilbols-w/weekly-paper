@@ -39,7 +39,7 @@ Key-value (KV) cache eviction is essential for scaling long-context inference in
 ## 元数据
 
 - 作者：Jiaming Yang, Chenwei Tang, Liangli Zhen, Chenyang Zhang, Jiancheng Lv
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-08；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

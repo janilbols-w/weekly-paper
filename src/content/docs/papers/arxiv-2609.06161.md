@@ -39,7 +39,7 @@ Large language models (LLMs) have achieved remarkable progress, yet their massiv
 ## 元数据
 
 - 作者：Zhixiong Zhao, Zukang Xu, Guangyu Sun, Lifeng Liu, Dawei Yang
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-05；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Kishon-zzx/AF1](https://github.com/Kishon-zzx/AF1)
 - 阅读深度：metadata

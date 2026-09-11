@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2604.16379",
+  "title": "LLMAR: A Tuning-Free Recommendation Framework for Sparse and Text-Rich Industrial Domains",
+  "abstract": "Industrial B2B applications (e.g., construction site risk prediction, material procurement) face extreme data sparsity yet feature rich textual interactions. In such environments, traditional ID-based collaborative filtering fails lacking co-occurrence signals, while fine-tuning standard Large Language Models (LLMs) incurs high operational costs and struggles with frequent data drift. We propose LLMAR (LLM-Annotated Recommendation), a tuning-free framework. Moving beyond simple embeddings, LLMAR systematically integrates LLM reasoning to capture user \"latent motives\" without any training process. We introduce three core contributions: (1) Inference-Driven Annotation: uses LLMs to transform behavioral history into structured semantic motives, enabling reasoning-based matching unattainable by ID-based methods; (2) Reflection Loop: a self-correction mechanism that refines generated queries to mitigate hallucinations and resolve \"context competition\" between past history and current instructions; and (3) Cost-Effective Architecture: relies on tuning-free components and asynchronous batch processing to minimize maintenance costs. Evaluations on public benchmarks (MovieLens-1M, Amazon Prime Pantry) and a sparse industrial dataset (construction risk prediction) demonstrate that LLMAR outperforms state-of-the-art learning-based models (SASRecF), achieving up to a 54.6% nDCG@10 improvement on the industrial dataset. Inference costs remain highly practical (~$1 per 1,000 users). For B2B domains where strict real-time latency is not critical, combining LLM reasoning with self-verification offers a superior alternative to training-based approaches across accuracy, explainability, and operational cost.",
+  "url": "https://arxiv.org/abs/2604.16379",
+  "pdf_url": "https://arxiv.org/pdf/2604.16379",
+  "published": "2026-09-11",
+  "updated": "2026-09-11",
+  "authors": [
+    "Ryogo Hishikawa",
+    "Ichiro Kataoka",
+    "Shinya Yuda"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.IR",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Industrial B2B applications (e.g., construction site risk prediction, material procurement) face extreme data sparsity yet feature rich textual interactions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-11T04:41:15+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.16379",
+      "url": "https://arxiv.org/abs/2604.16379"
+    }
+  ]
+}

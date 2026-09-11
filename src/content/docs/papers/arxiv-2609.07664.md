@@ -39,7 +39,7 @@ Deployment of Large Language Models (LLMs) on memory-constrained edge devices re
 ## 元数据
 
 - 作者：Shahzeb Qamar, Lorenz Sparrenberg, Christian Bauckhage, Baha Rababah, Carson Leung, Murat Kantarcioglu, Cuneyt Gurcan Akcora, Rafet Sifa
-- 发布：2026-09-09；更新：2026-09-10
+- 发布：2026-09-07；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

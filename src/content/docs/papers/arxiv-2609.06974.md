@@ -39,7 +39,7 @@ Large language models achieve strong performance across diverse tasks, but deplo
 ## 元数据
 
 - 作者：Seungmin Oh, Donggeon Lee, Jongbin Ryu
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-07；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/mmai-laboratory/OverRep](https://github.com/mmai-laboratory/OverRep)
 - 阅读深度：metadata

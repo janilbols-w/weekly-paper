@@ -39,7 +39,7 @@ Financial text, textbooks, and question-answer pairs are abundant, but only a sm
 ## 元数据
 
 - 作者：Zhirayr Hayrapetyan, Andrei Kalmykov, Denis Kokosinskii, Dmitry Stanishevskii, Dmitry Zmitrovich
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

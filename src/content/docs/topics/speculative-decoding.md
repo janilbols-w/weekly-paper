@@ -5,19 +5,20 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **50** 篇。
+累计收录 **51** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [PELM: Power Efficient On-Device LLM Inference with Speculative Decoding and Dynamic Voltage Frequency Scaling](../../papers/arxiv-2609.09662/) | 2026-09-10 | 53 |
-| [Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding](../../papers/arxiv-2609.09338/) | 2026-09-10 | 48 |
 | [Scaling E-Commerce Attribute Extraction with Parallel Decoding](../../papers/arxiv-2609.09716/) | 2026-09-10 | 40 |
 | [X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding](../../papers/arxiv-2609.09166/) | 2026-09-10 | 39 |
+| [SpecGuard: Inference-Time Backdoor Detection For Free](../../papers/arxiv-2609.11799/) | 2026-09-10 | 39 |
+| [PELM: Power Efficient On-Device LLM Inference with Speculative Decoding and Dynamic Voltage Frequency Scaling](../../papers/arxiv-2609.09662/) | 2026-09-09 | 53 |
 | [Intra-Prompt Parallel Decoding for Common-Context Question Answering](../../papers/arxiv-2609.05707/) | 2026-09-09 | 48 |
 | [Speculation at a Distance: Where Edge-Cloud Speculative Decoding Actually Pays Off](../../papers/arxiv-2606.25091/) | 2026-09-09 | 46 |
-| [DFlow: Enabling Verifier Information Flow in Block Diffusion Speculative Decoding](../../papers/arxiv-2609.06498/) | 2026-09-09 | 42 |
+| [Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding](../../papers/arxiv-2609.09338/) | 2026-09-08 | 48 |
 | [Revisiting Lossy Verification in Speculative Decoding: Mechanisms, Trade-offs, and Failure Modes](../../papers/arxiv-2607.26627/) | 2026-09-07 | 51 |
 | [How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method](../../papers/arxiv-2609.05274/) | 2026-09-07 | 38 |
+| [DFlow: Enabling Verifier Information Flow in Block Diffusion Speculative Decoding](../../papers/arxiv-2609.06498/) | 2026-09-06 | 42 |
 | [Margins, Not Windows: Training-Free Per-Step Lossy Speculative Decoding](../../papers/arxiv-2609.02897/) | 2026-09-04 | 39 |
 | [WhiFlash: Accelerating Speculative Decoding with Token-Level Cross-Paradigm Routing](../../papers/arxiv-2606.07710/) | 2026-09-03 | 45 |
 | [Unlocking Lossless Speedups in LLMs via Discrete Diffusion](../../papers/arxiv-2609.04010/) | 2026-09-03 | 43 |

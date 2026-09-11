@@ -5,13 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **45** 篇。
+累计收录 **46** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [SurF: A Generative Model for Multivariate Irregular Time Series Forecasting](../../papers/arxiv-2605.14069/) | 2026-09-10 | 43 |
-| [Scaling Post-Training Ternarisation to Qwen3-8B Capability Retention, Reproduction, Lossless Packing, and Packed Execution](../../papers/arxiv-2609.09240/) | 2026-09-10 | 41 |
 | [Benchmarking Storage Systems for Machine Learning Workloads Using NIO Bench](../../papers/arxiv-2609.05418/) | 2026-09-09 | 44 |
+| [Stochastically Perturbed Weights: Ensembles from Deterministic Machine-Learning Weather Models](../../papers/arxiv-2609.08412/) | 2026-09-08 | 45 |
+| [Scaling Post-Training Ternarisation to Qwen3-8B Capability Retention, Reproduction, Lossless Packing, and Packed Execution](../../papers/arxiv-2609.09240/) | 2026-09-08 | 41 |
 | [RASER: Resilient Agent Scheduling and Execution Runtime for HPC Clusters](../../papers/arxiv-2609.03598/) | 2026-09-03 | 40 |
 | [DE-Venus: A Data-Efficient RLVR Framework for Large Language Models](../../papers/arxiv-2609.03324/) | 2026-09-03 | 38 |
 | [SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology](../../papers/arxiv-2609.02292/) | 2026-09-02 | 41 |

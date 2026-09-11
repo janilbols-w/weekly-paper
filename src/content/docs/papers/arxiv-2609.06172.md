@@ -39,7 +39,7 @@ Large language models (LLMs) increasingly exceed the memory capacity of commodit
 ## 元数据
 
 - 作者：Mao Lin, Hui Feng, Xianzhong Ding, Guilherme Cox, Qian Wang, Hyeran Jeon
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-05；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

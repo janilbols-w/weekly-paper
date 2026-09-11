@@ -4,7 +4,7 @@
   "abstract": "Key-value (KV) cache eviction is essential for scaling long-context inference in Large Language Models. However, existing policies predominantly rely on empirical heuristics, lacking a rigorous characterization of token utility under the inherently nonlinear softmax attention mechanism. In this work, we rethink KV cache eviction through the lens of local information geometry, modeling the attention process as a nonlinear Gaussian communication channel. By performing a first-order Taylor expansion of the attention mapping, we derive the Jacobian Information Capacity, a novel objective that explicitly captures query relevance, softmax sensitivity, and structural diversity. Guided by this theory, we introduce Jacap, a capacity-aware eviction method that utilizes softmax-aware importance weighting and statistical leverage scores for subset selection. Extensive experiments across diverse architectures and benchmarks demonstrate that \\textsc{Jacap} delivers superior performance in most scenarios, particularly in high-compression regimes.",
   "url": "https://arxiv.org/abs/2609.08131",
   "pdf_url": "https://arxiv.org/pdf/2609.08131",
-  "published": "2026-09-09",
+  "published": "2026-09-08",
   "updated": "2026-09-09",
   "authors": [
     "Jiaming Yang",
@@ -21,7 +21,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "16 pages, 6 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-09T04:40:54+00:00",
-  "last_seen": "2026-09-10T04:41:08+00:00",
+  "last_seen": "2026-09-11T04:41:15+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.08131v1",
+      "url": "http://arxiv.org/abs/2609.08131v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.08131",

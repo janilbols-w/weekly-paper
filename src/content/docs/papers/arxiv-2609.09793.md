@@ -39,7 +39,7 @@ Directional ablation removes an aligned language model's ability to refuse by pr
 ## 元数据
 
 - 作者：Yi Shi, Tanyu Chen, Kai Shen
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

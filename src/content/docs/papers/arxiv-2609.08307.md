@@ -39,7 +39,7 @@ Large language models (LLMs) are increasingly used as backends for intelligent w
 ## 元数据
 
 - 作者：Maysam Khatib, Moysis Symeonides, Demetris Trihinas, George Pallis, Marios D. Dikaiakos
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-08；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

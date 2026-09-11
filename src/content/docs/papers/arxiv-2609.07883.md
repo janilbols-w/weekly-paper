@@ -39,7 +39,7 @@ Continuous batching improves large language model (LLM) serving throughput, but 
 ## 元数据
 
 - 作者：Siyu Song, Qi Bai, Jinbo Hao, Kai Li, Chenchen Wang, Jiayu Sun
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-07；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

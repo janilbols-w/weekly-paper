@@ -39,7 +39,7 @@ Developers increasingly run large language models locally by pulling quantized G
 ## 元数据
 
 - 作者：Aditi Patodiya
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-05；更新：2026-09-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/aditi-p31/quantcheck](https://github.com/aditi-p31/quantcheck)
 - 阅读深度：metadata
