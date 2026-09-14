@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **92** 篇。
+累计收录 **93** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RoofLang: Enabling AI-Driven Architecting of LLM Inference Systems](../../papers/arxiv-2609.12551/) | 2026-09-14 | 40 |
 | [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](../../papers/arxiv-2609.11744/) | 2026-09-10 | 47 |
 | [FlexComp: One Model for Every Ratio in Context Compression](../../papers/arxiv-2609.11192/) | 2026-09-10 | 40 |
 | [Revisiting the Shape Convention of Transformer Language Models](../../papers/arxiv-2602.06471/) | 2026-09-10 | 38 |

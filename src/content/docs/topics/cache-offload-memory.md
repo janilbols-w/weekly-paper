@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **55** 篇。
+累计收录 **56** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Dual-guided Hierarchical Edge Localization for Large-scale Optimal Transport Across Dimensions](../../papers/arxiv-2609.13010/) | 2026-09-14 | 41 |
 | [FluxMoE: Decoupling Expert Residency for High-Performance MoE Serving](../../papers/arxiv-2604.02715/) | 2026-09-11 | 42 |
 | [Sustained Performance and Energy Accounting for Nonlinear Forecasting Across Classical and Simulated Quantum Models](../../papers/arxiv-2510.25183/) | 2026-09-09 | 46 |
 | [Towards Standardized Evaluation of GPU Memory Safety with GMSBench](../../papers/arxiv-2609.08871/) | 2026-09-09 | 44 |

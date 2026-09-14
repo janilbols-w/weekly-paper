@@ -17,8 +17,8 @@ description: "Compiler & Graph Optimization"
 | [Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One](../../papers/arxiv-2609.04531/) | 2026-09-07 | 38 |
 | [CROCODIL: Cross-Model Code Editing with LLMs](../../papers/arxiv-2609.03894/) | 2026-09-03 | 40 |
 | [CodePoisonRAG: Knowledge Poisoning Attacks on Retrieval-Augmented Code Generation](../../papers/arxiv-2609.02774/) | 2026-09-03 | 38 |
+| [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](../../papers/arxiv-2609.01971/) | 2026-09-02 | 49 |
 | [Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation](../../papers/arxiv-2609.01601/) | 2026-09-02 | 49 |
-| [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](../../papers/arxiv-2609.01971/) | 2026-09-02 | 44 |
 | [QAQ: Bidirectional Semantic Coherence for Selecting High-Quality Synthetic Code Instructions](../../papers/arxiv-2603.12165/) | 2026-09-01 | 48 |
 | [Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](../../papers/arxiv-2606.15932/) | 2026-09-01 | 43 |
 | [Predicting Program Exit Code with LLMs and Programming Language Semantics](../../papers/doi-10.1145-3843750.3843842/) | 2026-09-01 | 42 |

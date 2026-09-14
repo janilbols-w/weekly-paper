@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2602.00165",
+  "title": "Benford's Law as a Distributional Prior for Post-Training Quantization of Large Language Models",
+  "abstract": "Post-training quantization (PTQ) is a practical way to reduce the memory footprint of large language models, but low-bit quantization is sensitive to mismatches between the quantization codebook and the empirical weight/activation distributions. We revisit Benford-like leading-digit statistics as a lightweight diagnostic of scale-broad behavior in transformer tensors. Across several model families, we observe a consistent functional dichotomy: transformational nn.Linear weights tend to be Benford-like, whereas LayerNorm parameters systematically deviate. Motivated by this observation, we propose BenQ, a data-free PTQ codebook that uses a simple log-spaced grid as a proxy for scale-broad distributions and applies it selectively to transformational layers while keeping stability-critical parameters in higher precision. In 4-bit group-wise PTQ, BenQ consistently improves over uniform RTN and trades wins with NF4 across architectures and tasks, while remaining substantially simpler than optimization-based methods. We additionally report dynamic activation quantization as an exploratory stress test: the results show that log-spaced grids can reduce RTN failures in some families, but also reveal that outlier handling remains essential for reliable low-bit activation PTQ. Code is available at https://github.com/ufopcsilab/benford-quant.",
+  "url": "https://arxiv.org/abs/2602.00165",
+  "pdf_url": "https://arxiv.org/pdf/2602.00165",
+  "published": "2026-09-14",
+  "updated": "2026-09-14",
+  "authors": [
+    "Arthur Negr\\~ao",
+    "Pedro Silva",
+    "Vander L. S. Freitas",
+    "Gladston Moreira",
+    "Eduardo Luz"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/ufopcsilab/benford-quant",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Post-training quantization (PTQ) is a practical way to reduce the memory footprint of large language models, but low-bit quantization is sensitive to mismatches between the quantization codebook and the empirical weight/activation distributions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-14T04:44:24+00:00",
+  "last_seen": "2026-09-14T04:44:24+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.00165",
+      "url": "https://arxiv.org/abs/2602.00165"
+    }
+  ]
+}

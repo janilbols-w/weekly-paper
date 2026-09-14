@@ -39,7 +39,7 @@ Language generation is almost universally treated as a sequential process: autor
 ## 元数据
 
 - 作者：Fred Zhangzhi Peng, Kaiwen Zheng, Anru R. Zhang
-- 发布：2026-09-07；更新：2026-09-07
+- 发布：2026-09-07；更新：2026-09-14
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/pengzhangzhi/plaidq](https://github.com/pengzhangzhi/plaidq)
 - 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **19** 篇。
+累计收录 **21** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AMDKernelVault: Large-Scale Datasets and Agentic Training for AMD GPU Kernel Optimization](../../papers/arxiv-2609.12471/) | 2026-09-14 | 56 |
+| [SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking](../../papers/arxiv-2609.13141/) | 2026-09-14 | 39 |
 | [Compass: Dissecting Communication and Computation Operators for Efficient LLM Training](../../papers/arxiv-2609.10549/) | 2026-09-11 | 48 |
 | [AdaExplore: Failure-Driven Adaptation and Diversity-Preserving Search for Efficient Kernel Generation](../../papers/arxiv-2604.16625/) | 2026-09-09 | 48 |
 | [MaxKernel: Agentic Kernel Generation for TPUs](../../papers/arxiv-2609.04523/) | 2026-09-07 | 49 |

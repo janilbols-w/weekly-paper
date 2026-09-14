@@ -5,10 +5,17 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **278** 篇。
+累计收录 **285** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Bridging Vision Foundation Model Priors with CLIP for Spatial-aware Few-shot Anomaly Detection in Medical Images](../../papers/arxiv-2609.12454/) | 2026-09-14 | 49 |
+| [DASH-OPD: Discrepancy-Aware Switching with Hysteresis for On-Policy Distillation](../../papers/arxiv-2607.29078/) | 2026-09-14 | 47 |
+| [Parameter-Efficient Retrievers for Polish and European Languages](../../papers/arxiv-2609.12913/) | 2026-09-14 | 43 |
+| [BRIDGE-EEG: Bridging Self-Supervised Pretraining and Efficient Deployment for Cross-Dataset EEG Classification](../../papers/arxiv-2609.12218/) | 2026-09-14 | 43 |
+| [PACEvolve: Enabling Progress-Aware Consistent Evolution](../../papers/arxiv-2601.10657/) | 2026-09-14 | 39 |
+| [Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR](../../papers/arxiv-2603.07084/) | 2026-09-14 | 38 |
+| [Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models](../../papers/arxiv-2609.12303/) | 2026-09-14 | 38 |
 | [Optimizing AI Inference Across the Deployment Stack](../../papers/arxiv-2609.10550/) | 2026-09-11 | 46 |
 | [Longitudinal Risk Prediction in Mammography with Privileged History Distillation](../../papers/arxiv-2603.15814/) | 2026-09-11 | 45 |
 | [LLMAR: A Tuning-Free Recommendation Framework for Sparse and Text-Rich Industrial Domains](../../papers/arxiv-2604.16379/) | 2026-09-11 | 44 |

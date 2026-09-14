@@ -1,0 +1,86 @@
+{
+  "id": "arxiv:2609.12471",
+  "title": "AMDKernelVault: Large-Scale Datasets and Agentic Training for AMD GPU Kernel Optimization",
+  "abstract": "We introduce AMDKernelVault, an open HIP and Triton kernel corpus and training framework for recent AMD CDNA GPUs. Existing LLM-based kernel agents are largely CUDA/NVIDIA-centric and often depend on repeated frontier-LLM calls for generation, reflection, and optimization. To address this gap, we develop HIPKernelGen and TritonKernelGen, agent-driven pipelines that transform PyTorch references into HIP or Triton kernels, compile and validate candidates under ROCm, and latency-profile them on AMD hardware. The corpus contains 62,153 execution-verified HIP kernel samples, 2,377 production-grounded ROCm Libraries QA entries, and 39,893 Triton kernels. We further train Qwen3-8B with supervised fine-tuning and execution-aware reinforcement learning as a demonstration of the corpus's utility. Under fixed evaluation budgets, it achieves the highest correctness among the compared models on PyTorch-to-HIP (34.0% Pass@1), TritonBench-G (33.2% Corr@3), and ROCmBench (41.94% Corr@3), but does not uniformly lead compilation or speed metrics. The corpus and documentation are available at https://huggingface.co/datasets/amd/AIG-Datasets, and the associated training and kernel-generation code is available at https://github.com/AMD-AGI/hip_kernel_llm_lab.",
+  "url": "https://arxiv.org/abs/2609.12471",
+  "pdf_url": "https://arxiv.org/pdf/2609.12471",
+  "published": "2026-09-14",
+  "updated": "2026-09-14",
+  "authors": [
+    "Ji Liu",
+    "Saptarshi Majumder",
+    "Yiqing Huang",
+    "Wenwen Ouyang",
+    "Umang Pandey",
+    "Zeping Li",
+    "Chushi Chen",
+    "Zihao An",
+    "Puyuan Yang",
+    "Zekai Li",
+    "Sina Rafati",
+    "Ziqiong Liu",
+    "Pratik Prabhanjan Brahma",
+    "Dong Li",
+    "Zicheng Liu",
+    "Sharon Zhou",
+    "Emad Barsoum"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/AMD-AGI/hip_kernel_llm_lab",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel",
+    "kernel optimization",
+    "triton kernel"
+  ],
+  "score": 56,
+  "score_components": {
+    "relevance": 24,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel, kernel optimization, triton kernel",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "We introduce AMDKernelVault, an open HIP and Triton kernel corpus and training framework for recent AMD CDNA GPUs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-14T04:44:24+00:00",
+  "last_seen": "2026-09-14T04:44:24+00:00",
+  "featured_weeks": [
+    "2026-W38"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.12471",
+      "url": "https://arxiv.org/abs/2609.12471"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Advances in hybrid bonding and packaging have driven growing interest in 3D DRAM
 ## 元数据
 
 - 作者：Zhiwen Mo, Guoyu Li, Hao Mark Chen, Yu Cheng, Zhengju Tang, Qianzhou Wang, Lei Wang, Shuang Liang, Lingxiao Ma, Xianqi Zhou, Yuxiao Guo, Wayne Luk, Jilong Xue, Hongxiang Fan
-- 发布：2026-08-24；更新：2026-08-24
+- 发布：2026-08-24；更新：2026-09-14
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/tile-ai/DeepStack/tree/ae](https://github.com/tile-ai/DeepStack/tree/ae)
 - 阅读深度：metadata

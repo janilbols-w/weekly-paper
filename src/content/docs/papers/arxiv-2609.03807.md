@@ -39,7 +39,7 @@ State--prediction separation (SPS) relieves a language model's hidden state of t
 ## 元数据
 
 - 作者：John Langford, Nathan Godey, Giovanni Monea, Yoav Artzi, Harry Dong, Ying Fan, Gustavo de Rosa, Zheng Zhan
-- 发布：2026-09-03；更新：2026-09-09
+- 发布：2026-09-03；更新：2026-09-14
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

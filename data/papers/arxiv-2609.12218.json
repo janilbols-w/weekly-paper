@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.12218",
+  "title": "BRIDGE-EEG: Bridging Self-Supervised Pretraining and Efficient Deployment for Cross-Dataset EEG Classification",
+  "abstract": "The growing use of electroencephalography (EEG) motivates automated analysis that is accurate, transferable, and deployable on constrained hardware. Recent EEG foundation models learn general representations from large-scale pretraining, but their size and computational cost limit edge and wearable deployment. We introduce BRIDGE-EEG, an efficient multi-task EEG classification pipeline that preserves the benefits of pretraining while reducing model size. A unified preprocessing scheme maps heterogeneous recordings with different channel counts, montages, and sampling rates to a device-agnostic 62-channel time--frequency representation. We pretrain an SE-ResNet18 teacher (11.84 M parameters) with SimCLR on unlabeled EEG from five heterogeneous datasets, then compress it into SE-ResNet8 (1.56 M) and SE-ResNet4 (0.48 M) students using task-agnostic and task-specific distillation. We evaluate six benchmarks spanning abnormality detection, motor imagery, and emotion recognition. For abnormality detection and emotion recognition, the students achieve accuracy comparable to or better than several recent EEG foundation models with 10--1,000$\\times$ more parameters. Motor imagery shows a remaining representation gap, highlighting the importance of pretraining diversity. Inference profiling on a server GPU, desktop CPU, and NVIDIA Jetson Orin Nano shows up to 3.0$\\times$ lower edge energy per inference (15.64 mJ vs. 46.67 mJ). The compact models further support future deployment on MCU-class wearables.",
+  "url": "https://arxiv.org/abs/2609.12218",
+  "pdf_url": "https://arxiv.org/pdf/2609.12218",
+  "published": "2026-09-14",
+  "updated": "2026-09-14",
+  "authors": [
+    "Meghna Roy Chowdhury",
+    "Chengwei Zhou",
+    "Haotian Yu",
+    "Gourav Datta",
+    "Shreyas Sen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.HC",
+    "cs.LG",
+    "eess.SP"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The growing use of electroencephalography (EEG) motivates automated analysis that is accurate, transferable, and deployable on constrained hardware.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-14T04:44:24+00:00",
+  "last_seen": "2026-09-14T04:44:24+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.12218",
+      "url": "https://arxiv.org/abs/2609.12218"
+    }
+  ]
+}

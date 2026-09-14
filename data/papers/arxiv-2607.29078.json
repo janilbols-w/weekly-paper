@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2607.29078",
+  "title": "DASH-OPD: Discrepancy-Aware Switching with Hysteresis for On-Policy Distillation",
+  "abstract": "While on-policy distillation (OPD) reduces exposure bias by training student language models on their own rollouts, early student errors in long-horizon agentic scenarios can lead to contexts unfamiliar to the teacher. To improve trajectory quality, recent work on agentic OPD introduces teacher intervention into training rollouts by switching the executor between the student and the teacher. However, existing methods determine how much teacher intervention is needed---but not when. To address this limitation, we propose DASH-OPD (Discrepancy-Aware Switching with Hysteresis for OPD), the first agentic OPD method to perform adaptive, bidirectional executor switching. At each turn, DASH-OPD measures teacher--student discrepancy using a mean log-probability ratio over action tokens. Student-to-teacher ratios on student turns serve as drift signals, while teacher-to-student ratios on teacher turns serve as recovery signals. These signals are accumulated over multiple turns to form drift and recovery evidence, respectively. DASH-OPD switches executors when either type of evidence exceeds its corresponding switching threshold, introducing hysteresis that prevents rapid switching triggered by transient discrepancy fluctuations. Across three benchmarks and two student model sizes, DASH-OPD outperforms five baselines in all 14 task performance comparisons, while requiring the fewest interaction turns in nine of ten efficiency comparisons. Code, models, and training logs are available at https://github.com/Lucian1115/DASH-OPD",
+  "url": "https://arxiv.org/abs/2607.29078",
+  "pdf_url": "https://arxiv.org/pdf/2607.29078",
+  "published": "2026-09-14",
+  "updated": "2026-09-14",
+  "authors": [
+    "Yuchen Xia",
+    "Qianguo Sun",
+    "Chao Song",
+    "Junlong Wu",
+    "Yiyan Qi",
+    "Yunjian Xu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/Lucian1115/DASH-OPD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "While on-policy distillation (OPD) reduces exposure bias by training student language models on their own rollouts, early student errors in long-horizon agentic scenarios can lead to contexts unfamiliar to the teacher.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-14T04:44:24+00:00",
+  "last_seen": "2026-09-14T04:44:24+00:00",
+  "featured_weeks": [
+    "2026-W38"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.29078",
+      "url": "https://arxiv.org/abs/2607.29078"
+    }
+  ]
+}

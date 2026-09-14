@@ -5,10 +5,18 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **143** 篇。
+累计收录 **151** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Dynamic Expert Quantization for Scalable Mixture-of-Experts Inference](../../papers/arxiv-2511.15015/) | 2026-09-14 | 55 |
+| [LC-QAT: Data-Efficient 2-Bit QAT for LLMs via Linear-Constrained Vector Quantization](../../papers/arxiv-2606.10531/) | 2026-09-14 | 46 |
+| [HoliBench: A Cross-Platform Benchmarking and Deployment Toolkit for Foundation Models in CPS-IoT Applications](../../papers/arxiv-2609.12412/) | 2026-09-14 | 46 |
+| [Efficient AI Model Deployment Using Quantization Analysis Tool](../../papers/arxiv-2609.11954/) | 2026-09-14 | 46 |
+| [Benford's Law as a Distributional Prior for Post-Training Quantization of Large Language Models](../../papers/arxiv-2602.00165/) | 2026-09-14 | 44 |
+| [Vortex: Bridging Extreme Compression and Efficient LLM Inference](../../papers/arxiv-2609.12208/) | 2026-09-14 | 43 |
+| [Attention Quantization for Tabular Foundation Models](../../papers/arxiv-2609.13031/) | 2026-09-14 | 43 |
+| [The Battery Price of edge AI: A study of the Environmental Impact of LLM Inference on Mobile Devices](../../papers/arxiv-2609.11940/) | 2026-09-14 | 42 |
 | [RDQ: Residual Distribution Quantization for Large Language Models](../../papers/arxiv-2607.10137/) | 2026-09-11 | 44 |
 | [ESSA: Evolutionary Strategies for Scalable Alignment](../../papers/arxiv-2507.04453/) | 2026-09-10 | 41 |
 | [Structured Transforms for Low-Overhead Quantization of Language Models](../../papers/arxiv-2609.11687/) | 2026-09-10 | 40 |

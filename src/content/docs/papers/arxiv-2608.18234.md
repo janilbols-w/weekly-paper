@@ -39,7 +39,7 @@ Whole-body motion tracking policies turn a humanoid into a robust control interf
 ## 元数据
 
 - 作者：Ziyang Cheng, Tianshu Tang, Jinxin Lan, Xinze Chen, Yuhan Gong, Zhichao Liu, Changzhong Wu, Yahao Mao, Zongyan Deng, Mingxuan Ma, Huasen Xi, Yilong Liu, Yutong Wu, Xiaofeng Wang, Yang Wang, Yun Ye, Guan Huang, Xiaojie Jin, Zheng Zhu, Jiwen Lu
-- 发布：2026-08-18；更新：2026-08-25
+- 发布：2026-08-18；更新：2026-09-14
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

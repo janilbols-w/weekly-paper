@@ -1,0 +1,83 @@
+{
+  "id": "arxiv:2609.12254",
+  "title": "Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework",
+  "abstract": "The climate literature has grown faster than review teams can read it. That gap matters most for a concept like the environmental social tipping point, the threshold at which a small change triggers rapid, self-reinforcing change in a social system. Evidence of this kind of shift is usually contained in one or two paragraphs within a longer document. As a result, existing text mining tools-which categorize entire documents by topic or highlight isolated claims-leave an expanding set of important evidence without any systematic method for discovery or organization. This paper presents an open and modular transformer-based framework that detects and structures social tipping point evidence at the passage level. The framework joins five components into a single deployable workflow: a DistilBERT boundary splitter for segmentation, an iteratively augmented RoBERTa classifier for detection, a Mistral 7B model that rewrites each detected passage for clarity, a LLaMA 3.2 3B model that rates the passage against five published social tipping point criteria, and a Milvus vector store for semantic retrieval. The system is wrapped in a Streamlit interface backed by MinIO object storage. Evaluated on a 163-passage benchmark labelled by GPT-4.1 and a 51-passage set reviewed by experts, the splitter surpassed three competing methods on a nine-metric composite score (6.137). The tuned RoBERTa model achieved 71.4 percent accuracy with a Cohen's kappa of 0.337 on the full benchmark, and 87.5 percent accuracy with a kappa of 0.742 on passages with labels, outperforming both a climate-focused model and untuned language models.",
+  "url": "https://arxiv.org/abs/2609.12254",
+  "pdf_url": "https://arxiv.org/pdf/2609.12254",
+  "published": "2026-09-14",
+  "updated": "2026-09-14",
+  "authors": [
+    "Kavindu Perera",
+    "Mohammad Abaeiani",
+    "Ekaterina Gilman",
+    "Lauri Loven",
+    "Mourad Oussalah",
+    "Tassos Kanellos",
+    "Beatrice Gobbo",
+    "Dante Adami",
+    "Nicol\\`o Ferriani",
+    "Maximiliano Romero",
+    "Pierre Rossel",
+    "Marc Bonazountas",
+    "Christina Deligianni",
+    "Nikos Xyderis",
+    "Artur Bogucki",
+    "Lampros Argyriou",
+    "Prasasthy Balasubramanian"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "storage-data-plane",
+    "leaf": "Storage & Data Plane",
+    "leaf_zh": "存储与数据平面"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "object storage"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: object storage",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The climate literature has grown faster than review teams can read it.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-14T04:44:24+00:00",
+  "last_seen": "2026-09-14T04:44:24+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.12254",
+      "url": "https://arxiv.org/abs/2609.12254"
+    }
+  ]
+}
