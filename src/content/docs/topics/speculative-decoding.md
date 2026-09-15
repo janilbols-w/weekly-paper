@@ -5,10 +5,13 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **51** 篇。
+累计收录 **53** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AdaFlash: Adaptive Speculative Decoding via On-Policy Distilled Diffusion Drafters](../../papers/arxiv-2607.19223/) | 2026-09-15 | 53 |
+| [BigMoMo: Efficient Inference of Large-Scale MoE with Speculative Decoding on Mobile Devices](../../papers/arxiv-2609.14643/) | 2026-09-15 | 46 |
+| [Carryover Drafting: Recycling Rejected States for Speculative Decoding](../../papers/arxiv-2609.14717/) | 2026-09-15 | 45 |
 | [Scaling E-Commerce Attribute Extraction with Parallel Decoding](../../papers/arxiv-2609.09716/) | 2026-09-10 | 40 |
 | [X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding](../../papers/arxiv-2609.09166/) | 2026-09-10 | 39 |
 | [SpecGuard: Inference-Time Backdoor Detection For Free](../../papers/arxiv-2609.11799/) | 2026-09-10 | 39 |
@@ -28,7 +31,6 @@ description: "Speculative Decoding"
 | [Reliability Challenges in Diffusion Vision-Language Models](../../papers/arxiv-2609.01318/) | 2026-09-02 | 39 |
 | [SpecPV: Improving Self-Speculative Decoding for Long-Context Generation via Partial Verification](../../papers/arxiv-2512.02337/) | 2026-09-01 | 48 |
 | [Entropy-Aware Token Rejection for Improving Speculative Decoding](../../papers/arxiv-2512.23765/) | 2026-09-01 | 48 |
-| [A rigor-matched audit of periodic-step layer skipping for efficient llm inference: conflayers versus swift, with a supplemental analysis of trained routing alternatives](../../papers/arxiv-2608.28846/) | 2026-09-01 | 43 |
 | [SFAD: Speculative Factuality-Aware Decoding](../../papers/arxiv-2609.00796/) | 2026-09-01 | 41 |
 | [OUTLETS: Output-Length Prediction from Speculative Decoding Backbones](../../papers/arxiv-2609.01068/) | 2026-09-01 | 41 |
 | [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-08-31 | 49 |

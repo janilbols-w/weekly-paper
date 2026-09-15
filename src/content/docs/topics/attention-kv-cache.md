@@ -5,10 +5,15 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **93** 篇。
+累计收录 **97** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PEEK: Predictive Queue-Informed KV Cache Management for LLM Serving](../../papers/arxiv-2607.02525/) | 2026-09-15 | 45 |
+| [AgentKV: Phase-Aware KV Eviction for Agentic LLMs](../../papers/arxiv-2609.14872/) | 2026-09-15 | 45 |
+| [An Efficient and Modular Framework for Targeted Harm Mitigation in LLMS](../../papers/arxiv-2609.13624/) | 2026-09-15 | 41 |
+| [Self-Indexing Attention for Compression-Compatible Sparse Long-Context LLM Inference](../../papers/arxiv-2609.13205/) | 2026-09-15 | 40 |
+| [Grouped Value Attention: Efficient KV Caching via On-Demand Key Reconstruction](../../papers/arxiv-2609.13285/) | 2026-09-15 | 39 |
 | [RoofLang: Enabling AI-Driven Architecting of LLM Inference Systems](../../papers/arxiv-2609.12551/) | 2026-09-14 | 40 |
 | [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](../../papers/arxiv-2609.11744/) | 2026-09-10 | 47 |
 | [FlexComp: One Model for Every Ratio in Context Compression](../../papers/arxiv-2609.11192/) | 2026-09-10 | 40 |
@@ -28,7 +33,6 @@ description: "Attention & KV Cache"
 | [Stream-CQSA: Exact Out-of-Memory Recovery for Attention](../../papers/arxiv-2604.20819/) | 2026-09-03 | 39 |
 | [KV Cache Offloading for Context-Intensive Tasks](../../papers/arxiv-2604.08426/) | 2026-09-02 | 48 |
 | [ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding](../../papers/arxiv-2609.02780/) | 2026-09-02 | 44 |
-| [S-CEReBrO: Breaking the Memory Barrier in Continuous EEG Monitoring](../../papers/arxiv-2607.27913/) | 2026-09-02 | 44 |
 | [Latent Recurrent Transformer: Architecture Exploration, Training Strategies, and Scaling Behavior](../../papers/arxiv-2605.26797/) | 2026-09-02 | 40 |
 | [Enabling KV Caching of Shared Prefix for Diffusion Language Models](../../papers/arxiv-2606.07571/) | 2026-09-02 | 40 |
 | [Multi-Turn LLM Conversations under the Least-Recently-Used Policy: Mean-Field Asymptotics and Hit Ratio Approximation](../../papers/arxiv-2609.02027/) | 2026-09-02 | 38 |

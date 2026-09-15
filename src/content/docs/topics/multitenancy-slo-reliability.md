@@ -5,10 +5,13 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **20** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling](../../papers/arxiv-2607.08565/) | 2026-09-15 | 43 |
+| [HELENA for 5G NR LEO NTN Channel Estimation: A Comparative Evaluation](../../papers/arxiv-2609.14735/) | 2026-09-15 | 42 |
+| [ETCInfer: An Energy-efficient Thermal-aware Cooling-joint Scheduler for LLM Inference in AI Datacenters](../../papers/arxiv-2609.15230/) | 2026-09-15 | 42 |
 | [Efficient Vision-Language-Action Management and Serving for Robot Factories](../../papers/arxiv-2609.12075/) | 2026-09-14 | 41 |
 | [HELIOS: Guardrailed LLM-Driven Evolution of Autonomous Resource Orchestration Policies for Multi-Cloud Distributed Systems](../../papers/arxiv-2609.09164/) | 2026-09-10 | 43 |
 | [Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters](../../papers/arxiv-2609.04513/) | 2026-09-07 | 38 |

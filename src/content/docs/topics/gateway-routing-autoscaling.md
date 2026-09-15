@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **15** 篇。
+累计收录 **16** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Agentic Autoscaling through Worker-Pool Orchestration for LLM-driven Text Classification in Cloud Computing Environments](../../papers/arxiv-2609.14898/) | 2026-09-15 | 48 |
 | [SWRouter: Similarity-Contractive Window Routing for Multi-Turn Large Language Model Conversations](../../papers/arxiv-2609.11414/) | 2026-09-10 | 41 |
 | [Cost-Optimal LLM Routing with Limited User Feedback under User Satisfaction Guarantees](../../papers/arxiv-2606.19376/) | 2026-09-09 | 46 |
 | [HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving](../../papers/arxiv-2609.08306/) | 2026-09-08 | 44 |

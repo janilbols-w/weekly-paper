@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2509.21275",
+  "title": "Concertina: Data-Centric Adaptive Pipeline Parallelism for Efficient Heterogeneous Long-Context LLM Training",
+  "abstract": "Long context training is crucial for extending LLM context windows. Existing schemes, such as sequence parallelism, incur substantial communication overhead. Pipeline parallelism (PP) reduces this cost, but its effectiveness hinges on partitioning granularity. Batch-level PP employing sequence packing exhibits high memory consumption in long-context scenarios, whereas token-level PP splitting sequences into slices alleviates memory overhead but may introduce performance degradation. Moreover, the skewed sequence-length distribution in real-world datasets defeats any monolithic, static choice of PP granularity. In this paper, we propose \\textit{Dynamic Pipeline Parallelism} (DPP), which transforms PP granularity from a static design choice into a workload-adaptive optimization space over packed, split, and hybrid chunks. DPP further introduces a new coupling between heterogeneous pipeline scheduling and gradient checkpointing. To solve this coupling, \\name co-optimizes dynamic chunk scheduling with \\textit{Stage-Aware Chunk-Level Adaptive Checkpointing}. Comprehensive experiments demonstrate that \\name achieves up to 1.69\\texttimes\\ speedup over FlexSP and up to 1.40\\texttimes\\ over MEPipe. The source code is available at https://github.com/wsjdsg/InfiniPipe-code.",
+  "url": "https://arxiv.org/abs/2509.21275",
+  "pdf_url": "https://arxiv.org/pdf/2509.21275",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Shiju Wang",
+    "Yujie Wang",
+    "Fangcheng Fu",
+    "Ao Sun",
+    "Yinxiao Feng",
+    "Zijian Zhu",
+    "Bin Cui",
+    "Xu Han",
+    "Kaisheng Ma"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/wsjdsg/InfiniPipe-code",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpointing"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpointing",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Long context training is crucial for extending LLM context windows.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [
+    "2026-W38"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2509.21275",
+      "url": "https://arxiv.org/abs/2509.21275"
+    }
+  ]
+}

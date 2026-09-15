@@ -5,10 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **42** 篇。
+累计收录 **46** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Implementation of an Adaptive Transformer Accelerator for Accurate Outdoor Localization with Massive MIMO](../../papers/arxiv-2605.13507/) | 2026-09-15 | 51 |
+| [Partition-Aware Scheduling for Mobile Heterogeneous Inference Co-Execution](../../papers/arxiv-2609.14213/) | 2026-09-15 | 43 |
+| [Hardware-Aware Learned Representation Compression for Distributed In-Sensor Vision](../../papers/arxiv-2609.13947/) | 2026-09-15 | 43 |
+| [A 25-$\mu$s/inf Event-driven Graph Neural Network Processor with Spatiotemporal Caching and Spline Convolution for Ultra-low-latency AI at the Edge](../../papers/arxiv-2609.15241/) | 2026-09-15 | 42 |
 | [DCO: Dynamic Cache Orchestration for LLM Accelerators through Predictive Management](../../papers/arxiv-2512.07312/) | 2026-09-11 | 41 |
 | [Fengshui: Demystifying Chiplet Ecosystem and Bespoke Neural Network Accelerator Codesign](../../papers/arxiv-2609.10970/) | 2026-09-10 | 46 |
 | [Toward Sustainable Distributed LLM Inference: A Systems Synthesis and Research Agenda for an Energy-, Carbon-, and Cache-Aware llm-d Control Plane](../../papers/arxiv-2609.05565/) | 2026-09-09 | 47 |

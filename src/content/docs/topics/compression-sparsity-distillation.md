@@ -5,10 +5,25 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **285** 篇。
+累计收录 **300** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NeuroFlex: Lossless Element-Level ANN-SNN Co-Execution for Efficient Sparse Inference](../../papers/arxiv-2609.14092/) | 2026-09-15 | 56 |
+| [REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning](../../papers/arxiv-2607.19450/) | 2026-09-15 | 48 |
+| [ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation](../../papers/arxiv-2609.13737/) | 2026-09-15 | 47 |
+| [Reducing the Output-Mode Gap in Speech Language Models via Joint-Output On-Policy Distillation](../../papers/arxiv-2609.15313/) | 2026-09-15 | 43 |
+| [HumorGen: Cognitive Synergy for Humor Generation in Large Language Models via Persona-Based Distillation](../../papers/arxiv-2604.09629/) | 2026-09-15 | 43 |
+| [Mapping Text to Multiplex Graph: Prompt Compression as L\'evy Walk-Guided Graph Pruning](../../papers/arxiv-2607.01241/) | 2026-09-15 | 42 |
+| [Temporal Self-Distillation: Faster Inference in Discrete Diffusion Language Models](../../papers/arxiv-2609.15177/) | 2026-09-15 | 41 |
+| [SynGhost: Invisible and Universal Task-agnostic Backdoor Attack via Syntactic Transfer](../../papers/arxiv-2402.18945/) | 2026-09-15 | 41 |
+| [Internalize the Temperature: On-Policy Self-Distillation as Policy Reheater for Reinforcement Learning](../../papers/arxiv-2606.00755/) | 2026-09-15 | 41 |
+| [Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States](../../papers/arxiv-2609.15972/) | 2026-09-15 | 40 |
+| [LayerRoute: Adaptive Layer-Skipping with LoRA-Preserved Quality for Efficient LLM Inference](../../papers/arxiv-2609.13682/) | 2026-09-15 | 40 |
+| [VGFM: Expressive Robot Policies via Dense Value Guidance in Flow Matching](../../papers/arxiv-2609.14261/) | 2026-09-15 | 39 |
+| [Data Efficient Any Transformer-to-Mamba Distillation via Attention Bridge](../../papers/arxiv-2510.19266/) | 2026-09-15 | 39 |
+| [Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation](../../papers/arxiv-2606.03746/) | 2026-09-15 | 38 |
+| [Lexical Prompt Compression for Large Language Models: A Training-Free, Deterministic Pipeline with Empirical Pareto Analysis Across Eleven Task Categories](../../papers/arxiv-2609.13154/) | 2026-09-15 | 38 |
 | [Bridging Vision Foundation Model Priors with CLIP for Spatial-aware Few-shot Anomaly Detection in Medical Images](../../papers/arxiv-2609.12454/) | 2026-09-14 | 49 |
 | [DASH-OPD: Discrepancy-Aware Switching with Hysteresis for On-Policy Distillation](../../papers/arxiv-2607.29078/) | 2026-09-14 | 47 |
 | [Parameter-Efficient Retrievers for Polish and European Languages](../../papers/arxiv-2609.12913/) | 2026-09-14 | 43 |
@@ -38,7 +53,6 @@ description: "Compression, Sparsity & Distillation"
 | [LitSeg: Narrative-Aware Document Segmentation for Literary RAG](../../papers/arxiv-2605.27156/) | 2026-09-09 | 42 |
 | [JEDI: JEPA-to-Edge Distillation for Efficient Cropland Segmentation from Satellite Imagery](../../papers/arxiv-2609.07915/) | 2026-09-09 | 42 |
 | [OdysSim: Building Foundation Models for Human Behavior Simulation](../../papers/arxiv-2606.14199/) | 2026-09-09 | 41 |
-| [A Ticket from Marginals to Joints: Coupled-Noise Distillation for One-Step Block Generation in Diffusion Language Models](../../papers/arxiv-2609.06324/) | 2026-09-09 | 41 |
 | [Decomposition-Guided Diffusion Language Models for Inertial Confinement Fusion Prediction](../../papers/arxiv-2609.07756/) | 2026-09-09 | 40 |
 | [PAC-CF: Calibrating Irreversible Frontier Pruning in LLM-Guided Search](../../papers/arxiv-2604.14345/) | 2026-09-09 | 39 |
 | [FrugalPrompt: Reducing Contextual Overhead in Large Language Models via Token Attribution](../../papers/arxiv-2510.16439/) | 2026-09-09 | 39 |
@@ -97,6 +111,7 @@ description: "Compression, Sparsity & Distillation"
 | [Locality-Aware Redundancy Pruning for LLM Depth Compression](../../papers/arxiv-2605.27786/) | 2026-09-01 | 46 |
 | [An Efficient Sparse Fine-Tuning with Low Quantization Error via Neural Network Pruning](../../papers/arxiv-2502.11439/) | 2026-09-01 | 46 |
 | [MOONSHOT : A Framework for Multi-Objective Pruning of Vision and Large Language Models](../../papers/arxiv-2604.13287/) | 2026-09-01 | 43 |
+| [A rigor-matched audit of periodic-step layer skipping for efficient llm inference: conflayers versus swift, with a supplemental analysis of trained routing alternatives](../../papers/arxiv-2608.28846/) | 2026-09-01 | 43 |
 | [Generalist Graph Anomaly Detection via Prototype-Based Distillation](../../papers/arxiv-2605.26857/) | 2026-09-01 | 42 |
 | [Spectral Analysis for Sparse Matrix Computation: Insights and Potential](../../papers/arxiv-2608.29362/) | 2026-09-01 | 41 |
 | [FocusAgent: Simple Yet Effective Ways of Trimming the Large Context of Web Agents](../../papers/arxiv-2510.03204/) | 2026-09-01 | 41 |

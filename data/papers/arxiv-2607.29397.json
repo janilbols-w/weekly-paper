@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2607.29397",
   "title": "Studying quantization trade-offs for efficient inference deployment in machine translation",
-  "abstract": "Deploying large language models in realistic server environments poses challenges, as the system needs to provide high-quality responses with low latency. Quantization is a common approach to reduce the memory footprint and improve inference efficiency, yet its impact on latency and throughput is rarely evaluated under controlled, orchestration-level workloads. In this work we study the quantization trade-offs of two translation model families, EuroLLM \\citep{martins2025eurollm} and Hy-MT2 \\citep{zheng2026hy} across five models ranging from 1.7B to 22B for efficient deployment on a single A100 or H100 GPU. We demonstrate that combining a document-chunking strategy with W4A8 or W8A8 quantization improves the latency-throughput Pareto-curve under a wide range of workloads. Furthermore, since standard machine translation (MT) benchmarks rely on isolated sentences and fail to capture long-context dynamics, we introduce a document-level evaluation from WMT24++ to assess how text chunking strategies affect translation quality under quantization. Our results reveal that standard segment-level evaluation can fail to predict the interaction between quantization and long-context document translation. While Hy-MT2 remains robust under quantization, EuroLLM shows strong sensitivity and translation quality collapses rapidly for all considered quantization formats. Overall, our experiments show that the trade-off between inference efficiency and translation quality depends not only on the quantization format, but also on the choice of text chunking strategy.",
+  "abstract": "Deploying large language models in realistic server environments poses challenges, as the system needs to provide high-quality responses with low latency. Quantization is a common approach to reduce the memory footprint and improve inference efficiency, yet its impact on latency and throughput is rarely evaluated under controlled, orchestration-level workloads. In this work we study the quantization trade-offs of EuroLLM \\citep{martins2025eurollm} across three model sizes ranging from 1.7B to 22B for efficient deployment on a single A100 or H100 GPU. We demonstrate that combining a document-chunking strategy with W4A8 or W8A8 quantization improves the latency-throughput Pareto-curve under a wide range of workloads. Furthermore, since standard machine translation (MT) benchmarks rely on isolated sentences and fail to capture long-context dynamics, we introduce a document-level evaluation based on DocHPLT \\cite{o2025dochplt} to assess how text chunking strategies affect translation quality under quantization. Our results indicate that standard segment-level evaluation can potentially underestimate the interaction between quantization and long-context document translation, for some quantization formats, translation direction and models. Overall, our experiments show that the trade-off between inference efficiency and translation quality depends not only on the quantization format, but also on the choice of text chunking strategy.",
   "url": "https://arxiv.org/abs/2607.29397",
   "pdf_url": "https://arxiv.org/pdf/2607.29397",
   "published": "2026-08-05",
-  "updated": "2026-08-06",
+  "updated": "2026-09-15",
   "authors": [
     "Jim Zhao",
     "Sohir Maskey",
@@ -59,7 +59,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-05T05:32:02+00:00",
-  "last_seen": "2026-09-14T04:44:24+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
   "featured_weeks": [
     "2026-W32"
   ],

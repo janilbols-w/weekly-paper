@@ -39,7 +39,7 @@ Distributed HPC and LLM workloads increasingly require efficient communication f
 ## 元数据
 
 - 作者：Haozhe Fan (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Wei Wang (School of Computer Science, Nanjing University, Nanjing, China), Xingchen Liu (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Man Liu (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Xingjian Tian (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Haoquan Long (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Zedong Liu (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Daran Sun (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Jinwu Yang (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Bo Yang (College of Computer Science and Technology, National University of Defense Technology, Changsha, China), Jie Liu (College of Computer Science and Technology, National University of Defense Technology, Changsha, China), Yonggang Che (College of Computer Science and Technology, National University of Defense Technology, Changsha, China), Hairui Zhao (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Guangming Tan (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China), Dingwen Tao (Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China)
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

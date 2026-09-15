@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **56** 篇。
+累计收录 **59** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SH-WRNN: Implicit Spherical Harmonics Weight Field Routing Neural Networks for Asymmetric Edge Intelligence](../../papers/arxiv-2609.14614/) | 2026-09-15 | 42 |
+| [Validating Hybrid-State Cache Recovery for GLM-5.3-Flash with vLLM and LMCache](../../papers/arxiv-2609.15030/) | 2026-09-15 | 39 |
+| [BOOST: Concurrent Access to Host Memory and HBM to Accelerate LLM Inference](../../papers/arxiv-2609.13592/) | 2026-09-15 | 39 |
 | [Dual-guided Hierarchical Edge Localization for Large-scale Optimal Transport Across Dimensions](../../papers/arxiv-2609.13010/) | 2026-09-14 | 41 |
 | [FluxMoE: Decoupling Expert Residency for High-Performance MoE Serving](../../papers/arxiv-2604.02715/) | 2026-09-11 | 42 |
 | [Sustained Performance and Energy Accounting for Nonlinear Forecasting Across Classical and Simulated Quantum Models](../../papers/arxiv-2510.25183/) | 2026-09-09 | 46 |

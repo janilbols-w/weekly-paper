@@ -39,7 +39,7 @@ A faster storage device should make serving faster. We find the opposite. High-B
 ## 元数据
 
 - 作者：Zhuoran Li, Zhuohang Bian, Xin Huang, Yibo Zhao, Guangyu Sun, Youwei Zhuo
-- 发布：2026-08-12；更新：2026-08-26
+- 发布：2026-08-12；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

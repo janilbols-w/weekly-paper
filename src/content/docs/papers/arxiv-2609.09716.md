@@ -39,7 +39,7 @@ Customers rely on specific product attributes to compare products and make purch
 ## 元数据
 
 - 作者：Nikhita Vedula, Dushyanta Dhyani, Bryan Wang, Shervin Malmasi
-- 发布：2026-09-10；更新：2026-09-10
+- 发布：2026-09-10；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

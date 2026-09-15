@@ -5,10 +5,12 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **151** 篇。
+累计收录 **153** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-15 | 54 |
+| [DecompressionLM: Deterministic, Diagnostic, and Zero-Shot Concept Graph Extraction from Language Models](../../papers/arxiv-2602.00377/) | 2026-09-15 | 44 |
 | [Dynamic Expert Quantization for Scalable Mixture-of-Experts Inference](../../papers/arxiv-2511.15015/) | 2026-09-14 | 55 |
 | [LC-QAT: Data-Efficient 2-Bit QAT for LLMs via Linear-Constrained Vector Quantization](../../papers/arxiv-2606.10531/) | 2026-09-14 | 46 |
 | [HoliBench: A Cross-Platform Benchmarking and Deployment Toolkit for Foundation Models in CPS-IoT Applications](../../papers/arxiv-2609.12412/) | 2026-09-14 | 46 |

@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **21** 篇。
+累计收录 **22** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AttnFuse: A Composable DSL for Compiling Attentions to Fused GPU Kernels](../../papers/arxiv-2609.13612/) | 2026-09-15 | 40 |
 | [AMDKernelVault: Large-Scale Datasets and Agentic Training for AMD GPU Kernel Optimization](../../papers/arxiv-2609.12471/) | 2026-09-14 | 56 |
 | [SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking](../../papers/arxiv-2609.13141/) | 2026-09-14 | 39 |
 | [Compass: Dissecting Communication and Computation Operators for Efficient LLM Training](../../papers/arxiv-2609.10549/) | 2026-09-11 | 48 |

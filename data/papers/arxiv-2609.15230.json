@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.15230",
+  "title": "ETCInfer: An Energy-efficient Thermal-aware Cooling-joint Scheduler for LLM Inference in AI Datacenters",
+  "abstract": "Large language model (LLM) inference in AI datacenters creates a coupled control problem between GPU serving and facility cooling. Raising ambient temperature setpoints can reduce cooling energy and carbon, but also shrinks thermal headroom, induces GPU throttling, and leads to Service-Level-Objective (SLO) violations. In this paper, we study joint cooling--computing control for LLM inference: minimizing per-job GPU-plus-cooling energy while satisfying thermal safety and latency SLO constraints. We present ETCInfer, an energy-efficient, thermal-aware scheduler that selects a pre-job Computer Room Air Conditioner (CRAC) setpoint and adapts per-GPU frequency and micro-batch size during execution. ETCInfer builds compact physics-informed control models by calibrating GPU heat generation, chassis heat dissipation, CRAC power, and prefill/decode latency relations from telemetry. These models estimate hidden thermal states and time-to-throttle, enabling the scheduler to evaluate energy, temperature, and latency before applying an action. We formulate this joint setpoint--frequency--micro-batch control problem as a partially observable Markov decision process and design ETCAdapter, a learning-based controller that minimizes per-job energy under thermal safety and SLO constraints. We implement ETCInfer as a coordination layer over typical inference and cluster management stacks. Evaluation across real-trace simulation and validation experiments shows that ETCInfer reduces total job energy by up to 33.1%, thermal throttle exposure by up to 92.9%, and keeps SLO violation rates below 0.7% even at ambient temperatures up to $48^{\\circ}\\mathrm{C}$.",
+  "url": "https://arxiv.org/abs/2609.15230",
+  "pdf_url": "https://arxiv.org/pdf/2609.15230",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Rui Lu",
+    "Rui Ge",
+    "Huanghuang Liang",
+    "Xiaobo Zhou",
+    "Dan Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.PF",
+    "cs.SY",
+    "eess.SY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "slo"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: slo",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language model (LLM) inference in AI datacenters creates a coupled control problem between GPU serving and facility cooling.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.15230",
+      "url": "https://arxiv.org/abs/2609.15230"
+    }
+  ]
+}

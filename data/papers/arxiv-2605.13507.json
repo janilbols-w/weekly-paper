@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2605.13507",
+  "title": "Implementation of an Adaptive Transformer Accelerator for Accurate Outdoor Localization with Massive MIMO",
+  "abstract": "We present a sparsity-aware FPGA implementation of an adaptive Transformer-based localization accelerator for 5G massive MIMO targeting sub-10\\,ms real-time positioning. The architecture exploits propagation characteristics, where beam-delay channel representations exhibit sparsity, enabling a row-wise skipping mechanism that removes low-energy beam components with minimal control overhead. Transformer computations are mapped onto a heterogeneous vector processing engine with parallel processing elements and adder trees, using mixed input- and output-stationary dataflow execution for efficient matrix computation and reduced data movement. Environment-dependent processing is supported through a lightweight runtime model-switching mechanism, where temporally filtered outputs of a single-layer perceptron router enable selection between specialized models with reduced latency. Implemented on a Xilinx Zynq UltraScale+ FPGA and evaluated on real-world massive MIMO measurements, the design achieves up to 65\\% row sparsity, yielding peak computational speedups of approximately 2x while limiting the average localization accuracy degradation to below 10\\%, relative to the fixed-point baseline model. The accelerator attains below 1.15\\,m localization accuracy across scenarios, with inference latency of 0.51-2.11\\,ms and throughput of up to 1961 positions/s. These results demonstrate that propagation-aware sparsity, mixed dataflow execution, and efficient runtime model switching enable a scalable and low-latency hardware realization of adaptive Transformer-based localization for real-time 5G systems.",
+  "url": "https://arxiv.org/abs/2605.13507",
+  "pdf_url": "https://arxiv.org/pdf/2605.13507",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Ilayda Yaman",
+    "Sijia Cheng",
+    "Ove Edfors",
+    "Liang Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We present a sparsity-aware FPGA implementation of an adaptive Transformer-based localization accelerator for 5G massive MIMO targeting sub-10\\,ms real-time positioning.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.13507",
+      "url": "https://arxiv.org/abs/2605.13507"
+    }
+  ]
+}

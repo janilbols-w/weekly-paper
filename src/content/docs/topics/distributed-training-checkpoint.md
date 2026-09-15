@@ -5,10 +5,18 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **46** 篇。
+累计收录 **54** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Concertina: Data-Centric Adaptive Pipeline Parallelism for Efficient Heterogeneous Long-Context LLM Training](../../papers/arxiv-2509.21275/) | 2026-09-15 | 50 |
+| [Multimodal-Multiresolution Foundation Model for Lunar Remote Sensing](../../papers/arxiv-2609.13283/) | 2026-09-15 | 43 |
+| [Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models](../../papers/arxiv-2609.13556/) | 2026-09-15 | 41 |
+| [Checkpoint Selection and Evaluation in EEG Emotion Recognition](../../papers/arxiv-2607.27655/) | 2026-09-15 | 40 |
+| [Self-Evolving AI for Humanoids: Mechanisms, Safety, and Evaluation of Post-Deployment Self-Improvement](../../papers/arxiv-2609.13236/) | 2026-09-15 | 39 |
+| [EasyRider: Mitigating Power Transients in Datacenter-Scale Training Workloads](../../papers/arxiv-2604.15522/) | 2026-09-15 | 39 |
+| [Privacy-enhanced federated learning via asynchronous aggregation and local differential perturbation](../../papers/arxiv-2609.15885/) | 2026-09-15 | 38 |
+| [Continual Learning for Sequential Personalization of Small Language Models: A Stability Monitoring Analysis](../../papers/arxiv-2606.27634/) | 2026-09-15 | 38 |
 | [SurF: A Generative Model for Multivariate Irregular Time Series Forecasting](../../papers/arxiv-2605.14069/) | 2026-09-10 | 43 |
 | [Benchmarking Storage Systems for Machine Learning Workloads Using NIO Bench](../../papers/arxiv-2609.05418/) | 2026-09-09 | 44 |
 | [Stochastically Perturbed Weights: Ensembles from Deterministic Machine-Learning Weather Models](../../papers/arxiv-2609.08412/) | 2026-09-08 | 45 |

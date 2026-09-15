@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **47** 篇。
+累计收录 **48** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OpWeave: Flexible Operator Disaggregation for Heterogeneous LLM Serving](../../papers/arxiv-2609.14237/) | 2026-09-15 | 44 |
 | [PATTON: Enabling Commodity PIM for Production LLM Serving](../../papers/arxiv-2609.11392/) | 2026-09-10 | 53 |
 | [Phase-Decoupled, Model-Calibrated Power Control for Disaggregated LLM Serving](../../papers/arxiv-2609.11133/) | 2026-09-10 | 51 |
 | [Measurement-Driven Diagnosis and Mitigation of Host-CPU Co-location Interference in Single-GPU LLM Serving on a Multi-GPU Server](../../papers/arxiv-2609.05425/) | 2026-09-09 | 46 |

@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2604.15522",
+  "title": "EasyRider: Mitigating Power Transients in Datacenter-Scale Training Workloads",
+  "abstract": "Large-scale AI model training workloads use thousands of GPUs operating in tightly synchronized loops. During synchronous communication, start-up, shut-down, and checkpointing, GPU power consumption can swing from peak to idle within milliseconds. Such steep power ramp rates induce reactive power transients, leading to voltage and frequency shifts that can damage transformers, generators, and protection equipment on the broader power grid. To solve this problem, we introduce EasyRider, a power architecture to mitigate power fluctuations at the rack level. EasyRider uses passive and active hardware components to attenuate rack power swings and rack-scale energy storage for the large amounts of energy needed to smooth high-power racks. A software system continually monitors the energy storage system to maximize its lifetime in the presence of frequent charge/discharge cycles. EasyRider filters rack power variations to be within grid safety requirements without requiring software modifications to AI training frameworks or wasting energy. We evaluate EasyRider on a 10kW/400VDC-rated rack-scale prototype system, demonstrating its effectiveness across heterogeneous power levels and workload power profiles.",
+  "url": "https://arxiv.org/abs/2604.15522",
+  "pdf_url": "https://arxiv.org/pdf/2604.15522",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Dillon Jensen",
+    "Grant Wilkins",
+    "Obi Nnorom Jr.",
+    "Hugo Budd",
+    "Ram Rajagopal",
+    "Juan Rivas-Davila",
+    "Phil Levis"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.SY",
+    "eess.SY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpointing"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpointing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large-scale AI model training workloads use thousands of GPUs operating in tightly synchronized loops.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.15522",
+      "url": "https://arxiv.org/abs/2604.15522"
+    }
+  ]
+}

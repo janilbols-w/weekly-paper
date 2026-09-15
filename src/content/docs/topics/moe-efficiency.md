@@ -5,10 +5,11 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **22** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Multi-Modal Tumor Survival Prediction via Graph-Guided Mixture of Experts](../../papers/arxiv-2609.14072/) | 2026-09-15 | 41 |
 | [Expert-Space Exploration in MoE Reinforcement Learning](../../papers/arxiv-2609.13058/) | 2026-09-14 | 39 |
 | [PCoMoE: Shifting MoE Inference from Monolithic Expert Selection to Fine-Grained Path Composition](../../papers/arxiv-2609.01024/) | 2026-09-01 | 48 |
 | [DynaNDE: Dynamic Near-Data Expert Scheduling for Batched MoE Inference](../../papers/arxiv-2609.00407/) | 2026-08-31 | 46 |

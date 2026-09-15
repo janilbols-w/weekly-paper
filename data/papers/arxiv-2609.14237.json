@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2609.14237",
+  "title": "OpWeave: Flexible Operator Disaggregation for Heterogeneous LLM Serving",
+  "abstract": "LLM serving systems increasingly disaggregate inference into finer-grained stages, with recent approaches separating attention from FFN or MoE execution during decode. This operator-level disaggregated serving (ODS) can improve hardware matching and enable independent scaling, particularly across heterogeneous devices. However, existing systems fix operator boundaries and lack a unified characterization of when disaggregation reduces serving cost. We present OpWeave, an end-to-end framework for heterogeneous ODS. OpWeave provides an analytical cost model that bounds the gains of homogeneous and heterogeneous ODS over colocated serving. It jointly optimizes operator partitioning and deployment configuration through a regularity-aware planner that keeps the search tractable even for hybrid-attention models. A vLLM-based runtime executes the synthesized plans with flexible operator stages across heterogeneous device groups. In our evaluation, OpWeave reduces serving cost by up to $1.78\\times$ on homogeneous and $1.89\\times$ on heterogeneous GPU clusters relative to the best feasible baseline, while meeting latency SLOs.",
+  "url": "https://arxiv.org/abs/2609.14237",
+  "pdf_url": "https://arxiv.org/pdf/2609.14237",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Zikun Li",
+    "Yixuan Mei",
+    "Shiqi Pan",
+    "Zixuan Chen",
+    "Xiaowen Zhang",
+    "Mengdi Wu",
+    "Shuhuai Lin",
+    "Yutong Yang",
+    "Zhihao Zhang",
+    "Xupeng Miao",
+    "Rashmi Vinayak",
+    "Zhihao Jia"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM serving systems increasingly disaggregate inference into finer-grained stages, with recent approaches separating attention from FFN or MoE execution during decode.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.14237",
+      "url": "https://arxiv.org/abs/2609.14237"
+    }
+  ]
+}

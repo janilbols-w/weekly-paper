@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2609.13612",
+  "title": "AttnFuse: A Composable DSL for Compiling Attentions to Fused GPU Kernels",
+  "abstract": "Modern AI systems are built on the Transformer architecture, whose core operation, attention, accounts for the majority of computation and memory cost. Researchers continually propose new attention variants to improve quality, efficiency, or context length, but each variant currently requires expert-written GPU code to run at usable speeds. PyTorch's recent flex\\_attention lets researchers describe custom attention patterns in Python and compile them to fused kernels, but its design is limited to modifications applied after the central matrix multiplication, excluding Rotary Position Embedding (RoPE), the positional encoding used by every major LLM. We introduce AttnFuse, a small DSL for attention that makes pre-multiplication transformations like RoPE first-class operations. Researchers compose ten high-level building blocks to describe a variant, and AttnFuse's compiler emits a single fused GPU kernel for the entire computation. On an RTX 3090, AttnFuse achieves a 2.10$\\times$ speedup over flex\\_attention on the RoPE+causal pattern. On an H100, it runs a full Llama-3-8B training step within 5\\% of PyTorch's hand-tuned backend. Our investigation reveals the Rotation Calculus: whether to fuse RoPE or apply it separately depends on the GPU's compute-to-bandwidth ratio, with a derived crossover that matches measurement. AttnFuse demonstrates that a small, attention-specific compiler can close the gap between flexible research code and production kernels.",
+  "url": "https://arxiv.org/abs/2609.13612",
+  "pdf_url": "https://arxiv.org/pdf/2609.13612",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Varun Kumar Dasoju",
+    "Tian Zhao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern AI systems are built on the Transformer architecture, whose core operation, attention, accounts for the majority of computation and memory cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.13612",
+      "url": "https://arxiv.org/abs/2609.13612"
+    }
+  ]
+}

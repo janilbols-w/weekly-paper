@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.14213",
+  "title": "Partition-Aware Scheduling for Mobile Heterogeneous Inference Co-Execution",
+  "abstract": "Modern mobile inference runs on heterogeneous platforms combining mobile GPUs with multiple CPU core clusters. Existing optimizations typically exploit either inter-operator parallelism, by assigning entire operators to CPU cores or to the GPU, or intra-operator parallelism, by partitioning each operator for CPU-GPU co-execution. We consider these two forms of parallelism together, to improve inference latency of tasks that can be represented by a static DAG of operators with predefined input/output tensor shapes (e.g., CNNs or vision transformers). We define the problem of partition-aware DAG scheduling for mobile heterogeneous inference, illustrating that the best strategy depends on the structure of the inference DAG, thus motivating a joint formulation capturing operator partition choices, device assignment, and execution order. We propose an online iterative search framework, which decomposes large DAGs into stages, focuses search on critical operators, and uses latency predictors to estimate partitioned execution without exhaustive profiling. Across representative mobile inference workloads, our approach achieves latency close to an offline solution while keeping scheduling overhead to a fraction of the model initialization cost, allowing platform-specific scheduling at deployment time.",
+  "url": "https://arxiv.org/abs/2609.14213",
+  "pdf_url": "https://arxiv.org/pdf/2609.14213",
+  "published": "2026-09-15",
+  "updated": "2026-09-15",
+  "authors": [
+    "Zhuojin Li",
+    "Marco Paolieri",
+    "Leana Golubchik"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "heterogeneous inference"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: heterogeneous inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern mobile inference runs on heterogeneous platforms combining mobile GPUs with multiple CPU core clusters.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-15T04:42:06+00:00",
+  "last_seen": "2026-09-15T04:42:06+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.14213",
+      "url": "https://arxiv.org/abs/2609.14213"
+    }
+  ]
+}
