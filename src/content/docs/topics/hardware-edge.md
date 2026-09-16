@@ -5,10 +5,13 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **46** 篇。
+累计收录 **49** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OptiPrime: Optimizing Private Inference through Protocol-Hardware Co-design](../../papers/arxiv-2609.16898/) | 2026-09-16 | 49 |
+| [The World Model Hardware Accelerator](../../papers/arxiv-2609.16244/) | 2026-09-16 | 41 |
+| [FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification](../../papers/arxiv-2609.16367/) | 2026-09-16 | 40 |
 | [Implementation of an Adaptive Transformer Accelerator for Accurate Outdoor Localization with Massive MIMO](../../papers/arxiv-2605.13507/) | 2026-09-15 | 51 |
 | [Partition-Aware Scheduling for Mobile Heterogeneous Inference Co-Execution](../../papers/arxiv-2609.14213/) | 2026-09-15 | 43 |
 | [Hardware-Aware Learned Representation Compression for Distributed In-Sensor Vision](../../papers/arxiv-2609.13947/) | 2026-09-15 | 43 |

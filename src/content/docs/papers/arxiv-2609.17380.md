@@ -1,0 +1,45 @@
+---
+title: "OPEN-1B: A Fully Auditable Training Run"
+description: "Open-source language models have a reproducibility problem."
+---
+
+**评分：38/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+
+[论文原文](https://arxiv.org/abs/2609.17380) · [PDF](https://arxiv.org/pdf/2609.17380)
+
+## 一句话摘要
+
+Open-source language models have a reproducibility problem.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Open-source language models have a reproducibility problem. Despite releasing weights, training data, and recipes, none of them are provably reproducible due to the non-associativity of floating-point arithmetic. Deep learning frameworks often offer a deterministic execution mode, allowing reproducible operations on the same machines. Unfortunately, this determinism does not carry across hardware such that a user can verify that a released checkpoint was actually produced using the declared training recipe. This leaves room for undisclosed data, injected biases, or backdoors that existing techniques such as proof-of-learning or proof-of-training-data cannot rule out. We introduce a new tier of model transparency, fully auditable, in which every operation on every data sample during training is independently reproducible on heterogeneous commodity hardware with bitwise certainty. By imposing a definite order on the sources of training nondeterminism, GPU kernel reductions, data batch ordering across a data-parallel cluster, and inter/intra-node collective communication, we make it possible to replay any individual step of a large, distributed training run on a single piece of commodity hardware and check it against the published trajectory. Because replaying an entire run on one machine is infeasible, we support this with a collective verification scheme in which many independent auditors each certify individual steps, together covering the whole run. We release Open-1B, a model trained under this regime, together with its full pretraining dataset, every intermediate checkpoint, the training codebase, and the audit harness needed to reproduce and verify any step of its training.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 14 |
+| novelty | 6 |
+| rigor | 7 |
+| practical impact | 5 |
+| reproducibility | 3 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: checkpoint, distributed training
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：John Donaghy, Brian Wilcox, O\u{g}uzhan Ersoy, Shikhar Rastogi, Adam St Arnaud, Alexey Titov, Jordan Greenberg, Ben Fielding, Harry Grieve
+- 发布：2026-09-16；更新：2026-09-16
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -39,7 +39,7 @@ The KV cache is a primary bottleneck for Transformer decoding: its memory footpr
 ## 元数据
 
 - 作者：Vishesh Tripathi, Abhay Kumar, Ramsha Khan
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

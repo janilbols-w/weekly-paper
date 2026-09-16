@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.16363",
+  "title": "FSNIC: A Low-Latency Flow-Based Intrusion Detection Architecture for FPGA SmartNICs",
+  "abstract": "Modern data centres require high-performance networking alongside effective real-time security. Traditional Intrusion Detection Systems (IDS) commonly rely on general-purpose processors and often struggle to inspect high-speed traffic at line rate without introducing latency or performance bottlenecks. Smart Network Interface Cards (NICs) provide an alternative by enabling computation directly within the network data plane. This work presents a machine learning-based IDS implemented within an FPGA-based SmartNIC pipeline. The system integrates P4-based packet parsing with a LogicNets IDS model implemented in RTL, enabling deterministic, low-latency inference. Compared with traditional stateless packet-level classifiers, the proposed stateful flow-based IDS introduces minimal state by aggregating features across packets, capturing behavioural patterns not observable at the packet level. Experimental results on the UNSW-NB15 dataset show that the flow-based IDS improves detection accuracy from 86.92\\% to 97.68\\% compared with stateless packet-level classification. We also evaluate the proposed IDS on CICIDS2017 and compare its real-time hardware performance with prior FPGA-based IDS designs. Through hardware-software co-design, the proposed IDS achieves 6~ns inference latency using only 846 LUTs, with no BRAM or DSP usage, demonstrating a low latency and resource efficient implementation.",
+  "url": "https://arxiv.org/abs/2609.16363",
+  "pdf_url": "https://arxiv.org/pdf/2609.16363",
+  "published": "2026-09-16",
+  "updated": "2026-09-16",
+  "authors": [
+    "Nise O'Cuill",
+    "Changhong Li",
+    "Georgios Floros",
+    "Shreejith Shanker"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "storage-data-plane",
+    "leaf": "Storage & Data Plane",
+    "leaf_zh": "存储与数据平面"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "data plane"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: data plane",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern data centres require high-performance networking alongside effective real-time security.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-16T04:41:55+00:00",
+  "last_seen": "2026-09-16T04:41:55+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.16363",
+      "url": "https://arxiv.org/abs/2609.16363"
+    }
+  ]
+}

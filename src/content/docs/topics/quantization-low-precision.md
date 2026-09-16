@@ -5,10 +5,12 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **153** 篇。
+累计收录 **155** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Where Post-Training Quantization Breaks Text Embedders: A Measured Map Across Four Embedder Families](../../papers/arxiv-2609.16391/) | 2026-09-16 | 43 |
+| [Activation-Weighted Seeded Residual Coding for Low-Bit LLM Weight Repair](../../papers/arxiv-2608.23144/) | 2026-09-16 | 39 |
 | [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-15 | 54 |
 | [DecompressionLM: Deterministic, Diagnostic, and Zero-Shot Concept Graph Extraction from Language Models](../../papers/arxiv-2602.00377/) | 2026-09-15 | 44 |
 | [Dynamic Expert Quantization for Scalable Mixture-of-Experts Inference](../../papers/arxiv-2511.15015/) | 2026-09-14 | 55 |

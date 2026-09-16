@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2604.06036",
+  "title": "CodecSight: Leveraging Video Codec Signals for Efficient Streaming VLM Inference",
+  "abstract": "Continuous inference over concurrent video streams imposes substantial compute and memory demands on vision-language model (VLM) serving. Streaming inference uses sliding windows to maintain a bounded context of recent video, but processing each window independently repeats visual encoding and large language model (LLM) prefilling for similar and overlapping content. Existing optimizations provide limited coordination across these stages and often rely on model-specific training, profiling, or model-generated signals. We present CodecSight, a streaming VLM serving system that uses codec metadata as shared runtime guidance across visual encoding and LLM prefilling, without model-specific training or offline profiling. Codec-derived change signals guide patch pruning before visual encoding, reducing both visual computation and the number of downstream visual tokens. Codec-defined frame types guide selective key-value (KV) refresh across windows, while positional correction enables reuse of the remaining cached keys. Across three VLMs and four video workloads, our vLLM-based implementation supports up to $3.3\\times$ as many concurrent streams and achieves up to a $5.3\\times$ speedup in average time-to-first-token relative to the state-of-the-art baselines. It also reduces executed FLOPs by up to 93%, with a maximum task-quality decrease of 4.64 percentage points.",
+  "url": "https://arxiv.org/abs/2604.06036",
+  "pdf_url": "https://arxiv.org/pdf/2604.06036",
+  "published": "2026-09-16",
+  "updated": "2026-09-16",
+  "authors": [
+    "Yulin Zou",
+    "Wenyan Chen",
+    "Yan Chen",
+    "Anya Rajan",
+    "JooYoung Park",
+    "Shivaraman Nitin",
+    "Luo Tao",
+    "Francisco Romero",
+    "Dmitrii Ustiugov"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Continuous inference over concurrent video streams imposes substantial compute and memory demands on vision-language model (VLM) serving.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-16T04:41:55+00:00",
+  "last_seen": "2026-09-16T04:41:55+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.06036",
+      "url": "https://arxiv.org/abs/2604.06036"
+    }
+  ]
+}

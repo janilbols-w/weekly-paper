@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **59** 篇。
+累计收录 **61** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DMA-Latte: Expanding the Reach of DMA Offloads to Latency-bound ML Communication](../../papers/arxiv-2511.06605/) | 2026-09-16 | 46 |
+| [Interactive Memory Learning for Long-Term Conversations](../../papers/arxiv-2609.17088/) | 2026-09-16 | 40 |
 | [SH-WRNN: Implicit Spherical Harmonics Weight Field Routing Neural Networks for Asymmetric Edge Intelligence](../../papers/arxiv-2609.14614/) | 2026-09-15 | 42 |
 | [Validating Hybrid-State Cache Recovery for GLM-5.3-Flash with vLLM and LMCache](../../papers/arxiv-2609.15030/) | 2026-09-15 | 39 |
 | [BOOST: Concurrent Access to Host Memory and HBM to Accelerate LLM Inference](../../papers/arxiv-2609.13592/) | 2026-09-15 | 39 |

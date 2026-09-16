@@ -5,10 +5,14 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **53** 篇。
+累计收录 **57** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ECHO: Early-layer Collaborative Hierarchical Orchestration with Bonus Logits in Speculative Decoding](../../papers/arxiv-2609.17241/) | 2026-09-16 | 52 |
+| [LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers](../../papers/arxiv-2609.17184/) | 2026-09-16 | 45 |
+| [Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling](../../papers/arxiv-2609.16450/) | 2026-09-16 | 41 |
+| [GrowMTP: Can RL Grow Its Own Draft Head?](../../papers/arxiv-2609.16648/) | 2026-09-16 | 40 |
 | [AdaFlash: Adaptive Speculative Decoding via On-Policy Distilled Diffusion Drafters](../../papers/arxiv-2607.19223/) | 2026-09-15 | 53 |
 | [BigMoMo: Efficient Inference of Large-Scale MoE with Speculative Decoding on Mobile Devices](../../papers/arxiv-2609.14643/) | 2026-09-15 | 46 |
 | [Carryover Drafting: Recycling Rejected States for Speculative Decoding](../../papers/arxiv-2609.14717/) | 2026-09-15 | 45 |

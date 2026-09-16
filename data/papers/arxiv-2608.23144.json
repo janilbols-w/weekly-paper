@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2608.23144",
+  "title": "Activation-Weighted Seeded Residual Coding for Low-Bit LLM Weight Repair",
+  "abstract": "Low-bit weight quantization saves storage but leaves errors that degrade LLM quality. We introduce activation-weighted seeded residual coding (AWSRC), a compact repair codec for an existing quantization backbone. Given a reconstructed weight $W_0$, AWSRC encodes the residual $W-W_0$ using deterministic seed-generated bases. The sidecar stores seed selectors, low-bit coefficients, and scales rather than an explicit codebook. Two variants combine activation weighting with per-module byte quotas ($\\mathrm{AWSRC\\text{-}U}$), or blended activation/Fisher weighting with globally ranked progressive prefixes ($\\mathrm{AWSRC\\text{-}P}_{F}$) that support multiple byte budgets without refitting. On Qwen2.5-3B-Instruct, adding $0.162$ scope-bits/weight to an RTN-INT4 baseline closes $88.2\\%$, $78.9\\%$, and $71.3\\%$ of the PPL, KL, and 11-task mean-accuracy gaps to BF16, respectively. AWSRC achieves the highest mean downstream accuracy in byte-matched residual-codec ablations and improves all metrics across model families with up to 32B parameters.",
+  "url": "https://arxiv.org/abs/2608.23144",
+  "pdf_url": "https://arxiv.org/pdf/2608.23144",
+  "published": "2026-09-16",
+  "updated": "2026-09-16",
+  "authors": [
+    "Zehao Liu",
+    "Chuangchuang Fang",
+    "Yang Ren"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int4",
+    "quantization"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int4, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Low-bit weight quantization saves storage but leaves errors that degrade LLM quality.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-16T04:41:55+00:00",
+  "last_seen": "2026-09-16T04:41:55+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.23144",
+      "url": "https://arxiv.org/abs/2608.23144"
+    }
+  ]
+}

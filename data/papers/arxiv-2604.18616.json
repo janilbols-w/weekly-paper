@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2604.18616",
+  "title": "Ave: Guiding Agentic GPU Optimization Using Data-Flow Invariants",
+  "abstract": "LLM coding agents can generate correct GPU kernels, but their performance still trails expert libraries. Reaching peak throughput requires coordinating low-level optimizations such as shared-memory staging, software pipelining, and instruction scheduling. Yet unit tests and profiles provide only sparse end-to-end feedback, making it difficult for agents to identify which global constraints an optimization violates. We present Ave, an agentic framework that uses data-flow invariants as compile-time guardrails for GPU kernel optimization. Ave provides a tile-based Pythonic DSL that exposes hardware instructions and compiler policies while abstracting complex memory layouts. Tag functions assign symbolic labels to data, the compiler propagates them through data and control flow, and tag assertions enforce required relationships at use sites. A flow-sensitive, path-insensitive analysis with an SMT solver checks these assertions and returns concrete counterexamples for violations, with no runtime overhead. An in-context reinforcement learning planner proposes optimizations from a curated knowledge base, while a lowering agent implements them and instantiates the required invariants. We evaluate Ave on AMD MI300X across GEMM, flash attention, and MoE, which together account for up to 90% of GPU time in LLM inference. With GPT-5.6 Sol, Ave achieves 89-99% of the effective throughput of state-of-the-art hand-optimized libraries and improves geometric-mean throughput by 1.62-1176x over uncontaminated agentic baselines. On 200 KernelBench tasks, Ave produces valid kernels within three attempts for 100% of Level 1 and 88% of Level 2 problems.",
+  "url": "https://arxiv.org/abs/2604.18616",
+  "pdf_url": "https://arxiv.org/pdf/2604.18616",
+  "published": "2026-09-16",
+  "updated": "2026-09-16",
+  "authors": [
+    "Haohui Mai",
+    "Xiaoyan Guo",
+    "Xiangyun Ding",
+    "Daifeng Li",
+    "Qiuchu Yu",
+    "Chenzhun Guo",
+    "Cong Wang",
+    "Jiacheng Zhao",
+    "Christos Kozyrakis",
+    "Binhang Yuan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI",
+    "cs.PL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel",
+    "kernel optimization"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel, kernel optimization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM coding agents can generate correct GPU kernels, but their performance still trails expert libraries.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-16T04:41:55+00:00",
+  "last_seen": "2026-09-16T04:41:55+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.18616",
+      "url": "https://arxiv.org/abs/2604.18616"
+    }
+  ]
+}

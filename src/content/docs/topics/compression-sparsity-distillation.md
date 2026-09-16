@@ -5,10 +5,16 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **300** 篇。
+累计收录 **306** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Window-Diffusion: Accelerating Diffusion Language Model Inference with Windowed Token Pruning and Caching](../../papers/arxiv-2601.20332/) | 2026-09-16 | 48 |
+| [ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication](../../papers/arxiv-2609.16014/) | 2026-09-16 | 44 |
+| [What Breaks Under Pruning in Smart Homes, and When? Evaluating LLM Degradation Across Architectures and Task Complexity](../../papers/arxiv-2609.17515/) | 2026-09-16 | 42 |
+| [CodecSight: Leveraging Video Codec Signals for Efficient Streaming VLM Inference](../../papers/arxiv-2604.06036/) | 2026-09-16 | 41 |
+| [Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation](../../papers/arxiv-2609.16937/) | 2026-09-16 | 41 |
+| [Efficient Reasoning Distillation: Small Video-Language Models via Synthetic CoT and Difficulty-Aware Fine-Tuning](../../papers/arxiv-2609.16255/) | 2026-09-16 | 38 |
 | [NeuroFlex: Lossless Element-Level ANN-SNN Co-Execution for Efficient Sparse Inference](../../papers/arxiv-2609.14092/) | 2026-09-15 | 56 |
 | [REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning](../../papers/arxiv-2607.19450/) | 2026-09-15 | 48 |
 | [ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation](../../papers/arxiv-2609.13737/) | 2026-09-15 | 47 |

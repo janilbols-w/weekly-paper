@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **97** 篇。
+累计收录 **99** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Comparative Characterization of KV Cache Management Strategies for LLM Inference](../../papers/arxiv-2604.05012/) | 2026-09-16 | 44 |
+| [Latent Undertow: How Ordinary Typos Break Probes](../../papers/arxiv-2609.15994/) | 2026-09-16 | 40 |
 | [PEEK: Predictive Queue-Informed KV Cache Management for LLM Serving](../../papers/arxiv-2607.02525/) | 2026-09-15 | 45 |
 | [AgentKV: Phase-Aware KV Eviction for Agentic LLMs](../../papers/arxiv-2609.14872/) | 2026-09-15 | 45 |
 | [An Efficient and Modular Framework for Targeted Harm Mitigation in LLMS](../../papers/arxiv-2609.13624/) | 2026-09-15 | 41 |

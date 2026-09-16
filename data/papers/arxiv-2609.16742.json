@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.16742",
+  "title": "Carry-Through Checksum: A Lightweight Fault-Detection for CNN Inference at the Edge",
+  "abstract": "Convolutional Neural Networks (CNNs) are increasingly deployed in safety-critical edge applications, where soft errors can silently corrupt inference outputs and lead to unsafe decisions. Such applications typically rely on resource-constrained embedded GPUs, requiring fault detection and mitigation techniques that add minimal compute, memory, and latency overhead while integrating seamlessly with the standard GPU inference pipeline. Existing algorithm-based fault tolerance techniques rely on matrix augmentation and per-operation checksum verification, imposing substantial overhead that is prohibitive for CNN inference on embedded GPUs. In this work, we propose carry-through checksum, a fundamentally new scheme for soft-error detection in CNN inference on embedded GPUs. The method embeds dedicated carry-through filters into the convolutional layers, which compute a checksum from the CNN's own operations and propagate it through inference, enabling end-to-end error detection with a single output verification. Experimental results on multiple CNN architectures show that the proposed method detects 95.86% and 86.56% of critical faults for FP32 and FP16, respectively, at almost no additional per-image overhead. Detected faults are mitigated through re-execution, incurring only 2.27% run-time overhead across the entire test set on an NVIDIA Jetson Orin NX GPU.",
+  "url": "https://arxiv.org/abs/2609.16742",
+  "pdf_url": "https://arxiv.org/pdf/2609.16742",
+  "published": "2026-09-16",
+  "updated": "2026-09-16",
+  "authors": [
+    "Kyrylo Nazarevych",
+    "Mohammad Hasan Ahmadilivani",
+    "Krister Kaldre",
+    "Davide Bertozzi",
+    "Jaan Raik"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fault tolerance"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fault tolerance",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Convolutional Neural Networks (CNNs) are increasingly deployed in safety-critical edge applications, where soft errors can silently corrupt inference outputs and lead to unsafe decisions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-16T04:41:55+00:00",
+  "last_seen": "2026-09-16T04:41:55+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.16742",
+      "url": "https://arxiv.org/abs/2609.16742"
+    }
+  ]
+}

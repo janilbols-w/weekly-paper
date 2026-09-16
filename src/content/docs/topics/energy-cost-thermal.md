@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **33** 篇。
+累计收录 **34** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A 420 GOPS/W CGRA with a Configurable MAC and Dynamic Truncation](../../papers/arxiv-2609.16600/) | 2026-09-16 | 39 |
 | [The Language-Energy Divide: Measuring Energy Costs of Multilingual LLM Inference](../../papers/arxiv-2606.21869/) | 2026-09-15 | 42 |
 | [DVFS for Small Language Model Inference on Mobile Edge Devices](../../papers/arxiv-2609.13153/) | 2026-09-15 | 40 |
 | [Beyond Noise: Understanding and Overcoming Temperature Effects in Analog DNN Inference](../../papers/arxiv-2609.15527/) | 2026-09-15 | 39 |

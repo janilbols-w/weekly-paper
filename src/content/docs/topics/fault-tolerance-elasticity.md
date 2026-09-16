@@ -5,10 +5,12 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **11** 篇。
+累计收录 **13** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OmniHarness: Harnessing Generalizable Visual Generation via Symbolic Policy Learning](../../papers/arxiv-2609.16057/) | 2026-09-16 | 39 |
+| [Carry-Through Checksum: A Lightweight Fault-Detection for CNN Inference at the Edge](../../papers/arxiv-2609.16742/) | 2026-09-16 | 39 |
 | [HybridFLow: SDN-Orchestrated Client Partitioning for Hybrid Federated Learning](../../papers/arxiv-2609.10404/) | 2026-09-10 | 38 |
 | [Manifold-Aware General Coded Computing for Straggler-Resilient Distributed Computing](../../papers/arxiv-2609.00552/) | 2026-09-02 | 43 |
 | [FlexP-SFT: A Flexible Aggregation-Free Framework for On-Device Personalized Split Federated Fine-Tuning of LLMs](../../papers/arxiv-2508.10349/) | 2026-09-02 | 43 |

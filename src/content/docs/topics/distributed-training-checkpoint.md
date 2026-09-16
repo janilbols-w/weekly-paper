@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **54** 篇。
+累计收录 **56** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Decoy Direction Optimization: A Post-Hoc Defense Against LLM Abliteration](../../papers/arxiv-2609.16204/) | 2026-09-16 | 44 |
+| [OPEN-1B: A Fully Auditable Training Run](../../papers/arxiv-2609.17380/) | 2026-09-16 | 38 |
 | [Concertina: Data-Centric Adaptive Pipeline Parallelism for Efficient Heterogeneous Long-Context LLM Training](../../papers/arxiv-2509.21275/) | 2026-09-15 | 50 |
 | [Multimodal-Multiresolution Foundation Model for Lunar Remote Sensing](../../papers/arxiv-2609.13283/) | 2026-09-15 | 43 |
 | [Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models](../../papers/arxiv-2609.13556/) | 2026-09-15 | 41 |

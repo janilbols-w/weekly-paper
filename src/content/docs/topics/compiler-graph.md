@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **61** 篇。
+累计收录 **63** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Liberating LLM Capabilities in Full-Duplex Speech Models](../../papers/arxiv-2606.07547/) | 2026-09-16 | 38 |
+| [Agentic Search Spaces for Tabular Machine Learning](../../papers/arxiv-2609.16309/) | 2026-09-16 | 38 |
 | [Toward Secure Code Generation: Bridging Correctness and Security via Task-Adaptive Vulnerability Modeling and Execution-Based Benchmarking](../../papers/arxiv-2407.02395/) | 2026-09-15 | 46 |
 | [CodeTS: Verifiable Text-to-Time Series Generation via Executable Code](../../papers/arxiv-2609.15393/) | 2026-09-15 | 44 |
 | [To See is Not to Master: Teaching LLMs to Use Private Libraries for Code Generation](../../papers/arxiv-2603.15159/) | 2026-09-15 | 43 |
