@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **99** 篇。
+累计收录 **102** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HBFlex: A Flexible Memory System for Bridging Fine-Grained LLM States and Coarse-Grained HBF Parallel Execution](../../papers/arxiv-2609.18675/) | 2026-09-17 | 42 |
+| [GroupKV: Hierarchical KV Cache Management for Long-Context Diffusion LLM Inference](../../papers/arxiv-2609.17573/) | 2026-09-17 | 40 |
+| [How to Compress KV Cache in RL Post-Training? Shadow Mask Distillation for Memory-Efficient Alignment](../../papers/arxiv-2605.06850/) | 2026-09-17 | 38 |
 | [Comparative Characterization of KV Cache Management Strategies for LLM Inference](../../papers/arxiv-2604.05012/) | 2026-09-16 | 44 |
 | [Latent Undertow: How Ordinary Typos Break Probes](../../papers/arxiv-2609.15994/) | 2026-09-16 | 40 |
 | [PEEK: Predictive Queue-Informed KV Cache Management for LLM Serving](../../papers/arxiv-2607.02525/) | 2026-09-15 | 45 |

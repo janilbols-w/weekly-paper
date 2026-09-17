@@ -5,10 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **56** 篇。
+累计收录 **60** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters](../../papers/arxiv-2609.19024/) | 2026-09-17 | 45 |
+| [WaveTLM: Reliable Time-Series Language Modeling through Task Compilation](../../papers/arxiv-2609.18812/) | 2026-09-17 | 44 |
+| [Zero-I/O Fault Recovery for Sharded Deep Learning via Dynamic Framework Dependency Rebinding](../../papers/arxiv-2609.18178/) | 2026-09-17 | 43 |
+| [GeoMesh: Workload-Balanced and Sign-Compressed Geo-Distributed LLM Training](../../papers/arxiv-2609.18388/) | 2026-09-17 | 41 |
 | [Decoy Direction Optimization: A Post-Hoc Defense Against LLM Abliteration](../../papers/arxiv-2609.16204/) | 2026-09-16 | 44 |
 | [OPEN-1B: A Fully Auditable Training Run](../../papers/arxiv-2609.17380/) | 2026-09-16 | 38 |
 | [Concertina: Data-Centric Adaptive Pipeline Parallelism for Efficient Heterogeneous Long-Context LLM Training](../../papers/arxiv-2509.21275/) | 2026-09-15 | 50 |

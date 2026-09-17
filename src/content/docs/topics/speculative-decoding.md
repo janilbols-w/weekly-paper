@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **57** 篇。
+累计收录 **58** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference](../../papers/arxiv-2609.17943/) | 2026-09-17 | 50 |
 | [ECHO: Early-layer Collaborative Hierarchical Orchestration with Bonus Logits in Speculative Decoding](../../papers/arxiv-2609.17241/) | 2026-09-16 | 52 |
 | [LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers](../../papers/arxiv-2609.17184/) | 2026-09-16 | 45 |
 | [Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling](../../papers/arxiv-2609.16450/) | 2026-09-16 | 41 |

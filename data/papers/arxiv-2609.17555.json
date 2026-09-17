@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.17555",
+  "title": "REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration",
+  "abstract": "Efficient deployment of Deep Neural Networks (DNNs) on edge accelerators requires aggressive model compression while maintaining reliability in fault-prone hardware environments. This paper presents a reliability-aware quantized weight packing methodology for systolic-array-based DNN accelerators. A sensitivity-driven mixed-precision quantization framework assigns layer-wise bit-widths according to accuracy impact while enforcing symmetric precision between weights and activations. A deterministic register-level packing strategy consolidates multiple heterogeneous operand pairs into fixed-width register words, enabling SIMD-within-a-register (SWAR) style parallel execution that reduces both memory footprint and execution cycles. To improve resilience against hardware faults, selective bit-level protection replicates the most significant bits (MSBs) of critical layers into unused register space, achieving TMR-style protection with minimal overhead. A systolic-array simulation framework is developed to evaluate the proposed packing and fault-tolerance mechanisms under realistic execution conditions. Simulations in AlexNet, VGG-11, and ResNet-18 demonstrate up to 62% memory reduction and up to 56% reduction in Multiply-Accumulate (MAC) operations, while significantly improving accuracy resilience under fault injection compared to baseline and fully protected models.",
+  "url": "https://arxiv.org/abs/2609.17555",
+  "pdf_url": "https://arxiv.org/pdf/2609.17555",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Mahdi Taheri",
+    "Samira Nazari",
+    "Mubassher Ansari",
+    "Ali Azarpeyvand",
+    "Mohsen Afsharchi",
+    "Maksim Jenihhin",
+    "Christian Herglotz"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Efficient deployment of Deep Neural Networks (DNNs) on edge accelerators requires aggressive model compression while maintaining reliability in fault-prone hardware environments.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.17555",
+      "url": "https://arxiv.org/abs/2609.17555"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.17556",
+  "title": "WARD: Runtime Workload-Adaptive Vision TRansformer Framework for Dependable Edge AI",
+  "abstract": "Edge-deployed AI operate under dynamically changing power budgets, reliability requirements, and input distributions, requiring continuous adaptation. Such conditions arise in long-running edge AI applications, including autonomous systems, industrial monitoring, and satellite onboard intelligence. Existing fault-tolerant methods assume static operating conditions, whereas continual learning techniques neglect concurrent hardware faults during online adaptation. Moreover, the practical deployment of runtime-adaptive reliability frameworks on programmable AI accelerators remains largely unexplored. This paper presents WARD, a runtime-adaptive Vision Transformer framework that combines channel-wise subnetwork partitioning, reliability-aware continual learning, and dynamic operating-mode scheduling to jointly optimize performance, fault tolerance, and adaptation according to runtime conditions. Two physically isolated subnetworks execute under four operating modes (i.e. Full-Precision Mode, Low-Power Mode, High-Reliability Mode, and Adaptive Mode) that dynamically adjust computational cost and reliability while ensuring uninterrupted inference for real-time requirements. To validate the practical deployability of the proposed framework, WARD is implemented on a lightweight FPGA-based accelerator extended with runtime hardware support for mode scheduling and resource management. Experimental results demonstrate that the proposed split architecture achieves a network-level failure rate of only 1.79% under high Bit Error Rates. The hardware implementation incurs less than 5% area overhead and supports runtime mode transitions within few clock cycles, demonstrating that adaptive reliability management can be integrated into programmable edge AI accelerators with negligible implementation overhead.",
+  "url": "https://arxiv.org/abs/2609.17556",
+  "pdf_url": "https://arxiv.org/pdf/2609.17556",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Mahdi Taheri",
+    "Pramit Kumar Bhaduri",
+    "Mohammad Masoumi",
+    "Ali Mahani"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fault tolerance"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fault tolerance",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Edge-deployed AI operate under dynamically changing power budgets, reliability requirements, and input distributions, requiring continuous adaptation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.17556",
+      "url": "https://arxiv.org/abs/2609.17556"
+    }
+  ]
+}

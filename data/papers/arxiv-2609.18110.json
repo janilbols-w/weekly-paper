@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.18110",
+  "title": "SSD-LLaMA: SSD-Native Inference for Trillion-Parameter MoE at 1+ Token/s on a Consumer PC",
+  "abstract": "Frontier open-weight language models increasingly use Mixture-of-Experts (MoE) architectures to expand model capacity while activating only a small subset of experts per token. Local inference must nevertheless keep the complete expert pool available, which remains far beyond consumer-grade RAM and VRAM capacity even after quantization. SSDs provide practical capacity at this scale, but turning that capacity into executable model memory requires efficient expert delivery, coordinated management of SSD, RAM, and VRAM, and CPU--GPU hybrid execution under bounded bandwidth. We present \\textit{SSD-LLaMA}, an SSD-native local MoE inference system that addresses these challenges with an SSD I/O pipeline optimized for expert delivery, a native three-tier storage hierarchy that delivers and retains experts dynamically, and balanced CPU--GPU hybrid execution. \\textit{SSD-LLaMA} executes every selected expert without pruning or substitution. Across three frontier MoE model families, \\textit{SSD-LLaMA} improves prefill token rate by 1.52$\\times$--4.19$\\times$ and decode token rate by 2.10$\\times$--15.58$\\times$ over the evaluated baselines. We also achieve higher than 1 token/s for running trillion-parameter model with a single RTX 5090 and no more than 32GB RAM.",
+  "url": "https://arxiv.org/abs/2609.18110",
+  "pdf_url": "https://arxiv.org/pdf/2609.18110",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Fangzhou Liang",
+    "Yibin Shen",
+    "Jianmin Hu",
+    "Jiayang Xu",
+    "Hanchi Gao",
+    "Minxian Xu",
+    "Zili Meng"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Frontier open-weight language models increasingly use Mixture-of-Experts (MoE) architectures to expand model capacity while activating only a small subset of experts per token.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.18110",
+      "url": "https://arxiv.org/abs/2609.18110"
+    }
+  ]
+}

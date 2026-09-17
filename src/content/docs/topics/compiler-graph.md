@@ -5,10 +5,14 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **63** 篇。
+累计收录 **67** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LangSelect: Cost-Aware Target-Language Routing for LLM Code Generation](../../papers/arxiv-2609.18959/) | 2026-09-17 | 46 |
+| [HALT: Hallucination Assessment via Log-probs as Time series](../../papers/arxiv-2602.02888/) | 2026-09-17 | 42 |
+| [CompileRover: Revolutionizing Virtual Machine Compiler Optimization with a Tri-Role LLM-Driven Framework](../../papers/arxiv-2609.19004/) | 2026-09-17 | 42 |
+| [A Taxonomy of Programming Languages for Code Generation](../../papers/arxiv-2604.00239/) | 2026-09-17 | 42 |
 | [Liberating LLM Capabilities in Full-Duplex Speech Models](../../papers/arxiv-2606.07547/) | 2026-09-16 | 38 |
 | [Agentic Search Spaces for Tabular Machine Learning](../../papers/arxiv-2609.16309/) | 2026-09-16 | 38 |
 | [Toward Secure Code Generation: Bridging Correctness and Security via Task-Adaptive Vulnerability Modeling and Execution-Based Benchmarking](../../papers/arxiv-2407.02395/) | 2026-09-15 | 46 |

@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **155** 篇。
+累计收录 **158** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration](../../papers/arxiv-2609.17555/) | 2026-09-17 | 44 |
+| [${M}^2$Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models](../../papers/arxiv-2609.18259/) | 2026-09-17 | 44 |
+| [Robust Ultra Low-Bit Post-Training Quantization via Stable Diagonal Curvature Estimate](../../papers/arxiv-2604.13806/) | 2026-09-17 | 41 |
 | [Where Post-Training Quantization Breaks Text Embedders: A Measured Map Across Four Embedder Families](../../papers/arxiv-2609.16391/) | 2026-09-16 | 43 |
 | [Activation-Weighted Seeded Residual Coding for Low-Bit LLM Weight Repair](../../papers/arxiv-2608.23144/) | 2026-09-16 | 39 |
 | [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-15 | 54 |

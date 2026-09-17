@@ -9,8 +9,8 @@ description: "Multi-tenancy, SLO & Reliability"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Token Latency Fairness: Performance Isolation for Multi-Tenant LLM Serving](../../papers/arxiv-2609.18112/) | 2026-09-17 | 47 |
 | [DeepShare: Assurance-Driven Deep Learning Job Scheduling for Multi-Tenant Clusters](../../papers/arxiv-2609.16682/) | 2026-09-16 | 44 |
-| [PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving](../../papers/arxiv-2609.16491/) | 2026-09-16 | 40 |
 | [SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling](../../papers/arxiv-2607.08565/) | 2026-09-15 | 43 |
 | [HELENA for 5G NR LEO NTN Channel Estimation: A Comparative Evaluation](../../papers/arxiv-2609.14735/) | 2026-09-15 | 42 |
 | [ETCInfer: An Energy-efficient Thermal-aware Cooling-joint Scheduler for LLM Inference in AI Datacenters](../../papers/arxiv-2609.15230/) | 2026-09-15 | 42 |

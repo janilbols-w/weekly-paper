@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **61** 篇。
+累计收录 **63** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TabICLv2: A better, faster, scalable, and open tabular foundation model](../../papers/arxiv-2602.11139/) | 2026-09-17 | 47 |
+| [The Operable Pareto Front: Distilling Offline Search into Run-Time Control for Multi-Objective UAV Edge-Computing Scheduling](../../papers/arxiv-2609.17992/) | 2026-09-17 | 38 |
 | [DMA-Latte: Expanding the Reach of DMA Offloads to Latency-bound ML Communication](../../papers/arxiv-2511.06605/) | 2026-09-16 | 46 |
 | [Interactive Memory Learning for Long-Term Conversations](../../papers/arxiv-2609.17088/) | 2026-09-16 | 40 |
 | [SH-WRNN: Implicit Spherical Harmonics Weight Field Routing Neural Networks for Asymmetric Edge Intelligence](../../papers/arxiv-2609.14614/) | 2026-09-15 | 42 |

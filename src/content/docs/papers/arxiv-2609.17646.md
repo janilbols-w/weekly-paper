@@ -1,0 +1,45 @@
+---
+title: "Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction"
+description: "This thesis develops robust and efficient AI frameworks for accelerating crystalline materials discovery by addressing both major stages of the materials-design pipeline: crystal property prediction and crystal structure generation."
+---
+
+**评分：39/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+
+[论文原文](https://arxiv.org/abs/2609.17646) · [PDF](https://arxiv.org/pdf/2609.17646)
+
+## 一句话摘要
+
+This thesis develops robust and efficient AI frameworks for accelerating crystalline materials discovery by addressing both major stages of the materials-design pipeline: crystal property prediction and crystal structure generation.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+This thesis develops robust and efficient AI frameworks for accelerating crystalline materials discovery by addressing both major stages of the materials-design pipeline: crystal property prediction and crystal structure generation. Motivated by the high computational cost of Density Functional Theory (DFT) and the limited availability of labeled materials data, the thesis explores graph representation learning, pretraining, multimodal learning, and generative modeling for scalable materials design. For property prediction, the thesis first introduces CrysXPP, which learns transferable crystal representations through unsupervised graph autoencoding, reducing dependence on large property-labeled datasets. It then proposes CrysGNN, a large-scale self-supervised graph pretraining framework that captures atomic connectivity, chemical attributes, and global structural information and transfers this knowledge to downstream property predictors through knowledge distillation. CrysMMNet further enriches crystal representations by jointly modeling graph structure and textual descriptions, thereby incorporating both local chemical and global structural knowledge. For crystal generation, the thesis introduces TGDMat, a text-guided joint diffusion framework that jointly models lattice parameters, atomic types, and atomic coordinates while incorporating textual structural knowledge during denoising. This enables the generation of more valid and stable periodic materials while also supporting conditional generation from natural-language descriptions. Overall, the thesis establishes a unified AI-based framework for data-efficient property prediction and controllable crystal generation, demonstrating how graph learning, multimodal representations, and generative models can reduce computational cost and improve the scalability of materials
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 6 |
+| rigor | 7 |
+| practical impact | 9 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: distillation
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Kishalay Das
+- 发布：2026-09-17；更新：2026-09-17
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -1,9 +1,9 @@
 ---
-title: "PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving"
+title: "PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic LLM Serving"
 description: "LLM agents execute long-horizon workflows where each model response determines the progress of subsequent tool interactions and environment transitions."
 ---
 
-**评分：40/100** · AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性
+**评分：44/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2609.16491) · [PDF](https://arxiv.org/pdf/2609.16491)
 
@@ -23,7 +23,7 @@ LLM agents execute long-horizon workflows where each model response determines t
 
 | 维度 | 得分 |
 |---|---:|
-| relevance | 12 |
+| relevance | 16 |
 | novelty | 5 |
 | rigor | 9 |
 | practical impact | 9 |
@@ -32,14 +32,14 @@ LLM agents execute long-horizon workflows where each model response determines t
 
 ## 证据与限制
 
-- taxonomy keywords: slo
+- taxonomy keywords: llm serving
 - no quantitative claim in metadata
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Shiju Wang, Fei Ren, Fangcheng Fu, Zhanhong Tan, Kairui Li, Jingwei Cai, Kaisheng Ma
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-16；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

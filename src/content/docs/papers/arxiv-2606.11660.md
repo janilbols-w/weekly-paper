@@ -39,7 +39,7 @@ Data attribution is a promising field in interpretability that aims to explain m
 ## 元数据
 
 - 作者：Lucia Quirke, Louis Jaburi, David Johnston, William Z. Li, Gon\c{c}alo Paulo, Guillaume Martres, Girish Gupta, Stella Biderman, Nora Belrose
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-09-01；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/EleutherAI/bergson](https://github.com/EleutherAI/bergson)
 - 阅读深度：metadata

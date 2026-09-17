@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.17943",
+  "title": "ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference",
+  "abstract": "Long-context LLM inference is bottlenecked by attention, whose repeated KV-cache reads make decoding memory-bound. Self-speculative decoding alleviates this by drafting tokens with sparse attention and verifying them with full attention, but existing batched methods remain synchronized: all requests in a batch share a single draft-verify schedule, even though the optimal draft length varies widely across requests and changes dynamically within each request. We propose ASPIRE, a non-synchronized batched self-speculative decoding framework built on three components. First, a unified mixed forward allows drafting and verifying requests to coexist in the same batched forward pass, removing the need for global draft-verify phases. Second, a lightweight online speculation scheduler uses per-request acceptance-rate estimates and a batch-aware cost model to let each request independently choose when to verify. Third, an intra-draft refresh layer performs full attention at a single designated layer during drafting, updating the sparse context at every draft step to reduce staleness during drafting. Across three models and five reasoning and long-context benchmarks, ASPIRE achieves $1.70$-$4.58\\times$ speedup in decoding throughput over autoregressive baselines and improves average speedup by approximately $27\\%$ over the strongest prior self-speculative baselines.",
+  "url": "https://arxiv.org/abs/2609.17943",
+  "pdf_url": "https://arxiv.org/pdf/2609.17943",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Amir Ziashahabi",
+    "Hossein Entezari Zarch",
+    "Lei Gao",
+    "Murali Annavaram",
+    "Salman Avestimehr"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Long-context LLM inference is bottlenecked by attention, whose repeated KV-cache reads make decoding memory-bound.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.17943",
+      "url": "https://arxiv.org/abs/2609.17943"
+    }
+  ]
+}

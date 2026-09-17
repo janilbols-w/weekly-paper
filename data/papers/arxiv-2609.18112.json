@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.18112",
+  "title": "Token Latency Fairness: Performance Isolation for Multi-Tenant LLM Serving",
+  "abstract": "LLM serving is typically offered as a shared, multi-tenant service, where high-demand workloads from one client can cause latency SLO violations for others. Existing solutions for performance isolation equalize client throughput in the long run, for example through queueing and batching fairness. However, these approaches do not provide latency isolation guarantees; as a result, well-behaved clients can still experience significant degradation to their token-level latencies. In this paper, we present FairInference, which provides the novel {\\delta}-token fairness guarantee: for a well-behaved client, if a token is generated in d time units in isolation, it will be generated within d + {\\delta} time units in multi-tenant execution, providing strong latency isolation guarantees for LLM serving. To achieve this, FairInference addresses a key challenge of LLM serving: bounding delays from sharing GPU resources without support for fine-grained scheduling or resource allocation. In FairInference, the scheduler enforces per-token deadlines, while bounding the delays from GPU compute sharing and accounting for the additional delays introduced by the shared KV caching in GPU memory. We show that FairInference effectively bounds token-level latency spikes for well-behaved clients and improves overall throughput compared to state-of-the-art LLM serving systems.",
+  "url": "https://arxiv.org/abs/2609.18112",
+  "pdf_url": "https://arxiv.org/pdf/2609.18112",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Dev Bali",
+    "Soujanya Ponnapalli",
+    "Yichuan Wang",
+    "Natacha Crooks",
+    "Scott Shenker",
+    "Matei Zaharia"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "multi-tenant",
+    "slo"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: multi-tenant, slo",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM serving is typically offered as a shared, multi-tenant service, where high-demand workloads from one client can cause latency SLO violations for others.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.18112",
+      "url": "https://arxiv.org/abs/2609.18112"
+    }
+  ]
+}

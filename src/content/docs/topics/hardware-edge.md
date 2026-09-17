@@ -5,10 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **49** 篇。
+累计收录 **53** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [vidax: A Unified JAX Framework for Video Generative Models on Accelerator Meshes](../../papers/arxiv-2609.18077/) | 2026-09-17 | 48 |
+| [BLADE: ReliaBle Dynamic Hardware-Aware SNN-ANN Boundary SeLection for Event-BAseD Object DEtection](../../papers/arxiv-2609.17562/) | 2026-09-17 | 45 |
+| [SpecReuse: Spectral Graph Reuse for Efficient Vision GNN Inference on FPGAs](../../papers/arxiv-2609.17718/) | 2026-09-17 | 43 |
+| [The Unbearable Weight: Scaling Models and Methods for UAV Audio Classification](../../papers/arxiv-2609.17884/) | 2026-09-17 | 38 |
 | [OptiPrime: Optimizing Private Inference through Protocol-Hardware Co-design](../../papers/arxiv-2609.16898/) | 2026-09-16 | 49 |
 | [The World Model Hardware Accelerator](../../papers/arxiv-2609.16244/) | 2026-09-16 | 41 |
 | [FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification](../../papers/arxiv-2609.16367/) | 2026-09-16 | 40 |

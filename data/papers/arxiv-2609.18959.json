@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.18959",
+  "title": "LangSelect: Cost-Aware Target-Language Routing for LLM Code Generation",
+  "abstract": "LLM code-generation systems usually choose a target programming language before decoding and treat that choice as fixed. We show that, for language-flexible programming tasks -- tasks where several target languages are acceptable and checkable by the same tests -- this choice is a measurable cost lever: verified implementations of the same task can differ substantially in generated-token length. We introduce LangSelect, a verification-aware router that selects the target language before generation and falls back when the first attempt fails. To separate offline routing opportunity from end-to-end behavior, we evaluate verified-solution replay, which chooses among already accepted corpus solutions, and live GPT-5 generation, which charges every generation attempt, including failures and fallbacks. On MultiLang-Bench, a 3,000-task, 8-language verified corpus, replay shows substantial language-routing headroom. In live evaluation on 450 held-out tasks, a train-split Domain heuristic baseline reduces harness-proxy tokens, which include wrapper and entrypoint overhead, by 50.3\\% at 92.9\\% pass after fallback, while a learned CodeBERT+metadata selector reaches the highest pass after fallback, 93.8\\%, with a 3.7\\% token increase. These results show that output-language routing can define a practical cost-correctness frontier for unit-test-verifiable code generation.",
+  "url": "https://arxiv.org/abs/2609.18959",
+  "pdf_url": "https://arxiv.org/pdf/2609.18959",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Son Ha Xuan",
+    "Phat T. Tran-Truong",
+    "Xuan-Bach Le",
+    "Nghia Duong-Trung"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM code-generation systems usually choose a target programming language before decoding and treat that choice as fixed.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.18959",
+      "url": "https://arxiv.org/abs/2609.18959"
+    }
+  ]
+}

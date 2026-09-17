@@ -39,7 +39,7 @@ Dense retrieval systems increasingly rely on multi-billion-parameter language mo
 ## 元数据
 
 - 作者：S{\l}awomir Dadas, Rafa{\l} Po\'swiata, Ma{\l}gorzata Gr\k{e}bowiec, Micha{\l} Pere{\l}kiewicz
-- 发布：2026-09-14；更新：2026-09-14
+- 发布：2026-09-14；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

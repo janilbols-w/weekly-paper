@@ -5,10 +5,17 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **306** 篇。
+累计收录 **313** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Higher-order pruning of experts in mixture-of-experts language models](../../papers/arxiv-2609.18916/) | 2026-09-17 | 45 |
+| [Long-Context Demonstration Selection Using State Space Models](../../papers/arxiv-2609.17888/) | 2026-09-17 | 43 |
+| [Machine Translation between English and Syriac (East Syriac Dialect) using Statistical Machine Learning](../../papers/arxiv-2609.18529/) | 2026-09-17 | 42 |
+| [Align, Integrate, and Fire: Efficient Token-Level Alignment for Zero-Shot SpeechLLMs](../../papers/arxiv-2609.18516/) | 2026-09-17 | 42 |
+| [Beyond Truncation: Rethinking LLM Decoding as Ensemble Pruning](../../papers/arxiv-2609.18723/) | 2026-09-17 | 40 |
+| [Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction](../../papers/arxiv-2609.17646/) | 2026-09-17 | 39 |
+| [SSD-LLaMA: SSD-Native Inference for Trillion-Parameter MoE at 1+ Token/s on a Consumer PC](../../papers/arxiv-2609.18110/) | 2026-09-17 | 38 |
 | [Window-Diffusion: Accelerating Diffusion Language Model Inference with Windowed Token Pruning and Caching](../../papers/arxiv-2601.20332/) | 2026-09-16 | 48 |
 | [ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication](../../papers/arxiv-2609.16014/) | 2026-09-16 | 44 |
 | [What Breaks Under Pruning in Smart Homes, and When? Evaluating LLM Degradation Across Architectures and Task Complexity](../../papers/arxiv-2609.17515/) | 2026-09-16 | 42 |

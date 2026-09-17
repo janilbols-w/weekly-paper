@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.16491",
-  "title": "PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving",
+  "title": "PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic LLM Serving",
   "abstract": "LLM agents execute long-horizon workflows where each model response determines the progress of subsequent tool interactions and environment transitions. Unlike chatbot serving, where TTFT and TPOT SLO constraints are critical, agentic workloads are increasingly governed by completion time. This shift challenges existing LLM serving designs, which are optimized around token-level SLOs. We revisit scheduling and parallelism under this completion-oriented objective. Through systematic exploration, we show that job completion time (JCT) is governed by the balance between prefill and decode efficiency. Prefill-prioritized scheduling, while achieving the best TTFT and decode throughput, renders suboptimal JCT; across the scheduling-policy space, completion time varies by up to 1.40$\\times$, with the optimum at neither extreme. We further show that pipeline parallelism (PP), previously overlooked due to its limited decode latency advantage, benefits JCT by providing a favorable balance of prefill--decode trade-off. Based on these insights, we build \\name{}, an optimized open-source pipeline-parallel runtime that co-designs scheduling and parallelism through a JCT-aware scheduling layer and pipeline-integrated multi-token prediction. Evaluated on deterministic replays of real coding and web-search agent trajectories with two 360B+ MoE models on 64 H800 GPUs, \\name{} reduces overall JCT by up to 1.45$\\times$ over SGLang wide-EP, 2.33$\\times$ over vLLM PP2, and 1.54$\\times$ over today's state-of-the-art open-source PD-disaggregated deployment.",
   "url": "https://arxiv.org/abs/2609.16491",
   "pdf_url": "https://arxiv.org/pdf/2609.16491",
   "published": "2026-09-16",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "authors": [
     "Shiju Wang",
     "Fei Ren",
@@ -32,17 +32,17 @@
     "group_id": "serving-platform",
     "group": "Serving Platforms",
     "group_zh": "服务平台",
-    "leaf_id": "multitenancy-slo-reliability",
-    "leaf": "Multi-tenancy, SLO & Reliability",
-    "leaf_zh": "多租户、SLO 与可靠性"
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
   },
   "secondary_tags": [],
   "keyword_evidence": [
-    "slo"
+    "llm serving"
   ],
-  "score": 40,
+  "score": 44,
   "score_components": {
-    "relevance": 12,
+    "relevance": 16,
     "novelty": 5,
     "rigor": 9,
     "practical_impact": 9,
@@ -50,7 +50,7 @@
     "credibility": 3
   },
   "score_evidence": [
-    "taxonomy keywords: slo",
+    "taxonomy keywords: llm serving",
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
@@ -60,7 +60,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-16T04:41:55+00:00",
-  "last_seen": "2026-09-16T04:41:55+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
   "featured_weeks": [],
   "source_records": [
     {

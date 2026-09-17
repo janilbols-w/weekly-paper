@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.18675",
+  "title": "HBFlex: A Flexible Memory System for Bridging Fine-Grained LLM States and Coarse-Grained HBF Parallel Execution",
+  "abstract": "Large language models (LLMs) require increasing memory capacity to accommodate growing model weights and KV caches. High-Bandwidth Flash (HBF) offers high memory density and aggregate read bandwidth through massive plane-level parallelism, making it an attractive option for LLM serving. However, serving LLMs entirely from HBF introduces three challenges: fine-grained KV reads create placement and access imbalance, incremental writes interfere with foreground reads, and mixed KV lifetimes amplify garbage collection. Hybrid HBM/HBF designs retain HBM to support dynamic KV management, but this allocation reduces the HBF resources available under a fixed packaging budget, limiting aggregate HBF bandwidth. We present HBFlex, a full-HBF memory system with coordinated optimizations for KV reads, writes, and reclamation. HBFlex balances KV placement and attention accesses to improve plane utilization. It aggregates incremental updates and schedules writeback within sufficiently long compute windows to reduce write--read interference. It also combines lifetime-guided block packing with deferred reclamation to reduce valid-page migration. We evaluate HBFlex through trace-driven simulation across different configurations. HBFlex achieves average throughput speedups of up to 1.58$\\times$ over FlashAccel and 3.30$\\times$ over H3, benefiting from higher HBF bandwidth and more efficient management of dynamic KV-cache reads, writes, and erases.",
+  "url": "https://arxiv.org/abs/2609.18675",
+  "pdf_url": "https://arxiv.org/pdf/2609.18675",
+  "published": "2026-09-17",
+  "updated": "2026-09-17",
+  "authors": [
+    "Shuzhang Zhong",
+    "Weikai Xu",
+    "Yifan Zhou",
+    "Tongbin Zhao",
+    "Tenghao Zhao",
+    "Yifei Kang",
+    "Cunyin Chang",
+    "Shu Li",
+    "Guangyu Sun",
+    "Meng Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models (LLMs) require increasing memory capacity to accommodate growing model weights and KV caches.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-17T04:42:10+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.18675",
+      "url": "https://arxiv.org/abs/2609.18675"
+    }
+  ]
+}
