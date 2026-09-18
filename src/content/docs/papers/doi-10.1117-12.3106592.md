@@ -3,7 +3,7 @@ title: "Privacy-enhanced federated learning via asynchronous aggregation and loc
 description: "This study proposes a privacy-enhanced federated learning framework to address secure collaborative training in distributed data environments."
 ---
 
-**评分：38/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+**评分：41/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
 
 [论文原文](https://arxiv.org/abs/2609.15885) · [PDF](https://arxiv.org/pdf/2609.15885)
 
@@ -28,7 +28,7 @@ This study proposes a privacy-enhanced federated learning framework to address s
 | rigor | 11 |
 | practical impact | 5 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -38,8 +38,8 @@ This study proposes a privacy-enhanced federated learning framework to address s
 
 ## 元数据
 
-- 作者：Zhen Zhong (Georgetown University, Washington, D.C., USA), Shini Yang (LinkedIn, CA, USA), Liesheng Wei (Shanghai Ocean University, Shanghai, China)
-- 发布：2026-09-15；更新：2026-09-15
-- 来源：arXiv RSS；Venue：未确认
+- 作者：Zhen Zhong, Shini Yang, Liesheng Wei
+- 发布：2026-09-14；更新：2026-09-15
+- 来源：arXiv RSS；Venue：Proc. SPIE 14128, Third International Conference on Big Data, Computational Intelligence, and Applications (BDCIA 2025), 141283L (2026)
 - 代码：未发现
 - 阅读深度：metadata

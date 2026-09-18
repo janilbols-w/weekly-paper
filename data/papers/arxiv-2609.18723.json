@@ -4,7 +4,7 @@
   "abstract": "We introduce Mahalanobis-Ensemble Decoding (ME-Decoding), a novel Large Language Model (LLM) decoding framework that frames candidate token selection as ensemble pruning. Existing selection strategies rely predominantly on scalar probabilities, ignoring geometric semantic relationships and causing candidate redundancy. Meanwhile, current geometry-aware methods often require complex optimization or directly reweighting the original token probabilities, leading to significant computational overhead or inference instability. To address this, we formulate decoding as a subset optimization problem using a Mahalanobis distance-driven objective to enhance semantic diversity while preserving high probabilities. Specifically, we dynamically discount redundant generation paths using a token similarity matrix, constructed via an adaptive-bandwidth kernel over token embeddings. We further devise an efficient greedy selection algorithm with near-linear complexity in the candidate size under early stopping, while establishing its theoretical approximation guarantees. This renders ME-Decoding a robust, plug-and-play module with negligible inference overhead. Extensive experiments across diverse reasoning and generation tasks demonstrate that our method consistently achieves strong performance.",
   "url": "https://arxiv.org/abs/2609.18723",
   "pdf_url": "https://arxiv.org/pdf/2609.18723",
-  "published": "2026-09-17",
+  "published": "2026-09-16",
   "updated": "2026-09-17",
   "authors": [
     "Dunyao Xue",
@@ -22,7 +22,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted to EMNLP 2026 Main Conference",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-17T04:42:10+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.18723v1",
+      "url": "http://arxiv.org/abs/2609.18723v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.18723",

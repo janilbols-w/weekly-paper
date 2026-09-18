@@ -38,8 +38,8 @@ Dynamic-vision-sensor (DVS) cameras generate events on a per-pixel basis with a 
 
 ## 元数据
 
-- 作者：Adrian Kneip, Martin Lefebvre, Daniel Gehrig, Victoria Catal\'an Pastor, Davide Scaramuzza, Marian Verhelst, Charlotte Frenkel
-- 发布：2026-09-15；更新：2026-09-15
+- 作者：Adrian Kneip, Martin Lefebvre, Daniel Gehrig, Victoria Catalán Pastor, Davide Scaramuzza, Marian Verhelst, Charlotte Frenkel
+- 发布：2026-09-14；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

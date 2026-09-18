@@ -4,7 +4,7 @@
   "abstract": "Large language model (LLM) inference in AI datacenters creates a coupled control problem between GPU serving and facility cooling. Raising ambient temperature setpoints can reduce cooling energy and carbon, but also shrinks thermal headroom, induces GPU throttling, and leads to Service-Level-Objective (SLO) violations. In this paper, we study joint cooling--computing control for LLM inference: minimizing per-job GPU-plus-cooling energy while satisfying thermal safety and latency SLO constraints. We present ETCInfer, an energy-efficient, thermal-aware scheduler that selects a pre-job Computer Room Air Conditioner (CRAC) setpoint and adapts per-GPU frequency and micro-batch size during execution. ETCInfer builds compact physics-informed control models by calibrating GPU heat generation, chassis heat dissipation, CRAC power, and prefill/decode latency relations from telemetry. These models estimate hidden thermal states and time-to-throttle, enabling the scheduler to evaluate energy, temperature, and latency before applying an action. We formulate this joint setpoint--frequency--micro-batch control problem as a partially observable Markov decision process and design ETCAdapter, a learning-based controller that minimizes per-job energy under thermal safety and SLO constraints. We implement ETCInfer as a coordination layer over typical inference and cluster management stacks. Evaluation across real-trace simulation and validation experiments shows that ETCInfer reduces total job energy by up to 33.1%, thermal throttle exposure by up to 92.9%, and keeps SLO violation rates below 0.7% even at ambient temperatures up to $48^{\\circ}\\mathrm{C}$.",
   "url": "https://arxiv.org/abs/2609.15230",
   "pdf_url": "https://arxiv.org/pdf/2609.15230",
-  "published": "2026-09-15",
+  "published": "2026-09-14",
   "updated": "2026-09-15",
   "authors": [
     "Rui Lu",
@@ -24,7 +24,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "16 pages",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -61,9 +61,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-15T04:42:06+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.15230v1",
+      "url": "http://arxiv.org/abs/2609.15230v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.15230",

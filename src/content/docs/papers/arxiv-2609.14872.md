@@ -39,7 +39,7 @@ Agentic serving can consume orders of magnitude more tokens than chatbot workloa
 ## 元数据
 
 - 作者：Taowen Tony Liu, Jeffrey T. H. Wong, Can Xiao, Bowen Yang, Hao Mark Chen, Yiren Zhao
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-14；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LiuTaowen-Tony/agentkv](https://github.com/LiuTaowen-Tony/agentkv)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Edge devices demand for highly efficient yet flexible processing capability to h
 ## 元数据
 
 - 作者：Yi Sheng Chong, Rakshith Harish, Rajesh Chandrasekhara Panicker, Vishnu P. Nambiar, Anh Tuan Do
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

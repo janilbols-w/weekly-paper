@@ -4,8 +4,8 @@
   "abstract": "Sparse DNN accelerators specialize in ANN or SNN execution, leaving energy or latency on the table when workload characteristics vary within a layer. Hybrid accelerator designs that switch modes at layer or tile granularity suffer from low PE utilization since one core type idles whenever the other is active. NeuroFlex is the first accelerator to assign every output element independently to ANN or SNN execution mode with zero accuracy loss. We extend integer-exact ANN-SNN equivalence from layers to individual output elements, thereby enabling mode switching with no conversion error. An offline cost-guided scheduler scores each element by its marginal energy-delay trade-off and packs work across PEs, achieving 97-99% PE utilization compared to 40-45% for layer-wise hybrids. NeuroFlex reduces EDP by 57-67% over a strong ANN-only baseline and delivers up to 2.5x speedup over a dual-sparse SNN-only baseline. Our cost-guided scheduler improves throughput by 16-19% over random element assignment across vision, language, and transformer workloads.",
   "url": "https://arxiv.org/abs/2609.14092",
   "pdf_url": "https://arxiv.org/pdf/2609.14092",
-  "published": "2026-09-15",
-  "updated": "2026-09-15",
+  "published": "2026-09-12",
+  "updated": "2026-09-18",
   "authors": [
     "Varun Manjunath",
     "Pranav Ramesh",
@@ -15,12 +15,13 @@
   "source_type": "preprint",
   "categories": [
     "cs.AR",
-    "cs.LG"
+    "cs.LG",
+    "cs.NE"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "This entry duplicates arXiv:2511.05215 and was submitted as a new article in error instead of as a replacement. The updated manuscript is now posted as a version of arXiv:2511.05215, which is the canonical record. Please cite arXiv:2511.05215; two identifiers for one paper split its citations and version history",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,15 +58,25 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-15T04:42:06+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [
     "2026-W38"
   ],
   "source_records": [
     {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.14092v2",
+      "url": "http://arxiv.org/abs/2609.14092v2"
+    },
+    {
       "source": "arXiv RSS",
       "id": "2609.14092",
       "url": "https://arxiv.org/abs/2609.14092"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2511.05215",
+      "url": "https://arxiv.org/abs/2511.05215"
     }
   ]
 }

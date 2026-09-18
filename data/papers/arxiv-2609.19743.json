@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2609.19743",
+  "title": "Syndrome Decoding for Silent Data Corruption in Quantized Integer GPU Arithmetic",
+  "abstract": "Quantized neural network inference runs integer matrix multiplications on GPU tensor cores, and the INT32 accumulators inside those cores have neither parity nor ECC. A transient fault in this datapath returns a valid but wrong integer and raises no interrupt. Checksum based Algorithm Based Fault Tolerance (ABFT) can detect such silent data corruptions (SDCs), but its verdict is binary. It cannot identify the corrupted element or its magnitude, and unweighted row and column checksums are blind by construction to errors that cancel on both axes. We present SProbe, a trailing verification kernel that reads the output of an unmodified vendor GEMM. A randomized Freivalds gate with three independent evaluation points in a 61 bit prime field misses a nonzero error with probability at most $2^{-141}$. When the gate fires, per row power sum syndromes over three primes are decoded with the Reed Solomon chain of Berlekamp Massey, Chien search, and Forney, recovering the column and exact magnitude of up to four colliding errors per row. SProbe then repairs the accumulator in place or recomputes the GEMM. On an NVIDIA H100, SProbe detects every injected fault across seven fault classes and four matrix sizes, including constructed patterns that TR-ABFT never detects and patterns that a weighted grid code detects but cannot correct. The gate costs 49% of the cuBLASLt GEMM time at N=16384 and 11% at N=65536. In an INT8 medical LLM, protection eliminates all observed silent corruptions at a 30% throughput cost. Our measurements also show that recomputation is faster than in place recovery in every configuration we tested, that diagnosis rather than repair dominates recovery cost, and we report the defects we found while validating the verifier itself.",
+  "url": "https://arxiv.org/abs/2609.19743",
+  "pdf_url": "https://arxiv.org/pdf/2609.19743",
+  "published": "2026-09-17",
+  "updated": "2026-09-18",
+  "authors": [
+    "Pranav Napolean",
+    "Vikas Srivastava",
+    "Napolean Periathambi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [
+    "quantization-low-precision"
+  ],
+  "keyword_evidence": [
+    "fault tolerance",
+    "silent data corruption"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fault tolerance, silent data corruption",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Quantized neural network inference runs integer matrix multiplications on GPU tensor cores, and the INT32 accumulators inside those cores have neither parity nor ECC.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.19743v1",
+      "url": "http://arxiv.org/abs/2609.19743v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.19743",
+      "url": "https://arxiv.org/abs/2609.19743"
+    }
+  ]
+}

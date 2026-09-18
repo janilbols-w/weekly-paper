@@ -5,18 +5,22 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **158** 篇。
+累计收录 **163** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding](../../papers/arxiv-2605.12396/) | 2026-09-18 | 47 |
+| [MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration](../../papers/arxiv-2609.19683/) | 2026-09-17 | 54 |
 | [REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration](../../papers/arxiv-2609.17555/) | 2026-09-17 | 44 |
-| [${M}^2$Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models](../../papers/arxiv-2609.18259/) | 2026-09-17 | 44 |
+| [QUALS: Corpus Equilibrium for Universal Forecasting via Pattern Quantization and Learnability Synchronization](../../papers/arxiv-2609.20156/) | 2026-09-17 | 42 |
 | [Robust Ultra Low-Bit Post-Training Quantization via Stable Diagonal Curvature Estimate](../../papers/arxiv-2604.13806/) | 2026-09-17 | 41 |
-| [Where Post-Training Quantization Breaks Text Embedders: A Measured Map Across Four Embedder Families](../../papers/arxiv-2609.16391/) | 2026-09-16 | 43 |
+| [Score Centering Stabilizes Off-policy Reinforcement Learning](../../papers/arxiv-2609.20807/) | 2026-09-17 | 38 |
+| [M2Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models](../../papers/arxiv-2609.18259/) | 2026-09-16 | 44 |
+| [A Calibrated Instrument for Measuring How Inference Optimizations Affect Output Quality](../../papers/arxiv-2609.18005/) | 2026-09-16 | 42 |
 | [Activation-Weighted Seeded Residual Coding for Low-Bit LLM Weight Repair](../../papers/arxiv-2608.23144/) | 2026-09-16 | 39 |
-| [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-15 | 54 |
 | [DecompressionLM: Deterministic, Diagnostic, and Zero-Shot Concept Graph Extraction from Language Models](../../papers/arxiv-2602.00377/) | 2026-09-15 | 44 |
 | [Dynamic Expert Quantization for Scalable Mixture-of-Experts Inference](../../papers/arxiv-2511.15015/) | 2026-09-14 | 55 |
+| [Where Post-Training Quantization Breaks Text Embedders: A Measured Map Across Four Embedder Families](../../papers/arxiv-2609.16391/) | 2026-09-14 | 48 |
 | [LC-QAT: Data-Efficient 2-Bit QAT for LLMs via Linear-Constrained Vector Quantization](../../papers/arxiv-2606.10531/) | 2026-09-14 | 46 |
 | [HoliBench: A Cross-Platform Benchmarking and Deployment Toolkit for Foundation Models in CPS-IoT Applications](../../papers/arxiv-2609.12412/) | 2026-09-14 | 46 |
 | [Efficient AI Model Deployment Using Quantization Analysis Tool](../../papers/arxiv-2609.11954/) | 2026-09-14 | 46 |
@@ -24,6 +28,7 @@ description: "Quantization & Low Precision"
 | [Vortex: Bridging Extreme Compression and Efficient LLM Inference](../../papers/arxiv-2609.12208/) | 2026-09-14 | 43 |
 | [Attention Quantization for Tabular Foundation Models](../../papers/arxiv-2609.13031/) | 2026-09-14 | 43 |
 | [The Battery Price of edge AI: A study of the Environmental Impact of LLM Inference on Mobile Devices](../../papers/arxiv-2609.11940/) | 2026-09-14 | 42 |
+| [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-13 | 54 |
 | [RDQ: Residual Distribution Quantization for Large Language Models](../../papers/arxiv-2607.10137/) | 2026-09-11 | 44 |
 | [ESSA: Evolutionary Strategies for Scalable Alignment](../../papers/arxiv-2507.04453/) | 2026-09-10 | 41 |
 | [Structured Transforms for Low-Overhead Quantization of Language Models](../../papers/arxiv-2609.11687/) | 2026-09-10 | 40 |

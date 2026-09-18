@@ -5,45 +5,55 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **313** 篇。
+累计收录 **323** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Higher-order pruning of experts in mixture-of-experts language models](../../papers/arxiv-2609.18916/) | 2026-09-17 | 45 |
+| [When Perplexity Lies: Generation-Focused Distillation of Hybrid Sequence Models](../../papers/arxiv-2603.26556/) | 2026-09-18 | 52 |
+| [TinyCNN: A 193K-Parameter Network for On-Device Plant Disease Detection, with a Cross-Dataset Robustness Diagnosis](../../papers/arxiv-2609.20290/) | 2026-09-18 | 49 |
+| [Exploring Sparsity and Smoothness of Arbitrary Lp Norms in Adversarial Attacks](../../papers/arxiv-2602.06578/) | 2026-09-18 | 44 |
+| [QVAC Genesis III: A Large-Scale, High-Quality Open Synthetic STEM Corpus for Efficient Language Model Pre-Training](../../papers/arxiv-2609.19513/) | 2026-09-18 | 41 |
+| [GeLaCo: An Evolutionary Approach to Layer Compression](../../papers/arxiv-2507.10059/) | 2026-09-18 | 41 |
+| [Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation](../../papers/arxiv-2609.19702/) | 2026-09-17 | 47 |
 | [Long-Context Demonstration Selection Using State Space Models](../../papers/arxiv-2609.17888/) | 2026-09-17 | 43 |
 | [Machine Translation between English and Syriac (East Syriac Dialect) using Statistical Machine Learning](../../papers/arxiv-2609.18529/) | 2026-09-17 | 42 |
-| [Align, Integrate, and Fire: Efficient Token-Level Alignment for Zero-Shot SpeechLLMs](../../papers/arxiv-2609.18516/) | 2026-09-17 | 42 |
-| [Beyond Truncation: Rethinking LLM Decoding as Ensemble Pruning](../../papers/arxiv-2609.18723/) | 2026-09-17 | 40 |
-| [Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction](../../papers/arxiv-2609.17646/) | 2026-09-17 | 39 |
-| [SSD-LLaMA: SSD-Native Inference for Trillion-Parameter MoE at 1+ Token/s on a Consumer PC](../../papers/arxiv-2609.18110/) | 2026-09-17 | 38 |
+| [Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation](../../papers/arxiv-2609.20441/) | 2026-09-17 | 42 |
+| [Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation](../../papers/arxiv-2609.20744/) | 2026-09-17 | 41 |
+| [What Does Privileged Information Add to On-Policy Self-Distillation?](../../papers/arxiv-2609.20612/) | 2026-09-17 | 40 |
+| [Local Sparsity Enables Unsupervised LLM Safety Detection](../../papers/arxiv-2609.20129/) | 2026-09-17 | 39 |
 | [Window-Diffusion: Accelerating Diffusion Language Model Inference with Windowed Token Pruning and Caching](../../papers/arxiv-2601.20332/) | 2026-09-16 | 48 |
+| [Higher-order pruning of experts in mixture-of-experts language models](../../papers/arxiv-2609.18916/) | 2026-09-16 | 45 |
 | [ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication](../../papers/arxiv-2609.16014/) | 2026-09-16 | 44 |
-| [What Breaks Under Pruning in Smart Homes, and When? Evaluating LLM Degradation Across Architectures and Task Complexity](../../papers/arxiv-2609.17515/) | 2026-09-16 | 42 |
+| [Align, Integrate, and Fire: Efficient Token-Level Alignment for Zero-Shot SpeechLLMs](../../papers/arxiv-2609.18516/) | 2026-09-16 | 42 |
 | [CodecSight: Leveraging Video Codec Signals for Efficient Streaming VLM Inference](../../papers/arxiv-2604.06036/) | 2026-09-16 | 41 |
-| [Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation](../../papers/arxiv-2609.16937/) | 2026-09-16 | 41 |
+| [Beyond Truncation: Rethinking LLM Decoding as Ensemble Pruning](../../papers/arxiv-2609.18723/) | 2026-09-16 | 40 |
+| [SSD-LLaMA: SSD-Native Inference for Trillion-Parameter MoE at 1+ Token/s on a Consumer PC](../../papers/arxiv-2609.18110/) | 2026-09-16 | 38 |
 | [Efficient Reasoning Distillation: Small Video-Language Models via Synthetic CoT and Difficulty-Aware Fine-Tuning](../../papers/arxiv-2609.16255/) | 2026-09-16 | 38 |
-| [NeuroFlex: Lossless Element-Level ANN-SNN Co-Execution for Efficient Sparse Inference](../../papers/arxiv-2609.14092/) | 2026-09-15 | 56 |
 | [REGEN: Replay-recycling for Expert-to-Generalist distillation with Offline Reinforcement Learning](../../papers/arxiv-2607.19450/) | 2026-09-15 | 48 |
-| [ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation](../../papers/arxiv-2609.13737/) | 2026-09-15 | 47 |
-| [Reducing the Output-Mode Gap in Speech Language Models via Joint-Output On-Policy Distillation](../../papers/arxiv-2609.15313/) | 2026-09-15 | 43 |
 | [HumorGen: Cognitive Synergy for Humor Generation in Large Language Models via Persona-Based Distillation](../../papers/arxiv-2604.09629/) | 2026-09-15 | 43 |
+| [What Breaks Under Pruning in Smart Homes, and When? Evaluating LLM Degradation Across Architectures and Task Complexity](../../papers/arxiv-2609.17515/) | 2026-09-15 | 42 |
 | [Mapping Text to Multiplex Graph: Prompt Compression as L\'evy Walk-Guided Graph Pruning](../../papers/arxiv-2607.01241/) | 2026-09-15 | 42 |
-| [Temporal Self-Distillation: Faster Inference in Discrete Diffusion Language Models](../../papers/arxiv-2609.15177/) | 2026-09-15 | 41 |
 | [SynGhost: Invisible and Universal Task-agnostic Backdoor Attack via Syntactic Transfer](../../papers/arxiv-2402.18945/) | 2026-09-15 | 41 |
 | [Internalize the Temperature: On-Policy Self-Distillation as Policy Reheater for Reinforcement Learning](../../papers/arxiv-2606.00755/) | 2026-09-15 | 41 |
+| [Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation](../../papers/arxiv-2609.16937/) | 2026-09-15 | 41 |
 | [Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States](../../papers/arxiv-2609.15972/) | 2026-09-15 | 40 |
-| [LayerRoute: Adaptive Layer-Skipping with LoRA-Preserved Quality for Efficient LLM Inference](../../papers/arxiv-2609.13682/) | 2026-09-15 | 40 |
 | [VGFM: Expressive Robot Policies via Dense Value Guidance in Flow Matching](../../papers/arxiv-2609.14261/) | 2026-09-15 | 39 |
+| [Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction](../../papers/arxiv-2609.17646/) | 2026-09-15 | 39 |
 | [Data Efficient Any Transformer-to-Mamba Distillation via Attention Bridge](../../papers/arxiv-2510.19266/) | 2026-09-15 | 39 |
 | [Qwen-Image-Flash: Rethinking the Training Recipe for Few-Step Distillation](../../papers/arxiv-2606.03746/) | 2026-09-15 | 38 |
 | [Lexical Prompt Compression for Large Language Models: A Training-Free, Deterministic Pipeline with Empirical Pareto Analysis Across Eleven Task Categories](../../papers/arxiv-2609.13154/) | 2026-09-15 | 38 |
 | [Bridging Vision Foundation Model Priors with CLIP for Spatial-aware Few-shot Anomaly Detection in Medical Images](../../papers/arxiv-2609.12454/) | 2026-09-14 | 49 |
 | [DASH-OPD: Discrepancy-Aware Switching with Hysteresis for On-Policy Distillation](../../papers/arxiv-2607.29078/) | 2026-09-14 | 47 |
+| [Reducing the Output-Mode Gap in Speech Language Models via Joint-Output On-Policy Distillation](../../papers/arxiv-2609.15313/) | 2026-09-14 | 43 |
 | [Parameter-Efficient Retrievers for Polish and European Languages](../../papers/arxiv-2609.12913/) | 2026-09-14 | 43 |
 | [BRIDGE-EEG: Bridging Self-Supervised Pretraining and Efficient Deployment for Cross-Dataset EEG Classification](../../papers/arxiv-2609.12218/) | 2026-09-14 | 43 |
+| [Temporal Self-Distillation: Faster Inference in Discrete Diffusion Language Models](../../papers/arxiv-2609.15177/) | 2026-09-14 | 41 |
 | [PACEvolve: Enabling Progress-Aware Consistent Evolution](../../papers/arxiv-2601.10657/) | 2026-09-14 | 39 |
 | [Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR](../../papers/arxiv-2603.07084/) | 2026-09-14 | 38 |
 | [Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models](../../papers/arxiv-2609.12303/) | 2026-09-14 | 38 |
+| [NeuroFlex: Lossless Element-Level ANN-SNN Co-Execution for Efficient Sparse Inference](../../papers/arxiv-2609.14092/) | 2026-09-12 | 56 |
+| [ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation](../../papers/arxiv-2609.13737/) | 2026-09-12 | 47 |
+| [LayerRoute: Adaptive Layer-Skipping with LoRA-Preserved Quality for Efficient LLM Inference](../../papers/arxiv-2609.13682/) | 2026-09-12 | 40 |
 | [Optimizing AI Inference Across the Deployment Stack](../../papers/arxiv-2609.10550/) | 2026-09-11 | 46 |
 | [Longitudinal Risk Prediction in Mammography with Privileged History Distillation](../../papers/arxiv-2603.15814/) | 2026-09-11 | 45 |
 | [LLMAR: A Tuning-Free Recommendation Framework for Sparse and Text-Rich Industrial Domains](../../papers/arxiv-2604.16379/) | 2026-09-11 | 44 |

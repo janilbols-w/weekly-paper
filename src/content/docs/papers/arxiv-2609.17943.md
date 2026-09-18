@@ -39,7 +39,7 @@ Long-context LLM inference is bottlenecked by attention, whose repeated KV-cache
 ## 元数据
 
 - 作者：Amir Ziashahabi, Hossein Entezari Zarch, Lei Gao, Murali Annavaram, Salman Avestimehr
-- 发布：2026-09-17；更新：2026-09-17
+- 发布：2026-09-16；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

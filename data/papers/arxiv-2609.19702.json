@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2609.19702",
+  "title": "Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation",
+  "abstract": "Autoregressive image generation has emerged as a paradigm for multimodal AI systems due to its compatibility with transformer-based LLM serving infrastructures. However, generating thousands of visual tokens per request makes decoding increasingly bottlenecked by KV cache accesses during attention computation. Sparse attention is particularly attractive for this workload because many visual generation applications tolerate moderate quality degradation in exchange for improved performance and efficiency. While sparse attention has been extensively explored for text-based LLM inference, it remains unclear whether its sparsity assumptions generalize effectively to autoregressive image generation. We present the first systematic characterization of attention sparsity in autoregressive image generation across diverse workloads and representative open-source models. Our analysis reveals several distinguishing properties, including a pronounced prefill-decode asymmetry, strong attention concentration on prompt and local tokens, and a unique diagonal attention sparsity pattern arising from the spatial locality of visual tokens. Motivated by these observations, we propose a diagonal-aware sparse attention mechanism that selectively skips KV entries along the diagonal attention direction within a recent window. Implemented on top of a GPU-based serving system using FlexGen, FlashAttention-2, and custom kernels, our approach achieves up to 3.1x throughput and 1.19x latency improvements with less than 2% quality degradation compared to dense inference.",
+  "url": "https://arxiv.org/abs/2609.19702",
+  "pdf_url": "https://arxiv.org/pdf/2609.19702",
+  "published": "2026-09-17",
+  "updated": "2026-09-18",
+  "authors": [
+    "Daeun Kim",
+    "Junwha Hong",
+    "Changhun Oh",
+    "Yoonsung Kim",
+    "Yoonhyeong Lee",
+    "Jongse Park"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Autoregressive image generation has emerged as a paradigm for multimodal AI systems due to its compatibility with transformer-based LLM serving infrastructures.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.19702v1",
+      "url": "http://arxiv.org/abs/2609.19702v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.19702",
+      "url": "https://arxiv.org/abs/2609.19702"
+    }
+  ]
+}

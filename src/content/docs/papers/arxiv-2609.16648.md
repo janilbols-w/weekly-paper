@@ -39,7 +39,7 @@ Reinforcement learning (RL) post-training drives the frontier capabilities of la
 ## 元数据
 
 - 作者：Minghua He, Lingzhe Zhang, Yuan Liu, Xiao Zhou, Aiwei Liu
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

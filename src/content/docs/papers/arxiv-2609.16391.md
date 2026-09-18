@@ -3,7 +3,7 @@ title: "Where Post-Training Quantization Breaks Text Embedders: A Measured Map A
 description: "Weight-only post-training quantization is the cheapest way to shrink a retrieval embedder, and the received advice for applying it -- protect the embedding table, allocate bits by module sensitivity, prefer a ranking-aware objective over weight reconstruction -- was carried into LLM quantization largely intact."
 ---
 
-**评分：43/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：48/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.16391) · [PDF](https://arxiv.org/pdf/2609.16391)
 
@@ -27,19 +27,19 @@ Weight-only post-training quantization is the cheapest way to shrink a retrieval
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 8 |
-| reproducibility | 4 |
+| reproducibility | 9 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: int4, quantization
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Hyojung Han
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-14；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/ThakiCloud/skillret-ptq-measurements](https://github.com/ThakiCloud/skillret-ptq-measurements)
 - 阅读深度：metadata

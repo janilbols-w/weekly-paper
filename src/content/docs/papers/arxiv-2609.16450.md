@@ -39,7 +39,7 @@ Diffusion large language models (dLLMs) offer a promising parallel decoding para
 ## 元数据
 
 - 作者：Lixuan Wei, Wei Zhou, Jianwen Wu, Yipeng Shen, Meiling Wang, Haoran You
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

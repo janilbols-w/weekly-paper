@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.19213",
+  "title": "Layer-wise Curriculum Learning for Efficient LLM Compression",
+  "abstract": "In this paper, we introduce layer-wise curriculum learning for efficient LLM compression. The proposed method facilitates the knowledge transfer from the teacher model to the student model, utilizing a curriculum learning approach that begins with easier optimization tasks and progressively tackles harder ones. In order to adopt the layer-wise learning in LLM compression, we partition the whole model into multiple segments consisting of layers, thereby enabling more computationally efficient knowledge transfer for LLMs. Based on our theoretical analysis of cumulative error phenomenon, layer-wise curriculum learning accelerates convergence while stabilizing the knowledge transfer process. In addition, we present a feature caching method with a multi-threading strategy to efficiently address feature misalignment across layers, maximizing GPU utilization. Consequently, our method exhibits advanced model compression performance, as well as high computational efficiency in terms of minimized memory usage and short training hours. Experiments on multiple datasets show that the proposed method achieves state-of-the-art performance while reducing GPU memory usage and training hours by more than 50\\% on BERT and GPT-2. Moreover, it outperforms the other pruning methods on LLaMA-family and Qwen models under the same training hours, with a lower GPU memory footprint.",
+  "url": "https://arxiv.org/abs/2609.19213",
+  "pdf_url": "https://arxiv.org/pdf/2609.19213",
+  "published": "2026-09-16",
+  "updated": "2026-09-18",
+  "authors": [
+    "Donggeon Lee",
+    "Dooyeon Na",
+    "Seungmin Oh",
+    "Jongbin Ryu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "Accepted by the Conference on Empirical Methods in Natural Language Processing (EMNLP) 2026",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "In this paper, we introduce layer-wise curriculum learning for efficient LLM compression.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.19213v1",
+      "url": "http://arxiv.org/abs/2609.19213v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.19213",
+      "url": "https://arxiv.org/abs/2609.19213"
+    }
+  ]
+}

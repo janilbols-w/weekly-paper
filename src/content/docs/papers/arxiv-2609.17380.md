@@ -38,8 +38,8 @@ Open-source language models have a reproducibility problem. Despite releasing we
 
 ## 元数据
 
-- 作者：John Donaghy, Brian Wilcox, O\u{g}uzhan Ersoy, Shikhar Rastogi, Adam St Arnaud, Alexey Titov, Jordan Greenberg, Ben Fielding, Harry Grieve
-- 发布：2026-09-16；更新：2026-09-16
+- 作者：John Donaghy, Brian Wilcox, Oğuzhan Ersoy, Shikhar Rastogi, Adam St Arnaud, Alexey Titov, Jordan Greenberg, Ben Fielding, Harry Grieve
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

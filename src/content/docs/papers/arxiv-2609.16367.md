@@ -39,7 +39,7 @@ FPGAs are well suited to deploying quantised neural networks (QNNs) under strict
 ## 元数据
 
 - 作者：Eva Chauffour, Changhong Li, Georgios Floros, Shreejith Shanker
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-14；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

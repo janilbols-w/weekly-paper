@@ -4,7 +4,7 @@
   "abstract": "Mixture-of-Experts (MoE) models expand language model capacity on smartphones, but expert offloading remains constrained by limited DRAM capacity and costly data movement. Sequential token routing couples expert execution to fragmented flash reads and multistage NPU preparation, leaving sparse computation stalled on weight transfers. Each transfer serves few tokens before execution moves on. We exploit the multi-token verification window of speculative decoding to decouple expert movement from single-token execution, enabling weight reuse, contiguous flash reads, and load-compute overlap. We present \\textsc{BigMoMo}, a mobile MoE runtime that exploits this window across the memory hierarchy. It prunes speculative branches and expert activations using acceptance rates, routing impact, and movement cost; reorganizes on-flash experts according to runtime co-loading patterns; and batches ready experts to overlap NPU computation with pending transfers. Across four MoE models and five benchmarks on two mobile platforms, \\textsc{BigMoMo} achieves mean decoding speedups of $4.83\\times$ over on-demand autoregressive offloading and $1.82\\times$ over the best speculative MoE baseline, supporting MoE models up to 30B parameter.",
   "url": "https://arxiv.org/abs/2609.14643",
   "pdf_url": "https://arxiv.org/pdf/2609.14643",
-  "published": "2026-09-15",
+  "published": "2026-09-13",
   "updated": "2026-09-15",
   "authors": [
     "Maoliang Li",
@@ -26,7 +26,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "14 pages,15 figures,preprint,under review",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -63,9 +63,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-15T04:42:06+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.14643v1",
+      "url": "http://arxiv.org/abs/2609.14643v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.14643",

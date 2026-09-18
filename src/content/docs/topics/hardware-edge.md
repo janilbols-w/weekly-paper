@@ -5,21 +5,22 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **53** 篇。
+累计收录 **54** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [vidax: A Unified JAX Framework for Video Generative Models on Accelerator Meshes](../../papers/arxiv-2609.18077/) | 2026-09-17 | 48 |
 | [BLADE: ReliaBle Dynamic Hardware-Aware SNN-ANN Boundary SeLection for Event-BAseD Object DEtection](../../papers/arxiv-2609.17562/) | 2026-09-17 | 45 |
-| [SpecReuse: Spectral Graph Reuse for Efficient Vision GNN Inference on FPGAs](../../papers/arxiv-2609.17718/) | 2026-09-17 | 43 |
-| [The Unbearable Weight: Scaling Models and Methods for UAV Audio Classification](../../papers/arxiv-2609.17884/) | 2026-09-17 | 38 |
-| [OptiPrime: Optimizing Private Inference through Protocol-Hardware Co-design](../../papers/arxiv-2609.16898/) | 2026-09-16 | 49 |
-| [The World Model Hardware Accelerator](../../papers/arxiv-2609.16244/) | 2026-09-16 | 41 |
-| [FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification](../../papers/arxiv-2609.16367/) | 2026-09-16 | 40 |
+| [vidax: A Unified JAX Framework for Video Generative Models on Accelerator Meshes](../../papers/arxiv-2609.18077/) | 2026-09-16 | 48 |
+| [From Models to Systems: A Comprehensive Survey of Efficient Multimodal Learning](../../papers/arxiv-2609.19445/) | 2026-09-16 | 43 |
 | [Implementation of an Adaptive Transformer Accelerator for Accurate Outdoor Localization with Massive MIMO](../../papers/arxiv-2605.13507/) | 2026-09-15 | 51 |
+| [OptiPrime: Optimizing Private Inference through Protocol-Hardware Co-design](../../papers/arxiv-2609.16898/) | 2026-09-15 | 49 |
+| [SpecReuse: Spectral Graph Reuse for Efficient Vision GNN Inference on FPGAs](../../papers/arxiv-2609.17718/) | 2026-09-15 | 43 |
 | [Partition-Aware Scheduling for Mobile Heterogeneous Inference Co-Execution](../../papers/arxiv-2609.14213/) | 2026-09-15 | 43 |
-| [Hardware-Aware Learned Representation Compression for Distributed In-Sensor Vision](../../papers/arxiv-2609.13947/) | 2026-09-15 | 43 |
-| [A 25-$\mu$s/inf Event-driven Graph Neural Network Processor with Spatiotemporal Caching and Spline Convolution for Ultra-low-latency AI at the Edge](../../papers/arxiv-2609.15241/) | 2026-09-15 | 42 |
+| [The Unbearable Weight: Scaling Models and Methods for UAV Audio Classification](../../papers/arxiv-2609.17884/) | 2026-09-15 | 38 |
+| [A 25-$\mu$s/inf Event-driven Graph Neural Network Processor with Spatiotemporal Caching and Spline Convolution for Ultra-low-latency AI at the Edge](../../papers/arxiv-2609.15241/) | 2026-09-14 | 42 |
+| [The World Model Hardware Accelerator](../../papers/arxiv-2609.16244/) | 2026-09-14 | 41 |
+| [FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification](../../papers/arxiv-2609.16367/) | 2026-09-14 | 40 |
+| [Hardware-Aware Learned Representation Compression for Distributed In-Sensor Vision](../../papers/arxiv-2609.13947/) | 2026-09-12 | 43 |
 | [DCO: Dynamic Cache Orchestration for LLM Accelerators through Predictive Management](../../papers/arxiv-2512.07312/) | 2026-09-11 | 41 |
 | [Fengshui: Demystifying Chiplet Ecosystem and Bespoke Neural Network Accelerator Codesign](../../papers/arxiv-2609.10970/) | 2026-09-10 | 46 |
 | [Toward Sustainable Distributed LLM Inference: A Systems Synthesis and Research Agenda for an Energy-, Carbon-, and Cache-Aware llm-d Control Plane](../../papers/arxiv-2609.05565/) | 2026-09-09 | 47 |

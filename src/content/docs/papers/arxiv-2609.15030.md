@@ -39,7 +39,7 @@ External cache transfers can succeed while a hybrid language model resumes from 
 ## 元数据
 
 - 作者：Frank Li
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-14；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

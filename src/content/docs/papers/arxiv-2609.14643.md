@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) models expand language model capacity on smartphones, b
 ## 元数据
 
 - 作者：Maoliang Li, Hailong Zou, Taohong Han, Haoze Chi, Jiayu Chen, Zihao Zheng, Jie Zhang, Guojie Luo, Xiang Chen
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-13；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

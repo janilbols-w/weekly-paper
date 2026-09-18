@@ -39,7 +39,7 @@ On-policy distillation (OPD) has emerged as an effective approach for large lang
 ## 元数据
 
 - 作者：Shiqi Liu, Zeyu He, Letian Tao, Guojian Zhan, Jiaxin Gao, Feihong Zhang, Jingliang Duan, Wei Xiong, Kehua Sheng, Bo Zhang, Yang Guan, Shengbo Eben Li
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

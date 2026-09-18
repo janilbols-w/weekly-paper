@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.18259",
-  "title": "${M}^2$Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models",
-  "abstract": "Recent advancements have successfully adapted autoregressive language models to process multimodal signals, such as images and actions. Since raw action signals are continuous, effective tokenization is essential to map high-dimensional inputs into compact discrete tokens for autoregressive processing. However, existing discrete action tokenizers often suffer from high reconstruction loss, failing to preserve the fine-grained dynamics required for precise control. This ``discretization bottleneck'' significantly limits the performance ceiling of downstream Vision-Language-Action (VLA) models. To address this, we propose $\\mathcal{M}^2$Tok, a Multi-head Multi-codebook Action Tokenizer designed to minimize reconstruction error and enhance policy performance. Our approach introduces two key structural innovations: (1) we decompose the latent action features into multiple heads, enabling the model to implicitly align specific heads with distinct action dimensions; (2) we assign independent codebooks to each head for quantization. By leveraging the combinatorial nature of multiple codebooks, we significantly expand the representational expressivity of the tokenizer, leading to substantially lower reconstruction loss compared to previous methods. We evaluate the $\\mathcal{M}^2$Tok-based VLA on the RoboTwin, Simpler-Env, and 3 zero-shot real-world tasks. Experimental results demonstrate our method not only achieves superior reconstruction fidelity but also significantly boosts the success rate of VLA models. Comprehensive ablation studies further confirm the effectiveness of the multi-head and multi-codebook mechanisms. Code is available at \\href{https://github.com/cpaaax/M2Tok}{https://github.com/cpaaax/M2Tok}.",
+  "title": "M2Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models",
+  "abstract": "Recent advancements have successfully adapted autoregressive language models to process multimodal signals, such as images and actions. Since raw action signals are continuous, effective tokenization is essential to map high-dimensional inputs into compact discrete tokens for autoregressive processing. However, existing discrete action tokenizers often suffer from high reconstruction loss, failing to preserve the fine-grained dynamics required for precise control. This \"discretization bottleneck\" significantly limits the performance ceiling of downstream Vision-Language-Action (VLA) models. To address this, we propose ${M}^2$Tok, a Multi-head Multi-codebook Action Tokenizer designed to minimize reconstruction error and enhance policy performance. Our approach introduces two key structural innovations: (1) we decompose the latent action features into multiple heads, enabling the model to implicitly align specific heads with distinct action dimensions; (2) we assign independent codebooks to each head for quantization. By leveraging the combinatorial nature of multiple codebooks, we significantly expand the representational expressivity of the tokenizer, leading to substantially lower reconstruction loss compared to previous methods. We evaluate the ${M}^2$Tok-based VLA on the RoboTwin, Simpler-Env, and 3 zero-shot real-world tasks. Experimental results demonstrate our method not only achieves superior reconstruction fidelity but also significantly boosts the success rate of VLA models. Comprehensive ablation studies further confirm the effectiveness of the multi-head and multi-codebook mechanisms. Code is available at https://github.com/cpaaax/M2Tok.",
   "url": "https://arxiv.org/abs/2609.18259",
   "pdf_url": "https://arxiv.org/pdf/2609.18259",
-  "published": "2026-09-17",
-  "updated": "2026-09-17",
+  "published": "2026-09-16",
+  "updated": "2026-09-18",
   "authors": [
     "Chunpu Xu",
     "Zhixuan Liang",
@@ -20,16 +20,16 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.RO",
     "cs.AI",
     "cs.CL",
-    "cs.CV"
+    "cs.CV",
+    "cs.RO"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "https://github.com/cpaaax/M2Tok}{https://github.com/cpaaax/M2Tok}",
+  "comment": "ECCV 2026",
+  "code_url": "https://github.com/cpaaax/M2Tok",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -65,9 +65,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-17T04:42:10+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.18259v2",
+      "url": "http://arxiv.org/abs/2609.18259v2"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.18259",

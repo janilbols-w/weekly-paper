@@ -39,7 +39,7 @@ Time-series language models provide a shared natural-language interface across t
 ## 元数据
 
 - 作者：Jiahui Chen, Bingke Zhu, Hongyu Pan, Yingying Chen
-- 发布：2026-09-17；更新：2026-09-17
+- 发布：2026-09-16；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

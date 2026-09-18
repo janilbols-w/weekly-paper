@@ -4,7 +4,7 @@
   "abstract": "Looped Transformers achieve strong performance with compact parameter sizes by repeatedly applying a shared stack of Transformer blocks across recurrent depths. However, they incur higher decoding latency than standard Transformer models of comparable parameter size because shared weights are accessed at every recurrent depth. To improve decoding efficiency, self-speculative decoding is particularly well suited to Looped Transformers, as their intermediate recurrent states can directly provide draft predictions without an auxiliary draft model. We therefore propose LoopSpec, a training-free self-speculative decoding framework tailored for Looped Transformers. LoopSpec extracts draft tokens from early recurrent states and operates in a pipelined manner, overlapping draft generation of future tokens with target verification of the current token. To improve draft accuracy without excessive compute overhead, we introduce a selective second proposal from deeper recurrent depth while ensuring lossless decoding under both greedy and sampling regimes. Furthermore, we derive the optimal proposal depths in closed form and show the prediction matches measurement. Across reasoning and coding benchmarks, LoopSpec achieves up to 6.83$\\times$ inference speedup across diverse Looped Transformers.",
   "url": "https://arxiv.org/abs/2609.17184",
   "pdf_url": "https://arxiv.org/pdf/2609.17184",
-  "published": "2026-09-16",
+  "published": "2026-09-15",
   "updated": "2026-09-16",
   "authors": [
     "SangLyul Cho",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-16T04:41:55+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.17184v1",
+      "url": "http://arxiv.org/abs/2609.17184v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.17184",

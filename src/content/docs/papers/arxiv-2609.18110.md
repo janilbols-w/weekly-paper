@@ -39,7 +39,7 @@ Frontier open-weight language models increasingly use Mixture-of-Experts (MoE) a
 ## 元数据
 
 - 作者：Fangzhou Liang, Yibin Shen, Jianmin Hu, Jiayang Xu, Hanchi Gao, Minxian Xu, Zili Meng
-- 发布：2026-09-17；更新：2026-09-17
+- 发布：2026-09-16；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

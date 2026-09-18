@@ -39,7 +39,7 @@ As large language models (LLMs) are increasingly deployed, the generation of har
 ## 元数据
 
 - 作者：Hanling Wang, Chenlong Wei, Ling Xu, Hanyan Niu, Qi Cao, Shizhou Huang, Yang Yang, Xiaohui Zhu, Yao Zhu
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-12；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Scabbards1500/Foresight](https://github.com/Scabbards1500/Foresight)
 - 阅读深度：metadata

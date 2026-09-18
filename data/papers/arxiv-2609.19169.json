@@ -1,0 +1,80 @@
+{
+  "id": "arxiv:2609.19169",
+  "title": "SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops",
+  "abstract": "Concurrent local LLM serving on unified-memory desktops must preserve memory headroom and output fidelity, which speed-only rankings overlook. We introduce SiliconBench, which evaluates nine Apple Silicon serving engines through three lenses: speed, memory, and fidelity. We evaluate chat and agent serving on Qwen3, Qwen3.5, and Gemma 4. We use a classification task to check for quality regressions against an NVIDIA reference. DGX Spark provides a complementary serving-performance reference. Three desiderata guide interpretation: serving architecture readiness, memory discipline, and multi-node scaling. On Qwen3-0.6B, vllm-metal alone more than doubles throughput on both workloads from concurrency 1 to 16. CUDA vLLM and SGLang show stronger concurrency scaling on the same prompts. Explicit memory budgets do not guarantee memory headroom: two stacks complete every request while memory use approaches physical capacity and throughput declines. The newer model architectures have narrower engine support. Their evaluated implementations match the fidelity reference. Only three stacks satisfy the completion, fidelity, and model-coverage gates. Comparisons on larger dense and MoE models reinforce the importance of scheduling prompt processing alongside ongoing generation: vllm-metal's packed prefill-decode path maintains lower first-token latency than omlx under concurrent load. In the tested two-machine configurations, tensor parallelism over Thunderbolt RDMA scales while pipeline parallelism over TCP regresses. We release benchmark code, per-run results, and maintenance journals, supported by a workflow combining bounded agent fixes with human review.",
+  "url": "https://arxiv.org/abs/2609.19169",
+  "pdf_url": "https://arxiv.org/pdf/2609.19169",
+  "published": "2026-09-12",
+  "updated": "2026-09-18",
+  "authors": [
+    "Ranran Haoran Zhang",
+    "Aysa Xuemo Fan",
+    "David Munhá Correia",
+    "Alex Cheema",
+    "Rui Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.DC",
+    "cs.SY",
+    "eess.SY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "Project website: https://ranranhaoranzhang.com/siliconbench/ , Code: https://github.com/WindChimeRan/SiliconBench",
+  "code_url": "https://github.com/WindChimeRan/SiliconBench",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 55,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Concurrent local LLM serving on unified-memory desktops must preserve memory headroom and output fidelity, which speed-only rankings overlook.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [
+    "2026-W38"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.19169v1",
+      "url": "http://arxiv.org/abs/2609.19169v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.19169",
+      "url": "https://arxiv.org/abs/2609.19169"
+    }
+  ]
+}

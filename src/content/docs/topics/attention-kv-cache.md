@@ -5,21 +5,26 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **102** 篇。
+累计收录 **107** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [HBFlex: A Flexible Memory System for Bridging Fine-Grained LLM States and Coarse-Grained HBF Parallel Execution](../../papers/arxiv-2609.18675/) | 2026-09-17 | 42 |
+| [Exploring a Layer-Wise Design Space for KV Cache Eviction](../../papers/arxiv-2606.15157/) | 2026-09-18 | 40 |
+| [On-Demand Attention: Language Models Know When to Recall](../../papers/arxiv-2609.20734/) | 2026-09-17 | 40 |
 | [GroupKV: Hierarchical KV Cache Management for Long-Context Diffusion LLM Inference](../../papers/arxiv-2609.17573/) | 2026-09-17 | 40 |
+| [D-Quant: Driftable Entropy Coding for KV Cache Quantization](../../papers/arxiv-2609.19880/) | 2026-09-17 | 39 |
 | [How to Compress KV Cache in RL Post-Training? Shadow Mask Distillation for Memory-Efficient Alignment](../../papers/arxiv-2605.06850/) | 2026-09-17 | 38 |
+| [MeshKV: A Network-on-Chip KV Cache Fabric for Scalable Transformer Decoding Accelerators](../../papers/arxiv-2609.19207/) | 2026-09-16 | 45 |
 | [Comparative Characterization of KV Cache Management Strategies for LLM Inference](../../papers/arxiv-2604.05012/) | 2026-09-16 | 44 |
+| [HBFlex: A Flexible Memory System for Bridging Fine-Grained LLM States and Coarse-Grained HBF Parallel Execution](../../papers/arxiv-2609.18675/) | 2026-09-16 | 42 |
 | [Latent Undertow: How Ordinary Typos Break Probes](../../papers/arxiv-2609.15994/) | 2026-09-16 | 40 |
 | [PEEK: Predictive Queue-Informed KV Cache Management for LLM Serving](../../papers/arxiv-2607.02525/) | 2026-09-15 | 45 |
-| [AgentKV: Phase-Aware KV Eviction for Agentic LLMs](../../papers/arxiv-2609.14872/) | 2026-09-15 | 45 |
-| [An Efficient and Modular Framework for Targeted Harm Mitigation in LLMS](../../papers/arxiv-2609.13624/) | 2026-09-15 | 41 |
 | [Self-Indexing Attention for Compression-Compatible Sparse Long-Context LLM Inference](../../papers/arxiv-2609.13205/) | 2026-09-15 | 40 |
 | [Grouped Value Attention: Efficient KV Caching via On-Demand Key Reconstruction](../../papers/arxiv-2609.13285/) | 2026-09-15 | 39 |
+| [AgentKV: Phase-Aware KV Eviction for Agentic LLMs](../../papers/arxiv-2609.14872/) | 2026-09-14 | 45 |
 | [RoofLang: Enabling AI-Driven Architecting of LLM Inference Systems](../../papers/arxiv-2609.12551/) | 2026-09-14 | 40 |
+| [An Efficient and Modular Framework for Targeted Harm Mitigation in LLMS](../../papers/arxiv-2609.13624/) | 2026-09-12 | 41 |
+| [Prefix Sharing Is a Sorting Problem](../../papers/arxiv-2609.13692/) | 2026-09-12 | 39 |
 | [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](../../papers/arxiv-2609.11744/) | 2026-09-10 | 47 |
 | [FlexComp: One Model for Every Ratio in Context Compression](../../papers/arxiv-2609.11192/) | 2026-09-10 | 40 |
 | [Revisiting the Shape Convention of Transformer Language Models](../../papers/arxiv-2602.06471/) | 2026-09-10 | 38 |

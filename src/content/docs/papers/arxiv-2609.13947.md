@@ -39,7 +39,7 @@ In-sensor computing reduces the cost of transmitting high-resolution image data 
 ## 元数据
 
 - 作者：Chengwei Zhou, Abu Masum, Xuming Chen, Mehran Moghadam, Sreetama Sarkar, Arnab Sanyal, Md Abdullah-Al Kaiser, M. Hassan Najafi, Sercan Aygun, Gourav Datta
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-12；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2606.15157",
+  "title": "Exploring a Layer-Wise Design Space for KV Cache Eviction",
+  "abstract": "KV cache eviction methods typically use a single retention-rule family throughout a model, making eviction-method identity a model-level design choice. Yet Transformer layers differ substantially in their attention behavior, representations, and sensitivity to compression, suggesting that a uniform rule may overlook useful layer-wise structure. This raises a basic question: should eviction methods themselves vary across layers? We investigate this question by composing existing eviction methods across Transformer layers and systematically exploring the resulting layer-wise design space. Using simple offline profiles, we construct fixed routes and study how their quality varies with method placement and cache budget. On LongBench, heterogeneous routing improves performance on a majority of tasks over homogeneous policies at the same cache budget. Even when method counts are held fixed, the profile-guided placement ranks second among 100 evaluated assignments, demonstrating that routing quality depends strongly on where methods are placed. Moreover, the same fixed route outperforms the best of nine standalone baselines across all five tested cache budgets. Together, these results establish layer-wise method composition as an exploitable, placement-sensitive design dimension for KV cache compression.",
+  "url": "https://arxiv.org/abs/2606.15157",
+  "pdf_url": "https://arxiv.org/pdf/2606.15157",
+  "published": "2026-09-18",
+  "updated": "2026-09-18",
+  "authors": [
+    "Chao Fei",
+    "Kaihua Liang",
+    "Hanzhi Hu",
+    "Hongcheng Guo",
+    "Jian Weng",
+    "Marco Canini",
+    "Panos Kalnis"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "KV cache eviction methods typically use a single retention-rule family throughout a model, making eviction-method identity a model-level design choice.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.15157",
+      "url": "https://arxiv.org/abs/2606.15157"
+    }
+  ]
+}

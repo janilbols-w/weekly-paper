@@ -39,7 +39,7 @@ Looped Transformers achieve strong performance with compact parameter sizes by r
 ## 元数据
 
 - 作者：SangLyul Cho, Langqing Cui, Sehoon Kim, Dongsu Han, Insu Han
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) language models suffer from large parameter counts, whi
 ## 元数据
 
 - 作者：Alex M. Tseng, Prannay Kaul, Luca Zancato, Wei Xia, Stefano Soatto
-- 发布：2026-09-17；更新：2026-09-17
+- 发布：2026-09-16；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

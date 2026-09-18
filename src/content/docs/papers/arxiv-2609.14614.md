@@ -39,7 +39,7 @@ Deep learning architectures remain rigidly built upon traditional fully connecte
 ## 元数据
 
 - 作者：Zhibin Jiao, Xiangjing An
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-13；更新：2026-09-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/jzb1111/SphericalHarmonyRoutedNeuralNetWork](https://github.com/jzb1111/SphericalHarmonyRoutedNeuralNetWork)
 - 阅读深度：metadata

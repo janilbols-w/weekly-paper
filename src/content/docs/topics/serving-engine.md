@@ -5,14 +5,17 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **51** 篇。
+累计收录 **54** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [TuiML: Machine Learning for AI Agents](../../papers/arxiv-2609.17984/) | 2026-09-17 | 43 |
-| [JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management](../../papers/arxiv-2609.17475/) | 2026-09-16 | 45 |
+| [VisKG-LM: Compiling Knowledge Graphs into Visual Memory for Multiple-Choice Question Answering](../../papers/arxiv-2609.19158/) | 2026-09-18 | 38 |
+| [PrefixBench-H100: Characterizing Prefix Reuse and Time-to-First-Token in H100 LLM Serving](../../papers/arxiv-2609.19657/) | 2026-09-17 | 50 |
 | [PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic LLM Serving](../../papers/arxiv-2609.16491/) | 2026-09-16 | 44 |
-| [OpWeave: Flexible Operator Disaggregation for Heterogeneous LLM Serving](../../papers/arxiv-2609.14237/) | 2026-09-15 | 44 |
+| [TuiML: Machine Learning for AI Agents](../../papers/arxiv-2609.17984/) | 2026-09-16 | 43 |
+| [JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management](../../papers/arxiv-2609.17475/) | 2026-09-15 | 45 |
+| [OpWeave: Flexible Operator Disaggregation for Heterogeneous LLM Serving](../../papers/arxiv-2609.14237/) | 2026-09-13 | 44 |
+| [SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops](../../papers/arxiv-2609.19169/) | 2026-09-12 | 55 |
 | [PATTON: Enabling Commodity PIM for Production LLM Serving](../../papers/arxiv-2609.11392/) | 2026-09-10 | 53 |
 | [Phase-Decoupled, Model-Calibrated Power Control for Disaggregated LLM Serving](../../papers/arxiv-2609.11133/) | 2026-09-10 | 51 |
 | [Measurement-Driven Diagnosis and Mitigation of Host-CPU Co-location Interference in Single-GPU LLM Serving on a Multi-GPU Server](../../papers/arxiv-2609.05425/) | 2026-09-09 | 46 |

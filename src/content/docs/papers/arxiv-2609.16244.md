@@ -39,7 +39,7 @@ Diffusion transformers invert the arithmetic that autoregressive decoding made f
 ## 元数据
 
 - 作者：Shashank Chaurasia
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-14；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

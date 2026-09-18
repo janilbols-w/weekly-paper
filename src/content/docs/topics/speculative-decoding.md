@@ -5,18 +5,20 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **58** 篇。
+累计收录 **60** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference](../../papers/arxiv-2609.17943/) | 2026-09-17 | 50 |
-| [ECHO: Early-layer Collaborative Hierarchical Orchestration with Bonus Logits in Speculative Decoding](../../papers/arxiv-2609.17241/) | 2026-09-16 | 52 |
-| [LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers](../../papers/arxiv-2609.17184/) | 2026-09-16 | 45 |
-| [Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling](../../papers/arxiv-2609.16450/) | 2026-09-16 | 41 |
-| [GrowMTP: Can RL Grow Its Own Draft Head?](../../papers/arxiv-2609.16648/) | 2026-09-16 | 40 |
+| [To Copy or Not to Copy: Controlling Speculative Decoding via Intrinsic Model Signals](../../papers/arxiv-2609.20186/) | 2026-09-17 | 43 |
+| [Zarya: A Hybrid Autoregressive--Masked Diffusion Language Model with Flexible Training and Dual-Mode Inference](../../papers/arxiv-2609.19868/) | 2026-09-17 | 38 |
+| [ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference](../../papers/arxiv-2609.17943/) | 2026-09-16 | 50 |
 | [AdaFlash: Adaptive Speculative Decoding via On-Policy Distilled Diffusion Drafters](../../papers/arxiv-2607.19223/) | 2026-09-15 | 53 |
-| [BigMoMo: Efficient Inference of Large-Scale MoE with Speculative Decoding on Mobile Devices](../../papers/arxiv-2609.14643/) | 2026-09-15 | 46 |
-| [Carryover Drafting: Recycling Rejected States for Speculative Decoding](../../papers/arxiv-2609.14717/) | 2026-09-15 | 45 |
+| [ECHO: Early-layer Collaborative Hierarchical Orchestration with Bonus Logits in Speculative Decoding](../../papers/arxiv-2609.17241/) | 2026-09-15 | 52 |
+| [LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers](../../papers/arxiv-2609.17184/) | 2026-09-15 | 45 |
+| [Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling](../../papers/arxiv-2609.16450/) | 2026-09-15 | 41 |
+| [GrowMTP: Can RL Grow Its Own Draft Head?](../../papers/arxiv-2609.16648/) | 2026-09-15 | 40 |
+| [BigMoMo: Efficient Inference of Large-Scale MoE with Speculative Decoding on Mobile Devices](../../papers/arxiv-2609.14643/) | 2026-09-13 | 46 |
+| [Carryover Drafting: Recycling Rejected States for Speculative Decoding](../../papers/arxiv-2609.14717/) | 2026-09-13 | 45 |
 | [Scaling E-Commerce Attribute Extraction with Parallel Decoding](../../papers/arxiv-2609.09716/) | 2026-09-10 | 40 |
 | [X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding](../../papers/arxiv-2609.09166/) | 2026-09-10 | 39 |
 | [SpecGuard: Inference-Time Backdoor Detection For Free](../../papers/arxiv-2609.11799/) | 2026-09-10 | 39 |

@@ -5,14 +5,15 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **34** 篇。
+累计收录 **35** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [A 420 GOPS/W CGRA with a Configurable MAC and Dynamic Truncation](../../papers/arxiv-2609.16600/) | 2026-09-16 | 39 |
+| [RISC-V and machine learning: a survey](../../papers/doi-10.1007-s11227-026-08463-z/) | 2026-09-17 | 41 |
 | [The Language-Energy Divide: Measuring Energy Costs of Multilingual LLM Inference](../../papers/arxiv-2606.21869/) | 2026-09-15 | 42 |
 | [DVFS for Small Language Model Inference on Mobile Edge Devices](../../papers/arxiv-2609.13153/) | 2026-09-15 | 40 |
-| [Beyond Noise: Understanding and Overcoming Temperature Effects in Analog DNN Inference](../../papers/arxiv-2609.15527/) | 2026-09-15 | 39 |
+| [A 420 GOPS/W CGRA with a Configurable MAC and Dynamic Truncation](../../papers/doi-10.1109-iscas58744.2024.10558192/) | 2026-09-15 | 39 |
+| [Beyond Noise: Understanding and Overcoming Temperature Effects in Analog DNN Inference](../../papers/arxiv-2609.15527/) | 2026-09-14 | 39 |
 | [A Time-Based Readout for Vector-Matrix Multiplication in Fully Analog Memristive SNNs](../../papers/arxiv-2609.11713/) | 2026-09-11 | 38 |
 | [AccelForge: Comprehensive Modeling and Co-Design Framework for AI Accelerators](../../papers/arxiv-2609.11906/) | 2026-09-10 | 44 |
 | [WIP: Energy-Efficient LLM-Based Serving Cluster Formulation in Cell-Free Massive MIMO](../../papers/arxiv-2609.05725/) | 2026-09-09 | 39 |

@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.20497",
+  "title": "A Kubernetes-Native Request Router for Quality-Aware Inference Serving in the Computing Continuum",
+  "abstract": "We introduce Adaptive Score-based Routing Balancer (ASRB), a dynamic, score-based request routing mechanism for Kubernetes-based service deployments over the computing continuum. ASRB jointly considers infrastructure-level information, response time measurements, and application-level quality indicators, with a particular focus on serving Machine Learning (ML) workloads. For these workloads, ASRB balances requests over service instances deployed in the continuum, following service provider-defined policies encoded as weighted combinations of QoS criteria to flexibly address latency-accuracy trade-offs. To drive routing decisions and swiftly adapt to changes in the operating environment, ASRB monitors a range of runtime metrics across multiple system layers. To deal with the associated monitoring overhead, particularly important for large-scale deployments, it selectively and adaptively controls monitoring intensity without sacrificing on routing quality. ASRB is implemented without requiring any modifications to Kubernetes, making it straightforward to deploy and operate in existing cluster environments. Our testbed experiments demonstrate the versatility of ASRB: When tuned for latency reduction, it achieves at least 10 ms lower mean response time compared with latency-oriented state-of-the-art routing mechanisms, while it achieves higher accuracy when this is prioritized through specific configurations, thus enabling flexible and operator-controllable trade-offs. At the same time, it attains reduced failure rates, higher responsiveness to changes in the operating environment, and up to ~70% less monitoring cost than relevant state-of-the-art solutions, at the potential expense of only a modest latency penalty in some configurations.",
+  "url": "https://arxiv.org/abs/2609.20497",
+  "pdf_url": "https://arxiv.org/pdf/2609.20497",
+  "published": "2026-09-17",
+  "updated": "2026-09-18",
+  "authors": [
+    "Ignjat Karanovic",
+    "Pantelis A. Frangoudis",
+    "Ivan Čilić",
+    "Ivana Podnar Žarko",
+    "Schahram Dustdar"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "request routing"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: request routing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We introduce Adaptive Score-based Routing Balancer (ASRB), a dynamic, score-based request routing mechanism for Kubernetes-based service deployments over the computing continuum.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.20497v1",
+      "url": "http://arxiv.org/abs/2609.20497v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.20497",
+      "url": "https://arxiv.org/abs/2609.20497"
+    }
+  ]
+}

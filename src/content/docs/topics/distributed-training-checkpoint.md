@@ -10,19 +10,20 @@ description: "Distributed Training & Checkpointing"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters](../../papers/arxiv-2609.19024/) | 2026-09-17 | 45 |
-| [WaveTLM: Reliable Time-Series Language Modeling through Task Compilation](../../papers/arxiv-2609.18812/) | 2026-09-17 | 44 |
-| [Zero-I/O Fault Recovery for Sharded Deep Learning via Dynamic Framework Dependency Rebinding](../../papers/arxiv-2609.18178/) | 2026-09-17 | 43 |
-| [GeoMesh: Workload-Balanced and Sign-Compressed Geo-Distributed LLM Training](../../papers/arxiv-2609.18388/) | 2026-09-17 | 41 |
-| [Decoy Direction Optimization: A Post-Hoc Defense Against LLM Abliteration](../../papers/arxiv-2609.16204/) | 2026-09-16 | 44 |
-| [OPEN-1B: A Fully Auditable Training Run](../../papers/arxiv-2609.17380/) | 2026-09-16 | 38 |
+| [Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training](../../papers/arxiv-2609.19242/) | 2026-09-16 | 49 |
+| [WaveTLM: Reliable Time-Series Language Modeling through Task Compilation](../../papers/arxiv-2609.18812/) | 2026-09-16 | 44 |
+| [Zero-I/O Fault Recovery for Sharded Deep Learning via Dynamic Framework Dependency Rebinding](../../papers/arxiv-2609.18178/) | 2026-09-16 | 43 |
+| [GeoMesh: Workload-Balanced and Sign-Compressed Geo-Distributed LLM Training](../../papers/arxiv-2609.18388/) | 2026-09-16 | 41 |
 | [Concertina: Data-Centric Adaptive Pipeline Parallelism for Efficient Heterogeneous Long-Context LLM Training](../../papers/arxiv-2509.21275/) | 2026-09-15 | 50 |
 | [Multimodal-Multiresolution Foundation Model for Lunar Remote Sensing](../../papers/arxiv-2609.13283/) | 2026-09-15 | 43 |
 | [Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models](../../papers/arxiv-2609.13556/) | 2026-09-15 | 41 |
 | [Checkpoint Selection and Evaluation in EEG Emotion Recognition](../../papers/arxiv-2607.27655/) | 2026-09-15 | 40 |
 | [Self-Evolving AI for Humanoids: Mechanisms, Safety, and Evaluation of Post-Deployment Self-Improvement](../../papers/arxiv-2609.13236/) | 2026-09-15 | 39 |
 | [EasyRider: Mitigating Power Transients in Datacenter-Scale Training Workloads](../../papers/arxiv-2604.15522/) | 2026-09-15 | 39 |
-| [Privacy-enhanced federated learning via asynchronous aggregation and local differential perturbation](../../papers/arxiv-2609.15885/) | 2026-09-15 | 38 |
+| [OPEN-1B: A Fully Auditable Training Run](../../papers/arxiv-2609.17380/) | 2026-09-15 | 38 |
 | [Continual Learning for Sequential Personalization of Small Language Models: A Stability Monitoring Analysis](../../papers/arxiv-2606.27634/) | 2026-09-15 | 38 |
+| [Decoy Direction Optimization: A Post-Hoc Defense Against LLM Abliteration](../../papers/arxiv-2609.16204/) | 2026-09-14 | 44 |
+| [Privacy-enhanced federated learning via asynchronous aggregation and local differential perturbation](../../papers/doi-10.1117-12.3106592/) | 2026-09-14 | 41 |
 | [SurF: A Generative Model for Multivariate Irregular Time Series Forecasting](../../papers/arxiv-2605.14069/) | 2026-09-10 | 43 |
 | [Benchmarking Storage Systems for Machine Learning Workloads Using NIO Bench](../../papers/arxiv-2609.05418/) | 2026-09-09 | 44 |
 | [Stochastically Perturbed Weights: Ensembles from Deterministic Machine-Learning Weather Models](../../papers/arxiv-2609.08412/) | 2026-09-08 | 45 |
@@ -43,7 +44,6 @@ description: "Distributed Training & Checkpointing"
 | [Evaluation Awareness in Language Models: Representation, Verbalization, and Control](../../papers/arxiv-2608.21766/) | 2026-08-22 | 39 |
 | [SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD](../../papers/arxiv-2607.20145/) | 2026-08-20 | 47 |
 | [Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification](../../papers/arxiv-2608.14929/) | 2026-08-18 | 41 |
-| [GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction](../../papers/arxiv-2608.18234/) | 2026-08-18 | 40 |
 | [Nanbeige4.2-3B on Apple Silicon: Fixing Deployment Bugs and Decreasing Looped Transformer Memory Overhead](../../papers/arxiv-2608.13987/) | 2026-08-17 | 45 |
 | [DepTGL: A Parallel Framework for Memory-based TGNN Training with Adaptive Temporal Data Dependency Management](../../papers/arxiv-2608.16305/) | 2026-08-17 | 45 |
 | [Gathered, Not Admitted: How Attention Brings a Latent Variable into Verbalizable Form](../../papers/arxiv-2608.15022/) | 2026-08-15 | 42 |

@@ -4,7 +4,7 @@
   "abstract": "We introduce LayerRoute, a parameter-efficient method for adaptive transformer layer-skipping that combines per-layer hard-gated routing (trained via a straight-through estimator) with joint LoRA fine-tuning. LayerRoute augments each of the 24 transformer blocks in Qwen2.5-0.5B-Instruct with a lightweight per-layer router (~21.5K parameters) and LoRA adapters (rank 8, ~1.08M parameters), training both jointly under a gate-regularized language-modeling objective. Across 10 independently-seeded training runs, LayerRoute converges to an identical skip-pattern structure in every run - a consistent set of 9 middle layers (8-16) becomes skip-eligible in all 10 seeds - and delivers genuine, verified wallclock speedup in every run (1.02x-1.06x, mean 1.04x). Quality is preserved or improved in every configuration tested: joint LoRA adaptation yields a perplexity improvement over the unmodified backbone in all 10 seeds (mean delta = -1.16 and -1.11 across the two evaluation splits used). We further verify the router performs genuine, non-trivial per-input computation: gate decisions in skip-eligible layers change the actual skip/run outcome for 87-100% of held-out samples, confirming real input-dependent routing rather than a fixed pruning pattern. LayerRoute trains in under 7 minutes on a single A100 and adds negligible overhead beyond the routing decision itself. We report our full reproducibility methodology, including a systematic diagnostic investigation into what determines the router's per-input decisions, as part of this work.",
   "url": "https://arxiv.org/abs/2609.13682",
   "pdf_url": "https://arxiv.org/pdf/2609.13682",
-  "published": "2026-09-15",
+  "published": "2026-09-12",
   "updated": "2026-09-15",
   "authors": [
     "Prateek Kumar Sikdar"
@@ -12,8 +12,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
-    "cs.AI"
+    "cs.AI",
+    "cs.CL"
   ],
   "doi": "",
   "venue": "",
@@ -55,9 +55,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-15T04:42:06+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.13682v1",
+      "url": "http://arxiv.org/abs/2609.13682v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.13682",

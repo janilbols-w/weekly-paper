@@ -39,7 +39,7 @@ Multi-stage LLM hiring pipelines (resume improvement, interview question generat
 ## 元数据
 
 - 作者：Hiroko Takano
-- 发布：2026-08-28；更新：2026-08-28
+- 发布：2026-08-28；更新：2026-09-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.20483",
+  "title": "Scaling Fourier-Based Sparse Matrix Analysis on GPUs",
+  "abstract": "Sparse computations are important workloads in applications such as scientific computing, graph neural networks (GNNs), and machine learning. While many sparse operations can benefit from modern GPUs, the sparsity pattern remains important to performance because it affects memory coalescing, block organization, and load balancing. Previous studies show that spectral signatures can help analyze the global structure of sparse matrices. The fast Fourier transform (FFT) is commonly used to extract spectral signatures, and efficient GPU FFT libraries are available. However, sparse matrices, especially adjacency matrices for large graphs, tend to be very large and sparse. Existing dense-matrix-based FFT implementations are difficult to scale up, making the spectral patterns of these matrices difficult to obtain. We therefore propose a three-fold research approach comprising a lossless Binary-Sparse FFT (BS-FFT) and two compression methods: Elastic BS-FFT, which reuses the BS-FFT pipeline on a sampled frequency grid, and density-map-based spatial compression. Experiments show that BS-FFT reduces GPU memory use by 2.9--11.6 times relative to dense cuFFT and completes all 15 GNN adjacency matrices where dense cuFFT completes 6 on a 40 GB A100. Elastic BS-FFT and Density Map compression reduce GPU computation time by 2.0--1466.4 times relative to BS-FFT with spectral feature error of only 0.16% to 11.56% across the sampling rates from 6.25% to 0.0061%.",
+  "url": "https://arxiv.org/abs/2609.20483",
+  "pdf_url": "https://arxiv.org/pdf/2609.20483",
+  "published": "2026-09-18",
+  "updated": "2026-09-18",
+  "authors": [
+    "Ruifeng Zhang",
+    "Sai Krishna Teja Varma Manthena",
+    "Jiajia Li",
+    "Xipeng Shen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Sparse computations are important workloads in applications such as scientific computing, graph neural networks (GNNs), and machine learning.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-18T04:41:52+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.20483",
+      "url": "https://arxiv.org/abs/2609.20483"
+    }
+  ]
+}

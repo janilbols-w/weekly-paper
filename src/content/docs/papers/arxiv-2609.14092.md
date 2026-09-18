@@ -39,7 +39,7 @@ Sparse DNN accelerators specialize in ANN or SNN execution, leaving energy or la
 ## 元数据
 
 - 作者：Varun Manjunath, Pranav Ramesh, Gopalakrishnan Srinivasan
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-12；更新：2026-09-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

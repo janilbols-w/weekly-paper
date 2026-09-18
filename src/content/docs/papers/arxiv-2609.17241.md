@@ -39,7 +39,7 @@ While draft-model-free speculative decoding offers a promising path to efficient
 ## 元数据
 
 - 作者：Ziyang Ma, Zihong Zhang, Zuchao Li, Lefei Zhang, Baoyuan Qi, Siqi Li, Simin Yu
-- 发布：2026-09-16；更新：2026-09-16
+- 发布：2026-09-15；更新：2026-09-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/whucs21Mzy/ECHO](https://github.com/whucs21Mzy/ECHO)
 - 阅读深度：metadata

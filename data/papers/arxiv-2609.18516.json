@@ -4,7 +4,7 @@
   "abstract": "While Large Language Models excel in natural language processing, efficiently extending their capabilities to spoken input remains a significant challenge. Existing methods for building SpeechLLMs often rely on computationally expensive full-model fine-tuning, or employ parameter-efficient projectors that suffer from inefficient token sequence lengths and costly full-model supervision. In this paper, we introduce Aligned Continuous Integrate-and-Fire, a highly efficient framework for zero-shot speech processing. Our method dynamically compresses continuous acoustic frames into the exact discrete token length of the target text utilizing explicit Dynamic Time Warping alignments. This allows our initial training stage to establish a robust acoustic-to-semantic bridge using lightweight distance metrics, entirely bypassing the computationally expensive LLM forward pass. For subsequent fine-tuning, we propose a memory-efficient knowledge distillation objective that targets a single LLM layer, performing competitively with full-model cross-entropy training at a fraction of the computational cost. Through extensive evaluations on Automatic Speech Recognition and Speech Translation, we demonstrate that our method achieves superior performance compared to prior parameter-efficient baselines.",
   "url": "https://arxiv.org/abs/2609.18516",
   "pdf_url": "https://arxiv.org/pdf/2609.18516",
-  "published": "2026-09-17",
+  "published": "2026-09-16",
   "updated": "2026-09-17",
   "authors": [
     "Abderrahmane Issam",
@@ -20,7 +20,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted at WMT2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-17T04:42:10+00:00",
-  "last_seen": "2026-09-17T04:42:10+00:00",
+  "last_seen": "2026-09-18T04:41:52+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.18516v1",
+      "url": "http://arxiv.org/abs/2609.18516v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.18516",

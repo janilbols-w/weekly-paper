@@ -39,7 +39,7 @@ As unmanned aerial vehicles (UAVs) become increasingly prevalent in consumer and
 ## 元数据
 
 - 作者：Andrew P. Berg, Qian Zhang, Mia Y. Wang
-- 发布：2026-09-17；更新：2026-09-17
+- 发布：2026-09-15；更新：2026-09-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
