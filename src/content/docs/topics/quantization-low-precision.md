@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **163** 篇。
+累计收录 **166** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [VQ-Logits: Compressing the Output Bottleneck of Large Language Models via Vector Quantized Logits](../../papers/arxiv-2505.10202/) | 2026-09-21 | 57 |
+| [SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference](../../papers/arxiv-2609.21704/) | 2026-09-21 | 52 |
+| [Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals](../../papers/arxiv-2609.21450/) | 2026-09-21 | 42 |
 | [NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding](../../papers/arxiv-2605.12396/) | 2026-09-18 | 47 |
 | [MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration](../../papers/arxiv-2609.19683/) | 2026-09-17 | 54 |
 | [REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration](../../papers/arxiv-2609.17555/) | 2026-09-17 | 44 |

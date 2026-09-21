@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.20957",
+  "title": "An Approximate Queueing Model of LLM Inference Serving for SLO-Driven Autoscaling",
+  "abstract": "Performance models of LLM servers support both latency evaluation and the design of controllers for autoscaling against service level objectives (SLOs) and for inference optimization. We model the multiplexed execution of prefill and decode operations with a tractable, approximate queueing model under Markovian assumptions. Three parameters characterize a model-accelerator pair, namely a baseline per-iteration overhead, a per-token compute cost, and a per-token key-value (KV) cache access cost. The model combines a mean-value analysis of per-iteration work with a state-dependent Markov chain for batch occupancy to predict mean time to first token (TTFT) and inter-token latency (ITL). We validate these predictions against measurements and show that the three parameters can be estimated from observed latencies. Over a grid of input and output lengths and arrival rates spanning light to moderate load, the relative error of the average ITL is about 5% for Llama-3.1-8B and 8% for Qwen2.5-14B running on an H100 GPU, and the corresponding TTFT errors are 14% and 16%. We then implement an autoscaling controller that uses the model to adjust inference-server replica counts as the workload changes. On an OpenShift cluster of H100 GPUs it tracks a fourfold load ramp under both latency targets, missing one in 7 of 127 control cycles, and its in-loop predictions carry median errors of at most 5% for TTFT and 9% for ITL. A decode-throughput analyzer from an existing autoscaler, which takes no latency target, misses 27 of 128 cycles under the same controller and load while provisioning 4% and 28% fewer replicas.",
+  "url": "https://arxiv.org/abs/2609.20957",
+  "pdf_url": "https://arxiv.org/pdf/2609.20957",
+  "published": "2026-09-21",
+  "updated": "2026-09-21",
+  "authors": [
+    "Vishakha Ramani",
+    "Asser N. Tantawi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [
+    "multitenancy-slo-reliability"
+  ],
+  "keyword_evidence": [
+    "autoscaling"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: autoscaling",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Performance models of LLM servers support both latency evaluation and the design of controllers for autoscaling against service level objectives (SLOs) and for inference optimization.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-21T04:44:50+00:00",
+  "last_seen": "2026-09-21T04:44:50+00:00",
+  "featured_weeks": [
+    "2026-W39"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.20957",
+      "url": "https://arxiv.org/abs/2609.20957"
+    }
+  ]
+}

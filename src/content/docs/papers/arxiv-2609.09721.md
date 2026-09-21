@@ -39,7 +39,7 @@ Low-bit attention accelerates Transformer inference by moving the $QK^\top$ and 
 ## 元数据
 
 - 作者：Haohui Han, Yuming Wan, Hongni Wang, Pengcheng Xie, Xiaodong Yan, Runqi You, Wencong Zhang
-- 发布：2026-09-09；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

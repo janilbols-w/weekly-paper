@@ -39,7 +39,7 @@ On-policy self-distillation (OPSD) lets a language model learn from a frozen cop
 ## 元数据
 
 - 作者：XiuYu Zhang, Wei Chow, Junfeng Fang, Zhenkai Liang, Tat-Seng Chua
-- 发布：2026-09-17；更新：2026-09-18
+- 发布：2026-09-17；更新：2026-09-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

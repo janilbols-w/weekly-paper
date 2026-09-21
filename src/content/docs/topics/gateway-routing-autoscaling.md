@@ -5,10 +5,12 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **20** 篇。
+累计收录 **22** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [An Approximate Queueing Model of LLM Inference Serving for SLO-Driven Autoscaling](../../papers/arxiv-2609.20957/) | 2026-09-21 | 49 |
+| [DLB: Distributed Load Balancing at Scale for Generative AI Inference](../../papers/arxiv-2609.21079/) | 2026-09-21 | 47 |
 | [Libra: Taming Attention Workload Skew in Long-Context LLM Training with Bounded Sequence Pool](../../papers/arxiv-2607.23250/) | 2026-09-18 | 44 |
 | [Serving Agentic Workflows with a Physical-Plan Compiler and Adaptive Runtime](../../papers/arxiv-2607.02942/) | 2026-09-17 | 47 |
 | [A Kubernetes-Native Request Router for Quality-Aware Inference Serving in the Computing Continuum](../../papers/arxiv-2609.20497/) | 2026-09-17 | 41 |

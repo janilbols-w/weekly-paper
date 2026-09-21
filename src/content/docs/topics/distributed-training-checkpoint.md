@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **60** 篇。
+累计收录 **61** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Benchmark Scores: Auditing Medical Vision-Language Models for Chest X-Ray Tuberculosis Screening](../../papers/arxiv-2609.21763/) | 2026-09-21 | 38 |
 | [OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters](../../papers/arxiv-2609.19024/) | 2026-09-17 | 45 |
 | [Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training](../../papers/arxiv-2609.19242/) | 2026-09-16 | 49 |
 | [WaveTLM: Reliable Time-Series Language Modeling through Task Compilation](../../papers/arxiv-2609.18812/) | 2026-09-16 | 44 |

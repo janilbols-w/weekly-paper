@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **107** 篇。
+累计收录 **108** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TierKV: Long-Context On-Device LLMs via Predictive Multi-Tier KV Caching](../../papers/arxiv-2609.21172/) | 2026-09-21 | 43 |
 | [Exploring a Layer-Wise Design Space for KV Cache Eviction](../../papers/arxiv-2606.15157/) | 2026-09-18 | 40 |
 | [On-Demand Attention: Language Models Know When to Recall](../../papers/arxiv-2609.20734/) | 2026-09-17 | 40 |
 | [GroupKV: Hierarchical KV Cache Management for Long-Context Diffusion LLM Inference](../../papers/arxiv-2609.17573/) | 2026-09-17 | 40 |

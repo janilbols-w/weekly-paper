@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2609.21704",
+  "title": "SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference",
+  "abstract": "Running large language models (LLMs) locally continues to be limited by restrictions of compute and memory on consumer hardware. The popular acceleration technologies, such as quantization, speculative decoding, and adaptive inferencing, offer substantial speed boosts but usually necessitate retraining, per architecture tuning, or draft models. SpecQuant is a trainingfree framework, that combines speculative decoding with multiparent quantization to perform adaptive, efficient inference of LLMs. SpecQuant derives multiple quantized variants (INT4, FP8, FP16) from a shared base model, and dynamically routes queries based on predicted complexity; lightweight variants are used for simple or factual tasks, and full-precision models are used for complex reasoning tasks or long-context inputs. The shared-weight design of SpecQuant ensures sufficient token acceptance for speculative decoding without compatibility issues using separate draft parent models. We evaluate SpecQuant on Qwen2.5 based models on the MMLU, AlpacaEval, and GSM8K datasets, or benchmarks, demonstrating 35-43% speedups without degrading accuracy greater than 2%, substantial within the LLM community. SpecQuant enables practical on-device LLM deployment across diverse hardware without special infrastructure or expertise.",
+  "url": "https://arxiv.org/abs/2609.21704",
+  "pdf_url": "https://arxiv.org/pdf/2609.21704",
+  "published": "2026-09-21",
+  "updated": "2026-09-21",
+  "authors": [
+    "Harish KB",
+    "Jagadeeswaran M",
+    "Pradheep P",
+    "Yuvanesh S",
+    "Sivakumar T"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [
+    "speculative-decoding"
+  ],
+  "keyword_evidence": [
+    "fp8",
+    "int4",
+    "quantization",
+    "quantized"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8, int4, quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Running large language models (LLMs) locally continues to be limited by restrictions of compute and memory on consumer hardware.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-21T04:44:50+00:00",
+  "last_seen": "2026-09-21T04:44:50+00:00",
+  "featured_weeks": [
+    "2026-W39"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.21704",
+      "url": "https://arxiv.org/abs/2609.21704"
+    }
+  ]
+}

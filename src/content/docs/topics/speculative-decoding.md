@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **60** 篇。
+累计收录 **61** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RheoSampling: Resolving the One-Hot Dilemma in Stochastic Dynamic-Tree Speculative Decoding](../../papers/arxiv-2609.21827/) | 2026-09-21 | 43 |
 | [To Copy or Not to Copy: Controlling Speculative Decoding via Intrinsic Model Signals](../../papers/arxiv-2609.20186/) | 2026-09-17 | 43 |
 | [Zarya: A Hybrid Autoregressive--Masked Diffusion Language Model with Flexible Training and Dual-Mode Inference](../../papers/arxiv-2609.19868/) | 2026-09-17 | 38 |
 | [ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference](../../papers/arxiv-2609.17943/) | 2026-09-16 | 50 |

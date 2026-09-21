@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **323** 篇。
+累计收录 **327** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Sometin Beta Pass Notin: Improving Multilingual ASR for Nigerian Languages via Knowledge Distillation](../../papers/arxiv-2605.17710/) | 2026-09-21 | 42 |
+| [Draft-OPD: On-Policy Distillation for Speculative Draft Models](../../papers/arxiv-2605.29343/) | 2026-09-21 | 40 |
+| [ArenaFlow: From Trajectory Ranking to Hierarchical Credit Propagation for Open-Ended Agent RL](../../papers/arxiv-2609.21378/) | 2026-09-21 | 39 |
+| [GVPO++: Group Variance Policy Optimization for LLM Post-Training and On-Policy Distillation](../../papers/arxiv-2609.21432/) | 2026-09-21 | 38 |
 | [When Perplexity Lies: Generation-Focused Distillation of Hybrid Sequence Models](../../papers/arxiv-2603.26556/) | 2026-09-18 | 52 |
 | [TinyCNN: A 193K-Parameter Network for On-Device Plant Disease Detection, with a Cross-Dataset Robustness Diagnosis](../../papers/arxiv-2609.20290/) | 2026-09-18 | 49 |
 | [Exploring Sparsity and Smoothness of Arbitrary Lp Norms in Adversarial Attacks](../../papers/arxiv-2602.06578/) | 2026-09-18 | 44 |
@@ -167,8 +171,8 @@ description: "Compression, Sparsity & Distillation"
 | [Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs](../../papers/arxiv-2608.26069/) | 2026-08-27 | 42 |
 | [TTPO: Test-Time Policy Optimization](../../papers/arxiv-2608.27448/) | 2026-08-27 | 40 |
 | [One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation](../../papers/arxiv-2608.25936/) | 2026-08-27 | 40 |
+| [Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms](../../papers/arxiv-2608.27409/) | 2026-08-27 | 39 |
 | [Distance Is Not Enough: Forget-Retain Alignment Gap Predicts LLM Relearning Robustness](../../papers/arxiv-2608.25429/) | 2026-08-27 | 38 |
-| [Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms](../../papers/arxiv-2608.27409/) | 2026-08-27 | 38 |
 | [APT: Accelerating Diffusion Transformers via Attention Probability-Guided Pruning and Quantization](../../papers/doi-10.1145-3831252.3834102/) | 2026-08-26 | 54 |
 | [When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs](../../papers/arxiv-2608.25941/) | 2026-08-26 | 48 |
 | [TaLK: Text-attributed Graph Dataset Distillation via Coupling Language Model with Graph-Aware Kernel](../../papers/arxiv-2606.22975/) | 2026-08-26 | 47 |

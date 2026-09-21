@@ -5,7 +5,7 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **54** 篇。
+累计收录 **53** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
@@ -25,7 +25,6 @@ description: "Hardware-aware & Edge Inference"
 | [Fengshui: Demystifying Chiplet Ecosystem and Bespoke Neural Network Accelerator Codesign](../../papers/arxiv-2609.10970/) | 2026-09-10 | 46 |
 | [Toward Sustainable Distributed LLM Inference: A Systems Synthesis and Research Agenda for an Energy-, Carbon-, and Cache-Aware llm-d Control Plane](../../papers/arxiv-2609.05565/) | 2026-09-09 | 47 |
 | [Deep Learning-Based Detection of Electrical Faults and Power Quality Disturbances in Aerospace Power Systems](../../papers/arxiv-2609.10479/) | 2026-09-09 | 45 |
-| [HBFSim: Fast and Faithful Simulation of High-Bandwidth Flash Under Real GPU Execution](../../papers/arxiv-2609.09800/) | 2026-09-09 | 44 |
 | [EStream: Fast and Memory-Efficient MoE Prefill through Expert Virtualization on Mobile NPUs](../../papers/arxiv-2609.06551/) | 2026-09-09 | 43 |
 | [Numerical Kernels on a Spatial Accelerator: A Study of Tenstorrent Wormhole](../../papers/arxiv-2603.23343/) | 2026-09-09 | 40 |
 | [NoLoCo: No-all-reduce Low Communication Training Method for Large Models](../../papers/arxiv-2506.10911/) | 2026-09-09 | 40 |
