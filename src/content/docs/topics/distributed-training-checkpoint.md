@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **61** 篇。
+累计收录 **63** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery](../../papers/arxiv-2609.23924/) | 2026-09-22 | 38 |
+| [LLMs Anchor on Chief Complaint and Fail to Integrate Evidence in Sequential Clinical Triage](../../papers/arxiv-2609.22904/) | 2026-09-22 | 38 |
 | [Beyond Benchmark Scores: Auditing Medical Vision-Language Models for Chest X-Ray Tuberculosis Screening](../../papers/arxiv-2609.21763/) | 2026-09-21 | 38 |
 | [OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters](../../papers/arxiv-2609.19024/) | 2026-09-17 | 45 |
 | [Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training](../../papers/arxiv-2609.19242/) | 2026-09-16 | 49 |

@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.22254",
+  "title": "Teacher Should Think Ahead: Adaptive Continuations for Reliable On-Policy Distillation",
+  "abstract": "On-policy distillation (OPD) is a promising approach for transferring knowledge between language models, where a student receives dense token-level supervision along its own generated trajectories. However, teacher supervision can be unreliable when conditioned on incomplete or low-quality student prefixes. We identify Teacher Uncertainty Contraction (TUC), a systematic phenomenon whereby the teacher's predictive uncertainty decreases as it continues from a student-generated prefix. We theoretically characterize this trade-off through a variance-bias decomposition of teacher-branch gradients, showing that uncertainty contraction reduces variance while teacher-student path divergence increases bias, thereby favoring a finite continuation. Guided by this insight, we propose Adaptive-Continuations On-Policy Distillation (AC-OPD), which augments informative states along student rollouts with teacher continuations and adaptively selects their effective supervision horizons. Experiments on mathematical reasoning and code generation across model scales demonstrate that AC-OPD consistently improves over standard OPD. Controlled-continuations and matched-budget analyses further validate the adaptive-continuations design, highlighting adaptive teacher continuations as an effective principle for reliable on-policy distillation.The code will be made publicly available upon publication.",
+  "url": "https://arxiv.org/abs/2609.22254",
+  "pdf_url": "https://arxiv.org/pdf/2609.22254",
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "authors": [
+    "Jingang Zhou",
+    "Yuyi Zhou",
+    "Haiyang Guo",
+    "Xukai Wang",
+    "Shuai Feng",
+    "Sirui Gao",
+    "Jian Xu",
+    "Qingpei Guo",
+    "Xu-Yao Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On-policy distillation (OPD) is a promising approach for transferring knowledge between language models, where a student receives dense token-level supervision along its own generated trajectories.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-22T04:42:07+00:00",
+  "last_seen": "2026-09-22T04:42:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.22254",
+      "url": "https://arxiv.org/abs/2609.22254"
+    }
+  ]
+}

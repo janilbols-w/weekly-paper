@@ -5,10 +5,33 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **327** 篇。
+累计收录 **350** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Do Student LLMs Inherit OOD Robustness? Invariance-Weighted Distillation for Reliable Knowledge Transfer](../../papers/arxiv-2609.22566/) | 2026-09-22 | 47 |
+| [Strategy Accumulation and Guided Execution for Automated LLM Fine-Tuning](../../papers/arxiv-2609.22257/) | 2026-09-22 | 45 |
+| [SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Pathology Language Models](../../papers/arxiv-2609.24894/) | 2026-09-22 | 45 |
+| [Correlation-Aware Structured Pruning for Large Language Models](../../papers/arxiv-2609.22131/) | 2026-09-22 | 45 |
+| [iSDFT: Information-Proximal Self-Distillation for Continual Learning in LLMs](../../papers/arxiv-2609.24646/) | 2026-09-22 | 43 |
+| [MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents](../../papers/arxiv-2609.24259/) | 2026-09-22 | 43 |
+| [Tool-Augmented On-Policy Distillation for LLM Domain Adaptation in Sequence-Based Omics Tasks](../../papers/arxiv-2609.23435/) | 2026-09-22 | 42 |
+| [Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson](../../papers/arxiv-2608.18531/) | 2026-09-22 | 42 |
+| [Length Penalties Make Chain-of-Thought Less Monitorable](../../papers/arxiv-2607.09786/) | 2026-09-22 | 42 |
+| [Efficient LLM Distillation for Bangladesh Legal Context: A Smartphone-Compatible Retrieval-Augmented Generation Model](../../papers/arxiv-2609.24177/) | 2026-09-22 | 42 |
+| [ARM: Attention with Routed-Memory for Learnable Sparse Control](../../papers/arxiv-2609.24417/) | 2026-09-22 | 42 |
+| [Time Series Foundation Models for Process Model Forecasting](../../papers/arxiv-2512.07624/) | 2026-09-22 | 41 |
+| [SPID: Distilled Protein Backbone Generation](../../papers/arxiv-2510.03095/) | 2026-09-22 | 41 |
+| [One Patch, Three Roles: What Is Actually Coupled in Autoregressive Time-Series Forecasting?](../../papers/arxiv-2609.23686/) | 2026-09-22 | 41 |
+| [Garbage Attention in Large Language Models: BOS Sink Heads and Sink-aware Pruning](../../papers/arxiv-2601.06787/) | 2026-09-22 | 41 |
+| [PSD: Pseudo Self-Distillation of Memory Representation Capabilities for LLM Agents](../../papers/arxiv-2609.23449/) | 2026-09-22 | 40 |
+| [Teacher Should Think Ahead: Adaptive Continuations for Reliable On-Policy Distillation](../../papers/arxiv-2609.22254/) | 2026-09-22 | 39 |
+| [Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design](../../papers/arxiv-2609.23385/) | 2026-09-22 | 39 |
+| [Harness-Zero: Harness Distillation via Agent-as-Harness](../../papers/arxiv-2609.24974/) | 2026-09-22 | 39 |
+| [X-GS: An Extensible Framework for Perceiving and Thinking with 3D Gaussian Splatting](../../papers/arxiv-2603.09632/) | 2026-09-22 | 38 |
+| [VERPO: Verified Evidence Regularized Policy Optimization](../../papers/arxiv-2609.06100/) | 2026-09-22 | 38 |
+| [Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World](../../papers/arxiv-2609.23038/) | 2026-09-22 | 38 |
+| [A Hybrid Attention Model Learning Unified Time-aware Patch Representation for Irregular Multivariate Time Series Forecasting](../../papers/arxiv-2609.22836/) | 2026-09-22 | 38 |
 | [Sometin Beta Pass Notin: Improving Multilingual ASR for Nigerian Languages via Knowledge Distillation](../../papers/arxiv-2605.17710/) | 2026-09-21 | 42 |
 | [Draft-OPD: On-Policy Distillation for Speculative Draft Models](../../papers/arxiv-2605.29343/) | 2026-09-21 | 40 |
 | [ArenaFlow: From Trajectory Ranking to Hierarchical Credit Propagation for Open-Ended Agent RL](../../papers/arxiv-2609.21378/) | 2026-09-21 | 39 |

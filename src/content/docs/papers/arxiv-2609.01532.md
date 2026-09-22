@@ -39,7 +39,7 @@ Logit-based knowledge distillation (KD) is used to train smaller language models
 ## 元数据
 
 - 作者：Jacqueline He, Howard Yen, Shuyue Stella Li, Margaret Li, Hanqing Zeng, Yinglong Xia, Benyu Zhang, Zhuokai Zhao, Qiang Zhang, Pang Wei Koh, Luke Zettlemoyer, Wen-tau Yih
-- 发布：2026-09-02；更新：2026-09-02
+- 发布：2026-09-02；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

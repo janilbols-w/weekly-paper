@@ -39,7 +39,7 @@ Large Language Models (LLMs) are powerful zero-shot learners but remain prone to
 ## 元数据
 
 - 作者：Roberto Campbell, Momin Abbass, Muneeza Azmat, Michal Ulewicz, Raya Horesh, Kristjan Greenewald, Rogério Abreu de Paula, Nathalie Baracaldo
-- 发布：2026-09-12；更新：2026-09-18
+- 发布：2026-09-12；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

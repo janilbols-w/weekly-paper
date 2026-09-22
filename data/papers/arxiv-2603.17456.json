@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2603.17456",
+  "title": "Stage-Aware Communication Scheduling for Disaggregated LLM Serving",
+  "abstract": "Meeting stringent Time-To-First-Token (TTFT) requirements is crucial for LLM applications. To improve efficiency, modern LLM serving systems adopt disaggregated architectures with diverse parallelisms, introducing complex multi-stage workflows involving reusable KV-block retrieval, collective communication, and P2D transfer. Flows from dependent stages overlap within and across requests on shared bottleneck links, making TTFT highly susceptible to network contention and necessitating stage-aware scheduling. Unfortunately, most existing works schedule flows in a stage-agnostic manner, leading to uncoordinated contention that constitutes a primary cause of SLO violations. In this paper, we present Nuska, a holistic multi-stage flow scheduling mechanism designed to maximize TTFT SLO attainment. At its core, Nuska approximates the Least-Laxity-First (LLF) scheduling policy without requiring precise knowledge of a request's remaining slack. It achieves this through a Defer-and-Promote principle implemented through a Reverse Multi-Level Queue (RMLQ) structure. By dynamically promoting task precedence as effective laxity diminishes, Nuska prioritizes flows with less laxity while preventing requests with loose SLOs from prematurely consuming network bandwidth. We implement Nuska as a pluggable module integrated into vLLM, and evaluate it on an 8-server, 32-GPU testbed as well as through large-scale simulations. Our results demonstrate that Nuska effectively outperforms state-of-the-art baselines, improving the TTFT SLO attainment by 1.2x-2.4x.",
+  "url": "https://arxiv.org/abs/2603.17456",
+  "pdf_url": "https://arxiv.org/pdf/2603.17456",
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "authors": [
+    "Yijun Sun (Hong Kong University of Science and Technology)",
+    "Xudong Liao (Hong Kong University of Science and Technology)",
+    "Songrun Xie (Hong Kong University of Science and Technology)",
+    "Hao Chen (Shanghai Jiao Tong University)",
+    "Han Tian (University of Science and Technology of China)",
+    "Wenxue Li (Hong Kong University of Science and Technology)",
+    "Yiming Zhang (Shanghai Jiao Tong University)",
+    "Kai Chen (Hong Kong University of Science and Technology)"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Meeting stringent Time-To-First-Token (TTFT) requirements is crucial for LLM applications.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-22T04:42:07+00:00",
+  "last_seen": "2026-09-22T04:42:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.17456",
+      "url": "https://arxiv.org/abs/2603.17456"
+    }
+  ]
+}

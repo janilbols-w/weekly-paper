@@ -5,16 +5,19 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **55** 篇。
+累计收录 **58** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving](../../papers/arxiv-2609.23130/) | 2026-09-22 | 47 |
+| [Stage-Aware Communication Scheduling for Disaggregated LLM Serving](../../papers/arxiv-2603.17456/) | 2026-09-22 | 44 |
+| [Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving](../../papers/arxiv-2609.23085/) | 2026-09-22 | 43 |
 | [Decomposing Predictive Kubernetes Autoscaling for Large Language Model Serving Under Long Startup Delays](../../papers/arxiv-2609.20874/) | 2026-09-21 | 47 |
 | [VisKG-LM: Compiling Knowledge Graphs into Visual Memory for Multiple-Choice Question Answering](../../papers/arxiv-2609.19158/) | 2026-09-18 | 38 |
 | [PrefixBench-H100: Characterizing Prefix Reuse and Time-to-First-Token in H100 LLM Serving](../../papers/arxiv-2609.19657/) | 2026-09-17 | 50 |
 | [PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic LLM Serving](../../papers/arxiv-2609.16491/) | 2026-09-16 | 44 |
 | [TuiML: Machine Learning for AI Agents](../../papers/arxiv-2609.17984/) | 2026-09-16 | 43 |
-| [JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management](../../papers/arxiv-2609.17475/) | 2026-09-15 | 45 |
+| [JustFit: Just-in-Time State Management for Local LLM Serving](../../papers/arxiv-2609.17475/) | 2026-09-15 | 49 |
 | [OpWeave: Flexible Operator Disaggregation for Heterogeneous LLM Serving](../../papers/arxiv-2609.14237/) | 2026-09-13 | 44 |
 | [SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops](../../papers/arxiv-2609.19169/) | 2026-09-12 | 55 |
 | [PATTON: Enabling Commodity PIM for Production LLM Serving](../../papers/arxiv-2609.11392/) | 2026-09-10 | 53 |

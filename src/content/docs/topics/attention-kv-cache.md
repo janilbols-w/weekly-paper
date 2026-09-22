@@ -5,10 +5,15 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **108** 篇。
+累计收录 **113** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](../../papers/arxiv-2609.24991/) | 2026-09-22 | 47 |
+| [SPLASH: Co-Designing Sparse Attention with High-Bandwidth Flash for Efficient Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-22 | 47 |
+| [ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs](../../papers/arxiv-2609.23314/) | 2026-09-22 | 42 |
+| [StepKV: Step-Aware KV Cache Compression for LLM Agents](../../papers/arxiv-2609.22158/) | 2026-09-22 | 41 |
+| [Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache](../../papers/arxiv-2609.24635/) | 2026-09-22 | 38 |
 | [TierKV: Long-Context On-Device LLMs via Predictive Multi-Tier KV Caching](../../papers/arxiv-2609.21172/) | 2026-09-21 | 43 |
 | [Exploring a Layer-Wise Design Space for KV Cache Eviction](../../papers/arxiv-2606.15157/) | 2026-09-18 | 40 |
 | [On-Demand Attention: Language Models Know When to Recall](../../papers/arxiv-2609.20734/) | 2026-09-17 | 40 |

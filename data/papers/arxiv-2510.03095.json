@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2510.03095",
+  "title": "SPID: Distilled Protein Backbone Generation",
+  "abstract": "Diffusion- and flow-based generative models have recently demonstrated strong performance in protein backbone generation tasks, offering unprecedented capabilities for de novo protein design. However, despite their generation quality, these models are constrained by slow sampling, often requiring hundreds of iterative steps. This computational bottleneck limits their practical utility in large-scale protein discovery, where thousands to millions of candidate structures are needed. To address this challenge, we explore the techniques of score distillation, which has shown great success in reducing the number of sampling steps in the vision domain while maintaining high generation quality. However, a straightforward adaptation of these methods results in unacceptably low designability. We introduce Score Protein identity Distillation (SPID), which resolves this incompatibility by combining few-step generation with inference-time noise scaling. SPID adapts the Score identity Distillation (SiD) framework to both diffusion- and flow-based models without requiring access to pretraining data. Applied to the Proteina flow-matching model, our 16-step generator achieves 94.4% designability, matching the 400-step teacher, while delivering more than a 20-fold reduction in effective backbone-generation time and maintaining comparable diversity and novelty. SPID generalizes across unconditional generation, fold-class conditional generation, and motif scaffolding, and extends to equivariant diffusion architectures, achieving significant reduction in generation time with comparable generation quality to the teacher in all tasks. The resulting reduction in inference cost could facilitate large-scale in silico protein design, thereby advancing diffusion-based models toward real-world protein engineering applications. The PyTorch implementation is available at https://github.com/LY-Xie/SiD_Protein",
+  "url": "https://arxiv.org/abs/2510.03095",
+  "pdf_url": "https://arxiv.org/pdf/2510.03095",
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "authors": [
+    "Liyang Xie",
+    "Haoran Zhang",
+    "Zhendong Wang",
+    "Wesley Tansey",
+    "Mingyuan Zhou"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "stat.ML"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/LY-Xie/SiD_Protein",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Diffusion- and flow-based generative models have recently demonstrated strong performance in protein backbone generation tasks, offering unprecedented capabilities for de novo protein design.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-22T04:42:07+00:00",
+  "last_seen": "2026-09-22T04:42:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.03095",
+      "url": "https://arxiv.org/abs/2510.03095"
+    }
+  ]
+}

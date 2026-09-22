@@ -5,10 +5,14 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **67** 篇。
+累计收录 **71** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Quality over Quantity: Diversity-Aware Data Selection for Efficient Verilog Code Generation](../../papers/arxiv-2609.22765/) | 2026-09-22 | 48 |
+| [MDForge: Agentic Molecular Dynamics Pipeline Design under Sparse Simulator Feedback](../../papers/arxiv-2606.12916/) | 2026-09-22 | 43 |
+| [LLM-Based FORM Code Generation with Verification-Driven Fine-Tuning](../../papers/arxiv-2609.23367/) | 2026-09-22 | 40 |
+| [When Who You Are Can Change the Code You Get: A Study of Persona-Induced Bias in LLM Code Generation](../../papers/arxiv-2609.22102/) | 2026-09-22 | 38 |
 | [LangSelect: Cost-Aware Target-Language Routing for LLM Code Generation](../../papers/arxiv-2609.18959/) | 2026-09-17 | 46 |
 | [HALT: Hallucination Assessment via Log-probs as Time series](../../papers/arxiv-2602.02888/) | 2026-09-17 | 42 |
 | [CompileRover: Revolutionizing Virtual Machine Compiler Optimization with a Tri-Role LLM-Driven Framework](../../papers/arxiv-2609.19004/) | 2026-09-17 | 42 |

@@ -5,10 +5,16 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **61** 篇。
+累计收录 **67** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [H-Spec: Parallel Speculative Decoding Without a Drafter-Side KV Cache](../../papers/arxiv-2609.24197/) | 2026-09-22 | 53 |
+| [Acceptance-Aware Draft Model Training for Speculative Decoding](../../papers/arxiv-2609.24150/) | 2026-09-22 | 48 |
+| [SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture](../../papers/arxiv-2609.24847/) | 2026-09-22 | 46 |
+| [Efficient Mixture-of-Experts with Speculative Decoding via Expert Coactivation](../../papers/arxiv-2609.22471/) | 2026-09-22 | 46 |
+| [WaveFront Decoding: Parallelized Self-Speculative Decoding for Looped Language Models](../../papers/arxiv-2609.23033/) | 2026-09-22 | 44 |
+| [Adapting Tree-Structured Speculative Decoding to DeepSeek-V4 for Efficient Inference](../../papers/arxiv-2609.24698/) | 2026-09-22 | 44 |
 | [RheoSampling: Resolving the One-Hot Dilemma in Stochastic Dynamic-Tree Speculative Decoding](../../papers/arxiv-2609.21827/) | 2026-09-21 | 43 |
 | [To Copy or Not to Copy: Controlling Speculative Decoding via Intrinsic Model Signals](../../papers/arxiv-2609.20186/) | 2026-09-17 | 43 |
 | [Zarya: A Hybrid Autoregressive--Masked Diffusion Language Model with Flexible Training and Dual-Mode Inference](../../papers/arxiv-2609.19868/) | 2026-09-17 | 38 |

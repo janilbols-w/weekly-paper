@@ -5,10 +5,21 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **166** 篇。
+累计收录 **177** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Towards Training-free Automatic Proxy Discovery via Large Language Models for Mixed Precision Quantization](../../papers/arxiv-2512.07419/) | 2026-09-22 | 54 |
+| [When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs](../../papers/arxiv-2609.24799/) | 2026-09-22 | 48 |
+| [SalQ-VLM: Fine-Grained Saliency-Guided Quantization for Vision-Language Models](../../papers/arxiv-2508.03351/) | 2026-09-22 | 47 |
+| [Beyond the Stitching Assumption: A Unified Framework for Multimodal Synthetic Data Evaluation via Semantic Quantization](../../papers/arxiv-2609.22149/) | 2026-09-22 | 46 |
+| [The Effect of Quantization on Clinical Benchmarks: Accuracy and Safety Across Model Families](../../papers/arxiv-2609.22216/) | 2026-09-22 | 44 |
+| [Towards Full Pipeline FP8 Reinforcement Learning for LLMs](../../papers/arxiv-2609.22870/) | 2026-09-22 | 43 |
+| [NAVIR: Neuromorphic Audio-Visual Speech Recognition for Robust Human-Robot Interaction on Edge Hardware](../../papers/arxiv-2609.24391/) | 2026-09-22 | 41 |
+| [Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks](../../papers/arxiv-2609.23141/) | 2026-09-22 | 40 |
+| [WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model](../../papers/arxiv-2609.23444/) | 2026-09-22 | 39 |
+| [A discrete generative model of neuronal spiking activity on microelectrode arrays](../../papers/arxiv-2609.23907/) | 2026-09-22 | 39 |
+| [Discrete Tokenization for Multimodal LLMs: A Comprehensive Survey](../../papers/arxiv-2507.22920/) | 2026-09-22 | 38 |
 | [VQ-Logits: Compressing the Output Bottleneck of Large Language Models via Vector Quantized Logits](../../papers/arxiv-2505.10202/) | 2026-09-21 | 57 |
 | [SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference](../../papers/arxiv-2609.21704/) | 2026-09-21 | 52 |
 | [Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals](../../papers/arxiv-2609.21450/) | 2026-09-21 | 42 |
@@ -169,7 +180,7 @@ description: "Quantization & Low Precision"
 | [Heterogeneity-Aware Microscaling for Efficient Low-Bit LLM Inference](../../papers/arxiv-2608.03867/) | 2026-08-04 | 49 |
 | [TempoNet: Slack-Quantized Transformer-Guided Reinforcement Scheduler for Adaptive Deadline-Centric Real-Time Dispatchs](../../papers/arxiv-2602.18109/) | 2026-08-04 | 48 |
 | [Recurrent Residual Quantization: A Progressive Multi-Precision Representation for LLMs](../../papers/arxiv-2608.04048/) | 2026-08-04 | 48 |
-| [When Calibration Depends on the Scoring Rule: Quantized Biomedical LLM Classification](../../papers/arxiv-2608.03854/) | 2026-08-04 | 45 |
+| [When Calibration Depends on the Scoring Rule: Quantized Biomedical LLM Classification](../../papers/arxiv-2608.03854/) | 2026-08-04 | 47 |
 | [Rethinking Federated Graph Foundation Models: A Graph-Language Alignment-based Approach](../../papers/arxiv-2601.21369/) | 2026-08-04 | 41 |
 | [ARCHead: Activation-Metric Residual Correction for Large Language Model Output Heads](../../papers/arxiv-2608.02703/) | 2026-08-03 | 46 |
 | [NANQ: Noise-Floor-Aware Mixed-Precision Non-Uniform Quantization for Analog Compute-in-Memory](../../papers/arxiv-2608.02700/) | 2026-08-03 | 45 |

@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.23907",
+  "title": "A discrete generative model of neuronal spiking activity on microelectrode arrays",
+  "abstract": "Generative models of neural activity could help characterize tissue dynamics, compare experimental conditions, and simulate population activity for applications ranging from disease and drug-response studies to closed-loop experimentation. Existing approaches, however, typically assume a fixed set of sorted neurons, whereas high-density microelectrode arrays produce extremely sparse, array-wide binary spike volumes in which the observed subset of electrodes varies across assays. We introduce a discrete generative model that represents this activity using a shared vocabulary of spatiotemporal motifs. A residual vector-quantized autoencoder learns the motif vocabulary, while a factorized masked transformer predicts where activity occurs and which motif appears at each active location. We evaluate the model on 31 assays spanning human brain organoids and acute \\emph{ex vivo} human hippocampal tissue. The learned motifs are broadly reused: assay identity explains only $9%$ of the entropy in motif use, and motif overlap across tissue types is comparable to overlap within them. When representation quality is evaluated independently of the generative prior, our approach achieves $5.2\\times$ the voxel-level reconstruction average precision of a matched flat tokenizer. For masked completion and free generation, the full model achieves $1.4$--$2.6\\times$ the site-level average precision of the matched generative baseline and outperforms it across all four families of generation metrics. These results establish a compact, reusable representation for array-wide spiking activity without learned assay-specific parameters, providing a scalable foundation for generative modeling across diverse neural preparations.",
+  "url": "https://arxiv.org/abs/2609.23907",
+  "pdf_url": "https://arxiv.org/pdf/2609.23907",
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "authors": [
+    "Md Sayed Tanveer",
+    "Mohammed A. Mostajo-Radji",
+    "Ge Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "eess.SP",
+    "q-bio.NC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Generative models of neural activity could help characterize tissue dynamics, compare experimental conditions, and simulate population activity for applications ranging from disease and drug-response studies to closed-loop experimentation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-22T04:42:07+00:00",
+  "last_seen": "2026-09-22T04:42:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.23907",
+      "url": "https://arxiv.org/abs/2609.23907"
+    }
+  ]
+}

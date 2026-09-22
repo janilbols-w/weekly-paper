@@ -39,7 +39,7 @@ Ubiquitous time series data across diverse domains enables critical applications
 ## 元数据
 
 - 作者：Yujie Li, Zezhi Shao, Chengqing Yu, Yisong Fu, Weijie Zhu, Yifan Du, Jilin Hu, Bin Yang, Yongjun Xu, Fei Wang
-- 发布：2026-09-17；更新：2026-09-18
+- 发布：2026-09-17；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

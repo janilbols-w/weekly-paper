@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.22216",
+  "title": "The Effect of Quantization on Clinical Benchmarks: Accuracy and Safety Across Model Families",
+  "abstract": "Quantization enables deployment of large language models on resource-constrained clinical edge devices, but its effect on clinical accuracy and safety remains understudied. We evaluate five 7-8B parameter models at FP16, GPTQ-INT8, and GPTQ-INT4 precision across five benchmarks: MedQA, MedMCQA, Med-HALT, a risk-stratified sample of HealthBench, and MedSafetyBench. The study jointly varies quantization bit width, model family, and clinical task type, with explicit risk stratification and safety measures. INT8 GPTQ is universally safe (max. degradation -1.9%-1.9%), while INT4 degradation is substantial and model-dependent: BioMistral-7B, clinically fine-tuned, loses 19.7% on MedMCQA, more than any general-purpose model, showing clinical fine-tuning does not confer compression robustness. MedMCQA degrades more than MedQA under INT4; Med-HALT is largely unaffected. On HealthBench's emergency-risk subgroup, Qwen2.5-7B degrades by 26.8% under INT4, suggesting high-risk scenarios are disproportionately vulnerable to compression. On MedSafetyBench, the model family dominates over precision (refusal rates range 10.2%-74.9% at FP16), though Qwen2.5-7B (-17.8%) and Meditron-7B (-28.3%) show substantial INT4 safety degradation; notably, Qwen2.5-7B is simultaneously the most accuracy-robust model, demonstrating that accuracy and safety robustness are independent properties. We additionally test two recovery methods, clinical calibration substitution and QLoRA fine-tuning, both producing the same trade-off: MedMCQA recovers while MedQA further degrades, indicating recovery strategies require task-specific validation rather than being assumed universally beneficial. These findings indicate INT8 is broadly safe for clinical deployment, while INT4 safety must be assessed per-model and per-task, and that safety alignment is determined primarily by instruction tuning rather than clinical domain adaptation.",
+  "url": "https://arxiv.org/abs/2609.22216",
+  "pdf_url": "https://arxiv.org/pdf/2609.22216",
+  "published": "2026-09-22",
+  "updated": "2026-09-22",
+  "authors": [
+    "Leonard Twagirayezu",
+    "Prasenjit Mitra"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int4",
+    "int8",
+    "quantization"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int4, int8, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Quantization enables deployment of large language models on resource-constrained clinical edge devices, but its effect on clinical accuracy and safety remains understudied.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-22T04:42:07+00:00",
+  "last_seen": "2026-09-22T04:42:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.22216",
+      "url": "https://arxiv.org/abs/2609.22216"
+    }
+  ]
+}

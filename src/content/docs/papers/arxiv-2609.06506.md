@@ -39,7 +39,7 @@ Distributed DL training on HPC systems often shares one network fabric between N
 ## 元数据
 
 - 作者：Chen Wang, Wenzhao Wu, Hyojin Kim, Jae-Sung Yeom
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/flux-framework/dyad](https://github.com/flux-framework/dyad)
 - 阅读深度：metadata
