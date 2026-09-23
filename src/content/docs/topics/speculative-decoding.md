@@ -5,10 +5,15 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **67** 篇。
+累计收录 **72** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TSS: Target-Side Sparsification for Speculative Decoding in Domain-Specific Large Language Models](../../papers/arxiv-2609.26100/) | 2026-09-23 | 50 |
+| [Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs](../../papers/arxiv-2609.26796/) | 2026-09-23 | 50 |
+| [PACE-dLLM: Elastic Block Decoding via Confidence Cliff Estimation for Diffusion Language Models](../../papers/arxiv-2609.26249/) | 2026-09-23 | 44 |
+| [Optimizing Denoising Trajectories in dLLMs: A Lightweight Evolutionary Heuristic Approach](../../papers/arxiv-2609.26052/) | 2026-09-23 | 44 |
+| [Diffusion Drafts, AR Verifies: Accelerating Document OCR with Self-Speculative Decoding](../../papers/arxiv-2609.26638/) | 2026-09-23 | 38 |
 | [H-Spec: Parallel Speculative Decoding Without a Drafter-Side KV Cache](../../papers/arxiv-2609.24197/) | 2026-09-22 | 53 |
 | [Acceptance-Aware Draft Model Training for Speculative Decoding](../../papers/arxiv-2609.24150/) | 2026-09-22 | 48 |
 | [SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture](../../papers/arxiv-2609.24847/) | 2026-09-22 | 46 |

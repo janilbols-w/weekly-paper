@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **63** 篇。
+累计收录 **65** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PRISM: Probabilistic Runtime Insights and Scalable Performance Modeling for Large-Scale Distributed Training](../../papers/arxiv-2510.15596/) | 2026-09-23 | 42 |
+| [Terminal Shrinkage Averaging Reveals a Schedule-Estimator Interaction in LLM Pretraining](../../papers/arxiv-2609.25482/) | 2026-09-23 | 39 |
 | [Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery](../../papers/arxiv-2609.23924/) | 2026-09-22 | 38 |
 | [LLMs Anchor on Chief Complaint and Fail to Integrate Evidence in Sequential Clinical Triage](../../papers/arxiv-2609.22904/) | 2026-09-22 | 38 |
 | [Beyond Benchmark Scores: Auditing Medical Vision-Language Models for Chest X-Ray Tuberculosis Screening](../../papers/arxiv-2609.21763/) | 2026-09-21 | 38 |

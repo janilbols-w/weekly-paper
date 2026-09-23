@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2609.25451",
+  "title": "Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo",
+  "abstract": "Large language model (LLM) inference replicas run across tightly coupled GPUs and serve traffic continuously for weeks. Hardware and software failures are therefore inevitable, and one worker failure can disrupt an entire replica. Recovery requires reinitializing the engine, taking minutes even when weights and compilation artifacts are cached. Production deployments overprovision serving capacity to mask this window. We argue that the dominant cost is loss of ready serving capacity, not request progress, so recovery should preserve initialized engine state rather than reconstruct it. We present fast recovery for Dynamo based on this principle. Snapshots capture an initialized engine once and restore it instead of reinitializing it. Analysis of 18 weeks of failures from the Dynamo cluster shows that most failures are device-preserving: the engine process fails while the GPU and its resident allocations remain intact. Our key insight is that independent engine processes can reuse the same GPU-resident state while keeping mutable execution state private. The GPU Memory Service (GMS) decouples device-memory ownership from engine processes, enabling engines to share and reattach surviving allocations without copying them. GMS preserves model weights and shares them read-only between replacement and Shadow Engines, avoiding weight reloads. A second initialized runtime on the same GPUs reduces recovery to promotion. Across four models on vLLM and SGLang, these mechanisms recover a failed replica in under 7 seconds, 13-29 times faster than a warm restart, using a fixed 4-8 GiB of device memory per GPU independent of model size. Replaying the production trace, we estimate they would reclaim 79% of GPU-hours lost to recovery.",
+  "url": "https://arxiv.org/abs/2609.25451",
+  "pdf_url": "https://arxiv.org/pdf/2609.25451",
+  "published": "2026-09-23",
+  "updated": "2026-09-23",
+  "authors": [
+    "Schwinn Saereesitthipitak (NVIDIA)",
+    "Mohammed Abdulwahhab (NVIDIA)",
+    "Hannah Zhang (NVIDIA)",
+    "Dan Feigin (NVIDIA)",
+    "Neelay Shah (NVIDIA)",
+    "Maksim Khadkevich (NVIDIA)",
+    "Itay Neeman (NVIDIA)",
+    "Vikram Sharma Mailthody (NVIDIA)",
+    "Wen-mei W. Hwu (NVIDIA Research)"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 12,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language model (LLM) inference replicas run across tightly coupled GPUs and serve traffic continuously for weeks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-23T04:42:24+00:00",
+  "last_seen": "2026-09-23T04:42:24+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.25451",
+      "url": "https://arxiv.org/abs/2609.25451"
+    }
+  ]
+}

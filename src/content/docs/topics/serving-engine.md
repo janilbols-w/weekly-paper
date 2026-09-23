@@ -5,10 +5,13 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **58** 篇。
+累计收录 **61** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving](../../papers/arxiv-2609.25782/) | 2026-09-23 | 46 |
+| [Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo](../../papers/arxiv-2609.25451/) | 2026-09-23 | 44 |
+| [OMatG-flash: An All-Atom Flow Map with Reinforce Adjoint Matching for Scalable Materials Discovery](../../papers/arxiv-2609.26402/) | 2026-09-23 | 42 |
 | [From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving](../../papers/arxiv-2609.23130/) | 2026-09-22 | 47 |
 | [Stage-Aware Communication Scheduling for Disaggregated LLM Serving](../../papers/arxiv-2603.17456/) | 2026-09-22 | 44 |
 | [Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving](../../papers/arxiv-2609.23085/) | 2026-09-22 | 43 |

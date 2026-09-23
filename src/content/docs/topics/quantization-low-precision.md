@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **177** 篇。
+累计收录 **181** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Disaggregated Quantization: Specializing LLM Prefill and Decode](../../papers/arxiv-2609.26333/) | 2026-09-23 | 51 |
+| [PP-Net: A Hybrid Physical-Prior Neural Network for Scattered Light Removal in Biomedical Images on Embedded Devices](../../papers/arxiv-2609.26474/) | 2026-09-23 | 43 |
+| [Beyond Scalar Sensitivity: Activation-Aware Mixed-Precision LLM Quantization with Cross-Layer Refinement](../../papers/arxiv-2609.25916/) | 2026-09-23 | 43 |
+| [Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Divergence in LLM Inference](../../papers/arxiv-2609.26621/) | 2026-09-23 | 42 |
 | [Towards Training-free Automatic Proxy Discovery via Large Language Models for Mixed Precision Quantization](../../papers/arxiv-2512.07419/) | 2026-09-22 | 54 |
 | [When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs](../../papers/arxiv-2609.24799/) | 2026-09-22 | 48 |
 | [SalQ-VLM: Fine-Grained Saliency-Guided Quantization for Vision-Language Models](../../papers/arxiv-2508.03351/) | 2026-09-22 | 47 |
@@ -85,9 +89,9 @@ description: "Quantization & Low Precision"
 | [Efficient GPU Retrieval for Semantic Search](../../papers/arxiv-2608.28968/) | 2026-09-01 | 39 |
 | [ADMM-Q: An Improved Hessian-based Weight Quantizer for Post-Training Quantization of Large Language Models](../../papers/arxiv-2605.11222/) | 2026-09-01 | 38 |
 | [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization](../../papers/arxiv-2608.27513/) | 2026-08-31 | 60 |
+| [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-08-31 | 51 |
 | [A Method for Layer Bit-Width Allocation in LLM Quantization via Performance Maximization Under a Quality-Degradation Constraint](../../papers/arxiv-2608.28003/) | 2026-08-31 | 47 |
 | [Q-Strata: Hierarchical Bit Allocation for Mixed-Precision Quantization of Mixture-of-Experts LLMs](../../papers/arxiv-2608.30564/) | 2026-08-31 | 46 |
-| [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-08-31 | 46 |
 | [DRLM: Deep Reinforcement Learning-Based LLM Query Orchestration in Edge Environments](../../papers/arxiv-2609.00442/) | 2026-08-31 | 44 |
 | [Event-Driven Language Models with Sparse Neural Activity for Neuromorphic Hardware](../../papers/arxiv-2608.30439/) | 2026-08-31 | 43 |
 | [Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Validation--Deployment Gap](../../papers/arxiv-2608.27512/) | 2026-08-31 | 42 |

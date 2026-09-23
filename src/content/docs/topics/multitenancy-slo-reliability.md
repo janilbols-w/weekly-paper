@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **27** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SARA: SLO-Aware Resource Allocation for Disaggregated Agentic LLM Services](../../papers/arxiv-2609.26763/) | 2026-09-23 | 48 |
 | [Per-Query Gating of LLM Rerankers for Multi-Hop Retrieval](../../papers/arxiv-2609.22880/) | 2026-09-22 | 40 |
 | [PixelFlow: Token-Level Workload Management for Efficient Distributed DiT Serving](../../papers/arxiv-2609.20723/) | 2026-09-17 | 43 |
 | [Token Latency Fairness: Performance Isolation for Multi-Tenant LLM Serving](../../papers/arxiv-2609.18112/) | 2026-09-16 | 47 |

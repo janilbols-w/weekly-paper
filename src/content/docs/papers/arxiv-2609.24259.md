@@ -39,7 +39,7 @@ The effectiveness of agent memory ultimately depends on whether the underlying L
 ## 元数据
 
 - 作者：Ruike Cao, Fanyu Zhao, Fugen Yao, Liang Dong, Jian Xu, Guanjun Jiang, Yifei Zhao, Han Zhang, Li Xiao
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

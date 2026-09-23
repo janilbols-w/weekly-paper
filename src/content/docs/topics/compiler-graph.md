@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **71** 篇。
+累计收录 **73** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BigO(Bench): Can LLMs Generate Code with Controlled Time and Space Complexity?](../../papers/arxiv-2503.15242/) | 2026-09-23 | 42 |
+| [Capable yet Parsimonious: Extracting and Characterizing Hidden Chain-of-Thought in Frontier Models](../../papers/arxiv-2609.26637/) | 2026-09-23 | 39 |
 | [Quality over Quantity: Diversity-Aware Data Selection for Efficient Verilog Code Generation](../../papers/arxiv-2609.22765/) | 2026-09-22 | 48 |
 | [MDForge: Agentic Molecular Dynamics Pipeline Design under Sparse Simulator Feedback](../../papers/arxiv-2606.12916/) | 2026-09-22 | 43 |
 | [LLM-Based FORM Code Generation with Verification-Driven Fine-Tuning](../../papers/arxiv-2609.23367/) | 2026-09-22 | 40 |

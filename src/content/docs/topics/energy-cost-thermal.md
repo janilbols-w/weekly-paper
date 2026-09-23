@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **36** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Flux: Optimal Scheduling of Optical Circuit Switches for LLM Training](../../papers/arxiv-2609.25949/) | 2026-09-23 | 38 |
 | [Programming AMD XDNA NPUs with Open-source Compiler Tools: A FlashAttention Case Study](../../papers/arxiv-2609.21264/) | 2026-09-21 | 44 |
 | [RISC-V and machine learning: a survey](../../papers/doi-10.1007-s11227-026-08463-z/) | 2026-09-17 | 41 |
 | [The Language-Energy Divide: Measuring Energy Costs of Multilingual LLM Inference](../../papers/arxiv-2606.21869/) | 2026-09-15 | 42 |

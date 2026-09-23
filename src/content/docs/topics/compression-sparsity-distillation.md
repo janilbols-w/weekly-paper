@@ -5,10 +5,17 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **350** 篇。
+累计收录 **357** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [You Only Need 2/3 of the Chosen Experts: An Empirical Study of Dynamic Expert Pruning in Fine-Grained MoE LLMs](../../papers/arxiv-2609.25809/) | 2026-09-23 | 45 |
+| [Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains](../../papers/arxiv-2609.25498/) | 2026-09-23 | 45 |
+| [Semantic Self-Distillation for Language Model Uncertainty](../../papers/arxiv-2602.04577/) | 2026-09-23 | 44 |
+| [Magnitude Profile Pruning: Calibration-Free Structured Attention Head Removal for Transformer Compression](../../papers/arxiv-2609.26177/) | 2026-09-23 | 44 |
+| [TESSERA: A Workload-Driven Simulation and Design-Space Exploration Framework for Heterogeneous NPUs](../../papers/arxiv-2606.05362/) | 2026-09-23 | 40 |
+| [One-Step Generative Surrogate Models via Block-Triangular Joint Drifting](../../papers/arxiv-2609.26435/) | 2026-09-23 | 39 |
+| [CoEvo: Oracle-Grounded Self-Evolution of a Single Model for Multi-Step Causal Reasoning](../../papers/arxiv-2609.26094/) | 2026-09-23 | 38 |
 | [Do Student LLMs Inherit OOD Robustness? Invariance-Weighted Distillation for Reliable Knowledge Transfer](../../papers/arxiv-2609.22566/) | 2026-09-22 | 47 |
 | [Strategy Accumulation and Guided Execution for Automated LLM Fine-Tuning](../../papers/arxiv-2609.22257/) | 2026-09-22 | 45 |
 | [SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Pathology Language Models](../../papers/arxiv-2609.24894/) | 2026-09-22 | 45 |
@@ -42,10 +49,10 @@ description: "Compression, Sparsity & Distillation"
 | [QVAC Genesis III: A Large-Scale, High-Quality Open Synthetic STEM Corpus for Efficient Language Model Pre-Training](../../papers/arxiv-2609.19513/) | 2026-09-18 | 41 |
 | [GeLaCo: An Evolutionary Approach to Layer Compression](../../papers/arxiv-2507.10059/) | 2026-09-18 | 41 |
 | [Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation](../../papers/arxiv-2609.19702/) | 2026-09-17 | 47 |
+| [Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation](../../papers/arxiv-2609.20744/) | 2026-09-17 | 46 |
 | [Long-Context Demonstration Selection Using State Space Models](../../papers/arxiv-2609.17888/) | 2026-09-17 | 43 |
 | [Machine Translation between English and Syriac (East Syriac Dialect) using Statistical Machine Learning](../../papers/arxiv-2609.18529/) | 2026-09-17 | 42 |
 | [Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation](../../papers/arxiv-2609.20441/) | 2026-09-17 | 42 |
-| [Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation](../../papers/arxiv-2609.20744/) | 2026-09-17 | 41 |
 | [What Does Privileged Information Add to On-Policy Self-Distillation?](../../papers/arxiv-2609.20612/) | 2026-09-17 | 40 |
 | [Local Sparsity Enables Unsupervised LLM Safety Detection](../../papers/arxiv-2609.20129/) | 2026-09-17 | 39 |
 | [Window-Diffusion: Accelerating Diffusion Language Model Inference with Windowed Token Pruning and Caching](../../papers/arxiv-2601.20332/) | 2026-09-16 | 48 |

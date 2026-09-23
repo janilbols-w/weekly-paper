@@ -39,7 +39,7 @@ Application-specific FPGA accelerators offer substantial performance and energy-
 ## 元数据
 
 - 作者：Yuebo Luo, Ahmad Sedigh Baroughi, Philip Stachura, Le Chen, Venkatram Vishwanath, Zhenman Fang, Caiwen Ding
-- 发布：2026-08-10；更新：2026-08-10
+- 发布：2026-08-10；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **113** 篇。
+累计收录 **117** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Compressing Long Context into Answer-Aligned Memory Embeddings for LLM Inference](../../papers/arxiv-2609.25537/) | 2026-09-23 | 49 |
+| [CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference](../../papers/arxiv-2609.26300/) | 2026-09-23 | 44 |
+| [PatchKV: Efficient KV Cache Recovery for Dynamically Edited LLM Contexts](../../papers/arxiv-2609.26219/) | 2026-09-23 | 43 |
+| [LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay](../../papers/arxiv-2609.25053/) | 2026-09-23 | 39 |
 | [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](../../papers/arxiv-2609.24991/) | 2026-09-22 | 47 |
 | [SPLASH: Co-Designing Sparse Attention with High-Bandwidth Flash for Efficient Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-22 | 47 |
 | [ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs](../../papers/arxiv-2609.23314/) | 2026-09-22 | 42 |

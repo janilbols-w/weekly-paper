@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2512.21835",
+  "title": "LOIP:Collaborative Lossless LLM Inference Serving with Offloading-based Pipeline Parallelism on Edge Devices",
+  "abstract": "Providing lossless inference services of LLMs on edge devices remains challenging, especially given the extremely tight memory budgets. The existing offloading techniques inevitably introduce numerous loading bubbles, which further inflate the end-to-end latency of the entire inference pipeline. Meanwhile, dynamically fluctuating network bandwidth and diverse user request patterns pose additional obstacles to efficient lossless inference on edge devices. To address this, we propose LOIP, a collaborative lossless LLM inference system that employs an offloading-based interleaved pipeline parallelism to better overlap model offloading with computing and communicating. Specifically, LOIP first constructs an offloading-aware cost model to characterize inference latency and memory overhead under heterogeneous device capabilities and limited bandwidth. Based on this cost model, LOIP develops a fine-grained allocation scheduler that determines latency-efficient layer partitions across devices while explicitly accounting for offloading overhead, along with a unified memory architecture (UMA)-aware loading optimization using customized CUDA operators to reduce runtime loading overhead. LOIP further designs an online memory adaptation strategy to handle the increasing KV cache pressure and dynamic bandwidth fluctuations during inference. We implement LOIP with 2500+ lines of Python and 500+ lines of C++/CUDA code, and deploy it on five heterogeneous NVIDIA Jetson edge devices for lossless collaborative inference of LLaMA3.3-70B-Instruct. Extensive experiments demonstrate that LOIP achieves 8.8$\\times$$\\sim$20.3$\\times$ speedups over the SOTA baselines under different bandwidth conditions and request patterns without compromising model accuracy.",
+  "url": "https://arxiv.org/abs/2512.21835",
+  "pdf_url": "https://arxiv.org/pdf/2512.21835",
+  "published": "2026-09-23",
+  "updated": "2026-09-23",
+  "authors": [
+    "Mingyu Sun",
+    "Xiao Zhang",
+    "Shen Qu",
+    "Yan Li",
+    "Mengbai Xiao",
+    "Yanwei Zheng",
+    "Yuan Yuan",
+    "Dongxiao Yu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "offloading",
+    "unified memory"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: offloading, unified memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Providing lossless inference services of LLMs on edge devices remains challenging, especially given the extremely tight memory budgets.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-23T04:42:24+00:00",
+  "last_seen": "2026-09-23T04:42:24+00:00",
+  "featured_weeks": [
+    "2026-W39"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2512.21835",
+      "url": "https://arxiv.org/abs/2512.21835"
+    }
+  ]
+}

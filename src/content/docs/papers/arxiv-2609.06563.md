@@ -39,7 +39,7 @@ Social deduction games (SDGs) require agents to reason under partial observabili
 ## 元数据
 
 - 作者：Hwang Yechan, Bae Sangjun, Kim Jeongmo, Bang Sangwoo, Han Seungyul
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/PleaseTakemeAway/MARBO](https://github.com/PleaseTakemeAway/MARBO)
 - 阅读深度：metadata

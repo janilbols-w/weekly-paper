@@ -39,7 +39,7 @@ Verifiable rewards improve language models through reliable task-level feedback,
 ## 元数据
 
 - 作者：Haijiang Li, Chengyu Lv, Yi Zhang, Rui Qian, Zhibing Zhang, Xiangqing Shen, Junjie Yang, Yuchen Zhang, Wenyuan Jiang, Hanqing Hu, Cangqi Zhou
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

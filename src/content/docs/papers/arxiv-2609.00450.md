@@ -1,15 +1,15 @@
 ---
 title: "HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference"
-description: "Block Quantization (BQ) is a promising approach for efficient deployment of large language models (LLMs), enabling low-precision computation with controlled accuracy degradation."
+description: "Block Quantization (BQ) enables efficient LLM inference by quantizing both weights and activations, but its design space remains underexplored."
 ---
 
-**评分：46/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：51/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.00450) · [PDF](https://arxiv.org/pdf/2609.00450)
 
 ## 一句话摘要
 
-Block Quantization (BQ) is a promising approach for efficient deployment of large language models (LLMs), enabling low-precision computation with controlled accuracy degradation.
+Block Quantization (BQ) enables efficient LLM inference by quantizing both weights and activations, but its design space remains underexplored.
 
 ## 为什么值得关注
 
@@ -17,29 +17,29 @@ Block Quantization (BQ) is a promising approach for efficient deployment of larg
 
 ## 摘要原文
 
-Block Quantization (BQ) is a promising approach for efficient deployment of large language models (LLMs), enabling low-precision computation with controlled accuracy degradation. Compared to scalar weight-only quantization (WoQ), BQ quantizes both weight and activation, offering higher hardware efficiency and end-to-end inference on a unified datapath, but its design space, spanning bit-width, block size, scaling, and numeric formats, remains underexplored. We provide hardware/benchmark results through design space exploration (DSE). We find that increasing block size improves hardware efficiency by amortizing dequantization and accumulation costs, but degrades accuracy. This trade-off limits conventional BQ methods. Motivated by this insight, we propose Hierarchical Block Quantization (HBQ). Unlike prior methods [1], [2], which use small blocks and conventional Power-of-Two (PoT) or integer-based scaling, HBQ uses large blocks to maximize efficiency and introduces low-overhead significand (SIG) scaling for second-level quantization. By allocating quantization levels effectively and accounting for distinct activation and weight distributions, SIG scaling compensates for large-block errors more effectively than prior PoT and INT schemes. HBQ-A (accurate) achieves W4A16-level accuracy using only W4A5 while requiring less silicon area than NVFP4. HBQ-E (efficient) further reduces hardware cost by 17% while maintaining higher accuracy than all existing BQ methods. We implemented a 28nm ASIC accelerator applying HBQ to weights, activations, and KV cache, and integrated a novel partial-sum BQ scheme to further reduce EMA energy. Compared to state-of-the-art WoQ, HBQ delivers $2.3\times$/$4.6\times$ higher area/energy efficiency at the same accuracy level; $1.6$--$3.3\times$ system energy reduction and $1.5$--$3.0\times$ speedup over prior BQ methods while providing best accuracy.
+Block Quantization (BQ) enables efficient LLM inference by quantizing both weights and activations, but its design space remains underexplored. Through hardware-accuracy design space exploration, we identify block size as a key trade-off: larger blocks improve hardware efficiency by amortizing dequantization and accumulation costs, but degrade accuracy. Motivated by this insight, we propose Hierarchical Block Quantization (HBQ), which combines large blocks with low-overhead significand (SIG) scaling for second-level quantization. SIG scaling effectively compensates for large-block quantization errors while accounting for distinct weight and activation distributions. HBQ-A achieves W4A16-level accuracy with W4A5 and lower area than NVFP4, while HBQ-E further reduces hardware cost by 17% while outperforming existing BQ methods in accuracy. We implement HBQ for weights, activations, and KV cache in a 28nm ASIC accelerator and introduce partial-sum BQ to reduce EMA energy. At comparable accuracy, HBQ achieves 2.3x/4.6x higher area/energy efficiency than state-of-the-art weight-only quantization and 1.6-3.3x lower system energy with 1.5-3x speedup over prior BQ methods. Our implementation is publicly available at: https://github.com/SeoLabCornell/HBQ.git.
 
 ## 质量评分
 
 | 维度 | 得分 |
 |---|---:|
 | relevance | 16 |
-| novelty | 7 |
-| rigor | 7 |
-| practical impact | 11 |
-| reproducibility | 2 |
+| novelty | 6 |
+| rigor | 5 |
+| practical impact | 14 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: quantization
-- no quantitative claim in metadata
-- no code link detected in metadata
+- quantitative claim detected
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Chun-Ting Chen, Dongmin Han, Hangyeol Mun, Jake Hyun, Arnab Raha, Amit Agarwal, Mark Anders, Mohamed Abdelfattah, Jae-sun Seo
-- 发布：2026-08-31；更新：2026-09-02
+- 发布：2026-08-31；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/SeoLabCornell/HBQ.git](https://github.com/SeoLabCornell/HBQ.git)
 - 阅读深度：metadata

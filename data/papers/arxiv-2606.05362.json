@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2606.05362",
+  "title": "TESSERA: A Workload-Driven Simulation and Design-Space Exploration Framework for Heterogeneous NPUs",
+  "abstract": "AI model architectures are diversifying rapidly. While CNNs and transformers rely on dense matrix multiplication, emerging architectures (state-space models, fast Fourier transform (FFT)-based long convolutions, Kolmogorov-Arnold networks, and spiking networks) are not multiply-accumulate (MAC) dominated; they spend much of their computation on vector and non-MAC primitives that homogeneous, MAC-centric neural processing units (NPUs) serve poorly. This motivates heterogeneous NPUs (HPUs) built from non-identical tiles. However, prior designs vary only one or two architectural dimensions and target narrow workloads, while existing frameworks lack support for jointly exploring fine-grained tile-level heterogeneity. We present TESSERA, an analytical simulator and design-space-exploration (DSE) framework for HPU microarchitecture design. TESSERA jointly explores tile-type composition (large Big, small Little, and non-MAC Special-Function tiles), MAC array size, precision, dataflow, sparsity mode, MAC engine type, and special-function units for FFT, spiking-integrate, and polynomial operators. Unlike prior simulators that assume a single homogeneous tile type, TESSERA provides dedicated energy, area, and timing models for non-MAC tiles and maps operators across heterogeneous tiles with a heterogeneity-aware compiler. A multi-seed DSE pipeline combines stratified sampling with genetic-algorithm refinement to identify Pareto-optimal designs. Cost models are calibrated to a 7 nm node and cross-validated against NVIDIA's Deep Learning Accelerator (NVDLA). Across a 20-workload suite, the best general-purpose HPU found by TESSERA (~200 mm^2, Big+Little+Special-Function) achieves 46.91% mean energy savings over the best iso-area homogeneous baseline.",
+  "url": "https://arxiv.org/abs/2606.05362",
+  "pdf_url": "https://arxiv.org/pdf/2606.05362",
+  "published": "2026-09-23",
+  "updated": "2026-09-23",
+  "authors": [
+    "Arghadip Das",
+    "Hoseok Kim",
+    "Soomin Lee",
+    "Arnab Raha",
+    "Deepak A Mathaikutty",
+    "Vijay Raghunathan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "AI model architectures are diversifying rapidly.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-23T04:42:24+00:00",
+  "last_seen": "2026-09-23T04:42:24+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.05362",
+      "url": "https://arxiv.org/abs/2606.05362"
+    }
+  ]
+}
