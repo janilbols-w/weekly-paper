@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2609.27085",
+  "title": "Crossflow: Prefill-Decode Elasticity for Agentic LLM Serving",
+  "abstract": "As serving capacity demand surpasses that of training, serving efficiency becomes increasingly important. Prefill-decode (P/D) disaggregation improves serving efficiency through specialization and isolation of the two phases. These benefits rest on a static partitioning. Phase demand, however, is not static. We observe that in a large LLM fleet the ratio of uncached input to output tokens has peak-to-mean ratios up to 4.7x at minute timescales, and that in a public agentic trace the hourly ratio spans a median 24.5x within a single day, while reassigning a replica takes tens of minutes. Agentic traffic sharpens the mismatch. Sizing each pool at its ninety-fifth percentile leaves up to 17% of cluster capacity unused; sizing below it converts the same imbalance into queueing and unrealized throughput. We present Crossflow, which makes this boundary elastic without changing node roles. Each decode node publishes a short-lived, revocable lease that bounds local-prefill compute, KV capacity, transfer work, and projected output. Across public and internal traces, Crossflow improves token throughput by 16.2-17.4% on geometric mean over static P/D, and by up to 43.4% at high load, while reducing mean TTFT at every evaluated point.",
+  "url": "https://arxiv.org/abs/2609.27085",
+  "pdf_url": "https://arxiv.org/pdf/2609.27085",
+  "published": "2026-09-24",
+  "updated": "2026-09-24",
+  "authors": [
+    "Yi Xu",
+    "Ehsan K. Ardestani",
+    "Wenyin Fu",
+    "Martin Schatz",
+    "Krishna Malladi",
+    "Zhan Shu",
+    "Adnan Aziz",
+    "Shobhit Kanaujia",
+    "Ajit Mathews",
+    "Chunqiang Tang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "prefill-decode-disaggregation",
+    "leaf": "Prefill-Decode Disaggregation",
+    "leaf_zh": "Prefill-Decode 解耦"
+  },
+  "secondary_tags": [
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "prefill-decode"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: prefill-decode",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As serving capacity demand surpasses that of training, serving efficiency becomes increasingly important.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-24T04:42:32+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.27085",
+      "url": "https://arxiv.org/abs/2609.27085"
+    }
+  ]
+}

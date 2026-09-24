@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **65** 篇。
+累计收录 **67** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](../../papers/arxiv-2609.27189/) | 2026-09-24 | 52 |
+| [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](../../papers/arxiv-2609.27193/) | 2026-09-24 | 47 |
 | [PRISM: Probabilistic Runtime Insights and Scalable Performance Modeling for Large-Scale Distributed Training](../../papers/arxiv-2510.15596/) | 2026-09-23 | 42 |
 | [Terminal Shrinkage Averaging Reveals a Schedule-Estimator Interaction in LLM Pretraining](../../papers/arxiv-2609.25482/) | 2026-09-23 | 39 |
 | [Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery](../../papers/arxiv-2609.23924/) | 2026-09-22 | 38 |

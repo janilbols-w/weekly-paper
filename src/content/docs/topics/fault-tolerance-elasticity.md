@@ -5,10 +5,11 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **15** 篇。
+累计收录 **16** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Hybrid Rule-Based and AI-Augmented Framework for Automatic Failure Recovery in DevOps Deployments](../../papers/arxiv-2609.26838/) | 2026-09-24 | 44 |
 | [Syndrome Decoding for Silent Data Corruption in Quantized Integer GPU Arithmetic](../../papers/arxiv-2609.19743/) | 2026-09-17 | 44 |
 | [WARD: Runtime Workload-Adaptive Vision TRansformer Framework for Dependable Edge AI](../../papers/arxiv-2609.17556/) | 2026-09-17 | 39 |
 | [Carry-Through Checksum: A Lightweight Fault-Detection for CNN Inference at the Edge](../../papers/arxiv-2609.16742/) | 2026-09-16 | 39 |

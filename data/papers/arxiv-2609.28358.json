@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.28358",
+  "title": "MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference",
+  "abstract": "Microscaling quantization techniques are increasingly used to represent neural network parameters with 8 bits or fewer while preserving near-full precision accuracy. However, applying these methods efficiently in convolutional layers is not straightforward. A naive approach transfers full-precision weights and activations to processing units and quantizes each tensor twice, resulting in much more memory movement than expected. Additional overhead comes from the activation tensors, whose sizes grow substantially because of the im2col transformation applied before quantization. We propose MicroQonv, a way to combine microscaling with convolutional layers' forward and backward operations by quantizing each tensor only once and quantizing the activation tensor before applying a modified version of im2col: channel-batch-first im2col. MicroQonv reduces the quantization cost by a factor of $\\times2$ for weights and gradients, and by up to $\\times9$ for activations, at a negligible accuracy cost. It reduces memory movement and storage by up to $\\times7.53$ compared to their full-precision counterparts. This way, MicroQonv reduces microscaling-quantized activation memory movement by $\\times3.5$ for state-of-the-art object detection models YOLOV8nano and $\\times2.2$ for YOLOV26nano. It also enables 4-bit microscaling in a quantized latent replay strategy for continual learning at the edge, improving accuracy by +5.7% to +11%.",
+  "url": "https://arxiv.org/abs/2609.28358",
+  "pdf_url": "https://arxiv.org/pdf/2609.28358",
+  "published": "2026-09-24",
+  "updated": "2026-09-24",
+  "authors": [
+    "Romain Facq",
+    "Sami Ben Ali",
+    "Olivier Sentieys"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "microscaling",
+    "quantization",
+    "quantized"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: microscaling, quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Microscaling quantization techniques are increasingly used to represent neural network parameters with 8 bits or fewer while preserving near-full precision accuracy.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-24T04:42:32+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.28358",
+      "url": "https://arxiv.org/abs/2609.28358"
+    }
+  ]
+}

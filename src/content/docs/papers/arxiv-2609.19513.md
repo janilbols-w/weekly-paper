@@ -39,7 +39,7 @@ High-quality pre-training data is a critical bottleneck for educational and STEM
 ## 元数据
 
 - 作者：Davide Vitabile, N. Ranjan, Akshay Nambiar, Kamal K. Gupta, Amril Nazir
-- 发布：2026-09-18；更新：2026-09-18
+- 发布：2026-09-18；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

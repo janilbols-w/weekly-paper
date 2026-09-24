@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2609.26828",
+  "title": "Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management",
+  "abstract": "NAND-backed storage offers the capacity needed to scale LLM prefix caching, but its block I/O path incurs CPU cache contention and host-DRAM staging in addition to NAND latency. Our characterization shows that these interface costs persist even with DRAM as the storage medium, motivating CXL-SSDs for byte-addressable access to NAND-backed capacity. Surprisingly, however, a stock CXL-SSD remains about 3$\\times$ slower than local DRAM and no faster than an NVMe SSD, while generic prefetching provides little benefit. We present LM-CXD, a CXL-SSD specialized for LLM prefix caching. LM-CXD bridges the semantic gap between the serving engine, which knows which KV chunks will be consumed, and the device, which controls their placement and movement. It makes KV chunks device-visible I/O units, exposes NAND-to-DRAM progress to the serving engine, and uses device DRAM as a GPU-accessible buffer. LM-CXD further coordinates request scheduling with windowed prefetching and pipelines layerwise KV movement with GPU computation to hide NAND latency under limited device DRAM. Across five LLM models, LM-CXD reduces average TTFT over a stock CXL-SSD by up to 2.6$\\times$ with compute asynchronous prefetching and 4.03$\\times$ with layerwise prefetching, achieving TTFT within 1.5$\\times$ of local DRAM on average.",
+  "url": "https://arxiv.org/abs/2609.26828",
+  "pdf_url": "https://arxiv.org/pdf/2609.26828",
+  "published": "2026-09-24",
+  "updated": "2026-09-24",
+  "authors": [
+    "Hyunsun Chung",
+    "Taewan Noh",
+    "Minji Kim",
+    "Joo-Young Hwang",
+    "Hong-Yeon Kim",
+    "Youngjae Kim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.AI",
+    "cs.ET"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "kv cache",
+    "prefix caching"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, prefix caching",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "NAND-backed storage offers the capacity needed to scale LLM prefix caching, but its block I/O path incurs CPU cache contention and host-DRAM staging in addition to NAND latency.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-24T04:42:32+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.26828",
+      "url": "https://arxiv.org/abs/2609.26828"
+    }
+  ]
+}

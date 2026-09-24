@@ -39,7 +39,7 @@ Large language models present challenges for principled uncertainty quantificati
 ## 元数据
 
 - 作者：Edward Phillips, Sean Wu, Fredrik K. Gustafsson, Boyan Gao, David A. Clifton
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

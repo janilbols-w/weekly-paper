@@ -5,10 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **181** 篇。
+累计收录 **188** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference](../../papers/arxiv-2609.28358/) | 2026-09-24 | 46 |
+| [Implementation and Evaluation of BitNet Inference on a CGLA by Signed-Int4 Instructions](../../papers/arxiv-2609.27453/) | 2026-09-24 | 46 |
+| [RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models](../../papers/arxiv-2609.28262/) | 2026-09-24 | 44 |
+| [Text Scores Can Miss Waveform Use: A Qwen2-Audio Quantization Case Study](../../papers/arxiv-2609.26823/) | 2026-09-24 | 41 |
+| [Quantization-Robust Unlearning through the Lens of Retain-Forget Loss Landscapes Interaction](../../papers/arxiv-2609.27355/) | 2026-09-24 | 40 |
+| [hyperbolix: Hyperbolic Deep Learning in JAX](../../papers/arxiv-2609.28248/) | 2026-09-24 | 38 |
+| [Automated Extraction of Records of Processing Activities (RoPA) Using Hybrid RAG and Locally Deployed Large Language Models](../../papers/arxiv-2609.27359/) | 2026-09-24 | 38 |
 | [Disaggregated Quantization: Specializing LLM Prefill and Decode](../../papers/arxiv-2609.26333/) | 2026-09-23 | 51 |
 | [PP-Net: A Hybrid Physical-Prior Neural Network for Scattered Light Removal in Biomedical Images on Embedded Devices](../../papers/arxiv-2609.26474/) | 2026-09-23 | 43 |
 | [Beyond Scalar Sensitivity: Activation-Aware Mixed-Precision LLM Quantization with Cross-Layer Refinement](../../papers/arxiv-2609.25916/) | 2026-09-23 | 43 |

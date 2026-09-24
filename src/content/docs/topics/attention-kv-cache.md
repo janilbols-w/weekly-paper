@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **117** 篇。
+累计收录 **120** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DeltaS: Reading the Gated Linear Attention State for KV Cache Eviction in Streaming Video](../../papers/arxiv-2609.27470/) | 2026-09-24 | 50 |
+| [The KV Cache Working Set: Online Capacity Planning for LLM Inference Systems](../../papers/arxiv-2609.27746/) | 2026-09-24 | 42 |
+| [Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management](../../papers/arxiv-2609.26828/) | 2026-09-24 | 42 |
 | [Compressing Long Context into Answer-Aligned Memory Embeddings for LLM Inference](../../papers/arxiv-2609.25537/) | 2026-09-23 | 49 |
 | [CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference](../../papers/arxiv-2609.26300/) | 2026-09-23 | 44 |
 | [PatchKV: Efficient KV Cache Recovery for Dynamically Edited LLM Contexts](../../papers/arxiv-2609.26219/) | 2026-09-23 | 43 |

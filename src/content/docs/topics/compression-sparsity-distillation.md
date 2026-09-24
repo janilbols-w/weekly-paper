@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **357** 篇。
+累计收录 **361** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Six Layers Less: Encoder Pruning for Whisper with Label-Free Recovery](../../papers/arxiv-2609.27980/) | 2026-09-24 | 49 |
+| [EnComp: Lightweight Encoder-Only Context Compression for Retrieval-Augmented Question Answering](../../papers/arxiv-2603.09222/) | 2026-09-24 | 43 |
+| [WTF?! Simulation-Free Reinforcement Learning with Wasserstein-Tilted Flow Maps](../../papers/arxiv-2609.27033/) | 2026-09-24 | 38 |
+| [Reliable Federated TinyML Deployment for IoT Security](../../papers/arxiv-2609.27202/) | 2026-09-24 | 38 |
 | [You Only Need 2/3 of the Chosen Experts: An Empirical Study of Dynamic Expert Pruning in Fine-Grained MoE LLMs](../../papers/arxiv-2609.25809/) | 2026-09-23 | 45 |
 | [Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains](../../papers/arxiv-2609.25498/) | 2026-09-23 | 45 |
 | [Semantic Self-Distillation for Language Model Uncertainty](../../papers/arxiv-2602.04577/) | 2026-09-23 | 44 |

@@ -5,10 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **53** 篇。
+累计收录 **55** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes](../../papers/arxiv-2609.27249/) | 2026-09-24 | 40 |
+| [FINN-Tro: Exploiting Verification Gaps in Dataflow Inference Accelerators](../../papers/arxiv-2609.26824/) | 2026-09-24 | 38 |
 | [BLADE: ReliaBle Dynamic Hardware-Aware SNN-ANN Boundary SeLection for Event-BAseD Object DEtection](../../papers/arxiv-2609.17562/) | 2026-09-17 | 45 |
 | [vidax: A Unified JAX Framework for Video Generative Models on Accelerator Meshes](../../papers/arxiv-2609.18077/) | 2026-09-16 | 48 |
 | [From Models to Systems: A Comprehensive Survey of Efficient Multimodal Learning](../../papers/arxiv-2609.19445/) | 2026-09-16 | 43 |
