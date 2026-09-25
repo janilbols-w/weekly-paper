@@ -3,7 +3,7 @@ title: "Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dy
 description: "Large language model (LLM) inference replicas run across tightly coupled GPUs and serve traffic continuously for weeks."
 ---
 
-**评分：44/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+**评分：49/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2609.25451) · [PDF](https://arxiv.org/pdf/2609.25451)
 
@@ -27,19 +27,19 @@ Large language model (LLM) inference replicas run across tightly coupled GPUs an
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 12 |
-| reproducibility | 3 |
+| reproducibility | 8 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: llm serving
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
-- 作者：Schwinn Saereesitthipitak (NVIDIA), Mohammed Abdulwahhab (NVIDIA), Hannah Zhang (NVIDIA), Dan Feigin (NVIDIA), Neelay Shah (NVIDIA), Maksim Khadkevich (NVIDIA), Itay Neeman (NVIDIA), Vikram Sharma Mailthody (NVIDIA), Wen-mei W. Hwu (NVIDIA Research)
-- 发布：2026-09-23；更新：2026-09-23
+- 作者：Schwinn Saereesitthipitak, Mohammed Abdulwahhab, Hannah Zhang, Dan Feigin, Neelay Shah, Maksim Khadkevich, Itay Neeman, Vikram Sharma Mailthody, Wen-mei W. Hwu
+- 发布：2026-09-21；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/ai-dynamo/dynamo](https://github.com/ai-dynamo/dynamo)
 - 阅读深度：metadata

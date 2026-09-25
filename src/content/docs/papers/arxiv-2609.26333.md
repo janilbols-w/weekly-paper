@@ -39,7 +39,7 @@ Prefill and decode reward different approaches to quantization: low-precision ar
 ## 元数据
 
 - 作者：Andrei Panferov, Maximilian Kleinegger, Sweta Priyadarshi, Tijmen Blankevoort, Dan Alistarh
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

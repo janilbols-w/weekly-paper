@@ -39,7 +39,7 @@ Modern GPUs are no longer physically symmetric. Die scaling leads to both manufa
 ## 元数据
 
 - 作者：Xiaoze Fan, Jianhao Wang, Weihao Cui, Han Zhao, Zhuobin Huang, Yangjie Zhou, Yuxian Qiu, Shixuan Sun, Bingsheng He, Quan Chen, Minyi Guo
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

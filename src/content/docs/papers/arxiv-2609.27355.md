@@ -39,7 +39,7 @@ Unlearning ensures LLM compliance by removing the influence of private or copyri
 ## 元数据
 
 - 作者：Jialu Wang, Jianing Deng, Shuqing Luo, Yuanzhe Li, Dongwei Wang, Jingtong Hu, Huanrui Yang, Song Wang, Tianlong Chen
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

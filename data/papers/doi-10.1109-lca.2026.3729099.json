@@ -1,10 +1,10 @@
 {
-  "id": "arxiv:2609.25782",
+  "id": "doi:10.1109/lca.2026.3729099",
   "title": "Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving",
   "abstract": "Large language model (LLM) serving is increasingly agentic, with multi-turn sessions that idle between actions yet must retain their full context. Limited GPU memory capacity forces inactive KV states to be evicted, so resuming a session incurs either costly recomputation or slow interconnect transfers. To address this, high bandwidth flash (HBF)-an on-package 3D-NAND memory offering orders-of-magnitude greater capacity than high bandwidth memory (HBM) at comparable read bandwidth-has emerged as a strong candidate. However, its high read energy and limited write endurance make it impractical to serve all KV traffic. Fortunately, our analysis shows that agentic KV states exhibit distinct access patterns: a small hot set is read for every decoding step, while a large cold pool is read only when a paused session resumes. Exploiting this, we place the hot set in HBM and the cold pool in HBF, forming a hot-cold KV hierarchy within the GPU memory tier. On agentic workloads with Qwen3-Coder-30B-A3B, our design delivers 14 ms time-between-tokens (TBT) and adds only $\\approx$0.1 ms of resume latency on top of prefill, while hosting $24\\times$ more concurrent sessions per GPU. By confining HBM to the hot set, our design also cuts read power by 7.6 kW per 8-GPU node relative to serving all KV from flash-establishing HBF as a cold-tier complement to HBM rather than its replacement.",
   "url": "https://arxiv.org/abs/2609.25782",
   "pdf_url": "https://arxiv.org/pdf/2609.25782",
-  "published": "2026-09-23",
+  "published": "2026-09-22",
   "updated": "2026-09-23",
   "authors": [
     "Jongjin Baek",
@@ -17,9 +17,9 @@
   "categories": [
     "cs.AR"
   ],
-  "doi": "",
+  "doi": "10.1109/LCA.2026.3729099",
   "venue": "",
-  "journal_ref": "",
+  "journal_ref": "vol. 25, no. 2, pp. 355-358, July-Dec. 2026",
   "comment": "",
   "code_url": "",
   "primary_category": {
@@ -37,14 +37,14 @@
   "keyword_evidence": [
     "llm serving"
   ],
-  "score": 46,
+  "score": 49,
   "score_components": {
     "relevance": 16,
     "novelty": 5,
     "rigor": 7,
     "practical_impact": 13,
     "reproducibility": 2,
-    "credibility": 3
+    "credibility": 6
   },
   "score_evidence": [
     "taxonomy keywords: llm serving",
@@ -56,10 +56,15 @@
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
-  "first_seen": "2026-09-23T04:42:24+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.25782v1",
+      "url": "http://arxiv.org/abs/2609.25782v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.25782",

@@ -39,7 +39,7 @@ Repeated execution of the target model during autoregressive decoding is a major
 ## 元数据
 
 - 作者：Changxu Liu, Zhaogeng Li
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

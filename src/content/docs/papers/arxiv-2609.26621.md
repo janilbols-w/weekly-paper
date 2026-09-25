@@ -3,7 +3,7 @@ title: "Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Diver
 description: "Greedy decoding from large language models is commonly treated as deterministic."
 ---
 
-**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：45/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.26621) · [PDF](https://arxiv.org/pdf/2609.26621)
 
@@ -28,7 +28,7 @@ Greedy decoding from large language models is commonly treated as deterministic.
 | rigor | 13 |
 | practical impact | 7 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Greedy decoding from large language models is commonly treated as deterministic.
 ## 元数据
 
 - 作者：Gaoyuan Du, Anam Nawaz Khan, Rex Zhou, Xiaoyang Liu, Deepayan Chakrabarti, Fnu Suya, Xueping Li
-- 发布：2026-09-23；更新：2026-09-23
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-09-22；更新：2026-09-23
+- 来源：arXiv RSS；Venue：Transactions on Machine Learning Research, 2026
 - 代码：未发现
 - 阅读深度：metadata

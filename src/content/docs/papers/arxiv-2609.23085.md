@@ -39,7 +39,7 @@ Large language models (LLMs) and agentic AI systems are creating rapidly growing
 ## 元数据
 
 - 作者：Muhammad Abdur Rab Siddiqui, Daniela Rojas, Chen Yang, Wenqi Cui, Yuanyuan Shi, Yize Chen
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-19；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

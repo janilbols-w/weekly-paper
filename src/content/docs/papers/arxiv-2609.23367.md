@@ -39,7 +39,7 @@ FORM is a domain-specific symbolic manipulation language widely used in particle
 ## 元数据
 
 - 作者：Bakar Chargeishvili
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-20；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -4,7 +4,7 @@
   "abstract": "Zeroth-order (ZO) optimization is an attractive option for memory-efficient LLM fine-tuning, but its fault tolerance remains underexplored. Unlike first-order training, ZO progress can be represented by lightweight seed-and-scalar step logs, yet naive log-only recovery still incurs replay cost that grows with training progress, and shortcut replay does not preserve the executed floating-point trajectory. We present ZOCheck, a fault-tolerant ZO training system that exploits this replayable structure through a CPU shadow process that continuously replays logged updates, materializes consistent recovery images off the GPU critical path, and persists them asynchronously. ZOCheck therefore combines non-blocking checkpointing during training with fast recovery from a near-current state. We also develop a cost model for choosing the snapshot policy under realistic failure rates. Experiments show that ZOCheck reduces checkpoint overhead by up to 219.7x and recovery latency by 1.55x on average compared with asynchronous full-state checkpointing, translating into up to 21.3x lower end-to-end wasted time across the evaluated failure rates, while preserving exact recovery behavior.",
   "url": "https://arxiv.org/abs/2609.27189",
   "pdf_url": "https://arxiv.org/pdf/2609.27189",
-  "published": "2026-09-24",
+  "published": "2026-09-23",
   "updated": "2026-09-24",
   "authors": [
     "Minqiu Sun",
@@ -22,7 +22,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted to SC26 (The International Conference for High Performance Computing, Networking, Storage and Analysis), 2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -60,11 +60,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-24T04:42:32+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [
     "2026-W39"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.27189v1",
+      "url": "http://arxiv.org/abs/2609.27189v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.27189",

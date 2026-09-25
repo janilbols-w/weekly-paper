@@ -3,7 +3,7 @@ title: "From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d
 description: "Large language model (LLM) inference is evolving from an engine-local optimization problem into a distributed control problem involving reusable state, phase placement, heterogeneous accelerators, networking, autoscaling, reliability, and service-level objectives."
 ---
 
-**评分：47/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+**评分：49/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2609.23130) · [PDF](https://arxiv.org/pdf/2609.23130)
 
@@ -25,7 +25,7 @@ Large language model (LLM) inference is evolving from an engine-local optimizati
 |---|---:|
 | relevance | 22 |
 | novelty | 6 |
-| rigor | 9 |
+| rigor | 11 |
 | practical impact | 5 |
 | reproducibility | 2 |
 | credibility | 3 |
@@ -39,7 +39,7 @@ Large language model (LLM) inference is evolving from an engine-local optimizati
 ## 元数据
 
 - 作者：Twinkll Sisodia
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-19；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

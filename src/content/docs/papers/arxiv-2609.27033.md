@@ -39,7 +39,7 @@ Reward fine-tuning aims to update a pre-trained flow-based generative model to i
 ## 元数据
 
 - 作者：Abbas Mammadov, Jerry Y. Huang, Justin Lin, Partha Kaushik, Sheel Shah, Kartik Nair, Yee Whye Teh, Nicholas M. Boffi
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-22；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

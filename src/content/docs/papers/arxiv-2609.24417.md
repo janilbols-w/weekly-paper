@@ -3,7 +3,7 @@ title: "ARM: Attention with Routed-Memory for Learnable Sparse Control"
 description: "Despite advances in long-context inference, large language models (LLMs) remain fundamentally limited by the key-value (KV) caching mechanisms that are necessary for stable computation."
 ---
 
-**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：43/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2609.24417) · [PDF](https://arxiv.org/pdf/2609.24417)
 
@@ -24,7 +24,7 @@ Despite advances in long-context inference, large language models (LLMs) remain 
 | 维度 | 得分 |
 |---|---:|
 | relevance | 12 |
-| novelty | 7 |
+| novelty | 8 |
 | rigor | 9 |
 | practical impact | 9 |
 | reproducibility | 2 |
@@ -39,7 +39,7 @@ Despite advances in long-context inference, large language models (LLMs) remain 
 ## 元数据
 
 - 作者：Qiuhao Zeng, Jerry Huang, Peng Lu, Ruiyi Fang, Gezheng Xu, Zihao Jing, Yufei Cui, Charles Ling, Gang Niu, Boyu Wang
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

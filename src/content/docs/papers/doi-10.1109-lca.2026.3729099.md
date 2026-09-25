@@ -3,7 +3,7 @@ title: "Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving
 description: "Large language model (LLM) serving is increasingly agentic, with multi-turn sessions that idle between actions yet must retain their full context."
 ---
 
-**评分：46/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+**评分：49/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2609.25782) · [PDF](https://arxiv.org/pdf/2609.25782)
 
@@ -28,7 +28,7 @@ Large language model (LLM) serving is increasingly agentic, with multi-turn sess
 | rigor | 7 |
 | practical impact | 13 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Large language model (LLM) serving is increasingly agentic, with multi-turn sess
 ## 元数据
 
 - 作者：Jongjin Baek, Won Ji, Seungjae Yoo, Joo-Young Kim
-- 发布：2026-09-23；更新：2026-09-23
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-09-22；更新：2026-09-23
+- 来源：arXiv RSS；Venue：vol. 25, no. 2, pp. 355-358, July-Dec. 2026
 - 代码：未发现
 - 阅读深度：metadata

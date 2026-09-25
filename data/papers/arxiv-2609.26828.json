@@ -4,7 +4,7 @@
   "abstract": "NAND-backed storage offers the capacity needed to scale LLM prefix caching, but its block I/O path incurs CPU cache contention and host-DRAM staging in addition to NAND latency. Our characterization shows that these interface costs persist even with DRAM as the storage medium, motivating CXL-SSDs for byte-addressable access to NAND-backed capacity. Surprisingly, however, a stock CXL-SSD remains about 3$\\times$ slower than local DRAM and no faster than an NVMe SSD, while generic prefetching provides little benefit. We present LM-CXD, a CXL-SSD specialized for LLM prefix caching. LM-CXD bridges the semantic gap between the serving engine, which knows which KV chunks will be consumed, and the device, which controls their placement and movement. It makes KV chunks device-visible I/O units, exposes NAND-to-DRAM progress to the serving engine, and uses device DRAM as a GPU-accessible buffer. LM-CXD further coordinates request scheduling with windowed prefetching and pipelines layerwise KV movement with GPU computation to hide NAND latency under limited device DRAM. Across five LLM models, LM-CXD reduces average TTFT over a stock CXL-SSD by up to 2.6$\\times$ with compute asynchronous prefetching and 4.03$\\times$ with layerwise prefetching, achieving TTFT within 1.5$\\times$ of local DRAM on average.",
   "url": "https://arxiv.org/abs/2609.26828",
   "pdf_url": "https://arxiv.org/pdf/2609.26828",
-  "published": "2026-09-24",
+  "published": "2026-09-20",
   "updated": "2026-09-24",
   "authors": [
     "Hyunsun Chung",
@@ -17,14 +17,14 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.AR",
     "cs.AI",
+    "cs.AR",
     "cs.ET"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "12 pages, 17 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -64,9 +64,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-24T04:42:32+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.26828v1",
+      "url": "http://arxiv.org/abs/2609.26828v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.26828",

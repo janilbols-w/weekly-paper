@@ -1,0 +1,81 @@
+{
+  "id": "arxiv:2609.29160",
+  "title": "Cross-Model Autoscaling for Shared LLM Serving",
+  "abstract": "Multi-model LLM serving is moving toward shared MaaS clusters, where co-hosted models compete for a fixed GPU budget while each model experiences time-varying demand and must satisfy its own latency SLO. Existing LLM autoscalers remain largely model-local: their signals expose local runtime activity or delayed latency outcomes, and their scale-up or provisioning decisions do not directly determine how shared capacity should be allocated across competing models. We present the Token-service-share Rebalancing Engine (TRE), a control-plane framework for hot-switched multi-model LLM serving. TRE introduces Token Service Share (TSS), a calibrated, demand-normalized signal that estimates effective token service per active or queued request and yields a comparable health score across heterogeneous models and SLO classes. Guided by TSS, TRE coordinates bounded receiver--donor capacity movement under a fixed GPU budget: it separates fast rescue from slower rebalancing and incrementally reallocates active replicas toward models with the largest calibrated service deficits. We implement TRE on a Kubernetes-based hot-switch serving stack without modifying the inference scheduler. Across seven LLM serving traces, TRE reduces P95 end-to-end latency by 11.9--79.0\\% and P99 latency by 12.5--72.6\\% compared with a state-of-the-art KV-cache-based reactive autoscaler running on the same hot-switch runtime. The gains hold on both targeted stress probes and production-derived conversation/code traces, where TRE reduces P95/P99 latency by 50.8/63.7\\% and 79.0/72.6\\%, respectively. These results show that effective hot-switched autoscaling requires not only fast replica actuation, but also calibrated service-deficit signals and coordinated cross-model capacity arbitration. Our code and artifacts are available at https://github.com/zxzx9898/Token-service-share_Rebalancing_Engine.",
+  "url": "https://arxiv.org/abs/2609.29160",
+  "pdf_url": "https://arxiv.org/pdf/2609.29160",
+  "published": "2026-09-24",
+  "updated": "2026-09-25",
+  "authors": [
+    "Xin Zhang",
+    "Xianyan Xie",
+    "Zhen He",
+    "Xijin Yin",
+    "Xingtong Lin",
+    "Bangbo Liang",
+    "Zequn Cheng",
+    "Peihao Huang",
+    "Guo Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "11 pages, 6 figures",
+  "code_url": "https://github.com/zxzx9898/Token-service-share_Rebalancing_Engine",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "autoscaling"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 8,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: autoscaling",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Multi-model LLM serving is moving toward shared MaaS clusters, where co-hosted models compete for a fixed GPU budget while each model experiences time-varying demand and must satisfy its own latency SLO.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.29160v1",
+      "url": "http://arxiv.org/abs/2609.29160v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.29160",
+      "url": "https://arxiv.org/abs/2609.29160"
+    }
+  ]
+}

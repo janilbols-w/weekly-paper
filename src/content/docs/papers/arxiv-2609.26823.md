@@ -39,7 +39,7 @@ Post-training quantization of speech language models is often summarized with te
 ## 元数据
 
 - 作者：Mengzhe Geng, Jinxi Jin, Junhao Xu
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-20；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

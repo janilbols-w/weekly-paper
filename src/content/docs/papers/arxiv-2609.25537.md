@@ -39,7 +39,7 @@ Large language model (LLM) inference is constrained by the quadratic scaling of 
 ## 元数据
 
 - 作者：Md Mostafizer Rahman, Md Faizul Ibne Amin, Md Shahajada Mia, Yutaka Watanobe, Fang Liu
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -3,7 +3,7 @@ title: "Total Cost of Agency: Exact Attribution of Memory Injection Cost in Mult
 description: "Every node in a multi-agent large language model (LLM) workflow retrieves context from memory and injects it into its prompt, where those injected tokens are billed as input tokens at the same per-token price as the system prompt and the user query."
 ---
 
-**评分：44/100** · AI 基础设施 > 服务平台 > 可观测性与 Benchmark
+**评分：51/100** · AI 基础设施 > 服务平台 > 可观测性与 Benchmark
 
 [论文原文](https://arxiv.org/abs/2609.23790) · [PDF](https://arxiv.org/pdf/2609.23790)
 
@@ -25,21 +25,21 @@ Every node in a multi-agent large language model (LLM) workflow retrieves contex
 |---|---:|
 | relevance | 12 |
 | novelty | 6 |
-| rigor | 9 |
+| rigor | 11 |
 | practical impact | 12 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: observability
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Vivek Kumar Singh, Preeti Priyam, Gautam Bhowmick
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-20；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/vsingh45/tca-compiler](https://github.com/vsingh45/tca-compiler)
 - 阅读深度：metadata

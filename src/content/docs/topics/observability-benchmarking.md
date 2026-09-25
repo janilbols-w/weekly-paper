@@ -10,7 +10,7 @@ description: "Observability & Benchmarking"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [Financial Language Models as Applied Artificial Intelligence Systems for News-Based Trading under Market Frictions](../../papers/arxiv-2609.23703/) | 2026-09-22 | 48 |
-| [Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows](../../papers/arxiv-2609.23790/) | 2026-09-22 | 44 |
+| [Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows](../../papers/arxiv-2609.23790/) | 2026-09-20 | 51 |
 | [Beyond Routine Compliance: Cunning Data Cultivates Safety Vigilance in Large Language Models](../../papers/arxiv-2609.18515/) | 2026-09-16 | 39 |
 | [Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability](../../papers/arxiv-2609.10036/) | 2026-09-09 | 43 |
 | [MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games](../../papers/arxiv-2609.06563/) | 2026-09-09 | 42 |

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2602.05145",
+  "title": "TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference",
+  "abstract": "Speculative decoding can substantially accelerate LLM inference, but realizing its benefits in practice is challenging due to evolving workloads. We present TIDE (Temporal Incremental Draft Engine), a serving-engine-native framework that integrates online draft adaptation directly into high-performance LLM inference systems. TIDE reuses target model's intermediate hidden states generated during inference as training signals for draft adaptation, thereby avoiding additional target model computation and serving-time overhead. It employs adaptive runtime control to activate speculation and draft model training only when beneficial. TIDE exploits heterogeneous clusters by mapping inference and training to appropriate GPU classes. Across diverse real-world workloads, TIDE achieves up to 1.66$\\times$ throughput over no-speculation baselines while recovering performance on misaligned workloads where static draft models degrade throughput. TIDE also reduces training time by up to 3.02$\\times$ and storage requirements by 24$\\times$ compared to existing draft training approaches, and improves system throughput by up to 1.22$\\times$ on heterogeneous GPU clusters.",
+  "url": "https://arxiv.org/abs/2602.05145",
+  "pdf_url": "https://arxiv.org/pdf/2602.05145",
+  "published": "2026-09-25",
+  "updated": "2026-09-25",
+  "authors": [
+    "Jiyoung Park",
+    "Hankyu Jang",
+    "Changseok Song",
+    "Wookeun Jung"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "draft model",
+    "speculative decoding"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: draft model, speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Speculative decoding can substantially accelerate LLM inference, but realizing its benefits in practice is challenging due to evolving workloads.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.05145",
+      "url": "https://arxiv.org/abs/2602.05145"
+    }
+  ]
+}

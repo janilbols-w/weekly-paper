@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.29397",
+  "title": "Baseline Shape Decides the Verdict: A Controlled Re-Examination of Ternary Language Models at 60K Parameters",
+  "abstract": "Ternary (1.58-bit) weights are attractive for microcontroller-class language models, but the sub-1M-parameter regime rests mainly on isolated, single-seed comparisons. One prominent example reports that a routed ternary block (convolution, diagonal SSM and sparse attention mixed by a per-token router) beats a parameter-matched full-precision transformer by 22% at 60K parameters, attributing this to inductive bias. We re-run it under one fixed recipe, three seeds per cell, 98 byte-level runs on one laptop. (i) Baseline shape dominates: at a 16M-byte budget, param-matched transformers span 22.6% in validation loss purely by depth/width choice - far more than any architecture effect we measure there - and the best-shaped transformer ties the routed model, so the published margin is at least partly a baseline-shape effect; the ordering of shapes reverses with budget, so no single fixed shape can be trusted. (ii) At 130M bytes the routed model does win, by 22.2-24.0% over the three transformer shapes we evaluate there - but a plain gated diagonal-SSM block beats it by a further 9.1%, and the routed model's own router puts most of its weight on its recurrent pathway, so the gain does not require routing. (iii) The ternary penalty differs by architecture at the larger budget (+5.3% best transformer vs. +19.5% routed, +28.1% gated SSM), but we cannot attribute that to architecture alone: our transformers keep learned positional embeddings in full precision, 11-22% of their parameters, so they are less quantized than the models they are compared with. (iv) A 90/10 full-precision-then-ternary schedule beats all-ternary training, but only at a stage-2 learning rate about 10x the pretraining peak; at a conventional fine-tuning rate it looks 15.3% worse, reversing the conclusion. The from-scratch baseline was not itself learning-rate tuned, which bounds (iii) and (iv). Code and run logs released.",
+  "url": "https://arxiv.org/abs/2609.29397",
+  "pdf_url": "https://arxiv.org/pdf/2609.29397",
+  "published": "2026-09-24",
+  "updated": "2026-09-25",
+  "authors": [
+    "Gautam Veldanda"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "11 pages, 1 figure. Code and run logs: https://github.com/veldanda/ByteLM (tag p1-v1). Zenodo: https://doi.org/10.5281/zenodo.22937824",
+  "code_url": "https://github.com/veldanda/ByteLM",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Ternary (1.58-bit) weights are attractive for microcontroller-class language models, but the sub-1M-parameter regime rests mainly on isolated, single-seed comparisons.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.29397v1",
+      "url": "http://arxiv.org/abs/2609.29397v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.29397",
+      "url": "https://arxiv.org/abs/2609.29397"
+    }
+  ]
+}

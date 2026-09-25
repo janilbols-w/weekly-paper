@@ -4,7 +4,7 @@
   "abstract": "Despite advances in long-context inference, large language models (LLMs) remain fundamentally limited by the key-value (KV) caching mechanisms that are necessary for stable computation. Techniques such as selective token eviction and pruning have vastly mitigated these issues, but often discard core information to manage the growing cache. In this paper, we propose Attention with Routed Memory (ARM) a novel KV caching structure that introduces a fully differentiable, fixed-size memory system organized as a hierarchical router. Via a Gumbel-Softmax, ARM learns to select memory slots and perform sigmoid-gated updates that softly combine new and stored information, avoiding hard eviction and reducing information loss. By further training a policy to dynamically select varying amounts of memory at inference, ARM adapts its accesses for both simple contexts and inputs that require deeper reasoning, enabling more scalable and effective retrieval on both short- and long-contexts. Experimental results on standard commonsense and long-context reasoning benchmarks demonstrate that ARM achieves superior performance and efficiency compared to fixed KV-caching approaches, while remaining efficient and scalable in terms of both memory and generation latency.",
   "url": "https://arxiv.org/abs/2609.24417",
   "pdf_url": "https://arxiv.org/pdf/2609.24417",
-  "published": "2026-09-22",
+  "published": "2026-09-21",
   "updated": "2026-09-22",
   "authors": [
     "Qiuhao Zeng",
@@ -21,13 +21,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted to the Forty-third International Conference on Machine Learning (ICML) 2026. First two authors contributed equally",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -44,10 +44,10 @@
   "keyword_evidence": [
     "pruning"
   ],
-  "score": 42,
+  "score": 43,
   "score_components": {
     "relevance": 12,
-    "novelty": 7,
+    "novelty": 8,
     "rigor": 9,
     "practical_impact": 9,
     "reproducibility": 2,
@@ -64,9 +64,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-22T04:42:07+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.24417v1",
+      "url": "http://arxiv.org/abs/2609.24417v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.24417",

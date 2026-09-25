@@ -5,32 +5,38 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **361** 篇。
+累计收录 **371** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Task-Aware Spectral Pruning: A Mixture-of-Masks Framework for Efficient LLM Inference](../../papers/arxiv-2609.29499/) | 2026-09-25 | 53 |
+| [Near-Oracle KV Selection via Pre-hoc Sparsity for Long-Context Inference](../../papers/arxiv-2602.08329/) | 2026-09-25 | 52 |
+| [CataOPD: Catalytic On-Policy Distillation for Large Language Model Reasoning](../../papers/arxiv-2609.29518/) | 2026-09-25 | 47 |
+| [CONSISTRE: A Unified Consistency-Aware Framework for Document-Level Relation Extraction with Large Language Models](../../papers/arxiv-2607.24312/) | 2026-09-25 | 42 |
+| [Lossless Anti-Distillation Sampling](../../papers/arxiv-2605.18829/) | 2026-09-25 | 41 |
+| [Continuous Online Fault Detection for Mobile Robots via Adaptive Edge Models](../../papers/arxiv-2609.29194/) | 2026-09-25 | 41 |
+| [Decoupling Knowledge and Privacy: Post-Task Self-Distillation Replay for LLM Continual Learning](../../papers/arxiv-2609.29711/) | 2026-09-25 | 40 |
+| [Exploiting answer-invariant redundancies in satellite imagery for efficient VLM inference on edge](../../papers/arxiv-2609.29029/) | 2026-09-25 | 38 |
 | [Six Layers Less: Encoder Pruning for Whisper with Label-Free Recovery](../../papers/arxiv-2609.27980/) | 2026-09-24 | 49 |
 | [EnComp: Lightweight Encoder-Only Context Compression for Retrieval-Augmented Question Answering](../../papers/arxiv-2603.09222/) | 2026-09-24 | 43 |
-| [WTF?! Simulation-Free Reinforcement Learning with Wasserstein-Tilted Flow Maps](../../papers/arxiv-2609.27033/) | 2026-09-24 | 38 |
-| [Reliable Federated TinyML Deployment for IoT Security](../../papers/arxiv-2609.27202/) | 2026-09-24 | 38 |
-| [You Only Need 2/3 of the Chosen Experts: An Empirical Study of Dynamic Expert Pruning in Fine-Grained MoE LLMs](../../papers/arxiv-2609.25809/) | 2026-09-23 | 45 |
-| [Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains](../../papers/arxiv-2609.25498/) | 2026-09-23 | 45 |
+| [Automatic Rank Allocation for Low-Rank Adaptation in Large Language Models via lp Regularization](../../papers/arxiv-2609.28998/) | 2026-09-24 | 39 |
+| [Reward-Tilted On-Policy Distillation for Acoustic Grounding in Audio-Language Models](../../papers/arxiv-2609.28778/) | 2026-09-23 | 46 |
 | [Semantic Self-Distillation for Language Model Uncertainty](../../papers/arxiv-2602.04577/) | 2026-09-23 | 44 |
 | [Magnitude Profile Pruning: Calibration-Free Structured Attention Head Removal for Transformer Compression](../../papers/arxiv-2609.26177/) | 2026-09-23 | 44 |
 | [TESSERA: A Workload-Driven Simulation and Design-Space Exploration Framework for Heterogeneous NPUs](../../papers/arxiv-2606.05362/) | 2026-09-23 | 40 |
+| [Small yet Assistive: Spatially-Aware Post-Training for Low Vision](../../papers/arxiv-2609.28757/) | 2026-09-23 | 40 |
 | [One-Step Generative Surrogate Models via Block-Triangular Joint Drifting](../../papers/arxiv-2609.26435/) | 2026-09-23 | 39 |
+| [Reliable Federated TinyML Deployment for IoT Security](../../papers/arxiv-2609.27202/) | 2026-09-23 | 38 |
 | [CoEvo: Oracle-Grounded Self-Evolution of a Single Model for Multi-Step Causal Reasoning](../../papers/arxiv-2609.26094/) | 2026-09-23 | 38 |
 | [Do Student LLMs Inherit OOD Robustness? Invariance-Weighted Distillation for Reliable Knowledge Transfer](../../papers/arxiv-2609.22566/) | 2026-09-22 | 47 |
+| [You Only Need 2/3 of the Chosen Experts: An Empirical Study of Dynamic Expert Pruning in Fine-Grained MoE LLMs](../../papers/arxiv-2609.25809/) | 2026-09-22 | 45 |
 | [Strategy Accumulation and Guided Execution for Automated LLM Fine-Tuning](../../papers/arxiv-2609.22257/) | 2026-09-22 | 45 |
-| [SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Pathology Language Models](../../papers/arxiv-2609.24894/) | 2026-09-22 | 45 |
 | [Correlation-Aware Structured Pruning for Large Language Models](../../papers/arxiv-2609.22131/) | 2026-09-22 | 45 |
 | [iSDFT: Information-Proximal Self-Distillation for Continual Learning in LLMs](../../papers/arxiv-2609.24646/) | 2026-09-22 | 43 |
 | [MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents](../../papers/arxiv-2609.24259/) | 2026-09-22 | 43 |
-| [Tool-Augmented On-Policy Distillation for LLM Domain Adaptation in Sequence-Based Omics Tasks](../../papers/arxiv-2609.23435/) | 2026-09-22 | 42 |
 | [Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson](../../papers/arxiv-2608.18531/) | 2026-09-22 | 42 |
 | [Length Penalties Make Chain-of-Thought Less Monitorable](../../papers/arxiv-2607.09786/) | 2026-09-22 | 42 |
 | [Efficient LLM Distillation for Bangladesh Legal Context: A Smartphone-Compatible Retrieval-Augmented Generation Model](../../papers/arxiv-2609.24177/) | 2026-09-22 | 42 |
-| [ARM: Attention with Routed-Memory for Learnable Sparse Control](../../papers/arxiv-2609.24417/) | 2026-09-22 | 42 |
 | [Time Series Foundation Models for Process Model Forecasting](../../papers/arxiv-2512.07624/) | 2026-09-22 | 41 |
 | [SPID: Distilled Protein Backbone Generation](../../papers/arxiv-2510.03095/) | 2026-09-22 | 41 |
 | [One Patch, Three Roles: What Is Actually Coupled in Autoregressive Time-Series Forecasting?](../../papers/arxiv-2609.23686/) | 2026-09-22 | 41 |
@@ -40,13 +46,18 @@ description: "Compression, Sparsity & Distillation"
 | [Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design](../../papers/arxiv-2609.23385/) | 2026-09-22 | 39 |
 | [Harness-Zero: Harness Distillation via Agent-as-Harness](../../papers/arxiv-2609.24974/) | 2026-09-22 | 39 |
 | [X-GS: An Extensible Framework for Perceiving and Thinking with 3D Gaussian Splatting](../../papers/arxiv-2603.09632/) | 2026-09-22 | 38 |
+| [WTF?! Simulation-Free Reinforcement Learning with Wasserstein-Tilted Flow Maps](../../papers/arxiv-2609.27033/) | 2026-09-22 | 38 |
 | [VERPO: Verified Evidence Regularized Policy Optimization](../../papers/arxiv-2609.06100/) | 2026-09-22 | 38 |
 | [Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World](../../papers/arxiv-2609.23038/) | 2026-09-22 | 38 |
 | [A Hybrid Attention Model Learning Unified Time-aware Patch Representation for Irregular Multivariate Time Series Forecasting](../../papers/arxiv-2609.22836/) | 2026-09-22 | 38 |
+| [SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Pathology Language Models](../../papers/arxiv-2609.24894/) | 2026-09-21 | 50 |
+| [Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains](../../papers/doi-10.5281-zenodo.22939253/) | 2026-09-21 | 49 |
+| [ARM: Attention with Routed-Memory for Learnable Sparse Control](../../papers/arxiv-2609.24417/) | 2026-09-21 | 43 |
 | [Sometin Beta Pass Notin: Improving Multilingual ASR for Nigerian Languages via Knowledge Distillation](../../papers/arxiv-2605.17710/) | 2026-09-21 | 42 |
 | [Draft-OPD: On-Policy Distillation for Speculative Draft Models](../../papers/arxiv-2605.29343/) | 2026-09-21 | 40 |
 | [ArenaFlow: From Trajectory Ranking to Hierarchical Credit Propagation for Open-Ended Agent RL](../../papers/arxiv-2609.21378/) | 2026-09-21 | 39 |
 | [GVPO++: Group Variance Policy Optimization for LLM Post-Training and On-Policy Distillation](../../papers/arxiv-2609.21432/) | 2026-09-21 | 38 |
+| [Tool-Augmented On-Policy Distillation for LLM Domain Adaptation in Sequence-Based Omics Tasks](../../papers/arxiv-2609.23435/) | 2026-09-20 | 42 |
 | [When Perplexity Lies: Generation-Focused Distillation of Hybrid Sequence Models](../../papers/arxiv-2603.26556/) | 2026-09-18 | 52 |
 | [TinyCNN: A 193K-Parameter Network for On-Device Plant Disease Detection, with a Cross-Dataset Robustness Diagnosis](../../papers/arxiv-2609.20290/) | 2026-09-18 | 49 |
 | [Exploring Sparsity and Smoothness of Arbitrary Lp Norms in Adversarial Attacks](../../papers/arxiv-2602.06578/) | 2026-09-18 | 44 |
@@ -283,7 +294,6 @@ description: "Compression, Sparsity & Distillation"
 | [Gauge-Fixing the Forward-Forward Objective: A Whitened Goodness Derived from a Likelihood-Ratio Account](../../papers/arxiv-2607.12501/) | 2026-08-13 | 38 |
 | [VDC-Agent: When Video Detailed Captioners Evolve Themselves via Agentic Self-Reflection](../../papers/arxiv-2511.19436/) | 2026-08-12 | 45 |
 | [LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation](../../papers/arxiv-2608.11967/) | 2026-08-12 | 45 |
-| [Wiring Beats Blending: What Transfers Between Transformer Sizes -- and What Doesn't](../../papers/arxiv-2608.02829/) | 2026-08-12 | 40 |
 | [Reinforcement Learning-based Semi-supervised Knowledge Distillation with LLM-as-a-Judge](../../papers/arxiv-2604.02621/) | 2026-08-12 | 39 |
 | [LLM Agents Factory: Retrieval of Domain-Specific LLM Agents](../../papers/arxiv-2608.09934/) | 2026-08-12 | 39 |
 | [Benchmarking Trustworthiness of SLMs: Pre-trained vs. Compressed](../../papers/arxiv-2608.11981/) | 2026-08-12 | 39 |

@@ -4,7 +4,7 @@
   "abstract": "Whole-slide pathology images (WSIs) contain gigapixel-scale visual content, creating a major scalability challenge for slide-level multimodal large language models (MLLMs). Existing approaches process thousands of patch tokens and typically apply compression only after slide encoding, leaving multimodal attention computationally expensive. We introduce SLICEChat, a slide-level MLLM that integrates progressive token pruning within a hybrid Mamba--Transformer slide encoder. Mamba layers enable efficient long-range propagation, while Transformer layers preserve global interactions as the sequence is progressively shortened. Between stages, language-supervised, region-aware pruning removes spatially coherent low-utility regions under a controlled keep-rate schedule, producing compact slide representations before multimodal fusion. On SlideBench VQA, SLICEChat achieves 79.84% accuracy on TCGA and 59.09% on BCNB cohorts, outperforming prior slide-level pathology MLLMs, and achieves the highest overall WSI-Bench metrics. It also provides competitive memory usage and the inference latency among the evaluated models. These results demonstrate accurate and computationally efficient multimodal reasoning over gigapixel WSIs.",
   "url": "https://arxiv.org/abs/2609.24894",
   "pdf_url": "https://arxiv.org/pdf/2609.24894",
-  "published": "2026-09-22",
+  "published": "2026-09-21",
   "updated": "2026-09-22",
   "authors": [
     "Ali Kerem Bozkurt",
@@ -17,14 +17,14 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CV",
-    "cs.CL"
+    "cs.CL",
+    "cs.CV"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "Project Page: https://cyberiada.github.io/SLICEChat/ Code: https://github.com/ali-kerem/SLICEChat",
+  "code_url": "https://github.com/ali-kerem/SLICEChat",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -40,19 +40,19 @@
   "keyword_evidence": [
     "pruning"
   ],
-  "score": 45,
+  "score": 50,
   "score_components": {
     "relevance": 16,
     "novelty": 6,
     "rigor": 7,
     "practical_impact": 11,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: pruning",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Whole-slide pathology images (WSIs) contain gigapixel-scale visual content, creating a major scalability challenge for slide-level multimodal large language models (MLLMs).",
   "summary_zh": "",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-22T04:42:07+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.24894v1",
+      "url": "http://arxiv.org/abs/2609.24894v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.24894",

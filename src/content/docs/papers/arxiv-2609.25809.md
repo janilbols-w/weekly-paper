@@ -39,7 +39,7 @@ Fine-grained mixture-of-experts (MoE) architectures have become a mainstream des
 ## 元数据
 
 - 作者：Yuanteng Chen, Qiwei Lai, Chen Tianqi, Peisong Wang, Yuantian Shao, Nanxin Zeng, Zhilei Liu, Chuangyi Li, Jing Liu, Jian Cheng
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

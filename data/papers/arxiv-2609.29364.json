@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.29364",
+  "title": "NebulaSD: Many-for-Many Speculative Decoding",
+  "abstract": "Speculative decoding accelerates Large Language Model (LLM) inference by using a lightweight draft model to propose candidate tokens for parallel verification by a target model. Drafting and verification, however, exhibit different service characteristics and favor different batch configurations, making fixed draft-target coupling inefficient under concurrent workloads. Existing distributed designs can physically separate the two stages, but often retain request or batch affinities that prevent their capacities from being shared globally. We present NebulaSD, a many-for-many, or M-for-N, speculative decoding system that organizes draft and target workers into independently schedulable resource pools and dynamically reconstructs stage-specific batches from shared request pools. Such dynamic reassignment removes fixed worker locality, requiring request states to be made available at newly selected workers without introducing migration stalls. NebulaSD addresses this challenge through worker-triggered batch reconstruction and asynchronous KV-state preparation overlapped with model execution. We evaluate NebulaSD from both system and scaling perspectives, showing that dynamic pooling improves request-round processing rate by 50.4% over a physically disaggregated baseline and 72.6% over co-located execution on a four-GPU deployment while substantially increasing effective GPU utilization. Profile-driven simulations further show approximately proportional compute-side capacity scaling under idealized state movement.",
+  "url": "https://arxiv.org/abs/2609.29364",
+  "pdf_url": "https://arxiv.org/pdf/2609.29364",
+  "published": "2026-09-24",
+  "updated": "2026-09-25",
+  "authors": [
+    "Junhao He",
+    "Hongyang Du"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "draft model",
+    "speculative decoding"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: draft model, speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Speculative decoding accelerates Large Language Model (LLM) inference by using a lightweight draft model to propose candidate tokens for parallel verification by a target model.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.29364v1",
+      "url": "http://arxiv.org/abs/2609.29364v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.29364",
+      "url": "https://arxiv.org/abs/2609.29364"
+    }
+  ]
+}

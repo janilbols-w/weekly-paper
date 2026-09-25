@@ -39,7 +39,7 @@ Autoregressive OCR vision-language models accurately convert document images int
 ## 元数据
 
 - 作者：Dohyun Kim, Sungjun Han, Hyungguk Kim, Yusik Kim, Jamin Shin, Paul Hongsuck Seo, Hongjoon Ahn
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

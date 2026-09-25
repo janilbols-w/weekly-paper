@@ -5,12 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **55** 篇。
+累计收录 **58** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Rapid Pipeline for Training and Deploying ML Models on WeBe Band](../../papers/arxiv-2609.29084/) | 2026-09-24 | 41 |
 | [From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes](../../papers/arxiv-2609.27249/) | 2026-09-24 | 40 |
-| [FINN-Tro: Exploiting Verification Gaps in Dataflow Inference Accelerators](../../papers/arxiv-2609.26824/) | 2026-09-24 | 38 |
+| [TrafficFab: An Autonomic Edge-Cloud Testbed Fabric forAI-Driven Traffic Management](../../papers/arxiv-2609.29223/) | 2026-09-24 | 38 |
+| [FINN-Tro: Exploiting Verification Gaps in Dataflow Inference Accelerators](../../papers/arxiv-2609.26824/) | 2026-09-20 | 38 |
 | [BLADE: ReliaBle Dynamic Hardware-Aware SNN-ANN Boundary SeLection for Event-BAseD Object DEtection](../../papers/arxiv-2609.17562/) | 2026-09-17 | 45 |
 | [vidax: A Unified JAX Framework for Video Generative Models on Accelerator Meshes](../../papers/arxiv-2609.18077/) | 2026-09-16 | 48 |
 | [From Models to Systems: A Comprehensive Survey of Efficient Multimodal Learning](../../papers/arxiv-2609.19445/) | 2026-09-16 | 43 |
@@ -43,6 +45,7 @@ description: "Hardware-aware & Edge Inference"
 | [Model Compression and Hardware-Aware Acceleration for Deep Learning on FPGAs: A Co-Design Taxonomy and Comparative Analysis](../../papers/arxiv-2608.21657/) | 2026-08-25 | 46 |
 | [FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration](../../papers/arxiv-2608.25062/) | 2026-08-25 | 43 |
 | [Tensor Seeks Layout: Formalizing Layout Selection for ML Compilers](../../papers/arxiv-2608.21555/) | 2026-08-25 | 39 |
+| [How Weight Encoding Affects Language Model Placement and Performance on the Apple Neural Engine](../../papers/arxiv-2608.22110/) | 2026-08-22 | 47 |
 | [Automatically Generating ML Compiler Backends from Tensor Accelerator ISA Descriptions](../../papers/arxiv-2510.09932/) | 2026-08-19 | 50 |
 | [HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving](../../papers/arxiv-2608.14575/) | 2026-08-18 | 56 |
 | [ESR-HGNN: Eliminating Semantic Redundancy for Efficient Mini-batch HGNN Inference](../../papers/arxiv-2608.17865/) | 2026-08-18 | 42 |

@@ -10,8 +10,8 @@ description: "Cache, Offload & Memory Management"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [LOIP:Collaborative Lossless LLM Inference Serving with Offloading-based Pipeline Parallelism on Edge Devices](../../papers/arxiv-2512.21835/) | 2026-09-23 | 52 |
-| [Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services](../../papers/arxiv-2609.23321/) | 2026-09-22 | 48 |
 | [FlashBoB: I/O-Efficient Exact Backward-over-Backward for Softmax Attention](../../papers/arxiv-2609.24089/) | 2026-09-22 | 39 |
+| [Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services](../../papers/arxiv-2609.23321/) | 2026-09-20 | 48 |
 | [Scaling Fourier-Based Sparse Matrix Analysis on GPUs](../../papers/arxiv-2609.20483/) | 2026-09-18 | 41 |
 | [TabICLv2: A better, faster, scalable, and open tabular foundation model](../../papers/arxiv-2602.11139/) | 2026-09-17 | 47 |
 | [The Operable Pareto Front: Distilling Offline Search into Run-Time Control for Multi-Objective UAV Edge-Computing Scheduling](../../papers/arxiv-2609.17992/) | 2026-09-17 | 38 |

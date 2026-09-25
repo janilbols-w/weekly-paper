@@ -39,7 +39,7 @@ Triage in the emergency department (ED) is a sequential decision process that un
 ## 元数据
 
 - 作者：Dipankar Srirag, Haokai Zhao, Ashutosh Kumar, Eleanor Hopper, Michael Dalton, Quoc Dung Nguyen, Aditya Joshi, Salil S. Kanhere, Padmanesan Narasimhan
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-19；更新：2026-09-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

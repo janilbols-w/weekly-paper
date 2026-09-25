@@ -3,7 +3,7 @@ title: "RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision M
 description: "Deploying deep learning models on edge CPUs is bottlenecked by computational and memory constraints."
 ---
 
-**评分：44/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：49/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.28262) · [PDF](https://arxiv.org/pdf/2609.28262)
 
@@ -27,19 +27,19 @@ Deploying deep learning models on edge CPUs is bottlenecked by computational and
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 9 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: int8, quantization, quantized
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
-- 作者：David Poblaci\'on-Criado, Dario Garcia-Gasulla, Eduardo Quinones
-- 发布：2026-09-24；更新：2026-09-24
+- 作者：David Población-Criado, Dario Garcia-Gasulla, Eduardo Quinones
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/davidpob99/ramp-mpq](https://github.com/davidpob99/ramp-mpq)
 - 阅读深度：metadata

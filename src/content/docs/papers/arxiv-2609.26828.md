@@ -39,7 +39,7 @@ NAND-backed storage offers the capacity needed to scale LLM prefix caching, but 
 ## 元数据
 
 - 作者：Hyunsun Chung, Taewan Noh, Minji Kim, Joo-Young Hwang, Hong-Yeon Kim, Youngjae Kim
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-20；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ The key-value (KV) cache has become the dominant consumer of memory in large lan
 ## 元数据
 
 - 作者：Aditya Anirudh Jonnalagadda, Agasthi Haputhanthri, Pranav Dangi, Rohan Juneja, Wenshuo Yue, Aritra Bagchi, Bin Gao, Tulika Mitra
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-20；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

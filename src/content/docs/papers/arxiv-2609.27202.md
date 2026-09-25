@@ -39,7 +39,7 @@ The growing deployment of Internet of Things (IoT) devices has increased the nee
 ## 元数据
 
 - 作者：Younsoo Park, Seokhyoen Bae, Shasi Kumar Ramachandran Prabhu, Suman Saha, Peilong Li
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Post-training quantization (PTQ) enables efficient deployment of large language 
 ## 元数据
 
 - 作者：Yeji Kim, Mi-Young Kim, Randy Goebel
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/dut0817/EAQuant](https://github.com/dut0817/EAQuant)
 - 阅读深度：metadata

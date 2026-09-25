@@ -39,7 +39,7 @@ Real time plasma state estimation for control of Tokamak devices are challenging
 ## 元数据
 
 - 作者：Daniel Gaytan-Villarreal, Aiken Xie, Tu Pham, Rohit Sonker, Chiara Amendola, Matteo Cremonesi, Cong Hao, Jeff Schneider
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-19；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

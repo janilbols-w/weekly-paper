@@ -3,7 +3,7 @@ title: "Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across 
 description: "Organizations pay for AI through disconnected ledgers: Kubernetes allocations for self-hosted inference, gateway logs, and per-token bills from API providers."
 ---
 
-**评分：47/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：52/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2609.24991) · [PDF](https://arxiv.org/pdf/2609.24991)
 
@@ -27,19 +27,19 @@ Organizations pay for AI through disconnected ledgers: Kubernetes allocations fo
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 13 |
-| reproducibility | 3 |
+| reproducibility | 8 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: kv cache, prefix caching
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Timothy Urista
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/timurista/unalloc](https://github.com/timurista/unalloc)
 - 阅读深度：metadata

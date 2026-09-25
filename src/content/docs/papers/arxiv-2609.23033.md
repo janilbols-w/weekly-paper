@@ -39,7 +39,7 @@ Looped language models repeatedly apply a weight-shared block to increase effect
 ## 元数据
 
 - 作者：Hyeongju Ha, Jae-Joon Kim
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-19；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Large language model (LLM) pretraining conventionally returns the raw final iter
 ## 元数据
 
 - 作者：Adam Ousherovitch, Yixin Wang
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-21；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

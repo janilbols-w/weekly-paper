@@ -39,7 +39,7 @@ Prefix caching is critical for efficient large language model (LLM) serving, par
 ## 元数据
 
 - 作者：Luchang Li, Shuaishuai Wang, Zhao Ruan, Dongfang Li, Bozhao Gong
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

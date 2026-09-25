@@ -4,7 +4,7 @@
   "abstract": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\\times$ and $11.0\\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.",
   "url": "https://arxiv.org/abs/2609.26796",
   "pdf_url": "https://arxiv.org/pdf/2609.26796",
-  "published": "2026-09-23",
+  "published": "2026-09-22",
   "updated": "2026-09-23",
   "authors": [
     "Quan Nguyen-Tri",
@@ -19,8 +19,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "Code available at: https://github.com/VILA-Lab/Flash-dLLM",
+  "code_url": "https://github.com/VILA-Lab/Flash-dLLM",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -36,19 +36,19 @@
   "keyword_evidence": [
     "parallel decoding"
   ],
-  "score": 50,
+  "score": 55,
   "score_components": {
     "relevance": 16,
     "novelty": 7,
     "rigor": 11,
     "practical_impact": 11,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: parallel decoding",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation.",
   "summary_zh": "",
@@ -56,9 +56,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-23T04:42:24+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
-  "featured_weeks": [],
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [
+    "2026-W39"
+  ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.26796v1",
+      "url": "http://arxiv.org/abs/2609.26796v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.26796",

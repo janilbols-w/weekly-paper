@@ -5,22 +5,24 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **72** 篇。
+累计收录 **74** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference](../../papers/arxiv-2602.05145/) | 2026-09-25 | 40 |
+| [NebulaSD: Many-for-Many Speculative Decoding](../../papers/arxiv-2609.29364/) | 2026-09-24 | 46 |
 | [TSS: Target-Side Sparsification for Speculative Decoding in Domain-Specific Large Language Models](../../papers/arxiv-2609.26100/) | 2026-09-23 | 50 |
-| [Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs](../../papers/arxiv-2609.26796/) | 2026-09-23 | 50 |
 | [PACE-dLLM: Elastic Block Decoding via Confidence Cliff Estimation for Diffusion Language Models](../../papers/arxiv-2609.26249/) | 2026-09-23 | 44 |
 | [Optimizing Denoising Trajectories in dLLMs: A Lightweight Evolutionary Heuristic Approach](../../papers/arxiv-2609.26052/) | 2026-09-23 | 44 |
-| [Diffusion Drafts, AR Verifies: Accelerating Document OCR with Self-Speculative Decoding](../../papers/arxiv-2609.26638/) | 2026-09-23 | 38 |
-| [H-Spec: Parallel Speculative Decoding Without a Drafter-Side KV Cache](../../papers/arxiv-2609.24197/) | 2026-09-22 | 53 |
-| [Acceptance-Aware Draft Model Training for Speculative Decoding](../../papers/arxiv-2609.24150/) | 2026-09-22 | 48 |
-| [SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture](../../papers/arxiv-2609.24847/) | 2026-09-22 | 46 |
+| [Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs](../../papers/arxiv-2609.26796/) | 2026-09-22 | 55 |
 | [Efficient Mixture-of-Experts with Speculative Decoding via Expert Coactivation](../../papers/arxiv-2609.22471/) | 2026-09-22 | 46 |
-| [WaveFront Decoding: Parallelized Self-Speculative Decoding for Looped Language Models](../../papers/arxiv-2609.23033/) | 2026-09-22 | 44 |
-| [Adapting Tree-Structured Speculative Decoding to DeepSeek-V4 for Efficient Inference](../../papers/arxiv-2609.24698/) | 2026-09-22 | 44 |
+| [Diffusion Drafts, AR Verifies: Accelerating Document OCR with Self-Speculative Decoding](../../papers/arxiv-2609.26638/) | 2026-09-22 | 38 |
+| [H-Spec: Parallel Speculative Decoding Without a Drafter-Side KV Cache](../../papers/arxiv-2609.24197/) | 2026-09-21 | 53 |
+| [Acceptance-Aware Draft Model Training for Speculative Decoding](../../papers/arxiv-2609.24150/) | 2026-09-21 | 48 |
+| [SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture](../../papers/arxiv-2609.24847/) | 2026-09-21 | 46 |
+| [Adapting Tree-Structured Speculative Decoding to DeepSeek-V4 for Efficient Inference](../../papers/arxiv-2609.24698/) | 2026-09-21 | 44 |
 | [RheoSampling: Resolving the One-Hot Dilemma in Stochastic Dynamic-Tree Speculative Decoding](../../papers/arxiv-2609.21827/) | 2026-09-21 | 43 |
+| [WaveFront Decoding: Parallelized Self-Speculative Decoding for Looped Language Models](../../papers/arxiv-2609.23033/) | 2026-09-19 | 44 |
 | [To Copy or Not to Copy: Controlling Speculative Decoding via Intrinsic Model Signals](../../papers/arxiv-2609.20186/) | 2026-09-17 | 43 |
 | [Zarya: A Hybrid Autoregressive--Masked Diffusion Language Model with Flexible Training and Dual-Mode Inference](../../papers/arxiv-2609.19868/) | 2026-09-17 | 38 |
 | [ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference](../../papers/arxiv-2609.17943/) | 2026-09-16 | 50 |

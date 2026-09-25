@@ -4,8 +4,8 @@
   "abstract": "Triage in the emergency department (ED) is a sequential decision process that unfolds turn by turn. Existing evaluations of large language models (LLMs) for triage use completed retrospective records and report performance close to that of physicians. We implement a methodology for evaluating LLMs on sequential triage, the task of predicting a triage acuity label from a growing prefix of a nurse-patient conversation. We evaluate six LLMs at five sequential checkpoints on two corpora: 425 LLM-generated (SIMULATED) and 50 physician-authored (CLINICIAN) conversations, both labelled under the Emergency Severity Index (ESI). Every model, measured by quadratic weighted kappa (QWK), degrades from moderate-to-substantial agreement on completed records to fair-to-moderate agreement at every sequential checkpoint. Controlled perturbations show that the label at every checkpoint is anchored on the chief complaint exchanges, and prompting interventions fail to lift this plateau. Models extract clinically relevant content from later turns, yet the surprisal of the true label rises across the checkpoints. So the model fails to integrate the evidence. Three expert clinicians on the same conversations reach a QWK of 0.887-0.929, while the best model reaches 0.295. Predictions concentrate at ESI-2 and ESI-3, and models agree with each other more than with the ground truth, so ensembling worsens the failure. Deploying LLMs for ED triage based on offline benchmarks alone misses this sequential failure.",
   "url": "https://arxiv.org/abs/2609.22904",
   "pdf_url": "https://arxiv.org/pdf/2609.22904",
-  "published": "2026-09-22",
-  "updated": "2026-09-22",
+  "published": "2026-09-19",
+  "updated": "2026-09-25",
   "authors": [
     "Dipankar Srirag",
     "Haokai Zhao",
@@ -25,7 +25,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Under Review",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -62,9 +62,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-22T04:42:07+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.22904v2",
+      "url": "http://arxiv.org/abs/2609.22904v2"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.22904",

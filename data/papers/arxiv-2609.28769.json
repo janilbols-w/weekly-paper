@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2609.28769",
+  "title": "Xtrace: High-Fidelity GPU Intra-Kernel Tracing via Binary-Level Instruction Splicing",
+  "abstract": "Modern GPU kernels fuse increasingly more work into a single kernel, and intra-kernel tracing has become the mainstream method to profile them. Tracing inserts probes into the kernel to record its runtime states, and the fidelity of the trace determines the efficiency of performance optimization. Unfortunately, existing tools insert probes before compilation. These tools interfere with the compiler's optimizations, so they trace a different binary from the one the GPU executes. They also add significant runtime overhead. Xtrace is the first GPU kernel tracing system with near-zero compile-time interference and minimized runtime overhead. Xtrace inserts probes directly into the compiled kernel binary. It reuses only the registers that hold dead values at the insertion address and resolves all hazards with the compiler's hazard tables. It further schedules the instruction order, register allocation, and control bits to minimize the runtime overhead the probe introduces. Xtrace supports 19 NVIDIA and AMD GPU architectures, and is publicly available for use at https://g-watch.github.io. We evaluate Xtrace on major production large language model (LLM) kernels against the state-of-the-art tracers Neutrino and IKET from NVIDIA. On H100, B300, and MI300X GPUs, Xtrace preserves 94-98% of the instructions of the kernel, while existing tools preserve only 8-48%. Xtrace adds only 0.9-2.8% overhead, while existing tools add 3.8-75.6%. Xtrace guides a coding agent to reach the same FlashAttention-3 performance with 3.9x fewer iterations than existing traces do. Thanks to our binary-level instrumentation, Xtrace also traces the faster closed-source cuDNN kernel, which guides the agent to lift the open-source FlashAttention-4 by 5.2-13.3% in throughput.",
+  "url": "https://arxiv.org/abs/2609.28769",
+  "pdf_url": "https://arxiv.org/pdf/2609.28769",
+  "published": "2026-09-23",
+  "updated": "2026-09-25",
+  "authors": [
+    "Zhuobin Huang",
+    "Kai Zhang",
+    "Weihao Cui",
+    "Hongshi Tan",
+    "Liang Luo",
+    "Christopher Dewan",
+    "Shen Li",
+    "Bingsheng He"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "13 pages of main text plus an appendix (24 pages in total), 16 figures, 5 tables. Xtrace is publicly available at https://g-watch.github.io",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern GPU kernels fuse increasingly more work into a single kernel, and intra-kernel tracing has become the mainstream method to profile them.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.28769v1",
+      "url": "http://arxiv.org/abs/2609.28769v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.28769",
+      "url": "https://arxiv.org/abs/2609.28769"
+    }
+  ]
+}

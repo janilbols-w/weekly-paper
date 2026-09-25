@@ -4,7 +4,7 @@
   "abstract": "Greedy decoding from large language models is commonly treated as deterministic. We show it is not precision-invariant: the same model, prompt, and decoding algorithm produce different outputs in BF16 versus FP16 on identical hardware. Across our evaluations of six models (1.1B-7B parameters, four families; divergence additionally characterised at 12B) and three benchmarks, 49-100\\% of prompts diverge; a single token flip often cascades into trajectory-level divergence. We develop an empirical error-propagation analysis and find that 22 layers of accumulated body error do not distinguish flipping from non-flipping steps; the outcome depends primarily on the top-two logit margin at the LM head relative to the directional perturbation between the top-two candidates. The analysis makes five testable predictions about intervention outcomes, including that applying more FP32 compute (broader scope) makes agreement worse. The experiments match all five predictions. The best-performing low-overhead intervention we evaluate, selective FP32 LM head recomputation, triggered only when the margin falls below a threshold, delivers +22-36 pp exact agreement on A10G (+12-21 pp on L4 and A100) at less than 4\\% latency overhead in low-batch (batch size =8 and under end-to-end FP8 in our tests.",
   "url": "https://arxiv.org/abs/2609.26621",
   "pdf_url": "https://arxiv.org/pdf/2609.26621",
-  "published": "2026-09-23",
+  "published": "2026-09-22",
   "updated": "2026-09-23",
   "authors": [
     "Gaoyuan Du",
@@ -18,13 +18,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
-  "journal_ref": "",
-  "comment": "",
+  "journal_ref": "Transactions on Machine Learning Research, 2026",
+  "comment": "Accepted by Transactions on Machine Learning Research (TMLR), 2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -41,14 +41,14 @@
   "keyword_evidence": [
     "fp8"
   ],
-  "score": 42,
+  "score": 45,
   "score_components": {
     "relevance": 12,
     "novelty": 5,
     "rigor": 13,
     "practical_impact": 7,
     "reproducibility": 2,
-    "credibility": 3
+    "credibility": 6
   },
   "score_evidence": [
     "taxonomy keywords: fp8",
@@ -61,9 +61,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-23T04:42:24+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.26621v1",
+      "url": "http://arxiv.org/abs/2609.26621v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.26621",

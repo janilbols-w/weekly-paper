@@ -39,7 +39,7 @@ Multi-omics sequences contain complex biological patterns, yet deciphering their
 ## 元数据
 
 - 作者：Jie Ying, Zhefan Wang, Zihong Chen, Zhengqing Li, Jinzhe Li, Gang Li, Jian Liu, Fang Hu, Tao Luo, Zhonghang Yuan, Wanli Ouyang, Stan Z. Li, Fan Yang, Nanqing Dong
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-20；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

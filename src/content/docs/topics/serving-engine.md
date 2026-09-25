@@ -10,13 +10,13 @@ description: "Serving Engines & Runtimes"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [PipeLive: Efficient Live In-place Pipeline Parallelism Reconfiguration for Dynamic LLM Serving](../../papers/arxiv-2604.12171/) | 2026-09-24 | 42 |
-| [Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving](../../papers/arxiv-2609.25782/) | 2026-09-23 | 46 |
-| [Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo](../../papers/arxiv-2609.25451/) | 2026-09-23 | 44 |
-| [OMatG-flash: An All-Atom Flow Map with Reinforce Adjoint Matching for Scalable Materials Discovery](../../papers/arxiv-2609.26402/) | 2026-09-23 | 42 |
-| [From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving](../../papers/arxiv-2609.23130/) | 2026-09-22 | 47 |
+| [Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving](../../papers/doi-10.1109-lca.2026.3729099/) | 2026-09-22 | 49 |
 | [Stage-Aware Communication Scheduling for Disaggregated LLM Serving](../../papers/arxiv-2603.17456/) | 2026-09-22 | 44 |
-| [Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving](../../papers/arxiv-2609.23085/) | 2026-09-22 | 43 |
+| [OMatG-flash: An All-Atom Flow Map with Reinforce Adjoint Matching for Scalable Materials Discovery](../../papers/arxiv-2609.26402/) | 2026-09-22 | 42 |
+| [Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo](../../papers/arxiv-2609.25451/) | 2026-09-21 | 49 |
 | [Decomposing Predictive Kubernetes Autoscaling for Large Language Model Serving Under Long Startup Delays](../../papers/arxiv-2609.20874/) | 2026-09-21 | 47 |
+| [From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving](../../papers/arxiv-2609.23130/) | 2026-09-19 | 49 |
+| [Measured Joules, Learned Routes: Learning to Route for Energy-Efficient LLM Serving](../../papers/arxiv-2609.23085/) | 2026-09-19 | 43 |
 | [VisKG-LM: Compiling Knowledge Graphs into Visual Memory for Multiple-Choice Question Answering](../../papers/arxiv-2609.19158/) | 2026-09-18 | 38 |
 | [PrefixBench-H100: Characterizing Prefix Reuse and Time-to-First-Token in H100 LLM Serving](../../papers/arxiv-2609.19657/) | 2026-09-17 | 50 |
 | [PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic LLM Serving](../../papers/arxiv-2609.16491/) | 2026-09-16 | 44 |

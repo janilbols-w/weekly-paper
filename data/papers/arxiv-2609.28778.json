@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.28778",
+  "title": "Reward-Tilted On-Policy Distillation for Acoustic Grounding in Audio-Language Models",
+  "abstract": "Audio-language models (ALMs) can exploit textual shortcuts to answer questions while overlooking acoustic evidence, weakening audio understanding. On-policy distillation (OPD) trains compact ALMs by supervising student-generated responses with teacher predictions, but does not explicitly distinguish acoustic support from linguistic predictability. We propose Reward-Tilted On-Policy Distillation (RT-OPD) to strengthen acoustic grounding. Given the same question and student-generated text, a frozen teacher predicts the next token with and without audio inputs. Their log-probability contrast defines a reward that reshapes the teacher distribution for reverse-KL distillation, emphasizing the additional evidence provided by audio. Across two compact students and three benchmarks, RT-OPD consistently outperforms Vanilla OPD. Experiments with silenced and replacement audio further suggest that RT-OPD strengthens the student's reliance on acoustic evidence. Our 3B model achieves 72.72% accuracy on MMAU, the highest among the compared 3B models and competitive with several 7B and 8B models. Code and model checkpoints are available at https://github.com/KaiyangLi1992/RT-OPD.",
+  "url": "https://arxiv.org/abs/2609.28778",
+  "pdf_url": "https://arxiv.org/pdf/2609.28778",
+  "published": "2026-09-23",
+  "updated": "2026-09-25",
+  "authors": [
+    "Kaiyang Li",
+    "Shaobo Han",
+    "Yue Tian",
+    "Shihao Ji"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.SD"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "5 pages, submitted to ICASSP 2027",
+  "code_url": "https://github.com/KaiyangLi1992/RT-OPD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Audio-language models (ALMs) can exploit textual shortcuts to answer questions while overlooking acoustic evidence, weakening audio understanding.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.28778v1",
+      "url": "http://arxiv.org/abs/2609.28778v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2609.28778",
+      "url": "https://arxiv.org/abs/2609.28778"
+    }
+  ]
+}

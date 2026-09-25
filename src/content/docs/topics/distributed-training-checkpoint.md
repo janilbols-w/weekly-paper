@@ -5,17 +5,19 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **67** 篇。
+累计收录 **69** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](../../papers/arxiv-2609.27189/) | 2026-09-24 | 52 |
-| [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](../../papers/arxiv-2609.27193/) | 2026-09-24 | 47 |
+| [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](../../papers/arxiv-2609.27189/) | 2026-09-23 | 52 |
+| [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](../../papers/arxiv-2609.27193/) | 2026-09-23 | 47 |
+| [Speculative Evaluation of Stochastic LLMs](../../papers/arxiv-2609.28560/) | 2026-09-23 | 44 |
 | [PRISM: Probabilistic Runtime Insights and Scalable Performance Modeling for Large-Scale Distributed Training](../../papers/arxiv-2510.15596/) | 2026-09-23 | 42 |
-| [Terminal Shrinkage Averaging Reveals a Schedule-Estimator Interaction in LLM Pretraining](../../papers/arxiv-2609.25482/) | 2026-09-23 | 39 |
-| [Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery](../../papers/arxiv-2609.23924/) | 2026-09-22 | 38 |
-| [LLMs Anchor on Chief Complaint and Fail to Integrate Evidence in Sequential Clinical Triage](../../papers/arxiv-2609.22904/) | 2026-09-22 | 38 |
+| [Learning to Fluctuate: Statistical Foundations for Causal Tabular Pretraining](../../papers/arxiv-2609.26290/) | 2026-09-22 | 39 |
+| [Terminal Shrinkage Averaging Reveals a Schedule-Estimator Interaction in LLM Pretraining](../../papers/arxiv-2609.25482/) | 2026-09-21 | 39 |
 | [Beyond Benchmark Scores: Auditing Medical Vision-Language Models for Chest X-Ray Tuberculosis Screening](../../papers/arxiv-2609.21763/) | 2026-09-21 | 38 |
+| [Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery](../../papers/arxiv-2609.23924/) | 2026-09-20 | 38 |
+| [LLMs Anchor on Chief Complaint and Fail to Integrate Evidence in Sequential Clinical Triage](../../papers/arxiv-2609.22904/) | 2026-09-19 | 38 |
 | [OAK: Restart- and Age-Aware Scheduling for Distributed Machine Learning on Shared GPU Clusters](../../papers/arxiv-2609.19024/) | 2026-09-17 | 45 |
 | [Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training](../../papers/arxiv-2609.19242/) | 2026-09-16 | 49 |
 | [WaveTLM: Reliable Time-Series Language Modeling through Task Compilation](../../papers/arxiv-2609.18812/) | 2026-09-16 | 44 |

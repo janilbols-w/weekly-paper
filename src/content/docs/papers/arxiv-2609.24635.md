@@ -39,7 +39,7 @@ When a language model reads an operation such as "Swap the contents of Box F and
 ## 元数据
 
 - 作者：Lingfeng Wu, Behzad Shomali
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

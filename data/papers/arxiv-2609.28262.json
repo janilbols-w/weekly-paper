@@ -4,10 +4,10 @@
   "abstract": "Deploying deep learning models on edge CPUs is bottlenecked by computational and memory constraints. Mixed-precision quantization promises to reduce inference latency while preserving accuracy. However, quantization affects different layer types in inconsistent ways, so identifying where accuracy loss is minimized and latency reduction is maximized is critical, as the effect accumulates over a full deployment into substantial savings or unacceptable task degradation. Such identification relies on sensitivity metrics, proxies that estimate layer-wise degradation without evaluating the task accuracy of every candidate policy. Nevertheless, widely used metrics fail systematically on modern architectures. We present a systematic empirical study of 13 sensitivity metrics for layer-wise INT8 quantization across four distinctly different neural networks, and validate the resulting policies on two ARM64 platforms. Gradient-based sensitivity methods fail on 4 out of 8 model-hardware configurations and weight-based statistics on 2. In contrast, the Jensen-Shannon Divergence achieves zero catastrophic failures, reliably isolating the layers that cannot be safely quantized. A sensitivity metric alone does not define a policy, and the fixed thresholds typically used for that step are fragile over the highly skewed distributions of modern architectures. We address this with K-Means clustering, achieving near-lossless accuracy and a mean speed-up of $1.81\\times$ over the full-precision model. Finally, we reveal that excluding from quantization the layers whose speed-up is negligible, regardless of their sensitivity, can be counterproductive, as it induces computational graph fragmentation and disables operator fusion. Our results yield concrete allocation policies for practitioners and researchers deploying quantized vision models on heterogeneous edge CPUs, without GPU access or gradient computation.",
   "url": "https://arxiv.org/abs/2609.28262",
   "pdf_url": "https://arxiv.org/pdf/2609.28262",
-  "published": "2026-09-24",
+  "published": "2026-09-23",
   "updated": "2026-09-24",
   "authors": [
-    "David Poblaci\\'on-Criado",
+    "David Población-Criado",
     "Dario Garcia-Gasulla",
     "Eduardo Quinones"
   ],
@@ -21,8 +21,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "Accepted at the 37th British Machine Vision Conference (BMVC) 2026. 13 pages, 4 figures, 2 tables. Code available at https://github.com/davidpob99/ramp-mpq",
+  "code_url": "https://github.com/davidpob99/ramp-mpq",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -40,19 +40,19 @@
     "quantization",
     "quantized"
   ],
-  "score": 44,
+  "score": 49,
   "score_components": {
     "relevance": 20,
     "novelty": 5,
     "rigor": 5,
     "practical_impact": 9,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: int8, quantization, quantized",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Deploying deep learning models on edge CPUs is bottlenecked by computational and memory constraints.",
   "summary_zh": "",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-24T04:42:32+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.28262v1",
+      "url": "http://arxiv.org/abs/2609.28262v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.28262",

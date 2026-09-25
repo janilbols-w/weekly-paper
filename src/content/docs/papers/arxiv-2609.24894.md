@@ -3,7 +3,7 @@ title: "SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Patholog
 description: "Whole-slide pathology images (WSIs) contain gigapixel-scale visual content, creating a major scalability challenge for slide-level multimodal large language models (MLLMs)."
 ---
 
-**评分：45/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：50/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2609.24894) · [PDF](https://arxiv.org/pdf/2609.24894)
 
@@ -27,19 +27,19 @@ Whole-slide pathology images (WSIs) contain gigapixel-scale visual content, crea
 | novelty | 6 |
 | rigor | 7 |
 | practical impact | 11 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: pruning
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Ali Kerem Bozkurt, Baris Cem Bakay, Ibrahim Kulac, Cigdem Gunduz-Demir, Erkut Erdem, Aykut Erdem
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/ali-kerem/SLICEChat](https://github.com/ali-kerem/SLICEChat)
 - 阅读深度：metadata

@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.29518",
+  "title": "CataOPD: Catalytic On-Policy Distillation for Large Language Model Reasoning",
+  "abstract": "Reinforcement learning (RL) and on-policy distillation (OPD) are two representative paradigms for improving large language model reasoning. However, when no correct trajectory is sampled, RL lacks a positive correctness signal, while OPD remains constrained by the reasoning trajectories reachable under the student's on-policy distribution. Therefore, we propose CataOPD, where the teacher acts as a catalyst rather than a target, expanding reachability while internalizing verified student-produced trajectories into a catalyst-free policy. Self-Rescue Routing uses empirically all-failed groups as routing signals rather than teacher-intervention triggers, first seeking correct trajectories through additional on-policy self-sampling. For problems unresolved after self-rescue, Catalytic-Guided Self-Resolution uses catalytic guidance to elicit a verified student-produced trajectory in the guided student distribution. Barrier-Weighted Internalization weights tokens by guided-to-unguided log-probability gaps, focusing updates on decisive tokens difficult without guidance. Experimental results show that CataOPD outperforms current baselines, extends independent student reasoning to still-unrecovered problems, and improves out-of-distribution generalization under catalyst-free inference. Our project is available at https://github.com/QwenQKing/CataOPD.",
+  "url": "https://arxiv.org/abs/2609.29518",
+  "pdf_url": "https://arxiv.org/pdf/2609.29518",
+  "published": "2026-09-25",
+  "updated": "2026-09-25",
+  "authors": [
+    "Wenjin Liu",
+    "Chenxi Wang",
+    "Jiapu Wang",
+    "Zhe Cui",
+    "Anh Tuan Luu",
+    "Haoran Luo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.CE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/QwenQKing/CataOPD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Reinforcement learning (RL) and on-policy distillation (OPD) are two representative paradigms for improving large language model reasoning.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-25T04:43:38+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.29518",
+      "url": "https://arxiv.org/abs/2609.29518"
+    }
+  ]
+}

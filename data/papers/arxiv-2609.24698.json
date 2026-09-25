@@ -4,7 +4,7 @@
   "abstract": "Repeated execution of the target model during autoregressive decoding is a major source of LLM inference latency. Unlike linear speculation, which follows a single candidate chain, tree-structured speculation retains multiple branches from shared prefixes; under the same budget, this broader coverage can improve acceptance and efficiency. Adapting it to DeepSeek-V4 is nontrivial: its CSA/HCA online compressed attention concentrates the difficulty on the target-verify side, where branches diverging from a shared prefix compress into different states, breaking cross-branch state consistency. We integrate tree-structured speculative decoding into the DeepSeek-V4-Flash pipeline via branch-aware causal verification, temporary state isolation, and accepted-path state refresh, keeping verification and compressed-state updates consistent across branches. Across budgets D=5 to D=8, batch sizes 1 to 64, and three datasets (GSM8K, MBPP, ShareGPT), tree speculation achieves a higher accepted length than the matched linear configurations in all settings (e.g., at D=8 about 2.83--3.41 versus 2.39--2.84) and improves throughput in nearly all configurations---marginal only at the smallest budget---by up to about 18.5%. More importantly, the gains follow stable, transferable regularities: the relative gain grows with the budget and is most pronounced for less predictable workloads at small-to-medium batch sizes, while beyond a certain budget throughput plateaus and decouples from the still-rising accepted length. These results show that retaining multiple candidate paths under the same budget can effectively improve DeepSeek-V4 decoding efficiency, and offer experience for adapting speculative decoding to future models with compressed, sparse, or structured context representations.",
   "url": "https://arxiv.org/abs/2609.24698",
   "pdf_url": "https://arxiv.org/pdf/2609.24698",
-  "published": "2026-09-22",
+  "published": "2026-09-21",
   "updated": "2026-09-22",
   "authors": [
     "Changxu Liu",
@@ -13,8 +13,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
-    "cs.AI"
+    "cs.AI",
+    "cs.CL"
   ],
   "doi": "",
   "venue": "",
@@ -56,9 +56,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-22T04:42:07+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.24698v1",
+      "url": "http://arxiv.org/abs/2609.24698v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.24698",

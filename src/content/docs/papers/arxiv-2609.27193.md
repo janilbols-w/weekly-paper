@@ -39,7 +39,7 @@ With the rising computational and monetary costs of training large language mode
 ## 元数据
 
 - 作者：Minqiu Sun, Xin Huang, Luanzheng Guo, Nathan R. Tallent, Kento Sato, Dong Dai
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

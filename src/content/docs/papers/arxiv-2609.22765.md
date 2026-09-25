@@ -39,7 +39,7 @@ Large Language Models (LLMs) have shown remarkable potential in Verilog code gen
 ## 元数据
 
 - 作者：Yiheng Shen, Wei Zheng, Xiao Wei, Hao Shen, Xiang Chen, Guang Yang
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-19；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

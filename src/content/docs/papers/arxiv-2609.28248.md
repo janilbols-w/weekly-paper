@@ -39,7 +39,7 @@ We present hyperbolix, an open-source library for hyperbolic deep learning in JA
 ## 元数据
 
 - 作者：Timo Klein, Thomas Lang, Yllka Velaj, Sebastian Tschiatschek
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/timoklein/hyperbolix](https://github.com/timoklein/hyperbolix)
 - 阅读深度：metadata

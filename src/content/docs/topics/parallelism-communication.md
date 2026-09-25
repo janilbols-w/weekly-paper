@@ -9,7 +9,7 @@ description: "Parallelism & Communication"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Explicit State and Resource Contracts for Low-Precision Pipeline Parallel Training under Captured Graphs](../../papers/arxiv-2609.23536/) | 2026-09-22 | 45 |
+| [Explicit State and Resource Contracts for Low-Precision Pipeline Parallel Training under Captured Graphs](../../papers/arxiv-2609.23536/) | 2026-09-20 | 45 |
 | [Tools-CC-Bench: a Benchmark Suite for Collective Communication with Compression in HPC and AI Workloads](../../papers/arxiv-2609.08739/) | 2026-09-09 | 52 |
 | [Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference](../../papers/arxiv-2609.03844/) | 2026-09-03 | 38 |
 | [BASP: Communication-Efficient Batch-Aware Sequence Parallelism for LLM Training](../../papers/arxiv-2609.03151/) | 2026-09-02 | 42 |

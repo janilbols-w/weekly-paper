@@ -4,7 +4,7 @@
   "abstract": "Despite their strong performance, large language models (LLMs) are bottlenecked by KV cache memory traffic during long-context inference. Sparse attention is widely used to accelerate LLM inference by computing exact attention over a selected subset of tokens. To recover the contribution of tokens excluded from exact attention, recent methods apply coarse-grained compensation to the omitted attention tail. However, existing methods typically select tokens based on attention mass and only then compensate for the unselected tokens. This decoupled design overlooks their interaction: selection should prioritize tokens that would leave the largest compensation error if omitted. To address this limitation, we introduce CompKV, the first compensation-aware sparse attention framework that divides tokens into blocks and explicitly optimizes selection for the downstream compensation mechanism. Our theoretical analysis shows that the residual left by block-level mean compensation is governed by both block attention mass and within-block logit variation. We approximate this residual using compact block-level statistics, yielding a deployable selection criterion. We further develop an efficient asynchronous implementation. Experiments on RULER and LongBench-Pro show that CompKV performs best among the evaluated sparse baselines while delivering up to a $6.85\\times$ self-attention speedup over full attention.",
   "url": "https://arxiv.org/abs/2609.26300",
   "pdf_url": "https://arxiv.org/pdf/2609.26300",
-  "published": "2026-09-23",
+  "published": "2026-09-22",
   "updated": "2026-09-23",
   "authors": [
     "Zhen Huang",
@@ -22,8 +22,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
@@ -65,9 +65,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-23T04:42:24+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.26300v1",
+      "url": "http://arxiv.org/abs/2609.26300v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.26300",

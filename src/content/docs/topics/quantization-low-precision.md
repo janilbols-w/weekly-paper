@@ -5,35 +5,39 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **188** 篇。
+累计收录 **191** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference](../../papers/arxiv-2609.28358/) | 2026-09-24 | 46 |
-| [Implementation and Evaluation of BitNet Inference on a CGLA by Signed-Int4 Instructions](../../papers/arxiv-2609.27453/) | 2026-09-24 | 46 |
-| [RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models](../../papers/arxiv-2609.28262/) | 2026-09-24 | 44 |
-| [Text Scores Can Miss Waveform Use: A Qwen2-Audio Quantization Case Study](../../papers/arxiv-2609.26823/) | 2026-09-24 | 41 |
-| [Quantization-Robust Unlearning through the Lens of Retain-Forget Loss Landscapes Interaction](../../papers/arxiv-2609.27355/) | 2026-09-24 | 40 |
-| [hyperbolix: Hyperbolic Deep Learning in JAX](../../papers/arxiv-2609.28248/) | 2026-09-24 | 38 |
-| [Automated Extraction of Records of Processing Activities (RoPA) Using Hybrid RAG and Locally Deployed Large Language Models](../../papers/arxiv-2609.27359/) | 2026-09-24 | 38 |
-| [Disaggregated Quantization: Specializing LLM Prefill and Decode](../../papers/arxiv-2609.26333/) | 2026-09-23 | 51 |
-| [PP-Net: A Hybrid Physical-Prior Neural Network for Scattered Light Removal in Biomedical Images on Embedded Devices](../../papers/arxiv-2609.26474/) | 2026-09-23 | 43 |
-| [Beyond Scalar Sensitivity: Activation-Aware Mixed-Precision LLM Quantization with Cross-Layer Refinement](../../papers/arxiv-2609.25916/) | 2026-09-23 | 43 |
-| [Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Divergence in LLM Inference](../../papers/arxiv-2609.26621/) | 2026-09-23 | 42 |
+| [GHOST-Q: Towards Studying Grounding Hallucinations Overlooked Under Same-score TradeOffs in Quantized VLMS](../../papers/arxiv-2609.29999/) | 2026-09-24 | 50 |
+| [Baseline Shape Decides the Verdict: A Controlled Re-Examination of Ternary Language Models at 60K Parameters](../../papers/arxiv-2609.29397/) | 2026-09-24 | 44 |
+| [BanglaTurn: A Benchmark and Whisper-Based Model for End-of-Turn Detection in Bangla Speech](../../papers/arxiv-2609.29371/) | 2026-09-24 | 42 |
+| [Where Hallucinations Live: A Cross-Architecture Circuit in VQ-Tokenized Vision-Language Models](../../papers/arxiv-2609.29048/) | 2026-09-24 | 40 |
+| [RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models](../../papers/arxiv-2609.28262/) | 2026-09-23 | 49 |
+| [MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference](../../papers/arxiv-2609.28358/) | 2026-09-23 | 46 |
+| [Implementation and Evaluation of BitNet Inference on a CGLA by Signed-Int4 Instructions](../../papers/arxiv-2609.27453/) | 2026-09-23 | 46 |
+| [Quantization-Robust Unlearning through the Lens of Retain-Forget Loss Landscapes Interaction](../../papers/arxiv-2609.27355/) | 2026-09-23 | 40 |
+| [hyperbolix: Hyperbolic Deep Learning in JAX](../../papers/arxiv-2609.28248/) | 2026-09-23 | 38 |
+| [Automated Extraction of Records of Processing Activities (RoPA) Using Hybrid RAG and Locally Deployed Large Language Models](../../papers/arxiv-2609.27359/) | 2026-09-23 | 38 |
 | [Towards Training-free Automatic Proxy Discovery via Large Language Models for Mixed Precision Quantization](../../papers/arxiv-2512.07419/) | 2026-09-22 | 54 |
-| [When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs](../../papers/arxiv-2609.24799/) | 2026-09-22 | 48 |
+| [Disaggregated Quantization: Specializing LLM Prefill and Decode](../../papers/arxiv-2609.26333/) | 2026-09-22 | 51 |
 | [SalQ-VLM: Fine-Grained Saliency-Guided Quantization for Vision-Language Models](../../papers/arxiv-2508.03351/) | 2026-09-22 | 47 |
 | [Beyond the Stitching Assumption: A Unified Framework for Multimodal Synthetic Data Evaluation via Semantic Quantization](../../papers/arxiv-2609.22149/) | 2026-09-22 | 46 |
+| [Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Divergence in LLM Inference](../../papers/arxiv-2609.26621/) | 2026-09-22 | 45 |
 | [The Effect of Quantization on Clinical Benchmarks: Accuracy and Safety Across Model Families](../../papers/arxiv-2609.22216/) | 2026-09-22 | 44 |
-| [Towards Full Pipeline FP8 Reinforcement Learning for LLMs](../../papers/arxiv-2609.22870/) | 2026-09-22 | 43 |
-| [NAVIR: Neuromorphic Audio-Visual Speech Recognition for Robust Human-Robot Interaction on Edge Hardware](../../papers/arxiv-2609.24391/) | 2026-09-22 | 41 |
-| [Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks](../../papers/arxiv-2609.23141/) | 2026-09-22 | 40 |
-| [WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model](../../papers/arxiv-2609.23444/) | 2026-09-22 | 39 |
-| [A discrete generative model of neuronal spiking activity on microelectrode arrays](../../papers/arxiv-2609.23907/) | 2026-09-22 | 39 |
+| [PP-Net: A Hybrid Physical-Prior Neural Network for Scattered Light Removal in Biomedical Images on Embedded Devices](../../papers/arxiv-2609.26474/) | 2026-09-22 | 43 |
+| [Beyond Scalar Sensitivity: Activation-Aware Mixed-Precision LLM Quantization with Cross-Layer Refinement](../../papers/arxiv-2609.25916/) | 2026-09-22 | 43 |
 | [Discrete Tokenization for Multimodal LLMs: A Comprehensive Survey](../../papers/arxiv-2507.22920/) | 2026-09-22 | 38 |
 | [VQ-Logits: Compressing the Output Bottleneck of Large Language Models via Vector Quantized Logits](../../papers/arxiv-2505.10202/) | 2026-09-21 | 57 |
 | [SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference](../../papers/arxiv-2609.21704/) | 2026-09-21 | 52 |
+| [When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs](../../papers/arxiv-2609.24799/) | 2026-09-21 | 48 |
 | [Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals](../../papers/arxiv-2609.21450/) | 2026-09-21 | 42 |
+| [NAVIR: Neuromorphic Audio-Visual Speech Recognition for Robust Human-Robot Interaction on Edge Hardware](../../papers/arxiv-2609.24391/) | 2026-09-21 | 41 |
+| [Text Scores Can Miss Waveform Use: A Qwen2-Audio Quantization Case Study](../../papers/arxiv-2609.26823/) | 2026-09-20 | 41 |
+| [WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model](../../papers/arxiv-2609.23444/) | 2026-09-20 | 39 |
+| [A discrete generative model of neuronal spiking activity on microelectrode arrays](../../papers/arxiv-2609.23907/) | 2026-09-20 | 39 |
+| [Towards Full Pipeline FP8 Reinforcement Learning for LLMs](../../papers/arxiv-2609.22870/) | 2026-09-19 | 43 |
+| [Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks](../../papers/arxiv-2609.23141/) | 2026-09-19 | 40 |
 | [NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding](../../papers/arxiv-2605.12396/) | 2026-09-18 | 47 |
 | [MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration](../../papers/arxiv-2609.19683/) | 2026-09-17 | 54 |
 | [REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration](../../papers/arxiv-2609.17555/) | 2026-09-17 | 44 |
@@ -135,7 +139,6 @@ description: "Quantization & Low Precision"
 | [TSWAP: A Multilingual Retrieval-Augmented Thai Wellness Advisor](../../papers/arxiv-2608.22917/) | 2026-08-24 | 39 |
 | [Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs](../../papers/arxiv-2608.21134/) | 2026-08-24 | 39 |
 | [Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models](../../papers/arxiv-2608.20988/) | 2026-08-24 | 39 |
-| [What actually runs: a measurement study of language model placement and decode speed on the Apple Neural Engine](../../papers/arxiv-2608.22110/) | 2026-08-22 | 48 |
 | [RequestRouter: Request-Boundary Routing for Efficient Single-GPU LLM Inference](../../papers/arxiv-2605.23057/) | 2026-08-21 | 53 |
 | [GQ-FSL: Green Quantized Federated Split Learning Framework for Wireless Edge Networks](../../papers/arxiv-2607.29659/) | 2026-08-20 | 45 |
 | [A Resource-Efficient CNN-Based EEG Auditory Attention Decoding ASIC](../../papers/arxiv-2608.20198/) | 2026-08-20 | 40 |

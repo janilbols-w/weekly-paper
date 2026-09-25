@@ -39,7 +39,7 @@ The discovery of novel inorganic materials drives technological breakthroughs in
 ## 元数据
 
 - 作者：Thomas Egg, Harry Winston Sullivan, Ellad B. Tadmor, Stefano Martiniani
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

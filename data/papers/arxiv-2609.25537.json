@@ -4,7 +4,7 @@
   "abstract": "Large language model (LLM) inference is constrained by the quadratic scaling of self-attention and the linear scaling of the KV cache, increasing latency, energy consumption, and GPU memory demand as context length scales. Existing soft-compression methods either lack query-guided memory selection at inference time, train without answer-targeted supervision, or couple compression tightly to a specific decoder architecture. We propose a Context-to-Answer-Aligned Memory Compression (CMC) framework, which compresses long input contexts into compact Context Memory Embeddings (CMEs) aligned to any frozen decoder's embedding space, reducing inference costs without modifying decoder weights. CMC introduces a two-tier KV cache that combines question-guided CME selection with a local context window, and trains the compressor with answer-targeted distillation from a frozen LLM. Experiments across nine encoder-decoder combinations and four QA benchmarks show that CMC consistently outperforms the baseline, achieving up to 7.3 EM and 4.0 F1 point gains on SQuAD, while reducing inference time and energy consumption by up to 20% and peak reserved GPU memory by up to 50% at 3,000 generation tokens. Ablation studies confirm that each architectural component and training objective contributes to the performance.",
   "url": "https://arxiv.org/abs/2609.25537",
   "pdf_url": "https://arxiv.org/pdf/2609.25537",
-  "published": "2026-09-23",
+  "published": "2026-09-22",
   "updated": "2026-09-23",
   "authors": [
     "Md Mostafizer Rahman",
@@ -16,8 +16,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
-    "cs.AI"
+    "cs.AI",
+    "cs.CL"
   ],
   "doi": "",
   "venue": "",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-23T04:42:24+00:00",
-  "last_seen": "2026-09-24T04:42:32+00:00",
+  "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.25537v1",
+      "url": "http://arxiv.org/abs/2609.25537v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.25537",

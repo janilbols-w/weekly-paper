@@ -39,7 +39,7 @@ Vietnam's Personal Data Protection Law (Law No. 91/2025/QH15) and Decree No. 356
 ## 元数据
 
 - 作者：To Duy Hinh, Nguyen Le Quoc Anh, Phan Van Tri, Khuong Nguyen-An
-- 发布：2026-09-24；更新：2026-09-24
+- 发布：2026-09-23；更新：2026-09-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

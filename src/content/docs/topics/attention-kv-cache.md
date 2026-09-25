@@ -5,23 +5,28 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **120** 篇。
+累计收录 **125** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [DeltaS: Reading the Gated Linear Attention State for KV Cache Eviction in Streaming Video](../../papers/arxiv-2609.27470/) | 2026-09-24 | 50 |
-| [The KV Cache Working Set: Online Capacity Planning for LLM Inference Systems](../../papers/arxiv-2609.27746/) | 2026-09-24 | 42 |
-| [Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management](../../papers/arxiv-2609.26828/) | 2026-09-24 | 42 |
-| [Compressing Long Context into Answer-Aligned Memory Embeddings for LLM Inference](../../papers/arxiv-2609.25537/) | 2026-09-23 | 49 |
-| [CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference](../../papers/arxiv-2609.26300/) | 2026-09-23 | 44 |
+| [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](../../papers/arxiv-2609.28870/) | 2026-09-25 | 41 |
+| [Omni-Flow: A Unified Workflow Orchestration and Distributed KV Cache Sharing Framework for Multimodal Inference](../../papers/arxiv-2606.31093/) | 2026-09-25 | 40 |
+| [MILO: Efficient Many-shot In-Context Learning with Block-wise Low-rank Compression](../../papers/arxiv-2609.29913/) | 2026-09-24 | 47 |
+| [Decoupled Early Exits for Task-Dependent Compute Allocation in Flow-Matching VLAs](../../papers/arxiv-2609.29382/) | 2026-09-24 | 38 |
+| [Canopy: Exploiting Piecewise Smooth Tree Priors for Multi-Fidelity Bandits](../../papers/arxiv-2609.30017/) | 2026-09-24 | 38 |
+| [DeltaS: Reading the Gated Linear Attention State for KV Cache Eviction in Streaming Video](../../papers/arxiv-2609.27470/) | 2026-09-23 | 50 |
 | [PatchKV: Efficient KV Cache Recovery for Dynamically Edited LLM Contexts](../../papers/arxiv-2609.26219/) | 2026-09-23 | 43 |
+| [The KV Cache Working Set: Online Capacity Planning for LLM Inference Systems](../../papers/arxiv-2609.27746/) | 2026-09-23 | 42 |
 | [LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay](../../papers/arxiv-2609.25053/) | 2026-09-23 | 39 |
-| [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](../../papers/arxiv-2609.24991/) | 2026-09-22 | 47 |
-| [SPLASH: Co-Designing Sparse Attention with High-Bandwidth Flash for Efficient Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-22 | 47 |
-| [ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs](../../papers/arxiv-2609.23314/) | 2026-09-22 | 42 |
+| [Compressing Long Context into Answer-Aligned Memory Embeddings for LLM Inference](../../papers/arxiv-2609.25537/) | 2026-09-22 | 49 |
+| [CompKV: Compensation-Aware KV Selection for Long-Context LLM Inference](../../papers/arxiv-2609.26300/) | 2026-09-22 | 44 |
 | [StepKV: Step-Aware KV Cache Compression for LLM Agents](../../papers/arxiv-2609.22158/) | 2026-09-22 | 41 |
-| [Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache](../../papers/arxiv-2609.24635/) | 2026-09-22 | 38 |
+| [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](../../papers/arxiv-2609.24991/) | 2026-09-21 | 52 |
 | [TierKV: Long-Context On-Device LLMs via Predictive Multi-Tier KV Caching](../../papers/arxiv-2609.21172/) | 2026-09-21 | 43 |
+| [Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache](../../papers/arxiv-2609.24635/) | 2026-09-21 | 38 |
+| [SPLASH: Co-Designing Sparse Attention with High-Bandwidth Flash for Efficient Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-20 | 47 |
+| [ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs](../../papers/arxiv-2609.23314/) | 2026-09-20 | 42 |
+| [Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management](../../papers/arxiv-2609.26828/) | 2026-09-20 | 42 |
 | [Exploring a Layer-Wise Design Space for KV Cache Eviction](../../papers/arxiv-2606.15157/) | 2026-09-18 | 40 |
 | [On-Demand Attention: Language Models Know When to Recall](../../papers/arxiv-2609.20734/) | 2026-09-17 | 40 |
 | [GroupKV: Hierarchical KV Cache Management for Long-Context Diffusion LLM Inference](../../papers/arxiv-2609.17573/) | 2026-09-17 | 40 |
@@ -72,7 +77,7 @@ description: "Attention & KV Cache"
 | [Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compression Masks Remove Answer Evidence](../../papers/arxiv-2608.29934/) | 2026-08-30 | 51 |
 | [NestedKV: Nested Memory Routing for Long-Context KV Cache Compression](../../papers/arxiv-2605.26678/) | 2026-08-28 | 39 |
 | [From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression](../../papers/arxiv-2606.02559/) | 2026-08-27 | 47 |
-| [A JoLT for the KV cache: Near-lossless KV cache compression via joint Lagrangian allocation of Tucker ranks and a rotated residual for llms](../../papers/arxiv-2607.12550/) | 2026-08-25 | 51 |
+| [A JoLT for the KV cache: Near-Lossless KV Cache Compression via Joint Rank-bit Allocation](../../papers/arxiv-2607.12550/) | 2026-08-25 | 48 |
 | [FlashAccel: Leveraging High-Bandwidth Flash (HBF) for High-Throughput LLM Inference](../../papers/arxiv-2607.10186/) | 2026-08-25 | 44 |
 | [When Less Latent Leads to Better Relay: Information-Preserving Compression for Latent Multi-Agent LLM Collaboration](../../papers/arxiv-2604.13349/) | 2026-08-25 | 43 |
 | [Last But Not Least: Boundary Attention CalibratiON for Multimodal KV Cache Compression](../../papers/arxiv-2606.14782/) | 2026-08-25 | 43 |

@@ -39,7 +39,7 @@ Recent advances in large language models (LLMs) are driving the emergence of mul
 ## 元数据
 
 - 作者：Shicong Liu, Xianghao Yu, Zhen Gao, Jun Zhang
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
