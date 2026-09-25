@@ -53,10 +53,10 @@
       "no code link detected in metadata"
     ],
     "summary_en": "Static pruning imposes one sparse structure on every prompt, even though reasoning, retrieval, generation, coding, and translation can depend on different parts of a language model.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
+    "summary_zh": "TASP 根据任务校准模块级谱特征和消融影响，为每类请求编译稀疏 mask，并在单次请求的 prefill 与 decoding 期间保持固定。摘要报告 Llama-3-70B 在减少 43% 活跃 FLOPs 时保留 97.7% 的 dense BF16 得分；单张 A100 80GB 的 INT8 权重、BF16 计算环境中，解码延迟由 45.2 降至 31.3 ms/token。",
+    "why_it_matters_zh": "相较所有请求共用同一剪枝结构，按任务路由已编译 mask 有机会在维持结构化执行效率的同时保留不同任务所需模块，为服务侧按请求选择计算路径提供可落地思路。",
+    "limitations_zh": "方法具有明显模型依赖：摘要中的试点在 Llama-3-8B/70B 通过、在 Qwen2.5-1.5B 被拒绝。校准审计消耗 136 GPU 小时，且实际收益依赖任务路由准确性、编译运行时和给定 A100 配置。",
+    "reading_depth": "abstract",
     "first_seen": "2026-09-25T04:43:38+00:00",
     "last_seen": "2026-09-25T04:43:38+00:00",
     "featured_weeks": [
@@ -2476,10 +2476,10 @@
       "no code link detected in metadata"
     ],
     "summary_en": "Zeroth-order (ZO) optimization is an attractive option for memory-efficient LLM fine-tuning, but its fault tolerance remains underexplored.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
+    "summary_zh": "ZOCheck 面向零阶 LLM 微调，用 CPU 影子进程持续重放轻量级种子与标量日志，在不占用 GPU 关键路径的情况下生成并异步持久化一致恢复镜像。摘要报告其相对异步全状态 checkpoint 可将 checkpoint 开销最高降低 219.7 倍、平均恢复延迟降低 1.55 倍，并保持精确恢复。",
+    "why_it_matters_zh": "它把零阶优化可重放的更新结构转化为低干扰容错机制，为显存受限微调补上 checkpoint 与故障恢复能力；基于故障率选择快照策略的成本模型也有助于基础设施侧做恢复成本权衡。",
+    "limitations_zh": "适用范围集中在可由种子与标量日志重放的零阶微调，不能直接外推到常规一阶训练。收益依赖故障率、CPU 重放速度和持久化环境，摘要未给出所有实验配置与资源开销细节。",
+    "reading_depth": "abstract",
     "first_seen": "2026-09-24T04:42:32+00:00",
     "last_seen": "2026-09-25T04:43:38+00:00",
     "featured_weeks": [
@@ -4697,10 +4697,10 @@
       "code/artifact link detected"
     ],
     "summary_en": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
+    "summary_zh": "Flash-dLLM 是无需训练的扩散式 LLM 推理框架：以 I/O 感知的融合 KV-cache kernel 减少冗余显存搬运，再让同一 dLLM 同时承担 draft 与 verify，以 KV cache 驱动并行解码。摘要报告其相对 Elastic-Cache 在 GSM8K 和 HumanEval 上分别达到 5.1 倍与 11.0 倍加速。",
+    "why_it_matters_zh": "工作把 KV cache 与并行解码放在同一显存 I/O 约束下联合设计，直指 dLLM 从算法加速走向可部署系统时的带宽瓶颈；无需额外草稿模型也可降低服务系统的模型管理复杂度。",
+    "limitations_zh": "方案针对扩散式 LLM，结论不能直接外推到自回归模型。摘要只给出两个任务上的相对加速，未列明硬件、模型规模、批量与序列长度等完整配置，长序列和大批量扩展性仍需结合正文验证。",
+    "reading_depth": "abstract",
     "first_seen": "2026-09-23T04:42:24+00:00",
     "last_seen": "2026-09-25T04:43:38+00:00",
     "featured_weeks": [
@@ -4775,10 +4775,10 @@
       "no code link detected in metadata"
     ],
     "summary_en": "Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks (DNNs) from the Out-Of-Memory (OOM) bottleneck and has garnered increasing research attention.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
+    "summary_zh": "TAP 用 LLM 与进化搜索自动发现混合精度量化的评价代理，并以轻量 DPO 策略控制器根据适应度信号动态调整三类提示模板的选择概率，无需微调生成代理的 LLM。作者称该方法在主流基准上达到领先表现，但摘要未给出具体数值。",
+    "why_it_matters_zh": "混合精度配置搜索常依赖昂贵优化或人工设计代理；自动生成并迭代代理可降低量化方案探索的人力门槛，为硬件约束下的低精度部署提供更灵活的搜索入口。",
+    "limitations_zh": "该工作主要改进代理发现流程，而非直接提供 LLM 推理内核；摘要也未量化搜索成本、调用模型依赖和相对基线收益。其结论面向广义 DNN 混合精度量化，对大语言模型部署的实际收益仍需单独验证。",
+    "reading_depth": "abstract",
     "first_seen": "2026-09-22T04:42:07+00:00",
     "last_seen": "2026-09-25T04:43:38+00:00",
     "featured_weeks": [
@@ -8171,10 +8171,10 @@
       "no code link detected in metadata"
     ],
     "summary_en": "Large Language Models (LLMs) have achieved remarkable success but face significant computational and memory challenges, particularly due to their extensive output vocabularies.",
-    "summary_zh": "",
-    "why_it_matters_zh": "",
-    "limitations_zh": "",
-    "reading_depth": "metadata",
+    "summary_zh": "VQ-Logits 用共享向量量化码本替代词表大小的输出嵌入矩阵，让模型先预测较小码本上的 logits，再按 token 到码本的映射散射回完整词表。摘要称在 WikiText-103、C4 等基准上，输出层参数最高减少 99%、logit 计算加速 6 倍，同时困惑度增加约 4%。",
+    "why_it_matters_zh": "输出投影在大词表模型中会带来显著参数、显存带宽和计算开销；若码本方案能在目标模型上维持质量，它可直接缩小推理尾部瓶颈，而无需引入层次 softmax 等复杂输出结构。",
+    "limitations_zh": "压缩收益伴随困惑度退化，且摘要中的最高收益来自特定语言建模基准，尚不能代表不同模型规模、词表和真实服务负载。元数据未提供代码链接，部署时还需验证散射操作的实际端到端收益。",
+    "reading_depth": "abstract",
     "first_seen": "2026-09-21T04:44:50+00:00",
     "last_seen": "2026-09-25T04:43:38+00:00",
     "featured_weeks": [

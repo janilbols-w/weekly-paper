@@ -1,6 +1,6 @@
 ---
 title: "Task-Aware Spectral Pruning: A Mixture-of-Masks Framework for Efficient LLM Inference"
-description: "Static pruning imposes one sparse structure on every prompt, even though reasoning, retrieval, generation, coding, and translation can depend on different parts of a language model."
+description: "TASP 根据任务校准模块级谱特征和消融影响，为每类请求编译稀疏 mask，并在单次请求的 prefill 与 decoding 期间保持固定。摘要报告 Llama-3-70B 在减少 43% 活跃 FLOPs 时保留 97.7% 的 dense BF16 得分；单张 A100 80GB 的 INT8 权重、BF16 计算环境中，解码延迟由 45.2 降至 31.3 ms/token。"
 ---
 
 **评分：53/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
@@ -9,11 +9,11 @@ description: "Static pruning imposes one sparse structure on every prompt, even 
 
 ## 一句话摘要
 
-Static pruning imposes one sparse structure on every prompt, even though reasoning, retrieval, generation, coding, and translation can depend on different parts of a language model.
+TASP 根据任务校准模块级谱特征和消融影响，为每类请求编译稀疏 mask，并在单次请求的 prefill 与 decoding 期间保持固定。摘要报告 Llama-3-70B 在减少 43% 活跃 FLOPs 时保留 97.7% 的 dense BF16 得分；单张 A100 80GB 的 INT8 权重、BF16 计算环境中，解码延迟由 45.2 降至 31.3 ms/token。
 
 ## 为什么值得关注
 
-待编辑增强。
+相较所有请求共用同一剪枝结构，按任务路由已编译 mask 有机会在维持结构化执行效率的同时保留不同任务所需模块，为服务侧按请求选择计算路径提供可落地思路。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Static pruning imposes one sparse structure on every prompt, even though reasoni
 - taxonomy keywords: pruning
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：方法具有明显模型依赖：摘要中的试点在 Llama-3-8B/70B 通过、在 Qwen2.5-1.5B 被拒绝。校准审计消耗 136 GPU 小时，且实际收益依赖任务路由准确性、编译运行时和给定 A100 配置。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Static pruning imposes one sparse structure on every prompt, even though reasoni
 - 发布：2026-09-25；更新：2026-09-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

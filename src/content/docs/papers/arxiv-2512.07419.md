@@ -1,6 +1,6 @@
 ---
 title: "Towards Training-free Automatic Proxy Discovery via Large Language Models for Mixed Precision Quantization"
-description: "Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks (DNNs) from the Out-Of-Memory (OOM) bottleneck and has garnered increasing research attention."
+description: "TAP 用 LLM 与进化搜索自动发现混合精度量化的评价代理，并以轻量 DPO 策略控制器根据适应度信号动态调整三类提示模板的选择概率，无需微调生成代理的 LLM。作者称该方法在主流基准上达到领先表现，但摘要未给出具体数值。"
 ---
 
 **评分：54/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,11 +9,11 @@ description: "Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks 
 
 ## 一句话摘要
 
-Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks (DNNs) from the Out-Of-Memory (OOM) bottleneck and has garnered increasing research attention.
+TAP 用 LLM 与进化搜索自动发现混合精度量化的评价代理，并以轻量 DPO 策略控制器根据适应度信号动态调整三类提示模板的选择概率，无需微调生成代理的 LLM。作者称该方法在主流基准上达到领先表现，但摘要未给出具体数值。
 
 ## 为什么值得关注
 
-待编辑增强。
+混合精度配置搜索常依赖昂贵优化或人工设计代理；自动生成并迭代代理可降低量化方案探索的人力门槛，为硬件约束下的低精度部署提供更灵活的搜索入口。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks (DNNs) from th
 - taxonomy keywords: mixed precision, quantization, quantized
 - no quantitative claim in metadata
 - no code link detected in metadata
+- 限制：该工作主要改进代理发现流程，而非直接提供 LLM 推理内核；摘要也未量化搜索成本、调用模型依赖和相对基线收益。其结论面向广义 DNN 混合精度量化，对大语言模型部署的实际收益仍需单独验证。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks (DNNs) from th
 - 发布：2026-09-22；更新：2026-09-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

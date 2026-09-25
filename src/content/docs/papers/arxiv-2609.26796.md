@@ -1,6 +1,6 @@
 ---
 title: "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs"
-description: "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation."
+description: "Flash-dLLM 是无需训练的扩散式 LLM 推理框架：以 I/O 感知的融合 KV-cache kernel 减少冗余显存搬运，再让同一 dLLM 同时承担 draft 与 verify，以 KV cache 驱动并行解码。摘要报告其相对 Elastic-Cache 在 GSM8K 和 HumanEval 上分别达到 5.1 倍与 11.0 倍加速。"
 ---
 
 **评分：55/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
@@ -9,11 +9,11 @@ description: "Diffusion Large Language Models (dLLMs) have recently emerged as a
 
 ## 一句话摘要
 
-Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation.
+Flash-dLLM 是无需训练的扩散式 LLM 推理框架：以 I/O 感知的融合 KV-cache kernel 减少冗余显存搬运，再让同一 dLLM 同时承担 draft 与 verify，以 KV cache 驱动并行解码。摘要报告其相对 Elastic-Cache 在 GSM8K 和 HumanEval 上分别达到 5.1 倍与 11.0 倍加速。
 
 ## 为什么值得关注
 
-待编辑增强。
+工作把 KV cache 与并行解码放在同一显存 I/O 约束下联合设计，直指 dLLM 从算法加速走向可部署系统时的带宽瓶颈；无需额外草稿模型也可降低服务系统的模型管理复杂度。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Diffusion Large Language Models (dLLMs) have recently emerged as a promising alt
 - taxonomy keywords: parallel decoding
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：方案针对扩散式 LLM，结论不能直接外推到自回归模型。摘要只给出两个任务上的相对加速，未列明硬件、模型规模、批量与序列长度等完整配置，长序列和大批量扩展性仍需结合正文验证。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Diffusion Large Language Models (dLLMs) have recently emerged as a promising alt
 - 发布：2026-09-22；更新：2026-09-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/VILA-Lab/Flash-dLLM](https://github.com/VILA-Lab/Flash-dLLM)
-- 阅读深度：metadata
+- 阅读深度：abstract

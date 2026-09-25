@@ -1,6 +1,6 @@
 ---
 title: "VQ-Logits: Compressing the Output Bottleneck of Large Language Models via Vector Quantized Logits"
-description: "Large Language Models (LLMs) have achieved remarkable success but face significant computational and memory challenges, particularly due to their extensive output vocabularies."
+description: "VQ-Logits 用共享向量量化码本替代词表大小的输出嵌入矩阵，让模型先预测较小码本上的 logits，再按 token 到码本的映射散射回完整词表。摘要称在 WikiText-103、C4 等基准上，输出层参数最高减少 99%、logit 计算加速 6 倍，同时困惑度增加约 4%。"
 ---
 
 **评分：57/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,11 +9,11 @@ description: "Large Language Models (LLMs) have achieved remarkable success but 
 
 ## 一句话摘要
 
-Large Language Models (LLMs) have achieved remarkable success but face significant computational and memory challenges, particularly due to their extensive output vocabularies.
+VQ-Logits 用共享向量量化码本替代词表大小的输出嵌入矩阵，让模型先预测较小码本上的 logits，再按 token 到码本的映射散射回完整词表。摘要称在 WikiText-103、C4 等基准上，输出层参数最高减少 99%、logit 计算加速 6 倍，同时困惑度增加约 4%。
 
 ## 为什么值得关注
 
-待编辑增强。
+输出投影在大词表模型中会带来显著参数、显存带宽和计算开销；若码本方案能在目标模型上维持质量，它可直接缩小推理尾部瓶颈，而无需引入层次 softmax 等复杂输出结构。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Large Language Models (LLMs) have achieved remarkable success but face significa
 - taxonomy keywords: quantization, quantized
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：压缩收益伴随困惑度退化，且摘要中的最高收益来自特定语言建模基准，尚不能代表不同模型规模、词表和真实服务负载。元数据未提供代码链接，部署时还需验证散射操作的实际端到端收益。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Large Language Models (LLMs) have achieved remarkable success but face significa
 - 发布：2026-09-21；更新：2026-09-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

@@ -54,10 +54,10 @@
     "no code link detected in metadata"
   ],
   "summary_en": "Mixed-Precision Quantization (MPQ) liberates Deep Neural Networks (DNNs) from the Out-Of-Memory (OOM) bottleneck and has garnered increasing research attention.",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "TAP 用 LLM 与进化搜索自动发现混合精度量化的评价代理，并以轻量 DPO 策略控制器根据适应度信号动态调整三类提示模板的选择概率，无需微调生成代理的 LLM。作者称该方法在主流基准上达到领先表现，但摘要未给出具体数值。",
+  "why_it_matters_zh": "混合精度配置搜索常依赖昂贵优化或人工设计代理；自动生成并迭代代理可降低量化方案探索的人力门槛，为硬件约束下的低精度部署提供更灵活的搜索入口。",
+  "limitations_zh": "该工作主要改进代理发现流程，而非直接提供 LLM 推理内核；摘要也未量化搜索成本、调用模型依赖和相对基线收益。其结论面向广义 DNN 混合精度量化，对大语言模型部署的实际收益仍需单独验证。",
+  "reading_depth": "abstract",
   "first_seen": "2026-09-22T04:42:07+00:00",
   "last_seen": "2026-09-25T04:43:38+00:00",
   "featured_weeks": [
