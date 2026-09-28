@@ -5,10 +5,11 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **74** 篇。
+累计收录 **75** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [QASM-Eval: A Dataset to Train and Evaluate LLMs on OpenQASM-3 Beyond Quantum Circuits](../../papers/arxiv-2605.30358/) | 2026-09-28 | 47 |
 | [ELF-REG: Scaling Continuous Diffusion Language Models to Reasoning Tasks](../../papers/arxiv-2609.29102/) | 2026-09-24 | 39 |
 | [BigO(Bench): Can LLMs Generate Code with Controlled Time and Space Complexity?](../../papers/arxiv-2503.15242/) | 2026-09-23 | 42 |
 | [Capable yet Parsimonious: Extracting and Characterizing Hidden Chain-of-Thought in Frontier Models](../../papers/arxiv-2609.26637/) | 2026-09-23 | 39 |

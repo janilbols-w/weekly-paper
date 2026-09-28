@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **58** 篇。
+累计收录 **59** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Block Sparse Attention with Log-Linear Complexity](../../papers/arxiv-2609.31093/) | 2026-09-28 | 41 |
 | [A Rapid Pipeline for Training and Deploying ML Models on WeBe Band](../../papers/arxiv-2609.29084/) | 2026-09-24 | 41 |
 | [From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes](../../papers/arxiv-2609.27249/) | 2026-09-24 | 40 |
 | [TrafficFab: An Autonomic Edge-Cloud Testbed Fabric forAI-Driven Traffic Management](../../papers/arxiv-2609.29223/) | 2026-09-24 | 38 |

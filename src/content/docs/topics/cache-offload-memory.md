@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **69** 篇。
+累计收录 **70** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Not All Memories Are Equal: Hierarchical Collaborative Memory for Validity-Aware Retrieval in LLM Agents](../../papers/arxiv-2609.30289/) | 2026-09-28 | 44 |
 | [LOIP:Collaborative Lossless LLM Inference Serving with Offloading-based Pipeline Parallelism on Edge Devices](../../papers/arxiv-2512.21835/) | 2026-09-23 | 52 |
 | [FlashBoB: I/O-Efficient Exact Backward-over-Backward for Softmax Attention](../../papers/arxiv-2609.24089/) | 2026-09-22 | 39 |
 | [Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services](../../papers/arxiv-2609.23321/) | 2026-09-20 | 48 |

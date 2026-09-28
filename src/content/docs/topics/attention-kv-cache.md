@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **125** 篇。
+累计收录 **127** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [The KV Cache Is the New Memory Wall](../../papers/arxiv-2609.30854/) | 2026-09-28 | 46 |
+| [ActKV: Efficient LLM Agents through Action-Guided KV Cache Management](../../papers/arxiv-2609.31395/) | 2026-09-28 | 45 |
 | [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](../../papers/arxiv-2609.28870/) | 2026-09-25 | 41 |
 | [Omni-Flow: A Unified Workflow Orchestration and Distributed KV Cache Sharing Framework for Multimodal Inference](../../papers/arxiv-2606.31093/) | 2026-09-25 | 40 |
 | [MILO: Efficient Many-shot In-Context Learning with Block-wise Low-rank Compression](../../papers/arxiv-2609.29913/) | 2026-09-24 | 47 |

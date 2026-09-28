@@ -5,10 +5,11 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **14** 篇。
+累计收录 **15** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Low-Bit Recurrent States in Hybrid Language Models](../../papers/arxiv-2609.30950/) | 2026-09-28 | 38 |
 | [Financial Language Models as Applied Artificial Intelligence Systems for News-Based Trading under Market Frictions](../../papers/arxiv-2609.23703/) | 2026-09-22 | 48 |
 | [Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows](../../papers/arxiv-2609.23790/) | 2026-09-20 | 51 |
 | [Beyond Routine Compliance: Cunning Data Cultivates Safety Vigilance in Large Language Models](../../papers/arxiv-2609.18515/) | 2026-09-16 | 39 |

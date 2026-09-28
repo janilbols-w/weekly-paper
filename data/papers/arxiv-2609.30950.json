@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2609.30950",
+  "title": "Low-Bit Recurrent States in Hybrid Language Models",
+  "abstract": "Hybrid language models maintain fixed-size recurrent states, but existing quantizers typically use eight bits or more. Quantization errors persist according to channel decay rates. We derive distortion weights from the observability Gramian and combine them with normalized state ranges for mixed-precision bit allocation, without calibration data, rotation, or training. We also quantize decay rates logarithmically. With per-token state quantization, a four-bit mean payload reduces excess negative log-likelihood by factors of 3.3--27.9 relative to the best of seven baselines across three hybrid models; metadata costs vary. At six bits, negative log-likelihood differs from the FP32-state baseline by less than 0.005 nats. Ablations separate gains from variable bit widths, decay weighting, and range normalization. With less frequent write-backs, gains diminish and depend on the model and budget.",
+  "url": "https://arxiv.org/abs/2609.30950",
+  "pdf_url": "https://arxiv.org/pdf/2609.30950",
+  "published": "2026-09-28",
+  "updated": "2026-09-28",
+  "authors": [
+    "Hongren Chen",
+    "Jiayang He"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "observability-benchmarking",
+    "leaf": "Observability & Benchmarking",
+    "leaf_zh": "可观测性与 Benchmark"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "observability"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: observability",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Hybrid language models maintain fixed-size recurrent states, but existing quantizers typically use eight bits or more.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-28T04:48:05+00:00",
+  "last_seen": "2026-09-28T04:48:05+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.30950",
+      "url": "https://arxiv.org/abs/2609.30950"
+    }
+  ]
+}

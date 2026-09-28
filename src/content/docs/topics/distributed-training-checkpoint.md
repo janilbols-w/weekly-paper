@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **69** 篇。
+累计收录 **70** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PALM: Point-in-Time Adaptation for Financial Language Models](../../papers/arxiv-2609.30316/) | 2026-09-28 | 42 |
 | [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](../../papers/arxiv-2609.27189/) | 2026-09-23 | 52 |
 | [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](../../papers/arxiv-2609.27193/) | 2026-09-23 | 47 |
 | [Speculative Evaluation of Stochastic LLMs](../../papers/arxiv-2609.28560/) | 2026-09-23 | 44 |

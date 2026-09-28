@@ -5,10 +5,11 @@ description: "Batching & Request Scheduling"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > Batching 与请求调度**
 
-累计收录 **6** 篇。
+累计收录 **7** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [UniPrefill: Universal Long-Context Prefill Acceleration via Block-wise Dynamic Sparsification](../../papers/arxiv-2605.06221/) | 2026-09-28 | 40 |
 | [Where Does the Energy Go? Profiling LLM Agent Inference on Blackwell GPUs](../../papers/arxiv-2609.29707/) | 2026-09-25 | 45 |
 | [Accelerating Dense LLMs via L0-regularized Mixture-of-Experts](../../papers/arxiv-2609.21672/) | 2026-09-21 | 46 |
 | [PinDCO: Whole-Page Aware Dynamic Creative Optimization at Scale](../../papers/arxiv-2609.11943/) | 2026-09-14 | 41 |

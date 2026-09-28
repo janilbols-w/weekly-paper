@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **74** 篇。
+累计收录 **75** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Aurora-X: Built for Extreme Time Series Forecasting](../../papers/arxiv-2609.31038/) | 2026-09-28 | 38 |
 | [TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference](../../papers/arxiv-2602.05145/) | 2026-09-25 | 40 |
 | [NebulaSD: Many-for-Many Speculative Decoding](../../papers/arxiv-2609.29364/) | 2026-09-24 | 46 |
 | [TSS: Target-Side Sparsification for Speculative Decoding in Domain-Specific Large Language Models](../../papers/arxiv-2609.26100/) | 2026-09-23 | 50 |

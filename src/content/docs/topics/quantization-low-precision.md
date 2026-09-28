@@ -5,10 +5,16 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **191** 篇。
+累计收录 **197** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [G$^2$PTQ: Improving LLM Post-Training Quantization with Generalized Gradient Compensation](../../papers/arxiv-2609.31009/) | 2026-09-28 | 49 |
+| [Softmax Reparameterization for Output-Head Quantization](../../papers/arxiv-2609.31291/) | 2026-09-28 | 43 |
+| [The Right Information Extraction Pipeline Depends on the Document: Accuracy-Energy Trade-offs for Small, Local Models](../../papers/arxiv-2609.31341/) | 2026-09-28 | 42 |
+| [Towards Understanding LLM-Based Log Anomaly Detection: An Empirical Study of Performance, Efficiency, and Robustness](../../papers/arxiv-2609.31371/) | 2026-09-28 | 40 |
+| [Quantizing Looped Transformers: Feedback Exposure and Calibration Blindness](../../papers/arxiv-2609.30820/) | 2026-09-28 | 40 |
+| [LUMO (Lightweight Unified Multilingual Orchestrator): A Privacy Preserving Offline Voice Assistant](../../papers/arxiv-2609.30692/) | 2026-09-28 | 38 |
 | [GHOST-Q: Towards Studying Grounding Hallucinations Overlooked Under Same-score TradeOffs in Quantized VLMS](../../papers/arxiv-2609.29999/) | 2026-09-24 | 50 |
 | [Baseline Shape Decides the Verdict: A Controlled Re-Examination of Ternary Language Models at 60K Parameters](../../papers/arxiv-2609.29397/) | 2026-09-24 | 44 |
 | [BanglaTurn: A Benchmark and Whisper-Based Model for End-of-Turn Detection in Bangla Speech](../../papers/arxiv-2609.29371/) | 2026-09-24 | 42 |

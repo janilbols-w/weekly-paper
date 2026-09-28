@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **62** 篇。
+累计收录 **63** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DynBranch: Speculative Subgraph Reuse for Dynamic Agentic LLM Serving](../../papers/arxiv-2609.31047/) | 2026-09-28 | 44 |
 | [PipeLive: Efficient Live In-place Pipeline Parallelism Reconfiguration for Dynamic LLM Serving](../../papers/arxiv-2604.12171/) | 2026-09-24 | 42 |
 | [Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving](../../papers/doi-10.1109-lca.2026.3729099/) | 2026-09-22 | 49 |
 | [Stage-Aware Communication Scheduling for Disaggregated LLM Serving](../../papers/arxiv-2603.17456/) | 2026-09-22 | 44 |

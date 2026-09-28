@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **371** 篇。
+累计收录 **375** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RAZOR: Pruning Replaceable Experts in LLMs](../../papers/arxiv-2609.30465/) | 2026-09-28 | 41 |
+| [Aligning One-Step Generative Models with Reward-Weighted Transport Distillation](../../papers/arxiv-2609.30840/) | 2026-09-28 | 41 |
+| [Input-Layer Starvation: Why Per-Layer Pruning Breaks IoT Intrusion Detectors](../../papers/arxiv-2609.30729/) | 2026-09-28 | 39 |
+| [Adaptive multi-resolution Gaussian processes: Scalable exact inference with naturally data-sparse covariance matrices](../../papers/arxiv-2609.30348/) | 2026-09-28 | 38 |
 | [Task-Aware Spectral Pruning: A Mixture-of-Masks Framework for Efficient LLM Inference](../../papers/arxiv-2609.29499/) | 2026-09-25 | 53 |
 | [Near-Oracle KV Selection via Pre-hoc Sparsity for Long-Context Inference](../../papers/arxiv-2602.08329/) | 2026-09-25 | 52 |
 | [CataOPD: Catalytic On-Policy Distillation for Large Language Model Reasoning](../../papers/arxiv-2609.29518/) | 2026-09-25 | 47 |

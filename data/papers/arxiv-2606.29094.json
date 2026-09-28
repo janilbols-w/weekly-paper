@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2606.29094",
+  "title": "TeDiServe: High SLO Attainment Serving for Diffusion Language Models",
+  "abstract": "Diffusion language models (DLMs) have recently emerged as a promising alternative to conventional autoregressive language models. By generating multiple tokens in parallel during each denoising step, they offer higher inference throughput while maintaining competitive quality. However, realizing these throughput gains while meeting latency SLOs in a serving system requires addressing challenges introduced by DLMs' unique characteristics. These include navigating the speed-quality tradeoff created by confidence-based denoising, choosing appropriate parallelization levels across model instances under fluctuating load, and coordinating approximate KV caching mechanisms that introduce non-uniform per-step costs. To address these challenges, we present TeDiServe, a cluster-level serving system for DLMs. TeDiServe enables deadline-aware scheduling and adaptive load control through confidence-threshold adjustment, and dynamically reconfigures the cluster by solving a quality-aware optimization problem, while explicitly modeling the step-level heterogeneity introduced by approximate KV caching. Across multiple benchmarks and real-world traces, TeDiServe improves SLO attainment by up to 56.6 percentage points and reduces end-to-end request latency by up to 46\\% while incurring less than 1\\% accuracy drop.",
+  "url": "https://arxiv.org/abs/2606.29094",
+  "pdf_url": "https://arxiv.org/pdf/2606.29094",
+  "published": "2026-09-28",
+  "updated": "2026-09-28",
+  "authors": [
+    "Tzu-Tao Chang",
+    "Benjamin Yuanyang Hong",
+    "Kiet Pham",
+    "Shivaram Venkataraman"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "slo"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: slo",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Diffusion language models (DLMs) have recently emerged as a promising alternative to conventional autoregressive language models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-28T04:48:05+00:00",
+  "last_seen": "2026-09-28T04:48:05+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.29094",
+      "url": "https://arxiv.org/abs/2606.29094"
+    }
+  ]
+}
