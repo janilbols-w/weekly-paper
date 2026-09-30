@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.34680",
+  "title": "QuantForge: Discovering Residual Decompositions for MXFP4 Post-Training Quantization",
+  "abstract": "Four-bit post-training quantization can reduce the memory demands of large language models, but preserving accuracy under strict MXFP4 W4A4 requires coordinating several design choices. Coordinate transforms change block-encoding errors, which in turn affect the residuals propagated through the network. The useful algorithmic decomposition is therefore not fully known before search. LLM-driven program evolution offers a way to explore these choices, but performance scores alone do not explain which design should change next. We introduce QuantForge, a PTQ discovery system that records competing explanations, selects controls that distinguish them, and checks that successor code implements the resulting conclusions. This residual compilation guides program revisions while retaining useful programs even when their original explanations are rejected. Remeasuring the revised program reveals the next error to address. This process discovers HiRes, a fixed MXFP4 quantizer that shapes coordinates, refines legal code assignments, and recovers errors along attention and MLP paths. Each stage acts on residuals measured after the preceding stage has executed. Across seven tasks, HiRes achieves the lowest seven-model Robust Fit (0.09300) and the lowest quantized Fit-7 at 32B. In matched-budget comparisons of LLM-driven program evolution, each with 240 evaluator calls, QuantForge reaches a held-out transfer target in six of eight runs, compared with three each for textual memory and reflection memory, and one for score-only evolution, despite evaluating fewer new programs. These results show that QuantForge improves the discovery of transferable PTQ algorithms by turning controlled evidence into subsequent program changes.",
+  "url": "https://arxiv.org/abs/2609.34680",
+  "pdf_url": "https://arxiv.org/pdf/2609.34680",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Qiulin Shang",
+    "Zhoutong Wu",
+    "Jie Hu",
+    "Kun Yuan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Four-bit post-training quantization can reduce the memory demands of large language models, but preserving accuracy under strict MXFP4 W4A4 requires coordinating several design choices.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.34680",
+      "url": "https://arxiv.org/abs/2609.34680"
+    }
+  ]
+}

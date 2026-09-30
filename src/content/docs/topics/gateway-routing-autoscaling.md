@@ -5,10 +5,12 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **23** 篇。
+累计收录 **25** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SeLMRoute: Probabilistic Semantic Evidence for Large Language Model Routing](../../papers/arxiv-2609.34736/) | 2026-09-30 | 51 |
+| [Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows](../../papers/arxiv-2609.32917/) | 2026-09-30 | 48 |
 | [Cross-Model Autoscaling for Shared LLM Serving](../../papers/arxiv-2609.29160/) | 2026-09-24 | 44 |
 | [An Approximate Queueing Model of LLM Inference Serving for SLO-Driven Autoscaling](../../papers/arxiv-2609.20957/) | 2026-09-21 | 49 |
 | [DLB: Distributed Load Balancing at Scale for Generative AI Inference](../../papers/arxiv-2609.21079/) | 2026-09-21 | 47 |

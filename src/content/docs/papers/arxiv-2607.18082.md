@@ -1,6 +1,6 @@
 ---
 title: "CriPO: Enhancing Rubric-based RL via Self-Distillation"
-description: "Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks."
+description: "Rubric-based Reinforcement Learning (RL) has recently shown promise in improving Large Language Models (LLMs) on open-ended tasks."
 ---
 
 **评分：42/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
@@ -9,7 +9,7 @@ description: "Rubric-based RL has recently shown promise in improving LLMs on op
 
 ## 一句话摘要
 
-Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks.
+Rubric-based Reinforcement Learning (RL) has recently shown promise in improving Large Language Models (LLMs) on open-ended tasks.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks
 
 ## 摘要原文
 
-Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks. A widely recognized limitation of rubric-based RL is limited exploration: criteria that no rollout manages to satisfy (Unexplored Criteria, UC) receive no optimization signal. Recent methods address this by incorporating rubric information as external guidance during rollout, yet they introduce a train-inference mismatch: the policy is optimized on rollouts produced under external guidance while this guidance is absent at inference time, causing error accumulation through autoregressive decoding. Moreover, these exploration-focused approaches overlook a fundamentally different failure mode that we term Suppressed Criteria (SC) -- criteria that are satisfied by some rollouts yet whose learning signals are lost during optimization because scalar reward aggregation assigns them non-positive aggregate advantages. Our analysis reveals that SC are remarkably prevalent: over 57% of samples exhibit this failure mode throughout training, with an average of 1.8 SC per sample. To simultaneously address both UC and SC without introducing training-inference mismatch, we propose Criterion-Distilled Policy Optimization (CriPO), which enhances rubric-based RL via on-policy self-distillation. For UC, CriPO constructs a criterion-injection self-teacher and computes a localized forward-KL loss to inject missing behaviors into the policy. For SC, CriPO employs a counterfactual self-teacher to locate criterion-relevant tokens in negative-advantage rollouts and flips their token-level advantages to positive values, preserving useful patterns that would otherwise be suppressed. Experiments on medicine and science benchmarks demonstrate that CriPO consistently outperforms rubric-based RL, achieving stronger final performance with approximately $2\times$ fewer optimization steps.
+Rubric-based Reinforcement Learning (RL) has recently shown promise in improving Large Language Models (LLMs) on open-ended tasks. A widely recognized limitation of rubric-based RL is limited exploration: criteria that no rollout manages to satisfy (Unexplored Criteria) receive no optimization signal. Recent methods address this by incorporating rubric information as external guidance during rollout generation, yet they introduce a train-inference mismatch: the policy is optimized on rollouts produced under external guidance while this guidance is absent at inference time, causing error accumulation through autoregressive decoding. Moreover, these exploration-focused approaches overlook a fundamentally different failure mode that we term Suppressed Criteria---criteria that are satisfied by some rollouts yet whose learning signals might be lost during optimization because scalar reward aggregation assigns them non-positive aggregate advantages. Our analysis reveals that suppressed criteria constitute a persistent and non-negligible failure mode---over 25% of samples exhibit this issue throughout training. To simultaneously address both unexplored and suppressed criteria without introducing training-inference mismatch, we propose Criterion-Distilled Policy Optimization (CriPO), which enhances rubric-based RL via on-policy self-distillation. For unexplored criteria, CriPO constructs a behavior-injection teacher and computes a filtered forward-KL loss to inject missing behaviors into the policy. For suppressed criteria, CriPO uses a counterfactual teacher to locate criterion-relevant tokens in negative-advantage rollouts, and corrects their advantages in GRPO to preserve useful patterns. Experiments on medicine and science benchmarks demonstrate that CriPO outperforms existing rubric-based RL methods, e.g., achieving an average gain of 3.3 points over GRPO on Qwen3-4B.
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ Rubric-based RL has recently shown promise in improving LLMs on open-ended tasks
 ## 元数据
 
 - 作者：Mingxuan Xia, Yuhang Yang, Chao Ye, Shuai Zhu, Shenzhi Yang, Guangcheng Zhu, Yuhang Zhang, Cheng Peng, Haobo Wang, Siqing Wang
-- 发布：2026-08-04；更新：2026-08-04
+- 发布：2026-08-04；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

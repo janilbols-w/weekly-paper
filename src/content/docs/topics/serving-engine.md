@@ -5,10 +5,21 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **63** 篇。
+累计收录 **74** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [vSkipper: Translating Dynamic Layer Skipping into LLM Serving Gains](../../papers/arxiv-2609.37062/) | 2026-09-30 | 50 |
+| [Systematic Exploration of Multi-core Architectures for Efficient LLM Serving using WaferAI-SIM](../../papers/arxiv-2510.05632/) | 2026-09-30 | 48 |
+| [InferScale: GPU-Native KV Injection for Personalized LLM Serving](../../papers/arxiv-2607.27090/) | 2026-09-30 | 47 |
+| [AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs](../../papers/arxiv-2609.34683/) | 2026-09-30 | 47 |
+| [SPLASH: Switching Parallel Layouts of Attention with Seamless Handoff for LLM Serving](../../papers/arxiv-2609.37626/) | 2026-09-30 | 46 |
+| [IndexRAG: Index-Time Reasoning for Multi-Hop Retrieval-Augmented Generation](../../papers/arxiv-2603.16415/) | 2026-09-30 | 46 |
+| [Does Execution Require Target KV Fidelity? A Mixed-Fidelity KV Runtime for LLM Serving](../../papers/arxiv-2609.33536/) | 2026-09-30 | 45 |
+| [Beyond Energy: When Sustainability Dimensions Reshape LLM Serving Decisions](../../papers/arxiv-2609.35569/) | 2026-09-30 | 44 |
+| [Rethinking Training-Inference Mismatch in LLM Reinforcement Learning: Where It Arises and How to Correct It](../../papers/arxiv-2609.32444/) | 2026-09-30 | 43 |
+| [Efficient Agentic LLM Serving over SSD-based Sparse KV Storage](../../papers/arxiv-2609.36938/) | 2026-09-30 | 42 |
+| [Dr. MAS: Stable Reinforcement Learning for Multi-Agent LLM Systems](../../papers/arxiv-2602.08847/) | 2026-09-30 | 39 |
 | [DynBranch: Speculative Subgraph Reuse for Dynamic Agentic LLM Serving](../../papers/arxiv-2609.31047/) | 2026-09-28 | 44 |
 | [PipeLive: Efficient Live In-place Pipeline Parallelism Reconfiguration for Dynamic LLM Serving](../../papers/arxiv-2604.12171/) | 2026-09-24 | 42 |
 | [Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving](../../papers/doi-10.1109-lca.2026.3729099/) | 2026-09-22 | 49 |

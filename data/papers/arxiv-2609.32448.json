@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.32448",
+  "title": "ForkLeft: Entropy-First Rollouts for Prefix-Aligned Autoregressive-to-Diffusion Distillation",
+  "abstract": "Autoregressive Next-Token Prediction (NTP) has enabled strong reasoning capabilities in language models, while Diffusion Language Models (DLMs) offer flexible token orders and parallel generation. We ask whether DLMs can acquire NTP-style reasoning through distillation without giving up their native generation process. Direct distillation, however, faces a fundamental mismatch: an autoregressive teacher predicts from a left prefix, whereas a DLM can condition on tokens on both sides. We introduce ForkLeft, a distillation framework that resolves this mismatch by separating the student's rollout from teacher supervision. During training, the student first performs entropy-first rollouts that commit uncertain positions and expose potential forks. We then fix the resulting student prefix and distill an NTP teacher under the same context, with answer correctness determining the supervision source. At inference, the student returns to its native confidence-first parallel decoding. With Qwen3-30B-A3B-Base, ForkLeft improves Efficient-DLM-4B on all ten benchmarks, raising MATH500 from 72.60% to 79.60% and consistently outperforming three alternative designs. The gains scale with teacher strength and generalize to SDAR-4B with only $500$ updates. At matched scale, the distilled 4B and 8B students exceed the published SDAR-Chat and OPDLM models on seven benchmarks, showing that DLMs can learn NTP-style reasoning without sacrificing native parallel generation. Code and datasets will be released upon acceptance.",
+  "url": "https://arxiv.org/abs/2609.32448",
+  "pdf_url": "https://arxiv.org/pdf/2609.32448",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Junming Liu",
+    "Jicheng Wang",
+    "Yifeng He",
+    "Hao Chen",
+    "Jianzhong Qi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Autoregressive Next-Token Prediction (NTP) has enabled strong reasoning capabilities in language models, while Diffusion Language Models (DLMs) offer flexible token orders and parallel generation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32448",
+      "url": "https://arxiv.org/abs/2609.32448"
+    }
+  ]
+}

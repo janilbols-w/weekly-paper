@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2605.15315",
+  "title": "Context Pruning for Coding Agents via Multi-Rubric Latent Reasoning",
+  "abstract": "LLM-powered coding agents spend the majority of their token budget reading repository files, yet much of the retrieved code is irrelevant to the task at hand. Existing learned pruners compress this context with a single-objective sequence labeler, collapsing all facets of code relevance into one score and one transition matrix. We show that this formulation creates a modeling bottleneck: a single CRF transition prior must serve heterogeneous retention patterns, including contiguous semantic spans and sparse structural support lines. We propose LaMR (Latent Multi-Rubric), a structured pruning framework that decomposes code relevance into two interpretable quality dimensions, semantic evidence and dependency support, each modeled by a dedicated CRF with dimension-specific transition dynamics. A mixture-of-experts gating network dynamically weights the per-rubric emissions conditioned on the query, and a final CRF layer on the fused emissions produces the aggregate keep-or-prune decision. To supervise each dimension without additional annotation cost, we derive multi-rubric labels from the existing training corpus via AST-based program analysis, simultaneously denoising the teacher's binary labels. By effectively filtering distracting noise, LaMR frequently matches or even outperforms unpruned full-context baselines. Experiments on four benchmarks (SWE-Bench Verified, SWE-QA, LCC, LongCodeQA) show that LaMR wins 12 of 16 head-to-head multi-turn comparisons. It saves up to 31% more tokens on multi-turn agent tasks and improves Exact Match by up to +3.5 on single-turn tasks, while performance is frequently enhanced by denoising the context, and any remaining drops are marginal.",
+  "url": "https://arxiv.org/abs/2605.15315",
+  "pdf_url": "https://arxiv.org/pdf/2605.15315",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jingjing Wang",
+    "Xiwen Chen",
+    "Wenhui Zhu",
+    "Huayu Li",
+    "Zhengxiao He",
+    "Feiyang Cai",
+    "Ana S. Carreon-Rascon",
+    "Xuanzhao Dong",
+    "Feng Luo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM-powered coding agents spend the majority of their token budget reading repository files, yet much of the retrieved code is irrelevant to the task at hand.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.15315",
+      "url": "https://arxiv.org/abs/2605.15315"
+    }
+  ]
+}

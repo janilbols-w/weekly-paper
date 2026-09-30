@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.33409",
+  "title": "Dense Is Not Enough: Hierarchical Supervision Allocation for Long-Horizon On-Policy Distillation",
+  "abstract": "On-policy distillation (OPD) transfers the capabilities of a large language model to a smaller student by providing teacher supervision on the student's own rollouts. In long-horizon agentic tasks, however, uniform token-level matching can allocate supervision poorly: a large local discrepancy need not improve future behavior, while consequential guidance may be beyond the current student's reach or fail to persist without privileged input. We formulate long-horizon OPD as hierarchical supervision allocation and argue that productive guidance lies at the intersection of future utility and current learnability. Crucially, this intersection evolves as the student learns. Based on this principle, we propose LENS-OPD, a coarse-to-fine framework that organizes supervision through Locate, Validate, and Refine. Locate adapts trajectory exposure to the student's evolving competence and proposes a candidate decision for intervention. Validate tests whether teacher guidance at that decision improves the same student's subsequent behavior. Refine internalizes the beneficial guided behavior into the deployable policy and concentrates token-level supervision on decisive teacher-student conflicts within the validated turn. These stages are nested: each finer allocation is conditioned on the coarser decision, rather than being optimized as an independent importance score. Experiments across multiple long-horizon agent benchmarks and student-teacher configurations show that LENS-OPD consistently improves task performance over vanilla OPD and strong curriculum- and selection-based baselines. Our results suggest that effective long-horizon distillation requires teaching at the right depth, the right decision, and the right token.",
+  "url": "https://arxiv.org/abs/2609.33409",
+  "pdf_url": "https://arxiv.org/pdf/2609.33409",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Yuhao Sun",
+    "Binrui Wu",
+    "Zhuoer Xu",
+    "Ming Wen",
+    "Haoxiang Xu",
+    "Bin Chen",
+    "Yan Lin",
+    "Qianzijing Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On-policy distillation (OPD) transfers the capabilities of a large language model to a smaller student by providing teacher supervision on the student's own rollouts.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33409",
+      "url": "https://arxiv.org/abs/2609.33409"
+    }
+  ]
+}

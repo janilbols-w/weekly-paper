@@ -39,7 +39,7 @@ On-policy self-distillation fine-tuning (SDFT) learns new skills from demonstrat
 ## 元数据
 
 - 作者：Ahmed Khaled Khamis, Xiaotong Ji, Hassan Jaber, Rasul Tutunov, Matthieu Zimmer, Jun Wang, Haitham Bou-Ammar
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-22；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

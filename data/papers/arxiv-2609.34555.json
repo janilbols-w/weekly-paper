@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2609.34555",
+  "title": "PulseInfer: I/O-Centric Sparse KV Cache Offloading for Efficient Long-Context LLM Decoding",
+  "abstract": "Long-context LLM serving is increasingly bottlenecked by decode, where large KV caches limit batch size and underutilize GPUs. Sparse KV cache offloading expands effective capacity by storing most historical KV blocks in CPU DRAM and recalling only selected blocks on demand. However, we find that existing offloading systems shift the bottleneck to CPU-GPU recall I/O: recall volume varies widely across layers, decode steps and requests, while headwise sparse selection fragments recalls into many small PCIe transfers. This paper presents PulseInfer, an I/O-centric sparse KV cache offloading system. PulseInfer hides variable recall latency with interruptible layer-wise scheduling, adapts offloading decisions with IO-Adaptive Offloading Admission, and coalesces fragmented transfers using SoloHead sparse selection and a gather-scatter I/O engine. Implemented on SGLang, PulseInfer improves decode throughput by up to 4.7x over SGLang and 2.6x over the best existing offloading baseline, while reducing TPOT by up to 76% and preserving near-lossless accuracy.",
+  "url": "https://arxiv.org/abs/2609.34555",
+  "pdf_url": "https://arxiv.org/pdf/2609.34555",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Qiuyang Zhang",
+    "Kai Zhou",
+    "Kai Lu",
+    "Haocheng Lu",
+    "Jian Zhou",
+    "Yuanpeng Su",
+    "Kun Bao",
+    "Jiguang Wan",
+    "Fei Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "cache-offload-memory"
+  ],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Long-context LLM serving is increasingly bottlenecked by decode, where large KV caches limit batch size and underutilize GPUs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.34555",
+      "url": "https://arxiv.org/abs/2609.34555"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.31908",
+  "title": "Improving Medical Calculation of LLMs with Embedded Coding",
+  "abstract": "Large Language Models (LLMs) perform well on medical examinations and question-answering benchmarks, but remain unreliable on medical calculation tasks that require exact numerical outputs. These calculations support high-stakes decisions such as medication dosing, organ-function assessment, and prognostic scoring, for which even small errors can have serious clinical consequences. We introduce MedCode, a framework that improves medical calculation by training LLMs to generate embedded executable code. Given a clinical context, the model identifies the relevant calculator, extracts its input variables, and produces a script that delegates arithmetic operations to a deterministic interpreter. Executing the script returns the calculated value together with an explanation and the appropriate unit. We construct supervised fine-tuning (SFT) and preference datasets from the MedCalc benchmark and additionally curate a dataset for calculation tasks in Intensive Care Unit (ICU) scenarios. We further propose weighted Direct Preference Optimization (wDPO), which adaptively emphasizes preference pairs that are difficult for the model to distinguish. Experiments with LLaMA3-8B, Qwen2.5-7B, and Mistral-7B show absolute accuracy gains of 20--30 percentage points, demonstrating the effectiveness of embedded code generation for medical calculation.",
+  "url": "https://arxiv.org/abs/2609.31908",
+  "pdf_url": "https://arxiv.org/pdf/2609.31908",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Tianshi Ming",
+    "Yingying Zhang",
+    "Xian Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large Language Models (LLMs) perform well on medical examinations and question-answering benchmarks, but remain unreliable on medical calculation tasks that require exact numerical outputs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.31908",
+      "url": "https://arxiv.org/abs/2609.31908"
+    }
+  ]
+}

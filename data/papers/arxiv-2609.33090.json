@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.33090",
+  "title": "OneSign: Unifying Sign Language Understanding Tasks with One Model",
+  "abstract": "SLU encompasses a diverse set of tasks, including ISLR, CSLR, and SLT. Although these tasks share basic semantic and linguistic foundations, they are typically addressed with task-specific architectures and training pipelines, which hinders knowledge sharing and requires costly pretraining and finetuning for each task. In this paper, we focus on two aspects of SLU tasks: (1) training and inference pipelines are highly fragmented: most methods rely on pretraining on large-scale SL datasets followed by task- or dataset-specific finetuning, which leads to multiple specialized models rather than a single checkpoint. (2) current LLM-based methods may overlook the inherent modality discrepancy between sign and text tokens, simply concatenating them and processing both modalities with the same decoder layers. In this paper, we present OneSign, a unified framework that addresses multiple SLU tasks within a single model and a single checkpoint. OneSign reformulates ISLR, CSLR, and SLT under a single training paradigm. To accommodate the heterogeneous characteristics of sign and text representations, we introduce a Modality-Adaptive Mixture-of-Experts (MA-MoE) architecture, consisting of a shared expert and modality-specific experts for sign and text tokens. A modality router dynamically activates the corresponding experts, and their outputs are aggregated to form the final token representations. By enabling modality-dependent expert specialization while preserving a shared expert path, MA-MoE can effectively model the modality differences between continuous sign representations and discrete text tokens. Extensive experiments on multiple benchmarks demonstrate that OneSign achieves competitive or state-of-the-art performance on several benchmarks, highlighting its effectiveness as a unified SLU model. Datasets are available at : https://github.com/gswycf/OneSign.",
+  "url": "https://arxiv.org/abs/2609.33090",
+  "pdf_url": "https://arxiv.org/pdf/2609.33090",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Shiwei Gan",
+    "Yafeng Yin",
+    "Xiao Liu",
+    "Desibieer Tuerdaken",
+    "Lei Xie",
+    "Sanglu Lu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/gswycf/OneSign",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "SLU encompasses a diverse set of tasks, including ISLR, CSLR, and SLT.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33090",
+      "url": "https://arxiv.org/abs/2609.33090"
+    }
+  ]
+}

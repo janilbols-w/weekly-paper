@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2602.08847",
+  "title": "Dr. MAS: Stable Reinforcement Learning for Multi-Agent LLM Systems",
+  "abstract": "Multi-agent LLM systems enable advanced reasoning and tool use via role specialization, yet reliable reinforcement learning (RL) post-training for such systems remains difficult. In this work, we theoretically pinpoint a key reason for training instability when extending group-based RL to multi-agent LLM systems. We show that under GRPO-style optimization, a global normalization baseline may deviate from diverse agents' reward distributions, which ultimately leads to gradient-norm instability. Based on this finding, we propose Dr. MAS, a simple and stable RL training recipe for multi-agent LLM systems. Dr. MAS uses an agent-wise remedy: normalizing advantages per agent using each agent's own reward statistics, which calibrates gradient scales and dramatically stabilizes training, both theoretically and empirically. Beyond the algorithm, Dr. MAS provides an end-to-end RL training framework for multi-agent LLM systems, supporting scalable orchestration, flexible per-agent LLM serving and optimization configs, and shared resource scheduling of LLM actor backends. We evaluate Dr. MAS on multi-agent math reasoning and multi-turn search benchmarks using Qwen2.5 and Qwen3 series models. Dr. MAS achieves clear gains over vanilla GRPO (e.g., +5.6\\% avg@16 and +4.6\\% pass@16 on math, and +15.2\\% avg@16 and +13.1\\% pass@16 on search) while largely eliminating gradient spikes. Moreover, it remains highly effective under heterogeneous agent-model assignments while improving efficiency.",
+  "url": "https://arxiv.org/abs/2602.08847",
+  "pdf_url": "https://arxiv.org/pdf/2602.08847",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Lang Feng",
+    "Longtao Zheng",
+    "Shuo He",
+    "Fuxiang Zhang",
+    "Bo An"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Multi-agent LLM systems enable advanced reasoning and tool use via role specialization, yet reliable reinforcement learning (RL) post-training for such systems remains difficult.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.08847",
+      "url": "https://arxiv.org/abs/2602.08847"
+    }
+  ]
+}

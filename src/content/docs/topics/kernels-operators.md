@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **27** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KernelZero: Co-Evolving Proposer and Coder for Continuously Improved GPU Kernel Generation](../../papers/arxiv-2609.33074/) | 2026-09-30 | 43 |
 | [KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization](../../papers/arxiv-2609.30059/) | 2026-09-24 | 49 |
 | [KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity](../../papers/arxiv-2609.30057/) | 2026-09-24 | 44 |
 | [Xtrace: High-Fidelity GPU Intra-Kernel Tracing via Binary-Level Instruction Splicing](../../papers/arxiv-2609.28769/) | 2026-09-23 | 40 |
@@ -25,7 +26,7 @@ description: "Kernels & Operator Fusion"
 | [Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory](../../papers/arxiv-2608.25570/) | 2026-08-26 | 44 |
 | [Prime Agent: A Self-Improving RLM Harness](../../papers/arxiv-2608.23552/) | 2026-08-25 | 39 |
 | [HIERA: Workload-Aware Planning Across Implementation Spaces for GPU Kernel Optimization](../../papers/arxiv-2608.21157/) | 2026-08-24 | 51 |
-| [PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX](../../papers/arxiv-2608.17379/) | 2026-08-18 | 55 |
+| [PTXBench: Benchmarking and Adapting LLMs for GPU Kernel Optimization with Architecture-specific PTX](../../papers/arxiv-2608.17379/) | 2026-08-18 | 55 |
 | [FluxBin: Flexible LUT-based Ultra-low-bit LLM Inference by Algorithm-Kernel Synergy](../../papers/arxiv-2608.15602/) | 2026-08-16 | 47 |
 | [FlashQuant: Sparse-Dense Fusion for Memory-Efficient Outlier-Aware LLM Inference](../../papers/arxiv-2608.15531/) | 2026-08-16 | 45 |
 | [Optimizing CUDA like a Human: Micro-Profiling Tools as Expert Surrogates for LLM-Based GPU Kernel Optimization](../../papers/arxiv-2606.26453/) | 2026-08-11 | 56 |

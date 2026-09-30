@@ -1,15 +1,15 @@
 ---
 title: "PAC-CF: Calibrating Irreversible Frontier Pruning in LLM-Guided Search"
-description: "LLM-guided search is usually adopted to solve complex tasks by ranking and pruning top-$K$ candidates based on evaluator scores."
+description: "LLM-guided search explores multiple candidate trajectories, but at substantial test-time cost."
 ---
 
-**评分：39/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：43/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2604.14345) · [PDF](https://arxiv.org/pdf/2604.14345)
 
 ## 一句话摘要
 
-LLM-guided search is usually adopted to solve complex tasks by ranking and pruning top-$K$ candidates based on evaluator scores.
+LLM-guided search explores multiple candidate trajectories, but at substantial test-time cost.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ LLM-guided search is usually adopted to solve complex tasks by ranking and pruni
 
 ## 摘要原文
 
-LLM-guided search is usually adopted to solve complex tasks by ranking and pruning top-$K$ candidates based on evaluator scores. However, irreducible bias still exists even if popular methods, such as repeated sampling, are applied to reduce variance. Consequently, pruning may remove every continuation that can reach a valid solution. In this paper, we propose Probably Approximately Correct Conformal Filtering (PAC-CF), which formulates tree pruning as a PAC-guaranteed decision problem. Theoretical analysis establishes how irreducible bias reduces the score separation for certified elimination. Native-Trace path calibration derives a conformal margin from the score deficit of verifier-valid continuations on held-out Native traces. During deployment, PAC-CF uses this calibrated margin in a direct score-gap filtering rule. Across diverse domains and state-of-the-art controllers, PAC-CF improves utility at various budgets while reducing all five measured workload metrics. Especially on pruning-aware ToolTree under a 100-request budget, replacing native top-$K$ improves equal-domain utility by 4.38 points while reducing physical requests by $18.95\%$ with a $23.76\%$ token reduction.
+LLM-guided search explores multiple candidate trajectories, but at substantial test-time cost. Pruning low-scoring frontier candidates can control this cost, yet it also turns potentially biased evaluator scores into irreversible decisions: systematic ranking errors can persist under repeated scoring and remove useful branches. We propose Probably Approximately Correct Conformal Filtering (PAC-CF). Its fixed-frontier analysis formulates elimination as an $(\varepsilon,\delta)$-PAC problem under bounded evaluator bias; its operational rule separately calibrates a score-gap threshold on held-out tasks by running the original controller without PAC-CF and using post-search verifier labels to measure the deficit of solution-preserving candidates relative to the frontier leader. Conditional on exchangeable native-controller tasks with nonempty protected exposure, conformal calibration gives finite-sample coverage for retaining at least one verifier-defined valid continuation at every protected frontier on the native trajectory. At deployment, PAC-CF removes only candidates whose gap from the highest frontier score exceeds the frozen threshold. We evaluate PAC-CF across three domains, five controllers, and four request budgets from B100 to B500. In the cross-domain/controller macro averages, the point estimates for all three workload measures are lower at every budget; the paired-bootstrap 95\% confidence interval for utility excludes zero at B100 and B200. For pruning-aware ToolTree, the full-test-set cross-domain utility difference is $+4.38$ points at each tested budget; on the natural-termination sensitivity cohort, physical requests decrease by $18.94$--$18.95\%$ and end-to-end token usage by $23.57$--$23.76\%$.
 
 ## 质量评分
 
@@ -25,8 +25,8 @@ LLM-guided search is usually adopted to solve complex tasks by ranking and pruni
 |---|---:|
 | relevance | 16 |
 | novelty | 6 |
-| rigor | 7 |
-| practical impact | 5 |
+| rigor | 9 |
+| practical impact | 7 |
 | reproducibility | 2 |
 | credibility | 3 |
 
@@ -39,7 +39,7 @@ LLM-guided search is usually adopted to solve complex tasks by ranking and pruni
 ## 元数据
 
 - 作者：Tianhao Qian, Jiayu Chen, Lixu Wang
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

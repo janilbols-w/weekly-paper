@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.33889",
+  "title": "Where Activation Sparsity and KV-Cache Sparsity Cross in LLM Decoding",
+  "abstract": "At each step, decoding one sequence with a large language model rereads the projection weights, whose traffic is fixed, and the key-value (KV) cache, whose traffic grows with context. Activation sparsity trims the first term and KV-cache sparsity the second, yet their reported speedups are hard to compare because each depends on context length and on the dense attention kernel it is measured against. We derive a byte crossover, the context length at which the two savings are equal, together with ideal speedup bounds for each branch and for their composition, from model dimensions and keep ratios alone. We then time both branches and their composition from 2K to 128K tokens on two GPUs after a dense prefill of real text, with dense and sparse modes reading the cache through the same split-K attention kernel. The projection branch leads at short context and the KV branch at long context, with speedups that follow their byte bounds up to fixed kernel costs. Adding these costs, measured in separate sweeps, lets the byte account predict the measured crossings of three keep-ratio pairs, a second model, and a second GPU to within 4.1K tokens. Timing the dense baseline with masked instead of split-K attention inflates the apparent speedup of the same KV policy about fivefold. An attention-scored KV selection answers the same passkey and multi-key placements as dense decoding up to 127K tokens, whereas a KV window misses most of them. Under matched perplexity budgets, activation sparsity composed with this selection decodes 14 to 26% faster than the best single branch on both GPUs. Code is available at https://github.com/js-lee-AI/ByteCross.",
+  "url": "https://arxiv.org/abs/2609.33889",
+  "pdf_url": "https://arxiv.org/pdf/2609.33889",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jungseob Lee",
+    "Seungyoon Lee",
+    "Seongtae Hong",
+    "Sugyeong Eo",
+    "Heuiseok Lim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/js-lee-AI/ByteCross",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "compression-sparsity-distillation"
+  ],
+  "keyword_evidence": [
+    "attention kernel",
+    "kv-cache"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: attention kernel, kv-cache",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "At each step, decoding one sequence with a large language model rereads the projection weights, whose traffic is fixed, and the key-value (KV) cache, whose traffic grows with context.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33889",
+      "url": "https://arxiv.org/abs/2609.33889"
+    }
+  ]
+}

@@ -5,10 +5,15 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **59** 篇。
+累计收录 **64** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MEDEM: Multi-Engine DL Accelerator Design Methodology](../../papers/arxiv-2609.37399/) | 2026-09-30 | 51 |
+| [MoRE: Scaling mixture of experts with hardware-aware low-rank routing](../../papers/arxiv-2609.36301/) | 2026-09-30 | 48 |
+| [MorphAtt: A Neuromorphic Accelerator for Efficient Multi-Head Attention Processing in Spiking Vision Transformers](../../papers/arxiv-2609.33207/) | 2026-09-30 | 44 |
+| [Classifier-pruned Bayesian optimization for particle accelerator tuning: Exploring temporally structured manifold of 6D beam phase space](../../papers/arxiv-2412.01748/) | 2026-09-30 | 41 |
+| [COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints](../../papers/arxiv-2609.33671/) | 2026-09-30 | 38 |
 | [Block Sparse Attention with Log-Linear Complexity](../../papers/arxiv-2609.31093/) | 2026-09-28 | 41 |
 | [A Rapid Pipeline for Training and Deploying ML Models on WeBe Band](../../papers/arxiv-2609.29084/) | 2026-09-24 | 41 |
 | [From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes](../../papers/arxiv-2609.27249/) | 2026-09-24 | 40 |

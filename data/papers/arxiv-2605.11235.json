@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2605.11235",
+  "title": "Internalizing Curriculum Judgment for LLM Reinforcement Fine-Tuning",
+  "abstract": "In LLM Reinforcement Fine-Tuning (RFT), curriculum learning drives both efficiency and performance. Yet, current methods externalize curriculum judgment via handcrafted heuristics or auxiliary models, risking misalignment with the policy's training dynamics. In this paper, we introduce METIS (METacognitive Internalized Self-judgment), a novel framework that internalizes curriculum judgment as a native capability. Leveraging a critical observation that within-prompt reward variance effectively gauges prompt informativeness, METIS predicts this metric based on recent training outcomes as lightweight in-context learning examples. This intrinsic self-judgment then dynamically dictates the training allocation. Moreover, METIS closes the loop between judgment and optimization by jointly optimizing the standard RFT rewards and a self-judgment reward. This allows the policy to learn what to learn next, as a form of metacognition. Across mathematical reasoning, code generation, and agentic function-calling benchmarks, METIS delivers superior performance while achieving up to a 2.1x training speedup, with controlled ablations and in-depth analysis further validating the benefits of internalized curriculum judgment. By bypassing handcrafted heuristics and auxiliary models, our work establishes a simple, closed-loop, and highly efficient curriculum internalization paradigm for LLM reinforcement fine-tuning.",
+  "url": "https://arxiv.org/abs/2605.11235",
+  "pdf_url": "https://arxiv.org/pdf/2605.11235",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Han Zheng",
+    "Yining Ma",
+    "Karthick Gunasekaran",
+    "Bharathan Balaji",
+    "Zheng Du",
+    "Shiv Vitaladevuni",
+    "Cathy Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "In LLM Reinforcement Fine-Tuning (RFT), curriculum learning drives both efficiency and performance.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.11235",
+      "url": "https://arxiv.org/abs/2605.11235"
+    }
+  ]
+}

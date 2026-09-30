@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2601.22132",
+  "title": "Pay for Hints, Not Answers: LLM Shepherding for Cost-Efficient Inference",
+  "abstract": "Large Language Models (LLMs) deliver state-of-the-art performance on complex reasoning tasks, but their inference costs limit deployment at scale. Small Language Models (SLMs) offer dramatic cost savings yet lag substantially in accuracy. Existing approaches - routing and cascading - treat the LLM as an all-or-nothing resource: either the query bypasses the LLM entirely, or the LLM generates a complete response at full cost. We introduce LLM Shepherding, a framework that requests only a short prefix (a hint) from the LLM and provides it to SLM. This simple mechanism is surprisingly effective for math and coding tasks: even hints comprising 10-30% of the full LLM response improve SLM accuracy significantly. Shepherding generalizes both routing and cascading, and it achieves lower cost under oracle decision-making. We develop a two-stage predictor that jointly determines whether a hint is needed and how many tokens to request. On the widely-used mathematical reasoning (GSM8K, CNK12) and code generation (HumanEval, MBPP) benchmarks, Shepherding reduces costs by 42-94% relative to LLM-only inference. Compared to state-of-the-art routing and cascading baselines, shepherding delivers up to 2.8x cost reduction while matching accuracy. To our knowledge, this is the first work to exploit token-level budget control for SLM-LLM collaboration.",
+  "url": "https://arxiv.org/abs/2601.22132",
+  "pdf_url": "https://arxiv.org/pdf/2601.22132",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Ziming Dong",
+    "Hardik Sharma",
+    "Evan O'Toole",
+    "Jaya Prakash Champati",
+    "Kui Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large Language Models (LLMs) deliver state-of-the-art performance on complex reasoning tasks, but their inference costs limit deployment at scale.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2601.22132",
+      "url": "https://arxiv.org/abs/2601.22132"
+    }
+  ]
+}

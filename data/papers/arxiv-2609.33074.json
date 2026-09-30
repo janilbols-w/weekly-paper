@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2609.33074",
+  "title": "KernelZero: Co-Evolving Proposer and Coder for Continuously Improved GPU Kernel Generation",
+  "abstract": "High-performance GPU kernels are essential to modern machine learning systems, yet automatically generating kernels that are both correct and efficient remains challenging. Existing LLM-based approaches face two major limitations: the scarcity of high-quality training data aligned with the model's current capabilities, and the inherent trade-off between kernel correctness and performance. To address these challenges, we propose KernelZero, a co-evolution framework that continuously improves GPU kernel generation through two specialized models: a Proposer that generates Torch modules from API sets and a Coder that translates them into CUDA or Triton kernels. KernelZero uses a frontier-driven module generation mechanism to continuously produce capability-aligned training modules based on the Coder's current weaknesses. It further introduces Correctness-Aware Group Relative Policy Optimization (CA-GRPO), which optimizes performance only after correctness becomes sufficiently reliable. By alternating the optimization of the Proposer and Coder, KernelZero forms an automatic curriculum that enables targeted and training-efficient capability improvement. Empirically, KernelZero-7B surpasses Claude-4.5-Sonnet on CUDA and DeepSeek-V4-Pro on Triton. On KernelBench Level 1 and 2, it achieves CUDA pass@1 scores of 75.8% and 69.6%, respectively, with pass@10 reaching 100% and 97%. On Triton, it achieves pass@1 scores of 77.2% and 72.5%, respectively.",
+  "url": "https://arxiv.org/abs/2609.33074",
+  "pdf_url": "https://arxiv.org/pdf/2609.33074",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Changxin Ke",
+    "Rui Zhang",
+    "Zixiang Fang",
+    "Zhenghong Li",
+    "Yuanbo Wen",
+    "Jiashuo Shen",
+    "Shuo Wang",
+    "Jiaming Guo",
+    "Ling Li",
+    "Qi Guo",
+    "Yunji Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel",
+    "kernel generation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel, kernel generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "High-performance GPU kernels are essential to modern machine learning systems, yet automatically generating kernels that are both correct and efficient remains challenging.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33074",
+      "url": "https://arxiv.org/abs/2609.33074"
+    }
+  ]
+}

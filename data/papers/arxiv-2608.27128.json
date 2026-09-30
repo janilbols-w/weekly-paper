@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2608.27128",
+  "title": "TwinKV: A Composable Repair Pass for KV Cache Eviction via Pairwise Key Redundancy",
+  "abstract": "Compressing a key-value cache before its next question is known requires choosing what to retain without knowing which evidence will matter. Value energy measures entry strength but does not distinguish isolated keys from those with many similar neighbors. We introduce TwinKV, a training-free method that discounts value energy by nonlocal post-RoPE key frequency. Prefix attention allocates head capacities, while retained entries preserve their original keys and values under an exact storage budget. Across four language models, TwinKV exceeds five evaluated compressed baselines in mean score on LongBench, LooGLE, and RULER at 50\\% KV removal. Component controls isolate the frequency contribution. On Llama-3.2-1B RULER at 75\\% removal, normalized frequency weights average 0.95, yet change 7\\% of nonprotected retained positions and improve value-only retention by about 5.5 points under both uniform and adapted capacities. Permuting the weights within heads weakens this gain. These results show that modest frequency corrections can change retention and answering outcomes, with effects that depend on the model and task.",
+  "url": "https://arxiv.org/abs/2608.27128",
+  "pdf_url": "https://arxiv.org/pdf/2608.27128",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Hong Chen",
+    "Yudong Zeng",
+    "Yongwei Huang",
+    "Zuhao Ouyang",
+    "Dongnan Zheng",
+    "Junyan Zhang",
+    "Yubo Gao",
+    "Xuming Hu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Compressing a key-value cache before its next question is known requires choosing what to retain without knowing which evidence will matter.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.27128",
+      "url": "https://arxiv.org/abs/2608.27128"
+    }
+  ]
+}

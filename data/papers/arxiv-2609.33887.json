@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.33887",
+  "title": "Faster Block-Diffusion Serving with Distribution-Free Risk Guarantees",
+  "abstract": "Block-diffusion language models are served at hand-picked operating points, such as acceptance thresholds, buffer depth, schedule, checkpoint and precision, and each point is chosen by its mean benchmark accuracy. However, a mean does not tell an operator how often a faster configuration fails on prompts that the slower one answers correctly. On the serving engine and its decode traces, the default commit rule already commits every fully resolved block, a static skip rule captures nearly all of the compute that allocation can save, and self-distillation on engine-decoded targets adds speed at unchanged accuracy. Larger speedups come from lower thresholds, which commit tokens that are still uncertain. We therefore present Redline, a finite-sample procedure that selects operating points, hand-picked or learned, from the correctness of their answers on calibration prompts. Redline keeps the reference-relative risk, the joint probability that the reference answers correctly and a candidate configuration does not, within a user-chosen budget with high probability, and deploys the fastest configuration that passes. It speeds up math at a smaller risk budget than code in both model families, and at a budget of ten percent it deploys a LLaDA2 math configuration that commits over a third more tokens in each forward. It also applies without modification to the acceptance rule of speculative decoding and to weight quantization. On the same calibration data, Redline stays within its stated failure probability, whereas each tolerance of a mean-accuracy rule either gains less speed for some model and task or exceeds the risk budget far more often for another. Code is available at https://github.com/js-lee-AI/Redline.",
+  "url": "https://arxiv.org/abs/2609.33887",
+  "pdf_url": "https://arxiv.org/pdf/2609.33887",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jungseob Lee",
+    "Dongyub Jude Lee",
+    "Chanjun Park",
+    "Sugyeong Eo",
+    "Heuiseok Lim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/js-lee-AI/Redline",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Block-diffusion language models are served at hand-picked operating points, such as acceptance thresholds, buffer depth, schedule, checkpoint and precision, and each point is chosen by its mean benchmark accuracy.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33887",
+      "url": "https://arxiv.org/abs/2609.33887"
+    }
+  ]
+}

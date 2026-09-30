@@ -5,10 +5,26 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **127** 篇。
+累计收录 **143** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Block Sparse Flash Attention](../../papers/arxiv-2512.07011/) | 2026-09-30 | 54 |
+| [Where Activation Sparsity and KV-Cache Sparsity Cross in LLM Decoding](../../papers/arxiv-2609.33889/) | 2026-09-30 | 50 |
+| [OmniTide: Co-Designing Algorithms and Systems for Efficient On-Device Omni-LLM Streaming](../../papers/arxiv-2609.34653/) | 2026-09-30 | 47 |
+| [KV-Lingo: Learning KV-Cache Translators with Distillation](../../papers/arxiv-2609.32610/) | 2026-09-30 | 47 |
+| [CacheRepair: Learning to Repair Cross-Chunk Context in RAG for KV Cache Fusion](../../papers/arxiv-2609.35139/) | 2026-09-30 | 46 |
+| [PulseInfer: I/O-Centric Sparse KV Cache Offloading for Efficient Long-Context LLM Decoding](../../papers/arxiv-2609.34555/) | 2026-09-30 | 45 |
+| [Distance-KV: Exploiting Relative Distance for Efficient Long-Context Inference](../../papers/arxiv-2609.32663/) | 2026-09-30 | 45 |
+| [TwinKV: A Composable Repair Pass for KV Cache Eviction via Pairwise Key Redundancy](../../papers/arxiv-2608.27128/) | 2026-09-30 | 43 |
+| [Spexis: Speculative Lookahead Scheduling for LLM Inference](../../papers/arxiv-2609.34370/) | 2026-09-30 | 43 |
+| [From Experience to Expertise: Adoption-Aware Memory Learning for Data-Scarce NPU Kernel Synthesis](../../papers/arxiv-2609.35568/) | 2026-09-30 | 43 |
+| [Cartridges++: KV Cache Compression without Off-Context Derailment](../../papers/arxiv-2609.35621/) | 2026-09-30 | 43 |
+| [KV-streams for Efficient Compaction in Agentic Reinforcement Learning](../../papers/arxiv-2609.35750/) | 2026-09-30 | 42 |
+| [Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs](../../papers/arxiv-2609.32259/) | 2026-09-30 | 41 |
+| [When Keywords Drop but Classifiers Hold: Soft Refusals under KV Cache Compression](../../papers/arxiv-2609.31678/) | 2026-09-30 | 38 |
+| [Memory-Efficient Looped Transformer: Decoupling Compute from Memory in Looped Language Models](../../papers/arxiv-2605.07721/) | 2026-09-30 | 38 |
+| [Affix Cache for Diffusion Large Language Models](../../papers/arxiv-2608.26140/) | 2026-09-30 | 38 |
 | [The KV Cache Is the New Memory Wall](../../papers/arxiv-2609.30854/) | 2026-09-28 | 46 |
 | [ActKV: Efficient LLM Agents through Action-Guided KV Cache Management](../../papers/arxiv-2609.31395/) | 2026-09-28 | 45 |
 | [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](../../papers/arxiv-2609.28870/) | 2026-09-25 | 41 |
@@ -48,7 +64,7 @@ description: "Attention & KV Cache"
 | [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](../../papers/arxiv-2609.11744/) | 2026-09-10 | 47 |
 | [FlexComp: One Model for Every Ratio in Context Compression](../../papers/arxiv-2609.11192/) | 2026-09-10 | 40 |
 | [Revisiting the Shape Convention of Transformer Language Models](../../papers/arxiv-2602.06471/) | 2026-09-10 | 38 |
-| [KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints](../../papers/arxiv-2609.10266/) | 2026-09-09 | 46 |
+| [KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints](../../papers/arxiv-2609.10266/) | 2026-09-09 | 63 |
 | [RouteRelay: Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention](../../papers/arxiv-2609.07306/) | 2026-09-09 | 38 |
 | [FlashBack: Efficient Retrieval-Augmented Language Modeling for Fast Inference](../../papers/arxiv-2405.04065/) | 2026-09-09 | 38 |
 | [Jacap: Robust KV Cache Eviction via Jacobian-Based Nonlinear Information Capacity Preservation](../../papers/arxiv-2609.08131/) | 2026-09-08 | 43 |
@@ -57,7 +73,7 @@ description: "Attention & KV Cache"
 | [ECOKV: Geometry-Aware KV Cache Eviction via Complementary Diversity Metrics](../../papers/arxiv-2609.06663/) | 2026-09-06 | 43 |
 | [CONDUIT: A Unified Residual-Stream Restoration Framework for KV Cache Reuse in Vision-Language Models](../../papers/arxiv-2609.05821/) | 2026-09-05 | 47 |
 | [Shift-Accumulate Attention: Multiplier-Free Query--Key Products for Transformer Decoding](../../papers/arxiv-2609.09208/) | 2026-09-05 | 39 |
-| [Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](../../papers/arxiv-2609.03430/) | 2026-09-03 | 47 |
+| [Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](../../papers/arxiv-2609.03430/) | 2026-09-03 | 49 |
 | [SGD-KV: Summarization Guided KV Cache Compression](../../papers/arxiv-2609.03235/) | 2026-09-03 | 43 |
 | [Almost Free State Prediction Separation](../../papers/arxiv-2609.03807/) | 2026-09-03 | 40 |
 | [Stream-CQSA: Exact Out-of-Memory Recovery for Attention](../../papers/arxiv-2604.20819/) | 2026-09-03 | 39 |

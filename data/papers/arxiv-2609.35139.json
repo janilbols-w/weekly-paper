@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.35139",
+  "title": "CacheRepair: Learning to Repair Cross-Chunk Context in RAG for KV Cache Fusion",
+  "abstract": "Multi-document retrieval-augmented generation (RAG) requires a language model to process multiple retrieved text chunks before answering a question. Precomputing each chunk's KV cache independently and concatenating the caches when the chunks are retrieved can accelerate this step. However, the assembled cache lacks cross-chunk attention information, reducing answer quality. Selective recomputation methods recover the missing cross-chunk context by rerunning the target LLM on selected tokens, incurring substantial online computation. We introduce CacheRepair, a lightweight network that learns the difference between independently computed KV caches and those produced by processing the chunks together. The network combines compressed KV features with token embeddings and uses attention that is bidirectional within each chunk and flows from earlier to later chunks. Each repair block receives the compressed cache features, and the predicted residual is added to every document token's cache. Each repair network is trained for a specific frozen target LLM on a generic retrieval corpus and reused across downstream datasets. Our analysis shows that repair reduces KV errors both near chunk boundaries and throughout chunk interiors. Evaluation across three target LLMs and four downstream datasets places CacheRepair on the measured answer-quality-latency Pareto frontier in eleven of twelve model-dataset combinations. Reported time to first token (TTFT) includes online cache transfer and repair. Across all twelve combinations, the largest repairers achieve 1.69-4.61$\\times$ speedups in median TTFT over full prefill and improve mean F1 by 2.1-26.1 percentage points over direct cache reuse.",
+  "url": "https://arxiv.org/abs/2609.35139",
+  "pdf_url": "https://arxiv.org/pdf/2609.35139",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Genglin Wang",
+    "Wangsong Yin",
+    "Yeerzhati Abudunuer",
+    "Haoxuan Xu",
+    "Guoliang Xing",
+    "Zhenyu Yan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Multi-document retrieval-augmented generation (RAG) requires a language model to process multiple retrieved text chunks before answering a question.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.35139",
+      "url": "https://arxiv.org/abs/2609.35139"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.33536",
+  "title": "Does Execution Require Target KV Fidelity? A Mixed-Fidelity KV Runtime for LLM Serving",
+  "abstract": "Large language model (LLM) serving is increasingly constrained by the GPU memory consumed by key-value (KV) caches. Existing compression, eviction, and offloading techniques alleviate this pressure, but serving runtimes typically treat only the configured target KV representation as execution-ready. Under memory pressure, this target-only contract can turn KV shortage into request stalls and preemptions. We present ElasticKV, a mixed-fidelity KV runtime built on the observation that target fidelity need not gate execution. ElasticKV introduces a compact intermediate KV state, making fidelity a runtime-managed execution property. To realize this state in a paged serving runtime, ElasticKV combines (i) a pair-structured layout that turns fidelity reduction into reusable GPU capacity, (ii) a dual-mode attention backend that directly consumes the compact state while preserving the native target-only path, and (iii) pressure-aware fidelity management that adapts KV fidelity to memory pressure. Our extensive evaluation across diverse workloads, model families and scales, and GPU platforms demonstrates the effectiveness and generality of ElasticKV. Under high concurrency, ElasticKV achieves 3.8-4.0$\\times$ lower time-to-first-token (TTFT) and 9.1$\\times$ lower P90 TTFT than vLLM while preserving generation quality.",
+  "url": "https://arxiv.org/abs/2609.33536",
+  "pdf_url": "https://arxiv.org/pdf/2609.33536",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jiantong Jiang",
+    "Yue Yang",
+    "Peiyu Yang",
+    "Feng Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [
+    "cache-offload-memory"
+  ],
+  "keyword_evidence": [
+    "llm serving",
+    "serving runtime"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving, serving runtime",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language model (LLM) serving is increasingly constrained by the GPU memory consumed by key-value (KV) caches.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33536",
+      "url": "https://arxiv.org/abs/2609.33536"
+    }
+  ]
+}

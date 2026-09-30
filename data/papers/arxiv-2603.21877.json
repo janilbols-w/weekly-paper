@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2603.21877",
+  "title": "P^2O: Joint Policy and Prompt Optimization",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) enhances Large Language Model (LLM) reasoning but is suffer from advantage collapse: when all rollouts of a query receive identical rewards, the group variance vanishes, most damagingly on hard samples, where scaling rollout budgets yields little. We introduce Joint Policy and Prompt Optimization (P O) to mitigate this collapse by alternating continuous policy updates with discrete prompt evolution. P O mines hard samples with a success-rate threshold, evolves reasoning prompts for them with GEPA, and internalizes the elicited trajectories via context distillation, which optimizes each trajectory under the original query and thus removes inference-time prompting, with a Context Ratio Mask (CRM) filtering out extreme likelihood ratios. P O restores critical advantage signals and surpasses the GRPO baseline by up to 8.2 points in average accuracy on six held-out benchmarks across all training datasets and backbones, while also outperforming DAPO and other baselines. The gains are especially pronounced on hard benchmarks, reaching up to 16.3 points above GRPO on average across AIME24 and AIME25. Our findings expose the limits of standard exploration in sparse-reward environments, illuminating the potential of unifying evolutionary algorithms with reinforcement learning. This integration of discrete semantic search and continuous parameter updates provides a self-reinforcing framework that facilitates more effective LLM alignment.",
+  "url": "https://arxiv.org/abs/2603.21877",
+  "pdf_url": "https://arxiv.org/pdf/2603.21877",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Xinyu Lu",
+    "Kaiqi Zhang",
+    "Jinglin Yang",
+    "Boxi Cao",
+    "Yaojie Lu",
+    "Hongyu Lin",
+    "Min He",
+    "Xianpei Han",
+    "Le Sun"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) enhances Large Language Model (LLM) reasoning but is suffer from advantage collapse: when all rollouts of a query receive identical rewards, the group variance vanishes, most damagingly on hard samples, where scaling rollout budgets yields little.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.21877",
+      "url": "https://arxiv.org/abs/2603.21877"
+    }
+  ]
+}

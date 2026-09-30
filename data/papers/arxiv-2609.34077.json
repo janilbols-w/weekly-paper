@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.34077",
+  "title": "MaskCoFT: Masked Co-Adaptive Fine-Tuning for Memory-Efficient MoE Inference",
+  "abstract": "Mixture-of-experts (MoE) language models often exceed the memory of a single GPU. Expert offloading keeps most experts in host memory and loads them on demand, so decoding speed depends on how many experts each token must fetch. Caching and prefetching reduce this cost only as far as the routing allows. Router-only fine-tuning can reshape the routing to reuse experts, but it keeps the experts frozen, so they cannot adapt to the tokens the new routing sends them. We propose MaskCoFT, a masked co-adaptive fine-tuning method that trains routers and experts together with the cross-entropy loss alone. During fine-tuning, a learnable binary mask restricts the Top-K routing of each layer to a subset of experts, and the experts adapt to the tokens redirected to them. At inference, the learned mask becomes a soft prior that re-ranks experts, so every expert remains selectable. We simulate a GPU cache of 4 experts per layer for Mixtral-8x7B and 12 for DeepSeek-V2-Lite. MaskCoFT cuts expert fetches per token by 23.7% and 10.1% relative to the base model. In real offloading system serving, it lowers the time per output token by up to 16.4% and 5.5%, respectively. Its average accuracy over nine benchmarks stays above the base model by 0.92 and 0.53 points.",
+  "url": "https://arxiv.org/abs/2609.34077",
+  "pdf_url": "https://arxiv.org/pdf/2609.34077",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Junfeng Wu",
+    "Zehao Fan",
+    "Hadjer Benmeziane",
+    "Kaoutar El Maghraoui",
+    "Liu Liu",
+    "Yinan Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "moe-efficiency",
+    "leaf": "MoE Efficiency",
+    "leaf_zh": "MoE 路由与专家优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "expert offloading",
+    "moe inference"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: expert offloading, moe inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-experts (MoE) language models often exceed the memory of a single GPU.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.34077",
+      "url": "https://arxiv.org/abs/2609.34077"
+    }
+  ]
+}

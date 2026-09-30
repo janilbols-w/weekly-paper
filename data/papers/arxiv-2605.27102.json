@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2605.27102",
+  "title": "Equivalent Flows, Unequal Learning: Clean-Latent Prediction in Transformers",
+  "abstract": "Flow samplers consume velocity, but the neural network can predict the clean endpoint and convert it to velocity through a fixed affine readout. We study this choice with JLT, a latent Transformer in a frozen variational autoencoder (VAE) representation. For squared error, the optimal clean and velocity predictors are algebraically equivalent; a finite Transformer assigns different computation to its learned output under the two interfaces. A local Gaussian analysis identifies a known residual response supplied by the readout and isotropic target variance added by velocity prediction. Measured FLUX.2 channel spectra support this geometric distinction: 90% of target variance occupies 83 of 128 clean directions versus 109 velocity directions. Under a matched velocity objective, clean prediction improves ImageNet FID-50K from 6.56 to 2.70 at Base scale and from 2.12 to 1.47 at Large scale, with lower FID at every measured Large checkpoint. Scaling clean prediction to 951M parameters reaches FID-50K 1.19 and IS 271.96. In addition, an objective ablation at Base scale shows that direct clean regression reaches FID-50K 2.38 without time-dependent error weighting. These results show how moving known computation outside the network changes learning under algebraically equivalent flow interfaces. Code: https://github.com/akatsuki-neo/JLT/blob/main/README.md",
+  "url": "https://arxiv.org/abs/2605.27102",
+  "pdf_url": "https://arxiv.org/pdf/2605.27102",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Funing Fu",
+    "Tenghui Wang",
+    "Guanyu Zhou",
+    "Junyong Cen",
+    "Qichao Zhu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/akatsuki-neo/JLT/blob/main/README.md",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Flow samplers consume velocity, but the neural network can predict the clean endpoint and convert it to velocity through a fixed affine readout.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.27102",
+      "url": "https://arxiv.org/abs/2605.27102"
+    }
+  ]
+}

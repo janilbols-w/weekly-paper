@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2609.33671",
+  "title": "COGNIT-Guard: Calibrated Standalone Direct-Decision Guardrails with Heterogeneous CPU-NPU Confidence Cascading under Explicit Latency and False-Positive Constraints",
+  "abstract": "When must a foundation-model safety gateway generate tokens, and when should it directly output a calibrated decision? We study calibrated standalone direct-decision foundation models for real-time pre-ingestion safety guardrails, jointly addressing probability calibration, dual-use false-positive control, and heterogeneous CPU-NPU routing under explicit latency SLOs. Pre-ingestion guardrails must screen prompts prior to target-LLM prefill with low false alarms on benign compliance inquiries; however, shallow classifiers are brittle to phrasing shifts, hidden-state probes require coupling to a target LLM, and generative guards incur high decoding latency and dual-use false positives. We present COGNIT-Guard, coupling a validation-calibrated CPU fast gatekeeper with confidence-gated escalation to an NPU-resident 322M bidirectional direct-decision model (Laya-322M) under an asymmetric false-positive penalty. On the clean unseen DUCS-Bench test split ($N=607$), COGNIT-Guard achieves 98.85% accuracy (McNemar $p = 1.19 \\times 10^{-4}$ vs. ML), reduces benign FPR to 0.42% ($1/238$; Fisher's exact $p = 8.23 \\times 10^{-4}$ vs. ML), and attains 1.12% ECE and 0.0104 Brier score. On Huawei Ascend 910C NPUs, pure NPU inference runs in 21.77 ms mean latency (45.90 QPS), while the live serial CPU-NPU cascade ($\\theta^*_{\\mathrm{deploy}}=0.70$) achieves 41.63 ms mean latency (P50: 39.47 ms, 99.23% accuracy, 0.00% FPR). Evaluation on SafetyBench-ZH ($N=2,100$) and comparison against a bi-encoder direct-decision baseline (CLM-8B) disentangle in-domain gains, OOD alignment tax (60.33% $\\to$ 56.81% on Laya; 55.10% on domain CLM-8B), and experience replay recovery, restoring OOD accuracy to 64.10%-65.05% and reaching 99.67%-99.84% in-domain accuracy with 0.00%-0.42% FPR.",
+  "url": "https://arxiv.org/abs/2609.33671",
+  "pdf_url": "https://arxiv.org/pdf/2609.33671",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Hao Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "npu inference"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: npu inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "When must a foundation-model safety gateway generate tokens, and when should it directly output a calibrated decision?",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33671",
+      "url": "https://arxiv.org/abs/2609.33671"
+    }
+  ]
+}

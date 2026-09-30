@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2606.18394",
+  "title": "JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting",
+  "abstract": "Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsistent trees, wasting budget and reducing acceptance. We propose JetSpec, a head-based SD framework that combines one-forward drafting efficiency with branch-wise causal conditioning. JetSpec trains a causal parallel draft head over fused hidden states from the frozen target model, producing candidate trees whose scores align with the target model's autoregressive factorization. This enables JetSpec to convert larger draft budgets into longer accepted prefixes and higher end-to-end speedup. Across math, coding, and chat benchmarks on dense and MoE Qwen3 models, JetSpec consistently outperforms bidirectional-head and tree-based SD baselines. On H100 GPUs, JetSpec achieves up to 9.64x speedup on MATH-500 and 4.58x on open-ended conversational workloads, with further latency gains demonstrated through vLLM integration under realistic serving loads. Our code and models are available at https://github.com/hao-ai-lab/JetSpec.",
+  "url": "https://arxiv.org/abs/2606.18394",
+  "pdf_url": "https://arxiv.org/pdf/2606.18394",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Lanxiang Hu",
+    "Zhaoxiang Feng",
+    "Yulun Wu",
+    "Haoran Yuan",
+    "Yujie Zhao",
+    "Yu-Yang Qian",
+    "Bojun Wang",
+    "Peng Zhao",
+    "Daxin Jiang",
+    "Yibo Zhu",
+    "Tajana Rosing",
+    "Hao Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/hao-ai-lab/JetSpec",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 57,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 14,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [
+    "2026-W40"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.18394",
+      "url": "https://arxiv.org/abs/2606.18394"
+    }
+  ]
+}

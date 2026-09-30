@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.36938",
+  "title": "Efficient Agentic LLM Serving over SSD-based Sparse KV Storage",
+  "abstract": "Agentic sessions driven by Large language models (LLMs) often alternate between model inference and tool use, accumulating long histories across successive rounds. Serving these sessions efficiently requires reducing attention computation and retaining history key-value (KV) caches to avoid recomputation. Recently, frontier open-source LLMs adopt sparse attention to reduce computation by selecting only part of the history, while SSDs provide a cheaper alternative to CPU DRAM for storing KV caches. However, sparse KV selection depends on the ad hoc intermediate values during model inference, so it forces SSD reads to lie on the inference critical path. These reads are further slowed by fragmented accesses and read-write interference in SSDs. To address these challenges, we present Janus, an agentic serving framework for sparse attention LLMs with SSD-centric KV storage. Janus focuses on append prefill, which processes each round's newly added inputs and accounts for most history KV loading. To move SSD reads out of the critical path, Janus runs the model's own KV selection module on earlier intermediate values, predicting KV demand without additional training. The predicted reads overlap with model computation, and any prediction misses are fetched before attention executes to preserve model outputs. To improve SSD efficiency, Janus coalesces adjacent reads, packs scattered KV pages into sequential writes on the CPU, and limits background writes while reads are active. Across three models and three agentic traces, Janus outperforms existing works by up to 1.57-3.69 times (1.22-1.85 times on average) in terms of the time to first token latency, while maintaining decode efficiency.",
+  "url": "https://arxiv.org/abs/2609.36938",
+  "pdf_url": "https://arxiv.org/pdf/2609.36938",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Wenhao He",
+    "Ping Zhang",
+    "Xiaohe Hu",
+    "Chutian Wang",
+    "Jinlong Hou",
+    "Yuan Cheng",
+    "Peng Sun",
+    "Fangcheng Fu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Agentic sessions driven by Large language models (LLMs) often alternate between model inference and tool use, accumulating long histories across successive rounds.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.36938",
+      "url": "https://arxiv.org/abs/2609.36938"
+    }
+  ]
+}

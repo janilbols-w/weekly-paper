@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.32259",
+  "title": "Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs",
+  "abstract": "Recent multi-agent LLM systems increasingly combine heterogeneous models for specialized agent roles. However, text-based communication requires each receiver to prefill shared context already processed by the sender. Reusing the sender's key-value (KV) cache avoids this redundancy, but prefill-free transfer across model families must handle differences in tokenization, model depth, and KV representations. To address these issues, we propose \\textit{HeteroFold}, a prefill-free cross-family KV cache transfer method that keeps both the sender and receiver frozen. HeteroFold aligns model structures, maps the sender cache into the receiver space, and calibrates it to preserve receiver behavior. Across six transfer directions, HeteroFold achieves the best cache-transfer performance on all four long-context benchmarks and most short-context settings. It also matches text-based communication on the multi-agent benchmark. At 32K context length, Llama-3.1-8B$\\rightarrow$Ministral-3-14B transfer is $10.7\\times$ faster than Native Prefill and $1.18$--$1.47\\times$ faster than the state-of-the-art prefill-free baselines, Dense Latent and KV Ridge. These results show that HeteroFold enables efficient cross-family KV reuse without receiver prefill.",
+  "url": "https://arxiv.org/abs/2609.32259",
+  "pdf_url": "https://arxiv.org/pdf/2609.32259",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Vincent-Daniel Yun",
+    "Woosang Lim",
+    "Haneul Yoo",
+    "Sungjoo Yoo",
+    "Murali Annavaram",
+    "Sai Praneeth Karimireddy"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.MA"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Recent multi-agent LLM systems increasingly combine heterogeneous models for specialized agent roles.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32259",
+      "url": "https://arxiv.org/abs/2609.32259"
+    }
+  ]
+}

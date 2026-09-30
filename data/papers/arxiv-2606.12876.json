@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2606.12876",
+  "title": "Multi-Bitwidth Quantization for LLMs Using Additive Codebooks",
+  "abstract": "As large language models (LLMs) are increasingly deployed across heterogeneous hardware with varying resource constraints, the ability to adaptively manage the performance-efficiency trade-off without retraining is critical. We propose Drop-by-Drop, a novel multi-bitwidth post-training quantization framework enabling inference-time precision control over LLM weights from a single quantized model. As theoretical motivation, we prove that Gaussian sources are successively refinable under a weighted mean squared error distortion motivated by LLM loss functions: successive refinement across distortion levels incurs no rate penalty relative to encoding at each level separately. Drop-by-Drop approximates this hierarchical structure in practice by incorporating Matryoshka-style supervision into additive codebook training, inducing an ordering in which codebook prefixes yield accurate partial reconstructions at each precision level. Furthermore, a block-Hadamard rotation brings the weight distribution closer to our Gaussian source assumption. The result is a single model that serves multiple bitwidths by dropping codebooks, reducing storage and quantization cost relative to the static per-bitwidth models. Across Qwen, LLaMA, Gemma, and Mistral, Drop-by-Drop achieves lower perplexity than state-of-the-art multi-bitwidth methods with competitive zero-shot accuracy, while our specialized kernels further reduce decoding latency.",
+  "url": "https://arxiv.org/abs/2606.12876",
+  "pdf_url": "https://arxiv.org/pdf/2606.12876",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Liza Babaoglu",
+    "Shuangyi Chen",
+    "Ashish Khisti"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.IT",
+    "cs.LG",
+    "math.IT"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As large language models (LLMs) are increasingly deployed across heterogeneous hardware with varying resource constraints, the ability to adaptively manage the performance-efficiency trade-off without retraining is critical.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.12876",
+      "url": "https://arxiv.org/abs/2606.12876"
+    }
+  ]
+}

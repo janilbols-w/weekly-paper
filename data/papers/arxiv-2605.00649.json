@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2605.00649",
+  "title": "Model Compression with Exact Budget Constraints via Riemannian Manifolds",
+  "abstract": "Assigning one of K options to each of N groups under a total cost budget is a recurring problem in efficient AI, arising in mixed-precision quantization, non-uniform pruning, and expert selection. The objective (model loss) depends on all assignments jointly and does not decompose across groups, so combinatorial solvers can only optimize proxy objectives. Evolutionary search evaluates the actual loss but lacks gradients, while penalty-based methods enforce the budget only approximately and often require heavy hyperparameter tuning. We show that under softmax relaxation, the budget constraint defines a smooth Riemannian manifold in logit space with unusually clean geometry: the normal vector is available in closed form, shifting logits along the cost vector changes expected cost monotonically, and vector transport reduces to a single inner product. Building on this, we propose Riemannian Constrained Optimization (RCO), which wraps tangent projection, binary-search retraction, and momentum transport around a standard Adam step. Combined with Gumbel straight-through estimation and budget-constrained dynamic programming for discrete feasibility, RCO optimizes the actual loss with first-order methods, enforces the expected budget exactly at every iterate, and introduces no constraint-related hyperparameters. The same construction handles multiple simultaneous budgets with no additional coefficients. RCO matches or exceeds state-of-the-art methods on synthetic problems and realistic LLM compression settings, often at considerably lower wall-clock cost. Source code is available at https://github.com/IST-DASLab/RCO.",
+  "url": "https://arxiv.org/abs/2605.00649",
+  "pdf_url": "https://arxiv.org/pdf/2605.00649",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Michael Helcig",
+    "Dan Alistarh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/IST-DASLab/RCO",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Assigning one of K options to each of N groups under a total cost budget is a recurring problem in efficient AI, arising in mixed-precision quantization, non-uniform pruning, and expert selection.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.00649",
+      "url": "https://arxiv.org/abs/2605.00649"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ A lot of prior work addressed key-value (KV) cache selection and compression by 
 ## 元数据
 
 - 作者：Matthias Seeger, Zeyu Zhang, Vihang Patil, Konstantinos Benidis, Sebastian Schelter
-- 发布：2026-08-20；更新：2026-08-21
+- 发布：2026-08-20；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/awslabs/keys_values](https://github.com/awslabs/keys_values)
 - 阅读深度：metadata

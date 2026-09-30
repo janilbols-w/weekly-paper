@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.33746",
+  "title": "PQ-HSA: Reusing Product-Quantized Scores for Hybrid Sparse-Approximate Attention",
+  "abstract": "At each decoding step a language model attends over the key-value (KV) cache of every earlier token, so at long context the attention call is bounded by memory bandwidth. Sparse attention reads only a subset of keys chosen by a cheap score estimate, and most methods give the unread tokens zero weight. The output then draws on only a small fraction of the KV cache, and accuracy drops at small budgets, most on tasks that aggregate information across the context. An inverted-file product-quantization (IVF-PQ) index over the cached keys computes an approximate score for every indexed token in order to rank them; after ranking, those scores approximate the attention logits of the tokens left out. PQ-HSA (hybrid sparse-approximate attention) attends the selected tokens with their original keys and values, and the unselected tokens, the background, enter the same softmax through those scores, summed per inverted list and multiplied by the list's mean value. At 128K and a 1-2% retrieval budget, PQ-HSA is more accurate than Quest and SnapKV on Llama-3.1-8B and Qwen3-30B-A3B and stays close to full attention in macro accuracy; with the same selector, the background term raises macro accuracy on the 8B model from 0.71 to 0.83. In the same 128K setting, inside vLLM on one NVIDIA H20, the decode attention call runs 1.6x faster than the FlashAttention-3 kernel; the speedup grows with context length, and a cost model fitted on 8B to 30B models gives the context length at which it begins. A vLLM plugin runs PQ-HSA on two engine versions without changes to the engine source; code is available at https://github.com/KunmingSHAO/pqhsa_release.",
+  "url": "https://arxiv.org/abs/2609.33746",
+  "pdf_url": "https://arxiv.org/pdf/2609.33746",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Kunming Shao",
+    "Jierun Chen",
+    "Yanli Wang",
+    "Ruoyu Wang",
+    "Haoli Bai",
+    "Kwang-Ting Cheng",
+    "Chi Ying Tsui"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/KunmingSHAO/pqhsa_release",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 14,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "At each decoding step a language model attends over the key-value (KV) cache of every earlier token, so at long context the attention call is bounded by memory bandwidth.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33746",
+      "url": "https://arxiv.org/abs/2609.33746"
+    }
+  ]
+}

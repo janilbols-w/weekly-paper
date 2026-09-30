@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.35232",
+  "title": "Beyond Selection: Token Parameterization for Extreme Visual Token Compression",
+  "abstract": "Visual-token compression is effective for improving the efficiency of vision-language models, but under extreme compression budgets, token pruning can break visual grounding while learned resamplers increase parameter count, attention cost, and training complexity. We revisit compression through a token parameterization lens, separating (i) basis transformation and structured truncation (retained subspace/compressibility) from (ii) coordinate organization (optimization and cross-modal alignment). This view yields two coupled objectives, compressibility and learnability, which we formalize as unified functionals. Guided by these objectives, we design Braco, a lightweight four-step coder that combines transform-basis truncation, input-independent basis-coordinate embeddings, budget-dependent orthogonal re-parameterization, and learned spatial residual tokens from lightweight pooling. Experiments show that Braco forms the favorable empirical accuracy-efficiency frontier under $23\\times$--$64\\times$ compression and remains competitive at $144\\times$, reaching 95.2% accuracy while reducing prefill FLOPs by 84.2%--86.7% relative to the uncompressed upper bound. Against prior methods, Braco matches or improves accuracy while achieving up to approximately 36% end-to-end speedup and using $16.6\\times$/$78.8\\times$ lower compressor latency/FLOPs.",
+  "url": "https://arxiv.org/abs/2609.35232",
+  "pdf_url": "https://arxiv.org/pdf/2609.35232",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Rui Zhong",
+    "Yu Li",
+    "Zheyu Yan",
+    "Cheng Zhuo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Visual-token compression is effective for improving the efficiency of vision-language models, but under extreme compression budgets, token pruning can break visual grounding while learned resamplers increase parameter count, attention cost, and training complexity.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.35232",
+      "url": "https://arxiv.org/abs/2609.35232"
+    }
+  ]
+}

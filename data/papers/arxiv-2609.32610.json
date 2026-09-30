@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.32610",
+  "title": "KV-Lingo: Learning KV-Cache Translators with Distillation",
+  "abstract": "Large language models represent context with a key-value (KV) cache. Caches are model-specific: for the same text, models with different architectures or weights produce incompatible representations. This makes it costly to switch models over a shared context: although the context has already been processed by one model, the incoming model must process it again to build its own cache. We introduce KV-Lingo, a method for translating the KV cache of a source model into one that can be read by a target model. KV-Lingo consists of a collection of linear maps, typically one per layer of the target model, that are applied independently on all tokens' key and value representations. We train these maps using distillation, minimising the divergence between the target model's predictions from its native cache and those from the translated cache. We consider several model pairs spanning multiple sizes and architectures, training one translator per pair on a generic text corpus. The resulting translators preserve strong downstream performance in both small-to-large and large-to-small transfers. Since a switch then costs a linear map and a single decoding step instead of a prefill, replacing re-prefill with cache translation reduces the time to first token after a model switch by 9.6x already on a 64-token prompt for Qwen models on an Apple M3 Ultra, and by up to 29x at 32k context length on an H100. These gains make KV-Lingo particularly useful for dynamic model routing: a context can be processed by one model and handed off to another only when needed, without re-prefilling the shared prefix. We finally show that KV-Lingo can be used for seamless model switching, staying close to re-prefill across repeated switches in our multi-turn evaluations.",
+  "url": "https://arxiv.org/abs/2609.32610",
+  "pdf_url": "https://arxiv.org/pdf/2609.32610",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Val\\'erie Castin",
+    "Keitaro Sakamoto",
+    "Anastasiia Filippova",
+    "Jo\\~ao Monteiro",
+    "Marco Cuturi",
+    "Pierre Ablin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "compression-sparsity-distillation"
+  ],
+  "keyword_evidence": [
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models represent context with a key-value (KV) cache.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32610",
+      "url": "https://arxiv.org/abs/2609.32610"
+    }
+  ]
+}

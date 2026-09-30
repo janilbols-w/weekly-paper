@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.34009",
+  "title": "Fisher-Informed Recalibration for Feedback-Based On-Policy Self-Distillation of LLMs",
+  "abstract": "Feedback-based on-policy self-distillation has emerged as a promising approach for enabling foundation models, more specifically Large Language Models (LLMs), to learn from their own outputs under external feedback, with a single model serving as both teacher and student. However, such methods can exhibit unstable optimization, conducive to performance collapse during training. To address this limitation, we propose FIRE (Fisher-Informed REcalibration), a dual-branch framework that recalibrates the supervision applied to correct and incorrect on-policy outputs during fine-tuning. For correct responses, FIRE replaces self-distillation with re-weighted on-policy SFT, while for incorrect ones FIRE identifies feedback components that disproportionately influence the teacher-induced update and recalibrates the feedback-conditioned target accordingly. Both branches are influenced by a token-level radius derived in part from a softmax Fisher trace. FIRE separates which direction feedback should move the model from how far the model should move in that direction, while leaving well-behaved feedback supervision unchanged. Our experiments demonstrate that FIRE provides substantially more stable self-distillation while maintaining strong downstream performance, particularly in settings where standard feedback-conditioned distillation becomes unstable.",
+  "url": "https://arxiv.org/abs/2609.34009",
+  "pdf_url": "https://arxiv.org/pdf/2609.34009",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Seohyun Lee",
+    "Dong-Jun Han",
+    "Seyyedali Hosseinalipour",
+    "Christopher G. Brinton"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Feedback-based on-policy self-distillation has emerged as a promising approach for enabling foundation models, more specifically Large Language Models (LLMs), to learn from their own outputs under external feedback, with a single model serving as both teacher and student.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.34009",
+      "url": "https://arxiv.org/abs/2609.34009"
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 ---
 title: "KVShareArena: KV-Cache Reuse Across Contexts and Model Checkpoints"
-description: "LLM serving systems already reuse KV caches, but only when the reused text sits at the very start of the prompt."
+description: "Reusing key-value (KV) caches speeds up LLM inference by avoiding repeated computation on shared text."
 ---
 
-**评分：46/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：63/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2609.10266) · [PDF](https://arxiv.org/pdf/2609.10266)
 
 ## 一句话摘要
 
-LLM serving systems already reuse KV caches, but only when the reused text sits at the very start of the prompt.
+Reusing key-value (KV) caches speeds up LLM inference by avoiding repeated computation on shared text.
 
 ## 为什么值得关注
 
@@ -17,29 +17,29 @@ LLM serving systems already reuse KV caches, but only when the reused text sits 
 
 ## 摘要原文
 
-LLM serving systems already reuse KV caches, but only when the reused text sits at the very start of the prompt. Two growing workloads break this condition: a retrieval-augmented generation server assembles a different set of retrieved chunks for every query, and a multi-agent coordinator reads reports written by other agents. Reused inside a new prompt, a cache carries the wrong positions and never attended to the other sources. The cache may also have been written by a different checkpoint of the same model family, which changes the stored values. Repair methods for such caches have appeared in three separate communities, each measured on its own terms, and existing benchmarks test only exact-prefix reuse, where nothing is lost. KVShareArena benchmarks KV-cache reuse across prompt contexts and model checkpoints on retrieved chunks and agent reports. It scores every method by the fraction of the gap it recovers between no cache and full recomputation, and charges compute, memory, and per-request latency with the cache in hand, reporting the one-time cost of building a cache separately. We find that correcting positions, which needs no recomputation, is enough until a question needs several sources at once. There, only methods that pay, by re-encoding part of the cache or by training, recover half to two thirds of the gap; unrepaired caches can be worse than no cache. Cache-compression methods that are harmless on a single prompt fall significantly behind position correction on freshly written agent reports. These patterns hold across three model boards. When a different checkpoint wrote the cache, training-free methods are barely affected, while an adapter trained on one checkpoint's caches loses quality. Harness, frozen querysets, and cost accounting ship as a pip package with an automated submission workflow and a public leaderboard.
+Reusing key-value (KV) caches speeds up LLM inference by avoiding repeated computation on shared text. Standard prefix caching reuses a KV cache only when the LLM is the same and all preceding text is identical, but real workloads often break both conditions: RAG systems place different documents before the same one, agents with different system prompts read the same file or tool output, multi-agent workflows use specialized LLMs on shared material, and an updated model reads documents cached by its previous version. Because KV caches depend on both the preceding text and the model weights, direct reuse can reduce answer quality. Many methods repair or compress the reused cache, but each paper uses its own tasks, models, and cost measures, and existing benchmarks mainly test long-context processing or reuse of an unchanged prefix. We introduce KVShareArena, a benchmark and open evaluation framework for comparing them under the same conditions. KVShareArena has (1) reuse tests on 2,150 questions from three QA datasets, where the preceding text, the cache-writing LLM, or both change while the answering LLM and input stay fixed; (2) five dense and mixture-of-experts LLMs (4B-30B) and six LLM pairs where one version of an LLM reads caches written by another, for 33 model-dataset settings; (3) 11 repair and compression methods from six method classes; (4) four evaluation perspectives: answer quality, prefill computation, KV-cache memory, and latency; and (5) a common interface for adding new methods and an interactive leaderboard. Experiments yield two findings. First, both the quality loss from reuse and which repairs help depend on the LLM, even between two 8B models. Second, most repairs keep their quality when another LLM version wrote the cache, but a trained repair adapter loses quality in 12 of 18 pair-dataset tests. Code and data: https://github.com/xishi404/KVShare-Arena
 
 ## 质量评分
 
 | 维度 | 得分 |
 |---|---:|
-| relevance | 16 |
-| novelty | 5 |
-| rigor | 9 |
+| relevance | 20 |
+| novelty | 7 |
+| rigor | 15 |
 | practical impact | 11 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
-- taxonomy keywords: kv-cache
+- taxonomy keywords: kv cache, kv-cache, prefix caching
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Xi Shi, Qian Lou
-- 发布：2026-09-09；更新：2026-09-10
+- 发布：2026-09-09；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/xishi404/KVShare-Arena](https://github.com/xishi404/KVShare-Arena)
 - 阅读深度：metadata

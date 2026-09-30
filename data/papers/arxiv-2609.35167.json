@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2609.35167",
+  "title": "EdgeCraft: Automated Model Crafting for Edge IoT",
+  "abstract": "Machine learning (ML) increasingly powers Internet of Things (IoT) applications at the edge. Yet producing a deployable edge ML artifact for a specific scenario requires navigating a huge search space spanning data representation, model design, training on domain-specific data, and runtime customization. This workflow is fragmented and difficult to scale across diverse edge applications. We present EdgeCraft, an LLM-driven system that turns high-level intent into deployable edge ML artifacts. Building such a system raises two challenges: (1) How can an LLM be guided to find high-quality solutions that meet dynamic SLOs for task quality, latency, and energy? (2) How can trustworthy target-device verification be obtained at low cost? EdgeCraft addresses these challenges with two designs. (1) A constraint-aware synthesis tree explores alternative candidates and uses measured SLO gaps to guide each improvement. (2) A multi-fidelity verifier progressively combines low-cost checks with full target-device verification to reduce verification cost while preserving reliable verification results. It also records verified failures for reuse, avoiding repeated device work. To support concurrency, EdgeCraft provides a multi-tenant runtime that runs cloud training and target-device verification in parallel while isolating requests. Across 50 public tasks, EdgeCraft exceeds the task-specific Reference in best-observed quality on 40 tasks and finds an SLO-feasible artifact on 45, with the two outcomes overlapping on 38 tasks. Moreover, EdgeCraft achieves competitive performance on our self-collected SEN dataset, suggesting its generalizability to real-world IoT sensing tasks.",
+  "url": "https://arxiv.org/abs/2609.35167",
+  "pdf_url": "https://arxiv.org/pdf/2609.35167",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Genglin Wang",
+    "Kaiwei Liu",
+    "Liekang Zeng",
+    "Wangsong Yin",
+    "Shangcheng Jin",
+    "Guoliang Xing",
+    "Zhenyu Yan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "multi-tenant",
+    "slo"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: multi-tenant, slo",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Machine learning (ML) increasingly powers Internet of Things (IoT) applications at the edge.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.35167",
+      "url": "https://arxiv.org/abs/2609.35167"
+    }
+  ]
+}

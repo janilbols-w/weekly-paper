@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.32917",
+  "title": "Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows",
+  "abstract": "Running large language model (LLM) agents in production gets expensive fast. A frontier model (the largest, most capable tier) is accurate but can cost 25 times what a small model costs per token, and the gap compounds once a workflow chains several calls together. Planner-as-Router (PaR) attacks this from a different angle. Instead of leaving model-tier selection to some component downstream, it folds the choice into planning itself. As the planner breaks a query into subtasks, it also assigns each one a model size tier (small, mid, or frontier, ordered by capability and price), so the dependencies between subtasks are visible before any specialist runs. Unlike per-call routers such as cascade routing, which look at one node at a time, PaR sees the whole workflow up front and needs no separate router model or training data. We evaluate PaR with EntBench, a benchmark of 54 enterprise agentic tasks across seven classes, graded by actually running the generated Structured Query Language (SQL) and MongoDB queries against live databases. Over 1,157 evaluations spanning eight routers and three seeds, PaR stays on the observed cost-accuracy frontier. It matches a sink-frontier heuristic (frontier model on terminal nodes only) in accuracy at comparable cost and a faithful FrugalGPT cascade at lower cost, and cuts cost 44% against all-frontier routing while giving up 2.9 points of accuracy. Several accuracy gaps fall inside the plus-or-minus six-point confidence interval of a 54-task study, so we frame PaR's advantage as frontier position rather than a clean accuracy win. We also report a preliminary observation, not a validated result: a small pilot hints that cheap routing may carry a hidden compounding penalty on compositional workflows, which we frame as a hypothesis for future measurement. PaR, EntBench, and all evaluation code are open source.",
+  "url": "https://arxiv.org/abs/2609.32917",
+  "pdf_url": "https://arxiv.org/pdf/2609.32917",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Vivek Kumar Singh",
+    "Preeti Priyam",
+    "Gautam Bhowmick"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.MA"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "model routing"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 10,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: model routing",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Running large language model (LLM) agents in production gets expensive fast.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32917",
+      "url": "https://arxiv.org/abs/2609.32917"
+    }
+  ]
+}

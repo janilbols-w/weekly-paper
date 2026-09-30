@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2603.01563",
+  "title": "LFPO: Likelihood-Free Policy Optimization for Masked Diffusion Models",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved remarkable success in improving autoregressive models, especially in domains requiring correctness like mathematical reasoning and code generation. However, directly applying such paradigms to Diffusion Large Language Models (dLLMs) is fundamentally hindered by the intractability of exact likelihood computation, which forces existing methods to rely on high-variance approximations. To bridge this gap, we propose Likelihood-Free Policy Optimization (LFPO), a native framework that maps the concept of vector field flow matching to the discrete token space. Specifically, LFPO formulates alignment as geometric velocity rectification, which directly optimizes denoising logits via contrastive updates. This design effectively bypasses the errors inherent in likelihood approximation, yielding the precise gradient estimation. Furthermore, LFPO enforce consistency by predicting final solutions from intermediate steps, effectively straightening the probability flow to enable high-quality generation with significantly fewer iterations. Extensive experiments demonstrate that LFPO not only outperforms state-of-the-art baselines on code and reasoning benchmarks but also accelerates inference by approximately 20% through reduced diffusion steps.",
+  "url": "https://arxiv.org/abs/2603.01563",
+  "pdf_url": "https://arxiv.org/pdf/2603.01563",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Chenxing Wei",
+    "Jiazhen Kang",
+    "Hong Wang",
+    "Jianqing Zhang",
+    "Hao Jiang",
+    "Xiaolong Xu",
+    "Ningyuan Sun",
+    "Ying He",
+    "F. Richard Yu",
+    "Yao Shu",
+    "Bo Jiang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved remarkable success in improving autoregressive models, especially in domains requiring correctness like mathematical reasoning and code generation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.01563",
+      "url": "https://arxiv.org/abs/2603.01563"
+    }
+  ]
+}

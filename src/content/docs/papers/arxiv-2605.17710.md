@@ -39,7 +39,7 @@ Although modern multilingual Automatic Speech Recognition (ASR) systems support 
 ## 元数据
 
 - 作者：Sewade Ogun
-- 发布：2026-09-21；更新：2026-09-21
+- 发布：2026-09-21；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2606.00079",
+  "title": "BitsMoE: Cost-Aware Bit Allocation in Spectral Space for MoE LLM Quantization",
+  "abstract": "Mixture-of-Experts (MoE) large language models incur substantial memory costs due to their large expert parameter counts. Mixed-precision quantization reduces these costs by allocating different bit-widths to experts or linear blocks according to their importance. However, assigning a single precision within each expert or linear block overlooks its internal structural heterogeneity. This limitation motivates two key questions: (1) how to define a fine-grained unit for quantization within a linear transformation; and (2) how to characterize the quantization cost of each unit under actual activation patterns and different bit-widths. To address these two questions, we propose BitsMoE, a cost-aware mixed-precision quantization framework built on two complementary techniques: (1) Shared-basis Spectral Decomposition (SSD) separates expert weights into a shared basis and expert-specific spectral components, defining structural quantization units while exploiting cross-expert redundancy. (2) Factorized Quantization Cost Modeling (FQCM) estimates component-wise costs from output reconstruction loss by combining intrinsic spectral importance, activation-dependent importance, and bit-width-dependent distortion. Using these component-wise costs, we formulate bit allocation as an integer linear program (ILP) that minimizes total modeled quantization cost under a fixed memory budget. On Qwen3-30B-A3B at 2-bit, BitsMoE achieves 64.29% average accuracy over seven downstream tasks, outperforming the evaluated MoE-specific methods, including those using ILP-based bit allocation, and exceeding GEMQ by 2.80 percentage points. Under the same setting, it achieves a $16.47\\times$ end-to-end offline quantization speedup over GEMQ. It also achieves up to $6.46\\times$ the decode throughput of GPTQ.",
+  "url": "https://arxiv.org/abs/2606.00079",
+  "pdf_url": "https://arxiv.org/pdf/2606.00079",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jiayu Zhao",
+    "Zihan Teng",
+    "Minhao Fan",
+    "Tianrui Ma",
+    "Wentao Ren",
+    "Song Chen",
+    "Weichen Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) large language models incur substantial memory costs due to their large expert parameter counts.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.00079",
+      "url": "https://arxiv.org/abs/2606.00079"
+    }
+  ]
+}

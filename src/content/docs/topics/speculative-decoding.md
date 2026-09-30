@@ -5,10 +5,15 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **75** 篇。
+累计收录 **80** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting](../../papers/arxiv-2606.18394/) | 2026-09-30 | 57 |
+| [JuDi: Revisiting Judge Decoding from First Principles via Training-Free Distributional Divergence](../../papers/arxiv-2601.04766/) | 2026-09-30 | 45 |
+| [DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification](../../papers/arxiv-2609.37532/) | 2026-09-30 | 44 |
+| [Acceptance Dynamics Across Cognitive Domains in Speculative Decoding](../../papers/arxiv-2604.14682/) | 2026-09-30 | 41 |
+| [From Position Risks to Block Survival: Faster Generation for Diffusion Language Models](../../papers/arxiv-2609.33390/) | 2026-09-30 | 39 |
 | [Aurora-X: Built for Extreme Time Series Forecasting](../../papers/arxiv-2609.31038/) | 2026-09-28 | 38 |
 | [TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference](../../papers/arxiv-2602.05145/) | 2026-09-25 | 40 |
 | [NebulaSD: Many-for-Many Speculative Decoding](../../papers/arxiv-2609.29364/) | 2026-09-24 | 46 |
@@ -23,7 +28,7 @@ description: "Speculative Decoding"
 | [SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture](../../papers/arxiv-2609.24847/) | 2026-09-21 | 46 |
 | [Adapting Tree-Structured Speculative Decoding to DeepSeek-V4 for Efficient Inference](../../papers/arxiv-2609.24698/) | 2026-09-21 | 44 |
 | [RheoSampling: Resolving the One-Hot Dilemma in Stochastic Dynamic-Tree Speculative Decoding](../../papers/arxiv-2609.21827/) | 2026-09-21 | 43 |
-| [WaveFront Decoding: Parallelized Self-Speculative Decoding for Looped Language Models](../../papers/arxiv-2609.23033/) | 2026-09-19 | 44 |
+| [WaveFront Decoding: Parallelized Self-Speculative Decoding for Looped Language Models](../../papers/arxiv-2609.23033/) | 2026-09-19 | 49 |
 | [To Copy or Not to Copy: Controlling Speculative Decoding via Intrinsic Model Signals](../../papers/arxiv-2609.20186/) | 2026-09-17 | 43 |
 | [Zarya: A Hybrid Autoregressive--Masked Diffusion Language Model with Flexible Training and Dual-Mode Inference](../../papers/arxiv-2609.19868/) | 2026-09-17 | 38 |
 | [ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference](../../papers/arxiv-2609.17943/) | 2026-09-16 | 50 |

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2604.07666",
+  "title": "An Imperfect Verifier is Good Enough: Learning with Noisy Rewards",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is widely used for post-training Large Language Models, but practical verifiers can make errors. We study how the rate and structure of reward noise affect RLVR in code generation, with a preliminary scientific-reasoning check. In multi-seed Qwen3 8B experiments on MBPP, mean validation reward over two fixed late evaluations is within 1 percentage point of the clean baseline at the tested resampled group-rollout noise rates through 20%, and within about 2 points at 30%. Confidence intervals allow larger losses; these point estimates do not establish a general tolerance threshold. We also examine full-program pass@k, four controlled noise structures, two model-based verifiers, and policy models from three families spanning 4B-9B parameters. We derive conditional advantage distributions for symmetric and asymmetric group noise, including retained format penalties, and show why clipping limits simple gradient-scaling arguments. The analysis identifies information preserved by whole-group corruption and limits on interpreting our asymmetric sweep as a precision-recall comparison. Overall, the results indicate that imperfect verification can support effective RLVR in the tested settings, while aggregate error rates alone do not characterize the learning signal.",
+  "url": "https://arxiv.org/abs/2604.07666",
+  "pdf_url": "https://arxiv.org/pdf/2604.07666",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Andreas Plesner",
+    "Francisco Guzm\\'an",
+    "Anish Athalye"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) is widely used for post-training Large Language Models, but practical verifiers can make errors.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.07666",
+      "url": "https://arxiv.org/abs/2604.07666"
+    }
+  ]
+}

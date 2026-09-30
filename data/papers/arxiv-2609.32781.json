@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.32781",
+  "title": "CT-OPD: Counterfactual Trace On-Policy Distillation for Diffusion Vision-Language Models",
+  "abstract": "Diffusion vision-language models generate answers by gradually resolving masked tokens, making accurate conditional prediction in partially resolved states central to post-training. Masking completed answers yields coherent contexts and targets, but prescribed masks do not reflect the model's reveal decisions. Its trajectories capture these decisions, yet their provisional visible tokens can conflict with the target response. Outcome-based reinforcement learning follows these trajectories but provides only response-level feedback, which loses contrast when sampled rewards tie. To align coherent token-level supervision with the model's reveal decisions, we introduce Counterfactual Trace On-Policy Distillation (CT-OPD), which combines completed teacher responses with trajectory masks from the current student. CT-OPD retokenizes each teacher response in the student's vocabulary and extracts unresolved-position masks at successive stages of the student's reverse process. For each mask, it discards provisional rollout values and reconstructs the partial state from the teacher endpoint, so the supervised positions follow the current trajectory while the visible context and targets remain consistent with the same response. The student is trained on these reconstructed states with its native categorical loss, and trajectories are refreshed as the model evolves. Across dense and sparse diffusion architectures, CT-OPD consistently enhances multimodal understanding and reasoning capabilities, with gains of up to 9.80 points on the nine-benchmark average. On the unified understanding-and-generation architecture, it also improves both visual understanding and image generation, showing that the same principle transfers across architectures and modalities. Ablations further attribute these gains to coherent reconstruction and current-model trajectory masks.",
+  "url": "https://arxiv.org/abs/2609.32781",
+  "pdf_url": "https://arxiv.org/pdf/2609.32781",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Long Qian",
+    "Bingke Zhu",
+    "Jiaqi Wei",
+    "Yu Li",
+    "Yingying Chen",
+    "Jinqiao Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Diffusion vision-language models generate answers by gradually resolving masked tokens, making accurate conditional prediction in partially resolved states central to post-training.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32781",
+      "url": "https://arxiv.org/abs/2609.32781"
+    }
+  ]
+}

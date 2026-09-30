@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.36763",
+  "title": "SCORAS-MoE: Joint Compression and Resource-Adaptive Deployment of MoE-VLMs in LEO Satellite Networks",
+  "abstract": "Deploying large vision-language models (VLMs) onboard satellites enables onboard data processing and reduces raw data downlink. However, onboard inference faces two resource challenges. Limited onboard memory and energy require model compression and distributed deployment. Dynamic resource availability requires fast deployment decisions as illumination, battery levels, and communication conditions change. We present SCORAS-MoE, a joint compression and deployment framework for mixture-of-experts (MoE) VLMs in low Earth orbit (LEO) satellite networks. To address limited resources, SCORAS-MoE measures the perturbation of the routed MoE output caused by low-rank approximation, assigns higher ranks to more sensitive experts, and distributes compressed model shards across satellites for cooperative inference. The compressed models yield profiles of measured accuracy and inference energy. To adapt to dynamic resources, the online scheduler selects profile compositions and shard placements in each slot. For each candidate composition, it reduces placement to a minimum-cost assignment problem solved by the Hungarian algorithm, while enumerating the compositions yields the optimal deployment for the current-slot objective. Experiments on Qwen3-VL-30B-A3B-Instruct show that allocating ranks based on output perturbation is particularly effective under aggressive compression, with an absolute gain of $3.7\\%$ in mean accuracy over uniform rank allocation when expert projections retain $30\\%$ of their original parameters. The fixed-profile scheduler achieves higher throughput with fewer service switches and lower battery impact than the evaluated proximal policy optimization (PPO) and evolutionary baselines, with respective speedups of $8.7\\times$ and $183.5\\times$. Adaptive profile selection further improves the balance between service quality and energy use.",
+  "url": "https://arxiv.org/abs/2609.36763",
+  "pdf_url": "https://arxiv.org/pdf/2609.36763",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Tong Quan",
+    "Yuanlong Wan",
+    "Huasen He",
+    "Yunpeng Hou",
+    "Shuangwu Chen",
+    "Xiaofeng Jiang",
+    "Jian Yang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "compressed model"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 15,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: compressed model",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Deploying large vision-language models (VLMs) onboard satellites enables onboard data processing and reduces raw data downlink.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.36763",
+      "url": "https://arxiv.org/abs/2609.36763"
+    }
+  ]
+}

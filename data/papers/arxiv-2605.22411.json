@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.22411",
+  "title": "DeferMem: Query-Time Evidence Distillation via Reinforcement Learning for Long-Term Agent Memory",
+  "abstract": "Large language model (LLM) agents still struggle to effectively use long-term memory, with answer-supporting evidence often scattered across long conversational histories and buried in substantial irrelevant content. Existing memory systems commonly process memory into dedicated units before future queries are known and retrieve these preconstructed units at query time. Because the contents and granularity of these units are determined before the current query is known, the retrieved units can remain coarse and noisy for that query, leaving downstream answerers to further denoise them and uncover query-specific evidence. We present DeferMem, a long-term memory framework that decouples this problem into high-recall candidate retrieval and query-conditioned evidence distillation. DeferMem uses a lightweight segment-link structure to organize raw history and retrieve broad candidates at query time. A memory distiller then distills these high-recall but highly noisy candidates into a set of faithful, self-contained, and query-conditioned evidence. To train this distiller, we introduce DistillPO, a reinforcement learning algorithm that formulates post-retrieval evidence distillation as a structured action comprising message selection and evidence rewriting. It optimizes this action with a decomposed-and-gated reward pipeline and structure-aligned advantage assignment, gating reward components from validity to quality checks while exposing answerability-related feedback early and assigning each reward to its responsible output span. On LoCoMo and LongMemEval-S, DeferMem surpasses strong baselines in QA accuracy and memory-system efficiency, achieving the highest QA accuracy and fastest runtime while consuming no commercial-API tokens for memory operations.",
+  "url": "https://arxiv.org/abs/2605.22411",
+  "pdf_url": "https://arxiv.org/pdf/2605.22411",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jianing Yin",
+    "Tan Tang",
+    "Yingcai Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language model (LLM) agents still struggle to effectively use long-term memory, with answer-supporting evidence often scattered across long conversational histories and buried in substantial irrelevant content.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.22411",
+      "url": "https://arxiv.org/abs/2605.22411"
+    }
+  ]
+}

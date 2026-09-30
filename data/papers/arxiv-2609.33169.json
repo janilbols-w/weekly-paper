@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.33169",
+  "title": "When Does Backpropagating Through Policy Memory Matter? Physical Credit, Optimizer Updates, and Observability",
+  "abstract": "Policies with memory can learn along two backward paths: through the physical states their actions produce and through the representations they store. Transformer-XL and truncated backpropagation through time cut the second path at stored history while keeping its values. We ask when this cut matters. Holding the forward computation fixed and varying only derivative edges, we measure parameter gradients, the updates the optimizer applies, and continued training in a Transformer vessel-trajectory model and a quadrotor tracking policy. In the vessel model, detaching the key-value cache shrank the gradient to about a tenth of its norm, with little rotation, when gradients flowed through all earlier physical states, but barely changed it under one-step physical credit. In this strongly clipped regime the optimizer, not the gradient, set how far updates differed: global-norm clipping removed most of the gradient difference between memory-cut graphs, whereas AdamW turned a 2% gradient difference between two placements of the cut into update differences of up to 31% at the step where the placement was switched. In a quadrotor trained from initialization with 0.20 m/s velocity noise, removing memory raised tracking error by 43% and cutting memory gradients raised it by 32%; at low noise the cut's mean cost exceeded the value of memory. Two-step truncation segments gave no measurable gain, although with hidden velocity a two-step window captured most of the value of memory; eight-step segments removed half to three quarters of the cost. Switching the cut on only for the last fifth of training understated its cost about threefold at 0.20-0.30 m/s, but not at low noise or with hidden velocity. These results suggest measuring the cost of a memory cut by training with it from initialization, and comparing backward graphs by the updates the optimizer applies rather than by raw gradients.",
+  "url": "https://arxiv.org/abs/2609.33169",
+  "pdf_url": "https://arxiv.org/pdf/2609.33169",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Xingjian Li",
+    "Yi Han",
+    "Jianhua Z. Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.RO"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "observability-benchmarking",
+    "leaf": "Observability & Benchmarking",
+    "leaf_zh": "可观测性与 Benchmark"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "observability"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: observability",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Policies with memory can learn along two backward paths: through the physical states their actions produce and through the representations they store.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33169",
+      "url": "https://arxiv.org/abs/2609.33169"
+    }
+  ]
+}

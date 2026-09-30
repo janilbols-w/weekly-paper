@@ -5,10 +5,19 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **70** 篇。
+累计收录 **79** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OneSign: Unifying Sign Language Understanding Tasks with One Model](../../papers/arxiv-2609.33090/) | 2026-09-30 | 46 |
+| [Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures](../../papers/arxiv-2609.34215/) | 2026-09-30 | 42 |
+| [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](../../papers/arxiv-2609.33757/) | 2026-09-30 | 40 |
+| [The Ongiini-Eval-OW Benchmark: A Concept Paper for the Planned Benchmarking of Machine Translation and Large Language Models on Oshindonga and Oshikwanyama](../../papers/arxiv-2609.31727/) | 2026-09-30 | 40 |
+| [SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution](../../papers/arxiv-2603.01327/) | 2026-09-30 | 40 |
+| [How Far Do Persona Effects Generalize in Language Models?](../../papers/arxiv-2609.32758/) | 2026-09-30 | 39 |
+| [Equivalent Flows, Unequal Learning: Clean-Latent Prediction in Transformers](../../papers/arxiv-2605.27102/) | 2026-09-30 | 39 |
+| [LionMuon: Alternating Spectral and Sign Descent for Efficient Training](../../papers/arxiv-2609.35297/) | 2026-09-30 | 38 |
+| [Don't stop me now: How Validation Criteria Affect Checkpoint Selection and Early Stopping](../../papers/arxiv-2602.22107/) | 2026-09-30 | 38 |
 | [PALM: Point-in-Time Adaptation for Financial Language Models](../../papers/arxiv-2609.30316/) | 2026-09-28 | 42 |
 | [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](../../papers/arxiv-2609.27189/) | 2026-09-23 | 52 |
 | [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](../../papers/arxiv-2609.27193/) | 2026-09-23 | 47 |

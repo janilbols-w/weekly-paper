@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2602.12029",
+  "title": "PrefillShare: A Shared Prefill Module for KV Reuse in Multi-LLM Disaggregated Serving",
+  "abstract": "Multi-agent systems increasingly orchestrate multiple specialized language models to solve complex real-world problems, often invoking them over a shared context. This execution pattern repeatedly processes the same prompt prefix across models. Consequently, each model redundantly executes the prefill stage and maintains its own key-value (KV) cache, increasing aggregate prefill load and worsening tail latency by intensifying prefill-decode interference in existing LLM serving stacks. Disaggregated serving reduces such interference by placing prefill and decode on separate GPUs, but disaggregation does not fundamentally eliminate inter-model redundancy in computation and KV storage for the same prompt. To address this issue, we propose PrefillShare, a novel algorithm that enables sharing the prefill stage across multiple fine-tuned models in a disaggregated setting. PrefillShare factorizes the model into prefill and decode modules, freezes the prefill module, and fine-tunes only the decode module. This design allows multiple task-specific models to share a prefill module and the KV cache generated for the same prompt. We further introduce a routing mechanism that enables effective prefill sharing in a vLLM-based disaggregated system. PrefillShare not only matches full fine-tuning accuracy on a broad range of tasks and models, but also delivers 4.5x lower p95 latency and 2.0x higher throughput in multi-model agent workloads.",
+  "url": "https://arxiv.org/abs/2602.12029",
+  "pdf_url": "https://arxiv.org/pdf/2602.12029",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Sunghyeon Woo",
+    "Hoseung Kim",
+    "Sunghwan Shim",
+    "Minjung Jo",
+    "Hyunjoon Jeong",
+    "Jeongtae Lee",
+    "Joonghoon Kim",
+    "Sungjae Lee",
+    "Jiwon Ryu",
+    "Baeseong Park",
+    "Se Jung Kwon",
+    "Dongsoo Lee"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "prefill-decode-disaggregation",
+    "leaf": "Prefill-Decode Disaggregation",
+    "leaf_zh": "Prefill-Decode 解耦"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "disaggregated serving",
+    "prefill-decode"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: disaggregated serving, prefill-decode",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Multi-agent systems increasingly orchestrate multiple specialized language models to solve complex real-world problems, often invoking them over a shared context.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.12029",
+      "url": "https://arxiv.org/abs/2602.12029"
+    }
+  ]
+}

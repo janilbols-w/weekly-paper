@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2607.27090",
+  "title": "InferScale: GPU-Native KV Injection for Personalized LLM Serving",
+  "abstract": "Large language models are increasingly deployed with persistent personalized context, such as accumulated memory profiles or long conversation histories, that is shared across a user's many requests. Production memory systems (e.g., Mem0, MemGPT, and Zep) retrieve a relevant subset of this memory and inject it into the prompt, forcing the serving engine to repeatedly prefill the same content. As the retrieval budget grows, time-to-first-token (TTFT) increases even though the underlying memory is reused across requests. We present InferScale, a GPU-native LLM memory system that replaces repeated prompt prefilling with reusable KV state. InferScale precomputes each memory fact's KV representation, stores it alongside a semantic embedding on the GPU, retrieves relevant facts at serving time, and injects their KV directly into vLLM's paged cache. To support dynamically assembled memories under rotary position embeddings, we introduce Chunked RoPE, which stores keys before rotation and applies their serving-time positions during injection. However, encoding memory facts independently omits the cross-fact context available during joint prefilling. We mitigate this with Context-Window Encoding, which encodes each memory fact together with a small window of preceding conversation context while caching only the target fact's KV. InferScale is implemented through vLLM's KV-connector interface, requiring neither engine modifications nor model fine-tuning. Across three open-weight models on LoCoMo, InferScale keeps TTFT nearly constant as the retrieval budget increases: at k=50 it reduces TTFT by 72-79% (3.6-4.8x), achieves 60.3% accuracy versus 63.3% for Mem0 without serving-time recomputation, and delivers 3.7-4.5x the throughput under concurrent load. Reusable KV state thus decouples memory-conditioned serving latency from retrieved-context size while preserving application quality.",
+  "url": "https://arxiv.org/abs/2607.27090",
+  "pdf_url": "https://arxiv.org/pdf/2607.27090",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Peter Li",
+    "Prashant Pandey"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models are increasingly deployed with persistent personalized context, such as accumulated memory profiles or long conversation histories, that is shared across a user's many requests.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.27090",
+      "url": "https://arxiv.org/abs/2607.27090"
+    }
+  ]
+}

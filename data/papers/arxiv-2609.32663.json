@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.32663",
+  "title": "Distance-KV: Exploiting Relative Distance for Efficient Long-Context Inference",
+  "abstract": "The memory usage and decoding latency of LLM inference grow rapidly with context length. To reduce these costs, key-value (KV) cache compression methods selectively retain cached states based on token importance or differences in attention patterns across heads. However, we discover that retrieval capability varies substantially with relative distance, even within the same attention head. To exploit this structure, we introduce Distance-KV, which learns a static KV retention pattern over the joint space of layers, attention heads, and relative distances. The pattern is learned offline with the language model frozen and reused across inputs to prune and compact the KV cache without online importance scoring. Across three backbone models and four long-context benchmarks, Distance-KV consistently achieves the best overall performance among competing KV cache compression methods, exceeding the strongest compression baseline by up to 9.3 points on RULER at 128K. On Llama-3.1-8B-Instruct at 128K, Distance-KV reduces KV cache memory by 65.4% and achieves a $1.66\\times$ decoding speedup relative to Dense. Together, these results identify relative distance as an important structural dimension for understanding how LLMs retrieve information over long contexts and for designing more efficient inference methods.",
+  "url": "https://arxiv.org/abs/2609.32663",
+  "pdf_url": "https://arxiv.org/pdf/2609.32663",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Xianpeng Shang",
+    "Canbin Huang",
+    "Jiang Li",
+    "Tian Lan",
+    "Qianyi Cai",
+    "Xiaojun Quan",
+    "Xiangdong Su"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The memory usage and decoding latency of LLM inference grow rapidly with context length.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32663",
+      "url": "https://arxiv.org/abs/2609.32663"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.34633",
+  "title": "GenMem: Generative Symbolic Memory for Self-Evolving Harness",
+  "abstract": "Long-term memory supports the self-evolution of LLM agents by retaining experience and skills across tasks and enabling their retrieval, reuse, and revision in subsequent long-horizon decision-making. Yet existing memory management approaches remain limited to discriminative retrieval and to address the sparse, hierarchical, and highly redundant structure of reusable experience: only a small, task-dependent subset of trajectories and memories warrants retention, retrieval, or revision. Learning these operations is further complicated by sparse, delayed, and indirect task-level feedback, with weak supervision across the memory lifecycle. Moreover, continual memory evolution introduces an architectural tension as addressing invariance: stored experience is perpetually revised, yet the addressing interface consumed by learned retrieval policies must remain stable. To address, we present GenMem, which reformulates memory management as generative symbolic addressing. Its core mechanism is the Symbolic Identifier (SID), a multi-level discrete token tuple drawn from a Cartesian-product address space that factorizes a million-scale sparse memory space using fewer than one hundred discrete symbols. Instead of generating ever-changing raw content, the memory agent learns to generate SIDs, while memory evolution rewrites the payload at a fixed address without shifting the address itself. Architecturally, GenMem couples a MemRetriever and a MemEvolver within a multi-agent harness, trained via GRPO with dense process and outcome rewards with two-channels optimization. Under offline memory evolution, experiments spanning ALFWorld, WebShop, multi-hop QA, medical reasoning, and deep research evaluate GenMem against strong memory-augmented baselines...",
+  "url": "https://arxiv.org/abs/2609.34633",
+  "pdf_url": "https://arxiv.org/pdf/2609.34633",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Xinke Jiang",
+    "Tao Feng",
+    "Weixuan Xu",
+    "Zhixin Zhang",
+    "Zhibang Yang",
+    "Wentao Zhang",
+    "Runchuan Zhu",
+    "Xu Chu",
+    "Junfeng Zhao",
+    "Yasha Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "memory management"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: memory management",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Long-term memory supports the self-evolution of LLM agents by retaining experience and skills across tasks and enabling their retrieval, reuse, and revision in subsequent long-horizon decision-making.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.34633",
+      "url": "https://arxiv.org/abs/2609.34633"
+    }
+  ]
+}

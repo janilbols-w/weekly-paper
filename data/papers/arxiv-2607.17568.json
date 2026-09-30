@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2607.17568",
+  "title": "CoCurve: Cross-Module Co-Pruning Curvature for Structured LLM Pruning",
+  "abstract": "Resource-constrained deployment requires sustaining large language model (LLM) capabilities as models scale under fixed memory and computation budgets. Structured pruning advances this deployment frontier with smaller dense checkpoints, yet deciding what to prune remains bottlenecked by interactions among joint removals. We introduce Cross-Module Co-Pruning Curvature (CoCurve), which formulates structured pruning as set-dependent predictive risk over a unified inventory of attention heads and feed-forward groups. A co-pruning graph built from single-unit forward ablations assigns individual risk to nodes and reinforcement or cancellation to interaction edges, conditioning each decision on the units already removed. We evaluate 6 LLMs (3B--70B) and 3 vision--language models (VLMs) across 3 perplexity corpora, 12 language tasks, and 7 multimodal benchmarks. Across the five-model 20--40% grid and the 70B 10--50% sweep, CoCurve ranks first in 53/60 corpus comparisons (15/15 at 70B); matched-quality interpolation permits 2.2--6.6 more pruning points in 9/10 cases, while CoCurve leads all 6 VLM Avg$_7$ blocks. After the same lightweight recovery, its retained structures remain strongest through 50% pruning, where the 8B checkpoint regains 10.8 Avg$_{12}$ points; physical slicing delivers $1.58\\times$ dense prefill throughput with 41% lower peak memory. Mechanism analysis across 10 LLMs and 7 VLMs finds organized within- and cross-module edge structure; matched low-saliency, high-coupling removals degrade 19/20 capability groups by up to 23.7 points.",
+  "url": "https://arxiv.org/abs/2607.17568",
+  "pdf_url": "https://arxiv.org/pdf/2607.17568",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Zhiren Gong",
+    "Zihao Zeng",
+    "Tiantong Wang",
+    "Yixin Wang",
+    "Honoka Anada",
+    "Zijie Wang",
+    "Ming Xiao",
+    "Chau Yuen",
+    "Wei Yang Bryan Lim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Resource-constrained deployment requires sustaining large language model (LLM) capabilities as models scale under fixed memory and computation budgets.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.17568",
+      "url": "https://arxiv.org/abs/2607.17568"
+    }
+  ]
+}

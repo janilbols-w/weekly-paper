@@ -17,7 +17,7 @@ Reasoning and agentic workloads increasingly demand efficient long-context infer
 
 ## 摘要原文
 
-Reasoning and agentic workloads increasingly demand efficient long-context inference. Yet full-attention decoding reads the growing history at every step, regardless of its benefit to the next prediction. We show that a pretrained model's decoding states already contain information predictive of this benefit, before the global read. Building on this finding, we introduce On-Demand Attention (ODA), a local-first decoding method that uses a lightweight recall head to selectively invoke global attention as its predicted benefit changes during generation. ODA trains only the recall head, leaving pretrained weights unchanged and the complete historical KV cache available for future recall. We further implement GPU-side conditional execution in vLLM, translating reduced global reads into practical decoding speedups over full attention at long context lengths. Experiments across Qwen and Gemma models, including hybrid-attention backbones, show that selective recall recovers most of the performance lost under local attention while substantially reducing global reads. These findings support long-context inference in which pretrained models guide their own access to the information they retain.
+Reasoning and agentic workloads increasingly demand efficient long-context inference. Yet full-attention decoding reads the growing history at every step, although the benefit of global access varies across prediction positions. We find that, before global attention is computed for the current step, the decoding states available after local computation in frozen pretrained models already contain information predictive of its benefit over local attention. Building on this finding, we introduce On-Demand Attention (ODA), a local-first decoding method: after local computation, a lightweight recall head decides whether to recompute the current step with global attention. ODA trains only the recall head with modest data and compute budgets, leaving pretrained weights unchanged and retaining the complete historical KV cache so that information skipped at one step remains available for later access. Experiments across model scales and families, including hybrid attention backbones, show that ODA recovers most of the performance lost under local attention while substantially reducing the frequency of global attention. Controlled long-context measurements in vLLM further show that GPU-side conditional execution translates fewer global reads into practical decoding speedups over full attention. These findings show that pretrained decoding states can support both token prediction and decisions about accessing distant information, allowing models to allocate global computation as needed during decoding.
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ Reasoning and agentic workloads increasingly demand efficient long-context infer
 ## 元数据
 
 - 作者：Haibo Feng, Ruiqi Liang, Hanyang Peng, Shiqi Yu
-- 发布：2026-09-17；更新：2026-09-18
+- 发布：2026-09-17；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

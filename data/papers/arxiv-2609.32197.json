@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.32197",
+  "title": "SparSP: Exploiting Communication Sparsity for Sequence-Parallel Video DiTs",
+  "abstract": "Diffusion Transformers have become the dominant architecture for video generation. Their substantial computational cost motivates scaling inference across multi-GPU servers, yet efficient scaling remains challenging on commodity GPUs connected via PCIe, whose bandwidth is limited. Although sparse attention substantially reduces computation, its implications for communication remain underexplored. This paper argues that attention sparsity should be treated as a communication primitive. We present SparSP, an efficient sparse sequence parallel communication system that co-designs token distribution, communication routing, and asynchronous execution for sparse video diffusion models. First, Dependency-Aware Placement distributes sequence blocks according to diffusion models' sparse attention patterns. Second, Demand-Directed KV Routing transfers KV blocks directly to requesting GPUs without intermediate relays. Third, a Decoupled Transfer Runtime separates communication from GPU computation to reduce resource contention and maximize effective bandwidth. Our evaluation shows that SparSP improves attention performance by 1.38- 1.5$\\times$, achieves an average 1.17$\\times$ (up to 1.69$\\times$) end-to-end speedup across three representative servers and three video diffusion models, and reduces communication volume by 12.54-23.05%. Moreover, we achieve an average 1.53-1.76$\\times$ bandwidth improvement over NCCL.",
+  "url": "https://arxiv.org/abs/2609.32197",
+  "pdf_url": "https://arxiv.org/pdf/2609.32197",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Desen Sun",
+    "Xinrui Zhong",
+    "Yuke Wang",
+    "Sihang Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Diffusion Transformers have become the dominant architecture for video generation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32197",
+      "url": "https://arxiv.org/abs/2609.32197"
+    }
+  ]
+}

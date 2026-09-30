@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.37532",
+  "title": "DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification",
+  "abstract": "Growing large language model applications demand efficient inference. At high concurrency, block-diffusion speculative decoding suffers from verification padding, rejected candidates, and incompatibility between variable prefixes and fixed-shape graphs. Uniform truncation sacrifices acceptable tokens. We present DScale, preserving drafter architecture, weights, and full draft length. A separate 112K-parameter predictor requires neither confidence calibration nor hardware speed-curve preparation. Path-aware tiles reduce padding. Dynamic verify-length (DVL) allocation packs scored prefixes into half the native verification capacity. Fixed-address workspaces propagate changing boundaries through verification and acceptance while reusing captured graphs. On A100-40GB with tensor parallelism 1, Qwen3-8B and Qwen3-4B cover four datasets and concurrency 8-32, reusing each target's frozen predictor. Geometric-mean throughput gains across these configurations are respectively 43.9% and 48.8% over DFlash, 22.2% and 37.7% over DSpark, and 24.4% and 32.0% over Domino, with lower request latency. Cumulative ablations show that adding the three mechanisms successively increases geometric-mean throughput, while budget adjustment improves accepted-token retention. GPU profiling shows that complete decode-step time on GSM8K decreases by 30.8-52.5% relative to DFlash",
+  "url": "https://arxiv.org/abs/2609.37532",
+  "pdf_url": "https://arxiv.org/pdf/2609.37532",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Rongjian Chen",
+    "Minxian Xu",
+    "Zhengxin Fang",
+    "Kejiang Ye",
+    "Chengzhong Xu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Growing large language model applications demand efficient inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.37532",
+      "url": "https://arxiv.org/abs/2609.37532"
+    }
+  ]
+}

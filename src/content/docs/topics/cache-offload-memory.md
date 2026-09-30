@@ -5,10 +5,15 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **70** 篇。
+累计收录 **75** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading](../../papers/arxiv-2609.33385/) | 2026-09-30 | 57 |
+| [NOSA: Native and Offloadable Sparse Attention](../../papers/arxiv-2510.13602/) | 2026-09-30 | 49 |
+| [EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?](../../papers/arxiv-2609.33762/) | 2026-09-30 | 49 |
+| [SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents](../../papers/arxiv-2609.35596/) | 2026-09-30 | 43 |
+| [GenMem: Generative Symbolic Memory for Self-Evolving Harness](../../papers/arxiv-2609.34633/) | 2026-09-30 | 40 |
 | [Not All Memories Are Equal: Hierarchical Collaborative Memory for Validity-Aware Retrieval in LLM Agents](../../papers/arxiv-2609.30289/) | 2026-09-28 | 44 |
 | [LOIP:Collaborative Lossless LLM Inference Serving with Offloading-based Pipeline Parallelism on Edge Devices](../../papers/arxiv-2512.21835/) | 2026-09-23 | 52 |
 | [FlashBoB: I/O-Efficient Exact Backward-over-Backward for Softmax Attention](../../papers/arxiv-2609.24089/) | 2026-09-22 | 39 |

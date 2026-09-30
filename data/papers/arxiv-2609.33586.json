@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2609.33586",
+  "title": "Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration",
+  "abstract": "On NVIDIA Blackwell B200, tensor-core throughput outpaces special-function exponential throughput by more than two orders of magnitude, exposing exponential evaluation in fused attention kernels. A pretrained Transformer, however, may not need it evaluated accurately at every element. We characterize what a pretrained model does need by approximating softmax at inference in ten frozen decoder-only models (0.5B-72B). The number of positions the softmax map assigns probability to and within-row resolution can be cut substantially, yet uniform weighting of the same positions is damaging. Where a fixed resolution budget is placed matters as much as its size, with resolution near the row maximum consistently favored. Perturbations matched on scalar distortion produce model-dependent responses of opposite sign. These findings motivate Rowmax-PoT, a coarse logarithmic weight representation anchored at each row maximum, and Rowmax-H15, its hardware specialization in FlashAttention-4. On B200, the patched FP8 attention forward is 12.4% faster at causal 8K and 25.8% faster at non-causal 8K in host-side call-latency measurements; board energy per forward falls by 8.4% at causal 16K. Measured separately on the BF16 kernel path at 2K, Rowmax-H15 increases perplexity by 0.091-0.492% across five models from three families.",
+  "url": "https://arxiv.org/abs/2609.33586",
+  "pdf_url": "https://arxiv.org/pdf/2609.33586",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Shangzhen Zhu",
+    "Muyan Hu",
+    "Tomasz Kozlowski"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp8"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On NVIDIA Blackwell B200, tensor-core throughput outpaces special-function exponential throughput by more than two orders of magnitude, exposing exponential evaluation in fused attention kernels.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33586",
+      "url": "https://arxiv.org/abs/2609.33586"
+    }
+  ]
+}

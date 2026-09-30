@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2609.32060",
+  "title": "Depth Laws for the Precision Floor of Trained Neural Networks: Amplification, Residual Scaling, and a Quantization-Aware Training Paradox",
+  "abstract": "How many bits does a network need before its accuracy collapses, and how does this grow with depth? We study the precision floor, the perturbation level or bit-width at which accuracy falls halfway to chance, in MLPs, CNNs, Vision Transformers and nine pretrained language models, under post-training quantization (PTQ) and quantization- or noise-aware training (QAT). (i) A first-order theory sets the floor through one full-precision quantity, the predictive amplification $G$: $\\eta_c=\\Lambda/G$, and $G^2$ grows linearly in depth at a rate proportional to the squared residual branch scale. (ii) The predicted equality $\\alpha_{PTQ}=\\rho$ of depth exponents holds within 95% intervals in twelve of thirteen trained architectures and in GPT-2 from 12 to 48 layers, with $\\Lambda=1.45\\pm14\\%$ across trained architectures. (iii) Residual branches scaled by $1/\\sqrt{D}$ and pre-normalisation remove the depth penalty, and each quantizer turns noise into bits at a rate fixed by its step rule, giving $b_c=(\\alpha/\\gamma)\\log_2 D+C$. (iv) A QAT paradox: noise-aware training roughly doubles the tolerable noise of shallow networks, but the gain decays with depth, so the depth law steepens ($\\alpha_{QAT}/\\alpha_{PTQ}=1.45$-$1.47$ on two datasets, ten seeds each). Decision margins, cross-layer error cancellation and heavy tails do not set the floor.",
+  "url": "https://arxiv.org/abs/2609.32060",
+  "pdf_url": "https://arxiv.org/pdf/2609.32060",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Ahmad S. Tarawneh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "How many bits does a network need before its accuracy collapses, and how does this grow with depth?",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32060",
+      "url": "https://arxiv.org/abs/2609.32060"
+    }
+  ]
+}

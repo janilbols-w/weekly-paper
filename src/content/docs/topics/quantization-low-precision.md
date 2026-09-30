@@ -5,12 +5,33 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **197** 篇。
+累计收录 **218** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PQ-HSA: Reusing Product-Quantized Scores for Hybrid Sparse-Approximate Attention](../../papers/arxiv-2609.33746/) | 2026-09-30 | 52 |
+| [EntroPack: Fast and Accurate Entropy-Coded Weight Compression at Arbitrary Bitrates](../../papers/arxiv-2609.34185/) | 2026-09-30 | 51 |
+| [BitsMoE: Cost-Aware Bit Allocation in Spectral Space for MoE LLM Quantization](../../papers/arxiv-2606.00079/) | 2026-09-30 | 47 |
+| [Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference](../../papers/arxiv-2609.36654/) | 2026-09-30 | 45 |
+| [From Attention Sensitivity to Layer Role: Revisiting Mixed-Precision Quantization of Transformers](../../papers/arxiv-2609.34866/) | 2026-09-30 | 45 |
+| [Chameleon: Dynamic Format Adapter for Efficient Diffusion](../../papers/arxiv-2609.33496/) | 2026-09-30 | 45 |
+| [Understanding Quantization of Optimizer States in LLM Pre-training: Dynamics of State Staleness and Effectiveness of State Resets](../../papers/arxiv-2603.16731/) | 2026-09-30 | 44 |
+| [Multi-Bitwidth Quantization for LLMs Using Additive Codebooks](../../papers/arxiv-2606.12876/) | 2026-09-30 | 44 |
+| [Latency and accuracy tradeoffs in Spiking Neural Networks](../../papers/arxiv-2609.35260/) | 2026-09-30 | 44 |
+| [Beyond Reconstruction Loss in Post-Training Quantization: Balanced Fitting for Large Vision-Language Models](../../papers/arxiv-2609.34765/) | 2026-09-30 | 44 |
+| [Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter](../../papers/arxiv-2609.35465/) | 2026-09-30 | 42 |
+| [Optimizing the Phi-2 Small Language Model for Real-time Chatbot Applications Using Parameter-Efficient Fine-Tuning (PEFT) with QLoRA Quantization](../../papers/arxiv-2609.33927/) | 2026-09-30 | 42 |
+| [Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration](../../papers/arxiv-2609.33586/) | 2026-09-30 | 42 |
+| [Which Decisions Low-Bit Quantization Breaks, and How to Predict Them](../../papers/arxiv-2608.06564/) | 2026-09-30 | 41 |
+| [QuantForge: Discovering Residual Decompositions for MXFP4 Post-Training Quantization](../../papers/arxiv-2609.34680/) | 2026-09-30 | 41 |
+| [Pushing Toward the Simplex Vertices: A Simple Remedy for Code Collapse in Smoothed Vector Quantization](../../papers/arxiv-2509.22161/) | 2026-09-30 | 40 |
+| [LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text](../../papers/arxiv-2609.31663/) | 2026-09-30 | 40 |
+| [HiFloat4 Format for Language Model Pre-training on Ascend NPUs](../../papers/arxiv-2604.08826/) | 2026-09-30 | 39 |
+| [Depth Laws for the Precision Floor of Trained Neural Networks: Amplification, Residual Scaling, and a Quantization-Aware Training Paradox](../../papers/arxiv-2609.32060/) | 2026-09-30 | 39 |
+| [Pretraining Transformers with Quantized Softmax in Attention](../../papers/arxiv-2609.33591/) | 2026-09-30 | 38 |
+| [Linger and Lose: Knowledge Collapse in Low-Bit Language Models](../../papers/arxiv-2609.32902/) | 2026-09-30 | 38 |
 | [G$^2$PTQ: Improving LLM Post-Training Quantization with Generalized Gradient Compensation](../../papers/arxiv-2609.31009/) | 2026-09-28 | 49 |
-| [Softmax Reparameterization for Output-Head Quantization](../../papers/arxiv-2609.31291/) | 2026-09-28 | 43 |
+| [Softmax Reparameterization for Output-Head Quantization](../../papers/arxiv-2609.31291/) | 2026-09-28 | 45 |
 | [The Right Information Extraction Pipeline Depends on the Document: Accuracy-Energy Trade-offs for Small, Local Models](../../papers/arxiv-2609.31341/) | 2026-09-28 | 42 |
 | [Towards Understanding LLM-Based Log Anomaly Detection: An Empirical Study of Performance, Efficiency, and Robustness](../../papers/arxiv-2609.31371/) | 2026-09-28 | 40 |
 | [Quantizing Looped Transformers: Feedback Exposure and Calibration Blindness](../../papers/arxiv-2609.30820/) | 2026-09-28 | 40 |
@@ -187,8 +208,8 @@ description: "Quantization & Low Precision"
 | [Quantization Degradation in Large Language Models: A Signal-Noise Perspective](../../papers/arxiv-2608.08188/) | 2026-08-08 | 41 |
 | [Recti-Q: Feature-Space Rectification for Out-of-Distribution-Robust Quantized Perception in Edge Robotics](../../papers/arxiv-2607.18540/) | 2026-08-07 | 44 |
 | [GROM: Gradient-Free Rapid One-Shot Machine Unlearning](../../papers/arxiv-2608.05783/) | 2026-08-06 | 43 |
-| [BaKron: Efficient Quantization with Kronecker-Factored Hessians](../../papers/arxiv-2608.06291/) | 2026-08-06 | 43 |
 | [RiboSphere: Learning Unified and Efficient Representations of RNA Structures](../../papers/arxiv-2603.19636/) | 2026-08-06 | 42 |
+| [FastKron: Efficient Quantization with Kronecker-Factored Hessians](../../papers/arxiv-2608.06291/) | 2026-08-06 | 41 |
 | [Decomposed Entailment for Factuality Checking and Hallucination Detection](../../papers/arxiv-2608.05823/) | 2026-08-06 | 40 |
 | [Reasoning Errors Have a Region and a Direction in the Residual-Stream Trajectory of LLMs](../../papers/arxiv-2608.05660/) | 2026-08-06 | 38 |
 | [Studying quantization trade-offs for efficient inference deployment in machine translation](../../papers/arxiv-2607.29397/) | 2026-08-05 | 53 |

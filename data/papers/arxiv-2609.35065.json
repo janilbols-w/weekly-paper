@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.35065",
+  "title": "TempoKV: Timely Staging of LLM KV Caches for Memory-Semantic Flash",
+  "abstract": "Reusable prefix key-value (KV) caches can outgrow GPU memory in large language model (LLM) serving. A memory-semantic flash hierarchy offers SSD-backed capacity with a limited fast tier, but a logical KV hit is not necessarily ready for GPU retrieval. Demand staging exposes SSD latency, whereas immediate staging can reserve fast-tier capacity long before retrieval begins. We present TempoKV, a timing-aware resource-commitment layer that separates early knowledge of reuse from the acquisition of staging resources. It records reusable-KV hits as metadata-only claims and requests commitment when the runtime-estimated time until retrieval falls to the storage-estimated time needed to make KV resident and protected against eviction. These estimates adapt to runtime progress and staging state, while commitment remains subject to available protected capacity. We implement TempoKV in vLLM and LMCache on an SSD-backed CXL memory device without changing request scheduling. Across two models and three prefix cache ratios, TempoKV reduces protected fast-tier byte-time per request by 63-91% versus immediate staging while retaining much of the serving benefit of advance staging. In a fast-tier capacity sweep, output throughput and p95 time to first token (TTFT) remain nearly unchanged as capacity decreases from 100 to 25 GiB. Compared with unmodified LMCache's Device-DAX L1 configuration, TempoKV reduces p95 TTFT by up to 48.0% and increases output throughput by up to 27.8%.",
+  "url": "https://arxiv.org/abs/2609.35065",
+  "pdf_url": "https://arxiv.org/pdf/2609.35065",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Jay H. Park",
+    "Hyungjun Kim",
+    "Dong Kim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "batching-scheduling",
+    "leaf": "Batching & Request Scheduling",
+    "leaf_zh": "Batching 与请求调度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "request scheduling"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: request scheduling",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reusable prefix key-value (KV) caches can outgrow GPU memory in large language model (LLM) serving.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.35065",
+      "url": "https://arxiv.org/abs/2609.35065"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2609.33762",
+  "title": "EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?",
+  "abstract": "LLM agents resend their whole conversation on every turn, and most of it was already processed on the previous turn. Serving systems avoid recomputing it by caching its key-value (KV) state and, when GPU memory runs out, by offloading that state to host memory. For agents, offloading gives inconsistent results: on the same coding-agent workload it speeds up one deployment, slows down another, and changes nothing on a third, even where loading a token back is several times cheaper than recomputing it. The reason is that cached state must survive until it is used again. While one agent waits for its tool, the server processes the contexts of all other agents, so an agent's prefix is reused only if the host tier holds the reusable context of the whole agent pool, which we call the reuse working set. A smaller tier keeps writing state that is evicted before anyone reads it. We present EfficientAgent, which sizes and manages the host tier by this working set. A stack-distance model estimates the working set from agent histories to size the host tier; its predictions, made before the experiments, located the capacity at which offloading starts to pay. When the tier is too small, a runtime policy stops writing large refills of evicted context and keeps extending prefixes that are still cached; when the tier is large enough, it writes everything. On SWE-bench Verified coding agents, a host tier sized to the estimated working set cuts recomputed prompt tokens by 93% and end-to-end time by 39%. With a small fixed tier, the policy cuts recomputation by 35%; with a large tier, it avoids the 4.3-fold increase caused by always filtering writes. Across three GPU types and two models, offloading pays off when the GPU has little compute per byte of host bandwidth and the host tier holds the working set. Code is available at https://github.com/KunmingSHAO/efficientagent_release.",
+  "url": "https://arxiv.org/abs/2609.33762",
+  "pdf_url": "https://arxiv.org/pdf/2609.33762",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Kunming Shao",
+    "Jierun Chen",
+    "Jiangnan Yu",
+    "Xiao-Hui Li",
+    "Chaofan Tao",
+    "Yanli Wang",
+    "Huanxin Lin",
+    "Kwang-Ting Cheng",
+    "Chi Ying Tsui",
+    "Haoli Bai"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/KunmingSHAO/efficientagent_release",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [
+    "attention-kv-cache"
+  ],
+  "keyword_evidence": [
+    "gpu memory",
+    "offloading"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory, offloading",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "LLM agents resend their whole conversation on every turn, and most of it was already processed on the previous turn.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33762",
+      "url": "https://arxiv.org/abs/2609.33762"
+    }
+  ]
+}

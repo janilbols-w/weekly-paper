@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.32204",
+  "title": "DegreeSpar: Structured Degree Sparsity for Efficient Secure Transformer Inference",
+  "abstract": "Secure Transformer inference protects sensitive inputs but incurs substantial cryptographic overhead, with nonlinear operations such as Softmax and GeLU becoming major bottlenecks. Existing compression methods reduce nonlinear complexity, sequence-dependent computation, or model structure through separately defined compression variables. Under aggressive compression, however, these independently optimized perturbations can accumulate: at a matched compression level, stacking representative approximation, token-pruning, and model-pruning methods reduces ViT-S accuracy from 80.20% to 76.41%. We introduce DegreeSpar, which formulates secure Transformer compression as structured sparsification over nonlinear polynomial degrees. Polynomial degree directly controls the cost of secure nonlinear evaluation, while computation-aligned zero-degree structures expose token-level and model-dimension computation as removable within the same optimization space. DegreeSpar further incorporates approximation-aware training for low-degree Softmax and GeLU, enabling aggressive degree reduction and creating the optimization headroom required for structured computation removal. Across vision and language Transformers, DegreeSpar consistently improves the accuracy-latency trade-off across model scales, tasks, and sequence lengths, achieving speedups from 2.29x to 6.63x over the corresponding baselines. Under the same network setting, DegreeSpar achieves 92.68% accuracy on BERT/SST-2 in 110.55 s, compared with 92.66% in 167.26 s for CipherPrune, the closest prior hybrid secure-inference approach. These results establish structured polynomial degree as an effective shared optimization space for secure Transformer compression.",
+  "url": "https://arxiv.org/abs/2609.32204",
+  "pdf_url": "https://arxiv.org/pdf/2609.32204",
+  "published": "2026-09-30",
+  "updated": "2026-09-30",
+  "authors": [
+    "Yifei Cai",
+    "Zhuoran Li",
+    "Xiaozuo Shen",
+    "Hongyi Wu",
+    "Chunsheng Xin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Secure Transformer inference protects sensitive inputs but incurs substantial cryptographic overhead, with nonlinear operations such as Softmax and GeLU becoming major bottlenecks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-09-30T04:44:58+00:00",
+  "last_seen": "2026-09-30T04:44:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.32204",
+      "url": "https://arxiv.org/abs/2609.32204"
+    }
+  ]
+}
