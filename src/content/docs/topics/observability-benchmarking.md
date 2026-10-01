@@ -5,10 +5,11 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **18** 篇。
+累计收录 **19** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ORCA-bench: How Ready Are Language Model Agents for Oncall?](../../papers/arxiv-2607.28545/) | 2026-10-01 | 39 |
 | [AgentWare: Automating the Lifecycle of Agentic Applications across the Edge-to-Cloud Continuum](../../papers/arxiv-2609.34586/) | 2026-09-30 | 43 |
 | [FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards](../../papers/arxiv-2606.06960/) | 2026-09-30 | 42 |
 | [When Does Backpropagating Through Policy Memory Matter? Physical Credit, Optimizer Updates, and Observability](../../papers/arxiv-2609.33169/) | 2026-09-30 | 40 |

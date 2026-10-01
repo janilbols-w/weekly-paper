@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.09008",
+  "title": "Relative Kinetic Utility: Calibrating Cross-Layer Credit for Global Structured LLM Pruning",
+  "abstract": "Global structured pruning requires channels from different layers to compete under a shared sparsity budget, raising two coupled challenges: identifying which channels should be retained and making their scores comparable across layers. Raw channel scores can contain block-common scale that leaves within-block ordering unchanged but distorts model-wide competition. Our experiment indicates that similar layer-wise allocations can retain substantially different FFN channels, so layer allocation alone does not determine channel identity. Motivated by this separation, we introduce Global Relative Kinetic Utility (Global RKU), a label-free criterion that separates channel importance estimation from cross-layer comparison. Global RKU measures channel participation using a final-hidden-state activation-gradient signal, then applies block-relative normalization to mitigate block-common scale while preserving within-block ordering, requires only unlabeled calibration inputs, and produces a static pruning topology in a single calibration stage. Under questions-only calibration on Qwen-2.5-7B, RKU-GISP Mean3 margins are -0.98, +3.79, and +8.61 points at 30%, 40%, and 50% sparsity, respectively (average +3.81). Additional Qwen evaluations cover non-mathematical reasoning, recovery, held-out transfer, and physical deployment. Separately, replacing Wiki16K with questions-only Q16K improves RKU's Mean3 at every tested sparsity on Qwen, Llama, and Gemma. Our ablation study shows relative-normalization gains of 14.42 and 5.53 Mean3 points at 40% and 50% sparsity, respectively; the common-seed audit is positive in all 27 seed-task comparisons.",
+  "url": "https://arxiv.org/abs/2605.09008",
+  "pdf_url": "https://arxiv.org/pdf/2605.09008",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "Tianhao Qian",
+    "Guilin Qi",
+    "Jiayu Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Global structured pruning requires channels from different layers to compete under a shared sparsity budget, raising two coupled challenges: identifying which channels should be retained and making their scores comparable across layers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.09008",
+      "url": "https://arxiv.org/abs/2605.09008"
+    }
+  ]
+}

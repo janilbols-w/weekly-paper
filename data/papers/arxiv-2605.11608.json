@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.11608",
+  "title": "PRISM: A Geometric Risk Bound for Decomposing Drift into Scale, Shape, and Head",
+  "abstract": "A single base LLM now comes with dozens of post-training variants, quantized, LoRA-adapted, or distilled, and each has to be checked before release. Existing evaluations provide only a partial picture: benchmark scores and likelihood screens say that a variant has degraded, similarity scores such as CKA and SVCCA say how its features moved, and nothing connects the two. We connect them with one structural fact and one design choice: the prediction head is linear, so feature geometry reaches the loss, and we compare the two feature sets through an orthogonal map, which leaves the geometry being measured unchanged. From these we derive PRISM, a closed-form upper bound on the cross-entropy risk gap between a target model and a proxy variant, and prove that it splits exactly into three measurable axes: scale, shape, and head. Each axis names a failure mode and where to intervene: low-bit quantization distorts shape and, at the lowest bit-widths, also inflates activation scale; quantizing the output embedding inflates the head term, which dominates the bound at high bit-widths. Because the shape term is differentiable, the same geometry becomes a regularizer that curbs catastrophic forgetting more than experience replay. Across two model families and five benchmarks, PRISM ranks quantized and fine-tuned variants from a single forward pass at mean Spearman above 0.8, and eight reference sequences already recover the ranking that the risk gap itself needs over a hundred to reach.",
+  "url": "https://arxiv.org/abs/2605.11608",
+  "pdf_url": "https://arxiv.org/pdf/2605.11608",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "Chieh-Yen Lin",
+    "Shao-Hua Sun"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "A single base LLM now comes with dozens of post-training variants, quantized, LoRA-adapted, or distilled, and each has to be checked before release.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.11608",
+      "url": "https://arxiv.org/abs/2605.11608"
+    }
+  ]
+}

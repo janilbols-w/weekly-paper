@@ -39,7 +39,7 @@ Recent multi-agent LLM systems increasingly combine heterogeneous models for spe
 ## 元数据
 
 - 作者：Vincent-Daniel Yun, Woosang Lim, Haneul Yoo, Sungjoo Yoo, Murali Annavaram, Sai Praneeth Karimireddy
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

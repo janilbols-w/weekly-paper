@@ -5,10 +5,16 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **143** 篇。
+累计收录 **149** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing](../../papers/arxiv-2606.17034/) | 2026-10-01 | 52 |
+| [ATTUNER: Recomputation-Free KV Cache Reuse via Query-Side Adaptation](../../papers/arxiv-2609.36722/) | 2026-10-01 | 46 |
+| [Capture the lifecycle: KV Cache management in ReAct Agents with KVTether](../../papers/arxiv-2609.39819/) | 2026-10-01 | 44 |
+| [PatchKV: Weight-Space Compensation of KV Cache](../../papers/arxiv-2609.39329/) | 2026-10-01 | 43 |
+| [Learning Functional Subspaces for Neural Network Compression](../../papers/arxiv-2609.40127/) | 2026-10-01 | 42 |
+| [Cascadia: A Control-Plane-Free Alternative to Hyperconverged AI Infrastructure](../../papers/arxiv-2609.38697/) | 2026-10-01 | 42 |
 | [Block Sparse Flash Attention](../../papers/arxiv-2512.07011/) | 2026-09-30 | 54 |
 | [Where Activation Sparsity and KV-Cache Sparsity Cross in LLM Decoding](../../papers/arxiv-2609.33889/) | 2026-09-30 | 50 |
 | [OmniTide: Co-Designing Algorithms and Systems for Efficient On-Device Omni-LLM Streaming](../../papers/arxiv-2609.34653/) | 2026-09-30 | 47 |

@@ -39,7 +39,7 @@ Modern large language models increasingly require long contexts for reasoning an
 ## 元数据
 
 - 作者：Daniel Ohayon, Itay Lamprecht, Itay Hubara, Israel Cohen, Daniel Soudry, Noam Elata
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Danielohayon/Block-Sparse-Flash-Attention](https://github.com/Danielohayon/Block-Sparse-Flash-Attention)
 - 阅读深度：metadata

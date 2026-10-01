@@ -39,7 +39,7 @@ Large language models (LLMs) are moving onto mobile devices for increasingly div
 ## 元数据
 
 - 作者：Zhihao Shu, Md Musfiqur Rahman Sanim, Jie Hu, Kun Yuan, Minghai Qin, Gagan Agrawal, Wei Niu
-- 发布：2026-09-21；更新：2026-09-21
+- 发布：2026-09-21；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

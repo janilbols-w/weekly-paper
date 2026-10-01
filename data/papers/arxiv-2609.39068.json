@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2609.39068",
+  "title": "SparseEngine: Sparse-First Inference Engine",
+  "abstract": "Long-context LLM agents accumulate interaction histories that strain KV-cache memory and attention computation. Although sparse attention reduces these costs, heterogeneous cache representations and workflows hinder integration with existing inference engines, while prior sparse-serving abstractions support only specific layouts or workflows. We present SparseEngine, a ground-up, sparse-first inference engine whose shared lifecycle contract lets each method control its KV representation and computation while coordinating state transitions with common serving infrastructure. SparseEngine supports 15 methods across four categories and enables cross-request state management through Chain Cache, which resumes KV-eviction methods from retained history, and controllable Prefix-Cache Pruning, which removes KV from selected history regions while preserving logical-prefix matching. While maintaining method quality, SparseEngine delivers over 10x higher throughput with KV eviction, over 2.5x faster decoding at matched concurrency than vLLM, and over 2x end-to-end speedup on agent benchmarks. The code is available at https://github.com/CURRENTF/SparseEngine.",
+  "url": "https://arxiv.org/abs/2609.39068",
+  "pdf_url": "https://arxiv.org/pdf/2609.39068",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "Jitai Hao",
+    "Quansheng Gu",
+    "Qiang Huang",
+    "Jun Yu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/CURRENTF/SparseEngine",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "inference engine"
+  ],
+  "score": 55,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 16,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: inference engine",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Long-context LLM agents accumulate interaction histories that strain KV-cache memory and attention computation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [
+    "2026-W40"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.39068",
+      "url": "https://arxiv.org/abs/2609.39068"
+    }
+  ]
+}

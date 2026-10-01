@@ -1,6 +1,6 @@
 ---
 title: "RAZOR: Pruning Replaceable Experts in LLMs"
-description: "Mixture-of-experts (MoE) models activate only a few experts per token yet store the entire expert pool."
+description: "Mixture-of-experts (MoE) models activate only a few experts per token but store the entire expert pool."
 ---
 
 **评分：39/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
@@ -9,7 +9,7 @@ description: "Mixture-of-experts (MoE) models activate only a few experts per to
 
 ## 一句话摘要
 
-Mixture-of-experts (MoE) models activate only a few experts per token yet store the entire expert pool.
+Mixture-of-experts (MoE) models activate only a few experts per token but store the entire expert pool.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ Mixture-of-experts (MoE) models activate only a few experts per token yet store 
 
 ## 摘要原文
 
-Mixture-of-experts (MoE) models activate only a few experts per token yet store the entire expert pool. Whole-expert pruning shrinks that pool, but for reasoning models it must remove experts without eroding reasoning ability. Common scores rank experts by routing frequency or output magnitude, which measures isolated contribution rather than deletion damage. What decides the damage is functional replaceability, whether the surviving computation can reproduce what is removed. A large contribution may be replaceable by the remaining mixture, whereas a small one may carry a direction the survivors cannot recover. We introduce RAZOR, a training-free method that scores replaceability from consensus residuals, the deviations of individual expert outputs from their original weighted mixture. Holding the layer input fixed, these residuals yield the exact output change from deleting one expert, including survivor reweighting and the replacement expert promoted by router refill. RAZOR aggregates this change over calibration tokens and prunes to a layerwise budget using forward passes alone, without gradients, subset search, or recovery training. On GLM-4.7-Flash, Qwen3.6-35B-A3B, DeepSeek-V4-Flash-0731, and Hy3 at 25% and 50% expert removal, RAZOR attains the highest macro average over nine reasoning-centered tasks among the evaluated pruning methods in all eight model-budget settings. Against REAP on GLM-4.7-Flash and Qwen3.6-35B-A3B, it gains 2.12-5.59 points on this average and lowers reverse KL in all four comparisons. Retained accuracy is not the whole picture, as pruned Qwen3.6-35B-A3B still shifts in response diversity, formatting, and termination.
+Mixture-of-experts (MoE) models activate only a few experts per token but store the entire expert pool. Pruning this pool requires identifying experts whose removal preserves model behavior. Routing frequency and output magnitude do not fully describe deletion damage, which also depends on how the surviving and replacement experts compensate for the removed output. We introduce RAZOR, a training-free pruning method based on consensus residuals, the deviations of expert outputs from their original weighted mixture. At a fixed layer input, these residuals give the exact output change for a single deletion under survivor renormalization and router refill. RAZOR aggregates this damage by conditional root mean square and selects experts under a layerwise budget using forward computation alone, without gradients, subset search, or recovery training. Against frequency, activation-norm, and REAP baselines on GLM-4.7-Flash and Qwen3.6-35B-A3B at 25% and 50% expert removal, it attains the highest macro average over nine reasoning-intensive tasks in all four model-budget settings, gaining 2.12-5.59 points over REAP and lowering reverse KL in all four. On DeepSeek-V4-Flash-0731 and Hy3, it also achieves the highest macro average among the three residual criteria. Local exactness does not guarantee better joint pruning. Generation analyses show changes in diversity, formatting, and termination despite higher task scores.
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ Mixture-of-experts (MoE) models activate only a few experts per token yet store 
 ## 元数据
 
 - 作者：Mingyang Song, Mao Zheng
-- 发布：2026-09-28；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

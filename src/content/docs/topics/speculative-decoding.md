@@ -5,10 +5,15 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **80** 篇。
+累计收录 **85** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SEED: Self-Speculative Decoding via Implicit Encoder-Decoder](../../papers/arxiv-2609.36590/) | 2026-10-01 | 53 |
+| [GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed](../../papers/arxiv-2609.39600/) | 2026-10-01 | 47 |
+| [Does This Action Still Explain the Task? Reverse Scoring for Diffusion Language Model Agents](../../papers/arxiv-2609.38536/) | 2026-10-01 | 44 |
+| [Reliable Parallel Decoding in Masked Diffusion Language Models](../../papers/arxiv-2609.36452/) | 2026-10-01 | 43 |
+| [FastGuide: Accelerating Reward Guidance for Diffusion Large Language Models](../../papers/arxiv-2609.36202/) | 2026-10-01 | 39 |
 | [JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting](../../papers/arxiv-2606.18394/) | 2026-09-30 | 57 |
 | [JuDi: Revisiting Judge Decoding from First Principles via Training-Free Distributional Divergence](../../papers/arxiv-2601.04766/) | 2026-09-30 | 45 |
 | [DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification](../../papers/arxiv-2609.37532/) | 2026-09-30 | 44 |
@@ -60,9 +65,9 @@ description: "Speculative Decoding"
 | [Entropy-Aware Token Rejection for Improving Speculative Decoding](../../papers/arxiv-2512.23765/) | 2026-09-01 | 48 |
 | [SFAD: Speculative Factuality-Aware Decoding](../../papers/arxiv-2609.00796/) | 2026-09-01 | 41 |
 | [OUTLETS: Output-Length Prediction from Speculative Decoding Backbones](../../papers/arxiv-2609.01068/) | 2026-09-01 | 41 |
-| [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-08-31 | 49 |
 | [Verification-Aware Training for Speculative Decoding](../../papers/arxiv-2608.30135/) | 2026-08-31 | 49 |
 | [Trajectory-Level Speculative Decoding for Diffusion Language Models](../../papers/arxiv-2608.27514/) | 2026-08-31 | 49 |
+| [Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models](../../papers/arxiv-2609.00355/) | 2026-08-31 | 44 |
 | [ReTrace: Rejected-Trajectory Conditioning for Speculative Decoding](../../papers/arxiv-2608.29748/) | 2026-08-30 | 42 |
 | [TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding](../../papers/arxiv-2608.26112/) | 2026-08-28 | 49 |
 | [Visual Information-Guided Parallel Decoding for Diffusion Multimodal Large Language Models](../../papers/arxiv-2608.26580/) | 2026-08-27 | 41 |

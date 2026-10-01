@@ -5,10 +5,12 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **25** 篇。
+累计收录 **27** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Scaling Laws for Looped Mixture of Experts](../../papers/arxiv-2609.40316/) | 2026-10-01 | 47 |
+| [Efficient Expert-Parallel Communication on PCIe-Connected Consumer GPUs](../../papers/arxiv-2609.40093/) | 2026-10-01 | 45 |
 | [MaskCoFT: Masked Co-Adaptive Fine-Tuning for Memory-Efficient MoE Inference](../../papers/arxiv-2609.34077/) | 2026-09-30 | 45 |
 | [Multi-level context Modeling for consistent expert selection in Mixture-of-Experts](../../papers/arxiv-2607.16427/) | 2026-09-30 | 44 |
 | [Expert-Space Exploration in MoE Reinforcement Learning](../../papers/arxiv-2609.13058/) | 2026-09-14 | 39 |

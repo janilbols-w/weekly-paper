@@ -5,10 +5,16 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **74** 篇。
+累计收录 **80** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SparseEngine: Sparse-First Inference Engine](../../papers/arxiv-2609.39068/) | 2026-10-01 | 55 |
+| [Characterizing High Bandwidth Flash for LLM Serving](../../papers/arxiv-2609.39131/) | 2026-10-01 | 49 |
+| [MoEless: Efficient MoE LLM Serving with Serverless Experts](../../papers/arxiv-2603.06350/) | 2026-10-01 | 46 |
+| [Taming Speculative Search for Test-Time Scaling in LLM Serving](../../papers/arxiv-2609.39334/) | 2026-10-01 | 45 |
+| [Preserving Provenance in Shared KV Caches for LLM Serving](../../papers/arxiv-2609.38706/) | 2026-10-01 | 43 |
+| [Working Around the Compute Ceiling: Byte-Exact Memory in Galahad Makes LLM Reading a One-Time Cost LLM Reading a One-Time Cost](../../papers/arxiv-2609.39358/) | 2026-10-01 | 41 |
 | [vSkipper: Translating Dynamic Layer Skipping into LLM Serving Gains](../../papers/arxiv-2609.37062/) | 2026-09-30 | 50 |
 | [Systematic Exploration of Multi-core Architectures for Efficient LLM Serving using WaferAI-SIM](../../papers/arxiv-2510.05632/) | 2026-09-30 | 48 |
 | [InferScale: GPU-Native KV Injection for Personalized LLM Serving](../../papers/arxiv-2607.27090/) | 2026-09-30 | 47 |

@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **75** 篇。
+累计收录 **77** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NeurDuo-EEG: A Long-Sequence EEG Foundation Model with Persistent State and Explicit Memory](../../papers/arxiv-2609.38587/) | 2026-10-01 | 47 |
+| [CoEM: Empowering Long-Context Reasoning with Commit-on-Evidence Memory](../../papers/arxiv-2609.36935/) | 2026-10-01 | 47 |
 | [OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading](../../papers/arxiv-2609.33385/) | 2026-09-30 | 57 |
 | [NOSA: Native and Offloadable Sparse Attention](../../papers/arxiv-2510.13602/) | 2026-09-30 | 49 |
 | [EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?](../../papers/arxiv-2609.33762/) | 2026-09-30 | 49 |
@@ -29,10 +31,10 @@ description: "Cache, Offload & Memory Management"
 | [Validating Hybrid-State Cache Recovery for GLM-5.3-Flash with vLLM and LMCache](../../papers/arxiv-2609.15030/) | 2026-09-14 | 39 |
 | [SH-WRNN: Implicit Spherical Harmonics Weight Field Routing Neural Networks for Asymmetric Edge Intelligence](../../papers/arxiv-2609.14614/) | 2026-09-13 | 42 |
 | [FluxMoE: Decoupling Expert Residency for High-Performance MoE Serving](../../papers/arxiv-2604.02715/) | 2026-09-11 | 42 |
+| [HBFSim: Fast and Faithful Simulation of High-Bandwidth Flash Under Real GPU Execution](../../papers/arxiv-2609.09800/) | 2026-09-09 | 47 |
 | [Sustained Performance and Energy Accounting for Nonlinear Forecasting Across Classical and Simulated Quantum Models](../../papers/arxiv-2510.25183/) | 2026-09-09 | 46 |
 | [Towards Standardized Evaluation of GPU Memory Safety with GMSBench](../../papers/arxiv-2609.08871/) | 2026-09-09 | 44 |
 | [Streaming Hierarchical Inference with Tabular Foundation Models](../../papers/arxiv-2609.07956/) | 2026-09-09 | 43 |
-| [HBFSim: Fast and Faithful Simulation of High-Bandwidth Flash Under Real GPU Execution](../../papers/arxiv-2609.09800/) | 2026-09-09 | 42 |
 | [KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU](../../papers/arxiv-2609.04852/) | 2026-09-07 | 38 |
 | [Iapetus: Content-Aware Hierarchical Scheduling for Collaborative ViT Inference in LEO Satellite Networks](../../papers/arxiv-2609.03318/) | 2026-09-04 | 40 |
 | [Beyond Static Summarization: Proactive Memory Extraction for LLM Agents](../../papers/arxiv-2601.04463/) | 2026-09-02 | 40 |

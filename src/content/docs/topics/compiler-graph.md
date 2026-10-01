@@ -5,10 +5,13 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **87** 篇。
+累计收录 **90** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Structure-augmented LLMs for High-Level Synthesis Pragma Optimization](../../papers/arxiv-2609.38601/) | 2026-10-01 | 39 |
+| [QuantCode Model: Specializing Language Models for Executable Algorithmic Trading Code](../../papers/arxiv-2609.39420/) | 2026-10-01 | 38 |
+| [CorrGRPO: Correlation-Normalized GRPO for Multi-Reward Learning](../../papers/arxiv-2609.36820/) | 2026-10-01 | 38 |
 | [ReMCTS: Reflection-Enhanced Monte Carlo Tree Search for Code Generation](../../papers/arxiv-2609.34717/) | 2026-09-30 | 44 |
 | [From Reasoning to Generalization: Knowledge-Augmented LLMs for ARC Benchmark](../../papers/arxiv-2505.17482/) | 2026-09-30 | 44 |
 | [Pay for Hints, Not Answers: LLM Shepherding for Cost-Efficient Inference](../../papers/arxiv-2601.22132/) | 2026-09-30 | 43 |

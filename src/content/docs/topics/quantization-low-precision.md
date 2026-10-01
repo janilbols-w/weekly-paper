@@ -5,10 +5,24 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **218** 篇。
+累计收录 **231** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RATIO: Reasoning Analysis and Token-level Inference Optimization for Quantized Reasoning Models](../../papers/arxiv-2609.39801/) | 2026-10-01 | 53 |
+| [MatGPTQ: Efficient and Accurate Inference over Nested Quantized Models](../../papers/arxiv-2602.03537/) | 2026-10-01 | 52 |
+| [QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs](../../papers/arxiv-2609.39223/) | 2026-10-01 | 50 |
+| [Security-Enhanced Seed-Based Weight Quantization for Large Language Models](../../papers/arxiv-2609.38477/) | 2026-10-01 | 47 |
+| [Chinese-Jev: Bringing System One Model to Chinese-Language Tasks](../../papers/arxiv-2609.36965/) | 2026-10-01 | 45 |
+| [Low-Discrepancy Dither for Quantized Recurrent State Caches](../../papers/arxiv-2609.39185/) | 2026-10-01 | 44 |
+| [DualCast: A Dual-Path Language Model for Bimodal Financial Time-Series Forecasting](../../papers/arxiv-2609.38197/) | 2026-10-01 | 43 |
+| [GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives](../../papers/arxiv-2609.39601/) | 2026-10-01 | 41 |
+| [Cross-Layer Discrete Concept Discovery for Interpreting Language Models](../../papers/arxiv-2506.20040/) | 2026-10-01 | 41 |
+| [PowerStep: Memory-Efficient Adaptive Optimization via $\ell_p$-Norm Steepest Descent](../../papers/arxiv-2605.10335/) | 2026-10-01 | 40 |
+| [JARQ: Joint Alternating Refinement for Quantization](../../papers/arxiv-2609.38599/) | 2026-10-01 | 39 |
+| [PRISM: A Geometric Risk Bound for Decomposing Drift into Scale, Shape, and Head](../../papers/arxiv-2605.11608/) | 2026-10-01 | 38 |
+| [GeoFP8: Geometry-Aware FP8 Gradient Compression for Distributed LLM Training](../../papers/arxiv-2607.07494/) | 2026-10-01 | 38 |
+| [Beyond Accuracy: Prefix-Invariant Realizations of Low-Precision Fast Matrix Multiplication](../../papers/arxiv-2609.39816/) | 2026-10-01 | 38 |
 | [PQ-HSA: Reusing Product-Quantized Scores for Hybrid Sparse-Approximate Attention](../../papers/arxiv-2609.33746/) | 2026-09-30 | 52 |
 | [EntroPack: Fast and Accurate Entropy-Coded Weight Compression at Arbitrary Bitrates](../../papers/arxiv-2609.34185/) | 2026-09-30 | 51 |
 | [BitsMoE: Cost-Aware Bit Allocation in Spectral Space for MoE LLM Quantization](../../papers/arxiv-2606.00079/) | 2026-09-30 | 47 |
@@ -126,7 +140,6 @@ description: "Quantization & Low Precision"
 | [The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally](../../papers/arxiv-2609.01587/) | 2026-09-01 | 40 |
 | [Efficient GPU Retrieval for Semantic Search](../../papers/arxiv-2608.28968/) | 2026-09-01 | 39 |
 | [ADMM-Q: An Improved Hessian-based Weight Quantizer for Post-Training Quantization of Large Language Models](../../papers/arxiv-2605.11222/) | 2026-09-01 | 38 |
-| [DAMP: Decay-Aware Mixed-Precision Recurrent-State Quantization](../../papers/arxiv-2608.27513/) | 2026-08-31 | 60 |
 | [HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference](../../papers/arxiv-2609.00450/) | 2026-08-31 | 51 |
 | [A Method for Layer Bit-Width Allocation in LLM Quantization via Performance Maximization Under a Quality-Degradation Constraint](../../papers/arxiv-2608.28003/) | 2026-08-31 | 47 |
 | [Q-Strata: Hierarchical Bit Allocation for Mixed-Precision Quantization of Mixture-of-Experts LLMs](../../papers/arxiv-2608.30564/) | 2026-08-31 | 46 |

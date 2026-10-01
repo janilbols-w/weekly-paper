@@ -5,10 +5,15 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **79** 篇。
+累计收录 **84** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Storage Is Not Strategy: State-Conditioned Support Control for LLM Unlearning](../../papers/arxiv-2609.37858/) | 2026-10-01 | 43 |
+| [dattri-LLM: A Unified and Efficient Library for Training Data Attribution at LLM Scale](../../papers/arxiv-2609.38767/) | 2026-10-01 | 42 |
+| [From Search to Signal: Online Post-Training in Automatic Heuristic Design](../../papers/arxiv-2609.39383/) | 2026-10-01 | 42 |
+| [$S^3$: Spectral Null-Space Swap Makes Reasoning Models Efficient](../../papers/arxiv-2609.37976/) | 2026-10-01 | 42 |
+| [Blackboard Intelligence Can Surpass Autoregressive on Globally Constrained Problems](../../papers/arxiv-2609.38806/) | 2026-10-01 | 39 |
 | [OneSign: Unifying Sign Language Understanding Tasks with One Model](../../papers/arxiv-2609.33090/) | 2026-09-30 | 46 |
 | [Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures](../../papers/arxiv-2609.34215/) | 2026-09-30 | 42 |
 | [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](../../papers/arxiv-2609.33757/) | 2026-09-30 | 40 |

@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.38601",
+  "title": "Structure-augmented LLMs for High-Level Synthesis Pragma Optimization",
+  "abstract": "Pragma insertion drives the quality of high-level synthesis (HLS) designs. Choosing the right directives demands expert knowledge and reasoning about loop nesting, data dependences, and memory layout. While existing large language models (LLMs) show promise in code generation, they lack explicit program-structure awareness, limiting their ability to suggest effective pragmas. We present PRISM, a novel structure-augmented LLM that closes this gap by adding compiler-grade structural reasoning to a pretrained, frozen code LLM. It combines three hierarchical program representations, Abstract Syntax Tree (AST), Control-Flow Graph (CFG), and Data-Flow Graph (DFG), injecting them into a specific transformer layer while keeping original code tokens in a separate stream. The cross-attention gate at the injection point allows falling back to the pretrained representation when its structural signal is unhelpful. On zero-shot evaluation in HLS-Eval, PRISM synthesizes 3.5\\times as many kernels as Llama3-8B (26.9\\% vs. 7.7\\%), and on the kernels where it does succeed, it produces designs that are 2.31\\times faster (geomean) than GPT-5-mini's. In the agentic flow, the PRISM codegen outperforms other baselines when optimizing complex code and drives the average normalized improvement across the HLS-Eval suite to 26.4\\%.",
+  "url": "https://arxiv.org/abs/2609.38601",
+  "pdf_url": "https://arxiv.org/pdf/2609.38601",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "Haocheng Xu",
+    "Ye Qiao",
+    "Phyo Pyae Moe Aung",
+    "Alok Mishra",
+    "Pavana Prakash",
+    "Rolando Pablo Hong Enriquez",
+    "Adam Han Wu",
+    "Zhiheng Chen",
+    "Dejan Milojicic",
+    "Sitao Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Pragma insertion drives the quality of high-level synthesis (HLS) designs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.38601",
+      "url": "https://arxiv.org/abs/2609.38601"
+    }
+  ]
+}

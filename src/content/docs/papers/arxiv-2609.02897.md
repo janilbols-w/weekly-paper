@@ -39,7 +39,7 @@ Speculative decoding accelerates LLM inference by drafting candidate tokens and 
 ## 元数据
 
 - 作者：Oszk\'ar Urb\'an, Young D. Kwon, Stylianos I. Venieris, Cecilia Mascolo
-- 发布：2026-09-04；更新：2026-09-04
+- 发布：2026-09-04；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

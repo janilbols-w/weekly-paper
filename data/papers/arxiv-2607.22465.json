@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2607.22465",
+  "title": "ORACLE: Agentic AI Orchestrator Routing Via Adaptive Verifier Calibration Feedback",
+  "abstract": "Modern enterprise agent deployments consist of a heterogeneous pool of large language models (LLMs) having diverse capabilities and cost. Existing model routing strategies optimize the quality-cost trade-off, while providing request-level static decisions. More recent solutions address agentic routing as a task-level selection with a serial verifier based router feedback loop. However, their fixed verifier suitable for homogeneous workloads may not generalize to heterogeneous batches of agentic tasks (example: coding, general conversational). Additionally, due to the verifier placement in the critical path of the loop, serving quality may be affected during multiple concurrent requests routing. To mitigate these issues, we present ORACLE. It is a concurrency-aware online routing mechanism that aligns adaptive routing with adaptive verification for feedback. ORACLE acts as a training-free drop-in 'feedback loop' on top of any model-selection policy to first classify the task type and then dynamically assigns a task-appropriate verifier. Further, we develop a delayed feedback strategy for concurrent requests that largely removes verifier latency from the dispatch critical path. We then present a post-routing dispatch scheduler, namely DISC. DISC reserves each task's peak KV footprint at admission and dispatches to an alternate backend when the reward gain from reduced wait exceeds the reward loss from lower accuracy. Extensive evaluation on SWE-bench, tau2-bench, and Terminal-Bench 2.0 shows that ORACLE improves the accuracy-cost frontier by up to 7 percentage points over state-of-the-art routing baselines, while ORACLE with DISC improves program throughput by up to 1.8x.",
+  "url": "https://arxiv.org/abs/2607.22465",
+  "pdf_url": "https://arxiv.org/pdf/2607.22465",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "Ritik Raj",
+    "Souvik Kundu",
+    "Dheemanth Joshi",
+    "Tushar Krishna"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.MA"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "model routing"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: model routing",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern enterprise agent deployments consist of a heterogeneous pool of large language models (LLMs) having diverse capabilities and cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.22465",
+      "url": "https://arxiv.org/abs/2607.22465"
+    }
+  ]
+}

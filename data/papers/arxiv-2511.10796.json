@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2511.10796",
+  "title": "Fast Generalized Neural Tangent Kernel Statistics via Trace Estimation",
+  "abstract": "The empirical state-space Neural Tangent Kernel (NTK) describes the local learning geometry of a finite-width neural network, but computing it explicitly is almost always impractical in terms of computation and memory costs. Here, we show that many useful NTK statistics that characterize, for example, the dimensionality of learned updates or how two models or learning rules relate, can instead be efficiently approximated to very high accuracy via matrix-free products using randomized trace estimation. Namely, we use Hutch++ to estimate the NTK trace, Frobenius norm, effective rank, and alignment. Furthermore, we show that the positive-semidefinite structure of the NTK yields one-sided estimators that require only forward- or reverse-mode automatic differentiation. We validate these estimators across MLPs, recurrent GRUs, and a natural-language Transformer with up to 410 million parameters, in which the state-space contains high-dimensional four-tensors. We demonstrate orders-of-magnitude speedups, with the fastest estimator in a given application depending on the ratio of parameter and state dimensions. Equipped with these estimators, we examine rich and lazy RNN training using hidden-state NTK alignment and use NTK alignment as a regularizer for data-scarce knowledge distillation. We find that this regularization can modestly improve generalization, especially in very data-scarce settings. Together, these results suggest state-space NTK diagnostics are practical even at large scales.",
+  "url": "https://arxiv.org/abs/2511.10796",
+  "pdf_url": "https://arxiv.org/pdf/2511.10796",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "James Hazelden",
+    "Balaaji Reddy Nagireddy",
+    "Eric Shea-Brown"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.NA",
+    "math.NA"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The empirical state-space Neural Tangent Kernel (NTK) describes the local learning geometry of a finite-width neural network, but computing it explicitly is almost always impractical in terms of computation and memory costs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2511.10796",
+      "url": "https://arxiv.org/abs/2511.10796"
+    }
+  ]
+}

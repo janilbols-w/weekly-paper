@@ -5,10 +5,13 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **18** 篇。
+累计收录 **21** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework](../../papers/arxiv-2609.39584/) | 2026-10-01 | 46 |
+| [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](../../papers/arxiv-2604.09107/) | 2026-10-01 | 40 |
+| [Harness Continual Learning: Continual Adaptation Beyond Model Parameters](../../papers/arxiv-2608.19013/) | 2026-10-01 | 40 |
 | [One Readout, Many Repairs: Diffusion-Guided Hierarchical Search for Tool-Agent Repair](../../papers/arxiv-2609.34879/) | 2026-09-30 | 42 |
 | [Deduplication-while-Training: A Resilient Paradigm for Privacy-Preserving Cross-Client Deduplication in Federated Learning](../../papers/arxiv-2609.31262/) | 2026-09-28 | 40 |
 | [A Hybrid Rule-Based and AI-Augmented Framework for Automatic Failure Recovery in DevOps Deployments](../../papers/arxiv-2609.26838/) | 2026-09-24 | 44 |

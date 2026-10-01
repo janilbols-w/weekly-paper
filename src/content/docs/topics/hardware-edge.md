@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **64** 篇。
+累计收录 **65** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [zkPHIRE: A Programmable Accelerator for ZKPs over HIgh-degRee, Expressive Gates](../../papers/arxiv-2508.16738/) | 2026-10-01 | 41 |
 | [MEDEM: Multi-Engine DL Accelerator Design Methodology](../../papers/arxiv-2609.37399/) | 2026-09-30 | 51 |
 | [MoRE: Scaling mixture of experts with hardware-aware low-rank routing](../../papers/arxiv-2609.36301/) | 2026-09-30 | 48 |
 | [MorphAtt: A Neuromorphic Accelerator for Efficient Multi-Head Attention Processing in Spiking Vision Transformers](../../papers/arxiv-2609.33207/) | 2026-09-30 | 44 |

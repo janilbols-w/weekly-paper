@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2606.17034",
+  "title": "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
+  "abstract": "Post-hoc context erasing over the KV cache is challenging because a local edit has a global consequence: once a span has been processed, its influence propagates into the cached states of all subsequent tokens. This issue arises naturally in long-context LLM applications, where stale, incorrect, or harmful context may be identified only after prefill. Exact erasing must then recompute all tokens after the deleted span, making its computational cost depend on suffix length rather than erased-span length. We introduce KVEraser, a learned KV-cache editing method for efficient localized context erasing. KVEraser replaces the KV states of the erased interval with learned steering states while reusing the remaining cache unchanged. To learn a transferable erasing mechanism, we use a two-stage pipeline: generic span-neighbor pre-training followed by task-specific fine-tuning. Experiments show that KVEraser nearly matches full recomputation in post-erasure performance on in-domain tasks across 1K-32K contexts, while its latency increases by only 29.6% compared with a 17.6x increase for full recomputation. KVEraser also generalizes to unseen long-document QA with harmful factual distractors and tool-selection with malicious skill-file injections, achieving the best performance among approximate baselines with a 2.9-10.7x speedup over full recomputation. Notably, full-parameter eraser training is unnecessary: a rank-16 LoRA eraser, which trains only approximately 0.6% as many parameters as the generator, performs comparably to or better than its full-parameter counterpart.",
+  "url": "https://arxiv.org/abs/2606.17034",
+  "pdf_url": "https://arxiv.org/pdf/2606.17034",
+  "published": "2026-10-01",
+  "updated": "2026-10-01",
+  "authors": [
+    "Mufei Li",
+    "Shikun Liu",
+    "Dongqi Fu",
+    "Haoyu Wang",
+    "Yinglong Xia",
+    "Hong Li",
+    "Hong Yan",
+    "Pan Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Post-hoc context erasing over the KV cache is challenging because a local edit has a global consequence: once a span has been processed, its influence propagates into the cached states of all subsequent tokens.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-01T04:45:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.17034",
+      "url": "https://arxiv.org/abs/2606.17034"
+    }
+  ]
+}
