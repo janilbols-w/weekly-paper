@@ -205,39 +205,61 @@ def parse_sosp_schedule_html(payload: bytes, event: Dict[str, Any]) -> Tuple[Lis
 
     for row in soup.select("tr.session-a, tr.session-b"):
         heading = row.select_one(".session-title")
-        track = clean_text(heading.get_text(" ", strip=True)) if heading else ""
+        # Rows without a research-session heading can contain invited talks that
+        # are not part of the conference's accepted-paper corpus.
+        if heading is None:
+            continue
+        track = clean_text(heading.get_text(" ", strip=True))
         track = re.sub(r"^Session\s+\S+\s*[–—-]\s*", "", track, flags=re.IGNORECASE)
         for entry in row.select("ul.papers > li"):
             authors_node = entry.find("em")
             if authors_node is None:
                 continue
+            paper_link = entry.find(
+                "a",
+                href=lambda value: bool(value and "dl.acm.org/doi/" in str(value)),
+            )
             title_parts: List[str] = []
             for child in entry.children:
                 if child is authors_node or (isinstance(child, Tag) and child.find("em")):
                     break
                 if isinstance(child, Tag) and child.name == "br":
                     break
+                if (
+                    isinstance(child, Tag)
+                    and child.name == "a"
+                    and clean_text(child.get_text(" ", strip=True)).lower() == "paper"
+                ):
+                    continue
                 title_parts.append(child.get_text(" ", strip=True) if isinstance(child, Tag) else str(child))
-            title = clean_text(" ".join(title_parts)).strip(" ;")
+            title = re.sub(r"\s*\[\s*\]\s*$", "", clean_text(" ".join(title_parts))).strip(" ;")
             if not title:
                 continue
             slug = normalized_title(title)[:96]
+            paper_url = urljoin(schedule_url, str(paper_link.get("href", ""))) if paper_link else accepted_url
+            doi = ""
+            if paper_link and "/doi/" in paper_url:
+                doi = paper_url.split("/doi/", 1)[1].split("?", 1)[0].strip("/")
+            source_records = [
+                {"source": "SOSP official program", "id": slug, "url": schedule_url},
+                {"source": "SOSP accepted papers", "id": slug, "url": accepted_url},
+            ]
+            if paper_link:
+                source_records.append({"source": "ACM Digital Library", "id": doi, "url": paper_url})
             paper = Paper(
                 id=f"sosp:{event['id']}:{slug}",
                 title=title,
                 abstract="",
-                url=accepted_url,
+                url=paper_url,
                 pdf_url="",
                 published=publication_date,
                 updated=publication_date,
                 authors=_sosp_authors(authors_node),
                 source="SOSP official program",
-                source_type="accepted_program",
+                source_type="proceedings" if paper_link else "accepted_program",
+                doi=doi,
                 venue=event["short_name"],
-                source_records=[
-                    {"source": "SOSP official program", "id": slug, "url": schedule_url},
-                    {"source": "SOSP accepted papers", "id": slug, "url": accepted_url},
-                ],
+                source_records=source_records,
             )
             output.append(
                 EventPaper(

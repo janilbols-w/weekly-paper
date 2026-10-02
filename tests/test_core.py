@@ -339,8 +339,14 @@ class CoreTests(unittest.TestCase):
 <table><tr class="session-a"><td>
   <div class="session-title">Session 1A - Model Serving at Scale</div>
   <ul class="papers">
-    <li>Example LLM Serving<br><em>Alice Smith (Example University), and Bob Jones (Systems Lab)</em></li>
+    <li>Example LLM Serving [<a href="https://dl.acm.org/doi/10.1145/example">paper</a>]<br><em>Alice Smith (Example University), and Bob Jones (Systems Lab)</em></li>
     <li><a href="/src">Student Research Competition</a></li>
+  </ul>
+</td></tr>
+<tr class="session-b"><td>
+  <strong>Invited talks from TOCS</strong>
+  <ul class="papers">
+    <li>Invited Systems Paper<br><em>Carol Example (Test Lab)</em></li>
   </ul>
 </td></tr></table>
 """.encode()
@@ -358,7 +364,9 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(values[0].paper.title, "Example LLM Serving")
         self.assertEqual(values[0].paper.authors, ["Alice Smith", "Bob Jones"])
         self.assertEqual(values[0].track, "Model Serving at Scale")
-        self.assertEqual(values[0].paper.source_type, "accepted_program")
+        self.assertEqual(values[0].paper.source_type, "proceedings")
+        self.assertEqual(values[0].paper.url, "https://dl.acm.org/doi/10.1145/example")
+        self.assertEqual(values[0].paper.doi, "10.1145/example")
         self.assertEqual(values[0].paper.pdf_url, "")
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:

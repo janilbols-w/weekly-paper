@@ -79,7 +79,7 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
         event.get("relevance_zh", ""),
         "",
     ]
-    if program_briefing and event.get("current_stage_zh"):
+    if event.get("current_stage_zh"):
         lines.extend(["## 当前阶段", "", event["current_stage_zh"], ""])
     event_stats = event.get("event_stats", [])
     if program_briefing and event_stats:
@@ -94,6 +94,9 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             "findings_accepted": "Findings 录用",
             "main_oral": "Main oral",
             "accepted_papers": "正式论文",
+            "available_artifacts": "Available artifact",
+            "functional_artifacts": "Functional artifact",
+            "reproduced_artifacts": "Reproduced artifact",
             "operational_systems_papers": "Operational Systems 论文",
             "best_paper_awards": "Best Paper",
             "distinguished_artifact_awards": "Distinguished Artifact Award",

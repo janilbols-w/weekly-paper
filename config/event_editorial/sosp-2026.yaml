@@ -1,6 +1,6 @@
 sosp:sosp-2026:janusmultillmservingatproductionscale:
   abstract: Janus is a production multi-LLM serving system that separates service-level model placement from engine-level memory management. It combines a slower steady-state scheduler with a faster elasticity loop and virtualizes device memory through xTensor so colocated models can share accelerators while respecting service objectives.
-  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  url: https://dl.acm.org/doi/10.1145/3830418.3843867
   pdf_url: https://yangtonghome.github.io/uploads/Janus_SOSP2026.pdf
   code_url: https://github.com/Janus2026/Janus
   classification_hint: multi-LLM inference serving GPU scheduling autoscaling memory virtualization throughput latency production cluster
@@ -13,7 +13,7 @@ sosp:sosp-2026:janusmultillmservingatproductionscale:
 
 sosp:sosp-2026:tensorhubscalableandelasticweighttransferforllmrltraining:
   abstract: TensorHub introduces reference-oriented storage for large-model weights so reinforcement-learning training and inference workers can exchange versions without repeatedly materializing redundant copies. It combines topology-aware transfer planning with consistency and fault-tolerance mechanisms for elastic RL pipelines.
-  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  url: https://dl.acm.org/doi/10.1145/3830418.3843859
   pdf_url: https://arxiv.org/pdf/2604.09107
   classification_hint: LLM reinforcement learning distributed training GPU topology weight transfer network interconnect elastic throughput
   primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: cluster-resource, group_zh: 集群与资源管理, leaf_id: network-interconnect, leaf_zh: 网络与互联}
@@ -25,7 +25,7 @@ sosp:sosp-2026:tensorhubscalableandelasticweighttransferforllmrltraining:
 
 sosp:sosp-2026:afewgpusawholelottascalefaithfulllmtrainingemulationwithcrystalllm:
   abstract: The paper presents a high-fidelity LLM training emulator that slices execution graphs and combines emulation with analytical modeling to predict large-cluster behavior using a small fraction of the target hardware.
-  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  url: https://dl.acm.org/doi/10.1145/3830418.3843852
   pdf_url: https://arxiv.org/pdf/2605.15617
   classification_hint: distributed LLM training GPU performance emulation inference benchmark performance profiling throughput memory scaling
   primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 推理服务平台, leaf_id: observability-benchmarking, leaf_zh: 可观测性与基准测试}
@@ -37,7 +37,7 @@ sosp:sosp-2026:afewgpusawholelottascalefaithfulllmtrainingemulationwithcrystalll
 
 sosp:sosp-2026:llm42enablingdeterminisminllminferencewithverifiedspeculation:
   abstract: LLM-42 provides deterministic distributed inference through a decode-verify-rollback protocol. It allows workers to execute fast unchanged kernels speculatively, verifies results at synchronization points, and rolls back when nondeterministic execution diverges.
-  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  url: https://dl.acm.org/doi/10.1145/3830418.3843901
   pdf_url: https://arxiv.org/pdf/2601.17768
   code_url: https://github.com/microsoft/llm-42
   classification_hint: deterministic distributed LLM inference serving speculative decode verify rollback GPU kernels latency throughput
@@ -50,7 +50,7 @@ sosp:sosp-2026:llm42enablingdeterminisminllminferencewithverifiedspeculation:
 
 sosp:sosp-2026:aveguidingagenticgpuoptimizationusingdataflowinvariants:
   abstract: The paper uses data-flow invariants to guide agentic GPU-kernel optimization. A compact assertion language expresses semantic constraints, while compile-time abstract interpretation and SMT-based checks reject invalid candidate kernels before expensive execution.
-  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  url: https://dl.acm.org/doi/10.1145/3830418.3843902
   pdf_url: https://arxiv.org/pdf/2604.18616
   classification_hint: agentic LLM GPU kernel optimization dataflow invariants compile time verification throughput inference
   primary_category: {domain_id: efficient-inference, domain_zh: 高效推理, group_id: runtime-memory, group_zh: 运行时与内存, leaf_id: kernels-operators, leaf_zh: Kernel 与算子优化}
@@ -62,7 +62,7 @@ sosp:sosp-2026:aveguidingagenticgpuoptimizationusingdataflowinvariants:
 
 sosp:sosp-2026:m2kmakingthemodelkernelinterfaceexplicitforreliablecudakernelverification:
   abstract: M2K makes the model-kernel interface explicit for verifying CUDA kernels used by machine-learning frameworks. HFProbe derives interface behavior and cuKLEE symbolically checks kernel implementations against it to find silent correctness failures.
-  url: https://sigops.org/s/conferences/sosp/2026/accepted.html
+  url: https://dl.acm.org/doi/10.1145/3830418.3843908
   pdf_url: https://arxiv.org/pdf/2603.24595
   code_url: https://github.com/system-pclub/M2K
   classification_hint: LLM CUDA GPU kernel verification inference runtime memory operators correctness vLLM

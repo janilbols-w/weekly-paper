@@ -13,18 +13,24 @@
   "official_url": "https://sigops.org/s/conferences/sosp/2026/",
   "program_url": "https://sigops.org/s/conferences/sosp/2026/schedule.html",
   "accepted_papers_url": "https://sigops.org/s/conferences/sosp/2026/accepted.html",
+  "proceedings_url": "https://dl.acm.org/doi/proceedings/10.1145/3830418",
   "awards_url": "https://sigops.org/s/conferences/sosp/2026/",
   "artifacts_url": "https://sysartifacts.github.io/sosp2026/",
   "collector": "sosp_schedule",
   "program_released_date": "2026-09-09",
+  "publication_date": "2026-09-28",
   "selection_threshold": 40,
   "selection_cap": 8,
   "selection_requires_editorial": true,
   "official_totals": {
-    "accepted_papers": 62
+    "accepted_papers": 62,
+    "available_artifacts": 33,
+    "functional_artifacts": 40,
+    "reproduced_artifacts": 40
   },
-  "summary_zh": "SOSP 2026 于 9 月 9 日更新正式日程，62 篇录用论文被编入 12 个研究论文 session。与本站最相关的议程集中在多模型 serving、训练与推理仿真、RL 权重分发、确定性推理、GPU kernel 验证和 agentic kernel 优化。",
-  "relevance_zh": "本届的强信号不只是“LLM 系统论文变多”，而是生产约束开始进入系统设计主线：多租户模型调度与显存虚拟化、跨规模性能预测、可重复推理、跨拓扑权重传输，以及用形式化约束约束自动生成 GPU kernel。报告只把官方日程视为录用证明；性能数字仍按作者论文或 artifact 中的条件化主张处理。",
+  "summary_zh": "SOSP 2026 于 9 月 29 日至 10 月 2 日在布拉格举行；ACM proceedings 已于 9 月 28 日在线发布，官方日程为 62 篇研究论文补齐了 DOI。与本站最相关的议程集中在多模型 serving、训练与推理仿真、RL 权重分发、确定性推理、GPU kernel 验证和 agentic kernel 优化。",
+  "relevance_zh": "本届的强信号不只是“LLM 系统论文变多”，而是生产约束开始进入系统设计主线：多租户模型调度与显存虚拟化、跨规模性能预测、可重复推理、跨拓扑权重传输，以及用形式化约束约束自动生成 GPU kernel。正式录用与 DOI 由官方日程和 ACM proceedings 交叉确认；性能数字仍按作者论文或 artifact 中的条件化主张处理。",
+  "current_stage_zh": "本次同时命中 `event_week` 与 `papers_released`：RUN_DATE 是主会最后一天，ACM proceedings 已在本周公开。Artifact Evaluation 结果列出 33 个 Available、40 个 Functional 和 40 个 Reproduced artifact；官方首页截至 10 月 2 日仍把三项 Best Paper、Distinguished Artifact 及两项 honorable mention 标为 TBD，因此不推断奖项归属。精选论文沿用已定向核验的方法、结果、限制与 artifact，不因 DOI 上线重新扩大全文阅读范围。",
   "key_programs": [
     {
       "title": "Model Serving at Scale",
@@ -61,34 +67,40 @@
     {
       "label": "SOSP 2026 official schedule",
       "url": "https://sigops.org/s/conferences/sosp/2026/schedule.html",
-      "checked_at": "2026-09-11",
-      "note_zh": "核验 9 月 9 日更新时间、12 个研究论文 session、论文标题、作者、时间与分轨"
+      "checked_at": "2026-10-02",
+      "note_zh": "核验 62 篇研究论文、分轨与时间，并确认每篇论文已补齐 ACM DOI 链接"
     },
     {
       "label": "SOSP 2026 accepted papers",
       "url": "https://sigops.org/s/conferences/sosp/2026/accepted.html",
-      "checked_at": "2026-09-11",
+      "checked_at": "2026-10-02",
       "note_zh": "核验 62 篇录用论文；页面注明录用仍以完成 shepherd 流程为条件"
+    },
+    {
+      "label": "SOSP 2026 ACM proceedings",
+      "url": "https://dl.acm.org/doi/proceedings/10.1145/3830418",
+      "checked_at": "2026-10-02",
+      "note_zh": "核验 proceedings 及论文 DOI；Crossref 元数据显示 online publication date 为 2026-09-28"
     },
     {
       "label": "SOSP 2026 official conference page",
       "url": "https://sigops.org/s/conferences/sosp/2026/",
-      "checked_at": "2026-09-11",
-      "note_zh": "核验会期、Prague 会场与奖项栏仍为 TBD"
+      "checked_at": "2026-10-02",
+      "note_zh": "核验会期、Prague 会场，以及三项 Best Paper 和三项 artifact 奖项仍为 TBD"
     },
     {
       "label": "SOSP 2026 artifact evaluation",
-      "url": "https://sysartifacts.github.io/sosp2026/",
-      "checked_at": "2026-09-11",
-      "note_zh": "核验 artifact 决定与归档节点；Distinguished Artifact 结果尚未公布"
+      "url": "https://sysartifacts.github.io/sosp2026/results",
+      "checked_at": "2026-10-02",
+      "note_zh": "核验 33 个 Available、40 个 Functional、40 个 Reproduced artifact；Distinguished Artifact 结果尚未公布"
     }
   ],
   "status": "进行中",
-  "trigger_type": "event_week",
+  "trigger_type": "papers_released",
   "corpus_source": "SOSP official schedule and accepted-paper list",
-  "corpus_total": 65,
-  "relevant_total": 2,
-  "selected_total": 0,
-  "source_digest": "2c5dcfded750c3187bbc5b8f20ab424e7e1ae51c2463517d574253934779dc45",
-  "generated_at": "2026-10-02T05:02:33+00:00"
+  "corpus_total": 62,
+  "relevant_total": 9,
+  "selected_total": 6,
+  "source_digest": "1379df27abb038f3809c59d950d0dd49e26d040f21a0801ae2d6acfbd7c566e4",
+  "generated_at": "2026-10-02T07:23:22+00:00"
 }
