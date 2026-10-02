@@ -1,6 +1,6 @@
 ---
 title: "OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading"
-description: "Semi-autoregressive diffusion large language models (dLLMs) improve decoding parallelism through iterative block-wise denoising, but scaling them with mixture-of-experts (MoE) layers introduces a large expert parameter footprint that exceeds memory-constrained GPU capacity."
+description: "OLED-MoE 利用扩散式 LLM 相邻去噪迭代间的专家路由局部性，以 token 置信度预测并保留高复用专家，避免传统层间预取带来的额外传输；对未命中专家则用 CPU-GPU 协同执行补偿。摘要报告其相对现有卸载系统将 TPOT 改善 1.23 至 7.93 倍、专家缓存利用率提升 1.44 至 4.23 倍，并在仅使用 40% 专家 GPU 显存时将相对全驻留的 TPOT 增幅控制在 23%。"
 ---
 
 **评分：57/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
@@ -9,11 +9,11 @@ description: "Semi-autoregressive diffusion large language models (dLLMs) improv
 
 ## 一句话摘要
 
-Semi-autoregressive diffusion large language models (dLLMs) improve decoding parallelism through iterative block-wise denoising, but scaling them with mixture-of-experts (MoE) layers introduces a large expert parameter footprint that exceeds memory-constrained GPU capacity.
+OLED-MoE 利用扩散式 LLM 相邻去噪迭代间的专家路由局部性，以 token 置信度预测并保留高复用专家，避免传统层间预取带来的额外传输；对未命中专家则用 CPU-GPU 协同执行补偿。摘要报告其相对现有卸载系统将 TPOT 改善 1.23 至 7.93 倍、专家缓存利用率提升 1.44 至 4.23 倍，并在仅使用 40% 专家 GPU 显存时将相对全驻留的 TPOT 增幅控制在 23%。
 
 ## 为什么值得关注
 
-待编辑增强。
+它把 MoE 专家卸载策略从自回归解码的层间预取改写为适合 dLLM 迭代结构的跨迭代保留，为显存受限设备部署大规模 MoE 扩散模型提供了更贴合执行模式的缓存与计算协同方案。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Semi-autoregressive diffusion large language models (dLLMs) improve decoding par
 - taxonomy keywords: gpu memory, offloading
 - quantitative claim detected
 - code/artifact link detected
+- 限制：方案依赖相邻去噪迭代具有稳定的专家复用局部性，路由变化较大的工作负载可能削弱预测价值。摘要未列出具体模型、硬件、互连和并发配置，CPU-GPU 协同的资源占用以及最高加速的适用范围仍需结合正文验证。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Semi-autoregressive diffusion large language models (dLLMs) improve decoding par
 - 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/flashserve/OLED-MoE](https://github.com/flashserve/OLED-MoE)
-- 阅读深度：metadata
+- 阅读深度：abstract

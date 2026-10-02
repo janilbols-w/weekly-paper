@@ -57,10 +57,10 @@
     "code/artifact link detected"
   ],
   "summary_en": "Modern large language models increasingly require long contexts for reasoning and multi-document tasks, but attention's quadratic complexity creates a severe computational bottleneck.",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "Block Sparse Flash Attention 先计算精确 query-key 相似度，再以校准阈值筛选每个 query 的 top-k value block，跳过约一半被裁剪块的计算与内存传输，并提供可替换 FlashAttention 的 CUDA kernel。摘要报告 Llama-3.1-8B 在 LongBench 上最高端到端加速 1.13 倍、准确率下降 1.1%，在 Needle-in-a-Haystack 上最高加速 1.24 倍、准确率下降 1%，kernel 最高加速 1.38 倍。",
+  "why_it_matters_zh": "该方法不依赖训练或预先预测重要性，以精确注意力分数换取更稳健的块筛选，并通过 drop-in CUDA 实现降低现有长上下文推理栈的接入成本；这为质量可控的稀疏注意力提供了直接工程路径。",
+  "limitations_zh": "方法仍需完整计算 query-key 相似度，节省主要来自被裁剪 value block 的后续计算与传输，因此端到端最高加速相对有限。阈值需要一次数据校准，且摘要已显示约 1% 的精度损失；收益也依赖稀疏率、序列长度、模型和 GPU。",
+  "reading_depth": "abstract",
   "first_seen": "2026-09-30T04:44:58+00:00",
   "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [

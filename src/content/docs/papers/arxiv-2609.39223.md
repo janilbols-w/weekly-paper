@@ -1,6 +1,6 @@
 ---
 title: "QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs"
-description: "Large language model (LLM) inference is increasingly moving toward lower precision to realize the throughput of hardware accelerators, but aggressive post-training quantization (PTQ) can degrade model quality."
+description: "QATFactory 在 BF16 矩阵乘中模拟部署量化，支持以量化感知蒸馏或强化学习让模型适应 NVFP4、MXFP4 和 llama.cpp Q4_K 的量化噪声，并可把稠密或 MoE、全参数或 LoRA 训练结果直接导出到 vLLM 与 llama.cpp。摘要报告 Qwen3.5-9B 的 NVFP4 与 MXFP4 平均准确率分别为 68.9% 和 66.0%，高于最佳 PTQ 的 65.4% 和 56.4%。"
 ---
 
 **评分：55/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,11 +9,11 @@ description: "Large language model (LLM) inference is increasingly moving toward
 
 ## 一句话摘要
 
-Large language model (LLM) inference is increasingly moving toward lower precision to realize the throughput of hardware accelerators, but aggressive post-training quantization (PTQ) can degrade model quality.
+QATFactory 在 BF16 矩阵乘中模拟部署量化，支持以量化感知蒸馏或强化学习让模型适应 NVFP4、MXFP4 和 llama.cpp Q4_K 的量化噪声，并可把稠密或 MoE、全参数或 LoRA 训练结果直接导出到 vLLM 与 llama.cpp。摘要报告 Qwen3.5-9B 的 NVFP4 与 MXFP4 平均准确率分别为 68.9% 和 66.0%，高于最佳 PTQ 的 65.4% 和 56.4%。
 
 ## 为什么值得关注
 
-待编辑增强。
+框架把训练时的量化模拟与生产推理格式对齐，既降低了目标低精度硬件不可用时的训练门槛，也减少训练产物到服务引擎之间再次转换造成的质量损失和工程断点。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Large language model (LLM) inference is increasingly moving toward lower precisi
 - taxonomy keywords: fp4, quantization, quantized
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：量化感知蒸馏或强化学习相较 PTQ 需要额外训练数据、算力和流程，摘要未量化这些成本。最佳训练策略随 NVFP4 与 MXFP4 而变化，且已报告精度不能直接代表不同模型、任务、序列长度和实际吞吐下的综合收益。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Large language model (LLM) inference is increasingly moving toward lower precisi
 - 发布：2026-09-30；更新：2026-10-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/QATFactory/QATFactory](https://github.com/QATFactory/QATFactory)
-- 阅读深度：metadata
+- 阅读深度：abstract

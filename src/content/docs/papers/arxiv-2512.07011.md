@@ -1,6 +1,6 @@
 ---
 title: "Block Sparse Flash Attention"
-description: "Modern large language models increasingly require long contexts for reasoning and multi-document tasks, but attention's quadratic complexity creates a severe computational bottleneck."
+description: "Block Sparse Flash Attention 先计算精确 query-key 相似度，再以校准阈值筛选每个 query 的 top-k value block，跳过约一半被裁剪块的计算与内存传输，并提供可替换 FlashAttention 的 CUDA kernel。摘要报告 Llama-3.1-8B 在 LongBench 上最高端到端加速 1.13 倍、准确率下降 1.1%，在 Needle-in-a-Haystack 上最高加速 1.24 倍、准确率下降 1%，kernel 最高加速 1.38 倍。"
 ---
 
 **评分：54/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
@@ -9,11 +9,11 @@ description: "Modern large language models increasingly require long contexts fo
 
 ## 一句话摘要
 
-Modern large language models increasingly require long contexts for reasoning and multi-document tasks, but attention's quadratic complexity creates a severe computational bottleneck.
+Block Sparse Flash Attention 先计算精确 query-key 相似度，再以校准阈值筛选每个 query 的 top-k value block，跳过约一半被裁剪块的计算与内存传输，并提供可替换 FlashAttention 的 CUDA kernel。摘要报告 Llama-3.1-8B 在 LongBench 上最高端到端加速 1.13 倍、准确率下降 1.1%，在 Needle-in-a-Haystack 上最高加速 1.24 倍、准确率下降 1%，kernel 最高加速 1.38 倍。
 
 ## 为什么值得关注
 
-待编辑增强。
+该方法不依赖训练或预先预测重要性，以精确注意力分数换取更稳健的块筛选，并通过 drop-in CUDA 实现降低现有长上下文推理栈的接入成本；这为质量可控的稀疏注意力提供了直接工程路径。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Modern large language models increasingly require long contexts for reasoning an
 - taxonomy keywords: attention kernel, flash attention
 - quantitative claim detected
 - code/artifact link detected
+- 限制：方法仍需完整计算 query-key 相似度，节省主要来自被裁剪 value block 的后续计算与传输，因此端到端最高加速相对有限。阈值需要一次数据校准，且摘要已显示约 1% 的精度损失；收益也依赖稀疏率、序列长度、模型和 GPU。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Modern large language models increasingly require long contexts for reasoning an
 - 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Danielohayon/Block-Sparse-Flash-Attention](https://github.com/Danielohayon/Block-Sparse-Flash-Attention)
-- 阅读深度：metadata
+- 阅读深度：abstract
