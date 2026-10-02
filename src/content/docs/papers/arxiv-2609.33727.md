@@ -39,7 +39,7 @@ Knowledge Distillation (KD) has emerged as a vital paradigm for transferring the
 ## 元数据
 
 - 作者：Luyang Fang, Haoran Lu, Jiazhang Cai, Tao Wang, Huimin Cheng, Wenxuan Zhong, Ping Ma
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

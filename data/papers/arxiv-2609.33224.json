@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2609.33224",
+  "title": "PackServe: SLO-Aware Request Scheduling for Agentic LLM Serving at Scale",
+  "abstract": "Request scheduling is a key challenge in large-scale clusters serving agentic large language model (LLM) workloads. An effective scheduler must preserve key-value cache (KVC) reuse across long, shared prefixes, meet token-level latency service-level objectives (SLOs), and minimize GPU resource footprint. Existing schedulers struggle to reconcile these requirements: request consolidation can sacrifice cache locality and increase prefill/decode interference, compromising both SLO attainment and resource efficiency. We present PackServe, a scheduler designed to reduce resource costs while meeting latency SLOs for agentic LLM serving. PackServe uses compact white-box models to predict latency under prefill/decode interference. Guided by these predictions, it packs requests onto fewer serving instances while preserving KVC reuse and SLO constraints, trading available latency headroom for improved per-instance throughput. Evaluation on 64 NVIDIA H20 GPUs shows that PackServe uses up to 16.8% and 24.6% fewer GPU-hours than state-of-the-art schedulers under 30-ms and 50-ms TPOT targets, respectively, while meeting the target TPOT objectives. PackServe has also been deployed in our production cluster comprising over 1000 GPUs, where it reduces the resource footprint by 34.7% compared with the original production scheduler.",
+  "url": "http://arxiv.org/abs/2609.33224v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.33224v1",
+  "published": "2026-09-27",
+  "updated": "2026-09-27",
+  "authors": [
+    "Zhiyuan Tan",
+    "Dejiang Zhu",
+    "Jingzhe Jiang",
+    "Yihao Zheng",
+    "Yang Tian",
+    "Tao Wang",
+    "Minchen Yu"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "13 pages, 13 figures",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "batching-scheduling",
+    "leaf": "Batching & Request Scheduling",
+    "leaf_zh": "Batching 与请求调度"
+  },
+  "secondary_tags": [
+    "multitenancy-slo-reliability",
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "request scheduling"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: request scheduling",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Request scheduling is a key challenge in large-scale clusters serving agentic large language model (LLM) workloads.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.33224v1",
+      "url": "http://arxiv.org/abs/2609.33224v1"
+    }
+  ]
+}

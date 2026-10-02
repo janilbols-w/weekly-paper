@@ -5,34 +5,41 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **149** 篇。
+累计收录 **156** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Nalar: Workflow-Aware Management of Agentic Applications](../../papers/arxiv-2601.05109/) | 2026-10-02 | 41 |
 | [KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing](../../papers/arxiv-2606.17034/) | 2026-10-01 | 52 |
-| [ATTUNER: Recomputation-Free KV Cache Reuse via Query-Side Adaptation](../../papers/arxiv-2609.36722/) | 2026-10-01 | 46 |
-| [Capture the lifecycle: KV Cache management in ReAct Agents with KVTether](../../papers/arxiv-2609.39819/) | 2026-10-01 | 44 |
-| [PatchKV: Weight-Space Compensation of KV Cache](../../papers/arxiv-2609.39329/) | 2026-10-01 | 43 |
-| [Learning Functional Subspaces for Neural Network Compression](../../papers/arxiv-2609.40127/) | 2026-10-01 | 42 |
-| [Cascadia: A Control-Plane-Free Alternative to Hyperconverged AI Infrastructure](../../papers/arxiv-2609.38697/) | 2026-10-01 | 42 |
 | [Block Sparse Flash Attention](../../papers/arxiv-2512.07011/) | 2026-09-30 | 54 |
-| [Where Activation Sparsity and KV-Cache Sparsity Cross in LLM Decoding](../../papers/arxiv-2609.33889/) | 2026-09-30 | 50 |
-| [OmniTide: Co-Designing Algorithms and Systems for Efficient On-Device Omni-LLM Streaming](../../papers/arxiv-2609.34653/) | 2026-09-30 | 47 |
-| [KV-Lingo: Learning KV-Cache Translators with Distillation](../../papers/arxiv-2609.32610/) | 2026-09-30 | 47 |
-| [CacheRepair: Learning to Repair Cross-Chunk Context in RAG for KV Cache Fusion](../../papers/arxiv-2609.35139/) | 2026-09-30 | 46 |
-| [PulseInfer: I/O-Centric Sparse KV Cache Offloading for Efficient Long-Context LLM Decoding](../../papers/arxiv-2609.34555/) | 2026-09-30 | 45 |
-| [Distance-KV: Exploiting Relative Distance for Efficient Long-Context Inference](../../papers/arxiv-2609.32663/) | 2026-09-30 | 45 |
+| [PatchKV: Weight-Space Compensation of KV Cache](../../papers/arxiv-2609.39329/) | 2026-09-30 | 48 |
+| [Capture the lifecycle: KV Cache management in ReAct Agents with KVTether](../../papers/arxiv-2609.39819/) | 2026-09-30 | 44 |
 | [TwinKV: A Composable Repair Pass for KV Cache Eviction via Pairwise Key Redundancy](../../papers/arxiv-2608.27128/) | 2026-09-30 | 43 |
-| [Spexis: Speculative Lookahead Scheduling for LLM Inference](../../papers/arxiv-2609.34370/) | 2026-09-30 | 43 |
-| [From Experience to Expertise: Adoption-Aware Memory Learning for Data-Scarce NPU Kernel Synthesis](../../papers/arxiv-2609.35568/) | 2026-09-30 | 43 |
-| [Cartridges++: KV Cache Compression without Off-Context Derailment](../../papers/arxiv-2609.35621/) | 2026-09-30 | 43 |
-| [KV-streams for Efficient Compaction in Agentic Reinforcement Learning](../../papers/arxiv-2609.35750/) | 2026-09-30 | 42 |
-| [Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs](../../papers/arxiv-2609.32259/) | 2026-09-30 | 41 |
+| [Learning Functional Subspaces for Neural Network Compression](../../papers/arxiv-2609.40127/) | 2026-09-30 | 42 |
+| [Cascadia: A Control-Plane-Free Alternative to Hyperconverged AI Infrastructure](../../papers/arxiv-2609.38697/) | 2026-09-30 | 42 |
+| [Persistent Context Graphs for Efficient Memory Compaction in LLM Agents](../../papers/arxiv-2609.40118/) | 2026-09-30 | 39 |
 | [When Keywords Drop but Classifiers Hold: Soft Refusals under KV Cache Compression](../../papers/arxiv-2609.31678/) | 2026-09-30 | 38 |
 | [Memory-Efficient Looped Transformer: Decoupling Compute from Memory in Looped Language Models](../../papers/arxiv-2605.07721/) | 2026-09-30 | 38 |
 | [Affix Cache for Diffusion Large Language Models](../../papers/arxiv-2608.26140/) | 2026-09-30 | 38 |
+| [ATTUNER: Recomputation-Free KV Cache Reuse via Query-Side Adaptation](../../papers/arxiv-2609.36722/) | 2026-09-29 | 46 |
+| [Dynamic Flow, Static Graph: KV Cache Reuse for Efficient LLM Serving on Mobile NPUs](../../papers/arxiv-2609.34727/) | 2026-09-28 | 48 |
+| [OmniTide: Co-Designing Algorithms and Systems for Efficient On-Device Omni-LLM Streaming](../../papers/arxiv-2609.34653/) | 2026-09-28 | 47 |
 | [The KV Cache Is the New Memory Wall](../../papers/arxiv-2609.30854/) | 2026-09-28 | 46 |
+| [CacheRepair: Learning to Repair Cross-Chunk Context in RAG for KV Cache Fusion](../../papers/arxiv-2609.35139/) | 2026-09-28 | 46 |
+| [PulseInfer: I/O-Centric Sparse KV Cache Offloading for Efficient Long-Context LLM Decoding](../../papers/arxiv-2609.34555/) | 2026-09-28 | 45 |
 | [ActKV: Efficient LLM Agents through Action-Guided KV Cache Management](../../papers/arxiv-2609.31395/) | 2026-09-28 | 45 |
+| [Spexis: Speculative Lookahead Scheduling for LLM Inference](../../papers/arxiv-2609.34370/) | 2026-09-28 | 43 |
+| [From Experience to Expertise: Adoption-Aware Memory Learning for Data-Scarce NPU Kernel Synthesis](../../papers/arxiv-2609.35568/) | 2026-09-28 | 43 |
+| [Cartridges++: KV Cache Compression without Off-Context Derailment](../../papers/arxiv-2609.35621/) | 2026-09-28 | 43 |
+| [Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression](../../papers/arxiv-2609.36322/) | 2026-09-28 | 42 |
+| [KV-streams for Efficient Compaction in Agentic Reinforcement Learning](../../papers/arxiv-2609.35750/) | 2026-09-28 | 42 |
+| [Where Activation Sparsity and KV-Cache Sparsity Cross in LLM Decoding](../../papers/arxiv-2609.33889/) | 2026-09-27 | 50 |
+| [Just Let Linear States Forget the Distant Past: Prefix Caching via Suffix Replay for Hybrid LLMs](../../papers/arxiv-2609.33477/) | 2026-09-27 | 48 |
+| [Tessera: Demand-Driven KV Cache Management for Retrieval-Augmented LLM Serving](../../papers/arxiv-2609.32999/) | 2026-09-26 | 47 |
+| [KV-Lingo: Learning KV-Cache Translators with Distillation](../../papers/arxiv-2609.32610/) | 2026-09-26 | 47 |
+| [Distance-KV: Exploiting Relative Distance for Efficient Long-Context Inference](../../papers/arxiv-2609.32663/) | 2026-09-26 | 45 |
+| [Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs](../../papers/arxiv-2609.32259/) | 2026-09-26 | 41 |
+| [AgentReplay: Token-Wise Trace Replay Is Essential for Fair Serving System Performance Benchmarking](../../papers/arxiv-2609.32283/) | 2026-09-26 | 41 |
 | [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](../../papers/arxiv-2609.28870/) | 2026-09-25 | 41 |
 | [Omni-Flow: A Unified Workflow Orchestration and Distributed KV Cache Sharing Framework for Multimodal Inference](../../papers/arxiv-2606.31093/) | 2026-09-25 | 40 |
 | [MILO: Efficient Many-shot In-Context Learning with Block-wise Low-rank Compression](../../papers/arxiv-2609.29913/) | 2026-09-24 | 47 |

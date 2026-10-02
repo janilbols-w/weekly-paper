@@ -4,7 +4,7 @@
   "abstract": "Long-context LLM serving is increasingly bottlenecked by decode, where large KV caches limit batch size and underutilize GPUs. Sparse KV cache offloading expands effective capacity by storing most historical KV blocks in CPU DRAM and recalling only selected blocks on demand. However, we find that existing offloading systems shift the bottleneck to CPU-GPU recall I/O: recall volume varies widely across layers, decode steps and requests, while headwise sparse selection fragments recalls into many small PCIe transfers. This paper presents PulseInfer, an I/O-centric sparse KV cache offloading system. PulseInfer hides variable recall latency with interruptible layer-wise scheduling, adapts offloading decisions with IO-Adaptive Offloading Admission, and coalesces fragmented transfers using SoloHead sparse selection and a gather-scatter I/O engine. Implemented on SGLang, PulseInfer improves decode throughput by up to 4.7x over SGLang and 2.6x over the best existing offloading baseline, while reducing TPOT by up to 76% and preserving near-lossless accuracy.",
   "url": "https://arxiv.org/abs/2609.34555",
   "pdf_url": "https://arxiv.org/pdf/2609.34555",
-  "published": "2026-09-30",
+  "published": "2026-09-28",
   "updated": "2026-09-30",
   "authors": [
     "Qiuyang Zhang",
@@ -64,9 +64,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.34555v1",
+      "url": "http://arxiv.org/abs/2609.34555v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.34555",

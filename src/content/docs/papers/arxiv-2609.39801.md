@@ -39,7 +39,7 @@ Post-training quantization (PTQ) has become a widely adopted technique for reduc
 ## 元数据
 
 - 作者：Chengzhu Bao, Xianglong Yan, Tianao Zhang, Jiaqi Chen, Shaoqiu Zhang, Yulun Zhang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/steven-bao1/RATIO](https://github.com/steven-bao1/RATIO)
 - 阅读深度：metadata

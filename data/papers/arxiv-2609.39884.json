@@ -4,7 +4,7 @@
   "abstract": "Role prompting elicits specialized behavior from large language models through an expert identity, offering a lightweight way to guide reasoning on demanding tasks. However, evaluating or distilling complete role-prompted answers can miss useful next-token preferences when the sampled solution remains incorrect. Transferring these preferences also requires an objective that reaches alternatives the student rarely predicts. We introduce OPSRD, which uses a fixed expert role as privileged teaching context for on-policy self-distillation without reference solutions. A role-free student generates a trajectory, and a frozen instance of the same base model supplies role-conditioned distributions on its exact prefixes, exposing alternatives beyond the sampled continuation. Teacher-weighted forward KL targets alternatives the student underestimates, with clipping to limit individual vocabulary contributions. Supervision is restricted to the highest-entropy half of student positions, concentrating learning where predictions are uncertain. Experiments on three competition-math benchmarks with Qwen3-1.7B, 4B, and 8B show improvements over the base models without role prompts at inference. Forward KL achieves the highest macro-averaged accuracy among the three evaluated divergences at every scale. Code is available at https://github.com/zhansan114514/OPSRD.",
   "url": "https://arxiv.org/abs/2609.39884",
   "pdf_url": "https://arxiv.org/pdf/2609.39884",
-  "published": "2026-10-01",
+  "published": "2026-09-30",
   "updated": "2026-10-01",
   "authors": [
     "Weijie Ren",
@@ -17,14 +17,14 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
     "cs.AI",
+    "cs.CL",
     "cs.LG"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "17 pages, 5 figures. Code: https://github.com/zhansan114514/OPSRD",
   "code_url": "https://github.com/zhansan114514/OPSRD",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -61,9 +61,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-01T04:45:30+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.39884v1",
+      "url": "http://arxiv.org/abs/2609.39884v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.39884",

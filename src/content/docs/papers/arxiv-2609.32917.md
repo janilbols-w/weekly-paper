@@ -3,7 +3,7 @@ title: "Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Mult
 description: "Running large language model (LLM) agents in production gets expensive fast."
 ---
 
-**评分：48/100** · AI 基础设施 > 服务平台 > Gateway、路由与弹性
+**评分：53/100** · AI 基础设施 > 服务平台 > Gateway、路由与弹性
 
 [论文原文](https://arxiv.org/abs/2609.32917) · [PDF](https://arxiv.org/pdf/2609.32917)
 
@@ -27,19 +27,19 @@ Running large language model (LLM) agents in production gets expensive fast. A f
 | novelty | 5 |
 | rigor | 11 |
 | practical impact | 10 |
-| reproducibility | 3 |
+| reproducibility | 8 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: model routing
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Vivek Kumar Singh, Preeti Priyam, Gautam Bhowmick
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-26；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/vsingh45/par-entbench](https://github.com/vsingh45/par-entbench)
 - 阅读深度：metadata

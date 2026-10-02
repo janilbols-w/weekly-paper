@@ -38,8 +38,8 @@ Semi-autoregressive diffusion large language models (dLLMs) improve decoding par
 
 ## 元数据
 
-- 作者：Jingyuan Xiao (Tianjin University, Tianjin, China), Jiayue Wang (Tianjin University, Tianjin, China), Yitao Hu (Tianjin University, Tianjin, China), Xinning Wang (Tianjin University, Tianjin, China), Shi Chen (Tianjin University, Tianjin, China), Ziqi Gong (Tianjin University, Tianjin, China), Zhengchao Wang (Tianjin University, Tianjin, China), Guotao Yang (Tianjin University, Tianjin, China), Sheng Chen (Tianjin University, Tianjin, China), Keqiu Li (Tianjin University, Tianjin, China)
-- 发布：2026-09-30；更新：2026-09-30
+- 作者：Jingyuan Xiao, Jiayue Wang, Yitao Hu, Xinning Wang, Shi Chen, Ziqi Gong, Zhengchao Wang, Guotao Yang, Sheng Chen, Keqiu Li
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/flashserve/OLED-MoE](https://github.com/flashserve/OLED-MoE)
 - 阅读深度：metadata

@@ -38,8 +38,8 @@ Gradient-based reward guidance provides a flexible way to use downstream reward 
 
 ## 元数据
 
-- 作者：Darshan Thaker, Lachlan Ewen MacDonald, Ren\'e Vidal
-- 发布：2026-10-01；更新：2026-10-01
+- 作者：Darshan Thaker, Lachlan Ewen MacDonald, René Vidal
+- 发布：2026-09-28；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

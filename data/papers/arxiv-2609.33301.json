@@ -4,7 +4,7 @@
   "abstract": "Diffusion large language models (dLLMs) generate text by iterative unmasking. At each denoising step, a dLLM proposes a token at every masked position, but the decoder commits only a confident subset of these proposals. Trace-based on-policy distillation (TOPD) builds on this process by matching the student to a stronger teacher, yet only at the committed positions. We argue that this discards much of the useful signal, which resides in the uncommitted proposals, where the student has made a prediction but is not yet confident enough to commit it. We call these proposals hesitations. In our pilot study on an SDAR-4B student, hesitations make up only 24% of supervisable state-position pairs but carry 66% of the teacher-student divergence. To exploit this signal, we propose Hesitation-Aware On-Policy Distillation (HOPD), which extends teacher distribution matching to every masked position of each denoising step. Because hesitations are not equally informative, we further allocate supervision using hindsight from the completed trajectory, placing more weight on positions whose proposal was later disagreed with the final token and on blocks where first-step proposals rarely survive. Since both models already produce distributions at all masked positions, HOPD requires no additional forward passes over TOPD. The only extra cost is evaluating the loss at more positions. With SDAR-1.7B and SDAR-4B students distilled from TraDo-8B-Instruct, HOPD achieves the best average score among the evaluated methods on five math and coding benchmarks, under both static and dynamic decoding and at both scales. It also speeds up decoding. On SDAR-4B, the HOPD student hesitates less and commits 11% more tokens per denoising step than TOPD, while reaching higher accuracy.",
   "url": "https://arxiv.org/abs/2609.33301",
   "pdf_url": "https://arxiv.org/pdf/2609.33301",
-  "published": "2026-09-30",
+  "published": "2026-09-27",
   "updated": "2026-09-30",
   "authors": [
     "Jianguo Huang",
@@ -15,8 +15,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
-    "cs.AI"
+    "cs.AI",
+    "cs.CL"
   ],
   "doi": "",
   "venue": "",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.33301v1",
+      "url": "http://arxiv.org/abs/2609.33301v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.33301",

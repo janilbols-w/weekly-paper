@@ -3,7 +3,7 @@ title: "An RL View of OPD: Least Square Policy Distillation for Sample-Efficient
 description: "We study on-policy distillation (OPD) through the lens of reinforcement learning, establishing a connection between the reverse-KL objective in OPD and KL-regularized policy optimization."
 ---
 
-**评分：44/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：49/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2609.35505) · [PDF](https://arxiv.org/pdf/2609.35505)
 
@@ -27,19 +27,19 @@ We study on-policy distillation (OPD) through the lens of reinforcement learning
 | novelty | 7 |
 | rigor | 11 |
 | practical impact | 5 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: distillation
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Shangzhe Li, Yuxiao Yang, Tianrun Yu, Kaixiang Zhao, Xiaoyun Wang, Taylor W. Killian, Weitong Zhang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/UNCSciML/LSPD](https://github.com/UNCSciML/LSPD)
 - 阅读深度：metadata

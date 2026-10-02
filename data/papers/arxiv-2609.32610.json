@@ -4,13 +4,13 @@
   "abstract": "Large language models represent context with a key-value (KV) cache. Caches are model-specific: for the same text, models with different architectures or weights produce incompatible representations. This makes it costly to switch models over a shared context: although the context has already been processed by one model, the incoming model must process it again to build its own cache. We introduce KV-Lingo, a method for translating the KV cache of a source model into one that can be read by a target model. KV-Lingo consists of a collection of linear maps, typically one per layer of the target model, that are applied independently on all tokens' key and value representations. We train these maps using distillation, minimising the divergence between the target model's predictions from its native cache and those from the translated cache. We consider several model pairs spanning multiple sizes and architectures, training one translator per pair on a generic text corpus. The resulting translators preserve strong downstream performance in both small-to-large and large-to-small transfers. Since a switch then costs a linear map and a single decoding step instead of a prefill, replacing re-prefill with cache translation reduces the time to first token after a model switch by 9.6x already on a 64-token prompt for Qwen models on an Apple M3 Ultra, and by up to 29x at 32k context length on an H100. These gains make KV-Lingo particularly useful for dynamic model routing: a context can be processed by one model and handed off to another only when needed, without re-prefilling the shared prefix. We finally show that KV-Lingo can be used for seamless model switching, staying close to re-prefill across repeated switches in our multi-turn evaluations.",
   "url": "https://arxiv.org/abs/2609.32610",
   "pdf_url": "https://arxiv.org/pdf/2609.32610",
-  "published": "2026-09-30",
+  "published": "2026-09-26",
   "updated": "2026-09-30",
   "authors": [
-    "Val\\'erie Castin",
+    "Valérie Castin",
     "Keitaro Sakamoto",
     "Anastasiia Filippova",
-    "Jo\\~ao Monteiro",
+    "João Monteiro",
     "Marco Cuturi",
     "Pierre Ablin"
   ],
@@ -63,9 +63,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.32610v1",
+      "url": "http://arxiv.org/abs/2609.32610v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.32610",

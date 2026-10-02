@@ -5,26 +5,28 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **90** 篇。
+累计收录 **92** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Structure-augmented LLMs for High-Level Synthesis Pragma Optimization](../../papers/arxiv-2609.38601/) | 2026-10-01 | 39 |
-| [QuantCode Model: Specializing Language Models for Executable Algorithmic Trading Code](../../papers/arxiv-2609.39420/) | 2026-10-01 | 38 |
+| [CARM: Cancellation-Aware Response Masking for LLM Reinforcement Learning](../../papers/arxiv-2610.02039/) | 2026-10-01 | 41 |
 | [CorrGRPO: Correlation-Normalized GRPO for Multi-Reward Learning](../../papers/arxiv-2609.36820/) | 2026-10-01 | 38 |
-| [ReMCTS: Reflection-Enhanced Monte Carlo Tree Search for Code Generation](../../papers/arxiv-2609.34717/) | 2026-09-30 | 44 |
 | [From Reasoning to Generalization: Knowledge-Augmented LLMs for ARC Benchmark](../../papers/arxiv-2505.17482/) | 2026-09-30 | 44 |
 | [Pay for Hints, Not Answers: LLM Shepherding for Cost-Efficient Inference](../../papers/arxiv-2601.22132/) | 2026-09-30 | 43 |
 | [Internalizing Curriculum Judgment for LLM Reinforcement Fine-Tuning](../../papers/arxiv-2605.11235/) | 2026-09-30 | 43 |
-| [RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust](../../papers/arxiv-2609.37916/) | 2026-09-30 | 42 |
 | [Goal-Conditioned Supervised Learning for LLM Fine-Tuning](../../papers/arxiv-2605.16345/) | 2026-09-30 | 42 |
-| [Solving Every Step Is Not Enough: Milestone Oracles Reveal a Composition Gap in LLM Math Reasoning](../../papers/arxiv-2609.32235/) | 2026-09-30 | 40 |
 | [LFPO: Likelihood-Free Policy Optimization for Masked Diffusion Models](../../papers/arxiv-2603.01563/) | 2026-09-30 | 39 |
 | [Improving Medical Calculation of LLMs with Embedded Coding](../../papers/arxiv-2609.31908/) | 2026-09-30 | 39 |
 | [CodeScaler: Scaling Code LLM Training and Test-Time Inference via Reward Models](../../papers/arxiv-2602.17684/) | 2026-09-30 | 39 |
+| [QuantCode Model: Specializing Language Models for Executable Algorithmic Trading Code](../../papers/arxiv-2609.39420/) | 2026-09-30 | 38 |
 | [An Imperfect Verifier is Good Enough: Learning with Noisy Rewards](../../papers/arxiv-2604.07666/) | 2026-09-30 | 38 |
 | [Agentic AI for Scalable and Robust Optical Systems Control](../../papers/arxiv-2602.20144/) | 2026-09-30 | 38 |
+| [Structure-augmented LLMs for High-Level Synthesis Pragma Optimization](../../papers/doi-10.1145-3831599.3840318/) | 2026-09-29 | 42 |
+| [RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust](../../papers/arxiv-2609.37916/) | 2026-09-29 | 42 |
+| [The Weakest Link: Distilling LLM Reasoning with Worst-Case Constrained Reinforcement Learning](../../papers/arxiv-2610.00332/) | 2026-09-29 | 38 |
 | [QASM-Eval: A Dataset to Train and Evaluate LLMs on OpenQASM-3 Beyond Quantum Circuits](../../papers/arxiv-2605.30358/) | 2026-09-28 | 47 |
+| [ReMCTS: Reflection-Enhanced Monte Carlo Tree Search for Code Generation](../../papers/arxiv-2609.34717/) | 2026-09-28 | 44 |
+| [Solving Every Step Is Not Enough: Milestone Oracles Reveal a Composition Gap in LLM Math Reasoning](../../papers/arxiv-2609.32235/) | 2026-09-26 | 42 |
 | [ELF-REG: Scaling Continuous Diffusion Language Models to Reasoning Tasks](../../papers/arxiv-2609.29102/) | 2026-09-24 | 39 |
 | [BigO(Bench): Can LLMs Generate Code with Controlled Time and Space Complexity?](../../papers/arxiv-2503.15242/) | 2026-09-23 | 42 |
 | [Capable yet Parsimonious: Extracting and Characterizing Hidden Chain-of-Thought in Frontier Models](../../papers/arxiv-2609.26637/) | 2026-09-23 | 39 |

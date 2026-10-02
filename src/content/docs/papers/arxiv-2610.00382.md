@@ -1,0 +1,45 @@
+---
+title: "On the Relationship between Model Quantization and Model Inversion Attacks"
+description: "Model quantization reduces the numerical precision of neural network weights and activations to lower storage and computational costs."
+---
+
+**评分：41/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+
+[论文原文](https://arxiv.org/abs/2610.00382) · [PDF](https://arxiv.org/pdf/2610.00382)
+
+## 一句话摘要
+
+Model quantization reduces the numerical precision of neural network weights and activations to lower storage and computational costs.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Model quantization reduces the numerical precision of neural network weights and activations to lower storage and computational costs. Model inversion attacks recover or reconstruct sensitive training data or inference inputs from model outputs or intermediate features, so quantization may also alter their effectiveness. However, two questions remain unresolved: How does model quantization affect model inversion? How do data characteristics influence this relationship? To address the first, we bound quantization-induced changes in mutual information between inputs and a categorical variable defined by prediction probabilities, distinguishing informational effects from attack optimization obstacles. To address the second, we identify data-dependent changes in feature distributions and inversion outcomes, with pronounced quantization sensitivity differences at 4 bits. These insights guide a privacy-aware post-training quantization method that improves inversion resistance while recovering utility. It uses a Fisher-type task-sensitivity proxy for budget-aware bit allocation, calibrates activation ranges, and jointly optimizes weight and activation scales and weight-rounding decisions with task-recovery and geometry-retention objectives and scale and rounding regularization. Experiments cover multiple metrics, neural network architectures, and face, palmprint, and iris recognition tasks. On ResNet-50, Palm at 4 bits reduces RL-MIA's strict success from 54% to 26%, while accuracy decreases from 99.01% to 96.55% relative to FP32. Our method also supports output-level defenses: adding Stealthy Shield Defense (SSD, epsilon = 0.1) to Iris at 4.5 bits reduces BREP-MI's strict success from 63.33% to 37.33%, while accuracy decreases from 92.8% to 87.6% relative to quantization alone.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 16 |
+| novelty | 6 |
+| rigor | 7 |
+| practical impact | 7 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: quantization
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Rongke Liu, Youwen Zhu
+- 发布：2026-09-30；更新：2026-10-02
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

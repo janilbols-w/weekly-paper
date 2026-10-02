@@ -4,7 +4,7 @@
   "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for improving large language models (LLMs) on various tasks, yet its sparse outcome rewards lack token-level credit assignment for intermediate steps. To address this, on-policy self-distillation (OPSD) leverages a self-teacher with privileged context to provide additional dense learning signals. However, because the self-teacher is often overconfident and imposes excessive penalties on long reasoning trajectories, OPSD frequently struggles in practice. To mitigate this, we propose self-instructing policy optimization (SIPO) with a contrastive self-teacher to provide dense credit. At each iteration, SIPO samples multiple rollouts per prompt from the current policy, scores them with environment rewards, and constructs two teacher contexts for each rollout by pairing the reference answer with mistakes made within the group. The model then re-evaluates its own responses under both contexts, using the difference between the two teacher log-probabilities as token-level feedback, so that biases shared by both contexts are expected to largely cancel. The resulting objective yields a token-level advantage for every rollout: the reward still sets the main direction of each update while the self-teacher redistributes credit across tokens. Even in groups where every rollout fails and group-relative advantages vanish, SIPO still provides a learning signal. By preserving direct optimization of the task reward while providing dense, token-level feedback, this approach bridges reinforcement learning and on-policy self-distillation. Extensive experiments across multiple reasoning and code-generation benchmarks demonstrate that SIPO outperforms both RLVR and OPSD baselines without an external teacher or additional generation.",
   "url": "https://arxiv.org/abs/2609.36742",
   "pdf_url": "https://arxiv.org/pdf/2609.36742",
-  "published": "2026-10-01",
+  "published": "2026-09-29",
   "updated": "2026-10-01",
   "authors": [
     "Zhenrui Yue",
@@ -65,9 +65,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-01T04:45:30+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.36742v1",
+      "url": "http://arxiv.org/abs/2609.36742v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.36742",

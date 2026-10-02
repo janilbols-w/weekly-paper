@@ -5,9 +5,10 @@ description: "GPU Scheduling & Virtualization"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > GPU 调度与虚拟化**
 
-累计收录 **2** 篇。
+累计收录 **3** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [WaveAlign: Cache-Aware Query-Row Scheduling for Sparse Attention in Long-Video Generation](../../papers/arxiv-2609.34814/) | 2026-09-28 | 38 |
 | [ElastiCo: Elastic Configuration and Interference-Aware Orchestration for GPU Clusters](../../papers/arxiv-2608.07971/) | 2026-08-08 | 46 |
 | [Determinism-Preserving GPU Spatial Sharing with Vitamin-E](../../papers/arxiv-2603.15042/) | 2026-08-06 | 45 |

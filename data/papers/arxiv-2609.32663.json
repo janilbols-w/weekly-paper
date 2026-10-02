@@ -4,7 +4,7 @@
   "abstract": "The memory usage and decoding latency of LLM inference grow rapidly with context length. To reduce these costs, key-value (KV) cache compression methods selectively retain cached states based on token importance or differences in attention patterns across heads. However, we discover that retrieval capability varies substantially with relative distance, even within the same attention head. To exploit this structure, we introduce Distance-KV, which learns a static KV retention pattern over the joint space of layers, attention heads, and relative distances. The pattern is learned offline with the language model frozen and reused across inputs to prune and compact the KV cache without online importance scoring. Across three backbone models and four long-context benchmarks, Distance-KV consistently achieves the best overall performance among competing KV cache compression methods, exceeding the strongest compression baseline by up to 9.3 points on RULER at 128K. On Llama-3.1-8B-Instruct at 128K, Distance-KV reduces KV cache memory by 65.4% and achieves a $1.66\\times$ decoding speedup relative to Dense. Together, these results identify relative distance as an important structural dimension for understanding how LLMs retrieve information over long contexts and for designing more efficient inference methods.",
   "url": "https://arxiv.org/abs/2609.32663",
   "pdf_url": "https://arxiv.org/pdf/2609.32663",
-  "published": "2026-09-30",
+  "published": "2026-09-26",
   "updated": "2026-09-30",
   "authors": [
     "Xianpeng Shang",
@@ -24,7 +24,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "19 pages, 7 figures, 10 tables",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -61,9 +61,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.32663v1",
+      "url": "http://arxiv.org/abs/2609.32663v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.32663",

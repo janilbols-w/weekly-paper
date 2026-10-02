@@ -39,7 +39,7 @@ Large language models (LLMs) incur substantial storage, memory-bandwidth and ene
 ## 元数据
 
 - 作者：Qiuyu Ren, Sudipta Paria, Aritra Dasgupta, Swarup Bhunia
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -3,7 +3,7 @@ title: "Solving Every Step Is Not Enough: Milestone Oracles Reveal a Composition
 description: "Large language models (LLMs) can solve every intermediate step of a multi-step math problem on its own and still fail the full problem, even when given a roadmap of the steps and all of their answers."
 ---
 
-**评分：40/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
+**评分：42/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
 
 [论文原文](https://arxiv.org/abs/2609.32235) · [PDF](https://arxiv.org/pdf/2609.32235)
 
@@ -25,7 +25,7 @@ Large language models (LLMs) can solve every intermediate step of a multi-step m
 |---|---:|
 | relevance | 12 |
 | novelty | 6 |
-| rigor | 7 |
+| rigor | 9 |
 | practical impact | 5 |
 | reproducibility | 7 |
 | credibility | 3 |
@@ -39,7 +39,7 @@ Large language models (LLMs) can solve every intermediate step of a multi-step m
 ## 元数据
 
 - 作者：Zhuohan Wang, Haoran Ma, Tianyu Wu, Yuanlin Duan, Zichun Liao, Jieming Yu
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-26；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/slark-prime/OracleLadder](https://github.com/slark-prime/OracleLadder)
 - 阅读深度：metadata

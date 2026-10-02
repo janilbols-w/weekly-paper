@@ -39,7 +39,7 @@ LLM agents resend their whole conversation on every turn, and most of it was alr
 ## 元数据
 
 - 作者：Kunming Shao, Jierun Chen, Jiangnan Yu, Xiao-Hui Li, Chaofan Tao, Yanli Wang, Huanxin Lin, Kwang-Ting Cheng, Chi Ying Tsui, Haoli Bai
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/KunmingSHAO/efficientagent_release](https://github.com/KunmingSHAO/efficientagent_release)
 - 阅读深度：metadata

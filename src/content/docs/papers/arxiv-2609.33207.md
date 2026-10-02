@@ -39,7 +39,7 @@ Spiking Vision Transformers (SViTs) are developed as an energy-efficient alterna
 ## 元数据
 
 - 作者：Rachmad Vidya Wicaksana Putra, Amirhesam Jafari Rad, Muhammad Shafique
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

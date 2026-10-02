@@ -39,7 +39,7 @@ Black-box distillation is a practical route for transferring capabilities from A
 ## 元数据
 
 - 作者：Xiao Cui, Mo Zhu, Yulei Qin, Yuze Wu, Wengang Zhou, Houqiang Li
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/2018cx/GRGC](https://github.com/2018cx/GRGC)
 - 阅读深度：metadata

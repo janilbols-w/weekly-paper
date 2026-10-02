@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2606.07631",
+  "title": "Trait-space Monitoring for Emergent Misalignment During Supervised Finetuning",
+  "abstract": "Emergent misalignment (EM) occurs when narrow finetuning induces dangerous behavior outside the finetuning task. Detecting this shift through repeated behavioral evaluation is costly, motivating our checkpoint-level monitoring from internal representations. We define a fixed coordinate system from seven alignment-relevant activation directions and use it to track representational drift during LoRA finetuning of four open-source 7-9B language models. Finetuning drift in this space exhibits a dominant axis that explains 78.6% of variance and remains stable across datasets, extraction choices, and parameter-update capacities. Across 468 checkpoints from three EM-relevant held-out datasets, the resulting monitors attain 1.8% FNR, 2.0% FPR, and 0.989 AUROC, outperforming semantic, random, PCA, and SAE feature baselines. On a fourth dataset, a matched benign-dangerous control shows that substantial representational drift can also occur under benign finetuning, while changes across the 7D profile still distinguish dangerous from benign runs. Stress tests across two 14B models, full finetuning, longer training horizons, and misaligned starting states show that the signal can persist across shifts in training configuration, while reliable deployment may require recalibration.",
+  "url": "https://arxiv.org/abs/2606.07631",
+  "pdf_url": "https://arxiv.org/pdf/2606.07631",
+  "published": "2026-10-02",
+  "updated": "2026-10-02",
+  "authors": [
+    "Huy Nghiem",
+    "Sy-Tuyen Ho",
+    "Sarah Wiegreffe",
+    "Hal Daum\\'e III"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Emergent misalignment (EM) occurs when narrow finetuning induces dangerous behavior outside the finetuning task.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.07631",
+      "url": "https://arxiv.org/abs/2606.07631"
+    }
+  ]
+}

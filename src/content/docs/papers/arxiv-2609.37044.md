@@ -39,7 +39,7 @@ Explicit intermediate reasoning gives large language models (LLMs) a stronger pr
 ## 元数据
 
 - 作者：Wanqi Ren, Jianxiang Wang, Danxuan Liu, Linyi Ding, Huaixiao Tou
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

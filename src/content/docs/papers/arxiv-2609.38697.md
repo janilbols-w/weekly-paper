@@ -39,7 +39,7 @@ We present Cascadia, a system for serving large language models on fleets of com
 ## 元数据
 
 - 作者：Matias Parij, Pawan Paudel, Tate Berenbaum, Muthaiah Venkatachalam
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

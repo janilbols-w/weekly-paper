@@ -39,7 +39,7 @@ Long-running LLM applications repeatedly send growing context, making prefix cac
 ## 元数据
 
 - 作者：Yiyu Liu, Minlan Yu, Juncheng Yang
-- 发布：2026-09-25；更新：2026-09-25
+- 发布：2026-09-25；更新：2026-10-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

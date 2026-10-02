@@ -4,7 +4,7 @@
   "abstract": "Post-training quantization (PTQ) enables efficient deployment of large vision-language models (LVLMs), but is typically calibrated on a small set while expected to generalize across diverse downstream tasks. Although recent PTQ methods for LVLMs incorporate sensitivity signals, they still minimize reconstruction loss with respect to the full-precision model, potentially over-preserving FP behavior and calibration-specific bias. Rather than treating quantization solely as an error to be minimized, we observe that it can also provide beneficial regularization for certain layers and modalities. Motivated by this observation, we propose Balanced Fitting, a quantization effect-based framework that balances precision and regularization beyond reconstruction-based optimization. By measuring layer- and component-wise quantization effects for weights, vision activations, and text activations, Balanced Fitting combines fine-grained fitting for sensitive components with coarser fitting to exploit potential regularization benefits. Experiments on multiple LVLMs show that our method consistently outperforms prior PTQ approaches under both weight-only and weight-activation quantization, while lower reconstruction loss does not reliably translate into better downstream performance. The source code is publicly available at https://github.com/kmc3661/BFQ",
   "url": "https://arxiv.org/abs/2609.34765",
   "pdf_url": "https://arxiv.org/pdf/2609.34765",
-  "published": "2026-09-30",
+  "published": "2026-09-28",
   "updated": "2026-09-30",
   "authors": [
     "Minchan Kang",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.34765v1",
+      "url": "http://arxiv.org/abs/2609.34765v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.34765",

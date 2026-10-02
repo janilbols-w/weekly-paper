@@ -39,7 +39,7 @@ On-policy distillation (OPD) trains a student on its own generated responses usi
 ## 元数据
 
 - 作者：Zhenyu Wang, Tianze Wang, Linjun Zhang, Yifan Hu
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

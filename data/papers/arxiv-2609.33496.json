@@ -4,7 +4,7 @@
   "abstract": "Post-training quantization (PTQ) is the standard way to run modern diffusion models on memory-constrained accelerators, yet every existing diffusion PTQ scheme fixes the $\\mathit{number\\ format}$ in advance and only tunes the scale, zero point, or per-layer bit-width. At a fixed bit-width the best format depends on the distribution being encoded, and that distribution differs across weight channels, across layers, and along the diffusion timestep, where activation distributions slide from heavy-tailed and noise-dominated to tightly clustered and structured. We propose Chameleon, a PTQ framework that holds the bit-width fixed and treats the format itself as a discrete variable, chosen per weight channel and per (layer, timestep bucket) activation tensor. Activation formats come from {INT8, FP8 E4M3, FP8 E5M2, MXFP8, MXINT8}, selected ahead of time from two cheap statistics (empirical kurtosis and the closed-form diffusion SNR) and stored in a lookup table; weight formats come from {INT8, MXINT8} at 8 bits or {INT4, NF4, FP4 E2M1, MXINT4, MXFP4} at 4 bits, selected offline by reconstruction error. An architectural fork adapts the same selection layer to multi-step UNets, single-step distilled models, and Diffusion Transformers. Across SDXL, SDXL-Turbo, and PixArt-$\\alpha$ on COCO-2014, Chameleon achieves the best FID in all six backbone $\\times$ bit-width settings, with CLIP within 0.24 of the FP16 reference and the best of all quantized methods at $W_{4}A_{8}$.",
   "url": "https://arxiv.org/abs/2609.33496",
   "pdf_url": "https://arxiv.org/pdf/2609.33496",
-  "published": "2026-09-30",
+  "published": "2026-09-27",
   "updated": "2026-09-30",
   "authors": [
     "Arnab Sanyal",
@@ -13,14 +13,14 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
     "cs.AI",
-    "cs.CV"
+    "cs.CV",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Under Review at International Conference on Learning Representations 2027",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -62,9 +62,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.33496v1",
+      "url": "http://arxiv.org/abs/2609.33496v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.33496",

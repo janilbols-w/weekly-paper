@@ -39,7 +39,7 @@ At each decoding step a language model attends over the key-value (KV) cache of 
 ## 元数据
 
 - 作者：Kunming Shao, Jierun Chen, Yanli Wang, Ruoyu Wang, Haoli Bai, Kwang-Ting Cheng, Chi Ying Tsui
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/KunmingSHAO/pqhsa_release](https://github.com/KunmingSHAO/pqhsa_release)
 - 阅读深度：metadata

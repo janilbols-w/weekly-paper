@@ -39,7 +39,7 @@ Deploying large vision-language models (VLMs) onboard satellites enables onboard
 ## 元数据
 
 - 作者：Tong Quan, Yuanlong Wan, Huasen He, Yunpeng Hou, Shuangwu Chen, Xiaofeng Jiang, Jian Yang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-29；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

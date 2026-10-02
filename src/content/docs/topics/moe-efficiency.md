@@ -9,10 +9,10 @@ description: "MoE Efficiency"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Scaling Laws for Looped Mixture of Experts](../../papers/arxiv-2609.40316/) | 2026-10-01 | 47 |
-| [Efficient Expert-Parallel Communication on PCIe-Connected Consumer GPUs](../../papers/arxiv-2609.40093/) | 2026-10-01 | 45 |
-| [MaskCoFT: Masked Co-Adaptive Fine-Tuning for Memory-Efficient MoE Inference](../../papers/arxiv-2609.34077/) | 2026-09-30 | 45 |
+| [Scaling Laws for Looped Mixture of Experts](../../papers/arxiv-2609.40316/) | 2026-09-30 | 47 |
+| [Efficient Expert-Parallel Communication on PCIe-Connected Consumer GPUs](../../papers/arxiv-2609.40093/) | 2026-09-30 | 45 |
 | [Multi-level context Modeling for consistent expert selection in Mixture-of-Experts](../../papers/arxiv-2607.16427/) | 2026-09-30 | 44 |
+| [MaskCoFT: Masked Co-Adaptive Fine-Tuning for Memory-Efficient MoE Inference](../../papers/arxiv-2609.34077/) | 2026-09-28 | 45 |
 | [Expert-Space Exploration in MoE Reinforcement Learning](../../papers/arxiv-2609.13058/) | 2026-09-14 | 39 |
 | [Multi-Modal Tumor Survival Prediction via Graph-Guided Mixture of Experts](../../papers/arxiv-2609.14072/) | 2026-09-12 | 41 |
 | [PCoMoE: Shifting MoE Inference from Monolithic Expert Selection to Fine-Grained Path Composition](../../papers/arxiv-2609.01024/) | 2026-09-01 | 48 |

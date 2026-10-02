@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2610.01554",
+  "title": "QK-Wanda: Coupling Queries and Keys for Unstructured Pruning",
+  "abstract": "Wanda (Sun et al., 2024) prunes large language models by scoring weights independently within each linear projection, although queries and keys interact through dot products. We introduce QK-Wanda, which scores query and key weights by their individual deletion costs under an unmasked pre-RoPE reconstruction objective. It augments Wanda scores with information from the opposite projection (keys for query weights, and queries for key weights), allowing both projections to share a pruning budget. Its closed-form scores require no gradients or weight updates; full pruning takes 1.3% longer than Wanda on A100 and 3.1% longer on H200 with the calibration used in our main experiments. We evaluate QK-only pruning across 15 models from TinyLlama, Llama 2, Llama 3, and Qwen2.5, spanning 0.5B-72B parameters. Relative to Wanda, QK-Wanda reduces QK reconstruction error by an average of 60% at 50% sparsity and 45% at 80%. Downstream gains depend on the model. At 80% sparsity on Llama 2 70B, WikiText-2 and C4 perplexity decrease by 20.3% and 13.5%, while mean zero-shot accuracy rises by 5.94 percentage points. Qwen2.5-72B also improves, but Llama-3.1-70B has substantially higher perplexity despite lower reconstruction error. These results show both the promise of coupled pruning criteria and the limits of local reconstruction as a predictor of model quality.",
+  "url": "https://arxiv.org/abs/2610.01554",
+  "pdf_url": "https://arxiv.org/pdf/2610.01554",
+  "published": "2026-10-01",
+  "updated": "2026-10-02",
+  "authors": [
+    "Ivan Ilin",
+    "Peter Richtárik"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "81 pages, including appendices",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Wanda (Sun et al., 2024) prunes large language models by scoring weights independently within each linear projection, although queries and keys interact through dot products.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.01554v1",
+      "url": "http://arxiv.org/abs/2610.01554v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.01554",
+      "url": "https://arxiv.org/abs/2610.01554"
+    }
+  ]
+}

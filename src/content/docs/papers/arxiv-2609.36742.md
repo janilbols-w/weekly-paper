@@ -39,7 +39,7 @@ Reinforcement learning with verifiable rewards (RLVR) has become a standard para
 ## 元数据
 
 - 作者：Zhenrui Yue, Huimin Zeng, Yueqi Wang, Yaokun Liu, Fengran Mo, Jinghan Zhang, Mung Yao Jia, Gyuseok Lee, Yang Zhang, Na Wei, Dong Wang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

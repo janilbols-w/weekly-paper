@@ -3,7 +3,7 @@ title: "Structure-augmented LLMs for High-Level Synthesis Pragma Optimization"
 description: "Pragma insertion drives the quality of high-level synthesis (HLS) designs."
 ---
 
-**评分：39/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
+**评分：42/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
 
 [论文原文](https://arxiv.org/abs/2609.38601) · [PDF](https://arxiv.org/pdf/2609.38601)
 
@@ -28,7 +28,7 @@ Pragma insertion drives the quality of high-level synthesis (HLS) designs. Choos
 | rigor | 9 |
 | practical impact | 7 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Pragma insertion drives the quality of high-level synthesis (HLS) designs. Choos
 ## 元数据
 
 - 作者：Haocheng Xu, Ye Qiao, Phyo Pyae Moe Aung, Alok Mishra, Pavana Prakash, Rolando Pablo Hong Enriquez, Adam Han Wu, Zhiheng Chen, Dejan Milojicic, Sitao Huang
-- 发布：2026-10-01；更新：2026-10-01
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-09-29；更新：2026-10-01
+- 来源：arXiv RSS；Venue：2026 ACM/IEEE International Symposium on Machine Learning for CAD (MLCAD '26), September 07--09, 2026, Jeju Island, Republic of Korea
 - 代码：未发现
 - 阅读深度：metadata

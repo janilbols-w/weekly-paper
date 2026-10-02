@@ -39,7 +39,7 @@ Mixture-of-experts (MoE) language models often exceed the memory of a single GPU
 ## 元数据
 
 - 作者：Junfeng Wu, Zehao Fan, Hadjer Benmeziane, Kaoutar El Maghraoui, Liu Liu, Yinan Wang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ The world's 7,000+ languages vary widely in the availability of resources for NL
 ## 元数据
 
 - 作者：Nishat Raihan, Christian Newman, Marcos Zampieri
-- 发布：2026-09-17；更新：2026-09-17
+- 发布：2026-09-17；更新：2026-10-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

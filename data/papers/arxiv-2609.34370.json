@@ -4,7 +4,7 @@
   "abstract": "Spexis is a multi-GPU LLM inference framework that improves the efficiency of pipeline and tensor parallelism through speculative parallelism. Rather than using speculative decoding only to accelerate token generation, Spexis runs speculation in parallel with normal execution, introducing a new parallelism axis without increasing KV-cache memory usage. This improves memory efficiency and helps mitigate the bottlenecks of multi-GPU inference. Spexis further uses lookahead scheduling to predict speculation quality and future memory pressure, allowing it to reduce wasted speculation, KV-cache eviction, and recomputation. Built on top of vLLM, Spexis largely improves serving performance across a range of GPU configurations, achieving speedups of up to 34% over a baseline that uses the optimal combination of pipeline and tensor parallelism. Spexis's source code is publicly available at https://github.com/mlsys-seo/spexis.",
   "url": "https://arxiv.org/abs/2609.34370",
   "pdf_url": "https://arxiv.org/pdf/2609.34370",
-  "published": "2026-09-30",
+  "published": "2026-09-28",
   "updated": "2026-09-30",
   "authors": [
     "Hyungyu Jung",
@@ -17,13 +17,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.DC"
+    "cs.DC",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "EMNLP 2026 main",
   "code_url": "https://github.com/mlsys-seo/spexis",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.34370v1",
+      "url": "http://arxiv.org/abs/2609.34370v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.34370",

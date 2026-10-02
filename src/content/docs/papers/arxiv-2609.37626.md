@@ -3,7 +3,7 @@ title: "SPLASH: Switching Parallel Layouts of Attention with Seamless Handoff fo
 description: "No single way of parallelizing attention serves large language models well under all loads."
 ---
 
-**评分：46/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+**评分：51/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2609.37626) · [PDF](https://arxiv.org/pdf/2609.37626)
 
@@ -27,19 +27,19 @@ No single way of parallelizing attention serves large language models well under
 | novelty | 6 |
 | rigor | 7 |
 | practical impact | 12 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: llm serving
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Chuan Liu, Shuoming Zhang, Zhicheng Li, Qianqi Sun, Ruiyuan Xu, Qiuchu Yu, Xiyu Shi, Huimin Cui, Jiacheng Zhao
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-29；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/ict-agent/SPLASH-sglang](https://github.com/ict-agent/SPLASH-sglang)
 - 阅读深度：metadata

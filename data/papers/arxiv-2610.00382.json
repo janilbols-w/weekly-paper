@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2610.00382",
+  "title": "On the Relationship between Model Quantization and Model Inversion Attacks",
+  "abstract": "Model quantization reduces the numerical precision of neural network weights and activations to lower storage and computational costs. Model inversion attacks recover or reconstruct sensitive training data or inference inputs from model outputs or intermediate features, so quantization may also alter their effectiveness. However, two questions remain unresolved: How does model quantization affect model inversion? How do data characteristics influence this relationship? To address the first, we bound quantization-induced changes in mutual information between inputs and a categorical variable defined by prediction probabilities, distinguishing informational effects from attack optimization obstacles. To address the second, we identify data-dependent changes in feature distributions and inversion outcomes, with pronounced quantization sensitivity differences at 4 bits. These insights guide a privacy-aware post-training quantization method that improves inversion resistance while recovering utility. It uses a Fisher-type task-sensitivity proxy for budget-aware bit allocation, calibrates activation ranges, and jointly optimizes weight and activation scales and weight-rounding decisions with task-recovery and geometry-retention objectives and scale and rounding regularization. Experiments cover multiple metrics, neural network architectures, and face, palmprint, and iris recognition tasks. On ResNet-50, Palm at 4 bits reduces RL-MIA's strict success from 54% to 26%, while accuracy decreases from 99.01% to 96.55% relative to FP32. Our method also supports output-level defenses: adding Stealthy Shield Defense (SSD, epsilon = 0.1) to Iris at 4.5 bits reduces BREP-MI's strict success from 63.33% to 37.33%, while accuracy decreases from 92.8% to 87.6% relative to quantization alone.",
+  "url": "https://arxiv.org/abs/2610.00382",
+  "pdf_url": "https://arxiv.org/pdf/2610.00382",
+  "published": "2026-09-30",
+  "updated": "2026-10-02",
+  "authors": [
+    "Rongke Liu",
+    "Youwen Zhu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CR",
+    "cs.IT",
+    "cs.LG",
+    "math.IT"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Model quantization reduces the numerical precision of neural network weights and activations to lower storage and computational costs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.00382v1",
+      "url": "http://arxiv.org/abs/2610.00382v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.00382",
+      "url": "https://arxiv.org/abs/2610.00382"
+    }
+  ]
+}

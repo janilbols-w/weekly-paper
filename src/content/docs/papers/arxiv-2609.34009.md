@@ -39,7 +39,7 @@ Feedback-based on-policy self-distillation has emerged as a promising approach f
 ## 元数据
 
 - 作者：Seohyun Lee, Dong-Jun Han, Seyyedali Hosseinalipour, Christopher G. Brinton
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

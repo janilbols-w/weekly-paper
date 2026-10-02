@@ -39,7 +39,7 @@ Large language models (LLMs) typically generate text autoregressively (AR), pred
 ## 元数据
 
 - 作者：Ruitao Liu, Qinghao Hu, Song Han
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/mit-han-lab/d-OPD](https://github.com/mit-han-lab/d-OPD)
 - 阅读深度：metadata

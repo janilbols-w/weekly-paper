@@ -9,7 +9,7 @@ description: "Kernels & Operator Fusion"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [KernelZero: Co-Evolving Proposer and Coder for Continuously Improved GPU Kernel Generation](../../papers/arxiv-2609.33074/) | 2026-09-30 | 43 |
+| [KernelZero: Co-Evolving Proposer and Coder for Continuously Improved GPU Kernel Generation](../../papers/arxiv-2609.33074/) | 2026-09-27 | 43 |
 | [KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization](../../papers/arxiv-2609.30059/) | 2026-09-24 | 49 |
 | [KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity](../../papers/arxiv-2609.30057/) | 2026-09-24 | 44 |
 | [Xtrace: High-Fidelity GPU Intra-Kernel Tracing via Binary-Level Instruction Splicing](../../papers/arxiv-2609.28769/) | 2026-09-23 | 40 |

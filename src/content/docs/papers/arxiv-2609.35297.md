@@ -38,8 +38,8 @@ Pretraining a language model takes enormous compute, and the right optimizer can
 
 ## 元数据
 
-- 作者：Arman Bolatov, Artem Riabinin, Nikita Kornilov, Andrey Veprikov, Samuel Horv\'ath, Martin Tak\'a\v{c}, Aleksandr Beznosikov
-- 发布：2026-09-30；更新：2026-09-30
+- 作者：Arman Bolatov, Artem Riabinin, Nikita Kornilov, Andrey Veprikov, Samuel Horváth, Martin Takáč, Aleksandr Beznosikov
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/brain-lab-research/lion-muon](https://github.com/brain-lab-research/lion-muon)
 - 阅读深度：metadata

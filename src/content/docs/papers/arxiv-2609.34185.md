@@ -39,7 +39,7 @@ Weight compression helps large neural networks fit deployment memory budgets, bu
 ## 元数据
 
 - 作者：Hong Zhang, Zhongjie Duan, Yingda Chen
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/modelscope/entropack](https://github.com/modelscope/entropack)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Dynamic layer skipping reduces LLM computation by allowing each token to execute
 ## 元数据
 
 - 作者：Wei Da, Yavuz Ferhatosmanoglu, Evangelia Kalyvianaki
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-29；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/AKafakA/sglang-vskipper/tree/vskipper-ref](https://github.com/AKafakA/sglang-vskipper/tree/vskipper-ref)
 - 阅读深度：metadata

@@ -38,8 +38,8 @@ Mixture-of-Experts (MoE) layers are central to frontier language models, and rec
 
 ## 元数据
 
-- 作者：Honam Wong, Surbhi Goel, Enric Boix-Adser\`a
-- 发布：2026-09-30；更新：2026-10-01
+- 作者：Honam Wong, Surbhi Goel, Enric Boix-Adserà
+- 发布：2026-09-28；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Matheart/MoRE_code](https://github.com/Matheart/MoRE_code)
 - 阅读深度：metadata

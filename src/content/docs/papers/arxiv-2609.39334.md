@@ -38,8 +38,8 @@ Test-time scaling has recently emerged as a powerful approach for improving LLM 
 
 ## 元数据
 
-- 作者：Jinwoo Jeong (Korea University), Woohyung Choi (Korea University), Myeongjae Jeon (POSTECH), Jeongseob Ahn (Korea University)
-- 发布：2026-10-01；更新：2026-10-01
+- 作者：Jinwoo Jeong, Woohyung Choi, Myeongjae Jeon, Jeongseob Ahn
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

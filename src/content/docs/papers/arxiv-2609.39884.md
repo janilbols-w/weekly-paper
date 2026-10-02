@@ -39,7 +39,7 @@ Role prompting elicits specialized behavior from large language models through a
 ## 元数据
 
 - 作者：Weijie Ren, Yanwen Zhang, Hao Li, Zhuolin Qi, Hengyi Zhang, Naibo Wang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/zhansan114514/OPSRD](https://github.com/zhansan114514/OPSRD)
 - 阅读深度：metadata

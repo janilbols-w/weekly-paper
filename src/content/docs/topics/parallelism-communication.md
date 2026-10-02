@@ -9,7 +9,7 @@ description: "Parallelism & Communication"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Purlin: Separating Orchestration from the Datapath of Collectives](../../papers/arxiv-2609.36954/) | 2026-09-30 | 52 |
+| [Purlin: Separating Orchestration from the Datapath of Collectives](../../papers/arxiv-2609.36954/) | 2026-09-29 | 52 |
 | [Bandwidth-Aware and Cost-Efficient Pipeline Parallel Scheduling in Geo-Distributed LLM Training](../../papers/arxiv-2605.25375/) | 2026-09-28 | 44 |
 | [Explicit State and Resource Contracts for Low-Precision Pipeline Parallel Training under Captured Graphs](../../papers/arxiv-2609.23536/) | 2026-09-20 | 45 |
 | [Tools-CC-Bench: a Benchmark Suite for Collective Communication with Compression in HPC and AI Workloads](../../papers/arxiv-2609.08739/) | 2026-09-09 | 52 |

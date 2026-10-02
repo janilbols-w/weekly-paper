@@ -4,7 +4,7 @@
   "abstract": "Large language models (LLMs) can solve every intermediate step of a multi-step math problem on its own and still fail the full problem, even when given a roadmap of the steps and all of their answers. We introduce OracleLadder, a diagnostic evaluation that locates where LLM math reasoning fails by giving the model increasing levels of oracle help. For each problem, a teacher model writes a fixed roadmap of intermediate sub-goals (milestones), and a deterministic symbolic verifier grades every answer. Testing the model with no help, with the roadmap, with the roadmap plus the milestone answers, and on each milestone alone sorts each failure into one of five reasoning gaps. On 354 NuminaMath problems and six models from 8B to 671B parameters (Qwen3, gpt-oss, Llama 3.3, DeepSeek-V3.1), the largest gap for every model is the composition gap, a stricter form of the compositionality gap. It covers 33-48% of problems, and 24-37% after removing problems that an LLM review flags as grading errors. Accuracy and milestone-help recovery rank the two strongest models differently, and two RLVR runs with similar accuracy gains move problems differently. The roadmap effect replicates on MATH500 and AIME 2024/25, per-problem recovery agrees for 83-87% of problems under an independent second teacher, and the help ladder carries over to code generation. We release the data, roadmaps, prompts, and code at https://github.com/slark-prime/OracleLadder.",
   "url": "https://arxiv.org/abs/2609.32235",
   "pdf_url": "https://arxiv.org/pdf/2609.32235",
-  "published": "2026-09-30",
+  "published": "2026-09-26",
   "updated": "2026-09-30",
   "authors": [
     "Zhuohan Wang",
@@ -22,7 +22,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted at NeurIPS 2026 (Evaluations and Datasets Track). 47 pages. Code and data: https://github.com/slark-prime/OracleLadder",
   "code_url": "https://github.com/slark-prime/OracleLadder",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -39,11 +39,11 @@
   "keyword_evidence": [
     "code generation"
   ],
-  "score": 40,
+  "score": 42,
   "score_components": {
     "relevance": 12,
     "novelty": 6,
-    "rigor": 7,
+    "rigor": 9,
     "practical_impact": 5,
     "reproducibility": 7,
     "credibility": 3
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.32235v1",
+      "url": "http://arxiv.org/abs/2609.32235v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.32235",

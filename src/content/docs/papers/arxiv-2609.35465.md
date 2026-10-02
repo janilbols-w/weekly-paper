@@ -3,7 +3,7 @@ title: "Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter"
 description: "Leech-lattice quantization gives good quality at two bits per weight, but its codebooks hold more than 10^14 points, too many for a lookup table."
 ---
 
-**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：47/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.35465) · [PDF](https://arxiv.org/pdf/2609.35465)
 
@@ -27,19 +27,19 @@ Leech-lattice quantization gives good quality at two bits per weight, but its co
 | novelty | 5 |
 | rigor | 7 |
 | practical impact | 7 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: quantization, quantized
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Pier-Jean Malandrino
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/pjmalandrino/llvq](https://github.com/pjmalandrino/llvq)
 - 阅读深度：metadata

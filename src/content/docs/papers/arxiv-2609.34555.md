@@ -39,7 +39,7 @@ Long-context LLM serving is increasingly bottlenecked by decode, where large KV 
 ## 元数据
 
 - 作者：Qiuyang Zhang, Kai Zhou, Kai Lu, Haocheng Lu, Jian Zhou, Yuanpeng Su, Kun Bao, Jiguang Wan, Fei Wu
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

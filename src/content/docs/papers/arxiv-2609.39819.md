@@ -39,7 +39,7 @@ Efficient serving of long-context reasoning-and-acting (ReAct) agents relies on 
 ## 元数据
 
 - 作者：Kaihua Fu, Yukun Zhou, Chaokun Chang, Yinghao Yu, Luping Wang, Guodong Yang, Jiuchen Shi, Quan Chen, Wei Wang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

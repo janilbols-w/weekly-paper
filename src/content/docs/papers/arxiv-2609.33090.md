@@ -39,7 +39,7 @@ SLU encompasses a diverse set of tasks, including ISLR, CSLR, and SLT. Although 
 ## 元数据
 
 - 作者：Shiwei Gan, Yafeng Yin, Xiao Liu, Desibieer Tuerdaken, Lei Xie, Sanglu Lu
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/gswycf/OneSign](https://github.com/gswycf/OneSign)
 - 阅读深度：metadata

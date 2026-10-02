@@ -3,7 +3,7 @@ title: "PatchKV: Weight-Space Compensation of KV Cache"
 description: "Long-context inference with Large Language Models (LLMs) is bottlenecked by the linearly growing memory of the key-value (KV) cache."
 ---
 
-**评分：43/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：48/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2609.39329) · [PDF](https://arxiv.org/pdf/2609.39329)
 
@@ -27,19 +27,19 @@ Long-context inference with Large Language Models (LLMs) is bottlenecked by the 
 | novelty | 6 |
 | rigor | 7 |
 | practical impact | 9 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: kv cache
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Chanryeol Lee, Chanhyuk Lee, Yeonwoo Choi, Donggyun Kim, Seunghoon Hong
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/cusasak/PatchKV](https://github.com/cusasak/PatchKV)
 - 阅读深度：metadata

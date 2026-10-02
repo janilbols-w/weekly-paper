@@ -39,7 +39,7 @@ Long-context reasoning is essential for complex and long-horizon tasks, yet the 
 ## 元数据
 
 - 作者：Jingguang Li, Yebo Wu, Zuyi Guo, Kailang Ma, Xianjie Dai, Han Zheng, Benwang Chen, Li Li, Can Rong, Heye Huang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/benmagnifico/CoEM](https://github.com/benmagnifico/CoEM)
 - 阅读深度：metadata

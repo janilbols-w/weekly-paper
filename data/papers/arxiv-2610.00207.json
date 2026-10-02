@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2610.00207",
+  "title": "ShatterQuant: Breaking Uniform Precision with Block-Wise Mixed-Precision on a Systolic Transformer Hardware Accelerator",
+  "abstract": "Due to limited support for intra-tensor heterogeneous precision in conventional accelerators, neural network quantization remains largely restricted to per-tensor precision assignment. We present ShatterQuant, a hardware-software co-designed framework enabling mixed-precision quantization within each tensor by assigning independent bit-widths to blocks of a weight projection. ShatterQuant couples precision granularity with PE configuration, such that each precision determines an effective block height. We introduce (1) a hardware-aware post-training method that assigns intra-tensor precision based on block-level standard deviation and weight sensitivity; (2) the ShatterQuant Transformer Accelerator supporting 1/2/4/8-bit weight precision, precision-dependent PE configuration, block rescaling, and integrated softmax and piecewise-linear nonlinearities; and (3) an evaluation of model-hardware tradeoffs using an implementation in the TSMC 16nm PDK operating at 1 GHz, achieving 1.5 TOPS, 760 GOPS/$mm^2$ area efficiency, and 2.8 TOPS/W energy efficiency. On DeiT and ImageNet-1K, ShatterQuant achieves accuracy within $3.3\\%$ of state-of-the-art mixed-precision techniques while using a 2 bit lower effective bitwidth, while for PixelDiT demonstrates comparable generation quality. ShatterQuant demonstrates how fine-grained intra-tensor mixed-precision can be realized through hardware-software co-design.",
+  "url": "https://arxiv.org/abs/2610.00207",
+  "pdf_url": "https://arxiv.org/pdf/2610.00207",
+  "published": "2026-10-02",
+  "updated": "2026-10-02",
+  "authors": [
+    "Mikolaj Walczak",
+    "Edward Humes",
+    "Chao Fang",
+    "Marian Verhelst",
+    "Tinoosh Mohsenin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.AI",
+    "eess.IV"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator",
+    "hardware-aware"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator, hardware-aware",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Due to limited support for intra-tensor heterogeneous precision in conventional accelerators, neural network quantization remains largely restricted to per-tensor precision assignment.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.00207",
+      "url": "https://arxiv.org/abs/2610.00207"
+    }
+  ]
+}

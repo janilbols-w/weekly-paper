@@ -4,7 +4,7 @@
   "abstract": "Weight compression helps large neural networks fit deployment memory budgets, but common fixed-width formats offer only coarse storage choices. Entropy coding supports finer rates, yet the achieved size depends on the quantized weight distribution and coding overhead. Exploiting this flexibility requires accurate rate selection and efficient weight reconstruction for inference. We present EntroPack, an entropy-coded weight compressor that supports arbitrary target bitrates without activation calibration or fine-tuning. It combines row-normalized $E_8$ lattice quantization with a conditional probability model of lattice coordinates. Sampled storage estimates select the quantization resolution without repeated full-stream encoding. The final coordinates are entropy-coded in independently decodable tiles, enabling fast, fused symbol decoding and numerical weight reconstruction on the GPU. EntroPack supports floating-point and integer weight containers, such as BF16, FP16, FP8, and INT8, with storage bitrate controlled independently of numerical precision. Online decoding adds latency that grows with weight count, making the method well suited to compute-intensive workloads such as diffusion denoising and Transformer prefill. Experiments demonstrate fast encoding and modest inference overhead in these settings. When compressing the linear-layer weights of the image generator Z-Image-Turbo, EntroPack achieves substantially lower weight and denoiser output errors than fixed-width formats at comparable storage rates, with modest denoising-step overhead. Targeting 4 bits per parameter, it achieves lower weight and denoiser output errors than NF4, including about 24% lower relative $L_2$ weight error, with less storage. Source code is available at https://github.com/modelscope/entropack.",
   "url": "https://arxiv.org/abs/2609.34185",
   "pdf_url": "https://arxiv.org/pdf/2609.34185",
-  "published": "2026-09-30",
+  "published": "2026-09-28",
   "updated": "2026-09-30",
   "authors": [
     "Hong Zhang",
@@ -14,8 +14,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.34185v1",
+      "url": "http://arxiv.org/abs/2609.34185v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.34185",

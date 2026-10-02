@@ -10,8 +10,8 @@ description: "Gateway, Routing & Autoscaling"
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [ORACLE: Agentic AI Orchestrator Routing Via Adaptive Verifier Calibration Feedback](../../papers/arxiv-2607.22465/) | 2026-10-01 | 48 |
-| [SeLMRoute: Probabilistic Semantic Evidence for Large Language Model Routing](../../papers/arxiv-2609.34736/) | 2026-09-30 | 51 |
-| [Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows](../../papers/arxiv-2609.32917/) | 2026-09-30 | 48 |
+| [SeLMRoute: Probabilistic Semantic Evidence for Large Language Model Routing](../../papers/arxiv-2609.34736/) | 2026-09-28 | 51 |
+| [Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows](../../papers/arxiv-2609.32917/) | 2026-09-26 | 53 |
 | [Cross-Model Autoscaling for Shared LLM Serving](../../papers/arxiv-2609.29160/) | 2026-09-24 | 44 |
 | [An Approximate Queueing Model of LLM Inference Serving for SLO-Driven Autoscaling](../../papers/arxiv-2609.20957/) | 2026-09-21 | 49 |
 | [DLB: Distributed Load Balancing at Scale for Generative AI Inference](../../papers/arxiv-2609.21079/) | 2026-09-21 | 47 |

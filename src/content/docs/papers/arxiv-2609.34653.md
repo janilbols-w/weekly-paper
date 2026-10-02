@@ -39,7 +39,7 @@ On-device streaming omni-modal inference safeguards user privacy and eliminates 
 ## 元数据
 
 - 作者：Zongshang Shen, Wangsong Yin, Daliang Xu, Mengwei Xu, Xuanzhe Liu
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

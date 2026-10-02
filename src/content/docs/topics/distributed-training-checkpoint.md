@@ -5,25 +5,29 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **84** 篇。
+累计收录 **88** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Storage Is Not Strategy: State-Conditioned Support Control for LLM Unlearning](../../papers/arxiv-2609.37858/) | 2026-10-01 | 43 |
-| [dattri-LLM: A Unified and Efficient Library for Training Data Attribution at LLM Scale](../../papers/arxiv-2609.38767/) | 2026-10-01 | 42 |
-| [From Search to Signal: Online Post-Training in Automatic Heuristic Design](../../papers/arxiv-2609.39383/) | 2026-10-01 | 42 |
-| [$S^3$: Spectral Null-Space Swap Makes Reasoning Models Efficient](../../papers/arxiv-2609.37976/) | 2026-10-01 | 42 |
-| [Blackboard Intelligence Can Surpass Autoregressive on Globally Constrained Problems](../../papers/arxiv-2609.38806/) | 2026-10-01 | 39 |
-| [OneSign: Unifying Sign Language Understanding Tasks with One Model](../../papers/arxiv-2609.33090/) | 2026-09-30 | 46 |
-| [Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures](../../papers/arxiv-2609.34215/) | 2026-09-30 | 42 |
-| [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](../../papers/arxiv-2609.33757/) | 2026-09-30 | 40 |
+| [Fast Polynomial Transcendentals for LLMs](../../papers/arxiv-2610.00049/) | 2026-10-02 | 44 |
+| [Trait-space Monitoring for Emergent Misalignment During Supervised Finetuning](../../papers/arxiv-2606.07631/) | 2026-10-02 | 40 |
+| [Match the Distribution, Not the Compute: Post-Training Multi-Token Prediction Heads](../../papers/arxiv-2610.00888/) | 2026-10-01 | 41 |
+| [dattri-LLM: A Unified and Efficient Library for Training Data Attribution at LLM Scale](../../papers/arxiv-2609.38767/) | 2026-09-30 | 47 |
+| [From Search to Signal: Online Post-Training in Automatic Heuristic Design](../../papers/arxiv-2609.39383/) | 2026-09-30 | 42 |
 | [The Ongiini-Eval-OW Benchmark: A Concept Paper for the Planned Benchmarking of Machine Translation and Large Language Models on Oshindonga and Oshikwanyama](../../papers/arxiv-2609.31727/) | 2026-09-30 | 40 |
 | [SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution](../../papers/arxiv-2603.01327/) | 2026-09-30 | 40 |
-| [How Far Do Persona Effects Generalize in Language Models?](../../papers/arxiv-2609.32758/) | 2026-09-30 | 39 |
 | [Equivalent Flows, Unequal Learning: Clean-Latent Prediction in Transformers](../../papers/arxiv-2605.27102/) | 2026-09-30 | 39 |
-| [LionMuon: Alternating Spectral and Sign Descent for Efficient Training](../../papers/arxiv-2609.35297/) | 2026-09-30 | 38 |
+| [Blackboard Intelligence Can Surpass Autoregressive on Globally Constrained Problems](../../papers/arxiv-2609.38806/) | 2026-09-30 | 39 |
 | [Don't stop me now: How Validation Criteria Affect Checkpoint Selection and Early Stopping](../../papers/arxiv-2602.22107/) | 2026-09-30 | 38 |
+| [Storage Is Not Strategy: State-Conditioned Support Control for LLM Unlearning](../../papers/arxiv-2609.37858/) | 2026-09-29 | 43 |
+| [$S^3$: Spectral Null-Space Swap Makes Reasoning Models Efficient](../../papers/arxiv-2609.37976/) | 2026-09-29 | 42 |
+| [Refusal Localizes, the Damage Relocates: Safety Layers Under Few-Sample Fine-Tuning](../../papers/arxiv-2610.00320/) | 2026-09-29 | 38 |
+| [Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures](../../papers/arxiv-2609.34215/) | 2026-09-28 | 42 |
 | [PALM: Point-in-Time Adaptation for Financial Language Models](../../papers/arxiv-2609.30316/) | 2026-09-28 | 42 |
+| [LionMuon: Alternating Spectral and Sign Descent for Efficient Training](../../papers/arxiv-2609.35297/) | 2026-09-28 | 38 |
+| [OneSign: Unifying Sign Language Understanding Tasks with One Model](../../papers/arxiv-2609.33090/) | 2026-09-27 | 46 |
+| [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](../../papers/arxiv-2609.33757/) | 2026-09-27 | 45 |
+| [How Far Do Persona Effects Generalize in Language Models?](../../papers/arxiv-2609.32758/) | 2026-09-26 | 39 |
 | [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](../../papers/arxiv-2609.27189/) | 2026-09-23 | 52 |
 | [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](../../papers/arxiv-2609.27193/) | 2026-09-23 | 47 |
 | [Speculative Evaluation of Stochastic LLMs](../../papers/arxiv-2609.28560/) | 2026-09-23 | 44 |

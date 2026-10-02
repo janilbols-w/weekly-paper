@@ -9,8 +9,8 @@ description: "Prefill-Decode Disaggregation"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [MoSE: Mode-Switching Expander for Mixed LLM Training and Inference](../../papers/arxiv-2609.39138/) | 2026-10-01 | 38 |
 | [PrefillShare: A Shared Prefill Module for KV Reuse in Multi-LLM Disaggregated Serving](../../papers/arxiv-2602.12029/) | 2026-09-30 | 49 |
+| [MoSE: Mode-Switching Expander for Mixed LLM Training and Inference](../../papers/arxiv-2609.39138/) | 2026-09-30 | 38 |
 | [EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models](../../papers/arxiv-2609.31551/) | 2026-09-28 | 47 |
 | [Crossflow: Prefill-Decode Elasticity for Agentic LLM Serving](../../papers/arxiv-2609.27085/) | 2026-09-24 | 43 |
 | [PDD: Unleashing Economical and Flexible Heterogeneous LLM Inference via Cross-Datacenter Prefill-Decode Disaggregation](../../papers/arxiv-2609.13161/) | 2026-09-15 | 48 |

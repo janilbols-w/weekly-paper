@@ -39,7 +39,7 @@ AI clusters increasingly run large language model (LLM) inference and training o
 ## 元数据
 
 - 作者：Fan Yang, Ying Zhou, Binglei Wang, Zhenjie Zhou, Jialong Li
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

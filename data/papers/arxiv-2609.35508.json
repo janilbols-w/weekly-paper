@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2609.35508",
+  "title": "Argus: Agentic, Reference-Calibrated, Tree-Guided, System-Software-Level Bottleneck Localization",
+  "abstract": "Operating system (OS) code can account for a substantial share of CPU execution time. First, as application logic is offloaded to heterogeneous accelerators (e.g., GPUs), the CPU increasingly acts as an orchestrator, spending cycles in driver calls, data movement, and synchronization rather than in application code. Second, workloads such as serverless functions frequently invoke OS services. At the same time, the OS is a complex codebase spanning many subsystems (e.g., memory management, networking), making it hard to localize the specific code path responsible for a slowdown. Existing profilers expose measurements that require interpretation(e.g., perf and Intel VTune) or can perturb short operations when extensively instrumented (e.g., ftrace). Diagnosing OS bottlenecks can therefore require repeated kernel instrumentation and manual interpretation. We introduce Argus, an agentic LLM-based profiler that produces instrumentation code and autonomously reasons over potential OS-level bottlenecks. Argus integrates two key mechanisms: (i) a calibration methodology that involves collecting a measurement from an idle system and using it as a reference point to discover potential bottlenecks, and (ii) a tree-based data structure that represents the different OS execution paths, improving the agent's bottleneck localization accuracy. Argus aims to identify a specific kernel code path rather than stop at a subsystem-level diagnosis. In two case studies, we employ Argus to autonomously discover bottlenecks present in the memory management subsystem caused by (i) a THP aggressor co-running with other applications, and (ii) applications that incur different types of page faults. Argus produces 19 times fewer incorrect deep-path diagnoses than the strongest evaluated LLM-based baseline, which lacks reference calibration, while preserving low time-to-diagnosis (approximately 31 s)",
+  "url": "http://arxiv.org/abs/2609.35508v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.35508v1",
+  "published": "2026-09-28",
+  "updated": "2026-09-28",
+  "authors": [
+    "Vlad-Petru Nitu",
+    "Harsh Songara",
+    "Konstantinos Sgouras",
+    "Spiros Galanopoulos",
+    "Konstantinos Kanellopoulos",
+    "Onur Mutlu"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.OS",
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "5 pages, 7 figures. Extended version of the paper presented at the Architecture 2.0 Workshop at ISCA 2026",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "memory management"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: memory management",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Operating system (OS) code can account for a substantial share of CPU execution time.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.35508v1",
+      "url": "http://arxiv.org/abs/2609.35508v1"
+    }
+  ]
+}

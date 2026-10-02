@@ -39,7 +39,7 @@ Single-cell transcriptomics enables profiling of cellular states at unprecedente
 ## 元数据
 
 - 作者：Suyuan Zhao, Minghao Liu, Yizhen Luo, Zaiqing Nie
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/PharMolix/CellMSA](https://github.com/PharMolix/CellMSA)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Four-bit post-training quantization can reduce the memory demands of large langu
 ## 元数据
 
 - 作者：Qiulin Shang, Zhoutong Wu, Jie Hu, Kun Yuan
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

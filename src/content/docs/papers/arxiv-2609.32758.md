@@ -39,7 +39,7 @@ Persona prompts ask language models to answer as particular kinds of people. We 
 ## 元数据
 
 - 作者：Yufan Zhou, Yuxuan Liu, Enze Ma, Lyumanshan Ye, Zhongqi Yue, Robin De Croon, Yucheng Jin, Katrien Verbert, Zhao Wang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-26；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/thzva/persona-gain](https://github.com/thzva/persona-gain)
 - 阅读深度：metadata

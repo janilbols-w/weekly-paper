@@ -39,7 +39,7 @@ Large language models are strong general-purpose code generators, but executable
 ## 元数据
 
 - 作者：Alexey Chernysh, Orkhan Ekhtibarov, Dmitry Zmitrovich
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -3,7 +3,7 @@ title: "Rethinking Training-Inference Mismatch in LLM Reinforcement Learning: Wh
 description: "We study training-inference mismatch in reinforcement learning with verifiable rewards (RLVR) for large language models, where rollouts are sampled by an inference engine while gradients are computed by a training engine, and the two engines assign different probabilities to the same tokens."
 ---
 
-**评分：43/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+**评分：48/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2609.32444) · [PDF](https://arxiv.org/pdf/2609.32444)
 
@@ -27,19 +27,19 @@ We study training-inference mismatch in reinforcement learning with verifiable r
 | novelty | 6 |
 | rigor | 13 |
 | practical impact | 7 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: inference engine
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Tianrun Yu, Kaixiang Zhao, Shangzhe Li, Yuxiao Yang, Porter Jenkins, Weitong Zhang, Taylor W. Killian
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-26；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/kzhao5/CIS-RL](https://github.com/kzhao5/CIS-RL)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Post-training quantization (PTQ) enables efficient deployment of large vision-la
 ## 元数据
 
 - 作者：Minchan Kang, Kyeonghye Park, Seungyeon Sa, Seoyoung Cho, Daeshik Kim, Yucheol Cho
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/kmc3661/BFQ](https://github.com/kmc3661/BFQ)
 - 阅读深度：metadata

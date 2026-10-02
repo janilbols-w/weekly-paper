@@ -39,7 +39,7 @@ Since the advent of knowledge distillation, KL divergence has been the standard 
 ## 元数据
 
 - 作者：Wenze Lin, Jiyuan Long, Jiale Zhao, Shenzhi Wang, Xitai Jiang, Ce Luo, Rui Lan, Qianli Ma, Fukang Wen, Hui Wu, Liyuan Chen, Shuoling Liu, Jiangpeng Yan, Gao Huang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LeapLabTHU/KL-Free-OPD](https://github.com/LeapLabTHU/KL-Free-OPD)
 - 阅读深度：metadata

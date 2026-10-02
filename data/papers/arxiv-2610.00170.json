@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2610.00170",
+  "title": "On-Device Commercial Intent Retrieval Under Size, Latency, and Privacy Constraints: A 3 MiB Retrieval System with Typed Egress Boundaries",
+  "abstract": "We study commercial intent inference that runs entirely on the user's device, under three constraints frozen before the work began: the downloaded payload under 3 MiB, Tier-0 inference under 20 ms at p95, and no raw text, content embedding, or stable identifier leaving the device. Under them we build a retrieval path over a 6,020-leaf commercial taxonomy: a static embedding table distilled from a Korean sentence transformer, quantized to 4 bits, no inference runtime. Our main result is where that constraint costs accuracy. On real Korean commerce text labelled by others (22,900 AI-Hub shopping reviews), mid-category top-5 on real product names is 75.0% against an 18.4% permutation baseline, but splits on one observable: a query containing some leaf name as a substring scores 83.5%, one containing none 45.2%. A generic 196.6x larger teacher seemed to localize the gap (+20.1 pp without an anchor, +0.1 with). That null was two effects cancelling: the same teacher fine-tuned on the student's own contrastive pairs reaches 0.8586 and beats the pure-encoder student by +10.6 pp with an anchor and +20.9 pp without. The cost is not uniform, but it is not free anywhere; where the anchor is absent, task adaptation buys the teacher nothing, so what the constrained encoder lacks there is capacity. The expensive regime is detectable on-device from the ranker's own score margin: declining the least confident fifth lifts the rest to 0.8296. A second axis we first reported, a manufacturer model code, does not survive source-category fixed effects (-4.0 pp, p=0.51); the anchor does (+13.0 pp). Payload is 2,942,652 bytes, all three library links measured. Tier-0 p95 is 4.431 and 3.670 ms on two iPhones (A14, A16) and 5.080 ms on a budget Android tablet (Snapdragon 695), all slower than three server CPUs on the same code. Taxonomy supervision is mostly synthetic Korean utterances.",
+  "url": "https://arxiv.org/abs/2610.00170",
+  "pdf_url": "https://arxiv.org/pdf/2610.00170",
+  "published": "2026-10-02",
+  "updated": "2026-10-02",
+  "authors": [
+    "Hyojung Han"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.IR",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We study commercial intent inference that runs entirely on the user's device, under three constraints frozen before the work began: the downloaded payload under 3 MiB, Tier-0 inference under 20 ms at p95, and no raw text, content embedding, or stable identifier leaving the device.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.00170",
+      "url": "https://arxiv.org/abs/2610.00170"
+    }
+  ]
+}

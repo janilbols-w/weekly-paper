@@ -39,7 +39,7 @@ Spexis is a multi-GPU LLM inference framework that improves the efficiency of pi
 ## 元数据
 
 - 作者：Hyungyu Jung, Jaehyeok Yu, Hoonseo Choi, Sungkyun Kim, Jinho Lee, Jiwon Seo
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/mlsys-seo/spexis](https://github.com/mlsys-seo/spexis)
 - 阅读深度：metadata

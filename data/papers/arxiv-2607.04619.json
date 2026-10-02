@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2607.04619",
+  "title": "CARD: Cross-component Audio Representation Distillation for Encoder-Free Audio Captioning",
+  "abstract": "Modern automated audio captioning systems pair a frozen audio encoder with a large language model (LLM) via a trainable projector, incurring the encoder's inference cost and bottlenecking the model through its fixed acoustic features. We present CARD, an encoder-free audio captioning model that removes the encoder at inference: a 13.2M projector feeds a frozen LLM with merged LoRA adapters, while the teacher used to train it is discarded. CARD distills a pre-trained audio teacher (CLAP-HTSAT) into the model, but rather than injecting it into the LLM alone, it routes the teacher's representations across components: perceptual stages to the projector and semantic stages to the LLM. This placement improves CIDEr-D by +11.9 over an LLM-only distilled model on AudioCaps and by +5.0 on Clotho, reaching 55.4 against a 66.4 encoder-kept upper bound with no encoder at inference, showing that where a teacher's knowledge is placed matters as much as its presence.",
+  "url": "https://arxiv.org/abs/2607.04619",
+  "pdf_url": "https://arxiv.org/pdf/2607.04619",
+  "published": "2026-10-02",
+  "updated": "2026-10-02",
+  "authors": [
+    "Ganesh Pavan Kartikeya Bharadwaj Kolluri",
+    "Yuchen Zhang",
+    "Michael Kampouridis",
+    "Ravi Shekhar"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.SD",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern automated audio captioning systems pair a frozen audio encoder with a large language model (LLM) via a trainable projector, incurring the encoder's inference cost and bottlenecking the model through its fixed acoustic features.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.04619",
+      "url": "https://arxiv.org/abs/2607.04619"
+    }
+  ]
+}

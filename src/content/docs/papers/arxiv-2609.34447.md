@@ -39,7 +39,7 @@ On-policy distillation (OPD) is becoming an important component of large languag
 ## 元数据
 
 - 作者：Linjian Meng, Siyuan Gan, YuHan Li, Xiran Wang, Ziyang Ding, Ditang Gou, Yiming Wu, Zhen Zhao
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-10-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

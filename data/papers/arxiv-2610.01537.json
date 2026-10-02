@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2610.01537",
+  "title": "FedFit: Federated Fine-Tuning of LLMs via Vector-Bank Parameterization and Quantization",
+  "abstract": "Federated Learning (FL) enables privacy-preserving fine-tuning of Large Language Models (LLMs), yet the massive communication overhead remains a critical bottleneck. Furthermore, applying Low-Rank Adaptation (LoRA) in FL faces a fundamental \"aggregation dilemma\" between the accurate Sum-of-Products (SoP) and the communication-efficient Product-of-Sums (PoS) implementations. To tackle these challenges, we propose FedFit. First, to significantly reduce communication overhead, we introduce a disjoint shared vector-bank parameterization that reconstructs high-dimensional adapter matrices from two compact and disjoint global vector banks. Second, to address the aggregation dilemma, we devise an alternating optimization schedule. By cycling between decoupled single-bank updates (which allow for accurate aggregation) and joint updates corrected by a Residual Spectral Aggregation mechanism, we resolve the conflict between SoP and PoS. Additionally, we integrate blockwise quantization with client-side error feedback to further compress the transmitted vectors. Furthermore, we establish theoretical convergence guarantees for the proposed algorithm. Extensive experiments on Qwen2.5 models demonstrate that FedFit achieves perplexity performance comparable to standard federated LoRA methods, while providing compression ratios up to 100x higher.",
+  "url": "https://arxiv.org/abs/2610.01537",
+  "pdf_url": "https://arxiv.org/pdf/2610.01537",
+  "published": "2026-10-01",
+  "updated": "2026-10-02",
+  "authors": [
+    "Hang Zou",
+    "Chao Zhang",
+    "Yuzhi Yang",
+    "Yu Tian",
+    "Samson Lasaulce",
+    "Mérouane Debbah"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 8,
+    "rigor": 7,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Federated Learning (FL) enables privacy-preserving fine-tuning of Large Language Models (LLMs), yet the massive communication overhead remains a critical bottleneck.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.01537v1",
+      "url": "http://arxiv.org/abs/2610.01537v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.01537",
+      "url": "https://arxiv.org/abs/2610.01537"
+    }
+  ]
+}

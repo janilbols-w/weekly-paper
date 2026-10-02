@@ -39,7 +39,7 @@ On-policy distillation (OPD) transfers the capabilities of a large language mode
 ## 元数据
 
 - 作者：Yuhao Sun, Binrui Wu, Zhuoer Xu, Ming Wen, Haoxiang Xu, Bin Chen, Yan Lin, Qianzijing Zhang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

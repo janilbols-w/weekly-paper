@@ -39,7 +39,7 @@ Large language models make weight storage and memory traffic major inference cos
 ## 元数据
 
 - 作者：Ruiyi Ding, Jie Li, Kang He, Ziyan Liu, Chengru Song, Yuedong Xu, Yuan Cheng
-- 发布：2026-09-30；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

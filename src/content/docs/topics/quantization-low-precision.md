@@ -5,51 +5,72 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **231** 篇。
+累计收录 **252** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [RATIO: Reasoning Analysis and Token-level Inference Optimization for Quantized Reasoning Models](../../papers/arxiv-2609.39801/) | 2026-10-01 | 53 |
+| [ConQuR: Corner Aligned Activation Quantization via Optimized Rotations for LLMs](../../papers/arxiv-2605.10793/) | 2026-10-02 | 49 |
+| [On-Device Commercial Intent Retrieval Under Size, Latency, and Privacy Constraints: A 3 MiB Retrieval System with Typed Egress Boundaries](../../papers/arxiv-2610.00170/) | 2026-10-02 | 42 |
+| [Format-Aware Fusion for Fast FP4 Pretraining](../../papers/arxiv-2610.00053/) | 2026-10-02 | 42 |
+| [Measuring the Microtask Eligibility Gap: When Is an Off-the-Shelf SLM Enough for an Agent Harness?](../../papers/arxiv-2610.00025/) | 2026-10-02 | 38 |
 | [MatGPTQ: Efficient and Accurate Inference over Nested Quantized Models](../../papers/arxiv-2602.03537/) | 2026-10-01 | 52 |
-| [QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs](../../papers/arxiv-2609.39223/) | 2026-10-01 | 50 |
-| [Security-Enhanced Seed-Based Weight Quantization for Large Language Models](../../papers/arxiv-2609.38477/) | 2026-10-01 | 47 |
-| [Chinese-Jev: Bringing System One Model to Chinese-Language Tasks](../../papers/arxiv-2609.36965/) | 2026-10-01 | 45 |
-| [Low-Discrepancy Dither for Quantized Recurrent State Caches](../../papers/arxiv-2609.39185/) | 2026-10-01 | 44 |
+| [Stochastic Rounding in Low-Precision Transformer Inference: A Variable-Precision Emulation Study of a Small GPT-2](../../papers/arxiv-2610.01889/) | 2026-10-01 | 47 |
+| [The Devil Is in the Reconstruction Loss Scale: Rethinking Optimization in LLM Quantization](../../papers/arxiv-2610.00983/) | 2026-10-01 | 45 |
+| [FedFit: Federated Fine-Tuning of LLMs via Vector-Bank Parameterization and Quantization](../../papers/arxiv-2610.01537/) | 2026-10-01 | 44 |
 | [DualCast: A Dual-Path Language Model for Bimodal Financial Time-Series Forecasting](../../papers/arxiv-2609.38197/) | 2026-10-01 | 43 |
-| [GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives](../../papers/arxiv-2609.39601/) | 2026-10-01 | 41 |
+| [TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning](../../papers/arxiv-2610.02199/) | 2026-10-01 | 41 |
 | [Cross-Layer Discrete Concept Discovery for Interpreting Language Models](../../papers/arxiv-2506.20040/) | 2026-10-01 | 41 |
 | [PowerStep: Memory-Efficient Adaptive Optimization via $\ell_p$-Norm Steepest Descent](../../papers/arxiv-2605.10335/) | 2026-10-01 | 40 |
-| [JARQ: Joint Alternating Refinement for Quantization](../../papers/arxiv-2609.38599/) | 2026-10-01 | 39 |
 | [PRISM: A Geometric Risk Bound for Decomposing Drift into Scale, Shape, and Head](../../papers/arxiv-2605.11608/) | 2026-10-01 | 38 |
 | [GeoFP8: Geometry-Aware FP8 Gradient Compression for Distributed LLM Training](../../papers/arxiv-2607.07494/) | 2026-10-01 | 38 |
-| [Beyond Accuracy: Prefix-Invariant Realizations of Low-Precision Fast Matrix Multiplication](../../papers/arxiv-2609.39816/) | 2026-10-01 | 38 |
-| [PQ-HSA: Reusing Product-Quantized Scores for Hybrid Sparse-Approximate Attention](../../papers/arxiv-2609.33746/) | 2026-09-30 | 52 |
-| [EntroPack: Fast and Accurate Entropy-Coded Weight Compression at Arbitrary Bitrates](../../papers/arxiv-2609.34185/) | 2026-09-30 | 51 |
+| [QATFactory: A Versatile, Deployment-Aligned Framework for Quantization-aware Training and Distillation of LLMs](../../papers/arxiv-2609.39223/) | 2026-09-30 | 55 |
+| [RATIO: Reasoning Analysis and Token-level Inference Optimization for Quantized Reasoning Models](../../papers/arxiv-2609.39801/) | 2026-09-30 | 53 |
 | [BitsMoE: Cost-Aware Bit Allocation in Spectral Space for MoE LLM Quantization](../../papers/arxiv-2606.00079/) | 2026-09-30 | 47 |
-| [Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference](../../papers/arxiv-2609.36654/) | 2026-09-30 | 45 |
-| [From Attention Sensitivity to Layer Role: Revisiting Mixed-Precision Quantization of Transformers](../../papers/arxiv-2609.34866/) | 2026-09-30 | 45 |
-| [Chameleon: Dynamic Format Adapter for Efficient Diffusion](../../papers/arxiv-2609.33496/) | 2026-09-30 | 45 |
+| [GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives](../../papers/arxiv-2609.39601/) | 2026-09-30 | 46 |
+| [Analysis of Quantized and Efficiently Adapted Protein Language Models](../../papers/arxiv-2610.00665/) | 2026-09-30 | 45 |
 | [Understanding Quantization of Optimizer States in LLM Pre-training: Dynamics of State Staleness and Effectiveness of State Resets](../../papers/arxiv-2603.16731/) | 2026-09-30 | 44 |
 | [Multi-Bitwidth Quantization for LLMs Using Additive Codebooks](../../papers/arxiv-2606.12876/) | 2026-09-30 | 44 |
-| [Latency and accuracy tradeoffs in Spiking Neural Networks](../../papers/arxiv-2609.35260/) | 2026-09-30 | 44 |
-| [Beyond Reconstruction Loss in Post-Training Quantization: Balanced Fitting for Large Vision-Language Models](../../papers/arxiv-2609.34765/) | 2026-09-30 | 44 |
-| [Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter](../../papers/arxiv-2609.35465/) | 2026-09-30 | 42 |
-| [Optimizing the Phi-2 Small Language Model for Real-time Chatbot Applications Using Parameter-Efficient Fine-Tuning (PEFT) with QLoRA Quantization](../../papers/arxiv-2609.33927/) | 2026-09-30 | 42 |
-| [Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration](../../papers/arxiv-2609.33586/) | 2026-09-30 | 42 |
+| [Low-Discrepancy Dither for Quantized Recurrent State Caches](../../papers/arxiv-2609.39185/) | 2026-09-30 | 44 |
+| [XOR-Trellis: Ultra-Low-Complexity Dequantization and Curvature-Aware Hadamard-Free LLM Quantization](../../papers/arxiv-2610.00432/) | 2026-09-30 | 42 |
 | [Which Decisions Low-Bit Quantization Breaks, and How to Predict Them](../../papers/arxiv-2608.06564/) | 2026-09-30 | 41 |
-| [QuantForge: Discovering Residual Decompositions for MXFP4 Post-Training Quantization](../../papers/arxiv-2609.34680/) | 2026-09-30 | 41 |
+| [On the Relationship between Model Quantization and Model Inversion Attacks](../../papers/arxiv-2610.00382/) | 2026-09-30 | 41 |
+| [AIR-LLM: Broadcasting AI Weights over Radio for Memory-Free Edge LLM Inference via RF Computing](../../papers/arxiv-2610.00465/) | 2026-09-30 | 41 |
 | [Pushing Toward the Simplex Vertices: A Simple Remedy for Code Collapse in Smoothed Vector Quantization](../../papers/arxiv-2509.22161/) | 2026-09-30 | 40 |
 | [LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text](../../papers/arxiv-2609.31663/) | 2026-09-30 | 40 |
 | [HiFloat4 Format for Language Model Pre-training on Ascend NPUs](../../papers/arxiv-2604.08826/) | 2026-09-30 | 39 |
 | [Depth Laws for the Precision Floor of Trained Neural Networks: Amplification, Residual Scaling, and a Quantization-Aware Training Paradox](../../papers/arxiv-2609.32060/) | 2026-09-30 | 39 |
-| [Pretraining Transformers with Quantized Softmax in Attention](../../papers/arxiv-2609.33591/) | 2026-09-30 | 38 |
-| [Linger and Lose: Knowledge Collapse in Low-Bit Language Models](../../papers/arxiv-2609.32902/) | 2026-09-30 | 38 |
+| [Scaling Collider Event Generation with Residual-Quantized Tokens](../../papers/arxiv-2610.00569/) | 2026-09-30 | 38 |
+| [Beyond Accuracy: Prefix-Invariant Realizations of Low-Precision Fast Matrix Multiplication](../../papers/arxiv-2609.39816/) | 2026-09-30 | 38 |
+| [Behavioral Capacity Certificates for Quantized Language Models](../../papers/arxiv-2609.37887/) | 2026-09-29 | 50 |
+| [LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization](../../papers/arxiv-2609.38166/) | 2026-09-29 | 48 |
+| [Security-Enhanced Seed-Based Weight Quantization for Large Language Models](../../papers/arxiv-2609.38477/) | 2026-09-29 | 47 |
+| [Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference](../../papers/arxiv-2609.36654/) | 2026-09-29 | 45 |
+| [Chinese-Jev: Bringing System One Model to Chinese-Language Tasks](../../papers/arxiv-2609.36965/) | 2026-09-29 | 45 |
+| [GraphVQ: Structure-Aware Autoregressive Decoding over Context-Quantized Graph Tokens](../../papers/arxiv-2609.37604/) | 2026-09-29 | 42 |
+| [Scaling Influence Functions in LLMs through Eigenbasis-Corrected One-Bit Gradient Projection](../../papers/arxiv-2609.37842/) | 2026-09-29 | 41 |
+| [JARQ: Joint Alternating Refinement for Quantization](../../papers/arxiv-2609.38599/) | 2026-09-29 | 39 |
+| [Scale Sensitivity in Low-Bit Post-Training Quantization: Curvature of the Quantization Error Landscape](../../papers/arxiv-2609.37416/) | 2026-09-29 | 38 |
+| [EntroPack: Fast and Accurate Entropy-Coded Weight Compression at Arbitrary Bitrates](../../papers/arxiv-2609.34185/) | 2026-09-28 | 51 |
 | [G$^2$PTQ: Improving LLM Post-Training Quantization with Generalized Gradient Compensation](../../papers/arxiv-2609.31009/) | 2026-09-28 | 49 |
+| [Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter](../../papers/arxiv-2609.35465/) | 2026-09-28 | 47 |
 | [Softmax Reparameterization for Output-Head Quantization](../../papers/arxiv-2609.31291/) | 2026-09-28 | 45 |
+| [From Attention Sensitivity to Layer Role: Revisiting Mixed-Precision Quantization of Transformers](../../papers/arxiv-2609.34866/) | 2026-09-28 | 45 |
+| [Latency and accuracy tradeoffs in Spiking Neural Networks](../../papers/arxiv-2609.35260/) | 2026-09-28 | 44 |
+| [Beyond Reconstruction Loss in Post-Training Quantization: Balanced Fitting for Large Vision-Language Models](../../papers/arxiv-2609.34765/) | 2026-09-28 | 44 |
 | [The Right Information Extraction Pipeline Depends on the Document: Accuracy-Energy Trade-offs for Small, Local Models](../../papers/arxiv-2609.31341/) | 2026-09-28 | 42 |
+| [QuantForge: Discovering Residual Decompositions for MXFP4 Post-Training Quantization](../../papers/arxiv-2609.34680/) | 2026-09-28 | 41 |
 | [Towards Understanding LLM-Based Log Anomaly Detection: An Empirical Study of Performance, Efficiency, and Robustness](../../papers/arxiv-2609.31371/) | 2026-09-28 | 40 |
 | [Quantizing Looped Transformers: Feedback Exposure and Calibration Blindness](../../papers/arxiv-2609.30820/) | 2026-09-28 | 40 |
 | [LUMO (Lightweight Unified Multilingual Orchestrator): A Privacy Preserving Offline Voice Assistant](../../papers/arxiv-2609.30692/) | 2026-09-28 | 38 |
+| [PQ-HSA: Reusing Product-Quantized Scores for Hybrid Sparse-Approximate Attention](../../papers/arxiv-2609.33746/) | 2026-09-27 | 52 |
+| [MpFA: Hardware-Efficient Train-Free QK4V8 FlashAttention Kernels on Blackwell GPUs](../../papers/arxiv-2609.33135/) | 2026-09-27 | 50 |
+| [Chameleon: Dynamic Format Adapter for Efficient Diffusion](../../papers/arxiv-2609.33496/) | 2026-09-27 | 45 |
+| [CipherGenome: Homomorphic Inference for Genomic Mixture-of-Experts](../../papers/arxiv-2609.35883/) | 2026-09-27 | 43 |
+| [Optimizing the Phi-2 Small Language Model for Real-time Chatbot Applications Using Parameter-Efficient Fine-Tuning (PEFT) with QLoRA Quantization](../../papers/arxiv-2609.33927/) | 2026-09-27 | 42 |
+| [Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration](../../papers/arxiv-2609.33586/) | 2026-09-27 | 42 |
+| [GenomeOcean Anywhere: Private WebGPU Inference for Genome MoEs](../../papers/arxiv-2609.35882/) | 2026-09-27 | 39 |
+| [Pretraining Transformers with Quantized Softmax in Attention](../../papers/arxiv-2609.33591/) | 2026-09-27 | 38 |
+| [Linger and Lose: Knowledge Collapse in Low-Bit Language Models](../../papers/arxiv-2609.32902/) | 2026-09-26 | 38 |
 | [GHOST-Q: Towards Studying Grounding Hallucinations Overlooked Under Same-score TradeOffs in Quantized VLMS](../../papers/arxiv-2609.29999/) | 2026-09-24 | 50 |
 | [Baseline Shape Decides the Verdict: A Controlled Re-Examination of Ternary Language Models at 60K Parameters](../../papers/arxiv-2609.29397/) | 2026-09-24 | 44 |
 | [BanglaTurn: A Benchmark and Whisper-Based Model for End-of-Turn Detection in Bangla Speech](../../papers/arxiv-2609.29371/) | 2026-09-24 | 42 |

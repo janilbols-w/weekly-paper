@@ -39,7 +39,7 @@ Large language model (LLM) agents repeatedly load reusable content, such as skil
 ## 元数据
 
 - 作者：Xinghao Chen, Junnan Dong, Cai Ke, Chak Tou Leong, Haocheng Sun, Keyu Chen, Siyu An, Ruizhi Qiao, Xing Sun, Wenjie Li, Xiaoyu Shen
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

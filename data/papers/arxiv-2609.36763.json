@@ -4,7 +4,7 @@
   "abstract": "Deploying large vision-language models (VLMs) onboard satellites enables onboard data processing and reduces raw data downlink. However, onboard inference faces two resource challenges. Limited onboard memory and energy require model compression and distributed deployment. Dynamic resource availability requires fast deployment decisions as illumination, battery levels, and communication conditions change. We present SCORAS-MoE, a joint compression and deployment framework for mixture-of-experts (MoE) VLMs in low Earth orbit (LEO) satellite networks. To address limited resources, SCORAS-MoE measures the perturbation of the routed MoE output caused by low-rank approximation, assigns higher ranks to more sensitive experts, and distributes compressed model shards across satellites for cooperative inference. The compressed models yield profiles of measured accuracy and inference energy. To adapt to dynamic resources, the online scheduler selects profile compositions and shard placements in each slot. For each candidate composition, it reduces placement to a minimum-cost assignment problem solved by the Hungarian algorithm, while enumerating the compositions yields the optimal deployment for the current-slot objective. Experiments on Qwen3-VL-30B-A3B-Instruct show that allocating ranks based on output perturbation is particularly effective under aggressive compression, with an absolute gain of $3.7\\%$ in mean accuracy over uniform rank allocation when expert projections retain $30\\%$ of their original parameters. The fixed-profile scheduler achieves higher throughput with fewer service switches and lower battery impact than the evaluated proximal policy optimization (PPO) and evolutionary baselines, with respective speedups of $8.7\\times$ and $183.5\\times$. Adaptive profile selection further improves the balance between service quality and energy use.",
   "url": "https://arxiv.org/abs/2609.36763",
   "pdf_url": "https://arxiv.org/pdf/2609.36763",
-  "published": "2026-09-30",
+  "published": "2026-09-29",
   "updated": "2026-09-30",
   "authors": [
     "Tong Quan",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.36763v1",
+      "url": "http://arxiv.org/abs/2609.36763v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.36763",

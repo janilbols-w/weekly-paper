@@ -3,7 +3,7 @@ title: "GroundingPI: A Grounding Foundation Model towards Physical Intelligence 
 description: "Precise grounding matters."
 ---
 
-**评分：41/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：46/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2609.39601) · [PDF](https://arxiv.org/pdf/2609.39601)
 
@@ -27,19 +27,19 @@ Precise grounding matters. It specifies which object is the target and where tha
 | novelty | 6 |
 | rigor | 13 |
 | practical impact | 5 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: quantized
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Qize Yu, Lianrui Fan, Boyu Chen, Jiaqi Liang, Xini Ding, Yue Chen, Zetian Song, Yuran Wang, Yi Zou, Kaixuan Wang, Tianxing Chen, Wenxuan Song, Bohan Zhou, Mingleyang Li, Siqiao Huang, Yuqi Ye, Caigao Jiang, Wei Wei, Ruihai Wu, Hang Zhang, Yixiao Ge, Shuchang Zhou, Shilong Liu, Xianming Liu, Ping Luo, Shiyu Huang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/groundingpi/GroundingPI](https://github.com/groundingpi/GroundingPI)
 - 阅读深度：metadata

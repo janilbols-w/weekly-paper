@@ -39,7 +39,7 @@ This study explores the optimization of the Phi-2 Small Language Models (SLMs) f
 ## 元数据
 
 - 作者：PhanTan Khanh Nguyen, Ashfaq Ali Shafin, Khandaker Mamun Ahmed
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

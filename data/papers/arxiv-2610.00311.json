@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2610.00311",
+  "title": "EdgeDAE: Acceleration of Diffusion Action Experts for Real-Time Physical AI with Tiny VLAs on Edge FPGA-GPU Systems",
+  "abstract": "Physical AI models such as Vision-Language-Action (VLA) architectures enable generalist robotic policies through large-scale transformer backbones and diffusion-based action decoders. While edge GPU platforms excel at parallelizing the compute-intensive vision-transformer workloads, they exhibit fundamental limitations for the Diffusion Action Expert (DAE) module: the iterative denoising process requires repeated parameter loading from DRAM across multiple steps, resulting in memory-bound performance where the GPU's massive computational throughput remains underutilized. This mismatch between DAE's I/O-intensive characteristics and GPU's compute-centric architecture motivates a heterogeneous acceleration approach. This paper presents \\textbf{EdgeDAE}, a heterogeneous FPGA-GPU system that strategically partitions workloads based on computational characteristics. We offload the perception-heavy vision-transformer to GPU while accelerating DAE inference on FPGA through complete on-chip parameter storage in BRAM/URAM. This architecture eliminates the memory bottleneck by co-designing quantization strategies, fixed-point arithmetic, and hardware-efficient random number generation for the FPGA fabric. Compared to an edge GPU baseline, EdgeDAE reduces end-to-end inference latency by 52.5\\% for Octo-Small and 38.7\\% for Octo-Base, with up to $2.10\\times$ higher throughput; compared to a consumer GPU (RTX~4090), it achieves ${\\sim}17\\times$ higher energy efficiency.",
+  "url": "https://arxiv.org/abs/2610.00311",
+  "pdf_url": "https://arxiv.org/pdf/2610.00311",
+  "published": "2026-09-28",
+  "updated": "2026-10-02",
+  "authors": [
+    "Zhiheng Chen",
+    "Ye Qiao",
+    "Mohammad Abdullah Al Faruque",
+    "Sitao Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "7 pages, 5 figures. Accepted to ASP-DAC 2027",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Physical AI models such as Vision-Language-Action (VLA) architectures enable generalist robotic policies through large-scale transformer backbones and diffusion-based action decoders.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.00311v1",
+      "url": "http://arxiv.org/abs/2610.00311v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.00311",
+      "url": "https://arxiv.org/abs/2610.00311"
+    }
+  ]
+}

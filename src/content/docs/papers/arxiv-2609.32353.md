@@ -3,7 +3,7 @@ title: "Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extrem
 description: "Visual token reduction is an effective way to accelerate multimodal large language models (MLLMs), but performance deteriorates rapidly under extremely low token budgets."
 ---
 
-**评分：43/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：48/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2609.32353) · [PDF](https://arxiv.org/pdf/2609.32353)
 
@@ -27,19 +27,19 @@ Visual token reduction is an effective way to accelerate multimodal large langua
 | novelty | 6 |
 | rigor | 9 |
 | practical impact | 5 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: compressed model, distillation
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Junxian Li, Ruixuan Yang, Tianao Zhang, Tiange Xu, Weisheng Dong, Yulun Zhang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-26；更新：2026-10-02
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/Yrxxxxxxxx1007/LT-OPD](https://github.com/Yrxxxxxxxx1007/LT-OPD)
 - 阅读深度：metadata

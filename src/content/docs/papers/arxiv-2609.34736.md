@@ -39,7 +39,7 @@ Large language model (LLM) routing aims to select the most suitable model for ea
 ## 元数据
 
 - 作者：Vasilis Perifanis, Nikolaos Pavlidis, Symeon Symeonidis
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-28；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Indigma-Innovations/SeLMRoute](https://github.com/Indigma-Innovations/SeLMRoute)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Block-diffusion language models are served at hand-picked operating points, such
 ## 元数据
 
 - 作者：Jungseob Lee, Dongyub Jude Lee, Chanjun Park, Sugyeong Eo, Heuiseok Lim
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/js-lee-AI/Redline](https://github.com/js-lee-AI/Redline)
 - 阅读深度：metadata

@@ -5,18 +5,25 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **77** 篇。
+累计收录 **84** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [NeurDuo-EEG: A Long-Sequence EEG Foundation Model with Persistent State and Explicit Memory](../../papers/arxiv-2609.38587/) | 2026-10-01 | 47 |
-| [CoEM: Empowering Long-Context Reasoning with Commit-on-Evidence Memory](../../papers/arxiv-2609.36935/) | 2026-10-01 | 47 |
-| [OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading](../../papers/arxiv-2609.33385/) | 2026-09-30 | 57 |
 | [NOSA: Native and Offloadable Sparse Attention](../../papers/arxiv-2510.13602/) | 2026-09-30 | 49 |
-| [EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?](../../papers/arxiv-2609.33762/) | 2026-09-30 | 49 |
 | [SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents](../../papers/arxiv-2609.35596/) | 2026-09-30 | 43 |
 | [GenMem: Generative Symbolic Memory for Self-Evolving Harness](../../papers/arxiv-2609.34633/) | 2026-09-30 | 40 |
+| [Leto: Fast In-Place Recovery for LLM Training on Surviving Hardware](../../papers/arxiv-2610.00687/) | 2026-09-30 | 38 |
+| [CoEM: Empowering Long-Context Reasoning with Commit-on-Evidence Memory](../../papers/arxiv-2609.36935/) | 2026-09-29 | 47 |
+| [Probe-Space Preconditioning for Fast and Stable Zero-Order Training](../../papers/arxiv-2609.38095/) | 2026-09-29 | 42 |
+| [Beneath the Tokens: A Performance Engineering Study of Multi-Token Prediction in GPU-Accelerated LLM Inference](../../papers/arxiv-2609.35188/) | 2026-09-28 | 45 |
+| [Argus: Agentic, Reference-Calibrated, Tree-Guided, System-Software-Level Bottleneck Localization](../../papers/arxiv-2609.35508/) | 2026-09-28 | 45 |
 | [Not All Memories Are Equal: Hierarchical Collaborative Memory for Validity-Aware Retrieval in LLM Agents](../../papers/arxiv-2609.30289/) | 2026-09-28 | 44 |
+| [DPS: Dual-Mode Precision LLM Serving with Semi-Unified Memory](../../papers/arxiv-2609.34380/) | 2026-09-28 | 44 |
+| [HOCCL: Offloading Collective Communication from GPU Cores to Accelerate Distributed Training](../../papers/arxiv-2609.34334/) | 2026-09-28 | 43 |
+| [SlideDP: Scaling Host-Resident LLM Fine-Tuning Across Multiple GPUs](../../papers/arxiv-2609.34162/) | 2026-09-28 | 41 |
+| [OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading](../../papers/arxiv-2609.33385/) | 2026-09-27 | 57 |
+| [EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?](../../papers/arxiv-2609.33762/) | 2026-09-27 | 49 |
 | [LOIP:Collaborative Lossless LLM Inference Serving with Offloading-based Pipeline Parallelism on Edge Devices](../../papers/arxiv-2512.21835/) | 2026-09-23 | 52 |
 | [FlashBoB: I/O-Efficient Exact Backward-over-Backward for Softmax Attention](../../papers/arxiv-2609.24089/) | 2026-09-22 | 39 |
 | [Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services](../../papers/arxiv-2609.23321/) | 2026-09-20 | 48 |

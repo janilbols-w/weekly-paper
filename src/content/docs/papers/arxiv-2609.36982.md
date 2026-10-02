@@ -39,7 +39,7 @@ Knowledge concept tagging aims to assign specific concept or topic labels to edu
 ## 元数据
 
 - 作者：Zhiwei Yang, Jiahua Yang, Huiru Lin, Xing Chen, Quanlong Guan
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-01
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Nicozwy/SRJudge](https://github.com/Nicozwy/SRJudge)
 - 阅读深度：metadata

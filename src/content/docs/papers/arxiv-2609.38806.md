@@ -39,7 +39,7 @@ Next-token prediction has driven remarkable progress in large language models, y
 ## 元数据
 
 - 作者：Woosang Jeon, Jaeyeon Kim, Sham Kakade, Yilun Du, Amrit Singh Bedi, Arun Kumar Chithanar, Chul Lee, Taehyeong Kim, Sitan Chen
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/jwoosang1/blackboard-intelligence](https://github.com/jwoosang1/blackboard-intelligence)
 - 阅读深度：metadata

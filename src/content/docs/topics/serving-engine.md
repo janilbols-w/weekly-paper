@@ -5,28 +5,32 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **80** 篇。
+累计收录 **84** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [SparseEngine: Sparse-First Inference Engine](../../papers/arxiv-2609.39068/) | 2026-10-01 | 55 |
-| [Characterizing High Bandwidth Flash for LLM Serving](../../papers/arxiv-2609.39131/) | 2026-10-01 | 49 |
+| [ePACT: Energy-Performance-Aware Commitment Tracking for LLM Serving](../../papers/arxiv-2610.01784/) | 2026-10-02 | 45 |
 | [MoEless: Efficient MoE LLM Serving with Serverless Experts](../../papers/arxiv-2603.06350/) | 2026-10-01 | 46 |
-| [Taming Speculative Search for Test-Time Scaling in LLM Serving](../../papers/arxiv-2609.39334/) | 2026-10-01 | 45 |
-| [Preserving Provenance in Shared KV Caches for LLM Serving](../../papers/arxiv-2609.38706/) | 2026-10-01 | 43 |
 | [Working Around the Compute Ceiling: Byte-Exact Memory in Galahad Makes LLM Reading a One-Time Cost LLM Reading a One-Time Cost](../../papers/arxiv-2609.39358/) | 2026-10-01 | 41 |
-| [vSkipper: Translating Dynamic Layer Skipping into LLM Serving Gains](../../papers/arxiv-2609.37062/) | 2026-09-30 | 50 |
+| [SparseEngine: Sparse-First Inference Engine](../../papers/arxiv-2609.39068/) | 2026-09-30 | 55 |
+| [Characterizing High Bandwidth Flash for LLM Serving](../../papers/arxiv-2609.39131/) | 2026-09-30 | 49 |
 | [Systematic Exploration of Multi-core Architectures for Efficient LLM Serving using WaferAI-SIM](../../papers/arxiv-2510.05632/) | 2026-09-30 | 48 |
 | [InferScale: GPU-Native KV Injection for Personalized LLM Serving](../../papers/arxiv-2607.27090/) | 2026-09-30 | 47 |
 | [AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs](../../papers/arxiv-2609.34683/) | 2026-09-30 | 47 |
-| [SPLASH: Switching Parallel Layouts of Attention with Seamless Handoff for LLM Serving](../../papers/arxiv-2609.37626/) | 2026-09-30 | 46 |
 | [IndexRAG: Index-Time Reasoning for Multi-Hop Retrieval-Augmented Generation](../../papers/arxiv-2603.16415/) | 2026-09-30 | 46 |
-| [Does Execution Require Target KV Fidelity? A Mixed-Fidelity KV Runtime for LLM Serving](../../papers/arxiv-2609.33536/) | 2026-09-30 | 45 |
-| [Beyond Energy: When Sustainability Dimensions Reshape LLM Serving Decisions](../../papers/arxiv-2609.35569/) | 2026-09-30 | 44 |
-| [Rethinking Training-Inference Mismatch in LLM Reinforcement Learning: Where It Arises and How to Correct It](../../papers/arxiv-2609.32444/) | 2026-09-30 | 43 |
-| [Efficient Agentic LLM Serving over SSD-based Sparse KV Storage](../../papers/arxiv-2609.36938/) | 2026-09-30 | 42 |
+| [Denoising Surface: Modeling and Predicting Inference Cost for Diffusion LLM Serving](../../papers/arxiv-2610.00499/) | 2026-09-30 | 46 |
+| [Taming Speculative Search for Test-Time Scaling in LLM Serving](../../papers/arxiv-2609.39334/) | 2026-09-30 | 45 |
+| [Preserving Provenance in Shared KV Caches for LLM Serving](../../papers/arxiv-2609.38706/) | 2026-09-30 | 43 |
 | [Dr. MAS: Stable Reinforcement Learning for Multi-Agent LLM Systems](../../papers/arxiv-2602.08847/) | 2026-09-30 | 39 |
+| [SPLASH: Switching Parallel Layouts of Attention with Seamless Handoff for LLM Serving](../../papers/arxiv-2609.37626/) | 2026-09-29 | 51 |
+| [vSkipper: Translating Dynamic Layer Skipping into LLM Serving Gains](../../papers/arxiv-2609.37062/) | 2026-09-29 | 50 |
+| [Efficient Agentic LLM Serving over SSD-based Sparse KV Storage](../../papers/arxiv-2609.36938/) | 2026-09-29 | 42 |
 | [DynBranch: Speculative Subgraph Reuse for Dynamic Agentic LLM Serving](../../papers/arxiv-2609.31047/) | 2026-09-28 | 44 |
+| [Beyond Energy: When Sustainability Dimensions Reshape LLM Serving Decisions](../../papers/arxiv-2609.35569/) | 2026-09-28 | 44 |
+| [Tool Waiting and Re-arrival in Compile-Time-Static LLM Serving: Cost Mechanisms and Configuration Selection](../../papers/arxiv-2609.34663/) | 2026-09-28 | 42 |
+| [Does Execution Require Target KV Fidelity? A Mixed-Fidelity KV Runtime for LLM Serving](../../papers/arxiv-2609.33536/) | 2026-09-27 | 45 |
+| [Rethinking Training-Inference Mismatch in LLM Reinforcement Learning: Where It Arises and How to Correct It](../../papers/arxiv-2609.32444/) | 2026-09-26 | 48 |
+| [RR-Evict: Fine-Grained Prefix Cache Eviction beyond LRU for Agentic LLM Serving](../../papers/arxiv-2609.32278/) | 2026-09-26 | 43 |
 | [PipeLive: Efficient Live In-place Pipeline Parallelism Reconfiguration for Dynamic LLM Serving](../../papers/arxiv-2604.12171/) | 2026-09-24 | 42 |
 | [Hot-Cold Tiering of HBM and High Bandwidth Flash for Agentic LLM Serving](../../papers/doi-10.1109-lca.2026.3729099/) | 2026-09-22 | 49 |
 | [Stage-Aware Communication Scheduling for Disaggregated LLM Serving](../../papers/arxiv-2603.17456/) | 2026-09-22 | 44 |

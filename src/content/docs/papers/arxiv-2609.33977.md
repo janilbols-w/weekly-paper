@@ -39,7 +39,7 @@ Semi-structured pruning compresses large language models (LLMs) while keeping a 
 ## 元数据
 
 - 作者：Zhengao Li, Shuoqiu Li, Xiaofang Zhang, Yukai Jin, Gokcen Kestor, Yanfu Zhang, Yiming Zeng, Bin Ren, Chuxu Zhang, Shangqian Gao
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-09-30
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/ZhengaoLi/GroupMask](https://github.com/ZhengaoLi/GroupMask)
 - 阅读深度：metadata

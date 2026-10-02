@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2609.34814",
+  "title": "WaveAlign: Cache-Aware Query-Row Scheduling for Sparse Attention in Long-Video Generation",
+  "abstract": "Long-video generation with diffusion transformers (DiTs) produces extremely long token sequences, making attention a dominant inference bottleneck. Dynamic sparse attention reduces computation, but its realized speedup remains limited because irregular query-row execution degrades L2 cache locality and increases HBM traffic. We present WaveAlign, a lightweight, cache-aware query-row reordering framework for dynamic sparse attention. WaveAlign formulates row ordering as an optimization problem and approximates it with two stages. The first stage derives a low-rank SVD representation of sparse-mask rows and groups query rows with similar K/V access patterns, increasing K/V overlap among concurrently scheduled rows. The second stage exploits streaming GPU scheduling by sorting rows within each wave in descending order of their K/V-block counts, so that short rows from the current wave are followed by long rows from the next. This aligns K/V accesses across wave boundaries and enables shared blocks to be reused before eviction. An adaptive skip module avoids unprofitable reordering. By only permuting query and mask rows, WaveAlign preserves sparse-attention semantics and requires no changes to existing methods or backend kernels. Across two GPU architectures, two video DiTs, and four sparse-attention methods, WaveAlign raises the L2 cache hit ratio from 28.48%--36.35% to 79.38%--89.06%, reduces HBM read traffic by up to 92.11%, and achieves up to 1.25x kernel and 1.17x end-to-end generation speedup without quality loss.",
+  "url": "http://arxiv.org/abs/2609.34814v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.34814v1",
+  "published": "2026-09-28",
+  "updated": "2026-09-28",
+  "authors": [
+    "Zijian Dai",
+    "Sen Han",
+    "Youhui Bai",
+    "Shannon Wang",
+    "Kan Wu",
+    "Jingkai Huang",
+    "Yuhang Wang",
+    "Jing Li",
+    "Cheng Li"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "gpu-scheduling-virtualization",
+    "leaf": "GPU Scheduling & Virtualization",
+    "leaf_zh": "GPU 调度与虚拟化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu scheduling"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu scheduling",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Long-video generation with diffusion transformers (DiTs) produces extremely long token sequences, making attention a dominant inference bottleneck.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-02T04:46:58+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.34814v1",
+      "url": "http://arxiv.org/abs/2609.34814v1"
+    }
+  ]
+}

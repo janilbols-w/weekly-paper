@@ -5,21 +5,27 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **85** 篇。
+累计收录 **91** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [SEED: Self-Speculative Decoding via Implicit Encoder-Decoder](../../papers/arxiv-2609.36590/) | 2026-10-01 | 53 |
+| [EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts](../../papers/arxiv-2606.18967/) | 2026-10-02 | 44 |
 | [GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed](../../papers/arxiv-2609.39600/) | 2026-10-01 | 47 |
-| [Does This Action Still Explain the Task? Reverse Scoring for Diffusion Language Model Agents](../../papers/arxiv-2609.38536/) | 2026-10-01 | 44 |
 | [Reliable Parallel Decoding in Masked Diffusion Language Models](../../papers/arxiv-2609.36452/) | 2026-10-01 | 43 |
-| [FastGuide: Accelerating Reward Guidance for Diffusion Large Language Models](../../papers/arxiv-2609.36202/) | 2026-10-01 | 39 |
 | [JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting](../../papers/arxiv-2606.18394/) | 2026-09-30 | 57 |
+| [UBTree: Parallel Tree Drafting via Unigram and Bigram Models for Speculative Decoding](../../papers/arxiv-2609.39972/) | 2026-09-30 | 45 |
 | [JuDi: Revisiting Judge Decoding from First Principles via Training-Free Distributional Divergence](../../papers/arxiv-2601.04766/) | 2026-09-30 | 45 |
-| [DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification](../../papers/arxiv-2609.37532/) | 2026-09-30 | 44 |
 | [Acceptance Dynamics Across Cognitive Domains in Speculative Decoding](../../papers/arxiv-2604.14682/) | 2026-09-30 | 41 |
-| [From Position Risks to Block Survival: Faster Generation for Diffusion Language Models](../../papers/arxiv-2609.33390/) | 2026-09-30 | 39 |
+| [SEED: Self-Speculative Decoding via Implicit Encoder-Decoder](../../papers/arxiv-2609.36590/) | 2026-09-29 | 53 |
+| [DEdit: Iterative Draft Editing for Speculative Decoding](../../papers/arxiv-2609.38510/) | 2026-09-29 | 47 |
+| [Does This Action Still Explain the Task? Reverse Scoring for Diffusion Language Model Agents](../../papers/arxiv-2609.38536/) | 2026-09-29 | 44 |
+| [DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification](../../papers/arxiv-2609.37532/) | 2026-09-29 | 44 |
+| [CAST: Cost-Aware Speculative Trees from One-Pass Block Drafters](../../papers/arxiv-2610.00321/) | 2026-09-29 | 44 |
+| [LongSpark: Efficient speculative decoding with a fixed-cost parallel drafter](../../papers/arxiv-2609.37029/) | 2026-09-29 | 41 |
+| [FastGuide: Accelerating Reward Guidance for Diffusion Large Language Models](../../papers/arxiv-2609.36202/) | 2026-09-28 | 39 |
 | [Aurora-X: Built for Extreme Time Series Forecasting](../../papers/arxiv-2609.31038/) | 2026-09-28 | 38 |
+| [Resource-Efficient Speculative Decoding for Long-Context LLM Serving](../../papers/arxiv-2609.33184/) | 2026-09-27 | 50 |
+| [From Position Risks to Block Survival: Faster Generation for Diffusion Language Models](../../papers/arxiv-2609.33390/) | 2026-09-27 | 39 |
 | [TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference](../../papers/arxiv-2602.05145/) | 2026-09-25 | 40 |
 | [NebulaSD: Many-for-Many Speculative Decoding](../../papers/arxiv-2609.29364/) | 2026-09-24 | 46 |
 | [TSS: Target-Side Sparsification for Speculative Decoding in Domain-Specific Large Language Models](../../papers/arxiv-2609.26100/) | 2026-09-23 | 50 |

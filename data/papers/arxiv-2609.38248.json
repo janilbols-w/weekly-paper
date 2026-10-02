@@ -4,7 +4,7 @@
   "abstract": "Large language model agents can execute commands, create subprocesses, and directly access files and networks, allowing prompt injection or planning errors to become operating-system side effects. We present ContractWarden, a Linux reference monitor that enforces a human-authorized damage boundary without trusting the agent or its policy suggestions. A model may propose a tri-state asset contract - allow, deny, or no_egress - but a human makes the final choice. An execution gate binds the contract to a concrete task before untrusted code runs. An extended Berkeley Packet Filter (eBPF) Linux Security Modules (LSM) data plane then enforces file and network decisions and monotonically propagates no_egress through processes, regular files, pipes, FIFOs, and supported Unix-domain sockets. All 570 runs across 19 security tests satisfy predefined return-value and side-effect criteria. On three co-located file-I/O workloads, median overhead is 11.96-12.89% in a Linux 6.15 virtual machine and 35.79-61.54% on a Linux 6.15 physical platform, lower than the evaluated frozen ActPlane baseline. The results demonstrate deterministic kernel enforcement for declared assets, supported paths, and controlled object lifecycles.",
   "url": "https://arxiv.org/abs/2609.38248",
   "pdf_url": "https://arxiv.org/pdf/2609.38248",
-  "published": "2026-10-01",
+  "published": "2026-09-29",
   "updated": "2026-10-01",
   "authors": [
     "Dongxu Cui",
@@ -23,7 +23,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Supersedes the preprint DOI 10.21203/rs.3.rs-10865359/v1, which has a different title. Submitted to ICOIN 2027. 6 pages, 2 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -60,9 +60,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-01T04:45:30+00:00",
-  "last_seen": "2026-10-01T04:45:30+00:00",
+  "last_seen": "2026-10-02T04:46:58+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2609.38248v1",
+      "url": "http://arxiv.org/abs/2609.38248v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2609.38248",
