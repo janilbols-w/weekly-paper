@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **91** 篇。
+累计收录 **92** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LEAP: Learning Efficient Action Proposals For LLM Agents](../../papers/arxiv-2610.02670/) | 2026-10-05 | 43 |
 | [EfficientRollout: System-Aware Self-Speculative Decoding for RL Rollouts](../../papers/arxiv-2606.18967/) | 2026-10-02 | 44 |
 | [GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed](../../papers/arxiv-2609.39600/) | 2026-10-01 | 47 |
 | [Reliable Parallel Decoding in Masked Diffusion Language Models](../../papers/arxiv-2609.36452/) | 2026-10-01 | 43 |

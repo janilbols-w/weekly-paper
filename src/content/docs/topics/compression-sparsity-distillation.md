@@ -5,10 +5,30 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **470** 篇。
+累计收录 **490** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ChronoSpike: An Adaptive Spiking Graph Neural Network for Dynamic Graphs](../../papers/arxiv-2602.01124/) | 2026-10-05 | 49 |
+| [Capability Scaling-Down Laws for LLM Compression](../../papers/arxiv-2610.02462/) | 2026-10-05 | 49 |
+| [Lexicographic Multi-Objective On-Policy Distillation](../../papers/arxiv-2610.02359/) | 2026-10-05 | 48 |
+| [FastOPD: On-Policy Distillation for Lightweight VLA Deployment](../../papers/arxiv-2610.02832/) | 2026-10-05 | 47 |
+| [Exploring the Trade-Off Between Structured Pruning and Fault Tolerance in Deep Neural Networks for Space Applications](../../papers/arxiv-2610.03117/) | 2026-10-05 | 46 |
+| [Gains and Collapse in On-Policy Distillation:A Reinforcement Learning Perspective](../../papers/arxiv-2610.03185/) | 2026-10-05 | 45 |
+| [EchoDistill: Robust Large Audio Language Models via Noisy-to-Clean Self-Distillation](../../papers/arxiv-2605.23954/) | 2026-10-05 | 45 |
+| [Adaptive Mutual Distillation for Balanced Multi-Task Post-Training of Large Language Models](../../papers/arxiv-2610.02856/) | 2026-10-05 | 45 |
+| [Student-Guided Teacher Distillation for Efficient LLM Task Routing: Positioning Against Jev-Style System-1 Classifiers](../../papers/arxiv-2610.02516/) | 2026-10-05 | 44 |
+| [GenoTrace: Inheritable Watermarks for Genome Foundation Model Distillation](../../papers/arxiv-2609.35881/) | 2026-10-05 | 44 |
+| [Denser $\neq$ Better: Limits of On-Policy Self-Distillation for Continual Post-Training](../../papers/arxiv-2607.01763/) | 2026-10-05 | 44 |
+| [From Patching to Pruning Visual Computation in Vision Language Models](../../papers/arxiv-2610.03389/) | 2026-10-05 | 43 |
+| [Activation Sparsity with Weight Approximation for Faster LLM Decoding on Offloaded Weights](../../papers/arxiv-2610.02598/) | 2026-10-05 | 43 |
+| [Latent-MOPD: Latent Multi-Teacher On-Policy Distillation](../../papers/arxiv-2610.02381/) | 2026-10-05 | 42 |
+| [Dynamic Expert Pruning for Multi-Agent Systems](../../papers/arxiv-2610.02951/) | 2026-10-05 | 42 |
+| [AdaptViT: Runtime-Adaptive Vision Transformer Deployment on Custom RISC-V](../../papers/arxiv-2610.02288/) | 2026-10-05 | 42 |
+| [Slow-Fast Multi-Teacher On-Policy Distillation for Capability Preservation](../../papers/arxiv-2610.02324/) | 2026-10-05 | 41 |
+| [Pivot-SD: Efficient Self-Distillation for Masked Diffusion Language Models](../../papers/arxiv-2610.03665/) | 2026-10-05 | 41 |
+| [All Work And No Play Makes Jack a Dull Boy: Understanding and Preventing Catastrophic Strategy Collapse in RLVR](../../papers/arxiv-2610.02835/) | 2026-10-05 | 40 |
+| [Large Language Continuous Diffusion Models](../../papers/arxiv-2610.02665/) | 2026-10-05 | 39 |
 | [Distillation of Tabular Foundation Models into Efficient Predictors](../../papers/arxiv-2610.01435/) | 2026-10-02 | 50 |
 | [Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations](../../papers/arxiv-2610.00728/) | 2026-10-02 | 45 |
 | [LEGO-OPD: Factorized Teacher Composition for Multimodal On-Policy Distillation](../../papers/arxiv-2610.00333/) | 2026-10-02 | 43 |

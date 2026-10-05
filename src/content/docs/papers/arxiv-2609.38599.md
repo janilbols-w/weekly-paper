@@ -39,7 +39,7 @@ Group-wise post-training quantizers for large language models round weights onto
 ## 元数据
 
 - 作者：Xinyu Wang, Sicheng Lyu, Xiao-Wen Chang
-- 发布：2026-09-29；更新：2026-10-01
+- 发布：2026-09-29；更新：2026-10-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

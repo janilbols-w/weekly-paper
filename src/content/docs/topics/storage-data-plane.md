@@ -5,10 +5,11 @@ description: "Storage & Data Plane"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > 存储与数据平面**
 
-累计收录 **5** 篇。
+累计收录 **6** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Zephon: Elastic Determinism for Online, Stateful Foundation Model Data Loading Pipelines](../../papers/arxiv-2610.03087/) | 2026-10-05 | 46 |
 | [ContractWarden: Kernel-Enforced Damage Boundaries for AI Agents via Human-Authorized Contracts](../../papers/arxiv-2609.38248/) | 2026-09-29 | 38 |
 | [FSNIC: A Low-Latency Flow-Based Intrusion Detection Architecture for FPGA SmartNICs](../../papers/arxiv-2609.16363/) | 2026-09-16 | 40 |
 | [Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework](../../papers/arxiv-2609.12254/) | 2026-09-14 | 39 |

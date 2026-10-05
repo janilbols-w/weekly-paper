@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **252** 篇。
+累计收录 **255** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Hardware-Native Joint Sparse-Quantization for Trillion-Scale Mixture-of-Experts](../../papers/arxiv-2610.02241/) | 2026-10-05 | 46 |
+| [Post-Training Quantization of Autoregressive Weather Models](../../papers/arxiv-2610.02511/) | 2026-10-05 | 41 |
+| [16-bit Precision of Convolutional Neural Networks on Microcontroller Units for 8-bit Costs](../../papers/arxiv-2610.03402/) | 2026-10-05 | 41 |
 | [ConQuR: Corner Aligned Activation Quantization via Optimized Rotations for LLMs](../../papers/arxiv-2605.10793/) | 2026-10-02 | 49 |
 | [On-Device Commercial Intent Retrieval Under Size, Latency, and Privacy Constraints: A 3 MiB Retrieval System with Typed Egress Boundaries](../../papers/arxiv-2610.00170/) | 2026-10-02 | 42 |
 | [Format-Aware Fusion for Fast FP4 Pretraining](../../papers/arxiv-2610.00053/) | 2026-10-02 | 42 |

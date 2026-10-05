@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2602.01124",
+  "title": "ChronoSpike: An Adaptive Spiking Graph Neural Network for Dynamic Graphs",
+  "abstract": "Dynamic graph representation learning requires capturing both structural relations and temporal evolution, yet existing approaches face a core trade-off: attention-based methods offer expressiveness at O(T^2) complexity, while recurrent architectures suffer from gradient pathologies and dense state storage. Spiking neural networks provide event-driven efficiency but are constrained by sequential propagation, binary information loss, and local aggregation that lacks global context. We propose ChronoSpike, an adaptive spiking graph neural network that integrates learnable LIF neurons with per-channel membrane dynamics, multi-head spatially-attentive aggregation over continuous features, and a lightweight Transformer temporal encoder. This design enables fine-grained local modeling and long-range dependency capture with O(T.d) activation/state memory and an additional O(T^2) per-node attention term that remains small for the horizons evaluated here. ChronoSpike outperforms twelve state-of-the-art baselines on three large benchmarks by 2.0%~Macro-F1 and 2.4%~Micro-F1 on average while achieving 3-10 times faster training than recurrent methods with a constant 105K-parameter budget independent of graph size. We provide theoretical guarantees for membrane potential boundedness, gradient flow stability under contraction factor \\r{ho}<1, and BIBO stability; interpretability analyses reveal heterogeneous temporal receptive fields and a learned primacy effect with 83-88% sparsity. Our code is publicly available at: https://github.com/Abrar2652/ChronoSpike",
+  "url": "https://arxiv.org/abs/2602.01124",
+  "pdf_url": "https://arxiv.org/pdf/2602.01124",
+  "published": "2026-10-05",
+  "updated": "2026-10-05",
+  "authors": [
+    "Md Abrar Jahin",
+    "Taufikur Rahman Fuad",
+    "Jay Pujara",
+    "Craig Knoblock"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/Abrar2652/ChronoSpike",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 10,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Dynamic graph representation learning requires capturing both structural relations and temporal evolution, yet existing approaches face a core trade-off: attention-based methods offer expressiveness at O(T^2) complexity, while recurrent architectures suffer from gradient pathologies and dense state storage.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-05T05:08:16+00:00",
+  "last_seen": "2026-10-05T05:08:16+00:00",
+  "featured_weeks": [
+    "2026-W41"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.01124",
+      "url": "https://arxiv.org/abs/2602.01124"
+    }
+  ]
+}

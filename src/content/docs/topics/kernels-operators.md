@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **28** 篇。
+累计收录 **29** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FastKernels: Benchmarking GPU Kernel Generation in Production](../../papers/arxiv-2605.23215/) | 2026-10-05 | 56 |
 | [KernelZero: Co-Evolving Proposer and Coder for Continuously Improved GPU Kernel Generation](../../papers/arxiv-2609.33074/) | 2026-09-27 | 43 |
 | [KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization](../../papers/arxiv-2609.30059/) | 2026-09-24 | 49 |
 | [KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity](../../papers/arxiv-2609.30057/) | 2026-09-24 | 44 |

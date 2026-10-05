@@ -1,0 +1,89 @@
+{
+  "id": "arxiv:2610.03286",
+  "title": "VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction",
+  "abstract": "Agentic Reinforcement Learning (RL) trains LLM agents through multi-turn interactions with external tool environments. Its multi-turn nature exposes two system-level bottlenecks unaddressed by existing agentic RL frameworks. First, end-to-end training throughput is constrained by the slowest trajectories to complete, yet optimizing per-GPU utilization alone scatters rollout progress across many groups, delaying the completion of enough groups to unblock the next training step. Second, tool sandboxes are statically over-provisioned by their declared memory ceilings, leaving most physical memory stranded while replicating near-identical state across sandboxes launched from the same prompt. We present VenusRL, a fully disaggregated agentic RL system that addresses both bottlenecks. VenusRL's priority-aware action scheduler uses length-prediction heuristics to identify sample groups whose completion is most likely to unblock the next training step, and pushes them ahead of others across batch admission, KV Cache residency, and cross-worker request orchestration. VenusRL's environment resource manager combines a memory-aware admission threshold with a template-keyed page-sharing pool, packing more sandboxes per node while preserving strict memory isolation via write-protected page table entry aliasing and copy-on-write. Across representative agentic RL workloads, VenusRL achieves up to 4.24x end-to-end training speedup over state-of-the-art baselines and reduces environment cost by up to 89%.",
+  "url": "https://arxiv.org/abs/2610.03286",
+  "pdf_url": "https://arxiv.org/pdf/2610.03286",
+  "published": "2026-10-05",
+  "updated": "2026-10-05",
+  "authors": [
+    "Mingjun Zhang (Institute of Computing Technology",
+    "Chinese Academy of Sciences)",
+    "Yucheng Li (Beihang University)",
+    "Menghao Zhang (Beihang University)",
+    "Shuyong Zhu (Institute of Computing Technology",
+    "Chinese Academy of Sciences)",
+    "Ping Zhang (Infrawaves)",
+    "Xiaohe Hu (Infrawaves)",
+    "Jun Chen (Infrawaves)",
+    "Zhixin Wang (Shanghai Innovation Institute)",
+    "Xutong Wang (Infrawaves)",
+    "He Liu (Infrawaves)",
+    "Yanmin Jia (Infrawaves)",
+    "Shengrong Zhu (Infrawaves)",
+    "Peng Sun (Shanghai Zhifeng Co.",
+    "Ltd)",
+    "Mingjie Zhang (Infrawaves)",
+    "Liming Liu (Shanghai Innovation Institute)",
+    "Jinlong Hou (Shanghai Innovation Institute)",
+    "Yuan Cheng (Shanghai Innovation Institute)",
+    "Yujun Zhang (Institute of Computing Technology",
+    "Chinese Academy of Sciences)"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 18,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Agentic Reinforcement Learning (RL) trains LLM agents through multi-turn interactions with external tool environments.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-05T05:08:16+00:00",
+  "last_seen": "2026-10-05T05:08:16+00:00",
+  "featured_weeks": [
+    "2026-W41"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.03286",
+      "url": "https://arxiv.org/abs/2610.03286"
+    }
+  ]
+}

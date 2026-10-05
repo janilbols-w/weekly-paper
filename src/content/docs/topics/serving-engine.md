@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **84** 篇。
+累计收录 **85** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Exact Memory-Time Optimization for Prefix-Cached Language Model Serving](../../papers/arxiv-2610.02766/) | 2026-10-05 | 47 |
 | [ePACT: Energy-Performance-Aware Commitment Tracking for LLM Serving](../../papers/arxiv-2610.01784/) | 2026-10-02 | 45 |
 | [MoEless: Efficient MoE LLM Serving with Serverless Experts](../../papers/arxiv-2603.06350/) | 2026-10-01 | 46 |
 | [Working Around the Compute Ceiling: Byte-Exact Memory in Galahad Makes LLM Reading a One-Time Cost LLM Reading a One-Time Cost](../../papers/arxiv-2609.39358/) | 2026-10-01 | 41 |

@@ -39,7 +39,7 @@ Video diffusion models repeatedly process long spatiotemporal token sequences du
 ## 元数据
 
 - 作者：Haocheng Xi, Yiming Xie, Hexu Zhao, Yiwen Zhang, Michael Liu, Thomas Creavin, Kurt Keutzer, Xiuyu Li, Zhaoyang Lv, Chenfeng Xu, Haiwen Feng
-- 发布：2026-09-17；更新：2026-09-23
+- 发布：2026-09-17；更新：2026-10-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/OpenVDN/vdn-minimax-h3](https://github.com/OpenVDN/vdn-minimax-h3)
 - 阅读深度：metadata

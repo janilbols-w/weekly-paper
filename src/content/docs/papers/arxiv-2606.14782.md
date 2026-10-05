@@ -39,7 +39,7 @@ Multimodal Large Language Models (MLLMs) achieve strong vision-language reasonin
 ## 元数据
 
 - 作者：Tianhao Chen, Yuheng Wu, Kelu Yao, Xiaogang Xu, Xiaobin Hu, Dongman Lee
-- 发布：2026-08-25；更新：2026-08-25
+- 发布：2026-08-25；更新：2026-10-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

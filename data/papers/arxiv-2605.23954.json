@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2605.23954",
+  "title": "EchoDistill: Robust Large Audio Language Models via Noisy-to-Clean Self-Distillation",
+  "abstract": "Large Audio Language Models (LALMs) remain vulnerable to acoustic noise, which can obscure task-relevant evidence and produce unreliable responses. We propose EchoDistill, a noisy-to-clean self-distillation framework that uses clean audio as privileged information during post-training. A noisy-input student samples candidate responses reflecting its inference-time behavior, while a frozen copy of the same backbone processes the corresponding clean audio. EchoDistill combines masked response-token distillation, task-gated consistency shaping, and teacher-referenced group-relative optimization to align noisy-input generation with clean-conditioned semantics. Only the student is retained at inference time, introducing no additional inference cost. Across three LALM backbones and three audio domains at -10dB, EchoDistill improves average noisy-input accuracy by 1.63 percentage points over the strongest baseline. On Qwen2.5-Omni, it raises noisy-input accuracy from 59.33% to 62.94%, while clean-audio accuracy increases from 76.56% to 77.56%. Replacing matched audio with random, shuffled, or silent inputs reduces accuracy by 3.08-6.42 points, confirming that matched acoustic evidence contributes to its predictions. Additional evaluations show improvements on held-out additive noises and external benchmarks, while revealing that these gains do not reliably extend to non-additive distortions. These results demonstrate robust post-training improvements under severe additive noise without sacrificing clean-audio capability across diverse tasks.",
+  "url": "https://arxiv.org/abs/2605.23954",
+  "pdf_url": "https://arxiv.org/pdf/2605.23954",
+  "published": "2026-10-05",
+  "updated": "2026-10-05",
+  "authors": [
+    "Kaiwen Luo",
+    "Chunxi Luo",
+    "Liang Lin",
+    "Yuxuan Li",
+    "Zhenhong Zhou",
+    "Junhao Dong",
+    "Yingjie Zhou",
+    "Zhendong Chu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large Audio Language Models (LALMs) remain vulnerable to acoustic noise, which can obscure task-relevant evidence and produce unreliable responses.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-05T05:08:16+00:00",
+  "last_seen": "2026-10-05T05:08:16+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.23954",
+      "url": "https://arxiv.org/abs/2605.23954"
+    }
+  ]
+}

@@ -5,11 +5,13 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **26** 篇。
+累计收录 **28** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [ORACLE: Agentic AI Orchestrator Routing Via Adaptive Verifier Calibration Feedback](../../papers/arxiv-2607.22465/) | 2026-10-01 | 48 |
+| [Collective Bias Mitigation via Model Routing and Collaboration](../../papers/arxiv-2610.03240/) | 2026-10-05 | 44 |
+| [Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](../../papers/arxiv-2610.02267/) | 2026-10-05 | 43 |
+| [ORACLE: Agentic AI Orchestrator Routing Via Adaptive Verifier Calibration Feedback](../../papers/arxiv-2607.22465/) | 2026-10-01 | 53 |
 | [SeLMRoute: Probabilistic Semantic Evidence for Large Language Model Routing](../../papers/arxiv-2609.34736/) | 2026-09-28 | 51 |
 | [Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows](../../papers/arxiv-2609.32917/) | 2026-09-26 | 53 |
 | [Cross-Model Autoscaling for Shared LLM Serving](../../papers/arxiv-2609.29160/) | 2026-09-24 | 44 |

@@ -5,7 +5,7 @@ description: "Genome foundation models are growing into sparse mixture-of-expert
 
 **评分：43/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
-[论文原文](http://arxiv.org/abs/2609.35883v1) · [PDF](https://arxiv.org/pdf/2609.35883v1)
+[论文原文](https://arxiv.org/abs/2609.35883) · [PDF](https://arxiv.org/pdf/2609.35883)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ Genome foundation models are growing into sparse mixture-of-experts (MoE) networ
 ## 元数据
 
 - 作者：Guang Yang, Fengchen Liu
-- 发布：2026-09-27；更新：2026-09-27
-- 来源：arXiv；Venue：未确认
+- 发布：2026-09-27；更新：2026-10-05
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

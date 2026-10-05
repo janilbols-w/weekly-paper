@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **39** 篇。
+累计收录 **41** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Can We Trust LLMs on Memristors? Diving into Reasoning Ability under Non-Ideality](../../papers/arxiv-2603.13725/) | 2026-10-05 | 39 |
+| [AI-driven Thermal-aware Data Center Capacity Planning](../../papers/arxiv-2610.02442/) | 2026-10-05 | 39 |
 | [MemExplorer: Navigating the Heterogeneous Memory Design Space for Agentic Inference NPUs](../../papers/arxiv-2604.16007/) | 2026-09-30 | 45 |
 | [EdgeDAE: Acceleration of Diffusion Action Experts for Real-Time Physical AI with Tiny VLAs on Edge FPGA-GPU Systems](../../papers/arxiv-2610.00311/) | 2026-09-28 | 44 |
 | [Flux: Optimal Scheduling of Optical Circuit Switches for LLM Training](../../papers/arxiv-2609.25949/) | 2026-09-23 | 38 |

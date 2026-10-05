@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **84** 篇。
+累计收录 **87** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures](../../papers/arxiv-2610.03394/) | 2026-10-05 | 47 |
+| [LiteEMG-FM: An Efficient and Deployable Foundation Model for Robust EMG Sensing](../../papers/arxiv-2610.02497/) | 2026-10-05 | 44 |
+| [Morpheus: A Morphology-Aware Neural Tokenizer and Word Embedder for Turkish](../../papers/arxiv-2606.18717/) | 2026-10-05 | 39 |
 | [NeurDuo-EEG: A Long-Sequence EEG Foundation Model with Persistent State and Explicit Memory](../../papers/arxiv-2609.38587/) | 2026-10-01 | 47 |
 | [NOSA: Native and Offloadable Sparse Attention](../../papers/arxiv-2510.13602/) | 2026-09-30 | 49 |
 | [SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents](../../papers/arxiv-2609.35596/) | 2026-09-30 | 43 |

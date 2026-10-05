@@ -39,7 +39,7 @@ Training long-horizon LLM agents with reinforcement learning is challenging beca
 ## 元数据
 
 - 作者：Woongyeong Yeo, Yumin Choi, Taekyung Ki, Sung Ju Hwang
-- 发布：2026-08-28；更新：2026-08-28
+- 发布：2026-08-28；更新：2026-10-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

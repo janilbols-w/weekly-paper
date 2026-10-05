@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **88** 篇。
+累计收录 **90** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Harnessing LLMs as Agents: What Does It Cost?](../../papers/arxiv-2610.02488/) | 2026-10-05 | 39 |
+| [Fisher-Guided Submodular Data Selection for Continual Pre-Training of Large Language Models](../../papers/arxiv-2610.02593/) | 2026-10-05 | 38 |
 | [Fast Polynomial Transcendentals for LLMs](../../papers/arxiv-2610.00049/) | 2026-10-02 | 44 |
 | [Trait-space Monitoring for Emergent Misalignment During Supervised Finetuning](../../papers/arxiv-2606.07631/) | 2026-10-02 | 40 |
 | [Match the Distribution, Not the Compute: Post-Training Multi-Token Prediction Heads](../../papers/arxiv-2610.00888/) | 2026-10-01 | 41 |

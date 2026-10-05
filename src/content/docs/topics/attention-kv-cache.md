@@ -5,10 +5,16 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **156** 篇。
+累计收录 **162** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SlimKV: Joint Token-Feature KV Cache Compression with Reconstruction-Free Beacon Attention](../../papers/arxiv-2610.02953/) | 2026-10-05 | 52 |
+| [VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction](../../papers/arxiv-2610.03286/) | 2026-10-05 | 50 |
+| [Tailoring the Quantization Space for 1-Bit KV Cache Compression](../../papers/arxiv-2610.03027/) | 2026-10-05 | 45 |
+| [ServeTwin: A Benchmark-Validated Simulator for Distributed LLM Architecture Exploration](../../papers/arxiv-2610.02732/) | 2026-10-05 | 42 |
+| [Prompted to Discriminate: Generalizing Malicious-Input Probes in the Wild](../../papers/arxiv-2610.02413/) | 2026-10-05 | 41 |
+| [Page-EntroKV: Hardware-Aligned, Entropy-Weighted KV-Cache Eviction under Grouped-Query Attention](../../papers/arxiv-2610.03135/) | 2026-10-05 | 40 |
 | [Nalar: Workflow-Aware Management of Agentic Applications](../../papers/arxiv-2601.05109/) | 2026-10-02 | 41 |
 | [KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing](../../papers/arxiv-2606.17034/) | 2026-10-01 | 52 |
 | [Block Sparse Flash Attention](../../papers/arxiv-2512.07011/) | 2026-09-30 | 54 |

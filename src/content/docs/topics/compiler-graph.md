@@ -5,10 +5,11 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **92** 篇。
+累计收录 **93** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Are you Synthesizing or Recalling? Evaluating LLMs on Algorithmic Code Retrieval](../../papers/arxiv-2610.02438/) | 2026-10-05 | 45 |
 | [CARM: Cancellation-Aware Response Masking for LLM Reinforcement Learning](../../papers/arxiv-2610.02039/) | 2026-10-01 | 41 |
 | [CorrGRPO: Correlation-Normalized GRPO for Multi-Reward Learning](../../papers/arxiv-2609.36820/) | 2026-10-01 | 38 |
 | [From Reasoning to Generalization: Knowledge-Augmented LLMs for ARC Benchmark](../../papers/arxiv-2505.17482/) | 2026-09-30 | 44 |
