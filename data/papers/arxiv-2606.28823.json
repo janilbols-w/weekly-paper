@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2606.28823",
+  "title": "Labeling Training Data for Entity Matching Using Large Language Models",
+  "abstract": "Large language models (LLMs) achieve strong entity matching performance without task-specific training data, but applying them to large sets of candidate pairs is slow and costly. Matchers built on pretrained language models (PLMs), such as BERT, offer faster inference but require training data. We systematically study knowledge-distillation workflows in which an LLM teacher labels training pairs for a smaller student matcher. We vary pair selection, labeling budget, teacher model, correspondence post-processing, and student model across eight benchmarks, including unseen entities and non-English data. We compare students trained on machine-labeled data with matchers trained on the original benchmark training sets. In most cases, PLM-based matchers trained on LLM-labeled data perform similarly to those trained on benchmark sets. Pair selection matters most for small labeling budgets, where active learning is often most effective. An open-weight teacher trains competitive students, so distillation requires no closed-weight models. Compact PLM-based students compete with much larger LLM students on most tasks while requiring 34 to 459 times less inference time than direct LLM matching. On the two benchmarks with high shares of unseen products, PLM-based students substantially underperform their teachers, as do students trained on benchmark data. Under GPT-5.2 pricing, LLM labeling costs per training set average \\$5.86 to \\$8.11. These findings support knowledge distillation as a practical approach to reduce the effort of labeling task-specific training data while enabling efficient inference.",
+  "url": "https://arxiv.org/abs/2606.28823",
+  "pdf_url": "https://arxiv.org/pdf/2606.28823",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Aaron Steiner",
+    "Christian Bizer"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models (LLMs) achieve strong entity matching performance without task-specific training data, but applying them to large sets of candidate pairs is slow and costly.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.28823",
+      "url": "https://arxiv.org/abs/2606.28823"
+    }
+  ]
+}

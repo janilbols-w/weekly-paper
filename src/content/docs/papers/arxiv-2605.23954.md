@@ -39,7 +39,7 @@ Large Audio Language Models (LALMs) remain vulnerable to acoustic noise, which c
 ## 元数据
 
 - 作者：Kaiwen Luo, Chunxi Luo, Liang Lin, Yuxuan Li, Zhenhong Zhou, Junhao Dong, Yingjie Zhou, Zhendong Chu
-- 发布：2026-10-05；更新：2026-10-05
+- 发布：2026-10-05；更新：2026-10-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

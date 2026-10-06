@@ -40,7 +40,7 @@ Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs
 ## 元数据
 
 - 作者：Lanxiang Hu, Zhaoxiang Feng, Yulun Wu, Haoran Yuan, Yujie Zhao, Yu-Yang Qian, Bojun Wang, Peng Zhao, Daxin Jiang, Yibo Zhu, Tajana Rosing, Hao Zhang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-30；更新：2026-10-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/hao-ai-lab/JetSpec](https://github.com/hao-ai-lab/JetSpec)
 - 阅读深度：abstract

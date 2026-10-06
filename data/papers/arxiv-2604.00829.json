@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2604.00829",
+  "title": "LinguDistill: Recovering Linguistic Ability in Vision-Language Models via Selective Cross-Modal Distillation",
+  "abstract": "Turning a pretrained language model (LM) into a vision-language model (VLM) through multimodal fine-tuning often erodes its native language ability, a form of catastrophic forgetting that shows up even on text-only tasks. This loss is hard to undo with further fine-tuning, and existing remedies add adapters or alignment modules that increase architectural complexity and inference cost. We propose LinguDistill, an adapter-free knowledge distillation method that uses the original frozen LM as the teacher during multimodal post-training. To let a text-only teacher supervise vision-conditioned outputs, we introduce layer-wise KV-cache sharing, which exposes the teacher to the student's multimodal representations without changing either architecture. We then apply distillation selectively, on language-heavy data only, so the teacher restores linguistic ability while the student keeps its visual grounding on document and OCR tasks. LinguDistill recovers the language and knowledge performance lost during multimodal fine-tuning, matching the original VLM on average over text-only benchmarks (ARC, HellaSwag) and exceeding it on ScienceQA, while keeping vision-heavy performance close to standard fine-tuning. Since the teacher is dropped after training, the final model adds no parameters and no inference cost. More broadly, our results show that a model's own pre-adaptation backbone is a practical teacher for undoing forgetting, suggesting a simple recipe for keeping language ability intact as models are extended to new modalities.",
+  "url": "https://arxiv.org/abs/2604.00829",
+  "pdf_url": "https://arxiv.org/pdf/2604.00829",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Patrick Amadeus Irawan",
+    "Erland Hilman Fuadi",
+    "Shanu Kumar",
+    "Alham Fikri Aji",
+    "Yova Kementchedjhieva"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Turning a pretrained language model (LM) into a vision-language model (VLM) through multimodal fine-tuning often erodes its native language ability, a form of catastrophic forgetting that shows up even on text-only tasks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.00829",
+      "url": "https://arxiv.org/abs/2604.00829"
+    }
+  ]
+}

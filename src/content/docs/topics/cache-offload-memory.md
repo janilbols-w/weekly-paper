@@ -5,10 +5,23 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **87** 篇。
+累计收录 **100** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PhaseGate: Phase-Aware CPU Retrieval Scheduling for On-Device LLMs on Unified Memory](../../papers/arxiv-2610.04537/) | 2026-10-06 | 49 |
+| [Efficient Test-time Adaptation through Candidate Verification and Divergence Shifts](../../papers/arxiv-2610.06147/) | 2026-10-06 | 49 |
+| [MOLT: A Fine-Grained GPU Memory Sharing System for LLM Serving with Opportunistic Fine-Tuning](../../papers/arxiv-2610.05748/) | 2026-10-06 | 45 |
+| [Implementation of Zero-shot Semantic Communication on Software Defined Radio](../../papers/arxiv-2610.05764/) | 2026-10-06 | 44 |
+| [Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents](../../papers/arxiv-2607.13591/) | 2026-10-06 | 42 |
+| [Vision Transformer Ensembles for Panoramic Street Segmentation](../../papers/arxiv-2610.06063/) | 2026-10-06 | 41 |
+| [The Assistance Dilemma: Learning to Teach via Multi-Turn Reinforcement Learning](../../papers/arxiv-2610.06446/) | 2026-10-06 | 40 |
+| [FlashMoE: Reducing SSD I/O Bottlenecks via ML-Based Cache Replacement for Mixture-of-Experts Inference on Edge Devices](../../papers/arxiv-2601.17063/) | 2026-10-06 | 40 |
+| [Factorized Delayed Streams Modeling for LLM-based Streaming ASR](../../papers/arxiv-2610.04333/) | 2026-10-06 | 40 |
+| [OrigaMIG: MIG-Aware VM Placement with a Neighborhood-Restricted BILP and Live Migration](../../papers/arxiv-2610.06646/) | 2026-10-06 | 39 |
+| [MercerFlow: Flow Matching in a Kernel-Induced Latent Space for Probabilistic Forecasting](../../papers/arxiv-2610.06039/) | 2026-10-06 | 39 |
+| [INMS: Memory Sharing for Large Language Model based Agents](../../papers/arxiv-2404.09982/) | 2026-10-06 | 39 |
+| [Rethinking Tabular Foundation Models On Data Streams](../../papers/arxiv-2610.05352/) | 2026-10-06 | 38 |
 | [EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures](../../papers/arxiv-2610.03394/) | 2026-10-05 | 47 |
 | [LiteEMG-FM: An Efficient and Deployable Foundation Model for Robust EMG Sensing](../../papers/arxiv-2610.02497/) | 2026-10-05 | 44 |
 | [Morpheus: A Morphology-Aware Neural Tokenizer and Word Embedder for Turkish](../../papers/arxiv-2606.18717/) | 2026-10-05 | 39 |

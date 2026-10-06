@@ -5,10 +5,34 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **490** 篇。
+累计收录 **514** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PATCH: Learnable Tile-level Hybrid Sparsity for LLMs](../../papers/arxiv-2509.23410/) | 2026-10-06 | 50 |
+| [EfficientXpert: Efficient Domain Adaptation for Large Language Models via Propagation-Aware Pruning](../../papers/arxiv-2511.19935/) | 2026-10-06 | 50 |
+| [Beyond Masked Sparsity: SNACK Enables Truly Sparse Neural Networks on GPU](../../papers/arxiv-2610.04093/) | 2026-10-06 | 50 |
+| [More Value per Key: Asymmetric Sparse Attention for Faster LLM Decoding](../../papers/arxiv-2610.04753/) | 2026-10-06 | 49 |
+| [KVE-KD: Key Visual Evidence-Guided Knowledge Distillation for Vision-Language Models](../../papers/arxiv-2610.03842/) | 2026-10-06 | 46 |
+| [Know Thyself, Teach Thyself: Internal Information Flow for Selective Self-Distillation](../../papers/arxiv-2609.36695/) | 2026-10-06 | 45 |
+| [How Should Teachers Be Prepared? RL on Student-Induced States for On-Policy Distillation](../../papers/arxiv-2610.04950/) | 2026-10-06 | 45 |
+| [Data-Free On-Policy Distillation: How Far Can We Go Without External Data?](../../papers/arxiv-2609.14193/) | 2026-10-06 | 45 |
+| [Sharpen Without Search: On-Policy Distillation of Sequence-Level Power Distribution](../../papers/arxiv-2610.06804/) | 2026-10-06 | 44 |
+| [Response-Based Knowledge Distillation for Multilingual Jailbreak Prevention Unwittingly Compromises Safety](../../papers/arxiv-2602.11157/) | 2026-10-06 | 44 |
+| [Improving Reasoning Ability via Asynchronous On-Policy Self-Distillation under Positive Rollouts](../../papers/arxiv-2605.06650/) | 2026-10-06 | 44 |
+| [Towards Unbiased On-Policy Distillation for Block Diffusion Language Models](../../papers/arxiv-2610.05373/) | 2026-10-06 | 43 |
+| [General Decision Models: Benchmarking and Insights Beyond Jev](../../papers/arxiv-2610.03935/) | 2026-10-06 | 43 |
+| [Resource-Limited Joint Multimodal Sentiment Reasoning and Classification via Chain-of-Thought Enhancement and Distillation](../../papers/arxiv-2508.05234/) | 2026-10-06 | 42 |
+| [RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents](../../papers/arxiv-2610.06401/) | 2026-10-06 | 42 |
+| [Mask2Cause: Temporal Causal Discovery Beyond Causality in Mean](../../papers/arxiv-2605.07280/) | 2026-10-06 | 42 |
+| [LinguDistill: Recovering Linguistic Ability in Vision-Language Models via Selective Cross-Modal Distillation](../../papers/arxiv-2604.00829/) | 2026-10-06 | 42 |
+| [MAGIC: Topology-Aware Analytic Graph Few-Shot Class-Incremental Learning](../../papers/arxiv-2610.04963/) | 2026-10-06 | 40 |
+| [Graph Neural Network-Driven Deep Reinforcement Learning for Scalable RIS Allocation](../../papers/arxiv-2610.06295/) | 2026-10-06 | 40 |
+| [Labeling Training Data for Entity Matching Using Large Language Models](../../papers/arxiv-2606.28823/) | 2026-10-06 | 39 |
+| [LLM-enhanced spatio-temporal learning for grid-level docked bike sharing demand prediction](../../papers/arxiv-2610.03834/) | 2026-10-06 | 39 |
+| [DiffGate: Difficulty-Gated Teacher Guidance for On-Policy Distillation](../../papers/arxiv-2610.04596/) | 2026-10-06 | 39 |
+| [ASCENT: Online Test-Time Training of Long-Horizon Agents via Self-Distillation of Verified Experience](../../papers/arxiv-2610.05303/) | 2026-10-06 | 39 |
+| [Scaling Down the Scaling Laws: Parameter Efficiency and Compute-Optimal Training in Resource-Constrained Large Language Models](../../papers/arxiv-2610.06387/) | 2026-10-06 | 38 |
 | [ChronoSpike: An Adaptive Spiking Graph Neural Network for Dynamic Graphs](../../papers/arxiv-2602.01124/) | 2026-10-05 | 49 |
 | [Capability Scaling-Down Laws for LLM Compression](../../papers/arxiv-2610.02462/) | 2026-10-05 | 49 |
 | [Lexicographic Multi-Objective On-Policy Distillation](../../papers/arxiv-2610.02359/) | 2026-10-05 | 48 |

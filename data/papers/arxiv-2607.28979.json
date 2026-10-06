@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2607.28979",
+  "title": "KV Cache Translation across Heterogeneous Large Language Models",
+  "abstract": "Heterogeneous Large Language Model (LLM) systems increasingly share contexts, retrieved evidence, and multi-agent dialogue histories, yet their internal key-value (KV) caches remain model-specific and cannot be reused across architectures. Consequently, each model must repeatedly prefill or store caches for the same context, limiting the scalability of multi-model reasoning and long-context generation. We propose Mixture-of-Translators (MoT), a cache translation framework that maps context KV caches from a source LLM into the cache space of a target LLM. Unlike prior approaches that depend on a single projection path or global shared latent space, MoT uses multiple translator modules with token-level routing to capture diverse cache translations. We further introduce a Context Correction Loss that aligns the replayed target trajectory with the native target trajectory, reducing residual translation error. Our analysis reveals two competing failure modes: propagation error from early injection and correction-deficit error from late injection. We evaluate heterogeneous translation among Llama, Gemma, and Qwen, spanning substantially different architectures and KV-cache spaces. MoT achieves an average accuracy of 57.6% and F1 of 0.42. These scores recover 95.0% and 120.6% of native target performance and reach 1.5x and 3.5x the strongest-baseline scores, respectively. In practical case studies, MoT enables accurate heterogeneous-agent discussion with scale-invariant KV-memory behavior as the number of agents grows, while retaining near-native generation quality in long-context cache-augmented generation. These results demonstrate scalable KV-cache reuse across heterogeneous LLMs.",
+  "url": "https://arxiv.org/abs/2607.28979",
+  "pdf_url": "https://arxiv.org/pdf/2607.28979",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Jin-woo Lee",
+    "Minkyung Song",
+    "Junghyun Oh",
+    "Seunghoon Han",
+    "Gwangseon Jang",
+    "Soyoung Park",
+    "Sungsu Lim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "context cache",
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: context cache, kv cache, kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Heterogeneous Large Language Model (LLM) systems increasingly share contexts, retrieved evidence, and multi-agent dialogue histories, yet their internal key-value (KV) caches remain model-specific and cannot be reused across architectures.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [
+    "2026-W41"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.28979",
+      "url": "https://arxiv.org/abs/2607.28979"
+    }
+  ]
+}

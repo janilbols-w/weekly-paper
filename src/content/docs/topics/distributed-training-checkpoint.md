@@ -5,10 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **90** 篇。
+累计收录 **94** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Gefen: Optimized Stochastic Optimizer](../../papers/arxiv-2606.13894/) | 2026-10-06 | 50 |
+| [FedUHD: Unsupervised Federated Learning using In-Memory Hyperdimensional Computing](../../papers/arxiv-2508.12021/) | 2026-10-06 | 50 |
+| [Language-Conditioned Token and Reasoning Efficiency in Large Language Models: A Paired Cross-Lingual Study Protocol](../../papers/arxiv-2610.04295/) | 2026-10-06 | 42 |
+| [Adaptive-Shot Hybrid Quantum Anomaly Detection for Tactile Internet Security: Reliability-Aware Measurement Allocation Under Resource Constraints](../../papers/arxiv-2610.05835/) | 2026-10-06 | 40 |
 | [Harnessing LLMs as Agents: What Does It Cost?](../../papers/arxiv-2610.02488/) | 2026-10-05 | 39 |
 | [Fisher-Guided Submodular Data Selection for Continual Pre-Training of Large Language Models](../../papers/arxiv-2610.02593/) | 2026-10-05 | 38 |
 | [Fast Polynomial Transcendentals for LLMs](../../papers/arxiv-2610.00049/) | 2026-10-02 | 44 |

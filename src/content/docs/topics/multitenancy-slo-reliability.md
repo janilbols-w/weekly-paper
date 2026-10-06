@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **31** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [From Overloaded to Guaranteed: High-Throughput Multi-SLO Enforcement for LoRA-Assisted On-Premise LLM Deployment](../../papers/arxiv-2610.04956/) | 2026-10-06 | 45 |
 | [Coda: Exploiting Admission Flexibility for Coding-Agent Serving](../../papers/arxiv-2610.03088/) | 2026-10-05 | 42 |
 | [EdgeCraft: Automated Model Crafting for Edge IoT](../../papers/arxiv-2609.35167/) | 2026-09-30 | 43 |
 | [TeDiServe: High SLO Attainment Serving for Diffusion Language Models](../../papers/arxiv-2606.29094/) | 2026-09-28 | 44 |

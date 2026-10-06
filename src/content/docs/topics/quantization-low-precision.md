@@ -5,10 +5,22 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **255** 篇。
+累计收录 **266** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BARQ: Balanced Codebook Refinement for Low-Bit LLM Quantization](../../papers/arxiv-2610.04490/) | 2026-10-06 | 55 |
+| [Loopy: Low-Bit Quantization Framework for Looped Language Models](../../papers/arxiv-2610.05265/) | 2026-10-06 | 51 |
+| [Differentiable Bit-Widths: Co-optimizing Pruning and Quantization via SVD for Ultra-Efficient LLM Compression](../../papers/arxiv-2610.06026/) | 2026-10-06 | 47 |
+| [Understanding the Weight Averaging Mechanism in LLM Training for Post-Training Quantization](../../papers/arxiv-2610.05329/) | 2026-10-06 | 43 |
+| [Saying, Not Knowing: Aggressively GGUF-Quantized Small Language Models Still Write Rare Words They Can No Longer Define](../../papers/arxiv-2610.04403/) | 2026-10-06 | 43 |
+| [EMG-GPT: Predictive Pretraining on Residual-Quantized EMG Tokens for Hand Pose Estimation](../../papers/arxiv-2610.05235/) | 2026-10-06 | 41 |
+| [Adaptive Inverted-Index Routing for Granular Mixtures-of-Experts](../../papers/arxiv-2605.04952/) | 2026-10-06 | 40 |
+| [Quantifying the Stability of Multi-Step Reasoning via Error Amplification](../../papers/arxiv-2610.06404/) | 2026-10-06 | 39 |
+| [Dissecting Quantization Error: A Concentration-Alignment Perspective](../../papers/arxiv-2603.04359/) | 2026-10-06 | 39 |
+| [Anosognosia in LLMs: Probing Self-Awareness of Quantized Computational Substrate](../../papers/arxiv-2610.06174/) | 2026-10-06 | 39 |
+| [StagQ: Constraint-Driven Multi-Precision Weight Quantization for LLMs](../../papers/arxiv-2610.05977/) | 2026-10-06 | 38 |
+| [Shared Stopping Decisions Change Answers in HQQ Cache Quantization](../../papers/arxiv-2610.06251/) | 2026-10-06 | 38 |
 | [Hardware-Native Joint Sparse-Quantization for Trillion-Scale Mixture-of-Experts](../../papers/arxiv-2610.02241/) | 2026-10-05 | 46 |
 | [Post-Training Quantization of Autoregressive Weather Models](../../papers/arxiv-2610.02511/) | 2026-10-05 | 41 |
 | [16-bit Precision of Convolutional Neural Networks on Microcontroller Units for 8-bit Costs](../../papers/arxiv-2610.03402/) | 2026-10-05 | 41 |
@@ -122,7 +134,7 @@ description: "Quantization & Low Precision"
 | [Vortex: Bridging Extreme Compression and Efficient LLM Inference](../../papers/arxiv-2609.12208/) | 2026-09-14 | 43 |
 | [Attention Quantization for Tabular Foundation Models](../../papers/arxiv-2609.13031/) | 2026-09-14 | 43 |
 | [The Battery Price of edge AI: A study of the Environmental Impact of LLM Inference on Mobile Devices](../../papers/arxiv-2609.11940/) | 2026-09-14 | 42 |
-| [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-13 | 54 |
+| [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](../../papers/arxiv-2609.14762/) | 2026-09-13 | 53 |
 | [RDQ: Residual Distribution Quantization for Large Language Models](../../papers/arxiv-2607.10137/) | 2026-09-11 | 44 |
 | [ESSA: Evolutionary Strategies for Scalable Alignment](../../papers/arxiv-2507.04453/) | 2026-09-10 | 41 |
 | [Structured Transforms for Low-Overhead Quantization of Language Models](../../papers/arxiv-2609.11687/) | 2026-09-10 | 40 |
@@ -253,7 +265,6 @@ description: "Quantization & Low Precision"
 | [QEvict: Recoverable Quantized KV Eviction for Attention-Drift-Robust Long-Context Decoding](../../papers/arxiv-2608.05326/) | 2026-08-05 | 47 |
 | [Energy- and Memory-Efficient PEFT Methods for Personalized On-Device SLMs on Consumer GPUs](../../papers/arxiv-2608.04488/) | 2026-08-05 | 46 |
 | [Beyond Rotations: AuroOFT for Expressive Quantized Orthogonal Fine-Tuning](../../papers/arxiv-2608.05253/) | 2026-08-05 | 40 |
-| [Tropical Algebraic Geometry for Neuronal Representations: An Arakelov-Green Measure Based Descriptor for Graph Learning](../../papers/arxiv-2608.04460/) | 2026-08-05 | 38 |
 | [A Comprehensive FP8 Training Recipe for Reasoning-Enhanced Language Models](../../papers/arxiv-2509.22536/) | 2026-08-04 | 51 |
 | [Heterogeneity-Aware Microscaling for Efficient Low-Bit LLM Inference](../../papers/arxiv-2608.03867/) | 2026-08-04 | 49 |
 | [TempoNet: Slack-Quantized Transformer-Guided Reinforcement Scheduler for Adaptive Deadline-Centric Real-Time Dispatchs](../../papers/arxiv-2602.18109/) | 2026-08-04 | 48 |

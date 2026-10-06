@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.07280",
+  "title": "Mask2Cause: Temporal Causal Discovery Beyond Causality in Mean",
+  "abstract": "One approach to discovering causal relationships in multivariate time series is to ask whether a variable's history improves prediction of another variable. When this improvement is measured solely by reductions in optimal squared error, the criterion misses relationships that affect the target's conditional variance without changing its conditional mean. We propose Mask2Cause, an end-to-end Transformer framework for causal discovery through conditional mean and variance prediction. Each variable's history is embedded as a separate token, and a single learnable adjacency matrix, shared across layers and attention heads, controls information exchange between tokens. Gaussian negative log-likelihood and a sparsity penalty on this matrix jointly train the forecasting model and graph. Our population analysis connects the optimal log-loss reduction to causally conditioned directed information, providing an information-theoretic motivation for the training objective. We introduce Mixed Physics, a benchmark with separately controlled mean and variance dependencies, to evaluate recovery of mean-only and variance-only edges. In its pure-variance setting, Mask2Cause achieves 1.000 off-diagonal AUROC, compared with 0.521 for a corresponding squared-error model. Experiments on linear, chaotic, biological, and real-data-derived benchmarks demonstrate competitive graph recovery, while the inferred graphs support downstream tasks such as causal pruning for efficient forecasting and root-cause localization.",
+  "url": "https://arxiv.org/abs/2605.07280",
+  "pdf_url": "https://arxiv.org/pdf/2605.07280",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Omar Muhammad",
+    "Pasupuleti Dhruv Shivkant",
+    "Deepak N. Subramani"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "One approach to discovering causal relationships in multivariate time series is to ask whether a variable's history improves prediction of another variable.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.07280",
+      "url": "https://arxiv.org/abs/2605.07280"
+    }
+  ]
+}

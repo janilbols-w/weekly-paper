@@ -5,10 +5,18 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **162** 篇。
+累计收录 **170** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KV Cache Translation across Heterogeneous Large Language Models](../../papers/arxiv-2607.28979/) | 2026-10-06 | 52 |
+| [Adaptive KV Cache Reuse for Fast Long-Context LLM Serving](../../papers/arxiv-2605.24022/) | 2026-10-06 | 52 |
+| [OVAL: Output-Aware Local Page Bases for KV Cache Retrieval](../../papers/arxiv-2610.06686/) | 2026-10-06 | 48 |
+| [Request Order Matters: Cache-History Sensitivity in Selective KV-Cache Reuse for Rolling Agents](../../papers/arxiv-2610.05833/) | 2026-10-06 | 46 |
+| [RealtimeWAM: One-Step Asynchronous World Action Models](../../papers/arxiv-2610.06617/) | 2026-10-06 | 44 |
+| [DeferKV: Rethinking Eviction Timing for One-Shot KV Cache Compression](../../papers/arxiv-2610.06286/) | 2026-10-06 | 44 |
+| [Sliding-window beats linear attention](../../papers/arxiv-2608.28444/) | 2026-10-06 | 43 |
+| [Behavior-Preserving KV Cache Compression](../../papers/arxiv-2610.06479/) | 2026-10-06 | 41 |
 | [SlimKV: Joint Token-Feature KV Cache Compression with Reconstruction-Free Beacon Attention](../../papers/arxiv-2610.02953/) | 2026-10-05 | 52 |
 | [VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction](../../papers/arxiv-2610.03286/) | 2026-10-05 | 50 |
 | [Tailoring the Quantization Space for 1-Bit KV Cache Compression](../../papers/arxiv-2610.03027/) | 2026-10-05 | 45 |

@@ -5,10 +5,11 @@ description: "Network, RDMA & Interconnect"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > 网络、RDMA 与互联**
 
-累计收录 **6** 篇。
+累计收录 **7** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Physics-Guided Transformer Framework for Electromigration Analysis in Multi-Segment Interconnects](../../papers/arxiv-2610.06464/) | 2026-10-06 | 38 |
 | [Towards Training Private LLMs: Exploring Fine-Tuning Language Models on Apple Silicon with RDMA over Thunderbolt](../../papers/arxiv-2609.18066/) | 2026-09-16 | 49 |
 | [Sharing a Fabric with Collective Communication: Two Storage Penalties in Deep Learning Training](../../papers/arxiv-2609.06506/) | 2026-09-09 | 50 |
 | [AutoUVM: Automated Prefetching Framework for LLMs under UVM Oversubscription](../../papers/arxiv-2609.06172/) | 2026-09-05 | 44 |

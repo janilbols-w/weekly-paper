@@ -39,7 +39,7 @@ Policies with memory can learn along two backward paths: through the physical st
 ## 元数据
 
 - 作者：Xingjian Li, Yi Han, Jianhua Z. Huang
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-30；更新：2026-10-06
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

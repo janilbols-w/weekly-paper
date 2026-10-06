@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2510.18814",
+  "title": "A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning",
+  "abstract": "Can a language model improve reasoning by learning from its own imperfect responses, without rewards or teacher-provided solutions? We present Self-evolving Post-Training (SePT), a simple method that alternates temperature-controlled self-generation with next-token likelihood training. Each round uses the updated model to generate new training responses, with one response per prompt by default and no correctness filtering. Across six mathematical benchmarks, SePT improves a temperature-selected no-training baseline by 11.4 and 6.7 AVG points on Qwen2.5-Math-7B and Qwen2.5-7B, respectively, where AVG averages Pass@1, Pass@8 and Pass@32 across benchmarks. We analyze how sampling temperature shapes the learning signal and investigate the value of the resulting responses. Responses from a SePT-trained model improve a student initialized from the original weights, while their reasoning prefixes help an unchanged model complete solutions, even when matched in length to prefixes from a colder initial model. Comparing next-token predictions at identical contexts also reveals changes in token rankings that decoding-temperature adjustment cannot reproduce. Further evaluations across nine starting models, general reasoning and code generation examine broader applicability. Together, these results show that reward-free self-training can improve both a model's predictions and the supervision it provides. Our code is available at https://github.com/ElementQi/SePT.",
+  "url": "https://arxiv.org/abs/2510.18814",
+  "pdf_url": "https://arxiv.org/pdf/2510.18814",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Mengqi Li",
+    "Lei Zhao",
+    "Anthony Man-Cho So",
+    "Ruoyu Sun",
+    "Xiao Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/ElementQi/SePT",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Can a language model improve reasoning by learning from its own imperfect responses, without rewards or teacher-provided solutions?",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.18814",
+      "url": "https://arxiv.org/abs/2510.18814"
+    }
+  ]
+}

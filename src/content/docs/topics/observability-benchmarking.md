@@ -5,10 +5,13 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **20** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [One-Cycle Fault Classification and Faulted-Line Identification on the PROTECT-90 Dataset: An Initial Application Benchmark](../../papers/arxiv-2610.04155/) | 2026-10-06 | 41 |
+| [What Does an Observability Foundation Model Know?](../../papers/arxiv-2610.05577/) | 2026-10-06 | 40 |
+| [From Probe Scores to Alarm Policies: Operational Validity of Activation Monitors for Language-Model Agents](../../papers/arxiv-2610.04575/) | 2026-10-06 | 38 |
 | [From Alert Floods to Precedence Forests: Zero-Prior-Knowledge Incident Triage with LOGOS](../../papers/arxiv-2610.02297/) | 2026-10-05 | 40 |
 | [ORCA-bench: How Ready Are Language Model Agents for Oncall?](../../papers/arxiv-2607.28545/) | 2026-10-01 | 39 |
 | [AgentWare: Automating the Lifecycle of Agentic Applications across the Edge-to-Cloud Continuum](../../papers/arxiv-2609.34586/) | 2026-09-30 | 43 |

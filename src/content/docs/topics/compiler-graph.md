@@ -5,10 +5,17 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **93** 篇。
+累计收录 **100** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [StepCAD: Mesh-to-CAD Code Generation via LLM Policy and Geometry-Guided Search](../../papers/arxiv-2610.03799/) | 2026-10-06 | 47 |
+| [Assembling Insights for Agentic Machine Learning Engineering Systems](../../papers/arxiv-2610.04927/) | 2026-10-06 | 45 |
+| [A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning](../../papers/arxiv-2510.18814/) | 2026-10-06 | 43 |
+| [FullFront: Benchmarking MLLMs Across the Full Front-End Engineering Workflow](../../papers/arxiv-2505.17399/) | 2026-10-06 | 42 |
+| [Loop Dropout: Regularizing Shared Updates in Looped Language Models](../../papers/arxiv-2609.34218/) | 2026-10-06 | 40 |
+| [CodeForge-MA: Execution-Verified Multi-Agent Learning with Language-Conditioned LoRA for Multilingual Code Generation](../../papers/arxiv-2610.05481/) | 2026-10-06 | 40 |
+| [Pareto-Dominant Clarification: Post-Training Coding LLMs via PPO-Lagrangian Budget Constraints](../../papers/arxiv-2610.04089/) | 2026-10-06 | 38 |
 | [Are you Synthesizing or Recalling? Evaluating LLMs on Algorithmic Code Retrieval](../../papers/arxiv-2610.02438/) | 2026-10-05 | 45 |
 | [CARM: Cancellation-Aware Response Masking for LLM Reinforcement Learning](../../papers/arxiv-2610.02039/) | 2026-10-01 | 41 |
 | [CorrGRPO: Correlation-Normalized GRPO for Multi-Reward Learning](../../papers/arxiv-2609.36820/) | 2026-10-01 | 38 |

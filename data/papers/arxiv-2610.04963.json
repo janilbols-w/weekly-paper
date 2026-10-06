@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.04963",
+  "title": "MAGIC: Topology-Aware Analytic Graph Few-Shot Class-Incremental Learning",
+  "abstract": "Graph few-shot class-incremental learning (GFSCIL) requires a model to continually recognize emerging classes from only a few labeled nodes while preserving previously acquired knowledge. Beyond the catastrophic forgetting inherited from conventional graph continual learning, GFSCIL presents two distinctive challenges: extremely limited novel-class supervision causes severe overfitting, while cross-session edges---edges connecting newly arriving nodes with historical nodes---alter historical propagation neighborhoods and thereby induce representation drift. We propose MAGIC, a replay-free GFSCIL framework that combines a frozen graph representation backbone (e.g., an intrinsically parameter-free backbone such as SGC or a pretrained graph foundation model) with closed-form analytic continual learning. To alleviate novel-session overfitting, MAGIC learns a topological prior from the base graph that can characterize both homophilous and heterophilous relations, and injects this prior through Potts Markov random field inference to refine supervision for novel classes. To mitigate representation drift, MAGIC transfers previous predictions from the old representations of affected historical nodes to their updated representations through drift-aware analytic distillation. Experiments across five datasets and eight baselines demonstrate the effectiveness of MAGIC. Under the 5-shot setting, MAGIC improves Mean Accuracy and Final Accuracy by 5.48 percentage points and 9.33 percentage points on average, and reduces Performance Drop by 10.78 percentage points on average compared with the best baselines. MAGIC also shows clear advantages under the 1- and 3-shot settings, with larger gains as the number of supports increases. Moreover, MAGIC requires substantially less training time.",
+  "url": "https://arxiv.org/abs/2610.04963",
+  "pdf_url": "https://arxiv.org/pdf/2610.04963",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Junlin Chen",
+    "Yuhan Wang",
+    "Xuefei Wang",
+    "Xiao Wang",
+    "Ruijie Wang",
+    "Jianxin Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Graph few-shot class-incremental learning (GFSCIL) requires a model to continually recognize emerging classes from only a few labeled nodes while preserving previously acquired knowledge.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.04963",
+      "url": "https://arxiv.org/abs/2610.04963"
+    }
+  ]
+}

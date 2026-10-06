@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2605.06650",
+  "title": "Improving Reasoning Ability via Asynchronous On-Policy Self-Distillation under Positive Rollouts",
+  "abstract": "Distillation and reinforcement learning through verifiable rewards (RLVR) have achieved progress in enhancing the reasoning ability of large language models (LLMs). However, we note that negative rollouts may admit no gradation of failure severity, and the combinatorial vastness makes penalizing a few sampled negatives unlikely to cover a meaningful reward signal under sparse binary rewards. In this work, we propose Positive-Only Policy Optimization (POPO), an on-policy self-distillation integrated RLVR framework in which learning occurs exclusively on online positive rollouts. Specifically, POPO utilizes bounded importance sampling over the positive rollout set. Thus, no disjoint negative rollouts are used for gradient guidance during post-training. We show that implicit negative gradients can emerge naturally through reinforcing the positive probability via rollout redistribution. Next, POPO stabilizes the policy optimization through self-distillation. First, it applies a Siamese policy network with a momentum-based adaptation law for asynchronous policy evolution. Second, we replace the KL-divergence with a bounded similarity penalty term in the Siamese representation space. We conduct extensive experiments using publicly available, well-established text-LLM models across all-level mathematical benchmarks (MATH-500, AMC23, AIME 2024/2025, and Olympiad). Our experiment demonstrates that POPO achieves superior performance compared to GRPO. Notably, we show that POPO can achieve 36.67% in AIME 2025 with Qwen-Math-7B, outperforming GRPO 30.00%. Our ablation and sweep studies further illustrate the necessity and robustness.",
+  "url": "https://arxiv.org/abs/2605.06650",
+  "pdf_url": "https://arxiv.org/pdf/2605.06650",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Mingwei Xu",
+    "Hao Fang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Distillation and reinforcement learning through verifiable rewards (RLVR) have achieved progress in enhancing the reasoning ability of large language models (LLMs).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.06650",
+      "url": "https://arxiv.org/abs/2605.06650"
+    }
+  ]
+}

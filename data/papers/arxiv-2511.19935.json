@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2511.19935",
+  "title": "EfficientXpert: Efficient Domain Adaptation for Large Language Models via Propagation-Aware Pruning",
+  "abstract": "Deploying domain-specialized large language models on resource-constrained hardware motivates reducing both adaptation cost and the number of retained weights. LoRA lowers adaptation cost but leaves a dense backbone, while separate pruning can discard weights that become important during adaptation. We propose EfficientXpert, a framework that co-adapts low-rank updates and sparse support. Its ForeSight Mask scores weights through a downstream reconstruction surrogate using the evolving LoRA-augmented weights; Partial Brain Surgeon (PBS) realigns the adapter through a closed-form correction. At 40% sparsity, the strongest variant retains 98.55--108.99% of dense-LoRA aggregate performance across the evaluated LLaMA settings. On Qwen3-8B, adaptation adds 17.9--27.0% training time and at most 4.8% peak GPU memory. Our analysis connects the domain- and rank-dependent effects of PBS to its constrained reconstruction objective, providing guidance for selecting adapter recovery capacity. Together, these results demonstrate efficient production of sparse, domain-specialized experts. Code is available at https://github.com/TagoreZhao/Efficient_Domain_Adaptation.",
+  "url": "https://arxiv.org/abs/2511.19935",
+  "pdf_url": "https://arxiv.org/pdf/2511.19935",
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "authors": [
+    "Songlin Zhao",
+    "Michael Pitts",
+    "Zhuwei Qin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/TagoreZhao/Efficient_Domain_Adaptation",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Deploying domain-specialized large language models on resource-constrained hardware motivates reducing both adaptation cost and the number of retained weights.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-06T04:45:36+00:00",
+  "last_seen": "2026-10-06T04:45:36+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2511.19935",
+      "url": "https://arxiv.org/abs/2511.19935"
+    }
+  ]
+}

@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **67** 篇。
+累计收录 **68** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SparseCraft: Agentic Hardware-Software Co-Optimization for Sparse Computing](../../papers/arxiv-2610.05037/) | 2026-10-06 | 41 |
 | [Hardware-Algorithm Co-Optimization of Early-Exit Neural Networks for Multi-Core Edge Accelerators](../../papers/arxiv-2512.04705/) | 2026-10-02 | 48 |
 | [ShatterQuant: Breaking Uniform Precision with Block-Wise Mixed-Precision on a Systolic Transformer Hardware Accelerator](../../papers/arxiv-2610.00207/) | 2026-10-02 | 43 |
 | [zkPHIRE: A Programmable Accelerator for ZKPs over HIgh-degRee, Expressive Gates](../../papers/arxiv-2508.16738/) | 2026-10-01 | 41 |

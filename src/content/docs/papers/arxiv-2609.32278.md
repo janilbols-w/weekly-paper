@@ -5,7 +5,7 @@ description: "LLM-based agents execute long-horizon tasks through repeated model
 
 **评分：43/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
-[论文原文](http://arxiv.org/abs/2609.32278v1) · [PDF](https://arxiv.org/pdf/2609.32278v1)
+[论文原文](https://arxiv.org/abs/2609.32278) · [PDF](https://arxiv.org/pdf/2609.32278)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ LLM-based agents execute long-horizon tasks through repeated model calls interle
 ## 元数据
 
 - 作者：Zaifeng Pan, Chris Wu, Zhengding Hu, Xinwei Qiang, Zhongkai Yu, Yufei Ding
-- 发布：2026-09-26；更新：2026-09-26
-- 来源：arXiv；Venue：未确认
+- 发布：2026-09-26；更新：2026-10-06
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
