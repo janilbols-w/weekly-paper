@@ -39,7 +39,7 @@ Speculative decoding accelerates generation without changing its output, but on 
 ## 元数据
 
 - 作者：Jungseob Lee, Seongtae Hong, Dongyub Jude Lee, Chanjun Park, Jaehyung Seo, Sugyeong Eo, Heuiseok Lim
-- 发布：2026-08-31；更新：2026-10-01
+- 发布：2026-08-31；更新：2026-10-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/js-lee-AI/GLANCE](https://github.com/js-lee-AI/GLANCE)
 - 阅读深度：metadata

@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2610.07443",
+  "title": "A Shape-Adaptive Architecture with Disaggregated Quantization for Efficient LLM Serving",
+  "abstract": "Large language models (LLMs) have become the backbone of modern AI applications, but pose significant challenges for efficient inference. Their autoregressive generation divides execution into two phases: prefill, dominated by large GEMMs, and decoding, dominated by small GEMVs. Modern serving systems further introduce complexity through continuous batching and prefill-decoding disaggregation, leading to dynamic workloads and phase separation. However, existing accelerators remain poorly aligned with these system-level behaviors, resulting in inefficiencies in LLM serving. In this work, we present DynaCore, a unified architecture for efficient LLM serving via system-architecture co-design. We observe that the compute tile a systolic array executes, its Minimum Efficient Unit (MEU), spans all three GEMM dimensions. DynaCore reshapes the MEU along all three: spatially it trades array width against height asymmetrically, raising weight delivery while leaving the input path untouched, and temporally Split-K maps the reduction onto the array, folding partial sums through the interconnect the array already has. To exploit phase separation, we further propose disaggregated quantization, applying dual-side quantization to prefill and weight-only quantization to decoding, with an inner-product mixed-precision datapath that keeps output width invariant to precision. A runtime scheduling framework then selects an MEU per batch. Evaluation with real-world serving traces shows that DynaCore substantially reduces service-level latency over quantization and reconfigurable accelerators, improving TTFT by 3.50x and 2.97x and TPOT by 36.55x and 8.02x, respectively.",
+  "url": "https://arxiv.org/abs/2610.07443",
+  "pdf_url": "https://arxiv.org/pdf/2610.07443",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Cong Guo",
+    "Chiyue Wei",
+    "Bowen Duan",
+    "Haoxuan Shan",
+    "Benjamin F. Morris III",
+    "Yintao He",
+    "Hai \"Helen\" Li",
+    "Yiran Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models (LLMs) have become the backbone of modern AI applications, but pose significant challenges for efficient inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07443",
+      "url": "https://arxiv.org/abs/2610.07443"
+    }
+  ]
+}

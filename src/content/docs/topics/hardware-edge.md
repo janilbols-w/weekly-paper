@@ -5,10 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **68** 篇。
+累计收录 **72** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [T-CCL: Resource Efficient and Performant Collective Communication using Tensor Memory Accelerator](../../papers/arxiv-2610.07098/) | 2026-10-07 | 53 |
+| [Stepped MoE: Segment-Level Routing with Configurable Inference Complexity](../../papers/arxiv-2610.07348/) | 2026-10-07 | 41 |
+| [CACHEFORGE: LLM-Guided End-to-End Generative Cache Replacement Policy for Performance and Hardware Efficiency](../../papers/arxiv-2610.07668/) | 2026-10-07 | 41 |
+| [A Framework for Accelerating Transformer Inference on RISC-V for Edge AI](../../papers/arxiv-2610.08688/) | 2026-10-07 | 41 |
 | [SparseCraft: Agentic Hardware-Software Co-Optimization for Sparse Computing](../../papers/arxiv-2610.05037/) | 2026-10-06 | 41 |
 | [Hardware-Algorithm Co-Optimization of Early-Exit Neural Networks for Multi-Core Edge Accelerators](../../papers/arxiv-2512.04705/) | 2026-10-02 | 48 |
 | [ShatterQuant: Breaking Uniform Precision with Block-Wise Mixed-Precision on a Systolic Transformer Hardware Accelerator](../../papers/arxiv-2610.00207/) | 2026-10-02 | 43 |

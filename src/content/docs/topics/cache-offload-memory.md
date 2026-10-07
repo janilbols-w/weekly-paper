@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **100** 篇。
+累计收录 **102** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](../../papers/arxiv-2610.07593/) | 2026-10-07 | 44 |
+| [DART-ES: Difficulty-Aware Reweighting and Targeted Replay for Fine-Tuning LLMs with Evolution Strategies](../../papers/arxiv-2610.06993/) | 2026-10-07 | 43 |
 | [PhaseGate: Phase-Aware CPU Retrieval Scheduling for On-Device LLMs on Unified Memory](../../papers/arxiv-2610.04537/) | 2026-10-06 | 49 |
 | [Efficient Test-time Adaptation through Candidate Verification and Divergence Shifts](../../papers/arxiv-2610.06147/) | 2026-10-06 | 49 |
 | [MOLT: A Fine-Grained GPU Memory Sharing System for LLM Serving with Opportunistic Fine-Tuning](../../papers/arxiv-2610.05748/) | 2026-10-06 | 45 |

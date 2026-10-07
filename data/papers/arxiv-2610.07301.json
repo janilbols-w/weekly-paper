@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.07301",
+  "title": "A Pipelined FPGA Architecture for Banded Sparse Matrix Dense Matrix Multiplication in Longformer",
+  "abstract": "Sparse attention mechanisms have become increasingly important for transformer models processing long input sequences due to their lower computational and memory complexity compared to full self-attention. Longformer achieves this through a sliding-window attention mechanism that produces a structured banded sparse attention matrix. However, existing sparse transformer accelerators primarily target attention generation or unstructured sparsity, leaving sparse matrix--dense matrix multiplication (SpMM) for structured sparse attention largely unexplored. This paper presents a pipelined FPGA architecture for accelerating banded SpMM in Longformer. The proposed design exploits the predictable sparsity pattern of Longformer's attention matrix through a custom row-wise storage scheme with implicit indexing, eliminating the overhead of conventional sparse matrix formats while enabling regular memory accesses. The architecture employs parallel processing elements, pipelined adder trees, and a dual-path computation strategy to maximize throughput and hardware utilization. Implemented in Verilog and evaluated on an RFSoC platform using Vivado 2024.2, the accelerator sustains one complete dot-product result per clock cycle after an initial latency of 11 cycles while maintaining power consumption below 2.9 W. Operating at 100 MHz, the design achieves over 100 million dot-product outputs per second, demonstrating the effectiveness of directly exploiting structured sparsity for sparse transformer acceleration.",
+  "url": "https://arxiv.org/abs/2610.07301",
+  "pdf_url": "https://arxiv.org/pdf/2610.07301",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Phillip Pramberger",
+    "Athanasios Tziouvaras",
+    "Shreejith Shanker",
+    "George Floros"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Sparse attention mechanisms have become increasingly important for transformer models processing long input sequences due to their lower computational and memory complexity compared to full self-attention.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07301",
+      "url": "https://arxiv.org/abs/2610.07301"
+    }
+  ]
+}

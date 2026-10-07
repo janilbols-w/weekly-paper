@@ -1,0 +1,85 @@
+{
+  "id": "arxiv:2610.07625",
+  "title": "Stateless Language Agents: Scaling Long-Horizon Automated Research",
+  "abstract": "Automated research systems increasingly run LLM agents over long horizons, but more inference does not by itself produce more progress: agents replay growing histories, duplicate one another's work, or stop experimenting while token consumption continues. Yet most evaluations use short budgets or benchmarks that saturate early, leaving these failure modes untested. We trace these failures to two choices: where research state lives and who decides what to try next. We introduce Stateless Language Agents (SLAs), built on the principle of stateful search with stateless agents: no agent carries its conversation across invocations; instead, the harness owns the research state (candidate solutions and measured outcomes) and reconstructs a fresh and role-specific context for every invocation. What each agent sees becomes an explicit design choice rather than a history that grows with the run. We implement this principle in the SLA framework, where a stateless Advisor reads harness-summarized evidence across search directions and assigns concrete experiments to parallel Workers. We evaluate SLA against three recent frameworks on software engineering, kernel optimization, and algorithm design at budgets of up to one billion tokens. SLA achieves the best final result on every task and reaches the strongest kernel baseline's final performance with over 84% fewer tokens. Ablations from shared checkpoints show that focused contexts and explicit assignments each contribute to SLA's progress, with effects that can compound over full runs, while the Advisor consumes less than 0.6% of tokens. These results argue for SLAs, which keep durable research state out of agent conversations, and show that short evaluation horizons can misjudge research systems and their components.",
+  "url": "https://arxiv.org/abs/2610.07625",
+  "pdf_url": "https://arxiv.org/pdf/2610.07625",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Qizheng Zhang",
+    "Changxiu Ji",
+    "Isaac Sun",
+    "Yuetai Li",
+    "Shubhangi Upasani",
+    "Sherry Ruan",
+    "Boyuan Ma",
+    "Fenglu Hong",
+    "Vamsidhar Kamanuru",
+    "Yoonho Lee",
+    "Yuzhen Mao",
+    "Genghan Zhang",
+    "Rulin Shao",
+    "Qiuyang Mang",
+    "Andy Dimnaku",
+    "Changran Hu",
+    "Radha Poovendran",
+    "Kunle Olukotun"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kernel optimization"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 17,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kernel optimization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Automated research systems increasingly run LLM agents over long horizons, but more inference does not by itself produce more progress: agents replay growing histories, duplicate one another's work, or stop experimenting while token consumption continues.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07625",
+      "url": "https://arxiv.org/abs/2610.07625"
+    }
+  ]
+}

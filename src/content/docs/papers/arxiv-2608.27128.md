@@ -1,5 +1,5 @@
 ---
-title: "TwinKV: A Composable Repair Pass for KV Cache Eviction via Pairwise Key Redundancy"
+title: "Small Frequency Corrections Can Change What Survives KV Cache Compression"
 description: "Compressing a key-value cache before its next question is known requires choosing what to retain without knowing which evidence will matter."
 ---
 
@@ -39,7 +39,7 @@ Compressing a key-value cache before its next question is known requires choosin
 ## 元数据
 
 - 作者：Hong Chen, Yudong Zeng, Yongwei Huang, Zuhao Ouyang, Dongnan Zheng, Junyan Zhang, Yubo Gao, Xuming Hu
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-30；更新：2026-10-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

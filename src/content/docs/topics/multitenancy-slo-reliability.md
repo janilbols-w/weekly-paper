@@ -5,10 +5,12 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **32** 篇。
+累计收录 **34** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Evaluating Inference Compute for Generative AI: A Framework for Enterprise Workloads](../../papers/arxiv-2610.07094/) | 2026-10-07 | 54 |
+| [AEGIS: Runtime-Guided GPU Collocation for Multi-Tenant Deep Learning Training](../../papers/arxiv-2508.19073/) | 2026-10-07 | 44 |
 | [From Overloaded to Guaranteed: High-Throughput Multi-SLO Enforcement for LoRA-Assisted On-Premise LLM Deployment](../../papers/arxiv-2610.04956/) | 2026-10-06 | 45 |
 | [Coda: Exploiting Admission Flexibility for Coding-Agent Serving](../../papers/arxiv-2610.03088/) | 2026-10-05 | 42 |
 | [EdgeCraft: Automated Model Crafting for Edge IoT](../../papers/arxiv-2609.35167/) | 2026-09-30 | 43 |

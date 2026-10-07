@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.07808",
+  "title": "Common-Mode Errors Limit Low-Timestep Deep Spiking Q-Networks",
+  "abstract": "Spiking neural networks (SNNs) offer sparse and event-driven computation, making them attractive for energy-constrained reinforcement learning (RL) on edge devices. In value-based RL, deep spiking Q-networks (DSQNs) combine such efficiency with action-value estimation for decision making. However, existing DSQNs often require multiple simulation timesteps for competitive performance, increasing computational and energy costs, whereas reducing the timesteps can cause substantial performance degradation. We investigate this degradation from the perspective of Q-value estimation errors. By decomposing errors across actions into common-mode and differential-mode components, we find that low-timestep DSQNs suffer disproportionately from common-mode errors shared across action values, which are particularly detrimental to temporal-difference learning through bootstrapped targets. Based on this finding, we propose Common-Mode Compensation Deep Spiking Q-Network (CMC-DSQN), which uses an auxiliary ANN to compensate for common-mode errors in the SNN outputs. At inference, greedy action selection can be performed directly from the SNN outputs, allowing the auxiliary ANN to be completely removed and preserving the energy efficiency of SNNs. Extensive experiments on Atari and MiniAtar environments demonstrate substantial performance improvements under low-timestep settings. CMC-DSQN outperforms state-of-the-art DSQN baselines by nearly $20\\%$ at $T=2$ and further surpasses the ANN baseline at $T=4$.",
+  "url": "https://arxiv.org/abs/2610.07808",
+  "pdf_url": "https://arxiv.org/pdf/2610.07808",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Zijie Xu",
+    "Bingrui Guo",
+    "Yiding Sun",
+    "Yiting Dong",
+    "Zhile Yang",
+    "Zhaofei Yu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.NE",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Spiking neural networks (SNNs) offer sparse and event-driven computation, making them attractive for energy-constrained reinforcement learning (RL) on edge devices.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07808",
+      "url": "https://arxiv.org/abs/2610.07808"
+    }
+  ]
+}

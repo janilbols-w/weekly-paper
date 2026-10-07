@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2610.07348",
+  "title": "Stepped MoE: Segment-Level Routing with Configurable Inference Complexity",
+  "abstract": "Training large language models (LLMs) is resource-intensive, and adapting them for diverse deployment scenarios with varying computational constraints remains challenging. While elastic architectures enable flexible model deployment and sparsely activated models allow input-adaptive computation, existing approaches treat these dimensions independently. Moreover, models catered towards on-device edge inference need to conform to the memory and compute limitations of the serving devices. In this paper, we introduce a unified framework that combines elastic structures with sparsely gated architectures to create models that adapt simultaneously to both deployment constraints and task requirements. Our approach employs a model backbone that conditions on both the context and target efficiency specifications, enabling fine-grained control over the accuracy-efficiency trade-off at inference time. The model learns to activate task-relevant parameters within elastically-nested sub-networks, allowing a single model to span multiple capacity points while maintaining input-adaptive routing. Through experiments we demonstrate that we can create a model that allows the flexibility to use 1,2,3,4 billion parameters while being more accurate than their dense counter-parts (2-5\\% on knowledge-intensive benchmarks) and at par with their static versions while delivering similar latency metrics as dense models. Overall, we save on device disk space by sharing the model parameters, allow flexibility of serving based on DRAM and compute available while delivering more accurate results.",
+  "url": "https://arxiv.org/abs/2610.07348",
+  "pdf_url": "https://arxiv.org/pdf/2610.07348",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Arnav Kundu",
+    "Zhaoyang Xu",
+    "Bairu Hou",
+    "Chang Gao",
+    "Reed Li",
+    "Tao Lei"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "edge inference"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: edge inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Training large language models (LLMs) is resource-intensive, and adapting them for diverse deployment scenarios with varying computational constraints remains challenging.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07348",
+      "url": "https://arxiv.org/abs/2610.07348"
+    }
+  ]
+}

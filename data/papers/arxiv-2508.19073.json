@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2508.19073",
+  "title": "AEGIS: Runtime-Guided GPU Collocation for Multi-Tenant Deep Learning Training",
+  "abstract": "Deep learning training commonly runs on shared multi-tenant GPU servers, where exclusive allocation provides isolation but can leave resources underutilized and increase queueing time. Collocation can improve efficiency, but interference-agnostic placement may cause severe slowdowns, while inaccurate memory information can lead to out-of-memory (OOM) failures. We present AEGIS, a server-scale runtime scheduling system for controlled collocation of deep learning training workloads on shared multi-GPU servers. AEGIS integrates memory feasibility, post-placement observation, runtime-pressure filtering, placement, and OOM-aware recovery in a single scheduling loop. After placement, AEGIS observes workload activity before permitting further collocation, then uses low-overhead telemetry to determine whether a GPU can safely accept additional work. OOM failures trigger retries under progressively safer memory conditions, eventually falling back to exclusive execution. This online approach avoids costly offline pairwise compatibility profiling. We evaluate AEGIS using vision, Transformer, recommendation, and LLM-style workloads across three production-derived traces. AEGIS reduces geometric-mean makespan by 16% relative to Lucid, 21% relative to Horus, and 27% relative to exclusive allocation. Sensitivity studies show that activity-anchored observation and runtime-pressure filtering balance conservative isolation against interference-agnostic collocation, improving makespan while limiting sharing-induced per-task slowdown.",
+  "url": "https://arxiv.org/abs/2508.19073",
+  "pdf_url": "https://arxiv.org/pdf/2508.19073",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Ehsan Yousefzadeh-Asl-Miandoab",
+    "B\\\"u\\c{s}ra Karatay Demiray",
+    "Florina M. Ciorba",
+    "Pamela Delgado",
+    "P{\\i}nar T\\\"oz\\\"un"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "multi-tenant"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: multi-tenant",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Deep learning training commonly runs on shared multi-tenant GPU servers, where exclusive allocation provides isolation but can leave resources underutilized and increase queueing time.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2508.19073",
+      "url": "https://arxiv.org/abs/2508.19073"
+    }
+  ]
+}

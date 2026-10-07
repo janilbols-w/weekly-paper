@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2610.07688",
+  "title": "FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures",
+  "abstract": "Distributed deep learning relies on data, pipeline, tensor, and hybrid parallelism, yet fault-tolerance mechanisms are typically evaluated only on the architecture for which they were designed. This leaves practitioners with little guidance when choosing mechanisms across architectures. FailBench provides a unified evaluation harness covering seven distributed training architectures, eight crash-fault-tolerance mechanisms and a no-FT baseline, and single, concurrent, and cascading fail-stop failures. We evaluate 142 (architecture, mechanism, trace) combinations on an 8xV100 cluster, with per-rank checkpoint states ranging from 205 MB to 2.7 GB. Three findings emerge. First, no mechanism is universally best: on A2, disk checkpointing has the lowest steady-state overhead (0.5%), in-memory replication restores fastest (~17 ms), and just-in-time checkpointing avoids periodic steady-state checkpoint cost but incurs ~0.9 s upon failure. When process-group re-formation takes seconds, mechanisms differ more in runtime overhead than restore speed. Second, gossip training increases sample throughput by 17.9% after losing a worker, yet shows no detectable improvement in loss progress over a matched no-fault baseline. Third, mechanism cost depends strongly on architecture: in-memory replication overhead ranges from 3.7% to 176%. We translate these findings into a decision framework for selecting fault-tolerance mechanisms and release FailBench as an open artifact.",
+  "url": "https://arxiv.org/abs/2610.07688",
+  "pdf_url": "https://arxiv.org/pdf/2610.07688",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Khaled Aljbab",
+    "Amine Barrak"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [
+    "fault-tolerance-elasticity"
+  ],
+  "keyword_evidence": [
+    "checkpoint",
+    "checkpointing",
+    "distributed training"
+  ],
+  "score": 54,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint, checkpointing, distributed training",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Distributed deep learning relies on data, pipeline, tensor, and hybrid parallelism, yet fault-tolerance mechanisms are typically evaluated only on the architecture for which they were designed.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [
+    "2026-W41"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07688",
+      "url": "https://arxiv.org/abs/2610.07688"
+    }
+  ]
+}

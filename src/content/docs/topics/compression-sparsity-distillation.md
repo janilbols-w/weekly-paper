@@ -5,10 +5,23 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **514** 篇。
+累计收录 **527** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [WASD: Wasserstein-based Knowledge Distillation for Large Language Models](../../papers/arxiv-2610.07706/) | 2026-10-07 | 50 |
+| [VisionWeave: Weaving Elastic Visual Representations as a Native Capability of MLLMs](../../papers/arxiv-2610.07987/) | 2026-10-07 | 48 |
+| [Natural Language Questions as an Interface for Knowledge Graphs: QRAKEN Graph Distillation and Semantic Self-Healing](../../papers/arxiv-2610.08095/) | 2026-10-07 | 45 |
+| [Component and Dimension Sparsity in Transformer Refusal Mechanisms](../../papers/arxiv-2610.06903/) | 2026-10-07 | 45 |
+| [Foresight-over-Graph: Reasoning Beyond Local Horizons for Knowledge Base Question Answering](../../papers/arxiv-2610.08388/) | 2026-10-07 | 44 |
+| [Learning What to Distill: Bilevel Top-K Token Selection for Self-Distillation in Large Language Models](../../papers/arxiv-2610.07247/) | 2026-10-07 | 43 |
+| [A Pipelined FPGA Architecture for Banded Sparse Matrix Dense Matrix Multiplication in Longformer](../../papers/arxiv-2610.07301/) | 2026-10-07 | 43 |
+| [SSR: Sparse Segment Reduction for Ternary GEMM Acceleration](../../papers/arxiv-2610.08403/) | 2026-10-07 | 42 |
+| [FedCoT: Communication-Efficient Federated Reasoning Enhancement for Large Language Models](../../papers/arxiv-2508.10020/) | 2026-10-07 | 41 |
+| [DIPrune: Task-Aware Token Pruning with Dual Importance for Efficient Multimodal Language Models](../../papers/arxiv-2610.08341/) | 2026-10-07 | 40 |
+| [Does On-Policy Distillation for Safety Pose Backdoor Risks?](../../papers/arxiv-2610.07654/) | 2026-10-07 | 39 |
+| [Privileged Context as Drift in On-Policy Self-Distillation](../../papers/arxiv-2610.07842/) | 2026-10-07 | 38 |
+| [Boosting Large Language Models with Mask Fine-Tuning](../../papers/arxiv-2503.22764/) | 2026-10-07 | 38 |
 | [PATCH: Learnable Tile-level Hybrid Sparsity for LLMs](../../papers/arxiv-2509.23410/) | 2026-10-06 | 50 |
 | [EfficientXpert: Efficient Domain Adaptation for Large Language Models via Propagation-Aware Pruning](../../papers/arxiv-2511.19935/) | 2026-10-06 | 50 |
 | [Beyond Masked Sparsity: SNACK Enables Truly Sparse Neural Networks on GPU](../../papers/arxiv-2610.04093/) | 2026-10-06 | 50 |

@@ -5,10 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **94** 篇。
+累计收录 **98** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](../../papers/arxiv-2610.07688/) | 2026-10-07 | 54 |
+| [VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents](../../papers/arxiv-2610.08402/) | 2026-10-07 | 44 |
+| [Towards One-for-All Foundation Model for Attributed Graph Clustering](../../papers/arxiv-2610.07778/) | 2026-10-07 | 44 |
+| [Harmful SFT Leaves a Continuous Trace in LLM Checkpoint Updates](../../papers/arxiv-2610.07518/) | 2026-10-07 | 41 |
 | [Gefen: Optimized Stochastic Optimizer](../../papers/arxiv-2606.13894/) | 2026-10-06 | 50 |
 | [FedUHD: Unsupervised Federated Learning using In-Memory Hyperdimensional Computing](../../papers/arxiv-2508.12021/) | 2026-10-06 | 50 |
 | [Language-Conditioned Token and Reasoning Efficiency in Large Language Models: A Paired Cross-Lingual Study Protocol](../../papers/arxiv-2610.04295/) | 2026-10-06 | 42 |

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.07032",
+  "title": "Investigating Model Compression for Neural Machine Translation in the Biomedical Domain",
+  "abstract": "Large-scale pretrained transformer models have achieved state-of-the-art performance across diverse machine translation tasks, including multilingual settings. Knowledge distillation has emerged as a sustainable approach for model compression, transferring knowledge from large teacher models to smaller, more efficient student models. Similarly, quantization, which reduces the numerical precision of model weights and activations (e.g., from 32-bit to 8-bit representations) is widely used to accelerate inference, enabling models to run several times faster during deployment. However, both techniques face limitations when applied to specialized domain data, particularly under low-resource conditions. In knowledge distillation, the effectiveness of transfer is often constrained by the scarcity of domain-specific parallel data, while quantization can lead to performance degradation as bit precision decreases. In this work, we investigate the combined application of knowledge distillation and quantization for French-to-English biomedical translation, a domain characterized by specialized terminology and limited parallel resources. We develop and compare multiple fine-tuning strategies to adapt compressed student models to this challenging setting. Our experiments demonstrate that a collaboratively distilled and quantized student model achieves a 69% reduction in size, a 98.21% increase in inference speed, and a 98.46% reduction in CO2 emissions compared to the original baseline all without sacrificing translation quality. These results indicate that jointly optimized compression techniques can yield efficient, high-performance models suitable for translation service providers operating under resource constraints.",
+  "url": "https://arxiv.org/abs/2610.07032",
+  "pdf_url": "https://arxiv.org/pdf/2610.07032",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Maria Zafar",
+    "Souhail Bakkali",
+    "Rejwanul Haque"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large-scale pretrained transformer models have achieved state-of-the-art performance across diverse machine translation tasks, including multilingual settings.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07032",
+      "url": "https://arxiv.org/abs/2610.07032"
+    }
+  ]
+}

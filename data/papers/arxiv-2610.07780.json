@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.07780",
+  "title": "APEX: Speculate smarter, not deeper",
+  "abstract": "Speculative decoding reduces large language model inference latency by drafting multiple tokens before target-model verification, but its effectiveness depends on both the proposal mechanism and draft depth. Fixed configurations cannot respond to changes in predictability, repetition, and acceptance during generation, so deeper drafting can increase wasted computation without proportional speedup. We introduce APEX, a learned controller that balances decoding speed and draft-token waste through request-level expert selection and block-level depth adaptation. APEX-Router selects among EAGLE-3, n-gram, and draft-model speculation for each request, while APEX-Depth adjusts draft length at each verification block using causal decoding signals and recent verifier feedback. APEX models accepted draft length as censored survival feedback, learning position-wise rejection hazards, block execution costs, and an action utility that balances throughput, accepted progress, and wasted tokens. This allows the controller to adapt speculation while retaining the target model's verification procedure. We integrate APEX into vLLM and evaluate it with Qwen3-8B across six workloads, achieving up to 5.24X speedup over autoregressive decoding. Across the aggregate evaluation, APEX-S achieves 4.27X speedup, while APEX-B achieves 3.27X speedup with a 41.0% relative reduction in wasted-token percentage compared with fixed n-gram speculation at k=16, providing distinct operating points for balancing acceleration and draft-token utilization.",
+  "url": "https://arxiv.org/abs/2610.07780",
+  "pdf_url": "https://arxiv.org/pdf/2610.07780",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Manvi Jha",
+    "Zach Zhang",
+    "Zhichao Xu",
+    "Linbo Liu",
+    "Sai Muralidhar Jayanthi",
+    "Vinayak Arannil"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 18,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Speculative decoding reduces large language model inference latency by drafting multiple tokens before target-model verification, but its effectiveness depends on both the proposal mechanism and draft depth.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07780",
+      "url": "https://arxiv.org/abs/2610.07780"
+    }
+  ]
+}

@@ -5,10 +5,12 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **30** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Stateless Language Agents: Scaling Long-Horizon Automated Research](../../papers/arxiv-2610.07625/) | 2026-10-07 | 45 |
+| [CNet: A Complex-Valued Deep Learning Framework with Wirtinger Autodifferentiation and FFT--Hadamard Convolution](../../papers/arxiv-2610.08592/) | 2026-10-07 | 42 |
 | [Evolving in Thought Space: Training a Small Model at Test Time Unlocks Better Discoveries](../../papers/arxiv-2610.06269/) | 2026-10-06 | 42 |
 | [FastKernels: Benchmarking GPU Kernel Generation in Production](../../papers/arxiv-2605.23215/) | 2026-10-05 | 56 |
 | [KernelZero: Co-Evolving Proposer and Coder for Continuously Improved GPU Kernel Generation](../../papers/arxiv-2609.33074/) | 2026-09-27 | 43 |

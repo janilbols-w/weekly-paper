@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **42** 篇。
+累计收录 **44** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Deep Defence on Wheels: A Dual Intrusion Detection System Architecture for Comprehensive In-Vehicle Network Security](../../papers/arxiv-2610.07489/) | 2026-10-07 | 41 |
+| [Common-Mode Errors Limit Low-Timestep Deep Spiking Q-Networks](../../papers/arxiv-2610.07808/) | 2026-10-07 | 41 |
 | [Energy Variation in Training Modern Computer Vision Architectures](../../papers/arxiv-2610.03772/) | 2026-10-06 | 41 |
 | [Can We Trust LLMs on Memristors? Diving into Reasoning Ability under Non-Ideality](../../papers/arxiv-2603.13725/) | 2026-10-05 | 39 |
 | [AI-driven Thermal-aware Data Center Capacity Planning](../../papers/arxiv-2610.02442/) | 2026-10-05 | 39 |

@@ -5,10 +5,14 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **94** 篇。
+累计收录 **98** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [APEX: Speculate smarter, not deeper](../../papers/arxiv-2610.07780/) | 2026-10-07 | 52 |
+| [DLoop: Looped Speculative Decoding](../../papers/arxiv-2610.07659/) | 2026-10-07 | 49 |
+| [Secure Speculative Decoding for Large Language Models](../../papers/arxiv-2610.08678/) | 2026-10-07 | 46 |
+| [SchemaFill: Efficient LLM Tool Calling via Slot-Parallel Speculative Decoding](../../papers/arxiv-2610.07086/) | 2026-10-07 | 45 |
 | [SpecFold: Folding Multi-Branch Redundancy for Faster Speculative Decoding in Diffusion Language Models](../../papers/arxiv-2610.04875/) | 2026-10-06 | 46 |
 | [ALoDLM: Adaptively Looped Diffusion Language Models](../../papers/arxiv-2610.04198/) | 2026-10-06 | 39 |
 | [LEAP: Learning Efficient Action Proposals For LLM Agents](../../papers/arxiv-2610.02670/) | 2026-10-05 | 43 |

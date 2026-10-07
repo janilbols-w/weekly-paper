@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2610.07593",
+  "title": "TRANSIT: Transparent Scale-in for Multi-Node LLM Training",
+  "abstract": "TRANSIT is a transparent scale-in framework to enable multi-node model training on fewer GPUs while maintaining training efficiency by transparently leveraging CPU DRAM as an extension of GPU memory during distributed training. It achieves this through a user-space interposition layer, requiring no modifications to the application, training framework, cluster scheduler, device driver, or operating system. Furthermore, TRANSIT achieves higher efficiency by leveraging a zero-copy data path for CPU-GPU transfers. We evaluate TRANSIT on dense and MoE models across scales up to 64 NVIDIA H100 GPUs and multiple parallelism configurations over a RoCE network. Our evaluation shows that TRANSIT can: (a) outperform state-of-the-art framework-managed offloading techniques, achieving up to 68%, 59%, and 42% higher per-GPU throughput than TorchTitan, ZeRO-Offload, and ZeRO-Infinity, respectively, (b) enables training with 50% fewer GPUs while maintaining over 90% of baseline per-GPU throughput, (c) lower per-node network traffic by up to 33%, and (d) improve per-GPU throughput by up to 35% in communication-bound settings.",
+  "url": "https://arxiv.org/abs/2610.07593",
+  "pdf_url": "https://arxiv.org/pdf/2610.07593",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Hyungyo Kim",
+    "Nicholas Satchanov",
+    "Hrishi Shah",
+    "Gaohan Ye",
+    "Jiaqi Lou",
+    "Robert Walkup",
+    "Shweta Salaria",
+    "I-Hsin Chung",
+    "Hubertus Franke",
+    "Seetharami Seelam",
+    "Apoorve Mohan",
+    "Nam Sung Kim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory",
+    "offloading"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory, offloading",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "TRANSIT is a transparent scale-in framework to enable multi-node model training on fewer GPUs while maintaining training efficiency by transparently leveraging CPU DRAM as an extension of GPU memory during distributed training.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07593",
+      "url": "https://arxiv.org/abs/2610.07593"
+    }
+  ]
+}

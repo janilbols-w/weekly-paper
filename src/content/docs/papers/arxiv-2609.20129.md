@@ -39,7 +39,7 @@ Deployment-time safety methods for large language models (LLMs) are predominantl
 ## 元数据
 
 - 作者：Xin Chen, Gil Kur, Alexander Shevchenko, Andreas Krause
-- 发布：2026-09-17；更新：2026-09-18
+- 发布：2026-09-17；更新：2026-10-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

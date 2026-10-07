@@ -5,10 +5,19 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **266** 篇。
+累计收录 **274** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Offline AI Modules: Voice-First Offline Architecture, Hardware Reference Stack, Quantization and Benchmarking](../../papers/arxiv-2610.07026/) | 2026-10-07 | 52 |
+| [TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models](../../papers/arxiv-2610.07767/) | 2026-10-07 | 51 |
+| [AlignQuant: Tile-Aligned Mixed-Precision Quantization for Efficient LLM Generation](../../papers/arxiv-2610.07457/) | 2026-10-07 | 50 |
+| [SoloQ: Calibration-Free Quantization for Diffusion Language Models](../../papers/arxiv-2610.07121/) | 2026-10-07 | 47 |
+| [A Shape-Adaptive Architecture with Disaggregated Quantization for Efficient LLM Serving](../../papers/arxiv-2610.07443/) | 2026-10-07 | 45 |
+| [Align, Then Correct: Training-Free Two-Stage Low-Rank Compensation for Extremely Quantized Large Language Models](../../papers/arxiv-2610.08164/) | 2026-10-07 | 42 |
+| [Activation Denoising: A Robustness View on Parallel vs Sequential LLM Quantization](../../papers/arxiv-2610.07522/) | 2026-10-07 | 41 |
+| [Investigating Model Compression for Neural Machine Translation in the Biomedical Domain](../../papers/arxiv-2610.07032/) | 2026-10-07 | 38 |
+| [ApexQuant: Data-Free Elastic Quantization by Residual Re-Isotropization](../../papers/arxiv-2610.07904/) | 2026-10-07 | 38 |
 | [BARQ: Balanced Codebook Refinement for Low-Bit LLM Quantization](../../papers/arxiv-2610.04490/) | 2026-10-06 | 55 |
 | [Loopy: Low-Bit Quantization Framework for Looped Language Models](../../papers/arxiv-2610.05265/) | 2026-10-06 | 51 |
 | [Differentiable Bit-Widths: Co-optimizing Pruning and Quantization via SVD for Ultra-Efficient LLM Compression](../../papers/arxiv-2610.06026/) | 2026-10-06 | 47 |
@@ -110,7 +119,6 @@ description: "Quantization & Low Precision"
 | [When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs](../../papers/arxiv-2609.24799/) | 2026-09-21 | 48 |
 | [Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals](../../papers/arxiv-2609.21450/) | 2026-09-21 | 42 |
 | [NAVIR: Neuromorphic Audio-Visual Speech Recognition for Robust Human-Robot Interaction on Edge Hardware](../../papers/arxiv-2609.24391/) | 2026-09-21 | 41 |
-| [Text Scores Can Miss Waveform Use: A Qwen2-Audio Quantization Case Study](../../papers/arxiv-2609.26823/) | 2026-09-20 | 41 |
 | [WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model](../../papers/arxiv-2609.23444/) | 2026-09-20 | 39 |
 | [A discrete generative model of neuronal spiking activity on microelectrode arrays](../../papers/arxiv-2609.23907/) | 2026-09-20 | 39 |
 | [Towards Full Pipeline FP8 Reinforcement Learning for LLMs](../../papers/arxiv-2609.22870/) | 2026-09-19 | 43 |
@@ -225,7 +233,7 @@ description: "Quantization & Low Precision"
 | [p-Spin Glass Network Efficient Single-Batch Continual Learning](../../papers/arxiv-2608.14774/) | 2026-08-18 | 38 |
 | [Hardware-in-the-Loop Phase-Aware CNN for Real-Time 5G Channel Estimation](../../papers/arxiv-2608.14709/) | 2026-08-18 | 38 |
 | [The Integer Alibi: Localizing Cross-Kernel Divergence in INT8-Quantized LLM Inference](../../papers/arxiv-2608.13756/) | 2026-08-17 | 50 |
-| [QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction](../../papers/arxiv-2608.13966/) | 2026-08-17 | 41 |
+| [QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction](../../papers/arxiv-2608.13966/) | 2026-08-17 | 47 |
 | [Post-training Quantization for Hybrid Iterative Generative Models](../../papers/arxiv-2608.13932/) | 2026-08-17 | 41 |
 | [SchurQuant: Groupwise Discrete Optimization for Layer-Wise LLM Quantization](../../papers/arxiv-2608.15567/) | 2026-08-16 | 45 |
 | [Anatomy of a Quantized Agent: VRAM Stability and Forecasting in Code-Synthesis Agentic Workloads](../../papers/arxiv-2608.15117/) | 2026-08-15 | 47 |

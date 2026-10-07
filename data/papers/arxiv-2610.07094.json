@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2610.07094",
+  "title": "Evaluating Inference Compute for Generative AI: A Framework for Enterprise Workloads",
+  "abstract": "LLM deployment is shifting from single-turn completion to agentic trajectories in which a model plans, calls tools, reads results and reasons at test time before acting. This inverts the economics of inference hardware: chat serving amortises weight reads across large batches, whereas agent trajectories are sequentially dependent, run at effective batch one, and make per-token decode latency (TPOT) the dominant term in task completion time. Using a roofline analysis and a closed-form episode-latency model, we show why this regime favours accelerators that keep weights in on-die SRAM (Cerebras WSE-3/3T, Groq/NVIDIA LPU) or compiler-managed tiered memory (SambaNova SN40L/SN50), and why three vendor ecosystems converged in 2026 on disaggregated prefill/decode serving. We show that per-step reliability compounds exponentially in trajectory length-a 2% per-step failure rate erases a 2x decode advantage for a 20-step agent-so determinism and tail latency are first-order performance variables. We then propose a four-layer evaluation framework (silicon, serving system, agent episode, enterprise) with a metric set built on goodput at an agentic SLO and cost per successful episode, a six-axis benchmark protocol over six task families, a paired-bootstrap statistical design, an attestation protocol for vendor-run benchmarks, and TCO, availability and adoption-timing models with explicit break-even conditions. All performance figures are public and labelled by evidence class; we state seven falsifiable hypotheses and the experiments that test them, and argue that the most likely original result is that token-throughput rankings diverge from cost-per-successful-task rankings on long-horizon work.",
+  "url": "https://arxiv.org/abs/2610.07094",
+  "pdf_url": "https://arxiv.org/pdf/2610.07094",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "authors": [
+    "Abbas Raza Ali",
+    "Muhammad Ajmal Siddiqui",
+    "Moona Zahid"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.DC",
+    "cs.LG",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "slo",
+    "tail latency"
+  ],
+  "score": 54,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: slo, tail latency",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM deployment is shifting from single-turn completion to agentic trajectories in which a model plans, calls tools, reads results and reasons at test time before acting.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-07T04:46:08+00:00",
+  "last_seen": "2026-10-07T04:46:08+00:00",
+  "featured_weeks": [
+    "2026-W41"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.07094",
+      "url": "https://arxiv.org/abs/2610.07094"
+    }
+  ]
+}

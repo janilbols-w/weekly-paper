@@ -39,7 +39,7 @@ Diffusion large language models (DLLMs) generate text through iterative block de
 ## 元数据
 
 - 作者：Chung-En Ho (Celine), Weiyu Sun (Celine), Cheng-Jhih Shih (Celine), He Li (Celine), Yong Liu (Celine), Yingyan (Celine), Lin
-- 发布：2026-10-06；更新：2026-10-06
+- 发布：2026-10-06；更新：2026-10-07
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

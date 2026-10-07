@@ -5,10 +5,16 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **170** 篇。
+累计收录 **176** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents](../../papers/arxiv-2610.07863/) | 2026-10-07 | 46 |
+| [Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell](../../papers/arxiv-2610.07782/) | 2026-10-07 | 46 |
+| [Mask-Guided KV Cache Eviction in Block Diffusion Language Models](../../papers/arxiv-2610.06996/) | 2026-10-07 | 45 |
+| [AttSVD:Prompt-Adaptive Low-Rank KV Cache Compression via Attention-Guided SVD](../../papers/arxiv-2610.06927/) | 2026-10-07 | 45 |
+| [Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash](../../papers/arxiv-2610.08378/) | 2026-10-07 | 44 |
+| [Refusal-Gated Decoding: Preserving Refusal Behavior Under High-Temperature Sampling](../../papers/arxiv-2607.20791/) | 2026-10-07 | 41 |
 | [KV Cache Translation across Heterogeneous Large Language Models](../../papers/arxiv-2607.28979/) | 2026-10-06 | 52 |
 | [Adaptive KV Cache Reuse for Fast Long-Context LLM Serving](../../papers/arxiv-2605.24022/) | 2026-10-06 | 52 |
 | [OVAL: Output-Aware Local Page Bases for KV Cache Retrieval](../../papers/arxiv-2610.06686/) | 2026-10-06 | 48 |
@@ -28,7 +34,7 @@ description: "Attention & KV Cache"
 | [Block Sparse Flash Attention](../../papers/arxiv-2512.07011/) | 2026-09-30 | 54 |
 | [PatchKV: Weight-Space Compensation of KV Cache](../../papers/arxiv-2609.39329/) | 2026-09-30 | 48 |
 | [Capture the lifecycle: KV Cache management in ReAct Agents with KVTether](../../papers/arxiv-2609.39819/) | 2026-09-30 | 44 |
-| [TwinKV: A Composable Repair Pass for KV Cache Eviction via Pairwise Key Redundancy](../../papers/arxiv-2608.27128/) | 2026-09-30 | 43 |
+| [Small Frequency Corrections Can Change What Survives KV Cache Compression](../../papers/arxiv-2608.27128/) | 2026-09-30 | 43 |
 | [Learning Functional Subspaces for Neural Network Compression](../../papers/arxiv-2609.40127/) | 2026-09-30 | 42 |
 | [Cascadia: A Control-Plane-Free Alternative to Hyperconverged AI Infrastructure](../../papers/arxiv-2609.38697/) | 2026-09-30 | 42 |
 | [Persistent Context Graphs for Efficient Memory Compaction in LLM Agents](../../papers/arxiv-2609.40118/) | 2026-09-30 | 39 |
