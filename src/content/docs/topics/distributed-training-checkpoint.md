@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **98** 篇。
+累计收录 **100** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Benchmarking System One decision models against trained classifiers and language models for automated decision gates](../../papers/arxiv-2610.00346/) | 2026-10-08 | 42 |
+| [PrismSSL: One Interface, Many Modalities; A Single-Interface Library for Multimodal Self-Supervised Learning](../../papers/arxiv-2511.17776/) | 2026-10-08 | 38 |
 | [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](../../papers/arxiv-2610.07688/) | 2026-10-07 | 54 |
 | [VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents](../../papers/arxiv-2610.08402/) | 2026-10-07 | 44 |
 | [Towards One-for-All Foundation Model for Attributed Graph Clustering](../../papers/arxiv-2610.07778/) | 2026-10-07 | 44 |

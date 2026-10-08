@@ -5,10 +5,14 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **100** 篇。
+累计收录 **104** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Knowledge boundary probing and demand-guided intervention for LLM-based power system code generation](../../papers/arxiv-2605.31478/) | 2026-10-08 | 47 |
+| [SEER: Self-Enhancing Chain-of-Thought Compression for Reasoning Models](../../papers/arxiv-2509.14093/) | 2026-10-08 | 41 |
+| [Large-scale Repository Engineering via Agent-Native Reusable Code Primitives](../../papers/arxiv-2610.09079/) | 2026-10-08 | 40 |
+| [Continuous-Utility Direct Preference Optimization](../../papers/arxiv-2602.00931/) | 2026-10-08 | 38 |
 | [StepCAD: Mesh-to-CAD Code Generation via LLM Policy and Geometry-Guided Search](../../papers/arxiv-2610.03799/) | 2026-10-06 | 47 |
 | [Assembling Insights for Agentic Machine Learning Engineering Systems](../../papers/arxiv-2610.04927/) | 2026-10-06 | 45 |
 | [A Model Can Help Itself: Reward-Free Self-Training for LLM Reasoning](../../papers/arxiv-2510.18814/) | 2026-10-06 | 43 |

@@ -39,7 +39,7 @@ Language-model agents increasingly rely on harnesses that manage bounded context
 ## 元数据
 
 - 作者：Zelin Zhao (Georgia Institute of Technology), Xinyu Guo (Georgia Institute of Technology), Jingyuan Zhang (Georgia Institute of Technology), Yuxuan Zhang (Etude AI), Yongxin Chen (Georgia Institute of Technology)
-- 发布：2026-10-05；更新：2026-10-05
+- 发布：2026-10-05；更新：2026-10-08
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

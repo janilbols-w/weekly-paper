@@ -5,10 +5,25 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **527** 篇。
+累计收录 **541** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SAPD: Step-Aligned Privileged Distillation](../../papers/arxiv-2610.09665/) | 2026-10-08 | 53 |
+| [Multi-Label Topic Assignment via LLM Distillation: A Comparative Analysis of Generative vs. Discriminative Student Models](../../papers/arxiv-2610.09063/) | 2026-10-08 | 48 |
+| [Understanding and Mitigating Token-Pruning-Induced Vulnerabilities in VLMs](../../papers/arxiv-2610.09703/) | 2026-10-08 | 44 |
+| [SkillRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning](../../papers/arxiv-2602.08234/) | 2026-10-08 | 44 |
+| [Collaborative Reasoning Distillation via Cross-Feedback and Coherent Curation](../../papers/arxiv-2610.09587/) | 2026-10-08 | 44 |
+| [TAP: Efficient Long-Horizon Agent Pruning via Trajectory-Anchored Recovery](../../papers/arxiv-2610.09074/) | 2026-10-08 | 42 |
+| [GraphOPD: Graph-Augmented On-Policy Distillation for LLM Agents](../../papers/arxiv-2610.08959/) | 2026-10-08 | 42 |
+| [Multi-Objective Aligned Small Language Model Framework for SUD Patient Dialogue Generation](../../papers/arxiv-2610.09209/) | 2026-10-08 | 41 |
+| [MIRROR: From Imitation to Internalization in LLM Personalization](../../papers/arxiv-2610.09795/) | 2026-10-08 | 41 |
+| [Just for FUNS: LLM-Guided Spatio-Temporal Graph Node Generation for Forecasting Unobserved Node States](../../papers/arxiv-2610.08818/) | 2026-10-08 | 41 |
+| [EntroPrefill: Renyi-Guided Context Pruning with Conditional Stability Guarantees for Retrieval-Augmented Generation](../../papers/arxiv-2610.09757/) | 2026-10-08 | 39 |
+| [Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs](../../papers/arxiv-2610.10520/) | 2026-10-08 | 39 |
+| [OnlineQAT: On-Policy Distillation for Ultra-Low-Bit Large Language Models](../../papers/arxiv-2610.09346/) | 2026-10-08 | 38 |
+| [LoopFM: Learning frOm HistOrical RePresentations of Foundation Model for Recommendation](../../papers/arxiv-2605.29280/) | 2026-10-08 | 38 |
+| [CM-DPO: Constraint-Margin Direct Preference Optimization for LLM Planning](../../papers/arxiv-2610.09219/) | 2026-10-08 | 38 |
 | [WASD: Wasserstein-based Knowledge Distillation for Large Language Models](../../papers/arxiv-2610.07706/) | 2026-10-07 | 50 |
 | [VisionWeave: Weaving Elastic Visual Representations as a Native Capability of MLLMs](../../papers/arxiv-2610.07987/) | 2026-10-07 | 48 |
 | [Natural Language Questions as an Interface for Knowledge Graphs: QRAKEN Graph Distillation and Semantic Self-Healing](../../papers/arxiv-2610.08095/) | 2026-10-07 | 45 |
@@ -67,7 +82,6 @@ description: "Compression, Sparsity & Distillation"
 | [All Work And No Play Makes Jack a Dull Boy: Understanding and Preventing Catastrophic Strategy Collapse in RLVR](../../papers/arxiv-2610.02835/) | 2026-10-05 | 40 |
 | [Large Language Continuous Diffusion Models](../../papers/arxiv-2610.02665/) | 2026-10-05 | 39 |
 | [Distillation of Tabular Foundation Models into Efficient Predictors](../../papers/arxiv-2610.01435/) | 2026-10-02 | 50 |
-| [Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations](../../papers/arxiv-2610.00728/) | 2026-10-02 | 45 |
 | [LEGO-OPD: Factorized Teacher Composition for Multimodal On-Policy Distillation](../../papers/arxiv-2610.00333/) | 2026-10-02 | 43 |
 | [Towards Fast and Disentangled Counterfactuals for Visual Foundation Models](../../papers/arxiv-2610.00895/) | 2026-10-02 | 42 |
 | [Smoother Flow Matching via Contrastive Trajectory Repulsion](../../papers/arxiv-2610.01408/) | 2026-10-02 | 42 |

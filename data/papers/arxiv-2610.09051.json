@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2610.09051",
+  "title": "A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention",
+  "abstract": "The large KV-cache size of modern LLMs creates a barrier to efficient deployment. Recent work has explored replacing attention layers' RoPE positional embeddings with alternative decay-based mechanisms, which can then be used to prune KV-cache during inference. However, these decay functions have limited expressivity, and in practice devolve into sliding-window-like eviction patterns. In this work, we propose a unifying framework for complementary and novel decay mechanisms, capturing complex key statistics and interactions while preserving expressive RoPE embeddings and Softmax attention. The resulting Universal Attention is a highly expressive and end-to-end trainable architecture, whose composite decay mechanism acts as a natural, $\\textit{adaptive}$ pruning criterion, removing tokens that contribute least to attention computation. Experimentally, Universal Attention achieves state-of-the-art $10\\times$ compression on natural language and synthetic task data, while $\\textit{improving}$ downstream performance compared to both state-of-the-art baselines and unpruned oracles. It further demonstrates superior long-context generalization with unprecedented $25\\times$ compression at length 16k.",
+  "url": "https://arxiv.org/abs/2610.09051",
+  "pdf_url": "https://arxiv.org/pdf/2610.09051",
+  "published": "2026-10-08",
+  "updated": "2026-10-08",
+  "authors": [
+    "Davis Wertheimer",
+    "Haochen Shen",
+    "Ahan Gupta",
+    "Derrick Liu",
+    "Yu Chin Fabian Lim",
+    "Mudhakar Srivatsa",
+    "Raghu K. Ganti",
+    "Minjia Zhang",
+    "Naigang Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "compression-sparsity-distillation"
+  ],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The large KV-cache size of modern LLMs creates a barrier to efficient deployment.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-08T04:47:16+00:00",
+  "last_seen": "2026-10-08T04:47:16+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.09051",
+      "url": "https://arxiv.org/abs/2610.09051"
+    }
+  ]
+}

@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **176** 篇。
+累计收录 **179** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ReToken: Improving Long-Context VLMs with Visual Retrieval Token](../../papers/arxiv-2607.28627/) | 2026-10-08 | 43 |
+| [A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention](../../papers/arxiv-2610.09051/) | 2026-10-08 | 42 |
+| [KVFetch: Temporal Prefetching for the Missing Half of KV Cache Compression](../../papers/arxiv-2610.08811/) | 2026-10-08 | 40 |
 | [ReFold: Training-Free Reversible Inter-Turn Context Folding for Long-Horizon Agents](../../papers/arxiv-2610.07863/) | 2026-10-07 | 46 |
 | [Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell](../../papers/arxiv-2610.07782/) | 2026-10-07 | 46 |
 | [Mask-Guided KV Cache Eviction in Block Diffusion Language Models](../../papers/arxiv-2610.06996/) | 2026-10-07 | 45 |

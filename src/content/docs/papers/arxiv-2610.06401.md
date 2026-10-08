@@ -39,7 +39,7 @@ Tool-using language-model agents are vulnerable to indirect prompt injection bec
 ## 元数据
 
 - 作者：Mohamed Dhouib, Clement Elliker, Alexi Canesse, Ma\"el Jenny, Lucas-Andrei Thil, Mahammed El-Sharkawy, Sonia Vanier, Elie Bursztein
-- 发布：2026-10-06；更新：2026-10-06
+- 发布：2026-10-06；更新：2026-10-08
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

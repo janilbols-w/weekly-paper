@@ -39,7 +39,7 @@ Full-parameter fine-tuning of large language models (LLMs) incurs substantial op
 ## 元数据
 
 - 作者：Jichao Jiang, Cristian McGee, El Houcine Bergou, Hanqin Cai, Aritra Dutta
-- 发布：2026-10-01；更新：2026-10-02
+- 发布：2026-10-01；更新：2026-10-08
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Jichao2357/TACO_optimizer](https://github.com/Jichao2357/TACO_optimizer)
 - 阅读深度：metadata

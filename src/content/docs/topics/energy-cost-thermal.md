@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **44** 篇。
+累计收录 **45** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ReSAFT: An Efficient Stuck-at Fault-Tolerant Scheme for ReRAM-based Process-in-Memory Accelerators](../../papers/arxiv-2610.09999/) | 2026-10-08 | 46 |
 | [Deep Defence on Wheels: A Dual Intrusion Detection System Architecture for Comprehensive In-Vehicle Network Security](../../papers/arxiv-2610.07489/) | 2026-10-07 | 41 |
 | [Common-Mode Errors Limit Low-Timestep Deep Spiking Q-Networks](../../papers/arxiv-2610.07808/) | 2026-10-07 | 41 |
 | [Energy Variation in Training Modern Computer Vision Architectures](../../papers/arxiv-2610.03772/) | 2026-10-06 | 41 |

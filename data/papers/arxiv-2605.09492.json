@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2605.09492",
+  "title": "APCD: Adaptive Path-Contrastive Decoding for Reliable Large Language Model Generation",
+  "abstract": "Reliable text generation is critical for deploying large language models (LLMs) in real-world applications, particularly in high-stakes domains such as medicine. To improve factual reliability, various inference-time methods have been proposed, including logit-level methods that modify token probability distributions and representation-level methods that manipulate intermediate model representations. However, most existing approaches operate on a single decoding trajectory, limiting their ability to explore alternative reasoning paths and making them susceptible to error accumulation. To address this limitation, we propose Adaptive Path-Contrastive Decoding (APCD), an adaptive multi-path contrastive decoding framework that improves factual reliability without model retraining or fine-tuning. APCD comprises two key components: Entropy-Driven Path Expansion, which adaptively expands the decoding process only at high-uncertainty decision points, and Divergence-Aware Path Contrast, which dynamically regulates contrastive interactions among parallel decoding paths based on their distributional divergence to balance diversity and coherence. We evaluate APCD on four LLM backbones across eight benchmarks spanning both general-domain and medical question answering tasks. Experimental results demonstrate that APCD consistently outperforms strong inference-time baselines in factual accuracy while maintaining competitive inference efficiency. These results demonstrate the robustness and generalizability of APCD across diverse models and tasks, highlighting its effectiveness as a practical multi-path decoding framework for reliable LLM deployment, particularly in high-stakes domains such as medicine. Code is available at https://github.com/zty-king/APCD.",
+  "url": "https://arxiv.org/abs/2605.09492",
+  "pdf_url": "https://arxiv.org/pdf/2605.09492",
+  "published": "2026-10-08",
+  "updated": "2026-10-08",
+  "authors": [
+    "Tianyu Zheng",
+    "Hong Wu",
+    "Jiaji Zhong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/zty-king/APCD",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "parallel decoding"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: parallel decoding",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Reliable text generation is critical for deploying large language models (LLMs) in real-world applications, particularly in high-stakes domains such as medicine.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-08T04:47:16+00:00",
+  "last_seen": "2026-10-08T04:47:16+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.09492",
+      "url": "https://arxiv.org/abs/2605.09492"
+    }
+  ]
+}

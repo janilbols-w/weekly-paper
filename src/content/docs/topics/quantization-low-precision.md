@@ -5,10 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **274** 篇。
+累计收录 **281** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ResidualQuant: KV Cache Quantization for Looped Transformers with 2-Bit Residuals](../../papers/arxiv-2610.10381/) | 2026-10-08 | 50 |
+| [Cache the Encoder Within:Compact, Reusable Memory across LLM Queries](../../papers/arxiv-2610.10058/) | 2026-10-08 | 45 |
+| [Few Bits, One Law: Toward W2A4KV2](../../papers/arxiv-2610.09202/) | 2026-10-08 | 44 |
+| [Q-PACE: Dynamic Precision Allocation for Quantization-Aware Training](../../papers/arxiv-2610.09183/) | 2026-10-08 | 43 |
+| [TR-PTQ: High-Accuracy Integer-Only Transformer Post Training Quantization via Taylor Region Reformulation](../../papers/arxiv-2610.09969/) | 2026-10-08 | 39 |
+| [DisParQ: Self-Supervised Part Concepts for Interpretable Vision Foundation Models](../../papers/arxiv-2610.09802/) | 2026-10-08 | 39 |
+| [CurveTQ: Rotation-Free Trellis Quantization of LLM Weights via Curvature-Weighted Search](../../papers/arxiv-2610.09212/) | 2026-10-08 | 39 |
 | [Offline AI Modules: Voice-First Offline Architecture, Hardware Reference Stack, Quantization and Benchmarking](../../papers/arxiv-2610.07026/) | 2026-10-07 | 52 |
 | [TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models](../../papers/arxiv-2610.07767/) | 2026-10-07 | 51 |
 | [AlignQuant: Tile-Aligned Mixed-Precision Quantization for Efficient LLM Generation](../../papers/arxiv-2610.07457/) | 2026-10-07 | 50 |

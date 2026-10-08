@@ -5,10 +5,11 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **24** 篇。
+累计收录 **25** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Latent Performance Profiling of Large Language Models](../../papers/arxiv-2605.30018/) | 2026-10-08 | 41 |
 | [AegisFlow: A Multi-Agent Agentic AI Framework for Autonomous Remediation and Self-Healing in Fragile Data Ecosystems](../../papers/arxiv-2610.06971/) | 2026-10-07 | 43 |
 | [One-Cycle Fault Classification and Faulted-Line Identification on the PROTECT-90 Dataset: An Initial Application Benchmark](../../papers/arxiv-2610.04155/) | 2026-10-06 | 41 |
 | [What Does an Observability Foundation Model Know?](../../papers/arxiv-2610.05577/) | 2026-10-06 | 40 |

@@ -5,10 +5,12 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **87** 篇。
+累计收录 **89** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Continuous Semantic Caching for Low-Cost LLM Serving](../../papers/arxiv-2604.20021/) | 2026-10-08 | 44 |
+| [vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation](../../papers/arxiv-2610.09307/) | 2026-10-08 | 40 |
 | [ECO: Energy-Oriented Configuration Optimization for Attention FFN Disaggregated LLM Serving](../../papers/arxiv-2610.08373/) | 2026-10-07 | 50 |
 | [Beyond LLM Serving: Characterizing Vision-Language-Action Workloads for Embodied AI System Design](../../papers/arxiv-2610.05062/) | 2026-10-06 | 44 |
 | [Exact Memory-Time Optimization for Prefix-Cached Language Model Serving](../../papers/arxiv-2610.02766/) | 2026-10-05 | 47 |

@@ -39,7 +39,7 @@ Inertial confinement fusion (ICF) is a leading pathway toward clean energy, but 
 ## 元数据
 
 - 作者：Xiang Zhang, Varchas Gopalaswamy, Rahman Ejaz, Riccardo Betti, Dongfang Liu
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-10-08
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

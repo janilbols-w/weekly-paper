@@ -39,7 +39,7 @@ Recent advances in online policy self-distillation (OPSD) have demonstrated that
 ## 元数据
 
 - 作者：Xiaoshu Chen, Xiangyu Wong, Sihang Zhou, Ke Liang, Xinwang Liu
-- 发布：2026-09-27；更新：2026-09-30
+- 发布：2026-09-27；更新：2026-10-08
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

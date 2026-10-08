@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **98** 篇。
+累计收录 **100** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [APCD: Adaptive Path-Contrastive Decoding for Reliable Large Language Model Generation](../../papers/arxiv-2605.09492/) | 2026-10-08 | 46 |
+| [Training Parallel Speculative Draft Models by Directly Minimizing Expected Decoding Rounds](../../papers/arxiv-2610.10411/) | 2026-10-08 | 38 |
 | [APEX: Speculate smarter, not deeper](../../papers/arxiv-2610.07780/) | 2026-10-07 | 52 |
 | [DLoop: Looped Speculative Decoding](../../papers/arxiv-2610.07659/) | 2026-10-07 | 49 |
 | [Secure Speculative Decoding for Large Language Models](../../papers/arxiv-2610.08678/) | 2026-10-07 | 46 |

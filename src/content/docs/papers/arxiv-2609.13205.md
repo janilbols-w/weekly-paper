@@ -39,7 +39,7 @@ Sparse long-context inference requires efficient token retrieval in both prefill
 ## 元数据
 
 - 作者：Xu Yang, Jiapeng Zhang, Zhangke, Changjian Chen, Yuxin Chen, Feiqiang Sun, Chengguang Xu, Feng Jin, Zhuo Tang
-- 发布：2026-09-15；更新：2026-09-15
+- 发布：2026-09-15；更新：2026-10-08
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
