@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **73** 篇。
+累计收录 **74** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Toward Intelligent Networks via AI-Aware GPU-Native Packet Processing](../../papers/arxiv-2610.12139/) | 2026-10-09 | 43 |
 | [Hardware-aware Calibrated Clustered Attention for Efficient Visual Geometric Transformers](../../papers/arxiv-2610.09274/) | 2026-10-08 | 47 |
 | [T-CCL: Resource Efficient and Performant Collective Communication using Tensor Memory Accelerator](../../papers/arxiv-2610.07098/) | 2026-10-07 | 53 |
 | [Stepped MoE: Segment-Level Routing with Configurable Inference Complexity](../../papers/arxiv-2610.07348/) | 2026-10-07 | 41 |

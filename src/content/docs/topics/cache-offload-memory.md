@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **104** 篇。
+累计收录 **107** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute](../../papers/arxiv-2610.10845/) | 2026-10-09 | 43 |
+| [EvoRubric: Self-Evolving Rubric-Driven RL for Open-Ended Generation](../../papers/arxiv-2605.29847/) | 2026-10-09 | 43 |
+| [Batch Before You Lift: Scalable Topological Deep Learning on Large Graphs](../../papers/arxiv-2610.12247/) | 2026-10-09 | 38 |
 | [Fast and Memory Efficient Offload Training Framework with Hybrid XPU Computation](../../papers/arxiv-2610.09657/) | 2026-10-08 | 43 |
 | [Conditional Flow Matching for Generation of 3D Multi-variable Instantaneous Urban Microclimate Fields](../../papers/arxiv-2610.10430/) | 2026-10-08 | 40 |
 | [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](../../papers/arxiv-2610.07593/) | 2026-10-07 | 44 |

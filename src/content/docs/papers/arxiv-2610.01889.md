@@ -39,7 +39,7 @@ Should low-precision transformer inference use stochastic rounding (SR) or round
 ## 元数据
 
 - 作者：Yohan Chatelain, Pablo de Oliveira Castro
-- 发布：2026-10-01；更新：2026-10-02
+- 发布：2026-10-01；更新：2026-10-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/big-data-lab-team/fuzzy-llm](https://github.com/big-data-lab-team/fuzzy-llm)
 - 阅读深度：metadata

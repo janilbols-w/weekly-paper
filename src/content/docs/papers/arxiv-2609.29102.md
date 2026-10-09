@@ -39,7 +39,7 @@ Fully continuous diffusion language models (dLMs) denoise continuous representat
 ## 元数据
 
 - 作者：Zeyu Michael Li, William Xingxu Chen, Bingshuo Qian, Jiayin Liu, Xiang Cheng
-- 发布：2026-09-24；更新：2026-10-07
+- 发布：2026-09-24；更新：2026-10-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

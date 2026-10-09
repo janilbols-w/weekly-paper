@@ -5,10 +5,30 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **541** 篇。
+累计收录 **561** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference](../../papers/arxiv-2610.12327/) | 2026-10-09 | 48 |
+| [3BASiL: An Algorithmic Framework for Sparse plus Low-Rank Compression of LLMs](../../papers/arxiv-2603.01376/) | 2026-10-09 | 47 |
+| [Generative Spatiotemporal Intent Sequence Recommendation via Implicit Reasoning in Amap](../../papers/arxiv-2605.28888/) | 2026-10-09 | 46 |
+| [Stochastic Teacher Intervention for Agentic On-Policy Distillation](../../papers/arxiv-2610.10878/) | 2026-10-09 | 45 |
+| [ReCal: Calibrating Structured Pruning for On-Policy Distillation Recovery](../../papers/arxiv-2610.11332/) | 2026-10-09 | 45 |
+| [Omni-Diffusion-Distill: Few-Step Distillation of Unified Multimodal Diffusion Large Language Models](../../papers/arxiv-2610.10990/) | 2026-10-09 | 45 |
+| [Beyond Sequences: Distilling Structured Decision Memory for LLM Recommendation](../../papers/arxiv-2610.11501/) | 2026-10-09 | 45 |
+| [Diffu-LoRA: A Novel Low-Rank Adaptation for Personalized Diffusion Models](../../papers/arxiv-2610.10550/) | 2026-10-09 | 44 |
+| [Why On-Policy Distillation Sometimes Fails: Vanishing Learning Signals](../../papers/arxiv-2610.11247/) | 2026-10-09 | 43 |
+| [Recurrent Self-Improvement: Dynamic Cross-Loop On-Policy Distillation for Looped Language Models](../../papers/arxiv-2610.10623/) | 2026-10-09 | 43 |
+| [PIVOT: Perplexity-Informed KD-to-RL Transition Scheduling for Vertical-Domain Few-Shot Distillation](../../papers/arxiv-2610.11167/) | 2026-10-09 | 43 |
+| [DADP: Dynamic Activity-Dependent Pruning, A Reverse Hebbian-Inspired Structural Pruning Method](../../papers/arxiv-2610.11853/) | 2026-10-09 | 43 |
+| [LoRi: Low-Rank Distillation for Implicit Reasoning](../../papers/arxiv-2606.05315/) | 2026-10-09 | 42 |
+| [Lapras: Latent Reasoning for Time Series Language Models](../../papers/arxiv-2610.11111/) | 2026-10-09 | 40 |
+| [KDFP: A first-principles approach to knowledge distillation in large language models](../../papers/arxiv-2610.10854/) | 2026-10-09 | 40 |
+| [Dynamics as Code: On Model Compression via Dynamic System](../../papers/arxiv-2610.11115/) | 2026-10-09 | 40 |
+| [SpatialOPSD: Self-Distilling Spatial Intelligence from Verified Coding Agent Traces](../../papers/arxiv-2610.11366/) | 2026-10-09 | 39 |
+| [Few-Step Generation via Data-Space Iteration](../../papers/arxiv-2610.12102/) | 2026-10-09 | 39 |
+| [A Ticket from Marginals to Joints: Coupled-Noise Distillation for One-Step Block Generation in Diffusion Language Models](../../papers/arxiv-2609.06324/) | 2026-10-09 | 39 |
+| [Stop Probing, Start Coding: Why Linear Probes and Sparse Autoencoders Fail at Compositional Generalisation](../../papers/arxiv-2603.28744/) | 2026-10-09 | 38 |
 | [SAPD: Step-Aligned Privileged Distillation](../../papers/arxiv-2610.09665/) | 2026-10-08 | 53 |
 | [Multi-Label Topic Assignment via LLM Distillation: A Comparative Analysis of Generative vs. Discriminative Student Models](../../papers/arxiv-2610.09063/) | 2026-10-08 | 48 |
 | [Understanding and Mitigating Token-Pruning-Induced Vulnerabilities in VLMs](../../papers/arxiv-2610.09703/) | 2026-10-08 | 44 |

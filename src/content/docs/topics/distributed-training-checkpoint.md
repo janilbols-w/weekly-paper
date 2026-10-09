@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **100** 篇。
+累计收录 **101** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Adaptive Multi-Discriminator WGAN Framework for Resource-Constrained Internet of Vehicles Using Reinforcement Learning and Game Theory](../../papers/arxiv-2610.10926/) | 2026-10-09 | 46 |
 | [Benchmarking System One decision models against trained classifiers and language models for automated decision gates](../../papers/arxiv-2610.00346/) | 2026-10-08 | 42 |
 | [PrismSSL: One Interface, Many Modalities; A Single-Interface Library for Multimodal Self-Supervised Learning](../../papers/arxiv-2511.17776/) | 2026-10-08 | 38 |
 | [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](../../papers/arxiv-2610.07688/) | 2026-10-07 | 54 |

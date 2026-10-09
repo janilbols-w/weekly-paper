@@ -5,10 +5,11 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **104** 篇。
+累计收录 **105** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MARGIN: Runtime Confidence Calibration for Multi-Agent Foundation Model Coordination](../../papers/arxiv-2605.22949/) | 2026-10-09 | 42 |
 | [Knowledge boundary probing and demand-guided intervention for LLM-based power system code generation](../../papers/arxiv-2605.31478/) | 2026-10-08 | 47 |
 | [SEER: Self-Enhancing Chain-of-Thought Compression for Reasoning Models](../../papers/arxiv-2509.14093/) | 2026-10-08 | 41 |
 | [Large-scale Repository Engineering via Agent-Native Reusable Code Primitives](../../papers/arxiv-2610.09079/) | 2026-10-08 | 40 |

@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **179** 篇。
+累计收录 **183** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation](../../papers/arxiv-2610.11358/) | 2026-10-09 | 54 |
+| [SparKV: Overhead-Aware KV Cache Loading for Efficient On-Device LLM Inference](../../papers/arxiv-2604.21231/) | 2026-10-09 | 50 |
+| [GUI-KV: Efficient GUI Agents via KV Cache with Spatio-Temporal Awareness](../../papers/arxiv-2510.00536/) | 2026-10-09 | 49 |
+| [Freeze the Decoder, Heal the Encoder: Parameter-Efficient Adaptation for SVD-Based KV-Cache Compression](../../papers/arxiv-2610.10552/) | 2026-10-09 | 41 |
 | [ReToken: Improving Long-Context VLMs with Visual Retrieval Token](../../papers/arxiv-2607.28627/) | 2026-10-08 | 43 |
 | [A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention](../../papers/arxiv-2610.09051/) | 2026-10-08 | 42 |
 | [KVFetch: Temporal Prefetching for the Missing Half of KV Cache Compression](../../papers/arxiv-2610.08811/) | 2026-10-08 | 40 |

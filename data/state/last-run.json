@@ -1,15 +1,19 @@
 {
-  "reference_date": "2026-10-08",
-  "start_date": "2026-10-02",
-  "collected": 862,
-  "classified": 1846,
+  "reference_date": "2026-10-09",
+  "start_date": "2026-10-03",
+  "collected": 869,
+  "classified": 1891,
   "max_metadata_score": 63,
-  "relevant_total": 1832,
+  "relevant_total": 1878,
   "generated_weeks": [
-    "2026-W40",
     "2026-W41"
   ],
-  "source_errors": 0,
-  "errors": [],
+  "source_errors": 4,
+  "errors": [
+    "OpenReview/ICLR 2026: HTTPError: 403 Client Error: Forbidden for url: https://api2.openreview.net/notes?domain=ICLR.cc%2F2026%2FConference&limit=1000&details=replyCount",
+    "OpenReview/NeurIPS 2026: HTTPError: 403 Client Error: Forbidden for url: https://api2.openreview.net/notes?domain=NeurIPS.cc%2F2026%2FConference&limit=1000&details=replyCount",
+    "OpenReview/MLSys 2026: HTTPError: 403 Client Error: Forbidden for url: https://api2.openreview.net/notes?domain=MLSys.org%2F2026%2FConference&limit=1000&details=replyCount",
+    "arXiv offset=0: HTTPError: 503 Server Error: Service Unavailable for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.DC+OR+cat%3Acs.PF+OR+cat%3Acs.AR+OR+cat%3Acs.OS+OR+cat%3Acs.NI+OR+cat%3Acs.LG+OR+cat%3Acs.CL+OR+cat%3Astat.ML%29+AND+%28all%3A%22large+language+model%22+OR+all%3A%22LLM+inference%22+OR+all%3A%22model+serving%22+OR+all%3A%22inference+serving%22+OR+all%3A%22KV+cache%22+OR+all%3A%22speculative+decoding%22+OR+all%3A%22quantization%22+OR+all%3A%22low+precision%22+OR+all%3A%22GPU+scheduling%22+OR+all%3A%22accelerator%22+OR+all%3A%22distributed+inference%22+OR+all%3A%22disaggregated+serving%22+OR+all%3A%22batching%22+OR+all%3A%22kernel+optimization%22+OR+all%3A%22AI+infrastructure%22+OR+all%3A%22machine+learning+systems%22+OR+all%3A%22distributed+training%22+OR+all%3A%22checkpointing%22+OR+all%3A%22RDMA%22+OR+all%3A%22mixture+of+experts%22%29+AND+submittedDate%3A%5B202610030000+TO+202610092359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+  ],
   "sent": false
 }

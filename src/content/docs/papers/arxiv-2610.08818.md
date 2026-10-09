@@ -39,7 +39,7 @@ Spatio-temporal forecasting is a cornerstone of logistics, urban planning, and i
 ## 元数据
 
 - 作者：Shuhao Li, Weidong Yang, Changan Liu, Wei Zhuo, Yingbo Zhou, Fan Zhang, Siqiang Luo
-- 发布：2026-10-08；更新：2026-10-08
+- 发布：2026-10-08；更新：2026-10-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

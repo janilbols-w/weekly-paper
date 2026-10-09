@@ -5,10 +5,13 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **89** 篇。
+累计收录 **92** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TokenRouter: Efficient Serving System for Token-Level LLM Routing](../../papers/arxiv-2610.12242/) | 2026-10-09 | 46 |
+| [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](../../papers/arxiv-2407.00079/) | 2026-10-09 | 46 |
+| [Long Text to Predictive Features: LLM-Guided Blockwise Feature Engineering via Executable Program Search](../../papers/arxiv-2610.12390/) | 2026-10-09 | 39 |
 | [Continuous Semantic Caching for Low-Cost LLM Serving](../../papers/arxiv-2604.20021/) | 2026-10-08 | 44 |
 | [vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation](../../papers/arxiv-2610.09307/) | 2026-10-08 | 40 |
 | [ECO: Energy-Oriented Configuration Optimization for Attention FFN Disaggregated LLM Serving](../../papers/arxiv-2610.08373/) | 2026-10-07 | 50 |

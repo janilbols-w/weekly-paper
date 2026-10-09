@@ -5,10 +5,19 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **281** 篇。
+累计收录 **290** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows](../../papers/arxiv-2610.11482/) | 2026-10-09 | 45 |
+| [When Lower Reconstruction Loss Hurts: Distributionally Robust Refinement for Low-Bit LLM Quantization](../../papers/arxiv-2610.11226/) | 2026-10-09 | 43 |
+| [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](../../papers/arxiv-2509.15206/) | 2026-10-09 | 43 |
+| [Coverage-Aware Reasoning with Medical Tokens for Diagnosis Prediction](../../papers/arxiv-2610.10641/) | 2026-10-09 | 41 |
+| [Bridging KV-Cache Quantization and Linear Attention: From Theory to Pretrained Weight Migration](../../papers/arxiv-2610.11214/) | 2026-10-09 | 40 |
+| [Rethinking the Tradeoff Between Temporal Encoding and Nonlinear Computation in Spiking Language Models](../../papers/arxiv-2610.10933/) | 2026-10-09 | 39 |
+| [Lossy Compressive Text Autoencoders](../../papers/arxiv-2610.10738/) | 2026-10-09 | 39 |
+| [DEX: Digit-Level Early Exit for Energy-Efficient MSDF Neural Network Inference](../../papers/arxiv-2610.11748/) | 2026-10-09 | 39 |
+| [Deflating the Hessian: Rank-4 W4A4 Quantization for Multimodal Diffusion Transformers](../../papers/arxiv-2610.11315/) | 2026-10-09 | 38 |
 | [ResidualQuant: KV Cache Quantization for Looped Transformers with 2-Bit Residuals](../../papers/arxiv-2610.10381/) | 2026-10-08 | 50 |
 | [Cache the Encoder Within:Compact, Reusable Memory across LLM Queries](../../papers/arxiv-2610.10058/) | 2026-10-08 | 45 |
 | [Few Bits, One Law: Toward W2A4KV2](../../papers/arxiv-2610.09202/) | 2026-10-08 | 44 |
