@@ -11,6 +11,10 @@ from unittest.mock import Mock, patch
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
 from weekly_paper.event_collectors import (
+    parse_colm_accepted_html,
+    parse_colm_calendar_html,
+    parse_colm_detail_html,
+    parse_colm_orals_html,
     parse_acl_anthology_xml,
     parse_sosp_schedule_html,
     parse_usenix_schedule_html,
@@ -368,6 +372,41 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(values[0].paper.url, "https://dl.acm.org/doi/10.1145/example")
         self.assertEqual(values[0].paper.doi, "10.1145/example")
         self.assertEqual(values[0].paper.pdf_url, "")
+
+    def test_parse_colm_official_program_html(self) -> None:
+        event = {
+            "id": "colm-2026",
+            "short_name": "COLM 2026",
+            "start_date": "2026-10-06",
+            "publication_date": "2026-07-09",
+            "official_url": "https://colm.cc/",
+            "accepted_papers_url": "https://colm.cc/Conferences/2026/AcceptedPapers",
+        }
+        accepted = b"""
+<table><tr><th>Title</th><th></th><th>Where and When</th></tr>
+<tr><td><strong>Fast LLM Serving</strong><div class="indented"><i>Alice Smith \xe2\x8b\x85 Bob Jones</i></div></td>
+<td class="elc-keywords"></td><td class="elc-where">Poster Session 1</td></tr></table>
+"""
+        values, total = parse_colm_accepted_html(accepted, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.authors, ["Alice Smith", "Bob Jones"])
+        self.assertEqual(values[0].presentation, "Poster")
+        self.assertEqual(values[0].track, "Poster Session 1")
+
+        calendar = b'<a href="/virtual/2026/poster/42">Fast LLM Serving</a>'
+        self.assertEqual(
+            parse_colm_calendar_html(calendar, event)["fastllmserving"],
+            "https://colm.cc/virtual/2026/poster/42",
+        )
+        orals = b"""
+<div class="event-card"><h3 class="event-title"><a href="/virtual/2026/oral/7">Fast LLM Serving</a></h3>
+<div class="event-abstract"><div class="abstract-text">Lower latency and higher throughput.</div></div></div>
+"""
+        oral = parse_colm_orals_html(orals, event)["fastllmserving"]
+        self.assertEqual(oral["url"], "https://colm.cc/virtual/2026/oral/7")
+        self.assertIn("higher throughput", oral["abstract"])
+        detail = b'<div class="abstract-section"><div class="abstract-text-inner"><p>KV cache method.</p></div></div>'
+        self.assertEqual(parse_colm_detail_html(detail), "KV cache method.")
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

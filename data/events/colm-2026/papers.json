@@ -1,0 +1,2464 @@
+[
+  {
+    "paper": {
+      "id": "colm:colm-2026:megatrainfullprecisiontrainingof100bparameterlargelanguagemodelsonasinglegpu",
+      "title": "MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU",
+      "abstract": "We present MegaTrain, a CPU-memory-centric system that efficiently trains 100B+ parameter large language models at full precision on a single GPU. Unlike traditional GPU-centric systems, MegaTrain stores parameters and optimizer states in host memory and treats GPUs as transient compute engines. For each layer, we stream parameters in and compute gradients out, minimizing persistent GPU state. To battle the CPU-GPU bandwidth bottleneck, we adopt two key optimizations. 1) We introduce a pipelined double-buffered execution engine that overlaps parameter prefetching, computation, and gradient offloading across multiple CUDA streams, enabling continuous GPU execution. 2) We replace persistent autograd graphs with stateless layer templates, binding weights dynamically as they stream in, eliminating persistent graph metadata while providing flexibility in scheduling. On a single H200 GPU with 1.5TB host memory, MegaTrain reliably trains models up to 120B parameters. It also achieves 1.84$\\times$ the training throughput of DeepSpeed ZeRO-3 with CPU offloading when training 14B models. MegaTrain also enables 7B model training with 256k token context on a single H100.",
+      "url": "https://colm.cc/virtual/2026/poster/2393",
+      "pdf_url": "https://arxiv.org/pdf/2604.05091",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Zhengqing Yuan",
+        "Hanchi Sun",
+        "Lichao Sun",
+        "Yanfang (Fanny) Ye"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "CPU memory centric full precision LLM training layer streaming offload single GPU H200 GH200 long context CPU memory centric full precision LLM training layer streaming offload single GPU H200 GH200 long context",
+      "code_url": "https://github.com/DLYuanGod/MegaTrain",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache",
+        "Offload & Memory Management": null,
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "offloading"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: offloading",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "We present MegaTrain, a CPU-memory-centric system that efficiently trains 100B+ parameter large language models at full precision on a single GPU.",
+      "summary_zh": "MegaTrain 以 CPU 内存为大模型全精度训练的主存储层，按层流式搬运权重、梯度与优化器状态，通过双缓冲 CUDA stream 重叠传输和计算，并以无状态 layer template 限制 GPU 常驻内存。",
+      "why_it_matters_zh": "作者在单张 H200 加 1.5TB 主机内存上训练 120B 模型，14B 场景相对 DeepSpeed ZeRO-3 CPU offload 报告 1.84× 吞吐；单 GH200 还展示 7B、512k context 训练。代码公开，为容量优先、吞吐次之的低 GPU 数研究环境提供了一条具体路线。",
+      "limitations_zh": "该路线强依赖大容量主机内存与 PCIe/NVLink-C2C 带宽，单卡可运行不等于经济或快速；论文尚未给出多 GPU 与 SSD 分层结果，极长上下文和 120B 实验也不能替代常规集群的端到端成本比较。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "megatrainfullprecisiontrainingof100bparameterlargelanguagemodelsonasinglegpu",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "megatrainfullprecisiontrainingof100bparameterlargelanguagemodelsonasinglegpu",
+          "url": "https://colm.cc/virtual/2026/poster/2393"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #46 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 1.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "以分层内存突破单 GPU 全精度训练容量上限，系统边界清晰。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:kronqllmquantizationviakroneckerfactoredhessian",
+      "title": "KronQ: LLM Quantization via Kronecker-Factored Hessian",
+      "abstract": "Post-training quantization (PTQ) is a widely adopted technique for compressing large language models (LLMs) without retraining. Existing second-order PTQ methods, including GPTQ, construct quantization objectives exclusively from input activation statistics, effectively assuming that all output channels contribute equally to the layer-wise reconstruction objective. We propose KronQ, a PTQ framework that challenges this assumption by introducing the gradient covariance into the quantization pipeline. Under the Kronecker-factored Hessian approximation, the quantization loss depends jointly on both the activation and gradient covariances, and KronQ exploits this at two complementary levels. (1) KronQ introduces bidirectional incoherence processing, extending the existing input-side random rotation to the output dimension using the gradient covariance, reducing weight magnitude variance across both input and output dimensions. (2) KronQ derives a new sensitivity metric for inter-layer mixed-precision allocation, driven by the gradient and activation Hessian traces. Notably, in the case of 2-bit weight-only quantization on LLaMA-3-70B, while GPTQ and GPTAQ diverge or produce degenerate quantizations ($>$2000 perplexity on WikiText-2), KronQ achieves 8.43 perplexity.",
+      "url": "https://colm.cc/virtual/2026/poster/2400",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Donghyun Lee",
+        "Yuhang Li",
+        "Ruokai Yin",
+        "Priyadarshini Panda"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 44,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Post-training quantization (PTQ) is a widely adopted technique for compressing large language models (LLMs) without retraining.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "kronqllmquantizationviakroneckerfactoredhessian",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "kronqllmquantizationviakroneckerfactoredhessian",
+          "url": "https://colm.cc/virtual/2026/poster/2400"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #47 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 1.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:aunifiedmodelanddocumentrepresentationforondeviceretrievalaugmentedgeneration",
+      "title": "A Unified Model and Document Representation for On-Device Retrieval-Augmented Generation",
+      "abstract": "Traditional Retrieval Augmented Generation (RAG) approaches generally assume that retrieval and generation occur on powerful servers removed from the end user. While this reduces local hardware constraints, it introduces significant drawbacks: privacy concerns regarding data access, recurring maintenance and storage costs, increased latency, and the necessity of an internet connection. On-device RAG addresses these challenges by executing the entire pipeline locally, making it ideal for querying sensitive personal information such as financial documents, contact details, and medical history. However, on-device deployment necessitates a delicate balance between limited memory and disk space. Specifically, the context size provided to the generative model must be restricted to manage KV cache and attention memory usage, while the size of stored embeddings must be minimized to preserve disk space. In this work, we propose a unified model that compresses the RAG context and utilizes the same representations for retrieval. This approach minimizes disk utilization compared to using separate representations, while significantly reducing the context size required for generation. With an average of $1/10$ of the context, our model matches the performance of a traditional RAG reader without increasing storage requirements compared to a multi-vector retrieval model. This approach represents the first model to unify retrieval and context compression using a shared model and representation. We believe this work will inspire further consolidation of distinct models to optimize on-device performance.",
+      "url": "https://colm.cc/virtual/2026/poster/2374",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Julian Killingback",
+        "Ofer Meshi",
+        "Henry Li",
+        "Hamed Zamani",
+        "Maryam Karimzadehgan"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 7,
+        "rigor": 5,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Traditional Retrieval Augmented Generation (RAG) approaches generally assume that retrieval and generation occur on powerful servers removed from the end user.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "aunifiedmodelanddocumentrepresentationforondeviceretrievalaugmentedgeneration",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "aunifiedmodelanddocumentrepresentationforondeviceretrievalaugmentedgeneration",
+          "url": "https://colm.cc/virtual/2026/poster/2374"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #66 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 2.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:acceleratingspeculativedecodingwithblockdiffusiondrafttrees",
+      "title": "Accelerating Speculative Decoding with Block Diffusion Draft Trees",
+      "abstract": "Speculative decoding accelerates autoregressive language models by using a lightweight drafter to propose multiple future tokens, which the target model then verifies in parallel. DFlash shows that a block diffusion drafter can generate an entire draft block in a single forward pass and achieve state-of-the-art speculative decoding performance, outperforming strong autoregressive drafters such as EAGLE-3. Vanilla DFlash, however, still verifies only a single drafted trajectory per round, potentially limiting its acceptance length. We introduce DDTree (Diffusion Draft Tree), a method that constructs a draft tree directly from the per-position distributions of a block diffusion drafter. Under a fixed node budget, DDTree uses a simple best-first heap algorithm to select the continuations that are most likely to match the target model according to a surrogate defined by the draft model's output. The resulting tree is verified efficiently in a single target model forward pass using an ancestor-only attention mask. Because DDTree builds on DFlash, a leading draft model for speculative decoding, these gains place DDTree among the leading approaches to speculative decoding.",
+      "url": "https://colm.cc/virtual/2026/poster/2512",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Liran Ringel",
+        "Yaniv Romano"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "draft model",
+        "speculative decoding"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 7,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: draft model, speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Speculative decoding accelerates autoregressive language models by using a lightweight drafter to propose multiple future tokens, which the target model then verifies in parallel.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "acceleratingspeculativedecodingwithblockdiffusiondrafttrees",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "acceleratingspeculativedecodingwithblockdiffusiondrafttrees",
+          "url": "https://colm.cc/virtual/2026/poster/2512"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #69 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 5.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:mementoteachingllmstomanagetheircontext",
+      "title": "MEMENTO: Teaching LLMs to Manage Their Context",
+      "abstract": "Reasoning models think in long, unstructured streams with no mechanism for compressing or organizing their own intermediate state. We introduce MEMENTO: a method that teaches models to segment reasoning into blocks, compress each block into a \\emph{memento}, i.e., a dense state summary, and reason forward by attending only to mementos, reducing context, KV cache, and compute. To train Memento models, we release OpenMementos, a public dataset of 228K reasoning traces derived from OpenThoughts-v3, segmented and annotated with intermediate summaries. We show that a two-stage SFT recipe on OpenMementos is effective across different model families (Qwen3, Phi-4, OLMo3) and scales (8B--32B parameters). Trained models maintain strong accuracy on math, science, and coding benchmarks while achieving ${\\sim}2.5\\times$ peak KV cache reduction. We extend vLLM to support our inference method, achieving up to $2\\times$ throughput improvement while also enabling us to perform RL and further improve accuracy. Finally, we identify a \\emph{dual information stream}: information from each reasoning block is carried both by the memento text and by the corresponding KV states, which retain implicit information from the original block. Removing this channel drops accuracy by 15pp on AIME24.",
+      "url": "https://colm.cc/virtual/2026/oral/4925",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Vasilis Kontonis",
+        "Yuchen Zeng",
+        "Shivam Garg",
+        "Lingjiao Chen",
+        "Hao Tang",
+        "Ziyan Wang",
+        "Ahmed H Awadallah",
+        "Eric Horvitz",
+        "John Langford",
+        "Dimitris Papailiopoulos"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 46,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Reasoning models think in long, unstructured streams with no mechanism for compressing or organizing their own intermediate state.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "mementoteachingllmstomanagetheircontext",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "mementoteachingllmstomanagetheircontext",
+          "url": "https://colm.cc/virtual/2026/poster/2060"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #143 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Oral + Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:aspireasynchronousbatchedselfspeculativedecodingforlongcontextllminference",
+      "title": "ASPIRE: Asynchronous Batched Self-Speculative Decoding for Long-Context LLM Inference",
+      "abstract": "Long-context LLM inference is bottlenecked by attention, whose repeated KV-cache reads make decoding memory-bound. Self-speculative decoding alleviates this by drafting tokens with sparse attention and verifying them with full attention, but existing batched methods remain \\emph{synchronized}: all requests in a batch share a single draft-verify schedule, even though the optimal draft length varies widely across requests and changes dynamically within each request. We propose \\textbf{ASPIRE}, a non-synchronized batched self-speculative decoding framework built on three components. First, a \\emph{unified mixed forward} allows drafting and verifying requests to coexist in the same batched forward pass, removing the need for global draft-verify phases. Second, a lightweight \\emph{online speculation scheduler} uses per-request acceptance-rate estimates and a batch-aware cost model to let each request independently choose when to verify. Third, an \\emph{intra-draft refresh layer} performs full attention at a single designated layer during drafting, updating the sparse context at every draft step so that it does not become stale. Across three models and five reasoning and long-context benchmarks, ASPIRE achieves $1.70$-$4.58\\times$ decoding throughput over autoregressive baselines and consistently outperforms prior self-speculative methods. To promote reproducibility, we will release our code upon acceptance.",
+      "url": "https://colm.cc/virtual/2026/poster/2327",
+      "pdf_url": "https://arxiv.org/pdf/2609.17943",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Amir Ziashahabi",
+        "Hossein Entezari Zarch",
+        "Lei Gao",
+        "Murali Annavaram",
+        "Salman Avestimehr"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "asynchronous batched self speculative decoding long context scheduler full attention refresh serving latency throughput asynchronous batched self speculative decoding long context scheduler full attention refresh serving latency throughput",
+      "code_url": "https://github.com/Amir-zsh/ASPIRE",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 62,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 7,
+        "rigor": 9,
+        "practical_impact": 13,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Long-context LLM inference is bottlenecked by attention, whose repeated KV-cache reads make decoding memory-bound.",
+      "summary_zh": "ASPIRE 把 self-speculative decoding 重构为异步的逐请求 draft/verify 流水线：混合 forward 让不同请求同时草拟或验证，在线调度器协调状态，draft 阶段周期性执行全 Attention 以刷新长上下文信息。",
+      "why_it_matters_zh": "作者在 3 个模型和 5 个 reasoning/长上下文 benchmark 上报告相对自回归解码 1.70–4.58× 加速、相对最强 self-speculative 基线平均约 27% 提升。它直接处理真实 batch 中请求进度不齐的问题，比只测单请求的 speculative decoding 更接近 serving 约束。",
+      "limitations_zh": "作者明确把与通用 continuous batching、尤其 chunked prefill 的整合作为后续工作；当前结果仍依赖指定模型、序列长度和硬件，调度状态与周期性全 Attention 也会增加实现复杂度。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "aspireasynchronousbatchedselfspeculativedecodingforlongcontextllminference",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "aspireasynchronousbatchedselfspeculativedecodingforlongcontextllminference",
+          "url": "https://colm.cc/virtual/2026/poster/2327"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #8 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "把长上下文 self-speculation 推进到异步批量 serving。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:momentkvclosingthedirectionalgapinkvcacheevictionforlongcontextinference",
+      "title": "MomentKV: Closing the Directional Gap in KV Cache Eviction for Long-Context Inference",
+      "abstract": "Autoregressive decoding in Transformer-based language models relies on the KV cache, whose memory footprint grows linearly with sequence length and becomes the primary bottleneck for long-context inference. KV cache eviction addresses this by retaining a fixed-size subset of key-value pairs and discarding the rest. We identify that a primary source of output degradation is not the residual attention mass on evicted tokens, which existing methods already minimize, but a directional mismatch between the retained and evicted token sets. Specifically, the evicted tokens in practice are often near-orthogonal to the retained ones. Thus, even a small evicted mass could have an oversized impact on the resulting direction distribution and amplify into substantial output error. This reveals a fundamental limit in existing strategies. To address this, we propose MomentKV, which maintains compact, small-size moment statistics over the evicted token set, including a count, key mean, value mean, and value-key covariance. During eviction, the moment statistics is leveraged to identify tokens already well aligned with and captured by the accumulated summary, keeping the evicted set geometrically regular. During inference, they yield a closed-form first-order approximation of the evicted attention output, forming a mutually reinforcing loop between selective eviction and accurate correction. On LongBench and RULER with LLaMA-3.1-8B-Instruct and Qwen3-4B-Instruct, MomentKV outperforms all baselines at every cache budget, with the largest gains under aggressive compression.",
+      "url": "https://colm.cc/virtual/2026/poster/2213",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Yu Li",
+        "Binxu Li",
+        "Tian Lan"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 7,
+        "rigor": 7,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Autoregressive decoding in Transformer-based language models relies on the KV cache, whose memory footprint grows linearly with sequence length and becomes the primary bottleneck for long-context inference.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "momentkvclosingthedirectionalgapinkvcacheevictionforlongcontextinference",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "momentkvclosingthedirectionalgapinkvcacheevictionforlongcontextinference",
+          "url": "https://colm.cc/virtual/2026/poster/2213"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #7 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:darwinlmevolutionarystructuredpruningoflargelanguagemodels",
+      "title": "DarwinLM: Evolutionary Structured Pruning of Large Language Models",
+      "abstract": "Large Language Models (LLMs) have achieved significant success across various NLP tasks. However, their massive computational costs limit their widespread use, particularly in real-time applications. Structured pruning offers an effective solution by compressing models and directly providing end-to-end speed improvements, regardless of the hardware environment. Meanwhile, different components of the model exhibit varying sensitivities towards pruning, calling for non-uniform model compression. However, a pruning method should not only identify a capable substructure, but also account for post-compression training. To this end, we propose DarwinLM, a method for training-aware structured pruning. DarwinLM builds upon an evolutionary search process, generating multiple offspring models in each generation through mutation, and selecting the fittest for survival. To assess the effect of post-training, we incorporate a lightweight, multistep training process within the offspring population, progressively increasing the number of tokens and eliminating poorly performing models in each selection stage. We validate our method through extensive experiments on Llama-2-7B, Llama-3.1-8B and Qwen-2.5-14B-Instruct, achieving state-of-the-art performance for structured pruning. For instance, DarwinLM surpasses ShearedLlama while requiring less training data during post-compression training. We also extend our method to MoE models like Qwen3-30B-A3B. To the best of our knowledge, this is the first work to explore structured pruning in MoE architectures. Our approach, DarwinLM, outperforms uniform pruning baselines and demonstrates the effectiveness of structured sparsity even in complex expert-based models. Code and weights are available.",
+      "url": "https://colm.cc/virtual/2026/poster/2229",
+      "pdf_url": "https://arxiv.org/pdf/2502.07780",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Shengkun Tang",
+        "Oliver Sieberling",
+        "Eldar Kurtic",
+        "Zhiqiang Shen",
+        "Dan Alistarh"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "evolutionary structured pruning LLM compression layer database continual training efficient inference evolutionary structured pruning LLM compression layer database continual training efficient inference",
+      "code_url": "https://github.com/IST-DASLab/DarwinLM",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression",
+        "Sparsity & Distillation": null,
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "pruning",
+        "sparsity"
+      ],
+      "score": 58,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 7,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: pruning, sparsity",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Large Language Models (LLMs) have achieved significant success across various NLP tasks.",
+      "summary_zh": "DarwinLM 先以二阶信息构建可复用的层级剪枝数据库，再用训练感知的进化搜索组合非均匀结构化剪枝方案；候选在搜索过程中经历短程微调，而不是只靠静态 proxy 排序。",
+      "why_it_matters_zh": "论文覆盖 Llama-2-7B、Llama-3.1-8B、Qwen2.5-14B 与 Qwen3-30B-A3B，并报告相对需要更多数据或成本的基线达到更好压缩质量；代码和压缩权重公开。对部署侧最重要的是它输出规则化结构，而非只产生难以加速的非结构稀疏。",
+      "limitations_zh": "层数据库会按候选层级增加约 5× 存储，最终方案仍使用约 500 亿 token 的持续训练，成本并不轻；搜索和微调结果依赖目标模型、数据与压缩档位，实际吞吐还需在具体 serving engine 上验证。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "darwinlmevolutionarystructuredpruningoflargelanguagemodels",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "darwinlmevolutionarystructuredpruningoflargelanguagemodels",
+          "url": "https://colm.cc/virtual/2026/poster/2229"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #130 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 1.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "结构化剪枝证据完整，兼有多模型评估、代码和权重。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:aselfpruningtransformerextremekvcachecompressionwithuniversalattention",
+      "title": "A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention",
+      "abstract": "The large KV-cache size of modern LLMs creates a barrier to efficient deployment. Recent work has explored replacing attention layers' RoPE positional embeddings with alternative decay-based mechanisms, which can then be used to prune KV-cache during inference. However, these decay functions have limited expressivity, and in practice devolve into sliding-window-like eviction patterns. In this work, we propose a unifying framework for complementary and novel decay mechanisms, capturing complex key statistics and interactions while preserving expressive RoPE embeddings and Softmax attention. The resulting *Universal Attention* is a highly expressive and end-to-end trainable architecture, whose composite decay mechanism acts as a natural, *adaptive* pruning criterion, removing tokens that contribute least to attention computation. Experimentally, Universal Attention achieves state-of-the-art $10\\times$ compression on natural language and synthetic task data, while *improving* downstream performance compared to both state-of-the-art baselines and unpruned oracles. It further demonstrates superior long-context generalization with unprecedented $25\\times$ compression at length 16k.",
+      "url": "https://colm.cc/virtual/2026/poster/2434",
+      "pdf_url": "https://arxiv.org/pdf/2610.09051",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Davis Wertheimer",
+        "Haochen Shen",
+        "Ahan Gupta",
+        "Derrick Liu",
+        "Yu Chin Fabian Lim",
+        "Mudhakar Srivatsa",
+        "Raghu K Ganti",
+        "Minjia Zhang",
+        "Naigang Wang"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "universal attention learned decay adaptive pruning KV cache compression long context sparse kernels universal attention learned decay adaptive pruning KV cache compression long context sparse kernels",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [
+        "compression-sparsity-distillation"
+      ],
+      "keyword_evidence": [
+        "kv cache",
+        "kv-cache"
+      ],
+      "score": 51,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 7,
+        "rigor": 9,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache, kv-cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "The large KV-cache size of modern LLMs creates a barrier to efficient deployment.",
+      "summary_zh": "Universal Attention 在保留 RoPE 与 softmax 的同时学习复合衰减，使 Transformer 能按上下文自适应识别并剪除低价值 KV，而不依赖固定窗口或外部 eviction heuristic。",
+      "why_it_matters_zh": "作者报告约 10× KV Cache 压缩，并在 16k context 达到 25×，同时在其下游评估中优于基线和未剪枝模型。它把 KV 淘汰从运行时外挂策略变成模型内部可学习行为，为极长上下文的容量规划提供了不同路径。",
+      "limitations_zh": "作者明确指出聚合类任务较弱、学习 mask 有额外计算、当前需从头训练且现有推理实现未优化；要把理论压缩转成实际 latency/吞吐收益，还需要专用 sparse kernel 和系统支持。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "aselfpruningtransformerextremekvcachecompressionwithuniversalattention",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "aselfpruningtransformerextremekvcachecompressionwithuniversalattention",
+          "url": "https://colm.cc/virtual/2026/poster/2434"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #21 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 1.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "极高 KV 压缩主张配有清晰机制和明确工程限制。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:muonqenhancinglowbitmuonquantizationviadirectionalfidelityoptimization",
+      "title": "MuonQ: Enhancing Low-Bit Muon Quantization via Directional Fidelity Optimization",
+      "abstract": "The Muon optimizer has emerged as a compelling alternative to Adam for training large language models, achieving remarkable computational savings through gradient orthogonalization. However, Muon's optimizer state is more sensitive to quantization errors: because the orthogonalization discards the magnitudes of singular values and retains only directional information, even small quantization errors in singular vector directions are amplified in the update. In this work, we propose MuonQ, a low-bit Muon training framework built on the principle of directional fidelity optimization. First, we apply a pre-quantization normalization so that each step introduces quantization errors of the same magnitude, preventing the accumulated error from developing a preferred direction. Second, we introduce a structural decomposition that separately quantizes the dominant singular components via power iteration, ensuring that quantization errors perturb only singular value magnitudes rather than rotating singular vector directions. Third, we adopt $\\mu$-law companding quantization to allocate higher resolution to densely packed momentum values, shifting the quantization objective from outlier preservation to dense-region distinguishability. Together, these techniques enable stable 4-bit quantization of Muon's optimizer states. Pre-training experiments on GPT-style and LLaMA-style models demonstrate that MuonQ at 4-bit precision closely matches full-precision Muon in both training loss and downstream task accuracy, while reducing optimizer state memory by up to 7.3 $\\times$.",
+      "url": "https://colm.cc/virtual/2026/poster/2429",
+      "pdf_url": "https://arxiv.org/pdf/2605.11396",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Yupeng Su",
+        "Ruijie Zhang",
+        "Ziyue Liu",
+        "Yequan Zhao",
+        "Zheng Zhang"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "4 bit Muon optimizer state quantization memory pre normalization singular component mu law training 4 bit Muon optimizer state quantization memory pre normalization singular component mu law training",
+      "code_url": "https://github.com/YupengSu/MuonQ",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 55,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 8,
+        "rigor": 7,
+        "practical_impact": 7,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "The Muon optimizer has emerged as a compelling alternative to Adam for training large language models, achieving remarkable computational savings through gradient orthogonalization.",
+      "summary_zh": "MuonQ 面向 Muon 优化器状态做 4-bit 量化：预归一化稳定数值范围，保留关键奇异分量以维护方向信息，再用 mu-law companding 改善低比特表示。",
+      "why_it_matters_zh": "作者报告优化器状态内存最高减少 7.3×，并在最高 1.1B 参数模型上保持训练质量；代码公开。它将低比特从推理权重扩展到新型优化器状态，对显存受限的预训练和 continued pretraining 有直接价值。",
+      "limitations_zh": "作者明确指出验证规模仍属中等，power iteration 有额外开销，frontier-scale、分布式训练和低于 4-bit 的效果留待未来工作；因此不能把 1.1B 结果直接外推到数百亿参数训练。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "muonqenhancinglowbitmuonquantizationviadirectionalfidelityoptimization",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "muonqenhancinglowbitmuonquantizationviadirectionalfidelityoptimization",
+          "url": "https://colm.cc/virtual/2026/poster/2429"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #115 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 2.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "低比特优化器状态提供清晰的训练内存收益与公开实现。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:sememecausalmodelingfortaskawaredepthpruningoflargelanguagemodels",
+      "title": "Sememe: Causal Modeling for Task-Aware Depth Pruning of Large Language Models",
+      "abstract": "Large Language Models (LLMs) exhibit strong generalist capabilities, yet task-specific behavior is often supported by diffuse and redundant structures. While pruning has been widely explored as a means to reduce inference costs, few existing methods translate theoretical sparsity into tangible speedups without sacrificing commensurate performance. We introduce Sememe , a task-aware depth-pruning method that identifies unnecessary transformer blocks by using a Structural Causal Model (SCM) to derive a provably unbiased estimator that jointly exploits per-example loss variance. By estimating this causal impact, Sememe surgically identifies redundancy using a small calibration set and only the forward pass, avoiding the memory overhead of gradients or activations. Experiments across natural language benchmarks show that Sememe consistently outperforms prior approaches by utilizing calibration data more effectively to produce better-fitting performance predictions. Our approach enables high-performance, task-specific deployments with reduced latency and memory demands, achieving speedups proportional to the fraction of removed layers while retaining more downstream performance than comparable training-free depth-pruning methods.",
+      "url": "https://colm.cc/virtual/2026/poster/2110",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Charles Yu",
+        "Heng Ji"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "pruning",
+        "sparsity"
+      ],
+      "score": 58,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: pruning, sparsity",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Large Language Models (LLMs) exhibit strong generalist capabilities, yet task-specific behavior is often supported by diffuse and redundant structures.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "sememecausalmodelingfortaskawaredepthpruningoflargelanguagemodels",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "sememecausalmodelingfortaskawaredepthpruningoflargelanguagemodels",
+          "url": "https://colm.cc/virtual/2026/poster/2110"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #131 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 1.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:introspectivediffusionlanguagemodels",
+      "title": "Introspective Diffusion Language Models",
+      "abstract": "Diffusion language models (DLMs) offer a compelling promise: parallel token generation could break the sequential bottleneck of autoregressive (AR) decoding. Yet in practice, DLMs consistently lag behind AR models in quality. We argue that this gap stems from a fundamental failure of introspective consistency: AR models agree with what they generate, whereas DLMs often do not. We formalize this via the *introspective acceptance rate*, which quantifies whether a model internally accepts its previously generated tokens. Through this lens, we uncover a key structural advantage of AR models: causal masking combined with logit shifting implicitly enforces introspective consistency during training. Motivated by this insight, we introduce the Introspective Diffusion Language Model (I-DLM), a new paradigm that preserves the introspective consistency of AR training while retaining the diffusion-style parallelism. I-DLM uses a novel introspective strided decoding (ISD) algorithm, which enables the model to verify previously generated tokens while advancing new ones in the same forward pass. This yields a new quality–efficiency frontier unavailable to either AR or prior diffusion models, with stride providing a controllable tradeoff between verification depth and parallel progress. Empirically, I-DLM-8B is the first DLM to match the quality of its same-scale AR counterpart while surpassing all prior DLMs in both quality and practical serving efficiency across 15 benchmarks. It attains 72.5 on AIME-24 and 45.1 on LiveCodeBench-v6, outperforming LLaDA-2.1-mini (16B) by more than 29 and 14 points, respectively. Finally, with a single-pass self-speculative decoding pipeline and gated LoRA, ISD enables lossless acceleration and better efficiency at high concurrency compared to speculative decoding.",
+      "url": "https://colm.cc/virtual/2026/oral/4927",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Yifan Yu",
+        "Yuqing Jian",
+        "Junxiong Wang",
+        "Zhongzhu Zhou",
+        "Donglin Zhuang",
+        "Xinyu Fang",
+        "Xiaoxia Wu",
+        "Qingyang Wu",
+        "Shuaiwen L Song",
+        "Tri Dao",
+        "Ben Athiwaratkun",
+        "James Zou",
+        "Fan Lai",
+        "Chenfeng Xu"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 44,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 8,
+        "rigor": 7,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Diffusion language models (DLMs) offer a compelling promise: parallel token generation could break the sequential bottleneck of autoregressive (AR) decoding.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "introspectivediffusionlanguagemodels",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "introspectivediffusionlanguagemodels",
+          "url": "https://colm.cc/virtual/2026/poster/1999"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: G-6-118 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Oral + Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:hyperthinktexttoparameterhypernetworksforefficientreasoning",
+      "title": "HyperThink: Text-to-Parameter Hypernetworks for Efficient Reasoning",
+      "abstract": "Long-form thinking traces can substantially improve the multi-step reasoning performance of large language models, but they introduce high inference-time overhead, with latency dominated by sequential decoding. We propose HyperThink, a text-to-parameter approach that amortizes this reasoning computation into a single query-conditioned parameter update: a lightweight hypernetwork reads the question and predicts updates to a small subset of the base LLM’s parameters, while a vector-quantized decoder constrains them to a finite set of reusable patterns to improve robustness and transfer. Trained end-to-end on outputs from the base model itself, HyperThink eliminates long thinking traces at test time: after one hypernetwork forward pass, the adapted model generates a concise step-by-step solution and final answer without an intermediate trace, using far fewer tokens while retaining strong reasoning performance. Across math reasoning benchmarks, we demonstrate that HyperThink delivers a better accuracy--compute trade-off than strong baselines.",
+      "url": "https://colm.cc/virtual/2026/poster/2487",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Donggyun Kim",
+        "Jack Lu",
+        "Chanwoo Kim",
+        "Mengye Ren",
+        "Seunghoon Hong"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantized"
+      ],
+      "score": 46,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantized",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Long-form thinking traces can substantially improve the multi-step reasoning performance of large language models, but they introduce high inference-time overhead, with latency dominated by sequential decoding.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "hyperthinktexttoparameterhypernetworksforefficientreasoning",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "hyperthinktexttoparameterhypernetworksforefficientreasoning",
+          "url": "https://colm.cc/virtual/2026/poster/2487"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Franciscan C Poster Location: #97 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 2.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:unlockingparallelisminautoregressivelanguagemodelsviaspeculativedecodingwithprogressivetreedraft",
+      "title": "Unlocking Parallelism in Autoregressive Language Models via Speculative Decoding with Progressive Tree Drafting",
+      "abstract": "Speculative decoding has significantly accelerated Large Language Model (LLM) inference by alleviating memory-bound bottlenecks. However, traditional speculative decoding typically relies on auxiliary draft modules, incurring significant training and communication overhead. Although recent methods attempt to generate drafts within the target model itself, they often fail to fully exploit its latent parallel capacity due to a lack of structural coordination. In this paper, we propose \\textbf{Progressive Tree Drafting (PTD)}, which employs a structured, guided parallel drafting strategy to harness the model's parallel potential. By coupling a progressive tree structure with a stepwise pruning mechanism, PTD actively guides the LLM to explore multiple semantic paths in a single forward pass, ensuring both draft diversity and coherence. Experiments demonstrate that PTD achieves up to $2\\times$ decoding speedup across various benchmarks while remaining training-free and model-agnostic.",
+      "url": "https://colm.cc/virtual/2026/poster/1928",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Zipeng Gao",
+        "Zhi Zheng",
+        "Qingrong Xia",
+        "Junda Lin",
+        "Ziwei Zhao",
+        "Tong Xu",
+        "Zhefeng Wang",
+        "Enhong Chen"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Speculative decoding has significantly accelerated Large Language Model (LLM) inference by alleviating memory-bound bottlenecks.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "unlockingparallelisminautoregressivelanguagemodelsviaspeculativedecodingwithprogressivetreedraft",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "unlockingparallelisminautoregressivelanguagemodelsviaspeculativedecodingwithprogressivetreedrafting",
+          "url": "https://colm.cc/virtual/2026/poster/1928"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #138 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 2.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:indexcacheacceleratingsparseattentionviacrosslayerindexreuse",
+      "title": "IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse",
+      "abstract": "Long-context agentic workflows have emerged as a defining use case for large language models, making attention efficiency critical for both inference speed and serving cost. Sparse attention addresses this challenge effectively, and DeepSeek Sparse Attention (DSA) is a representative production-grade solution: a lightweight lightning indexer selects the top-$k$ most relevant tokens per query, reducing core attention from $O(L^2)$ to $O(Lk)$. However, the indexer itself retains $O(L^2)$ complexity and must run independently at every layer, despite the fact that the resulting top-$k$ selections are highly similar across consecutive layers. We present IndexCache, which exploits this cross-layer redundancy by partitioning layers into a small set of Full layers that run their own indexers and a majority of Shared layers that simply reuse the nearest Full layer's top-$k$ indices. We propose two complementary approaches to determine and optimize this configuration. Training-free IndexCache applies a greedy search algorithm that selects which layers to retain indexers by directly minimizing language modeling loss on a calibration set, requiring no weight updates. Training-aware IndexCache introduces a multi-layer distillation loss that trains each retained indexer against the averaged attention distributions of all layers it serves, enabling even simple interleaved patterns to match full-indexer accuracy. Experimental results on a 30B DSA model show that IndexCache can remove 75% of indexer computations with negligible quality degradation, achieving up to 1.82$\\times$ prefill speedup and 1.48$\\times$ decode speedup compared to standard DSA. These positive results are further confirmed by our preliminary experiments on the production-scale GLM-5 model.",
+      "url": "https://colm.cc/virtual/2026/poster/2449",
+      "pdf_url": "https://arxiv.org/pdf/2603.12201",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Yushi Bai",
+        "Qian Dong",
+        "Ting Jiang",
+        "Xin Lv",
+        "Zhengxiao Du",
+        "Aohan Zeng",
+        "Jie Tang",
+        "Juanzi Li"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "dynamic sparse attention cross layer top k index reuse prefill decode speedup GLM dynamic sparse attention cross layer top k index reuse prefill decode speedup GLM",
+      "code_url": "https://github.com/THUDM/IndexCache",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression",
+        "Sparsity & Distillation": null,
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "distillation"
+      ],
+      "score": 51,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 9,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: distillation",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Long-context agentic workflows have emerged as a defining use case for large language models, making attention efficiency critical for both inference speed and serving cost.",
+      "summary_zh": "IndexCache 观察到动态稀疏 Attention 的 top-k 索引在相邻层高度相似，于是只让部分 Full layer 运行 indexer，其他 Shared layer 直接复用最近索引，从而削减索引计算而不改变稀疏 Attention 主体。",
+      "why_it_matters_zh": "作者在 30B 动态稀疏 Attention 模型上移除 75% indexer 计算，报告 prefill 最高 1.82×、decode 最高 1.48×；GLM-5 初步实验移除 50% indexer 并带来约 1.2× 端到端提升。代码公开，适合作为稀疏 Attention 系统优化的可复现基线。",
+      "limitations_zh": "方法依赖跨层索引相似性，只适用于带可复用 indexer 的动态稀疏 Attention；GLM-5 结果仍属初步验证，论文没有独立 limitations 章节，对不同稀疏率、长上下文分布和 kernel 实现的稳健性仍需复测。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "indexcacheacceleratingsparseattentionviacrosslayerindexreuse",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "indexcacheacceleratingsparseattentionviacrosslayerindexreuse",
+          "url": "https://colm.cc/virtual/2026/poster/2449"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #137 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 2.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "用跨层复用消除稀疏 Attention 的隐藏索引开销。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:aprielreasonerrlposttrainingforgeneralpurposeandefficientreasoning",
+      "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
+      "abstract": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models. However, their training recipes and domain mixtures are often not disclosed. Joint optimization across domains poses significant challenges: domains vary widely in rollout length, problem difficulty and sample efficiency. Further, models with long chain-of-thought traces increase inference cost and latency, making efficiency critical for practical deployment. We present Apriel-Reasoner, trained with a fully reproducible multi-domain RL post-training recipe on Apriel-Base, a 15B-parameter open-weight LLM, across five domains using public datasets: mathematics, code generation, instruction following, logical puzzles and function calling. We introduce an adaptive domain sampling mechanism that preserves target domain ratios despite heterogeneous rollout dynamics, and a difficulty-aware extension of the standard length penalty that, with no additional training overhead, encourages longer reasoning for difficult problems and shorter traces for easy ones. Trained with a strict 16K-token output budget, Apriel-Reasoner generalizes to 32K tokens at inference and improves over Apriel-Base on AIME 2025, GPQA, MMLU-Pro, and LiveCodeBench while producing 30–50% shorter reasoning traces. It matches strong open-weight models of similar size at lower token cost, thereby pushing the Pareto frontier of accuracy versus token budget.",
+      "url": "https://colm.cc/virtual/2026/poster/2518",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Rafael Pardinas",
+        "Ehsan Kamalloo",
+        "David Vazquez",
+        "Alexandre Drouin"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "compiler-graph",
+        "leaf": "Compiler & Graph Optimization",
+        "leaf_zh": "编译器与计算图优化"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "code generation"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 9,
+        "reproducibility": 3,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: code generation",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "aprielreasonerrlposttrainingforgeneralpurposeandefficientreasoning",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "aprielreasonerrlposttrainingforgeneralpurposeandefficientreasoning",
+          "url": "https://colm.cc/virtual/2026/poster/2518"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #112 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 3.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:admmqanimprovedhessianbasedweightquantizerforposttrainingquantizationoflargelanguagemodels",
+      "title": "ADMM-Q: An Improved Hessian-based Weight Quantizer for Post-Training Quantization of Large Language Models",
+      "abstract": "Quantization is an effective strategy to reduce the storage and computation footprint of large language models (LLMs). Post-training quantization (PTQ) is a leading approach for compressing LLMs. Popular weight quantization procedures, including GPTQ and RTN, suffer in model utility, especially with aggressive quantization levels (sub-4-bit weights). We propose ADMM-Q, a novel weight quantization algorithm that considers the layer-wise quantization problem. Our algorithm is based on a combinatorial variant of the Alternating Direction Method of Multipliers (ADMM). Our operator-splitting procedure updates weights continuously to minimize the layer-wise reconstruction error, while gradually enforcing the quantization constraints with convergence guarantees. We propose additional algorithmic enhancements (e.g., penalty scheduling, preconditioning, and a local search post-processing step) to make ADMM-Q efficient at the LLM scale. Our framework is modular and can be used as a drop-in replacement for any weight quantizer within an integrated quantization framework: ADMM-Q is fully composable with existing techniques including range clipping, learned or random rotations, and activation scaling. Using ADMM-Q in place of GPTQ on Qwen3-8B, we decrease WikiText-2 perplexity in: (i) the W3A16 weight-only setting (12.85 $\\rightarrow$ 10.06); (ii) the W4A8 SmoothQuant procedure (9.29 $\\rightarrow$ 8.84); and (iii) the W2A4KV4 SpinQuant procedure (66.11 $\\rightarrow$ 19.42).",
+      "url": "https://colm.cc/virtual/2026/poster/1854",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Ryan Lucas",
+        "Mehdi Makni",
+        "Xiang Meng",
+        "Adam Deng",
+        "Rahul Mazumder"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 7,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Quantization is an effective strategy to reduce the storage and computation footprint of large language models (LLMs).",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "admmqanimprovedhessianbasedweightquantizerforposttrainingquantizationoflargelanguagemodels",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "admmqanimprovedhessianbasedweightquantizerforposttrainingquantizationoflargelanguagemodels",
+          "url": "https://colm.cc/virtual/2026/poster/1854"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #140 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 3.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:sidequestmodeldrivenkvcachemanagementforlonghorizonagenticworkloads",
+      "title": "SideQuest: Model-Driven KV Cache Management for Long-Horizon Agentic Workloads",
+      "abstract": "Long-running agentic tasks, such as deep research, require multi-hop reasoning over information distributed across multiple webpages and documents. In such tasks, the LLM context is dominated by tokens from external retrieval, causing memory usage to grow rapidly and limiting decode performance. While several KV cache compression techniques exist for long-context inputs, we find that existing heuristics fail to support multi-step reasoning models effectively. We address this challenge with SideQuest -- a novel approach that leverages the Large Reasoning Model (LRM) itself to perform KV cache compression by reasoning about the usefulness of tokens in its context. To prevent the tokens associated with this management process from polluting the model's memory, we frame KV cache compression as an auxiliary task executed in parallel to the main reasoning task. Our evaluations, using a model trained with just $215$ samples, show that SideQuest reduces peak token usage by up to $65\\%$ and end-to-end latency by $36.8\\%$ on agentic tasks with minimal degradation in accuracy, outperforming heuristic-based KV cache compression techniques.",
+      "url": "https://colm.cc/virtual/2026/poster/1740",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Sanjay Kariyappa",
+        "G. Edward Suh"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Long-running agentic tasks, such as deep research, require multi-hop reasoning over information distributed across multiple webpages and documents.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "sidequestmodeldrivenkvcachemanagementforlonghorizonagenticworkloads",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "sidequestmodeldrivenkvcachemanagementforlonghorizonagenticworkloads",
+          "url": "https://colm.cc/virtual/2026/poster/1740"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #45 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 4.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:sonicsamplerunifiedtileawarekernelsforllmsamplingandspeculativeverification",
+      "title": "SonicSampler: Unified Tile-Aware Kernels for LLM Sampling and Speculative Verification",
+      "abstract": "Sampling in LLM inference comprises a combinatorial set of logit processing, token selection, and verification operations for speculative decoding. However, existing implementations either accelerate only subsets of this pipeline, rely on multiple kernel launches, or assume homogeneous sampling behavior across a batch, limiting support for dynamic serving workloads and preventing efficient CUDA Graph execution. We present **SonicSampler**, a unified suite of tile-aware Triton kernels that vertically fuses the complete sampling pipeline into a fixed, workload-aware execution model. Our kernels support dynamic per-request sampling behaviors, including grammar-constrained decoding, repetition, frequency and presence penalties, logit bias, temperature scaling, top-$k$ / top-$p$ / min-$p$ filtering, and speculative verification - within a single batched kernel while remaining fully CUDA Graph-compatible. Central to our approach is a novel hierarchical two-stage top-$k$ algorithm that achieves up to **10x speed-up** over competitive baselines and exploits the low-entropy structure of LLM outputs to enable efficient selection over large vocabularies. Across heterogeneous speculative decoding workloads, SonicSampler achieves up to **16x speedup** over state-of-the-art baselines while preserving flexible batched execution.",
+      "url": "https://colm.cc/virtual/2026/poster/1998",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Pragaash Ponnusamy",
+        "Shivam Sahni",
+        "Jue WANG",
+        "Tri Dao"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 10,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Sampling in LLM inference comprises a combinatorial set of logit processing, token selection, and verification operations for speculative decoding.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "sonicsamplerunifiedtileawarekernelsforllmsamplingandspeculativeverification",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "sonicsamplerunifiedtileawarekernelsforllmsamplingandspeculativeverification",
+          "url": "https://colm.cc/virtual/2026/poster/1998"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #67 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 4.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:dualstreamdecodingforacceleratedlargelanguagemodels",
+      "title": "Dual-Stream Decoding for Accelerated Large Language Models",
+      "abstract": "Autoregressive language models are trained to generate text one token at a time, causing inference latency and cost to scale linearly with output length. However, modern large language models often exhibit semi-autoregressive predictive capabilities, frequently aided by speculative decoding or other multi-token prediction methods. In contrast, discrete diffusion models promise parallel text generation but fundamentally struggle to model sequential correlations due to their reliance on mean-field approximations, effectively ignoring the causality inherent in natural language. We introduce $\\textbf{Cross-Regression}$, an approach aimed at achieving true hybridization of autoregressive and discrete diffusion sequence modeling. Cross-Regression is a decoding algorithm that exploits latent information about future tokens embedded in pretrained transformer hidden states via a dual-stream construction: a $\\textbf{control stream}$ that preserves exact autoregressive probabilities, and a $\\textbf{predictive stream}$ that proposes parallel candidates. Cross-Regression uses residual $\\textbf{energy guidance}$ to refine predictions without discarding intermediate computation, while enabling early acceptance analogous to speculative decoding. The method can operate in a $\\underline{lossless}$ accelerated mode that preserves the original model distribution, or in a faster $\\underline{lossy}$ mode with controllable deviation. Experiments demonstrate substantial speedups in text generation, reducing the number of sequential forward passes by up to $\\textbf{5+}$ times on models with up to $\\textbf{70B}$ parameters, while remaining compatible with KV caching and without requiring prohibitively expensive training.",
+      "url": "https://colm.cc/virtual/2026/poster/2172",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Dmitry Abulkhanov",
+        "Daniil Strizhakov",
+        "Maxim Panov"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Autoregressive language models are trained to generate text one token at a time, causing inference latency and cost to scale linearly with output length.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "dualstreamdecodingforacceleratedlargelanguagemodels",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "dualstreamdecodingforacceleratedlargelanguagemodels",
+          "url": "https://colm.cc/virtual/2026/poster/2172"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #72 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 4.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:llmrouterrethinkingroutingwithprefillactivations",
+      "title": "LLM Router: Rethinking Routing with Prefill Activations",
+      "abstract": "LLMs often achieve similar average benchmark accuracies while exhibiting complementary strengths on different subsets of queries, suggesting that a router with query-specific model selection can outperform any single model. While existing routers rely on semantic query features, they often fail to capture model-specific failures or intrinsic task difficulty. We instead study routing via internal prefill activations. Our key idea, Encoder-Target Decoupling, separates the model that produces the predictive signal (the Encoder) from the model whose correctness is being estimated (the Target), allowing open-weight encoders to predict the performance of closed-source target models. We evaluate layerwise geometric probes, finding that Fisher Separability ($J$) effectively identifies informative layers, supported by Effective Dimensionality ($d_{\\mathrm{eff}}$) diagnostics. We then utilize a SharedTrunkNet, a joint multi-output MLP that predicts simultaneous correctness probabilities across candidate models using concatenated prefill features. In our experiments, SharedTrunkNet consistently outperforms semantic baselines. At its best, SharedTrunkNet closes 45.58% of the gap between the strongest standalone model and the oracle while achieving 74.31% cost savings relative to the most expensive model. These results demonstrate that prefill activations provide a robust routing signal, establishing mechanistic routing as a high-performance alternative to purely semantic selection.",
+      "url": "https://colm.cc/virtual/2026/poster/1792",
+      "pdf_url": "https://arxiv.org/pdf/2603.20895",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Tanay Varshney",
+        "Annie P Surla",
+        "Michelle Xu",
+        "Gomathy Venkata Krishnan",
+        "Maximilian Jeblick",
+        "David Austin",
+        "Neal Vaidya",
+        "Davide Onofrio"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "LLM request routing prefill residual activations encoder target decoupling cost quality gateway LLM request routing prefill residual activations encoder target decoupling cost quality gateway",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "gateway-routing-autoscaling",
+        "leaf": "Gateway",
+        "Routing & Autoscaling": null,
+        "leaf_zh": "Gateway、路由与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm router",
+        "request routing"
+      ],
+      "score": 55,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 5,
+        "rigor": 13,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm router, request routing",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "LLMs often achieve similar average benchmark accuracies while exhibiting complementary strengths on different subsets of queries, suggesting that a router with query-specific model selection can outperform any single model.",
+      "summary_zh": "LLM Router 不再只用 prompt 文本 embedding，而从 prefill residual activation 提取可路由信号；encoder-target decoupling 允许开放 encoder 学习预测闭源目标模型表现，Fisher separability 用于选择信息最强的层。",
+      "why_it_matters_zh": "在论文的 frontier model pool 上，作者报告关闭 45.58% 的 oracle gap、相对最高成本模型节省 74.31% 成本，并把 oracle distance 降低 53.62%。若能在线稳定复现，这种信号可把模型网关从静态规则推进到按请求难度分配模型。",
+      "limitations_zh": "作者强调 activation 与路由标签的关系仍是相关性而非因果；输出长度以中位数估计，真实成本为事后计算，P-AUCCC 等指标的稳健性还需研究。当前也未发现公开 artifact，线上时延、隐私和模型版本漂移尚未验证。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "llmrouterrethinkingroutingwithprefillactivations",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "llmrouterrethinkingroutingwithprefillactivations",
+          "url": "https://colm.cc/virtual/2026/poster/1792"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #138 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 4.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "以 prefill 激活提升多模型网关的质量—成本路由。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:expertweaveefficientlyservingexpertspecializedfinetunedadaptersatscale",
+      "title": "ExpertWeave: Efficiently Serving Expert-Specialized Fine-Tuned Adapters at Scale",
+      "abstract": "Expert-Specialized Fine-Tuning (ESFT) adapts Mixture-of-Experts (MoE) large language models to enhance their task-specific performance by selectively tuning the top-activated experts for the task. Serving these fine-tuned models at scale is challenging: deploying merged models in isolation is prohibitively resource-hungry, while existing multi-adapter serving systems with LoRA-style additive updates are incompatible with ESFT's expert-oriented paradigm. We present ExpertWeave, a system that serves multiple ESFT adapters concurrently over a single shared MoE base model, drastically reducing the memory footprint and improving resource utilization. To seamlessly integrate into existing inference pipelines for MoE models with non-intrusive modifications and minimal latency overhead, ExpertWeave introduces a virtual-memory-assisted expert weight manager that co-locates base-model and adapter experts without incurring memory overhead from fragmentation, and a fused kernel for batched rerouting to enable lightweight redirection of tokens to the appropriate experts at runtime. Our evaluations show that ExpertWeave can simultaneously serve multiple adapters of a 16B MoE model where the baseline runs out of memory, while providing up to 85x more KV cache capacity and over 100% higher throughput with comparable resources, all without compromising model accuracy. ExpertWeave scales efficiently to tens of concurrent ESFT adapters with only marginal latency overhead.",
+      "url": "https://colm.cc/virtual/2026/poster/2516",
+      "pdf_url": "https://arxiv.org/pdf/2508.17624",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Ge Shi",
+        "Hanieh Sadri",
+        "Qian Wang",
+        "Yu Zhang",
+        "Ying Xiong",
+        "Yong Zhang",
+        "Zhenan Fan"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "expert specialized fine tuned adapters multi tenant MoE serving virtual memory NPU throughput latency expert specialized fine tuned adapters multi tenant MoE serving virtual memory NPU throughput latency",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 54,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 16,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Expert-Specialized Fine-Tuning (ESFT) adapts Mixture-of-Experts (MoE) large language models to enhance their task-specific performance by selectively tuning the top-activated experts for the task.",
+      "summary_zh": "ExpertWeave 在共享 MoE 基座上承载大量 expert-specialized adapter，以虚拟内存式 expert weight manager 按需换入权重，并用融合的 batched rerouting 减少不同租户 adapter 的路由和执行碎片。",
+      "why_it_matters_zh": "在作者的 16B MoE 与 Ascend NPU 环境中，系统报告 KV Cache 容量最高提升 94×、吞吐最高提升 18%；20 个 adapter 场景的延迟代价为 4%–11%。这说明专家化微调的主要瓶颈可以从重复 KV/基座副本转移到可管理的权重工作集。",
+      "limitations_zh": "评估集中在特定 16B MoE 和 Ascend NPU 软件栈，峰值容量与吞吐不能外推到 GPU 或其他专家分布；论文写明代码将于后续发布，本轮没有可核验的公开实现，生产故障恢复和负载抖动证据也有限。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "expertweaveefficientlyservingexpertspecializedfinetunedadaptersatscale",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "expertweaveefficientlyservingexpertspecializedfinetunedadaptersatscale",
+          "url": "https://colm.cc/virtual/2026/poster/2516"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #142 at 4:30 PM PDT (America/Los_Angeles) in Poster Session 4.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "把专家 adapter 多租户 serving 的显存与路由问题做成完整系统。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:finhardbenchcanllmsgeneratelatencyawarehardwareforfinancialcomputing",
+      "title": "FinHardBench: Can LLMs Generate Latency-Aware Hardware for Financial Computing?",
+      "abstract": "Can large language models generate not just correct, but fast hardware? This paper investigates the question in the context of financial FPGA design, where 5--10 nanoseconds of latency difference determines competitive advantage and designs undergo continuous iteration as exchange protocols, trading strategies, and regulatory requirements evolve. FinHardBench, a benchmark of 33 financial computing tasks, is presented together with three experiments that mirror the real-world FPGA iteration cycle: generating new modules from specifications, tuning system-level configurations across a 6-stage trading pipeline, and adapting existing modules to specification changes. Evaluation of six LLMs on 1530+ experiment rounds yields three findings: (1) models achieve 19--61\\% functional correctness with timing degradation up to 13.7$\\times$ on specific tasks; (2) in system-level design space exploration, top LLMs converge to the optimal configuration with higher reliability than random search, simulated annealing, and Bayesian optimization baselines (5/5 seeds vs.\\ 1--3/5); (3) strategy-level specification changes remain unsolved for most models. Code generation and architectural decision-making are partially independent ($\\rho=-0.37$), with task difficulty predicted by training data pattern availability rather than abstraction level. FinHardBench is released as an open-source benchmark.",
+      "url": "https://colm.cc/virtual/2026/poster/2340",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Weimin Fu",
+        "Hejia Zhang",
+        "Minghao Shao",
+        "Zeng Wang",
+        "Johann Knechtel",
+        "Ozgur Sinanoglu",
+        "Muhammad Shafique",
+        "Ramesh Karri",
+        "Xiaolong Guo"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "compiler-graph",
+        "leaf": "Compiler & Graph Optimization",
+        "leaf_zh": "编译器与计算图优化"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "code generation"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 13,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: code generation",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Can large language models generate not just correct, but fast hardware?",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "finhardbenchcanllmsgeneratelatencyawarehardwareforfinancialcomputing",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "finhardbenchcanllmsgeneratelatencyawarehardwareforfinancialcomputing",
+          "url": "https://colm.cc/virtual/2026/poster/2340"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #47 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 5.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:directmultitokendecoding",
+      "title": "Direct Multi-Token Decoding",
+      "abstract": "Recent studies suggest that pre-trained large language models (LLMs) might develop distinct functional roles across their layers: early layers focus on understanding the input context, middle layers handle task-specific processing, and late layers map abstract representations to output tokens. Inspired by the intuition that humans can produce an extended sequence of speech from a single act of reading and thinking, we hypothesize that a single pass through the early and middle layers could provide sufficient information to support the decoding of multiple future tokens. Accordingly, we propose Direct Multi-Token Decoding (DMTD), which performs only one full forward pass for every $n$ tokens and reuses the late layers to decode multiple subsequent tokens. Unlike speculative decoding, our method introduces no additional parameters, auxiliary routines, or post-generation verification. With minimal training overhead, a fine-tuned Qwen3-4B model utilizing DMTD achieves up to a $2\\times$ speedup with marginal performance loss. Moreover, our scaling analysis indicates that the performance of DMTD could be further improved with increased training.",
+      "url": "https://colm.cc/virtual/2026/poster/1957",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Xuan Luo",
+        "Weizhi Wang",
+        "Xifeng Yan"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 42,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Recent studies suggest that pre-trained large language models (LLMs) might develop distinct functional roles across their layers: early layers focus on understanding the input context, middle layers handle task-specific processing, and late layers map abstract representations to output tokens.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "directmultitokendecoding",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "directmultitokendecoding",
+          "url": "https://colm.cc/virtual/2026/poster/1957"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #68 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 5.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:quantizationrobustunlearningthroughthelensofretainforgetlosslandscapesinteraction",
+      "title": "Quantization-Robust Unlearning through the Lens of Retain-Forget Loss Landscapes Interaction",
+      "abstract": "Unlearning ensures LLM compliance by removing the influence of private or copyrighted training data. However, since LLM models typically undergo post-training compression, like quantization, in practical deployment, it has been observed that the unlearning effect can be substantially weakened, with the forgetting behavior degrading more severely than that of model utility. This paper proposes a quantization-robust unlearning framework that makes forgetting robust to quantization while maintaining overall model utility. We analyze this gap through the lens of loss landscape. Specifically, our analysis reveals a curvature-based criteria that pinpoints sensitive weights in the unlearned model that leads to both non-robust forgetting and reduced utility. We therefore propose sensitivity-guided noisy regularization, which is applied on the sensitive parameters to steer the model convergence towards a smoother minima of uniformly low forget and retain losses. Balancing unlearning and utility, we further propose forget-critical optimization, which updates only forget-critical layers, preserving most of the network to retain useful knowledge. Extensive experiments on the MUSE and TOFU benchmarks across multiple LLM unlearning algorithms show that our approach achieves substantially more quantization-resilient forgetting while maintaining utility.",
+      "url": "https://colm.cc/virtual/2026/poster/2084",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Jialu Wang",
+        "Jianing Deng",
+        "Shuqing Luo",
+        "Yuanzhe Li",
+        "Dongwei Wang",
+        "Jingtong Hu",
+        "Huanrui Yang",
+        "Song Wang",
+        "Tianlong Chen"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Unlearning ensures LLM compliance by removing the influence of private or copyrighted training data.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "quantizationrobustunlearningthroughthelensofretainforgetlosslandscapesinteraction",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "quantizationrobustunlearningthroughthelensofretainforgetlosslandscapesinteraction",
+          "url": "https://colm.cc/virtual/2026/poster/2084"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Grand Ballroom Poster Location: #125 at 11:00 AM PDT (America/Los_Angeles) in Poster Session 5.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:speedspecializedpositionexpertsforefficientspeculativedecoding",
+      "title": "SPEED: Specialized Position Experts for Efficient Speculative Decoding",
+      "abstract": "Speculative decoding accelerates Large Language Model (LLM) inference by using a small draft model to predict multiple tokens, and a large target model to verify these tokens in parallel. Recent studies leverage features of target and draft models to enhance draft accuracy, but suffer from the degrading accuracy of draft tokens at later positions, due to accumulated deviation in draft model-generated features. Worse still, features of inconsistent levels of deviation provide a noisy training signal at training stage. In this paper, we propose SPEED, applying specialized position experts to draft tokens at preassigned positions. Position experts substantially improve acceptance rate at later draft positions, as each expert only needs to focus on handling a certain level of feature deviation. Experiment results on six datasets demonstrate that SPEED effectively improves over baselines on average acceptance length and speed-up ratio. Our codebase is available at https://github.com/speed-speculative-decoding/speed.",
+      "url": "https://colm.cc/virtual/2026/poster/1765",
+      "pdf_url": "https://arxiv.org/pdf/2506.03566",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Langlin Huang",
+        "Chengsong Huang",
+        "Jixuan Leng",
+        "Di Huang",
+        "Jiaxin Huang"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "speculative decoding position specialized draft experts latency throughput Llama vLLM speculative decoding position specialized draft experts latency throughput Llama vLLM",
+      "code_url": "https://github.com/shrango/PosS",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "draft model",
+        "speculative decoding"
+      ],
+      "score": 61,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 6,
+        "rigor": 11,
+        "practical_impact": 9,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: draft model, speculative decoding",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Speculative decoding accelerates Large Language Model (LLM) inference by using a small draft model to predict multiple tokens, and a large target model to verify these tokens in parallel.",
+      "summary_zh": "SPEED 为不同草拟位置训练专门的 draft expert，减少后续位置因隐藏状态偏移而产生的接受率下降；论文预印本使用早期名称 POSS，作者仓库与 COLM 页面确认了标题演进。",
+      "why_it_matters_zh": "在 Llama-3-8B-Instruct 与 Llama-2-13B-chat、六个数据集上，作者报告相对 HASS 的速度比最高再提升 5.7%，并提供模型、代码与 vLLM 接入说明。它把 speculative decoding 的误差分解到位置维度，适合继续验证批量 serving 下的收益。",
+      "limitations_zh": "额外的 position expert 会增加参数、训练与部署管理成本；结果集中在两类目标模型和论文指定 batch/硬件，尚不能证明在连续批处理、不同并发和更大模型上同样增益。预印本与最终标题不同，引用时应保留这一版本关系。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "speedspecializedpositionexpertsforefficientspeculativedecoding",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "speedspecializedpositionexpertsforefficientspeculativedecoding",
+          "url": "https://colm.cc/virtual/2026/poster/1765"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #9 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "位置专用草稿模型兼具明确机制、速度数据和公开实现。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:gooseanisotropicspeculationtreesfortrainingfreespeculativedecoding",
+      "title": "Goose: Anisotropic Speculation Trees for Training-Free Speculative Decoding",
+      "abstract": "Speculative decoding accelerates large language model inference by drafting multiple candidate tokens and verifying them in a single forward pass. Candidates are organized as a tree: deeper trees accept more tokens per step, but adding depth requires sacrificing breadth (fallback options) under a fixed verification budget. Existing training-free methods draft from a single token source and shape their trees without distinguishing candidate quality across origins. We observe that two common training-free token sources-n-gram matches copied from the input context, and statistical predictions from prior forward passes differ dramatically in acceptance rate (~6x median gap, range 2-18x across five models and five benchmarks). We prove that when such a quality gap exists, the optimal tree is anisotropic (asymmetric): reliable tokens should form a deep chain while unreliable tokens spread as wide branches, breaking through the depth limit of balanced trees. We realize this structure in GOOSE, a training-free framework that builds an adaptive spine tree-a deep chain of high-acceptance context-matched tokens with wide branches of low-acceptance alternatives at each node. We prove that the number of tokens accepted per step is at least as large as that of either source used alone. On five LLMs (7B-33B) and five benchmarks, GOOSE achieves 1.9-4.3x lossless speedup, outperforming balanced-tree baselines by 12-33% under the same budget.",
+      "url": "https://colm.cc/virtual/2026/poster/2268",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "TAO JIN",
+        "Phuong Minh Nguyen",
+        "Naoya Inoue"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 10,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Speculative decoding accelerates large language model inference by drafting multiple candidate tokens and verifying them in a single forward pass.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "gooseanisotropicspeculationtreesfortrainingfreespeculativedecoding",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "gooseanisotropicspeculationtreesfortrainingfreespeculativedecoding",
+          "url": "https://colm.cc/virtual/2026/poster/2268"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #10 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:statisticallylosslessquantizationoflargelanguagemodels",
+      "title": "Statistically-Lossless Quantization of Large Language Models",
+      "abstract": "Model quantization has become essential for efficient large language model deployment, yet existing approaches present clear trade-offs: methods such as GPTQ and AWQ achieve practical compression but are lossy, while lossless techniques preserve fidelity but lack inference acceleration. This paper explores the middle ground of statistically-lossless compression, examining three complementary aspects of what losslessness means for quantized LLMs. First, task-lossless compression preserves zero-shot benchmark accuracy within natural sampling variance and is achievable at aggressive bitwidths. Second, we formalize the stricter notion of distribution-lossless compression, requiring the quantized model's next-token distribution to be practically indistinguishable from the original, and propose the Expected Acceptance Rate (EAR), the maximum token-agreement probability under optimal coupling, as a directly interpretable fidelity metric (for example, EAR ≥ 0.99 means 99% agreement). Third, we prove a gamma-squared variance law showing that symmetric quantization inflates noise variance by gamma squared relative to asymmetric, making asymmetric quantization a prerequisite for distribution-lossless fidelity but not for task-level preservation. We demonstrate that achieving statistically-lossless compression is possible through SLQ, a layer-wise non-uniform quantization method requiring asymmetric quantization and bitwidth search spanning a wide range of quantization levels. Under these constraints, we obtain task-lossless compression at well below 4 bits per parameter (as low as 3.3 bits depending on the model), distribution-lossless compression at 5 to 6 bits per parameter on average, and inference speedups of 1.7 to 3.6 times compared to FP16 using optimized kernels.",
+      "url": "https://colm.cc/virtual/2026/poster/2069",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Michael A. Helcig",
+        "Eldar Kurtic",
+        "Dan Alistarh"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization",
+        "quantized"
+      ],
+      "score": 53,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 10,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization, quantized",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Model quantization has become essential for efficient large language model deployment, yet existing approaches present clear trade-offs: methods such as GPTQ and AWQ achieve practical compression but are lossy, while lossless techniques preserve fidelity but lack inference acceleration.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "statisticallylosslessquantizationoflargelanguagemodels",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "statisticallylosslessquantizationoflargelanguagemodels",
+          "url": "https://colm.cc/virtual/2026/poster/2069"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #11 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "colm:colm-2026:nirvanastructuredpruningreimaginedforlargelanguagemodelcompression",
+      "title": "NIRVANA: Structured Pruning Reimagined for Large Language Model Compression",
+      "abstract": "While structured pruning presents a highly effective pathway for accelerating Large Language Model (LLM) inference, existing methods frequently suffer from significant performance degradation and demand computationally retraining to recover capabilities. To overcome these barriers, we present NIRVANA, a novel, hardware-aware structured pruning framework designed to preserve both zero-shot performance and the optimization landscape for downstream fine-tuning. Departing from traditional loss-based heuristics, our approach evaluates structural importance through a first-order function-space saliency inspired by the Neural Tangent Kernel (NTK), effectively safeguarding the model's critical training dynamics. To prevent structural collapse at high compression rates, we introduce a global unit-ranking strategy coupled with an analytically derived allocation mechanism, which optimally balances the pruning aggressiveness between attention heads and MLP neurons. Furthermore, we eliminate the instability typically associated with random data sampling by employing a lightweight, KL-divergence-driven calibration data selection process. Extensive evaluations across Llama3, Qwen, and T5 architectures demonstrate that NIRVANA consistently establishes new state-of-the-art results on different benchmarks, providing a theoretically sound and practical approach to LLM compression.",
+      "url": "https://colm.cc/virtual/2026/poster/2156",
+      "pdf_url": "",
+      "published": "2026-10-06",
+      "updated": "2026-10-06",
+      "authors": [
+        "Mengting Ai",
+        "Tianxin Wei",
+        "Sirui Chen",
+        "Jingrui He"
+      ],
+      "source": "COLM official accepted papers",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "COLM 2026",
+      "journal_ref": "",
+      "comment": "",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "pruning"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 8,
+        "rigor": 11,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: pruning",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "While structured pruning presents a highly effective pathway for accelerating Large Language Model (LLM) inference, existing methods frequently suffer from significant performance degradation and demand computationally retraining to recover capabilities.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "COLM official accepted papers",
+          "id": "nirvanastructuredpruningreimaginedforlargelanguagemodelcompression",
+          "url": "https://colm.cc/Conferences/2026/AcceptedPapers"
+        },
+        {
+          "source": "COLM official program",
+          "id": "nirvanastructuredpruningreimaginedforlargelanguagemodelcompression",
+          "url": "https://colm.cc/virtual/2026/poster/2156"
+        }
+      ]
+    },
+    "event_id": "colm-2026",
+    "track": "In Room: Imperial Ballroom Poster Location: #12 at 4:40 PM PDT (America/Los_Angeles) in Poster Session 6.",
+    "presentation": "Poster",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  }
+]

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple
 from urllib.parse import urljoin
 
@@ -11,6 +12,16 @@ from bs4 import BeautifulSoup, Tag
 from .event_models import EventPaper
 from .models import Paper
 from .utils import clean_text, normalized_title
+
+
+COLM_ABSTRACT_RECALL_RE = re.compile(
+    r"\b(?:inference|serving|latency|throughput|kv[- ]?cache|speculative|quantiz\w*|"
+    r"low[- ]?precision|gpu|accelerat\w*|paged[- ]?attention|prefill|decod\w*|distributed|"
+    r"sparse[- ]?attention|prun\w*|hardware|memory[- ]?efficient|efficient|efficiency|"
+    r"compression|token pruning|model routing|mixture[- ]?of[- ]?experts|moe|"
+    r"on[- ]?device|edge device|test[- ]?time compute|compute cost|parallelism)\b",
+    re.IGNORECASE,
+)
 
 
 def _text(node: ET.Element | None) -> str:
@@ -280,3 +291,140 @@ def collect_sosp_schedule(event: Dict[str, Any], timeout: int = 90) -> Tuple[Lis
     )
     response.raise_for_status()
     return parse_sosp_schedule_html(response.content, event)
+
+
+def _colm_authors(node: Tag | None) -> List[str]:
+    if node is None:
+        return []
+    value = clean_text(node.get_text(" ", strip=True))
+    return [part.strip() for part in value.split("⋅") if part.strip()]
+
+
+def parse_colm_accepted_html(
+    payload: bytes, event: Dict[str, Any]
+) -> Tuple[List[EventPaper], int]:
+    """Parse the complete official COLM accepted-paper table.
+
+    The table is the authoritative corpus list. It contains titles, authors, and
+    poster scheduling metadata but not abstracts or archival paper links.
+    """
+    soup = BeautifulSoup(payload, "html.parser")
+    accepted_url = str(event["accepted_papers_url"])
+    publication_date = str(event.get("publication_date", event["start_date"]))
+    output: List[EventPaper] = []
+    for row in soup.select("table tr"):
+        title_node = row.select_one("td strong")
+        if title_node is None:
+            continue
+        title = clean_text(title_node.get_text(" ", strip=True))
+        if not title:
+            continue
+        slug = normalized_title(title)[:96]
+        authors_node = row.select_one("td .indented i")
+        where_node = row.select_one("td.elc-where")
+        track = clean_text(where_node.get_text(" ", strip=True)) if where_node else ""
+        paper = Paper(
+            id=f"colm:{event['id']}:{slug}",
+            title=title,
+            abstract="",
+            url=accepted_url,
+            pdf_url="",
+            published=publication_date,
+            updated=publication_date,
+            authors=_colm_authors(authors_node),
+            source="COLM official accepted papers",
+            source_type="accepted_program",
+            venue=event["short_name"],
+            source_records=[
+                {"source": "COLM official accepted papers", "id": slug, "url": accepted_url}
+            ],
+        )
+        output.append(
+            EventPaper(
+                paper=paper,
+                event_id=event["id"],
+                track=track,
+                presentation="Poster",
+            )
+        )
+    return output, len(output)
+
+
+def parse_colm_calendar_html(payload: bytes, event: Dict[str, Any]) -> Dict[str, str]:
+    soup = BeautifulSoup(payload, "html.parser")
+    base_url = str(event["official_url"])
+    output: Dict[str, str] = {}
+    for link in soup.select('a[href^="/virtual/2026/poster/"]'):
+        title = clean_text(link.get_text(" ", strip=True))
+        href = str(link.get("href", ""))
+        if title and href:
+            output[normalized_title(title)] = urljoin(base_url, href)
+    return output
+
+
+def parse_colm_orals_html(payload: bytes, event: Dict[str, Any]) -> Dict[str, Dict[str, str]]:
+    soup = BeautifulSoup(payload, "html.parser")
+    base_url = str(event["official_url"])
+    output: Dict[str, Dict[str, str]] = {}
+    for card in soup.select(".event-card"):
+        title_link = card.select_one("h3.event-title a")
+        if title_link is None:
+            continue
+        title = clean_text(title_link.get_text(" ", strip=True))
+        abstract_node = card.select_one(".event-abstract .abstract-text")
+        output[normalized_title(title)] = {
+            "url": urljoin(base_url, str(title_link.get("href", ""))),
+            "abstract": clean_text(abstract_node.get_text(" ", strip=True)) if abstract_node else "",
+        }
+    return output
+
+
+def parse_colm_detail_html(payload: bytes) -> str:
+    soup = BeautifulSoup(payload, "html.parser")
+    node = soup.select_one(".abstract-section .abstract-text-inner")
+    return clean_text(node.get_text(" ", strip=True)) if node else ""
+
+
+def collect_colm_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[EventPaper], int]:
+    headers = {"User-Agent": "WeeklyPaper/0.2 (+https://github.com/janilbols-w/weekly-paper)"}
+
+    def fetch(url: str) -> bytes:
+        response = requests.get(url, timeout=timeout, headers=headers)
+        response.raise_for_status()
+        return response.content
+
+    papers, total = parse_colm_accepted_html(fetch(event["accepted_papers_url"]), event)
+    calendar = parse_colm_calendar_html(fetch(event["program_url"]), event)
+    orals = parse_colm_orals_html(fetch(event["orals_url"]), event)
+
+    candidates: List[EventPaper] = []
+    for item in papers:
+        key = normalized_title(item.paper.title)
+        if key in calendar:
+            item.paper.url = calendar[key]
+            item.paper.source_records.append(
+                {"source": "COLM official program", "id": key, "url": calendar[key]}
+            )
+        oral = orals.get(key)
+        if oral:
+            item.paper.url = oral["url"]
+            item.paper.abstract = oral["abstract"]
+            item.presentation = "Oral + Poster"
+            continue
+        if item.paper.url != event["accepted_papers_url"] and COLM_ABSTRACT_RECALL_RE.search(
+            item.paper.title
+        ):
+            candidates.append(item)
+
+    max_workers = max(1, int(event.get("detail_fetch_workers", 12)))
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(fetch, item.paper.url): item for item in candidates}
+        for future in as_completed(futures):
+            item = futures[future]
+            try:
+                item.paper.abstract = parse_colm_detail_html(future.result())
+            except requests.RequestException:
+                # The complete title-level corpus remains usable when an individual
+                # detail page is temporarily unavailable.
+                continue
+    return papers, total

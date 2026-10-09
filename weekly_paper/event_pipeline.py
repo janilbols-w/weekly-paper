@@ -8,7 +8,12 @@ from typing import Any, Dict, List
 import yaml
 
 from .evaluation import evaluate
-from .event_collectors import collect_acl_anthology, collect_sosp_schedule, collect_usenix_schedule
+from .event_collectors import (
+    collect_acl_anthology,
+    collect_colm_program,
+    collect_sosp_schedule,
+    collect_usenix_schedule,
+)
 from .event_models import EventPaper
 from .event_sitegen import build_event_site
 from .models import Paper
@@ -194,6 +199,9 @@ def run_event(
     elif event.get("collector") == "sosp_schedule":
         collected, corpus_total = collect_sosp_schedule(event)
         corpus_source = "SOSP official schedule and accepted-paper list"
+    elif event.get("collector") == "colm_program":
+        collected, corpus_total = collect_colm_program(event)
+        corpus_source = "COLM official accepted-paper list and program"
     elif event.get("collector") == "official_program":
         collected, corpus_total = [], 0
         corpus_source = event.get("program_source_name", "Official program")

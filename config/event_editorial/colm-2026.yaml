@@ -1,0 +1,95 @@
+colm:colm-2026:speedspecializedpositionexpertsforefficientspeculativedecoding:
+  pdf_url: https://arxiv.org/pdf/2506.03566
+  code_url: https://github.com/shrango/PosS
+  classification_hint: speculative decoding position specialized draft experts latency throughput Llama vLLM
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: speculative-decoding, leaf: Speculative Decoding, leaf_zh: 推测解码}
+  summary_zh: SPEED 为不同草拟位置训练专门的 draft expert，减少后续位置因隐藏状态偏移而产生的接受率下降；论文预印本使用早期名称 POSS，作者仓库与 COLM 页面确认了标题演进。
+  why_it_matters_zh: 在 Llama-3-8B-Instruct 与 Llama-2-13B-chat、六个数据集上，作者报告相对 HASS 的速度比最高再提升 5.7%，并提供模型、代码与 vLLM 接入说明。它把 speculative decoding 的误差分解到位置维度，适合继续验证批量 serving 下的收益。
+  limitations_zh: 额外的 position expert 会增加参数、训练与部署管理成本；结果集中在两类目标模型和论文指定 batch/硬件，尚不能证明在连续批处理、不同并发和更大模型上同样增益。预印本与最终标题不同，引用时应保留这一版本关系。
+  reading_depth: full_text
+  selection_reason_zh: 位置专用草稿模型兼具明确机制、速度数据和公开实现。
+
+colm:colm-2026:aspireasynchronousbatchedselfspeculativedecodingforlongcontextllminference:
+  pdf_url: https://arxiv.org/pdf/2609.17943
+  code_url: https://github.com/Amir-zsh/ASPIRE
+  classification_hint: asynchronous batched self speculative decoding long context scheduler full attention refresh serving latency throughput
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: speculative-decoding, leaf: Speculative Decoding, leaf_zh: 推测解码}
+  summary_zh: ASPIRE 把 self-speculative decoding 重构为异步的逐请求 draft/verify 流水线：混合 forward 让不同请求同时草拟或验证，在线调度器协调状态，draft 阶段周期性执行全 Attention 以刷新长上下文信息。
+  why_it_matters_zh: 作者在 3 个模型和 5 个 reasoning/长上下文 benchmark 上报告相对自回归解码 1.70–4.58× 加速、相对最强 self-speculative 基线平均约 27% 提升。它直接处理真实 batch 中请求进度不齐的问题，比只测单请求的 speculative decoding 更接近 serving 约束。
+  limitations_zh: 作者明确把与通用 continuous batching、尤其 chunked prefill 的整合作为后续工作；当前结果仍依赖指定模型、序列长度和硬件，调度状态与周期性全 Attention 也会增加实现复杂度。
+  reading_depth: full_text
+  selection_reason_zh: 把长上下文 self-speculation 推进到异步批量 serving。
+
+colm:colm-2026:expertweaveefficientlyservingexpertspecializedfinetunedadaptersatscale:
+  pdf_url: https://arxiv.org/pdf/2508.17624
+  classification_hint: expert specialized fine tuned adapters multi tenant MoE serving virtual memory NPU throughput latency
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group: Serving Platforms, group_zh: 服务平台, leaf_id: serving-engine, leaf: Serving Engines & Runtimes, leaf_zh: Serving Engine 与 Runtime}
+  summary_zh: ExpertWeave 在共享 MoE 基座上承载大量 expert-specialized adapter，以虚拟内存式 expert weight manager 按需换入权重，并用融合的 batched rerouting 减少不同租户 adapter 的路由和执行碎片。
+  why_it_matters_zh: 在作者的 16B MoE 与 Ascend NPU 环境中，系统报告 KV Cache 容量最高提升 94×、吞吐最高提升 18%；20 个 adapter 场景的延迟代价为 4%–11%。这说明专家化微调的主要瓶颈可以从重复 KV/基座副本转移到可管理的权重工作集。
+  limitations_zh: 评估集中在特定 16B MoE 和 Ascend NPU 软件栈，峰值容量与吞吐不能外推到 GPU 或其他专家分布；论文写明代码将于后续发布，本轮没有可核验的公开实现，生产故障恢复和负载抖动证据也有限。
+  reading_depth: full_text
+  selection_reason_zh: 把专家 adapter 多租户 serving 的显存与路由问题做成完整系统。
+
+colm:colm-2026:darwinlmevolutionarystructuredpruningoflargelanguagemodels:
+  pdf_url: https://arxiv.org/pdf/2502.07780
+  code_url: https://github.com/IST-DASLab/DarwinLM
+  classification_hint: evolutionary structured pruning LLM compression layer database continual training efficient inference
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: compression-sparsity-distillation, leaf: Compression, Sparsity & Distillation, leaf_zh: 压缩、稀疏与蒸馏}
+  summary_zh: DarwinLM 先以二阶信息构建可复用的层级剪枝数据库，再用训练感知的进化搜索组合非均匀结构化剪枝方案；候选在搜索过程中经历短程微调，而不是只靠静态 proxy 排序。
+  why_it_matters_zh: 论文覆盖 Llama-2-7B、Llama-3.1-8B、Qwen2.5-14B 与 Qwen3-30B-A3B，并报告相对需要更多数据或成本的基线达到更好压缩质量；代码和压缩权重公开。对部署侧最重要的是它输出规则化结构，而非只产生难以加速的非结构稀疏。
+  limitations_zh: 层数据库会按候选层级增加约 5× 存储，最终方案仍使用约 500 亿 token 的持续训练，成本并不轻；搜索和微调结果依赖目标模型、数据与压缩档位，实际吞吐还需在具体 serving engine 上验证。
+  reading_depth: full_text
+  selection_reason_zh: 结构化剪枝证据完整，兼有多模型评估、代码和权重。
+
+colm:colm-2026:indexcacheacceleratingsparseattentionviacrosslayerindexreuse:
+  pdf_url: https://arxiv.org/pdf/2603.12201
+  code_url: https://github.com/THUDM/IndexCache
+  classification_hint: dynamic sparse attention cross layer top k index reuse prefill decode speedup GLM
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: compression-sparsity-distillation, leaf: Compression, Sparsity & Distillation, leaf_zh: 压缩、稀疏与蒸馏}
+  summary_zh: IndexCache 观察到动态稀疏 Attention 的 top-k 索引在相邻层高度相似，于是只让部分 Full layer 运行 indexer，其他 Shared layer 直接复用最近索引，从而削减索引计算而不改变稀疏 Attention 主体。
+  why_it_matters_zh: 作者在 30B 动态稀疏 Attention 模型上移除 75% indexer 计算，报告 prefill 最高 1.82×、decode 最高 1.48×；GLM-5 初步实验移除 50% indexer 并带来约 1.2× 端到端提升。代码公开，适合作为稀疏 Attention 系统优化的可复现基线。
+  limitations_zh: 方法依赖跨层索引相似性，只适用于带可复用 indexer 的动态稀疏 Attention；GLM-5 结果仍属初步验证，论文没有独立 limitations 章节，对不同稀疏率、长上下文分布和 kernel 实现的稳健性仍需复测。
+  reading_depth: full_text
+  selection_reason_zh: 用跨层复用消除稀疏 Attention 的隐藏索引开销。
+
+colm:colm-2026:aselfpruningtransformerextremekvcachecompressionwithuniversalattention:
+  pdf_url: https://arxiv.org/pdf/2610.09051
+  classification_hint: universal attention learned decay adaptive pruning KV cache compression long context sparse kernels
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group: Runtime & Memory Efficiency, group_zh: Runtime 与内存效率, leaf_id: attention-kv-cache, leaf: Attention & KV Cache, leaf_zh: Attention 与 KV Cache}
+  summary_zh: Universal Attention 在保留 RoPE 与 softmax 的同时学习复合衰减，使 Transformer 能按上下文自适应识别并剪除低价值 KV，而不依赖固定窗口或外部 eviction heuristic。
+  why_it_matters_zh: 作者报告约 10× KV Cache 压缩，并在 16k context 达到 25×，同时在其下游评估中优于基线和未剪枝模型。它把 KV 淘汰从运行时外挂策略变成模型内部可学习行为，为极长上下文的容量规划提供了不同路径。
+  limitations_zh: 作者明确指出聚合类任务较弱、学习 mask 有额外计算、当前需从头训练且现有推理实现未优化；要把理论压缩转成实际 latency/吞吐收益，还需要专用 sparse kernel 和系统支持。
+  reading_depth: full_text
+  selection_reason_zh: 极高 KV 压缩主张配有清晰机制和明确工程限制。
+
+colm:colm-2026:llmrouterrethinkingroutingwithprefillactivations:
+  pdf_url: https://arxiv.org/pdf/2603.20895
+  classification_hint: LLM request routing prefill residual activations encoder target decoupling cost quality gateway
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group: Serving Platforms, group_zh: 服务平台, leaf_id: gateway-routing-autoscaling, leaf: Gateway, Routing & Autoscaling, leaf_zh: Gateway、路由与弹性}
+  summary_zh: LLM Router 不再只用 prompt 文本 embedding，而从 prefill residual activation 提取可路由信号；encoder-target decoupling 允许开放 encoder 学习预测闭源目标模型表现，Fisher separability 用于选择信息最强的层。
+  why_it_matters_zh: 在论文的 frontier model pool 上，作者报告关闭 45.58% 的 oracle gap、相对最高成本模型节省 74.31% 成本，并把 oracle distance 降低 53.62%。若能在线稳定复现，这种信号可把模型网关从静态规则推进到按请求难度分配模型。
+  limitations_zh: 作者强调 activation 与路由标签的关系仍是相关性而非因果；输出长度以中位数估计，真实成本为事后计算，P-AUCCC 等指标的稳健性还需研究。当前也未发现公开 artifact，线上时延、隐私和模型版本漂移尚未验证。
+  reading_depth: full_text
+  selection_reason_zh: 以 prefill 激活提升多模型网关的质量—成本路由。
+
+colm:colm-2026:muonqenhancinglowbitmuonquantizationviadirectionalfidelityoptimization:
+  pdf_url: https://arxiv.org/pdf/2605.11396
+  code_url: https://github.com/YupengSu/MuonQ
+  classification_hint: 4 bit Muon optimizer state quantization memory pre normalization singular component mu law training
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: quantization-low-precision, leaf: Quantization & Low Precision, leaf_zh: 量化与低精度}
+  summary_zh: MuonQ 面向 Muon 优化器状态做 4-bit 量化：预归一化稳定数值范围，保留关键奇异分量以维护方向信息，再用 mu-law companding 改善低比特表示。
+  why_it_matters_zh: 作者报告优化器状态内存最高减少 7.3×，并在最高 1.1B 参数模型上保持训练质量；代码公开。它将低比特从推理权重扩展到新型优化器状态，对显存受限的预训练和 continued pretraining 有直接价值。
+  limitations_zh: 作者明确指出验证规模仍属中等，power iteration 有额外开销，frontier-scale、分布式训练和低于 4-bit 的效果留待未来工作；因此不能把 1.1B 结果直接外推到数百亿参数训练。
+  reading_depth: full_text
+  selection_reason_zh: 低比特优化器状态提供清晰的训练内存收益与公开实现。
+
+colm:colm-2026:megatrainfullprecisiontrainingof100bparameterlargelanguagemodelsonasinglegpu:
+  pdf_url: https://arxiv.org/pdf/2604.05091
+  code_url: https://github.com/DLYuanGod/MegaTrain
+  classification_hint: CPU memory centric full precision LLM training layer streaming offload single GPU H200 GH200 long context
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group: Runtime & Memory Efficiency, group_zh: Runtime 与内存效率, leaf_id: cache-offload-memory, leaf: Cache, Offload & Memory Management, leaf_zh: 缓存、换入换出与内存管理}
+  summary_zh: MegaTrain 以 CPU 内存为大模型全精度训练的主存储层，按层流式搬运权重、梯度与优化器状态，通过双缓冲 CUDA stream 重叠传输和计算，并以无状态 layer template 限制 GPU 常驻内存。
+  why_it_matters_zh: 作者在单张 H200 加 1.5TB 主机内存上训练 120B 模型，14B 场景相对 DeepSpeed ZeRO-3 CPU offload 报告 1.84× 吞吐；单 GH200 还展示 7B、512k context 训练。代码公开，为容量优先、吞吐次之的低 GPU 数研究环境提供了一条具体路线。
+  limitations_zh: 该路线强依赖大容量主机内存与 PCIe/NVLink-C2C 带宽，单卡可运行不等于经济或快速；论文尚未给出多 GPU 与 SSD 分层结果，极长上下文和 120B 实验也不能替代常规集群的端到端成本比较。
+  reading_depth: full_text
+  selection_reason_zh: 以分层内存突破单 GPU 全精度训练容量上限，系统边界清晰。
