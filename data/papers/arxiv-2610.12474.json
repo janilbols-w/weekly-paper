@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2610.12474",
+  "title": "TTS-Q: Perception-Guided Post-Training Quantization of Text-to-Speech Diffusion Transformers",
+  "abstract": "Zero-shot text-to-speech (TTS) can clone a voice from seconds of audio. Yet the quality comes from billion-parameter diffusion transformers whose size and multi-step sampling put them out of reach of the on-device, assistive, and real-time applications that need them most. Post-training quantization (PTQ) shrinks such models without retraining, but it has been built for language and vision, not speech. At 4 bits, a strong quantizer leaves intelligibility close to full precision but consistently erodes speaker timbre, so error rates stay low while the voice drifts from the target speaker. We ask why quantization hurts speech, where the damage lives, and whether it can be repaired without retraining. To find out, we run the first 4-bit weight-and-activation (W4A4) PTQ study of a TTS diffusion transformer at 1B and 3.5B. The timbre cost comes from both the weight and the activation quantization, but only the activation part has the timestep structure a precision schedule can exploit. We therefore introduce TTS-Q, which selects hard-to-quantize items from task-matched calibration candidates and applies a budget-balanced mixed-precision schedule that assigns higher precision to late-step feed-forward activations. TTS-Q recovers timbre best at both scales, at no cost to intelligibility. Separately, the deployed calibrated-W4A4 reference reduces peak memory on GPU, providing a practical reference for resource-constrained TTS deployment.",
+  "url": "https://arxiv.org/abs/2610.12474",
+  "pdf_url": "https://arxiv.org/pdf/2610.12474",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "authors": [
+    "Xiaoqin Feng",
+    "Yuqi Li",
+    "Weilun Feng",
+    "Yi-Cheng Lin",
+    "Kai Li",
+    "Xianglong Wang",
+    "Kuo Yang",
+    "Chuanguang Yang",
+    "Yingli Tian",
+    "Wei Li",
+    "Zhongwei Cheng",
+    "Lin Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Zero-shot text-to-speech (TTS) can clone a voice from seconds of audio.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-12T04:55:46+00:00",
+  "last_seen": "2026-10-12T04:55:46+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.12474",
+      "url": "https://arxiv.org/abs/2610.12474"
+    }
+  ]
+}

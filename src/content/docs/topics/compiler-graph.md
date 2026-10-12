@@ -5,10 +5,13 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **105** 篇。
+累计收录 **108** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [COBALT: Contextual Bandit Learning with Offline Trajectories for Multi-Turn Code Generation](../../papers/arxiv-2602.03806/) | 2026-10-12 | 46 |
+| [Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation](../../papers/arxiv-2605.11307/) | 2026-10-12 | 43 |
+| [QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code](../../papers/arxiv-2610.13811/) | 2026-10-12 | 38 |
 | [MARGIN: Runtime Confidence Calibration for Multi-Agent Foundation Model Coordination](../../papers/arxiv-2605.22949/) | 2026-10-09 | 42 |
 | [Knowledge boundary probing and demand-guided intervention for LLM-based power system code generation](../../papers/arxiv-2605.31478/) | 2026-10-08 | 47 |
 | [SEER: Self-Enhancing Chain-of-Thought Compression for Reasoning Models](../../papers/arxiv-2509.14093/) | 2026-10-08 | 41 |

@@ -39,7 +39,7 @@ The escalating size of pretrained neural networks has rendered model compression
 ## 元数据
 
 - 作者：Fan Gao, Wei Su, Juntong Fan, Renfeng Peng, Hongyu Liu, Jinqiao Duan, Feng-Lei Fan
-- 发布：2026-10-09；更新：2026-10-09
+- 发布：2026-10-09；更新：2026-10-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

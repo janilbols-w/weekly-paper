@@ -5,10 +5,11 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **22** 篇。
+累计收录 **23** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices](../../papers/arxiv-2610.12970/) | 2026-10-12 | 38 |
 | [Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework](../../papers/arxiv-2609.39584/) | 2026-10-01 | 46 |
 | [TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training](../../papers/arxiv-2604.09107/) | 2026-10-01 | 40 |
 | [Harness Continual Learning: Continual Adaptation Beyond Model Parameters](../../papers/arxiv-2608.19013/) | 2026-10-01 | 40 |

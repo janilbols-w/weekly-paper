@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2607.21552",
+  "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+  "abstract": "Vision-language models (VLMs) can behave very differently depending on whether the same underlying problem is presented textually or visually. This inconsistency suggests that different views expose different reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating view dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach that derives a cross-view self-distillation signal from the model's own modality-dependent capabilities. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains the remaining views using a GRPO task-reward objective augmented with a reverse-KL regularizer toward that teacher. Across reasoning benchmarks that evaluate on multimodal mathematics problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across different input modality representations.",
+  "url": "https://arxiv.org/abs/2607.21552",
+  "pdf_url": "https://arxiv.org/pdf/2607.21552",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "authors": [
+    "Wen Ye",
+    "Yuxiao Qu",
+    "Aviral Kumar",
+    "Xuezhe Ma"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Vision-language models (VLMs) can behave very differently depending on whether the same underlying problem is presented textually or visually.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-12T04:55:46+00:00",
+  "last_seen": "2026-10-12T04:55:46+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.21552",
+      "url": "https://arxiv.org/abs/2607.21552"
+    }
+  ]
+}

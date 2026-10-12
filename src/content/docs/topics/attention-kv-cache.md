@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **183** 篇。
+累计收录 **185** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KV-Repurpose: A Testbed for Evaluating Non-Prefix KV-Cache Reuse](../../papers/arxiv-2610.13060/) | 2026-10-12 | 49 |
+| [One Model to Loop Them All: Elastic Latent Recurrence for Language Models](../../papers/arxiv-2610.12582/) | 2026-10-12 | 41 |
 | [RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation](../../papers/arxiv-2610.11358/) | 2026-10-09 | 54 |
 | [SparKV: Overhead-Aware KV Cache Loading for Efficient On-Device LLM Inference](../../papers/arxiv-2604.21231/) | 2026-10-09 | 50 |
 | [GUI-KV: Efficient GUI Agents via KV Cache with Spatio-Temporal Awareness](../../papers/arxiv-2510.00536/) | 2026-10-09 | 49 |

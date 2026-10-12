@@ -1,0 +1,45 @@
+---
+title: "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping"
+description: "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom."
+---
+
+**评分：44/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+
+[论文原文](https://arxiv.org/abs/2610.13909) · [PDF](https://arxiv.org/pdf/2610.13909)
+
+## 一句话摘要
+
+While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Several lines of research offer alternatives to the standard Mean Squared Error (MSE), but differences in datasets, backbones, and evaluation protocols make their practical benefits difficult to compare. In this work, we address this gap by performing a systematic re-evaluation of regression objectives across a broad collection of established tabular datasets and multiple neural backbones. Our comparison reveals that many proposed objectives provide limited or inconsistent gains over a properly tuned MSE baseline, while quantile loss yields consistent aggregate improvements over MSE across the tested backbones. We then identify a limitation that remains even with this strong objective: regions with different levels of target noise can reach their best predictive performance at different training epochs. Consequently, a single global early-stopping checkpoint can impose a compromise between uncertainty regions, even when the objective can represent heteroskedastic target distributions. Motivated by this limitation, we introduce a heteroskedasticity-aware extension of quantile loss that uses input-dependent label smoothing as a potential remedy and improves over quantile loss on several backbones. Overall, our results provide a modern empirical picture of regression objectives for tabular deep learning and highlight how differences in optimal stopping times across uncertainty regions can limit the effectiveness of global early stopping. The code is available at https://github.com/yandex-research/tabular-regression.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 6 |
+| rigor | 11 |
+| practical impact | 5 |
+| reproducibility | 7 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: checkpoint
+- no quantitative claim in metadata
+- code/artifact link detected
+
+## 元数据
+
+- 作者：Danil Rudenko, Georgii Bulgakov, Nikolay Kartashev, Ivan Rubachev, Daniil Krasylnikov, Artem Babenko
+- 发布：2026-10-12；更新：2026-10-12
+- 来源：arXiv RSS；Venue：未确认
+- 代码：[https://github.com/yandex-research/tabular-regression](https://github.com/yandex-research/tabular-regression)
+- 阅读深度：metadata

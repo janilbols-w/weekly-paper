@@ -1,0 +1,84 @@
+{
+  "id": "arxiv:2610.12815",
+  "title": "Deploying RDMA for Large-Scale Inference and Training Workloads",
+  "abstract": "RDMA can reduce communication overhead in distributed machine learning systems, but realizing these benefits in production requires more than replacing TCP. Variable-size messages, concurrent connections, bursty incasts, and service failures introduce challenges that hardware offload alone cannot address. This paper reports our experience deploying ByteExpress, a software communication layer over hardware RDMA, in ByteDance's parameter-server-based inference and training systems. We present three lessons from the deployment: efficient RDMA requires buffer management across application and transport layers; scalable communication requires coordinated management of connections, receive capacity, and outstanding data; and service availability requires recovery above the transport layer. ByteExpress combines an RDMA-aware allocator, zero-copy transfers, QP multiplexing, receive-credit flow control, a software send window, and RPC-assisted recovery. In production inference, ByteExpress reduces mean and P99 model parameter fetch latency by 35.7% and 43.7%, respectively, and total CPU usage by 10.69% compared with kernel TCP. In training, ByteExpress reduces P99 model parameter push latency by up to 74.0% compared with TCP, with no PFC pauses observed at runtime.",
+  "url": "https://arxiv.org/abs/2610.12815",
+  "pdf_url": "https://arxiv.org/pdf/2610.12815",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "authors": [
+    "Yibo Huang",
+    "Yi Cui",
+    "Yukai Huang",
+    "Huaping Zhou",
+    "Jiancong Tong",
+    "Zhaoyu Wu",
+    "Gen Miao",
+    "Haoran Wei",
+    "Boyan Ding",
+    "Zhuo Jiang",
+    "Jianxi Ye",
+    "Yibo Zhu",
+    "Chuanxiong Guo",
+    "Yang Xu",
+    "Jie Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG",
+    "cs.NI",
+    "cs.SY",
+    "eess.SY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "network-interconnect",
+    "leaf": "Network, RDMA & Interconnect",
+    "leaf_zh": "网络、RDMA 与互联"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "rdma"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: rdma",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "RDMA can reduce communication overhead in distributed machine learning systems, but realizing these benefits in production requires more than replacing TCP.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-12T04:55:46+00:00",
+  "last_seen": "2026-10-12T04:55:46+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.12815",
+      "url": "https://arxiv.org/abs/2610.12815"
+    }
+  ]
+}

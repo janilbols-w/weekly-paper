@@ -5,10 +5,21 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **561** 篇。
+累计收录 **572** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Proactive Agentic Orchestration](../../papers/arxiv-2610.13485/) | 2026-10-12 | 46 |
+| [COFFEQA: Counterfactual-Guided Few-Shot Distillation for LLM Question Answering](../../papers/arxiv-2610.12837/) | 2026-10-12 | 44 |
+| [BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation](../../papers/arxiv-2610.13285/) | 2026-10-12 | 44 |
+| [X-AVDD: Cross-Attentive Audio-Visual Dataset Distillation](../../papers/arxiv-2610.13687/) | 2026-10-12 | 43 |
+| [TernaryLLM: Ternarized Large Language Model](../../papers/arxiv-2406.07177/) | 2026-10-12 | 43 |
+| [Zebra3D: Efficient Hybrid Foundation Models For Scalable 3D Reconstruction](../../papers/arxiv-2610.12727/) | 2026-10-12 | 40 |
+| [PreSTO: Predictive Subtree Prefetching for Fast LLM Power Sampling](../../papers/arxiv-2610.13171/) | 2026-10-12 | 40 |
+| [Defence against the dark arts of distillation: Unsupervised discovery of subliminal learning](../../papers/arxiv-2610.13536/) | 2026-10-12 | 40 |
+| [AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents](../../papers/arxiv-2610.13335/) | 2026-10-12 | 39 |
+| [MIRROR: Learning from the Other View for Multi-Modal Reasoning](../../papers/arxiv-2607.21552/) | 2026-10-12 | 38 |
+| [How Much Computation Does Every Forecast Need? Structured Block Skipping in Two Time-Series Foundation Models](../../papers/arxiv-2610.13208/) | 2026-10-12 | 38 |
 | [SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference](../../papers/arxiv-2610.12327/) | 2026-10-09 | 48 |
 | [3BASiL: An Algorithmic Framework for Sparse plus Low-Rank Compression of LLMs](../../papers/arxiv-2603.01376/) | 2026-10-09 | 47 |
 | [Generative Spatiotemporal Intent Sequence Recommendation via Implicit Reasoning in Amap](../../papers/arxiv-2605.28888/) | 2026-10-09 | 46 |

@@ -39,7 +39,7 @@ Reinforcement learning (RL) for post-training large language models (LLMs) incur
 ## 元数据
 
 - 作者：Xin Wang, Hao Yu, Zhengyang Zhuge, Bochao Mao, Zheng Li, Junda Feng, Yuyan Luo, Yi Zhang, Yizhong Cao, Mi Zhang, Dayiheng Liu, Jianwei Zhang
-- 发布：2026-10-07；更新：2026-10-07
+- 发布：2026-10-07；更新：2026-10-12
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

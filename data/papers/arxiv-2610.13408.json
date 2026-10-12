@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.13408",
+  "title": "Ember: Making Unified Virtual Memory Practical for Discrete-Memory GPUs",
+  "abstract": "GPU working sets have outgrown GPU memory, so applications must oversubscribe it, keeping only hot data on the GPU. NVIDIA's Unified Virtual Memory (UVM) supports oversubscription, but its performance degrades once data exceeds the GPU's memory. This stems from its fault-driven data placement, wasting interconnect bandwidth, and underutilizing the GPU. This raises the question: can UVM oversubscription become practical on stock GPUs, exploiting GPU memory speed and minimizing wasted interconnect bandwidth, without placement hints, profiling runs, or application changes? To this end, we present Ember, a UVM management framework for oversubscribed workloads. Ember introduces a hybrid address space; allocations start as mapped into host memory, omitting data migration. Ember's counter-driven region promotion uses GPU's hardware counters to fetch hot regions to the GPU, its decay-based eager reclamation proactively evicts cold regions in batches, while via online region re-placement, Ember tracks the hot set at runtime. We implement Ember within NVIDIA's open-source UVM driver for unmodified applications and as a userspace variant on stock CUDA. At 1.5x oversubscription, it is 6.8-10.6x faster than UVM on six applications across three PCIe GPUs, and generates LLM tokens 4.7-16x faster at sizes where manual placement cannot run at all. Without a profiling run, it beats a profile-guided alternative by 2.1x on kernel time.",
+  "url": "https://arxiv.org/abs/2610.13408",
+  "pdf_url": "https://arxiv.org/pdf/2610.13408",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "authors": [
+    "Senad-Leandro Lemes Galera",
+    "Michail Georgoulakis Misegiannis",
+    "Ferdinand Gruber",
+    "Jana Giceva",
+    "Dimitrios Stavrakakis"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "GPU working sets have outgrown GPU memory, so applications must oversubscribe it, keeping only hot data on the GPU.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-12T04:55:46+00:00",
+  "last_seen": "2026-10-12T04:55:46+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.13408",
+      "url": "https://arxiv.org/abs/2610.13408"
+    }
+  ]
+}

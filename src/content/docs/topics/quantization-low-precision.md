@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **290** 篇。
+累计收录 **294** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RAMP: Recurrent Adaptive Mixed Precision for Efficient Prefill in Recurrent-Depth Language Models](../../papers/arxiv-2610.13041/) | 2026-10-12 | 53 |
+| [DualQuant: Dual-scale Calibration-free Weight-and-Activation Quantization for LLMs](../../papers/arxiv-2610.13767/) | 2026-10-12 | 51 |
+| [Algebraic Integer Quantization for Machine Learning Applications](../../papers/arxiv-2610.12494/) | 2026-10-12 | 42 |
+| [TTS-Q: Perception-Guided Post-Training Quantization of Text-to-Speech Diffusion Transformers](../../papers/arxiv-2610.12474/) | 2026-10-12 | 41 |
 | [Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows](../../papers/arxiv-2610.11482/) | 2026-10-09 | 45 |
 | [When Lower Reconstruction Loss Hurts: Distributionally Robust Refinement for Low-Bit LLM Quantization](../../papers/arxiv-2610.11226/) | 2026-10-09 | 43 |
 | [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](../../papers/arxiv-2509.15206/) | 2026-10-09 | 43 |

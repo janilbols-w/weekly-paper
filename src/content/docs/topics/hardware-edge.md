@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **74** 篇。
+累计收录 **75** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [O\'ido: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator](../../papers/arxiv-2610.13447/) | 2026-10-12 | 41 |
 | [Toward Intelligent Networks via AI-Aware GPU-Native Packet Processing](../../papers/arxiv-2610.12139/) | 2026-10-09 | 43 |
 | [Hardware-aware Calibrated Clustered Attention for Efficient Visual Geometric Transformers](../../papers/arxiv-2610.09274/) | 2026-10-08 | 47 |
 | [T-CCL: Resource Efficient and Performant Collective Communication using Tensor Memory Accelerator](../../papers/arxiv-2610.07098/) | 2026-10-07 | 53 |
