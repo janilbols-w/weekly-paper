@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.19697",
+  "title": "CAFE: Conducting-Cell-Aware Adaptive Differential Encoding for Robust DNN Inference in FeFET-Based Compute-in-Memory",
+  "abstract": "Ferroelectric field-effect transistor (FeFET)-based compute-in-memory (CIM) promises energy-efficient deep neural network (DNN) inference, but device variation can severely degrade bit-sliced CIM accuracy. Prior works either rely on hardware modifications or treat such variation as generic noise, overlooking a key FeFET asymmetry: negligible off-state leakage makes errors dominated by conducting on-state cells. This asymmetry is amplified by two's-complement sign extension, which maps small negative values to high-significance bit slices and magnifies their errors during shift-and-add reconstruction. In this paper, we propose CAFE, a conducting-cell-aware adaptive differential encoding framework built upon this FeFET-specific asymmetry. CAFE introduces C$^2$AM, a bit-significance-weighted conducting-cell activity metric that predicts output deviation and inference accuracy degradation under FeFET device variation. Guided by C$^2$AM, CAFE applies differential weight and activation encoding to eliminate sign-extension-induced conducting-cell amplification. To balance robustness and cost, CAFE performs type-wise encoding enumeration, layer-wise NSGA-II search, and post-GA pruning to allocate robust encodings where the robustness-cost trade-off is favorable. Across representative vision and language workloads, CAFE reduces C$^2$AM by up to $28.6\\times$; in the main deployment study, it improves accuracy over two's-complement CIM by more than 87 percentage points and approaches full-differential robustness at $1.86$-$2.78\\times$ normalized cost, compared with $3.06\\times$ for uniform full-differential encoding.",
+  "url": "https://arxiv.org/abs/2610.19697",
+  "pdf_url": "https://arxiv.org/pdf/2610.19697",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "authors": [
+    "Wenshuai Yao",
+    "Wenyong Zhou",
+    "Hanyong Shao",
+    "Zhiyuan Ning",
+    "Ru Huang",
+    "Kechao Tang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Ferroelectric field-effect transistor (FeFET)-based compute-in-memory (CIM) promises energy-efficient deep neural network (DNN) inference, but device variation can severely degrade bit-sliced CIM accuracy.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-15T04:42:37+00:00",
+  "last_seen": "2026-10-15T04:42:37+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.19697",
+      "url": "https://arxiv.org/abs/2610.19697"
+    }
+  ]
+}

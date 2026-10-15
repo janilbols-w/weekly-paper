@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2610.19645",
+  "title": "MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support",
+  "abstract": "AI workloads increasingly employ low-precision formats such as BF16 / FP16, FP8 variants, FP4, Micro Scaling (MX), and INT modes across models, layers, and execution stages to balance accuracy, memory footprint, and throughput, which in turn requires hardware to support these formats in a flexible and efficient way. We present MFSA, a weight-stationary multi-format systolic array that achieves area efficiency through two architectural choices. At the PE level, MFSA uses dot-product-accumulator-based processing elements extended from an existing open-source trans-precision FPU to support reduced-precision formats (FP32/FP16/BF16/CFP8/FP4/INT16/INT8/INT4) with a shared datapath and proportional throughput scaling. At the array level, MFSA employs Online Block-Scale Rebasing (OBSR) for block-scaled formats, which folds each block scale into the running FP32 partial sum at block boundaries without adding a second cross-block accumulator, thereby reducing the additional overhead of block-scaling support. In TSMC 28 nm at 1 GHz, matched-throughput BF16/FP8/FP4 cascaded FMA-PE baselines are 1.5x/2.5x/4.5x larger than the single-format DPA-PE, the gap growing with subword parallelism. A routed 16x16 MFSA reaches a peak 0.5/1/2/4 TOPS of FP32/BF16/FP8/FP4, and OBSR cuts the incremental MX overhead by 64.2% in area and 67.5% in energy versus a naive MX implementation baseline, without hurting the numerical stability on real LLM traces. Adding support for all other formats based on a BF16+CFP8 systolic array costs 25.7% additional area. OBSR also extends to non-power-of-two block scales: folding the fractional part of an E4M3 scale into the MFPE dot product supports NVFP4 alongside OCP MX for 11.8% area and 7.3% power over a CFP8+FP4 base, less than half the cost of a naive implementation.",
+  "url": "https://arxiv.org/abs/2610.19645",
+  "pdf_url": "https://arxiv.org/pdf/2610.19645",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "authors": [
+    "Jiayi Wang",
+    "Kearnan Bishop",
+    "Ang Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp4",
+    "fp8",
+    "int4",
+    "int8"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp4, fp8, int4, int8",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "AI workloads increasingly employ low-precision formats such as BF16 / FP16, FP8 variants, FP4, Micro Scaling (MX), and INT modes across models, layers, and execution stages to balance accuracy, memory footprint, and throughput, which in turn requires hardware to support these formats in a flexible and efficient way.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-15T04:42:37+00:00",
+  "last_seen": "2026-10-15T04:42:37+00:00",
+  "featured_weeks": [
+    "2026-W42"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.19645",
+      "url": "https://arxiv.org/abs/2610.19645"
+    }
+  ]
+}

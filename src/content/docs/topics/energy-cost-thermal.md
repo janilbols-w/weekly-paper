@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **48** 篇。
+累计收录 **49** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [The Cost of Context: Profiling the Energy Footprint of Input Tokens in Large Language Models](../../papers/arxiv-2610.19819/) | 2026-10-15 | 40 |
 | [Virtual Smart Metering in District Heating Networks via Heterogeneous Spatial-Temporal Graph Neural Networks](../../papers/arxiv-2604.10166/) | 2026-10-09 | 46 |
 | [DynaTE: Accelerating Diffusion LLMs via Dynamic Token Execution](../../papers/arxiv-2610.11284/) | 2026-10-09 | 43 |
 | [Topology-Aware Cooperative Beam-Hopping Scheduling for Efficient Resource Allocation in LEO Satellite Systems](../../papers/arxiv-2610.11103/) | 2026-10-09 | 39 |

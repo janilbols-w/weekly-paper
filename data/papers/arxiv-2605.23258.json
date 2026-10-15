@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2605.23258",
+  "title": "A Simple Plug-in for Improving Eviction-Based KV Cache Compression",
+  "abstract": "KV cache growth is a major bottleneck for long-context inference in large language models. Existing methods are often dominated by binary eviction or representation approximation, which may underutilize tokens that are not critical for exact retention but are still reconstructable. We present VECTOR, a plug-and-play augmentation for eviction-based pipelines that introduces three-way token routing: retention, approximation, and eviction. VECTOR combines an importance signal from the base scorer with a reconstructability signal from an offline-calibrated regression-based value estimation. By leveraging reconstructability, VECTOR recovers useful value information that would otherwise be irreversibly lost under binary eviction, while preserving key vectors for attention routing stability. On LongBench, RULER with contexts up to 128K tokens, and multi-turn SCBench, VECTOR yields significant gains over its base eviction methods under high compression. At a 90% compression ratio, SnapKV augmented with VECTOR outperforms six competing compression methods, including D2O and RocketKV, on all three evaluated models. Since VECTOR makes all routing decisions at prefill, decoding runs on a standard compressed cache with no measurable overhead.",
+  "url": "https://arxiv.org/abs/2605.23258",
+  "pdf_url": "https://arxiv.org/pdf/2605.23258",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "authors": [
+    "Yuping Lin",
+    "Jiayuan Ding",
+    "Yue Xing",
+    "Pengfei He",
+    "Jiliang Tang",
+    "Subhabrata Mukherjee"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "KV cache growth is a major bottleneck for long-context inference in large language models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-15T04:42:37+00:00",
+  "last_seen": "2026-10-15T04:42:37+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.23258",
+      "url": "https://arxiv.org/abs/2605.23258"
+    }
+  ]
+}

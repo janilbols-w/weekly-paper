@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **102** 篇。
+累计收录 **104** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FOLD: Position-Free Far Memory with Local Order for Long-Context Speculative Decoding](../../papers/arxiv-2610.20392/) | 2026-10-15 | 45 |
+| [LEAP: Unlocking dLLM Parallelism via Lookahead Early-Convergence Token Detection](../../papers/arxiv-2605.10980/) | 2026-10-15 | 42 |
 | [Contextual Correction of Parallel Draftsfor Speculative Decoding](../../papers/arxiv-2610.12570/) | 2026-10-12 | 50 |
 | [Surfing the Activation Wave: Analyzing the Information and Geometry of LLM Hidden States for Speculative Decoding](../../papers/arxiv-2610.12939/) | 2026-10-12 | 42 |
 | [APCD: Adaptive Path-Contrastive Decoding for Reliable Large Language Model Generation](../../papers/arxiv-2605.09492/) | 2026-10-08 | 46 |
@@ -107,7 +109,7 @@ description: "Speculative Decoding"
 | [EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding](../../papers/arxiv-2608.05303/) | 2026-08-05 | 47 |
 | [Speculative Correction: Draft-then-Refine Decoding for Diffusion Language Models](../../papers/arxiv-2608.02625/) | 2026-08-05 | 45 |
 | [Speculative Decoding and the Curse of Multilinguality](../../papers/arxiv-2605.30580/) | 2026-08-05 | 43 |
-| [SpecRoll: Fast-Slow Verifier-Feedback Adaptation for Speculative Reinforcement Learning Rollouts](../../papers/arxiv-2608.04962/) | 2026-08-05 | 42 |
+| [SPARK: Learning from Verification in Speculative GRPO Rollouts](../../papers/arxiv-2608.04962/) | 2026-08-05 | 43 |
 | [DBLAST: Dependent Block Drafting for Stochastic Speculative Decoding](../../papers/arxiv-2608.05448/) | 2026-08-05 | 41 |
 | [Orchestrating Dual-Boundaries: An Arithmetic Intensity Inspired Acceleration Framework for Diffusion Language Models](../../papers/arxiv-2511.21759/) | 2026-08-04 | 46 |
 | [From Chains to Trees: Parent-Conditioned Drafting for Semi-Autoregressive Speculative Decoding](../../papers/arxiv-2608.02123/) | 2026-08-03 | 41 |

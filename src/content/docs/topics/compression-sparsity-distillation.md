@@ -5,10 +5,29 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **572** 篇。
+累计收录 **591** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Size: How Gradients Shape Pruning Decisions in Large Language Models](../../papers/arxiv-2311.04902/) | 2026-10-15 | 49 |
+| [HARP: Efficient Data Selection for Finetuning Large Language Models](../../papers/arxiv-2606.07690/) | 2026-10-15 | 48 |
+| [Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered](../../papers/arxiv-2510.08464/) | 2026-10-15 | 48 |
+| [Unlocking Structured Pruning for Reasoning Language Models via Attention-Preserving MLP Trimming](../../papers/arxiv-2610.19121/) | 2026-10-15 | 46 |
+| [Your Transformer Is Secretly Elastic](../../papers/arxiv-2610.20588/) | 2026-10-15 | 43 |
+| [Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents](../../papers/arxiv-2610.19439/) | 2026-10-15 | 43 |
+| [Function-Space Temporal Self-Distillation for Policy Optimization](../../papers/arxiv-2610.19687/) | 2026-10-15 | 43 |
+| [Rationale Distribution Distillation via Flow Matching for Distributional Continuous Latent Reasoning](../../papers/arxiv-2610.19871/) | 2026-10-15 | 42 |
+| [ESL-former: Event Sparse Linear Transformer for FPGA-Accelerated Malware Detection](../../papers/arxiv-2610.19665/) | 2026-10-15 | 42 |
+| [Who's Behind the Text? Robust Model Authorship Attribution](../../papers/arxiv-2610.19583/) | 2026-10-15 | 41 |
+| [Tracing Knowledge Lineage for Federated Unlearning under Mutual Distillation](../../papers/arxiv-2610.19072/) | 2026-10-15 | 41 |
+| [CAFE: Conducting-Cell-Aware Adaptive Differential Encoding for Robust DNN Inference in FeFET-Based Compute-in-Memory](../../papers/arxiv-2610.19697/) | 2026-10-15 | 41 |
+| [Every Time I Hire a Linguist, Inference Costs Go Down: On Linguistic Rules as Effective Prompt Compressors](../../papers/arxiv-2607.25335/) | 2026-10-15 | 40 |
+| [REVEAL: Reverse Engineering Agentic Latents from Frontier-Model Traces](../../papers/arxiv-2610.16288/) | 2026-10-15 | 39 |
+| [Qwen-MT-Lumen at WMT2026: Instruction-Specialized Translation via Quality-Aware Training and On-Policy Distillation](../../papers/arxiv-2610.19758/) | 2026-10-15 | 39 |
+| [PA1-OPD: One-Step Prefix-Augmented On-Policy Distillation for Language Model Pretraining](../../papers/arxiv-2610.19601/) | 2026-10-15 | 39 |
+| [Occupancy Modeling via Drifting: One-Step Generation Enables Direct Policy Extraction](../../papers/arxiv-2610.19883/) | 2026-10-15 | 39 |
+| [HRTF Upsampling and Personalization via Neural Operators](../../papers/arxiv-2610.20400/) | 2026-10-15 | 39 |
+| [Outcome-Routed Distillation and Reinforcement Learning for Diffusion Language Models](../../papers/arxiv-2610.19271/) | 2026-10-15 | 38 |
 | [Proactive Agentic Orchestration](../../papers/arxiv-2610.13485/) | 2026-10-12 | 46 |
 | [COFFEQA: Counterfactual-Guided Few-Shot Distillation for LLM Question Answering](../../papers/arxiv-2610.12837/) | 2026-10-12 | 44 |
 | [BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation](../../papers/arxiv-2610.13285/) | 2026-10-12 | 44 |

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.19072",
+  "title": "Tracing Knowledge Lineage for Federated Unlearning under Mutual Distillation",
+  "abstract": "An edge server and nearby devices can train language models of different sizes together by mutual distillation. Federated unlearning (FU) and unlearning for large language models (LLMs) execute a removal request on one model. Under mutual distillation, however, the effect of the removed data has been copied into many students, and their uploads teach it back to the corrected teacher. We propose Holder-level Erasure via Replication-weighted Delta-closure (HERD), which decides which holders must be corrected. HERD records a knowledge lineage graph from the transfers that the server already performs and weights each edge by its transfer type. It computes how many times the residual at each holder will be copied and selects the cheapest set of holders whose correction bounds the cumulative residual after the request. A transfer guard and a rejoin rule cover the holders left uncorrected or offline. We prove that partial correction suffices only when the copy number of the lineage graph is below one, that averaging alone never reaches one, and that the correction set remains valid under link outages. On TOFU, HERD leaves 18% to 52% less cumulative residual than the strongest baseline at 6% to 12% of its correction cost.",
+  "url": "https://arxiv.org/abs/2610.19072",
+  "pdf_url": "https://arxiv.org/pdf/2610.19072",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "authors": [
+    "Zihao Ding",
+    "Jun Huang",
+    "Guodong Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "An edge server and nearby devices can train language models of different sizes together by mutual distillation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-15T04:42:37+00:00",
+  "last_seen": "2026-10-15T04:42:37+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.19072",
+      "url": "https://arxiv.org/abs/2610.19072"
+    }
+  ]
+}

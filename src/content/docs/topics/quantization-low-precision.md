@@ -5,10 +5,15 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **294** 篇。
+累计收录 **299** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support](../../papers/arxiv-2610.19645/) | 2026-10-15 | 53 |
+| [Beyond Expert Rankings: Contrast Calibration for Mixed-Precision MoE Quantization](../../papers/arxiv-2610.20353/) | 2026-10-15 | 45 |
+| [PN-Mix: Pair-Norm Guided Mixed-Precision Key Cache Quantization for Efficient Long-Output LLM Inference](../../papers/arxiv-2610.19605/) | 2026-10-15 | 43 |
+| [What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains](../../papers/arxiv-2610.19498/) | 2026-10-15 | 42 |
+| [SpectrumQuant: Spectrum Alignment for LLM Quantization](../../papers/arxiv-2610.20303/) | 2026-10-15 | 42 |
 | [RAMP: Recurrent Adaptive Mixed Precision for Efficient Prefill in Recurrent-Depth Language Models](../../papers/arxiv-2610.13041/) | 2026-10-12 | 53 |
 | [DualQuant: Dual-scale Calibration-free Weight-and-Activation Quantization for LLMs](../../papers/arxiv-2610.13767/) | 2026-10-12 | 51 |
 | [Algebraic Integer Quantization for Machine Learning Applications](../../papers/arxiv-2610.12494/) | 2026-10-12 | 42 |

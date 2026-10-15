@@ -5,10 +5,13 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **108** 篇。
+累计收录 **111** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models](../../papers/arxiv-2610.20503/) | 2026-10-15 | 47 |
+| [DivAlgo: A systematic evaluation of algorithmic diversity for code generation models](../../papers/arxiv-2610.19157/) | 2026-10-15 | 45 |
+| [Commit Locally, Exit Globally: Coordinating Adaptive Sampling and Early Exit in Diffusion Language Models](../../papers/arxiv-2607.28166/) | 2026-10-15 | 38 |
 | [COBALT: Contextual Bandit Learning with Offline Trajectories for Multi-Turn Code Generation](../../papers/arxiv-2602.03806/) | 2026-10-12 | 46 |
 | [Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation](../../papers/arxiv-2605.11307/) | 2026-10-12 | 43 |
 | [QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code](../../papers/arxiv-2610.13811/) | 2026-10-12 | 38 |

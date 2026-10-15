@@ -9,6 +9,7 @@ description: "Distributed Training & Checkpointing"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond the Trial-and-Error Loop: Hybrid Projection and Automated Tuning for Distributed Training](../../papers/arxiv-2610.19423/) | 2026-10-15 | 43 |
 | [Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping](../../papers/arxiv-2610.13909/) | 2026-10-12 | 44 |
 | [SlackSwap: Bandwidth-Aware Activation Swapping and Recomputation for Memory-Efficient DNN Training](../../papers/arxiv-2610.13003/) | 2026-10-12 | 42 |
 | [Execution-Feasible Dispatch of LLM Pre-training Loads for Renewable-Dominant AI Data Centers](../../papers/arxiv-2610.13047/) | 2026-10-12 | 41 |
@@ -94,7 +95,6 @@ description: "Distributed Training & Checkpointing"
 | [Spectral Rank Certification for Foundation Model Adapters](../../papers/arxiv-2608.15351/) | 2026-08-15 | 39 |
 | [Robust Checkpoint Selection for Multimodal LLMs via Agentic Evaluation and Stability-Aware Ranking](../../papers/arxiv-2605.18852/) | 2026-08-14 | 40 |
 | [ATMA: Long-Context Language Modeling via Polar Attention and Gated-Delta Compression Memory](../../papers/arxiv-2606.25156/) | 2026-08-13 | 48 |
-| [Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL](../../papers/arxiv-2608.11669/) | 2026-08-12 | 39 |
 | [Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards](../../papers/arxiv-2608.07531/) | 2026-08-11 | 46 |
 | [SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training](../../papers/arxiv-2608.11034/) | 2026-08-11 | 42 |
 | [Training Variable Long Sequences with Data-Centric Parallel](../../papers/arxiv-2608.07524/) | 2026-08-11 | 39 |

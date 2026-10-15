@@ -39,7 +39,7 @@ Speculative decoding accelerates large language model inference through a draft-
 ## 元数据
 
 - 作者：Jiaming Fan, Daming Cao, Canchen Huang, Jiale Fu, Jin Zhang, Junjie Gao, Kai Yang, Xiangzhong Luo, Xu Yang
-- 发布：2026-08-28；更新：2026-08-31
+- 发布：2026-08-28；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/fjm9933/TreeGraft](https://github.com/fjm9933/TreeGraft)
 - 阅读深度：metadata

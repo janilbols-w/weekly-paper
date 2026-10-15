@@ -5,10 +5,11 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **29** 篇。
+累计收录 **30** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes](../../papers/arxiv-2610.20585/) | 2026-10-15 | 42 |
 | [RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing](../../papers/arxiv-2610.11775/) | 2026-10-09 | 40 |
 | [Algorithmic Scratchpads and Curriculum Staging for Arithmetic Reasoning in Tiny Transformers](../../papers/arxiv-2610.09003/) | 2026-10-08 | 38 |
 | [Scaling Laws for Looped Mixture of Experts](../../papers/arxiv-2609.40316/) | 2026-09-30 | 47 |

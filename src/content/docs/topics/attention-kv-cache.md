@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **185** 篇。
+累计收录 **188** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OScaR: The Occam's Razor for Extreme KV Cache Quantization in LLMs and Beyond](../../papers/arxiv-2605.19660/) | 2026-10-15 | 55 |
+| [Joint Subspace Sparse Attention for Efficient Long-Context Decoding](../../papers/arxiv-2610.19026/) | 2026-10-15 | 39 |
+| [A Simple Plug-in for Improving Eviction-Based KV Cache Compression](../../papers/arxiv-2605.23258/) | 2026-10-15 | 38 |
 | [KV-Repurpose: A Testbed for Evaluating Non-Prefix KV-Cache Reuse](../../papers/arxiv-2610.13060/) | 2026-10-12 | 49 |
 | [One Model to Loop Them All: Elastic Latent Recurrence for Language Models](../../papers/arxiv-2610.12582/) | 2026-10-12 | 41 |
 | [RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation](../../papers/arxiv-2610.11358/) | 2026-10-09 | 54 |

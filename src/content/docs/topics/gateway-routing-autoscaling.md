@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **30** 篇。
+累计收录 **31** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Truthful and Expected-Payment-Optimal Model Routing in Graph-Based Agentic Workflows](../../papers/arxiv-2610.19316/) | 2026-10-15 | 42 |
 | [CopRoute: Dependence-Aware Conformal Routing for Language Models](../../papers/arxiv-2610.13276/) | 2026-10-12 | 39 |
 | [Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators](../../papers/arxiv-2509.03647/) | 2026-10-07 | 39 |
 | [Collective Bias Mitigation via Model Routing and Collaboration](../../papers/arxiv-2610.03240/) | 2026-10-05 | 44 |
