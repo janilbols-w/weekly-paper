@@ -3,7 +3,7 @@ title: "What You Sign Is Not What You Run: The Verifiability Gap in Quantized LL
 description: "Model signing authenticates the full-precision weights W an LLM is released with, yet users run a quantized artifact Q whose producing transformation is not uniquely determined under current disclosure."
 ---
 
-**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+**评分：47/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
 
 [论文原文](https://arxiv.org/abs/2610.19498) · [PDF](https://arxiv.org/pdf/2610.19498)
 
@@ -27,19 +27,19 @@ Model signing authenticates the full-precision weights W an LLM is released with
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 7 |
-| reproducibility | 4 |
+| reproducibility | 9 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: quantization, quantized
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Wei-Liang Liu, Cheng-Yen Tsai
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/Rlonglong/gguf-verifiability-artifact](https://github.com/Rlonglong/gguf-verifiability-artifact)
 - 阅读深度：metadata

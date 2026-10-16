@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.14537",
+  "title": "Learn the Dynamics, Enforce the Physics: Generative Latent Operators for High-Dimensional Beam Evolution",
+  "abstract": "Particle-in-cell (PIC) simulation is indispensable for modeling beam dynamics in particle accelerators, but its computational cost limits many-query workflows, such as configuration exploration, virtual diagnostics, and controller design. We introduce GLOBE, a physics-constrained Generative Latent Operator for Beam Evolution, modeling the nonlinear, control-dependent, multiscale evolution of 3D beam--field dynamics covering $10^7$ spatial cells. GLOBE compresses beam--field states into a compact latent space and factors their evolution into two components. A control-conditioned neural operator learns the dominant dynamics, while an amplitude-normalized generative model captures the residual distribution, recovering fine-scale structures and conditional variations. GLOBE enforces field constraints by regime-specific, parameter-free operators: a Poisson solve reconstructs the electric field in the electrostatic regime, and a spectral projection imposes Gauss's law and a divergence-free magnetic field in the electromagnetic regime. On two high-resolution 3D particle-accelerator benchmarks, bunched-beam transport and plasma-wakefield acceleration, GLOBE lowers relative-$L_2$ error by 9\\% and 13\\%, low-frequency spectral error by 69\\% and 51\\%, and mid-frequency spectral error by 54\\% and 20\\% relative to the strongest baseline (DPOT), satisfies field constraints, and reduces hours of PIC simulation to a minute per rollout.",
+  "url": "http://arxiv.org/abs/2610.14537v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.14537v1",
+  "published": "2026-10-10",
+  "updated": "2026-10-10",
+  "authors": [
+    "Haohan Zou",
+    "Alexander Scheinker",
+    "Yuanyuan Shi"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "physics.acc-ph",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "46 pages (9+37), preprint for discussion",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Particle-in-cell (PIC) simulation is indispensable for modeling beam dynamics in particle accelerators, but its computational cost limits many-query workflows, such as configuration exploration, virtual diagnostics, and controller design.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.14537v1",
+      "url": "http://arxiv.org/abs/2610.14537v1"
+    }
+  ]
+}

@@ -5,10 +5,11 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **11** 篇。
+累计收录 **12** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MCCL: Measurement-based Collective Communication Library](../../papers/arxiv-2610.17091/) | 2026-10-12 | 49 |
 | [Characterizing Parallelism Strategies in LLM Inference: Fundamental Compute-Communication Trade-offs](../../papers/arxiv-2610.05305/) | 2026-10-06 | 46 |
 | [Purlin: Separating Orchestration from the Datapath of Collectives](../../papers/arxiv-2609.36954/) | 2026-09-29 | 52 |
 | [Bandwidth-Aware and Cost-Efficient Pipeline Parallel Scheduling in Geo-Distributed LLM Training](../../papers/arxiv-2605.25375/) | 2026-09-28 | 44 |

@@ -5,14 +5,18 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **104** 篇。
+累计收录 **108** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [FOLD: Position-Free Far Memory with Local Order for Long-Context Speculative Decoding](../../papers/arxiv-2610.20392/) | 2026-10-15 | 45 |
+| [HyCo: Hybrid Drafting for Cost-Efficient Mobile-Cloud Speculative Decoding](../../papers/arxiv-2610.21436/) | 2026-10-15 | 43 |
 | [LEAP: Unlocking dLLM Parallelism via Lookahead Early-Convergence Token Detection](../../papers/arxiv-2605.10980/) | 2026-10-15 | 42 |
+| [LoopAhead: Speculating Ahead for Faster Decoding in Looped Language Models](../../papers/arxiv-2610.21594/) | 2026-10-15 | 40 |
+| [FOLD: Position-Free Far Memory with Local Order for Long-Context Speculative Decoding](../../papers/arxiv-2610.20392/) | 2026-10-14 | 45 |
+| [SP$^2$ec: Adaptive Self-Speculative Decoding for Vision-Language Models](../../papers/arxiv-2610.18735/) | 2026-10-13 | 46 |
 | [Contextual Correction of Parallel Draftsfor Speculative Decoding](../../papers/arxiv-2610.12570/) | 2026-10-12 | 50 |
 | [Surfing the Activation Wave: Analyzing the Information and Geometry of LLM Hidden States for Speculative Decoding](../../papers/arxiv-2610.12939/) | 2026-10-12 | 42 |
+| [PIG: Parallel Inconsistency Guidance for Accelerating Diffusion Language Models](../../papers/arxiv-2610.17375/) | 2026-10-12 | 38 |
 | [APCD: Adaptive Path-Contrastive Decoding for Reliable Large Language Model Generation](../../papers/arxiv-2605.09492/) | 2026-10-08 | 46 |
 | [Training Parallel Speculative Draft Models by Directly Minimizing Expected Decoding Rounds](../../papers/arxiv-2610.10411/) | 2026-10-08 | 38 |
 | [APEX: Speculate smarter, not deeper](../../papers/arxiv-2610.07780/) | 2026-10-07 | 52 |

@@ -39,7 +39,7 @@ Configuring distributed LLM training across hundreds of GPUs requires jointly op
 ## 元数据
 
 - 作者：Anshu Raina, Peyman Razaghi, Yuankai Chen, Cheng Yao, Yao Fu, Vidushi Goyal, Devang Patel, Wen Xie, Zhenyu Gu, Emad Barsoum
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

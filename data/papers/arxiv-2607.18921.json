@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2607.18921",
+  "title": "Circuit Claims Depend on What Is Extracted and How It Is Compared",
+  "abstract": "Circuit extraction identifies model components whose presence preserves a target behavior under ablation, but preserving behavior does not single out one circuit. We study this in a synthetic Lean tactic-prediction benchmark with fixed proof rules and randomized surface form. Across dense and weight-sparse checkpoints of the same transformer, evaluated on atomic and compositional proofs, we vary which extracted object is reported: a compact prediction-preserving circuit, a broader graph retaining surrounding read, write, and routing structure, or a subgraph extracted with a post-ablation loss budget. First, overlap between groups of component-to-component connections is low, sometimes close to a random baseline. Overlap is much higher for selected attention-head sets under deterministic selection, but falls sharply when selection among equally scored heads is randomized. Second, the normalized graph-size ranking of conditions that differ in which supervised checkpoint initializes reinforcement learning (RL) agrees between repeated extractions of the compact circuit and between joint and separate query/key representations of each of the other two graphs. For the loss-budgeted graph, query/key ordering agreement persists through the budget sweep. Finally, across those same conditions, the largest exact-match accuracy gains from RL on compositional proofs come with the largest proportion of components in the compositional circuit that lie outside the corresponding atomic circuits. Ablating these additional components in the sparse RL model reduces compositional accuracy while largely preserving accuracy on the corresponding atomic tasks. A circuit-level claim therefore requires specifying which circuit is reported and how it is extracted and compared; behavior alone does not determine its interpretation. We distill these requirements into a reporting practice for circuit-extraction studies.",
+  "url": "https://arxiv.org/abs/2607.18921",
+  "pdf_url": "https://arxiv.org/pdf/2607.18921",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Yang Sheng",
+    "Jie Fu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Circuit extraction identifies model components whose presence preserves a target behavior under ablation, but preserving behavior does not single out one circuit.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.18921",
+      "url": "https://arxiv.org/abs/2607.18921"
+    }
+  ]
+}

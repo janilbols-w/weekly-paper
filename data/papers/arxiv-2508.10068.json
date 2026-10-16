@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2508.10068",
+  "title": "Enhancing Knowledge Density via Hierarchical Context Pruning for Retrieval-Augmented Repository-Level Code Completion",
+  "abstract": "Retrieval-Augmented Generation (RAG) has advanced repository-level code completion by retrieving external code snippets, API documentation, or type definitions to expand the model's contextual awareness. However, under the finite token budget of the context window, existing retrieval-augmented methods often saturate the budget with highly similar or even redundant code, which not only wastes tokens but also suppresses critical cross-file dependencies, preventing synergistic interaction between semantically similar reference snippets and cross-file dependency definitions. Therefore, further gains are limited by low knowledge density in the retrieved context rather than by model capacity. We propose SaraCoder, a retrieval-augmented framework that enhances knowledge density via hierarchical context pruning under a fixed context budget. A Hierarchical Feature Optimization module prunes an over-complete candidate pool in four stages. The freed tokens are then allocated to an External-Aware Identifier Disambiguator, which selectively injects only the most necessary cross-file dependency definitions. SaraCoder transforms context construction into a budget-aware optimization problem, balancing reference snippets and cross-file dependencies to build a context that is both knowledge-dense and semantically complete. Experiments on CrossCodeEval and RepoEval-Updated, across multiple backbone code LLMs, show that SaraCoder consistently outperforms strong RAG baselines such as GraphCoder and Repocoder in both code-level and identifier-level metrics, without increasing token usage, and yields synergistic gains when combined with other cross-file methods.",
+  "url": "https://arxiv.org/abs/2508.10068",
+  "pdf_url": "https://arxiv.org/pdf/2508.10068",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Xiaohan Chen",
+    "Xiang Chen",
+    "Yu Tian",
+    "Piji Li",
+    "Sheng-Jun Huang",
+    "Songcan Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.SE",
+    "cs.CL",
+    "cs.IR",
+    "cs.PL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Retrieval-Augmented Generation (RAG) has advanced repository-level code completion by retrieving external code snippets, API documentation, or type definitions to expand the model's contextual awareness.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2508.10068",
+      "url": "https://arxiv.org/abs/2508.10068"
+    }
+  ]
+}

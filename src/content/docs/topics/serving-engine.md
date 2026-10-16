@@ -5,12 +5,16 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **94** 篇。
+累计收录 **98** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Native Dual Pools or Shared Paging? Memory Organization for Concurrent Hybrid LLM Serving](../../papers/arxiv-2610.15755/) | 2026-10-15 | 50 |
+| [HAServe: Horizon-Aware Scheduling and Memory Co-Design for Efficient LLM Serving](../../papers/arxiv-2605.08581/) | 2026-10-16 | 53 |
+| [Quota-Based Aging for Prediction-Guided Scheduling in LLM Serving](../../papers/arxiv-2610.17795/) | 2026-10-13 | 50 |
 | [Taking Tokenization off the Host for Agentic LLM Serving](../../papers/arxiv-2610.13325/) | 2026-10-12 | 44 |
+| [Lightweight Scheduling Policies for Continuously Batched LLM Serving Across GPU Architectures](../../papers/arxiv-2610.15899/) | 2026-10-11 | 51 |
+| [Native Dual Pools or Shared Paging? Memory Organization for Concurrent Hybrid LLM Serving](../../papers/arxiv-2610.15755/) | 2026-10-11 | 50 |
+| [The Price of Precision: A Calibrated Cost Model for Mixed-Precision LLM Serving](../../papers/arxiv-2610.15629/) | 2026-10-11 | 45 |
 | [TokenRouter: Efficient Serving System for Token-Level LLM Routing](../../papers/arxiv-2610.12242/) | 2026-10-09 | 46 |
 | [Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving](../../papers/arxiv-2407.00079/) | 2026-10-09 | 46 |
 | [Long Text to Predictive Features: LLM-Guided Blockwise Feature Engineering via Executable Program Search](../../papers/arxiv-2610.12390/) | 2026-10-09 | 39 |

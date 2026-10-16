@@ -39,7 +39,7 @@ Current approaches for steady partial differential equations surrogate models on
 ## 元数据
 
 - 作者：Stavros Nousias, Akis Nousias, Konstantinos Gkrispanis
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,45 @@
+---
+title: "Vesta: Queueing-Aware LLM Scheduling for Real-World Workloads"
+description: "Agentic applications generate multi-turn sequences of LLM requests, with each new turn extending the context accumulated from prior interactions and tool calls."
+---
+
+**评分：38/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+
+[论文原文](http://arxiv.org/abs/2610.14686v1) · [PDF](https://arxiv.org/pdf/2610.14686v1)
+
+## 一句话摘要
+
+Agentic applications generate multi-turn sequences of LLM requests, with each new turn extending the context accumulated from prior interactions and tool calls.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Agentic applications generate multi-turn sequences of LLM requests, with each new turn extending the context accumulated from prior interactions and tool calls. Prefix caching reuses the KV cache of earlier turns and avoids redundant prefill, but routing every turn to its cache-affine instance can create severe local queues while capacity remains idle elsewhere. Remote KV cache access relaxes this tension, yet migrating execution adds transfer work and is harmful when the cluster is already congested. Thus, deciding where to execute a request requires reasoning jointly about cache locality, queueing, and the current operating point of the cluster. We present Vesta, a queueing-aware scheduler for distributed agentic LLM serving. Vesta assigns each session a stable holder for its authoritative KV cache while independently selecting an executor for every request. Grounded in classical queueing theory, its objective accounts for backlog, reusable prefixes, KV cache transfer, and the queueing externality of additional service demand; it migrates execution to recover idle capacity when beneficial and favors placements that add the least prefill and transfer work as congestion rises. Vesta also migrates reusable prefixes across length buckets to avoid cold starts. On real-world agentic workloads, Vesta improves throughput by 14.0\% and reduces mean TTFT by 57.8\% over the state-of-the-art scheduler in a PD-colocated deployment. In PD-disaggregated deployments, it reduces mean TTFT by up to 18.1\% and P99 TTFT by up to 29.0\% at matched throughput.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 14 |
+| novelty | 5 |
+| rigor | 7 |
+| practical impact | 7 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: kv cache, prefix caching
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Lancheng Zou, Bowen Li, Wei Mao, Wenbin Ye, Lecheng Li, Kai Liu, Chao Deng, Jianchen Zhu, Bei Yu
+- 发布：2026-10-10；更新：2026-10-10
+- 来源：arXiv；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -5,16 +5,20 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **111** 篇。
+累计收录 **114** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models](../../papers/arxiv-2610.20503/) | 2026-10-15 | 47 |
-| [DivAlgo: A systematic evaluation of algorithmic diversity for code generation models](../../papers/arxiv-2610.19157/) | 2026-10-15 | 45 |
+| [SEVerA: Verified Synthesis of Self-Evolving Agents](../../papers/arxiv-2603.25111/) | 2026-10-16 | 38 |
 | [Commit Locally, Exit Globally: Coordinating Adaptive Sampling and Early Exit in Diffusion Language Models](../../papers/arxiv-2607.28166/) | 2026-10-15 | 38 |
+| [ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models](../../papers/arxiv-2610.20503/) | 2026-10-14 | 47 |
+| [DivAlgo: A systematic evaluation of algorithmic diversity for code generation models](../../papers/arxiv-2610.19157/) | 2026-10-13 | 45 |
+| [Diff Diffusion: Predicting Edit Paths with Diffusion Models for Efficient Code Editing](../../papers/arxiv-2610.17831/) | 2026-10-13 | 44 |
+| [HaloBlock: Faster and Better Decoding for Diffusion Large Language Models](../../papers/arxiv-2610.17948/) | 2026-10-13 | 43 |
 | [COBALT: Contextual Bandit Learning with Offline Trajectories for Multi-Turn Code Generation](../../papers/arxiv-2602.03806/) | 2026-10-12 | 46 |
 | [Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation](../../papers/arxiv-2605.11307/) | 2026-10-12 | 43 |
 | [QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code](../../papers/arxiv-2610.13811/) | 2026-10-12 | 38 |
+| [SEEK: Agentic Knowledge Graph Retrieval for Secure Code Generation](../../papers/arxiv-2610.14968/) | 2026-10-10 | 44 |
 | [MARGIN: Runtime Confidence Calibration for Multi-Agent Foundation Model Coordination](../../papers/arxiv-2605.22949/) | 2026-10-09 | 42 |
 | [Knowledge boundary probing and demand-guided intervention for LLM-based power system code generation](../../papers/arxiv-2605.31478/) | 2026-10-08 | 47 |
 | [SEER: Self-Enhancing Chain-of-Thought Compression for Reasoning Models](../../papers/arxiv-2509.14093/) | 2026-10-08 | 41 |
@@ -66,7 +70,6 @@ description: "Compiler & Graph Optimization"
 | [Introspective Uncertainty Estimation for LLM-Based Code Generation](../../papers/arxiv-2609.13975/) | 2026-09-12 | 40 |
 | [Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning](../../papers/arxiv-2604.02007/) | 2026-09-09 | 42 |
 | [Retrofitting Code Using LLMs to Support Exceptional Behavior](../../papers/arxiv-2609.10397/) | 2026-09-09 | 41 |
-| [$\Phi$-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?](../../papers/arxiv-2609.10226/) | 2026-09-09 | 38 |
 | [Do Dynamic Routers Need Memory? HeRo: History-Aware Routing for Efficient LLM Inference](../../papers/arxiv-2609.08189/) | 2026-09-08 | 43 |
 | [Benchmarking Agentic HLS Design Tasks With HLS-Eval](../../papers/arxiv-2609.09526/) | 2026-09-08 | 38 |
 | [Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One](../../papers/arxiv-2609.04531/) | 2026-09-07 | 38 |

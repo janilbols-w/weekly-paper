@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2505.12242",
+  "title": "ZenFlow: Enabling Stall-Free Offloading for LLM Training",
+  "abstract": "Fine-tuning large language models (LLMs) often exceeds GPU memory limits, prompting systems to offload model states to CPU memory. However, existing offloaded training frameworks like ZeRO-Offload treat all parameters equally and update the full model on the CPU, causing severe GPU stalls, where fast, expensive GPUs sit idle, waiting for slow CPU updates and limited-bandwidth PCIe transfers. We present ZenFlow, a new offloaded training framework that decouples updates between GPU and CPU by prioritizing important gradients. ZenFlow performs in-place updates of important gradients on GPU while offloading and accumulating less important ones on CPU without blocking training iterations, fully overlapping CPU work with GPU computation. To make this importance-aware design scalable, ZenFlow leverages a novel spatio-temporal locality of important gradients, concentrated in specific positions that remain stable across iterations, to make important gradient identification efficient and lightweight while preserving fidelity. Evaluation shows that ZenFlow achieves up to 5x end-to-end speedup, 2x lower PCIe traffic, 85% less GPU stalls, and up to 72% lower cloud GPU cost, all while preserving accuracy.",
+  "url": "https://arxiv.org/abs/2505.12242",
+  "pdf_url": "https://arxiv.org/pdf/2505.12242",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Tingfeng Lan",
+    "Yusen Wu",
+    "Bin Ma",
+    "Zhaoyuan Su",
+    "Rui Yang",
+    "Tekin Bicer",
+    "Masahiro Tanaka",
+    "Olatunji Ruwase",
+    "Dong Li",
+    "Yue Cheng"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory",
+    "offloading"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory, offloading",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Fine-tuning large language models (LLMs) often exceeds GPU memory limits, prompting systems to offload model states to CPU memory.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2505.12242",
+      "url": "https://arxiv.org/abs/2505.12242"
+    }
+  ]
+}

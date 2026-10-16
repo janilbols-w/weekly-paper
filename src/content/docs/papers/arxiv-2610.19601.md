@@ -39,7 +39,7 @@ Knowledge distillation (KD) improves language-model pretraining by matching teac
 ## 元数据
 
 - 作者：Zhenhe Wu, Jian Yang, Yaping Jin, Xinlai Kang, Jie Hu, Hanting Chen
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

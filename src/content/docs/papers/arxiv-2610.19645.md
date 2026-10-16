@@ -39,7 +39,7 @@ AI workloads increasingly employ low-precision formats such as BF16 / FP16, FP8 
 ## 元数据
 
 - 作者：Jiayi Wang, Kearnan Bishop, Ang Li
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

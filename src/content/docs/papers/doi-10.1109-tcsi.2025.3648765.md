@@ -3,7 +3,7 @@ title: "STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator
 description: "Spiking neural networks (SNNs) offer great potential for low-power intelligent computing owing to their event-driven nature, yet their deployment is limited by high inference latency and inefficient hardware utilization caused by temporal dependencies."
 ---
 
-**评分：46/100** · LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理
+**评分：49/100** · LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理
 
 [论文原文](https://arxiv.org/abs/2610.19973) · [PDF](https://arxiv.org/pdf/2610.19973)
 
@@ -28,7 +28,7 @@ Spiking neural networks (SNNs) offer great potential for low-power intelligent c
 | rigor | 5 |
 | practical impact | 15 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Spiking neural networks (SNNs) offer great potential for low-power intelligent c
 ## 元数据
 
 - 作者：Kainan Wang, Chengyi Yang, Lei Liu, Chengting Yu, Yee Sin Ang, Bo Wang, Aili Wang
-- 发布：2026-10-15；更新：2026-10-15
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-10-14；更新：2026-10-15
+- 来源：arXiv RSS；Venue：IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 73, no. 5, pp. 3438-3451, May 2026
 - 代码：未发现
 - 阅读深度：metadata

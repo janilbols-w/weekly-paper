@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2606.03328",
+  "title": "Rethinking Calibration for High-Sparsity LLM Pruning: From Single Sources to Capability Coverage",
+  "abstract": "Post-training LLM pruning relies on a small calibration set, usually chosen heuristically and judged by WikiText perplexity or by mean accuracy on general-domain commonsense benchmarks. This single-axis view hides capability-specific effects: at 60\\% sparsity, strategies separated by $2.85$ points in averaged commonsense accuracy diverge by $51.9$ points in code retention, and across 15 sources no single one preserves all capabilities. We treat calibration as a capability-coverage problem. Balanced, a uniform four-way mixture under a fixed budget, tests the principle on real corpora: it outperforms every evaluated single source, and its margin over C4 grows from $+4.6$ points at 30\\% sparsity to $+18.8$ at 60\\%. The advantage holds across model scale and a second model family, and transfers to held-out benchmarks disjoint from calibration construction. When aligned corpora are unavailable, IGSP approximates that mixture from the base model and the evaluation taxonomy alone, outperforming prior self-generation methods by $7.23$--$12.79$ points on the LLaMA main suite. On Qwen2.5-7B, IGSP exceeds Balanced on both the main suite and held-out benchmarks. Capability coverage is a first-order design variable for high-sparsity pruning.",
+  "url": "https://arxiv.org/abs/2606.03328",
+  "pdf_url": "https://arxiv.org/pdf/2606.03328",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Hu Xu",
+    "Zhaolong Xing",
+    "Congcong Liu",
+    "Jiaxing Wang",
+    "Zhida Jiang",
+    "Junshi Huang",
+    "Zhen Chen",
+    "Jianfeng Xu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Post-training LLM pruning relies on a small calibration set, usually chosen heuristically and judged by WikiText perplexity or by mean accuracy on general-domain commonsense benchmarks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.03328",
+      "url": "https://arxiv.org/abs/2606.03328"
+    }
+  ]
+}

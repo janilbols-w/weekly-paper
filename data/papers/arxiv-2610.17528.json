@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2610.17528",
+  "title": "ATTUNE: Agentic Throughput Tuning for LLM Training",
+  "abstract": "Training recipes are tuned by hand for one model, cluster and workload, and every new model, accelerator, framework version or dataset means tuning again. Automated tuners search a fixed space of knobs and check only that a job runs, yet a configuration can run to completion while it silently changes training. ATTUNE is a single coding agent that tunes any working recipe for the workload and stack at hand, unattended, within a GPU-hour budget the user sets. It diagnoses each run and changes one lever at a time, guided by a catalog of lessons from past campaigns, and ships a recipe only if it passes a correctness gate: a configuration check against objective-changing settings and known stack defects, and a convergence check of its loss curve against the baseline's. On four held-out models at 64-128 GPUs, ATTUNE raises mean throughput over the strongest public recipe run on our stack by 6.7% on Llama-3.1-405B (best campaign 11.9%) and 33.9% on GLM-4.5 (54.7%), whose public recipe was written for H100. It keeps Mixtral-8x22B's recipe, where nothing it finds clears the noise band. Under a common GPU-hour budget it beats OptiCo, Bayesian optimization and random search on GLM-4.5 and MiniMax-M2; on GLM-4.5 its mean gain is more than four times the best alternative's at less than half the GPU-hours, and on both models its tuning pays for itself within a day of training. The gate rejects no legitimate run and catches 16 of 24 faulty runs, missing only ones that barely move the 20-step loss. Ablations tie its best campaigns to one of its search rules: retrying an out-of-memory layout with recomputation. We release ATTUNE's code and TrainingThroughputBench, a leaderboard of the fastest known recipes for MoE models up to 744B parameters on up to 256 GPUs, each with its throughput, cost per million tokens and a passed correctness check, at https://github.com/amazon-science/attune.",
+  "url": "http://arxiv.org/abs/2610.17528v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.17528v1",
+  "published": "2026-10-13",
+  "updated": "2026-10-13",
+  "authors": [
+    "Leo Fan",
+    "Hongyang Wang",
+    "Wenbo Chen",
+    "Jingguo Liu",
+    "Xian Li",
+    "Xuan Wang",
+    "Ruochen Wen",
+    "Yiming Yan",
+    "Hao Wu",
+    "Zheshen Wang",
+    "Benoit Dumoulin"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "\"21 pages, 2 figures, 14 tables",
+  "code_url": "https://github.com/amazon-science/attune",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Training recipes are tuned by hand for one model, cluster and workload, and every new model, accelerator, framework version or dataset means tuning again.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.17528v1",
+      "url": "http://arxiv.org/abs/2610.17528v1"
+    }
+  ]
+}

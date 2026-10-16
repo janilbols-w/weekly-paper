@@ -5,19 +5,39 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **299** 篇。
+累计收录 **319** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support](../../papers/arxiv-2610.19645/) | 2026-10-15 | 53 |
-| [Beyond Expert Rankings: Contrast Calibration for Mixed-Precision MoE Quantization](../../papers/arxiv-2610.20353/) | 2026-10-15 | 45 |
-| [PN-Mix: Pair-Norm Guided Mixed-Precision Key Cache Quantization for Efficient Long-Output LLM Inference](../../papers/arxiv-2610.19605/) | 2026-10-15 | 43 |
-| [What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains](../../papers/arxiv-2610.19498/) | 2026-10-15 | 42 |
-| [SpectrumQuant: Spectrum Alignment for LLM Quantization](../../papers/arxiv-2610.20303/) | 2026-10-15 | 42 |
+| [Fractional Power-of-Two Quantization for Efficient and Effective Multiplier-Free LLM Inference](../../papers/arxiv-2610.21257/) | 2026-10-15 | 46 |
+| [Compiling Multi-Threshold Operators for Quantized Non-Monotonic and Fine-Granular Activations in Custom-Tailored DNN Accelerators](../../papers/arxiv-2610.21825/) | 2026-10-15 | 43 |
+| [MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support](../../papers/arxiv-2610.19645/) | 2026-10-14 | 53 |
+| [What You Sign Is Not What You Run: The Verifiability Gap in Quantized LLM Supply Chains](../../papers/arxiv-2610.19498/) | 2026-10-14 | 47 |
+| [Beyond Expert Rankings: Contrast Calibration for Mixed-Precision MoE Quantization](../../papers/arxiv-2610.20353/) | 2026-10-14 | 45 |
+| [PN-Mix: Pair-Norm Guided Mixed-Precision Key Cache Quantization for Efficient Long-Output LLM Inference](../../papers/arxiv-2610.19605/) | 2026-10-14 | 43 |
+| [SpectrumQuant: Spectrum Alignment for LLM Quantization](../../papers/arxiv-2610.20303/) | 2026-10-14 | 42 |
+| [PEDBench: Can Speech Models Detect Phonetic Errors?](../../papers/arxiv-2610.20830/) | 2026-10-14 | 42 |
+| [PRISM: Transfer and Limits of Activation Interventions in Tool-Calling Language Models](../../papers/arxiv-2610.20808/) | 2026-10-14 | 41 |
+| [On-Policy Residual Learning for Diffusion Language Models](../../papers/arxiv-2610.20687/) | 2026-10-14 | 38 |
+| [Towards Green AI: Evaluating Energy Efficiency for Quantized LLM Inference](../../papers/arxiv-2610.17531/) | 2026-10-13 | 61 |
+| [Capacity over TFLOPS: Memory-Centric Deployment of Large Clinical Language Models on Consumer CPUs](../../papers/arxiv-2610.17551/) | 2026-10-13 | 51 |
+| [Mixed Precision Scaling Laws for Quantized Pretraining](../../papers/arxiv-2610.17637/) | 2026-10-13 | 47 |
+| [ProTok: Unified Protein Tokenization via Modular Multi-Codebook Quantization](../../papers/arxiv-2610.18481/) | 2026-10-13 | 41 |
+| [Neural Dimensional Analysis: Foundations of Dimensionless and Scale-Consistent Computation](../../papers/arxiv-2610.17969/) | 2026-10-13 | 39 |
+| [Revisiting Error Feedback for Model Quantization](../../papers/arxiv-2610.18139/) | 2026-10-13 | 38 |
+| [LoopQuant: Accurate and Efficient Post-Training Quantization for Looped Transformers](../../papers/arxiv-2610.16368/) | 2026-10-12 | 59 |
 | [RAMP: Recurrent Adaptive Mixed Precision for Efficient Prefill in Recurrent-Depth Language Models](../../papers/arxiv-2610.13041/) | 2026-10-12 | 53 |
+| [Hardware-Friendly Token-Group Activation Quantization for Low-Bit Mamba Super-Resolution](../../papers/arxiv-2610.16261/) | 2026-10-12 | 51 |
 | [DualQuant: Dual-scale Calibration-free Weight-and-Activation Quantization for LLMs](../../papers/arxiv-2610.13767/) | 2026-10-12 | 51 |
+| [Fast Quantized Johnson$-$Lindenstrauss Transforms](../../papers/arxiv-2610.16289/) | 2026-10-12 | 42 |
 | [Algebraic Integer Quantization for Machine Learning Applications](../../papers/arxiv-2610.12494/) | 2026-10-12 | 42 |
 | [TTS-Q: Perception-Guided Post-Training Quantization of Text-to-Speech Diffusion Transformers](../../papers/arxiv-2610.12474/) | 2026-10-12 | 41 |
+| [Context-Aware Precision Scheduling for Small Language Models](../../papers/arxiv-2610.15640/) | 2026-10-11 | 44 |
+| [Riemannian Graph Tokenizer for Structural Knowledge Transfer](../../papers/arxiv-2610.15427/) | 2026-10-11 | 41 |
+| [VLCQ: Post-training quantization for deep neural networks using variable length coding](../../papers/arxiv-2610.15092/) | 2026-10-10 | 53 |
+| [FidelityQ: Preserving Predictive Fidelity in Ultra-Low-Bit Language Model Quantization](../../papers/arxiv-2610.14934/) | 2026-10-10 | 45 |
+| [Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models](../../papers/arxiv-2610.15029/) | 2026-10-10 | 43 |
+| [When Dynamic Scaling Fails: A Scale-State Feedback Governs Recurrent-State Quantization in Linear-Attention and SSM LLMs](../../papers/arxiv-2610.15139/) | 2026-10-10 | 41 |
 | [Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows](../../papers/arxiv-2610.11482/) | 2026-10-09 | 45 |
 | [When Lower Reconstruction Loss Hurts: Distributionally Robust Refinement for Low-Bit LLM Quantization](../../papers/arxiv-2610.11226/) | 2026-10-09 | 43 |
 | [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](../../papers/arxiv-2509.15206/) | 2026-10-09 | 43 |

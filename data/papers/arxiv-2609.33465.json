@@ -1,0 +1,80 @@
+{
+  "id": "arxiv:2609.33465",
+  "title": "GSM: Efficient Language Modeling with Shared Global State",
+  "abstract": "Improving language model efficiency requires not only cheaper operations but also eliminating redundant computation. We argue that effective modeling requires information accessibility and computational depth, but not repeated historical retrieval across layers. Guided by this principle, we introduce the Global State Model (GSM), a causal encoder--decoder architecture that separates historical information acquisition from deep computation. The encoder progressively aggregates long-range information through multi-stage sparse retrieval into a fixed-size shared state, while decoder layers perform successive transformations over this state without repeated historical access. This design makes decoder attention and cache costs independent of history length, while dependency-aware pruning further reduces prefill computation. Experiments across multiple model scales show that GSM achieves downstream performance comparable to matched DeepSeek-V4.1-Flash-based baselines, with improvements at some scales, while preserving long-context retrieval capabilities. GSM also improves training and inference throughput and reduces cache overhead. These results demonstrate that eliminating architectural redundancy offers an effective path toward efficient language modeling without sacrificing information accessibility or computational depth.",
+  "url": "https://arxiv.org/abs/2609.33465",
+  "pdf_url": "https://arxiv.org/pdf/2609.33465",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Yunao Zheng",
+    "Bin Wen",
+    "Xiaojie Wang",
+    "Kaiyu Jiang",
+    "Xuanyu Zheng",
+    "Changyi Liu",
+    "Hongyi Fu",
+    "Jianxiong Wang",
+    "Tianke Zhang",
+    "Haonan Fan",
+    "Yingxin Li",
+    "Jiankang Chen",
+    "Xu Wang",
+    "Tingting Gao",
+    "Han Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Improving language model efficiency requires not only cheaper operations but also eliminating redundant computation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.33465",
+      "url": "https://arxiv.org/abs/2609.33465"
+    }
+  ]
+}

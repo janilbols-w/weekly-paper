@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **31** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [How to Train Your Little Dragon: Teaching a Small Language Model to Construct and Refine GPU Optimization Scripts](../../papers/arxiv-2610.20980/) | 2026-10-14 | 39 |
 | [Stateless Language Agents: Scaling Long-Horizon Automated Research](../../papers/arxiv-2610.07625/) | 2026-10-07 | 45 |
 | [Evolving in Thought Space: Training a Small Model at Test Time Unlocks Better Discoveries](../../papers/arxiv-2610.06269/) | 2026-10-06 | 42 |
 | [FastKernels: Benchmarking GPU Kernel Generation in Production](../../papers/arxiv-2605.23215/) | 2026-10-05 | 56 |

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.16144",
+  "title": "Hashrope: A Persistent Data Structure for Mechanisms of LLM Context Management",
+  "abstract": "Serving stacks for large language models manage context through four recurring mechanisms: incremental edits to a growing context, branching and snapshotting for tree search, identification of reusable prefixes for KV-cache reuse, and encoding of repeated segments. Each mechanism is served today by a different specialist structure. We show that all four reduce to a single persistent weight-balanced rope whose every node carries a polynomial hash of its subtree over a Mersenne prime, so that the structure supports logarithmic edits and logarithmic verified content-identity queries at the same time. We validate each mechanism with pre-registered, replicated experiments, then compare against a deployed specialist per mechanism: the Ropey editing library, a faithful PagedAttention copy-on-write block table, and the vendored SGLang radix matcher. On workloads that interleave edits with identity queries, Hashrope is net-superior to Ropey by a factor that grows without bound (369.7x at one million characters). Against the radix matcher on a live vLLM stack serving Qwen2.5-7B-Instruct-1M on four A100 GPUs, Hashrope identifies a one-million-token shared prefix exactly and 1.20x faster, at a context length the dense engine cannot even prefill.",
+  "url": "http://arxiv.org/abs/2610.16144v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.16144v1",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "authors": [
+    "Muntaser Syed",
+    "Ameerah Alsulami",
+    "Marius Silaghi"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DS",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "Accepted at IEEE ICTAI 2026 (full paper)",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Serving stacks for large language models manage context through four recurring mechanisms: incremental edits to a growing context, branching and snapshotting for tree search, identification of reusable prefixes for KV-cache reuse, and encoding of repeated segments.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.16144v1",
+      "url": "http://arxiv.org/abs/2610.16144v1"
+    }
+  ]
+}

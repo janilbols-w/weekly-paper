@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2610.20962",
+  "title": "PAGE404: Breaking GPU Isolation Through Hardware-assisted Page Migration",
+  "abstract": "NVIDIA's Grace Hopper (GH200) superchip represents a new generation of heterogeneous computing, tightly integrating a 72-core Arm-based CPU with a Hopper GPU on a single module via a high-bandwidth, cache-coherent interconnect. By eliminating the conventional PCIe bottleneck for CPU-GPU data movement, this design establishes a unified memory domain that scales to the capacities demanded by generative AI and high-performance computing (HPC) workloads. The architecture also introduces hardware-assisted page migration: driven by access counters, the system dynamically promotes frequently accessed pages from host CPU memory to GPU DRAM to improve memory locality. We study the security of this emerging architecture against new side- and covert-channel attacks targeting its page migration support. We analyze counter-driven migration across both the hardware mechanisms and the UVM driver's interrupt-handling pipeline, and identify two side-channel vulnerabilities: one rooted in the shared structure of access counters, and the other in the driver's response to migration interrupts. We further show that both channels are exploitable across Multi-Instance GPU (MIG) partitions, a feature intended to provide strong, hardware-enforced isolation between co-located tenants. Using proof-of-concept attacks, we build covert channels that reach roughly 8,500 bits per second through eviction-based signaling and 8,100 bits per second through migration-delay-based signaling across MIG instances. The interrupt-based channel also fingerprints inference workloads across distinct large language models (LLMs) and CPU SPEC2017 benchmarks, and estimates the prompt length processed during LLM inference with high accuracy. These results expose a security gap in hardware-managed heterogeneous memory systems and call into question the isolation guarantees of current MIG-enabled multi-tenant GPU deployments.",
+  "url": "https://arxiv.org/abs/2610.20962",
+  "pdf_url": "https://arxiv.org/pdf/2610.20962",
+  "published": "2026-10-14",
+  "updated": "2026-10-16",
+  "authors": [
+    "Ravan Nazaraliyev",
+    "Yicheng Zhang",
+    "Nael Abu-Ghazaleh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.CR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "unified memory"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: unified memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "NVIDIA's Grace Hopper (GH200) superchip represents a new generation of heterogeneous computing, tightly integrating a 72-core Arm-based CPU with a Hopper GPU on a single module via a high-bandwidth, cache-coherent interconnect.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.20962v1",
+      "url": "http://arxiv.org/abs/2610.20962v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.20962",
+      "url": "https://arxiv.org/abs/2610.20962"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "abstract": "The rapid adoption of Retrieval-Augmented Generation (RAG) and long-context LLMs has shifted the computational burden toward the prefill phase---the initial stage where the model processes all input tokens in parallel before generating a response---yet its energy impact remains poorly characterised. We investigate the contradiction between massive hardware-level power spikes and the sub-linear marginal cost of input tokens reported in system-level studies. Through high-resolution telemetry of Llama-3.1 and Qwen-2 models on NVIDIA A100 hardware, we identify the efficiency threshold where $O(n^2)$ attention complexity overcomes GPU parallelisation. Our results quantify how optimised memory orchestration (PagedAttention) delays this scaling bottleneck across three orders of context scaling, yielding up to an 8.9$\\times$ energy efficiency advantage at 112,000 tokens compared to standard baselines. Furthermore, we characterise the energy disparity between input and output tokens, demonstrating that optimised serving (vLLM) causes this ratio to narrow (from $\\approx$850$\\times$ to 750$\\times$) as context scales due to high decode efficiency, whereas unoptimised baselines show a much smaller, roughly constant gap ($\\approx$150--230$\\times$) because their prefill is itself expensive. This work establishes context-scaling laws that differentiate engine-level optimisations from inherent model constraints, providing an empirical framework for sustainable LLM deployment.",
   "url": "https://arxiv.org/abs/2610.19819",
   "pdf_url": "https://arxiv.org/pdf/2610.19819",
-  "published": "2026-10-15",
+  "published": "2026-10-14",
   "updated": "2026-10-15",
   "authors": [
     "Boris Ruf",
@@ -18,7 +18,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted at HotCarbon'26, the 5th Workshop on Sustainable Computer Systems; to appear in ACM SIGENERGY Energy Informatics Review, Vol. 6, Issue 2",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -55,9 +55,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-15T04:42:37+00:00",
-  "last_seen": "2026-10-15T04:42:37+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.19819v1",
+      "url": "http://arxiv.org/abs/2610.19819v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2610.19819",

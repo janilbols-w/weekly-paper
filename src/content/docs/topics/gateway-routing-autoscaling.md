@@ -9,7 +9,7 @@ description: "Gateway, Routing & Autoscaling"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Truthful and Expected-Payment-Optimal Model Routing in Graph-Based Agentic Workflows](../../papers/arxiv-2610.19316/) | 2026-10-15 | 42 |
+| [Truthful and Expected-Payment-Optimal Model Routing in Graph-Based Agentic Workflows](../../papers/arxiv-2610.19316/) | 2026-10-13 | 42 |
 | [CopRoute: Dependence-Aware Conformal Routing for Language Models](../../papers/arxiv-2610.13276/) | 2026-10-12 | 39 |
 | [Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators](../../papers/arxiv-2509.03647/) | 2026-10-07 | 39 |
 | [Collective Bias Mitigation via Model Routing and Collaboration](../../papers/arxiv-2610.03240/) | 2026-10-05 | 44 |

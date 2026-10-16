@@ -39,7 +39,7 @@ Code generation models are actively being used in professional and educational s
 ## 元数据
 
 - 作者：Anubhav Jangra, Smaranda Muresan
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-13；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

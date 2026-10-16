@@ -39,7 +39,7 @@ Structured pruning reduces LLM inference costs by removing model components to p
 ## 元数据
 
 - 作者：Woosang Lim, Haneul Yoo, Vincent-Daniel Yun, Sungjoo Yoo
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-13；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2605.10777",
+  "title": "Locking Pretrained Weights via Deep Low-Rank Residual Distillation",
+  "abstract": "The quality of open-weight language models has dramatically improved in recent years. Sharing weights greatly facilitates model adoption by enabling their use across diverse hardware and software platforms. They also allow for more open research and testing, to the extent that users can use them as checkpoints, fine-tune them according to their needs, and potentially redistribute them. In some cases, however, concerns on modifying these weights towards unauthorized uses may outweigh the pros of giving users such freedom. Defending against such adaptation is non-trivial: since an adaptive attacker can observe all weights and architectures by definition, they can reverse simple structural defenses, and use optimization to defeat the simplest locking mechanisms. In this work, we exploit the inference-training asymmetry of automatic differentiation as a novel defense axis. We propose DLR-Lock, a method where the purveyor of the model purposely replaces each pretrained MLP in their model with a deep low-rank residual network (DLR-Net) of comparable parameter count, forcing activation memory that grows linearly with depth during backpropagation. DLR-Nets are efficiently trained via module-wise regression. We show that, beyond this memory overhead, DLR-Lock results in architectural mismatches that complicate the optimization landscape of standard fine-tuning, and a backward pass that incurs disproportionately more overhead than the forward pass. Our defense succeeds in withstanding adaptive attackers with full knowledge of the defense strategy while preserving the original model's capabilities. Experiments on LLMs validate these claims.",
+  "url": "https://arxiv.org/abs/2605.10777",
+  "pdf_url": "https://arxiv.org/pdf/2605.10777",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Keitaro Sakamoto",
+    "Pierre Ablin",
+    "Federico Danieli",
+    "Marco Cuturi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The quality of open-weight language models has dramatically improved in recent years.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.10777",
+      "url": "https://arxiv.org/abs/2605.10777"
+    }
+  ]
+}

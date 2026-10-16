@@ -5,12 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **76** 篇。
+累计收录 **78** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator with Algorithm and Hardware Co-Design](../../papers/arxiv-2610.19973/) | 2026-10-15 | 46 |
+| [STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator with Algorithm and Hardware Co-Design](../../papers/doi-10.1109-tcsi.2025.3648765/) | 2026-10-14 | 49 |
+| [ATTUNE: Agentic Throughput Tuning for LLM Training](../../papers/arxiv-2610.17528/) | 2026-10-13 | 51 |
 | [O\'ido: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator](../../papers/arxiv-2610.13447/) | 2026-10-12 | 41 |
+| [Learn the Dynamics, Enforce the Physics: Generative Latent Operators for High-Dimensional Beam Evolution](../../papers/arxiv-2610.14537/) | 2026-10-10 | 39 |
 | [Toward Intelligent Networks via AI-Aware GPU-Native Packet Processing](../../papers/arxiv-2610.12139/) | 2026-10-09 | 43 |
 | [Hardware-aware Calibrated Clustered Attention for Efficient Visual Geometric Transformers](../../papers/arxiv-2610.09274/) | 2026-10-08 | 47 |
 | [T-CCL: Resource Efficient and Performant Collective Communication using Tensor Memory Accelerator](../../papers/arxiv-2610.07098/) | 2026-10-07 | 53 |

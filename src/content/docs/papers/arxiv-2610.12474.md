@@ -39,7 +39,7 @@ Zero-shot text-to-speech (TTS) can clone a voice from seconds of audio. Yet the 
 ## 元数据
 
 - 作者：Xiaoqin Feng, Yuqi Li, Weilun Feng, Yi-Cheng Lin, Kai Li, Xianglong Wang, Kuo Yang, Chuanguang Yang, Yingli Tian, Wei Li, Zhongwei Cheng, Lin Chen
-- 发布：2026-10-12；更新：2026-10-12
+- 发布：2026-10-12；更新：2026-10-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

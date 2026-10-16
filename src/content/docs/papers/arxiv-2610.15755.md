@@ -39,7 +39,7 @@ Hybrid attention-SSM serving combines growing attention KV with fixed-size recur
 ## 元数据
 
 - 作者：Dongwook Kang
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-11；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

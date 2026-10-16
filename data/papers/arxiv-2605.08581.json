@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2605.08581",
+  "title": "HAServe: Horizon-Aware Scheduling and Memory Co-Design for Efficient LLM Serving",
+  "abstract": "Online large language model (LLM) services process requests that share context but differ in prefix structure and arrival timing. Finite capacity couples request admission and key-value (KV) retention. This paper addresses one online serving problem: using a unified view of visible demand to choose the feasible joint admission and KV-retention candidate with the lowest predicted latency cost as prefix structures and arrival rates vary. To model this problem, we introduce HorizonSchema, a workload abstraction that connects exact prefix paths, permitted serializations, and released consumers as shared inputs to both decisions. Our analysis shows that useful reuse depends on demand and prefix survival, while service order changes latency even at equal computation. Furthermore, we present HAServe, which turns this abstraction into a scheduling--memory co-design method of systematic optimization for online LLM serving. We implement HAServe on SGLang and evaluate Qwen3-4B-Instruct-2507 and Llama2-13B on five workloads using eight H100 GPUs. Across the evaluated workloads, HAServe achieves up to $1.14$--$5.90\\times$ P99 TTFT speedups and up to $1.08$--$1.44\\times$ the throughput, with KV-cache hit rate up to 20.59 percentage points higher than the strongest baseline for each metric and setting.",
+  "url": "https://arxiv.org/abs/2605.08581",
+  "pdf_url": "https://arxiv.org/pdf/2605.08581",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Xingyu Qu",
+    "Tianhao Lin",
+    "Yiqi Li",
+    "Zhiyu Chen",
+    "Sheng Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 15,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Online large language model (LLM) services process requests that share context but differ in prefix structure and arrival timing.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [
+    "2026-W42"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.08581",
+      "url": "https://arxiv.org/abs/2605.08581"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2610.14763",
+  "title": "CUSE: Fine-Grained Multimodal Unlearning with Counterfactual Guidance and On-Policy Self-Distillation",
+  "abstract": "Multimodal large language models (MLLMs) can reproduce sensitive, copyrighted, or unsafe information from their training data. Effective unlearning must remove target information while preserving non-target content, even within the same response. Existing methods typically apply uniform forgetting objectives to complete responses and rely on fixed, off-policy supervision, resulting in coarse token control and misalignment with the model's current behavior. We propose CUSE, a Counterfactual-guided Unlearning framework via on-policy Self-distillation for multimodal large language models. It first constructs counterfactual inputs by removing target-related evidence and uses the resulting changes in token probabilities to identify which tokens require stronger forgetting. It then distills token-level forgetting and retention targets on responses sampled from the current policy, with a frozen copy of the original model serving as the teacher model augmented with the corresponding forgetting- and retention-oriented privileged contexts. This design jointly determines what to forget and what to preserve. On MLLMU-Bench, CUSE reduces forget-set ROUGE-L by 33.6% while achieving 1.2% higher retain-set ROUGE-L than the strongest baseline.",
+  "url": "http://arxiv.org/abs/2610.14763v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.14763v1",
+  "published": "2026-10-10",
+  "updated": "2026-10-10",
+  "authors": [
+    "Chenlu Ding",
+    "Jiancan Wu",
+    "Yanchen Luo",
+    "Tianyu Zhang",
+    "Yancheng Yuan",
+    "Xiang Wang",
+    "Xiangnan He"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Multimodal large language models (MLLMs) can reproduce sensitive, copyrighted, or unsafe information from their training data.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.14763v1",
+      "url": "http://arxiv.org/abs/2610.14763v1"
+    }
+  ]
+}

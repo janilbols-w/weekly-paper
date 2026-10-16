@@ -39,7 +39,7 @@ Mixture-of-experts (MoE) language models activate only a few experts per token, 
 ## 元数据
 
 - 作者：Renjie Xie, Juncheng Yang, Aoting Hu, Yan Liang, Mingxi Zhang, Zheheng Hong, Wei Xu, Yanzhi Chen
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

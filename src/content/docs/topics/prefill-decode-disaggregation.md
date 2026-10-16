@@ -5,10 +5,11 @@ description: "Prefill-Decode Disaggregation"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > Prefill-Decode 解耦**
 
-累计收录 **7** 篇。
+累计收录 **8** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Prorsa: Unleashing the Potential of Prefill-Decode Disaggregation in Agentic Reinforcement Learning](../../papers/arxiv-2610.16592/) | 2026-10-12 | 43 |
 | [PrefillShare: A Shared Prefill Module for KV Reuse in Multi-LLM Disaggregated Serving](../../papers/arxiv-2602.12029/) | 2026-09-30 | 49 |
 | [MoSE: Mode-Switching Expander for Mixed LLM Training and Inference](../../papers/arxiv-2609.39138/) | 2026-09-30 | 38 |
 | [EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models](../../papers/arxiv-2609.31551/) | 2026-09-28 | 47 |

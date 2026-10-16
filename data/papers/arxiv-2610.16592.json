@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2610.16592",
+  "title": "Prorsa: Unleashing the Potential of Prefill-Decode Disaggregation in Agentic Reinforcement Learning",
+  "abstract": "Agentic reinforcement learning (RL) is commonly used to enhance the capabilities of large language models (LLMs) in solving complex multi-turn tasks. During rollout, agentic RL exhibits a workload pattern distinct from that of traditional RL: multi-turn interactions repeatedly introduce prefill requests, causing prefill and decode workloads to coexist throughout rollout. This workload makes prefill-decode (PD) disaggregation, a design widely used for online LLM serving, promising for speeding up agentic RL rollout. This paper shows that PD disaggregation can improve rollout efficiency by (a) mitigating interference among data-parallel attention modules, (b) enabling stage-specific parallelism, and (c) reducing end-to-end trajectory completion time. However, a fixed prefill-decode allocation may fail to sustain these benefits as workload composition varies across tasks and over time. We therefore present Prorsa, an agentic RL framework for prediction-guided prefill-decode resource allocation. Prorsa observes the lifecycle of every trajectory to forecast short-horizon prefill and decode demand. These forecasts then guide worker allocation decisions and trigger role switching of rollout engines, aligning prefill and decode capacity with anticipated workload demand. Across synchronous and asynchronous agentic RL settings, Prorsa achieves end-to-end rollout speedups of 1.11x-4.05x over prefill-decode colocation.",
+  "url": "http://arxiv.org/abs/2610.16592v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.16592v1",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "authors": [
+    "Chiheng Lou",
+    "Xiangwei Deng",
+    "Bangjun Xiao",
+    "Xiaodong Ji",
+    "Yikai Zhao",
+    "Xin Jin",
+    "Hailin Zhang"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "prefill-decode-disaggregation",
+    "leaf": "Prefill-Decode Disaggregation",
+    "leaf_zh": "Prefill-Decode 解耦"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "prefill-decode"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: prefill-decode",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Agentic reinforcement learning (RL) is commonly used to enhance the capabilities of large language models (LLMs) in solving complex multi-turn tasks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.16592v1",
+      "url": "http://arxiv.org/abs/2610.16592v1"
+    }
+  ]
+}

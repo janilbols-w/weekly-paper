@@ -39,7 +39,7 @@ On-policy distillation (OPD) has emerged as an effective post-training paradigm 
 ## 元数据
 
 - 作者：Zaiquan Yang, Fei Wei, Yong Wang, Yudong Han, Yiyu Li, Zhuofan Zong, Gerhard Petrus Hancke, Xiangxiang Chu, Rynson WH Lau
-- 发布：2026-10-06；更新：2026-10-06
+- 发布：2026-10-06；更新：2026-10-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

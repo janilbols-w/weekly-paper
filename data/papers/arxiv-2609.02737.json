@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2609.02737",
+  "title": "Language Models Can Control Their Own Attention",
+  "abstract": "Language models spend most of their attention on a small fraction of context, yet they read the entire KV cache to find the few tokens that matter. If the user asks about a previous detail in a 1M-token conversation, global attention layers must scan the full context to generate each token of the reply. A prominent approach pre-selects relevant tokens via lightweight proxy scores, but this extrinsic scoring still incurs O(N) per step. We take an intrinsic approach motivated by the simple question: wouldn't the model already know which parts of the context are relevant? We introduce Declarative Attention (DA), a protocol that elicits the model to declare where it needs to attend within its chain-of-thought, partitioning generation into three modes: (full context), (a specific region), and (recent output only). The inference engine parses these declarations like tool calls and skips most of the KV cache read. Under zero-shot evaluation across 15 long-context tasks, DA on off-the-shelf models (Gemma-4-31B, Qwen-3.6-27B) reduces total attended tokens per response (45.8%, 19.6%), despite extra decoding steps, with modest accuracy drops (1.40pp, 2.10pp) that shrink with model scale. DA unlocks a new axis of sparse attention, with further potential under training-based methods. Code is available at https://github.com/itsnamgyu/declarative-attention.",
+  "url": "https://arxiv.org/abs/2609.02737",
+  "pdf_url": "https://arxiv.org/pdf/2609.02737",
+  "published": "2026-10-16",
+  "updated": "2026-10-16",
+  "authors": [
+    "Namgyu Ho",
+    "Huzama Ahmad",
+    "Woosung Koh",
+    "Se-Young Yun",
+    "Tal Schuster",
+    "Cicero Nogueira dos Santos"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/itsnamgyu/declarative-attention",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Language models spend most of their attention on a small fraction of context, yet they read the entire KV cache to find the few tokens that matter.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.02737",
+      "url": "https://arxiv.org/abs/2609.02737"
+    }
+  ]
+}

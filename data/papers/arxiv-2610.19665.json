@@ -4,7 +4,7 @@
   "abstract": "Transformer based intrusion detection has shown strong potential for identifying unknown malware variants, but its deployment on resource constrained edge devices remains difficult due to the high computational and memory cost of self attention. This paper presents an event sparse Linear Transformer framework for malware detection on FPGA edge platforms. Instead of relying on an explicit attention matrix, the proposed method derives token and channel importance directly from the accumulated key value state of Linear Transformer. A contribution aware scoring function is introduced to measure the perturbation of each token or kernel channel to the linear attention state, allowing redundant tokens and low contribution channels to be removed without constructing quadratic attention maps. To translate sparsity into practical hardware acceleration, the proposed design further replaces conventional binary mask based execution with a Top K active token buffer and a hardware compaction unit. The selected active tokens and channels are reorganized into dense fixed length data streams, enabling downstream processing elements to execute regular multiply accumulate operations with reduced redundant memory access and control overhead. This design is suitable for low power FPGA based malware detection, where both latency and on chip resource usage are critical. Experimental evaluation demonstrates that the proposed sparse Linear Transformer can reduce hardware cost while preserving malware classification accuracy.",
   "url": "https://arxiv.org/abs/2610.19665",
   "pdf_url": "https://arxiv.org/pdf/2610.19665",
-  "published": "2026-10-15",
+  "published": "2026-10-14",
   "updated": "2026-10-15",
   "authors": [
     "Jun Yang",
@@ -21,7 +21,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted at ICA3PP 2026. 19 pages, 5 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-15T04:42:37+00:00",
-  "last_seen": "2026-10-15T04:42:37+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.19665v1",
+      "url": "http://arxiv.org/abs/2610.19665v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2610.19665",

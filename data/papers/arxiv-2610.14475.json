@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.14475",
+  "title": "EdgeLLM-Nano: Auditing Polar-Guided Key-Cache Compression and Consistency-Anchored Pruning on a 33.6 MB On-Device Language Model",
+  "abstract": "Deploying language models (LMs) on the edge presents unique memory, latency, and power challenges absent in high-performance computing. KV-cache compression emerges as a promising approach to address these challenges. However, the effectiveness of current KV-cache compression methods has not been thoroughly examined on edge devices. Moreover, we show that existing evaluation methods do not always involve the KV-cache under test. We propose EdgeLLM-Nano, a measurement study of KV-cache compression using a nano-scale decoder-only LM (transformer) testbed that has 8.39M parameters, i.e., 33.6 MB, to enable end-to-end examination of each backend, seed, and power sample. Our results give a negative verdict for a polar-guided key-cache quantizer (round-to-nearest (RTN) control causes an order of magnitude less damage), as well as a consistency-anchored progressive weight pruner (one-shot magnitude-based pruning performs as well as, if not better). We also introduce Long-Context Decode Fidelity (LCDF) evaluation, a token-by-token examination of teacher-forced log-losses using the KV-cache under test. Unlike perplexity that gives the same 5.461 score to all methods, LCDF distinguishes different KV-cache compression backends thanks to its paired statistics across seeds and effect sizes. Our companion Raspberry Pi 5 measurement shows all compression backends we tested to be less energy-efficient per token compared to uncompressed FP16 inference. Except for KIVI that is close to lossless in terms of LCDF, our findings indicate KV-cache compression can be improved. LCDF offers a simple and effective way of shedding light on KV-cache compression methods, whose negative impacts have been overlooked by perplexity.",
+  "url": "http://arxiv.org/abs/2610.14475v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.14475v1",
+  "published": "2026-10-10",
+  "updated": "2026-10-10",
+  "authors": [
+    "S M Mahbub Murshed",
+    "Hayden Bright",
+    "Rezaul Karim",
+    "Ali Shiri Sichani"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Deploying language models (LMs) on the edge presents unique memory, latency, and power challenges absent in high-performance computing.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.14475v1",
+      "url": "http://arxiv.org/abs/2610.14475v1"
+    }
+  ]
+}

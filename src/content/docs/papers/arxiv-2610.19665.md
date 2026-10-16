@@ -39,7 +39,7 @@ Transformer based intrusion detection has shown strong potential for identifying
 ## 元数据
 
 - 作者：Jun Yang, Yumeng Cao, Yingxuan Xiao, Changhong Li, Shangru Zhou
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

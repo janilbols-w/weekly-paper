@@ -5,14 +5,21 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **104** 篇。
+累计收录 **111** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Beyond the Trial-and-Error Loop: Hybrid Projection and Automated Tuning for Distributed Training](../../papers/arxiv-2610.19423/) | 2026-10-15 | 43 |
+| [Circuit Claims Depend on What Is Extracted and How It Is Compared](../../papers/arxiv-2607.18921/) | 2026-10-16 | 41 |
+| [Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts](../../papers/arxiv-2610.22043/) | 2026-10-15 | 39 |
+| [RoleQ: Role-Aligned Scales for Converting Language Models to Ternary](../../papers/arxiv-2610.21808/) | 2026-10-15 | 38 |
+| [Beyond the Trial-and-Error Loop: Hybrid Projection and Automated Tuning for Distributed Training](../../papers/arxiv-2610.19423/) | 2026-10-14 | 43 |
+| [LEV: Thinking Fast and Deep with Looped Decision Models](../../papers/arxiv-2610.20951/) | 2026-10-14 | 41 |
+| [Learning to Read Out: Unembedding Dynamics in Language Model Pretraining](../../papers/arxiv-2610.21025/) | 2026-10-14 | 38 |
+| [Which Optimizer Leaks Most? Optimizer Implicit Bias as a Training-Data Privacy Controller](../../papers/arxiv-2610.18294/) | 2026-10-13 | 39 |
 | [Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping](../../papers/arxiv-2610.13909/) | 2026-10-12 | 44 |
 | [SlackSwap: Bandwidth-Aware Activation Swapping and Recomputation for Memory-Efficient DNN Training](../../papers/arxiv-2610.13003/) | 2026-10-12 | 42 |
 | [Execution-Feasible Dispatch of LLM Pre-training Loads for Renewable-Dominant AI Data Centers](../../papers/arxiv-2610.13047/) | 2026-10-12 | 41 |
+| [Vision-Predictor-Action: Towards Efficient Embodied AI via Neuro-Symbolic JEPA Predictors](../../papers/arxiv-2610.15556/) | 2026-10-11 | 43 |
 | [Adaptive Multi-Discriminator WGAN Framework for Resource-Constrained Internet of Vehicles Using Reinforcement Learning and Game Theory](../../papers/arxiv-2610.10926/) | 2026-10-09 | 46 |
 | [Benchmarking System One decision models against trained classifiers and language models for automated decision gates](../../papers/arxiv-2610.00346/) | 2026-10-08 | 42 |
 | [PrismSSL: One Interface, Many Modalities; A Single-Interface Library for Multimodal Self-Supervised Learning](../../papers/arxiv-2511.17776/) | 2026-10-08 | 38 |

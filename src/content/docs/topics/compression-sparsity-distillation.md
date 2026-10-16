@@ -5,40 +5,68 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **591** 篇。
+累计收录 **619** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Rethinking Calibration for High-Sparsity LLM Pruning: From Single Sources to Capability Coverage](../../papers/arxiv-2606.03328/) | 2026-10-16 | 49 |
+| [GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers](../../papers/arxiv-2610.22014/) | 2026-10-16 | 44 |
+| [Locking Pretrained Weights via Deep Low-Rank Residual Distillation](../../papers/arxiv-2605.10777/) | 2026-10-16 | 42 |
+| [LLMR: Knowledge Distillation with a Large Language Model-Induced Reward](../../papers/arxiv-2409.12500/) | 2026-10-16 | 42 |
+| [Enhancing Knowledge Density via Hierarchical Context Pruning for Retrieval-Augmented Repository-Level Code Completion](../../papers/arxiv-2508.10068/) | 2026-10-16 | 42 |
+| [GSM: Efficient Language Modeling with Shared Global State](../../papers/arxiv-2609.33465/) | 2026-10-16 | 41 |
+| [Do As I Do, Not As I Say: On-Policy Distillation Inherits the Teacher in Vision-Language Models](../../papers/arxiv-2610.20989/) | 2026-10-16 | 41 |
+| [Calibration Language Shapes Block-Influence Pruning in Multilingual Language Models](../../papers/arxiv-2610.21383/) | 2026-10-16 | 38 |
+| [PSA: A Pruning-Friendly Sparse-Aware Accelerator for Efficient Sparse Convolution in SNNs](../../papers/arxiv-2610.21313/) | 2026-10-15 | 51 |
 | [Beyond Size: How Gradients Shape Pruning Decisions in Large Language Models](../../papers/arxiv-2311.04902/) | 2026-10-15 | 49 |
 | [HARP: Efficient Data Selection for Finetuning Large Language Models](../../papers/arxiv-2606.07690/) | 2026-10-15 | 48 |
 | [Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered](../../papers/arxiv-2510.08464/) | 2026-10-15 | 48 |
-| [Unlocking Structured Pruning for Reasoning Language Models via Attention-Preserving MLP Trimming](../../papers/arxiv-2610.19121/) | 2026-10-15 | 46 |
 | [Your Transformer Is Secretly Elastic](../../papers/arxiv-2610.20588/) | 2026-10-15 | 43 |
 | [Progress-Aware Distillation for Mitigating Stagnation in Small Language Model Agents](../../papers/arxiv-2610.19439/) | 2026-10-15 | 43 |
 | [Function-Space Temporal Self-Distillation for Policy Optimization](../../papers/arxiv-2610.19687/) | 2026-10-15 | 43 |
 | [Rationale Distribution Distillation via Flow Matching for Distributional Continuous Latent Reasoning](../../papers/arxiv-2610.19871/) | 2026-10-15 | 42 |
-| [ESL-former: Event Sparse Linear Transformer for FPGA-Accelerated Malware Detection](../../papers/arxiv-2610.19665/) | 2026-10-15 | 42 |
-| [Who's Behind the Text? Robust Model Authorship Attribution](../../papers/arxiv-2610.19583/) | 2026-10-15 | 41 |
-| [Tracing Knowledge Lineage for Federated Unlearning under Mutual Distillation](../../papers/arxiv-2610.19072/) | 2026-10-15 | 41 |
+| [Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing](../../papers/arxiv-2610.22196/) | 2026-10-15 | 42 |
 | [CAFE: Conducting-Cell-Aware Adaptive Differential Encoding for Robust DNN Inference in FeFET-Based Compute-in-Memory](../../papers/arxiv-2610.19697/) | 2026-10-15 | 41 |
+| [Physics-Aware Distillation of a Grid Foundation Model for Real-Time Edge Inference](../../papers/arxiv-2610.21833/) | 2026-10-15 | 40 |
 | [Every Time I Hire a Linguist, Inference Costs Go Down: On Linguistic Rules as Effective Prompt Compressors](../../papers/arxiv-2607.25335/) | 2026-10-15 | 40 |
 | [REVEAL: Reverse Engineering Agentic Latents from Frontier-Model Traces](../../papers/arxiv-2610.16288/) | 2026-10-15 | 39 |
 | [Qwen-MT-Lumen at WMT2026: Instruction-Specialized Translation via Quality-Aware Training and On-Policy Distillation](../../papers/arxiv-2610.19758/) | 2026-10-15 | 39 |
-| [PA1-OPD: One-Step Prefix-Augmented On-Policy Distillation for Language Model Pretraining](../../papers/arxiv-2610.19601/) | 2026-10-15 | 39 |
 | [Occupancy Modeling via Drifting: One-Step Generation Enables Direct Policy Extraction](../../papers/arxiv-2610.19883/) | 2026-10-15 | 39 |
 | [HRTF Upsampling and Personalization via Neural Operators](../../papers/arxiv-2610.20400/) | 2026-10-15 | 39 |
-| [Outcome-Routed Distillation and Reinforcement Learning for Diffusion Language Models](../../papers/arxiv-2610.19271/) | 2026-10-15 | 38 |
+| [Bias Mitigation in Audio-Enabled LLMs through Adversarial Training and Distillation Methods](../../papers/arxiv-2610.21763/) | 2026-10-15 | 38 |
+| [ESL-former: Event Sparse Linear Transformer for FPGA-Accelerated Malware Detection](../../papers/arxiv-2610.19665/) | 2026-10-14 | 42 |
+| [Who's Behind the Text? Robust Model Authorship Attribution](../../papers/arxiv-2610.19583/) | 2026-10-14 | 41 |
+| [PA1-OPD: One-Step Prefix-Augmented On-Policy Distillation for Language Model Pretraining](../../papers/arxiv-2610.19601/) | 2026-10-14 | 39 |
+| [Explore with Memory, Learn without It: In-Context Exploration and Self-Distillation for LLM Reasoning](../../papers/arxiv-2610.17734/) | 2026-10-13 | 51 |
+| [Unlocking Structured Pruning for Reasoning Language Models via Attention-Preserving MLP Trimming](../../papers/arxiv-2610.19121/) | 2026-10-13 | 46 |
+| [Agent-Reflex: Teaching Language Agents to Act Reflectively](../../papers/arxiv-2610.17953/) | 2026-10-13 | 45 |
+| [FRACTION: Fraud Explanation Generation via Agentic Graph Context Navigation](../../papers/arxiv-2610.18023/) | 2026-10-13 | 44 |
+| [Just Respect the Semantics: Image-Token Compression via Pre-LLM Semantic Variable-Resolution Tokenization and In-LLM Relevance Pruning](../../papers/arxiv-2610.18690/) | 2026-10-13 | 43 |
+| [Tracing Knowledge Lineage for Federated Unlearning under Mutual Distillation](../../papers/arxiv-2610.19072/) | 2026-10-13 | 41 |
+| [Outcome-Routed Distillation and Reinforcement Learning for Diffusion Language Models](../../papers/arxiv-2610.19271/) | 2026-10-13 | 38 |
 | [Proactive Agentic Orchestration](../../papers/arxiv-2610.13485/) | 2026-10-12 | 46 |
 | [COFFEQA: Counterfactual-Guided Few-Shot Distillation for LLM Question Answering](../../papers/arxiv-2610.12837/) | 2026-10-12 | 44 |
 | [BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation](../../papers/arxiv-2610.13285/) | 2026-10-12 | 44 |
 | [X-AVDD: Cross-Attentive Audio-Visual Dataset Distillation](../../papers/arxiv-2610.13687/) | 2026-10-12 | 43 |
 | [TernaryLLM: Ternarized Large Language Model](../../papers/arxiv-2406.07177/) | 2026-10-12 | 43 |
+| [Learning Incompressible 3D Flows from Sparse Samples: A Set Transformer Approach to Divergence-Free Kernel Fitting](../../papers/arxiv-2610.16645/) | 2026-10-12 | 42 |
 | [Zebra3D: Efficient Hybrid Foundation Models For Scalable 3D Reconstruction](../../papers/arxiv-2610.12727/) | 2026-10-12 | 40 |
 | [PreSTO: Predictive Subtree Prefetching for Fast LLM Power Sampling](../../papers/arxiv-2610.13171/) | 2026-10-12 | 40 |
 | [Defence against the dark arts of distillation: Unsupervised discovery of subliminal learning](../../papers/arxiv-2610.13536/) | 2026-10-12 | 40 |
+| [JustOPD: On-Policy Distillation from Autoregressive to Diffusion Language Models](../../papers/arxiv-2610.17397/) | 2026-10-12 | 39 |
 | [AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents](../../papers/arxiv-2610.13335/) | 2026-10-12 | 39 |
 | [MIRROR: Learning from the Other View for Multi-Modal Reasoning](../../papers/arxiv-2607.21552/) | 2026-10-12 | 38 |
 | [How Much Computation Does Every Forecast Need? Structured Block Skipping in Two Time-Series Foundation Models](../../papers/arxiv-2610.13208/) | 2026-10-12 | 38 |
+| [SARATHI: Decoupled Data-Free Probing and Adaptive Reconstruction for Structured LLM Pruning](../../papers/arxiv-2610.15514/) | 2026-10-11 | 51 |
+| [Heterogeneous Structured Pruning Under Resource Constraints for Hardware-Efficient Large Language Models](../../papers/arxiv-2610.15781/) | 2026-10-11 | 49 |
+| [GA-SVD: Generation-aware Singular Value Decomposition for LLM Compression](../../papers/arxiv-2610.15398/) | 2026-10-11 | 49 |
+| [WUSPruner: Second-Moment-Optimal Transforms for Structured Pruning](../../papers/arxiv-2610.15394/) | 2026-10-11 | 47 |
+| [LLM Value Functions for Credit Assignment in Agentic RL](../../papers/arxiv-2610.15840/) | 2026-10-11 | 41 |
+| [The Fragility and Dynamics of LLM Pruning-Recovery Steps](../../papers/arxiv-2610.15574/) | 2026-10-11 | 39 |
+| [A Sovereign, Indic-First, Reasoning Model](../../papers/arxiv-2610.15371/) | 2026-10-11 | 38 |
+| [EdgeLLM-Nano: Auditing Polar-Guided Key-Cache Compression and Consistency-Anchored Pruning on a 33.6 MB On-Device Language Model](../../papers/arxiv-2610.14475/) | 2026-10-10 | 45 |
+| [Reward-Aligned Distillation](../../papers/arxiv-2610.14572/) | 2026-10-10 | 41 |
+| [CUSE: Fine-Grained Multimodal Unlearning with Counterfactual Guidance and On-Policy Self-Distillation](../../papers/arxiv-2610.14763/) | 2026-10-10 | 40 |
 | [SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference](../../papers/arxiv-2610.12327/) | 2026-10-09 | 48 |
 | [3BASiL: An Algorithmic Framework for Sparse plus Low-Rank Compression of LLMs](../../papers/arxiv-2603.01376/) | 2026-10-09 | 47 |
 | [Generative Spatiotemporal Intent Sequence Recommendation via Implicit Reasoning in Amap](../../papers/arxiv-2605.28888/) | 2026-10-09 | 46 |

@@ -39,7 +39,7 @@ Sparse attention reduces the KV-cache traffic that dominates long-context LLM de
 ## 元数据
 
 - 作者：Jiwon Song, Yoongon Kim, Jae-Joon Kim
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-13；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

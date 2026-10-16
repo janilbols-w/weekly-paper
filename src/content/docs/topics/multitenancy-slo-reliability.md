@@ -5,11 +5,12 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **35** 篇。
+累计收录 **36** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](../../papers/arxiv-2610.19405/) | 2026-10-15 | 42 |
+| [Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](../../papers/arxiv-2610.19405/) | 2026-10-14 | 42 |
+| [Dissecting the Carbon-SLO Tension in Geo-Distributed LLM Serving](../../papers/arxiv-2610.14571/) | 2026-10-10 | 45 |
 | [Evaluating Inference Compute for Generative AI: A Framework for Enterprise Workloads](../../papers/arxiv-2610.07094/) | 2026-10-07 | 54 |
 | [AEGIS: Runtime-Guided GPU Collocation for Multi-Tenant Deep Learning Training](../../papers/arxiv-2508.19073/) | 2026-10-07 | 44 |
 | [From Overloaded to Guaranteed: High-Throughput Multi-SLO Enforcement for LoRA-Assisted On-Premise LLM Deployment](../../papers/arxiv-2610.04956/) | 2026-10-06 | 45 |

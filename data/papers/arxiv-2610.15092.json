@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.15092",
+  "title": "VLCQ: Post-training quantization for deep neural networks using variable length coding",
+  "abstract": "Quantization plays a crucial role in efficiently deploying deep learning models on resource-constrained devices. Post-training quantization does not require access to the original dataset or retraining the full model. Current methods that achieve high performance close to baseline results typically require INT8 fixed-point integers. However, achieving higher model compression with lower bit-widths often leads to significant performance degradation. In this paper, we propose VLCQ, a post-training quantization method that relaxes the fixed-point encoding constraint, enabling more flexible exploration of quantization techniques through variable-length encoding. This approach achieves competitive or improved performance while reducing bit-widths, without requiring access to training data or model fine-tuning. Extensive experiments on image classification, segmentation, and object detection demonstrate that VLCQ improves model compression and accuracy compared with state-of-the-art post-training quantization approaches. For per-channel quantization, VLCQ surpasses FP32 accuracy and Piece-Wise Linear Quantization (PWLQ) on most evaluated models, achieving up to 6x compression compared with FP32 and up to 1.7x compared with PWLQ. When prioritizing compression with limited accuracy loss, VLCQ achieves up to 12.25x compression compared with FP32 with less than 4% performance degradation. For per-tensor quantization, VLCQ is competitive with Data-Free Quantization (DFQ), while providing greater flexibility to achieve lower bit rates across different tasks and models.",
+  "url": "http://arxiv.org/abs/2610.15092v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.15092v1",
+  "published": "2026-10-10",
+  "updated": "2026-10-10",
+  "authors": [
+    "Reem Abdel-Salam",
+    "Ahmed H. Abdel-Gawad",
+    "Amr G. Wassal"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.PF"
+  ],
+  "doi": "10.1016/j.future.2024.107654",
+  "venue": "",
+  "journal_ref": "Reem Abdel-Salam, Ahmed H. Abdel-Gawad, and Amr G. Wassal. VLCQ: Post-training quantization for deep neural networks using variable length coding. Future Generation Computer Systems, 166, 107654, 2025",
+  "comment": "Published in Future Generation Computer Systems, Volume 166 (2025), Article 107654",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int8",
+    "quantization"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 6
+  },
+  "score_evidence": [
+    "taxonomy keywords: int8, quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Quantization plays a crucial role in efficiently deploying deep learning models on resource-constrained devices.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.15092v1",
+      "url": "http://arxiv.org/abs/2610.15092v1"
+    }
+  ]
+}

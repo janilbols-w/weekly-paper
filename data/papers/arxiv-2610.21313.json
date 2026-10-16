@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2610.21313",
+  "title": "PSA: A Pruning-Friendly Sparse-Aware Accelerator for Efficient Sparse Convolution in SNNs",
+  "abstract": "Spiking neural networks (SNNs) are promising for energy-efficient artificial intelligence due to their event-driven sparse computation, and neuron pruning can further reduce redundant operations. However, in practical hardware accelerators, spike sparsity and pruning-induced sparsity produce highly irregular sparse workloads that are difficult to execute efficiently. Existing approaches do not jointly support sparse-input execution, low-overhead sparse convolution lowering and pruning-friendly execution. This paper presents PSA, a Pruning-friendly Sparse-aware Accelerator for efficient sparse convolution in SNNs. PSA features a Sparse-Aware Merge-Accumulation (SAMA) dataflow that aligns sparse spike indices and converts irregular activations into continuous computation streams for efficient sparse convolution execution. It further introduces a Sparse Implicit Group-wise im2col (SIG-im2col) convolution lowering mechanism that converts sparse convolution into SpMM on-chip with low mapping cost and memory overhead. In addition, PSA integrates a lightweight pruning-friendly gating mechanism to directly support pruned SNNs. Results on ResNet-18/CIFAR-10 show that PSA achieves a 4.45x improvement in energy efficiency and an 18.52x reduction in energy-delay product (EDP) over the dense baseline.",
+  "url": "https://arxiv.org/abs/2610.21313",
+  "pdf_url": "https://arxiv.org/pdf/2610.21313",
+  "published": "2026-10-15",
+  "updated": "2026-10-16",
+  "authors": [
+    "Sanhe Fu",
+    "Kainan Wang",
+    "Bo Wang",
+    "Aili Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "Accepted to IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS 2026)",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [
+    "hardware-edge"
+  ],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Spiking neural networks (SNNs) are promising for energy-efficient artificial intelligence due to their event-driven sparse computation, and neuron pruning can further reduce redundant operations.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-16T04:43:54+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2610.21313v1",
+      "url": "http://arxiv.org/abs/2610.21313v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.21313",
+      "url": "https://arxiv.org/abs/2610.21313"
+    }
+  ]
+}

@@ -5,15 +5,36 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **188** 篇。
+累计收录 **209** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PrefixFlow: Training-Time KV Caching for Schedule-Level Prefix Reuse in LLM RL Training](../../papers/arxiv-2606.01143/) | 2026-10-16 | 40 |
+| [Language Models Can Control Their Own Attention](../../papers/arxiv-2609.02737/) | 2026-10-16 | 40 |
 | [OScaR: The Occam's Razor for Extreme KV Cache Quantization in LLMs and Beyond](../../papers/arxiv-2605.19660/) | 2026-10-15 | 55 |
-| [Joint Subspace Sparse Attention for Efficient Long-Context Decoding](../../papers/arxiv-2610.19026/) | 2026-10-15 | 39 |
+| [When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill](../../papers/arxiv-2610.21500/) | 2026-10-15 | 44 |
+| [Range: Decoupling KV-Cache Reuse Granularity from Storage Work](../../papers/arxiv-2610.21241/) | 2026-10-15 | 44 |
+| [Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing](../../papers/arxiv-2610.22172/) | 2026-10-15 | 44 |
+| [PriorityFEC: Deadline-Aware Streaming FEC for KV-Cache Handoff in Edge Multi-Agent Systems](../../papers/arxiv-2610.21390/) | 2026-10-15 | 43 |
 | [A Simple Plug-in for Improving Eviction-Based KV Cache Compression](../../papers/arxiv-2605.23258/) | 2026-10-15 | 38 |
+| [Delta Tokenizer: Reference-Identical Tokenization of Session Deltas and Segment-Parallelism for Long Prompts on Multicore CPUs](../../papers/arxiv-2610.19801/) | 2026-10-14 | 43 |
+| [Energy Consumption Analysis of Discrete Diffusion and Autoregressive Language Models](../../papers/arxiv-2610.19855/) | 2026-10-14 | 39 |
+| [SparPR: Runtime KV-Cache Recovery for Resource-Constrained LLM Inference on Consumer Hardware](../../papers/arxiv-2610.18140/) | 2026-10-13 | 55 |
+| [BELT : BEhavior-Aligned Low-Rank KV Cache Compression with Learned Top-k Rank Allocation](../../papers/arxiv-2610.17966/) | 2026-10-13 | 54 |
+| [MultiAlloc: Budget-Aware Precision Allocation for KV Cache Quantization](../../papers/arxiv-2610.18642/) | 2026-10-13 | 48 |
+| [An Optical KV Cache Network for Disaggregated LLM Serving](../../papers/arxiv-2610.18444/) | 2026-10-13 | 42 |
+| [Virtual Head Attention](../../papers/arxiv-2610.17959/) | 2026-10-13 | 39 |
+| [Joint Subspace Sparse Attention for Efficient Long-Context Decoding](../../papers/arxiv-2610.19026/) | 2026-10-13 | 39 |
 | [KV-Repurpose: A Testbed for Evaluating Non-Prefix KV-Cache Reuse](../../papers/arxiv-2610.13060/) | 2026-10-12 | 49 |
+| [MLAfication: Efficiently Enabling High-Fidelity MLA for Modern LLMs](../../papers/arxiv-2610.17202/) | 2026-10-12 | 47 |
+| [Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models](../../papers/arxiv-2610.16165/) | 2026-10-12 | 44 |
 | [One Model to Loop Them All: Elastic Latent Recurrence for Language Models](../../papers/arxiv-2610.12582/) | 2026-10-12 | 41 |
+| [Hashrope: A Persistent Data Structure for Mechanisms of LLM Context Management](../../papers/arxiv-2610.16144/) | 2026-10-12 | 39 |
+| [E8 Lattice Key Quantization for Low-Bit KV-Cache Compression](../../papers/arxiv-2610.15384/) | 2026-10-11 | 46 |
+| [Accelerating Cross-Model LLM Inference via Attention Map Reuse](../../papers/arxiv-2610.14688/) | 2026-10-10 | 46 |
+| [Swarm Telepathy: Prefill-Free KV-Cache Transfer Across Families](../../papers/arxiv-2610.15095/) | 2026-10-10 | 43 |
+| [Energy-Aware Agentic Orchestration for Multi-Site Service Deployment](../../papers/arxiv-2610.14793/) | 2026-10-10 | 40 |
+| [Vesta: Queueing-Aware LLM Scheduling for Real-World Workloads](../../papers/arxiv-2610.14686/) | 2026-10-10 | 38 |
 | [RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation](../../papers/arxiv-2610.11358/) | 2026-10-09 | 54 |
 | [SparKV: Overhead-Aware KV Cache Loading for Efficient On-Device LLM Inference](../../papers/arxiv-2604.21231/) | 2026-10-09 | 50 |
 | [GUI-KV: Efficient GUI Agents via KV Cache with Spatio-Temporal Awareness](../../papers/arxiv-2510.00536/) | 2026-10-09 | 49 |

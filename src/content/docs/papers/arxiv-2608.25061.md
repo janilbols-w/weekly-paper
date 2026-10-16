@@ -39,7 +39,7 @@ GPUs increasingly accelerate database systems, but query-specific peak performan
 ## 元数据
 
 - 作者：Gokul Karthik Kumar, Yotam Perlitz, Corey Lammie, Andrea Giovannini, Katja Hose
-- 发布：2026-08-25；更新：2026-08-28
+- 发布：2026-08-25；更新：2026-10-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

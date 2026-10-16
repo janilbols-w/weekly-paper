@@ -39,7 +39,7 @@ Assigning routine tasks to cheaper large language model (LLM) providers can redu
 ## 元数据
 
 - 作者：Jiayuan Liu, Mingyu Guo, Jiarui Gan, Vincent Conitzer
-- 发布：2026-10-15；更新：2026-10-15
+- 发布：2026-10-13；更新：2026-10-15
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
