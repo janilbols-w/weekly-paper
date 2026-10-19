@@ -39,7 +39,7 @@ Autoregressive (AR) grounding models serialize spatial predictions, introducing 
 ## 元数据
 
 - 作者：Qize Yu, Lianrui Fan, Bowen Ping, Xini Ding, Zetian Song, Junbo Niu, Kaixuan Wang, Tianxing Chen, Yue Chen, Minghua He, Yuran Wang, Jie Huang, Haojun Zhang, Min Chen, Hao Li, Wenxuan Song, Ruihai Wu, Xianming Liu, Shilong Liu, Shuchang Zhou, Ping Luo, Shiyu Huang
-- 发布：2026-10-01；更新：2026-10-01
+- 发布：2026-10-01；更新：2026-10-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

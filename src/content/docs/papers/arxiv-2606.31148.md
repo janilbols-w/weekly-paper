@@ -39,7 +39,7 @@ description: "3D Visual Grounding (3DVG) aims to localize target objects in 3D s
 ## 元数据
 
 - 作者：Duc Cao Dinh, Khai Le-Duc, Florent Draye, Chris Ngo, Terry Jingchen Zhang, Bernhard Sch\"olkopf, Zhijing Jin
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-10-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/leduckhai/PruneGround](https://github.com/leduckhai/PruneGround)
 - 阅读深度：metadata

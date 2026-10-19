@@ -5,10 +5,12 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **319** 篇。
+累计收录 **321** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LeanTTA: A Backpropagation-Free and Stateless Approach to Quantized Test-Time Adaptation on Edge Devices](../../papers/arxiv-2503.15889/) | 2026-10-19 | 44 |
+| [Noise-shaped Sampling and Annealing for Scalable On-the-edge Training of Binary and Ternary AI Models](../../papers/arxiv-2610.22621/) | 2026-10-19 | 41 |
 | [Fractional Power-of-Two Quantization for Efficient and Effective Multiplier-Free LLM Inference](../../papers/arxiv-2610.21257/) | 2026-10-15 | 46 |
 | [Compiling Multi-Threshold Operators for Quantized Non-Monotonic and Fine-Granular Activations in Custom-Tailored DNN Accelerators](../../papers/arxiv-2610.21825/) | 2026-10-15 | 43 |
 | [MFSA: A Multi-Format Systolic Array with Native Micro Scaling Support](../../papers/arxiv-2610.19645/) | 2026-10-14 | 53 |

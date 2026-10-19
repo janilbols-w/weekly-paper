@@ -5,7 +5,7 @@ description: "Speculative Decoding (SD) has demonstrated its efficacy in acceler
 
 **评分：46/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
 
-[论文原文](http://arxiv.org/abs/2610.18735v1) · [PDF](https://arxiv.org/pdf/2610.18735v1)
+[论文原文](https://arxiv.org/abs/2610.18735) · [PDF](https://arxiv.org/pdf/2610.18735)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ Speculative Decoding (SD) has demonstrated its efficacy in accelerating large la
 ## 元数据
 
 - 作者：Yuqi Huang, Xingyao Li, Yunlong Hou, Fengzhuo Zhang, Jiachun Pan, Vincent Y. F. Tan
-- 发布：2026-10-13；更新：2026-10-13
-- 来源：arXiv；Venue：未确认
+- 发布：2026-10-13；更新：2026-10-19
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

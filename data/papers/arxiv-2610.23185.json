@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.23185",
+  "title": "A Stronger Teacher Within: Strengthening MoE Models via On-Policy Bidirectional Distillation",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has substantially improved Mixture-of-Experts (MoE) LLMs, but its outcome-level rewards provide only sparse supervision. On-Policy Distillation offers dense token-level feedback, yet requires a stronger compatible teacher, while on-policy self-distillation relies on hand-designed privileged information. We observe that the MoE architecture itself offers a way to resolve this dilemma, as increasing the activation budget per token exposes latent expert capacity and yields a potentially stronger teacher within the model. However, naive expansion degrades performance because newly co-activated experts are not optimized to work together. We therefore propose MoEvolve, a bidirectional distillation framework following a recovery-then-improvement strategy: we first restore the activation-expanded high-$k$ model and further strengthen it by exploiting its additional active capacity, then reverse the direction of distillation to transfer the enhanced capabilities back into the original low-$k$ configuration, retaining its inference-time activation budget. Across diverse MoE models and benchmarks, MoEvolve improves the initial models by up to $22.2$ domain-average points and outperforms same-budget RLVR baselines by up to $6.5$ points. Notably, the final low-$k$ models often surpass their activation-expanded teachers.",
+  "url": "https://arxiv.org/abs/2610.23185",
+  "pdf_url": "https://arxiv.org/pdf/2610.23185",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Haoyu Chen",
+    "Jun Bai",
+    "Yang Liu",
+    "Jianfei Zhang",
+    "Wenge Rong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) has substantially improved Mixture-of-Experts (MoE) LLMs, but its outcome-level rewards provide only sparse supervision.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.23185",
+      "url": "https://arxiv.org/abs/2610.23185"
+    }
+  ]
+}

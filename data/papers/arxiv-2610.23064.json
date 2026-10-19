@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2610.23064",
+  "title": "BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs",
+  "abstract": "Fine-grained Mixture-of-Experts (MoE) is the de facto architecture for scaling large language models. However, dynamic expert load imbalance causes severe memory fluctuations that degrade training efficiency. Existing systems rely on static memory provisioning: they either over-provision, leaving GPU memory idle during normal execution, or under- provision, inviting out-of-memory crashes and costly manual rollbacks when load spikes occur. To address these challenges, we propose BaGuaLu-2, a large-scale MoE training system that eliminates this dilemma through flexible provisioning. By transforming memory allocation from a static, one-time tuning choice into a continuous and fine-grained control. BaGuaLu-2 grants exact activation memory on demand for each training batch. Furthermore, it offsets any dynamic management overhead through system optimizations. BaGuaLu-2 demonstrates exceptional scalability, training a model with 1040 billion parameters across 12,288 GPUs while sustaining over 2 EFlops at 35% MFU. Compared with state-of-the-art systems, BaGuaLu-2 delivers 1.14x and 1.13x average throughput improvements over Megatron-Kuai and AdaPipe, respectively.",
+  "url": "https://arxiv.org/abs/2610.23064",
+  "pdf_url": "https://arxiv.org/pdf/2610.23064",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Mingshu Zhai",
+    "Minkun Guo",
+    "Hongrui Lian",
+    "Shuangyu Li",
+    "Qi Zhang",
+    "Chen Hu",
+    "Xiawei Du",
+    "Yuyang Jin",
+    "Zan Zong",
+    "Jidong Zhai"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Fine-grained Mixture-of-Experts (MoE) is the de facto architecture for scaling large language models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.23064",
+      "url": "https://arxiv.org/abs/2610.23064"
+    }
+  ]
+}

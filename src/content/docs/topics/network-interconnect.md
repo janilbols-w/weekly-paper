@@ -5,10 +5,11 @@ description: "Network, RDMA & Interconnect"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > 网络、RDMA 与互联**
 
-累计收录 **9** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Agentic AI for Heterogeneous System Design Across Chip, Scale-Up, and Scale-Out Domains](../../papers/arxiv-2610.23724/) | 2026-10-19 | 45 |
 | [LizTail: Unifying Shape Adaptation and Spatial Parallelism with Segment-Reconfigurable Systolic Arrays](../../papers/arxiv-2610.16159/) | 2026-10-12 | 43 |
 | [Deploying RDMA for Large-Scale Inference and Training Workloads](../../papers/arxiv-2610.12815/) | 2026-10-12 | 40 |
 | [A Physics-Guided Transformer Framework for Electromigration Analysis in Multi-Segment Interconnects](../../papers/arxiv-2610.06464/) | 2026-10-06 | 38 |

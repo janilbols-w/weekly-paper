@@ -39,7 +39,7 @@ Deep Neural Networks (DNNs) inherently exhibit a degree of robustness to bit-lev
 ## 元数据
 
 - 作者：Toon Vinck, Na\"in Jonckers, Jaro De Roose, Jeffrey Prinzie, Peter Karsmakers
-- 发布：2026-10-05；更新：2026-10-05
+- 发布：2026-10-05；更新：2026-10-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

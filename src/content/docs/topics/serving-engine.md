@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **98** 篇。
+累计收录 **99** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium](../../papers/arxiv-2610.23047/) | 2026-10-19 | 39 |
 | [HAServe: Horizon-Aware Scheduling and Memory Co-Design for Efficient LLM Serving](../../papers/arxiv-2605.08581/) | 2026-10-16 | 53 |
 | [Quota-Based Aging for Prediction-Guided Scheduling in LLM Serving](../../papers/arxiv-2610.17795/) | 2026-10-13 | 50 |
 | [Taking Tokenization off the Host for Agentic LLM Serving](../../papers/arxiv-2610.13325/) | 2026-10-12 | 44 |
@@ -89,7 +90,7 @@ description: "Serving Engines & Runtimes"
 | [RL-Index: Reinforcement Learning for Retrieval Index Reasoning](../../papers/arxiv-2606.16316/) | 2026-08-17 | 39 |
 | [Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving](../../papers/arxiv-2608.15762/) | 2026-08-16 | 50 |
 | [P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving](../../papers/arxiv-2608.15171/) | 2026-08-15 | 47 |
-| [Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 39 |
+| [Online Inference for Quantile Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 39 |
 | [Potential Applications of HBF in LLM Serving Systems](../../papers/arxiv-2608.13127/) | 2026-08-13 | 41 |
 | [Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling](../../papers/arxiv-2508.03611/) | 2026-08-12 | 46 |
 | [HBF Sucks? A Full-Stack Characterization of High-Bandwidth Flash for KV-Centric LLM Serving](../../papers/arxiv-2608.11668/) | 2026-08-12 | 40 |

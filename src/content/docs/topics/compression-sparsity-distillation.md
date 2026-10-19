@@ -5,10 +5,24 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **619** 篇。
+累计收录 **632** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SETAREH Transform: A Sorting-Assisted Haar-Wavelet Sparsification Method for Approximate Inner-Product Computation](../../papers/arxiv-2610.23338/) | 2026-10-19 | 48 |
+| [Learning Agentic Time Series Forecasting via Trajectory Distillation and Memory-Based Reinforcement Learning](../../papers/arxiv-2602.13802/) | 2026-10-19 | 46 |
+| [Prune the Leaky Neurons: Mitigating Private Data Leakage in Fine-Tuned LLMs via Joint-Embedding-Guided Pruning](../../papers/arxiv-2610.22792/) | 2026-10-19 | 42 |
+| [Predicting Privileged Information Effectiveness for On-Policy Self-Distillation](../../papers/arxiv-2610.22512/) | 2026-10-19 | 42 |
+| [Prism Attention: Proposal-Refined Index Sharing Mechanism for Efficient LLMs Inference](../../papers/arxiv-2610.22985/) | 2026-10-19 | 41 |
+| [Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes](../../papers/arxiv-2606.27210/) | 2026-10-19 | 41 |
+| [Group-Graph Policy Optimization for Long-Horizon Agentic Reinforcement Learning](../../papers/arxiv-2606.22995/) | 2026-10-19 | 41 |
+| [A Stronger Teacher Within: Strengthening MoE Models via On-Policy Bidirectional Distillation](../../papers/arxiv-2610.23185/) | 2026-10-19 | 41 |
+| [Uncertainty-Aware Budget Allocation for Efficient LLM Tree Search](../../papers/arxiv-2610.22858/) | 2026-10-19 | 39 |
+| [Tree-Aware Posterior Distillation for Long-Horizon Agentic Reinforcement Learning](../../papers/arxiv-2610.23181/) | 2026-10-19 | 39 |
+| [PragReST: Self-Reinforcing Counterfactual Reasoning for Pragmatic Language Understanding](../../papers/arxiv-2606.18624/) | 2026-10-19 | 39 |
+| [MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation](../../papers/arxiv-2610.23234/) | 2026-10-19 | 39 |
+| [Learning the Shared Latent Structure of Cryo-EM Inverse Problems](../../papers/arxiv-2610.22523/) | 2026-10-19 | 39 |
+| [HydraLLM: Adaptive Width Slicing for Elastic Text and Vision-Language Models](../../papers/arxiv-2610.23455/) | 2026-10-19 | 39 |
 | [Rethinking Calibration for High-Sparsity LLM Pruning: From Single Sources to Capability Coverage](../../papers/arxiv-2606.03328/) | 2026-10-16 | 49 |
 | [GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers](../../papers/arxiv-2610.22014/) | 2026-10-16 | 44 |
 | [Locking Pretrained Weights via Deep Low-Rank Residual Distillation](../../papers/arxiv-2605.10777/) | 2026-10-16 | 42 |
@@ -367,7 +381,6 @@ description: "Compression, Sparsity & Distillation"
 | [PatchFormer: A Patch-Based Time Series Foundation Model with Hierarchical Masked Reconstruction and Cross-Domain Transfer Learning for Zero-Shot Multi-Horizon Forecasting](../../papers/arxiv-2601.20845/) | 2026-09-09 | 46 |
 | [SymbolicLight V1: Spike-Gated Dual-Path Language Modeling at High Encoder Spike Sparsity](../../papers/arxiv-2605.21333/) | 2026-09-09 | 45 |
 | [CrisisKD: Five-Stage Knowledge Distillation for Aspect-Level Sentiment and Emotion Analysis in Crisis Discourse](../../papers/arxiv-2609.05757/) | 2026-09-09 | 45 |
-| [SignDino: Self-Supervised Sign Language Representation Learning via Temporal-Axis Self-Distillation](../../papers/arxiv-2609.06296/) | 2026-09-09 | 44 |
 | [KDFlow: A User-Friendly and Efficient Knowledge Distillation Framework for Large Language Models](../../papers/arxiv-2603.01875/) | 2026-09-09 | 44 |
 | [Damage-Aware Bandit Pruning for Vision and Language Transformers](../../papers/arxiv-2609.05448/) | 2026-09-09 | 44 |
 | [PAC-CF: Calibrating Irreversible Frontier Pruning in LLM-Guided Search](../../papers/arxiv-2604.14345/) | 2026-09-09 | 43 |

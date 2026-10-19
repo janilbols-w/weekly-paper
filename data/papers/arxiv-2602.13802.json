@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2602.13802",
+  "title": "Learning Agentic Time Series Forecasting via Trajectory Distillation and Memory-Based Reinforcement Learning",
+  "abstract": "Recent agentic time series forecasting (TSF) approaches use large language models (LLMs) to autonomously orchestrate analytical and forecasting tools and reason about temporal patterns using the resulting evidence. However, many such approaches rely on powerful LLMs in training-free, prompt-driven workflows, leaving open whether smaller models can learn these interaction and reasoning capabilities. In this paper, we introduce Cast-R1, an 8Bparameter agentic forecasting model trained through trajectory distillation and multi-turn reinforcement learning with structured memory. First, we develop a forecasting agent harness with specialized analysis and prediction tools to generate multi-turn interaction trajectories using a teacher LLM, which are subsequently evaluated and selected for supervised fine-tuning. Second, we apply group relative policy optimization (GRPO) across multi-turn forecasting episodes, with structured memory preserving diagnostic evidence and intermediate forecasts for state construction. Rewards based on prediction accuracy and temporal structure guide tool selection, model routing, and forecast refinement. A difficulty-aware curriculum combines sample filtering and progressive sample ordering during training. Extensive experiments on multiple datasets demonstrate the effectiveness of Cast-R1. These findings highlight the potential of forecasting-specific post-training to equip smaller LLMs with multi-turn, tool-augmented forecasting capabilities within structured workflows.",
+  "url": "https://arxiv.org/abs/2602.13802",
+  "pdf_url": "https://arxiv.org/pdf/2602.13802",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Xiaoyu Tao",
+    "Mingyue Cheng",
+    "Yaguo Liu",
+    "Xingpeng Gao",
+    "Qingsong Wen",
+    "Shijin Wang",
+    "Enhong chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Recent agentic time series forecasting (TSF) approaches use large language models (LLMs) to autonomously orchestrate analytical and forecasting tools and reason about temporal patterns using the resulting evidence.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.13802",
+      "url": "https://arxiv.org/abs/2602.13802"
+    }
+  ]
+}

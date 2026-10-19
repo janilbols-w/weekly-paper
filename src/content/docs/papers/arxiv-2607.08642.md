@@ -1,15 +1,15 @@
 ---
 title: "DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding"
-description: "Speculative decoding accelerates LLM inference by drafting tokens and verifying them in parallel."
+description: "Speculative decoding speeds up large language model inference: a small drafter proposes several tokens, and the target model verifies them in one parallel pass."
 ---
 
-**评分：51/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
+**评分：44/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
 
 [论文原文](https://arxiv.org/abs/2607.08642) · [PDF](https://arxiv.org/pdf/2607.08642)
 
 ## 一句话摘要
 
-Speculative decoding accelerates LLM inference by drafting tokens and verifying them in parallel.
+Speculative decoding speeds up large language model inference: a small drafter proposes several tokens, and the target model verifies them in one parallel pass.
 
 ## 为什么值得关注
 
@@ -17,15 +17,15 @@ Speculative decoding accelerates LLM inference by drafting tokens and verifying 
 
 ## 摘要原文
 
-Speculative decoding accelerates LLM inference by drafting tokens and verifying them in parallel. Block-diffusion drafters such as DFlash model only per-position marginals, and tree methods such as DDTree expand candidate trees from those marginals. The released Domino drafter adds a GRU-based causal correction making each draft token's distribution path-dependent, a structure DDTree's factorized formulation cannot represent. We introduce DominoTree, a training-free best-first draft tree scored by Domino's conditional (non-factorized) correction along each root-to-node path, made practical by restricting the per-node correction to a candidate top-M. We evaluate it on eight benchmarks in a single-stream harness, and in SGLang, where it runs as an out-of-tree plugin against AR, DFlash, EAGLE-3 and Domino under identical flags. DominoTree attains the highest mean accepted length in every serving cell - two model sizes, single-request and concurrent load, context to 32K - and the highest Overall accepted length at every temperature in the research harness (21 of 24 per-dataset cells). A three-arm decomposition holding drafter, budget and verifier fixed separates the gain from applying the correction at all (+10.1% accepted length) from that of recomputing it along each candidate's realized path (+4.7% more), the part this paper adds. Where the round is verify-dominated, throughput follows: up to 7.3x over AR on Qwen3-8B, beating the released Domino decoder at its CUDA-graph best at every temperature, and inside SGLang winning single-request throughput by +12% over Domino on Qwen3-8B. On HELMET long context it beats Domino by +29-36% accepted length and +10-34% throughput at every length and both model sizes. Past a memory-constrained card's admission cap the chain wins goodput, and at our longest context, where prefill dominates, our lead over EAGLE-3 narrows to a tie.
+Speculative decoding speeds up large language model inference: a small drafter proposes several tokens, and the target model verifies them in one parallel pass. Drafting a tree lets the target verify many alternative continuations at once. DDTree builds such trees from the block-diffusion drafter DFlash, but scores each position independently of the tokens earlier in its branch; Domino conditions on those tokens but drafts only a single chain. DominoTree combines the two: a training-free best-first tree scored by Domino's path-dependent causal correction, restricted to top-M candidates. In a research harness at temperature zero, it averages 5.33x speedup over autoregressive (AR) decoding on Qwen3-4B and 6.89x on Qwen3-8B, peaking at 8.77x; across temperatures it is 20-26% faster than Domino on Qwen3-4B and 27-36% on Qwen3-8B, and 11-20% faster than the stronger of DDTree and its cost-aware variant CaDDTree. A controlled decomposition attributes +10.1% (Qwen3-4B) and +10.7% (Qwen3-8B) accepted length to the correction, and +4.7% and +4.4% to conditioning on the realized path. Served in SGLang on one RTX 5090, it reaches 4.11x and 4.83x AR at batch size 1, 1.17x and 1.09x the speed of Domino's chain, and up to 1.71x AR on 8K-token HELMET summarization, 14-21% above the chain. The lead holds at 2 concurrent requests but reverses from 8 onward, where the chain sustains more goodput despite DominoTree's 28% higher acceptance. DominoTree accepts more tokens than the chain in every serving setting. On the hybrid Gated-DeltaNet Qwen3.6-27B, correct output requires tree-aware recurrent verification; with it, DominoTree matches the chain at batch size 1 (4.58x versus 4.54x AR) and reaches up to 2.11x AR at long context, 15% above the chain.
 
 ## 质量评分
 
 | 维度 | 得分 |
 |---|---:|
 | relevance | 16 |
-| novelty | 7 |
-| rigor | 11 |
+| novelty | 6 |
+| rigor | 5 |
 | practical impact | 12 |
 | reproducibility | 2 |
 | credibility | 3 |
@@ -39,7 +39,7 @@ Speculative decoding accelerates LLM inference by drafting tokens and verifying 
 ## 元数据
 
 - 作者：Saw S. Lin (Zhiqi Zhang), Jyh-Shing Roger Jang
-- 发布：2026-08-19；更新：2026-08-19
+- 发布：2026-08-19；更新：2026-10-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

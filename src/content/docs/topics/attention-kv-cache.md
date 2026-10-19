@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **209** 篇。
+累计收录 **213** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs](../../papers/arxiv-2610.23503/) | 2026-10-19 | 46 |
+| [BS-Spec: BFP-Based Bit-Sharing for Self-Speculative LLM Decoding with LUT-Driven Mixed-Precision Acceleration](../../papers/arxiv-2610.22877/) | 2026-10-19 | 46 |
+| [MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches](../../papers/arxiv-2610.22579/) | 2026-10-19 | 45 |
+| [SAFETYEDIT: Sparse Internal Targets with Prompt-Wide Control for LLM Jailbreak Backdoors](../../papers/arxiv-2610.22640/) | 2026-10-19 | 41 |
 | [PrefixFlow: Training-Time KV Caching for Schedule-Level Prefix Reuse in LLM RL Training](../../papers/arxiv-2606.01143/) | 2026-10-16 | 40 |
 | [Language Models Can Control Their Own Attention](../../papers/arxiv-2609.02737/) | 2026-10-16 | 40 |
 | [OScaR: The Occam's Razor for Extreme KV Cache Quantization in LLMs and Beyond](../../papers/arxiv-2605.19660/) | 2026-10-15 | 55 |

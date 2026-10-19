@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **108** 篇。
+累计收录 **110** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [On the SPOT: Enhancing Speculative Decoding for Diffusion Language Models via Commit-Order Prediction](../../papers/arxiv-2610.22543/) | 2026-10-19 | 47 |
+| [DLite: History-free Speculative Decoding for Agentic AI](../../papers/arxiv-2610.23787/) | 2026-10-19 | 43 |
 | [HyCo: Hybrid Drafting for Cost-Efficient Mobile-Cloud Speculative Decoding](../../papers/arxiv-2610.21436/) | 2026-10-15 | 43 |
 | [LEAP: Unlocking dLLM Parallelism via Lookahead Early-Convergence Token Detection](../../papers/arxiv-2605.10980/) | 2026-10-15 | 42 |
 | [LoopAhead: Speculating Ahead for Faster Decoding in Looped Language Models](../../papers/arxiv-2610.21594/) | 2026-10-15 | 40 |
@@ -99,7 +101,7 @@ description: "Speculative Decoding"
 | [HiViS: Hiding Visual Tokens from the Drafter for Speculative Decoding in Vision-Language Models](../../papers/arxiv-2509.23928/) | 2026-08-25 | 43 |
 | [GRAFT: Adaptive DLM-Based Draft Tree Construction with Target-Distilled Edge Scoring](../../papers/arxiv-2608.20375/) | 2026-08-24 | 41 |
 | [Self-Speculation for Faster Reasoning Models](../../papers/arxiv-2608.20359/) | 2026-08-24 | 39 |
-| [DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding](../../papers/arxiv-2607.08642/) | 2026-08-19 | 51 |
+| [DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding](../../papers/arxiv-2607.08642/) | 2026-08-19 | 44 |
 | [CForce: Boosting Parallel Decoding for dLLMs via Consistency Forcing](../../papers/arxiv-2608.13925/) | 2026-08-17 | 44 |
 | [Accelerating Time Series Foundation Models with Speculative Decoding](../../papers/arxiv-2511.18191/) | 2026-08-13 | 43 |
 | [Ripple-Pivot Search: Active Parallel Decoding for Diffusion Large Language Models](../../papers/arxiv-2608.11742/) | 2026-08-12 | 48 |

@@ -5,10 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **111** 篇。
+累计收录 **115** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [An Efficient Approach to Beetle Damage Detection of Banana Using Deep Learning](../../papers/arxiv-2610.23661/) | 2026-10-19 | 40 |
+| [Flat Loss, Evolving Features: Grokking in Modular Addition](../../papers/arxiv-2610.22593/) | 2026-10-19 | 39 |
+| [Binding-Specific Relearning Savings for Test-Time Continual Learning](../../papers/arxiv-2610.22381/) | 2026-10-19 | 39 |
+| [Self-Evolving Coding Agents via Harness-Policy Optimization](../../papers/arxiv-2610.22791/) | 2026-10-19 | 38 |
 | [Circuit Claims Depend on What Is Extracted and How It Is Compared](../../papers/arxiv-2607.18921/) | 2026-10-16 | 41 |
 | [Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts](../../papers/arxiv-2610.22043/) | 2026-10-15 | 39 |
 | [RoleQ: Role-Aligned Scales for Converting Language Models to Ternary](../../papers/arxiv-2610.21808/) | 2026-10-15 | 38 |

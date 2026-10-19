@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.23072",
+  "title": "ScaleRAN: A Runtime for Elastic GPU Resource Management in AI-RAN",
+  "abstract": "AI-RAN is driving the convergence of radio access network (RAN) processing and artificial intelligence (AI) workloads on GPU-enabled computing platforms, ranging from GPU-accelerated base stations to cloud-native infrastructures. While GPU acceleration improves the efficiency of virtualized RAN functions, the computational demand of latency-critical baseband processing varies with traffic load, creating transient spare GPU capacity that can be reclaimed by co-located AI applications. Existing GPU-sharing mechanisms rely on coarse-grained hardware partitioning or static resource allocation, limiting their ability to adapt to slot-level workload fluctuations while preserving strict timing requirements. This paper presents ScaleRAN, a node-local runtime for elastic GPU resource management in AI-RAN. ScaleRAN leverages NVIDIA Green Contexts to dynamically partition Streaming Multiprocessors (SMs) between RAN and AI workloads through a ladder of pre-created GPU partitions, enabling low-overhead resource reallocation at RAN slot granularity. The proposed runtime naturally supports Open-RAN (O-RAN) O-Cloud deployments, one representative AI-RAN deployment scenario. To drive these reallocations, we propose a reactive controller inspired by Kubernetes autoscaling and a proactive controller based on quantile regression and conformal prediction. We also develop LDPCSim, a GPU-accelerated workload generator built on NVIDIA Aerial for reproducible evaluation. Results show that predictive fine-grained GPU partitioning satisfies slot-level RAN deadlines while increasing the GPU resources available to co-located AI workloads, demonstrating the practicality of elastic GPU sharing for future AI-RAN platforms.",
+  "url": "https://arxiv.org/abs/2610.23072",
+  "pdf_url": "https://arxiv.org/pdf/2610.23072",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Arthur Hamard",
+    "J\\'er\\'emie Leguay",
+    "Gopalasingham Aravinthan",
+    "Alberto Conte",
+    "Julien Lallet",
+    "Abdelkader Outtagarts"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "autoscaling"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: autoscaling",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "AI-RAN is driving the convergence of radio access network (RAN) processing and artificial intelligence (AI) workloads on GPU-enabled computing platforms, ranging from GPU-accelerated base stations to cloud-native infrastructures.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.23072",
+      "url": "https://arxiv.org/abs/2610.23072"
+    }
+  ]
+}

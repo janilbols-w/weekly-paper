@@ -39,7 +39,7 @@ Precise grounding matters. It specifies which object is the target and where tha
 ## 元数据
 
 - 作者：Qize Yu, Lianrui Fan, Boyu Chen, Jiaqi Liang, Xini Ding, Yue Chen, Zetian Song, Yuran Wang, Yi Zou, Kaixuan Wang, Tianxing Chen, Wenxuan Song, Bohan Zhou, Mingleyang Li, Siqiao Huang, Yuqi Ye, Caigao Jiang, Wei Wei, Ruihai Wu, Hang Zhang, Yixiao Ge, Shuchang Zhou, Shilong Liu, Xianming Liu, Ping Luo, Shiyu Huang
-- 发布：2026-09-30；更新：2026-10-01
+- 发布：2026-09-30；更新：2026-10-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/groundingpi/GroundingPI](https://github.com/groundingpi/GroundingPI)
 - 阅读深度：metadata

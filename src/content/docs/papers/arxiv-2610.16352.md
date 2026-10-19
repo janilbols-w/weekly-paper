@@ -1,11 +1,11 @@
 ---
-title: "A Production-Grade, High-Efficiency Agentic RL Framework for Frontier LLMs with Validated Recipes"
+title: "LoongSage: A Production-Grade, High-Efficiency Agentic RL Framework for Frontier LLMs with Validated Recipes"
 description: "Reinforcement learning (RL) has emerged as a critical phase in the post-training pipeline of large language models (LLMs)."
 ---
 
 **评分：40/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
 
-[论文原文](http://arxiv.org/abs/2610.16352v1) · [PDF](https://arxiv.org/pdf/2610.16352v1)
+[论文原文](https://arxiv.org/abs/2610.16352) · [PDF](https://arxiv.org/pdf/2610.16352)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ Reinforcement learning (RL) has emerged as a critical phase in the post-training
 ## 元数据
 
 - 作者：LoonSage Team, Bowei Song, Caiwei Zhao, Chuwen Liu, Dechuang Gu, Dong Fang, Feiyu Xie, Huaiyu Li, Hui Zhang, Jian Tian, Jian Wang, Jie Zhao, Liguang Li, Maoyun Wang, Meiyan Yang, Minghan Zhu, Pai Liu, Pandeng Yao, Renbao Tian, Ru Yang, Shuai Jia, Shuai Tan, Shuailong Li, Shuliang Li, Teng Jin, Tianze Yang, Wenbo Cui, Wenjing Bai, Wenkang Wu, Xiaowei Jiang, Xiaoyi Dong, Yanpeng Wang, Yanwen Wang, Yaohui Ma, Yawen Wang, Yihang Zhang, Yingjie Yan, Zhanbiao Lian, Zhenyu Lu, Zhida Hu, Zhihui Hao, Zhihui Hu, Zhiwen Xiao, Zhiyi Gao, Zhongwei Qi, Zhuangzhuang Wu, Ziqian Liu, Ziyue Zheng
-- 发布：2026-10-12；更新：2026-10-12
-- 来源：arXiv；Venue：未确认
+- 发布：2026-10-12；更新：2026-10-19
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

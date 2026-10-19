@@ -5,10 +5,13 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **31** 篇。
+累计收录 **34** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Accelerated Dataflow: scaling inference in streaming data analytics with efficiency](../../papers/arxiv-2610.22731/) | 2026-10-19 | 44 |
+| [Who Pays for Efficient Inference? Confidence-Based Small-to-Large LLM Routing Across Tasks and Languages](../../papers/arxiv-2610.23249/) | 2026-10-19 | 43 |
+| [ScaleRAN: A Runtime for Elastic GPU Resource Management in AI-RAN](../../papers/arxiv-2610.23072/) | 2026-10-19 | 40 |
 | [Truthful and Expected-Payment-Optimal Model Routing in Graph-Based Agentic Workflows](../../papers/arxiv-2610.19316/) | 2026-10-13 | 42 |
 | [CopRoute: Dependence-Aware Conformal Routing for Language Models](../../papers/arxiv-2610.13276/) | 2026-10-12 | 39 |
 | [Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators](../../papers/arxiv-2509.03647/) | 2026-10-07 | 39 |

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.22640",
+  "title": "SAFETYEDIT: Sparse Internal Targets with Prompt-Wide Control for LLM Jailbreak Backdoors",
+  "abstract": "Model-editing backdoors aim to induce harmful responses under a trigger while preserving ordinary behavior on untriggered input. Recent model-editing approaches target affirmative response prefixes through rank-one updates to a small subset of model weights. Yet when this prefix-level target is satisfied, the model may still revert to refusal or produce a coherent, apparently compliant response that does not address the request. To overcome this limitation, existing internal-representation approaches shift focus from output tokens to dense, high-dimensional compliance directions in latent space. Existing representation-level approaches rely on preservation constraints to maintain conditionality, motivating us to ask whether a smaller internal target can offer a different effectiveness-preservation trade-off. Motivated by the comparable control capability of single-coordinate interventions, we investigate a sparse refusal-related MLP coordinate as this target. We propose SAFETYEDIT, which optimizes a single refusal-related coordinate and uses KV-cache marking in early attention layers to propagate a prefix-trigger signal across subsequent instruction positions. On some checkpoints a downstream MLP reader converts this signal into control of the coordinate, while on others the propagated signal alone suffices; the method is defined by the sparse target rather than by a fixed writer-reader pair. Across four open-weight LLMs and three dataset groups, SAFETYEDIT achieves the highest triggered Guard ASR in 11 of 12 comparisons and the highest mean StrongREJECT score in all 12, relative to the baselines evaluated for each model. Crucially, comprehensive ablation and behavioral audits confirm generally minimal changes in untriggered behavior and general capabilities in the tested configurations.",
+  "url": "https://arxiv.org/abs/2610.22640",
+  "pdf_url": "https://arxiv.org/pdf/2610.22640",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Yutong Ke",
+    "Yansu Wang",
+    "Zeyu Zhang",
+    "Xihao Guo",
+    "Chongwen Zhao",
+    "Kaizhu Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Model-editing backdoors aim to induce harmful responses under a trigger while preserving ordinary behavior on untriggered input.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.22640",
+      "url": "https://arxiv.org/abs/2610.22640"
+    }
+  ]
+}

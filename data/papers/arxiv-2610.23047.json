@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.23047",
+  "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
+  "abstract": "On AWS Trainium2, every component of a diffusion model runs as a program compiled ahead of time for fixed shapes, while pipelines differ across models, prompt lengths across requests, and caching decisions across denoising steps. We present Difflet, a serving engine in which five model pipelines share one compilation backend, joint attention is split across cores by attention head, and a host controller decides at each denoising step whether to run the denoiser or reuse its earlier output. A small probe program computes the caching signal on the device and returns one number per step, and a resident model process keeps every program loaded across requests. Across five image and video model families, fused attention accelerates denoiser steps by 1.2-4.3x over the same framework using PyTorch/XLA attention, and at 32.8k visual tokens it is the only attention that compiles. On four of the five models, resident serving is 1.5-3.4x faster than standalone runs that reload weights from a warm file cache for each generation.",
+  "url": "https://arxiv.org/abs/2610.23047",
+  "pdf_url": "https://arxiv.org/pdf/2610.23047",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Bin Ma",
+    "Min Yu",
+    "Vijay Kodamalla",
+    "Jialin Liu",
+    "Dong Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "inference engine"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: inference engine",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On AWS Trainium2, every component of a diffusion model runs as a program compiled ahead of time for fixed shapes, while pipelines differ across models, prompt lengths across requests, and caching decisions across denoising steps.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.23047",
+      "url": "https://arxiv.org/abs/2610.23047"
+    }
+  ]
+}

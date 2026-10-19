@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.23036",
+  "title": "Towards Looped Models Done Right, Part I: Topology, Input Injection, Recurrent-State Design",
+  "abstract": "Looped language models reuse physical Transformer blocks across logical depth, but established architectures entangle recurrence placement, input injection, and recurrent state organization. We isolate these axes in models trained from scratch at matched parameter scale, logical depth, and token budgets, and then test whether the resulting design principles transfer to resident- and active-parameter-matched Mixture-of-Experts (MoE) models. The prelude-recurrent block-coda sandwich architecture consistently improves performance on context extraction and reasoning-intensive tasks. Input injection primarily enhances knowledge retrieval and context utilization, whereas random initialization and separate H/L recurrent states provide mixed or negative returns. Taken together, these results favor the Huginn-style design: at the 730M-parameter and 336B-token scale, the complete Huginn architecture outperforms Ouro across all ten benchmarks. The advantages of Huginn over Ouro transfer to MoE models. At the 8BA0.8B (32BA3B when unrolled) scale trained on 500B tokens, Huginn outperforms Ouro on nearly all benchmarks spanning knowledge, reasoning, and coding, while also exhibiting more balanced expert routing. Under matched training and inference FLOPs, the Huginn-style model uses 75% fewer resident parameters than a 112-layer feedforward MoE baseline. Despite its smaller physical parameters, it outperforms the feedforward baseline on DROP and GSM8K, matches it on MATH500, and remains competitive on the other benchmarks.",
+  "url": "https://arxiv.org/abs/2610.23036",
+  "pdf_url": "https://arxiv.org/pdf/2610.23036",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "authors": [
+    "Benhao Huang",
+    "Chufan Shi",
+    "Junlin Chen",
+    "Shicheng Wen",
+    "Zhengzhong Liu",
+    "Eric Xing",
+    "Xuezhe Ma"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "moe-efficiency",
+    "leaf": "MoE Efficiency",
+    "leaf_zh": "MoE 路由与专家优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "expert routing"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: expert routing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Looped language models reuse physical Transformer blocks across logical depth, but established architectures entangle recurrence placement, input injection, and recurrent state organization.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.23036",
+      "url": "https://arxiv.org/abs/2610.23036"
+    }
+  ]
+}

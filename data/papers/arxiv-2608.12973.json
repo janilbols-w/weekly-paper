@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2608.12973",
-  "title": "Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning",
-  "abstract": "In this paper, we study how to perform statistical inference for quantile temporal difference learning (QTD) in distributional reinforcement learning. Assuming access to a generative model, we first establish functional central limit theorems for both synchronous and asynchronous QTD, which show that the averaged iterates of QTD converge weakly to a rescaled Brownian motion. We next provide online inference methods. Based on random scaling, the inference procedure constructs an asymptotically pivotal statistic for inference by using the information along the whole QTD path. Meanwhile, the proposed statistic can be computed online without storing the entire trajectory of QTD iterates. This substantially reduces the memory requirement and enables efficient statistical inference in distributional reinforcement learning.",
+  "title": "Online Inference for Quantile Distributional Reinforcement Learning",
+  "abstract": "In this paper, we study online statistical inference for quantile-based distributional policy evaluation, which aims to characterize the distribution of discounted cumulative rewards under a given policy. To obtain a finite-dimensional representation of the return distribution, we consider the fixed point $\\bm\\eta_m$ of the quantile-projected distributional Bellman equation, parameterized by the quantile vector $\\bm\\theta_m$. We develop two online inference procedures for $\\bm\\theta_m$, covering synchronous and asynchronous sampling from a generative model as well as Markovian data. The first method uses the trajectory of quantile temporal-difference learning (QTD). We establish functional central limit theorems for the partial sums of QTD iterates and construct a recursively computable random-scaling statistic. The resulting confidence intervals have asymptotically exact coverage at deterministic horizons, with length of order $T^{-1/2}$ in probability. The second method constructs anytime-valid confidence intervals directly from samples. Exploiting the monotonicity of the quantile Bellman map, we develop a computationally explicit coordinate-shaving algorithm with finite-sample simultaneous coverage. Under positive limiting state-visit frequencies, the resulting confidence intervals have lengths of order $\\sqrt{\\log\\log T/T}$, which we establish as classwise optimal through a matching lower bound. Together, these results provide complementary guarantees for online inference in quantile distributional reinforcement learning, combining asymptotically exact fixed-horizon inference with finite-sample anytime validity.",
   "url": "https://arxiv.org/abs/2608.12973",
   "pdf_url": "https://arxiv.org/pdf/2608.12973",
   "published": "2026-08-14",
-  "updated": "2026-08-17",
+  "updated": "2026-10-19",
   "authors": [
     "Zijie Cheng",
     "Yang Peng",
@@ -41,8 +41,8 @@
   "score_components": {
     "relevance": 16,
     "novelty": 6,
-    "rigor": 5,
-    "practical_impact": 7,
+    "rigor": 7,
+    "practical_impact": 5,
     "reproducibility": 2,
     "credibility": 3
   },
@@ -51,13 +51,13 @@
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
-  "summary_en": "In this paper, we study how to perform statistical inference for quantile temporal difference learning (QTD) in distributional reinforcement learning.",
+  "summary_en": "In this paper, we study online statistical inference for quantile-based distributional policy evaluation, which aims to characterize the distribution of discounted cumulative rewards under a given policy.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-14T05:09:59+00:00",
-  "last_seen": "2026-10-16T04:43:54+00:00",
+  "last_seen": "2026-10-19T04:46:31+00:00",
   "featured_weeks": [],
   "source_records": [
     {
