@@ -5,10 +5,13 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **99** 篇。
+累计收录 **102** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KVCompass: A Discovery Plane for Internet-Scale Prefix Cache Sharing in LLM Serving](../../papers/arxiv-2610.24179/) | 2026-10-20 | 47 |
+| [Coral: Cost-Efficient Multi-LLM Serving over Heterogeneous Cloud GPUs](../../papers/arxiv-2605.04357/) | 2026-10-20 | 45 |
+| [Service-Induced Congestion in Memory-Constrained LLM Serving](../../papers/arxiv-2606.15555/) | 2026-10-20 | 42 |
 | [DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium](../../papers/arxiv-2610.23047/) | 2026-10-19 | 39 |
 | [HAServe: Horizon-Aware Scheduling and Memory Co-Design for Efficient LLM Serving](../../papers/arxiv-2605.08581/) | 2026-10-16 | 53 |
 | [Quota-Based Aging for Prediction-Guided Scheduling in LLM Serving](../../papers/arxiv-2610.17795/) | 2026-10-13 | 50 |

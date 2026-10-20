@@ -5,10 +5,14 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **123** 篇。
+累计收录 **127** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [gKSM: GPU Memory Deduplication at Driver Layer for Serverless LLM Inference](../../papers/arxiv-2610.25219/) | 2026-10-20 | 51 |
+| [Efficient Training on Multiple Consumer GPUs with RoundPipe](../../papers/arxiv-2604.27085/) | 2026-10-20 | 48 |
+| [Memory-Induced Tool-Drift in LLM Agents](../../papers/arxiv-2605.24941/) | 2026-10-20 | 42 |
+| [Learning without Overwriting: Structural Knowledge Fusion for Continual Learning](../../papers/arxiv-2610.25150/) | 2026-10-20 | 38 |
 | [Is Your NPU Ready for LLMs? Dissecting the Hidden Efficiency Bottlenecks in Mobile LLM Inference](../../papers/arxiv-2607.05475/) | 2026-10-19 | 47 |
 | [BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs](../../papers/arxiv-2610.23064/) | 2026-10-19 | 44 |
 | [Energy Overhead in Sensor Nodes: Embedded Machine Learning and Data Offloading via Low Power Wide Area Networks](../../papers/arxiv-2510.24829/) | 2026-10-19 | 43 |

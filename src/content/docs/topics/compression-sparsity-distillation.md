@@ -5,10 +5,30 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **632** 篇。
+累计收录 **652** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [WIDE: Boosting Adaptive LLM Inference via Token-level Dynamic Width Pruning](../../papers/arxiv-2607.28418/) | 2026-10-20 | 54 |
+| [LOOP: Recovery-Aligned Iterative Layer Pruning via On-Policy Distillation](../../papers/arxiv-2610.25679/) | 2026-10-20 | 50 |
+| [TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning](../../papers/arxiv-2610.26754/) | 2026-10-20 | 47 |
+| [Power Distribution Bridges Sampling, Self-Reward RL, and Self-Distillation](../../papers/arxiv-2605.04542/) | 2026-10-20 | 45 |
+| [Diet Your LLM: Dimension-wise Global Pruning of LLMs via Merging Task-specific Importance Score](../../papers/arxiv-2603.23985/) | 2026-10-20 | 45 |
+| [Correctness-Dependent Asymmetric Target Distributions for Self-Distillation Policy Optimization](../../papers/arxiv-2610.25973/) | 2026-10-20 | 44 |
+| [Multilingual Safety Alignment via Self-Distillation](../../papers/arxiv-2605.02971/) | 2026-10-20 | 43 |
+| [Adaptive Dual-Teacher Distillation with Subnetwork Rectification for Bridging Semantic Gaps in Black-Box Domain Adaptation](../../papers/arxiv-2603.22908/) | 2026-10-20 | 43 |
+| [TIRE: Top-Down Formula Instantiation with Reliable Execution for Physics Problem Synthesis](../../papers/arxiv-2610.25134/) | 2026-10-20 | 41 |
+| [FlowMaker: From Tasks to Cost-Efficient Generative AI Workflow Deployments](../../papers/arxiv-2610.24861/) | 2026-10-20 | 41 |
+| [Asynchronous On-Policy Self-Distillation](../../papers/arxiv-2610.25880/) | 2026-10-20 | 41 |
+| [Toward a Universal Local Speech Feature Extractor Through Distillation](../../papers/arxiv-2610.24424/) | 2026-10-20 | 40 |
+| [Robust and Efficient Finetuning of Vision Foundation Models via Implicit Ensembling](../../papers/arxiv-2510.06982/) | 2026-10-20 | 40 |
+| [Hidden Cartographer: Hidden State Guided Data Selection for Dual Budgeted Instruction Tuning](../../papers/arxiv-2610.25215/) | 2026-10-20 | 40 |
+| [Trajectory Replay: Continuous-Time Mixture Transport for Lifelong Generative Models](../../papers/arxiv-2610.26749/) | 2026-10-20 | 39 |
+| [How Much Does One Wrong Answer Cost? Error Propagation in Constraint Pruning with Noisy LLM Oracles](../../papers/arxiv-2610.25739/) | 2026-10-20 | 39 |
+| [A Fisher-Geometric View of Multi-Teacher On-Policy Distillation](../../papers/arxiv-2610.26525/) | 2026-10-20 | 39 |
+| [OPDArena: Understanding Learning and Forgetting in On-Policy Distillation](../../papers/arxiv-2610.25651/) | 2026-10-20 | 38 |
+| [Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness](../../papers/arxiv-2610.26059/) | 2026-10-20 | 38 |
+| [A failure of Imagination: VLMs fail to use visual representations for text, but self-distillation can help](../../papers/arxiv-2610.25470/) | 2026-10-20 | 38 |
 | [SETAREH Transform: A Sorting-Assisted Haar-Wavelet Sparsification Method for Approximate Inner-Product Computation](../../papers/arxiv-2610.23338/) | 2026-10-19 | 48 |
 | [Learning Agentic Time Series Forecasting via Trajectory Distillation and Memory-Based Reinforcement Learning](../../papers/arxiv-2602.13802/) | 2026-10-19 | 46 |
 | [Prune the Leaky Neurons: Mitigating Private Data Leakage in Fine-Tuned LLMs via Joint-Embedding-Guided Pruning](../../papers/arxiv-2610.22792/) | 2026-10-19 | 42 |

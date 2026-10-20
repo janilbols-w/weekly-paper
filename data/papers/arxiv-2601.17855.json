@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2601.17855",
+  "title": "Load Balancing with Evolving Workloads in Large-Scale Language Model Serving",
+  "abstract": "Serving large language models requires assigning requests whose workloads grow during processing and whose completion times are unknown. With a synchronization barrier, lightly loaded workers wait for the slowest worker at every decode iteration. We model this loss through aggregate workload imbalance and formulate a joint admission and assignment problem with sticky requests and capacity limits. Short lookahead incorporates predicted completions of ongoing requests. For exact optimization without lookahead, we prove a comparison under independent geometric decode lengths, bounded independent nondegenerate prompt sizes, and batched releases satisfying a cumulative supply condition. The long-run expected imbalance improvement over first come, first served admission with request-count join-shortest-queue grows at least as the square root of the product of worker capacity and the logarithm of worker count, in the stated scaling regime. The comparison extends to capacity-aware round robin, random routing, and power of two choices. BalanceRoute approximations connect the formulation to practical routing. Experiments using up to 144 NPUs with proprietary and public traces show lower workload spread and higher throughput than the evaluated baselines. These empirical results complement the guarantee for exact optimization.",
+  "url": "https://arxiv.org/abs/2601.17855",
+  "pdf_url": "https://arxiv.org/pdf/2601.17855",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Zixi Chen",
+    "Tianci Bu",
+    "Chendong Song",
+    "Xin Lu",
+    "Yinyu Ye",
+    "Zijie Zhou"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "stat.ML"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [
+    "serving-engine"
+  ],
+  "keyword_evidence": [
+    "load balancing"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: load balancing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Serving large language models requires assigning requests whose workloads grow during processing and whose completion times are unknown.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2601.17855",
+      "url": "https://arxiv.org/abs/2601.17855"
+    }
+  ]
+}

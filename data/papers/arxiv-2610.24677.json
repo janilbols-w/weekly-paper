@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2610.24677",
+  "title": "SpikeDuet: CPU-Accelerator Co-Execution of Sparse SNNs on Commodity MCUs",
+  "abstract": "Spiking neural networks (SNNs) expose sparse event activity, but commodity microcontrollers increasingly pair general-purpose processors with dense matrix-vector accelerators whose suitability for sparse inference is unclear. We investigate whether the on-chip Matrix Vector Processor (MVP) of the EFR32MG24 can accelerate SNN inference beyond optimized event-driven Cortex-M33 execution. Our automated snnTorch-to-C deployment flow combines hardware-calibrated engine selection, function-preserving neuron reordering that places co-active neurons adjacently for the accelerator, and asynchronous scheduling that overlaps CPU and MVP computation. On physical hardware, heterogeneous execution achieves 1.27--1.87$\\times$ speedup and 11--34\\% lower energy per inference than optimized sparse Cortex-M33 execution across five evaluated network configurations, while the smallest Braille network remains CPU-optimal. Reordering alone moves Braille-384's dominant hidden layer from the CPU to the MVP, and its benefit persists under asynchronous execution. These results show that activity locality and concurrency between CPU and MVP can jointly improve sparse SNN inference on commodity MCUs.",
+  "url": "https://arxiv.org/abs/2610.24677",
+  "pdf_url": "https://arxiv.org/pdf/2610.24677",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Muhammad Fahd Ibrahim Bhatti",
+    "Muhammad Ali Siddiqi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Spiking neural networks (SNNs) expose sparse event activity, but commodity microcontrollers increasingly pair general-purpose processors with dense matrix-vector accelerators whose suitability for sparse inference is unclear.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.24677",
+      "url": "https://arxiv.org/abs/2610.24677"
+    }
+  ]
+}

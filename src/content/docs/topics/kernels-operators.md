@@ -5,10 +5,13 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **32** 篇。
+累计收录 **35** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KernelClaw: A Multi-Agent Framework for GPU Kernel Optimization with Dual-Memory Mechanisms](../../papers/arxiv-2603.10085/) | 2026-10-20 | 58 |
+| [Compaction-Aware Reinforcement Learning For Ascend Triton Kernel Generation](../../papers/arxiv-2610.23950/) | 2026-10-20 | 50 |
+| [EdgeKernelBench: Unified LLM-Driven Kernel Generation for Edge Backends](../../papers/arxiv-2610.24648/) | 2026-10-20 | 45 |
 | [How to Train Your Little Dragon: Teaching a Small Language Model to Construct and Refine GPU Optimization Scripts](../../papers/arxiv-2610.20980/) | 2026-10-14 | 39 |
 | [Stateless Language Agents: Scaling Long-Horizon Automated Research](../../papers/arxiv-2610.07625/) | 2026-10-07 | 45 |
 | [Evolving in Thought Space: Training a Small Model at Test Time Unlocks Better Discoveries](../../papers/arxiv-2610.06269/) | 2026-10-06 | 42 |

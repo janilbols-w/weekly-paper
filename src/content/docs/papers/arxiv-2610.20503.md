@@ -39,7 +39,7 @@ Speculative decoding accelerates autoregressive generation by drafting multiple 
 ## 元数据
 
 - 作者：Bohan Sun, Zunhai Su, Xialie Zhuang, Jianjin Li, Ngai Wong, Chuan-Wei Kuo
-- 发布：2026-10-14；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/StartLuxLabs/ReaDy](https://github.com/StartLuxLabs/ReaDy)
 - 阅读深度：metadata

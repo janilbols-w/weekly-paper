@@ -5,10 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **115** 篇。
+累计收录 **119** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Sleep Stage Classification across Heterogeneous EEG/EOG Channels with Multi-Channel Differential Transformer](../../papers/arxiv-2508.15215/) | 2026-10-20 | 46 |
+| [GeoTrain: Energy-Aware Automatic Parallelism for Foundation Model Training on Heterogeneous Geo-Distributed Resources](../../papers/arxiv-2610.26178/) | 2026-10-20 | 46 |
+| [Severity-Channel Conditioning: An Injection-Level Study for Consumer-Device Deblurring](../../papers/arxiv-2610.24599/) | 2026-10-20 | 40 |
+| [Coopshift: Post-Training Amplifies The Memory Curse In LLM Cooperation](../../papers/arxiv-2610.24086/) | 2026-10-20 | 38 |
 | [An Efficient Approach to Beetle Damage Detection of Banana Using Deep Learning](../../papers/arxiv-2610.23661/) | 2026-10-19 | 40 |
 | [Flat Loss, Evolving Features: Grokking in Modular Addition](../../papers/arxiv-2610.22593/) | 2026-10-19 | 39 |
 | [Binding-Specific Relearning Savings for Test-Time Continual Learning](../../papers/arxiv-2610.22381/) | 2026-10-19 | 39 |
@@ -50,8 +54,8 @@ description: "Distributed Training & Checkpointing"
 | [Storage Is Not Strategy: State-Conditioned Support Control for LLM Unlearning](../../papers/arxiv-2609.37858/) | 2026-09-29 | 43 |
 | [$S^3$: Spectral Null-Space Swap Makes Reasoning Models Efficient](../../papers/arxiv-2609.37976/) | 2026-09-29 | 42 |
 | [Refusal Localizes, the Damage Relocates: Safety Layers Under Few-Sample Fine-Tuning](../../papers/arxiv-2610.00320/) | 2026-09-29 | 38 |
+| [PALM: Point-in-Time Adaptation for Financial Language Models](../../papers/arxiv-2609.30316/) | 2026-09-28 | 44 |
 | [Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures](../../papers/arxiv-2609.34215/) | 2026-09-28 | 42 |
-| [PALM: Point-in-Time Adaptation for Financial Language Models](../../papers/arxiv-2609.30316/) | 2026-09-28 | 42 |
 | [LionMuon: Alternating Spectral and Sign Descent for Efficient Training](../../papers/arxiv-2609.35297/) | 2026-09-28 | 38 |
 | [OneSign: Unifying Sign Language Understanding Tasks with One Model](../../papers/arxiv-2609.33090/) | 2026-09-27 | 46 |
 | [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](../../papers/arxiv-2609.33757/) | 2026-09-27 | 45 |

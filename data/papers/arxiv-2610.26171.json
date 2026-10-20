@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2610.26171",
+  "title": "CEMA-Router: Infrastructure-Aware Batch Routing for LLM Inference in Cloud-Edge Systems",
+  "abstract": "Large language models (LLM) are increasingly integrated into pervasive applications spanning heterogeneous cloud-edge resources. These heterogeneous resources differ in computational capacity, energy efficiency, network conditions, and deployed model quality, creating trade-offs among response quality, monetary cost, energy consumption, and batch completion time when routing inference requests. Existing LLM routers typically make per-query routing decisions based primarily on model quality and token cost, whereas cloud-edge schedulers often overlook quality differences among deployed models. Consequently, these objectives remain insufficiently coordinated. We present CEMA-Router, an infrastructure-aware batch router for LLM inference in pervasive cloud-edge systems. CEMA-Router formulates batch routing as a multi-objective search problem that jointly minimizes model-quality loss, monetary cost, energy consumption, and straggler-dominated batch completion time. To efficiently explore the search space, it employs a routing-specific memetic algorithm, combining largest-request-first, load-aware seeding with probabilistic, evaluator-guided Lamarckian repair. Routing decisions are informed by deployment-specific node profiles, dynamic backlog estimates, and model-quality signals. We further implement CEMA-Router as an end-to-end system comprising a request manager, routing service, and profiler, supporting both real cloud-edge deployment and trace-driven simulation. We evaluate the system using RouterBench traces and GSM8K and MMLU workloads on a heterogeneous cloud-edge testbed. Compared with state-of-the-art methods, CEMA-Router reduces the weighted objective by up to 86% for GSM8K and 80% for MMLU, while reducing energy consumption by up to 33% and 19% and batch completion time by up to 27% and 30%, respectively.",
+  "url": "https://arxiv.org/abs/2610.26171",
+  "pdf_url": "https://arxiv.org/pdf/2610.26171",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Xijia Wang",
+    "TianZhang He",
+    "Mohammad Goudarzi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models (LLM) are increasingly integrated into pervasive applications spanning heterogeneous cloud-edge resources.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.26171",
+      "url": "https://arxiv.org/abs/2610.26171"
+    }
+  ]
+}

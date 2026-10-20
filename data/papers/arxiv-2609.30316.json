@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.30316",
   "title": "PALM: Point-in-Time Adaptation for Financial Language Models",
-  "abstract": "Language models used in financial backtests suffer from look-ahead bias, as a model trained on text published after the study period has already observed the outcomes it is asked to predict. To handle this issue, point-in-time (PIT) language models are pretrained on chronologically filtered corpora and released as one checkpoint per calendar year, each with a documented cutoff. However, each additional year costs a full pretraining run, and whether that run is necessary has never been tested. In this paper, we show that the annual pretraining run is not necessary. We instead compare each checkpoint against the newer one that replaced it, and find that the newer checkpoint scores no better on the same evaluation window. Motivated by this observation, we propose PALM (Point-in-time Adaptation for financial Language Models), a simple yet effective alternative to annual pretraining that fits a low-rank adapter on text published before the decision date without modifying any pretrained weight. We further find that a small adapter is enough to add a new period to the knowledge an old checkpoint already encodes, and that this outperforms continued pretraining. We validate PALM on a decade of financial news and on various families of PIT models, whose cutoffs span two decades and whose sizes range from 1.3 to 4.2B. Code is available at: https://github.com/seunghan96/palm.",
+  "abstract": "Language models used in financial backtests suffer from look-ahead bias, as a model trained on text published after the study period has already observed the outcomes it is asked to predict. To handle this issue, point-in-time (PIT) language models are pretrained on chronologically filtered corpora and released as one checkpoint per calendar year, each with a documented cutoff. However, each additional year costs another pretraining run, and whether that run is necessary has never been tested. In this paper, we show that a newer checkpoint is not detectably better on the decision it informs, as its information coefficient on a fixed evaluation window shows no decay with age that we can detect. Motivated by this observation, we propose PALM (Point-in-time Adaptation for financial Language Models), a simple yet effective alternative to annual pretraining that fits a low-rank adapter on financial text the checkpoint is allowed to read, without modifying any pretrained weight. We further find that the gain comes from the financial domain rather than from recency, which leaves the point-in-time constraint without a detectable cost. We validate PALM on a decade of financial news and on three families of PIT models, whose cutoffs span two decades. The pooled gain keeps its sign across experimental settings and comes at a small fraction of the cost of pretraining. Code is available at: https://github.com/seunghan96/palm.",
   "url": "https://arxiv.org/abs/2609.30316",
   "pdf_url": "https://arxiv.org/pdf/2609.30316",
   "published": "2026-09-28",
-  "updated": "2026-09-28",
+  "updated": "2026-10-20",
   "authors": [
     "Seunghan Lee",
     "Jun Seo",
@@ -47,11 +47,11 @@
   "keyword_evidence": [
     "checkpoint"
   ],
-  "score": 42,
+  "score": 44,
   "score_components": {
     "relevance": 12,
     "novelty": 6,
-    "rigor": 7,
+    "rigor": 9,
     "practical_impact": 7,
     "reproducibility": 7,
     "credibility": 3
@@ -67,7 +67,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-28T04:48:05+00:00",
-  "last_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
   "featured_weeks": [],
   "source_records": [
     {

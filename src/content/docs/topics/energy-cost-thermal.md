@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **51** 篇。
+累计收录 **52** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [CEMA-Router: Infrastructure-Aware Batch Routing for LLM Inference in Cloud-Edge Systems](../../papers/arxiv-2610.26171/) | 2026-10-20 | 41 |
 | [qGAMMA: A Framework for Optimal DNN Mapping on Multi-Precision Accelerators](../../papers/arxiv-2610.23222/) | 2026-10-19 | 40 |
 | [The Cost of Context: Profiling the Energy Footprint of Input Tokens in Large Language Models](../../papers/arxiv-2610.19819/) | 2026-10-14 | 40 |
 | [Complete or Sparse: A Tale of Two Identifiabilities](../../papers/arxiv-2610.20851/) | 2026-10-14 | 38 |

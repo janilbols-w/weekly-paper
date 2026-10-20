@@ -5,10 +5,16 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **110** 篇。
+累计收录 **116** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Factorization-Guided Training and Inference for Diffusion-Drafted Speculative Decoding](../../papers/arxiv-2610.23935/) | 2026-10-20 | 49 |
+| [Conjugate Compilation: Self-Improving Agentic Co-Compilation for Speculative Decoding](../../papers/arxiv-2610.25012/) | 2026-10-20 | 48 |
+| [Parallel Language Models via Variational Decoding](../../papers/arxiv-2610.26693/) | 2026-10-20 | 46 |
+| [FlashMap: Flow Map Speculative Decoding](../../papers/arxiv-2610.24365/) | 2026-10-20 | 46 |
+| [PV-Decoding: Progressive Verification Decoding with Decode Gating for Diffusion Language Models](../../papers/arxiv-2610.24722/) | 2026-10-20 | 44 |
+| [Who Gets Unmasked? Sampler-Induced Bias in Diffusion Language Models](../../papers/arxiv-2610.24795/) | 2026-10-20 | 38 |
 | [On the SPOT: Enhancing Speculative Decoding for Diffusion Language Models via Commit-Order Prediction](../../papers/arxiv-2610.22543/) | 2026-10-19 | 47 |
 | [DLite: History-free Speculative Decoding for Agentic AI](../../papers/arxiv-2610.23787/) | 2026-10-19 | 43 |
 | [HyCo: Hybrid Drafting for Cost-Efficient Mobile-Cloud Speculative Decoding](../../papers/arxiv-2610.21436/) | 2026-10-15 | 43 |

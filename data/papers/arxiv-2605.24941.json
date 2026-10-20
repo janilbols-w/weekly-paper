@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.24941",
+  "title": "Memory-Induced Tool-Drift in LLM Agents",
+  "abstract": "LLM agents increasingly combine long-term memory for personalization with tool calling for taking actions. We study a failure of this combination: personality-driven preferences stored in memory (e.g., cost-consciousness, impatience, risk tolerance) silently shifting tool-call parameters in contexts where they do not apply. We call this memory-induced tool-drift and stress-test it with MEMDRIFT, an iteratively refined benchmark of 105 scenarios spanning five bias dimensions and seven professional domains. Measured as excess parameter degradation over a neutral-memory baseline, biased memories in MEMDRIFT induce drift in all eight models we evaluate, raising degradation rates to 0.38--0.83 versus 0.05--0.12 for neutral memories. The drift persists under three widely used memory frameworks. A vulnerability audit of 6,062 tools across 288 MCP servers demonstrates that real-world tools are also susceptible to this failure mode. Mechanistically, we find that biased memories act as implicit steering vectors along the same direction as explicit behavioral instructions and draw attention away from task-relevant context. Neither prompt-based defenses nor relevance filters offer a complete solution, motivating defenses at the intersection of memory management and tool calling.",
+  "url": "https://arxiv.org/abs/2605.24941",
+  "pdf_url": "https://arxiv.org/pdf/2605.24941",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Mahavir Dabas",
+    "Jihyun Jeong",
+    "Ming Jin",
+    "Ruoxi Jia"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "memory management"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: memory management",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM agents increasingly combine long-term memory for personalization with tool calling for taking actions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.24941",
+      "url": "https://arxiv.org/abs/2605.24941"
+    }
+  ]
+}

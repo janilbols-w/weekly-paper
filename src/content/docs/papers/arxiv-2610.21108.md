@@ -39,7 +39,7 @@ LLM-based planning agents commit to plans of different lengths before interactin
 ## 元数据
 
 - 作者：Cassie Huang, Zhanwei Cao, Yeawon Lee, Nathalia Gomez, Zhuoyi Yang, Ian G. Harris, Tiffany Do, Jiayuan Mao, Li Zhang
-- 发布：2026-10-16；更新：2026-10-16
+- 发布：2026-10-16；更新：2026-10-20
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

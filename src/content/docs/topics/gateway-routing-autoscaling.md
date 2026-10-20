@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **34** 篇。
+累计收录 **35** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Load Balancing with Evolving Workloads in Large-Scale Language Model Serving](../../papers/arxiv-2601.17855/) | 2026-10-20 | 47 |
 | [Accelerated Dataflow: scaling inference in streaming data analytics with efficiency](../../papers/arxiv-2610.22731/) | 2026-10-19 | 44 |
 | [Who Pays for Efficient Inference? Confidence-Based Small-to-Large LLM Routing Across Tasks and Languages](../../papers/arxiv-2610.23249/) | 2026-10-19 | 43 |
 | [ScaleRAN: A Runtime for Elastic GPU Resource Management in AI-RAN](../../papers/arxiv-2610.23072/) | 2026-10-19 | 40 |

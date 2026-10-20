@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2606.28116",
+  "title": "Mechanism-Aligned Observability for Training Instability of Large Language Models",
+  "abstract": "Frontier large language model training consumes massive accelerator fleets over long wall-clock times, making stability failures extremely costly. However, global symptoms such as loss divergences often emerge only after the underlying fault has already affected the training dynamics, further increasing the sunk compute. In which internal representation can a training fault become persistently and interpretably observable before it appears in global training metrics? We propose a mechanism-aligned principle for training observability: identify the internal state into which a fault is persistently written, derive the structure induced by its mechanism, and construct monitors in representations aligned with the computation of the affected module. For FlashAttention, we show that biased backward errors accumulate into a persistent low-dimensional structure in weight updates, producing spectral concentration. For MoE routers, we characterize routing dynamics through per-token routing behavior rather than parameter similarity, which may change without altering the routing function. Experiments show that the two monitors respond selectively to changes in their corresponding modules, before degradation becomes visible in global training metrics.",
+  "url": "https://arxiv.org/abs/2606.28116",
+  "pdf_url": "https://arxiv.org/pdf/2606.28116",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Ruixuan Huang",
+    "Yipei Wang",
+    "Wenyi Fang",
+    "Hantao Huang",
+    "Ansheng You",
+    "Shuai Wang",
+    "Fan Wu",
+    "Yang Zheng"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "observability-benchmarking",
+    "leaf": "Observability & Benchmarking",
+    "leaf_zh": "可观测性与 Benchmark"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "observability"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: observability",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Frontier large language model training consumes massive accelerator fleets over long wall-clock times, making stability failures extremely costly.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.28116",
+      "url": "https://arxiv.org/abs/2606.28116"
+    }
+  ]
+}

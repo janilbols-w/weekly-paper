@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2606.29733",
+  "title": "How far do on-premises open LLMs get on Text-to-SQL? A cross-family size and technique frontier on BIRD",
+  "abstract": "Organizations that cannot send data to a cloud API need to know how well self-hosted open-weight models perform on Text-to-SQL and which inexpensive techniques justify their compute. We benchmark Qwen2.5-Coder-Instruct (7B, 14B, 32B) and CodeLlama-Instruct (7B, 13B) self-hosted at 16-bit precision, Llama-3.1-8B and Llama-3.3-70B through an FP8 API, and Qwen2.5-Coder-32B through a second API on the BIRD development split (n = 1534), with one zero-shot prompt and the official execution-accuracy comparison on read-only databases. We ablate lexical and embedding schema linking, execution-guided self-correction and self-consistency, and test every within-model recipe difference with exact McNemar tests, Holm correction over 30 tests and a database-clustered bootstrap. Qwen2.5-Coder reaches 42.6%, 52.0% and 54.9%; CodeLlama-7B and -13B reach 23.7% and 26.3%. Self-correction is the only component with a consistent gain: within a run it adds 1.2 to 4.4 points at 1.1 to 1.9 times the tokens, and it is significant after Holm correction for every model except Llama-3.3-70B. Schema linking never helps significantly; lexical linking costs Llama-3.3-70B 4.2 points, and an embedding linker with higher table recall does not differ detectably from no linking. Self-consistency, run for one model, changed accuracy by at most 0.13 points at about five times the tokens. One API provider dropped spaces next to digits; after a whitespace repair the same model scored 54.5% through the API and 54.9% self-hosted, so an apparent three-point serving gap was mostly this defect. This version corrects six defects of v1, including writable databases, a stricter-than-official metric and a truncated API arm, and withdraws the v1 claim of a quantization penalty of about 13 points; all numbers are re-scored or re-run. Code, per-item predictions and analysis scripts are released.",
+  "url": "https://arxiv.org/abs/2606.29733",
+  "pdf_url": "https://arxiv.org/pdf/2606.29733",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Vladimir Beskorovainyi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.DB",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp8",
+    "quantization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8, quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Organizations that cannot send data to a cloud API need to know how well self-hosted open-weight models perform on Text-to-SQL and which inexpensive techniques justify their compute.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.29733",
+      "url": "https://arxiv.org/abs/2606.29733"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2610.23950",
+  "title": "Compaction-Aware Reinforcement Learning For Ascend Triton Kernel Generation",
+  "abstract": "Automatically generating high-performance kernels with LLM-based agents promises substantial gains in development efficiency, but two obstacles remain. First, while increasing multi-turn interaction with execution environments is crucial for refining generation quality, continuous context accumulation rapidly exceeds the model's effective context window. Second, training long-horizon tasks via GRPO inherently incurs sparse rewards due to its reliance on terminal outcome evaluation, severely hindering step-level credit assignment; To address these obstacles, we propose ATRL (Ascend Triton Reinforcement Learning), a post-training method that refines GRPO into a compaction-aware, segment-level objective for long-horizon kernel generation. We also design a lightweight agent harness providing cascaded compilation, correctness, and profiling feedback, alongside an Ascend-specific knowledge base injected during agentic RL training and evaluation to compensate for the base model's missing platform expertise. Evaluations on NPUKernelBench and KernelBench, both executed on Ascend hardware, show that ATRL consistently surpasses all baselines, including GRPO, in both correctness and speedup.",
+  "url": "https://arxiv.org/abs/2610.23950",
+  "pdf_url": "https://arxiv.org/pdf/2610.23950",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Chuansai Zhou",
+    "Yanlin Liu",
+    "Bingning Huang",
+    "Shidi Xi",
+    "Chao Huang",
+    "Boxing Chen",
+    "Mingming Zhu",
+    "Guanghuan Fang",
+    "Ben Feng",
+    "Zongzuo Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kernel generation",
+    "triton kernel"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kernel generation, triton kernel",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Automatically generating high-performance kernels with LLM-based agents promises substantial gains in development efficiency, but two obstacles remain.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.23950",
+      "url": "https://arxiv.org/abs/2610.23950"
+    }
+  ]
+}

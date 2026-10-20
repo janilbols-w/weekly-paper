@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2606.02398",
+  "title": "Local Conflict, Targeted Repair: A Perturbation Analysis of Multi-Domain RL",
+  "abstract": "Reinforcement learning (RL) post-training improves large language models on individual domains but can degrade previously acquired capabilities. We study this interference in mathematical reasoning, code generation, question answering (QA), and creative writing (CW). Full-model domain gradients can be nearly orthogonal despite substantial selective degradation. Our structural analyses show sparse, weakly overlapping edits on computation routes that reasoning domains share, with directional alignment associated with transfer and conflict. A local perturbation model separates loss changes into a first-order term and a path-averaged curvature term, decomposes the latter along the actual rollback intervention, and provides a conditional explanation for recovery by short refresh. The experiments support this local sensitivity account. After Code $\\rightarrow$ Math $\\rightarrow$ QA $\\rightarrow$ CW training, a short Re-Math refresh raises Math from 57.66 to 66.04 and achieves the highest average score among the evaluated baselines. A training-free rollback at a $9.8\\%$ budget recovers $57.4\\%$ of the QA-induced Math accuracy drop with a small QA change. Curvature probes at the Math checkpoint further show higher sensitivity along the selected direction than along matched random directions. Together, these results support sparse intervention and targeted refresh as effective ways to mitigate cross-domain degradation.",
+  "url": "https://arxiv.org/abs/2606.02398",
+  "pdf_url": "https://arxiv.org/pdf/2606.02398",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Lei Yang",
+    "Siyu Ding",
+    "Deyi Xiong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reinforcement learning (RL) post-training improves large language models on individual domains but can degrade previously acquired capabilities.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.02398",
+      "url": "https://arxiv.org/abs/2606.02398"
+    }
+  ]
+}

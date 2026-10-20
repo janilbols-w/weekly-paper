@@ -5,10 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **79** 篇。
+累计收录 **81** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AutoTailor: Automatic and Efficient Adaptive Model Deployment for Diverse Edge Devices](../../papers/arxiv-2511.22355/) | 2026-10-20 | 44 |
+| [SpikeDuet: CPU-Accelerator Co-Execution of Sparse SNNs on Commodity MCUs](../../papers/arxiv-2610.24677/) | 2026-10-20 | 42 |
 | [TRACE: Transformer Residual Activation Codebook Encoding for Communication-efficient Distributed Edge Inference](../../papers/arxiv-2610.22435/) | 2026-10-19 | 47 |
 | [STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator with Algorithm and Hardware Co-Design](../../papers/doi-10.1109-tcsi.2025.3648765/) | 2026-10-14 | 49 |
 | [ATTUNE: Agentic Throughput Tuning for LLM Training](../../papers/arxiv-2610.17528/) | 2026-10-13 | 51 |

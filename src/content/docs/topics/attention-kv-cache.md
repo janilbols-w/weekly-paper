@@ -5,10 +5,20 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **213** 篇。
+累计收录 **222** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Koi: Evidence-Guided, Self-Calibrating Planning for Multi-Cloud, Heterogeneous LLM Inference Fleets](../../papers/arxiv-2610.24355/) | 2026-10-20 | 51 |
+| [Visual Cache Reuse for Efficient Multimodal Inference](../../papers/arxiv-2610.25136/) | 2026-10-20 | 44 |
+| [Requests of a Feather Must Flock Together: Batch Size vs. Prefix Homogeneity in LLM Inference](../../papers/arxiv-2605.06046/) | 2026-10-20 | 43 |
+| [MemT-1.0: Towards Memory-Native Evolution](../../papers/arxiv-2610.26825/) | 2026-10-20 | 41 |
+| [MOSAIC: Multi-Objective Search for Allocating Inference Cache Across LLM Decoder Layers](../../papers/arxiv-2610.25431/) | 2026-10-20 | 41 |
+| [PeekKV: The First Content Token Already Knows Which Heads Matter](../../papers/arxiv-2610.23939/) | 2026-10-20 | 40 |
+| [TideKV: Delayed KV Eviction via Layer-Wise Chunked Prefill for Memory-Efficient Long-Context LLM Inference](../../papers/arxiv-2610.24499/) | 2026-10-20 | 39 |
+| [CompactAttention: Accelerating Chunked Prefill with Block-Union KV Selection](../../papers/arxiv-2605.16839/) | 2026-10-20 | 39 |
+| [System X: An LLM Decision Model That Replies from Its Own KV Cache](../../papers/arxiv-2610.25456/) | 2026-10-20 | 38 |
+| [Certified Sparse Attention via Perturbed Retrieval](../../papers/arxiv-2610.24991/) | 2026-10-20 | 38 |
 | [HBFSim: A Simulator for Exploring HBF in Memory Hierarchies for LLMs](../../papers/arxiv-2610.23503/) | 2026-10-19 | 46 |
 | [BS-Spec: BFP-Based Bit-Sharing for Self-Speculative LLM Decoding with LUT-Driven Mixed-Precision Acceleration](../../papers/arxiv-2610.22877/) | 2026-10-19 | 46 |
 | [MemLLM: End-to-end In-Storage Acceleration of On-device Retrieval-Augmented Generation using Precomputed KV Caches](../../papers/arxiv-2610.22579/) | 2026-10-19 | 45 |
@@ -78,7 +88,6 @@ description: "Attention & KV Cache"
 | [When Keywords Drop but Classifiers Hold: Soft Refusals under KV Cache Compression](../../papers/arxiv-2609.31678/) | 2026-09-30 | 38 |
 | [Memory-Efficient Looped Transformer: Decoupling Compute from Memory in Looped Language Models](../../papers/arxiv-2605.07721/) | 2026-09-30 | 38 |
 | [Affix Cache for Diffusion Large Language Models](../../papers/arxiv-2608.26140/) | 2026-09-30 | 38 |
-| [ATTUNER: Recomputation-Free KV Cache Reuse via Query-Side Adaptation](../../papers/arxiv-2609.36722/) | 2026-09-29 | 46 |
 | [Dynamic Flow, Static Graph: KV Cache Reuse for Efficient LLM Serving on Mobile NPUs](../../papers/arxiv-2609.34727/) | 2026-09-28 | 48 |
 | [OmniTide: Co-Designing Algorithms and Systems for Efficient On-Device Omni-LLM Streaming](../../papers/arxiv-2609.34653/) | 2026-09-28 | 47 |
 | [The KV Cache Is the New Memory Wall](../../papers/arxiv-2609.30854/) | 2026-09-28 | 46 |

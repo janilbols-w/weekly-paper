@@ -1,16 +1,16 @@
 {
   "id": "arxiv:2610.18444",
   "title": "An Optical KV Cache Network for Disaggregated LLM Serving",
-  "abstract": "Disaggregated LLM serving moves each request's KV cache from a prefill GPU to a decode GPU before the response begins, and a coding-agent turn often moves the KV of its whole long context. Behind an oversubscribed packet fabric this transfer adds to time to first token (TTFT). An optical circuit switch (OCS) can give every transfer a full-rate circuit for less than an oversubscribed packet fabric costs, but a mechanical OCS needs tens of milliseconds to reconfigure. We hide this delay inside the prefill. A reservation scheduler commits each circuit while the prefill is still computing, so the circuit is ready when the KV is, and each GPU reaches the OCS over its own wavelength-multiplexed (WDM) optics on one fiber pair. In simulations of GPU clusters on real serving traces with measured prefill times on H100 GPUs, this optical KV cache network matches 400G packet fabrics with adaptive routing at 0.55 to 0.78 times the cost of a 2:1 fabric and tolerates the 50 ms reconfiguration delay of a 384-port mechanical OCS.",
-  "url": "http://arxiv.org/abs/2610.18444v1",
-  "pdf_url": "https://arxiv.org/pdf/2610.18444v1",
+  "abstract": "In disaggregated LLM serving, each request's KV cache moves from a prefill GPU to a decode GPU before the response begins, and a coding-agent turn often moves the KV cache of its whole long context. Behind an oversubscribed packet fabric, this transfer adds to the time to first token (TTFT). An optical circuit switch (OCS) can give every transfer a full-rate circuit for less than an oversubscribed packet fabric costs, but a mechanical OCS needs tens of milliseconds to reconfigure. We hide this delay inside the prefill. A reservation scheduler commits each circuit while the prefill is still computing, so the circuit is ready when the KV cache is, and each GPU reaches the OCS through its own wavelength-multiplexed (WDM) optics on one fiber pair. In simulations of GPU clusters on real serving traces with prefill times measured on H100 GPUs, this optical KV cache network matches 400G packet fabrics with adaptive routing at 0.55 to 0.78 times the cost of a 2:1 fabric and tolerates the 50 ms reconfiguration delay of a 384-port mechanical OCS.",
+  "url": "https://arxiv.org/abs/2610.18444",
+  "pdf_url": "https://arxiv.org/pdf/2610.18444",
   "published": "2026-10-13",
-  "updated": "2026-10-13",
+  "updated": "2026-10-20",
   "authors": [
     "Seongwon Yoon",
     "Shimeng Yu"
   ],
-  "source": "arXiv",
+  "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
     "cs.NI"
@@ -51,19 +51,24 @@
     "quantitative claim detected",
     "no code link detected in metadata"
   ],
-  "summary_en": "Disaggregated LLM serving moves each request's KV cache from a prefill GPU to a decode GPU before the response begins, and a coding-agent turn often moves the KV of its whole long context.",
+  "summary_en": "In disaggregated LLM serving, each request's KV cache moves from a prefill GPU to a decode GPU before the response begins, and a coding-agent turn often moves the KV cache of its whole long context.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-16T04:43:54+00:00",
-  "last_seen": "2026-10-19T04:46:31+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
   "featured_weeks": [],
   "source_records": [
     {
       "source": "arXiv",
       "id": "http://arxiv.org/abs/2610.18444v1",
       "url": "http://arxiv.org/abs/2610.18444v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.18444",
+      "url": "https://arxiv.org/abs/2610.18444"
     }
   ]
 }

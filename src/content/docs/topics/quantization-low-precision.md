@@ -5,10 +5,18 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **321** 篇。
+累计收录 **329** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Optimal Post-Training Quantization Scales and Where to Find Them](../../papers/arxiv-2606.10890/) | 2026-10-20 | 43 |
+| [GRAU: A Generic Runtime-Reconfigurable Activation-Requantization Unit for Quantized Neural Network Accelerators](../../papers/arxiv-2602.22352/) | 2026-10-20 | 43 |
+| [Provable Adversarial Detection: Prime Quantization meets Gromov--Wasserstein](../../papers/arxiv-2610.26102/) | 2026-10-20 | 42 |
+| [MX-Like Tensor Core for LLM Inference with NPU Integration via Hardware-Software Co-Design Exploration](../../papers/arxiv-2610.26083/) | 2026-10-20 | 42 |
+| [What Matters for NVFP4 Training? A Comparative Study of Low-Precision Pretraining Recipes](../../papers/arxiv-2610.24343/) | 2026-10-20 | 41 |
+| [How far do on-premises open LLMs get on Text-to-SQL? A cross-family size and technique frontier on BIRD](../../papers/arxiv-2606.29733/) | 2026-10-20 | 41 |
+| [Generative Retrieval for Reverse Target Fishing with a Proteome-Scale Benchmark](../../papers/arxiv-2610.24458/) | 2026-10-20 | 40 |
+| [PACT: NVFP4 Data-Flow LoRA Fine-Tuning on Consumer GPUs](../../papers/arxiv-2610.25048/) | 2026-10-20 | 38 |
 | [LeanTTA: A Backpropagation-Free and Stateless Approach to Quantized Test-Time Adaptation on Edge Devices](../../papers/arxiv-2503.15889/) | 2026-10-19 | 44 |
 | [Noise-shaped Sampling and Annealing for Scalable On-the-edge Training of Binary and Ternary AI Models](../../papers/arxiv-2610.22621/) | 2026-10-19 | 41 |
 | [Fractional Power-of-Two Quantization for Efficient and Effective Multiplier-Free LLM Inference](../../papers/arxiv-2610.21257/) | 2026-10-15 | 46 |

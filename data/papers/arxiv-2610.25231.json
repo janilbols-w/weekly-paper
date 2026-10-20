@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2610.25231",
+  "title": "AgentLens: Framework-Aware Characterization and Resource Control for Heterogeneous LLM Agents",
+  "abstract": "LLM-based agents are increasingly deployed on shared hosts, yet their host-side resource demands remain poorly understood, limiting effective resource coordination. We present AgentLens, which combines a cross-framework workload characterization with a framework-aware resource controller for co-located agents. Across 10 frameworks and 11 matched coding tasks, we find that framework orchestration strongly shapes resource demand: framework identity explains 52.95% of peak RSS variance, compared with 4.22% for task identity, while execve events per tool call differ by 39x between MetaGPT and CAMEL. Resource dimensions are not interchangeable: peak RSS and subprocess count have a Spearman correlation of 0.13. Static budgets and framework-agnostic policies miss these structural differences and the alternation between API waiting and tool execution. AgentLens combines offline framework fingerprints with online execution-phase signals to coordinate memory through cgroup v2, without modifying framework internals. In trace-driven replay across three co-location pairs at a memory budget of 90% of aggregate peak demand, AgentLens keeps the protected worker's P95 allocation latency at 5.7-7.1 ms, improving on static allocation by 2.1-2.6x.",
+  "url": "https://arxiv.org/abs/2610.25231",
+  "pdf_url": "https://arxiv.org/pdf/2610.25231",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Wentao Hong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "observability-benchmarking",
+    "leaf": "Observability & Benchmarking",
+    "leaf_zh": "可观测性与 Benchmark"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "workload characterization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: workload characterization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM-based agents are increasingly deployed on shared hosts, yet their host-side resource demands remain poorly understood, limiting effective resource coordination.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.25231",
+      "url": "https://arxiv.org/abs/2610.25231"
+    }
+  ]
+}

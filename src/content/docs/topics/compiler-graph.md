@@ -5,10 +5,16 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **118** 篇。
+累计收录 **123** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MOSAIC: More LLMs, Less Cost through Collaborative Reasoning for Compiler Optimizations](../../papers/arxiv-2602.01935/) | 2026-10-20 | 46 |
+| [AutoMind: Adaptive Knowledgeable Agent for Automated Data Science](../../papers/arxiv-2506.10974/) | 2026-10-20 | 44 |
+| [Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents](../../papers/arxiv-2610.25119/) | 2026-10-20 | 43 |
+| [VeriGRAG: Enhancing LLM-Based Verilog Code Generation with Structure-Aware Soft Prompts](../../papers/arxiv-2510.15914/) | 2026-10-20 | 42 |
+| [Local Conflict, Targeted Repair: A Perturbation Analysis of Multi-Domain RL](../../papers/arxiv-2606.02398/) | 2026-10-20 | 39 |
+| [Learning to Couple: Context-Adaptive Joint Denoising for Diffusion Language Models](../../papers/arxiv-2610.25723/) | 2026-10-20 | 39 |
 | [Veri-Sure: Multi-Agent RTL Code Generation with Temporal Tracing, Slicing and Formal Verification](../../papers/arxiv-2601.19747/) | 2026-10-19 | 48 |
 | [Accelerated Execution of Bayesian Neural Networks using a Single Probabilistic Forward Pass and Code Generation](../../papers/arxiv-2511.23440/) | 2026-10-19 | 45 |
 | [A Theoretical Analysis of Test-Driven Code Generation](../../papers/arxiv-2602.06098/) | 2026-10-19 | 42 |
@@ -126,4 +132,3 @@ description: "Compiler & Graph Optimization"
 | [From Interface to Inference: Eliciting Any-Order Inference from Any-Order Models](../../papers/arxiv-2607.26504/) | 2026-08-11 | 38 |
 | [Consilience for Verifier-Free Test-Time Scaling](../../papers/arxiv-2608.09898/) | 2026-08-10 | 42 |
 | [Latent Collaboration in Multi-Agent Systems](../../papers/arxiv-2511.20639/) | 2026-08-04 | 47 |
-| [RAG Strategies for Natural Language-Based SQL Query and REST API Call Generation](../../papers/arxiv-2602.07086/) | 2026-08-04 | 38 |

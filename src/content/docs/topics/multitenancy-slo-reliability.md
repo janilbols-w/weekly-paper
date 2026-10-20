@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **36** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference](../../papers/arxiv-2610.25519/) | 2026-10-20 | 51 |
 | [Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](../../papers/arxiv-2610.19405/) | 2026-10-14 | 42 |
 | [Dissecting the Carbon-SLO Tension in Geo-Distributed LLM Serving](../../papers/arxiv-2610.14571/) | 2026-10-10 | 45 |
 | [Evaluating Inference Compute for Generative AI: A Framework for Enterprise Workloads](../../papers/arxiv-2610.07094/) | 2026-10-07 | 54 |

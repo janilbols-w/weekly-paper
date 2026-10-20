@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2510.15914",
+  "title": "VeriGRAG: Enhancing LLM-Based Verilog Code Generation with Structure-Aware Soft Prompts",
+  "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities in generating Verilog code from natural language descriptions. However, Verilog code inherently encodes the structural characteristics of hardware circuits, including data path organization and interconnections among components. Effectively leveraging these structural characteristics to enhance the functional and syntactic correctness of LLM-based Verilog code generation remains a significant challenge. To address this challenge, we propose VeriGRAG, a novel framework that converts Verilog code into data path graphs and employs graph neural networks (GNNs) to encode their structural information. A multimodal retriever, trained through knowledge distillation from a cross-attention encoder to a dual encoder, then selects the graph embeddings most relevant to the input hardware description. The VeriFormer module uses learnable query tokens and two-stage training to extract code-relevant structural features and align them with the LLM's input embedding space, producing structure-aware soft prompts. Experiments on VerilogEval and RTLLM show improvements in both syntactic and functional correctness. With Qwen2.5-Coder-32B as its backbone, VeriGRAG achieves the highest functional $pass@1$ and $pass@5$ scores among the compared methods on both benchmarks.",
+  "url": "https://arxiv.org/abs/2510.15914",
+  "pdf_url": "https://arxiv.org/pdf/2510.15914",
+  "published": "2026-10-20",
+  "updated": "2026-10-20",
+  "authors": [
+    "Jiayu Zhao",
+    "Zehua Pei",
+    "Zetao Guo",
+    "Bei Yu",
+    "Song Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.AI",
+    "cs.PL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models (LLMs) have demonstrated remarkable capabilities in generating Verilog code from natural language descriptions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-20T04:43:13+00:00",
+  "last_seen": "2026-10-20T04:43:13+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2510.15914",
+      "url": "https://arxiv.org/abs/2510.15914"
+    }
+  ]
+}
