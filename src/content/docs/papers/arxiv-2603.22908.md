@@ -39,7 +39,7 @@ Assuming that neither source data nor source model parameters are accessible, bl
 ## 元数据
 
 - 作者：Zhe Zhang, Jing Li, Wanli Xue, Xu Cheng, Jianhua Zhang, Qinghua Hu, Shengyong Chen
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

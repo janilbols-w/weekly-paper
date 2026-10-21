@@ -39,7 +39,7 @@ Autoregressive language models emit one token per forward pass. This causes high
 ## 元数据
 
 - 作者：Felix Draxler, Robin C. Geyer, Daniel Geyfman, Farrin Marouf Sofian, Justus Will, Philipp Hildebrandt, Giosue Migliorini, Prakhar Srivastava, Gagan Sai Trinadh Duggaraju Peddiraju, Kushagra Pandey, Jorge da Silva Gon\c{c}alves, Elijah Tavares, Jan Niklas Groeneveld, Yang Meng, Julia E. Vogt, Stephan Mandt
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/mandt-lab/plm](https://github.com/mandt-lab/plm)
 - 阅读深度：metadata

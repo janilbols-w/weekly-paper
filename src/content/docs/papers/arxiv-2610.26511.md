@@ -39,7 +39,7 @@ Conversational AI systems built on Large Language Models (LLMs) require routing 
 ## 元数据
 
 - 作者：Jinyang Li, Denis Emelin, Simone Tedeschi, Weiwei Cheng, Cristina Morariu, Haytham Assem, Jens Lehmann, Emine Yilmaz, Angus Addlesee
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

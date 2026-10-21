@@ -39,7 +39,7 @@ Long-context large language model (LLM) inference is important for modern intell
 ## 元数据
 
 - 作者：Yu Wang, Zhu Wang, Ning Hu, Yifan Guo, Xiu Ma, Bin Guo, Zhiwen Yu
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

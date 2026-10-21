@@ -39,7 +39,7 @@ The size of the KV cache grows linearly with context length, making it a major m
 ## 元数据
 
 - 作者：Minyoung Go, Yongjun Park
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

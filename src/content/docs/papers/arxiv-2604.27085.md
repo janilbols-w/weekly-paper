@@ -39,7 +39,7 @@ Fine-tuning Large Language Models (LLMs) on consumer-grade GPUs is highly cost-e
 ## 元数据
 
 - 作者：Yibin Luo, Shiwei Gao, Huichuan Zheng, Youyou Lu, Jiwu Shu
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Pruning is a promising approach for improving the efficiency of large language m
 ## 元数据
 
 - 作者：Haozhe Hu, Hao Wu, Peiran Yin, Chao Han, Yunpu Ma, Xiaoyu Shen
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/EIT-NLP/LLM-Pruning/tree/main/WIDE}](https://github.com/EIT-NLP/LLM-Pruning/tree/main/WIDE})
 - 阅读深度：metadata

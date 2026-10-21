@@ -39,7 +39,7 @@ Self-supervised speech models commonly consist of a set of convolutional neural 
 ## 元数据
 
 - 作者：Jessica Yang, Marcelo Beramendi Caballero, Ju-Chieh Chou, Karen Livescu
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

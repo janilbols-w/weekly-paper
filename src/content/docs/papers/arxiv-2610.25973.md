@@ -39,7 +39,7 @@ Self-distillation policy optimization provides dense token-level supervision for
 ## 元数据
 
 - 作者：Suwan Yoon, Seongryong Jung, Changhee Lee
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

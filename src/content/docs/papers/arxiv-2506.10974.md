@@ -39,7 +39,7 @@ Large Language Model (LLM) agents have shown great potential in addressing real-
 ## 元数据
 
 - 作者：Yujie Luo, Yixin Ou, Jingsheng Zheng, Lanning Wei, Zhuoyun Yu, Shuofei Qiao, Jintian Zhang, Da Zheng, Yuren Mao, Yunjun Gao, Huajun Chen, Ningyu Zhang
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/zjunlp/AutoMind](https://github.com/zjunlp/AutoMind)
 - 阅读深度：metadata

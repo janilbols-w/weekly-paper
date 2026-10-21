@@ -39,7 +39,7 @@ Large language model (LLM) agents increasingly rely on external memory to accumu
 ## 元数据
 
 - 作者：Yiming Xu, Qian Yang, Zihan Chen, Yuefei Wu, Wenhan Zeng, Bin Shi, Bo Dong
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

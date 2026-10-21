@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2610.26960",
+  "title": "VS-Flash: Harnessing Vector Search with Computational Memory-Semantic Flash",
+  "abstract": "As generative AI continues to evolve, retrieval-augmented generation (RAG) systems are driving rapid growth in vector database capacity requirements. As datasets outgrow host DRAM, vector databases rely on MMap-based serving over SSDs to extend capacity. However, high-fan-out ANN searches generate concurrent irregular accesses that contend for host memory and storage resources, degrading bulk throughput and inflating tail latency under mixed workloads. In this paper, we address these challenges through memory-semantic capacity and workload-aware compute placement. VS-Flash exposes flash as a large-capacity memory-semantic space and dynamically selects the execution engine according to runtime query and workload characteristics. It offloads throughput-oriented large-batch queries to a Computational Memory-Semantic Flash (CMS-Flash) device, while executing latency-sensitive small-batch queries on the host CPU. Both paths access the same resident segments, avoiding a separate host-DRAM replica. Across three billion-scale datasets, VS-Flash improves bulk-search throughput over vanilla Milvus by 36.8X on average, with up to a 57.4X improvement. Under mixed workloads, VS-Flash reduces the p99 latency of latency-sensitive requests by up to 24.8X while sustaining device-side bulk search. These results show that VS-Flash delivers scalable vector search beyond host DRAM capacity while jointly improving bulk throughput and small-request tail latency.",
+  "url": "https://arxiv.org/abs/2610.26960",
+  "pdf_url": "https://arxiv.org/pdf/2610.26960",
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "authors": [
+    "Donguk Kim",
+    "Sangjun Pae",
+    "Daeyoung Lee",
+    "Dong Kim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DB",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "tail latency"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: tail latency",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As generative AI continues to evolve, retrieval-augmented generation (RAG) systems are driving rapid growth in vector database capacity requirements.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-21T04:44:04+00:00",
+  "last_seen": "2026-10-21T04:44:04+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.26960",
+      "url": "https://arxiv.org/abs/2610.26960"
+    }
+  ]
+}

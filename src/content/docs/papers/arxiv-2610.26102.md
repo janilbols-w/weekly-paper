@@ -39,7 +39,7 @@ Adversarial vulnerability persists across modern vision architectures from CNNs 
 ## 元数据
 
 - 作者：Manohar Kaul, Sadbhavana Babar, Aditya Ramesh, Aditya Saibewar, Fumiyoshi Kasahara, Maki Inui, Hiroaki Kurihara
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

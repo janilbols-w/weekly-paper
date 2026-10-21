@@ -39,7 +39,7 @@ Automatically generating high-performance kernels with LLM-based agents promises
 ## 元数据
 
 - 作者：Chuansai Zhou, Yanlin Liu, Bingning Huang, Shidi Xi, Chao Huang, Boxing Chen, Mingming Zhu, Guanghuan Fang, Ben Feng, Zongzuo Wang
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

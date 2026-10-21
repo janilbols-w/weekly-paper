@@ -39,7 +39,7 @@ The Chinese idiom "kou mi fu jian" ("honeyed words, hidden daggers") names speec
 ## 元数据
 
 - 作者：Caixin Kang, Sitong Gong, Tianyu Yan, Kaipeng Zhang, Yoichi Sato, Yifei Huang
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

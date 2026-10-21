@@ -39,7 +39,7 @@ As LLM adoption surges, scaling model serving requires unlocking stranded GPU ca
 ## 元数据
 
 - 作者：Annabelle Sujun Tang, Rohan Mahapatra, Christopher Priebe, Hanyang Xu, Manya Ghobadi, Christopher Rossbach, Hadi Esmaeilzadeh
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

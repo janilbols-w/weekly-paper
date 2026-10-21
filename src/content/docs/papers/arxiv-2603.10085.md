@@ -39,7 +39,7 @@ Improving GPU kernel efficiency is crucial for efficient AI systems. Recent work
 ## 元数据
 
 - 作者：Qitong Sun, Jun Han, Tianlin Li, Zhe Tang, Sheng Chen, Fei Yang, Aishan Liu, Xianglong Liu, Yang Liu
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/0satan0/KernelMem/](https://github.com/0satan0/KernelMem/)
 - 阅读深度：metadata

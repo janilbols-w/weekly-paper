@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2512.13886",
+  "title": "OPTIMA: Optimal One-shot Pruning for LLMs via Quadratic Programming Reconstruction",
+  "abstract": "Post-training pruning cuts the inference cost of large language models, yet it faces a trade-off: simple heuristics that zero weights are fast but degrade accuracy, while principled joint optimization methods recover accuracy but are computationally infeasible at modern scale. One-shot methods such as SparseGPT sit in between and apply efficient but approximate weight updates. To close this gap, we introduce OPTIMA, a practical one-shot post-training pruning method that balances accuracy and scalability. OPTIMA casts layer-wise weight reconstruction after mask selection as independent, column-wise quadratic programs (QPs) that share one Hessian per weight matrix. Solving these QPs yields, at solver convergence, the per-column minimizer of the layer-wise reconstruction objective under the shared Hessian, and the shared Hessian makes the QPs easy to batch on accelerators. We implement an accelerator-friendly QP solver that accumulates one Hessian per weight matrix and solves many small QPs in parallel with a convergence certificate per column, enabling one-shot post-training pruning at scale on a single accelerator without fine-tuning. OPTIMA integrates with existing mask selectors and improves average zero-shot accuracy in 40 of 49 (model, mask selector, sparsity) settings across the LLaMA and Gemma families, with mean gains of +0.61, +0.56, and +1.01 points at 50% unstructured, 2:4, and 60% unstructured sparsity, and up to +3.97 points at 60% sparsity, while matching ADMM-based exact reconstruction on its own masks. On an NVIDIA H100, OPTIMA prunes an 8B-parameter transformer end-to-end in 40 hours and 60 GB of peak GPU memory. This shows that principled column-wise QP reconstruction is a practical alternative to heuristic weight updates in one-shot post-training pruning.",
+  "url": "https://arxiv.org/abs/2512.13886",
+  "pdf_url": "https://arxiv.org/pdf/2512.13886",
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "authors": [
+    "Mohammad Mozaffari",
+    "Samuel Kushnir",
+    "Maryam Mehri Dehnavi",
+    "Amir Yazdanbakhsh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Post-training pruning cuts the inference cost of large language models, yet it faces a trade-off: simple heuristics that zero weights are fast but degrade accuracy, while principled joint optimization methods recover accuracy but are computationally infeasible at modern scale.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-21T04:44:04+00:00",
+  "last_seen": "2026-10-21T04:44:04+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2512.13886",
+      "url": "https://arxiv.org/abs/2512.13886"
+    }
+  ]
+}

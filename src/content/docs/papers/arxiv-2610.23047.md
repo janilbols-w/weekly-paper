@@ -39,7 +39,7 @@ On AWS Trainium2, every component of a diffusion model runs as a program compile
 ## 元数据
 
 - 作者：Bin Ma, Min Yu, Vijay Kodamalla, Jialin Liu, Dong Li
-- 发布：2026-10-19；更新：2026-10-19
+- 发布：2026-10-19；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

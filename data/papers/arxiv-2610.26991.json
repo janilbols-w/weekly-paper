@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2610.26991",
+  "title": "3D-MoE: Complementarity-Guided Hardware-Software Co-Design for MoE Decode on 3D-Stacked NMP",
+  "abstract": "Mixture-of-Experts (MoE) have become a mainstream way to scale Large Language Models (LLMs), because each token activates only a small subset of experts, reducing inference cost. However, MoE decode remains highly memory-bound and exhibits strongly skewed, time-varying expert loads. 3D-stacked DRAM near-memory processing (NMP) provides the bandwidth that decode demands, yet its tiled organization makes load balancing expensive: expert parallelism (EP) preserves locality but suffers from hotspot-induced imbalance, while more distributed strategies weaken locality and increase NoC traffic. To address this locality-balance conflict, we observe that domain-specialized token routing creates offsetting expert-load fluctuations across decode steps, a property we call expert complementarity. Using this insight, we propose 3D-MoE, a hardware--software co-designed system for MoE decode on 3D-stacked NMP. 3D-MoE uses offline, one-time complementarity-guided grouping and locality-aware mapping to establish coarse-grained inter-group balance, handles residual intra-group hotspots through a lightweight Collaborative Memory-Network (CMN) that streams each hot expert's weight tiles once from its host DRAM channel to helper cores over a reconfigured local broadcast path, and uses cost-aware online remapping to remain robust to workload drift. Across MoE models, 3D-MoE achieves an average 4.63$\\times$ MoE-layer speedup over EP and improves end-to-end throughput by 1.58$\\times$--1.86$\\times$ over the strongest NMP baselines, with 2.11\\% additional logic-die area.",
+  "url": "https://arxiv.org/abs/2610.26991",
+  "pdf_url": "https://arxiv.org/pdf/2610.26991",
+  "published": "2026-10-21",
+  "updated": "2026-10-21",
+  "authors": [
+    "Yudong Pan",
+    "Lian Liu",
+    "Shixin Zhao",
+    "Yintao He",
+    "Kaiyan Chang",
+    "Tianhua Han",
+    "Chenyang Ai",
+    "Haonan Zhu",
+    "Mengdi Wang",
+    "Yinhe Han",
+    "Ying Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.AR",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "load balancing"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: load balancing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) have become a mainstream way to scale Large Language Models (LLMs), because each token activates only a small subset of experts, reducing inference cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-21T04:44:04+00:00",
+  "last_seen": "2026-10-21T04:44:04+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.26991",
+      "url": "https://arxiv.org/abs/2610.26991"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Adapting pre-trained continuous-time generative models to sequentially incoming 
 ## 元数据
 
 - 作者：Alessandro Palma, Charles Jones, Tristan Cinquin, Fabian J. Theis, Frederik Wenkel
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

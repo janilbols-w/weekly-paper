@@ -39,7 +39,7 @@ While LLM-based agent systems have demonstrated remarkable proficiency in reason
 ## 元数据
 
 - 作者：Yuanpu Cao, Saket Sathe, Hanyu Wang, Ziyi Yin, Fenglong Ma, Jinghui Chen
-- 发布：2026-10-15；更新：2026-10-20
+- 发布：2026-10-15；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

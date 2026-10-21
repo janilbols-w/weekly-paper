@@ -39,7 +39,7 @@ Recent analyses question whether reinforcement learning (RL) is responsible for 
 ## 元数据
 
 - 作者：Akiyoshi Tomihari, Issei Sato
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/tom4649/power-self-distillation](https://github.com/tom4649/power-self-distillation)
 - 阅读深度：metadata

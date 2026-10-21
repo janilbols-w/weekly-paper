@@ -39,7 +39,7 @@ Post-training quantization (PTQ) compresses large language models by mapping wei
 ## 元数据
 
 - 作者：Juan Amboage, Pablo Monteagudo-Lago, Ian Colbert, Giuseppe Franco, Nicholas Fraser
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

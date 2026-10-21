@@ -39,7 +39,7 @@ Classification of sleep stages is essential for assessing sleep quality and diag
 ## 元数据
 
 - 作者：Benjamin Wei Hao Chin, Yuin Torng Yew, Jia Hong Puah, Haocheng Wu, Lanxin Liang, Chow Khuen Chan, Norita Mohd Zain, Siti Balqis Samdin, Sim Kuan Goh
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Ben1001409/SleepDIFFormer](https://github.com/Ben1001409/SleepDIFFormer)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Language models used in financial backtests suffer from look-ahead bias, as a mo
 ## 元数据
 
 - 作者：Seunghan Lee, Jun Seo, Jaehoon Lee, Junhyeok Kang, Sangjun Han, Sungdong Yoo, Minjae Kim, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Soonyoung Lee, Wonbin Ahn
-- 发布：2026-09-28；更新：2026-10-20
+- 发布：2026-09-28；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/seunghan96/palm](https://github.com/seunghan96/palm)
 - 阅读深度：metadata

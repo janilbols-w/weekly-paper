@@ -39,7 +39,7 @@ Motion-deblurring models lose substantial accuracy when transferred from profess
 ## 元数据
 
 - 作者：Abdullah Al Shafi, Kazi Saeed Alam, Sumaiya Rahim Suma, Sk. Imran Hossain
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

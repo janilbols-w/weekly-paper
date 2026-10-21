@@ -39,7 +39,7 @@ On-device machine learning (ML) has become a fundamental component of emerging m
 ## 元数据
 
 - 作者：Mengyang Liu, Chenyu Lu, Haodong Tian, Fang Dong, Ruiting Zhou, Wei Wang, Dian Shen, Guangtong Li, Ye Wan, Li Li
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/liu-mengyang/AutoTailor}](https://github.com/liu-mengyang/AutoTailor})
 - 阅读深度：metadata

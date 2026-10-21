@@ -39,7 +39,7 @@ LLM agents increasingly combine long-term memory for personalization with tool c
 ## 元数据
 
 - 作者：Mahavir Dabas, Jihyun Jeong, Ming Jin, Ruoxi Jia
-- 发布：2026-10-20；更新：2026-10-20
+- 发布：2026-10-20；更新：2026-10-21
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

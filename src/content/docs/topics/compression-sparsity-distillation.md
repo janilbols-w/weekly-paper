@@ -5,10 +5,12 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **652** 篇。
+累计收录 **654** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OPTIMA: Optimal One-shot Pruning for LLMs via Quadratic Programming Reconstruction](../../papers/arxiv-2512.13886/) | 2026-10-21 | 45 |
+| [Unsupervised Head Network Personalization for Split Computing via Federated Learning](../../papers/arxiv-2610.27952/) | 2026-10-21 | 43 |
 | [WIDE: Boosting Adaptive LLM Inference via Token-level Dynamic Width Pruning](../../papers/arxiv-2607.28418/) | 2026-10-20 | 54 |
 | [LOOP: Recovery-Aligned Iterative Layer Pruning via On-Policy Distillation](../../papers/arxiv-2610.25679/) | 2026-10-20 | 50 |
 | [TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning](../../papers/arxiv-2610.26754/) | 2026-10-20 | 47 |
