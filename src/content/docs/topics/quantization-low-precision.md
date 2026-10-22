@@ -5,10 +5,18 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **329** 篇。
+累计收录 **337** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Comprehensive Evaluation on Quantization Techniques for Large Language Models](../../papers/arxiv-2507.17417/) | 2026-10-22 | 49 |
+| [Auditing Conformal Prediction for Language Models Under Inference-Time Model Shift](../../papers/arxiv-2610.28937/) | 2026-10-22 | 47 |
+| [Is 2:4 Sparsity Still Worth It? Semi-Structured Sparsity versus Quantization in LLM Inference](../../papers/arxiv-2610.28947/) | 2026-10-22 | 44 |
+| [InfoQuant: Shaping Activation Distributions for Low-Bit LLM Quantization](../../papers/arxiv-2605.26175/) | 2026-10-22 | 44 |
+| [Right On Q: Recovering Reasoning under Quantization via Self-Generated Trajectories](../../papers/arxiv-2610.29378/) | 2026-10-22 | 43 |
+| [Effects of Model Scale and Quantization on Social Bias and Abstention in Question Answering](../../papers/arxiv-2610.29657/) | 2026-10-22 | 42 |
+| [Compressing Onboard Language Models for Space Robots under a Behavioral-Fidelity Requirement](../../papers/arxiv-2610.29302/) | 2026-10-22 | 41 |
+| [Extreme Low-State Quantized Transformer for Electricity-Load Forecasting](../../papers/arxiv-2610.28784/) | 2026-10-22 | 40 |
 | [Optimal Post-Training Quantization Scales and Where to Find Them](../../papers/arxiv-2606.10890/) | 2026-10-20 | 43 |
 | [GRAU: A Generic Runtime-Reconfigurable Activation-Requantization Unit for Quantized Neural Network Accelerators](../../papers/arxiv-2602.22352/) | 2026-10-20 | 43 |
 | [Provable Adversarial Detection: Prime Quantization meets Gromov--Wasserstein](../../papers/arxiv-2610.26102/) | 2026-10-20 | 42 |
@@ -46,8 +54,8 @@ description: "Quantization & Low Precision"
 | [Riemannian Graph Tokenizer for Structural Knowledge Transfer](../../papers/arxiv-2610.15427/) | 2026-10-11 | 41 |
 | [VLCQ: Post-training quantization for deep neural networks using variable length coding](../../papers/arxiv-2610.15092/) | 2026-10-10 | 53 |
 | [FidelityQ: Preserving Predictive Fidelity in Ultra-Low-Bit Language Model Quantization](../../papers/arxiv-2610.14934/) | 2026-10-10 | 45 |
-| [Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models](../../papers/arxiv-2610.15029/) | 2026-10-10 | 43 |
 | [When Dynamic Scaling Fails: A Scale-State Feedback Governs Recurrent-State Quantization in Linear-Attention and SSM LLMs](../../papers/arxiv-2610.15139/) | 2026-10-10 | 41 |
+| [Is a 9B Decision Foundation Model Needed for Symptom-to-Disease Classification? Fine-Tuning Clef-Flash Against TF-IDF Baselines](../../papers/arxiv-2610.15029/) | 2026-10-10 | 38 |
 | [Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows](../../papers/arxiv-2610.11482/) | 2026-10-09 | 45 |
 | [When Lower Reconstruction Loss Hurts: Distributionally Robust Refinement for Low-Bit LLM Quantization](../../papers/arxiv-2610.11226/) | 2026-10-09 | 43 |
 | [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](../../papers/arxiv-2509.15206/) | 2026-10-09 | 43 |

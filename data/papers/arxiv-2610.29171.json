@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2610.29171",
+  "title": "TrainBridge: Agentic NPU Training Optimization Guided by GPU Compilation Evidence",
+  "abstract": "We study how to improve training efficiency on Ascend NPUs. In the NPU training programs we study, framework-level compilation optimizations such as operator fusion are only partially applied, leaving fragmented computation and avoidable execution overheads. Profiling-guided tuning can address these inefficiencies, but it often requires costly trial and error. To make training on NPUs more efficient, we propose TrainBridge, an agentic approach for transferring GPU optimization guidance to NPU training. TrainBridge uses the highly optimized execution produced by mature GPU compilation stacks as a task-specific reference for NPU tuning. It extracts optimization intents from the GPU training execution to guide NPU program rewrites and further refines the rewritten program through iterative profiling. Our GPU-to-NPU migration experiments show that TrainBridge achieves an average 1.7x speedup across four workloads covering LLM pretraining, image classification, and vision-language training, and an average speedup of nearly 2.0x across 27 Modded-NanoGPT speedrun records with highly optimized GPU implementations.",
+  "url": "https://arxiv.org/abs/2610.29171",
+  "pdf_url": "https://arxiv.org/pdf/2610.29171",
+  "published": "2026-10-22",
+  "updated": "2026-10-22",
+  "authors": [
+    "Yupeng Chen",
+    "Kunxiang Zhao",
+    "Xingjian Wang",
+    "Yue Zhao",
+    "Yijing Wu",
+    "Ye Liu",
+    "Kai Li",
+    "Congliang Chen",
+    "Ruoyu Sun"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "operator fusion"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: operator fusion",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We study how to improve training efficiency on Ascend NPUs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-22T04:43:43+00:00",
+  "last_seen": "2026-10-22T04:43:43+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.29171",
+      "url": "https://arxiv.org/abs/2610.29171"
+    }
+  ]
+}

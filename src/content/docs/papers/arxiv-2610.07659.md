@@ -39,7 +39,7 @@ Speculative decoding accelerates autoregressive generation in large language mod
 ## 元数据
 
 - 作者：Geonmo Gu, Byeongho Heo, HeeJae Jun, Yoohoon Kang, Sangmin Lee, Sangdoo Yun, Dongyoon Han
-- 发布：2026-10-07；更新：2026-10-07
+- 发布：2026-10-07；更新：2026-10-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/naver-ai/DLoop](https://github.com/naver-ai/DLoop)
 - 阅读深度：metadata

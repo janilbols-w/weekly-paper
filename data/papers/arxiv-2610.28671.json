@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2610.28671",
+  "title": "Accelerating CPU Speculative Decoding via Unified Graph Execution and Transactional KV Isolation",
+  "abstract": "Speculative decoding accelerates LLM inference, but deploying it on CPUs introduces severe systems bottlenecks: context-swapping latency between draft and target graphs, and memory allocation overhead during KV cache rollbacks. We introduce SubTernary, an execution framework that eliminates these costs through Unified Graph Caching and Transactional KV-Cache Isolation. By compiling both models into a single memory arena with a persistent thread pool and routing speculative tokens to a static scratchpad for zero-copy pointer resets, SubTernary avoids dynamic reallocation and thread synchronization entirely. We integrate a 256-bit AVX2 ternary SIMD kernel as a low-bit case study. Ablations reveal our systems runtime drives 35.0% of the throughput gains, while the ternary kernel adds 6.0%. SubTernary achieves a $1.35\\times$ speedup over llama.cpp speculative decoding and $3.99\\times$ over autoregressive decoding, maintaining $O(1)$ rollback latency.",
+  "url": "https://arxiv.org/abs/2610.28671",
+  "pdf_url": "https://arxiv.org/pdf/2610.28671",
+  "published": "2026-10-22",
+  "updated": "2026-10-22",
+  "authors": [
+    "Zhangdie Yuan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [
+    "attention-kv-cache"
+  ],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 15,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Speculative decoding accelerates LLM inference, but deploying it on CPUs introduces severe systems bottlenecks: context-swapping latency between draft and target graphs, and memory allocation overhead during KV cache rollbacks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-22T04:43:43+00:00",
+  "last_seen": "2026-10-22T04:43:43+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.28671",
+      "url": "https://arxiv.org/abs/2610.28671"
+    }
+  ]
+}

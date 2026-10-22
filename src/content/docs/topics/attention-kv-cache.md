@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **222** 篇。
+累计收录 **225** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [To Keep or Not to Keep: Learning KV Cache Retention in Disaggregated LLM Serving Systems](../../papers/arxiv-2610.28637/) | 2026-10-22 | 54 |
+| [RISK-KV: Quality-Aware Selective KV Cache Reconstruction for Distributed LLM Inference](../../papers/arxiv-2610.29544/) | 2026-10-22 | 45 |
+| [HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference](../../papers/arxiv-2610.29873/) | 2026-10-22 | 43 |
 | [Koi: Evidence-Guided, Self-Calibrating Planning for Multi-Cloud, Heterogeneous LLM Inference Fleets](../../papers/arxiv-2610.24355/) | 2026-10-20 | 51 |
 | [Visual Cache Reuse for Efficient Multimodal Inference](../../papers/arxiv-2610.25136/) | 2026-10-20 | 44 |
 | [Requests of a Feather Must Flock Together: Batch Size vs. Prefix Homogeneity in LLM Inference](../../papers/arxiv-2605.06046/) | 2026-10-20 | 43 |

@@ -5,10 +5,11 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **123** 篇。
+累计收录 **124** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization](../../papers/arxiv-2610.29276/) | 2026-10-22 | 43 |
 | [MOSAIC: More LLMs, Less Cost through Collaborative Reasoning for Compiler Optimizations](../../papers/arxiv-2602.01935/) | 2026-10-20 | 46 |
 | [AutoMind: Adaptive Knowledgeable Agent for Automated Data Science](../../papers/arxiv-2506.10974/) | 2026-10-20 | 44 |
 | [Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents](../../papers/arxiv-2610.25119/) | 2026-10-20 | 43 |

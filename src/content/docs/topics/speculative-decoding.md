@@ -5,10 +5,13 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **116** 篇。
+累计收录 **119** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Accelerating CPU Speculative Decoding via Unified Graph Execution and Transactional KV Isolation](../../papers/arxiv-2610.28671/) | 2026-10-22 | 49 |
+| [RCSD: Reinforcement and Continual Learning for Domain-Specific Speculative Decoding](../../papers/arxiv-2610.29527/) | 2026-10-22 | 48 |
+| [Target Regeneration Shrinks the Gains of Draft-Training Objectives in Speculative Decoding](../../papers/arxiv-2610.29013/) | 2026-10-22 | 43 |
 | [Factorization-Guided Training and Inference for Diffusion-Drafted Speculative Decoding](../../papers/arxiv-2610.23935/) | 2026-10-20 | 49 |
 | [Conjugate Compilation: Self-Improving Agentic Co-Compilation for Speculative Decoding](../../papers/arxiv-2610.25012/) | 2026-10-20 | 48 |
 | [Parallel Language Models via Variational Decoding](../../papers/arxiv-2610.26693/) | 2026-10-20 | 46 |

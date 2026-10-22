@@ -1,19 +1,19 @@
 {
   "id": "arxiv:2610.15029",
-  "title": "Toward System One Clinical Intelligence: Parameter-Efficient Fine-Tuning and Counterfactual Explainability of Decision Foundation Models",
-  "abstract": "Automated disease classification from patient-reported symptoms requires balancing the speed of lightweight discriminative models against the contextual understanding and latency costs of autoregressive large language models (LLMs). Decision foundation models offer an alternative by mapping representations directly to candidate classes without free-form text generation. We adapt Clef-Flash, a 9-billion-parameter decision model built on a Qwen3.5 backbone, for 24-class disease classification on the Symptom2Disease benchmark. Using 4-bit quantized low-rank adaptation (QLoRA) with differential learning rates and a stratified split of 960 training and 240 test cases, the model achieves 95.42% diagnostic accuracy and a macro F1 score of 0.9551. This improves upon the reported zero-shot baselines of 61.67% for a remote API and 65.00% for a local unadapted initialization, and outperforms the ClinicalBERT baseline (90.90%). By evaluating candidate logits in a single forward pass without autoregressive decoding, inference takes under 80 milliseconds per record on a single GPU, yielding a reported 31-fold speedup over generative LLM baselines. To examine symptom-level evidence, we introduce a Leave-One-Symptom-Out (LOSO) counterfactual perturbation framework. Removing disease-defining symptom clauses in a psoriasis example reduces predicted-class confidence from 100.00% to 0.12% and shifts the prediction to impetigo with 99.59% confidence, while removing secondary systemic symptoms produces less than 0.01% change in confidence. These findings suggest that decision-based architectures can combine the linguistic capabilities of large foundation models with low-latency inference and symptom-level interpretability for clinical triage.",
-  "url": "http://arxiv.org/abs/2610.15029v1",
-  "pdf_url": "https://arxiv.org/pdf/2610.15029v1",
+  "title": "Is a 9B Decision Foundation Model Needed for Symptom-to-Disease Classification? Fine-Tuning Clef-Flash Against TF-IDF Baselines",
+  "abstract": "Disease classification from patient-reported symptom descriptions is usually approached with lightweight discriminative models or with autoregressive large language models (LLMs), which understand language broadly but generate text token by token and require output parsing. We study decision foundation models, which score a closed set of candidate labels in a single forward pass without generating text. We adapt Clef-Flash, a 9-billion parameter decision model built on a Qwen3.5 backbone, to the 24-class Symptom2Disease benchmark using 4-bit quantized low-rank adaptation (QLoRA) on a stratified split of 960 training and 240 test cases. The fine-tuned model reaches 95.42% accuracy (95% CI 91.98-97.42%) and a macro F1 of 0.9551, up from 65.00% for the unadapted weights (62.92% through the remote API). However, TF-IDF linear SVM and logistic regression baselines trained on the same split reach 98.75% (95% CI 96.39-99.57%) with sub-millisecond CPU inference, so on this benchmark the fine-tuned model offers no accuracy advantage over a well-tuned linear classifier. A Leave-One-Symptom-Out clause-ablation analysis of four illustrative narratives shows predictions depending on distinguishing clauses: in a psoriasis example, removing the clause describing silvery scales lowers the predicted probability from above 99.99% to 0.12% and shifts the prediction to impetigo, while removing other clauses changes it by less than 0.001 percentage points. Decision architectures deliver structured, single-pass predictions from large language backbones, but short, lexically distinctive benchmarks such as Symptom2Disease cannot show an advantage over simple baselines; validation on longer, real clinical text and clinician review are needed.",
+  "url": "https://arxiv.org/abs/2610.15029",
+  "pdf_url": "https://arxiv.org/pdf/2610.15029",
   "published": "2026-10-10",
-  "updated": "2026-10-10",
+  "updated": "2026-10-22",
   "authors": [
     "S. M. Mahbub Uddin Ahmed"
   ],
-  "source": "arXiv",
+  "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CL",
-    "cs.AI"
+    "cs.AI",
+    "cs.CL"
   ],
   "doi": "",
   "venue": "",
@@ -35,12 +35,12 @@
   "keyword_evidence": [
     "quantized"
   ],
-  "score": 43,
+  "score": 38,
   "score_components": {
     "relevance": 12,
-    "novelty": 6,
-    "rigor": 9,
-    "practical_impact": 11,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
     "reproducibility": 2,
     "credibility": 3
   },
@@ -49,19 +49,24 @@
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
-  "summary_en": "Automated disease classification from patient-reported symptoms requires balancing the speed of lightweight discriminative models against the contextual understanding and latency costs of autoregressive large language models (LLMs).",
+  "summary_en": "Disease classification from patient-reported symptom descriptions is usually approached with lightweight discriminative models or with autoregressive large language models (LLMs), which understand language broadly but generate text token by token and require output parsing.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-16T04:43:54+00:00",
-  "last_seen": "2026-10-21T04:44:04+00:00",
+  "last_seen": "2026-10-22T04:43:43+00:00",
   "featured_weeks": [],
   "source_records": [
     {
       "source": "arXiv",
       "id": "http://arxiv.org/abs/2610.15029v1",
       "url": "http://arxiv.org/abs/2610.15029v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.15029",
+      "url": "https://arxiv.org/abs/2610.15029"
     }
   ]
 }

@@ -5,10 +5,17 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **654** 篇。
+累计收录 **661** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GoiBERT: Compact Vietnamese Language Models via Two-Stage Knowledge Distillation](../../papers/arxiv-2610.30067/) | 2026-10-22 | 50 |
+| [Building a Nested LADDER for LLM Unstructured Post-Training Pruning](../../papers/arxiv-2610.28773/) | 2026-10-22 | 47 |
+| [TeachBack: Learning to Teach via Bidirectional Preference Optimization for On-Policy Self-Distillation](../../papers/arxiv-2610.29167/) | 2026-10-22 | 41 |
+| [Credit Where Credit Is Due: Contrastive Attribution Topology Search for Multi-Agent Systems](../../papers/arxiv-2610.29292/) | 2026-10-22 | 39 |
+| [The role of locality and weight sharing in convolutional neural networks](../../papers/arxiv-2610.30118/) | 2026-10-22 | 38 |
+| [How Far Can Foundation Models Be Distilled for Efficient Jet Tagging?](../../papers/arxiv-2610.29439/) | 2026-10-22 | 38 |
+| [Distilling Multi-Teacher Scoring Principles for Unsupervised Time Series Anomaly Detection](../../papers/arxiv-2610.29063/) | 2026-10-22 | 38 |
 | [OPTIMA: Optimal One-shot Pruning for LLMs via Quadratic Programming Reconstruction](../../papers/arxiv-2512.13886/) | 2026-10-21 | 45 |
 | [Unsupervised Head Network Personalization for Split Computing via Federated Learning](../../papers/arxiv-2610.27952/) | 2026-10-21 | 43 |
 | [WIDE: Boosting Adaptive LLM Inference via Token-level Dynamic Width Pruning](../../papers/arxiv-2607.28418/) | 2026-10-20 | 54 |

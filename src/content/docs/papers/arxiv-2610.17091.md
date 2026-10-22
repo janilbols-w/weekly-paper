@@ -5,7 +5,7 @@ description: "Collective communication is a critical performance bottleneck in l
 
 **评分：49/100** · LLM 高效推理 > Serving 与分布式推理 > 并行与通信
 
-[论文原文](http://arxiv.org/abs/2610.17091v1) · [PDF](https://arxiv.org/pdf/2610.17091v1)
+[论文原文](https://arxiv.org/abs/2610.17091) · [PDF](https://arxiv.org/pdf/2610.17091)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ Collective communication is a critical performance bottleneck in large-scale dis
 ## 元数据
 
 - 作者：Michele Ferrero, Gabriele Castellano, Paolo Medagliani, Sebastien Martin, Roberto Morabito, Massimo Gallo
-- 发布：2026-10-12；更新：2026-10-12
-- 来源：arXiv；Venue：未确认
+- 发布：2026-10-12；更新：2026-10-22
+- 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

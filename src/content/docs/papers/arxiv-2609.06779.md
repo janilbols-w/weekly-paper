@@ -39,7 +39,7 @@ Drug repurposing aims to identify new therapeutic uses for existing compounds an
 ## 元数据
 
 - 作者：Zijie Liu, Hongxuan Li, Zhen Tan, Jinhao Duan, Baixiang Huang, Zunpeng Liu, Kai Shu, Tianlong Chen
-- 发布：2026-09-09；更新：2026-09-09
+- 发布：2026-09-09；更新：2026-10-22
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **127** 篇。
+累计收录 **129** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Scalable Stress-Constrained Topology Optimization: A Super-resolution and Simultaneous Approach Based on Machine Learning](../../papers/arxiv-2610.28703/) | 2026-10-22 | 44 |
+| [5uGUE: Agentic Hardware-in-the-Loop Fuzzing for 5G Devices and beyond](../../papers/arxiv-2610.29155/) | 2026-10-22 | 44 |
 | [gKSM: GPU Memory Deduplication at Driver Layer for Serverless LLM Inference](../../papers/arxiv-2610.25219/) | 2026-10-20 | 51 |
 | [Efficient Training on Multiple Consumer GPUs with RoundPipe](../../papers/arxiv-2604.27085/) | 2026-10-20 | 48 |
 | [Memory-Induced Tool-Drift in LLM Agents](../../papers/arxiv-2605.24941/) | 2026-10-20 | 42 |

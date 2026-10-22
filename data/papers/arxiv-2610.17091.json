@@ -2,10 +2,10 @@
   "id": "arxiv:2610.17091",
   "title": "MCCL: Measurement-based Collective Communication Library",
   "abstract": "Collective communication is a critical performance bottleneck in large-scale distributed training. Existing libraries and synthesis frameworks compute open-loop schedules once, assuming a static topology and peak link capacities. In production, however, persistent gray failures can silently degrade link throughput and latency for hours, causing pre-computed schedules to lose much of their efficiency during execution. In this paper, we present Measurement-based Collective Communication Library (MCCL), a collective communication library that closes the loop between runtime network measurement and dynamic schedule synthesis. MCCL passively measures GPU-to-GPU throughput, detects persistent degradation, re-synthesizes the affected communication-intensive schedules with warm-started synthesizers, and hot-swaps them without interrupting training. We validate the complete loop on a multi-node hardware prototype and use simulations to evaluate cluster-scale scenarios. In our experiments, MCCL incurs negligible overhead (<2%) while maintaining high measurement accuracy (<1.2% error) and low schedule hot-swap time (about 12 ms). Notably, under gray failures, MCCL reduces training time by up to 4.99x over static schedules on simulated training workloads for state-of-the-art LLMs such as Llama and DeepSeek.",
-  "url": "http://arxiv.org/abs/2610.17091v1",
-  "pdf_url": "https://arxiv.org/pdf/2610.17091v1",
+  "url": "https://arxiv.org/abs/2610.17091",
+  "pdf_url": "https://arxiv.org/pdf/2610.17091",
   "published": "2026-10-12",
-  "updated": "2026-10-12",
+  "updated": "2026-10-22",
   "authors": [
     "Michele Ferrero",
     "Gabriele Castellano",
@@ -14,11 +14,11 @@
     "Roberto Morabito",
     "Massimo Gallo"
   ],
-  "source": "arXiv",
+  "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.NI",
-    "cs.DC"
+    "cs.DC",
+    "cs.NI"
   ],
   "doi": "",
   "venue": "",
@@ -60,13 +60,18 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-16T04:43:54+00:00",
-  "last_seen": "2026-10-21T04:44:04+00:00",
+  "last_seen": "2026-10-22T04:43:43+00:00",
   "featured_weeks": [],
   "source_records": [
     {
       "source": "arXiv",
       "id": "http://arxiv.org/abs/2610.17091v1",
       "url": "http://arxiv.org/abs/2610.17091v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.17091",
+      "url": "https://arxiv.org/abs/2610.17091"
     }
   ]
 }
