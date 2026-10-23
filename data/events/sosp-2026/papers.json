@@ -187,6 +187,96 @@
   },
   {
     "paper": {
+      "id": "sosp:sosp-2026:tensordexacompacttensorcentricstoragesystemformodernaimodels",
+      "title": "TensorDex: A Compact, Tensor-Centric Storage System for Modern AI Models",
+      "abstract": "TensorDex is a tensor-centric model storage system that discovers cross-model tensor relationships, predicts delta compressibility from compact fingerprints, and selects base tensors with the FlexSplit planner before applying high-throughput lossless delta codecs.",
+      "url": "https://dl.acm.org/doi/10.1145/3830418.3843872",
+      "pdf_url": "https://arxiv.org/pdf/2604.17104",
+      "published": "2026-09-09",
+      "updated": "2026-09-09",
+      "authors": [
+        "Tingfeng Lan",
+        "Zirui Wang",
+        "Yunjia Zheng",
+        "Zhaoyuan Su",
+        "Juncheng Yang",
+        "Yue Cheng"
+      ],
+      "source": "SOSP official program",
+      "source_type": "proceedings",
+      "categories": [],
+      "doi": "10.1145/3830418.3843872",
+      "venue": "SOSP 2026",
+      "journal_ref": "",
+      "comment": "AI model storage tensor delta compression model hub storage system data plane GPU memory footprint computational cost throughput deduplication AI model storage tensor delta compression model hub storage system data plane GPU memory footprint computational cost throughput deduplication",
+      "code_url": "https://github.com/ds2-lab/TensorDex",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "storage-data-plane",
+        "leaf_zh": "存储与数据平面"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "data plane",
+        "storage system"
+      ],
+      "score": 56,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 11,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: data plane, storage system",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "TensorDex is a tensor-centric model storage system that discovers cross-model tensor relationships, predicts delta compressibility from compact fingerprints, and selects base tensors with the FlexSplit planner before applying high-throughput lossless delta codecs.",
+      "summary_zh": "TensorDex 把模型仓库的去重粒度从整模型下沉到 tensor，以 compression-aware fingerprint 寻找跨模型相似关系、轻量预测器估算 delta 收益，再由 FlexSplit 选择 base–delta 配对并调用无损 codec。",
+      "why_it_matters_zh": "在 2,890 个 Hugging Face 模型上，作者报告存储占用减少 70.5%、相对 ZipLLM 再低 37%，压缩和解压吞吐为 22.9/28.4 GB/s；SOSP 将其列为 Distinguished Artifact，代码仓库公开。",
+      "limitations_zh": "结果来自论文构造的模型仓库与 tensor 关系，真实模型中心的持续上传、删除、权限和跨区域流量会改变收益；预测器虽在跨家族 holdout 上稳定，但 base 选择错误、增量重写和长期碎片化的生产代价仍需独立验证。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SOSP official program",
+          "id": "tensordexacompacttensorcentricstoragesystemformodernaimodels",
+          "url": "https://sigops.org/s/conferences/sosp/2026/schedule.html"
+        },
+        {
+          "source": "SOSP accepted papers",
+          "id": "tensordexacompacttensorcentricstoragesystemformodernaimodels",
+          "url": "https://sigops.org/s/conferences/sosp/2026/accepted.html"
+        },
+        {
+          "source": "ACM Digital Library",
+          "id": "10.1145/3830418.3843872",
+          "url": "https://dl.acm.org/doi/10.1145/3830418.3843872"
+        }
+      ]
+    },
+    "event_id": "sosp-2026",
+    "track": "Storage and File Systems",
+    "presentation": "Research Paper",
+    "awards": [
+      "Distinguished Artifact Award"
+    ],
+    "selected": true,
+    "selection_reason_zh": "获得 Distinguished Artifact，且直接命中大模型仓库存储与数据面成本。",
+    "event_score_evidence": [
+      "official peer-reviewed proceedings"
+    ]
+  },
+  {
+    "paper": {
       "id": "sosp:sosp-2026:lmtracerfinegrainedandrealtimeperformanceprofilingforproductionllmsystems",
       "title": "LMTracer: Fine-Grained and Real-Time Performance Profiling for Production LLM Systems",
       "abstract": "",

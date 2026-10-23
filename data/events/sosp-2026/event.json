@@ -26,11 +26,47 @@
     "accepted_papers": 62,
     "available_artifacts": 33,
     "functional_artifacts": 40,
-    "reproduced_artifacts": 40
+    "reproduced_artifacts": 40,
+    "best_paper_awards": 2,
+    "distinguished_artifact_awards": 2,
+    "distinguished_artifact_evaluators": 3,
+    "best_poster_awards": 3
   },
-  "summary_zh": "SOSP 2026 于 9 月 29 日至 10 月 2 日在布拉格举行；ACM proceedings 已于 9 月 28 日在线发布，官方日程为 62 篇研究论文补齐了 DOI。与本站最相关的议程集中在多模型 serving、训练与推理仿真、RL 权重分发、确定性推理、GPU kernel 验证和 agentic kernel 优化。",
-  "relevance_zh": "本届的强信号不只是“LLM 系统论文变多”，而是生产约束开始进入系统设计主线：多租户模型调度与显存虚拟化、跨规模性能预测、可重复推理、跨拓扑权重传输，以及用形式化约束约束自动生成 GPU kernel。正式录用与 DOI 由官方日程和 ACM proceedings 交叉确认；性能数字仍按作者论文或 artifact 中的条件化主张处理。",
-  "current_stage_zh": "本次同时命中 `event_week` 与 `papers_released`：RUN_DATE 是主会最后一天，ACM proceedings 已在本周公开。Artifact Evaluation 结果列出 33 个 Available、40 个 Functional 和 40 个 Reproduced artifact；官方首页截至 10 月 2 日仍把三项 Best Paper、Distinguished Artifact 及两项 honorable mention 标为 TBD，因此不推断奖项归属。精选论文沿用已定向核验的方法、结果、限制与 artifact，不因 DOI 上线重新扩大全文阅读范围。",
+  "summary_zh": "SOSP 2026 已正式公布奖项：两篇 Best Paper、两篇 Distinguished Artifact、三位 Distinguished Artifact Evaluator 和三篇 Best Poster。与本站主题直接相关的新信号是 TensorDex 获 Distinguished Artifact Award；它把 AI model hub 的存储去重从模型级提升到 tensor 级，并提供可复现 artifact。",
+  "relevance_zh": "奖项结果没有改变此前对 serving、训练与推理仿真、RL 权重分发、确定性推理和 GPU kernel 验证的技术判断，但补强了 AI 模型存储这一基础设施分支。TensorDex 的价值在于把大量 fine-tuned checkpoint 的跨模型冗余转化为可索引、可增量压缩的 tensor 关系；其峰值收益仍受模型集合、参考 tensor 可用性和 model-hub 工作负载约束。",
+  "current_stage_zh": "本次命中 `awards_released`。上次自动化在 10 月 9 日 10:39（上海时间）检查时奖项仍为 TBD；SOSP 官方页面的 HTTP Last-Modified 为 10 月 9 日 15:18，随后正式列出获奖者。为避免周五两次运行之间的更新漏检，本次补收该触发；论文全集仍为 62 篇，除新获奖的 TensorDex 外不扩大全文阅读范围。",
+  "award_results": [
+    {
+      "award": "Best Paper Award",
+      "winners": [
+        "It's the Kernel's Fault! Custom Page Fault Handling With bpf_fault",
+        "Ahead-of-time Analysis of Shell Program Effects"
+      ]
+    },
+    {
+      "award": "Distinguished Artifact Award",
+      "winners": [
+        "TensorDex: A Compact, Tensor-Centric Storage System for Modern AI Models",
+        "It's the Kernel's Fault! Custom Page Fault Handling With bpf_fault"
+      ]
+    },
+    {
+      "award": "Distinguished Artifact Evaluator Award",
+      "winners": [
+        "Gianluigi Vitale — Universitas Mercatorum",
+        "Marco Abbadini — Università degli Studi di Bergamo",
+        "Sen Zhang — University of Science and Technology of China"
+      ]
+    },
+    {
+      "award": "Best Poster Award",
+      "winners": [
+        "VoliMap: Optimizing Key-Value Store Performance by Leveraging Userland Page Tables",
+        "Tracing for Microkernel-Based Systems",
+        "Instant Replay: Process snapshots without waiting for fork"
+      ]
+    }
+  ],
   "key_programs": [
     {
       "title": "Model Serving at Scale",
@@ -85,8 +121,8 @@
     {
       "label": "SOSP 2026 official conference page",
       "url": "https://sigops.org/s/conferences/sosp/2026/",
-      "checked_at": "2026-10-02",
-      "note_zh": "核验会期、Prague 会场，以及三项 Best Paper 和三项 artifact 奖项仍为 TBD"
+      "checked_at": "2026-10-16",
+      "note_zh": "核验会期、Prague 会场及 Best Paper、Distinguished Artifact、Artifact Evaluator 与 Best Poster 正式结果；响应头 Last-Modified 为 10 月 9 日 07:18 UTC"
     },
     {
       "label": "SOSP 2026 artifact evaluation",
@@ -95,12 +131,12 @@
       "note_zh": "核验 33 个 Available、40 个 Functional、40 个 Reproduced artifact；Distinguished Artifact 结果尚未公布"
     }
   ],
-  "status": "进行中",
-  "trigger_type": "papers_released",
+  "status": "已归档",
+  "trigger_type": "awards_released",
   "corpus_source": "SOSP official schedule and accepted-paper list",
   "corpus_total": 62,
-  "relevant_total": 9,
-  "selected_total": 6,
-  "source_digest": "1379df27abb038f3809c59d950d0dd49e26d040f21a0801ae2d6acfbd7c566e4",
-  "generated_at": "2026-10-02T07:23:22+00:00"
+  "relevant_total": 10,
+  "selected_total": 7,
+  "source_digest": "954988f282be431cea91bd2a0bcaca5896330e4f237731f578d0de9b11eb2540",
+  "generated_at": "2026-10-16T02:31:21+00:00"
 }

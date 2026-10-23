@@ -81,3 +81,17 @@ sosp:sosp-2026:lmtracerfinegrainedandrealtimeperformanceprofilingforproductionll
 
 sosp:sosp-2026:meshrtcompiletimegovernedwaferscaleruntimeforlowlatencyhighthroughputinference:
   classification_hint: wafer-scale runtime LLM inference serving accelerator latency throughput compile time
+
+sosp:sosp-2026:tensordexacompacttensorcentricstoragesystemformodernaimodels:
+  abstract: TensorDex is a tensor-centric model storage system that discovers cross-model tensor relationships, predicts delta compressibility from compact fingerprints, and selects base tensors with the FlexSplit planner before applying high-throughput lossless delta codecs.
+  url: https://dl.acm.org/doi/10.1145/3830418.3843872
+  pdf_url: https://arxiv.org/pdf/2604.17104
+  code_url: https://github.com/ds2-lab/TensorDex
+  classification_hint: AI model storage tensor delta compression model hub storage system data plane GPU memory footprint computational cost throughput deduplication
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: cluster-resource, group_zh: 集群与资源系统, leaf_id: storage-data-plane, leaf_zh: 存储与数据平面}
+  summary_zh: TensorDex 把模型仓库的去重粒度从整模型下沉到 tensor，以 compression-aware fingerprint 寻找跨模型相似关系、轻量预测器估算 delta 收益，再由 FlexSplit 选择 base–delta 配对并调用无损 codec。
+  why_it_matters_zh: 在 2,890 个 Hugging Face 模型上，作者报告存储占用减少 70.5%、相对 ZipLLM 再低 37%，压缩和解压吞吐为 22.9/28.4 GB/s；SOSP 将其列为 Distinguished Artifact，代码仓库公开。
+  limitations_zh: 结果来自论文构造的模型仓库与 tensor 关系，真实模型中心的持续上传、删除、权限和跨区域流量会改变收益；预测器虽在跨家族 holdout 上稳定，但 base 选择错误、增量重写和长期碎片化的生产代价仍需独立验证。
+  reading_depth: full_text
+  awards: [Distinguished Artifact Award]
+  selection_reason_zh: 获得 Distinguished Artifact，且直接命中大模型仓库存储与数据面成本。
