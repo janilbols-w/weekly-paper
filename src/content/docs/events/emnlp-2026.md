@@ -4,7 +4,7 @@ description: "EMNLP 2026 官方仓库在 9 月 21 日更新 industry track：明
 ---
 
 > **2026-10-24 — 2026-10-29 · Budapest, Hungary**
-> 状态：<span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> · 重点议程 10 项 · 更新于 2026-09-25
+> 状态：<span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> · 重点议程 10 项 · 更新于 2026-10-23
 
 [会议官网](https://2026.emnlp.org/) · [官方议程](https://2026.emnlp.org/program/)
 
@@ -55,7 +55,7 @@ EMNLP 2026 官方仓库在 9 月 21 日更新 industry track：明确 Retrieval/
 - [EMNLP 2026 official workshops](https://2026.emnlp.org/program/workshops/)（核验于 2026-09-25）。
 - [EMNLP 2026 main papers page](https://2026.emnlp.org/program/main_papers/)（核验于 2026-09-25；页面已有 2026 标题但正文为空，故不作为论文全集或 proceedings 证据）。
 
-- 触发类型：`program_released`；来源摘要：`b5e68e8c6f5f`。
+- 触发类型：`event_week`；来源摘要：`b5e68e8c6f5f`。
 - 本页只记录官方议程在本周可验证的变化，不把 keynote、tutorial 或 workshop 描述当作同行评审论文结论。
 - 官网 main papers 页面目前只有标题、没有论文条目，ACL Anthology 也尚无可核验的 2026 proceedings，因此论文覆盖与评分均保持为 0。
 - 9 月 21 日官方仓库提交证明本周变更集中在 industry track 的 session 分配和 keynote 时间，不把演讲摘要中的方法方向当作已发表结果。
