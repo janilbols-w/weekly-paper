@@ -100,6 +100,9 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             "operational_systems_papers": "Operational Systems 论文",
             "best_paper_awards": "Best Paper",
             "distinguished_artifact_awards": "Distinguished Artifact Award",
+            "official_poster_entries": "官方 Poster 条目",
+            "best_poster_awards": "Best Poster",
+            "distinguished_artifact_evaluators": "Distinguished Artifact Evaluator",
         }
         hidden = {"main_acceptance_rate", "findings_acceptance_rate"}
         lines.extend(["## 会议规模", "", "| 指标 | 官方数据 |", "|---|---:|"])
@@ -111,6 +114,13 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             if key == "findings_accepted" and stats.get("findings_acceptance_rate"):
                 value = f"{value}（{stats['findings_acceptance_rate']}）"
             lines.append(f"| {labels.get(key, key.replace('_', ' ').title())} | {value} |")
+        lines.append("")
+    award_results = event.get("award_results", [])
+    if award_results:
+        lines.extend(["## 官方奖项", "", "| 奖项 | 获奖论文 / 获奖者 |", "|---|---|"])
+        for item in award_results:
+            values = "<br>".join(item.get("winners", []))
+            lines.append(f"| {item['award']} | {values} |")
         lines.append("")
     programs = event.get("key_programs", [])
     if programs:

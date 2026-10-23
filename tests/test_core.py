@@ -16,6 +16,8 @@ from weekly_paper.event_collectors import (
     parse_colm_detail_html,
     parse_colm_orals_html,
     parse_acl_anthology_xml,
+    parse_neurips_detail_html,
+    parse_neurips_downloads_html,
     parse_sosp_schedule_html,
     parse_usenix_schedule_html,
 )
@@ -407,6 +409,35 @@ class CoreTests(unittest.TestCase):
         self.assertIn("higher throughput", oral["abstract"])
         detail = b'<div class="abstract-section"><div class="abstract-text-inner"><p>KV cache method.</p></div></div>'
         self.assertEqual(parse_colm_detail_html(detail), "KV cache method.")
+
+    def test_parse_neurips_official_program_html(self) -> None:
+        event = {
+            "id": "neurips-2026",
+            "short_name": "NeurIPS 2026",
+            "start_date": "2026-12-06",
+            "publication_date": "2026-10-16",
+            "official_url": "https://neurips.cc/Conferences/2026",
+            "accepted_papers_url": "https://neurips.cc/Downloads/2026",
+        }
+        downloads = b"""
+<ul><li><a class="Poster" href="/virtual/2026/poster/42">Fast LLM Serving</a></li>
+<li><a class="Workshop" href="/virtual/2026/workshop/7">Systems Workshop</a></li></ul>
+"""
+        values, total = parse_neurips_downloads_html(downloads, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.id, "neurips:neurips-2026:42")
+        self.assertEqual(values[0].paper.url, "https://neurips.cc/virtual/2026/poster/42")
+        self.assertEqual(values[0].track, "Official poster program")
+
+        detail = b"""
+<div class="event-organizers">Alice Smith \xe2\x8b\x85 Bob Jones</div>
+<div class="abstract-section"><div class="abstract-text-inner"><p>Lower latency.</p></div></div>
+<a href="https://openreview.net/forum?id=abc123">OpenReview</a>
+"""
+        parsed = parse_neurips_detail_html(detail)
+        self.assertEqual(parsed["authors"], ["Alice Smith", "Bob Jones"])
+        self.assertEqual(parsed["abstract"], "Lower latency.")
+        self.assertEqual(parsed["openreview_url"], "https://openreview.net/forum?id=abc123")
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

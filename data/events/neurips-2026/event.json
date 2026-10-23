@@ -10,51 +10,25 @@
   "end_date": "2026-12-13",
   "location": "Sydney, Australia / Atlanta, United States / Paris, France",
   "official_url": "https://neurips.cc/Conferences/2026",
-  "program_url": "https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/",
-  "collector": "official_program",
-  "program_source_name": "NeurIPS 2026 official workshop announcement",
+  "program_url": "https://neurips.cc/Downloads/2026",
+  "accepted_papers_url": "https://neurips.cc/Downloads/2026",
+  "workshops_url": "https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/",
+  "openreview_url": "https://openreview.net/group?id=NeurIPS.cc/2026/Conference",
+  "collector": "neurips_program",
   "program_released_date": "2026-08-10",
-  "summary_zh": "NeurIPS 2026 于 8 月 10 日公布 102 个 workshop 的正式初步名单；其中高效深度学习、分布式训练、Agent 系统、端侧模型与芯片设计形成了值得持续跟踪的 AI Infra 议程簇。",
-  "relevance_zh": "这次发布的价值在于给出了年末技术议程的结构化先验，而不是论文结论。最强信号集中在资源预算驱动的 agent、Agentic OS 抽象、跨数据中心训练、量化/稀疏/自适应推理，以及 ML 与系统、芯片的协同设计。",
-  "current_stage_zh": "官方目前公布的是 workshop 名单与部分主办方议程。多场主题相关 workshop 的投稿截止日集中在 8 月 29 日前后，录用通知最晚为 9 月 29 日；NeurIPS 主会论文通知为 9 月 24 日。因此本次只做议程级调研，不收录或评分尚未录用的 workshop 投稿，也不把非归档 workshop 论文当作正式 proceedings。",
-  "event_stats": [
-    {
-      "label": "Workshop proposals",
-      "value": 477
-    },
-    {
-      "label": "Valid proposals",
-      "value": 454
-    },
-    {
-      "label": "Accepted workshops",
-      "value": 102
-    },
-    {
-      "label": "Sydney",
-      "value": 48
-    },
-    {
-      "label": "Sydney acceptance rate",
-      "value": "21.5%"
-    },
-    {
-      "label": "Paris",
-      "value": 28
-    },
-    {
-      "label": "Paris acceptance rate",
-      "value": "25.4%"
-    },
-    {
-      "label": "Atlanta",
-      "value": 26
-    },
-    {
-      "label": "Atlanta acceptance rate",
-      "value": "23.6%"
-    }
-  ],
+  "publication_date": "2026-10-16",
+  "detail_fetch_workers": 12,
+  "selection_threshold": 42,
+  "selection_cap": 12,
+  "selection_requires_editorial": true,
+  "official_totals": {
+    "official_poster_entries": 9110,
+    "accepted_workshops": 102,
+    "accepted_tutorials": 19
+  },
+  "summary_zh": "NeurIPS 2026 官方 Downloads 与虚拟会场已经开放 9,110 个独立 poster 条目，覆盖当前公开的主会及相关 track 论文节目；本页先保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。",
+  "relevance_zh": "本届高效推理方向的密度显著上升，重点聚集在 KV Cache 压缩、长上下文 sparse attention、推测解码、量化、diffusion language model 解码，以及多模型路由和 agent serving。论文数量大并不等于结论成熟；精选只保留方法、实验条件、限制和 artifact 证据可核验的候选。",
+  "current_stage_zh": "本次命中 `papers_released`。10 月 9 日上一轮检查时官方 virtual paper corpus 仍不可稳定访问；截至 10 月 16 日，Downloads 页面已公开 9,110 个唯一 poster URL，OpenReview venue 也公开 oral、spotlight、poster 决策分组。该数字是官方 poster program 条目数，不在 proceedings 出版前把它表述为主会 archival proceedings 总量，也不把 workshop 非归档稿件混同为正式论文。",
   "key_programs": [
     {
       "title": "DiffuLM — Diffusion Language Models",
@@ -124,8 +98,20 @@
     {
       "label": "NeurIPS 2026 conference page",
       "url": "https://neurips.cc/Conferences/2026",
-      "checked_at": "2026-08-14",
+      "checked_at": "2026-10-16",
       "note_zh": "核验三地会期、主会论文通知日期与官网公告入口"
+    },
+    {
+      "label": "NeurIPS 2026 official Downloads and poster program",
+      "url": "https://neurips.cc/Downloads/2026",
+      "checked_at": "2026-10-16",
+      "note_zh": "逐项采集 9,110 个唯一 Poster 条目的标题与官方详情页；页面总事件数 9,244 还包含 workshop、tutorial 和 invited talk"
+    },
+    {
+      "label": "NeurIPS 2026 OpenReview venue",
+      "url": "https://openreview.net/group?id=NeurIPS.cc/2026/Conference",
+      "checked_at": "2026-10-16",
+      "note_zh": "核验 venue 已公开 oral、spotlight、poster 决策分组；不抓取评审内容"
     },
     {
       "label": "Official workshop announcement",
@@ -181,11 +167,11 @@
     }
   ],
   "status": "即将举行",
-  "trigger_type": "program_released",
-  "corpus_source": "NeurIPS 2026 official workshop announcement",
-  "corpus_total": 0,
-  "relevant_total": 0,
-  "selected_total": 0,
-  "source_digest": "3edeef7735c55eadb5f571d8c3ccbeb9392e0102b611c65d0cc234e271049e70",
-  "generated_at": "2026-08-14T02:13:51+00:00"
+  "trigger_type": "papers_released",
+  "corpus_source": "NeurIPS official Downloads and virtual poster program",
+  "corpus_total": 9110,
+  "relevant_total": 149,
+  "selected_total": 11,
+  "source_digest": "80e5589024ba04010d2799252571a1cdeb68dbdd170895a8fa5aba495ec97e76",
+  "generated_at": "2026-10-16T02:29:56+00:00"
 }

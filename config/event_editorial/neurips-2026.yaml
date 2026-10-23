@@ -1,0 +1,116 @@
+neurips:neurips-2026:155404:
+  pdf_url: https://arxiv.org/pdf/2607.21604
+  classification_hint: agentic memory KV cache reuse residual correction probe long context prefill latency quantization
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group_zh: Runtime 与内存效率, leaf_id: attention-kv-cache, leaf_zh: Attention 与 KV Cache}
+  summary_zh: AgentKVShift 面向 agentic memory 的重复检索场景，只刷新少量 probe token 的 KV，再估计 memory chunk 级共享残差并校正整块复用缓存，避免每次把检索记忆完整 prefill。
+  why_it_matters_zh: 作者在 LoCoMo 与 AMA-Bench-Recall、4 个 3B–32B 开源模型及 note/graph memory 上，以 10%–30% 刷新率做到接近完整重算的质量，并报告 2–3.5× prefill 加速；方法还能与 FP8、2/4-bit KV 量化叠加。
+  limitations_zh: 证据集中在两个 agent memory benchmark 和选定开源模型，收益依赖检索内容与旧缓存之间存在可由共享偏移修正的结构；论文没有生产并发、缓存污染或跨版本模型更新实验，端到端 agent 延迟也不能由 prefill 加速直接推出。
+  reading_depth: full_text
+  selection_reason_zh: 直接处理长时程 agent 重复编码记忆的 KV 复用成本，机制和边界清晰。
+
+neurips:neurips-2026:150070:
+  pdf_url: https://arxiv.org/pdf/2606.22327
+  code_url: https://github.com/Aurora-Kl/Geometry-Aware-Online-Scheduling
+  classification_hint: LLM serving online scheduling memory time geometry KV cache request latency throughput vLLM
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: serving-distributed, group_zh: Serving 与分布式推理, leaf_id: batching-scheduling, leaf_zh: Batching 与请求调度}
+  summary_zh: 论文把请求成本从一维运行时间改写为“KV 占用 × 持续时间”的二维体积，以 SVF 和轻量 1-bit SVF 优先释放受限显存，并将策略接入 vLLM 在线调度路径。
+  why_it_matters_zh: 在 Llama-3.1-8B/70B、LMSYS、LongBench 和 BurstGPT 轨迹中，SVF 系列普遍降低平均与 P95 延迟并维持更高吞吐；非平稳轨迹上 1-bit SVF 将平均每 token 延迟从 FCFS 的 24.56 秒降到 9.32 秒，完整策略开销低于 0.04%。
+  limitations_zh: 当前实现和理论验证聚焦单 worker；作者把多 GPU 集群、跨 worker 通信和随时间变化的二维 footprint 留作未来工作。预测误差、饥饿风险与不同 SLO 下的公平性仍需生产轨迹验证。
+  reading_depth: full_text
+  selection_reason_zh: 用显存—时间几何统一解释在线调度，并给出可运行的 vLLM 实现。
+
+neurips:neurips-2026:148973:
+  pdf_url: https://arxiv.org/pdf/2605.01708
+  code_url: https://github.com/Intelligent-Microsystems-Lab/SplitZip
+  classification_hint: prefill decode disaggregation lossless KV cache compression GPU transfer RDMA network throughput TTFT
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: cluster-resource, group_zh: 集群与资源系统, leaf_id: network-interconnect, leaf_zh: 网络、RDMA 与互联}
+  summary_zh: SplitZip 针对 prefill/decode 解耦中的 KV 传输，以离线校准的 Top-16 指数码本编码 BF16/FP8 常见指数，并用稀疏 escape stream 保留罕见值，实现 bitwise lossless 的 GPU 编解码。
+  why_it_matters_zh: 作者在 H200 上报告 BF16 编码 613.3 GB/s、解码 2181.8 GB/s；接入 SGLang 与 Mooncake 后，KV 传输最高加速 1.32×、TTFT 最高 1.30×、请求吞吐最高提升 1.23×，代码已公开。
+  limitations_zh: 方法只在 KV 通信成为主要瓶颈时占优；短上下文或 compute-bound 负载可能被 codec 开销抵消。无损压缩比受浮点指数冗余上限约束，离线全局码本在分布漂移和异常层上的稳定性仍需持续监测。
+  reading_depth: full_text
+  selection_reason_zh: 把无损 KV 压缩做到了可进入解耦 serving 关键路径的吞吐级别。
+
+neurips:neurips-2026:155325:
+  pdf_url: https://arxiv.org/pdf/2605.06113
+  classification_hint: data parallel decode load balancing online routing LLM serving NPU cluster predictor throughput tail latency
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 服务平台, leaf_id: gateway-routing-autoscaling, leaf_zh: Gateway、路由与弹性}
+  summary_zh: BalanceRoute 为 data-parallel decode 设计在线路由器：BR-0 依据当前负载，BR-H 再结合短期 token 预测，在亚 100 ms 决策预算内压低由最慢 replica 决定的同步尾部。
+  why_it_matters_zh: 论文在 144 张 NPU、DeepSeek-V3 671B 与 Qwen3-30B-A3B 上，以生产轨迹和 Azure-2024 轨迹比较四类基线；相对最强基线的吞吐优势随 4/8/16 个 decode worker 从 13.4% 增至 34.5%，P99 dispatcher 开销约 2.5–2.8 ms。
+  limitations_zh: 每个配置只重放一次，作者说明长期占用 144 NPU 无法做系统重复实验；预测噪声、跨层 KV 传输与更大规模的交互尚未完整刻画，集中式控制面也未与去中心化或硬件卸载方案比较。
+  reading_depth: full_text
+  selection_reason_zh: 给出大规模 DP decode 同步屏障的实测证据和可落地在线路由策略。
+
+neurips:neurips-2026:153117:
+  pdf_url: https://arxiv.org/pdf/2609.36590
+  code_url: https://github.com/lhk2004/SEED
+  classification_hint: self speculative decoding implicit encoder decoder verification hidden states inference speedup Qwen
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: speculative-decoding, leaf_zh: 推测解码}
+  summary_zh: SEED 把 decoder-only Transformer 的前层视作 encoder、末两层视作轻量 decoder，复用验证阶段产生的深层上下文表示连续草拟多个 token，再由完整模型一次验证。
+  why_it_matters_zh: 作者在 Qwen3-1.7B/4B 与多类任务上报告平均 2.6×/2.7× 加速，且相对 EAGLE-3 快 28%；不引入外部 draft model，训练仍保留标准 next-token objective，并已公开代码。
+  limitations_zh: 实验只到 4B 模型且主要是任务特定监督微调；固定“末两层作 decoder”不一定适合更深模型、不同任务或硬件。真实收益还高度依赖 KV 布局、tree attention、batching 和显存带宽，尚缺 production serving 验证。
+  reading_depth: full_text
+  selection_reason_zh: 以模型内部表示复用降低 speculative drafting 成本，结果与限制均较完整。
+
+neurips:neurips-2026:153452:
+  pdf_url: https://arxiv.org/pdf/2605.07985
+  code_url: https://github.com/dooly-project
+  classification_hint: LLM inference simulator taint propagation latency database inference benchmark serving benchmark performance profiling observability workload characterization trace analysis
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 服务平台, leaf_id: observability-benchmarking, leaf_zh: 可观测性与 Benchmark}
+  summary_zh: Dooly 在一次推理 trace 中以 taint propagation 标注算子维度来自模型配置还是请求负载，复用 serving engine 初始化逻辑隔离有状态算子，并把未见过的签名按需写入跨配置 latency database。
+  why_it_matters_zh: 跨 A100/H100、vLLM/SGLang、三种 Attention backend 和 12 个模型，作者报告 TTFT 模拟误差低于 5% MAPE、TPOT 低于 8%，同时将 profiling GPU-hours 减少 56.4%；代码已公开。
+  limitations_zh: 绕过 PyTorch dispatcher 的 Triton 等算子可能缺少 kernel-level taint，只能依赖上层模块覆盖；当前只 trace 文本请求，MoE 使用随机专家路由并只刻画平均延迟，数据依赖路由与多模态入口仍要额外建模。
+  reading_depth: full_text
+  selection_reason_zh: 为推理模拟器提供跨模型、跨 backend 可复用的 profile 数据层。
+
+neurips:neurips-2026:150603:
+  pdf_url: https://arxiv.org/pdf/2610.19423
+  classification_hint: distributed LLM training configuration projection performance model tuning parallelism checkpoint GPU cluster
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: training-datacenter, group_zh: 训练与数据中心基础设施, leaf_id: distributed-training-checkpoint, leaf_zh: 分布式训练与 Checkpoint}
+  summary_zh: Primus Projection 用单卡或子节点 microbenchmark 锚定计算与局部通信，再解析恢复目标集群的 collective、FSDP overlap 和 pipeline schedule；上层 tuning agent 以该投影为秒级 oracle 搜索并行配置。
+  why_it_matters_zh: 在 AMD MI325X/MI355X 的 dense 与 MoE 模型上，验证 recipe 的吞吐投影保持约 10% 内误差；DeepSeek-V3 1024 GPU 与 Qwen3-235B 256 GPU 案例误差为 4.7%/1.9%，Mixtral 4 节点案例相对参考配置提升 27%。
+  limitations_zh: 尚未在 NVIDIA 或 TPU 实测，网络竞争未建模，ZeRO-2 不在范围内；FP8 配置仍需单独验证收敛。投影依赖同质硬件和有限 microbenchmark，近似最优配置之间的细小差距不应被当作确定排名。
+  reading_depth: full_text
+  selection_reason_zh: 用小规模实测校准大规模训练投影，直接降低并行配置试错成本。
+
+neurips:neurips-2026:151244:
+  pdf_url: https://arxiv.org/pdf/2610.14804
+  classification_hint: distributed agent serving flow decomposition scheduler LLM tools workflow throughput latency multi tenant model serving inference engine serving runtime online inference
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 服务平台, leaf_id: serving-engine, leaf_zh: Serving Engine 与 Runtime}
+  summary_zh: AgentWeave 把 LLM 调用与工具执行统一为 module，并在所有设备共同承载模块的 aggregated architecture 上，用 flow decomposition 拆分长请求，再由自适应调度器权衡拆分收益与开销。
+  why_it_matters_zh: 四类代表性 agent 应用中，作者报告相对现有基线吞吐提升 1.81×、平均延迟降低 2.45×、P90 降低 2.04×，同时保持 RAG、KB-RAG 与 DeepSearch 的任务准确率不变。
+  limitations_zh: 每个应用必须人工声明可拆分 flow 和完整输入依赖；调度器依赖离线 profile，硬件或负载漂移时可能失准。评估仅覆盖四个 agent，外部工具失败、动态分支和多租户隔离尚未纳入。
+  reading_depth: full_text
+  selection_reason_zh: 将 agent workflow 的 pipeline bubble 与请求阻塞统一为可调度的 flow 粒度问题。
+
+neurips:neurips-2026:150973:
+  pdf_url: https://arxiv.org/pdf/2606.06453
+  code_url: https://github.com/Infini-AI-Lab/vortex_torch
+  classification_hint: sparse attention serving page tensor GPU kernel AI agent algorithm search throughput B200 long generation
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group_zh: Runtime 与内存效率, leaf_id: kernels-operators, leaf_zh: Kernel 与算子融合}
+  summary_zh: Vortex 以 Python 内嵌 vFlow 和 page-centric vTensor 表达稀疏 Attention，再由与 serving system 集成的 backend 生成高效执行；同一抽象既支持研究者开发，也支持 agent 自动提出和迭代算法。
+  why_it_matters_zh: agent 生成方案在保持论文定义的准确率时最高达到 full attention 3.46× 吞吐；面向 MLA 的 GLM-4.7-Flash 达到约 4×、最高 4.7×，229B MiniMax-M2.7 在 B200 上达到 1.37×，代码、文档和示例均公开。
+  limitations_zh: 当前只优化 decode forward path，不支持 prefill 或训练 backward；核心抽象面向显式 KV Cache 的 Attention 架构，RNN/Mamba 尚未覆盖。GLM 的 dense 基线因 vendor kernel 不支持该 head geometry 而回退 Triton，4.7× 峰值需按该条件解读。
+  reading_depth: full_text
+  selection_reason_zh: 把稀疏 Attention 从算法原型连接到真实 serving kernel，并展示 agentic systems research 工作流。
+
+neurips:neurips-2026:152140:
+  pdf_url: https://arxiv.org/pdf/2610.12242
+  code_url: https://github.com/thu-nics/TokenRouter
+  classification_hint: token level LLM routing multi model serving asynchronous subserver delayed batching throughput scheduler
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 服务平台, leaf_id: gateway-routing-autoscaling, leaf_zh: Gateway、路由与弹性}
+  summary_zh: TokenRouter 将 token-level routing 拆成“request-centric 编程、model-centric 执行”：开发者只写单请求的 route/send/receive 逻辑，runtime 为每个模型运行异步 subserver，并用延迟批处理缓解 step 不同步和 batch admission 等待。
+  why_it_matters_zh: 跨多种路由算法、工作负载和模型组合，作者报告相对原始实现 2.01–64.15× decoding throughput；系统还推导 delayed-batching 参数并将 token 路由推进新的吞吐—准确率 Pareto frontier，代码公开。
+  limitations_zh: 数学模型假设连续 send 之间的 token 数服从几何分布，只覆盖多数而非全部 token routing 算法；64.15× 是相对低效原始实现的峰值，不能等同于对成熟 query-level serving 的普遍倍数。
+  reading_depth: full_text
+  selection_reason_zh: 补齐细粒度多模型路由从算法到高性能 serving runtime 的系统缺口。
+
+neurips:neurips-2026:155143:
+  pdf_url: https://arxiv.org/pdf/2606.18967
+  code_url: https://github.com/furiosa-ai/EfficientRollout
+  classification_hint: RL rollout self speculative decoding quantized drafter adaptive draft length serving latency throughput
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: speculative-decoding, leaf_zh: 推测解码}
+  summary_zh: EfficientRollout 从不断变化的 target policy 直接构造低比特 self-drafter，以 roofline 边界在有利阶段开启 speculative decoding，并按在线接受率调整 draft length，适配 RL rollout 的 batch 收缩尾部。
+  why_it_matters_zh: 论文报告 adaptive draft policy 将 rollout generation latency 降低 19.6%，端到端训练延迟降低 12.7%；不需要独立 drafter 预训练、warm-up 或在线微调，公开实现便于接入现有 RL pipeline。
+  limitations_zh: 当前采用 chain verification，tree verification 仍是未来方向；朴素 RTN 量化并非对所有模型族都能产生高质量早期 drafter，长上下文下 KV loading 也可能转为主瓶颈。结果依赖训练阶段、温度和 batch 演化，不能外推成固定 serving 加速比。
+  reading_depth: full_text
+  selection_reason_zh: 针对 RL rollout 的动态 batch 与 policy drift 重做 self-speculation，而非照搬静态 serving 假设。

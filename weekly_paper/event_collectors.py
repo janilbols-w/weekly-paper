@@ -24,6 +24,22 @@ COLM_ABSTRACT_RECALL_RE = re.compile(
 )
 
 
+NEURIPS_ABSTRACT_RECALL_RE = re.compile(
+    r"(?:\b(?:llm|language model|reasoning model|mixture[- ]of[- ]experts|moe|vlm|"
+    r"vision[- ]language)\b.*\b(?:inference|serving|latency|throughput|kv[- ]?cache|"
+    r"speculative|quantiz\w*|low[- ]?precision|gpu|accelerat\w*|prefill|decod\w*|"
+    r"distributed|sparse[- ]?attention|prun\w*|hardware|memory[- ]?efficient|compression|"
+    r"routing|kernel|parallelism)\b|\b(?:inference|serving|latency|throughput|kv[- ]?cache|"
+    r"speculative|quantiz\w*|low[- ]?precision|gpu|accelerat\w*|prefill|decod\w*|"
+    r"distributed|sparse[- ]?attention|prun\w*|hardware|memory[- ]?efficient|compression|"
+    r"routing|kernel|parallelism)\b.*\b(?:llm|language model|reasoning model|"
+    r"mixture[- ]of[- ]experts|moe|vlm|vision[- ]language)\b|\b(?:speculative decoding|"
+    r"llm serving|distributed training|gpu kernel|sparse attention|kv[- ]?cache|prefill|"
+    r"decode)\b)",
+    re.IGNORECASE,
+)
+
+
 def _text(node: ET.Element | None) -> str:
     if node is None:
         return ""
@@ -427,4 +443,105 @@ def collect_colm_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List
                 # The complete title-level corpus remains usable when an individual
                 # detail page is temporarily unavailable.
                 continue
+    return papers, total
+
+
+def parse_neurips_downloads_html(
+    payload: bytes, event: Dict[str, Any]
+) -> Tuple[List[EventPaper], int]:
+    """Parse the public NeurIPS poster corpus without fetching paper details.
+
+    The Downloads page mixes posters with workshops, tutorials, and invited talks.
+    Only links explicitly labeled ``Poster`` are part of this title-level corpus.
+    """
+    soup = BeautifulSoup(payload, "html.parser")
+    base_url = str(event["official_url"])
+    source_url = str(event["accepted_papers_url"])
+    publication_date = str(event.get("publication_date", event["start_date"]))
+    output: List[EventPaper] = []
+    seen: set[str] = set()
+    for link in soup.select('a.Poster[href^="/virtual/2026/poster/"]'):
+        href = str(link.get("href", "")).strip()
+        title = clean_text(link.get_text(" ", strip=True))
+        if not href or not title or href in seen:
+            continue
+        seen.add(href)
+        poster_id = href.rstrip("/").rsplit("/", 1)[-1]
+        url = urljoin(base_url, href)
+        paper = Paper(
+            id=f"neurips:{event['id']}:{poster_id}",
+            title=title,
+            abstract="",
+            url=url,
+            pdf_url="",
+            published=publication_date,
+            updated=publication_date,
+            authors=[],
+            source="NeurIPS official poster program",
+            source_type="accepted_program",
+            venue=event["short_name"],
+            source_records=[
+                {"source": "NeurIPS Downloads", "id": poster_id, "url": source_url},
+                {"source": "NeurIPS virtual poster", "id": poster_id, "url": url},
+            ],
+        )
+        output.append(
+            EventPaper(
+                paper=paper,
+                event_id=event["id"],
+                track="Official poster program",
+                presentation="Poster",
+            )
+        )
+    return output, len(output)
+
+
+def parse_neurips_detail_html(payload: bytes) -> Dict[str, Any]:
+    soup = BeautifulSoup(payload, "html.parser")
+    authors_node = soup.select_one(".event-organizers")
+    abstract_node = soup.select_one(".abstract-section .abstract-text-inner")
+    openreview = soup.select_one('a[href*="openreview.net/forum?id="]')
+    authors = []
+    if authors_node is not None:
+        authors = [
+            clean_text(value)
+            for value in authors_node.get_text(" ", strip=True).split("⋅")
+            if clean_text(value)
+        ]
+    openreview_url = str(openreview.get("href", "")).strip() if openreview else ""
+    return {
+        "authors": authors,
+        "abstract": clean_text(abstract_node.get_text(" ", strip=True)) if abstract_node else "",
+        "openreview_url": openreview_url,
+    }
+
+
+def collect_neurips_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[EventPaper], int]:
+    headers = {"User-Agent": "WeeklyPaper/0.2 (+https://github.com/janilbols-w/weekly-paper)"}
+
+    def fetch(url: str) -> bytes:
+        response = requests.get(url, timeout=timeout, headers=headers)
+        response.raise_for_status()
+        return response.content
+
+    papers, total = parse_neurips_downloads_html(fetch(event["accepted_papers_url"]), event)
+    candidates = [item for item in papers if NEURIPS_ABSTRACT_RECALL_RE.search(item.paper.title)]
+    max_workers = max(1, int(event.get("detail_fetch_workers", 12)))
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(fetch, item.paper.url): item for item in candidates}
+        for future in as_completed(futures):
+            item = futures[future]
+            try:
+                detail = parse_neurips_detail_html(future.result())
+            except requests.RequestException:
+                continue
+            item.paper.authors = detail["authors"]
+            item.paper.abstract = detail["abstract"]
+            openreview_url = detail["openreview_url"]
+            if openreview_url:
+                forum_id = openreview_url.split("id=", 1)[1].split("&", 1)[0]
+                item.paper.pdf_url = f"https://openreview.net/pdf?id={forum_id}"
+                item.paper.source_records.append(
+                    {"source": "OpenReview", "id": forum_id, "url": openreview_url}
+                )
     return papers, total
