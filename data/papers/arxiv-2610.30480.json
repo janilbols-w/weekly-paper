@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2610.30480",
+  "title": "FIGFLEX: A Mixed-Precision FP-INT GEMM Accelerator Co-Designed with Low-Bit LLM Quantization",
+  "abstract": "Weight-only quantization keeps LLM activations in floating point and stores weights as low-bit integers, turning the dominant workload into floating-point-integer (FP-INT) general matrix multiplication. Recent quantizers reach a 2-3-bit average with mixed precision, but hardware has not kept pace: GPUs dequantize weights to FP16 before the tensor-core multiply-accumulate, and bit-parallel FP-INT accelerators run at a single weight precision, so fewer bits save memory but not computation. In this paper, we present FIGFLEX, an algorithm-hardware co-designed mixed-precision accelerator whose bit-parallel datapath scales throughput as precision falls. FIGFLEX contributes (1) a shift-add, radix-4 reformulation of FP-INT multiplication that fuses the multiply-accumulate into a unified, precision-flexible partial-product reduction and roughly halves the partial products, together with a novel INT3 optimization that reclaims the idle datapath radix-4 leaves at that precision; and (2) a mixed-precision quantizer that assigns each channel group its bit-width according to the error GPTQ cannot compensate, with a per-input-channel column scaling whose power-of-two normalization keeps the scaled activations out of the FP16 subnormal range, so that the quantized model maps directly onto FIGFLEX's datapath with the same accuracy as on a GPU. On LLaMA-2-7B, FIGFLEX attains 5.85 and 8.77 WikiText-2 perplexity at 3- and 2-bit average precision, lower than GPTQ, AWQ, SliM-LLM, AMQ, and QuIP# (without fine-tuning), while delivering 1.56x and 1.42x higher whole-chip throughput per area on the linear GEMMs of a 3-bit mixed-precision model than AxCore and FIGLUT, respectively.",
+  "url": "https://arxiv.org/abs/2610.30480",
+  "pdf_url": "https://arxiv.org/pdf/2610.30480",
+  "published": "2026-10-23",
+  "updated": "2026-10-23",
+  "authors": [
+    "Faraz Tahmasebi",
+    "Haocheng Xu",
+    "Andrew Trauger",
+    "Yomal Perera",
+    "Zhenyu Tang",
+    "Nael Chowdhury",
+    "Sitao Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [
+    "hardware-edge"
+  ],
+  "keyword_evidence": [
+    "mixed precision",
+    "quantization",
+    "quantized"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: mixed precision, quantization, quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Weight-only quantization keeps LLM activations in floating point and stores weights as low-bit integers, turning the dominant workload into floating-point-integer (FP-INT) general matrix multiplication.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-23T04:45:39+00:00",
+  "last_seen": "2026-10-23T04:45:39+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.30480",
+      "url": "https://arxiv.org/abs/2610.30480"
+    }
+  ]
+}

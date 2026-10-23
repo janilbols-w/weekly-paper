@@ -5,10 +5,19 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **661** 篇。
+累计收录 **670** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GIFT: Gradient Informed Filtering for Distillation Augmented Reasoning RL](../../papers/arxiv-2610.30796/) | 2026-10-23 | 50 |
+| [Neural Spectral Capacity with Residual Context for Heterogeneous Resource Allocation within Transformers](../../papers/arxiv-2610.30823/) | 2026-10-23 | 46 |
+| [Context-Aware Subtitle Translation on CPU: Deployment-Driven Training, Evaluation, and Latency Design](../../papers/arxiv-2607.09957/) | 2026-10-23 | 45 |
+| [Muting Tokens: Exploring Token Sparsification for Efficient Audio Transformers](../../papers/arxiv-2610.31235/) | 2026-10-23 | 44 |
+| [Benchmarking Model Compression Techniques Across Heterogeneous Edge Platforms: A Predictive Maintenance Use Case for Rotating Machinery](../../papers/arxiv-2610.30228/) | 2026-10-23 | 44 |
+| [Edit, Don't Imitate: Minimal-Edit On-Policy Distillation for Multimodal Reasoning](../../papers/arxiv-2610.30231/) | 2026-10-23 | 41 |
+| [Repair Changes Which Layers to Remove: Exact Optima for Depth Pruning of Language Models](../../papers/arxiv-2610.30552/) | 2026-10-23 | 40 |
+| [Reverse-KL Policy Distillation: Statistical Guarantees and Limits](../../papers/arxiv-2610.30844/) | 2026-10-23 | 39 |
+| [DIAL: Steerable Language Models with Distilled Instruction-Adherence Levels](../../papers/arxiv-2610.31438/) | 2026-10-23 | 39 |
 | [GoiBERT: Compact Vietnamese Language Models via Two-Stage Knowledge Distillation](../../papers/arxiv-2610.30067/) | 2026-10-22 | 50 |
 | [Building a Nested LADDER for LLM Unstructured Post-Training Pruning](../../papers/arxiv-2610.28773/) | 2026-10-22 | 47 |
 | [TeachBack: Learning to Teach via Bidirectional Preference Optimization for On-Policy Self-Distillation](../../papers/arxiv-2610.29167/) | 2026-10-22 | 41 |

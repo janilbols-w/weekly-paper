@@ -5,10 +5,12 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **37** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Predictable performance is suboptimal, and what it means for model routing](../../papers/arxiv-2610.31428/) | 2026-10-23 | 45 |
+| [SpraySense: Sensing Gray Failures through Packet Spraying Discrepancies](../../papers/arxiv-2605.03702/) | 2026-10-23 | 38 |
 | [3D-MoE: Complementarity-Guided Hardware-Software Co-Design for MoE Decode on 3D-Stacked NMP](../../papers/arxiv-2610.26991/) | 2026-10-21 | 45 |
 | [NVIDIA Spectrum-X: Hardware-Accelerated Multiplane Networking for Large-Scale AI Training](../../papers/arxiv-2605.21187/) | 2026-10-21 | 42 |
 | [Load Balancing with Evolving Workloads in Large-Scale Language Model Serving](../../papers/arxiv-2601.17855/) | 2026-10-20 | 47 |

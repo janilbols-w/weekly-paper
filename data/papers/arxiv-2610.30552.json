@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.30552",
+  "title": "Repair Changes Which Layers to Remove: Exact Optima for Depth Pruning of Language Models",
+  "abstract": "Depth pruning removes entire transformer layers to make large language models faster, and recent methods recover quality by replacing the removed layers with a training-free linear map. Which layers to remove, however, is chosen with heuristic scores whose distance from the best choice is unknown. We evaluate every subset of layer groups exactly (about 53,000 pruned models across four families, with and without repair) and find that the best layers to remove depend on the repair: linear repair absorbs the interaction among nearby layers and turns the optimum from a split layout into a contiguous block, so methods that choose layers without the repair miss the repaired optimum by up to 189%. We therefore select layers under the repair that will be applied. A greedy search at the cost of SLEB lowers perplexity by 20% to 66% relative to ReplaceMe on five models up to 27B parameters, and with a task objective it is up to 25 points more accurate given the same data. A second-order expansion of the loss yields a score that selects the repaired block from one forward and one backward pass of the intact model.",
+  "url": "https://arxiv.org/abs/2610.30552",
+  "pdf_url": "https://arxiv.org/pdf/2610.30552",
+  "published": "2026-10-23",
+  "updated": "2026-10-23",
+  "authors": [
+    "Jianchang Su",
+    "Dawei Xiang",
+    "Yifan Zhang",
+    "Wei Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Depth pruning removes entire transformer layers to make large language models faster, and recent methods recover quality by replacing the removed layers with a training-free linear map.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-23T04:45:39+00:00",
+  "last_seen": "2026-10-23T04:45:39+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.30552",
+      "url": "https://arxiv.org/abs/2610.30552"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ NVIDIA's Grace Hopper (GH200) superchip represents a new generation of heterogen
 ## 元数据
 
 - 作者：Ravan Nazaraliyev, Yicheng Zhang, Nael Abu-Ghazaleh
-- 发布：2026-10-14；更新：2026-10-20
+- 发布：2026-10-14；更新：2026-10-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

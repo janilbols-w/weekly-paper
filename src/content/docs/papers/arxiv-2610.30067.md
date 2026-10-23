@@ -39,7 +39,7 @@ Vietnamese pre-trained encoders have improved rapidly, but the strongest ones ar
 ## 元数据
 
 - 作者：Quang Anh Kiet Tran, Nam Anh Tran, Manh Hung Trinh, Thanh Danh Le, Khang Nhat Hoang Vo, Huynh Dai Nhan Tran
-- 发布：2026-10-22；更新：2026-10-22
+- 发布：2026-10-22；更新：2026-10-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Nhantran65/GoiBERT.git](https://github.com/Nhantran65/GoiBERT.git)
 - 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **121** 篇。
+累计收录 **123** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3](../../papers/arxiv-2610.31624/) | 2026-10-23 | 45 |
+| [Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning](../../papers/arxiv-2610.30450/) | 2026-10-23 | 42 |
 | [Resuming Vision-Language Inference across Onboard Interruptions](../../papers/arxiv-2610.29183/) | 2026-10-22 | 45 |
 | [NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models](../../papers/arxiv-2610.23271/) | 2026-10-21 | 45 |
 | [Sleep Stage Classification across Heterogeneous EEG/EOG Channels with Multi-Channel Differential Transformer](../../papers/arxiv-2508.15215/) | 2026-10-20 | 46 |

@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2607.09957",
+  "title": "Context-Aware Subtitle Translation on CPU: Deployment-Driven Training, Evaluation, and Latency Design",
+  "abstract": "We study English-to-Traditional-Chinese (Taiwan) subtitle translation for a free browser extension, where the model must run on the viewer's CPU in about 500 ms per subtitle. We train two models built on the LMT-60 base models, Sotto-1.7B and the deployed Sotto-0.6B, with a task-specific vocabulary, continued pretraining, supervised fine-tuning, weight interpolation, logit distillation and on-policy preference optimization. Because reference translations of subtitles are unreliable, we evaluate by pairwise comparison against one fixed baseline, Google Translate, with each pair judged in both orders by a panel of two LLM judges. On 1,820 held-out subtitles, Sotto-1.7B has a win rate of 0.576 against the baseline and wins head-to-head against four open translation models, and is slightly below a 27B model. We split latency into prefill and decoding: idle-time prefill, which prefills the known part of the prompt while waiting for the next subtitle, cuts mean end-to-end latency by 31% on a CPU, and the task-specific vocabulary encodes the same Chinese text in 28% fewer tokens. The deployed model stays within 500 ms for every subtitle in our latency test. The code is available at https://github.com/aiden1020/localsubs .",
+  "url": "https://arxiv.org/abs/2607.09957",
+  "pdf_url": "https://arxiv.org/pdf/2607.09957",
+  "published": "2026-10-23",
+  "updated": "2026-10-23",
+  "authors": [
+    "Tsz-To Wong",
+    "Shyang-En Weng"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/aiden1020/localsubs",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "We study English-to-Traditional-Chinese (Taiwan) subtitle translation for a free browser extension, where the model must run on the viewer's CPU in about 500 ms per subtitle.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-23T04:45:39+00:00",
+  "last_seen": "2026-10-23T04:45:39+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.09957",
+      "url": "https://arxiv.org/abs/2607.09957"
+    }
+  ]
+}

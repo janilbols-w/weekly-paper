@@ -13,7 +13,7 @@ description: "Hardware-aware & Edge Inference"
 | [SpikeDuet: CPU-Accelerator Co-Execution of Sparse SNNs on Commodity MCUs](../../papers/arxiv-2610.24677/) | 2026-10-20 | 42 |
 | [TRACE: Transformer Residual Activation Codebook Encoding for Communication-efficient Distributed Edge Inference](../../papers/arxiv-2610.22435/) | 2026-10-19 | 47 |
 | [STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator with Algorithm and Hardware Co-Design](../../papers/doi-10.1109-tcsi.2025.3648765/) | 2026-10-14 | 49 |
-| [ATTUNE: Agentic Throughput Tuning for LLM Training](../../papers/arxiv-2610.17528/) | 2026-10-13 | 51 |
+| [ATTUNE: Agentic Throughput Tuning for LLM Training](../../papers/arxiv-2610.17528/) | 2026-10-13 | 46 |
 | [O\'ido: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator](../../papers/arxiv-2610.13447/) | 2026-10-12 | 41 |
 | [Learn the Dynamics, Enforce the Physics: Generative Latent Operators for High-Dimensional Beam Evolution](../../papers/arxiv-2610.14537/) | 2026-10-10 | 39 |
 | [Toward Intelligent Networks via AI-Aware GPU-Native Packet Processing](../../papers/arxiv-2610.12139/) | 2026-10-09 | 43 |

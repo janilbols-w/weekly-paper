@@ -39,7 +39,7 @@ Transformer models built on the attention mechanism have become a central buildi
 ## 元数据
 
 - 作者：Anthony Givans, Michael Crawshaw, Mingrui Liu
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-22；更新：2026-10-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

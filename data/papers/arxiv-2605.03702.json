@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2605.03702",
+  "title": "SpraySense: Sensing Gray Failures through Packet Spraying Discrepancies",
+  "abstract": "Distributed machine learning (ML) training has become a dominant workload in modern data center networks, operating at massive scale with clusters comprising tens to hundreds of thousands of GPUs. The scale of these networks makes failures, and particularly gray failures, inevitable. Gray failures can significantly degrade both network and application performance, yet they are notoriously difficult to detect, localize, and debug. To meet the performance demands of ML workloads, adaptive routing is widely deployed to maximize network utilization by dynamically spreading traffic across many paths. While adaptive routing increases network utilization, it also greatly intensifies the effect of gray failures. Prior work has either dismissed gray failures as negligible or proposed detection mechanisms that fail to scale, rendering these approaches increasingly impractical for large-scale clusters. We present SpraySense, a passive gray failure detection system that leverages the statistical properties of adaptive routing and network load balancing. By combining these properties with flow-level information, SpraySense can identify failures before they significantly impact application performance, enabling preemptive rerouting and improving overall performance. Importantly, this is achieved through passive observation of traffic spraying, without introducing additional load on the network. We evaluate SpraySense and show that it can detect and localize a single-link packet-drop-rate $1.5\\%$ within a single iteration and as little as $0.5\\%$ within 5 training iterations of Llama-3 70B in a 64 spine topology.",
+  "url": "https://arxiv.org/abs/2605.03702",
+  "pdf_url": "https://arxiv.org/pdf/2605.03702",
+  "published": "2026-10-23",
+  "updated": "2026-10-23",
+  "authors": [
+    "Jakob Krebs",
+    "Daniel Amir",
+    "Shir Landau Feibish",
+    "Mark Silberstein"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "load balancing"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: load balancing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Distributed machine learning (ML) training has become a dominant workload in modern data center networks, operating at massive scale with clusters comprising tens to hundreds of thousands of GPUs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-23T04:45:39+00:00",
+  "last_seen": "2026-10-23T04:45:39+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.03702",
+      "url": "https://arxiv.org/abs/2605.03702"
+    }
+  ]
+}

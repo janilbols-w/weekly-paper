@@ -5,10 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **337** 篇。
+累计收录 **344** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FIGFLEX: A Mixed-Precision FP-INT GEMM Accelerator Co-Designed with Low-Bit LLM Quantization](../../papers/arxiv-2610.30480/) | 2026-10-23 | 50 |
+| [Spike-Aware Gradient-Based Mixed-Precision Quantization of Spiking Neural Networks for Vision Applications](../../papers/arxiv-2610.30339/) | 2026-10-23 | 49 |
+| [Extreme Compression of Per-Layer Embeddings via Cross-Layer Latent Vector Quantization](../../papers/arxiv-2610.31309/) | 2026-10-23 | 44 |
+| [SQuAT: Spherical Lattice Vector Quantization-Aware Training](../../papers/arxiv-2610.31412/) | 2026-10-23 | 40 |
+| [Low-Bit N-Gram Embeddings for Language Models](../../papers/arxiv-2610.31646/) | 2026-10-23 | 39 |
+| [LSVD: Loss-Aware Low-Rank Approximation for Efficient Low-Precision Vision-Language Models](../../papers/arxiv-2606.00573/) | 2026-10-23 | 39 |
+| [From Clinical Judgment to Checkable Rules: Clinician-Led Guardrails for Mental-Health Chatbots](../../papers/arxiv-2610.30690/) | 2026-10-23 | 38 |
 | [A Comprehensive Evaluation on Quantization Techniques for Large Language Models](../../papers/arxiv-2507.17417/) | 2026-10-22 | 49 |
 | [Auditing Conformal Prediction for Language Models Under Inference-Time Model Shift](../../papers/arxiv-2610.28937/) | 2026-10-22 | 47 |
 | [Is 2:4 Sparsity Still Worth It? Semi-Structured Sparsity versus Quantization in LLM Inference](../../papers/arxiv-2610.28947/) | 2026-10-22 | 44 |

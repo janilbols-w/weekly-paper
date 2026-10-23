@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2610.17528",
   "title": "ATTUNE: Agentic Throughput Tuning for LLM Training",
-  "abstract": "Training recipes are tuned by hand for one model, cluster and workload, and every new model, accelerator, framework version or dataset means tuning again. Automated tuners search a fixed space of knobs and check only that a job runs, yet a configuration can run to completion while it silently changes training. ATTUNE is a single coding agent that tunes any working recipe for the workload and stack at hand, unattended, within a GPU-hour budget the user sets. It diagnoses each run and changes one lever at a time, guided by a catalog of lessons from past campaigns, and ships a recipe only if it passes a correctness gate: a configuration check against objective-changing settings and known stack defects, and a convergence check of its loss curve against the baseline's. On four held-out models at 64-128 GPUs, ATTUNE raises mean throughput over the strongest public recipe run on our stack by 6.7% on Llama-3.1-405B (best campaign 11.9%) and 33.9% on GLM-4.5 (54.7%), whose public recipe was written for H100. It keeps Mixtral-8x22B's recipe, where nothing it finds clears the noise band. Under a common GPU-hour budget it beats OptiCo, Bayesian optimization and random search on GLM-4.5 and MiniMax-M2; on GLM-4.5 its mean gain is more than four times the best alternative's at less than half the GPU-hours, and on both models its tuning pays for itself within a day of training. The gate rejects no legitimate run and catches 16 of 24 faulty runs, missing only ones that barely move the 20-step loss. Ablations tie its best campaigns to one of its search rules: retrying an out-of-memory layout with recomputation. We release ATTUNE's code and TrainingThroughputBench, a leaderboard of the fastest known recipes for MoE models up to 744B parameters on up to 256 GPUs, each with its throughput, cost per million tokens and a passed correctness check, at https://github.com/amazon-science/attune.",
-  "url": "http://arxiv.org/abs/2610.17528v1",
-  "pdf_url": "https://arxiv.org/pdf/2610.17528v1",
+  "abstract": "The throughput of an LLM training job depends on its recipe: how the model is split across GPUs, how memory is traded for compute, and which kernels and communication overlaps it uses. The best recipe changes with every model, accelerator and framework version. Automated tuners search a fixed space of knobs and check only that a job runs, so they miss levers outside that space and can ship a configuration that silently changes training. ATTUNE is a coding agent that tunes any working recipe unattended within a GPU-hour budget. Guided by a skill of search rules, scripts and lessons from past tuning campaigns, it diagnoses each run and changes one lever at a time. A correctness gate outside the agent refuses any argument known to change the training objective. ATTUNE tunes Amazon's production post-training recipes on H100, H200 and B200 clusters, raising throughput by 1.7x on average. It beats the published throughput of four of NVIDIA's own benchmark recipes on NVIDIA's AutoModel framework by 6-17%. On models held out from its development, it improves the strongest public recipes most where they were written for another setting, by up to 2.6x on MiniMax-M2, and least where the vendor tuned them for the same hardware. Given the same GPU-hour budget, it outperforms existing automated tuners, including Bayesian optimization, random search and OptiCo, a recent LLM-agent tuner. Its gain on GLM-4.5 is more than four times the best alternative's. The same coding agent without ATTUNE's skill gains less and fails half its launches. We release ATTUNE at https://github.com/amazon-science/attune and OpenRecipes, a leaderboard of tuned and verified training recipes, at https://openrecipes.ai.",
+  "url": "https://arxiv.org/abs/2610.17528",
+  "pdf_url": "https://arxiv.org/pdf/2610.17528",
   "published": "2026-10-13",
-  "updated": "2026-10-13",
+  "updated": "2026-10-23",
   "authors": [
     "Leo Fan",
     "Hongyang Wang",
@@ -19,7 +19,7 @@
     "Zheshen Wang",
     "Benoit Dumoulin"
   ],
-  "source": "arXiv",
+  "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
     "cs.DC",
@@ -45,33 +45,38 @@
   "keyword_evidence": [
     "accelerator"
   ],
-  "score": 51,
+  "score": 46,
   "score_components": {
     "relevance": 12,
     "novelty": 5,
-    "rigor": 13,
-    "practical_impact": 11,
+    "rigor": 7,
+    "practical_impact": 12,
     "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: accelerator",
-    "no quantitative claim in metadata",
+    "quantitative claim detected",
     "code/artifact link detected"
   ],
-  "summary_en": "Training recipes are tuned by hand for one model, cluster and workload, and every new model, accelerator, framework version or dataset means tuning again.",
+  "summary_en": "The throughput of an LLM training job depends on its recipe: how the model is split across GPUs, how memory is traded for compute, and which kernels and communication overlaps it uses.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-16T04:43:54+00:00",
-  "last_seen": "2026-10-22T04:43:43+00:00",
+  "last_seen": "2026-10-23T04:45:39+00:00",
   "featured_weeks": [],
   "source_records": [
     {
       "source": "arXiv",
       "id": "http://arxiv.org/abs/2610.17528v1",
       "url": "http://arxiv.org/abs/2610.17528v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2610.17528",
+      "url": "https://arxiv.org/abs/2610.17528"
     }
   ]
 }

@@ -5,10 +5,16 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **225** 篇。
+累计收录 **231** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving](../../papers/arxiv-2610.30791/) | 2026-10-23 | 49 |
+| [MoEZip: Routing-Aware KV Cache Compression for Sparse Mixture-of-Experts LLMs](../../papers/arxiv-2610.30206/) | 2026-10-23 | 48 |
+| [Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon](../../papers/arxiv-2610.31479/) | 2026-10-23 | 47 |
+| [SARIA: Persistence-Aware KV Caching with Coordinated DRAM--SSD Reload for LLM Agents](../../papers/arxiv-2610.31169/) | 2026-10-23 | 43 |
+| [SympFormer: Inertial Attention Blocks from Damped Hamiltonian Dynamics on Spaces of Probability Measures](../../papers/arxiv-2610.31600/) | 2026-10-23 | 38 |
+| [Drift Says When, Budget Says How Much: Rate-Controlled KV Re-selection for Long-Form Multimodal Generation](../../papers/arxiv-2610.31433/) | 2026-10-23 | 38 |
 | [To Keep or Not to Keep: Learning KV Cache Retention in Disaggregated LLM Serving Systems](../../papers/arxiv-2610.28637/) | 2026-10-22 | 54 |
 | [RISK-KV: Quality-Aware Selective KV Cache Reconstruction for Distributed LLM Inference](../../papers/arxiv-2610.29544/) | 2026-10-22 | 45 |
 | [HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference](../../papers/arxiv-2610.29873/) | 2026-10-22 | 43 |
