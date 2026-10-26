@@ -5,10 +5,15 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **344** 篇。
+累计收录 **349** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents](../../papers/arxiv-2610.32417/) | 2026-10-26 | 51 |
+| [MPQ: A Message-Passing View of Post-Training Quantization](../../papers/arxiv-2610.32127/) | 2026-10-26 | 46 |
+| [BiLoCo: Binary Low-Rank Corrections for Post-Training Quantization](../../papers/arxiv-2610.32243/) | 2026-10-26 | 43 |
+| [Decode Late, Multiply Once: Rethinking the Dot Product for Quantized Weights](../../papers/arxiv-2610.31913/) | 2026-10-26 | 42 |
+| [On Orthogonal Recurrent Neural Networks Quantization](../../papers/arxiv-2402.04012/) | 2026-10-26 | 41 |
 | [FIGFLEX: A Mixed-Precision FP-INT GEMM Accelerator Co-Designed with Low-Bit LLM Quantization](../../papers/arxiv-2610.30480/) | 2026-10-23 | 50 |
 | [Spike-Aware Gradient-Based Mixed-Precision Quantization of Spiking Neural Networks for Vision Applications](../../papers/arxiv-2610.30339/) | 2026-10-23 | 49 |
 | [Extreme Compression of Per-Layer Embeddings via Cross-Layer Latent Vector Quantization](../../papers/arxiv-2610.31309/) | 2026-10-23 | 44 |

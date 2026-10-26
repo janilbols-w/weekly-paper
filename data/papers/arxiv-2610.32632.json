@@ -1,0 +1,81 @@
+{
+  "id": "arxiv:2610.32632",
+  "title": "Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads",
+  "abstract": "RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency. Our work provides an evaluation of contemporary HPC RISC-V, Arm, and x86 processors using a common software stack and methodology. We characterize the Sophgo SG2044 and compare it with the NVIDIA Grace CPU Superchip and Intel Xeon Platinum 8480+ across four HPC benchmarks (STREAM, HPL, HPL-MxP, and HPCG) and four representative applications (iPIC3D, PLUTO, OpenFOAM, and llama.cpp). The version of HPL-MxP linked to OpenBLAS built and used for this work is made available as open-source software. The SG2044 reaches 8.02 GFLOP/s of FP64 performance and 7.8 GB/s of memory bandwidth per core, increasing to 294 GFLOP/s and 107 GB/s at 64 cores. L2-cache-aware process placement enables near-linear scaling up to 16 cores, beyond which memory-bandwidth saturation limits further gains. Across generations of RISC-V hardware, in the context of the Monte Cimone (MC) project, the SG2044-based MCv3 doubles both single-core performance and peak memory bandwidth relative to MCv2, while improving memory bandwidth, node-level FP64 performance, and energy efficiency by approximately 100x, 158x, and 10x, over MCv1. Against the Arm and x86 systems, the SG2044 shows 8-15x less absolute performance, reflecting its narrower vector resources and less advanced technology node, but delivers competitive scaling and energy efficiency on several workloads. Its most notable result is LLM decode, where 64-core execution provides the highest relative scaling and energy efficiency among the evaluated platforms while exceeding Intel in throughput. Our results show that RISC-V processors are closing the gap with the competition.",
+  "url": "https://arxiv.org/abs/2610.32632",
+  "pdf_url": "https://arxiv.org/pdf/2610.32632",
+  "published": "2026-10-26",
+  "updated": "2026-10-26",
+  "authors": [
+    "Emanuele Venieri",
+    "Giacomo Madella",
+    "Gabriele Ceccolini",
+    "Simone Manoni",
+    "Federico Ficarelli",
+    "Filippo Barbari",
+    "Jenny Lynn Almerol",
+    "Elisabetta Boella",
+    "Nitin Shukla",
+    "Simone Bn\\`a",
+    "Luca Benini",
+    "Andrea bartolini"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.DC",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "RISC-V is emerging as a candidate architecture for high-performance computing (HPC), but its competitiveness against established x86 and Arm processors remains difficult to assess because existing studies use different platforms, workloads, and methodologies, and rarely consider energy efficiency.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-26T04:48:33+00:00",
+  "last_seen": "2026-10-26T04:48:33+00:00",
+  "featured_weeks": [
+    "2026-W44"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.32632",
+      "url": "https://arxiv.org/abs/2610.32632"
+    }
+  ]
+}

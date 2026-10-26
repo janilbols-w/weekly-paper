@@ -39,7 +39,7 @@ Large language models (LLMs) with extended context lengths rely on the key-value
 ## 元数据
 
 - 作者：Junjie Peng, You Wu, Haoyi Wu, Jialong Han, Xiaohua Xie, Kewei Tu, Jianhuang Lai
-- 发布：2026-09-01；更新：2026-09-01
+- 发布：2026-09-01；更新：2026-10-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/pjunjie/GRKV](https://github.com/pjunjie/GRKV)
 - 阅读深度：metadata

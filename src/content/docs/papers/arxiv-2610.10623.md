@@ -39,7 +39,7 @@ Looped Language Models (LoopLMs) offer a parameter efficient approach to scaling
 ## 元数据
 
 - 作者：Yi Wang, Rui Qian, Yu Li, Haoyang Yao, Wenjie Wang
-- 发布：2026-10-09；更新：2026-10-09
+- 发布：2026-10-09；更新：2026-10-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

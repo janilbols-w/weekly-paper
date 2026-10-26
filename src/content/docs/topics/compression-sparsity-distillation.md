@@ -5,10 +5,21 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **670** 篇。
+累计收录 **681** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ReMedI: Inference-Time Refinement and Self-Distillation for Controllable Molecular Optimization](../../papers/arxiv-2610.32103/) | 2026-10-26 | 46 |
+| [SOPO: Socratic Guided Policy Optimization for Span-Level Hallucination Detection](../../papers/arxiv-2610.32212/) | 2026-10-26 | 44 |
+| [Nested Sparsity for Scalable Pretraining and Continual Learning](../../papers/arxiv-2610.31818/) | 2026-10-26 | 43 |
+| [Sustainability of TSFM Deployment and Pretraining: From Carbon Footprint Analysis to Mitigation via Pruning](../../papers/arxiv-2610.32859/) | 2026-10-26 | 42 |
+| [Learning to Be Monitored: Causal Bounds and Intervention-Aware Post-Training Recipes for Chain-of-Thought Monitorability](../../papers/arxiv-2610.31733/) | 2026-10-26 | 42 |
+| [Heterogeneous Agent Collaborative Reinforcement Learning](../../papers/arxiv-2603.02604/) | 2026-10-26 | 42 |
+| [FastGraph: PCA-Subspace Binned k-Nearest-Neighbor Graph Construction for GPU Geometric Deep Learning](../../papers/arxiv-2511.10442/) | 2026-10-26 | 41 |
+| [TileShare: Training-Free Acceleration of Overlapping Tiled ViT Decoding](../../papers/arxiv-2610.32233/) | 2026-10-26 | 40 |
+| [MedAction: Towards Active Multi-turn Clinical Diagnostic LLMs](../../papers/arxiv-2605.07305/) | 2026-10-26 | 40 |
+| [LazyFlash: Forward-Dense, Backward-Sparse Attention for Accelerated Long-Context Fine-Tuning](../../papers/arxiv-2610.31911/) | 2026-10-26 | 39 |
+| [Continuous Audio Thinking for Large Audio Language Models](../../papers/arxiv-2606.18273/) | 2026-10-26 | 39 |
 | [GIFT: Gradient Informed Filtering for Distillation Augmented Reasoning RL](../../papers/arxiv-2610.30796/) | 2026-10-23 | 50 |
 | [Neural Spectral Capacity with Residual Context for Heterogeneous Resource Allocation within Transformers](../../papers/arxiv-2610.30823/) | 2026-10-23 | 46 |
 | [Context-Aware Subtitle Translation on CPU: Deployment-Driven Training, Evaluation, and Latency Design](../../papers/arxiv-2607.09957/) | 2026-10-23 | 45 |

@@ -39,7 +39,7 @@ On-policy distillation (OPD) transfers teacher capabilities by supervising traje
 ## 元数据
 
 - 作者：Zhaoyi Li, Deyang Kong, Yuan Wei, Evan Yang, Ranran Shen, Mahardika Krisna Ihsani, Ming Yang, Wei Zhang, Chuan Hao, Jian Yang, Ran Tao, Bryan Dai, Shikun Zhang, Wei Ye, Ying Wei, Defu Lian
-- 发布：2026-08-17；更新：2026-08-25
+- 发布：2026-08-17；更新：2026-10-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **54** 篇。
+累计收录 **56** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads](../../papers/arxiv-2610.32632/) | 2026-10-26 | 49 |
+| [Efficient Omni-modal Large Language Model Inference via Per-Query Modality Selection](../../papers/arxiv-2610.31768/) | 2026-10-26 | 38 |
 | [Magneton: Optimizing Energy Efficiency of ML Systems via Differential Energy Debugging](../../papers/arxiv-2512.08365/) | 2026-10-21 | 40 |
 | [SAGE-HAP: Sustainability-Certified Agentic Communication and Computing at a Solar-Powered High-Altitude Platform](../../papers/arxiv-2610.27513/) | 2026-10-21 | 38 |
 | [CEMA-Router: Infrastructure-Aware Batch Routing for LLM Inference in Cloud-Edge Systems](../../papers/arxiv-2610.26171/) | 2026-10-20 | 41 |

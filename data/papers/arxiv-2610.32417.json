@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2610.32417",
+  "title": "Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents",
+  "abstract": "Quantization reduces the memory and energy needed to serve large language models (LLMs) and AI agents for coding and data analysis can now run on locally hosted LLMs. In practice, this benefit is commonly benchmarked per output token. Yet an agent calls its model repeatedly, runs tools, and revises its work, and quantization can change both how much the agent generates and whether it succeeds. Existing energy studies either compare quantized models on single requests or measure agents at one fixed precision, overlooking how a change in precision plays out across a complete agent task. To address this gap, this paper presents the first characterization of the task-level energy trade-offs of model quantization in locally hosted agents. We develop 29 agent tasks with automatic pass/fail checks in six families, ranging from single-answer SQL analytics to multi-step repository bug fixing, and measure CPU and GPU energy per output token and per completed task for 4-bit and 8-bit versions of two open-weight models on bare-metal NVIDIA A100 nodes with llama.cpp. Our findings reveal that 4-bit precision generally saves energy per token, though whether it saves energy per completed task is task dependent and changes with the model and the execution budget (i.e., limits on turns, tokens, and time). We trace this discrepancy to the extra tokens needed to complete a task in full, which translates into using up to 3.5 times as much energy per completed task. These findings offer actionable guidance for developers and operators choosing model precision for agents, showing how tokens per completed task, set against the per-token saving, reveal whether lower precision completes the work with less energy.",
+  "url": "https://arxiv.org/abs/2610.32417",
+  "pdf_url": "https://arxiv.org/pdf/2610.32417",
+  "published": "2026-10-26",
+  "updated": "2026-10-26",
+  "authors": [
+    "Stephen Abkin",
+    "Aldric Yang",
+    "Alex Flesher",
+    "Nitheesh Kodarapu",
+    "Deepak Panigrahy",
+    "Aakash Tyagi",
+    "David Kebo Houngninou"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 14,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Quantization reduces the memory and energy needed to serve large language models (LLMs) and AI agents for coding and data analysis can now run on locally hosted LLMs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-26T04:48:33+00:00",
+  "last_seen": "2026-10-26T04:48:33+00:00",
+  "featured_weeks": [
+    "2026-W44"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.32417",
+      "url": "https://arxiv.org/abs/2610.32417"
+    }
+  ]
+}

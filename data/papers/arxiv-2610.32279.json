@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.32279",
+  "title": "TranSAGE: Automating Spatial Accelerator Generation for Large-Scale Transformer Models",
+  "abstract": "Large-scale Transformers have achieved remarkable success across NLP, computer vision, and robotics, but their growing computational and memory demands challenge efficient inference. Spatial accelerators offer advantages in on-chip bandwidth and energy efficiency, yet designing them for large models remains costly and time-consuming. Existing accelerator generators typically focus on single-operation support, overlooking the benefits of multi-operation pipelining, which limits throughput and energy efficiency. We propose TranSAGE, a compiler-based framework that jointly optimizes scheduling for large-scale Transformers under multi-operation pipelining and generates corresponding accelerator implementations. Our approach integrates a design space exploration (DSE) engine with multi-operation dataflow optimization and a dynamic programming-based graph partitioning algorithm to efficiently identify pipeline-friendly operation clusters and their optimal dataflow parameters. We further design spatial architecture primitives and lowering passes to automatically generate efficient RTL implementations. Evaluations on four representative LLMs demonstrate that TranSAGE achieves up to 2.41x higher throughput and 13.04x higher energy efficiency than commercial GPU/NPU baselines. Compared with state-of-the-art accelerator generators, TranSAGE achieves up to 11.33x higher throughput and 6.07x higher energy efficiency. Our code is available at https://github.com/sjtu-zhao-lab/TranSAGE.",
+  "url": "https://arxiv.org/abs/2610.32279",
+  "pdf_url": "https://arxiv.org/pdf/2610.32279",
+  "published": "2026-10-26",
+  "updated": "2026-10-26",
+  "authors": [
+    "Chi Zhang",
+    "Yi Sun",
+    "Weichuang Zhang",
+    "Quan Chen",
+    "Jieru Zhao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/sjtu-zhao-lab/TranSAGE",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 57,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 16,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Large-scale Transformers have achieved remarkable success across NLP, computer vision, and robotics, but their growing computational and memory demands challenge efficient inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-26T04:48:33+00:00",
+  "last_seen": "2026-10-26T04:48:33+00:00",
+  "featured_weeks": [
+    "2026-W44"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.32279",
+      "url": "https://arxiv.org/abs/2610.32279"
+    }
+  ]
+}

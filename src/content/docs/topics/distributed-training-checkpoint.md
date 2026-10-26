@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **123** 篇。
+累计收录 **125** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [EDWARD-NMT: Elastic Dimensions With Adaptive Routing and Dual-consistency for Neural Machine Translation](../../papers/arxiv-2610.32115/) | 2026-10-26 | 42 |
+| [Beyond Data Schedule: Fast LLM Pretraining on Data Mixtures by Loss-Reweighting](../../papers/arxiv-2610.32141/) | 2026-10-26 | 41 |
 | [Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3](../../papers/arxiv-2610.31624/) | 2026-10-23 | 45 |
 | [Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning](../../papers/arxiv-2610.30450/) | 2026-10-23 | 42 |
 | [Resuming Vision-Language Inference across Onboard Interruptions](../../papers/arxiv-2610.29183/) | 2026-10-22 | 45 |
@@ -36,7 +38,7 @@ description: "Distributed Training & Checkpointing"
 | [Benchmarking System One decision models against trained classifiers and language models for automated decision gates](../../papers/arxiv-2610.00346/) | 2026-10-08 | 42 |
 | [PrismSSL: One Interface, Many Modalities; A Single-Interface Library for Multimodal Self-Supervised Learning](../../papers/arxiv-2511.17776/) | 2026-10-08 | 38 |
 | [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](../../papers/arxiv-2610.07688/) | 2026-10-07 | 54 |
-| [VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents](../../papers/arxiv-2610.08402/) | 2026-10-07 | 44 |
+| [VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents](../../papers/arxiv-2610.08402/) | 2026-10-07 | 46 |
 | [Towards One-for-All Foundation Model for Attributed Graph Clustering](../../papers/arxiv-2610.07778/) | 2026-10-07 | 44 |
 | [Harmful SFT Leaves a Continuous Trace in LLM Checkpoint Updates](../../papers/arxiv-2610.07518/) | 2026-10-07 | 41 |
 | [Gefen: Optimized Stochastic Optimizer](../../papers/arxiv-2606.13894/) | 2026-10-06 | 50 |

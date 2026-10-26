@@ -39,7 +39,7 @@ Orthogonal transforms have emerged as an effective tool for low-bit quantization
 ## 元数据
 
 - 作者：Dwaipayan Haldar, Indranil Patra, Azhar Yousuf, Chandra Sekhar Seelamantula
-- 发布：2026-10-14；更新：2026-10-15
+- 发布：2026-10-14；更新：2026-10-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

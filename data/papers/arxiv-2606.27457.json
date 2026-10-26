@@ -1,0 +1,80 @@
+{
+  "id": "arxiv:2606.27457",
+  "title": "Cluster, Route, Escalate: Cascaded Framework for Cost-Aware LLM Serving",
+  "abstract": "Serving open-weight language models on premises forces a trade-off between accuracy and computational cost. Hosting models of different sizes lets easy queries go to a small, efficient model and hard ones to a large model. We present CRE-Router (Cluster, Route, Escalate), a two-stage method that decides which of these models answers each query. It clusters queries and routes each cluster to the model that best trades error against cost, under a budget on the time per output token (TPOT) or the end-to-end latency per request (E2EL). It then either accepts the answer or, when a quality estimator rejects it, escalates the query to the strong model. Routing decides before generation, so a hard query goes straight to the strong model; escalation decides after, so it can catch the errors routing cannot predict. It needs no annotation beyond task-correctness labels. We evaluate CRE-Router on TeleMath, TeleQnA and AIME, with pools of two to nine models served on A100 GPUs. CRE-Router is more accurate than the efficient models in its pool and comparable to the strong model it escalates to, at a lower cost per token. We also find that the choice of cost term decides which models serve the workload, that pricing each model per cluster shortens the wait per request, and that a change of hardware changes the best routing.",
+  "url": "https://arxiv.org/abs/2606.27457",
+  "pdf_url": "https://arxiv.org/pdf/2606.27457",
+  "published": "2026-10-26",
+  "updated": "2026-10-26",
+  "authors": [
+    "Yasmin Moslem",
+    "Magdalena Kacmajor",
+    "Vasudevan Nedumpozhimana",
+    "Ammar Abbas",
+    "Solmaz Panahi",
+    "David Lynch",
+    "Zhuangzhuang Nie",
+    "Alexandros Agapitos",
+    "Aleksandar Milenovic",
+    "Hongmeng Song",
+    "Yucheng Shi",
+    "Yue Pan",
+    "Patricia Buffini",
+    "John D. Kelleher"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Serving open-weight language models on premises forces a trade-off between accuracy and computational cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-26T04:48:33+00:00",
+  "last_seen": "2026-10-26T04:48:33+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.27457",
+      "url": "https://arxiv.org/abs/2606.27457"
+    }
+  ]
+}

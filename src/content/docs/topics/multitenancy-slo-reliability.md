@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **38** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [InferSlice: A Reference Architecture for SLO-driven LLM Inference over a Telco Wide-Area Network](../../papers/arxiv-2610.32638/) | 2026-10-26 | 44 |
 | [VS-Flash: Harnessing Vector Search with Computational Memory-Semantic Flash](../../papers/arxiv-2610.26960/) | 2026-10-21 | 45 |
 | [ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference](../../papers/arxiv-2610.25519/) | 2026-10-20 | 51 |
 | [Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](../../papers/arxiv-2610.19405/) | 2026-10-14 | 42 |

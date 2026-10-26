@@ -39,7 +39,7 @@ Large language model (LLM) inference exhibits distinct computational characteris
 ## 元数据
 
 - 作者：Junhyeok Park, Jungeun Yoon, Kyungmin Kim, Hunsoon Lee, Shinyoung Ahn, Kangho Kim
-- 发布：2026-10-22；更新：2026-10-22
+- 发布：2026-10-22；更新：2026-10-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata
