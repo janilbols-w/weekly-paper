@@ -39,7 +39,7 @@ Fixed-window Vision Transformer (ViT) decoders run at deployment resolution as o
 ## 元数据
 
 - 作者：Xiangzhong Ye, Zhongshen Li, Shen You, Ziyang Meng, Liang Xu, Junkai Ji, Qiuzhen Lin, Xiangtao Li, Ka-Chun Wong
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

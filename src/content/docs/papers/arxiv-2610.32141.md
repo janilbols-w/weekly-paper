@@ -39,7 +39,7 @@ Large language models often acquire specialized capabilities through successive 
 ## 元数据
 
 - 作者：Jiazheng Li, Huaqing Zhang, Jing Xu, Tianle Cai, Jingzhao Zhang
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ In drug development, lead optimization must improve competing properties, such a
 ## 元数据
 
 - 作者：Jia Yi Zhang, Shivanshu Shekhar, Allison McLevige, Tong Zhang
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

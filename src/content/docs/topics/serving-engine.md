@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **105** 篇。
+累计收录 **106** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DualPace: Decoupled Scheduling and Cooperative GPU--CPU Decoding for LLM Serving](../../papers/arxiv-2610.33501/) | 2026-10-27 | 47 |
 | [KVStream: Adaptive Parallel Storage Management for KV Caching in Large-Scale LLM Serving](../../papers/arxiv-2610.31827/) | 2026-10-26 | 47 |
 | [Cluster, Route, Escalate: Cascaded Framework for Cost-Aware LLM Serving](../../papers/arxiv-2606.27457/) | 2026-10-26 | 44 |
 | [UlaCache: Unified Logical Addressing for Sparse LLM Serving](../../papers/arxiv-2610.29820/) | 2026-10-22 | 48 |

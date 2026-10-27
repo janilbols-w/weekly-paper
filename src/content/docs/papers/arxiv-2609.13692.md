@@ -5,7 +5,7 @@ description: "LLM serving reuses KV cache by exact prefix match, so when a promp
 
 **评分：39/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
-[论文原文](http://arxiv.org/abs/2609.13692v1) · [PDF](https://arxiv.org/pdf/2609.13692v1)
+[论文原文](https://arxiv.org/abs/2609.13692) · [PDF](https://arxiv.org/pdf/2609.13692)
 
 ## 一句话摘要
 
@@ -39,7 +39,7 @@ LLM serving reuses KV cache by exact prefix match, so when a prompt is assembled
 ## 元数据
 
 - 作者：Rong He
-- 发布：2026-09-12；更新：2026-09-12
-- 来源：arXiv；Venue：未确认
+- 发布：2026-09-12；更新：2026-10-27
+- 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Darrenus/prefix-sharing-is-sorting](https://github.com/Darrenus/prefix-sharing-is-sorting)
 - 阅读深度：metadata

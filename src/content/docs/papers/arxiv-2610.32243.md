@@ -39,7 +39,7 @@ Post-training quantization (PTQ) to FP4 has emerged as a key technique for reduc
 ## 元数据
 
 - 作者：David Jin, Beshr IslamBouli, Tarushii Goel, Han Guo, Yoon Kim
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

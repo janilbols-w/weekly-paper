@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **37** 篇。
+累计收录 **38** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Speeding up Log-Sum-Exp: Kernel Fusion at the Memory Wall, Integer Arithmetic at the Compute Wall](../../papers/arxiv-2610.33647/) | 2026-10-27 | 45 |
 | [Amplifying Latency and Cost of LLM Inference via Rowhammer Attack](../../papers/arxiv-2610.30798/) | 2026-10-23 | 39 |
 | [TrainBridge: Agentic NPU Training Optimization Guided by GPU Compilation Evidence](../../papers/arxiv-2610.29171/) | 2026-10-22 | 44 |
 | [KernelClaw: A Multi-Agent Framework for GPU Kernel Optimization with Dual-Memory Mechanisms](../../papers/arxiv-2603.10085/) | 2026-10-20 | 58 |

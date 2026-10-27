@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2608.08097",
   "title": "OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching",
-  "abstract": "Large language model (LLM) inference serving is increasingly constrained by memory rather than compute. As long-context and long-form reasoning workloads become more prevalent, the key-value (KV) cache dominates both memory footprint and memory traffic during LLM token generation, i.e., decode. In particular, HBM capacity has become a scarce and costly resource that heavily limits inference batch size and system throughput. This paper presents OasisKV, a memory-centric LLM inference system design that alleviates HBM capacity pressure by decoupling full KV-cache storage from HBM during LLM decoding. Because decode-time attention is naturally sparse, OasisKV keeps only the KV entries of the most relevant tokens in HBMs for attention computation. We observe that future important tokens can be predicted accurately in advance using lookahead tokens drafted by speculative decoding (SD). OasisKV employs an efficient attention background pipeline to identify important KV blocks. They are then prefetched from higher-capacity memory tiers (e.g., host or remote memory) and staged in HBMs before being used in the next decode step. We implement OasisKV based on vLLM. The lookahead prediction is accurate enough to keep accuracy within 0.7 points of full attention under a 2,048-token KV budget. This lets OasisKV turn sparsity into throughput gain: $1.69\\times$ over dense vLLM on the reasoning workload at 0.1 points of accuracy loss, and up to $2.1\\times$ on multi-GPU long-context serving. Under prefill--decode disaggregation, OasisKV reaches about $2\\times$ dense throughput while admitting each request with $6.5$--$9.7\\times$ less KV and holding $2.2$-$2.6$ less decode-node host memory than full KV transfer.",
+  "abstract": "Large language model (LLM) inference serving is increasingly constrained by memory rather than compute. As long-context and long-form reasoning workloads become more prevalent, the key-value (KV) cache dominates both memory footprint and memory traffic at the token generation (i.e., decode) stage. HBM capacity has therefore become a critical bottleneck, constraining inference batch size and throughput. This paper introduces OasisKV, a memory-centric LLM inference system that alleviates HBM limitations by offloading the KV-cache to alternative memory tiers. Exploiting the sparsity of decode-time attention and leveraging speculative decoding to predict important tokens, OasisKV selectively prefetches and stages only the most relevant KV entries in HBM for efficient LLM inference computation. To support growing LLM context and the larger batches enabled by sparse HBM residency, OasisKV employs tiered KV management across decode, prefill, and remote-memory nodes, relaxing decode-host memory capacity limits under disaggregated serving. An asynchronous prefetch pipeline hides off-GPU transfer latency while bounding per-step traffic to fit the available bandwidth. We implement OasisKV on vLLM. With only 2,048 KV tokens resident in HBM, OasisKV maintains average accuracy within a negligible 0.61 points of full attention on LongBench v2 for long-context understanding and across AIME24-25 and GPQA-Diamond for long-form reasoning. This sparsity translates into a 1.86x throughput gain over vLLM on AIME24. Synthetic long-context workloads further show up to 2.2x higher throughput in multi-GPU serving. Under prefill-decode disaggregation, OasisKV achieves 2.29x vLLM's throughput while supporting 2.42x as many concurrent requests under the same host-memory budget.",
   "url": "https://arxiv.org/abs/2608.08097",
   "pdf_url": "https://arxiv.org/pdf/2608.08097",
   "published": "2026-08-08",
-  "updated": "2026-08-11",
+  "updated": "2026-10-27",
   "authors": [
     "Can Xiao",
     "Sukmin Cho",
@@ -39,23 +39,25 @@
     "leaf": "Attention & KV Cache",
     "leaf_zh": "Attention 与 KV Cache"
   },
-  "secondary_tags": [],
+  "secondary_tags": [
+    "prefill-decode-disaggregation"
+  ],
   "keyword_evidence": [
     "kv cache",
     "kv-cache"
   ],
-  "score": 46,
+  "score": 49,
   "score_components": {
     "relevance": 18,
     "novelty": 5,
     "rigor": 7,
-    "practical_impact": 11,
+    "practical_impact": 14,
     "reproducibility": 2,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: kv cache, kv-cache",
-    "no quantitative claim in metadata",
+    "quantitative claim detected",
     "no code link detected in metadata"
   ],
   "summary_en": "Large language model (LLM) inference serving is increasingly constrained by memory rather than compute.",
@@ -64,7 +66,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-11T04:54:40+00:00",
-  "last_seen": "2026-10-26T04:48:33+00:00",
+  "last_seen": "2026-10-27T04:44:55+00:00",
   "featured_weeks": [],
   "source_records": [
     {

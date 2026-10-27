@@ -39,7 +39,7 @@ Multi-turn LLM agents often receive sparse task feedback across several interact
 ## 元数据
 
 - 作者：Jiaju Chen, Min Yang, Jinghua Piao, Xiaochong Lan, Xu Xia, Xiangnan He, Yong Li
-- 发布：2026-10-07；更新：2026-10-26
+- 发布：2026-10-07；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Jiaju-Chen/VETTA-official](https://github.com/Jiaju-Chen/VETTA-official)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Large neural networks are increasingly deployed with 1-4 bit weights and 16- or 
 ## 元数据
 
 - 作者：Jonathan Tapson
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

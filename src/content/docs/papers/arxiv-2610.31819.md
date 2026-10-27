@@ -39,7 +39,7 @@ Speculative decoding is a technique that accelerates the inference speed of auto
 ## 元数据
 
 - 作者：Aaron Zorel, Guy Van den Broeck, Aditya Grover, Daniel Israel
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

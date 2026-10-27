@@ -5,10 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **84** 篇。
+累计收录 **86** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SPARTA: A Sparse Ternary LLM Accelerator with Adaptive Attention and Unified Datapath for Long-Context Edge Inference](../../papers/arxiv-2610.34824/) | 2026-10-27 | 51 |
+| [From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?](../../papers/arxiv-2610.34422/) | 2026-10-27 | 41 |
 | [TranSAGE: Automating Spatial Accelerator Generation for Large-Scale Transformer Models](../../papers/arxiv-2610.32279/) | 2026-10-26 | 57 |
 | [A Resource-Efficient and Precision-Scalable FPGA Accelerator for Spiking Neural Networks Using Minifloat Arithmetic](../../papers/arxiv-2610.32052/) | 2026-10-26 | 42 |
 | [RootDown: Deploying and Benchmarking Models for Beet-Root Detection on Edge Devices](../../papers/arxiv-2610.32275/) | 2026-10-26 | 39 |

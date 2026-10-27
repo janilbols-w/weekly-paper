@@ -39,7 +39,7 @@ Mixture-of-experts (MoE) transformers, the standard backbone for modern large-sc
 ## 元数据
 
 - 作者：Tianzhe Chu, Druv Pai, Yi Ma
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Ma-Lab-Berkeley/Nestor](https://github.com/Ma-Lab-Berkeley/Nestor)
 - 阅读深度：metadata

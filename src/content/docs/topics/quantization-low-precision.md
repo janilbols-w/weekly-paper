@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **349** 篇。
+累计收录 **353** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Adapting DNNs to Embrace Voltage Scaling Induced Errors via Accumulation-Aware Quantization](../../papers/arxiv-2610.33824/) | 2026-10-27 | 46 |
+| [Accelerating SO(2)-Equivariant Materials Models through Low-Precision Emulation](../../papers/arxiv-2610.35164/) | 2026-10-27 | 44 |
+| [Divide et Calibra: Multiclass Local Calibration via Vector Quantization](../../papers/arxiv-2605.21060/) | 2026-10-27 | 43 |
+| [Large Language Models: A Plain-Language Overview for Engineers](../../papers/arxiv-2610.34585/) | 2026-10-27 | 38 |
 | [Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents](../../papers/arxiv-2610.32417/) | 2026-10-26 | 51 |
 | [MPQ: A Message-Passing View of Post-Training Quantization](../../papers/arxiv-2610.32127/) | 2026-10-26 | 46 |
 | [BiLoCo: Binary Low-Rank Corrections for Post-Training Quantization](../../papers/arxiv-2610.32243/) | 2026-10-26 | 43 |

@@ -39,7 +39,7 @@ Post-training quantization (PTQ) is a key technique for efficiently deploying la
 ## 元数据
 
 - 作者：Yanshuo Chen, Chenxi Liu, Reza Shirkavand, Heng Huang
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/poseidonchan/MPQ](https://github.com/poseidonchan/MPQ)
 - 阅读深度：metadata

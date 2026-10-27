@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.34731",
+  "title": "MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference",
+  "abstract": "This paper presents Memory- and Communication-Aware Framework for Long-Context LLM Inference (MCF) that optimizes long-context inference through communication-aware and stage-adaptive KV-cache layout transitions. At the core of MCF is {Memory-Aware Replication and Scheduling} (MARS), a dynamic orchestration mechanism for chunked prefill. MARS exploits early-stage memory headroom by selectively replicating highly reused KV blocks, improving locality and hiding KV propagation latency behind attention computation. As prefill progresses and memory pressure increases, MARS progressively drains redundant replicas and converges the KV cache into a sharded decode-ready layout, avoiding expensive layout conversion at the prefill--decode boundary. For decoding, MCF adopts a query-centric execution model in which KV shards remain stationary while lightweight query tensors are routed across workers. This changes communication from KV-cache-dependent transfer to query-dependent transfer, reducing communication growth with context length. MCF further integrates a hardware-software co-designed execution layer based on an FPGA compute-NIC datapath, enabling metadata-driven KV routing and collective operations directly in the network path. Experiments show that MCF improves TTFT, throughput, and scalability over state-of-the-art distributed inference systems, with larger benefits as context length and cluster size increase.",
+  "url": "https://arxiv.org/abs/2610.34731",
+  "pdf_url": "https://arxiv.org/pdf/2610.34731",
+  "published": "2026-10-27",
+  "updated": "2026-10-27",
+  "authors": [
+    "Huaizhi Zhang",
+    "Jiacheng Zhu",
+    "Xuqi Zhu",
+    "Junkyu Lee",
+    "Klaus McDonald-Maier",
+    "Xiaojun Zhai"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "This paper presents Memory- and Communication-Aware Framework for Long-Context LLM Inference (MCF) that optimizes long-context inference through communication-aware and stage-adaptive KV-cache layout transitions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-27T04:44:55+00:00",
+  "last_seen": "2026-10-27T04:44:55+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.34731",
+      "url": "https://arxiv.org/abs/2610.34731"
+    }
+  ]
+}

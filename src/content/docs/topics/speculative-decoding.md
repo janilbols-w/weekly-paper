@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **120** 篇。
+累计收录 **122** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [T2D: Target-to-Draft Model Pruning & Adaptation for Efficient Speculative Decoding](../../papers/arxiv-2610.34103/) | 2026-10-27 | 50 |
+| [Prefix Keys and Values Matter Late: RIPE Caching for Self-Speculative Decoding in Looped Language Models](../../papers/arxiv-2610.34436/) | 2026-10-27 | 42 |
 | [Speculative Diffusion is a Tale of Two Tradeoffs](../../papers/arxiv-2610.31819/) | 2026-10-26 | 38 |
 | [Accelerating CPU Speculative Decoding via Unified Graph Execution and Transactional KV Isolation](../../papers/arxiv-2610.28671/) | 2026-10-22 | 49 |
 | [RCSD: Reinforcement and Continual Learning for Domain-Specific Speculative Decoding](../../papers/arxiv-2610.29527/) | 2026-10-22 | 48 |

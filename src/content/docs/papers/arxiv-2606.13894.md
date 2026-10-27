@@ -39,7 +39,7 @@ AdamW is a default optimizer for deep learning, but its moment states add two pa
 ## 元数据
 
 - 作者：Nadav Benedek, Tomer Koren, Ohad Fried
-- 发布：2026-10-06；更新：2026-10-06
+- 发布：2026-10-06；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/ndvbd/Gefen](https://github.com/ndvbd/Gefen)
 - 阅读深度：metadata

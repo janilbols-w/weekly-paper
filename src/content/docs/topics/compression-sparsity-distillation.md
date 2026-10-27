@@ -5,10 +5,19 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **681** 篇。
+累计收录 **689** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Learning When to Commit: Schedule Distillation for Fast Diffusion Language Models](../../papers/arxiv-2610.35804/) | 2026-10-27 | 48 |
+| [LinearARD: Linear-Memory Attention Distillation for RoPE Restoration](../../papers/arxiv-2604.00004/) | 2026-10-27 | 47 |
+| [Linear-Time Context Compression with State-Space Encoding](../../papers/arxiv-2610.33006/) | 2026-10-27 | 44 |
+| [MIS-VQA: An Annotation-Driven Surgical Vision-Language Dataset for Complex Surgical Understanding](../../papers/arxiv-2610.34210/) | 2026-10-27 | 43 |
+| [Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching](../../papers/arxiv-2610.34756/) | 2026-10-27 | 41 |
+| [BERAG: Bayesian Ensemble Retrieval-Augmented Generation for Knowledge-based Visual Question Answering](../../papers/arxiv-2604.22678/) | 2026-10-27 | 41 |
+| [ActTail: Global Activation Sparsity in Large Language Models](../../papers/arxiv-2603.12272/) | 2026-10-27 | 41 |
+| [Self-Evolution Reasoner: Continuous Optimization via Policy-Intrinsic Exploration and Exploitation](../../papers/arxiv-2610.34137/) | 2026-10-27 | 40 |
+| [How Does Post-Training Shape LLM Value Preferences?](../../papers/arxiv-2610.33371/) | 2026-10-27 | 39 |
 | [ReMedI: Inference-Time Refinement and Self-Distillation for Controllable Molecular Optimization](../../papers/arxiv-2610.32103/) | 2026-10-26 | 46 |
 | [SOPO: Socratic Guided Policy Optimization for Span-Level Hallucination Detection](../../papers/arxiv-2610.32212/) | 2026-10-26 | 44 |
 | [Nested Sparsity for Scalable Pretraining and Continual Learning](../../papers/arxiv-2610.31818/) | 2026-10-26 | 43 |
@@ -658,7 +667,6 @@ description: "Compression, Sparsity & Distillation"
 | [Language-Specialized Multi-Teacher On-Policy Distillation for Multilingual LLM-Based ASR](../../papers/arxiv-2608.03610/) | 2026-08-05 | 43 |
 | [FinReportBench: Measuring and Improving Institution-Grade Financial Report Generation](../../papers/arxiv-2608.04374/) | 2026-08-05 | 43 |
 | [On the Limits of Layer Pruning for Generative Reasoning in Large Language Models](../../papers/arxiv-2602.01997/) | 2026-08-05 | 42 |
-| [The Asymmetric Effects of Knowledge Distillation on Bias in Small Language Models](../../papers/arxiv-2607.28639/) | 2026-08-05 | 40 |
 | [IPPRO: Importance-based Pruning with PRojective Offset for Magnitude-indifferent Structural Pruning](../../papers/arxiv-2507.14171/) | 2026-08-05 | 39 |
 | [SOD: Step-wise On-policy Distillation for Small Language Model Agents](../../papers/arxiv-2605.07725/) | 2026-08-04 | 48 |
 | [Multi-Objective Structured Pruning of LLMs for Latency and Model Size Optimization](../../papers/arxiv-2607.22583/) | 2026-08-04 | 47 |

@@ -39,7 +39,7 @@ Chain-of-thought (CoT) monitoring aims to detect potentially harmful behaviors i
 ## 元数据
 
 - 作者：Qiang Fu, Xinyue Li, Andre Wibisono, Arman Cohan
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-10-27
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/xinyue-lxy/learning-to-be-monitored](https://github.com/xinyue-lxy/learning-to-be-monitored)
 - 阅读深度：metadata

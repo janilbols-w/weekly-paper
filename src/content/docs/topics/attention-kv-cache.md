@@ -5,10 +5,13 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **231** 篇。
+累计收录 **234** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ZipFusion: Fusing Lossless KV Decompression with Attention for Efficient LLM Decoding](../../papers/arxiv-2610.33719/) | 2026-10-27 | 45 |
+| [MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference](../../papers/arxiv-2610.34731/) | 2026-10-27 | 44 |
+| [Fast KVzip: Efficient and Accurate LLM Inference with Gated KV Eviction](../../papers/arxiv-2601.17668/) | 2026-10-27 | 38 |
 | [Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving](../../papers/arxiv-2610.30791/) | 2026-10-23 | 49 |
 | [MoEZip: Routing-Aware KV Cache Compression for Sparse Mixture-of-Experts LLMs](../../papers/arxiv-2610.30206/) | 2026-10-23 | 48 |
 | [Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon](../../papers/arxiv-2610.31479/) | 2026-10-23 | 47 |
@@ -222,7 +225,7 @@ description: "Attention & KV Cache"
 | [Every Cache Entry Earns Its Place: Global Allocation of Resolution and Coverage for KV Cache Compression](../../papers/arxiv-2608.07001/) | 2026-08-10 | 40 |
 | [DistillCache: KL-Guided Adaptive KV-Cache Eviction for Memory-Efficient LLM Inference](../../papers/arxiv-2608.08878/) | 2026-08-09 | 48 |
 | [RippleKV: Cross-Layer KV Cache Allocation via Perturbation Propagation](../../papers/arxiv-2608.08684/) | 2026-08-09 | 43 |
-| [OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching](../../papers/arxiv-2608.08097/) | 2026-08-08 | 46 |
+| [OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching](../../papers/arxiv-2608.08097/) | 2026-08-08 | 49 |
 | [SPECTRA: Pushing the KV Cache Beyond the 2-Bit Cliff via Spectral Transform Coding](../../papers/arxiv-2608.07915/) | 2026-08-08 | 45 |
 | [Fractal KV-Cache Archives: Lossless Symbolic Storage with In-Place Retrieval for Long-Context LLM Inference](../../papers/arxiv-2607.07144/) | 2026-08-07 | 45 |
 | [NVLLM: A 3D NAND-Centric Architecture Enabling Edge on-Device LLM Inference](../../papers/arxiv-2604.25699/) | 2026-08-05 | 40 |

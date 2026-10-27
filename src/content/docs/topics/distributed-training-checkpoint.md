@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **125** 篇。
+累计收录 **127** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Satellite Intelligence: Distributed Training, Collaborative Inference,and LLM Adaptation in LEO Constellation](../../papers/arxiv-2610.35282/) | 2026-10-27 | 39 |
+| [Self-Supervised Pretraining for PHM: What Transfers, What Does Not, and What Federating It Costs](../../papers/arxiv-2610.35280/) | 2026-10-27 | 38 |
 | [EDWARD-NMT: Elastic Dimensions With Adaptive Routing and Dual-consistency for Neural Machine Translation](../../papers/arxiv-2610.32115/) | 2026-10-26 | 42 |
 | [Beyond Data Schedule: Fast LLM Pretraining on Data Mixtures by Loss-Reweighting](../../papers/arxiv-2610.32141/) | 2026-10-26 | 41 |
 | [Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3](../../papers/arxiv-2610.31624/) | 2026-10-23 | 45 |
