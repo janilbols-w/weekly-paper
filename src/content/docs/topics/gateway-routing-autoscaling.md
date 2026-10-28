@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **39** 篇。
+累计收录 **40** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](../../papers/arxiv-2610.36915/) | 2026-10-28 | 48 |
 | [Predictable performance is suboptimal, and what it means for model routing](../../papers/arxiv-2610.31428/) | 2026-10-23 | 45 |
 | [SpraySense: Sensing Gray Failures through Packet Spraying Discrepancies](../../papers/arxiv-2605.03702/) | 2026-10-23 | 38 |
 | [3D-MoE: Complementarity-Guided Hardware-Software Co-Design for MoE Decode on 3D-Stacked NMP](../../papers/arxiv-2610.26991/) | 2026-10-21 | 45 |

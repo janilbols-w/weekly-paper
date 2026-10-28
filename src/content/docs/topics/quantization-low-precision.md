@@ -5,10 +5,19 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **353** 篇。
+累计收录 **362** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Let the Gate Decide: Per-Lookup Precision for Quantized Conditional Memory in LLMs](../../papers/arxiv-2610.35985/) | 2026-10-28 | 50 |
+| [Efficient Quantization Training with Stochastic Rounding via Structured Subspace Randomness](../../papers/arxiv-2610.36587/) | 2026-10-28 | 50 |
+| [CoS-VQ: Coordinated Shared-Scale Vector Quantization for Large Language Models](../../papers/arxiv-2610.37336/) | 2026-10-28 | 50 |
+| [Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware](../../papers/arxiv-2610.37056/) | 2026-10-28 | 49 |
+| [ResCom: Activation Residual Compensation for Large Language Model Quantization](../../papers/arxiv-2610.35955/) | 2026-10-28 | 46 |
+| [COMPOT: Calibration-Optimized Matrix Procrustes Orthogonalization for Transformers Compression](../../papers/arxiv-2602.15200/) | 2026-10-28 | 41 |
+| [Compote: Collapse-Resistant Multiple Hypothesis Learning For Sequential Recommendation](../../papers/arxiv-2610.37005/) | 2026-10-28 | 39 |
+| [PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix](../../papers/arxiv-2610.35987/) | 2026-10-28 | 38 |
+| [Integrated electro-optic attention nonlinearities for transformers](../../papers/arxiv-2604.09512/) | 2026-10-28 | 38 |
 | [Adapting DNNs to Embrace Voltage Scaling Induced Errors via Accumulation-Aware Quantization](../../papers/arxiv-2610.33824/) | 2026-10-27 | 46 |
 | [Accelerating SO(2)-Equivariant Materials Models through Low-Precision Emulation](../../papers/arxiv-2610.35164/) | 2026-10-27 | 44 |
 | [Divide et Calibra: Multiclass Local Calibration via Vector Quantization](../../papers/arxiv-2605.21060/) | 2026-10-27 | 43 |

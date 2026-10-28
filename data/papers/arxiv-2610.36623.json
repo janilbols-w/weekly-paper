@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.36623",
+  "title": "God Does Not Play Dice: Enforcing Batch Invariance in Agentic Kernel Generation",
+  "abstract": "Large language model (LLM) serving systems dynamically batch user requests for GPU execution, so the same request may be processed alongside different requests across runs. If the GPU kernels lack batch invariance (BI), this changing batch context can alter the numerical output for an unchanged input, undermining reproducibility. Existing kernel generation agents focus on correctness and efficiency but \\emph{overlook BI}. We find 19 confirmed BI violations among 83 batch-applicable released artifacts. To address this limitation, we propose \\tool, which combines contract-guided static dependency analysis with dynamic validation of bitwise consistency across batch contexts. \\tool is designed as a plug-in component for general kernel agents, allowing their original optimization capabilities to be reused while adding BI enforcement. We integrate it as successive acceptance gates in the optimization loop, rejecting structurally risky or dynamically non-invariant candidates before performance benchmarking and returning feedback to the agent. Experiments across three agent frameworks under baseline and BI-aware generation on real world LLM serving tasks show that \\tool improves the BI pass rate from 67.6\\% to 91.9\\% while retaining 91.8\\% of the baseline geometric mean speedup. These results demonstrate that \\tool can be incorporated into kernel optimization by agents as an additional reliability objective alongside correctness and speed.",
+  "url": "https://arxiv.org/abs/2610.36623",
+  "pdf_url": "https://arxiv.org/pdf/2610.36623",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "authors": [
+    "Youwei Bao",
+    "Chengpeng Wang",
+    "Simin Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kernel generation",
+    "kernel optimization"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kernel generation, kernel optimization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language model (LLM) serving systems dynamically batch user requests for GPU execution, so the same request may be processed alongside different requests across runs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-28T04:36:47+00:00",
+  "last_seen": "2026-10-28T04:36:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.36623",
+      "url": "https://arxiv.org/abs/2610.36623"
+    }
+  ]
+}

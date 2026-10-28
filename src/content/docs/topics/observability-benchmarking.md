@@ -5,10 +5,11 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **31** 篇。
+累计收录 **32** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Seeing is believing: The case for hardware-centric inefficiency detection and remediation](../../papers/arxiv-2510.26008/) | 2026-10-28 | 43 |
 | [Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks](../../papers/arxiv-2610.35671/) | 2026-10-27 | 41 |
 | [RouterWorld: Scaling Conversational AI with Latency-Aware LLM Routing](../../papers/arxiv-2610.26511/) | 2026-10-20 | 42 |
 | [Mechanism-Aligned Observability for Training Instability of Large Language Models](../../papers/arxiv-2606.28116/) | 2026-10-20 | 41 |

@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.32499",
   "title": "Learning an Anchored Prompt Space for Continual Adaptation of Large Language Models",
-  "abstract": "Continually adapting large language models requires acquiring new knowledge while preserving previously learned capabilities. Jointly adapting model parameters and task-specific soft prompts offers a promising solution, but faces two key limitations: historical prompts may become less effective as the model evolves, while their transferable cross-task relationships are not explicitly learned. We propose Learning an Anchored Prompt Space (LAPS), which preserves historical prompt effectiveness and learns relationships among task-specific soft prompts to facilitate positive transfer. LAPS first aligns historical prompts with the updated model through self-distillation. LAPS then constructs an anchored prompt space whose vertices correspond to learned task-specific soft prompts and whose intermediate geometry is shaped by learnable B\\'ezier control prompts. Once this anchored prompt space is learned, LAPS identifies the best-performing prompt for each task on its validation set, allowing the optimized prompt to draw on knowledge acquired from observed tasks. Experiments on the TRACE benchmark across three Qwen3 model scales show that LAPS consistently outperforms distillation-based, prompt-based, and joint prompt--parameter adaptation baselines, improving average performance while reducing forgetting.",
+  "abstract": "Continually adapting large language models requires acquiring new knowledge while preserving previously learned capabilities. Although jointly adapting model parameters and task-specific soft prompts is promising, it has two key limitations: previously learned prompts may lose effectiveness as the model evolves, and relationships among prompts that could support cross-task transfer are not explicitly learned. We propose Learning an Anchored Prompt Space (LAPS), which preserves historical prompt effectiveness and learns relationships among task-specific soft prompts to facilitate positive transfer. Historical prompts are first aligned with the updated model through self-distillation. LAPS then constructs an anchored prompt space whose vertices correspond to learned task-specific soft prompts and whose intermediate geometry is shaped by learnable B\\'ezier control prompts. Once this space is learned, LAPS identifies the best-performing prompt for each task on its validation set, allowing the selected prompt to draw on knowledge acquired from related tasks. Experiments on the TRACE benchmark across three Qwen3 model scales show that LAPS consistently outperforms existing distillation-based, prompt-based, and joint prompt-parameter adaptation methods, improving overall task performance while reducing forgetting.",
   "url": "https://arxiv.org/abs/2609.32499",
   "pdf_url": "https://arxiv.org/pdf/2609.32499",
   "published": "2026-09-26",
-  "updated": "2026-09-30",
+  "updated": "2026-10-28",
   "authors": [
     "Rongguang Ye",
     "Zhan Zhuang",
@@ -39,11 +39,11 @@
   "keyword_evidence": [
     "distillation"
   ],
-  "score": 40,
+  "score": 38,
   "score_components": {
     "relevance": 12,
     "novelty": 7,
-    "rigor": 11,
+    "rigor": 9,
     "practical_impact": 5,
     "reproducibility": 2,
     "credibility": 3
@@ -59,7 +59,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-27T04:44:55+00:00",
+  "last_seen": "2026-10-28T04:36:47+00:00",
   "featured_weeks": [],
   "source_records": [
     {

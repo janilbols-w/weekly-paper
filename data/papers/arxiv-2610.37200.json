@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2610.37200",
+  "title": "PipeLink: Contract-Guided Linking of GPU Kernel Components",
+  "abstract": "The fastest machine-learning kernels are compositions of components, such as loaders, matrix-multiply mainloops, epilogues and communication stages, that run concurrently on one GPU streaming multiprocessor and share its on-chip memory, barriers, warps and registers. Because these components hard-code where they sit in this shared space, they cannot be compiled, shipped or replaced on their own: combining components from different sources means forking them by hand or keeping them in separate kernels. We present PipeLink, a contract-guided linker for GPU kernel components. Each component is compiled separately into an LTO object that carries a contract stating what it requires and what it promises; PipeLink checks the contracts against each other, relocates every component by solving one joint placement of the SM's resources, and generates the transfers between them, and the vendor LTO backend folds the result into constants. Across 51 configurations on Hopper and Blackwell GPUs, linked kernels run within 0.2% of the same sources compiled as one unit. Linking makes new compositions practical: a CuTe attention operator inside a ThunderKittens decode megakernel speeds up decoding by 2.16$\\times$, a four-owner MoE training megakernel matches the original monolith, one unchanged attention core yields sparse and context-parallel variants that outperform FlexAttention, vLLM and Transformer Engine, and a GEMM + SwiGLU composition whose consumer serves three GPU architectures runs 1.2$\\times$ faster on Blackwell than cuBLAS with a compiled activation.",
+  "url": "https://arxiv.org/abs/2610.37200",
+  "pdf_url": "https://arxiv.org/pdf/2610.37200",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "authors": [
+    "Jize Guo",
+    "Xupeng Miao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The fastest machine-learning kernels are compositions of components, such as loaders, matrix-multiply mainloops, epilogues and communication stages, that run concurrently on one GPU streaming multiprocessor and share its on-chip memory, barriers, warps and registers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-10-28T04:36:47+00:00",
+  "last_seen": "2026-10-28T04:36:47+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.37200",
+      "url": "https://arxiv.org/abs/2610.37200"
+    }
+  ]
+}

@@ -5,10 +5,11 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **234** 篇。
+累计收录 **235** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DCKV: Learned Transform Coding of the Prompt KV Cache in Hybrid Language Models](../../papers/arxiv-2610.36950/) | 2026-10-28 | 44 |
 | [ZipFusion: Fusing Lossless KV Decompression with Attention for Efficient LLM Decoding](../../papers/arxiv-2610.33719/) | 2026-10-27 | 45 |
 | [MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference](../../papers/arxiv-2610.34731/) | 2026-10-27 | 44 |
 | [Fast KVzip: Efficient and Accurate LLM Inference with Gated KV Eviction](../../papers/arxiv-2601.17668/) | 2026-10-27 | 38 |

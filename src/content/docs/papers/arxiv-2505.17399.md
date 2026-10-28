@@ -39,7 +39,7 @@ Front-end engineering involves a complex workflow where engineers conceptualize 
 ## 元数据
 
 - 作者：Haoyu Sun, Huichen Will Wang, Jiawei Gu, Linjie Li, Yu Cheng
-- 发布：2026-10-06；更新：2026-10-06
+- 发布：2026-10-06；更新：2026-10-28
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Mikivishy/FullFront](https://github.com/Mikivishy/FullFront)
 - 阅读深度：metadata

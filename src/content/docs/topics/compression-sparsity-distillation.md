@@ -5,10 +5,22 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **689** 篇。
+累计收录 **701** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [INTRA: Interleaved Non-contiguous Token spaRse Attention](../../papers/arxiv-2610.34056/) | 2026-10-28 | 48 |
+| [Pruning via Causal Attribution Preserves Reasoning Performance in Large Language Models](../../papers/arxiv-2606.19350/) | 2026-10-28 | 45 |
+| [SLICE-CiM: Selective Layer-wise Inference Control Engine with Confidence-Based Early Exit for SRAM based Digital Compute-in-Memory](../../papers/arxiv-2610.37601/) | 2026-10-28 | 43 |
+| [SELF: A Robust Singular Value and Eigenvalue Approach for LLM Fingerprinting](../../papers/arxiv-2512.03620/) | 2026-10-28 | 43 |
+| [Knowledge distillation across teacher architectures for compact diabetic retinopathy grading](../../papers/arxiv-2610.35961/) | 2026-10-28 | 43 |
+| [Taming Multi-Dimensional Skew in Sparse Matrix Multiplication with Contention-Aware Scheduling [Technical Report]](../../papers/arxiv-2610.36822/) | 2026-10-28 | 42 |
+| [SkipCat: Rank-Maximized Low-Rank Compression of Large Language Models via Shared Projection and Block Skipping](../../papers/arxiv-2512.13494/) | 2026-10-28 | 42 |
+| [On the Sparsity of Direct Preference Optimization: Weight Disentanglement in the NTK Regime](../../papers/arxiv-2610.37085/) | 2026-10-28 | 41 |
+| [Self-Regularized Flow Language Models](../../papers/arxiv-2610.37115/) | 2026-10-28 | 40 |
+| [Mechanistic Failure Modes of Weight Pruning in Transformer Language Models](../../papers/arxiv-2610.37126/) | 2026-10-28 | 40 |
+| [Watermark Basins: Black-Box Detection of Distilled LLMs](../../papers/arxiv-2610.37266/) | 2026-10-28 | 39 |
+| [HiLo-RD: Cross-Budget Self-Distillation for Masked Diffusion Language Models](../../papers/arxiv-2610.36901/) | 2026-10-28 | 39 |
 | [Learning When to Commit: Schedule Distillation for Fast Diffusion Language Models](../../papers/arxiv-2610.35804/) | 2026-10-27 | 48 |
 | [LinearARD: Linear-Memory Attention Distillation for RoPE Restoration](../../papers/arxiv-2604.00004/) | 2026-10-27 | 47 |
 | [Linear-Time Context Compression with State-Space Encoding](../../papers/arxiv-2610.33006/) | 2026-10-27 | 44 |
@@ -329,7 +341,7 @@ description: "Compression, Sparsity & Distillation"
 | [A Statistical Perspective on Knowledge Distillation: Foundations, Classical Methods, and Large Language Model Extensions](../../papers/arxiv-2609.33727/) | 2026-09-27 | 38 |
 | [Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction](../../papers/arxiv-2609.32353/) | 2026-09-26 | 48 |
 | [Elastic Selective Spectral Hybrids for Train-Once, Export-Many Budgeted Inference](../../papers/arxiv-2609.32486/) | 2026-09-26 | 46 |
-| [Learning an Anchored Prompt Space for Continual Adaptation of Large Language Models](../../papers/arxiv-2609.32499/) | 2026-09-26 | 40 |
+| [Learning an Anchored Prompt Space for Continual Adaptation of Large Language Models](../../papers/arxiv-2609.32499/) | 2026-09-26 | 38 |
 | [Task-Aware Spectral Pruning: A Mixture-of-Masks Framework for Efficient LLM Inference](../../papers/arxiv-2609.29499/) | 2026-09-25 | 53 |
 | [Near-Oracle KV Selection via Pre-hoc Sparsity for Long-Context Inference](../../papers/arxiv-2602.08329/) | 2026-09-25 | 52 |
 | [CataOPD: Catalytic On-Policy Distillation for Large Language Model Reasoning](../../papers/arxiv-2609.29518/) | 2026-09-25 | 47 |
@@ -584,7 +596,7 @@ description: "Compression, Sparsity & Distillation"
 | [RT-Lynx: Putting GEMM Sparsity in the Right Place for Diffusion Models](../../papers/arxiv-2605.26632/) | 2026-08-18 | 50 |
 | [Tail-Aware Top-$k$ On-Policy Distillation](../../papers/arxiv-2608.14728/) | 2026-08-18 | 49 |
 | [HieraSparse: Hierarchical Semi-Structured Sparse KV Attention](../../papers/arxiv-2604.16864/) | 2026-08-18 | 48 |
-| [HiAP: A Multi-Granular Stochastic Auto-Pruning Framework for Vision Transformers](../../papers/arxiv-2603.12222/) | 2026-08-18 | 45 |
+| [HiAP: A Multi-Granular Stochastic Auto-Pruning Framework for Vision Transformers](../../papers/arxiv-2603.12222/) | 2026-08-18 | 47 |
 | [Mitigating Rubric Interference in LLM Judges via On-Policy Self-Distillation](../../papers/arxiv-2608.14684/) | 2026-08-18 | 43 |
 | [DUET: Dual-Teacher On-Policy Distillation via Same-Weight Disagreement for Prohibition Compliance](../../papers/arxiv-2608.14644/) | 2026-08-18 | 43 |
 | [Breaking the Compression Barrier: Cross-Architecture Compression Boundary Learning via Reverse Regrowth](../../papers/arxiv-2608.16010/) | 2026-08-18 | 43 |

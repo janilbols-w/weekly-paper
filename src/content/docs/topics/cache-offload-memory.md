@@ -11,8 +11,8 @@ description: "Cache, Offload & Memory Management"
 |---|---|---:|
 | [COPE: Composable Performance Emulation for Mixture-of-Experts Offloading Policies](../../papers/arxiv-2610.33404/) | 2026-10-27 | 46 |
 | [FusionEval: Benchmarking Model Fusion for Large Language Models](../../papers/arxiv-2610.30162/) | 2026-10-23 | 50 |
+| [5uGUE: Agentic Hardware-in-the-Loop Fuzzing for 5G Devices and beyond](../../papers/arxiv-2610.29155/) | 2026-10-22 | 46 |
 | [Scalable Stress-Constrained Topology Optimization: A Super-resolution and Simultaneous Approach Based on Machine Learning](../../papers/arxiv-2610.28703/) | 2026-10-22 | 44 |
-| [5uGUE: Agentic Hardware-in-the-Loop Fuzzing for 5G Devices and beyond](../../papers/arxiv-2610.29155/) | 2026-10-22 | 44 |
 | [gKSM: GPU Memory Deduplication at Driver Layer for Serverless LLM Inference](../../papers/arxiv-2610.25219/) | 2026-10-20 | 51 |
 | [Efficient Training on Multiple Consumer GPUs with RoundPipe](../../papers/arxiv-2604.27085/) | 2026-10-20 | 48 |
 | [Memory-Induced Tool-Drift in LLM Agents](../../papers/arxiv-2605.24941/) | 2026-10-20 | 42 |

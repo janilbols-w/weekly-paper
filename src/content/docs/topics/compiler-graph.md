@@ -5,10 +5,13 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **126** 篇。
+累计收录 **129** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [EffiBench-X: A Multi-Language Benchmark for Measuring Efficiency of LLM-Generated Code](../../papers/arxiv-2505.13004/) | 2026-10-28 | 49 |
+| [CAMR: Compatibility-Aware Memory Replay for Continual Learning in Large Language Models](../../papers/arxiv-2610.36734/) | 2026-10-28 | 39 |
+| [Guided-RLVR: Guided Exploration in Reinforcement Learning with Verifiable Rewards](../../papers/arxiv-2610.37041/) | 2026-10-28 | 38 |
 | [POETS: Uncertainty-Aware LLM Optimization via Compute-Efficient Policy Ensembles](../../papers/arxiv-2605.07775/) | 2026-10-26 | 38 |
 | [MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery](../../papers/arxiv-2606.06473/) | 2026-10-23 | 42 |
 | [Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization](../../papers/arxiv-2610.29276/) | 2026-10-22 | 43 |
@@ -51,8 +54,8 @@ description: "Compiler & Graph Optimization"
 | [Pay for Hints, Not Answers: LLM Shepherding for Cost-Efficient Inference](../../papers/arxiv-2601.22132/) | 2026-09-30 | 43 |
 | [Internalizing Curriculum Judgment for LLM Reinforcement Fine-Tuning](../../papers/arxiv-2605.11235/) | 2026-09-30 | 43 |
 | [Goal-Conditioned Supervised Learning for LLM Fine-Tuning](../../papers/arxiv-2605.16345/) | 2026-09-30 | 42 |
-| [LFPO: Likelihood-Free Policy Optimization for Masked Diffusion Models](../../papers/arxiv-2603.01563/) | 2026-09-30 | 39 |
 | [Improving Medical Calculation of LLMs with Embedded Coding](../../papers/arxiv-2609.31908/) | 2026-09-30 | 39 |
+| [Efficient Token-Level Policy Optimization for Masked Diffusion Models via Velocity Alignment](../../papers/arxiv-2603.01563/) | 2026-09-30 | 39 |
 | [CodeScaler: Scaling Code LLM Training and Test-Time Inference via Reward Models](../../papers/arxiv-2602.17684/) | 2026-09-30 | 39 |
 | [QuantCode Model: Specializing Language Models for Executable Algorithmic Trading Code](../../papers/arxiv-2609.39420/) | 2026-09-30 | 38 |
 | [An Imperfect Verifier is Good Enough: Learning with Noisy Rewards](../../papers/arxiv-2604.07666/) | 2026-09-30 | 38 |

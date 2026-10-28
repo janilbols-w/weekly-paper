@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2603.01563",
-  "title": "LFPO: Likelihood-Free Policy Optimization for Masked Diffusion Models",
-  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved remarkable success in improving autoregressive models, especially in domains requiring correctness like mathematical reasoning and code generation. However, directly applying such paradigms to Diffusion Large Language Models (dLLMs) is fundamentally hindered by the intractability of exact likelihood computation, which forces existing methods to rely on high-variance approximations. To bridge this gap, we propose Likelihood-Free Policy Optimization (LFPO), a native framework that maps the concept of vector field flow matching to the discrete token space. Specifically, LFPO formulates alignment as geometric velocity rectification, which directly optimizes denoising logits via contrastive updates. This design effectively bypasses the errors inherent in likelihood approximation, yielding the precise gradient estimation. Furthermore, LFPO enforce consistency by predicting final solutions from intermediate steps, effectively straightening the probability flow to enable high-quality generation with significantly fewer iterations. Extensive experiments demonstrate that LFPO not only outperforms state-of-the-art baselines on code and reasoning benchmarks but also accelerates inference by approximately 20% through reduced diffusion steps.",
+  "title": "Efficient Token-Level Policy Optimization for Masked Diffusion Models via Velocity Alignment",
+  "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) successfully aligns autoregressive models in rigorous domains like mathematical reasoning and code generation. However, applying RLVR to Diffusion Large Language Models (dLLMs) is hindered by intractable sequence-level likelihoods, forcing existing methods to rely on unstable, high-variance approximations. We propose Sequence Likelihood-Free Policy Optimization (LFPO), an efficient framework that circumvents this bottleneck by formulating policy alignment as discrete velocity alignment. Inspired by continuous flow matching, LFPO eschews trajectory-level estimation and directly optimizes denoising logits via contrastive token-level updates, providing a stable, low-variance surrogate. Furthermore, predicting terminal solutions from intermediate states implicitly straightens the generation trajectory, enabling high-quality sampling with significantly fewer denoising iterations. Extensive experiments on reasoning and coding benchmarks demonstrate that LFPO matches or exceeds the accuracy of likelihood-based baselines while substantially accelerating inference.",
   "url": "https://arxiv.org/abs/2603.01563",
   "pdf_url": "https://arxiv.org/pdf/2603.01563",
   "published": "2026-09-30",
-  "updated": "2026-09-30",
+  "updated": "2026-10-28",
   "authors": [
     "Chenxing Wei",
     "Jiazhen Kang",
@@ -22,8 +22,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.AI"
+    "cs.AI",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
@@ -59,13 +59,13 @@
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
-  "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) has achieved remarkable success in improving autoregressive models, especially in domains requiring correctness like mathematical reasoning and code generation.",
+  "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) successfully aligns autoregressive models in rigorous domains like mathematical reasoning and code generation.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-30T04:44:58+00:00",
-  "last_seen": "2026-10-27T04:44:55+00:00",
+  "last_seen": "2026-10-28T04:36:47+00:00",
   "featured_weeks": [],
   "source_records": [
     {
