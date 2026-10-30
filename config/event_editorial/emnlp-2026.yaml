@@ -1,0 +1,114 @@
+acl:2026.emnlp-main.1340:
+  code_url: https://github.com/junemily/SpecTr-GBV
+  classification_hint: speculative decoding multi draft greedy block verification optimal transport verification latency throughput
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: speculative-decoding, leaf_zh: 推测解码}
+  summary_zh: SpecTr-GBV 把多 draft model 的候选合并为 block-level 验证，并用最优传输构造联合接受概率，在保持目标模型输出分布不变的前提下减少逐位置验证的串行开销。
+  why_it_matters_zh: 在 DeepSeek 33B/1.3B 配置上，作者相对标准 speculative decoding 报告平均 block efficiency 提升 12.4%、速度比提升 29.3%；相对原始 SpecTr 和 GBV 的速度比分别提升 8.2% 与 27.0%，代码已公开。
+  limitations_zh: 收益依赖 draft 与 target 的分布对齐；最优传输的内存和计算随词表、draft 长度与 draft 数增长。当前实验使用相互独立的 draft，尚未覆盖 tree draft 或非独立候选。
+  reading_depth: full_text
+  selection_reason_zh: 同时改进多 draft 聚合与 block verification，并给出分布保持和端到端速度证据。
+
+acl:2026.emnlp-main.585:
+  classification_hint: agent batch inference speculative decoding structure isolated drafting redundancy aware token budget vLLM goodput tail latency
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: speculative-decoding, leaf_zh: 推测解码}
+  summary_zh: AgentSpec 面向 agent batch 中结构化提示和重复轨迹，隔离可复用结构进行 drafting，并按冗余度分配 speculative token budget，避免不同请求共享草拟时的无效计算。
+  why_it_matters_zh: 基于 vLLM V1 的实现覆盖多类 agent 工作负载，作者报告最高 104% goodput 提升、最高 2.02× acceptance rate，并在测试配置中把 P90/P99 latency 分别改善到 1.47×/1.39×。
+  limitations_zh: 系统需要 agent serving 接口提供结构边界；缺少明确结构元数据时，收益取决于提示和轨迹中是否存在稳定重复模式。实验基于 vLLM 0.12.0，跨版本调度行为和多租户干扰尚未验证。
+  reading_depth: full_text
+  selection_reason_zh: 把 speculative decoding 从单请求扩展到具有结构冗余的 agent batch，并直接评估 goodput 与尾延迟。
+
+acl:2026.findings-emnlp.1556:
+  classification_hint: W4A8KV4 FP8 native quantization attention kernel FlashAttention serving throughput TTFT H100
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: quantization-low-precision, leaf_zh: 量化与低精度}
+  summary_zh: FServe 构建 FP8-native W4A8KV4 推理路径，以 post-RoPE smoothing 控制 KV 量化误差，并为 prefill 重排 FlashAttention-3 数据流、用 Stream-KV 调度 decode KV 访问。
+  why_it_matters_zh: 在 H100、Llama-3.1-8B 与 Qwen3-8B 上，作者报告相对 BF16 最高 1.41× TTFT 改善、相对 FlashAttention-3 最高 1.13× throughput；与 QServe 比较时，在匹配吞吐下延迟降低 1.5–5.1×。
+  limitations_zh: 内核依赖 Hopper FP8/TMA 能力，结论集中于两类 8B dense model；方法还需要离线校准，跨领域分布漂移、MoE 与非 Hopper 硬件的效果没有验证。
+  reading_depth: full_text
+  selection_reason_zh: 将低比特权重、激活、KV 与 attention kernel 联合优化，并给出 serving 路径的端到端证据。
+
+acl:2026.emnlp-main.2059:
+  classification_hint: low bit quantization reasoning token inflation chain of thought latency throughput GPTQ QAT
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: quantization-low-precision, leaf_zh: 量化与低精度}
+  summary_zh: 论文提出 CoT Token Inflation Ratio，系统检查 INT3/INT4 weight-only quantization 是否让 reasoning model 生成更长答案，从而抵消每 token 速度提升。
+  why_it_matters_zh: 作者观察到 Marlin 带来的约 1.2–1.4× tokens/s 加速可能被额外输出 token 吞噬；在一组 QAT 对比中，宏平均 token inflation 从 GPTQ 的 48.7% 降到 13.6%，但准确率仍低于 BF16，说明效率评估不能只看 kernel throughput。
+  limitations_zh: 研究只覆盖 weight-only INT3/INT4、固定子集与 greedy decoding，模型主要来自 Qwen3 和 Phi-4；结果是描述性关联而非量化导致推理变长的因果证明，不宜外推到 activation/KV quantization。
+  reading_depth: full_text
+  selection_reason_zh: 揭示低比特 reasoning 的隐藏输出成本，为端到端量化评估补上 token 数这一关键变量。
+
+acl:2026.emnlp-main.1415:
+  code_url: https://github.com/snkrbhr/SARATHI
+  classification_hint: structured pruning data free NMF OBS reconstruction LLM inference latency throughput sparsity
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: compression-sparsity-distillation, leaf_zh: 压缩、稀疏与蒸馏}
+  summary_zh: SARATHI 用 data-free NMF 探测残差子空间，再以 adaptive OBS 重建和 bias-shift compensation 做结构化 FFN pruning，把探测阶段与参数重建解耦。
+  why_it_matters_zh: 在 batch size 16 的测试中，作者报告 OPT-6.7B 在 40% sparsity 下最高 2.05×、Llama-3-8B 最高 1.66× 推理加速，并通过结构化裁剪避免高稀疏配置的显存溢出，代码已公开。
+  limitations_zh: NMF 对非 gated ReLU 的 OPT 表现较弱，语言建模质量主要用 WikiText-2 perplexity 评估；15%–20% sparsity 的速度收益低于 10%，Mistral 某些配置因 Tensor Core 对齐反而只有 0.82–0.92×。
+  reading_depth: full_text
+  selection_reason_zh: 将 data-free 结构化剪枝连接到真实推理速度，并明确揭示硬件对齐造成的负收益区间。
+
+acl:2026.emnlp-main.648:
+  classification_hint: visual token pruning multimodal LLM prefill TTFT serving throughput SLO compression
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group_zh: 模型与算法效率, leaf_id: compression-sparsity-distillation, leaf_zh: 压缩、稀疏与蒸馏}
+  summary_zh: SieveServe 在进入多模态 LLM 前用 query-conditioned relevance 和 dense-information guard 筛除视觉 token，并按任务可靠性自适应选择压缩率，不修改主模型。
+  why_it_matters_zh: 在 Qwen2.5-VL-7B、InternVL3-8B 与八项 benchmark 上，方法保持至少 95% baseline accuracy，并对可压缩任务达到 3.2× token compression；作者报告最高 5.4× P90 TTFT 改善和 2.2–2.7× SLO throughput。
+  limitations_zh: 校准集中于英文、通用单图单轮任务，未覆盖多轮、视频和细粒度空间推理；高信息密度输入会绕过 pruning，压缩也可能让回答更短或细节不足。代码只承诺发布，论文未给出可核验仓库。
+  reading_depth: full_text
+  selection_reason_zh: 把视觉 token pruning 做成可部署的 serving 前置层，并同时报告准确率 guardrail 与尾延迟收益。
+
+acl:2026.emnlp-main.113:
+  code_url: https://github.com/yczhounlp/ragkv
+  classification_hint: attention aware KV cache fusion reuse selective recomputation RAG prefill TTFT
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group_zh: Runtime 与内存效率, leaf_id: attention-kv-cache, leaf_zh: Attention 与 KV Cache}
+  summary_zh: A^3 为 RAG chunk 预计算 KV Cache，按 query attention 选择少量 token 重算，再把位置恢复与注意力感知的缓存融合结合，可选配 cache eviction 控制存储。
+  why_it_matters_zh: 在三个 7B 模型、LongBench、NIAH 与 RULER 上，作者以 15% 重算比例报告最高约 2× TTFT 加速；Mistral 平均分为 36.98，对应完整重算 38.27，并优于比较的缓存复用方法，代码已公开。
+  limitations_zh: 方法面向 Transformer/RoPE，依赖离线 KV 存储和 CPU 到 GPU 加载；质量仍低于完整重算，实验以算法原型为主，没有生产并发、缓存污染和大规模存储成本分析。
+  reading_depth: full_text
+  selection_reason_zh: 为 RAG 的离线 KV 复用补上 attention-aware 校正，直接权衡重算比例、质量和 TTFT。
+
+acl:2026.emnlp-main.269:
+  code_url: https://github.com/lichangshiwhu/Adacode
+  classification_hint: lossless BF16 KV cache compression adaptive entropy coding TTFT memory serving
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group_zh: Runtime 与内存效率, leaf_id: attention-kv-cache, leaf_zh: Attention 与 KV Cache}
+  summary_zh: AdaCode 利用 BF16 exponent 分布集中性，用短定长码、outlier stream 和自适应码表对 KV Cache 做 bit-exact 无损压缩，并保持 byte-aligned GPU 解码。
+  why_it_matters_zh: 跨文本与多模态模型，作者报告压缩后大小平均为原始 BF16 的 71.78%（约节省 28.22%），且完全恢复；四个模型的 TTFT 分别降低 4.21%、14.56%、8.41% 和 3.96%，代码已公开。
+  limitations_zh: 当前编码器只支持 BF16 和 GPU；压缩率受 exponent 冗余上限约束，其他浮点格式、CPU/NPU 和不同 workload 分布需要重新设计与验证。百分比是压缩后占比，不是 71.78% 的内存削减。
+  reading_depth: full_text
+  selection_reason_zh: 提供可精确恢复的 KV 压缩路径，并把压缩比与端到端 TTFT 分开报告。
+
+acl:2026.findings-emnlp.1493:
+  code_url: https://huggingface.co/datasets/amd/AIG-Datasets
+  classification_hint: AMD GPU HIP Triton kernel generation optimization execution verified dataset agent training ROCm
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group_zh: Runtime 与内存效率, leaf_id: kernels-operators, leaf_zh: Kernel 与算子融合}
+  summary_zh: AMDKernelVault 发布面向 AMD CDNA GPU 的 execution-verified HIP/Triton kernel、ROCm library QA 与 agentic 生成管线，并用这些数据对 Qwen3-8B 做 SFT 和多轮 RL。
+  why_it_matters_zh: 语料包含 62,153 条 HIP、39,893 条 Triton 与 2,377 条 ROCm library QA；固定三轮 agent 预算下，SFT+RL 在 TritonBench-G 达到 33.2% Corr@3、ROCmBench 达到 41.94%，但并不在编译率或速度上全面领先，数据已公开。
+  limitations_zh: 评估限于 AMD GPU、特定 ROCm/Triton 和可用 kernel benchmark，expert-level kernel 仍很困难；不同数据快照的软件版本未完全统一，也没有完成全语料语义近重复审计，结果应视为 benchmark-specific。
+  reading_depth: full_text
+  selection_reason_zh: 补齐 AMD kernel generation 的开放、可执行验证数据，并诚实区分正确率、编译率与速度。
+
+acl:2026.emnlp-industry.64:
+  code_url: https://github.com/Maincode-Research/opendc-infer-lc
+  classification_hint: production long context RAG LLM serving benchmark p95 TTFT TPOT goodput SLO B200 MI355X
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 服务平台, leaf_id: serving-engine, leaf_zh: Serving Engine 与 Runtime}
+  summary_zh: OpenDC-Infer-LC 用 quality-preserving、SLO-qualified goodput 评估长上下文和 RAG serving，把 P95 TTFT、TPOT、E2E latency 与成功率同时作为有效容量约束。
+  why_it_matters_zh: 在 AMD MI355X 与 NVIDIA B200 的多组系统配置中，235B long-context goodput 从 8K 的 38.3 降到 128K 的 1.3，RAG 从 12.8 降到 0.3；结果揭示上下文扩张会让 headline throughput 快速失真，benchmark 已开源。
+  limitations_zh: 这是完整软硬件栈的系统比较，不是通用硬件排名；MI355X 使用多节点而 B200 使用单节点，backend/driver 成熟度不同。RAG prompt 固定，prefix-locality routing 的结论也只适用于给定实现与负载。
+  reading_depth: full_text
+  selection_reason_zh: 用可复现的质量和尾延迟 guardrail 衡量长上下文 serving 容量，避免只比较 tokens/s。
+
+acl:2026.emnlp-industry.145:
+  code_url: https://github.com/KevinHuangW/preemptbench
+  classification_hint: preemption scheduling reasoning LLM serving SLO tail latency KV cache vLLM multitenancy
+  primary_category: {domain_id: ai-infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group_zh: 服务平台, leaf_id: multitenancy-slo-reliability, leaf_zh: 多租户、SLO 与可靠性}
+  summary_zh: PreemptBench 在统一 vLLM fork 中比较七种 reasoning LLM preemption target policy，检验长度、KV 占用与剩余时间等信号是否真的能降低 SLO breach。
+  why_it_matters_zh: 跨七个 reasoning model family、AIME 与 HLE，LIFO 在低 breach 区间表现稳健；largest-KV 和 largest-input 在 11/12、10/12 个单元中更差，平均 breach 分别多 7.9 和 8.0 个百分点，oracle 也没有显著优于 LIFO，artifact 已公开。
+  limitations_zh: 实验只使用单张 H200、recompute-only preemption、Poisson arrival 和两个 reasoning benchmark；没有 TTFT/交互式 workload，也未覆盖 swap-based preemption、多 GPU 或生产 burst trace。
+  reading_depth: full_text
+  selection_reason_zh: 以受控 benchmark 反驳“更多请求特征必然改善 preemption”的直觉，并公开可复现实验框架。
+
+acl:2026.findings-emnlp.1426:
+  classification_hint: self speculative early exit CPU offloading KV compatible dynamic hidden state throughput memory constrained inference
+  primary_category: {domain_id: efficient-inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group_zh: Runtime 与内存效率, leaf_id: cache-offload-memory, leaf_zh: 缓存、换入换出与内存管理}
+  summary_zh: FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidden-state/KV 管理跳过后续层，并把 early-exit 决策放到被 CPU offload 的层上，避免不必要的权重传输。
+  why_it_matters_zh: 在 RTX PRO 6000 与 Xeon 平台的模拟部署中，Llama2-7B 在 0%/50% offload 下分别达到 1.27×/3.16× throughput，Llama3-8B 为 1.25×/2.83×；多项任务保持接近 dense baseline 的准确率。
+  limitations_zh: 方法依赖带 layer-wise early-exit supervision 的预训练模型，效果受基础模型质量影响；主要收益来自 small-batch 或 memory-constrained 场景，实验基于 FlexGen/Hugging Face 和单机 CPU–GPU，不代表通用 serving 集群。
+  reading_depth: full_text
+  selection_reason_zh: 把 early exit 与 KV 状态管理、权重 offload 联合设计，给出不同 offload 比例下的端到端吞吐曲线。

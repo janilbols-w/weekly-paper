@@ -393,16 +393,29 @@ events:
     location: Budapest, Hungary
     official_url: https://2026.emnlp.org/
     program_url: https://2026.emnlp.org/program/
-    accepted_papers_url: https://2026.emnlp.org/program/main_papers/
+    accepted_papers_url: https://aclanthology.org/events/emnlp-2026/
     awards_url: https://2026.emnlp.org/program/awards/
-    collector: official_program
-    program_source_name: EMNLP 2026 official program and repository
+    collector: acl_anthology_xml
+    publication_date: 2026-10-24
+    anthology_sources:
+      - url: https://cdn.jsdelivr.net/gh/acl-org/acl-anthology@master/data/xml/2026.emnlp.xml
+        volumes: [main, demos, industry]
+      - url: https://cdn.jsdelivr.net/gh/acl-org/acl-anthology@master/data/xml/2026.findings.xml
+        volumes: [emnlp]
     program_released_date: 2026-09-21
-    briefing_title_suffix_zh: 会议周议程导览
-    program_link_label_zh: 官方议程
-    summary_zh: EMNLP 2026 于 10 月 24 日在布达佩斯开始，25 至 27 日为主会，28 至 29 日为 tutorial 与 workshop。本次会议周导览重点追踪 world model、开放语言模型研究、agent 可靠性与长时记忆、价值对齐、生产级 agent、高效 tokenization 和样本高效预训练。
-    relevance_zh: 对 LLM efficient inference / AI Infra 最有用的信号不是未公开的论文排名，而是一条跨层议程：world model 与工具使用扩展 agent 能力，长时记忆、失败诊断和价值对齐限定生产可靠性，tokenization 和受限数据预训练则直接关联训练与推理成本。相关摘要仍是讲者与主办方对议题的描述，不作为已验证的性能结论。
-    current_stage_zh: 本次命中 `event_week`：RUN_DATE 为大会正式开始前一天。官方已公布总议程、三场主会 keynote、两场 industry keynote、六场 tutorial 和 28 个 workshop；本周官方仓库更改主要是 workshop 时间提示、讲者简介与参会物流，没有新的研究议程发布。main、Findings、industry 与 demo 论文页均仍无条目，awards 页也只有空奖项栏目，ACL Anthology 尚无 EMNLP 2026 proceedings；因此保持论文覆盖与评分为 0，不推断录用规模或奖项归属。
+    selection_threshold: 47
+    selection_cap: 12
+    selection_requires_editorial: true
+    briefing_title_suffix_zh: 论文精选
+    program_link_label_zh: ACL Anthology 论文全集
+    official_totals:
+      main_papers: 2704
+      findings_papers: 2478
+      industry_papers: 266
+      demo_papers: 86
+    summary_zh: EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回 195 篇高效推理与 AI Infra 候选，并定向全文核验 12 篇精选论文。
+    relevance_zh: 本届相关研究从 speculative decoding、低比特推理与模型剪枝延伸到 KV Cache 复用和无损压缩、AMD GPU kernel 数据、长上下文 serving benchmark、SLO-aware preemption 与 CPU offload，覆盖算法、runtime、硬件和生产服务的完整链路。
+    current_stage_zh: 本次新增命中 `papers_released`。ACL Anthology 官方仓库在 10 月 24 日 ingest EMNLP 2026 主会、Findings 与确认的 workshop，结束了上一轮“proceedings 尚未发布”的状态；当前可复现采集 5,534 篇主会、Findings、Industry 与 Demo 论文。大会已于 10 月 29 日结束，官方 awards 页截至 10 月 30 日仍只有奖项栏目标题，因此不触发 `awards_released`，也不推断获奖结果。
     event_stats:
       - {label: Conference days, value: 6}
       - {label: Main conference days, value: 3}
@@ -474,11 +487,11 @@ events:
     sources:
       - label: EMNLP 2026 official program overview
         url: https://2026.emnlp.org/program/
-        checked_at: 2026-10-23
+        checked_at: 2026-10-30
         note_zh: 核验 10 月 24 至 29 日总体结构、AI 审稿实验报告、New Missions in NLP panel、Best Paper Award 时段与主会日程
       - label: EMNLP 2026 official industry track
         url: https://2026.emnlp.org/program/industry/
-        checked_at: 2026-10-23
+        checked_at: 2026-10-30
         note_zh: 核验两场 industry keynote、Retrieval/RAG、Trust/Safety/Control、Agents in Production 与真实部署 panel
       - label: Official industry program update commit
         url: https://github.com/acl-org/emnlp-2026/commit/bd259efc08c2d299999855d11d8376eb344a0a1a
@@ -490,31 +503,35 @@ events:
         note_zh: 核验 Mohit Bansal keynote 最终标注为 16:30 至 17:30
       - label: EMNLP 2026 official keynotes
         url: https://2026.emnlp.org/program/keynotes/
-        checked_at: 2026-10-23
+        checked_at: 2026-10-30
         note_zh: 核验三场主会 keynote、两场 industry keynote 的题目、摘要、讲者与时间
-      - {label: EMNLP 2026 official tutorials, url: https://2026.emnlp.org/program/tutorials/, checked_at: 2026-10-23}
-      - {label: EMNLP 2026 official workshops, url: https://2026.emnlp.org/program/workshops/, checked_at: 2026-10-23}
+      - {label: EMNLP 2026 official tutorials, url: https://2026.emnlp.org/program/tutorials/, checked_at: 2026-10-30}
+      - {label: EMNLP 2026 official workshops, url: https://2026.emnlp.org/program/workshops/, checked_at: 2026-10-30}
       - label: EMNLP 2026 main papers page
         url: https://2026.emnlp.org/program/main_papers/
-        checked_at: 2026-10-23
-        note_zh: main、Findings、industry 与 demo 页面均只有标题、无论文条目，故不作为论文全集或 proceedings 证据
+        checked_at: 2026-10-30
+        note_zh: 会议官网的四类论文页仍无条目，因此论文全集改以 ACL Anthology XML 为唯一采集依据
       - label: EMNLP 2026 official awards page
         url: https://2026.emnlp.org/program/awards/
-        checked_at: 2026-10-23
-        note_zh: 奖项栏目已建立但获奖内容为空；10 月 27 日的 Best Paper Award 仅是未来议程时段
+        checked_at: 2026-10-30
+        note_zh: 奖项栏目仍只有标题、没有获奖论文或作者，故不触发 awards_released
       - label: ACL Anthology EMNLP 2026 event index
         url: https://aclanthology.org/events/emnlp-2026/
-        checked_at: 2026-10-23
-        note_zh: 截至 RUN_DATE 无可核验的 EMNLP 2026 proceedings 条目
+        checked_at: 2026-10-30
+        note_zh: 核验主会、Findings、Industry 与 Demo 正式条目、摘要、PDF 和 DOI 链接
+      - label: ACL Anthology official EMNLP 2026 ingestion commit
+        url: https://github.com/acl-org/acl-anthology/commit/635539a0d4785ce040a163507915c48eaf4f552e
+        checked_at: 2026-10-30
+        note_zh: 核验 10 月 24 日官方仓库 ingest 主会、Findings 与已确认 workshop 的发布时间和来源变更
       - label: EMNLP 2026 official repository history
         url: https://github.com/acl-org/emnlp-2026/commits/main/
-        checked_at: 2026-10-23
-        note_zh: 核验本周变更仅涉及 workshop 时间提示、panelist 简介、演讲指南和物流链接，未发布论文全集或奖项结果
+        checked_at: 2026-10-30
+        note_zh: 核验会后官网没有发布可替代 ACL Anthology 的论文全集，也没有奖项结果
     program_methodology_notes_zh:
-      - 本页是会议周议程导览，不把 keynote、tutorial 或 workshop 描述当作同行评审论文结论。
-      - 官网四类论文页均无条目，ACL Anthology 也尚无可核验的 2026 proceedings，因此论文覆盖与评分均保持为 0。
-      - 官方仓库本周的变更属日程提示、简介与参会物流修正；不另立 `program_released` 触发，也不把演讲摘要中的方法方向当作已发表结果。
-      - Workshop 与 tutorial 数量来自官方列表的逐项计数；房间、讲者细节和最终时间仍可能更新。
+      - 论文全集来自 ACL Anthology 官方 XML：主会 2,704、Findings 2,478、Industry 266、Demo 86，共 5,534 篇；tutorial 与 workshop 未纳入本次论文筛选。
+      - 全体论文只读取标题、摘要和 track，经既有三级 taxonomy 与证据评分召回 195 篇；精选仍执行 47 分阈值、总数 12 篇和同一叶节点最多两篇的质量与多样性约束。
+      - 仅对最终 12 篇候选定向核验官方 PDF 的方法、关键结果、实验边界和 artifact；摘要数值在全文无法复核时不进入中文结论。
+      - ACL Anthology event 页的卷入口计数包含卷级前置条目，正文统计采用 XML 中可解析的 paper 节点；awards 页为空，因此不把 oral、Industry 或 Demo 身份解释为奖项。
   - id: neurips-2026
     short_name: NeurIPS 2026
     name: Conference on Neural Information Processing Systems
