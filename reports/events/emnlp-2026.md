@@ -424,5 +424,5 @@ FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidde
 - [ACL Anthology official EMNLP 2026 ingestion commit](https://github.com/acl-org/acl-anthology/commit/635539a0d4785ce040a163507915c48eaf4f552e)（核验于 2026-10-30）。
 - [EMNLP 2026 official repository history](https://github.com/acl-org/emnlp-2026/commits/main/)（核验于 2026-10-30）。
 - 论文元数据：ACL Anthology XML；原始覆盖 5534 篇，主题过滤后保留 195 篇。
-- 触发类型：`papers_released`；来源摘要：`5794187ea917`。
+- 触发类型：`event_week`；来源摘要：`5794187ea917`。
 - 精选不是奖项预测；评分只反映本站主题相关性、证据完整性和潜在工程影响。
