@@ -548,20 +548,36 @@ events:
     workshops_url: https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/
     openreview_url: https://openreview.net/group?id=NeurIPS.cc/2026/Conference
     collector: neurips_program
-    program_released_date: 2026-08-10
+    program_released_date: 2026-10-25
     publication_date: 2026-10-16
     detail_fetch_workers: 12
     selection_threshold: 42
     selection_cap: 12
     selection_requires_editorial: true
     official_totals:
-      official_poster_entries: 9110
+      official_poster_entries: 9146
       accepted_workshops: 102
       accepted_tutorials: 19
-    summary_zh: NeurIPS 2026 官方 Downloads 与虚拟会场已经开放 9,110 个独立 poster 条目，覆盖当前公开的主会及相关 track 论文节目；本页先保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。
+      invited_speakers: 13
+    summary_zh: NeurIPS 2026 官方 Downloads 与虚拟会场当前开放 9,146 个独立 poster 条目，覆盖主会及相关 track 论文节目；本页保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。
     relevance_zh: 本届高效推理方向的密度显著上升，重点聚集在 KV Cache 压缩、长上下文 sparse attention、推测解码、量化、diffusion language model 解码，以及多模型路由和 agent serving。论文数量大并不等于结论成熟；精选只保留方法、实验条件、限制和 artifact 证据可核验的候选。
-    current_stage_zh: 本次命中 `papers_released`。10 月 9 日上一轮检查时官方 virtual paper corpus 仍不可稳定访问；截至 10 月 16 日，Downloads 页面已公开 9,110 个唯一 poster URL，OpenReview venue 也公开 oral、spotlight、poster 决策分组。该数字是官方 poster program 条目数，不在 proceedings 出版前把它表述为主会 archival proceedings 总量，也不把 workshop 非归档稿件混同为正式论文。
+    current_stage_zh: 本次新增命中 `program_released`。NeurIPS 官方博客于 10 月 25 日公布 13 场 invited talk 的主题、讲者、地点与时间：Sydney 6 场、Paris 4 场、Atlanta 3 场。官方 Downloads 的唯一 poster 条目也从 10 月 16 日的 9,110 增至 9,146，但相关论文集合仍为同一批 149 篇，因此将其视为 program 索引维护，不重复触发 `papers_released`。与 LLM 高效推理和 AI Infra 最直接相关的是约束条件下的小而高效模型、AI data center 对社区和电网的影响，以及从真实工业流程构建学习闭环。
     key_programs:
+      - title: Invited Talk — Building AI under constraint
+        date: 2026-12-11 10:30 local time
+        location: Paris
+        url: https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/
+        focus_zh: Pelonomi Moiloa 将反思以资源充裕为默认假设的 AI 发展路径，并讨论更小、更高效、使用合适数据训练的模型能否在真实任务上优于大型通用系统。
+      - title: Invited Talk — AI data centers, communities and energy grids
+        date: 2026-12-11 09:00 local time
+        location: Atlanta
+        url: https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/
+        focus_zh: Sasha Luccioni 将讨论 AI data center 对当地社区、能源电网和环境的已知影响，以及研究者、运营方与社区如何共同改善基础设施外部性。
+      - title: Invited Talk — Building an industrial learning loop
+        date: 2026-12-08 09:00 local time
+        location: Sydney
+        url: https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/
+        focus_zh: Tie-Yan Liu 将从 proprietary workflow、物理实验和真实决策中的经验学习出发，讨论如何形成产业学习闭环；这为 AI Infra 的数据反馈、部署评估和持续迭代提供系统视角。
       - title: DiffuLM — Diffusion Language Models
         date: 2026-12-12
         location: Sydney
@@ -610,20 +626,24 @@ events:
     sources:
       - label: NeurIPS 2026 conference page
         url: https://neurips.cc/Conferences/2026
-        checked_at: 2026-10-16
+        checked_at: 2026-10-30
         note_zh: 核验三地会期、主会论文通知日期与官网公告入口
       - label: NeurIPS 2026 official Downloads and poster program
         url: https://neurips.cc/Downloads/2026
-        checked_at: 2026-10-16
-        note_zh: 逐项采集 9,110 个唯一 Poster 条目的标题与官方详情页；页面总事件数 9,244 还包含 workshop、tutorial 和 invited talk
+        checked_at: 2026-10-30
+        note_zh: 逐项采集 9,146 个唯一 Poster 条目的标题与官方详情页；相较 10 月 16 日增加 36 条，相关论文集合仍为同一批 149 篇
       - label: NeurIPS 2026 OpenReview venue
         url: https://openreview.net/group?id=NeurIPS.cc/2026/Conference
-        checked_at: 2026-10-16
+        checked_at: 2026-10-30
         note_zh: 核验 venue 已公开 oral、spotlight、poster 决策分组；不抓取评审内容
       - label: Official workshop announcement
         url: https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/
         checked_at: 2026-08-14
         note_zh: 核验发布日期、102 个正式 workshop、分地数量、会期和投稿阶段
+      - label: NeurIPS 2026 official invited speaker topics
+        url: https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/
+        checked_at: 2026-10-30
+        note_zh: 核验 13 场 invited talk 的讲者、主题、当地时间与 Sydney、Paris、Atlanta 分地安排
       - label: NeurIPS workshop guidance
         url: https://neurips.cc/Conferences/2026/WorkshopsGuidance
         checked_at: 2026-08-14
@@ -636,3 +656,7 @@ events:
       - {label: AI for Chip Design official workshop site, url: https://neurips-ai-for-chip-design-2026.github.io/, checked_at: 2026-08-14}
       - {label: AXIOM official workshop site, url: https://axiom-neurips2026.github.io/, checked_at: 2026-08-14}
       - {label: Resource-Aware Agentic AI official workshop site, url: https://resource-aware-workshop.github.io/, checked_at: 2026-08-14}
+    program_methodology_notes_zh:
+      - 本轮 `program_released` 新增官方 invited talk 信息，并刷新 Downloads 的 poster 索引；索引从 9,110 增至 9,146，但 taxonomy 相关集合和 11 篇精选均未变化，不重复做全文编辑。
+      - 13 场 invited talk 全部来自 NeurIPS 官方博客；本页突出三场与 efficient model、data center 基础设施和产业学习闭环直接相关的报告，不把演讲预告当作经同行评审的研究结果。
+      - Sydney、Paris 与 Atlanta 的时间均为举办地当地时间；博客明确给出 6、4、3 场分地数量，完整 abstract 和 bio 仍以随后发布的 invited speaker 页面为准。

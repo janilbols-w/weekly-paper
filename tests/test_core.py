@@ -8,9 +8,12 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import Mock, patch
 
+import requests
+
 from weekly_paper.dedupe import deduplicate
 from weekly_paper.evaluation import evaluate, select_featured
 from weekly_paper.event_collectors import (
+    _fetch_with_retries,
     parse_colm_accepted_html,
     parse_colm_calendar_html,
     parse_colm_detail_html,
@@ -339,6 +342,18 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(values[0].track, "Resource-Efficient LLM Serving · Operational Systems")
         self.assertEqual(values[0].awards, ["Jay Lepreau Best Paper Award"])
         self.assertEqual(values[0].paper.pdf_url, "https://www.usenix.org/system/files/osdi26-example.pdf")
+
+    def test_neurips_fetch_retries_transient_request_error(self) -> None:
+        response = Mock()
+        response.content = b"ok"
+        response.raise_for_status.return_value = None
+        with patch(
+            "weekly_paper.event_collectors.requests.get",
+            side_effect=[requests.ConnectionError("temporary"), response],
+        ) as request:
+            payload = _fetch_with_retries("https://neurips.cc/example", 10, {"User-Agent": "test"})
+        self.assertEqual(payload, b"ok")
+        self.assertEqual(request.call_count, 2)
 
     def test_parse_sosp_schedule_html(self) -> None:
         payload = """

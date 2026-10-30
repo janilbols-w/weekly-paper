@@ -1576,7 +1576,7 @@
         "Lushan Song",
         "Xiaojian Liang",
         "Shishuai Du",
-        "Jun J Sim",
+        "Jun Jie Sim",
         "Yingting Liu",
         "Xin Zhang",
         "Jiang-Ming Yang",
@@ -6243,7 +6243,7 @@
       "published": "2026-10-16",
       "updated": "2026-10-16",
       "authors": [
-        "Tycho F van der Ouderaa",
+        "Tycho van der Ouderaa",
         "Mart van Baalen",
         "Paul Whatmough",
         "Markus Nagel"
@@ -11267,7 +11267,7 @@
     "paper": {
       "id": "neurips:neurips-2026:138945",
       "title": "The Complexity Kink: LLM Rubric Instruments for Causal Inference on Code Generation Reliability",
-      "abstract": "Large language models (LLMs) are increasingly evaluated and deployed as code generators, but benchmarks still lack a reliable way to measure when a programming task becomes structurally too complex for a model to solve. Many code evaluations estimate task complexity from the code a model produces. This makes the key variable endogenous: when a model fails on a difficult prompt, it may emit a short stub, partial solution, or broken program whose measured complexity is low, causing hard failures to be reclassified as easy cases. This can hide whether reliability degrades smoothly or changes regime at a sharp complexity threshold, a distinction that matters for model selection, benchmark design, and deployment guardrails. We present the Complexity Kink benchmark, a prompt-side experiment that measures intended solution complexity before generation and separates it from generated-output complexity and functional correctness. We construct a 5,000-prompt Python benchmark from OpenCodeInstruct, stratified to cover the range of structural complexity, and score each prompt with a fixed six-dimensional rubric covering branching, iteration, state, data structures, edge cases, and algorithmic composition. Four out-of-panel LLM judges score the full prompt set, yielding complete coverage and high composite inter-rater reliability (ICC = 0.865). We then evaluate a 21-model panel with unit-test execution and estimate the relationship between prompt-side complexity and pass rate using instrumental variables and threshold regression. By making task complexity observable before generation, this framework tests whether the apparent complexity kink is a real structural break or a measurement artifact, and gives researchers and practitioners a more defensible way to compare models, diagnose reliability limits, and design evaluations that do not erase the failures that matter most.",
+      "abstract": "Measuring complexity from a model's own code is biased by failure: a hard prompt can produce a short, broken program that looks simple. We instead score each prompt's structure on six dimensions from the prompt alone, never from generated code or test results. We draw 5,000 Python prompts across six bands of a preliminary single-rater score, and four out-of-panel LLM judges rescore every prompt (19,997 scores; composite ICC(2,1) = 0.872 on the 4,998 prompts with all four). Twenty-one models answer every prompt (105,000 generations), and an independent LLM auditor, checked against known-answer cases, reviews each unit-test verdict. Averaged over models, pass rate has a nonmonotone breakpoint at composite $\\hat{\\gamma}=14.0$: 83.4\\% at or below, 90.1\\% above. That jump is not a law of difficulty. With task-type fixed effects the breakpoint stays at 14.0 but the adjusted jump shrinks from 6.8 to 0.4 points, and neither of the benchmark's two prompt sources reproduces the jump on its own. Nineteen models pass more often above their own breakpoint and two less often, and one of those two declines, Gemini 3.1 Pro Preview's, comes from 156 API calls that returned nothing. In post hoc follow-up, Kimi K2.5 shows the clearest decline: with a prompt-source control, and within the later source alone, its break is at 14.25, where its later-source pass rate falls from 0.848 to 0.808 (95\\% interval $[14.00,14.75]$). A 365-prompt audit-clean extension matches the original raw test outcomes at bins 15 and 16 but adds only 14 prompts above bin 16. Among failed generations with measurable output complexity, 25.0\\% pair a prompt composite above 8 with output complexity of at most 10, twice the share among passing ones. The pooled breakpoint moves to 11.25 on raw test outcomes and 13.75 under the partial audit used at submission. Human agreement with the index is moderate and rater-dependent, paraphrase and cross-language rescoring preserve its ordering, and overidentification tests reject the six dimensions as instruments, so we treat the composite as an index and make no causal claim. The contribution is a prompt-side way to locate where each model's pass rate changes and to test how much that depends on the prompt mix and on how success is scored.",
       "url": "https://neurips.cc/virtual/2026/poster/138945",
       "pdf_url": "https://openreview.net/pdf?id=ucjCOJf47M",
       "published": "2026-10-16",
@@ -11299,13 +11299,13 @@
       "keyword_evidence": [
         "code generation"
       ],
-      "score": 52,
+      "score": 45,
       "score_components": {
         "relevance": 16,
         "novelty": 5,
-        "rigor": 13,
+        "rigor": 7,
         "practical_impact": 5,
-        "reproducibility": 3,
+        "reproducibility": 2,
         "credibility": 10
       },
       "score_evidence": [
@@ -11313,7 +11313,7 @@
         "no quantitative claim in metadata",
         "no code link detected in metadata"
       ],
-      "summary_en": "Large language models (LLMs) are increasingly evaluated and deployed as code generators, but benchmarks still lack a reliable way to measure when a programming task becomes structurally too complex for a model to solve.",
+      "summary_en": "Measuring complexity from a model's own code is biased by failure: a hard prompt can produce a short, broken program that looks simple.",
       "summary_zh": "",
       "why_it_matters_zh": "",
       "limitations_zh": "",
@@ -11784,20 +11784,12 @@
     "paper": {
       "id": "neurips:neurips-2026:152140",
       "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
-      "abstract": "Large language model (LLM) routing is widely used to advance the cost-quality Pareto frontier of modern serving systems. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithm work shows substantial efficiency and quality advantages of finer token-level routing. However, efficiently serving token-level routed inference poses significant challenges to existing system design. Built on single-LLM assumptions, current systems struggle with step desynchronization and frequent batch admission delays under token-level routing, and they also impose high implementation complexity on developers. To address this, we propose TokenRouter, an efficient and user-friendly serving system for token-level routed LLM inference. TokenRouter shifts from the conventional request-centric paradigm to a model-centric one. Instead of treating each request as a synchronized decoding stream, TokenRouter launches a subserver for each candidate LLM and dispatches requests asynchronously according to routing decisions. Each subserver employs a delayed-batching scheduler, whose hyperparameters are derived mathematically from a throughput model of the system. Across diverse routing algorithms, workloads, and model pairs, TokenRouter achieves 1.83-64.29× higher decoding throughput than existing systems, substantially advancing the serving efficiency of token-level LLM routing.",
+      "abstract": "",
       "url": "https://neurips.cc/virtual/2026/poster/152140",
       "pdf_url": "https://arxiv.org/pdf/2610.12242",
       "published": "2026-10-16",
       "updated": "2026-10-16",
-      "authors": [
-        "Tianyu Fu",
-        "Tengxuan Liu",
-        "Ruoxi Wang",
-        "Yixin Dong",
-        "Yi Ge",
-        "Yichen You",
-        "Yu Wang"
-      ],
+      "authors": [],
       "source": "NeurIPS official poster program",
       "source_type": "accepted_program",
       "categories": [],
@@ -11818,12 +11810,12 @@
       "keyword_evidence": [
         "model serving"
       ],
-      "score": 51,
+      "score": 46,
       "score_components": {
         "relevance": 12,
-        "novelty": 6,
-        "rigor": 7,
-        "practical_impact": 9,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
         "reproducibility": 7,
         "credibility": 10
       },
@@ -11832,7 +11824,7 @@
         "no quantitative claim in metadata",
         "code/artifact link detected"
       ],
-      "summary_en": "Large language model (LLM) routing is widely used to advance the cost-quality Pareto frontier of modern serving systems.",
+      "summary_en": "",
       "summary_zh": "TokenRouter 将 token-level routing 拆成“request-centric 编程、model-centric 执行”：开发者只写单请求的 route/send/receive 逻辑，runtime 为每个模型运行异步 subserver，并用延迟批处理缓解 step 不同步和 batch admission 等待。",
       "why_it_matters_zh": "跨多种路由算法、工作负载和模型组合，作者报告相对原始实现 2.01–64.15× decoding throughput；系统还推导 delayed-batching 参数并将 token 路由推进新的吞吐—准确率 Pareto frontier，代码公开。",
       "limitations_zh": "数学模型假设连续 send 之间的 token 数服从几何分布，只覆盖多数而非全部 token routing 算法；64.15× 是相对低效原始实现的峰值，不能等同于对成熟 query-level serving 的普遍倍数。",
@@ -11850,11 +11842,6 @@
           "source": "NeurIPS virtual poster",
           "id": "152140",
           "url": "https://neurips.cc/virtual/2026/poster/152140"
-        },
-        {
-          "source": "OpenReview",
-          "id": "VCbatQAXJV",
-          "url": "https://openreview.net/forum?id=VCbatQAXJV"
         }
       ]
     },

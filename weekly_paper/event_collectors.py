@@ -516,13 +516,29 @@ def parse_neurips_detail_html(payload: bytes) -> Dict[str, Any]:
     }
 
 
+def _fetch_with_retries(url: str, timeout: int, headers: Dict[str, str], attempts: int = 3) -> bytes:
+    last_error: requests.RequestException | None = None
+    for attempt in range(attempts):
+        try:
+            response = requests.get(url, timeout=timeout, headers=headers)
+            response.raise_for_status()
+            return response.content
+        except requests.RequestException as exc:
+            last_error = exc
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            if status is not None and status not in {429, 500, 502, 503, 504}:
+                raise
+            if attempt == attempts - 1:
+                raise
+    assert last_error is not None
+    raise last_error
+
+
 def collect_neurips_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[EventPaper], int]:
     headers = {"User-Agent": "WeeklyPaper/0.2 (+https://github.com/janilbols-w/weekly-paper)"}
 
     def fetch(url: str) -> bytes:
-        response = requests.get(url, timeout=timeout, headers=headers)
-        response.raise_for_status()
-        return response.content
+        return _fetch_with_retries(url, timeout, headers)
 
     papers, total = parse_neurips_downloads_html(fetch(event["accepted_papers_url"]), event)
     candidates = [item for item in papers if NEURIPS_ABSTRACT_RECALL_RE.search(item.paper.title)]

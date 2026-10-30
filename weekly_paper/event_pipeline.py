@@ -227,17 +227,16 @@ def run_event(
         ),
     )
     timestamp = now_utc_iso()
-    digest_value: Any = [item.to_dict() for item in relevant]
-    if event.get("collector") == "official_program":
-        digest_value = {
-            "program_released_date": event.get("program_released_date", ""),
-            "event_stats": event.get("event_stats", []),
-            "key_programs": event.get("key_programs", []),
-            "sources": [
-                {key: value for key, value in source.items() if key != "checked_at"}
-                for source in event.get("sources", [])
-            ],
-        }
+    digest_value: Any = {
+        "papers": [item.to_dict() for item in relevant],
+        "program_released_date": event.get("program_released_date", ""),
+        "event_stats": event.get("event_stats", []),
+        "key_programs": event.get("key_programs", []),
+        "sources": [
+            {key: value for key, value in source.items() if key != "checked_at"}
+            for source in event.get("sources", [])
+        ],
+    }
     digest = stable_digest(digest_value)
     event.update(
         {

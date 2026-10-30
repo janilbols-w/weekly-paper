@@ -855,16 +855,41 @@
     "location": "Budapest, Hungary",
     "official_url": "https://2026.emnlp.org/",
     "program_url": "https://2026.emnlp.org/program/",
-    "accepted_papers_url": "https://2026.emnlp.org/program/main_papers/",
+    "accepted_papers_url": "https://aclanthology.org/events/emnlp-2026/",
     "awards_url": "https://2026.emnlp.org/program/awards/",
-    "collector": "official_program",
-    "program_source_name": "EMNLP 2026 official program and repository",
+    "collector": "acl_anthology_xml",
+    "publication_date": "2026-10-24",
+    "anthology_sources": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/acl-org/acl-anthology@master/data/xml/2026.emnlp.xml",
+        "volumes": [
+          "main",
+          "demos",
+          "industry"
+        ]
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/acl-org/acl-anthology@master/data/xml/2026.findings.xml",
+        "volumes": [
+          "emnlp"
+        ]
+      }
+    ],
     "program_released_date": "2026-09-21",
-    "briefing_title_suffix_zh": "会议周议程导览",
-    "program_link_label_zh": "官方议程",
-    "summary_zh": "EMNLP 2026 于 10 月 24 日在布达佩斯开始，25 至 27 日为主会，28 至 29 日为 tutorial 与 workshop。本次会议周导览重点追踪 world model、开放语言模型研究、agent 可靠性与长时记忆、价值对齐、生产级 agent、高效 tokenization 和样本高效预训练。",
-    "relevance_zh": "对 LLM efficient inference / AI Infra 最有用的信号不是未公开的论文排名，而是一条跨层议程：world model 与工具使用扩展 agent 能力，长时记忆、失败诊断和价值对齐限定生产可靠性，tokenization 和受限数据预训练则直接关联训练与推理成本。相关摘要仍是讲者与主办方对议题的描述，不作为已验证的性能结论。",
-    "current_stage_zh": "本次命中 `event_week`：RUN_DATE 为大会正式开始前一天。官方已公布总议程、三场主会 keynote、两场 industry keynote、六场 tutorial 和 28 个 workshop；本周官方仓库更改主要是 workshop 时间提示、讲者简介与参会物流，没有新的研究议程发布。main、Findings、industry 与 demo 论文页均仍无条目，awards 页也只有空奖项栏目，ACL Anthology 尚无 EMNLP 2026 proceedings；因此保持论文覆盖与评分为 0，不推断录用规模或奖项归属。",
+    "selection_threshold": 47,
+    "selection_cap": 12,
+    "selection_requires_editorial": true,
+    "briefing_title_suffix_zh": "论文精选",
+    "program_link_label_zh": "ACL Anthology 论文全集",
+    "official_totals": {
+      "main_papers": 2704,
+      "findings_papers": 2478,
+      "industry_papers": 266,
+      "demo_papers": 86
+    },
+    "summary_zh": "EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回 195 篇高效推理与 AI Infra 候选，并定向全文核验 12 篇精选论文。",
+    "relevance_zh": "本届相关研究从 speculative decoding、低比特推理与模型剪枝延伸到 KV Cache 复用和无损压缩、AMD GPU kernel 数据、长上下文 serving benchmark、SLO-aware preemption 与 CPU offload，覆盖算法、runtime、硬件和生产服务的完整链路。",
+    "current_stage_zh": "本次新增命中 `papers_released`。ACL Anthology 官方仓库在 10 月 24 日 ingest EMNLP 2026 主会、Findings 与确认的 workshop，结束了上一轮“proceedings 尚未发布”的状态；当前可复现采集 5,534 篇主会、Findings、Industry 与 Demo 论文。大会已于 10 月 29 日结束，官方 awards 页截至 10 月 30 日仍只有奖项栏目标题，因此不触发 `awards_released`，也不推断获奖结果。",
     "event_stats": [
       {
         "label": "Conference days",
@@ -981,13 +1006,13 @@
       {
         "label": "EMNLP 2026 official program overview",
         "url": "https://2026.emnlp.org/program/",
-        "checked_at": "2026-10-23",
+        "checked_at": "2026-10-30",
         "note_zh": "核验 10 月 24 至 29 日总体结构、AI 审稿实验报告、New Missions in NLP panel、Best Paper Award 时段与主会日程"
       },
       {
         "label": "EMNLP 2026 official industry track",
         "url": "https://2026.emnlp.org/program/industry/",
-        "checked_at": "2026-10-23",
+        "checked_at": "2026-10-30",
         "note_zh": "核验两场 industry keynote、Retrieval/RAG、Trust/Safety/Control、Agents in Production 与真实部署 panel"
       },
       {
@@ -1005,58 +1030,64 @@
       {
         "label": "EMNLP 2026 official keynotes",
         "url": "https://2026.emnlp.org/program/keynotes/",
-        "checked_at": "2026-10-23",
+        "checked_at": "2026-10-30",
         "note_zh": "核验三场主会 keynote、两场 industry keynote 的题目、摘要、讲者与时间"
       },
       {
         "label": "EMNLP 2026 official tutorials",
         "url": "https://2026.emnlp.org/program/tutorials/",
-        "checked_at": "2026-10-23"
+        "checked_at": "2026-10-30"
       },
       {
         "label": "EMNLP 2026 official workshops",
         "url": "https://2026.emnlp.org/program/workshops/",
-        "checked_at": "2026-10-23"
+        "checked_at": "2026-10-30"
       },
       {
         "label": "EMNLP 2026 main papers page",
         "url": "https://2026.emnlp.org/program/main_papers/",
-        "checked_at": "2026-10-23",
-        "note_zh": "main、Findings、industry 与 demo 页面均只有标题、无论文条目，故不作为论文全集或 proceedings 证据"
+        "checked_at": "2026-10-30",
+        "note_zh": "会议官网的四类论文页仍无条目，因此论文全集改以 ACL Anthology XML 为唯一采集依据"
       },
       {
         "label": "EMNLP 2026 official awards page",
         "url": "https://2026.emnlp.org/program/awards/",
-        "checked_at": "2026-10-23",
-        "note_zh": "奖项栏目已建立但获奖内容为空；10 月 27 日的 Best Paper Award 仅是未来议程时段"
+        "checked_at": "2026-10-30",
+        "note_zh": "奖项栏目仍只有标题、没有获奖论文或作者，故不触发 awards_released"
       },
       {
         "label": "ACL Anthology EMNLP 2026 event index",
         "url": "https://aclanthology.org/events/emnlp-2026/",
-        "checked_at": "2026-10-23",
-        "note_zh": "截至 RUN_DATE 无可核验的 EMNLP 2026 proceedings 条目"
+        "checked_at": "2026-10-30",
+        "note_zh": "核验主会、Findings、Industry 与 Demo 正式条目、摘要、PDF 和 DOI 链接"
+      },
+      {
+        "label": "ACL Anthology official EMNLP 2026 ingestion commit",
+        "url": "https://github.com/acl-org/acl-anthology/commit/635539a0d4785ce040a163507915c48eaf4f552e",
+        "checked_at": "2026-10-30",
+        "note_zh": "核验 10 月 24 日官方仓库 ingest 主会、Findings 与已确认 workshop 的发布时间和来源变更"
       },
       {
         "label": "EMNLP 2026 official repository history",
         "url": "https://github.com/acl-org/emnlp-2026/commits/main/",
-        "checked_at": "2026-10-23",
-        "note_zh": "核验本周变更仅涉及 workshop 时间提示、panelist 简介、演讲指南和物流链接，未发布论文全集或奖项结果"
+        "checked_at": "2026-10-30",
+        "note_zh": "核验会后官网没有发布可替代 ACL Anthology 的论文全集，也没有奖项结果"
       }
     ],
     "program_methodology_notes_zh": [
-      "本页是会议周议程导览，不把 keynote、tutorial 或 workshop 描述当作同行评审论文结论。",
-      "官网四类论文页均无条目，ACL Anthology 也尚无可核验的 2026 proceedings，因此论文覆盖与评分均保持为 0。",
-      "官方仓库本周的变更属日程提示、简介与参会物流修正；不另立 `program_released` 触发，也不把演讲摘要中的方法方向当作已发表结果。",
-      "Workshop 与 tutorial 数量来自官方列表的逐项计数；房间、讲者细节和最终时间仍可能更新。"
+      "论文全集来自 ACL Anthology 官方 XML：主会 2,704、Findings 2,478、Industry 266、Demo 86，共 5,534 篇；tutorial 与 workshop 未纳入本次论文筛选。",
+      "全体论文只读取标题、摘要和 track，经既有三级 taxonomy 与证据评分召回 195 篇；精选仍执行 47 分阈值、总数 12 篇和同一叶节点最多两篇的质量与多样性约束。",
+      "仅对最终 12 篇候选定向核验官方 PDF 的方法、关键结果、实验边界和 artifact；摘要数值在全文无法复核时不进入中文结论。",
+      "ACL Anthology event 页的卷入口计数包含卷级前置条目，正文统计采用 XML 中可解析的 paper 节点；awards 页为空，因此不把 oral、Industry 或 Demo 身份解释为奖项。"
     ],
-    "status": "即将举行",
-    "trigger_type": "event_week",
-    "corpus_source": "EMNLP 2026 official program and repository",
-    "corpus_total": 0,
-    "relevant_total": 0,
-    "selected_total": 0,
-    "source_digest": "ea56cc101f0dd7355878f6d7253411f8a26d65f5e60bc634bc799d313a170dbd",
-    "generated_at": "2026-10-23T05:32:01+00:00",
+    "status": "已归档",
+    "trigger_type": "papers_released",
+    "corpus_source": "ACL Anthology XML",
+    "corpus_total": 5534,
+    "relevant_total": 195,
+    "selected_total": 12,
+    "source_digest": "5794187ea9173a1a7a2d3cb2a1cf14da0b7c295bc73a5514f3a9470e65e58c36",
+    "generated_at": "2026-10-30T02:54:25+00:00",
     "has_report": true
   },
   {
@@ -1076,21 +1107,43 @@
     "workshops_url": "https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/",
     "openreview_url": "https://openreview.net/group?id=NeurIPS.cc/2026/Conference",
     "collector": "neurips_program",
-    "program_released_date": "2026-08-10",
+    "program_released_date": "2026-10-25",
     "publication_date": "2026-10-16",
     "detail_fetch_workers": 12,
     "selection_threshold": 42,
     "selection_cap": 12,
     "selection_requires_editorial": true,
     "official_totals": {
-      "official_poster_entries": 9110,
+      "official_poster_entries": 9146,
       "accepted_workshops": 102,
-      "accepted_tutorials": 19
+      "accepted_tutorials": 19,
+      "invited_speakers": 13
     },
-    "summary_zh": "NeurIPS 2026 官方 Downloads 与虚拟会场已经开放 9,110 个独立 poster 条目，覆盖当前公开的主会及相关 track 论文节目；本页先保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。",
+    "summary_zh": "NeurIPS 2026 官方 Downloads 与虚拟会场当前开放 9,146 个独立 poster 条目，覆盖主会及相关 track 论文节目；本页保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。",
     "relevance_zh": "本届高效推理方向的密度显著上升，重点聚集在 KV Cache 压缩、长上下文 sparse attention、推测解码、量化、diffusion language model 解码，以及多模型路由和 agent serving。论文数量大并不等于结论成熟；精选只保留方法、实验条件、限制和 artifact 证据可核验的候选。",
-    "current_stage_zh": "本次命中 `papers_released`。10 月 9 日上一轮检查时官方 virtual paper corpus 仍不可稳定访问；截至 10 月 16 日，Downloads 页面已公开 9,110 个唯一 poster URL，OpenReview venue 也公开 oral、spotlight、poster 决策分组。该数字是官方 poster program 条目数，不在 proceedings 出版前把它表述为主会 archival proceedings 总量，也不把 workshop 非归档稿件混同为正式论文。",
+    "current_stage_zh": "本次新增命中 `program_released`。NeurIPS 官方博客于 10 月 25 日公布 13 场 invited talk 的主题、讲者、地点与时间：Sydney 6 场、Paris 4 场、Atlanta 3 场。官方 Downloads 的唯一 poster 条目也从 10 月 16 日的 9,110 增至 9,146，但相关论文集合仍为同一批 149 篇，因此将其视为 program 索引维护，不重复触发 `papers_released`。与 LLM 高效推理和 AI Infra 最直接相关的是约束条件下的小而高效模型、AI data center 对社区和电网的影响，以及从真实工业流程构建学习闭环。",
     "key_programs": [
+      {
+        "title": "Invited Talk — Building AI under constraint",
+        "date": "2026-12-11 10:30 local time",
+        "location": "Paris",
+        "url": "https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/",
+        "focus_zh": "Pelonomi Moiloa 将反思以资源充裕为默认假设的 AI 发展路径，并讨论更小、更高效、使用合适数据训练的模型能否在真实任务上优于大型通用系统。"
+      },
+      {
+        "title": "Invited Talk — AI data centers, communities and energy grids",
+        "date": "2026-12-11 09:00 local time",
+        "location": "Atlanta",
+        "url": "https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/",
+        "focus_zh": "Sasha Luccioni 将讨论 AI data center 对当地社区、能源电网和环境的已知影响，以及研究者、运营方与社区如何共同改善基础设施外部性。"
+      },
+      {
+        "title": "Invited Talk — Building an industrial learning loop",
+        "date": "2026-12-08 09:00 local time",
+        "location": "Sydney",
+        "url": "https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/",
+        "focus_zh": "Tie-Yan Liu 将从 proprietary workflow、物理实验和真实决策中的经验学习出发，讨论如何形成产业学习闭环；这为 AI Infra 的数据反馈、部署评估和持续迭代提供系统视角。"
+      },
       {
         "title": "DiffuLM — Diffusion Language Models",
         "date": "2026-12-12",
@@ -1159,19 +1212,19 @@
       {
         "label": "NeurIPS 2026 conference page",
         "url": "https://neurips.cc/Conferences/2026",
-        "checked_at": "2026-10-16",
+        "checked_at": "2026-10-30",
         "note_zh": "核验三地会期、主会论文通知日期与官网公告入口"
       },
       {
         "label": "NeurIPS 2026 official Downloads and poster program",
         "url": "https://neurips.cc/Downloads/2026",
-        "checked_at": "2026-10-16",
-        "note_zh": "逐项采集 9,110 个唯一 Poster 条目的标题与官方详情页；页面总事件数 9,244 还包含 workshop、tutorial 和 invited talk"
+        "checked_at": "2026-10-30",
+        "note_zh": "逐项采集 9,146 个唯一 Poster 条目的标题与官方详情页；相较 10 月 16 日增加 36 条，相关论文集合仍为同一批 149 篇"
       },
       {
         "label": "NeurIPS 2026 OpenReview venue",
         "url": "https://openreview.net/group?id=NeurIPS.cc/2026/Conference",
-        "checked_at": "2026-10-16",
+        "checked_at": "2026-10-30",
         "note_zh": "核验 venue 已公开 oral、spotlight、poster 决策分组；不抓取评审内容"
       },
       {
@@ -1179,6 +1232,12 @@
         "url": "https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/",
         "checked_at": "2026-08-14",
         "note_zh": "核验发布日期、102 个正式 workshop、分地数量、会期和投稿阶段"
+      },
+      {
+        "label": "NeurIPS 2026 official invited speaker topics",
+        "url": "https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/",
+        "checked_at": "2026-10-30",
+        "note_zh": "核验 13 场 invited talk 的讲者、主题、当地时间与 Sydney、Paris、Atlanta 分地安排"
       },
       {
         "label": "NeurIPS workshop guidance",
@@ -1227,14 +1286,19 @@
         "checked_at": "2026-08-14"
       }
     ],
+    "program_methodology_notes_zh": [
+      "本轮 `program_released` 新增官方 invited talk 信息，并刷新 Downloads 的 poster 索引；索引从 9,110 增至 9,146，但 taxonomy 相关集合和 11 篇精选均未变化，不重复做全文编辑。",
+      "13 场 invited talk 全部来自 NeurIPS 官方博客；本页突出三场与 efficient model、data center 基础设施和产业学习闭环直接相关的报告，不把演讲预告当作经同行评审的研究结果。",
+      "Sydney、Paris 与 Atlanta 的时间均为举办地当地时间；博客明确给出 6、4、3 场分地数量，完整 abstract 和 bio 仍以随后发布的 invited speaker 页面为准。"
+    ],
     "status": "即将举行",
-    "trigger_type": "papers_released",
+    "trigger_type": "program_released",
     "corpus_source": "NeurIPS official Downloads and virtual poster program",
-    "corpus_total": 9110,
+    "corpus_total": 9146,
     "relevant_total": 149,
     "selected_total": 11,
-    "source_digest": "80e5589024ba04010d2799252571a1cdeb68dbdd170895a8fa5aba495ec97e76",
-    "generated_at": "2026-10-16T02:29:56+00:00",
+    "source_digest": "a2dd7416e8ce0b980fa593985706cc8bfd97fdd68bdf7ea4cb1ff9fd4555d09f",
+    "generated_at": "2026-10-30T02:53:54+00:00",
     "has_report": true
   }
 ]
