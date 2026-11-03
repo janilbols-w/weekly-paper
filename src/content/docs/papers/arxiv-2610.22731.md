@@ -39,7 +39,7 @@ Streaming data analytics helps businesses identify opportunities and spot risks 
 ## 元数据
 
 - 作者：RuiLong Jiang, Dustin Rhodes, Danny McCormick, Yuta Labur, Reza Rokni
-- 发布：2026-10-19；更新：2026-10-19
+- 发布：2026-10-19；更新：2026-11-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

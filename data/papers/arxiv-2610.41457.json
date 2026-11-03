@@ -1,0 +1,82 @@
+{
+  "id": "arxiv:2610.41457",
+  "title": "RecIS: Unifying Sparse and Dense Computation for Efficient Recommendation Training",
+  "abstract": "Modern recommender models scale sparse representations and dense computation together. They process thousands of heterogeneous feature fields, long user-behavior sequences, and trillion-scale Embedding parameters, while their dense networks increasingly use large Transformer architectures. The resulting execution mismatch creates fine-grained operations within stages, load imbalance and synchronization delays across devices, and GPU resource bubbles between stages. As models grow, these costs become a primary limit to scalable recommender training. Although existing systems improve Embedding caching and data prefetching, these inefficiencies still coexist in the GPU-centric workloads we study and jointly limit end-to-end throughput. We present RecIS, a unified framework for GPU-centric recommender training. RecIS treats the complete path from input features to dense computation as one optimization target and coordinates three complementary mechanisms. First, adaptive fusion combines fragmented feature transformations with vectorized memory access. Second, a GPU Embedding engine uses hash-based sharding and hierarchical communication to balance request placement and eliminate redundant transfers; it also specializes aggregation for forward and backward index structures. Third, a multistage pipeline overlaps input preparation for future iterations with dense computation in the current iteration. Together, these mechanisms reorganize a fragmented sparse front end into a dataflow that continuously feeds dense computation. We evaluate RecIS on representative industrial recommender models across distributed training platforms. Compared with PICASSO and TorchRec, RecIS reaches up to $2.62\\times$ and $1.15\\times$ their throughput, respectively, while reducing step latency by up to 61.5\\% and 12.9\\%. RecIS provides an efficient and scalable training system for large recommender models.",
+  "url": "https://arxiv.org/abs/2610.41457",
+  "pdf_url": "https://arxiv.org/pdf/2610.41457",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Hua Zong",
+    "Shuai Yang",
+    "Zhengxiong Zhou",
+    "Qingtao Zeng",
+    "Jiawei Liu",
+    "Hao Wan",
+    "Hongbin Zhou",
+    "Jiahao Wang",
+    "Hao Zhang",
+    "Bencheng Yan",
+    "Yuheng Huang",
+    "Huimin Yi",
+    "Jiamang Wang",
+    "Han Zhu",
+    "Jian Xu",
+    "Bo Zheng",
+    "Lin Qu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distributed training"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distributed training",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern recommender models scale sparse representations and dense computation together.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.41457",
+      "url": "https://arxiv.org/abs/2610.41457"
+    }
+  ]
+}

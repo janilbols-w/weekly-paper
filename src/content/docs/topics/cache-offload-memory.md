@@ -9,6 +9,7 @@ description: "Cache, Offload & Memory Management"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SoK: Agentic Retrieval-Augmented Generation (RAG): Taxonomy, Architectures, Evaluation, and Research Directions](../../papers/arxiv-2603.07379/) | 2026-11-02 | 39 |
 | [COPE: Composable Performance Emulation for Mixture-of-Experts Offloading Policies](../../papers/arxiv-2610.33404/) | 2026-10-27 | 46 |
 | [FusionEval: Benchmarking Model Fusion for Large Language Models](../../papers/arxiv-2610.30162/) | 2026-10-23 | 50 |
 | [5uGUE: Agentic Hardware-in-the-Loop Fuzzing for 5G Devices and beyond](../../papers/arxiv-2610.29155/) | 2026-10-22 | 46 |
@@ -45,7 +46,6 @@ description: "Cache, Offload & Memory Management"
 | [MOLT: A Fine-Grained GPU Memory Sharing System for LLM Serving with Opportunistic Fine-Tuning](../../papers/arxiv-2610.05748/) | 2026-10-06 | 45 |
 | [Implementation of Zero-shot Semantic Communication on Software Defined Radio](../../papers/arxiv-2610.05764/) | 2026-10-06 | 44 |
 | [Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents](../../papers/arxiv-2607.13591/) | 2026-10-06 | 42 |
-| [Vision Transformer Ensembles for Panoramic Street Segmentation](../../papers/arxiv-2610.06063/) | 2026-10-06 | 41 |
 | [The Assistance Dilemma: Learning to Teach via Multi-Turn Reinforcement Learning](../../papers/arxiv-2610.06446/) | 2026-10-06 | 40 |
 | [FlashMoE: Reducing SSD I/O Bottlenecks via ML-Based Cache Replacement for Mixture-of-Experts Inference on Edge Devices](../../papers/arxiv-2601.17063/) | 2026-10-06 | 40 |
 | [Factorized Delayed Streams Modeling for LLM-based Streaming ASR](../../papers/arxiv-2610.04333/) | 2026-10-06 | 40 |

@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2610.41313",
+  "title": "Migrating a Legacy Scientific Application with an AI Coding Agent: NICAM from Fortran to Kokkos",
+  "abstract": "Migrating from Fortran to C++/Kokkos broadens access to hardware accelerators through backends such as CUDA and HIP while offering greater flexibility in software design. However, legacy Fortran applications often have large codebases, making manual porting time-consuming and costly. Recent advances in large language models (LLMs) and AI coding agents have made large-scale code migration increasingly feasible. In this study, we ported NICAM (Nonhydrostatic ICosahedral Atmospheric Model), a legacy Fortran climate model accelerated with OpenACC, to C++/Kokkos with the assistance of Claude Code. The agent translated the code directly from Fortran to C++/Kokkos under human review. Approximately 140,000 lines of Fortran were analyzed and ported into 35,000 lines of C++/Kokkos, covering the dynamical core and seven physics packages. A 100-member ensemble comparison with the original Fortran model showed that the port is statistically consistent with the original. Performance was evaluated on Miyabi-G, an NVIDIA GH200 cluster, and Sirius, an AMD MI300A cluster. Compared with the Fortran/OpenACC baseline on GH200, the port achieved application speedups of $1.71\\times$ on GH200 and $1.54\\times$ on MI300A. The CUDA build achieved a GPU kernel-time speedup of $1.38\\times$ on GH200. After normalization by peak memory bandwidth, the HIP build on MI300A achieved $0.96\\times$ the kernel performance of the Fortran/OpenACC baseline.",
+  "url": "https://arxiv.org/abs/2610.41313",
+  "pdf_url": "https://arxiv.org/pdf/2610.41313",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Xuanzhengbo Ren",
+    "Takashi Shimokawabe",
+    "Hisashi Yashiro"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "kernels-operators",
+    "leaf": "Kernels & Operator Fusion",
+    "leaf_zh": "Kernel 与算子融合"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu kernel"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu kernel",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Migrating from Fortran to C++/Kokkos broadens access to hardware accelerators through backends such as CUDA and HIP while offering greater flexibility in software design.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.41313",
+      "url": "https://arxiv.org/abs/2610.41313"
+    }
+  ]
+}

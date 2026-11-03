@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2601.08739",
+  "title": "Ctrl-G: Controlling Structural and Interaction Exposure in Knowledge Graph Augmented LLM Reasoning",
+  "abstract": "Knowledge graphs (KGs) provide structured evidence for Web question answering with large language models (LLMs), but sending retrieved evidence to a remote LLM can expose sensitive graph information. Existing privacy treatments use entity anonymization and relation-centric abstraction to preserve reasoning cues, but transmitted topology remains visible and disclosure accumulates across repeated calls. Distinctive topology can support re-identification of masked entities (structural exposure), while successive calls accumulate additional paths and exploration traces into a broader view of the KG (interaction exposure). Simply sending less evidence is insufficient because restricted, stepwise views may omit the bridge paths required for multi-hop reasoning. To address this, we propose Ctrl-G, to the best of our knowledge the first KG-RAG framework to jointly control structural and interaction exposure to a remote LLM while supporting accurate multi-hop reasoning. To control structural exposure, Ctrl-G locally constructs query-conditioned sanitized views through structural aggregation and pruning, limiting the graph evidence transmitted to a remote LLM. A hierarchical controller couples remote planning with local connected-path exploration across topic entities, using question indicators and retrieved experience to prune candidates while grounding and verifying retained evidence against the original KG. To control interaction exposure, local experience memory reuses abstract, verified reasoning traces to guide exploration modes and depths and gate remote LLM calls, reducing repeated disclosure across questions. Ctrl-G achieves the highest accuracy among the compared methods on five of six benchmarks, exceeding the strongest baseline by up to 13.8 points across model configurations.",
+  "url": "https://arxiv.org/abs/2601.08739",
+  "pdf_url": "https://arxiv.org/pdf/2601.08739",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Xingyu Tan",
+    "Xiaoyang Wang",
+    "Qing Liu",
+    "Xiwei Xu",
+    "Xin Yuan",
+    "Liming Zhu",
+    "Wenjie Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Knowledge graphs (KGs) provide structured evidence for Web question answering with large language models (LLMs), but sending retrieved evidence to a remote LLM can expose sensitive graph information.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2601.08739",
+      "url": "https://arxiv.org/abs/2601.08739"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+title: "Turing LLM Post-Training: Calibrated Distillation and Efficient Dynamic-MoE Execution"
+description: "We study post-training for dynamically routed mixture-of-experts (MoE) models, focusing on integrating independently optimized specialists while keeping consolidation efficient."
+---
+
+**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+
+[论文原文](https://arxiv.org/abs/2610.39876) · [PDF](https://arxiv.org/pdf/2610.39876)
+
+## 一句话摘要
+
+We study post-training for dynamically routed mixture-of-experts (MoE) models, focusing on integrating independently optimized specialists while keeping consolidation efficient.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+We study post-training for dynamically routed mixture-of-experts (MoE) models, focusing on integrating independently optimized specialists while keeping consolidation efficient. Our approach combines calibrated multi-teacher on-policy distillation (C-MOPD), which matches each selected teacher on a local Top-$K$ support with teacher-wise loss normalization and clipping, with an execution path that uses post-capacity bounded-width dispatch, final-route replay, and asynchronous rollout--training overlap. On Turing-20B-A2B, the selected model achieves a four-domain normalized integration score of 0.9988 and retains at least 90.16\% of the measured specialist gain in every domain. At matched $K=32$, the full calibration objective scores 0.9962, compared with 0.9724 without calibration and 0.9834 without clipping. At a matched 8K response cap, the model exceeds both shared SFT and Qwen3-8B on all four reasoning-enabled mathematics and code benchmarks (unweighted mean: 85.92, versus 80.33 for Qwen3-8B and 74.21 for SFT), and improves over SFT on ten of twelve broader evaluation metrics. In a PPU-based profile, the combined execution configuration reduces consolidation step time from 398.7 to 139.3 seconds, an observed 2.86$\times$ speedup over serial execution. These results demonstrate strong specialist integration alongside more efficient consolidation, while reflecting the complete training and execution framework rather than any single component.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 16 |
+| novelty | 5 |
+| rigor | 9 |
+| practical impact | 7 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: distillation
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Yue He, Jiahui Hu, Shaman Tang, Hua Zhou, Qiman Wu, Menglin Li, Yizhao Wang, Yuheng Zhang, Da Zhu, Zhou Wang, Anhua Liu, Hanlin Chen, Mingyuan Wang, Rui Xin, Yuhua Wei, Shuang Su, Siqi Liu, Kai Yang, Weichao Huang, Hang Zhang, Honggou Yang, Xianming Liu
+- 发布：2026-11-02；更新：2026-11-02
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **41** 篇。
+累计收录 **42** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Migrating a Legacy Scientific Application with an AI Coding Agent: NICAM from Fortran to Kokkos](../../papers/arxiv-2610.41313/) | 2026-11-02 | 42 |
 | [Less is more: learning what to profile for GPU kernel optimization](../../papers/arxiv-2610.36576/) | 2026-10-28 | 52 |
 | [God Does Not Play Dice: Enforcing Batch Invariance in Agentic Kernel Generation](../../papers/arxiv-2610.36623/) | 2026-10-28 | 48 |
 | [PipeLink: Contract-Guided Linking of GPU Kernel Components](../../papers/arxiv-2610.37200/) | 2026-10-28 | 38 |

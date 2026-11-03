@@ -39,7 +39,7 @@ U-Net inference for brain-tumor segmentation requires billions of multiply-accum
 ## 元数据
 
 - 作者：Yousef Sadegheih, Dorit Merhof, Muhammad Usman
-- 发布：2026-10-09；更新：2026-10-09
+- 发布：2026-10-09；更新：2026-11-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

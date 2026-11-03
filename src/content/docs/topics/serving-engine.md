@@ -5,10 +5,13 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **108** 篇。
+累计收录 **111** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HiState: Hierarchical Prefix Cache Management for Hybrid LLM Serving in Agentic Workloads](../../papers/arxiv-2610.41508/) | 2026-11-02 | 54 |
+| [Flide: Accelerating Decision Inference with Exact State Forking](../../papers/arxiv-2610.42148/) | 2026-11-02 | 46 |
+| [AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving](../../papers/arxiv-2604.26103/) | 2026-11-02 | 46 |
 | [Request-Adaptive Execution for Efficient Hybrid LLM Inference](../../papers/arxiv-2610.37432/) | 2026-10-28 | 49 |
 | [From Generation to Scoring: Scaling LLM-Based Semantic Labeling at LinkedIn](../../papers/arxiv-2610.36383/) | 2026-10-28 | 39 |
 | [DualPace: Decoupled Scheduling and Cooperative GPU--CPU Decoding for LLM Serving](../../papers/arxiv-2610.33501/) | 2026-10-27 | 47 |

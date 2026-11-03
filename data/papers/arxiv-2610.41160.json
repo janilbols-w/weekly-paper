@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.41160",
+  "title": "ARK: Avoiding Routing Collisions for KV Cache Transfer in Disaggregated LLM Inference",
+  "abstract": "Disaggregated LLM inference separates the prefill and decode phases across GPU pools, generating massive KV-cache transfers. Because these transfers last hundreds of milliseconds to seconds, they behave as mega elephant flows that dominate link bandwidth utilization. In this regime, stateless ECMP can perform poorly: hash collisions may overload one spine link while leaving others idle, stretching transfer times by seconds. Yet this same persistence makes coordination practical. Since these flows are long-lived, even lightweight one-to-all coordination can be amortized over their lifetime. We present ARK, a distributed elephant-flow path reservation mechanism. ARK coordinates senders to choose source ports whose hashes map concurrent flows onto distinct spines, without requiring switch changes or receiver-side packet reordering. Packet-level RDMA simulations show that ARK reduces mean and P95 FCT by up to 27.3% and 34.0% under moderate load, and further reduces mean TTFT by up to 12.9%.",
+  "url": "https://arxiv.org/abs/2610.41160",
+  "pdf_url": "https://arxiv.org/pdf/2610.41160",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Hung-Chun Lin",
+    "Ting-Wei Hsu",
+    "Chung-En Ho",
+    "Ahmed Saeed"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC",
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Disaggregated LLM inference separates the prefill and decode phases across GPU pools, generating massive KV-cache transfers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.41160",
+      "url": "https://arxiv.org/abs/2610.41160"
+    }
+  ]
+}

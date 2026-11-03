@@ -5,10 +5,13 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **362** 篇。
+累计收录 **365** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Trainable Vector Quantization for Large Language Models](../../papers/arxiv-2610.41822/) | 2026-11-02 | 46 |
+| [SACQ: Structure-Aware Codebook Quantization for Ultra-Low-Bit Vision-Language-Action Models](../../papers/arxiv-2610.41408/) | 2026-11-02 | 46 |
+| [CLIC: Closed-Loop Intent Consistency for Securing LLM-Driven Control in Open RAN](../../papers/arxiv-2610.40744/) | 2026-11-02 | 43 |
 | [Let the Gate Decide: Per-Lookup Precision for Quantized Conditional Memory in LLMs](../../papers/arxiv-2610.35985/) | 2026-10-28 | 50 |
 | [Efficient Quantization Training with Stochastic Rounding via Structured Subspace Randomness](../../papers/arxiv-2610.36587/) | 2026-10-28 | 50 |
 | [CoS-VQ: Coordinated Shared-Scale Vector Quantization for Large Language Models](../../papers/arxiv-2610.37336/) | 2026-10-28 | 50 |

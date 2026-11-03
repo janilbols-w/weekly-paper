@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2606.15716",
+  "title": "How to Score Experts for One-Shot MoE Expert Pruning: A Systematic Formulation and Selection Principle",
+  "abstract": "Mixture-of-Experts (MoE) language models reduce per-token computation through sparse expert activation, yet deployment still requires storing the full expert pool, making one-shot expert pruning a practical approach for reducing memory usage. Although effective, existing criteria are largely heuristic, and no single criterion is universally optimal. Thus, establishing a principle for selecting pruning criteria suited to different deployment objectives remains an important yet largely underexplored problem in one-shot expert pruning. To this end, we introduce a systematic formulation for one-shot MoE expert pruning organized around three factors: routing frequency, gate weighting, and activation strength. The formulation yields a criteria selection principle: task-agnostic pruning should favor routed-token-averaged, gate-free activation-based criteria, whereas task-specific pruning can benefit from retaining routing-frequency and gate-weight information. Beyond this principle, the formulation also provides a systematic view of existing heuristic criteria and gives rise to two new task-agnostic criteria, Mean Activation Norm (MAN) and Mean Squared Activation Norm (MSAN). Across four representative MoE models and 16 diverse benchmarks, MAN and MSAN are consistently strong in the task-agnostic setting, obtain the top-two average ranks, and improve average performance by 4.0 points on average and up to 8.8 points over the strongest baseline.",
+  "url": "https://arxiv.org/abs/2606.15716",
+  "pdf_url": "https://arxiv.org/pdf/2606.15716",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Zongfang Liu",
+    "Jinghui Zhang",
+    "Zijian Ma",
+    "Guangyi Chen",
+    "Xin Yuan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Mixture-of-Experts (MoE) language models reduce per-token computation through sparse expert activation, yet deployment still requires storing the full expert pool, making one-shot expert pruning a practical approach for reducing memory usage.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.15716",
+      "url": "https://arxiv.org/abs/2606.15716"
+    }
+  ]
+}

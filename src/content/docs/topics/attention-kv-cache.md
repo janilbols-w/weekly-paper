@@ -5,10 +5,15 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **235** 篇。
+累计收录 **240** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Kernel-based Interpolatory Methods for Context Compression of Attention Mechanisms](../../papers/arxiv-2610.40943/) | 2026-11-02 | 43 |
+| [Where KV-Cache Error Lives in Looped Language Models: A Diagnostic Study of Ouro and Huginn](../../papers/arxiv-2610.41825/) | 2026-11-02 | 41 |
+| [KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise](../../papers/arxiv-2610.41480/) | 2026-11-02 | 40 |
+| [ARK: Avoiding Routing Collisions for KV Cache Transfer in Disaggregated LLM Inference](../../papers/arxiv-2610.41160/) | 2026-11-02 | 40 |
+| [Subquadratic Attention with a Hierarchical Tree-Structured Indexer](../../papers/arxiv-2610.42112/) | 2026-11-02 | 38 |
 | [DCKV: Learned Transform Coding of the Prompt KV Cache in Hybrid Language Models](../../papers/arxiv-2610.36950/) | 2026-10-28 | 44 |
 | [ZipFusion: Fusing Lossless KV Decompression with Attention for Efficient LLM Decoding](../../papers/arxiv-2610.33719/) | 2026-10-27 | 45 |
 | [MCF: A Memory- and Communication-Aware Co-Designed Framework for Long-Context LLM Inference](../../papers/arxiv-2610.34731/) | 2026-10-27 | 44 |

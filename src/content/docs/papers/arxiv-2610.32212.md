@@ -39,7 +39,7 @@ Large Language Models (LLMs) have gained widespread adoption in various natural 
 ## 元数据
 
 - 作者：Jiawei Dong, Zilong Bai, Pengtian zhu, Peng Zhou
-- 发布：2026-10-26；更新：2026-10-26
+- 发布：2026-10-26；更新：2026-11-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/patsnap/SOPO](https://github.com/patsnap/SOPO)
 - 阅读深度：metadata

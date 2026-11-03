@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.40744",
+  "title": "CLIC: Closed-Loop Intent Consistency for Securing LLM-Driven Control in Open RAN",
+  "abstract": "With the progressive capabilities of large language models (LLMs), researchers are finding ways to integrate them into the control loops of Open Radio Access Network (O-RAN) to enable slicing and resource management through user intents. However, integration of LLMs in the O-RAN control loop via the RAN Intelligent Controller (RIC) makes the system vulnerable to \\textit{runtime prompt injection threats}, which manipulate control decisions without violating interface authentication, and \\textit{residual virtual prompt injection (VPI)} attacks that plant trigger mechanisms to silently steer the behaviour during fine-tuning. Existing studies address only the runtime threat and do not enforce consistency across the full control path, i.e. from the certified A1 intent, through the multi-step LLM trajectory, to the final E2 action. We propose a closed-loop intent-consistency layer (CLIC) that jointly mitigates both threats. The proposed CLIC defines a formal consistency score using a small quantized language model, which is deployed as a Non-RT rApp for model-integrity certification along with a Near-RT xApp for runtime enforcement. We implement CLIC on the OpenAI Cellular (OAIC) platform and evaluate it under domain-adapted JailbreakBench, AdvBench, and VPI workloads. The experimental results show that the proposed CLIC reduces the attack success rate from 0.92 to 0.29 and residual VPI attacks from 0.37 to 0.04, while improving isolation and fairness at slightly higher latency costs, i.e. approximately 27 ms.",
+  "url": "https://arxiv.org/abs/2610.40744",
+  "pdf_url": "https://arxiv.org/pdf/2610.40744",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Sunder Ali Khowaja",
+    "Kapal Dev",
+    "Joongheon Kim",
+    "Angelos Antonopoulos",
+    "Nikolaos Bartzoudis"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "With the progressive capabilities of large language models (LLMs), researchers are finding ways to integrate them into the control loops of Open Radio Access Network (O-RAN) to enable slicing and resource management through user intents.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.40744",
+      "url": "https://arxiv.org/abs/2610.40744"
+    }
+  ]
+}

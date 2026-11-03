@@ -5,10 +5,11 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **57** 篇。
+累计收录 **58** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HippocamFLEX: FPGA Prototyping of Hippocampus-Inspired Architecture for Context-Aware Sequence Prediction](../../papers/arxiv-2610.40932/) | 2026-11-02 | 38 |
 | [FADiff: Fusion-Aware Differentiable Optimization for DNN Scheduling on Tensor Accelerators](../../papers/arxiv-2511.22348/) | 2026-10-27 | 43 |
 | [Toward Open ISA Supercomputing: A Comparative Study of RISC-V, Arm, and x86 Architectures on HPC Workloads](../../papers/arxiv-2610.32632/) | 2026-10-26 | 49 |
 | [Efficient Omni-modal Large Language Model Inference via Per-Query Modality Selection](../../papers/arxiv-2610.31768/) | 2026-10-26 | 38 |

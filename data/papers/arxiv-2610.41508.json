@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2610.41508",
+  "title": "HiState: Hierarchical Prefix Cache Management for Hybrid LLM Serving in Agentic Workloads",
+  "abstract": "Hybrid large language models combine full-attention and recurrent linear layers to reduce inference costs. Prefix caching can further reduce redundant computation across requests, but a recurrent checkpoint cannot recover an earlier state corresponding to a shorter prefix. Existing hybrid prefix caching systems retain checkpoints at selected boundaries to support common reuse patterns in conventional conversations. However, agent workloads modify and revisit earlier contexts, exposing reusable prefixes whose checkpoints were never saved or have already been evicted. A straightforward approach is to retain more checkpoints to reduce recomputation, but their cumulative footprint can displace reusable prefixes from other sessions and cause additional cache misses. To address these problems, we present HiState, a prefix cache management system for hybrid models serving agent workloads. Our key observation is that prefix reuse accesses all matching key-value (KV) entries but only one recurrent checkpoint, regardless of how many checkpoints are retained. This asymmetry allows HiState to retain historical checkpoints on SSD while prioritizing fast memory for KV entries: each hit retrieves only one checkpoint whose size is independent of context length. Within this hierarchy, we propose adaptive interval control to balance checkpoint storage against recomputation, and unified eviction to coordinate checkpoint sparsification with reclamation of stale trajectories. We implement HiState on top of vLLM and evaluate it on two public coding-agent trace datasets and controlled microbenchmarks. On real agent traces, HiState achieves up to 5.73x and 5.44x speedups in p99 TTFT over vLLM-Marconi and SGLang-HiCache, respectively.",
+  "url": "https://arxiv.org/abs/2610.41508",
+  "pdf_url": "https://arxiv.org/pdf/2610.41508",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Zaifeng Pan",
+    "Lucas Wang",
+    "Xinwei Qiang",
+    "Yanbo Zhou",
+    "Chang Chen",
+    "Zhengding Hu",
+    "Yue Guan",
+    "Yufei Ding"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 54,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Hybrid large language models combine full-attention and recurrent linear layers to reduce inference costs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [
+    "2026-W45"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.41508",
+      "url": "https://arxiv.org/abs/2610.41508"
+    }
+  ]
+}

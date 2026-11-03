@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2610.41822",
+  "title": "Trainable Vector Quantization for Large Language Models",
+  "abstract": "Vector Quantization (VQ) is a rapidly evolving technique for compressing Large Language Model (LLM) weights, reducing memory usage, and speeding up inference. However, extreme compression deteriorates model performance, which is challenging to recover due to the discrete nature of VQ parameters. Existing methods employ training-free approaches that are limited to layer-wise reconstruction loss minimization. To address this limitation, we propose TVQ, a novel method that leverages straight-through estimation to enable gradient descent-based optimization of vector-quantized LLMs. By reformulating VQ LLM optimization with trainable latent weights, TVQ enables arbitrary objective minimization. We constitute our approach by applying TVQ in a block-wise knowledge distillation paradigm, which balances quality and training efficiency, and propose several practical solutions to accelerate training. In experiments on modern LLMs, we demonstrate that TVQ is compatible with modern VQ schemes. As a result, TVQ achieves state-of-the-art quality in low-bit post-training quantization settings with a modest training budget and straightforward PyTorch implementation. For instance, TVQ achieves near-lossless 2-bit quantization for LLaMA2-70B with only 1% accuracy drop on popular Question-Answering benchmarks.",
+  "url": "https://arxiv.org/abs/2610.41822",
+  "pdf_url": "https://arxiv.org/pdf/2610.41822",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "authors": [
+    "Anastasiia Prutianova",
+    "Alina Bogdanova",
+    "Mikhail Shutov",
+    "Dmitrii Poimanov",
+    "Anatoly Gorkov",
+    "Ilia Zharikov"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Vector Quantization (VQ) is a rapidly evolving technique for compressing Large Language Model (LLM) weights, reducing memory usage, and speeding up inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-03T04:35:51+00:00",
+  "featured_weeks": [
+    "2026-W45"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.41822",
+      "url": "https://arxiv.org/abs/2610.41822"
+    }
+  ]
+}

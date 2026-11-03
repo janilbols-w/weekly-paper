@@ -5,10 +5,19 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **701** 篇。
+累计收录 **710** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AIMER: Calibration-Free Task-Agnostic MoE Expert Pruning](../../papers/arxiv-2603.18492/) | 2026-11-02 | 45 |
+| [CAMEL: Cross-Architecture Masked Embedding Learning for Ultra-Lightweight Retinal Foundation Models](../../papers/arxiv-2610.40954/) | 2026-11-02 | 44 |
+| [How to Score Experts for One-Shot MoE Expert Pruning: A Systematic Formulation and Selection Principle](../../papers/arxiv-2606.15716/) | 2026-11-02 | 43 |
+| [Turing LLM Post-Training: Calibrated Distillation and Efficient Dynamic-MoE Execution](../../papers/arxiv-2610.39876/) | 2026-11-02 | 42 |
+| [DecisionRank: On-Policy Distillation for Decision-Model Rerankers](../../papers/arxiv-2610.42128/) | 2026-11-02 | 42 |
+| [Fewer Heads, Fewer Memories: Pruning Redundant Attention Heads Suppresses Verbatim Memorisation](../../papers/arxiv-2610.40974/) | 2026-11-02 | 41 |
+| [Ctrl-G: Controlling Structural and Interaction Exposure in Knowledge Graph Augmented LLM Reasoning](../../papers/arxiv-2601.08739/) | 2026-11-02 | 40 |
+| [MUON-RT Reusing the Teacher's Trajectory for Momentum-Free Muon for LLM Self-Distillation](../../papers/arxiv-2610.41104/) | 2026-11-02 | 39 |
+| [ElTab: Elastically Looped Tabular Transformers](../../papers/arxiv-2610.41819/) | 2026-11-02 | 39 |
 | [INTRA: Interleaved Non-contiguous Token spaRse Attention](../../papers/arxiv-2610.34056/) | 2026-10-28 | 48 |
 | [Pruning via Causal Attribution Preserves Reasoning Performance in Large Language Models](../../papers/arxiv-2606.19350/) | 2026-10-28 | 45 |
 | [SLICE-CiM: Selective Layer-wise Inference Control Engine with Confidence-Based Early Exit for SRAM based Digital Compute-in-Memory](../../papers/arxiv-2610.37601/) | 2026-10-28 | 43 |

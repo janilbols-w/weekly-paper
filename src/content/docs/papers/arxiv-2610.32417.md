@@ -39,7 +39,7 @@ Quantization reduces the memory and energy needed to serve large language models
 ## 元数据
 
 - 作者：Stephen Abkin, Aldric Yang, Alex Flesher, Nitheesh Kodarapu, Deepak Panigrahy, Aakash Tyagi, David Kebo Houngninou
-- 发布：2026-10-26；更新：2026-10-27
+- 发布：2026-10-26；更新：2026-11-02
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **129** 篇。
+累计收录 **130** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RecIS: Unifying Sparse and Dense Computation for Efficient Recommendation Training](../../papers/arxiv-2610.41457/) | 2026-11-02 | 45 |
 | [Beyond Update Counts: A Control Map for Evaluating Test-Time Model Updates](../../papers/arxiv-2610.36109/) | 2026-10-28 | 44 |
 | [DuplexTune: Coupled-State Replay for Memory-Efficient Mixture-of-Experts Adaptation](../../papers/arxiv-2610.36009/) | 2026-10-28 | 40 |
 | [Satellite Intelligence: Distributed Training, Collaborative Inference,and LLM Adaptation in LEO Constellation](../../papers/arxiv-2610.35282/) | 2026-10-27 | 39 |
