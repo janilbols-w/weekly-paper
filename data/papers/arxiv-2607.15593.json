@@ -1,0 +1,97 @@
+{
+  "id": "arxiv:2607.15593",
+  "title": "Scaling LLM Agent Tool Access: The MCP Gateway",
+  "abstract": "LLM agents increasingly rely on tool calling to complete tasks. Model Context Protocol (MCP) standardizes tool calling between LLM agents and tool providers. It reduces integration cost and drives rapid growth in tool scale. In production deployments, tool access becomes difficult to scale. On the tool provider side, legacy services are not directly callable through MCP; the rapid protocol development creates ongoing compatibility cost. On the agent side, the number of mounted tools is limited by the LLM context window and inference overhead; mounting a large tool set increases token usage and inference latency and can reduce task success rate. Moreover, for stateful MCP backends with multiple replicas, preserving session affinity increases client-side complexity. We present a cloud-scale MCP Gateway system. It breaks the direct-connect model on the data plane and offloads legacy service integration, consolidating incompatible MCP variants, access control, tool recommendation, and session-aware routing at the gateway. The conversion module supports 315 OpenAPI services in the cloud and integrates MCP transport variants. Session-aware routing decouples the scalability of the gateway layer and the MCP service layer. The hybrid retrieval engine sustains $\\sim$98\\% Top-15 recall; it scales agent tool access to 3{,}000+ tools with improved tool selection accuracy. We also share the lessons learned from deploying the gateway system in production.",
+  "url": "https://arxiv.org/abs/2607.15593",
+  "pdf_url": "https://arxiv.org/pdf/2607.15593",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Mingxin Li",
+    "Enge Song",
+    "Yueshang Zuo",
+    "Xiaodong Liu",
+    "Rong Wen",
+    "Qiang Fu",
+    "Gianni Antichi",
+    "Jian He",
+    "Jing Tie",
+    "Zhou Shao",
+    "Xiaobo Xue",
+    "Xiong Xiao",
+    "Luyao Zhong",
+    "Shaokai Zhang",
+    "Jiangu Zhao",
+    "Jianyuan Lu",
+    "Shize Zhang",
+    "Xiaoqing Sun",
+    "Changgang Zheng",
+    "Zihao Fan",
+    "Haonan Li",
+    "Tian Pan",
+    "Xiaomin Wu",
+    "Yang Song",
+    "Xing Li",
+    "Biao Lyu",
+    "Meng Li",
+    "Haipeng Dai",
+    "Guihai Chen",
+    "Shunmin Zhu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC",
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "storage-data-plane",
+    "leaf": "Storage & Data Plane",
+    "leaf_zh": "存储与数据平面"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "data plane"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: data plane",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM agents increasingly rely on tool calling to complete tasks.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.15593",
+      "url": "https://arxiv.org/abs/2607.15593"
+    }
+  ]
+}

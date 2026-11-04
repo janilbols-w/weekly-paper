@@ -39,7 +39,7 @@ Speculative decoding significantly accelerates autoregressive text generation in
 ## 元数据
 
 - 作者：Shahriar Kabir Nahin, Xiao Ye, Muhao Chen, Ben Zhou, Anshuman Chhabra
-- 发布：2026-10-27；更新：2026-10-27
+- 发布：2026-10-27；更新：2026-11-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

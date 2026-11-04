@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2611.00086",
+  "title": "SCRAMJet: An Ultra Low Latency JetClass-Scale Transformer for the HL-LHC Level-1 Trigger",
+  "abstract": "Level-1 Triggers at the LHC classify collisions within a few microseconds on FPGAs, where a network is a fully unrolled circuit whose cost is area rather than time. We present SCRAMJet, a transformer encoder that replaces multi-head attention with a low-rank projection, trains under per-parameter learned fixed-point quantization, and compiles to Verilog with distributed arithmetic optimization. On the ten-class JetClass dataset it reaches $71.4 \\pm 0.6\\%$ accuracy with 0.157M multiply-accumulates, 6.1 accuracy points above the strongest published resource-constrained model at an eighth of the operations, and meets timing on a Virtex UltraScale+ VU13P at 147 ns using 25.7% of the logic. We also show that resource-aware training silently removes attention channels: one whose learned bit-width reaches zero still carries signal during training but is absent from the compiled circuit, so the loss never sees it go. We call these virtual channels, and a floor on the attention datalane that prevents them is worth 3.1 accuracy points at matched budget. Code and trained checkpoints are available at https://github.com/Aaddy-1/hgq-jetformer.",
+  "url": "https://arxiv.org/abs/2611.00086",
+  "pdf_url": "https://arxiv.org/pdf/2611.00086",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Aadeesh Sharma",
+    "Chang Sun",
+    "Lauri Laatu",
+    "Arianna Cox",
+    "Benedikt Maier",
+    "Alexander Tapper",
+    "Maria Spiropulu",
+    "Wayne Luk",
+    "Zhiqiang Que"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/Aaddy-1/hgq-jetformer",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Level-1 Triggers at the LHC classify collisions within a few microseconds on FPGAs, where a network is a fully unrolled circuit whose cost is area rather than time.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.00086",
+      "url": "https://arxiv.org/abs/2611.00086"
+    }
+  ]
+}

@@ -5,10 +5,26 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **710** 篇。
+累计收录 **726** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SparseForge: Beyond Spike Sparsity toward Hardware-Exploitable Neuron Pruning for Efficient SNN Acceleration](../../papers/arxiv-2611.01611/) | 2026-11-03 | 57 |
+| [From Lookups to Lessons: Turning Retrieved Knowledge into Parametric Memory](../../papers/arxiv-2611.00450/) | 2026-11-03 | 46 |
+| [RadPose: ISAC-based RF 3D Human Pose Estimation](../../papers/arxiv-2611.01400/) | 2026-11-03 | 43 |
+| [It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs](../../papers/arxiv-2605.20258/) | 2026-11-03 | 43 |
+| [Bernoulli On-Policy Distillation: Don't Ignore High-Confidence Student Tokens](../../papers/arxiv-2611.02093/) | 2026-11-03 | 42 |
+| [Step-dLLM: Adaptive Step-aware Sparse Attention for Efficient Diffusion LLM Inference](../../papers/arxiv-2611.01320/) | 2026-11-03 | 41 |
+| [Output-Aware Block Influence: Jacobian-Lens Weighting for Depth Pruning](../../papers/arxiv-2611.00015/) | 2026-11-03 | 41 |
+| [Enhancing Language Model Reasoning with Structured Multi-Level Modeling](../../papers/arxiv-2611.00616/) | 2026-11-03 | 41 |
+| [Beyond MACs: Deployment-Constrained Design Space Exploration for Tensorized Neural Networks](../../papers/arxiv-2511.17971/) | 2026-11-03 | 41 |
+| [Rethinking LLM Pruning via Test-Time Scaling](../../papers/arxiv-2611.01133/) | 2026-11-03 | 40 |
+| [Efficient Reconfigurable Architectures for Deep Learning](../../papers/arxiv-2611.00487/) | 2026-11-03 | 40 |
+| [Unlearning by Extrapolating a Shrink-and-Heal Lookahead](../../papers/arxiv-2611.00374/) | 2026-11-03 | 39 |
+| [Replay for LLM Continual Learning with Multi-Teacher On-Policy Distillation](../../papers/arxiv-2611.02746/) | 2026-11-03 | 39 |
+| [Online Label-Free Gradient Matching for Continual Language Model Training](../../papers/arxiv-2611.03496/) | 2026-11-03 | 39 |
+| [ParaDeAl: Parallel Descent Algorithms for Sparse Statistics](../../papers/arxiv-2611.03529/) | 2026-11-03 | 38 |
+| [MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents](../../papers/arxiv-2611.01778/) | 2026-11-03 | 38 |
 | [AIMER: Calibration-Free Task-Agnostic MoE Expert Pruning](../../papers/arxiv-2603.18492/) | 2026-11-02 | 45 |
 | [CAMEL: Cross-Architecture Masked Embedding Learning for Ultra-Lightweight Retinal Foundation Models](../../papers/arxiv-2610.40954/) | 2026-11-02 | 44 |
 | [How to Score Experts for One-Shot MoE Expert Pruning: A Systematic Formulation and Selection Principle](../../papers/arxiv-2606.15716/) | 2026-11-02 | 43 |

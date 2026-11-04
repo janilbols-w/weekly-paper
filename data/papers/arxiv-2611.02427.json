@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.02427",
+  "title": "Architecture-Aware Mixed Precision for Replica-Exchange Training of Geometry-Aware Neural Operators with Uncertainty Quantification",
+  "abstract": "Geometry-aware neural operators face substantial computational and memory demands when learning across complex physical domains. We introduce Architecture-Aware Mixed Precision (AA-MP), a replica-exchange training strategy that allocates numerical precision according to replica roles and architecture-specific operations. By retaining FP32 for refinement while selectively employing BF16 for exploration, AA-MP preserves predictive accuracy while improving training efficiency. Across fluid dynamics and three-dimensional structural mechanics benchmarks, AA-MP achieves comparable accuracy to full-precision training over an ensemble of runs, while reducing hot-replica peak GPU memory by 46.9% and training time by up to 25.8%. It also outperforms naive Automatic Mixed Precision (AMP) in memory efficiency and computational cost, with increasing memory advantages at larger model and geometry scales. Ablation studies show that retaining FP32 in the cold-replica is important for predictive accuracy, while additional FP32 operations in the exploratory replica provide limited benefits relative to their computational cost. Finally, conformal prediction for uncertainty calibration shows that AA-MP achieves near-nominal coverage with narrower prediction intervals than the alternatives. These results advance the scalability of geometry-aware scientific machine learning by reducing computational costs without compromising predictive accuracy or uncertainty quantification.",
+  "url": "https://arxiv.org/abs/2611.02427",
+  "pdf_url": "https://arxiv.org/pdf/2611.02427",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Ujin Jeon",
+    "Michael Penwarden",
+    "Wenqian Chen",
+    "Guang Lin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "mixed precision"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: mixed precision",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Geometry-aware neural operators face substantial computational and memory demands when learning across complex physical domains.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.02427",
+      "url": "https://arxiv.org/abs/2611.02427"
+    }
+  ]
+}

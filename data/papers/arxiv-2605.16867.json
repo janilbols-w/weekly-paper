@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2605.16867",
+  "title": "GoodServe: Globally-coordinated Routing of Agentic LLM Inferences for High Goodput",
+  "abstract": "Agentic applications consume LLM inferences as complete outputs: a code patch or database query is useful only after its last token arrives. Their performance is thus measured by end-to-end deadline satisfaction and goodput, the number of inferences completed within their deadlines. In heterogeneous GPU pools, existing greedy routers favor the fastest or least-loaded instance, often wasting powerful GPUs on requests that could meet their deadlines on weaker ones. Maximizing goodput instead requires globally coordinated routing, informed by uncertain output lengths and dynamic instance performance. We present GoodServe, a goodput-oriented routing system that addresses these challenges through a predict-and-rectify design. A task-gated mixture-of-experts predictor estimates request output lengths, while an EMA-smoothed black-box estimator tracks queuing delays and per-token speeds, accounting for prefix-cache reuse. A just-enough policy routes each request to the weakest instance capable of meeting its deadline and rejects requests that cannot finish on time. Periodic risk checks trigger migration of endangered requests using token IDs, at 7-15 times lower cost than KV-cache transfer. On a four-GPU heterogeneous testbed with three agentic benchmarks, GoodServe achieves the highest goodput across all evaluated SLO levels, improving over the best existing router by up to 31.0%. Its routing overhead remains 5 ms per request at 10,000 requests per second across 512 simulated instances.",
+  "url": "https://arxiv.org/abs/2605.16867",
+  "pdf_url": "https://arxiv.org/pdf/2605.16867",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Boxiao Du",
+    "Boning Huangfu",
+    "Yizhou Luo",
+    "Chen Chen",
+    "Zijun Li",
+    "Minchen Yu",
+    "Xiaoyi Fan",
+    "Minyi Guo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Agentic applications consume LLM inferences as complete outputs: a code patch or database query is useful only after its last token arrives.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.16867",
+      "url": "https://arxiv.org/abs/2605.16867"
+    }
+  ]
+}

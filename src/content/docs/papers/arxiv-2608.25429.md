@@ -39,7 +39,7 @@ Machine unlearning aims to make a model forget specific data, yet unlearned LLMs
 ## 元数据
 
 - 作者：Yi Chen, Hanna Hsieh, Shuhong Liu, Chuanbo Hua, Zihan Ma, Kun Wang, Joo-Young Kim
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-27；更新：2026-11-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Yi1-Chen/FRAG](https://github.com/Yi1-Chen/FRAG)
 - 阅读深度：metadata

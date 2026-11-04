@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2611.00669",
+  "title": "FPGA Acceleration of CNN-BiLSTM for EEG-Based Sleep Staging Featuring FFT-Based Non-Unit Stride Fast Convolution",
+  "abstract": "Deep learning (DL) models for real-time wearable sleep staging often rely on long-kernel temporal convolutions, a requirement that current accelerators struggle to support efficiently. To overcome this, we present an FPGA-based CNN-BiLSTM accelerator that incorporates several algorithm-hardware co-design techniques to enable efficient edge inference. Central to this design is an FFT-based non-unit stride fast convolution, which performs accumulation in the frequency domain to enable a single IFFT per block, reducing post-processing complexity to $O(N\\log N)$. On the target long-kernel convolution layer, this yields a 20.5$\\times$ reduction in arithmetic operations. Power-of-two quantization is applied across the pipeline, including FFT-based convolution and BiLSTM activations, with an average accuracy degradation of only 0.11% relative to the floating-point baseline across all subjects on the public MASS-SS3 dataset. Additional optimizations, including block convolution, depth-first execution, and hardware engine reuse minimize memory access and enhance resource utilization. The accelerator, implemented on a Xilinx Zynq-7000 FPGA, operates at 10 MHz and consumes 11 mW of dynamic power including data handling and configuration overhead from a microcontroller. The design achieves a DSP power efficiency of 0.91 GOPS/W/DSP using only 4 DSPs, demonstrating scalable and energy-efficient DL acceleration for sleep staging that can be extended to other wearable applications.",
+  "url": "https://arxiv.org/abs/2611.00669",
+  "pdf_url": "https://arxiv.org/pdf/2611.00669",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Aaron Zhou",
+    "Yaqian Xu",
+    "Chen Chen",
+    "James Yen",
+    "Weihang Zheng",
+    "Mark Zhao",
+    "Mingzhe Sun",
+    "Naize Yang",
+    "Andrew G. Richardson",
+    "Xilin Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator",
+    "edge inference"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator, edge inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Deep learning (DL) models for real-time wearable sleep staging often rely on long-kernel temporal convolutions, a requirement that current accelerators struggle to support efficiently.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.00669",
+      "url": "https://arxiv.org/abs/2611.00669"
+    }
+  ]
+}

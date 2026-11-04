@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2611.01611",
+  "title": "SparseForge: Beyond Spike Sparsity toward Hardware-Exploitable Neuron Pruning for Efficient SNN Acceleration",
+  "abstract": "Spiking Neural Networks (SNNs) provide an event-driven paradigm for energy-efficient edge computing. However, operation-level sparsity in SNNs does not necessarily eliminate the hardware costs associated with redundant output neurons, including neuron-state maintenance, partial-sum (psum) accesses, and on-chip storage requirements. This paper presents SparseForge, a hardware-aware sparse SNN acceleration framework that jointly optimizes neuron pruning, sparse dataflow, and accelerator microarchitecture. At the algorithm level, we introduce a gated leaky integrate-and-fire (G-LIF) neuron to learn differentiable neuron masks with binary spike semantics. A dual regularization scheme is further developed to align pruning with both synaptic-operation reduction and psum buffer capacity reduction. At the dataflow level, we design a sparse Column-Wise Product (CWP) dataflow with a variant of incremental spike encoding to improve weight-access regularity and reduce sparse-index overhead under dynamic spike activity. At the architecture level, we develop a mask-aware sparse processing unit (SPU) that supports compressed spike decoding, sparse implicit im2col conversion, neuron-mask-gated psum updates, and decoupled sparse execution. Experimental results across multiple SNN backbones and datasets show that SparseForge retains 1.75%--77.99% of neurons and 0.16%--62.36% of synaptic operations, with a configurable accuracy--efficiency trade-off. The buffer-capacity-aware regularization reduces the required psum buffer capacity by up to 96.18\\%. FPGA implementations on a Xilinx ZCU9EG achieve 296.94--619.49 GOPS/W across the evaluated workloads. Across matched network and dataset settings, SparseForge provides 1.24--4.17 higher FPS and 1.50--7.18 higher GOPS/W than representative FPGA-based SNN accelerators, while reducing EDP by 1.70--19.13, with benchmark-dependent accuracy--efficiency trade-offs.",
+  "url": "https://arxiv.org/abs/2611.01611",
+  "pdf_url": "https://arxiv.org/pdf/2611.01611",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Kainan Wang",
+    "Sanhe Fu",
+    "Aili Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [
+    "hardware-edge"
+  ],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 57,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 6,
+    "rigor": 15,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Spiking Neural Networks (SNNs) provide an event-driven paradigm for energy-efficient edge computing.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [
+    "2026-W45"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.01611",
+      "url": "https://arxiv.org/abs/2611.01611"
+    }
+  ]
+}

@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **131** 篇。
+累计收录 **134** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GearUp: DAG-aware Acceleration for Serverless Inference Serving via Slack-guided Pre-loading](../../papers/arxiv-2610.38196/) | 2026-11-03 | 43 |
+| [NORmal: Architecting 3D Ferroelectric NOR Flash as Main Memory -- From Co-Fabricated BEOL Arrays to 200B-Class Multi-Agent LLMs in a Smartphone](../../papers/arxiv-2610.40000/) | 2026-11-03 | 41 |
+| [OmniCast: Interaction-Aware Serving for Real-Time Omni-Modal LLMs](../../papers/arxiv-2606.22983/) | 2026-11-03 | 39 |
 | [SoK: Agentic Retrieval-Augmented Generation (RAG): Taxonomy, Architectures, Evaluation, and Research Directions](../../papers/arxiv-2603.07379/) | 2026-11-02 | 39 |
 | [COPE: Composable Performance Emulation for Mixture-of-Experts Offloading Policies](../../papers/arxiv-2610.33404/) | 2026-10-27 | 46 |
 | [FusionEval: Benchmarking Model Fusion for Large Language Models](../../papers/arxiv-2610.30162/) | 2026-10-23 | 50 |

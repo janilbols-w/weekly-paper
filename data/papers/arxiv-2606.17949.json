@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2606.17949",
+  "title": "RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving",
+  "abstract": "Current heterogeneous LLM serving clusters decouple request scheduling into two independent tiers: learned model routers select a model based on the prompt without visibility into instance-level load, while load balancers assign requests to an instance of that chosen model without cross-model quality or cost awareness. This decoupled hierarchy induces conflicting objectives and severely restricts the global optimization space. For example, a quality-oriented router may stubbornly direct 55% of requests to a 72B model regardless of growing queues, inflating mean latency by 2.4$\\times$ under high load. Conversely, a cost-minimizing router over-allocates traffic to the cheapest model, leaving capable instances underutilized and capping aggregate cluster throughput. This paper presents RouteBalance, a serving scheduler that unifies model routing and instance dispatching into a single decision. RouteBalance dynamically batches incoming requests into short, load-adaptive rounds. In each round, it amortizes quality and response-length estimation across candidate models, takes a single snapshot of all instance loads, and solves a normalized assignment problem balancing quality, cost, and estimated latency. On a 28-GPU heterogeneous cluster spanning four Qwen model sizes and diverse GPU architectures, RouteBalance Pareto-dominates 231 of 246 baseline configurations across quality, latency, and cost simultaneously. These baselines comprise combinations of two learned routers with four downstream dispatchers, as well as five standalone dispatchers. At iso-quality, per-rate median reductions across baselines are 23--60% in mean E2E latency and 26--37% in serving cost. Code: https://github.com/AKafakA/route-balance.",
+  "url": "https://arxiv.org/abs/2606.17949",
+  "pdf_url": "https://arxiv.org/pdf/2606.17949",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Wei Da",
+    "Evangelia Kalyvianaki"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/AKafakA/route-balance",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [
+    "serving-engine",
+    "batching-scheduling"
+  ],
+  "keyword_evidence": [
+    "load balancing",
+    "model routing"
+  ],
+  "score": 55,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: load balancing, model routing",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Current heterogeneous LLM serving clusters decouple request scheduling into two independent tiers: learned model routers select a model based on the prompt without visibility into instance-level load, while load balancers assign requests to an instance of that chosen model without cross-model quality or cost awareness.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [
+    "2026-W45"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.17949",
+      "url": "https://arxiv.org/abs/2606.17949"
+    }
+  ]
+}

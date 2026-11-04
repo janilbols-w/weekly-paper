@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2611.00040",
+  "title": "Real-Time Obstacle Detection and Distance Estimation on Smartphones for Visually Impaired and Distracted Pedestrians",
+  "abstract": "According to the World Health Organization, at least 2.2 billion people worldwide live with visual impairment, including tens of millions with severe vision loss. Traditional aids such as white canes or guide dogs remain costly, limited in capability, and inaccessible to many. At the same time, smartphone distraction in public spaces has been linked to elevated risks of collisions with vehicles, trips, and falls. These dual challenges motivate lightweight, smartphone-based solutions that combine accessibility with low latency. We present a Kotlin-based Android application that uses a YOLOv8 detector, retrained to recognize eighteen common urban obstacle classes, to deliver real-time obstacle alerts for both user groups. The detector was optimized with pruning, quantization, and early-exit branches, and deployed through the Android Neural Networks API (NNAPI), which can dispatch inference to GPU, NPU, or DSP accelerators when available. On a mid-range smartphone, these optimizations reduced average inference latency from about 3.2 s for the off-the-shelf YOLOv8n to 0.39-0.48 s; the recommended configuration (INT8 quantization with early exit) runs in 0.42-0.48 s while retaining a recall of 0.81. The application combines the optimized detector with ARCore-based or monocular focal-length distance estimation, so it works with a single smartphone camera and requires no LiDAR, depth camera, or other specialized sensor. Multimodal feedback, including Text-to-Speech guidance for visually impaired users and vibration alerts for distracted pedestrians, supports use across different contexts.",
+  "url": "https://arxiv.org/abs/2611.00040",
+  "pdf_url": "https://arxiv.org/pdf/2611.00040",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Abtin Zandi",
+    "Sarvin Nami",
+    "Roza Ganjipour",
+    "Bardia Sabagh Kermani",
+    "Amirreza Tarabkhah",
+    "Hamed Farbeh"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.PF",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int8",
+    "quantization"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int8, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "According to the World Health Organization, at least 2.2 billion people worldwide live with visual impairment, including tens of millions with severe vision loss.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.00040",
+      "url": "https://arxiv.org/abs/2611.00040"
+    }
+  ]
+}

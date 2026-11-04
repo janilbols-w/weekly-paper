@@ -5,10 +5,18 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **240** 篇。
+累计收录 **248** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Fairway: Load-Aware KV Cache Reuse for LLM Prefill Scheduling](../../papers/arxiv-2611.02082/) | 2026-11-03 | 46 |
+| [EntropyCache: Decoded Token Entropy Guided KV Caching for Diffusion Language Models](../../papers/arxiv-2603.18489/) | 2026-11-03 | 46 |
+| [MedPsy: State-of-the-Art Small Medical Language Models for Efficient Edge Deployment](../../papers/arxiv-2611.02011/) | 2026-11-03 | 45 |
+| [The SIMPLE Law for Energy Cost of LLM Inference](../../papers/arxiv-2611.03330/) | 2026-11-03 | 43 |
+| [Dual Dimensionality for Local and Global Attention](../../papers/arxiv-2606.18587/) | 2026-11-03 | 42 |
+| [DepthGraft: Structural Regularization through Hierarchical Cross-Layer KV Reconstruction](../../papers/arxiv-2611.03142/) | 2026-11-03 | 42 |
+| [GoodServe: Globally-coordinated Routing of Agentic LLM Inferences for High Goodput](../../papers/arxiv-2605.16867/) | 2026-11-03 | 41 |
+| [C3: Speech-Guided KV Retrieval for Long-Context SpeechLLM Inference](../../papers/arxiv-2611.00333/) | 2026-11-03 | 38 |
 | [Kernel-based Interpolatory Methods for Context Compression of Attention Mechanisms](../../papers/arxiv-2610.40943/) | 2026-11-02 | 43 |
 | [Where KV-Cache Error Lives in Looped Language Models: A Diagnostic Study of Ouro and Huginn](../../papers/arxiv-2610.41825/) | 2026-11-02 | 41 |
 | [KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise](../../papers/arxiv-2610.41480/) | 2026-11-02 | 40 |
@@ -235,8 +243,8 @@ description: "Attention & KV Cache"
 | [SPECTRA: Pushing the KV Cache Beyond the 2-Bit Cliff via Spectral Transform Coding](../../papers/arxiv-2608.07915/) | 2026-08-08 | 45 |
 | [Fractal KV-Cache Archives: Lossless Symbolic Storage with In-Place Retrieval for Long-Context LLM Inference](../../papers/arxiv-2607.07144/) | 2026-08-07 | 45 |
 | [NVLLM: A 3D NAND-Centric Architecture Enabling Edge on-Device LLM Inference](../../papers/arxiv-2604.25699/) | 2026-08-05 | 40 |
-| [HERALD: High-Throughput Block Diffusion LLM Serving via CPU-GPU Cooperative KV Cache Retrieval](../../papers/arxiv-2606.21633/) | 2026-08-04 | 46 |
 | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](../../papers/arxiv-2605.09877/) | 2026-08-04 | 44 |
+| [HERALD: High-Throughput Block Diffusion LLM Inference via CPU-GPU Cooperative KV Cache Retrieval](../../papers/arxiv-2606.21633/) | 2026-08-04 | 44 |
 | [RAP: KV-Cache Compression via RoPE-Aligned Pruning](../../papers/arxiv-2602.02599/) | 2026-08-04 | 43 |
 | [Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse](../../papers/arxiv-2608.03893/) | 2026-08-04 | 43 |
 | [Keyless Attention: Value-Space Routing and Value-Only Caching for Efficient Transformers](../../papers/arxiv-2606.21848/) | 2026-08-04 | 42 |

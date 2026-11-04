@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.00665",
+  "title": "Audit at the Precision You Deploy: Quantization Reshapes a Subliminally Learned Preference",
+  "abstract": "Subliminal learning allows AI models to inherit hidden preferences from seemingly unrelated training data, such as number sequences. Safety audits may evaluate models at standard 16-bit precision, while deployments may use compressed, quantized weights. We ask whether quantization changes the expression of a subliminal preference and what drives any resulting change. To investigate, we implant a \"favourite animal: panda\" preference into Qwen2.5-7B-Instruct. We define its net strength as the difference in mean panda-answer probability between subliminal models and neutrally trained controls under the same quantization setting. Applying this metric across different compression levels reveals a stark contrast. While behaviour remains stable at 8 bits, 4-bit quantization triggers severe, opposing shifts depending on the quantizer. Half-Quadratic Quantization (HQQ) amplifies the preference, raising the subliminally trained model's panda probability from roughly 55% at 16 bits to 64% at 4 bits, while the controls stay near 17%. This raises the trait's net strength ~1.3 times its 16-bit value. In contrast, NormalFloat (NF4) at 4-bit suppresses it, shrinking the net strength to just ~0.3 times its 16-bit value, despite producing rounding errors of the same size to within 4%. We examine the structure of the rounding errors and find that their arrangement drives the divergence. Randomly shuffling HQQ's errors within each quantization group, without changing their magnitude, shifts the trait's net strength between 0.2 and 1.6 times its 16-bit value. Despite these opposing shifts, the underlying fine-tuning signal remains largely intact. Because a model's internal state and outward behaviour diverge so unpredictably under compression, a 16-bit audit cannot reliably bound real-world risks. Safety evaluations must test the exact quantized weights intended for deployment.",
+  "url": "https://arxiv.org/abs/2611.00665",
+  "pdf_url": "https://arxiv.org/pdf/2611.00665",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Md Rayhanul Masud",
+    "Mst Suraiya Akter Shefa"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Subliminal learning allows AI models to inherit hidden preferences from seemingly unrelated training data, such as number sequences.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.00665",
+      "url": "https://arxiv.org/abs/2611.00665"
+    }
+  ]
+}

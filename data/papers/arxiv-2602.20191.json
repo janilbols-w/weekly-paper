@@ -1,0 +1,81 @@
+{
+  "id": "arxiv:2602.20191",
+  "title": "MoBiQuant: Mixture-of-Bits Quantization for Token-Adaptive Any-Precision LLM",
+  "abstract": "Dynamic runtime latency and memory constraints necessitate flexible large language model (LLM) deployment, where an LLM can be inferred with various quantization precisions based on available computational resources. Recent work on such any-precision quantization either relies on hardware-inefficient vector quantization or induces additional scaling factors when switching between bit-widths. Meanwhile, existing post-training quantization (PTQ) methods calibrated for a fixed low precision show poor generalizability under runtime precision change. In this work, we attribute the source of poor generalization across bit-widths to a precision-dependent outlier migration phenomenon where the distribution of PTQ-sensitive tokens changes across precisions. Motivated by this observation, we propose MoBiQuant, a novel any-precision Mixture-of-Bits quantization framework that adjusts weight precision for flexible LLM inference based on token sensitivity. Specifically, we propose a many-in-one recursive residual quantization that can iteratively reconstruct higher-precision weights at runtime and mitigates outlier migration with a token-aware router to dynamically select the optimal inference precision of each token.Extensive experiments show that MoBiQuant matches or surpasses frontier single-precision PTQ while exhibiting strong elasticity, achieving significant memory savings and throughput gains of up to $1.34\\times$ over state-of-the-art any-precision methods. Our code is available at https://github.com/SimWangArizona/MoBiQuant.",
+  "url": "https://arxiv.org/abs/2602.20191",
+  "pdf_url": "https://arxiv.org/pdf/2602.20191",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Dongwei Wang",
+    "Jinhee Kim",
+    "Seokho Han",
+    "Denis Gudovskiy",
+    "Yohei Nakata",
+    "Tomoyuki Okuno",
+    "KhayTze Peong",
+    "Kang Eun Jeon",
+    "Jong Hwan Ko",
+    "Yiran Chen",
+    "Huanrui Yang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/SimWangArizona/MoBiQuant",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "low precision",
+    "quantization"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: low precision, quantization",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Dynamic runtime latency and memory constraints necessitate flexible large language model (LLM) deployment, where an LLM can be inferred with various quantization precisions based on available computational resources.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [
+    "2026-W45"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.20191",
+      "url": "https://arxiv.org/abs/2602.20191"
+    }
+  ]
+}

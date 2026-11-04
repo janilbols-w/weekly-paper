@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2604.26039",
+  "title": "RaMP: Runtime-Aware Megakernel Polymorphism for Mixture-of-Experts",
+  "abstract": "LLM serving systems autotune their GPU kernels offline by timing candidate kernel configurations, like tile sizes, at a range of batch sizes. This works when the number of tokens determines a kernel's work, as in dense layers. However, we show that it does not hold for Mixture-of-Experts (MoE) layers where the router decides how the tokens are split across experts and GPUs. We find that the best kernel configuration depends on this split, and not only on the number of tokens--under expert parallelism, choosing the configuration for each GPU's actual token distribution is up to 1.45x faster than the existing choice. The split is not known until the router runs, so it cannot be looked up in advance. Hence, we introduce RaMP, which chooses the kernel configuration at run time from the routing split itself. RaMP compiles top configurations into one polymorphic kernel, and a small cost model on the GPU picks among them in a few microseconds. On serving traffic its cost model was never fit on, the configurations RaMP's cost model chooses from the kernel's full configuration space are up to 1.45x faster than those vLLM's offline autotuner picks for the same kernel on batches of 128 tokens or more (1.27x over all batches), and within 3.5% of an exhaustive search that times every configuration. RaMP's kernel and choice together make the MoE layer up to 1.84x faster than vLLM's Triton MoE on batches of 128 tokens or more. In vLLM, under both tensor and expert parallelism, RaMP lowers time per output token by up to 1.11x over the fastest stock MoE backend.",
+  "url": "https://arxiv.org/abs/2604.26039",
+  "pdf_url": "https://arxiv.org/pdf/2604.26039",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Vyom Sharma",
+    "Debajyoti Datta"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM serving systems autotune their GPU kernels offline by timing candidate kernel configurations, like tile sizes, at a range of batch sizes.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.26039",
+      "url": "https://arxiv.org/abs/2604.26039"
+    }
+  ]
+}

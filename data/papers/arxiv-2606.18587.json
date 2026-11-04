@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2606.18587",
+  "title": "Dual Dimensionality for Local and Global Attention",
+  "abstract": "Decoder-only Transformers compute attention over the KV cache of preceding tokens. Keys and Values are typically represented with the same dimensionality, regardless of their distance from the prediction target. In natural language, however, the next word is most strongly influenced by the immediately preceding tokens. We hypothesize that local and distant tokens impose asymmetric demands on representational capacity: local tokens are more critical for predicting immediate outputs and thus require richer representations, whereas distant tokens primarily serve as long-range memory, for which lower-dimensional representations may suffice. We formalize this idea as Distance-Adaptive Representation (DAR), which preserves full-dimensional representations within a local context window while assigning reduced-dimensional representations (e.g. 1/2 or 1/4 of the original dimensionality) to tokens beyond that window. Across multiple pretraining scales (70M to 410M parameters), as well as continued supervised fine-tuning on a 1B-scale model, this approach closely matches the performance of full-dimensional baselines. In contrast, uniformly reducing dimensionality across all token positions leads to worse performance. These results challenge the common assumption that key and value dimensionality should be uniform across token positions. We further develop an efficient realization of DAR that achieves model quality comparable to the MLA baseline while reducing the average KV-cache size by 68.8\\% at 8K context and achieving up to a $1.9\\times$ decoding speedup at 128K context on the evaluated models. Our findings suggest a new direction for designing attention architectures that allocate representational capacity according to token distance to reduce KV-cache during inference.",
+  "url": "https://arxiv.org/abs/2606.18587",
+  "pdf_url": "https://arxiv.org/pdf/2606.18587",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Zhiyuan Wang",
+    "Xuan Luo",
+    "Sirui Zeng",
+    "Xifeng Yan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache, kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Decoder-only Transformers compute attention over the KV cache of preceding tokens.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.18587",
+      "url": "https://arxiv.org/abs/2606.18587"
+    }
+  ]
+}

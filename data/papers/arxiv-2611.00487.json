@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2611.00487",
+  "title": "Efficient Reconfigurable Architectures for Deep Learning",
+  "abstract": "The growing computational demands of deep learning (DL) have driven AI-optimized reconfigurable devices, such as the AMD Versal AI Engines (AIEs), the Intel Stratix 10 NX Tensor Blocks (TBs), and the AMD Ryzen AI NPUs. Their heterogeneous resources and novel dataflow models make efficient exploitation nontrivial, and FPGAs lack native support for structured sparsity. This dissertation optimizes dense general matrix multiplication (GEMM), the dominant DL kernel, on these devices, proposes FPGA architectural enhancements for structured sparsity, and extends the techniques to AMD Ryzen AI NPUs. First, MaxEVA optimizes GEMM on Versal AIEs, achieving up to 2.19$\\times$ higher throughput and 20.4% higher energy efficiency than the state of the art. It is then extended to arbitrary matrix sizes, and a systematic framework is proposed for the Stratix 10 NX TBs. Both frameworks reach state-of-the-art int8 throughput of up to 77 and 68 TOPS, and energy efficiency of up to 0.94 and 1.35 TOPS/W, on Versal and Stratix, respectively. Next, Systolic Sparse Tensor slices (SSTs) are proposed as in-fabric hard blocks supporting dense, 2:4, 1:4, and a new 1:3 sparsity level. SST-based GEMM accelerators achieve up to 5$\\times$ higher frequency and 10.9$\\times$ lower area than conventional FPGA logic, and on sparse ViT and CNN models SSTs deliver up to 3.52$\\times$ speedup over dense in-fabric acceleration with up to 13.3% area increase. Finally, a common systematic methodology is proposed to optimize GEMM across the XDNA and XDNA2 AMD NPUs, reaching state-of-the-art performance of up to 6.76 and 38.05 TOPS (int8) and 3.14 and 14.71 TOPS (bf16), respectively.",
+  "url": "https://arxiv.org/abs/2611.00487",
+  "pdf_url": "https://arxiv.org/pdf/2611.00487",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Endri Taka"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The growing computational demands of deep learning (DL) have driven AI-optimized reconfigurable devices, such as the AMD Versal AI Engines (AIEs), the Intel Stratix 10 NX Tensor Blocks (TBs), and the AMD Ryzen AI NPUs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.00487",
+      "url": "https://arxiv.org/abs/2611.00487"
+    }
+  ]
+}

@@ -5,10 +5,19 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **111** 篇。
+累计收录 **119** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Pacing Branch Parallelism in LLM Serving](../../papers/arxiv-2605.06914/) | 2026-11-03 | 51 |
+| [Capacity Planning for Resource-Constrained Clinical LLM Serving](../../papers/arxiv-2611.01152/) | 2026-11-03 | 49 |
+| [Introducing Cluster Efficiency to LLM Serving: Pooling Economical Accelerators over Fast Interconnects](../../papers/arxiv-2611.02975/) | 2026-11-03 | 48 |
+| [Rethinking KV Cache Eviction for Agentic LLM Serving](../../papers/arxiv-2611.00391/) | 2026-11-03 | 46 |
+| [Multi-Turn Semantic Caching for Low-Cost LLM Serving](../../papers/arxiv-2611.01077/) | 2026-11-03 | 45 |
+| [TRIAGE: Reliability- and Load-Conditioned Escalation for Two-Tier LLM Serving with a Semantic Evidence Judge](../../papers/arxiv-2611.01174/) | 2026-11-03 | 41 |
+| [FactorSpec: Serving Exact Relational Constraints as Speculative Drafts](../../papers/arxiv-2611.02297/) | 2026-11-03 | 39 |
+| [RaMP: Runtime-Aware Megakernel Polymorphism for Mixture-of-Experts](../../papers/arxiv-2604.26039/) | 2026-11-03 | 38 |
+| [Accelerating LLM Pretraining with Zeroth-Order Curvature on Idle Serving Compute](../../papers/arxiv-2611.02688/) | 2026-11-03 | 38 |
 | [HiState: Hierarchical Prefix Cache Management for Hybrid LLM Serving in Agentic Workloads](../../papers/arxiv-2610.41508/) | 2026-11-02 | 54 |
 | [Flide: Accelerating Decision Inference with Exact State Forking](../../papers/arxiv-2610.42148/) | 2026-11-02 | 46 |
 | [AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving](../../papers/arxiv-2604.26103/) | 2026-11-02 | 46 |
@@ -17,7 +26,7 @@ description: "Serving Engines & Runtimes"
 | [DualPace: Decoupled Scheduling and Cooperative GPU--CPU Decoding for LLM Serving](../../papers/arxiv-2610.33501/) | 2026-10-27 | 47 |
 | [KVStream: Adaptive Parallel Storage Management for KV Caching in Large-Scale LLM Serving](../../papers/arxiv-2610.31827/) | 2026-10-26 | 47 |
 | [Cluster, Route, Escalate: Cascaded Framework for Cost-Aware LLM Serving](../../papers/arxiv-2606.27457/) | 2026-10-26 | 44 |
-| [UlaCache: Unified Logical Addressing for Sparse LLM Serving](../../papers/arxiv-2610.29820/) | 2026-10-22 | 48 |
+| [UlaCache: Unified Logical Addressing for Sparse LLM Serving](../../papers/arxiv-2610.29820/) | 2026-10-22 | 46 |
 | [KVCompass: A Discovery Plane for Internet-Scale Prefix Cache Sharing in LLM Serving](../../papers/arxiv-2610.24179/) | 2026-10-20 | 47 |
 | [Coral: Cost-Efficient Multi-LLM Serving over Heterogeneous Cloud GPUs](../../papers/arxiv-2605.04357/) | 2026-10-20 | 45 |
 | [Service-Induced Congestion in Memory-Constrained LLM Serving](../../papers/arxiv-2606.15555/) | 2026-10-20 | 42 |
@@ -94,7 +103,6 @@ description: "Serving Engines & Runtimes"
 | [Flama: a Python framework for development and deployment of production-ready APIs, machine learning, and LLM services](../../papers/arxiv-2608.18733/) | 2026-08-19 | 39 |
 | [E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments](../../papers/arxiv-2606.03770/) | 2026-08-18 | 49 |
 | [ReMP: Low-Downtime Runtime Model-Parallelism Reconfiguration for LLM Serving](../../papers/arxiv-2606.18741/) | 2026-08-18 | 44 |
-| [Not All Neighbors Matter: Understanding the Impact of Graph Sparsification on GNN Pipelines](../../papers/arxiv-2603.06952/) | 2026-08-18 | 44 |
 | [Analytical Provisioning for Attention-FFN Disaggregated LLM Serving under Stochastic Workloads](../../papers/arxiv-2601.21351/) | 2026-08-18 | 42 |
 | [Beyond Binary Priorities: Multi-Tier SLA Scheduling for Large Language Model Serving](../../papers/arxiv-2608.16336/) | 2026-08-17 | 53 |
 | [Kalypso: Relational LLM Serving](../../papers/arxiv-2607.23815/) | 2026-08-17 | 51 |

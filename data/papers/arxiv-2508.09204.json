@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2508.09204",
+  "title": "PrismServe: Efficient LLM Serving on Heterogeneous Accelerator Clusters",
+  "abstract": "Serving large language models across heterogeneous accelerators is challenging because partitioning a replica across device types introduces communication overhead during autoregressive decoding, while deploying complete quantized replicas can degrade model quality. We present PrismServe, a serving system that combines request-level collaboration across heterogeneous hardware with a mixture of quantized experts derived from the same foundation model. Each expert executes within a group of same-type accelerators in a single node, while a two-level router selects an expert based on predicted response quality and then selects a replica according to load and prefix-cache locality. Implemented on unmodified vLLM, PrismServe achieves 2.0--2.6$\\times$ the throughput of cross-node or cross-vendor full-precision pipelined deployments and reduces P99 time per output token by 55--65\\% when serving Qwen3-14B on 48 accelerators from three vendors. Across Qwen3-8B, Qwen3-14B, and Qwen3-32B on five downstream tasks, PrismServe outperforms the best single quantization method by 2.0--4.3 points while remaining within 1.4 points of full-precision accuracy. Our code is available at https://anonymous.4open.science/r/LLM-Inference-System-B000/",
+  "url": "https://arxiv.org/abs/2508.09204",
+  "pdf_url": "https://arxiv.org/pdf/2508.09204",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Jinhao Zhang",
+    "Zicheng Yan",
+    "Boyang Zhang",
+    "Zeyu Liu",
+    "Daning Cheng",
+    "Yunquan Zhang",
+    "Guangming Tan",
+    "Xiang Gao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [
+    "serving-engine",
+    "quantization-low-precision"
+  ],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Serving large language models across heterogeneous accelerators is challenging because partitioning a replica across device types introduces communication overhead during autoregressive decoding, while deploying complete quantized replicas can degrade model quality.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2508.09204",
+      "url": "https://arxiv.org/abs/2508.09204"
+    }
+  ]
+}

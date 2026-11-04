@@ -1,0 +1,84 @@
+{
+  "id": "arxiv:2611.02079",
+  "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
+  "abstract": "Harness optimization can substantially improve LLM agents without modifying model weights, but existing methods primarily optimize response quality. Extending them to joint quality--cost optimization introduces a challenge: applying the deployment preference during intermediate updates can prematurely reject candidates that are valuable for later improvements. We introduce ParetoSaddler, which addresses this mismatch by separating intermediate candidate promotion from final deployment selection. At each iteration, an optimizer updates a parent harness to produce a candidate, and then compares the two over repeated executions and uses Bayesian bootstrap Pareto support to promote candidates showing credible progress in either quality or cost. Promoted candidates receive broader development evaluation and remain available as parents for later optimization steps. We evaluate ParetoSaddler on ClawMark and GAIA2 using domain-disjoint splits. On ClawMark, ParetoSaddler improves quality from 70.86\\% to 81.35\\% while reducing cost from \\$1.17 to \\$1.01 per task; on GAIA2, it improves quality from 56.22\\% to 62.89\\% while reducing cost from \\$0.78 to \\$0.45 per task. The Pareto-selected harnesses also achieve higher quality at lower cost than quality-only harness optimization. Analysis shows that Pareto-aware optimization retains intermediate candidates that would be discarded by deployment preference but can support later improvements, while Bayesian bootstrap screening filters out candidates whose gains are weakly supported across runs.",
+  "url": "https://arxiv.org/abs/2611.02079",
+  "pdf_url": "https://arxiv.org/pdf/2611.02079",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Xingzhi Qian",
+    "Sungho Park",
+    "Rongyuan Tan",
+    "Jianbo Yu",
+    "Jue Zhang",
+    "Lorenzo Cavallaro",
+    "Menglin Xia",
+    "Yanzhi Chen",
+    "Xinnuo Xu",
+    "Yu Kang",
+    "Xinran Zheng",
+    "Gagan Somashekar",
+    "Xuchao Zhang",
+    "Chetan Bansal",
+    "Qingwei Lin",
+    "Victor R\\\"uhle"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "cs.MA"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "cost optimization"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: cost optimization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Harness optimization can substantially improve LLM agents without modifying model weights, but existing methods primarily optimize response quality.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.02079",
+      "url": "https://arxiv.org/abs/2611.02079"
+    }
+  ]
+}

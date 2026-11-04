@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **40** 篇。
+累计收录 **41** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Dispatch Control for Priority-Based, Multi-Tenant Workflows under Multi-Resource External Rate Limits](../../papers/arxiv-2611.02926/) | 2026-11-03 | 49 |
 | [LLMs in Cloud: A Discussion on Architecture, Orchestration, and Inference](../../papers/arxiv-2610.33475/) | 2026-10-27 | 46 |
 | [InferSlice: A Reference Architecture for SLO-driven LLM Inference over a Telco Wide-Area Network](../../papers/arxiv-2610.32638/) | 2026-10-26 | 44 |
 | [VS-Flash: Harnessing Vector Search with Computational Memory-Semantic Flash](../../papers/arxiv-2610.26960/) | 2026-10-21 | 45 |

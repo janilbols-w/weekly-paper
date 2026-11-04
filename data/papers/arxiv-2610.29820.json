@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2610.29820",
   "title": "UlaCache: Unified Logical Addressing for Sparse LLM Serving",
-  "abstract": "Long contexts increase the memory cost of the key-value (KV) cache in large language model (LLM) inference. Sparse attention reduces attention computation and memory traffic by selecting historical tokens, but the retained KV cache must remain available for later decoding steps. We present UlaCache, a KV cache management system built around a unified logical address space spanning GPU KV pools and optional CPU memory. Stable logical references let the inference engine allocate and select KV independently of physical placement. Common allocation and sparse-access interfaces support data-parallel (DP) and tensor-parallel (TP) attention. For distributed storage, local GPU buffers retain selected KV across decoding steps, so only missing entries require transfers. When CPU storage is enabled, Parallel Bucketed LRU (PB-LRU) manages a GPU pool shared across requests. It updates recency metadata and selects eviction victims in parallel. UlaCache transfers KV and then updates the address mappings. With speculative decoding enabled under matched CPU and GPU memory budgets, UlaCache achieves peak decoding throughput speedups of 1.16 $\\times$ (DP) and 1.70 $\\times$ (TP) on H200, and 1.73 $\\times$ (DP) and 2.51 $\\times$ (TP) on B300, compared with the state-of-the-art baseline.",
+  "abstract": "Long-context inference in large language models (LLMs) imposes substantial memory requirements for the key-value (KV) cache. Token-selective sparse attention reduces attention computation and memory traffic, but KV entries must still be retained for future queries. KV storage capacity therefore remains a constraint on decoding concurrency. Combining GPU and CPU memory expands this capacity but requires efficient access across heterogeneous memory pools. We present UlaCache, a KV cache management system that provides unified logical addressing across GPU and CPU memory. Its logical-slot interface enables the inference engine to allocate, write, access, and release KV entries using stable identifiers across attention parallelism modes. UlaCache manages physical placement, residency, and transfers, updating address mappings after KV transfers. Parallel Bucketed LRU (PB-LRU) reduces the overhead of KV replacement by parallelizing recency updates and eviction-candidate selection within a GPU memory pool shared across requests. We evaluate UlaCache against state-of-the-art baselines. Under tensor-parallel attention (TP), UlaCache provides up to $11.4\\times$ the usable KV cache capacity of HiSparse. For GLM-5.3 on eight H200 GPUs, UlaCache achieves peak decoding throughput of $1.10\\times$ and $1.59\\times$ that of HiSparse under data-parallel attention (DPA) and TP, respectively. For HY4 Preview on eight B300 GPUs, the corresponding throughput ratios are $1.27\\times$ and $1.93\\times$.",
   "url": "https://arxiv.org/abs/2610.29820",
   "pdf_url": "https://arxiv.org/pdf/2610.29820",
   "published": "2026-10-22",
-  "updated": "2026-10-22",
+  "updated": "2026-11-03",
   "authors": [
     "Isaac Zhu",
     "Alan Cao",
@@ -37,17 +37,19 @@
     "leaf": "Serving Engines & Runtimes",
     "leaf_zh": "Serving Engine 与 Runtime"
   },
-  "secondary_tags": [],
+  "secondary_tags": [
+    "cache-offload-memory"
+  ],
   "keyword_evidence": [
     "inference engine",
     "llm serving"
   ],
-  "score": 48,
+  "score": 46,
   "score_components": {
     "relevance": 18,
     "novelty": 5,
-    "rigor": 7,
-    "practical_impact": 13,
+    "rigor": 9,
+    "practical_impact": 9,
     "reproducibility": 2,
     "credibility": 3
   },
@@ -56,13 +58,13 @@
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
-  "summary_en": "Long contexts increase the memory cost of the key-value (KV) cache in large language model (LLM) inference.",
+  "summary_en": "Long-context inference in large language models (LLMs) imposes substantial memory requirements for the key-value (KV) cache.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-22T04:43:43+00:00",
-  "last_seen": "2026-11-03T04:35:51+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
   "featured_weeks": [
     "2026-W43"
   ],

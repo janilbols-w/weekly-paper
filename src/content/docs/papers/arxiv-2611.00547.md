@@ -1,0 +1,45 @@
+---
+title: "BitLLM: Efficient Low-Bit, Conversion-Hiding LLM Decoding on Mobile GPUs"
+description: "The rapid scaling of large language models (LLMs) has unlocked remarkable capabilities across various domains."
+---
+
+**评分：41/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+
+[论文原文](https://arxiv.org/abs/2611.00547) · [PDF](https://arxiv.org/pdf/2611.00547)
+
+## 一句话摘要
+
+The rapid scaling of large language models (LLMs) has unlocked remarkable capabilities across various domains.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+The rapid scaling of large language models (LLMs) has unlocked remarkable capabilities across various domains. However, deploying LLMs on mobile devices remains challenging because of their high computational and memory requirements. Low-bit quantization (e.g., 4-bit weights, 8-bit activations) can reduce model size while preserving accuracy, but its practical efficacy on mobile GPUs has been limited so far. In this paper, we identify that the performance gap stems primarily from frequent data type conversions between quantized and floating-point values, and dynamic and inefficient memory access patterns caused by the growing Key-Value (KV) cache during autoregressive decoding. We introduce BitLLM, a mobile inference engine that addresses type conversion overhead and suboptimal memory accesses in quantized LLMs. Our approach features an adaptive layout and packing strategy for the KV cache that ensures efficient memory access throughout LLM decoding. This is coupled with an integer-native execution pipeline that defers and overlaps type conversion outside the compute hot path, keeping the critical MatMul stages in the integer domain. Implemented on off-the-shelf mobile GPUs, BitLLM outperforms leading engines, i.e., LLAMA.CPP, MNN-LLM, LiteRT-LM, and MLC-LLM, achieving average speedups of 1.78$\times$, 1.73$\times$, 1.58$\times$, and 1.47$\times$, respectively, across various models and quantization levels. Under long-context generation, BitLLM reduces average energy consumption (per token) by up to 88.9%.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 14 |
+| novelty | 6 |
+| rigor | 5 |
+| practical impact | 11 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: quantization, quantized
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Hangyu Zheng, Zhihao Shu, Kunxiong Zhu, Minghai Qin, Xiaolong Ma, Gagan Agrawal, Wei Niu
+- 发布：2026-11-03；更新：2026-11-03
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2611.01393",
+  "title": "Layer-wise CPU-GPU Scheduling for LLM Inference on Memory-Limited Consumer GPUs",
+  "abstract": "As large language model inference environments expand toward consumer devices, it remains challenging to efficiently run models that exceed GPU memory capacity in single-GPU settings. The latency of transferring weights that do not fit in GPU memory accounts for about 98\\% of inference time and remains a major obstacle. In this paper, we focus on the fact that during the decode phase, layer computation time on the CPU can be shorter than weight transfer time, presenting an opportunity to hide weight transfers by utilizing this computation time. Therefore, we propose a method to hide transfer latency by executing certain layers on the CPU during the decode phase while asynchronously transferring the next layer's weights to the GPU in the background of that computation. To realize this scheduling, we formulate the placement of CPU/GPU computation and weight transfers as a latency minimization problem and perform optimization using an approximation model with relaxed temporal constraints. Evaluation results confirm that in a consumer desktop environment, our approach accelerates OPT-30B inference by 3.5x compared to HuggingFace Accelerate and 6.3x compared to DeepSpeed Zero-Inference.",
+  "url": "https://arxiv.org/abs/2611.01393",
+  "pdf_url": "https://arxiv.org/pdf/2611.01393",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Naoto Sugiura",
+    "Yuta Tokusashi",
+    "Hiroki Matsutani"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "gpu-scheduling-virtualization",
+    "leaf": "GPU Scheduling & Virtualization",
+    "leaf_zh": "GPU 调度与虚拟化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu scheduling"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu scheduling",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "As large language model inference environments expand toward consumer devices, it remains challenging to efficiently run models that exceed GPU memory capacity in single-GPU settings.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.01393",
+      "url": "https://arxiv.org/abs/2611.01393"
+    }
+  ]
+}

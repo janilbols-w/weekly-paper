@@ -5,10 +5,12 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **13** 篇。
+累计收录 **15** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [STLT: A Novel System for Energy-Aware Distributed Inference in the Edge-Cloud-Space Continuum](../../papers/arxiv-2611.01233/) | 2026-11-03 | 48 |
+| [Mixture-of-Models: Distributed Inference over Heterogeneous LLMs as Model-Level Mixture-of-Experts](../../papers/arxiv-2601.16863/) | 2026-11-03 | 41 |
 | [MCCL: Measurement-based Collective Communication Library](../../papers/arxiv-2610.17091/) | 2026-10-12 | 49 |
 | [Characterizing Parallelism Strategies in LLM Inference: Fundamental Compute-Communication Trade-offs](../../papers/arxiv-2610.05305/) | 2026-10-06 | 46 |
 | [Vision Transformer Ensembles for Panoramic Street Segmentation](../../papers/arxiv-2610.06063/) | 2026-10-06 | 39 |

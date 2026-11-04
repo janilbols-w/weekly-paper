@@ -5,10 +5,12 @@ description: "GPU Scheduling & Virtualization"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > GPU 调度与虚拟化**
 
-累计收录 **5** 篇。
+累计收录 **7** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Layer-wise CPU-GPU Scheduling for LLM Inference on Memory-Limited Consumer GPUs](../../papers/arxiv-2611.01393/) | 2026-11-03 | 46 |
+| [Ripple: Deadline-Aware CPU-GPU Sharing for Embodied Inference](../../papers/arxiv-2611.01067/) | 2026-11-03 | 42 |
 | [PairSight: Characterizing and Predicting Operator-Level Interference in GPU Sharing for DNN Inference](../../papers/arxiv-2610.23086/) | 2026-10-19 | 46 |
 | [Beaver: Elastic GPU Sharing between ML and Latency-Critical vRAN Workloads](../../papers/arxiv-2610.02522/) | 2026-10-05 | 46 |
 | [WaveAlign: Cache-Aware Query-Row Scheduling for Sparse Attention in Long-Video Generation](../../papers/arxiv-2609.34814/) | 2026-09-28 | 38 |

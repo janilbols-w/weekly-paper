@@ -5,10 +5,12 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **40** 篇。
+累计收录 **42** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving](../../papers/arxiv-2606.17949/) | 2026-11-03 | 55 |
+| [DIMWIT: Directly Invoking Models Without Intensive Tuning](../../papers/arxiv-2611.01463/) | 2026-11-03 | 41 |
 | [Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG](../../papers/arxiv-2610.36915/) | 2026-10-28 | 48 |
 | [Predictable performance is suboptimal, and what it means for model routing](../../papers/arxiv-2610.31428/) | 2026-10-23 | 45 |
 | [SpraySense: Sensing Gray Failures through Packet Spraying Discrepancies](../../papers/arxiv-2605.03702/) | 2026-10-23 | 38 |

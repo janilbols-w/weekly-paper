@@ -39,7 +39,7 @@ Every node in a multi-agent large language model (LLM) workflow retrieves contex
 ## 元数据
 
 - 作者：Vivek Kumar Singh, Preeti Priyam, Gautam Bhowmick
-- 发布：2026-09-20；更新：2026-09-22
+- 发布：2026-09-20；更新：2026-11-03
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/vsingh45/tca-compiler](https://github.com/vsingh45/tca-compiler)
 - 阅读深度：metadata

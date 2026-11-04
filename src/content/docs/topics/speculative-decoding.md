@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **124** 篇。
+累计收录 **126** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding](../../papers/arxiv-2611.02501/) | 2026-11-03 | 47 |
+| [Dystruct: Dynamically Structured Diffusion Language Model Decoding via Bayesian Inference](../../papers/arxiv-2605.09820/) | 2026-11-03 | 41 |
 | [TraceSpec: Understanding and Improving Speculative Decoding for LLM Agents](../../papers/arxiv-2610.41177/) | 2026-11-02 | 46 |
 | [TS-DP: Reinforcement Speculative Decoding For Temporal Adaptive Diffusion Policy Acceleration](../../papers/arxiv-2512.15773/) | 2026-10-28 | 54 |
 | [Distributed LLM Inference via Communication-Efficient Speculative Decoding](../../papers/arxiv-2610.35957/) | 2026-10-28 | 45 |

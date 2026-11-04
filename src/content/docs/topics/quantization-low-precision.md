@@ -5,10 +5,30 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **365** 篇。
+累计收录 **385** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MoBiQuant: Mixture-of-Bits Quantization for Token-Adaptive Any-Precision LLM](../../papers/arxiv-2602.20191/) | 2026-11-03 | 53 |
+| [FLAMIA: FLAsh MIcroscaling Attention for Fast and Causally Safe Training on Blackwell](../../papers/arxiv-2611.03344/) | 2026-11-03 | 52 |
+| [MatMoE: Matryoshka Mixture-of-Experts with Dynamic Mixed-Precision Quantization for Efficient Inference](../../papers/arxiv-2611.01704/) | 2026-11-03 | 51 |
+| [Integer-Exact Microscaling: Running MXFP4 Language Models on INT8 Matrix Units](../../papers/arxiv-2611.00486/) | 2026-11-03 | 50 |
+| [MXCode: Vector Quantization for MX-Native Inference at Scale](../../papers/arxiv-2611.00403/) | 2026-11-03 | 49 |
+| [Quantization of Large Models with Weight Outliers and Sparsity](../../papers/arxiv-2611.00286/) | 2026-11-03 | 47 |
+| [Architecture-Aware Mixed Precision for Replica-Exchange Training of Geometry-Aware Neural Operators with Uncertainty Quantification](../../papers/arxiv-2611.02427/) | 2026-11-03 | 47 |
+| [Jet-QSparse: Accelerating Agentic LLM Inference with 4-Bit Sparse Attention](../../papers/arxiv-2611.01022/) | 2026-11-03 | 46 |
+| [Audit at the Precision You Deploy: Quantization Reshapes a Subliminally Learned Preference](../../papers/arxiv-2611.00665/) | 2026-11-03 | 45 |
+| [Sensitivity Inflation from Cross-Record Precision Routing in Private Quantized Fine-Tuning](../../papers/arxiv-2611.01411/) | 2026-11-03 | 43 |
+| [SCRAMJet: An Ultra Low Latency JetClass-Scale Transformer for the HL-LHC Level-1 Trigger](../../papers/arxiv-2611.00086/) | 2026-11-03 | 43 |
+| [When Shards Fly: Cross-Tensor In-Flight Conversion for Low-Latency, Low-Memory Weight Updates in Disaggregated RL](../../papers/arxiv-2611.00646/) | 2026-11-03 | 42 |
+| [SHq: Learnable Grids for LLM Weight Quantization](../../papers/arxiv-2611.02966/) | 2026-11-03 | 41 |
+| [GateTrim: Adaptive-Rank Quantization for Large Language Models](../../papers/arxiv-2611.00654/) | 2026-11-03 | 41 |
+| [BitLLM: Efficient Low-Bit, Conversion-Hiding LLM Decoding on Mobile GPUs](../../papers/arxiv-2611.00547/) | 2026-11-03 | 41 |
+| [FuRA: Full-Rank Parameter-Efficient Fine-Tuning with Spectral Preconditioning](../../papers/arxiv-2605.22869/) | 2026-11-03 | 40 |
+| [Memory Efficient Audio Synthesis with Decoupled Temporal Depth Diffusion Transformers](../../papers/arxiv-2607.23811/) | 2026-11-03 | 39 |
+| [The Role of Quantization in Loss Spikes](../../papers/arxiv-2610.38277/) | 2026-11-03 | 38 |
+| [Real-Time Obstacle Detection and Distance Estimation on Smartphones for Visually Impaired and Distracted Pedestrians](../../papers/arxiv-2611.00040/) | 2026-11-03 | 38 |
+| [Beyond Accuracy: How Quantization Affects Coding Agents](../../papers/arxiv-2611.02368/) | 2026-11-03 | 38 |
 | [Trainable Vector Quantization for Large Language Models](../../papers/arxiv-2610.41822/) | 2026-11-02 | 46 |
 | [SACQ: Structure-Aware Codebook Quantization for Ultra-Low-Bit Vision-Language-Action Models](../../papers/arxiv-2610.41408/) | 2026-11-02 | 46 |
 | [CLIC: Closed-Loop Intent Consistency for Securing LLM-Driven Control in Open RAN](../../papers/arxiv-2610.40744/) | 2026-11-02 | 43 |

@@ -5,10 +5,11 @@ description: "Batching & Request Scheduling"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > Batching 与请求调度**
 
-累计收录 **9** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Inference First, Training Underneath: Layer-Granular LoRA Co-Serving with LayerLoom](../../papers/arxiv-2611.00652/) | 2026-11-03 | 41 |
 | [UniPrefill: Universal Long-Context Prefill Acceleration via Block-wise Dynamic Sparsification](../../papers/arxiv-2605.06221/) | 2026-09-28 | 40 |
 | [TempoKV: Timely Staging of LLM KV Caches for Memory-Semantic Flash](../../papers/arxiv-2609.35065/) | 2026-09-28 | 39 |
 | [PackServe: SLO-Aware Request Scheduling for Agentic LLM Serving at Scale](../../papers/arxiv-2609.33224/) | 2026-09-27 | 46 |

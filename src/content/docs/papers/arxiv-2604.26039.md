@@ -1,0 +1,45 @@
+---
+title: "RaMP: Runtime-Aware Megakernel Polymorphism for Mixture-of-Experts"
+description: "LLM serving systems autotune their GPU kernels offline by timing candidate kernel configurations, like tile sizes, at a range of batch sizes."
+---
+
+**评分：38/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+
+[论文原文](https://arxiv.org/abs/2604.26039) · [PDF](https://arxiv.org/pdf/2604.26039)
+
+## 一句话摘要
+
+LLM serving systems autotune their GPU kernels offline by timing candidate kernel configurations, like tile sizes, at a range of batch sizes.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+LLM serving systems autotune their GPU kernels offline by timing candidate kernel configurations, like tile sizes, at a range of batch sizes. This works when the number of tokens determines a kernel's work, as in dense layers. However, we show that it does not hold for Mixture-of-Experts (MoE) layers where the router decides how the tokens are split across experts and GPUs. We find that the best kernel configuration depends on this split, and not only on the number of tokens--under expert parallelism, choosing the configuration for each GPU's actual token distribution is up to 1.45x faster than the existing choice. The split is not known until the router runs, so it cannot be looked up in advance. Hence, we introduce RaMP, which chooses the kernel configuration at run time from the routing split itself. RaMP compiles top configurations into one polymorphic kernel, and a small cost model on the GPU picks among them in a few microseconds. On serving traffic its cost model was never fit on, the configurations RaMP's cost model chooses from the kernel's full configuration space are up to 1.45x faster than those vLLM's offline autotuner picks for the same kernel on batches of 128 tokens or more (1.27x over all batches), and within 3.5% of an exhaustive search that times every configuration. RaMP's kernel and choice together make the MoE layer up to 1.84x faster than vLLM's Triton MoE on batches of 128 tokens or more. In vLLM, under both tensor and expert parallelism, RaMP lowers time per output token by up to 1.11x over the fastest stock MoE backend.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 6 |
+| rigor | 5 |
+| practical impact | 10 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: llm serving
+- quantitative claim detected
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Vyom Sharma, Debajyoti Datta
+- 发布：2026-11-03；更新：2026-11-03
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

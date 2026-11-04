@@ -1,0 +1,67 @@
+{
+  "id": "arxiv:2611.03503",
+  "title": "A Cross-Domain Matrix Engine for Signal Processing and Deep Neural Net Inference",
+  "abstract": "Matrix multiplication dominates both PHY signal processing and Deep Neural Network (DNN) inference, yet these domains place opposing demands on the matrix engine. Signal processing requires low-latency execution of relatively small matrix operations, whereas DNN inference, particularly at large batch sizes, prioritizes high throughput and energy efficiency for large matrix multiplications. While offering efficient memory access profile, a Systolic Array (SA) adds fill and drain delays per matrix. Those can be amortized for large matrices but not for small matrices. Conversely, a tensor unit completes the kernel in few cycles but would require repeated reads of same operand tiles over large matrices. This makes SA too slow for signal processing and tensor too inefficient for AI. We show that this need not be a choice between systolic and tensor structuring of Multiply-Accumulate (MAC) units. We propose a single engine that operates primarily as a SA and, through low-cost reconfiguration, transforms into a tensor-style engine on a per-operation basis. MUXes create both the spatial reduction adder tree and temporal reduction accumulators from the existing MACs and registers within the systolic array. The proposed reconfigurable SA simulated using modified SCALESim simulator, verified on an Zynq 702 FPGA and synthesized using ASAP 7nm FinFET library. SCALE-Sim simulations shows up to 7.5x lower latency for small complex value PHY kernels. Even on DNN workloads, it achieves up to 1.65x speedups over vanilla SA execution with trivial increase of memory accesses, retaining the systolic array's memory access advantage. Synthesis results estimate reconfigurable fabric costs only 8% power and 13.6% area overheads.",
+  "url": "https://arxiv.org/abs/2611.03503",
+  "pdf_url": "https://arxiv.org/pdf/2611.03503",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "authors": [
+    "Mehdi Safarpour"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 20,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Matrix multiplication dominates both PHY signal processing and Deep Neural Network (DNN) inference, yet these domains place opposing demands on the matrix engine.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-04T04:35:45+00:00",
+  "last_seen": "2026-11-04T04:35:45+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.03503",
+      "url": "https://arxiv.org/abs/2611.03503"
+    }
+  ]
+}
