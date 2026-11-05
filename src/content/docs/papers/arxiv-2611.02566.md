@@ -39,7 +39,7 @@ The rapid growth of automated code generation has created a pressing need for au
 ## 元数据
 
 - 作者：Kristen Pereira, Neelabh Sinha, Rajat Ghosh, Debojyoti Dutta
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

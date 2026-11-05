@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **134** 篇。
+累计收录 **137** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Accelerating Offloading-Based MoE Inference by Interleaving Concurrent Requests](../../papers/arxiv-2611.04794/) | 2026-11-04 | 46 |
+| [UMLoad: Fast On-Demand Model Loading on Unified Memory Architecture](../../papers/arxiv-2611.04253/) | 2026-11-04 | 43 |
+| [LeanSparse: Memory-Efficient Serving for Native Sparse-Attention LLMs](../../papers/arxiv-2611.04671/) | 2026-11-04 | 41 |
 | [GearUp: DAG-aware Acceleration for Serverless Inference Serving via Slack-guided Pre-loading](../../papers/arxiv-2610.38196/) | 2026-11-03 | 43 |
 | [NORmal: Architecting 3D Ferroelectric NOR Flash as Main Memory -- From Co-Fabricated BEOL Arrays to 200B-Class Multi-Agent LLMs in a Smartphone](../../papers/arxiv-2610.40000/) | 2026-11-03 | 41 |
 | [OmniCast: Interaction-Aware Serving for Real-Time Omni-Modal LLMs](../../papers/arxiv-2606.22983/) | 2026-11-03 | 39 |

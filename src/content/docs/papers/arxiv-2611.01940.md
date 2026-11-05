@@ -1,5 +1,5 @@
 ---
-title: "ReWY: Faster Gradient Computation for Delta-Rule Attention Family"
+title: "ReWY: Faster Backpropagation for Delta-Rule Attention - From 7 to 3 Matrix Multiplications"
 description: "Delta-rule linear attention underlies language models such as Kimi Linear and Qwen3-Next."
 ---
 
@@ -39,7 +39,7 @@ Delta-rule linear attention underlies language models such as Kimi Linear and Qw
 ## 元数据
 
 - 作者：Yi Zhang, Zhixin Zhao, Weiwei Sun, Yitao Hu, Sheng Chen, Keqiu Li
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/flashserve/ReWY](https://github.com/flashserve/ReWY)
 - 阅读深度：metadata

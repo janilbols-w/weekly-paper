@@ -5,10 +5,15 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **119** 篇。
+累计收录 **124** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Compression Ratio: High-Throughput KV Compression for Disaggregated LLM Serving](../../papers/arxiv-2611.04382/) | 2026-11-04 | 51 |
+| [ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration](../../papers/arxiv-2611.04032/) | 2026-11-04 | 46 |
+| [A Year in LLM Serving: Workload Evolution, Caching and Load-Balancing](../../papers/arxiv-2608.13573/) | 2026-11-04 | 45 |
+| [Serving Chain-structured Jobs with Large Memory Footprints with Application to Large Foundation Model Serving](../../papers/arxiv-2604.14993/) | 2026-11-04 | 39 |
+| [Rethinking AI Cloud Infrastructure for Agentic Serving Systems with the Aries Experimentation Framework](../../papers/arxiv-2607.29069/) | 2026-11-04 | 39 |
 | [Pacing Branch Parallelism in LLM Serving](../../papers/arxiv-2605.06914/) | 2026-11-03 | 51 |
 | [Capacity Planning for Resource-Constrained Clinical LLM Serving](../../papers/arxiv-2611.01152/) | 2026-11-03 | 49 |
 | [Introducing Cluster Efficiency to LLM Serving: Pooling Economical Accelerators over Fast Interconnects](../../papers/arxiv-2611.02975/) | 2026-11-03 | 48 |

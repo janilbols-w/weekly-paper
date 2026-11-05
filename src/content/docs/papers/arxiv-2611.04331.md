@@ -1,0 +1,45 @@
+---
+title: "Warpline: Binary-Level Tracing and Unified Evidence for Agentic GPU Kernel Optimization"
+description: "LLM agents are becoming GPU kernel engineers, but they still tune kernels without seeing where the time goes."
+---
+
+**评分：44/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
+
+[论文原文](https://arxiv.org/abs/2611.04331) · [PDF](https://arxiv.org/pdf/2611.04331)
+
+## 一句话摘要
+
+LLM agents are becoming GPU kernel engineers, but they still tune kernels without seeing where the time goes.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+LLM agents are becoming GPU kernel engineers, but they still tune kernels without seeing where the time goes. Hardware profilers report how busy each unit was, not where each warp's time went; intra-kernel tracers can show it, but only with hand-placed probes and a recompilation that alters the very kernel being measured. We present Warpline, which gives agents this view automatically while leaving the kernel essentially unchanged. Warpline analyzes the binary to decide which events to record and inserts probes into the binary itself without recompilation or any manual step. It then aligns the trace with hardware profiling data on one unified timeline. Because it needs only the binary, it can regenerate this evidence for every new version of the kernel at whatever level the agent edits it (source, IR, or PTX), closing the optimization loop without human intervention. On NVIDIA B200, across 35 kernels in Triton, CuTe DSL, and CUDA C++, Warpline adds a median overhead of 1.2% and leaves a median 99.9% of executed instructions unchanged, whereas existing tracers have median overheads of 1.6% to 13.2% and leave only 4.6% to 32.7% unchanged. Warpline also traces closed-source kernels, which these tracers cannot. On 10 SOL-ExecBench problems, agents using Warpline spend less time and fewer model requests than a bare coding agent and NVIDIA's Kernel Design Agents (KDA), yet lead both after every round in geometric mean and reach a 7.69$\times$ geometric-mean speedup, against 6.94$\times$ and 6.13$\times$. Two case studies further demonstrate that Warpline reveals hidden bottlenecks and provides actionable optimization insights.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 22 |
+| novelty | 5 |
+| rigor | 5 |
+| practical impact | 7 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: gpu kernel, kernel optimization
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Junyu Yin, Vinod Grover, Keren Zhou
+- 发布：2026-11-04；更新：2026-11-04
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **385** 篇。
+累计收录 **389** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [What Does 4-Bit Microscaling Cost a Wearable Activity Recognizer?](../../papers/arxiv-2611.04185/) | 2026-11-04 | 50 |
+| [TriTile: Three-Tier Attention for Video Diffusion Transformers](../../papers/arxiv-2610.35706/) | 2026-11-04 | 41 |
+| [Aligning Training and Rollout Policies for End-to-End FP4 RL on Mixture-of-Experts LLMs](../../papers/arxiv-2611.04376/) | 2026-11-04 | 41 |
+| [Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates](../../papers/arxiv-2611.04797/) | 2026-11-04 | 38 |
 | [MoBiQuant: Mixture-of-Bits Quantization for Token-Adaptive Any-Precision LLM](../../papers/arxiv-2602.20191/) | 2026-11-03 | 53 |
 | [FLAMIA: FLAsh MIcroscaling Attention for Fast and Causally Safe Training on Blackwell](../../papers/arxiv-2611.03344/) | 2026-11-03 | 52 |
 | [MatMoE: Matryoshka Mixture-of-Experts with Dynamic Mixed-Precision Quantization for Efficient Inference](../../papers/arxiv-2611.01704/) | 2026-11-03 | 51 |

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.05269",
+  "title": "ToolSched: Resource-Efficient Tool Scheduling for Shared-Host LLM Agents",
+  "abstract": "Local LLM agents often work on shared hosts. Unlike multi-tenant cloud clusters, these hosts often have tightly bounded memory, CPU, and I/O resources. Concurrent agents frequently suffer from resource contention, leading to failures such as OOM and reduced resource efficiency. Considering that agents' resource demands are bursty and shell command delay is imperceptible to agents, there is a huge scheduling opportunity to arrange when and in what order commands are actually executed. Thus, we present ToolSched, a Shell MCP Server for shared local hosts that serves multiple agents and schedules their operations. ToolSched embeds a resource model into the MCP interface: agents estimate resource demands along with command requests. These hints, together with real-time host resource conditions, determine when commands are actually executed. Internally, ToolSched applies a scheduling algorithm to stagger commands, reducing contention and improving resource utilization. Prediction correction and checkpoint-based recovery mitigate estimation bias and resource errors. Our evaluation on Terminal Bench shows that, compared with unscheduled execution, ToolSched improves resource utilization by 148.4% and end-to-end command throughput by 29.4%, demonstrating its effectiveness and practicality.",
+  "url": "https://arxiv.org/abs/2611.05269",
+  "pdf_url": "https://arxiv.org/pdf/2611.05269",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "authors": [
+    "Shucheng Zou",
+    "Yuhao Gu",
+    "Long Chen",
+    "Zhongchun Zheng",
+    "BinZe Xie",
+    "Xianwei Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.OS"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Local LLM agents often work on shared hosts.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-05T04:36:09+00:00",
+  "last_seen": "2026-11-05T04:36:09+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.05269",
+      "url": "https://arxiv.org/abs/2611.05269"
+    }
+  ]
+}

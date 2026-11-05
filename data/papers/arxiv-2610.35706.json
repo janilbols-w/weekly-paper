@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2610.35706",
+  "title": "TriTile: Three-Tier Attention for Video Diffusion Transformers",
+  "abstract": "Attention over tens of thousands of visual tokens dominates the inference of video diffusion transformers (DiTs). Existing methods reduce this cost through sparsity, low precision, or both, but use a single precision for all kept tiles. We observe that the output error introduced by approximation varies widely across tiles. Many tiles can be skipped with little error, others must be computed but gain little beyond low precision, and a few retain substantial error even at low precision. We present TriTile, a training-free attention method that assigns each tile one of three approximation tiers: skipping it by replacing it with its block means, skimming it in NVFP4, or refining it with NVFP4 residual correction. A lightweight router predicts each tile's error under each tier from block statistics and spends extra compute on a tile only where it removes enough error; a single knob, a price on compute, controls the whole speed-quality trade-off. A fused kernel executes all three tiers in a single pass on the FP4 tensor cores. Over dense FlashAttention, TriTile speeds up generation by 1.38-1.83x on Wan2.2 at 23.0-27.6 dB PSNR, 2.28-2.32x on HunyuanVideo at 34.5-36.0 dB, and 1.84x on LTX-2.5 at 34.1 dB, and in every setting it Pareto-dominates every baseline in speed and PSNR.",
+  "url": "https://arxiv.org/abs/2610.35706",
+  "pdf_url": "https://arxiv.org/pdf/2610.35706",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "authors": [
+    "Yeonjae Kim",
+    "Omin Kwon",
+    "Seong Hoon Seo",
+    "Jae W. Lee"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.CV"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp4",
+    "low precision"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp4, low precision",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Attention over tens of thousands of visual tokens dominates the inference of video diffusion transformers (DiTs).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-05T04:36:09+00:00",
+  "last_seen": "2026-11-05T04:36:09+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.35706",
+      "url": "https://arxiv.org/abs/2610.35706"
+    }
+  ]
+}

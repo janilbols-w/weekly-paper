@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.04144",
+  "title": "HyPAIC: Personal AI Computer with High Bandwidth Flash for High Performance Trillion-Parameter LLM Inference",
+  "abstract": "LLMs have rapidly expanded from simple chatbots to agentic AI, where models directly use tools to solve complex problems. To improve problem solving, most frontier LLMs adopt an MoE architecture, pushing model sizes into the trillion-parameter regime. While cloud services have dominated large-scale LLM inference, cost and security concerns drive demand for on-premises deployment. Thus, GPU manufacturers have introduced personal AI computers (PAICs). However, existing PAICs with LPDDR-based unified main memory suffer from severe capacity limitations, restricting hostable LLM size on a single device. If most memory holds model weights, little remains for the KV cache, reducing supported context length. In this paper, we propose HyPAIC, a PAIC architecture incorporating HBF to overcome these memory constraints. HyPAIC stores read-only model weights in HBF and mutable runtime data in LPDDR. HBF offers over 10x the capacity of HBM with comparable TB/s-scale bandwidth. HyPAIC addresses HBF's access latency, limited write endurance, and page-level access granularity through prefetching, read-only weight placement, and coarse-grained weight accesses, respectively; power and cooling remain significant implementation challenges. Through simulation-based evaluation, we show that a single HyPAIC improves end-to-end system throughput by up to 1.04x and TDP-normalized throughput by up to 3.59x during 1T-parameter MoE inference versus the aggregate of eight baseline systems without HBF, one HyPAIC thus approaches the raw performance of eight baselines with far superior power efficiency. For small model inference, HyPAIC increases the maximum number of concurrent tasks sustaining at least 50 decode TPS per task by up to 4x, enhancing user experience and productivity. Although HBF specifications are still evolving, this study demonstrates strong architectural synergy between HBF and PAICs.",
+  "url": "https://arxiv.org/abs/2611.04144",
+  "pdf_url": "https://arxiv.org/pdf/2611.04144",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "authors": [
+    "Minho Ha",
+    "Myunghyun Rhee",
+    "Euiseok Kim",
+    "Hoshik Kim"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLMs have rapidly expanded from simple chatbots to agentic AI, where models directly use tools to solve complex problems.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-05T04:36:09+00:00",
+  "last_seen": "2026-11-05T04:36:09+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.04144",
+      "url": "https://arxiv.org/abs/2611.04144"
+    }
+  ]
+}

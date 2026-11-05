@@ -5,10 +5,11 @@ description: "Prefill-Decode Disaggregation"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > Prefill-Decode 解耦**
 
-累计收录 **9** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [What Sets the Serving Speed of Looped Language Models? Measurements and Optimizations Graded by Exactness](../../papers/arxiv-2611.05150/) | 2026-11-04 | 39 |
 | [A Hybrid GPU and Processing-Near-Memory Architecture with Shared DRAM for Efficient Prefill-Decode Disaggregation](../../papers/arxiv-2610.26131/) | 2026-10-20 | 50 |
 | [Prorsa: Unleashing the Potential of Prefill-Decode Disaggregation in Agentic Reinforcement Learning](../../papers/arxiv-2610.16592/) | 2026-10-12 | 43 |
 | [PrefillShare: A Shared Prefill Module for KV Reuse in Multi-LLM Disaggregated Serving](../../papers/arxiv-2602.12029/) | 2026-09-30 | 49 |

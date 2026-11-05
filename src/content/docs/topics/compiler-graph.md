@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **131** 篇。
+累计收录 **133** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HTAM: Hierarchical Transition-Attended Memory for Operator Optimization](../../papers/arxiv-2605.29734/) | 2026-11-04 | 40 |
+| [Grammar-Constrained Decoding Can Jailbreak LLMs into Generating Malicious Code](../../papers/arxiv-2606.11817/) | 2026-11-04 | 39 |
 | [HPC-Bench: A Comprehensive Benchmark for High Performance Computing Codes](../../papers/arxiv-2611.02752/) | 2026-11-03 | 48 |
 | [CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents](../../papers/arxiv-2611.02566/) | 2026-11-03 | 41 |
 | [EffiBench-X: A Multi-Language Benchmark for Measuring Efficiency of LLM-Generated Code](../../papers/arxiv-2505.13004/) | 2026-10-28 | 49 |

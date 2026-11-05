@@ -39,7 +39,7 @@ Two-tier LLM serving escalates selected requests from a small model to a large o
 ## 元数据
 
 - 作者：Basavaraj R M, Aryan Bharat Kumar
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

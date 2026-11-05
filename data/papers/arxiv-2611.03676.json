@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.03676",
+  "title": "A local orchestration harness for molecular design with foundation models",
+  "abstract": "Molecular design requires coordinated generation, property prediction and iterative editing, with each decision linked to the correct chemical structure and supporting evidence. Integrating these capabilities in practice presents three major challenges: retaining local control of molecular data, connecting specialized models across tasks and verifying that proposed changes satisfy chemical constraints. Here we present MolCrew, a locally deployable system that coordinates four separately trained molecular specialists with a language-model orchestrator and RDKit calculations. The specialists generate structures from descriptions, describe molecular structures, predict biological endpoints and propose edits towards specified goals. Separate model weights allow each capability to be evaluated and updated independently within the workflow. RDKit calculations check structural validity, quantify descriptor changes and assess specified structural constraints, while returned observations guide further tool calls. We evaluated low-rank adaptation of the orchestrator for tool-use decisions and failure recovery while leaving specialist weights unchanged. On 3,300 ChEBI-20 test examples, MolCrew achieved 96.4% exact structure recovery, compared with 38.7% for published Atomas-large results. Across eight MoleculeNet datasets evaluated using scaffold splits, mean area under the receiver operating characteristic curve was 0.851, compared with 0.770 for published Atomas results. In a recorded evaluation using the unadapted orchestrator, 1,554 of 1,699 requests (91.5%) passed every predefined workflow check. By preserving inspectable links between molecular proposals, model outputs and chemical calculations, MolCrew provides a modular framework for computational candidate assessment and refinement under local data control.",
+  "url": "https://arxiv.org/abs/2611.03676",
+  "pdf_url": "https://arxiv.org/pdf/2611.03676",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "authors": [
+    "Sakib Mostafa",
+    "Md Atik Ahamed",
+    "James Zou",
+    "Lei Xing",
+    "Md Tauhidul Islam"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "physics.chem-ph",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "fault-tolerance-elasticity",
+    "leaf": "Fault Tolerance & Elasticity",
+    "leaf_zh": "容错与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "failure recovery"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: failure recovery",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Molecular design requires coordinated generation, property prediction and iterative editing, with each decision linked to the correct chemical structure and supporting evidence.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-05T04:36:09+00:00",
+  "last_seen": "2026-11-05T04:36:09+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.03676",
+      "url": "https://arxiv.org/abs/2611.03676"
+    }
+  ]
+}

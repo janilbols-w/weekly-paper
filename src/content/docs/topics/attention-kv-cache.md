@@ -5,10 +5,17 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **248** 篇。
+累计收录 **255** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HyPAIC: Personal AI Computer with High Bandwidth Flash for High Performance Trillion-Parameter LLM Inference](../../papers/arxiv-2611.04144/) | 2026-11-04 | 48 |
+| [LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers](../../papers/arxiv-2611.05304/) | 2026-11-04 | 45 |
+| [LoopKV: Loop-Aware KV Cache Compression for Serving Looped Transformers](../../papers/arxiv-2611.04137/) | 2026-11-04 | 45 |
+| [EchoKV: Efficient KV Cache Compression via Similarity-Based Reconstruction](../../papers/arxiv-2603.22910/) | 2026-11-04 | 43 |
+| [TabPFN-3: Technical Report](../../papers/arxiv-2605.13986/) | 2026-11-04 | 42 |
+| [Dory1.0-4B: A Looped Normalized-GPT](../../papers/arxiv-2611.03998/) | 2026-11-04 | 41 |
+| [Latent-Condensed Transformer for Efficient Long Context Modeling](../../papers/arxiv-2604.12452/) | 2026-11-04 | 39 |
 | [Fairway: Load-Aware KV Cache Reuse for LLM Prefill Scheduling](../../papers/arxiv-2611.02082/) | 2026-11-03 | 46 |
 | [EntropyCache: Decoded Token Entropy Guided KV Caching for Diffusion Language Models](../../papers/arxiv-2603.18489/) | 2026-11-03 | 46 |
 | [MedPsy: State-of-the-Art Small Medical Language Models for Efficient Edge Deployment](../../papers/arxiv-2611.02011/) | 2026-11-03 | 45 |
@@ -37,9 +44,9 @@ description: "Attention & KV Cache"
 | [HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference](../../papers/arxiv-2610.29873/) | 2026-10-22 | 43 |
 | [Koi: Evidence-Guided, Self-Calibrating Planning for Multi-Cloud, Heterogeneous LLM Inference Fleets](../../papers/arxiv-2610.24355/) | 2026-10-20 | 51 |
 | [Visual Cache Reuse for Efficient Multimodal Inference](../../papers/arxiv-2610.25136/) | 2026-10-20 | 44 |
-| [Requests of a Feather Must Flock Together: Batch Size vs. Prefix Homogeneity in LLM Inference](../../papers/arxiv-2605.06046/) | 2026-10-20 | 43 |
 | [MemT-1.0: Towards Memory-Native Evolution](../../papers/arxiv-2610.26825/) | 2026-10-20 | 41 |
 | [MOSAIC: Multi-Objective Search for Allocating Inference Cache Across LLM Decoder Layers](../../papers/arxiv-2610.25431/) | 2026-10-20 | 41 |
+| [Requests of a Feather Must Flock Together: Batch Size vs. Prefix Homogeneity in LLM Inference](../../papers/arxiv-2605.06046/) | 2026-10-20 | 40 |
 | [PeekKV: The First Content Token Already Knows Which Heads Matter](../../papers/arxiv-2610.23939/) | 2026-10-20 | 40 |
 | [TideKV: Delayed KV Eviction via Layer-Wise Chunked Prefill for Memory-Efficient Long-Context LLM Inference](../../papers/arxiv-2610.24499/) | 2026-10-20 | 39 |
 | [CompactAttention: Accelerating Chunked Prefill with Block-Union KV Selection](../../papers/arxiv-2605.16839/) | 2026-10-20 | 39 |

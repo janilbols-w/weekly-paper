@@ -39,7 +39,7 @@ Designing and authoring high-performance custom kernels for accelerators is a co
 ## 元数据
 
 - 作者：Shangkun Wang, Nina Cai, Charles Hoong, Julian Walker, Gerson Kroiz, George Vanica, Deepak Patil, Andi Gavrilescu, Hassan Sipra, Sethu Sankaran
-- 发布：2026-09-07；更新：2026-09-07
+- 发布：2026-09-07；更新：2026-11-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel](https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel)
 - 阅读深度：metadata

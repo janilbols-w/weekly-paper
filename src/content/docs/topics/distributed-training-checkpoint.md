@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **131** 篇。
+累计收录 **133** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ToolSched: Resource-Efficient Tool Scheduling for Shared-Host LLM Agents](../../papers/arxiv-2611.05269/) | 2026-11-04 | 40 |
+| [WASP-Mem: Let Agent Organize Procedural Memory. Human Spend Effort on Diagnosis](../../papers/arxiv-2611.04003/) | 2026-11-04 | 39 |
 | [LaBraM at Scale: Scaling Data and Models for EEG Pretraining](../../papers/arxiv-2611.03165/) | 2026-11-03 | 38 |
 | [RecIS: Unifying Sparse and Dense Computation for Efficient Recommendation Training](../../papers/arxiv-2610.41457/) | 2026-11-02 | 45 |
 | [Beyond Update Counts: A Control Map for Evaluating Test-Time Model Updates](../../papers/arxiv-2610.36109/) | 2026-10-28 | 44 |
@@ -125,8 +127,8 @@ description: "Distributed Training & Checkpointing"
 | [Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards](../../papers/arxiv-2608.07531/) | 2026-08-11 | 46 |
 | [SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training](../../papers/arxiv-2608.11034/) | 2026-08-11 | 42 |
 | [Training Variable Long Sequences with Data-Centric Parallel](../../papers/arxiv-2608.07524/) | 2026-08-11 | 39 |
-| [Dual-Node NVIDIA DGX Spark over Tailscale: A Remote-Access Testbed for Distributed LLM Training and Cyber-Threat-Intelligence Fine-Tuning](../../papers/arxiv-2608.07226/) | 2026-08-10 | 46 |
 | [XFeat Revisited: Reproducibility and Evaluation of a Lightweight Image Matcher](../../papers/arxiv-2608.09519/) | 2026-08-10 | 43 |
+| [Dual-Node NVIDIA DGX Spark over Tailscale: A Remote-Access Testbed for Distributed LLM Training and Cyber-Threat-Intelligence Fine-Tuning](../../papers/arxiv-2608.07226/) | 2026-08-10 | 42 |
 | [Lost in Interpolation: Why Predictive Feedback Fails in Diffusion Language Models](../../papers/arxiv-2608.06529/) | 2026-08-10 | 40 |
 | [Tevatron-Elastic: A Unified Abstraction for Training Elastic Retrievers and Rerankers](../../papers/arxiv-2608.08809/) | 2026-08-09 | 38 |
 | [FLARE: Diffusion for Hybrid Language Model](../../papers/arxiv-2606.01774/) | 2026-08-05 | 40 |

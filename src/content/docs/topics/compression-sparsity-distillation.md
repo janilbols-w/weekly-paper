@@ -5,10 +5,14 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **726** 篇。
+累计收录 **730** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Dynamic Expert Sharing: Decoupling Memory from Parallelism in Mixture-of-Experts Diffusion LLMs](../../papers/arxiv-2602.00879/) | 2026-11-04 | 43 |
+| [Exploiting Biases in Attention for Transformers](../../papers/arxiv-2611.04657/) | 2026-11-04 | 42 |
+| [Edge AI and TinyML for Resource-Constrained Agriculture: Hardware Platforms, Model Optimization, and Deployment Strategies](../../papers/arxiv-2603.15085/) | 2026-11-04 | 42 |
+| [Subspace Node Pruning](../../papers/arxiv-2405.17506/) | 2026-11-04 | 38 |
 | [SparseForge: Beyond Spike Sparsity toward Hardware-Exploitable Neuron Pruning for Efficient SNN Acceleration](../../papers/arxiv-2611.01611/) | 2026-11-03 | 57 |
 | [From Lookups to Lessons: Turning Retrieved Knowledge into Parametric Memory](../../papers/arxiv-2611.00450/) | 2026-11-03 | 46 |
 | [RadPose: ISAC-based RF 3D Human Pose Estimation](../../papers/arxiv-2611.01400/) | 2026-11-03 | 43 |
@@ -19,9 +23,9 @@ description: "Compression, Sparsity & Distillation"
 | [Enhancing Language Model Reasoning with Structured Multi-Level Modeling](../../papers/arxiv-2611.00616/) | 2026-11-03 | 41 |
 | [Beyond MACs: Deployment-Constrained Design Space Exploration for Tensorized Neural Networks](../../papers/arxiv-2511.17971/) | 2026-11-03 | 41 |
 | [Rethinking LLM Pruning via Test-Time Scaling](../../papers/arxiv-2611.01133/) | 2026-11-03 | 40 |
+| [Replay for LLM Continual Learning with Multi-Teacher On-Policy Distillation](../../papers/arxiv-2611.02746/) | 2026-11-03 | 40 |
 | [Efficient Reconfigurable Architectures for Deep Learning](../../papers/arxiv-2611.00487/) | 2026-11-03 | 40 |
 | [Unlearning by Extrapolating a Shrink-and-Heal Lookahead](../../papers/arxiv-2611.00374/) | 2026-11-03 | 39 |
-| [Replay for LLM Continual Learning with Multi-Teacher On-Policy Distillation](../../papers/arxiv-2611.02746/) | 2026-11-03 | 39 |
 | [Online Label-Free Gradient Matching for Continual Language Model Training](../../papers/arxiv-2611.03496/) | 2026-11-03 | 39 |
 | [ParaDeAl: Parallel Descent Algorithms for Sparse Statistics](../../papers/arxiv-2611.03529/) | 2026-11-03 | 38 |
 | [MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents](../../papers/arxiv-2611.01778/) | 2026-11-03 | 38 |

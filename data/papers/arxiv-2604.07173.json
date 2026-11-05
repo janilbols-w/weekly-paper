@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2604.07173",
+  "title": "InfiniLoRA: Disaggregated Multi-LoRA Serving for Large Language Models",
+  "abstract": "LoRA enables efficient customization of LLMs and is widely used in multi-tenant and multi-task serving. However, emerging model architectures such as MoE significantly increase LoRA memory cost, making existing coupled LoRA serving designs poorly scalable and prone to tail-latency inflation. We present InfiniLoRA, a disaggregated LoRA serving system that decouples LoRA execution from base-model inference. InfiniLoRA introduces a shared LoRA Server with parallelism-aware execution, SLO-driven provisioning, and critical-path optimizations, including GPU-initiated communication and hardware-specialized LoRA kernels. Experiments show that InfiniLoRA can achieve an average $3.05\\times$ increase in serviceable request rate under strict latency SLOs, and improve the percentage of LoRA adapters satisfying the SLO requirement by 54.0\\%.",
+  "url": "https://arxiv.org/abs/2604.07173",
+  "pdf_url": "https://arxiv.org/pdf/2604.07173",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "authors": [
+    "Hongyu Chen",
+    "Letian Ruan",
+    "Zilin Xu",
+    "Yuchen Li",
+    "Xinyu Chen",
+    "Bingsheng He",
+    "Jingwen Leng",
+    "Jieru Zhao",
+    "Shixuan Sun",
+    "Minyi Guo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "multitenancy-slo-reliability",
+    "leaf": "Multi-tenancy, SLO & Reliability",
+    "leaf_zh": "多租户、SLO 与可靠性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "multi-tenant",
+    "slo"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: multi-tenant, slo",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LoRA enables efficient customization of LLMs and is widely used in multi-tenant and multi-task serving.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-05T04:36:09+00:00",
+  "last_seen": "2026-11-05T04:36:09+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2604.07173",
+      "url": "https://arxiv.org/abs/2604.07173"
+    }
+  ]
+}

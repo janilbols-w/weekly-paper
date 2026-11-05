@@ -5,10 +5,15 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **126** 篇。
+累计收录 **131** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PACT: Certifying What Is Written in Parallel Decoding of Diffusion Language Models](../../papers/arxiv-2611.04152/) | 2026-11-04 | 49 |
+| [Free Draft-and-Verification: Toward Lossless Parallel Decoding for Diffusion Large Language Models](../../papers/arxiv-2510.00294/) | 2026-11-04 | 47 |
+| [ELMoE-3D: Leveraging Intrinsic Elasticity of MoE for Hybrid-Bonding-Enabled Self-Speculative Decoding in On-Premises Serving](../../papers/arxiv-2604.14626/) | 2026-11-04 | 47 |
+| [Testing Processor Contracts in Speculative Decoding Engines](../../papers/arxiv-2611.04042/) | 2026-11-04 | 41 |
+| [Towards Optimal Multi-draft Speculative Decoding](../../papers/arxiv-2502.18779/) | 2026-11-04 | 39 |
 | [SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding](../../papers/arxiv-2611.02501/) | 2026-11-03 | 47 |
 | [Dystruct: Dynamically Structured Diffusion Language Model Decoding via Bayesian Inference](../../papers/arxiv-2605.09820/) | 2026-11-03 | 41 |
 | [TraceSpec: Understanding and Improving Speculative Decoding for LLM Agents](../../papers/arxiv-2610.41177/) | 2026-11-02 | 46 |

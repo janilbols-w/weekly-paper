@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **43** 篇。
+累计收录 **44** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Warpline: Binary-Level Tracing and Unified Evidence for Agentic GPU Kernel Optimization](../../papers/arxiv-2611.04331/) | 2026-11-04 | 44 |
 | [Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization](../../papers/arxiv-2611.03517/) | 2026-11-03 | 46 |
 | [Migrating a Legacy Scientific Application with an AI Coding Agent: NICAM from Fortran to Kokkos](../../papers/arxiv-2610.41313/) | 2026-11-02 | 42 |
 | [Less is more: learning what to profile for GPU kernel optimization](../../papers/arxiv-2610.36576/) | 2026-10-28 | 52 |

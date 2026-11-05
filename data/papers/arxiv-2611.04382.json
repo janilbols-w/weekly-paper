@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.04382",
+  "title": "Beyond Compression Ratio: High-Throughput KV Compression for Disaggregated LLM Serving",
+  "abstract": "KV cache compression reduces the communication volume of disaggregated large language model serving, but its practical benefit depends not only on compression ratio and model quality, but also on how efficiently the compression pipeline executes. This requirement becomes increasingly important as modern serving systems adopt high-bandwidth interconnects, where inefficient compression can offset a substantial portion of the saved communication time. This paper presents \\system, a high-throughput KV cache compression data path built on top of \\kvserve. \\system improves compression execution in two complementary ways. First, it fuses the distribution transformation and low-bit quantization stages into a KV-aware \\tilelang kernel, eliminating intermediate tensor materialization and redundant memory accesses. Second, it replaces the original lossless compression backend with an open, extensible, and searchable backend based on \\lc, enabling high-performance compression operator pipelines. The fused kernel achieves up to $5.9\\times$ speedup, while the new lossless backend increases compression throughput from below 90~GB/s to over 500~GB/s. Across the evaluated workloads, \\system reduces job completion time by up to $2.04\\times$. End-to-end evaluation shows that these optimizations allow KV compression to retain meaningful communication benefits under modern high-bandwidth network.",
+  "url": "https://arxiv.org/abs/2611.04382",
+  "pdf_url": "https://arxiv.org/pdf/2611.04382",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "authors": [
+    "Junhong Wu",
+    "Zedong Liu",
+    "Xinyang Ma",
+    "Yuhan Chen",
+    "Guangming Tan",
+    "Dingwen Tao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving",
+    "model serving"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving, model serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "KV cache compression reduces the communication volume of disaggregated large language model serving, but its practical benefit depends not only on compression ratio and model quality, but also on how efficiently the compression pipeline executes.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-05T04:36:09+00:00",
+  "last_seen": "2026-11-05T04:36:09+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.04382",
+      "url": "https://arxiv.org/abs/2611.04382"
+    }
+  ]
+}

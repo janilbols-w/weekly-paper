@@ -39,7 +39,7 @@ Smartphone agents increasingly work as teams, in which a large planner directs p
 ## 元数据
 
 - 作者：Zhuoran Li, Chen Gu, Zhuohang Bian, Haochen Yu, Yibo Zhao, Xuxiao Yang, Youwei Zhuo
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-04
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

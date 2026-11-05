@@ -5,16 +5,17 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **94** 篇。
+累计收录 **95** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ModelBlaster: Closing the Performance Gap through Learning-Augmented Agents Across Models, Kernels and Hardware Backends](../../papers/arxiv-2611.04104/) | 2026-11-04 | 39 |
 | [TADA: Technology Aware DNN Accelerator Performance and Energy Estimator](../../papers/arxiv-2611.00292/) | 2026-11-03 | 58 |
 | [TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices](../../papers/arxiv-2611.03392/) | 2026-11-03 | 46 |
 | [FPGA Acceleration of CNN-BiLSTM for EEG-Based Sleep Staging Featuring FFT-Based Non-Unit Stride Fast Convolution](../../papers/arxiv-2611.00669/) | 2026-11-03 | 45 |
 | [Reinforcement Learning in High-Energy Physics: A Survey from Accelerator Control to Theory Exploration](../../papers/arxiv-2611.02049/) | 2026-11-03 | 44 |
 | [Token-as-a-Utility: A Model-Agnostic Architecture for Metering and Provisioning AI Inference Services](../../papers/arxiv-2611.01371/) | 2026-11-03 | 43 |
-| [ReWY: Faster Gradient Computation for Delta-Rule Attention Family](../../papers/arxiv-2611.01940/) | 2026-11-03 | 43 |
+| [ReWY: Faster Backpropagation for Delta-Rule Attention - From 7 to 3 Matrix Multiplications](../../papers/arxiv-2611.01940/) | 2026-11-03 | 43 |
 | [AoiZora: Compiler-Agnostic, Placement-Aware Auto-Parallelization for Video Diffusion Transformers](../../papers/arxiv-2606.17566/) | 2026-11-03 | 39 |
 | [PrismServe: Efficient LLM Serving on Heterogeneous Accelerator Clusters](../../papers/arxiv-2508.09204/) | 2026-11-03 | 38 |
 | [Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition](../../papers/arxiv-2610.37480/) | 2026-10-28 | 44 |
@@ -27,7 +28,7 @@ description: "Hardware-aware & Edge Inference"
 | [SpikeDuet: CPU-Accelerator Co-Execution of Sparse SNNs on Commodity MCUs](../../papers/arxiv-2610.24677/) | 2026-10-20 | 42 |
 | [TRACE: Transformer Residual Activation Codebook Encoding for Communication-efficient Distributed Edge Inference](../../papers/arxiv-2610.22435/) | 2026-10-19 | 47 |
 | [STISA: A 0.16 GOPS/W/PE Single-Shot Inference FPGA-based SNN Accelerator with Algorithm and Hardware Co-Design](../../papers/doi-10.1109-tcsi.2025.3648765/) | 2026-10-14 | 49 |
-| [O\'ido: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator](../../papers/arxiv-2610.13447/) | 2026-10-12 | 41 |
+| [O\'ido: Real-Time Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator](../../papers/arxiv-2610.13447/) | 2026-10-12 | 43 |
 | [Learn the Dynamics, Enforce the Physics: Generative Latent Operators for High-Dimensional Beam Evolution](../../papers/arxiv-2610.14537/) | 2026-10-10 | 39 |
 | [Toward Intelligent Networks via AI-Aware GPU-Native Packet Processing](../../papers/arxiv-2610.12139/) | 2026-10-09 | 43 |
 | [Hardware-aware Calibrated Clustered Attention for Efficient Visual Geometric Transformers](../../papers/arxiv-2610.09274/) | 2026-10-08 | 47 |
