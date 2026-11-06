@@ -1,36 +1,38 @@
 ---
 title: "NeurIPS 2026 · 高效推理与 AI Infra 精选"
-description: "NeurIPS 2026 官方 Downloads 与虚拟会场当前开放 9,146 个独立 poster 条目，覆盖主会及相关 track 论文节目；本页保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。"
+description: "NeurIPS 2026 官方 Downloads 与虚拟会场当前开放 9,145 个独立 poster 条目，覆盖主会及相关 track；11 月 4 日又公布 MLRC 2026 track 的 16 篇录用论文。本页保留完整主 poster 标题语料，MLRC 则作为独立 program 更新记录，不混入既有主论文评分池。"
 ---
 
 > **2026-12-06 — 2026-12-13 · Sydney, Australia / Atlanta, United States / Paris, France**
-> 状态：<span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> · 相关论文 149 篇 · 精选 11 篇 · 更新于 2026-10-30
+> 状态：<span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> · 相关论文 149 篇 · 精选 11 篇 · 更新于 2026-11-06
 
 [会议官网](https://neurips.cc/Conferences/2026) · [会议议程](https://neurips.cc/Downloads/2026) · [官方录用列表](https://neurips.cc/Downloads/2026)
 
 ## 一分钟结论
 
-NeurIPS 2026 官方 Downloads 与虚拟会场当前开放 9,146 个独立 poster 条目，覆盖主会及相关 track 论文节目；本页保留完整标题语料，再对 LLM 高效推理与 AI Infra 候选补取官方摘要并定向核验高分论文。
+NeurIPS 2026 官方 Downloads 与虚拟会场当前开放 9,145 个独立 poster 条目，覆盖主会及相关 track；11 月 4 日又公布 MLRC 2026 track 的 16 篇录用论文。本页保留完整主 poster 标题语料，MLRC 则作为独立 program 更新记录，不混入既有主论文评分池。
 
-本届高效推理方向的密度显著上升，重点聚集在 KV Cache 压缩、长上下文 sparse attention、推测解码、量化、diffusion language model 解码，以及多模型路由和 agent serving。论文数量大并不等于结论成熟；精选只保留方法、实验条件、限制和 artifact 证据可核验的候选。
+本届高效推理方向聚集在 KV Cache、长上下文 sparse attention、推测解码、量化、diffusion LM、多模型路由和 agent serving。MLRC 新名单侧重可复现性、证据审计与 benchmark reliability；虽有 min-p sampling、web-agent reliability 和 agentic code auditing 等邻近主题，但没有足够直接的高效推理/AI Infra 论文需要突破现有精选阈值。
 
 ## 当前阶段
 
-本次新增命中 `program_released`。NeurIPS 官方博客于 10 月 25 日公布 13 场 invited talk 的主题、讲者、地点与时间：Sydney 6 场、Paris 4 场、Atlanta 3 场。官方 Downloads 的唯一 poster 条目也从 10 月 16 日的 9,110 增至 9,146，但相关论文集合仍为同一批 149 篇，因此将其视为 program 索引维护，不重复触发 `papers_released`。与 LLM 高效推理和 AI Infra 最直接相关的是约束条件下的小而高效模型、AI data center 对社区和电网的影响，以及从真实工业流程构建学习闭环。
+本次新增命中 `program_released`。NeurIPS 官方博客于 11 月 4 日公布 MLRC 2026 track 的 16 篇录用论文；这些论文均先由 TMLR 录用，再由 MLRC 做 compatibility review，将于 12 月 10 日 Sydney poster session 展示。本轮只记录 track 名单、机制与议程，不把 16 篇论文重复计入 9,145 个主 poster 语料，也不因标题邻近而新增全文精选。
 
 ## 会议规模
 
 | 指标 | 官方数据 |
 |---|---:|
-| 官方 Poster 条目 | 9146 |
+| 官方 Poster 条目 | 9145 |
 | Accepted Workshops | 102 |
 | Accepted Tutorials | 19 |
 | Invited Speakers | 13 |
+| Mlrc Accepted Papers | 16 |
 
 ## 关键议程
 
 | 环节 | 日期 |
 |---|---|
+| [MLRC 2026 — Accepted Papers Poster Session](https://blog.neurips.cc/2026/11/04/mlrc-2026-announcing-the-accepted-papers/) | 2026-12-10 17:00-20:00 local time |
 | [Invited Talk — Building AI under constraint](https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/) | 2026-12-11 10:30 local time |
 | [Invited Talk — AI data centers, communities and energy grids](https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/) | 2026-12-11 09:00 local time |
 | [Invited Talk — Building an industrial learning loop](https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/) | 2026-12-08 09:00 local time |
@@ -142,7 +144,19 @@ Primus Projection 用单卡或子节点 microbenchmark 锚定计算与局部通�
 
 [PDF](https://arxiv.org/pdf/2610.19423)
 
-### 9. [AgentWeave: Efficient Distributed Agent Serving via Flow Decomposition](https://neurips.cc/virtual/2026/poster/151244)
+### 9. [TokenRouter: Efficient Serving System for Token-Level LLM Routing](https://neurips.cc/virtual/2026/poster/152140)
+
+**51/100 · AI 基础设施 > 服务平台 > Gateway、路由与弹性 · Official poster program**
+
+TokenRouter 将 token-level routing 拆成“request-centric 编程、model-centric 执行”：开发者只写单请求的 route/send/receive 逻辑，runtime 为每个模型运行异步 subserver，并用延迟批处理缓解 step 不同步和 batch admission 等待。
+
+**为什么值得关注：** 跨多种路由算法、工作负载和模型组合，作者报告相对原始实现 2.01–64.15× decoding throughput；系统还推导 delayed-batching 参数并将 token 路由推进新的吞吐—准确率 Pareto frontier，代码公开。
+
+**边界：** 数学模型假设连续 send 之间的 token 数服从几何分布，只覆盖多数而非全部 token routing 算法；64.15× 是相对低效原始实现的峰值，不能等同于对成熟 query-level serving 的普遍倍数。
+
+[PDF](https://arxiv.org/pdf/2610.12242) · [代码](https://github.com/thu-nics/TokenRouter)
+
+### 10. [AgentWeave: Efficient Distributed Agent Serving via Flow Decomposition](https://neurips.cc/virtual/2026/poster/151244)
 
 **49/100 · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime · Official poster program**
 
@@ -154,7 +168,7 @@ AgentWeave 把 LLM 调用与工具执行统一为 module，并在所有设备共
 
 [PDF](https://arxiv.org/pdf/2610.14804)
 
-### 10. [Vortex: Efficient and Programmable Sparse Attention Serving](https://neurips.cc/virtual/2026/poster/150973)
+### 11. [Vortex: Efficient and Programmable Sparse Attention Serving](https://neurips.cc/virtual/2026/poster/150973)
 
 **48/100 · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合 · Official poster program**
 
@@ -165,18 +179,6 @@ Vortex 以 Python 内嵌 vFlow 和 page-centric vTensor 表达稀疏 Attention�
 **边界：** 当前只优化 decode forward path，不支持 prefill 或训练 backward；核心抽象面向显式 KV Cache 的 Attention 架构，RNN/Mamba 尚未覆盖。GLM 的 dense 基线因 vendor kernel 不支持该 head geometry 而回退 Triton，4.7× 峰值需按该条件解读。
 
 [PDF](https://arxiv.org/pdf/2606.06453) · [代码](https://github.com/Infini-AI-Lab/vortex_torch)
-
-### 11. [TokenRouter: Efficient Serving System for Token-Level LLM Routing](https://neurips.cc/virtual/2026/poster/152140)
-
-**46/100 · AI 基础设施 > 服务平台 > Gateway、路由与弹性 · Official poster program**
-
-TokenRouter 将 token-level routing 拆成“request-centric 编程、model-centric 执行”：开发者只写单请求的 route/send/receive 逻辑，runtime 为每个模型运行异步 subserver，并用延迟批处理缓解 step 不同步和 batch admission 等待。
-
-**为什么值得关注：** 跨多种路由算法、工作负载和模型组合，作者报告相对原始实现 2.01–64.15× decoding throughput；系统还推导 delayed-batching 参数并将 token 路由推进新的吞吐—准确率 Pareto frontier，代码公开。
-
-**边界：** 数学模型假设连续 send 之间的 token 数服从几何分布，只覆盖多数而非全部 token routing 算法；64.15× 是相对低效原始实现的峰值，不能等同于对成熟 query-level serving 的普遍倍数。
-
-[PDF](https://arxiv.org/pdf/2610.12242) · [代码](https://github.com/thu-nics/TokenRouter)
 
 ## 技术分布
 
@@ -262,6 +264,7 @@ TokenRouter 将 token-level routing 拆成“request-centric 编程、model-cent
 | [Verification-Aware Training for Speculative Decoding](https://neurips.cc/virtual/2026/poster/149396) | Official poster program | LLM 高效推理 > 模型与算法效率 > 推测解码 | 51 |
 | [TriSpec: Ternary Speculative Decoding via Lightweight Proxy Verification](https://neurips.cc/virtual/2026/poster/152166) | Official poster program | LLM 高效推理 > 模型与算法效率 > 推测解码 | 51 |
 | [TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding](https://neurips.cc/virtual/2026/poster/151038) | Official poster program | LLM 高效推理 > 模型与算法效率 > 推测解码 | 51 |
+| [TokenRouter: Efficient Serving System for Token-Level LLM Routing](https://neurips.cc/virtual/2026/poster/152140) | Official poster program | AI 基础设施 > 服务平台 > Gateway、路由与弹性 | 51 |
 | [RheoSampling: Resolving the One-Hot Dilemma in Stochastic Dynamic-Tree Speculative Decoding](https://neurips.cc/virtual/2026/poster/152884) | Official poster program | LLM 高效推理 > 模型与算法效率 > 推测解码 | 51 |
 | [Punctuation-aware Hybrid Trainable Sparse Attention for Large Language Models](https://neurips.cc/virtual/2026/poster/148158) | Official poster program | LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏 | 51 |
 | [Memory Inception: Latent-Space KV Cache Manipulation for Steering LLMs](https://neurips.cc/virtual/2026/poster/151646) | Official poster program | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 51 |
@@ -305,7 +308,6 @@ TokenRouter 将 token-level routing 拆成“request-centric 编程、model-cent
 | [UniPrefill: Universal Long-Context Prefill Acceleration via Block-wise Dynamic Sparsification](https://neurips.cc/virtual/2026/poster/152106) | Official poster program | LLM 高效推理 > Serving 与分布式推理 > Batching 与请求调度 | 47 |
 | [Task-Aware KV Cache Compression for LLM Agents via Utility-Driven Step Pruning](https://neurips.cc/virtual/2026/poster/155521) | Official poster program | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 47 |
 | [Going Down Memory Lane: Scaling Tokens for Video Stream Understanding with Dynamic KV-Cache Memory](https://neurips.cc/virtual/2026/poster/148735) | Official poster program | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 47 |
-| [TokenRouter: Efficient Serving System for Token-Level LLM Routing](https://neurips.cc/virtual/2026/poster/152140) | Official poster program | AI 基础设施 > 服务平台 > Gateway、路由与弹性 | 46 |
 | [The risk of KV cache compression](https://neurips.cc/virtual/2026/poster/153754) | Official poster program | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 46 |
 | [Step-dLLM: Adaptive Step-aware Sparse Attention for Efficient Diffusion LLM Inference](https://neurips.cc/virtual/2026/poster/155406) | Official poster program | LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏 | 46 |
 | [PreFT: Prefill-only finetuning for inference efficiency](https://neurips.cc/virtual/2026/poster/151570) | Official poster program | LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理 | 46 |
@@ -355,10 +357,11 @@ TokenRouter 将 token-level routing 拆成“request-centric 编程、model-cent
 ## 来源与覆盖范围
 
 - [NeurIPS 2026 conference page](https://neurips.cc/Conferences/2026)（核验于 2026-10-30）。
-- [NeurIPS 2026 official Downloads and poster program](https://neurips.cc/Downloads/2026)（核验于 2026-10-30）。
+- [NeurIPS 2026 official Downloads and poster program](https://neurips.cc/Downloads/2026)（核验于 2026-11-06）。
 - [NeurIPS 2026 OpenReview venue](https://openreview.net/group?id=NeurIPS.cc/2026/Conference)（核验于 2026-10-30）。
 - [Official workshop announcement](https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/)（核验于 2026-08-14）。
 - [NeurIPS 2026 official invited speaker topics](https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/)（核验于 2026-10-30）。
+- [NeurIPS 2026 official MLRC accepted papers announcement](https://blog.neurips.cc/2026/11/04/mlrc-2026-announcing-the-accepted-papers/)（核验于 2026-11-06）。
 - [NeurIPS workshop guidance](https://neurips.cc/Conferences/2026/WorkshopsGuidance)（核验于 2026-08-14）。
 - [DiffuLM official workshop site](https://7amin.github.io/diffulm-neurips2026/)（核验于 2026-08-14）。
 - [ML for Systems official workshop site](https://mlforsystems.org/)（核验于 2026-08-14）。
@@ -368,6 +371,6 @@ TokenRouter 将 token-level routing 拆成“request-centric 编程、model-cent
 - [AI for Chip Design official workshop site](https://neurips-ai-for-chip-design-2026.github.io/)（核验于 2026-08-14）。
 - [AXIOM official workshop site](https://axiom-neurips2026.github.io/)（核验于 2026-08-14）。
 - [Resource-Aware Agentic AI official workshop site](https://resource-aware-workshop.github.io/)（核验于 2026-08-14）。
-- 论文元数据：NeurIPS official Downloads and virtual poster program；原始覆盖 9146 篇，主题过滤后保留 149 篇。
-- 触发类型：`program_released`；来源摘要：`a2dd7416e8ce`。
+- 论文元数据：NeurIPS official Downloads and virtual poster program；原始覆盖 9145 篇，主题过滤后保留 149 篇。
+- 触发类型：`program_released`；来源摘要：`f91ef8b073f4`。
 - 精选不是奖项预测；评分只反映本站主题相关性、证据完整性和潜在工程影响。

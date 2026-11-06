@@ -11784,12 +11784,20 @@
     "paper": {
       "id": "neurips:neurips-2026:152140",
       "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
-      "abstract": "",
+      "abstract": "Large language model (LLM) routing is widely used to advance the cost-quality Pareto frontier of modern serving systems. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithm work shows substantial efficiency and quality advantages of finer token-level routing. However, efficiently serving token-level routed inference poses significant challenges to existing system design. Built on single-LLM assumptions, current systems struggle with step desynchronization and frequent batch admission delays under token-level routing, and they also impose high implementation complexity on developers. To address this, we propose TokenRouter, an efficient and user-friendly serving system for token-level routed LLM inference. TokenRouter shifts from the conventional request-centric paradigm to a model-centric one. Instead of treating each request as a synchronized decoding stream, TokenRouter launches a subserver for each candidate LLM and dispatches requests asynchronously according to routing decisions. Each subserver employs a delayed-batching scheduler, whose hyperparameters are derived mathematically from a throughput model of the system. Across diverse routing algorithms, workloads, and model pairs, TokenRouter achieves 1.83-64.29× higher decoding throughput than existing systems, substantially advancing the serving efficiency of token-level LLM routing.",
       "url": "https://neurips.cc/virtual/2026/poster/152140",
       "pdf_url": "https://arxiv.org/pdf/2610.12242",
       "published": "2026-10-16",
       "updated": "2026-10-16",
-      "authors": [],
+      "authors": [
+        "Tianyu Fu",
+        "Tengxuan Liu",
+        "Ruoxi Wang",
+        "Yixin Dong",
+        "Yi Ge",
+        "Yichen You",
+        "Yu Wang"
+      ],
       "source": "NeurIPS official poster program",
       "source_type": "accepted_program",
       "categories": [],
@@ -11810,12 +11818,12 @@
       "keyword_evidence": [
         "model serving"
       ],
-      "score": 46,
+      "score": 51,
       "score_components": {
         "relevance": 12,
-        "novelty": 5,
-        "rigor": 5,
-        "practical_impact": 7,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 9,
         "reproducibility": 7,
         "credibility": 10
       },
@@ -11824,7 +11832,7 @@
         "no quantitative claim in metadata",
         "code/artifact link detected"
       ],
-      "summary_en": "",
+      "summary_en": "Large language model (LLM) routing is widely used to advance the cost-quality Pareto frontier of modern serving systems.",
       "summary_zh": "TokenRouter 将 token-level routing 拆成“request-centric 编程、model-centric 执行”：开发者只写单请求的 route/send/receive 逻辑，runtime 为每个模型运行异步 subserver，并用延迟批处理缓解 step 不同步和 batch admission 等待。",
       "why_it_matters_zh": "跨多种路由算法、工作负载和模型组合，作者报告相对原始实现 2.01–64.15× decoding throughput；系统还推导 delayed-batching 参数并将 token 路由推进新的吞吐—准确率 Pareto frontier，代码公开。",
       "limitations_zh": "数学模型假设连续 send 之间的 token 数服从几何分布，只覆盖多数而非全部 token routing 算法；64.15× 是相对低效原始实现的峰值，不能等同于对成熟 query-level serving 的普遍倍数。",
@@ -11842,6 +11850,11 @@
           "source": "NeurIPS virtual poster",
           "id": "152140",
           "url": "https://neurips.cc/virtual/2026/poster/152140"
+        },
+        {
+          "source": "OpenReview",
+          "id": "VCbatQAXJV",
+          "url": "https://openreview.net/forum?id=VCbatQAXJV"
         }
       ]
     },
