@@ -39,7 +39,7 @@ Diffusion-based large language models (dLLMs) rely on bidirectional attention, w
 ## 元数据
 
 - 作者：Minsoo Cheong, Donghyun Son, Woosang Lim, Sungjoo Yoo
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/mscheong01/EntropyCache](https://github.com/mscheong01/EntropyCache)
 - 阅读深度：metadata

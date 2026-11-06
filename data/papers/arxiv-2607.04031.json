@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2607.04031",
+  "title": "TileLens: Efficiently Using Large-Granularity Memory Systems with Transparent Two-Dimensional Memory Layout",
+  "abstract": "Large Language Model (LLM) inference is bottlenecked by the capacity and bandwidth of GPU High-Bandwidth Memory (HBM). Recent proposals, such as High-Bandwidth Flash (HBF) and RoMe, offer higher capacity or bandwidth than HBM, but require a minimum access granularity of kilobytes. We show that these Large-Granularity Memory Systems (LGMS) can degrade LLM inference performance by up to an order of magnitude. The root cause is read amplification during tiled matrix multiplication, in which each memory request fetches far more data than the compute tile needs. Such waste stems from a fundamental mismatch between the two-dimensional nature of compute tiles and the one-dimensional memory layout, causing each request to spill well beyond tile boundaries. To eliminate read amplification in LGMS, we propose to use tile-major layout. Rather than storing data as a one-dimensional strip, tile-major layout reshapes each contiguous memory block into a two-dimensional rectangle, aligning memory granularity with tile boundaries. To ease the adoption of tile-major layout on GPUs, we propose TileLens, lightweight software and hardware extensions that cover major classes of GPU kernels. TileLens-SW extends GPU DSLs so that DSL-based kernels can adopt tile-major by only changing the layout descriptor. TileLens-HW extends the Tensor Memory Accelerator (TMA) for tile-major support in TMA-based kernels without code changes. We evaluate TileLens on a cycle-level GPU simulator using Qwen-3 30B and Llama-3.1 70B. Combining a tile-major layout with our adaptive degree prefetcher, TileLens achieves near-HBM performance on HBF-augmented GPUs with a 5 us NAND read latency, reducing the geomean slowdown from 1.62-6.69x with conventional layouts to within 10% of an HBM-only baseline.",
+  "url": "https://arxiv.org/abs/2607.04031",
+  "pdf_url": "https://arxiv.org/pdf/2607.04031",
+  "published": "2026-11-05",
+  "updated": "2026-11-05",
+  "authors": [
+    "Jae Hyung Ju",
+    "Euijun Chung",
+    "Hritvik Taneja",
+    "Anish Saxena",
+    "Shinnung Jeong",
+    "Hyesoon Kim",
+    "Moinuddin K. Qureshi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large Language Model (LLM) inference is bottlenecked by the capacity and bandwidth of GPU High-Bandwidth Memory (HBM).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-06T04:38:11+00:00",
+  "last_seen": "2026-11-06T04:38:11+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.04031",
+      "url": "https://arxiv.org/abs/2607.04031"
+    }
+  ]
+}

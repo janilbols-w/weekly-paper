@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **255** 篇。
+累计收录 **257** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [VAR-Q: Tuning-free KV Cache Quantization for Visual Autoregressive Image and Video Generation](../../papers/arxiv-2611.05380/) | 2026-11-05 | 45 |
+| [CRESiST: Self-Enhancing Explorative Policy Learning for Simultaneous Speech Translation](../../papers/arxiv-2611.06501/) | 2026-11-05 | 45 |
 | [HyPAIC: Personal AI Computer with High Bandwidth Flash for High Performance Trillion-Parameter LLM Inference](../../papers/arxiv-2611.04144/) | 2026-11-04 | 48 |
 | [LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers](../../papers/arxiv-2611.05304/) | 2026-11-04 | 45 |
 | [LoopKV: Loop-Aware KV Cache Compression for Serving Looped Transformers](../../papers/arxiv-2611.04137/) | 2026-11-04 | 45 |

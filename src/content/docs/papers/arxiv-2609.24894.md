@@ -39,7 +39,7 @@ Whole-slide pathology images (WSIs) contain gigapixel-scale visual content, crea
 ## 元数据
 
 - 作者：Ali Kerem Bozkurt, Baris Cem Bakay, Ibrahim Kulac, Cigdem Gunduz-Demir, Erkut Erdem, Aykut Erdem
-- 发布：2026-09-21；更新：2026-09-22
+- 发布：2026-09-21；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/ali-kerem/SLICEChat](https://github.com/ali-kerem/SLICEChat)
 - 阅读深度：metadata

@@ -5,10 +5,11 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **95** 篇。
+累计收录 **96** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TileLens: Efficiently Using Large-Granularity Memory Systems with Transparent Two-Dimensional Memory Layout](../../papers/arxiv-2607.04031/) | 2026-11-05 | 44 |
 | [ModelBlaster: Closing the Performance Gap through Learning-Augmented Agents Across Models, Kernels and Hardware Backends](../../papers/arxiv-2611.04104/) | 2026-11-04 | 39 |
 | [TADA: Technology Aware DNN Accelerator Performance and Energy Estimator](../../papers/arxiv-2611.00292/) | 2026-11-03 | 58 |
 | [TinyML Hits the Memory Wall: A Benchmark of Ten Sub-Watt Edge Devices](../../papers/arxiv-2611.03392/) | 2026-11-03 | 46 |

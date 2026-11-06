@@ -39,7 +39,7 @@ Mixture-of-Experts (MoE) models have become the dominant architecture for large-
 ## 元数据
 
 - 作者：Yuseon Choi, Jingu Lee, Jungjun Oh, Sunjoo Whang, Byeongcheol Kim, Minsung Kim, Junhyuk Lee, Hoi-Jun Yoo, Sangjin Kim
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

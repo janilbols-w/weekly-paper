@@ -5,10 +5,16 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **730** 篇。
+累计收录 **736** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Modality-Aware Expert Pruning for MoE-Based Multimodal Large Language Models](../../papers/arxiv-2611.05927/) | 2026-11-05 | 52 |
+| [Attention to Mamba: A Recipe for Cross-Architecture Distillation](../../papers/arxiv-2604.14191/) | 2026-11-05 | 44 |
+| [Structural Rationale Distillation via Reasoning Space Compression](../../papers/arxiv-2605.07139/) | 2026-11-05 | 43 |
+| [KL for a KL: On-Policy Distillation with Control Variate Baseline](../../papers/arxiv-2605.07865/) | 2026-11-05 | 43 |
+| [Farther the Shift, Sparser the Representation: Analyzing OOD Mechanisms in LLMs](../../papers/arxiv-2603.03415/) | 2026-11-05 | 43 |
+| [DUP: Detection-guided Unlearning for Backdoor Purification in Language Models](../../papers/arxiv-2508.01647/) | 2026-11-05 | 40 |
 | [Dynamic Expert Sharing: Decoupling Memory from Parallelism in Mixture-of-Experts Diffusion LLMs](../../papers/arxiv-2602.00879/) | 2026-11-04 | 43 |
 | [Exploiting Biases in Attention for Transformers](../../papers/arxiv-2611.04657/) | 2026-11-04 | 42 |
 | [Edge AI and TinyML for Resource-Constrained Agriculture: Hardware Platforms, Model Optimization, and Deployment Strategies](../../papers/arxiv-2603.15085/) | 2026-11-04 | 42 |

@@ -1,0 +1,66 @@
+{
+  "id": "arxiv:2610.03228",
+  "title": "Reference-Compatible Parallel Execution for Quantized LLM Inference",
+  "abstract": "Batching can change a quantized language model's logits even when token positions and causal masks are unchanged. We present a method for executing known queries in parallel while retaining the numerical behavior of a scalar deployment fixed before optimization. The method derives physical KV-prefix and backend arithmetic requirements, groups compatible queries, and keeps independent projection work batched. On CUDA, it packs independent four-column reductions into a broadcast batch without widening the reference-sensitive reduction. On Vulkan, it preserves projection activation arithmetic and extends a scalar attention path across query groups. Controlled interventions and frozen-input studies cover Llama, Qwen and SmolLM2. CUDA packing reduces complete resident-service time by 4.00% on four fresh inputs. Vulkan batched attention reduces ordinary-request time by 32.34% versus per-query attention and 52.87% versus scalar execution on twelve fresh inputs. Equally optimized whole-graph boundary cuts match local grouping on aligned natural prefill and outperform it at some wider Vulkan query sizes. At deliberately crossing CUDA appends, local grouping gives a $1.307\\times$ speedup over whole-graph cuts; this conditional result is not a workload-average speedup. These results identify how numerical compatibility constrains parallel execution and how width and alignment determine the benefit of local cuts.",
+  "url": "https://arxiv.org/abs/2610.03228",
+  "pdf_url": "https://arxiv.org/pdf/2610.03228",
+  "published": "2026-11-05",
+  "updated": "2026-11-05",
+  "authors": [
+    "Chengzhan Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.PF"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Batching can change a quantized language model's logits even when token positions and causal masks are unchanged.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-06T04:38:11+00:00",
+  "last_seen": "2026-11-06T04:38:11+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.03228",
+      "url": "https://arxiv.org/abs/2610.03228"
+    }
+  ]
+}

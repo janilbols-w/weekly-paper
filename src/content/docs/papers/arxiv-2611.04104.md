@@ -39,7 +39,7 @@ Optimizing accelerator code across hardware architectures is difficult. ML compi
 ## 元数据
 
 - 作者：Shengjun Kris Dong, Dima Nikiforov, Sahil Modi, Sana Damani, Edward C Lin, Siva Kumar Sastry Hari, Christos Kozyrakis
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

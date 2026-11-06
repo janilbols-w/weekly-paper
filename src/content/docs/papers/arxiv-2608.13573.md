@@ -39,7 +39,7 @@ Large Language Model (LLM) serving has become a critical cloud workload, and rea
 ## 元数据
 
 - 作者：William Nixon, Jon Durbin, Florian Standhartinger, Haryadi S. Gunawi, Juncheng Yang
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/HarvardMadSys/chutes_workload](https://github.com/HarvardMadSys/chutes_workload)
 - 阅读深度：metadata

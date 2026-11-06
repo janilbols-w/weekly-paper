@@ -39,7 +39,7 @@ Among parallel decoding paradigms, diffusion large language models (dLLMs) have 
 ## 元数据
 
 - 作者：Hao Mark Chen, Zhiwen Mo, Royson Lee, Qianzhou Wang, Da Li, Shell Xu Hu, Wayne Luk, Timothy Hospedales, Hongxiang Fan
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

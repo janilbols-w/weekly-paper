@@ -5,10 +5,11 @@ description: "Network, RDMA & Interconnect"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > 网络、RDMA 与互联**
 
-累计收录 **12** 篇。
+累计收录 **13** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Scheduling Data to Compute: Hierarchical Data Pipelining for LLM Training on AMD GPUs](../../papers/arxiv-2611.05751/) | 2026-11-05 | 50 |
 | [LLM Fine-Tuning Workloads: Characterization, Challenges, and Opportunities for Serverless AI](../../papers/arxiv-2610.40983/) | 2026-11-02 | 40 |
 | [AI Mindmeld: A Latent Interconnect Protocol](../../papers/arxiv-2610.30215/) | 2026-10-23 | 45 |
 | [Agentic AI for Heterogeneous System Design Across Chip, Scale-Up, and Scale-Out Domains](../../papers/arxiv-2610.23724/) | 2026-10-19 | 45 |

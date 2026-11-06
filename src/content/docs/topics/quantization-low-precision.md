@@ -5,10 +5,14 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **389** 篇。
+累计收录 **393** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Balancing hierarchical representation and quantization: A performance trade-off in text embeddings](../../papers/arxiv-2611.06859/) | 2026-11-05 | 51 |
+| [GaugeQuant: Online Learning of Quantization-Optimal Bases from LLM Symmetries](../../papers/arxiv-2607.20757/) | 2026-11-05 | 43 |
+| [Reference-Compatible Parallel Execution for Quantized LLM Inference](../../papers/arxiv-2610.03228/) | 2026-11-05 | 40 |
+| [Runway Characters: Serving a 57B Video Diffusion Transformer for Real-Time Conversation](../../papers/arxiv-2611.05642/) | 2026-11-05 | 38 |
 | [What Does 4-Bit Microscaling Cost a Wearable Activity Recognizer?](../../papers/arxiv-2611.04185/) | 2026-11-04 | 50 |
 | [TriTile: Three-Tier Attention for Video Diffusion Transformers](../../papers/arxiv-2610.35706/) | 2026-11-04 | 41 |
 | [Aligning Training and Rollout Policies for End-to-End FP4 RL on Mixture-of-Experts LLMs](../../papers/arxiv-2611.04376/) | 2026-11-04 | 41 |

@@ -39,7 +39,7 @@ Deploying artificial intelligence at the edge is increasingly important for syst
 ## 元数据
 
 - 作者：Riya Samanta, Bidyut Saha, Soumya Kanti Ghosh
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

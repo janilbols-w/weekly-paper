@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2611.06634",
+  "title": "flash-comm: Self-Synchronizing Collective Communication for LLM Decoding",
+  "abstract": "We present flash-comm, a communication library that achieves efficient transport for LLM decoding by fusing readiness synchronization with data movement. flash-comm introduces self-synchronizing transfers in which each data block carries evidence of its readiness, allowing receivers to directly validate the blocks they need without separate inter-GPU barriers. Based on this principle, a cost-guided protocol selector adapts the readiness encoding to message size and the number of participating GPUs, balancing synchronization overhead against additional data-transfer cost. flash-comm further decouples transport order from reduction order to preserve result consistency across GPUs under asynchronous data arrivals. On a server with eight NVIDIA B300 GPUs, flash-comm reduces all-reduce latency by a median of 28.8% and up to 43.7% compared with custom AR v2 (the state-of-the-art all-reduce implementation). In end-to-end decoding, flash-comm reduces time per output token (TPOT) by 1.7-6.8%. Note that all-reduce accounts for 11.4% of the baseline decoding time, which bounds the latency reduction possible from optimizing this operation alone. The same mechanism also supports standalone all-gather, reducing latency by a median of 23.8% and up to 58.9% across eight B300 GPUs.",
+  "url": "https://arxiv.org/abs/2611.06634",
+  "pdf_url": "https://arxiv.org/pdf/2611.06634",
+  "published": "2026-11-05",
+  "updated": "2026-11-05",
+  "authors": [
+    "Carrie Wang",
+    "Jack Li",
+    "Jason Zhao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "parallelism-communication",
+    "leaf": "Parallelism & Communication",
+    "leaf_zh": "并行与通信"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "collective communication"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: collective communication",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "We present flash-comm, a communication library that achieves efficient transport for LLM decoding by fusing readiness synchronization with data movement.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-06T04:38:11+00:00",
+  "last_seen": "2026-11-06T04:38:11+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.06634",
+      "url": "https://arxiv.org/abs/2611.06634"
+    }
+  ]
+}

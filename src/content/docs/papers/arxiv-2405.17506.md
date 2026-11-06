@@ -39,7 +39,7 @@ Node pruning is the art of removing computational units such as neurons, filters
 ## 元数据
 
 - 作者：Joshua Offergeld, John Chidiac, Marcel van Gerven, Nasir Ahmad
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

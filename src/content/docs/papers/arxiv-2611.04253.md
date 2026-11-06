@@ -17,7 +17,7 @@ On-demand model loading dominates response latency for interactive on-device AI,
 
 ## 摘要原文
 
-On-demand model loading dominates response latency for interactive on-device AI, yet unified memory architectures (UMAs), now common on edge devices, should make it cheap by placing weights in memory the GPU already sees. However, frameworks still use the loading flow built for discrete GPUs, leaving significant inefficiencies. This paper presents UMLoad, a system-level model-loading accelerator that decouples a framework's logical allocations from their physical page backing. UMLoad uses on-demand reconstruction to eliminate the weight copy while preserving copy independence, and GPU-assisted page zeroing to accelerate runtime allocation while preserving its security guarantee. Implemented on Intel, AMD, and NVIDIA UMA platforms and evaluated with llama.cpp, PyTorch, and vLLM across six models, UMLoad reduces average loading time by 36.6%-71.9% over vanilla and 19.9%-62.7% over pipelined loaders, and cuts mean LLM-routing time to first token (TTFT) by 51.3%-59.3% and model-backed tool completion latency by 10.2%-31.6%.
+On-demand model loading dominates response latency for interactive on-device AI, yet unified memory architectures (UMAs), now common on edge devices, should make it cheap by placing weights in memory the GPU already sees. However, frameworks still use the loading flow built for discrete GPUs, leaving significant inefficiencies. This paper presents UMLoad, a system-level model-loading accelerator that decouples a framework's logical allocations from their physical page backing. UMLoad uses on-demand reconstruction to eliminate the weight copy while preserving copy independence, and GPU-assisted page zeroing to accelerate runtime allocation while preserving its security guarantee. Implemented on Intel, AMD, and NVIDIA UMA platforms and evaluated with llama$.$cpp, PyTorch, and vLLM across six models, UMLoad reduces average loading time by 36.6%-71.9% over vanilla and 19.9%-62.7% over pipelined loaders, and cuts mean LLM-routing time to first token (TTFT) by 51.3%-59.3% and model-backed tool completion latency by 10.2%-31.6%.
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ On-demand model loading dominates response latency for interactive on-device AI,
 ## 元数据
 
 - 作者：Zimeng Wang, Jinrong Yang, Rong Chen
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

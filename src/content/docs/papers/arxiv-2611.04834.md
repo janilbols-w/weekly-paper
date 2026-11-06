@@ -39,7 +39,7 @@ Post-training updates change what large language models (LLMs) can answer, but m
 ## 元数据
 
 - 作者：Zichuan Fu, Xian Wu, Jingtong Gao, Wenlin Zhang, Jiaxuan Li, Binhao Wang, Yimin Deng, Guojing Li, Xiaopeng Li, Derong Xu, Yefeng Zheng, Xiangyu Zhao
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

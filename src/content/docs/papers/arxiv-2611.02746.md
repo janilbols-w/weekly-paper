@@ -39,7 +39,7 @@ Multi-teacher on-policy distillation (MOPD) distills several domain experts into
 ## 元数据
 
 - 作者：Yiqiao Qiu
-- 发布：2026-11-03；更新：2026-11-04
+- 发布：2026-11-03；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

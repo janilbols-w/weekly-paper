@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2603.03415",
+  "title": "Farther the Shift, Sparser the Representation: Analyzing OOD Mechanisms in LLMs",
+  "abstract": "In this work, we investigate how the internal representations of Large Language Models (LLMs) change with inputs of increasing difficulty. Although sparsity changes may not be obvious for individual samples, dataset-level results reveal a consistent statistical trend: as task difficulty increases (e.g., harder questions, longer contexts, or more answer choices), the last hidden states of LLMs become systematically sparser. In short, \\textbf{the harder the task, the sparser the representation}. This sparsity--difficulty relation is observable across diverse models and domains, suggesting that harder inputs drive more concentrated activation patterns in the last hidden state. Through a series of controlled analyses and learning-dynamics experiments, we show that representational density is a learned property of data familiarity: models develop rich, distributed representations for mastered patterns, while unfamiliar inputs default to sparser activations. Our finding is also actionable. We illustrate this with Sparsity-Guided Curriculum In-Context Learning (SG-ICL), which uses sparsity to select few-shot demonstrations matched to the query's difficulty, outperforming standard CoT and Auto-CoT baselines on MATH-500. Our study provides new insights into how LLM representations reflect task difficulty and how this signal can be leveraged for inference. The source code is available at the URL: https://github.com/MingyuJ666/sparsityLLM.",
+  "url": "https://arxiv.org/abs/2603.03415",
+  "pdf_url": "https://arxiv.org/pdf/2603.03415",
+  "published": "2026-11-05",
+  "updated": "2026-11-05",
+  "authors": [
+    "Mingyu Jin",
+    "Yutong Yin",
+    "Jingcheng Niu",
+    "Qingcheng Zeng",
+    "Wujiang Xu",
+    "Mengnan Du",
+    "Wei Cheng",
+    "Zhaoran Wang",
+    "Tianlong Chen",
+    "Dimitris N. Metaxas"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/MingyuJ666/sparsityLLM",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "In this work, we investigate how the internal representations of Large Language Models (LLMs) change with inputs of increasing difficulty.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-06T04:38:11+00:00",
+  "last_seen": "2026-11-06T04:38:11+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2603.03415",
+      "url": "https://arxiv.org/abs/2603.03415"
+    }
+  ]
+}

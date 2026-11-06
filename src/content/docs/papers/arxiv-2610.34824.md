@@ -39,7 +39,7 @@ LLMs on edge devices are constrained by limited memory and bandwidth. Although 1
 ## 元数据
 
 - 作者：Yanzhen Zhou, Zhengyu Han, Qunyou Liu, Zheyu Yan, Weihong Xu, Cheng Zhuo
-- 发布：2026-10-27；更新：2026-10-27
+- 发布：2026-10-27；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

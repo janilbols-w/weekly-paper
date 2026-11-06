@@ -39,7 +39,7 @@ Attention is known to be sparse in vision transformers. In particular, we analyz
 ## 元数据
 
 - 作者：Charles Herr, Gabriele Spadaro, Enzo Tartaglione
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/EIDOSLAB/AttentionWithBias](https://github.com/EIDOSLAB/AttentionWithBias)
 - 阅读深度：metadata

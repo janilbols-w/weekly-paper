@@ -39,7 +39,7 @@ Collaboratively fine-tuning (FT) large language models (LLMs) over heterogeneous
 ## 元数据
 
 - 作者：Xingke Yang, Liang Li, Sicong Li, Liwei Guan, Hao Wang, Xiaoqi Qi, Jiang Liu, Xin Fu, Miao Pan
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

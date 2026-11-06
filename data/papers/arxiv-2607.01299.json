@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2607.01299",
+  "title": "HYPIC: Position-Independent Caching for Hybrid-Attention LLM Serving",
+  "abstract": "In retrieval-augmented generation (RAG) and agentic LLM serving, prompts are assembled from multiple independent segments into long contexts, making prefill dominate the computation cost. To reduce this cost, position-independent caching (PIC) admits KV reuse for non-contiguous segments across requests, while hybrid-attention models reduce computational complexity using linear attention. However, existing PIC methods break down on hybrid-attention models because their per-token KV-cache reuse primitives do not transfer to per-request recurrent states. In this work, we present HYPIC, the first system to accelerate hybrid-attention LLM serving with position-independent caching. For linear-attention layers, we identify the segment-cumulative transition operator as the missing algebraic primitive and cache it for each segment, enabling near-exact and constant-time state composition. For the remaining full-attention layers, we construct a small seam window to propagate hidden states through the linear-attention layers, so that cross-segment attention can be repaired by recomputation. Finally, HYPIC introduces segment parallelism, which parallelizes cache-miss prefill across instances, turning long cold requests into an accelerable workload. Evaluated across four hybrid-attention models and five workloads, HYPIC reduces time-to-first-token (TTFT) by $3.25\\times$ on average and improves QPS by $1.66\\times$ over Prefix Cache, while preserving task quality with a $1.71$-point gap from Full Recompute.",
+  "url": "https://arxiv.org/abs/2607.01299",
+  "pdf_url": "https://arxiv.org/pdf/2607.01299",
+  "published": "2026-11-05",
+  "updated": "2026-11-05",
+  "authors": [
+    "Yifei Liu",
+    "Juntong Wu",
+    "Yang Liu",
+    "Junhao Hu",
+    "Minghao Li",
+    "Xiaoxu Chen",
+    "Weihang Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "In retrieval-augmented generation (RAG) and agentic LLM serving, prompts are assembled from multiple independent segments into long contexts, making prefill dominate the computation cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-06T04:38:11+00:00",
+  "last_seen": "2026-11-06T04:38:11+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.01299",
+      "url": "https://arxiv.org/abs/2607.01299"
+    }
+  ]
+}

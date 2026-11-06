@@ -39,7 +39,7 @@ Diffusion Large Language Models (dLLMs) have emerged as a compelling paradigm fo
 ## 元数据
 
 - 作者：Shutong Wu, Jiawei Zhang
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/cychomatica/FreeDave](https://github.com/cychomatica/FreeDave)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Tabular data underpins most high-value prediction problems in science and indust
 ## 元数据
 
 - 作者：L\'eo Grinsztajn, Klemens Fl\"oge, Oscar Key, Felix Birkel, Philipp Jund, Brendan Roof, Mihir Manium, Shi Bin Hoo, Magnus B\"uhler, Anurag Garg, Dominik Safaric, Jake Robertson, Benjamin J\"ager, Simone Alessi, Adrian Hayler, Vladyslav Moroshan, Lennart Purucker, Philipp Singer, Alan Arazi, Julien Siems, Jan Hendrik Metzen, Georg Grab, Nick Erickson, Siyuan Guo, Eliott Kalfon, Simon Bing, David Salinas, Clara Cornu, Lilly Charlotte Wehrhahn, Diana Kriuchkova, Kursat Kaya, Lydia Sidhoum, Marie Salmon, Jerry Chen, Madelon Hulsebos, Yann LeCun, Samuel M\"uller, Bernhard Sch\"olkopf, Sauraj Gambhir, Noah Hollmann, Frank Hutter
-- 发布：2026-11-04；更新：2026-11-04
+- 发布：2026-11-04；更新：2026-11-05
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

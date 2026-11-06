@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **43** 篇。
+累计收录 **44** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TokenScale: Timely and Accurate Autoscaling for Disaggregated LLM Serving with Token Velocity](../../papers/arxiv-2512.03416/) | 2026-11-05 | 50 |
 | [Feeling of Knowing in Large Language Models](../../papers/arxiv-2611.04834/) | 2026-11-04 | 39 |
 | [RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving](../../papers/arxiv-2606.17949/) | 2026-11-03 | 55 |
 | [DIMWIT: Directly Invoking Models Without Intensive Tuning](../../papers/arxiv-2611.01463/) | 2026-11-03 | 41 |
