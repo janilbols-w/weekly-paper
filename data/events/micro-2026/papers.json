@@ -1,0 +1,2583 @@
+[
+  {
+    "paper": {
+      "id": "micro:micro-2026:atlaspathfindingefficient3ddrambasedllminferenceacceleratordesignviasiliconprovenfullstacksimula",
+      "title": "ATLAS: Pathfinding Efficient 3D-DRAM-based LLM Inference Accelerator Design via Silicon-Proven Full-Stack Simulation",
+      "abstract": "",
+      "url": "https://arxiv.org/abs/2604.08044",
+      "pdf_url": "https://arxiv.org/pdf/2604.08044",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Cong Li",
+        "Chenhao Xue",
+        "Yi Ren",
+        "Xiping Dong",
+        "Yu Cheng",
+        "Yinbo Hu",
+        "Fujun Bai",
+        "Yixin Guo",
+        "Xiping Jiang",
+        "Qiang Wu",
+        "Zhi Yang",
+        "Zhe Cheng",
+        "Yuan Xie",
+        "Guangyu Sun"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving hardware aware LLM inference accelerator 3D DRAM full stack simulator thermal memory bandwidth design space exploration hardware aware LLM inference accelerator 3D DRAM full stack simulator thermal memory bandwidth design space exploration",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "ATLAS 为 hybrid-bonded 3D-DRAM LLM accelerator 建立从 DRAM 组织、分布式 core、编程原语到 thermal analyzer 和 cycle-level simulator 的全栈抽象，并用真实硅片测量校准模型。",
+      "why_it_matters_zh": "作者报告仿真误差不超过 8.57%、与实测性能相关系数 97.26%–99.96%，设计空间探索得到的方案相对 GPU/既有 3D accelerator 最高为 3.64×/1.42×。官方 program 还为该论文标注 Available、Reviewed、Reproduced 三类 artifact badge。",
+      "limitations_zh": "峰值加速来自作者定义的 3D-DRAM 设计空间与 workload，不等于现有 GPU 可直接获得同等收益；论文写明框架将在发表时开源，本轮官方 program 虽确认 artifact 已复现，但未给出稳定公开代码链接。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "atlaspathfindingefficient3ddrambasedllminferenceacceleratordesignviasiliconprovenfullstacksimula",
+          "url": "https://microarch.org/micro59/program/#ii-b"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "把 3D-DRAM accelerator 的性能、热约束和真实硅片验证放在同一可复现框架中。",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:hillmheterogeneouscpugpuinferenceforinteractivemoellmservingonlocalsystems",
+      "title": "HiLLM: Heterogeneous CPU–GPU Inference for Interactive MoE LLM Serving on Local Systems",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ii-b",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Insu Choi",
+        "Seungchan Lee",
+        "Joon-Sung Yang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "hillmheterogeneouscpugpuinferenceforinteractivemoellmservingonlocalsystems",
+          "url": "https://microarch.org/micro59/program/#ii-b"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:dartacacheenableddiffusiontransformeracceleratorviafeaturegatedschedulingandhierarchicalquantiza",
+      "title": "DART: A Cache-Enabled Diffusion Transformer Accelerator via Feature-Gated Scheduling and Hierarchical Quantization",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ii-b",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Zihan Zou",
+        "Peng Zheng",
+        "Shun Zhang",
+        "Xinyang Chen",
+        "Jiaming Lin",
+        "Bori An",
+        "Yichen Hu",
+        "Xinming Yan",
+        "Xin Cao",
+        "Hao Cai",
+        "Bo Liu"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [
+        "quantization-low-precision"
+      ],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "dartacacheenableddiffusiontransformeracceleratorviafeaturegatedschedulingandhierarchicalquantiza",
+          "url": "https://microarch.org/micro59/program/#ii-b"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:gossamerautilitydrivenarchitectureforconstantbudgetkvcachecompressioninreasoningllms",
+      "title": "Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ii-b",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Feng Cheng",
+        "Cong Guo",
+        "Junyao Zhang",
+        "Haoxuan Shan",
+        "Chiyue Wei",
+        "Hong Wang",
+        "Hai \"Helen\" Li",
+        "Yiran Chen"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "gossamerautilitydrivenarchitectureforconstantbudgetkvcachecompressioninreasoningllms",
+          "url": "https://microarch.org/micro59/program/#ii-b"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:aiperfmetasperformancemodelingandhwswcodesignframeworkfordatacenterscalellmtraining",
+      "title": "AIPerf: Meta's Performance Modeling and HW/SW Co-design Framework for Datacenter-Scale LLM Training",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ii-c",
+      "pdf_url": "https://aisystemcodesign.github.io/papers/MICRO26-AIPerf.pdf",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Pyeongsu Park",
+        "Hwijoon Lim",
+        "Seah Kim",
+        "Mustafa Ozdal",
+        "Yi-Chien Lin",
+        "Kevin Siu",
+        "Pavan Yalamanchili",
+        "Benjamin Ghaemmaghami",
+        "Yufeng Gu",
+        "Jongsoo Park",
+        "Joel Coburn",
+        "Paul Baumstarck",
+        "Shobhit Kanaujia",
+        "Chunqiang Tang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1C: Industry Session distributed training GPU accelerator training speedup performance profiling parallelism exploration datacenter interconnect hardware software co-design distributed training GPU accelerator training speedup performance profiling parallelism exploration datacenter interconnect hardware software co-design",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "distributed-training-checkpoint",
+        "leaf": "Distributed Training & Checkpointing",
+        "leaf_zh": "分布式训练与 Checkpoint"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "distributed training"
+      ],
+      "score": 41,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: distributed training",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "AIPerf 把 accelerator、内存、网络、并行策略与 workload graph 分层建模，再以 Parallelism Explorer 穷举多维配置，为 Meta 从早期芯片设计到生产训练规划的六阶段 co-design 生命周期提供统一性能预测。",
+      "why_it_matters_zh": "作者在 H100 与 GB300、四类 dense/MoE 模型上报告平均绝对 step-time 误差 6.2%（最差 11.2%），并展示 256 张 H100 上考虑 MoE 路由不均衡后吞吐提高 1.30%。框架长期用于生产决策，说明性能模型的价值不只在预测，还在定位软件 headroom 与硬件取舍。",
+      "limitations_zh": "AIPerf 是 Meta 内部生产系统，论文未提供可运行代码；许多校准数据、MTIA 细节与 fleet 约束不可公开复现。Llama-4 Scout 在 GB300 上的 compute/network gap 达 14.5%/22.2%，也说明新调度模式仍需持续校准。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "aiperfmetasperformancemodelingandhwswcodesignframeworkfordatacenterscalellmtraining",
+          "url": "https://microarch.org/micro59/program/#ii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1C: Industry Session",
+    "presentation": "Industry Track Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "少见的 hyperscale 训练 co-design 全生命周期实证，结果与适用边界均可核验。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:highdensitylutmpgemmarchitecturewithunifiedintfpsupportforlowbitllminference",
+      "title": "High-Density LUT mpGEMM Architecture with Unified INT/FP Support for Low-Bit LLM Inference",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ii-d",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Jiageng Shi",
+        "Yang Shi",
+        "Hao Wang",
+        "Ruiqiang Song",
+        "Jingwei Cai",
+        "Zhe Li",
+        "Junzhong Shen",
+        "Chen Xu",
+        "Yaohua Wang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1D: Low-Bit LUT-Based & Sparse Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "sparse inference"
+      ],
+      "score": 39,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: sparse inference",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "highdensitylutmpgemmarchitecturewithunifiedintfpsupportforlowbitllminference",
+          "url": "https://microarch.org/micro59/program/#ii-d"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1D: Low-Bit LUT-Based & Sparse Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:ausaacomplementaryrowpairinggemmacceleratorforprunedllmsexploitingasymmetricunstructuredsparsity",
+      "title": "AUSA: A Complementary Row-Pairing GEMM Accelerator for Pruned LLMs Exploiting Asymmetric Unstructured Sparsity",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ii-d",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Ruoheng Yao",
+        "Wenneng Jiang",
+        "Tianji Wang",
+        "Yichen Ouyang",
+        "Lei Chen",
+        "Fengwei An"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 1D: Low-Bit LUT-Based & Sparse Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [
+        "hardware-edge"
+      ],
+      "keyword_evidence": [
+        "sparse inference",
+        "sparsity"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: sparse inference, sparsity",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "ausaacomplementaryrowpairinggemmacceleratorforprunedllmsexploitingasymmetricunstructuredsparsity",
+          "url": "https://microarch.org/micro59/program/#ii-d"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 1D: Low-Bit LUT-Based & Sparse Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:autoscalingheterogeneousneuralprocessingunitsforenergyandcostefficientllmserving",
+      "title": "Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#iii-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Yuqi Xue",
+        "Jichuan Chang",
+        "Jian Huang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 2A: ML System Interconect",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "autoscalingheterogeneousneuralprocessingunitsforenergyandcostefficientllmserving",
+          "url": "https://microarch.org/micro59/program/#iii-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 2A: ML System Interconect",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:beyondprefilldecodedisaggregationdissectingllminferenceforheterogeneousplatformsviadynamicoperat",
+      "title": "Beyond Prefill-Decode Disaggregation: Dissecting LLM Inference for Heterogeneous Platforms via Dynamic Operator Scheduling",
+      "abstract": "",
+      "url": "https://arxiv.org/abs/2607.25498",
+      "pdf_url": "https://arxiv.org/pdf/2607.25498",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Jiaqi Yang",
+        "Jiayi Li",
+        "Yihan Fu",
+        "Hongxiao Zhao",
+        "Zhan Chen",
+        "Qiuping Wu",
+        "Yuchao Yang",
+        "Bonan Yan"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 2A: ML System Interconect prefill decode disaggregation dynamic operator scheduling heterogeneous NPU PIM weight layout latency serving prefill decode disaggregation dynamic operator scheduling heterogeneous NPU PIM weight layout latency serving",
+      "code_url": "https://github.com/YIAI-02/TriForm",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "prefill-decode-disaggregation",
+        "leaf": "Prefill-Decode Disaggregation",
+        "leaf_zh": "Prefill-Decode 解耦"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "prefill decode",
+        "prefill-decode"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: prefill decode, prefill-decode",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "",
+      "summary_zh": "DOPS 把异构 NPU–PIM 推理从粗粒度 prefill/decode 切分推进到算子级动态调度：Bifocal 根据完成时间、下游依赖与复用在线选择设备，Weight Layout Arbiter 则在内存约束下为权重块选择持久布局。",
+      "why_it_matters_zh": "在 Qwen、Llama 与 Mixtral 的 64 组 workload sweep 中，Bifocal 相对 PD 基线的几何平均加速为 1.20–2.23×，WLA 再带来 1.28–1.33×；论文同时给出模拟与验证差距，并公开调度/仿真代码。",
+      "limitations_zh": "结论来自代表性的 Ascend 910B NPU 与 GDDR6-PIM 模拟/验证环境，作者也观察到若干静态策略对 workload shape 很敏感。它没有证明在通用 GPU 集群、真实多租户流量或生产故障条件下同样收益。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "beyondprefilldecodedisaggregationdissectingllminferenceforheterogeneousplatformsviadynamicoperat",
+          "url": "https://microarch.org/micro59/program/#iii-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 2A: ML System Interconect",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "以可复现的动态调度和布局联合优化，具体展示了“超越 PD 解耦”的条件与收益。",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:enablingspatiallyfinegraineddvfsinneuralprocessingunitsforenergyefficientllmserving",
+      "title": "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#iv-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Yuqi Xue",
+        "Jerry Wu",
+        "Corey Yu",
+        "Jian Huang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 3C: Distinguished Papers II -- Security, Verification & Efficient ML Systems",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "enablingspatiallyfinegraineddvfsinneuralprocessingunitsforenergyefficientllmserving",
+          "url": "https://microarch.org/micro59/program/#iv-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 3C: Distinguished Papers II -- Security, Verification & Efficient ML Systems",
+    "presentation": "Research Paper",
+    "awards": [
+      "MICRO 2026 Distinguished Paper"
+    ],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:edgexpertanedgedeviceformemoryefficientllminferencewithmixtureofexpertsandspeculativedecoding",
+      "title": "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#iv-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Sangwoo Ha",
+        "Hyunwoo Seo",
+        "Yurim Jo",
+        "Youngjin Moon",
+        "Hoi-Jun Yoo"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 3C: Distinguished Papers II -- Security, Verification & Efficient ML Systems",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "edgexpertanedgedeviceformemoryefficientllminferencewithmixtureofexpertsandspeculativedecoding",
+          "url": "https://microarch.org/micro59/program/#iv-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 3C: Distinguished Papers II -- Security, Verification & Efficient ML Systems",
+    "presentation": "Research Paper",
+    "awards": [
+      "MICRO 2026 Distinguished Paper"
+    ],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:crossspecadraftverifyaggregated3dllmacceleratorwiththermalawarecrossfloorplanandstacklayerwisedy",
+      "title": "CrossSpec: A Draft–Verify Aggregated 3D LLM Accelerator with Thermal-Aware Cross Floorplan and Stack-Layer-wise Dynamic Refresh for Parallel Speculative Decoding",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#v-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Yutong Su",
+        "Huanyu Wang",
+        "Ruikang Guo",
+        "Mengfei Shen",
+        "Huiming Han",
+        "Yang Wang",
+        "Yang Hu",
+        "Shouyi Yin"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 4C: Thermal-Aware 3D-Stacked LLM Accelerators",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [
+        "speculative-decoding"
+      ],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "crossspecadraftverifyaggregated3dllmacceleratorwiththermalawarecrossfloorplanandstacklayerwisedy",
+          "url": "https://microarch.org/micro59/program/#v-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 4C: Thermal-Aware 3D-Stacked LLM Accelerators",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:fengshuidemystifyingchipletecosystemandbespokeneuralnetworkacceleratorcodesign",
+      "title": "Fengshui: Demystifying Chiplet Ecosystem and Bespoke Neural Network Accelerator Codesign",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vi-b",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Haoran Jin",
+        "Jirong Yang",
+        "Zhiheng Zhang",
+        "Justin Shin",
+        "Barry Lyu",
+        "Kangqi Zhang",
+        "Yunpeng Liu",
+        "Nathan Bleier"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 5B: Emerging Technologies and Reliability",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "fengshuidemystifyingchipletecosystemandbespokeneuralnetworkacceleratorcodesign",
+          "url": "https://microarch.org/micro59/program/#vi-b"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 5B: Emerging Technologies and Reliability",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:dualignahardwareassistedmemorymappingstrategyforpnmacceleratedllmserving",
+      "title": "DUALign: A Hardware-Assisted Memory Mapping Strategy for PNM-Accelerated LLM Serving",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vi-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Euijun Kim",
+        "Joshua Gabriel Dela Rosa",
+        "Bogil Kim",
+        "Youngin Kim",
+        "Seungyong Lee",
+        "Joonseop Sim",
+        "Youngpyo Joo",
+        "William Song"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 5C: CXL, Caching & GPU Bandwidth Management",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "dualignahardwareassistedmemorymappingstrategyforpnmacceleratedllmserving",
+          "url": "https://microarch.org/micro59/program/#vi-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 5C: CXL, Caching & GPU Bandwidth Management",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:hbqhierarchicalscalingblockquantizationwithhardwareefficiencyawaredesignforaccuratellminference",
+      "title": "HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Chun-Ting Chen",
+        "Dongmin Han",
+        "Hangyeol Mun",
+        "Jake Hyun",
+        "Arnab Raha",
+        "Amit Agarwal",
+        "Mark Anders",
+        "Mohamed Abdelfattah",
+        "Jae-sun Seo"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "hbqhierarchicalscalingblockquantizationwithhardwareefficiencyawaredesignforaccuratellminference",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:flexposittunablefractionalprecisionforllminferenceaccelerators",
+      "title": "FlexPosit: Tunable Fractional Precision for LLM Inference Accelerators",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Yimin Gao",
+        "Liangtao Dai",
+        "Jun Yin",
+        "Xinfei Guo",
+        "Mircea Stan"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 39,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "flexposittunablefractionalprecisionforllminferenceaccelerators",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:softwarehardwarecodesignofpriorawarew4a4microblockquantizationforrobustllminferenceacrossmodelfa",
+      "title": "Software-Hardware Co-Design of Prior-Aware W4A4 Micro-Block Quantization for Robust LLM Inference Across Model Families",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Yijian Wei",
+        "Tianchang Yang",
+        "Sicheng Tao",
+        "Miao Hao",
+        "Tianyi Liu",
+        "Tingting Zhang",
+        "Fuxin Zhang",
+        "Jian Wang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "softwarehardwarecodesignofpriorawarew4a4microblockquantizationforrobustllminferenceacrossmodelfa",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:ozcoreanozakischemeiibasedgemmarchitectureforunifiedintegerandfloatingpointcomputation",
+      "title": "OzCore: An Ozaki-Scheme-II-Based GEMM Architecture for Unified Integer and Floating-Point Computation",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Jihoon Park",
+        "Junhee Lee",
+        "Howon Lee",
+        "Jinsu Kim",
+        "Jinseok Kim",
+        "Jae-Joon Kim"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 39,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "ozcoreanozakischemeiibasedgemmarchitectureforunifiedintegerandfloatingpointcomputation",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:skewqskewnessawarecrosslayerquantizationforefficientllminferenceviasoftwarehardwarecodesign",
+      "title": "SkewQ: Skewness-Aware Cross-Layer Quantization for Efficient LLM Inference via Software-Hardware Co-Design",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Wenju Zhao",
+        "Jianhui Yue",
+        "Pengcheng Yao",
+        "Jiaqi Zhai",
+        "Yundong Zhang",
+        "Yu Huang",
+        "Shunsen Lv",
+        "Bing Zhu",
+        "Zhongtian Long",
+        "Long Zheng",
+        "Chencheng Ye",
+        "Lihong Gu",
+        "Jingling Xue",
+        "Hai Jin",
+        "XIAOFEI LIAO"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "skewqskewnessawarecrosslayerquantizationforefficientllminferenceviasoftwarehardwarecodesign",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:mosaicanacceleratordesignforheterophilicgraphlearning",
+      "title": "MOSAIC: An Accelerator Design for Heterophilic Graph Learning",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Fangzhou Ye",
+        "Wei Zhang",
+        "Ahmed Louri",
+        "Hao Zheng"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "mosaicanacceleratordesignforheterophilicgraphlearning",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:dstaracceleratingdiffusiontransformersviaspatialandtemporalredundancyreduction",
+      "title": "DSTAR: Accelerating Diffusion Transformers via Spatial and Temporal Redundancy Reduction",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#vii-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Chi Zhang",
+        "Jieru Zhao",
+        "Yu Feng",
+        "Chen Zhang",
+        "Quan Chen",
+        "Minyi Guo"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 6C: Low-Bit Quantization for LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 39,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "dstaracceleratingdiffusiontransformersviaspatialandtemporalredundancyreduction",
+          "url": "https://microarch.org/micro59/program/#vii-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 6C: Low-Bit Quantization for LLM Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:symphonyharmonizingmemoryandcommunicationinllminferenceon3ddramaccelerators",
+      "title": "SYMPHONY: Harmonizing Memory and Communication in LLM Inference on 3D DRAM Accelerators",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Sabuj Laskar",
+        "Hyojong Kim",
+        "Devesh Singh",
+        "Mrinmoy Ghosh",
+        "EJ Kim"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 41,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "symphonyharmonizingmemoryandcommunicationinllminferenceon3ddramaccelerators",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:ammaamultichipletmemorycentricarchitectureforlowlatency1mcontextattentionserving",
+      "title": "AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Zhongkai Yu",
+        "haotian ye",
+        "Chenyang Zhou",
+        "Ohm Rishabh Venkatachalam",
+        "Zaifeng Pan",
+        "Zhengding Hu",
+        "Junsung Kim",
+        "Won Woo Ro",
+        "Po-An Tsai",
+        "Shuyi Pei",
+        "Yangwook Kang",
+        "Yufei Ding"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "ammaamultichipletmemorycentricarchitectureforlowlatency1mcontextattentionserving",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:nelssaagpupnmheterogeneoussystemformixedlengthllmservingvialengthbasedrequestplacement",
+      "title": "NELSSA: A GPU–PNM Heterogeneous System for Mixed-Length LLM Serving via Length–based Request Placement",
+      "abstract": "",
+      "url": "https://arxiv.org/abs/2607.26633",
+      "pdf_url": "https://arxiv.org/pdf/2607.26633",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Sookyung Choi",
+        "Seungyong Lee",
+        "Kangkyu Park",
+        "Yunseo Chun",
+        "Junseok Lee",
+        "Hyeongseok Gwak",
+        "Myunghyun Rhee",
+        "Euiseok Kim",
+        "Donguk Moon",
+        "Kwangsik Shin",
+        "Guseul Heo",
+        "Youngpyo Joo",
+        "Hoshik Kim",
+        "Jongse Park"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving mixed length LLM serving request scheduling GPU PNM long context sparse attention KV cache tail latency throughput mixed length LLM serving request scheduling GPU PNM long context sparse attention KV cache tail latency throughput",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "batching-scheduling",
+        "leaf": "Batching & Request Scheduling",
+        "leaf_zh": "Batching 与请求调度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "NELSSA 按输入长度把短请求留在 GPU FlashAttention 路径，把长请求的 sparse attention 放到真实 PNM 原型；QKV/MLP 仍在 GPU 全局成批执行，并在上下文增长导致显存压力时异步迁移 KV Cache。",
+      "why_it_matters_zh": "作者在混合长短请求下报告 decode 吞吐最高提升 5.5×、P99 延迟最高降低 15×；论文同时区分直接硬件测量与校准后的系统级仿真，并展示长请求比例升高时 GPU 基线停顿而 NELSSA 保持批量执行。",
+      "limitations_zh": "最大规模结果包含向 512GB PNM 配置的投影，真实原型容量更小；方法依赖约 4% sparse selection、特定 PNM 硬件和长上下文混合分布，不能直接外推到 dense attention、不同准确率预算或通用云 GPU。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "nelssaagpupnmheterogeneoussystemformixedlengthllmservingvialengthbasedrequestplacement",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "同时处理长上下文容量、head-of-line blocking 与动态增长请求，并清楚区分实测和投影结果。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:ultrabridgingthevqgapinanisotropicllmquantizationviaaunifiedlutbasedtransformerarchitecture",
+      "title": "ULTRA: Bridging the VQ Gap in Anisotropic LLM Quantization via a Unified LUT-Based TRansformer Architecture",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Zongwu Wang",
+        "Zhongyi Tang",
+        "Fangxin Liu",
+        "Shiyuan Huang",
+        "Chenyang Guan",
+        "Haomin Li",
+        "Gang Li",
+        "Liqiang Lu",
+        "Mingyu Gao",
+        "Li Jiang",
+        "Haibing Guan"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "ultrabridgingthevqgapinanisotropicllmquantizationviaaunifiedlutbasedtransformerarchitecture",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:mosaicexploitingstructuredtoleranceforadaptivellminferencemappinginheterogeneouspimaccelerators",
+      "title": "MOSAIC: Exploiting Structured Tolerance for Adaptive LLM Inference Mapping in Heterogeneous PIM Accelerators",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Fangxin Liu",
+        "Jingkui Yang",
+        "Yilong Zhao",
+        "Haomin Li",
+        "Wen Mei",
+        "Xinran Liang",
+        "Li Jiang",
+        "Haibing Guan"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 41,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "mosaicexploitingstructuredtoleranceforadaptivellminferencemappinginheterogeneouspimaccelerators",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:rethinkingunifiedmemoryfornpupimsystemsdualviewmemoryfordynamicinferenceofllm",
+      "title": "Rethinking Unified Memory for NPU–PIM Systems: Dual-View Memory for Dynamic Inference of LLM",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Shixin Zhao",
+        "Lian Liu",
+        "Tianhua Han",
+        "Mengdi Wang",
+        "Yinhe Han",
+        "Ying Wang"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "unified memory"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: unified memory",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "rethinkingunifiedmemoryfornpupimsystemsdualviewmemoryfordynamicinferenceofllm",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:memllmendtoendinstorageaccelerationofretrievalaugmentedgenerationusingprecomputedkvcaches",
+      "title": "MemLLM: End-to-End In-Storage Acceleration of Retrieval-Augmented Generation using Precomputed KV Caches",
+      "abstract": "",
+      "url": "https://arxiv.org/abs/2610.22579",
+      "pdf_url": "https://arxiv.org/pdf/2610.22579",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Seungkwan Kang",
+        "Hyungseok Ko",
+        "Heemin Kim",
+        "Myoungsoo Jung"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8A: PIM & Near-Memory Long-Context LLM Serving storage data plane on device RAG precomputed KV cache in storage processing selective recomputation PCIe latency storage data plane on device RAG precomputed KV cache in storage processing selective recomputation PCIe latency",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group": "Cluster & Resource Systems",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "storage-data-plane",
+        "leaf": "Storage & Data Plane",
+        "leaf_zh": "存储与数据平面"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "MemLLM 将预计算 KV Cache 的 RAG attention 整条流水线下沉到 SSD：每个 NAND channel 配置 Elastic-SIMD accelerator，融合 selective recomputation 与 query attention，并在控制器 SRAM 内完成无 DRAM 的 online-softmax reduction。",
+      "why_it_matters_zh": "在 8 个 RAG 数据集和 6 个端侧 LLM 上，作者报告相对 GPU baseline 平均端到端加速 4.06×，同时把 PCIe 流量限制为不随上下文长度增长的 O(1) 小消息；16nm FPGA 原型和 cycle-accurate SSD simulator 支撑了硬件结果。",
+      "limitations_zh": "目标场景是预计算文档 KV、长上下文、短答案且主机内存受限的端侧 RAG；长答案或 KV 可完全常驻内存时优势收窄。部署还要求带 per-channel accelerator 的计算存储设备、自定义 NVMe command 与当前尚不普及的 GPU/device P2P 支持。",
+      "reading_depth": "full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "memllmendtoendinstorageaccelerationofretrievalaugmentedgenerationusingprecomputedkvcaches",
+          "url": "https://microarch.org/micro59/program/#ix-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8A: PIM & Near-Memory Long-Context LLM Serving",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "从 SSD 内部数据通路重构 RAG prefill，机制、原型、结果和部署前提完整。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:neuroflexlosslesselementlevelannsnncoexecutionforefficientsparseinference",
+      "title": "NeuroFlex: Lossless Element-Level ANN–SNN Co-Execution for Efficient Sparse Inference",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Varun Manjunath",
+        "Pranav Ramesh",
+        "Gopalakrishnan Srinivasan"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8C: Systolic & Dataflow Innovations for LLM/GNN Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "sparse inference"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: sparse inference",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "neuroflexlosslesselementlevelannsnncoexecutionforefficientsparseinference",
+          "url": "https://microarch.org/micro59/program/#ix-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8C: Systolic & Dataflow Innovations for LLM/GNN Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:vqvlamotionawarevectorquantizationwithcomputationfusionforvlaacceleration",
+      "title": "VQVLA: Motion-Aware Vector Quantization with Computation Fusion for VLA Acceleration",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#ix-c",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Zhuoran Song",
+        "Haozhe Jiang",
+        "Chunyu Qi",
+        "Minnan Pei",
+        "Gang Li",
+        "Xiaoyao Liang",
+        "Haibing Guan"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 8C: Systolic & Dataflow Innovations for LLM/GNN Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "vqvlamotionawarevectorquantizationwithcomputationfusionforvlaacceleration",
+          "url": "https://microarch.org/micro59/program/#ix-c"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 8C: Systolic & Dataflow Innovations for LLM/GNN Inference",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "micro:micro-2026:elasticllmservingonfpgasviapartialreconfigurationacasestudyusingthealterafpgaaisuite",
+      "title": "Elastic LLM Serving on FPGAs via Partial Reconfiguration: A Case Study Using the Altera FPGA AI Suite",
+      "abstract": "",
+      "url": "https://microarch.org/micro59/program/#x-a",
+      "pdf_url": "",
+      "published": "2026-10-31",
+      "updated": "2026-10-31",
+      "authors": [
+        "Nachuan Wang",
+        "Mike Montano",
+        "Hyungyo Kim",
+        "Ren Wang",
+        "Phillip Swart",
+        "Nam Sung Kim"
+      ],
+      "source": "MICRO official program",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "MICRO 2026",
+      "journal_ref": "",
+      "comment": "Session 9A: FPGA / CGRA Accelerators",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 5,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "MICRO official program",
+          "id": "elasticllmservingonfpgasviapartialreconfigurationacasestudyusingthealterafpgaaisuite",
+          "url": "https://microarch.org/micro59/program/#x-a"
+        }
+      ]
+    },
+    "event_id": "micro-2026",
+    "track": "Session 9A: FPGA / CGRA Accelerators",
+    "presentation": "Research Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "ACM Artifact Available",
+      "ACM Artifact Reviewed",
+      "ACM Results Reproduced",
+      "official accepted-paper program"
+    ]
+  }
+]

@@ -21,6 +21,7 @@ from weekly_paper.event_collectors import (
     parse_acl_anthology_xml,
     parse_neurips_detail_html,
     parse_neurips_downloads_html,
+    parse_micro_program_html,
     parse_sosp_schedule_html,
     parse_usenix_schedule_html,
 )
@@ -453,6 +454,36 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(parsed["authors"], ["Alice Smith", "Bob Jones"])
         self.assertEqual(parsed["abstract"], "Lower latency.")
         self.assertEqual(parsed["openreview_url"], "https://openreview.net/forum?id=abc123")
+
+    def test_parse_micro_official_program_html(self) -> None:
+        event = {
+            "id": "micro-2026",
+            "short_name": "MICRO 2026",
+            "start_date": "2026-10-31",
+            "program_released_date": "2026-09-29",
+            "program_url": "https://microarch.org/micro59/program/",
+        }
+        program = b"""
+<div class="panel panel-session"><div class="panel-heading"><h4 class="panel-title">
+<a>Session 0A: Opening Remarks</a></h4></div><div id="opening" class="panel-paper">
+<div class="paper"><div class="paper-title">Welcome Message</div></div></div></div>
+<div class="panel panel-session"><div class="panel-heading"><h4 class="panel-title">
+<a>Session 3C: Distinguished Papers II -- Efficient ML Systems</a></h4></div>
+<div id="iv-c" class="panel-paper"><div class="paper"><div class="paper-title">
+Fast LLM Serving<span class="ae-badge ae-badge--available"></span>
+<span class="ae-badge ae-badge--reproducible"></span></div>
+<div class="paper-authors">Alice Smith, Bob Jones (Example Univ.); Chen Li (Lab (AI))</div>
+</div></div></div>
+"""
+        values, total = parse_micro_program_html(program, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.authors, ["Alice Smith", "Bob Jones", "Chen Li"])
+        self.assertEqual(values[0].paper.url, "https://microarch.org/micro59/program/#iv-c")
+        self.assertEqual(values[0].awards, ["MICRO 2026 Distinguished Paper"])
+        self.assertEqual(
+            values[0].event_score_evidence,
+            ["ACM Artifact Available", "ACM Results Reproduced"],
+        )
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

@@ -1,0 +1,55 @@
+micro:micro-2026:aiperfmetasperformancemodelingandhwswcodesignframeworkfordatacenterscalellmtraining:
+  url: https://microarch.org/micro59/program/#ii-c
+  pdf_url: https://aisystemcodesign.github.io/papers/MICRO26-AIPerf.pdf
+  classification_hint: distributed training GPU accelerator training speedup performance profiling parallelism exploration datacenter interconnect hardware software co-design
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: training-datacenter, group: Training & Datacenter Infrastructure, group_zh: 训练与数据中心基础设施, leaf_id: distributed-training-checkpoint, leaf: Distributed Training & Checkpointing, leaf_zh: 分布式训练与 Checkpoint}
+  summary_zh: AIPerf 把 accelerator、内存、网络、并行策略与 workload graph 分层建模，再以 Parallelism Explorer 穷举多维配置，为 Meta 从早期芯片设计到生产训练规划的六阶段 co-design 生命周期提供统一性能预测。
+  why_it_matters_zh: 作者在 H100 与 GB300、四类 dense/MoE 模型上报告平均绝对 step-time 误差 6.2%（最差 11.2%），并展示 256 张 H100 上考虑 MoE 路由不均衡后吞吐提高 1.30%。框架长期用于生产决策，说明性能模型的价值不只在预测，还在定位软件 headroom 与硬件取舍。
+  limitations_zh: AIPerf 是 Meta 内部生产系统，论文未提供可运行代码；许多校准数据、MTIA 细节与 fleet 约束不可公开复现。Llama-4 Scout 在 GB300 上的 compute/network gap 达 14.5%/22.2%，也说明新调度模式仍需持续校准。
+  reading_depth: full_text
+  selection_reason_zh: 少见的 hyperscale 训练 co-design 全生命周期实证，结果与适用边界均可核验。
+
+micro:micro-2026:beyondprefilldecodedisaggregationdissectingllminferenceforheterogeneousplatformsviadynamicoperat:
+  url: https://arxiv.org/abs/2607.25498
+  pdf_url: https://arxiv.org/pdf/2607.25498
+  code_url: https://github.com/YIAI-02/TriForm
+  classification_hint: prefill decode disaggregation dynamic operator scheduling heterogeneous NPU PIM weight layout latency serving
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: serving-distributed, group: Serving & Distributed Inference, group_zh: Serving 与分布式推理, leaf_id: prefill-decode-disaggregation, leaf: Prefill-Decode Disaggregation, leaf_zh: Prefill-Decode 解耦}
+  summary_zh: DOPS 把异构 NPU–PIM 推理从粗粒度 prefill/decode 切分推进到算子级动态调度：Bifocal 根据完成时间、下游依赖与复用在线选择设备，Weight Layout Arbiter 则在内存约束下为权重块选择持久布局。
+  why_it_matters_zh: 在 Qwen、Llama 与 Mixtral 的 64 组 workload sweep 中，Bifocal 相对 PD 基线的几何平均加速为 1.20–2.23×，WLA 再带来 1.28–1.33×；论文同时给出模拟与验证差距，并公开调度/仿真代码。
+  limitations_zh: 结论来自代表性的 Ascend 910B NPU 与 GDDR6-PIM 模拟/验证环境，作者也观察到若干静态策略对 workload shape 很敏感。它没有证明在通用 GPU 集群、真实多租户流量或生产故障条件下同样收益。
+  reading_depth: full_text
+  selection_reason_zh: 以可复现的动态调度和布局联合优化，具体展示了“超越 PD 解耦”的条件与收益。
+
+micro:micro-2026:atlaspathfindingefficient3ddrambasedllminferenceacceleratordesignviasiliconprovenfullstacksimula:
+  url: https://arxiv.org/abs/2604.08044
+  pdf_url: https://arxiv.org/pdf/2604.08044
+  classification_hint: hardware aware LLM inference accelerator 3D DRAM full stack simulator thermal memory bandwidth design space exploration
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: serving-distributed, group: Serving & Distributed Inference, group_zh: Serving 与分布式推理, leaf_id: hardware-edge, leaf: Hardware-aware & Edge Inference, leaf_zh: 硬件感知与边缘推理}
+  summary_zh: ATLAS 为 hybrid-bonded 3D-DRAM LLM accelerator 建立从 DRAM 组织、分布式 core、编程原语到 thermal analyzer 和 cycle-level simulator 的全栈抽象，并用真实硅片测量校准模型。
+  why_it_matters_zh: 作者报告仿真误差不超过 8.57%、与实测性能相关系数 97.26%–99.96%，设计空间探索得到的方案相对 GPU/既有 3D accelerator 最高为 3.64×/1.42×。官方 program 还为该论文标注 Available、Reviewed、Reproduced 三类 artifact badge。
+  limitations_zh: 峰值加速来自作者定义的 3D-DRAM 设计空间与 workload，不等于现有 GPU 可直接获得同等收益；论文写明框架将在发表时开源，本轮官方 program 虽确认 artifact 已复现，但未给出稳定公开代码链接。
+  reading_depth: full_text
+  selection_reason_zh: 把 3D-DRAM accelerator 的性能、热约束和真实硅片验证放在同一可复现框架中。
+
+micro:micro-2026:nelssaagpupnmheterogeneoussystemformixedlengthllmservingvialengthbasedrequestplacement:
+  url: https://arxiv.org/abs/2607.26633
+  pdf_url: https://arxiv.org/pdf/2607.26633
+  classification_hint: mixed length LLM serving request scheduling GPU PNM long context sparse attention KV cache tail latency throughput
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: serving-distributed, group: Serving & Distributed Inference, group_zh: Serving 与分布式推理, leaf_id: batching-scheduling, leaf: Batching & Request Scheduling, leaf_zh: Batching 与请求调度}
+  summary_zh: NELSSA 按输入长度把短请求留在 GPU FlashAttention 路径，把长请求的 sparse attention 放到真实 PNM 原型；QKV/MLP 仍在 GPU 全局成批执行，并在上下文增长导致显存压力时异步迁移 KV Cache。
+  why_it_matters_zh: 作者在混合长短请求下报告 decode 吞吐最高提升 5.5×、P99 延迟最高降低 15×；论文同时区分直接硬件测量与校准后的系统级仿真，并展示长请求比例升高时 GPU 基线停顿而 NELSSA 保持批量执行。
+  limitations_zh: 最大规模结果包含向 512GB PNM 配置的投影，真实原型容量更小；方法依赖约 4% sparse selection、特定 PNM 硬件和长上下文混合分布，不能直接外推到 dense attention、不同准确率预算或通用云 GPU。
+  reading_depth: full_text
+  selection_reason_zh: 同时处理长上下文容量、head-of-line blocking 与动态增长请求，并清楚区分实测和投影结果。
+
+micro:micro-2026:memllmendtoendinstorageaccelerationofretrievalaugmentedgenerationusingprecomputedkvcaches:
+  url: https://arxiv.org/abs/2610.22579
+  pdf_url: https://arxiv.org/pdf/2610.22579
+  classification_hint: storage data plane on device RAG precomputed KV cache in storage processing selective recomputation PCIe latency
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: cluster-resource, group: Cluster & Resource Systems, group_zh: 集群与资源系统, leaf_id: storage-data-plane, leaf: Storage & Data Plane, leaf_zh: 存储与数据平面}
+  summary_zh: MemLLM 将预计算 KV Cache 的 RAG attention 整条流水线下沉到 SSD：每个 NAND channel 配置 Elastic-SIMD accelerator，融合 selective recomputation 与 query attention，并在控制器 SRAM 内完成无 DRAM 的 online-softmax reduction。
+  why_it_matters_zh: 在 8 个 RAG 数据集和 6 个端侧 LLM 上，作者报告相对 GPU baseline 平均端到端加速 4.06×，同时把 PCIe 流量限制为不随上下文长度增长的 O(1) 小消息；16nm FPGA 原型和 cycle-accurate SSD simulator 支撑了硬件结果。
+  limitations_zh: 目标场景是预计算文档 KV、长上下文、短答案且主机内存受限的端侧 RAG；长答案或 KV 可完全常驻内存时优势收窄。部署还要求带 per-channel accelerator 的计算存储设备、自定义 NVMe command 与当前尚不普及的 GPU/device P2P 支持。
+  reading_depth: full_text
+  selection_reason_zh: 从 SSD 内部数据通路重构 RAG prefill，机制、原型、结果和部署前提完整。

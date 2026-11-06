@@ -561,3 +561,114 @@ def collect_neurips_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[L
                     {"source": "OpenReview", "id": forum_id, "url": openreview_url}
                 )
     return papers, total
+
+
+def _micro_authors(node: Tag | None) -> List[str]:
+    """Remove affiliation parentheses before splitting the MICRO author line."""
+    if node is None:
+        return []
+    value = clean_text(node.get_text(" ", strip=True))
+    output: List[str] = []
+    depth = 0
+    visible: List[str] = []
+    for character in value:
+        if character == "(":
+            depth += 1
+            continue
+        if character == ")" and depth:
+            depth -= 1
+            continue
+        if depth == 0:
+            visible.append(character)
+    for name in re.split(r"\s*[;,]\s*", "".join(visible)):
+        name = clean_text(name).strip()
+        if name and name not in output:
+            output.append(name)
+    return output
+
+
+def parse_micro_program_html(
+    payload: bytes, event: Dict[str, Any]
+) -> Tuple[List[EventPaper], int]:
+    """Parse the complete title-level MICRO 2026 paper program.
+
+    The official program exposes titles, authors, sessions, Distinguished Paper
+    sessions, and ACM artifact badges, but no abstracts or proceedings links.
+    Non-paper panels such as the opening remarks are deliberately excluded.
+    """
+    soup = BeautifulSoup(payload, "html.parser")
+    program_url = str(event["program_url"])
+    publication_date = str(event.get("program_released_date", event["start_date"]))
+    output: List[EventPaper] = []
+
+    badge_labels = {
+        "ae-badge--available": "ACM Artifact Available",
+        "ae-badge--reviewed": "ACM Artifact Reviewed",
+        "ae-badge--reproducible": "ACM Results Reproduced",
+    }
+    for panel in soup.select(".panel-session"):
+        heading = panel.select_one(".panel-heading .panel-title a")
+        if heading is None:
+            continue
+        track = clean_text(heading.get_text(" ", strip=True))
+        if not re.match(r"^Session\s+[1-9]", track, flags=re.IGNORECASE):
+            continue
+        body = panel.select_one(".panel-paper")
+        fragment = str(body.get("id", "")).strip() if body else ""
+        source_url = f"{program_url}#{fragment}" if fragment else program_url
+        for entry in panel.select(".panel-paper .paper"):
+            title_node = entry.select_one(".paper-title")
+            if title_node is None:
+                continue
+            title = clean_text(title_node.get_text(" ", strip=True))
+            if not title:
+                continue
+            slug = normalized_title(title)[:96]
+            evidence = [
+                label
+                for css_class, label in badge_labels.items()
+                if title_node.select_one(f".{css_class}") is not None
+            ]
+            awards = []
+            if "distinguished papers" in track.lower():
+                awards.append("MICRO 2026 Distinguished Paper")
+            paper = Paper(
+                id=f"micro:{event['id']}:{slug}",
+                title=title,
+                abstract="",
+                url=source_url,
+                pdf_url="",
+                published=publication_date,
+                updated=publication_date,
+                authors=_micro_authors(entry.select_one(".paper-authors")),
+                source="MICRO official program",
+                source_type="accepted_program",
+                venue=event["short_name"],
+                comment=track,
+                source_records=[
+                    {"source": "MICRO official program", "id": slug, "url": source_url}
+                ],
+            )
+            output.append(
+                EventPaper(
+                    paper=paper,
+                    event_id=event["id"],
+                    track=track,
+                    presentation=(
+                        "Industry Track Paper" if "industry session" in track.lower() else "Research Paper"
+                    ),
+                    awards=awards,
+                    event_score_evidence=evidence,
+                )
+            )
+    return output, len(output)
+
+
+def collect_micro_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[EventPaper], int]:
+    response = requests.get(
+        event["program_url"],
+        timeout=timeout,
+        headers={"User-Agent": "WeeklyPaper/0.2 (+https://github.com/janilbols-w/weekly-paper)"},
+    )
+    response.raise_for_status()
+    return parse_micro_program_html(response.content, event)

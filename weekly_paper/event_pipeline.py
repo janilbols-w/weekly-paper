@@ -11,6 +11,7 @@ from .evaluation import evaluate
 from .event_collectors import (
     collect_acl_anthology,
     collect_colm_program,
+    collect_micro_program,
     collect_neurips_program,
     collect_sosp_schedule,
     collect_usenix_schedule,
@@ -206,6 +207,9 @@ def run_event(
     elif event.get("collector") == "neurips_program":
         collected, corpus_total = collect_neurips_program(event)
         corpus_source = "NeurIPS official Downloads and virtual poster program"
+    elif event.get("collector") == "micro_program":
+        collected, corpus_total = collect_micro_program(event)
+        corpus_source = "MICRO official main program"
     elif event.get("collector") == "official_program":
         collected, corpus_total = [], 0
         corpus_source = event.get("program_source_name", "Official program")
