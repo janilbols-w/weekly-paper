@@ -12,7 +12,7 @@
   "official_url": "https://2026.emnlp.org/",
   "program_url": "https://2026.emnlp.org/program/",
   "accepted_papers_url": "https://aclanthology.org/events/emnlp-2026/",
-  "awards_url": "https://2026.emnlp.org/program/awards/",
+  "awards_url": "https://2026.emnlp.org/program/awards_papers/",
   "collector": "acl_anthology_xml",
   "publication_date": "2026-10-24",
   "anthology_sources": [
@@ -41,11 +41,69 @@
     "main_papers": 2704,
     "findings_papers": 2478,
     "industry_papers": 266,
-    "demo_papers": 86
+    "demo_papers": 86,
+    "best_paper_awards": 2,
+    "sac_highlights": 22,
+    "outstanding_papers": 22
   },
-  "summary_zh": "EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回 195 篇高效推理与 AI Infra 候选，并定向全文核验 12 篇精选论文。",
-  "relevance_zh": "本届相关研究从 speculative decoding、低比特推理与模型剪枝延伸到 KV Cache 复用和无损压缩、AMD GPU kernel 数据、长上下文 serving benchmark、SLO-aware preemption 与 CPU offload，覆盖算法、runtime、硬件和生产服务的完整链路。",
-  "current_stage_zh": "本次新增命中 `papers_released`。ACL Anthology 官方仓库在 10 月 24 日 ingest EMNLP 2026 主会、Findings 与确认的 workshop，结束了上一轮“proceedings 尚未发布”的状态；当前可复现采集 5,534 篇主会、Findings、Industry 与 Demo 论文。大会已于 10 月 29 日结束，官方 awards 页截至 10 月 30 日仍只有奖项栏目标题，因此不触发 `awards_released`，也不推断获奖结果。",
+  "summary_zh": "EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回高效推理与 AI Infra 候选，并对进入精选的高分论文定向核验全文；本轮新增官方 Best Paper、SAC Highlight 与 Outstanding Paper 结果。",
+  "relevance_zh": "本届相关研究从 speculative decoding、低比特推理与模型剪枝延伸到 KV Cache、constrained decoding、multi-agent 通信/评测和生产 serving。奖项信号特别强调两类边界：线性 Attention 的质量增益可能伴随 decode 开销，multi-agent 的效率优化也未必胜过匹配的随机剪枝。",
+  "current_stage_zh": "本次新增命中 `awards_released`。官方 awards 页面于 11 月 6 日发布 2 篇 Best Paper、22 篇 SAC Highlight、22 篇 Outstanding Paper 及专题、资源、社会影响、Demo 与 Industry Track 奖项。本站只把官方列名写入奖项结果，并对其中 4 篇与高效推理或 AI Infra 直接相关的论文定向核验全文；不把其他获奖论文强行纳入主题池。",
+  "award_results": [
+    {
+      "award": "Best Paper",
+      "winners": [
+        "DiscoTrace: Representing and Comparing Answering Strategies of Humans and LLMs in Information-Seeking Question Answering",
+        "Don’t Read Everything: A Curvature-Conditioned Query for Linear Attention"
+      ]
+    },
+    {
+      "award": "Relevant SAC Highlight（1 of 22）",
+      "winners": [
+        "HyLaT: Efficient Multi-Agent Communication via Hybrid Latent–Text Protocol"
+      ]
+    },
+    {
+      "award": "Relevant Outstanding Papers（2 of 22）",
+      "winners": [
+        "Accelerating Constrained Decoding with Token Space Compression",
+        "Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems"
+      ]
+    },
+    {
+      "award": "Best Special Theme Paper",
+      "winners": [
+        "Beyond “To whom it may concern”: Tailoring Machine Translation to Audience and Intent"
+      ]
+    },
+    {
+      "award": "Best Resource Paper",
+      "winners": [
+        "XYBench: Can LLMs Respond Pragmatically to Queries with Misconceptions?"
+      ]
+    },
+    {
+      "award": "Social Impact Award",
+      "winners": [
+        "Clinically Grounded Privacy Evaluation of Medical LMs"
+      ]
+    },
+    {
+      "award": "Best Demo Papers",
+      "winners": [
+        "WonderEcon: An Interactive LLM-Agent System for Simulating Economies",
+        "CoDA: A Human-LM Collaborative Codebook Development Assistant for Domain-Specific Text Annotation (Runner-Up)"
+      ]
+    },
+    {
+      "award": "Best Industry Track Papers",
+      "winners": [
+        "ForensicBench: Evaluating Agentic LLMs on Journal-Entry Fraud Detection",
+        "AutoGraphQL: A Bring-Your-Own-Schema Framework for Adapting Open-Weight LLMs to GraphQL APIs",
+        "Deploying LLM Agents for Auditable Complaint Investigation in Banking (Runner-Up)"
+      ]
+    }
+  ],
   "event_stats": [
     {
       "label": "Conference days",
@@ -70,6 +128,18 @@
     {
       "label": "Industry keynotes",
       "value": 2
+    },
+    {
+      "label": "Best Papers",
+      "value": 2
+    },
+    {
+      "label": "SAC Highlights",
+      "value": 22
+    },
+    {
+      "label": "Outstanding Papers",
+      "value": 22
     }
   ],
   "key_programs": [
@@ -228,20 +298,26 @@
       "url": "https://github.com/acl-org/emnlp-2026/commits/main/",
       "checked_at": "2026-10-30",
       "note_zh": "核验会后官网没有发布可替代 ACL Anthology 的论文全集，也没有奖项结果"
+    },
+    {
+      "label": "EMNLP 2026 official award papers",
+      "url": "https://2026.emnlp.org/program/awards_papers/",
+      "checked_at": "2026-11-06",
+      "note_zh": "核验 2 篇 Best Paper、22 篇 SAC Highlight、22 篇 Outstanding Paper 及各专项奖项；页面于 11 月 6 日更新"
     }
   ],
   "program_methodology_notes_zh": [
     "论文全集来自 ACL Anthology 官方 XML：主会 2,704、Findings 2,478、Industry 266、Demo 86，共 5,534 篇；tutorial 与 workshop 未纳入本次论文筛选。",
     "全体论文只读取标题、摘要和 track，经既有三级 taxonomy 与证据评分召回 195 篇；精选仍执行 47 分阈值、总数 12 篇和同一叶节点最多两篇的质量与多样性约束。",
-    "仅对最终 12 篇候选定向核验官方 PDF 的方法、关键结果、实验边界和 artifact；摘要数值在全文无法复核时不进入中文结论。",
-    "ACL Anthology event 页的卷入口计数包含卷级前置条目，正文统计采用 XML 中可解析的 paper 节点；awards 页为空，因此不把 oral、Industry 或 Demo 身份解释为奖项。"
+    "上一轮对 12 篇精选定向核验官方 PDF；本轮再对 4 篇主题相关的获奖论文核验方法、关键结果、实验边界和 artifact。摘要数值在全文无法复核时不进入中文结论。",
+    "ACL Anthology event 页的卷入口计数包含卷级前置条目，正文统计采用 XML 中可解析的 paper 节点；奖项只采用 11 月 6 日官方 awards 页面列名，不把 oral、Industry 或 Demo 身份自行解释为奖项。"
   ],
   "status": "已归档",
-  "trigger_type": "event_week",
+  "trigger_type": "awards_released",
   "corpus_source": "ACL Anthology XML",
   "corpus_total": 5534,
-  "relevant_total": 195,
+  "relevant_total": 199,
   "selected_total": 12,
-  "source_digest": "5794187ea9173a1a7a2d3cb2a1cf14da0b7c295bc73a5514f3a9470e65e58c36",
-  "generated_at": "2026-10-30T05:02:21+00:00"
+  "source_digest": "57701316e146215ded02dceff7e5a0c3a91b79612bcfe184925320af069a46e9",
+  "generated_at": "2026-11-06T02:48:54+00:00"
 }

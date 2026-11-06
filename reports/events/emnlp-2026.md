@@ -1,22 +1,22 @@
 ---
 title: "EMNLP 2026 · 高效推理与 AI Infra 精选"
-description: "EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回 195 篇高效推理与 AI Infra 候选，并定向全文核验 12 篇精选论文。"
+description: "EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回高效推理与 AI Infra 候选，并对进入精选的高分论文定向核验全文；本轮新增官方 Best Paper、SAC Highlight 与 Outstanding Paper 结果。"
 ---
 
 > **2026-10-24 — 2026-10-29 · Budapest, Hungary**
-> 状态：<span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> · 相关论文 195 篇 · 精选 12 篇 · 更新于 2026-10-30
+> 状态：<span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> · 相关论文 199 篇 · 精选 12 篇 · 更新于 2026-11-06
 
 [会议官网](https://2026.emnlp.org/) · [会议议程](https://2026.emnlp.org/program/) · [官方录用列表](https://aclanthology.org/events/emnlp-2026/)
 
 ## 一分钟结论
 
-EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回 195 篇高效推理与 AI Infra 候选，并定向全文核验 12 篇精选论文。
+EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的完整论文 XML。本页从 5,534 篇正式条目保留完整元数据，以三级 taxonomy 召回高效推理与 AI Infra 候选，并对进入精选的高分论文定向核验全文；本轮新增官方 Best Paper、SAC Highlight 与 Outstanding Paper 结果。
 
-本届相关研究从 speculative decoding、低比特推理与模型剪枝延伸到 KV Cache 复用和无损压缩、AMD GPU kernel 数据、长上下文 serving benchmark、SLO-aware preemption 与 CPU offload，覆盖算法、runtime、硬件和生产服务的完整链路。
+本届相关研究从 speculative decoding、低比特推理与模型剪枝延伸到 KV Cache、constrained decoding、multi-agent 通信/评测和生产 serving。奖项信号特别强调两类边界：线性 Attention 的质量增益可能伴随 decode 开销，multi-agent 的效率优化也未必胜过匹配的随机剪枝。
 
 ## 当前阶段
 
-本次新增命中 `papers_released`。ACL Anthology 官方仓库在 10 月 24 日 ingest EMNLP 2026 主会、Findings 与确认的 workshop，结束了上一轮“proceedings 尚未发布”的状态；当前可复现采集 5,534 篇主会、Findings、Industry 与 Demo 论文。大会已于 10 月 29 日结束，官方 awards 页截至 10 月 30 日仍只有奖项栏目标题，因此不触发 `awards_released`，也不推断获奖结果。
+本次新增命中 `awards_released`。官方 awards 页面于 11 月 6 日发布 2 篇 Best Paper、22 篇 SAC Highlight、22 篇 Outstanding Paper 及专题、资源、社会影响、Demo 与 Industry Track 奖项。本站只把官方列名写入奖项结果，并对其中 4 篇与高效推理或 AI Infra 直接相关的论文定向核验全文；不把其他获奖论文强行纳入主题池。
 
 ## 会议规模
 
@@ -26,6 +26,22 @@ EMNLP 2026 已在 ACL Anthology 发布主会、Findings、Industry 与 Demo 的�
 | Findings Papers | 2478 |
 | Industry Papers | 266 |
 | Demo Papers | 86 |
+| Best Paper | 2 |
+| Sac Highlights | 22 |
+| Outstanding Papers | 22 |
+
+## 官方奖项
+
+| 奖项 | 获奖论文 / 获奖者 |
+|---|---|
+| Best Paper | DiscoTrace: Representing and Comparing Answering Strategies of Humans and LLMs in Information-Seeking Question Answering<br>Don’t Read Everything: A Curvature-Conditioned Query for Linear Attention |
+| Relevant SAC Highlight（1 of 22） | HyLaT: Efficient Multi-Agent Communication via Hybrid Latent–Text Protocol |
+| Relevant Outstanding Papers（2 of 22） | Accelerating Constrained Decoding with Token Space Compression<br>Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems |
+| Best Special Theme Paper | Beyond “To whom it may concern”: Tailoring Machine Translation to Audience and Intent |
+| Best Resource Paper | XYBench: Can LLMs Respond Pragmatically to Queries with Misconceptions? |
+| Social Impact Award | Clinically Grounded Privacy Evaluation of Medical LMs |
+| Best Demo Papers | WonderEcon: An Interactive LLM-Agent System for Simulating Economies<br>CoDA: A Human-LM Collaborative Codebook Development Assistant for Domain-Specific Text Annotation (Runner-Up) |
+| Best Industry Track Papers | ForensicBench: Evaluating Agentic LLMs on Journal-Entry Fraud Detection<br>AutoGraphQL: A Bring-Your-Own-Schema Framework for Adapting Open-Weight LLMs to GraphQL APIs<br>Deploying LLM Agents for Auditable Complaint Investigation in Banking (Runner-Up) |
 
 ## 关键议程
 
@@ -130,7 +146,19 @@ SieveServe 在进入多模态 LLM 前用 query-conditioned relevance 和 dense-i
 
 [PDF](https://aclanthology.org/2026.emnlp-main.2059.pdf)
 
-### 8. [What Signal Does Preemption Need? Benchmarking Preemption-Target Selection for SLO-Aware Reasoning LLM Serving](https://aclanthology.org/2026.emnlp-industry.145/)
+### 8. [Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems](https://aclanthology.org/2026.emnlp-main.798/)
+
+**61/100 · AI 基础设施 > 服务平台 > 可观测性与 Benchmark · Main · EMNLP 2026 Outstanding Paper**
+
+论文构建受控 MAS benchmark，固定模型、agent registry 与 runtime，在五种拓扑、四类任务和不同规模/深度/tool 条件下复测五种 pruning/优化方法，并为每种优化建立匹配的随机剪枝对照。
+
+**为什么值得关注：** 汇总结果中，优化方法平均准确率变化为 -0.77，匹配随机剪枝为 -0.44；25 个方法×拓扑聚合中仅 12 个优于随机对照。重复 MMLU 的标准差达 0.6–2.1 个百分点，与多数论文声称的增益同量级，说明 agent infra 的效率结论必须报告方差和失败模式。
+
+**边界：** 研究只评估重构既有 MAS，不覆盖从零设计；任务以英语和固定 prompt 为主，token 采用 whitespace proxy，未覆盖长期交互、异构 tool 与生产故障。负向结论不能证明所有 MAS 优化无效，而是暴露当前证据不足。
+
+[PDF](https://aclanthology.org/2026.emnlp-main.798.pdf) · [代码](https://github.com/chili-lab/rethinking-mas-efficiency-eval)
+
+### 9. [What Signal Does Preemption Need? Benchmarking Preemption-Target Selection for SLO-Aware Reasoning LLM Serving](https://aclanthology.org/2026.emnlp-industry.145/)
 
 **61/100 · AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性 · Industry**
 
@@ -142,7 +170,7 @@ PreemptBench 在统一 vLLM fork 中比较七种 reasoning LLM preemption target
 
 [PDF](https://aclanthology.org/2026.emnlp-industry.145.pdf) · [代码](https://github.com/KevinHuangW/preemptbench)
 
-### 9. [OpenDC-Infer-LC: Benchmarking Production-Valid Long-Context and RAG LLM Serving](https://aclanthology.org/2026.emnlp-industry.64/)
+### 10. [OpenDC-Infer-LC: Benchmarking Production-Valid Long-Context and RAG LLM Serving](https://aclanthology.org/2026.emnlp-industry.64/)
 
 **59/100 · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime · Industry**
 
@@ -154,7 +182,7 @@ OpenDC-Infer-LC 用 quality-preserving、SLO-qualified goodput 评估长上下�
 
 [PDF](https://aclanthology.org/2026.emnlp-industry.64.pdf) · [代码](https://github.com/Maincode-Research/opendc-infer-lc)
 
-### 10. [AdaCode: Adaptive Lossless Compression for BFloat16 KV Cache](https://aclanthology.org/2026.emnlp-main.269/)
+### 11. [AdaCode: Adaptive Lossless Compression for BFloat16 KV Cache](https://aclanthology.org/2026.emnlp-main.269/)
 
 **56/100 · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache · Main**
 
@@ -166,47 +194,36 @@ AdaCode 利用 BF16 exponent 分布集中性，用短定长码、outlier stream 
 
 [PDF](https://aclanthology.org/2026.emnlp-main.269.pdf) · [代码](https://github.com/lichangshiwhu/Adacode)
 
-### 11. [AgentSpec: Speculative Decoding for Batch Inference of LLM Agents](https://aclanthology.org/2026.emnlp-main.585/)
+### 12. [Accelerating Constrained Decoding with Token Space Compression](https://aclanthology.org/2026.emnlp-main.749/)
 
-**55/100 · LLM 高效推理 > 模型与算法效率 > 推测解码 · Main**
+**56/100 · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化 · Main · EMNLP 2026 Outstanding Paper**
 
-AgentSpec 面向 agent batch 中结构化提示和重复轨迹，隔离可复用结构进行 drafting，并按冗余度分配 speculative token budget，避免不同请求共享草拟时的无效计算。
+CFGzip 离线计算 token vocabulary 在语法约束下的等价类，让 grammar engine 只在代表 token 上运行，再把结果无损展开回原 token 空间；相对 XGrammar2 保持 byte-identical 输出。
 
-**为什么值得关注：** 基于 vLLM V1 的实现覆盖多类 agent 工作负载，作者报告最高 104% goodput 提升、最高 2.02× acceptance rate，并在测试配置中把 P90/P99 latency 分别改善到 1.47×/1.39×。
+**为什么值得关注：** 在 JSON、XML、C++ 与 Bython 语法、Llama/Qwen/GPT 模型和单张 H100 上，作者报告非批量 grammar overhead 降低 9–45×；困难的 Bython 批量生成最高加速约 75×，并公开实验代码与 PyPI 包。该文获 Outstanding Paper。
 
-**边界：** 系统需要 agent serving 接口提供结构边界；缺少明确结构元数据时，收益取决于提示和轨迹中是否存在稳定重复模式。实验基于 vLLM 0.12.0，跨版本调度行为和多租户干扰尚未验证。
+**边界：** 离线预计算对小型、动态或一次性 grammar 未必划算；评估主要对比 XGrammar2，其他 engine 因接口或正确性问题未纳入。峰值加速来自最困难语法，不能外推到普通 JSON 或 unconstrained decoding。
 
-[PDF](https://aclanthology.org/2026.emnlp-main.585.pdf)
-
-### 12. [FlexEE: Self-Speculative and KV-Compatible Early Exiting for Offloading-Aware LLM Inference](https://aclanthology.org/2026.findings-emnlp.1426/)
-
-**53/100 · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理 · Findings**
-
-FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidden-state/KV 管理跳过后续层，并把 early-exit 决策放到被 CPU offload 的层上，避免不必要的权重传输。
-
-**为什么值得关注：** 在 RTX PRO 6000 与 Xeon 平台的模拟部署中，Llama2-7B 在 0%/50% offload 下分别达到 1.27×/3.16× throughput，Llama3-8B 为 1.25×/2.83×；多项任务保持接近 dense baseline 的准确率。
-
-**边界：** 方法依赖带 layer-wise early-exit supervision 的预训练模型，效果受基础模型质量影响；主要收益来自 small-batch 或 memory-constrained 场景，实验基于 FlexGen/Hugging Face 和单机 CPU–GPU，不代表通用 serving 集群。
-
-[PDF](https://aclanthology.org/2026.findings-emnlp.1426.pdf)
+[PDF](https://aclanthology.org/2026.emnlp-main.749.pdf) · [代码](https://github.com/coli-saar/cfgzip-experiments)
 
 ## 技术分布
 
 | 三级技术路径 | 论文数 |
 |---|---:|
-| Attention 与 KV Cache | 58 |
+| Attention 与 KV Cache | 59 |
 | 压缩、稀疏与蒸馏 | 39 |
 | 量化与低精度 | 38 |
 | 推测解码 | 27 |
 | 缓存、换入换出与内存管理 | 11 |
 | Kernel 与算子融合 | 4 |
+| 编译器与计算图优化 | 4 |
 | Serving Engine 与 Runtime | 3 |
-| 编译器与计算图优化 | 3 |
 | 能耗、成本与散热 | 3 |
 | 多租户、SLO 与可靠性 | 3 |
+| 并行与通信 | 2 |
 | MoE 路由与专家优化 | 2 |
 | 分布式训练与 Checkpoint | 2 |
-| 并行与通信 | 1 |
+| 可观测性与 Benchmark | 1 |
 | 硬件感知与边缘推理 | 1 |
 
 ## 全部相关论文
@@ -221,6 +238,7 @@ FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidde
 | [Quantization Inflates Reasoning: Token Inflation as a Hidden Cost of Low-Bit Reasoning Models](https://aclanthology.org/2026.emnlp-main.2059/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 62 |
 | [A^3: Attention-Aware Accurate KV Cache Fusion for Fast Large Language Model Serving](https://aclanthology.org/2026.emnlp-main.113/) | Main | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 62 |
 | [What Signal Does Preemption Need? Benchmarking Preemption-Target Selection for SLO-Aware Reasoning LLM Serving](https://aclanthology.org/2026.emnlp-industry.145/) | Industry | AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性 | 61 |
+| [Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems](https://aclanthology.org/2026.emnlp-main.798/) | Main | AI 基础设施 > 服务平台 > 可观测性与 Benchmark | 61 |
 | [QuaNAG: LLM-driven Memory-bounded Neural Architecture Generation via Quantization-branched Exploration](https://aclanthology.org/2026.emnlp-main.2205/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 61 |
 | [FAMPWQ: Fisher Information-based Adaptive Mixed Precision Weight Quantization for Effective LLM Inference](https://aclanthology.org/2026.emnlp-main.1524/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 60 |
 | [OpenDC-Infer-LC: Benchmarking Production-Valid Long-Context and RAG LLM Serving](https://aclanthology.org/2026.emnlp-industry.64/) | Industry | AI 基础设施 > 服务平台 > Serving Engine 与 Runtime | 59 |
@@ -244,6 +262,7 @@ FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidde
 | [AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs](https://aclanthology.org/2026.emnlp-main.2311/) | Main | LLM 高效推理 > 模型与算法效率 > 推测解码 | 56 |
 | [AdaptInfer: Adaptive Token Pruning for Vision Language Model Inference via Dynamical Text Guidance](https://aclanthology.org/2026.findings-emnlp.945/) | Findings | LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏 | 56 |
 | [AdaCode: Adaptive Lossless Compression for BFloat16 KV Cache](https://aclanthology.org/2026.emnlp-main.269/) | Main | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 56 |
+| [Accelerating Constrained Decoding with Token Space Compression](https://aclanthology.org/2026.emnlp-main.749/) | Main | LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化 | 56 |
 | [When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs](https://aclanthology.org/2026.emnlp-main.1828/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 55 |
 | [ToolSpec: Accelerating Tool Calling via Schema-Aware and Retrieval-Augmented Speculative Decoding](https://aclanthology.org/2026.emnlp-main.409/) | Main | LLM 高效推理 > 模型与算法效率 > 推测解码 | 55 |
 | [Scaling Laws for Mixed Quantization](https://aclanthology.org/2026.emnlp-main.142/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 55 |
@@ -261,6 +280,7 @@ FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidde
 | [PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference](https://aclanthology.org/2026.findings-emnlp.1138/) | Findings | LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏 | 54 |
 | [One Size Does Not Fit All: Token-Wise Adaptive Compression for KV Cache](https://aclanthology.org/2026.emnlp-main.524/) | Main | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 54 |
 | [InfoSpec: Information-Guided Anchor Selection for Retrieval-Based Speculative Decoding](https://aclanthology.org/2026.emnlp-main.1563/) | Main | LLM 高效推理 > 模型与算法效率 > 推测解码 | 54 |
+| [HyLaT: Efficient Multi-Agent Communication via Hybrid Latent–Text Protocol](https://aclanthology.org/2026.emnlp-main.181/) | Main | LLM 高效推理 > Serving 与分布式推理 > 并行与通信 | 54 |
 | [HIPPO: Accelerating Video Large Language Model Inference via Holistic-aware Parallel Speculative Decoding](https://aclanthology.org/2026.emnlp-main.155/) | Main | LLM 高效推理 > 模型与算法效率 > 推测解码 | 54 |
 | [End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost](https://aclanthology.org/2026.findings-emnlp.28/) | Findings | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 54 |
 | [Efficient Iterative Retrieval with Heterogeneous Batching](https://aclanthology.org/2026.emnlp-main.28/) | Main | LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合 | 54 |
@@ -289,6 +309,7 @@ FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidde
 | [JuDi: Revisiting Judge Decoding from First Principles via Training-Free Distributional Divergence](https://aclanthology.org/2026.emnlp-main.150/) | Main | LLM 高效推理 > 模型与算法效率 > 推测解码 | 52 |
 | [HyQuant: Hybrid-Precision Quantization for LLM Attention](https://aclanthology.org/2026.emnlp-main.1705/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 52 |
 | [Forget Without Compromise: Nexus Sampling for Streaming KV-Cache Eviction Under Fixed Budgets](https://aclanthology.org/2026.emnlp-main.1642/) | Main | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 52 |
+| [Don’t Read Everything: A Curvature-Conditioned Query for Linear Attention](https://aclanthology.org/2026.emnlp-main.1153/) | Main | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 52 |
 | [ConsistKV: Layer Adaptive KV Cache Compression via Cross Layer Consensus](https://aclanthology.org/2026.findings-emnlp.1793/) | Findings | LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache | 52 |
 | [CoFiE: Coarse-to-Fine Evidence Selection for Efficient Streaming Video Understanding](https://aclanthology.org/2026.emnlp-main.518/) | Main | LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏 | 52 |
 | [Boundary-Aware Expert Ordering Preservation with Next-Router Supervision for MoE Quantization](https://aclanthology.org/2026.emnlp-main.2041/) | Main | LLM 高效推理 > 模型与算法效率 > 量化与低精度 | 52 |
@@ -423,6 +444,7 @@ FlexEE 用 self-speculative early exit、局部 top-K vocabulary 与动态 hidde
 - [ACL Anthology EMNLP 2026 event index](https://aclanthology.org/events/emnlp-2026/)（核验于 2026-10-30）。
 - [ACL Anthology official EMNLP 2026 ingestion commit](https://github.com/acl-org/acl-anthology/commit/635539a0d4785ce040a163507915c48eaf4f552e)（核验于 2026-10-30）。
 - [EMNLP 2026 official repository history](https://github.com/acl-org/emnlp-2026/commits/main/)（核验于 2026-10-30）。
-- 论文元数据：ACL Anthology XML；原始覆盖 5534 篇，主题过滤后保留 195 篇。
-- 触发类型：`event_week`；来源摘要：`5794187ea917`。
+- [EMNLP 2026 official award papers](https://2026.emnlp.org/program/awards_papers/)（核验于 2026-11-06）。
+- 论文元数据：ACL Anthology XML；原始覆盖 5534 篇，主题过滤后保留 199 篇。
+- 触发类型：`awards_released`；来源摘要：`57701316e146`。
 - 精选不是奖项预测；评分只反映本站主题相关性、证据完整性和潜在工程影响。

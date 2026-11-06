@@ -112,3 +112,50 @@ acl:2026.findings-emnlp.1426:
   limitations_zh: 方法依赖带 layer-wise early-exit supervision 的预训练模型，效果受基础模型质量影响；主要收益来自 small-batch 或 memory-constrained 场景，实验基于 FlexGen/Hugging Face 和单机 CPU–GPU，不代表通用 serving 集群。
   reading_depth: full_text
   selection_reason_zh: 把 early exit 与 KV 状态管理、权重 offload 联合设计，给出不同 offload 比例下的端到端吞吐曲线。
+acl:2026.emnlp-main.1153:
+  pdf_url: https://aclanthology.org/2026.emnlp-main.1153.pdf
+  code_url: https://github.com/ledong0110/ccq
+  classification_hint: large language model linear attention KV cache decode latency throughput memory efficient inference
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group: Runtime & Memory Efficiency, group_zh: Runtime 与内存效率, leaf_id: attention-kv-cache, leaf: Attention & KV Cache, leaf_zh: Attention 与 KV Cache}
+  summary_zh: CCQ 在读取侧用 key 的运行协方差估计高方差方向，并把 query 沿这些方向收缩，以缓解线性 Attention 对频繁但低信息模式的过度聚合；该修正可叠加到 GLA 与 Gated DeltaNet。
+  why_it_matters_zh: 在 1.3B 模型的 LongBench 上，作者报告 CCQ-GLA 平均分 15.77、GLA 为 14.07，CCQ-Gated DeltaNet 为 14.78、原模型为 13.80；代码公开。它获得 EMNLP 2026 Best Paper，但最重要的系统信号是作者同时量化了质量与运行开销。
+  limitations_zh: 实验只覆盖 500M/1.3B 与两类 backbone，未验证 7B+、多轮 agent 或生产 serving。H200 上作者报告训练吞吐约降 16%，batch 8/4K prefill 也更慢，未融合 decode kernel 时 decode throughput 从约 454–457 降至 297–298 token/s，因此不能把质量提升解释为免费效率收益。
+  reading_depth: full_text
+  awards: [EMNLP 2026 Best Paper]
+  selection_reason_zh: Best Paper 同时给出线性 Attention 质量增益与负向 runtime 数据，适合做架构取舍而非只看榜单。
+
+acl:2026.emnlp-main.749:
+  pdf_url: https://aclanthology.org/2026.emnlp-main.749.pdf
+  code_url: https://github.com/coli-saar/cfgzip-experiments
+  classification_hint: constrained decoding token compression compiler graph optimization decode latency throughput inference
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group: Runtime & Memory Efficiency, group_zh: Runtime 与内存效率, leaf_id: compiler-graph, leaf: Compiler & Graph Optimization, leaf_zh: 编译器与计算图优化}
+  summary_zh: CFGzip 离线计算 token vocabulary 在语法约束下的等价类，让 grammar engine 只在代表 token 上运行，再把结果无损展开回原 token 空间；相对 XGrammar2 保持 byte-identical 输出。
+  why_it_matters_zh: 在 JSON、XML、C++ 与 Bython 语法、Llama/Qwen/GPT 模型和单张 H100 上，作者报告非批量 grammar overhead 降低 9–45×；困难的 Bython 批量生成最高加速约 75×，并公开实验代码与 PyPI 包。该文获 Outstanding Paper。
+  limitations_zh: 离线预计算对小型、动态或一次性 grammar 未必划算；评估主要对比 XGrammar2，其他 engine 因接口或正确性问题未纳入。峰值加速来自最困难语法，不能外推到普通 JSON 或 unconstrained decoding。
+  reading_depth: full_text
+  awards: [EMNLP 2026 Outstanding Paper]
+  selection_reason_zh: 用严格等价压缩直接削减 constrained decoding 的 grammar 热路径，artifact 与边界完整。
+
+acl:2026.emnlp-main.798:
+  pdf_url: https://aclanthology.org/2026.emnlp-main.798.pdf
+  code_url: https://github.com/chili-lab/rethinking-mas-efficiency-eval
+  classification_hint: multi agent efficiency evaluation inference benchmark serving benchmark latency throughput observability
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group: Serving Platforms, group_zh: 服务平台, leaf_id: observability-benchmarking, leaf: Observability & Benchmarking, leaf_zh: 可观测性与 Benchmark}
+  summary_zh: 论文构建受控 MAS benchmark，固定模型、agent registry 与 runtime，在五种拓扑、四类任务和不同规模/深度/tool 条件下复测五种 pruning/优化方法，并为每种优化建立匹配的随机剪枝对照。
+  why_it_matters_zh: 汇总结果中，优化方法平均准确率变化为 -0.77，匹配随机剪枝为 -0.44；25 个方法×拓扑聚合中仅 12 个优于随机对照。重复 MMLU 的标准差达 0.6–2.1 个百分点，与多数论文声称的增益同量级，说明 agent infra 的效率结论必须报告方差和失败模式。
+  limitations_zh: 研究只评估重构既有 MAS，不覆盖从零设计；任务以英语和固定 prompt 为主，token 采用 whitespace proxy，未覆盖长期交互、异构 tool 与生产故障。负向结论不能证明所有 MAS 优化无效，而是暴露当前证据不足。
+  reading_depth: full_text
+  awards: [EMNLP 2026 Outstanding Paper]
+  selection_reason_zh: 用随机对照和重复实验拆解 multi-agent 效率主张，为 benchmark 与可观测性提供高价值负证据。
+
+acl:2026.emnlp-main.181:
+  pdf_url: https://aclanthology.org/2026.emnlp-main.181.pdf
+  code_url: https://github.com/xymou/hylat
+  classification_hint: large language model multi agent communication latent text protocol inference latency throughput distributed inference collective communication
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: serving-distributed, group: Serving & Distributed Inference, group_zh: Serving 与分布式推理, leaf_id: parallelism-communication, leaf: Parallelism & Communication, leaf_zh: 并行与通信}
+  summary_zh: HyLaT 为 multi-agent 引入 latent/text 双通道通信，并用单 agent hybrid 训练加多 agent 交互协同训练，让 agent 在压缩 latent 表示与可读文本之间按任务切换。
+  why_it_matters_zh: 三 agent、两轮设置下，主表中 HyLaT 平均约 72 token、1.47 秒，任务均分 57.83；完整文本基线为 505 token、5.47 秒、58.40 分，完整 latent 基线为 57 token、0.70 秒、56.17 分。论文获 SAC Highlight，代码公开。
+  limitations_zh: 仅验证 1B/3B 小模型与较短交互；修改后的生成路径尚不兼容 vLLM，也未测试大规模并发、长时 agent 或故障恢复。latent 通道不可解释，QA 偏重的训练分布也限制外推。
+  reading_depth: full_text
+  awards: [EMNLP 2026 SAC Highlight]
+  selection_reason_zh: 在质量、通信 token 和时间之间给出清晰折中，但部署成熟度仍低。
