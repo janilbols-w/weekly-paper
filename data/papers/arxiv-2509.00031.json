@@ -1,0 +1,81 @@
+{
+  "id": "arxiv:2509.00031",
+  "title": "End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost",
+  "abstract": "Quantization reduces the deployment cost of large language models (LLMs). However, post-training quantization (PTQ) cannot fine-tune model parameters and often degrades accuracy in low-bit settings, while quantization-aware training (QAT) requires backpropagation and incurs high memory overhead. We propose ZeroQAT, a zeroth-order QAT framework supporting both weight and activation quantization. By using forward-only gradient estimation, ZeroQAT removes backpropagation and substantially reduces memory and computation while retaining end-to-end optimization benefits. We further introduce a lightweight variant of ZeroQAT for quantized fine-tuning, which freezes and pre-quantizes most parameters to further cut memory usage. Experiments show that ZeroQAT consistently outperforms representative PTQ and QAT baselines while requiring significantly less memory. For example, ZeroQAT enables fine-tuning of a 13B model at extremely low bit-widths (e.g., 2-4 bits) on a single 8GB GPU, and even allows fine-tuning a 6.7B model on a OnePlus 12 smartphone, demonstrating its practicality for end-to-end QAT on resource-limited edge devices.",
+  "url": "https://arxiv.org/abs/2509.00031",
+  "pdf_url": "https://arxiv.org/pdf/2509.00031",
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "authors": [
+    "Qitao Tan",
+    "Xiaoying Song",
+    "Ningxi Cheng",
+    "Guoming Li",
+    "Jun Liu",
+    "Lingzi Hong",
+    "Caiwen Ding",
+    "Jundong Li",
+    "Xiaoming Zhai",
+    "Shaoyi Huang",
+    "Jin Lu",
+    "Ninghao Liu",
+    "Wei Niu",
+    "Geng Yuan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Quantization reduces the deployment cost of large language models (LLMs).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-10T04:35:28+00:00",
+  "last_seen": "2026-11-10T04:35:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2509.00031",
+      "url": "https://arxiv.org/abs/2509.00031"
+    }
+  ]
+}

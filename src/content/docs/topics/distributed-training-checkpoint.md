@@ -5,10 +5,14 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **133** 篇。
+累计收录 **137** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MINE: Entropy-coded Memory-efficient Inference for Large Language Models](../../papers/arxiv-2611.09424/) | 2026-11-09 | 43 |
+| [Know What You Need: Efficient Activation Checkpointing](../../papers/arxiv-2611.09614/) | 2026-11-09 | 42 |
+| [Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations](../../papers/arxiv-2611.09382/) | 2026-11-09 | 42 |
+| [Fast and Accurate Probing of In-Training LLMs' Downstream Performances](../../papers/arxiv-2604.01025/) | 2026-11-09 | 39 |
 | [ToolSched: Resource-Efficient Tool Scheduling for Shared-Host LLM Agents](../../papers/arxiv-2611.05269/) | 2026-11-04 | 40 |
 | [WASP-Mem: Let Agent Organize Procedural Memory. Human Spend Effort on Diagnosis](../../papers/arxiv-2611.04003/) | 2026-11-04 | 39 |
 | [LaBraM at Scale: Scaling Data and Models for EEG Pretraining](../../papers/arxiv-2611.03165/) | 2026-11-03 | 38 |

@@ -11,8 +11,8 @@ description: "MoE Efficiency"
 |---|---|---:|
 | [Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective](../../papers/arxiv-2610.30923/) | 2026-10-23 | 42 |
 | [Towards Looped Models Done Right, Part I: Topology, Input Injection, Recurrent-State Design](../../papers/arxiv-2610.23036/) | 2026-10-19 | 38 |
+| [Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes](../../papers/arxiv-2610.20585/) | 2026-10-14 | 43 |
 | [Task-Phase-Conditioned Expert Routing Is Not a Reliable Proxy for Quantization Sensitivity in MoE FFN Tensors](../../papers/arxiv-2610.20826/) | 2026-10-14 | 42 |
-| [Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes](../../papers/arxiv-2610.20585/) | 2026-10-14 | 42 |
 | [RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing](../../papers/arxiv-2610.11775/) | 2026-10-09 | 40 |
 | [Algorithmic Scratchpads and Curriculum Staging for Arithmetic Reasoning in Tiny Transformers](../../papers/arxiv-2610.09003/) | 2026-10-08 | 38 |
 | [Scaling Laws for Looped Mixture of Experts](../../papers/arxiv-2609.40316/) | 2026-09-30 | 47 |

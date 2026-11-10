@@ -39,7 +39,7 @@ LLM agents execute tasks through repeated model calls over evolving histories of
 ## 元数据
 
 - 作者：Jihao Zhao, Shuaishuai Zu, Pengfei Li, Biao Qin, Guanghuan Fang, Ben Feng, Baochuan Yang
-- 发布：2026-11-02；更新：2026-11-02
+- 发布：2026-11-02；更新：2026-11-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

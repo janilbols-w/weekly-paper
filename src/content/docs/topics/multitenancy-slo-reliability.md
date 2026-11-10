@@ -5,10 +5,11 @@ description: "Multi-tenancy, SLO & Reliability"
 
 三级分类：**AI 基础设施 > 服务平台 > 多租户、SLO 与可靠性**
 
-累计收录 **42** 篇。
+累计收录 **43** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [CascadeRec: Deployed Adaptive LLM Compute Allocation for Multi-Tenant Content Recommendation](../../papers/arxiv-2611.08566/) | 2026-11-09 | 46 |
 | [InfiniLoRA: Disaggregated Multi-LoRA Serving for Large Language Models](../../papers/arxiv-2604.07173/) | 2026-11-04 | 42 |
 | [Dispatch Control for Priority-Based, Multi-Tenant Workflows under Multi-Resource External Rate Limits](../../papers/arxiv-2611.02926/) | 2026-11-03 | 49 |
 | [LLMs in Cloud: A Discussion on Architecture, Orchestration, and Inference](../../papers/arxiv-2610.33475/) | 2026-10-27 | 46 |

@@ -1,15 +1,15 @@
 ---
 title: "PriorityFEC: Deadline-Aware Streaming FEC for KV-Cache Handoff in Edge Multi-Agent Systems"
-description: "Multi-agent large language model (LLM) systems are increasingly deployed at the edge to support complex tasks that require collaboration and information exchange among multiple agents."
+description: "Collaborative edge large language model (LLM) systems often require repeated prefill computation when task contexts are transferred between agents."
 ---
 
-**评分：43/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：45/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2610.21390) · [PDF](https://arxiv.org/pdf/2610.21390)
 
 ## 一句话摘要
 
-Multi-agent large language model (LLM) systems are increasingly deployed at the edge to support complex tasks that require collaboration and information exchange among multiple agents.
+Collaborative edge large language model (LLM) systems often require repeated prefill computation when task contexts are transferred between agents.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ Multi-agent large language model (LLM) systems are increasingly deployed at the 
 
 ## 摘要原文
 
-Multi-agent large language model (LLM) systems are increasingly deployed at the edge to support complex tasks that require collaboration and information exchange among multiple agents. However, when task contexts are passed across agents, shared context that has already been processed by upstream agents often needs to be prefilled again, resulting in substantial redundant computation. Reusing an already prefilled key--value (KV) cache can avoid this recomputation, but requires the reusable KV state to be transferred across the network before the receiving agent can begin generation. Under strict time-to-first-token (TTFT) deadlines and unreliable edge links, delivering the complete KV cache may be infeasible, making it necessary to prioritize and protect the most valuable KV information within a limited transmission budget. This paper proposes PriorityFEC, a utility-aware KV-cache handoff scheme that jointly exploits model-side KV importance and transport-side reliability. PriorityFEC first constructs a utility-aware source stream by placing high-utility KV blocks at earlier transmission positions. It then protects the ordered stream using a feedback-adaptive Streaming Forward Erasure Correction (FEC) mechanism, which schedules repair packets according to receiver feedback before the TTFT deadline. We implement PriorityFEC on a distributed edge LLM serving prototype and evaluate it with Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct across multiple datasets. Results show that PriorityFEC achieves superior task quality over the compared transport schemes, with its advantages becoming particularly pronounced under stringent deadline constraints. These results demonstrate the importance of jointly optimizing KV-cache utility and deadline-aware transport reliability when reusable LLM state must be handed off across unreliable edge networks.
+Collaborative edge large language model (LLM) systems often require repeated prefill computation when task contexts are transferred between agents. Reusing previously computed key--value (KV) caches can eliminate this overhead, but requires KV-cache delivery before the receiving agent begins decoding. Under strict deadlines and unreliable edge links, complete KV cache transfer may be infeasible, making the timely delivery of useful KV information critical. This paper proposes PriorityFEC, a utility-aware KV-cache handoff scheme that combines prioritized source transmission with adaptive loss recovery. PriorityFEC first organizes KV blocks into a utility-aware source queue to prioritize important information. It then employs ACK-sliding Streaming FEC and a lightweight Double Deep Q-Network (Double-DQN) scheduler to dynamically balance source delivery and repair transmission under deadline constraints. We implement PriorityFEC in a distributed edge LLM-serving prototype and evaluate it using Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct across multiple workloads. Experimental results demonstrate that PriorityFEC preserves more useful KV information and achieves substantially higher task accuracy than competing transport schemes, particularly when the deadline is insufficient to deliver the complete KV cache.
 
 ## 质量评分
 
@@ -25,7 +25,7 @@ Multi-agent large language model (LLM) systems are increasingly deployed at the 
 |---|---:|
 | relevance | 18 |
 | novelty | 6 |
-| rigor | 9 |
+| rigor | 11 |
 | practical impact | 5 |
 | reproducibility | 2 |
 | credibility | 3 |
@@ -39,7 +39,7 @@ Multi-agent large language model (LLM) systems are increasingly deployed at the 
 ## 元数据
 
 - 作者：Han Shen, Qifu Tyler Sun, Fanyang Meng, Ye Wang, Yongsheng Liang
-- 发布：2026-10-15；更新：2026-11-02
+- 发布：2026-10-15；更新：2026-11-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

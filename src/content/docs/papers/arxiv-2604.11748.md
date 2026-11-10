@@ -1,0 +1,45 @@
+---
+title: "LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling"
+description: "Continuous diffusion has served as a foundation for high-fidelity, controllable, and few-step generation across continuous data modalities such as images, videos, and molecular structures."
+---
+
+**评分：42/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+
+[论文原文](https://arxiv.org/abs/2604.11748) · [PDF](https://arxiv.org/pdf/2604.11748)
+
+## 一句话摘要
+
+Continuous diffusion has served as a foundation for high-fidelity, controllable, and few-step generation across continuous data modalities such as images, videos, and molecular structures.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Continuous diffusion has served as a foundation for high-fidelity, controllable, and few-step generation across continuous data modalities such as images, videos, and molecular structures. However, in language modeling, prior continuous diffusion language models (DLMs) lag behind discrete counterparts. Existing categorical and simplex-based approaches operate over extremely large and sparse language spaces, while prior embedding-space approaches avoid this sparsity but lack a well-selected design space. In this work, we close this gap with LangFlow by connecting embedding-space DLMs to Flow Matching, alongside three key innovations: (1) we derive a novel ODE-based NLL bound for principled evaluation of continuous flow-based language models; (2) we propose an information-uniform principle for setting the noise schedule, which motivates a learnable noise scheduler based on a Gumbel distribution; and (3) we revise prior training protocols by incorporating self-conditioning, which improves both likelihood and sample quality for embedding-space DLMs and behaves differently from its use in discrete diffusion. Putting everything together, LangFlow is competitive with top discrete DLMs on generative quality, reaching a generative perplexity of 92.3 on LM1B and 36.5 on OpenWebText. It also outperforms discrete counterparts on reasoning tasks like Sudoku. As the first continuous DLM shown to rival discrete diffusion in generative quality, LangFlow provides clear evidence that continuous diffusion is a promising paradigm for language modeling. Code: https://github.com/nealchen2003/LangFlow.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 8 |
+| rigor | 7 |
+| practical impact | 5 |
+| reproducibility | 7 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: sparsity
+- no quantitative claim in metadata
+- code/artifact link detected
+
+## 元数据
+
+- 作者：Yuxin Chen, Chumeng Liang, Hangke Sui, Ruihan Guo, Chaoran Cheng, Jiaxuan You, Ge Liu
+- 发布：2026-11-09；更新：2026-11-09
+- 来源：arXiv RSS；Venue：未确认
+- 代码：[https://github.com/nealchen2003/LangFlow](https://github.com/nealchen2003/LangFlow)
+- 阅读深度：metadata

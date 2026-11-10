@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2611.09024",
+  "title": "Knowledge Distillation from Neural Networks to Differentiable Logic Networks",
+  "abstract": "Differentiable logic networks (DLNs) are interpretable, edge-friendly classifiers that learn both their logic operators and their connections through gradient descent, achieving accuracy competitive with multi-layer perceptrons at orders-of-magnitude lower inference cost. Their accuracy, however, is bounded by the problems of vanishing gradients, scalability, and lack of an ecosystem, leaving a gap relative to conventional neural networks on several datasets. We introduce knowledge distillation for DLNs to narrow this gap. We distill from a trained multi-layer perceptron teacher into a DLN student, integrating the distillation objective into a two-phase training loop without altering the architecture or the inference procedure. The teacher is discarded after training. Hence, the distilled model retains the interpretability, sparsity, and inference cost of a conventionally trained DLN. We investigate this approach through four variants: a joint hyperparameter search that optimizes the distillation weight and temperature alongside the architecture, a grid search over these two hyperparameters with the architecture fixed, and two single-phase variants that employ distillation during only the neuron-function or only the connection phase. On 20 public tabular classification tasks, distillation improves balanced-class accuracy at negligible cost to gate-level operation counts and model size, though the benefit varies by dataset. Performance improvements of up to 15% are observed, in some cases surpassing the teacher itself.",
+  "url": "https://arxiv.org/abs/2611.09024",
+  "pdf_url": "https://arxiv.org/pdf/2611.09024",
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "authors": [
+    "Hee Yun Suh",
+    "Niraj K. Jha"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation",
+    "sparsity"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Differentiable logic networks (DLNs) are interpretable, edge-friendly classifiers that learn both their logic operators and their connections through gradient descent, achieving accuracy competitive with multi-layer perceptrons at orders-of-magnitude lower inference cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-10T04:35:28+00:00",
+  "last_seen": "2026-11-10T04:35:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.09024",
+      "url": "https://arxiv.org/abs/2611.09024"
+    }
+  ]
+}

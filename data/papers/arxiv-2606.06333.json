@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2606.06333",
+  "title": "Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability",
+  "abstract": "Sparse Autoencoders (SAEs) are widely used for mechanistic interpretability in large language models, yet their standard formulation assigns each latent feature a single decoder direction, implicitly assuming features to be one-dimensional. We show that this assumption can induce feature splitting when model features are multi-dimensional. Geometrically, accurately reconstructing a feature under a fixed co-activation budget can require exponentially many decoder directions as its dimension grows. From an optimization perspective, adding decoder directions can strictly lower the $\\ell_1$-regularized population risk, even when a basis can already reconstruct the feature exactly. Motivated by these results, we introduce Subspace-Aware Sparse Autoencoders (SASA), which replace single-vector decoders with learned subspaces, enforce sparsity through Top-$s$ group gating, and adapt group rank with nuclear-norm regularization. Under an idealized single-feature model, we prove that the SASA objective is minimized by a single group whose reconstruction map recovers the feature subspace. We also derive polynomial sample complexity bounds for subspace estimation within a group and a lower bound on the samples needed to observe every atom in a fixed fragmented dictionary. Experiments on GPT-2 and Mistral-7B show reduced absorption compared with SAEs. Matched-budget GPT-2 comparisons show lower absorption for concept families and more accurate prediction of their members using a small number of latent coordinates, at a reconstruction cost. The code is available at https://github.com/arshandalili/sasa.",
+  "url": "https://arxiv.org/abs/2606.06333",
+  "pdf_url": "https://arxiv.org/pdf/2606.06333",
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "authors": [
+    "Seyed Arshan Dalili",
+    "Mehrdad Mahdavi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/arshandalili/sasa",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Sparse Autoencoders (SAEs) are widely used for mechanistic interpretability in large language models, yet their standard formulation assigns each latent feature a single decoder direction, implicitly assuming features to be one-dimensional.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-10T04:35:28+00:00",
+  "last_seen": "2026-11-10T04:35:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.06333",
+      "url": "https://arxiv.org/abs/2606.06333"
+    }
+  ]
+}

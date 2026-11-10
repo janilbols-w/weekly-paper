@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **132** 篇。
+累计收录 **133** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ChainFlow: Few-Step Latent Flow Matching for Speculative Decoding](../../papers/arxiv-2611.08669/) | 2026-11-09 | 44 |
 | [Teaching Diffusion to Speculate Left-to-Right](../../papers/arxiv-2606.11552/) | 2026-11-05 | 43 |
 | [PACT: Certifying What Is Written in Parallel Decoding of Diffusion Language Models](../../papers/arxiv-2611.04152/) | 2026-11-04 | 49 |
 | [Free Draft-and-Verification: Toward Lossless Parallel Decoding for Diffusion Large Language Models](../../papers/arxiv-2510.00294/) | 2026-11-04 | 47 |

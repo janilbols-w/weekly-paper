@@ -39,7 +39,7 @@ Knowledge distillation is an established technique for improving the capabilitie
 ## 元数据
 
 - 作者：Ryan Swift, Konstantinos Psounis
-- 发布：2026-10-09；更新：2026-10-09
+- 发布：2026-10-09；更新：2026-11-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

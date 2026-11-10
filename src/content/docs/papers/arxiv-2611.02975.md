@@ -39,7 +39,7 @@ Long-context large language model (LLM) serving places substantial demands on co
 ## 元数据
 
 - 作者：Youhe Jiang, Pavle Glu\v{s}ac, Binhang Yuan, Eiko Yoneki
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-09
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

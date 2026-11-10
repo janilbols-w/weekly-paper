@@ -5,10 +5,12 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **126** 篇。
+累计收录 **128** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Nebula: Distributed Position-Independent Caching for LLM Serving](../../papers/arxiv-2611.09474/) | 2026-11-09 | 45 |
+| [Intent-Aware Caching for Efficient LLM Serving](../../papers/arxiv-2611.09715/) | 2026-11-09 | 43 |
 | [A Controlled Experimental Evaluation of Configuration and Cache Architecture in LLM Serving Engines](../../papers/arxiv-2611.05991/) | 2026-11-05 | 53 |
 | [HYPIC: Position-Independent Caching for Hybrid-Attention LLM Serving](../../papers/arxiv-2607.01299/) | 2026-11-05 | 43 |
 | [Beyond Compression Ratio: High-Throughput KV Compression for Disaggregated LLM Serving](../../papers/arxiv-2611.04382/) | 2026-11-04 | 54 |

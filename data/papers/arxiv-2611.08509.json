@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2611.08509",
+  "title": "MorphSched: Workload-Aware Adaptive Scheduler Generation for Linux",
+  "abstract": "Modern Linux scheduling increasingly requires workload-specific policies to meet the dynamic performance needs of heterogeneous applications. The recent sched_ext framework enables custom BPF schedulers, but building practical policies still requires coordinating Rust user-space control logic, BPF scheduling callbacks, generated user-kernel interfaces, and strict eBPF verifier constraints. This paper presents MorphSched, an LLM-driven system for synthesizing complete Rust+BPF sched_ext schedulers. MorphSched profiles target workloads under Linux EEVDF to construct dynamic, workload-specific optimization objectives, and uses a scaffold-constrained generation pipeline to translate scheduling intent into deployable scheduler implementations. To improve synthesis reliability, MorphSched separates implementation repair from strategy search: verifier, build, and runtime failures are handled through a DAG-structured repair process, while performance feedback is accumulated in an evolutionary memory pool to refine high-level scheduling strategies across iterations. We evaluate MorphSched across 120 machine/workload/interferer configurations on a real Linux kernel. The generated schedulers compile, pass eBPF verification, load successfully, and remain stable throughout our benchmark runs without manual edits to generated scheduler source code. Across these configurations, MorphSched improves the primary foreground metric over EEVDF by 26.5% on average and up to 87.3%. In selected comparisons, the generated schedulers are also competitive with representative hand-written sched_ext schedulers. These results show that scaffold-constrained, system-grounded LLM generation can be a practical tool for exploring workload-specific Linux scheduling policies.",
+  "url": "https://arxiv.org/abs/2611.08509",
+  "pdf_url": "https://arxiv.org/pdf/2611.08509",
+  "published": "2026-11-09",
+  "updated": "2026-11-09",
+  "authors": [
+    "Yifan Zhang",
+    "Hengxuan Lou",
+    "Xinkui Zhao",
+    "Rengrong Xiong",
+    "Naibo Wang",
+    "Chang Liu",
+    "Guanjie Cheng",
+    "Shuiguang Deng",
+    "Jianwei Yin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.OS",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "memory pool"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: memory pool",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern Linux scheduling increasingly requires workload-specific policies to meet the dynamic performance needs of heterogeneous applications.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-10T04:35:28+00:00",
+  "last_seen": "2026-11-10T04:35:28+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.08509",
+      "url": "https://arxiv.org/abs/2611.08509"
+    }
+  ]
+}

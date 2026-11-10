@@ -5,10 +5,22 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **736** 篇。
+累计收录 **748** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Knowledge Distillation from Neural Networks to Differentiable Logic Networks](../../papers/arxiv-2611.09024/) | 2026-11-09 | 45 |
+| [DUET: Dual-Sparse Inference for Block Diffusion Language Models](../../papers/arxiv-2611.09239/) | 2026-11-09 | 45 |
+| [Compact SO(3) Equivariant Atomistic Foundation Models via Structural Pruning](../../papers/arxiv-2605.08885/) | 2026-11-09 | 45 |
+| [From Trajectories to Prefixes: Reusing Teacher Trajectories via Replayed Prefixes and Online Continuation](../../papers/arxiv-2607.19395/) | 2026-11-09 | 44 |
+| [NAVE: A Normalized, Adaptive Conformer for Antarctic Whale Vocalization Detection](../../papers/arxiv-2611.09642/) | 2026-11-09 | 43 |
+| [Failure Profiling and Reachable Trajectory Selection for Reasoning Distillation](../../papers/arxiv-2611.09042/) | 2026-11-09 | 43 |
+| [Dual-Rate Diffusion: Accelerating diffusion models with an interleaved heavy-light network](../../papers/arxiv-2605.18190/) | 2026-11-09 | 43 |
+| [Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability](../../papers/arxiv-2606.06333/) | 2026-11-09 | 42 |
+| [LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling](../../papers/arxiv-2604.11748/) | 2026-11-09 | 42 |
+| [Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders](../../papers/arxiv-2611.09233/) | 2026-11-09 | 42 |
+| [Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB](../../papers/arxiv-2611.08665/) | 2026-11-09 | 41 |
+| [Minerva: Reinforcement Learning with Verifiable Rewards for Cyber Threat Intelligence LLMs](../../papers/arxiv-2602.00513/) | 2026-11-09 | 39 |
 | [Modality-Aware Expert Pruning for MoE-Based Multimodal Large Language Models](../../papers/arxiv-2611.05927/) | 2026-11-05 | 52 |
 | [Attention to Mamba: A Recipe for Cross-Architecture Distillation](../../papers/arxiv-2604.14191/) | 2026-11-05 | 44 |
 | [Structural Rationale Distillation via Reasoning Space Compression](../../papers/arxiv-2605.07139/) | 2026-11-05 | 43 |
@@ -607,8 +619,8 @@ description: "Compression, Sparsity & Distillation"
 | [SafeSteer: Localized On-Policy Distillation for Efficient Safety Alignment](../../papers/arxiv-2606.02530/) | 2026-08-24 | 46 |
 | [COEC: Calibrated Orthogonal-Equivalence Compensation for Structured Pruning of Large Language Models](../../papers/arxiv-2608.21142/) | 2026-08-24 | 45 |
 | [Thinking at the Right Size: Amortized Distillation Across Post-Trained LLMs](../../papers/arxiv-2608.22854/) | 2026-08-24 | 44 |
-| [TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts](../../papers/arxiv-2608.22788/) | 2026-08-24 | 43 |
 | [BF1: A Causal Dyadic Sparse-Attention Retrofit for Efficient Long-Context Transformers](../../papers/arxiv-2608.20427/) | 2026-08-24 | 43 |
+| [TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts](../../papers/arxiv-2608.22788/) | 2026-08-24 | 42 |
 | [Scale or Reason? A Compute-Equivalent Analysis of Reasoning Distillation](../../papers/arxiv-2509.22193/) | 2026-08-24 | 42 |
 | [Event-triggered Implicit Perturbation for Zeroth-Order Fine-Tuning of Spiking Transformers](../../papers/arxiv-2608.21223/) | 2026-08-24 | 42 |
 | [When Better Teachers Don't Make Better Students: Revisiting Knowledge Distillation for CLIP Models in VQA](../../papers/arxiv-2511.17886/) | 2026-08-24 | 41 |
@@ -685,7 +697,7 @@ description: "Compression, Sparsity & Distillation"
 | [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](../../papers/arxiv-2608.07169/) | 2026-08-10 | 49 |
 | [Prune Once: Retraining-Free Task-Agnostic Pruning for Vision-Language Models](../../papers/arxiv-2608.06901/) | 2026-08-10 | 48 |
 | [An AI4AI Framework for Visual Token Pruning](../../papers/arxiv-2608.07193/) | 2026-08-10 | 48 |
-| [The Sparsity Whisperer](../../papers/arxiv-2608.06630/) | 2026-08-10 | 46 |
+| [The Sparsity Whisperer](../../papers/arxiv-2608.06630/) | 2026-08-10 | 45 |
 | [MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation](../../papers/arxiv-2608.07463/) | 2026-08-10 | 42 |
 | [Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits](../../papers/arxiv-2608.07430/) | 2026-08-10 | 41 |
 | [Self-Distillation Enables Continual Learning](../../papers/arxiv-2601.19897/) | 2026-08-10 | 39 |

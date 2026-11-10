@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2608.06630",
   "title": "The Sparsity Whisperer",
-  "abstract": "Pruning reduces the inference cost of large language models, but existing criteria primarily preserve large activations or reconstruct layer outputs. We argue that this overlooks a key computation performed by particularly sparsity-sensitive neurons in the MLP up and gate projections: separating similar inputs into dissimilar outputs. This suggests that effective pruning should preserve not only activations, but also the differences between outputs more broadly. We introduce a family of difference-informed pruning methods built upon this principle. Wisp is a first-order, update-free method that scores weights using input-difference norms, and Wisp+ refines this score neuronwise using the input pairs each neuron separates most strongly. Finally, Whisper is a second-order method that uses a lightly regularized difference Hessian as its reconstruction objective. Across Llama 2 and 3.1 models from 7B to 405B parameters, our second-order variant consistently improves over strong reconstruction-based baselines, while our update-free variants improve over activation-aware baselines, especially in constrained settings. The improvements over Wanda and SparseGPT extend to structured sparsity, downstream evaluations, and other model families. Augmenting stronger techniques such as RIA and ALPS with our difference-informed criteria yields further improvements, shifting the overall accuracy-runtime frontier outward at negligible additional cost. These results suggest that preserving output differences is a broadly useful and composable signal for post-training LLM sparsification.",
+  "abstract": "Pruning reduces the inference cost of large language models, but existing criteria primarily preserve large activations or reconstruct layer outputs. We argue that this overlooks a key computation performed by particularly sparsity-sensitive neurons in the MLP up and gate projections: separating similar inputs into dissimilar outputs. This suggests that effective pruning should preserve not only activations, but also the differences between outputs more broadly. We introduce a family of difference-informed pruning methods built upon this principle. Wisp+ is a neuronwise, update-free method that prioritizes the input pairs each neuron separates most strongly relative to their distance. Wisp provides a more efficient layerwise alternative that scores weights using shared input-difference norms. Finally, Whisper extends global difference preservation to second-order reconstruction using a lightly regularized difference Hessian. Across Llama 2 and 3.1 models from 7B to 405B parameters, our second-order variant consistently improves over strong reconstruction-based baselines, while our update-free variants improve over activation-aware baselines, especially in constrained settings. The improvements over Wanda and SparseGPT extend to structured sparsity, downstream evaluations, and other model families. Augmenting stronger techniques such as RIA and ALPS with our difference-informed criteria yields further improvements, shifting the overall accuracy-runtime frontier outward at negligible additional cost. These results suggest that preserving output differences is a broadly useful and composable signal for post-training LLM sparsification.",
   "url": "https://arxiv.org/abs/2608.06630",
   "pdf_url": "https://arxiv.org/pdf/2608.06630",
   "published": "2026-08-10",
-  "updated": "2026-08-10",
+  "updated": "2026-11-09",
   "authors": [
     "Linghao Kong",
     "Inimai Subramanian",
@@ -40,10 +40,10 @@
     "pruning",
     "sparsity"
   ],
-  "score": 46,
+  "score": 45,
   "score_components": {
     "relevance": 18,
-    "novelty": 7,
+    "novelty": 6,
     "rigor": 9,
     "practical_impact": 7,
     "reproducibility": 2,
@@ -60,7 +60,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-08-10T05:04:42+00:00",
-  "last_seen": "2026-11-09T04:35:50+00:00",
+  "last_seen": "2026-11-10T04:35:28+00:00",
   "featured_weeks": [],
   "source_records": [
     {

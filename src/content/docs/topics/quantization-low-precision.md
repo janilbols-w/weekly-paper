@@ -5,10 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **393** 篇。
+累计收录 **400** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DiRotQ: Rotation-Aware Quantization for 4-bit Diffusion Transformers](../../papers/arxiv-2605.16732/) | 2026-11-09 | 51 |
+| [BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design](../../papers/arxiv-2611.09825/) | 2026-11-09 | 49 |
+| [End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost](../../papers/arxiv-2509.00031/) | 2026-11-09 | 47 |
+| [ResServe: Accurate and Efficient FP4 LLM Inference with Residue Compensation](../../papers/arxiv-2611.08713/) | 2026-11-09 | 46 |
+| [ResQAdam: Residual-Preserving Adaptive Optimization for Memory-Efficient Quantization Aware Training](../../papers/arxiv-2611.08924/) | 2026-11-09 | 45 |
+| [PACZero: PAC-Private Fine-Tuning of Language Models via Sign Quantization](../../papers/arxiv-2605.06505/) | 2026-11-09 | 42 |
+| [e-means: outperforming k-means (in one-tenth the epochs)](../../papers/arxiv-2611.09501/) | 2026-11-09 | 40 |
 | [Balancing hierarchical representation and quantization: A performance trade-off in text embeddings](../../papers/arxiv-2611.06859/) | 2026-11-05 | 51 |
 | [GaugeQuant: Online Learning of Quantization-Optimal Bases from LLM Symmetries](../../papers/arxiv-2607.20757/) | 2026-11-05 | 43 |
 | [Reference-Compatible Parallel Execution for Quantized LLM Inference](../../papers/arxiv-2610.03228/) | 2026-11-05 | 40 |

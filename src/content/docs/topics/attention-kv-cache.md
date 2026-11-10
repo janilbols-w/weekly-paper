@@ -5,10 +5,18 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **257** 篇。
+累计收录 **265** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Reformulating KV Cache Eviction Problem for Long-Context LLM Inference](../../papers/arxiv-2605.07234/) | 2026-11-09 | 55 |
+| [DARIC: A Position-Independent KV Cache Reuse System with Distribution-Aware Recomputation](../../papers/arxiv-2611.09109/) | 2026-11-09 | 50 |
+| [Transformer-FSQ: Discrete Latents for Extreme KV-Cache Compression](../../papers/arxiv-2611.09598/) | 2026-11-09 | 48 |
+| [MORTIS: Compiler-Guided KV-Cache Management for LLM Agent Programs](../../papers/arxiv-2611.08638/) | 2026-11-09 | 45 |
+| [The Silent Hyperparameter: Quantifying the Impact of Inference Backends on LLM Reproducibility](../../papers/arxiv-2605.19537/) | 2026-11-09 | 43 |
+| [Scratchpad Patching: Decoupling Compute from Patch Size in Byte-Level Language Models](../../papers/arxiv-2605.09630/) | 2026-11-09 | 39 |
+| [Inside the Trap: A Renewal Law for Prefix-Cache Collapse in LLM Agent Serving](../../papers/arxiv-2611.08902/) | 2026-11-09 | 38 |
+| [CacheGraft: Enhancing Retrieval-Augmented Generation via Latent-Space Document Enrichment](../../papers/arxiv-2611.07393/) | 2026-11-09 | 38 |
 | [VAR-Q: Tuning-free KV Cache Quantization for Visual Autoregressive Image and Video Generation](../../papers/arxiv-2611.05380/) | 2026-11-05 | 45 |
 | [CRESiST: Self-Enhancing Explorative Policy Learning for Simultaneous Speech Translation](../../papers/arxiv-2611.06501/) | 2026-11-05 | 45 |
 | [HyPAIC: Personal AI Computer with High Bandwidth Flash for High Performance Trillion-Parameter LLM Inference](../../papers/arxiv-2611.04144/) | 2026-11-04 | 48 |
@@ -61,10 +69,10 @@ description: "Attention & KV Cache"
 | [PrefixFlow: Training-Time KV Caching for Schedule-Level Prefix Reuse in LLM RL Training](../../papers/arxiv-2606.01143/) | 2026-10-16 | 40 |
 | [Language Models Can Control Their Own Attention](../../papers/arxiv-2609.02737/) | 2026-10-16 | 40 |
 | [OScaR: The Occam's Razor for Extreme KV Cache Quantization in LLMs and Beyond](../../papers/arxiv-2605.19660/) | 2026-10-15 | 55 |
+| [PriorityFEC: Deadline-Aware Streaming FEC for KV-Cache Handoff in Edge Multi-Agent Systems](../../papers/arxiv-2610.21390/) | 2026-10-15 | 45 |
 | [When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill](../../papers/arxiv-2610.21500/) | 2026-10-15 | 44 |
 | [Range: Decoupling KV-Cache Reuse Granularity from Storage Work](../../papers/arxiv-2610.21241/) | 2026-10-15 | 44 |
 | [Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing](../../papers/arxiv-2610.22172/) | 2026-10-15 | 44 |
-| [PriorityFEC: Deadline-Aware Streaming FEC for KV-Cache Handoff in Edge Multi-Agent Systems](../../papers/arxiv-2610.21390/) | 2026-10-15 | 43 |
 | [A Simple Plug-in for Improving Eviction-Based KV Cache Compression](../../papers/arxiv-2605.23258/) | 2026-10-15 | 38 |
 | [Delta Tokenizer: Reference-Identical Tokenization of Session Deltas and Segment-Parallelism for Long Prompts on Multicore CPUs](../../papers/arxiv-2610.19801/) | 2026-10-14 | 43 |
 | [Energy Consumption Analysis of Discrete Diffusion and Autoregressive Language Models](../../papers/arxiv-2610.19855/) | 2026-10-14 | 39 |

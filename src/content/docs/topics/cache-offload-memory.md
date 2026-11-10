@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **137** 篇。
+累计收录 **140** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Towards Fully-fledged GPU Multitasking via Proactive Memory Scheduling](../../papers/arxiv-2512.24637/) | 2026-11-09 | 45 |
+| [MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents](../../papers/arxiv-2602.02474/) | 2026-11-09 | 43 |
+| [MorphSched: Workload-Aware Adaptive Scheduler Generation for Linux](../../papers/arxiv-2611.08509/) | 2026-11-09 | 40 |
 | [Accelerating Offloading-Based MoE Inference by Interleaving Concurrent Requests](../../papers/arxiv-2611.04794/) | 2026-11-04 | 46 |
 | [UMLoad: Fast On-Demand Model Loading on Unified Memory Architecture](../../papers/arxiv-2611.04253/) | 2026-11-04 | 43 |
 | [LeanSparse: Memory-Efficient Serving for Native Sparse-Attention LLMs](../../papers/arxiv-2611.04671/) | 2026-11-04 | 41 |
