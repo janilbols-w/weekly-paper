@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2611.11507",
+  "title": "ConvLUT: Rethinking Convolutional Architectures for Ultra-Low-Latency LUT-Based Inference",
+  "abstract": "Lookup-table (LUT)-based neural networks (NNs) offer a compelling path to ultra-low-latency inference on FPGAs. However, existing LUT-based neural networks have largely been restricted to MLP-style topologies, leaving structured vision and audio tasks underexplored. We present ConvLUT, a family of fully unrolled LUT-mappable convolutional architectures targeting the MLPerf Tiny benchmarks. It is comprised of a standard convolutional model built around a hierarchical tree of LUTs and a depthwise separable model following the MobileNet design philosophy. These architectures are enabled by four key contributions: a unified LUT-based convolutional framework supporting standard, depthwise, and pointwise convolutions under explicit fan-in constraints; a LUT-tree that addresses the $k^2c$ receptive field dimensionality bottleneck; a channel-partitioned LUT pooling layer that replaces conventional spatial pooling; and a hardware-aware iterative pruning strategy for stable convergence at scale. Evaluated on CIFAR-10, Visual Wake Words, and Keyword Spotting, ConvLUT achieves competitive accuracy with fully unrolled inference latencies below $\\sim 50$ ns. On CIFAR-10 it reaches at least a $8844\\times$ latency reduction over non-logic-based prior implementations, and outperforms existing MLP-style LUT-based models on the same task by at least $20$ pp in test accuracy.",
+  "url": "https://arxiv.org/abs/2611.11507",
+  "pdf_url": "https://arxiv.org/pdf/2611.11507",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Marta Andronic",
+    "Olivia Weng",
+    "Danial Zuberi",
+    "Ryan Kastner",
+    "George A. Constantinides"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Lookup-table (LUT)-based neural networks (NNs) offer a compelling path to ultra-low-latency inference on FPGAs.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.11507",
+      "url": "https://arxiv.org/abs/2611.11507"
+    }
+  ]
+}

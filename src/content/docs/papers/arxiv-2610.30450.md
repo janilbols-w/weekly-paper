@@ -39,7 +39,7 @@ Reasoning LLMs often continue reasoning after reaching a correct answer, wasting
 ## 元数据
 
 - 作者：Jingwei Ni, Dmitry Abulkhanov, Vladislav Smirnov, Markus Leippold, Elliott Ash, Timothy Baldwin, Artem Shelmanov, Mrinmaya Sachan
-- 发布：2026-10-23；更新：2026-10-23
+- 发布：2026-10-23；更新：2026-11-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

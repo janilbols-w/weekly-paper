@@ -9,7 +9,9 @@ description: "Distributed Training & Checkpointing"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [MINE: Entropy-coded Memory-efficient Inference for Large Language Models](../../papers/arxiv-2611.09424/) | 2026-11-09 | 43 |
+| [MICE: Multi-animal Interaction Context Encoder - A Hierarchical Foundation Model for Mouse Behavior](../../papers/arxiv-2611.11644/) | 2026-11-10 | 44 |
+| [Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards](../../papers/arxiv-2611.12728/) | 2026-11-10 | 39 |
+| [MINE: Entropy-coded Memory-efficient Inference for Large Language Models](../../papers/arxiv-2611.09424/) | 2026-11-09 | 46 |
 | [Know What You Need: Efficient Activation Checkpointing](../../papers/arxiv-2611.09614/) | 2026-11-09 | 42 |
 | [Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations](../../papers/arxiv-2611.09382/) | 2026-11-09 | 42 |
 | [Fast and Accurate Probing of In-Training LLMs' Downstream Performances](../../papers/arxiv-2604.01025/) | 2026-11-09 | 39 |
@@ -63,7 +65,6 @@ description: "Distributed Training & Checkpointing"
 | [Trait-space Monitoring for Emergent Misalignment During Supervised Finetuning](../../papers/arxiv-2606.07631/) | 2026-10-02 | 40 |
 | [Match the Distribution, Not the Compute: Post-Training Multi-Token Prediction Heads](../../papers/arxiv-2610.00888/) | 2026-10-01 | 41 |
 | [dattri-LLM: A Unified and Efficient Library for Training Data Attribution at LLM Scale](../../papers/arxiv-2609.38767/) | 2026-09-30 | 47 |
-| [From Search to Signal: Online Post-Training in Automatic Heuristic Design](../../papers/arxiv-2609.39383/) | 2026-09-30 | 42 |
 | [The Ongiini-Eval-OW Benchmark: A Concept Paper for the Planned Benchmarking of Machine Translation and Large Language Models on Oshindonga and Oshikwanyama](../../papers/arxiv-2609.31727/) | 2026-09-30 | 40 |
 | [SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution](../../papers/arxiv-2603.01327/) | 2026-09-30 | 40 |
 | [Equivalent Flows, Unequal Learning: Clean-Latent Prediction in Transformers](../../papers/arxiv-2605.27102/) | 2026-09-30 | 39 |
@@ -134,7 +135,6 @@ description: "Distributed Training & Checkpointing"
 | [XFeat Revisited: Reproducibility and Evaluation of a Lightweight Image Matcher](../../papers/arxiv-2608.09519/) | 2026-08-10 | 43 |
 | [Dual-Node NVIDIA DGX Spark over Tailscale: A Remote-Access Testbed for Distributed LLM Training and Cyber-Threat-Intelligence Fine-Tuning](../../papers/arxiv-2608.07226/) | 2026-08-10 | 42 |
 | [Lost in Interpolation: Why Predictive Feedback Fails in Diffusion Language Models](../../papers/arxiv-2608.06529/) | 2026-08-10 | 40 |
-| [Tevatron-Elastic: A Unified Abstraction for Training Elastic Retrievers and Rerankers](../../papers/arxiv-2608.08809/) | 2026-08-09 | 38 |
 | [FLARE: Diffusion for Hybrid Language Model](../../papers/arxiv-2606.01774/) | 2026-08-05 | 40 |
 | [Cortex: Compact Behavior Cloning for Quake with Frozen Visual Features](../../papers/arxiv-2607.22739/) | 2026-08-05 | 39 |
 | [AuroraRL: Fast, Fault-Tolerant, and Cost-Efficient Reinforcement Learning over Decentralized Network](../../papers/arxiv-2602.11456/) | 2026-08-05 | 39 |

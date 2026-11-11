@@ -5,10 +5,26 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **748** 篇。
+累计收录 **763** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Advancing Model Refinement: Muon-Optimized Distillation and Quantization for LLM Deployment](../../papers/arxiv-2601.09865/) | 2026-11-10 | 48 |
+| [Weakly Supervised Distillation of Hallucination Signals into Transformer Representations](../../papers/arxiv-2604.06277/) | 2026-11-10 | 47 |
+| [MambaLoc: Lightweight Indoor Localization Using Cross-Modal Knowledge Distillation](../../papers/arxiv-2611.10360/) | 2026-11-10 | 46 |
+| [Trilinear Compute-in-Memory Architecture for Energy-Efficient Transformer Acceleration](../../papers/arxiv-2604.07628/) | 2026-11-10 | 45 |
+| [CORP: Closed-Form One-shot Representation-Preserving Structured Pruning](../../papers/arxiv-2602.05243/) | 2026-11-10 | 45 |
+| [SmolWAM: A Latent World-Action Model for Robotic Manipulation on Edge Devices](../../papers/arxiv-2610.13740/) | 2026-11-10 | 44 |
+| [How Much Training-Inference Mismatch Can On-Policy Distillation Tolerate?](../../papers/arxiv-2611.11450/) | 2026-11-10 | 44 |
+| [MNN-Pocket-0.3B Technical Report](../../papers/arxiv-2611.12311/) | 2026-11-10 | 42 |
+| [GLINT: Sparsely Gated Vision-Language Alignment for Fine-Grained Radiology Representations](../../papers/arxiv-2606.03180/) | 2026-11-10 | 42 |
+| [Teacher-Guided Policy Optimization for On-Policy Reasoning Distillation under Large Policy Divergence](../../papers/arxiv-2605.13230/) | 2026-11-10 | 41 |
+| [Speculative Self-Distillation enables Efficient Knowledge Internalization](../../papers/arxiv-2611.12016/) | 2026-11-10 | 41 |
+| [Perturbing Inputs Improves Pretraining Distillation](../../papers/arxiv-2611.11598/) | 2026-11-10 | 41 |
+| [Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks](../../papers/arxiv-2611.12799/) | 2026-11-10 | 41 |
+| [Inference-time Alignment via Sparse Junction Steering](../../papers/arxiv-2602.21215/) | 2026-11-10 | 38 |
+| [Decomposing Earth Embeddings with Sparse Autoencoders](../../papers/arxiv-2611.11398/) | 2026-11-10 | 38 |
+| [ConvLUT: Rethinking Convolutional Architectures for Ultra-Low-Latency LUT-Based Inference](../../papers/arxiv-2611.11507/) | 2026-11-10 | 38 |
 | [Knowledge Distillation from Neural Networks to Differentiable Logic Networks](../../papers/arxiv-2611.09024/) | 2026-11-09 | 45 |
 | [DUET: Dual-Sparse Inference for Block Diffusion Language Models](../../papers/arxiv-2611.09239/) | 2026-11-09 | 45 |
 | [Compact SO(3) Equivariant Atomistic Foundation Models via Structural Pruning](../../papers/arxiv-2605.08885/) | 2026-11-09 | 45 |
@@ -755,5 +771,4 @@ description: "Compression, Sparsity & Distillation"
 | [DAVET: Denoising-Aware Visual Evidence Trajectory Allocation for Diffusion Vision-Language Models](../../papers/arxiv-2608.01821/) | 2026-08-03 | 40 |
 | [ATFlash: Per-RoPE-Wavelength Attention Windows for Compute/Memory-Efficient LLM Inference](../../papers/arxiv-2608.02947/) | 2026-08-03 | 39 |
 | [CRISP: Critical Step Perception for Training Efficient Deep Search Agents](../../papers/arxiv-2608.01867/) | 2026-08-03 | 38 |
-| [Tevatron Meets Megatron: Expert-Parallel LLM Reranker Training on an Academic Budget](../../papers/arxiv-2608.00916/) | 2026-08-02 | 39 |
 | [Native Multilingual Chain-of-Thought Reasoning in Low-Resource Southeast Asian Languages](../../papers/arxiv-2608.00533/) | 2026-08-01 | 42 |

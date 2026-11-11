@@ -5,10 +5,15 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **140** 篇。
+累计收录 **146** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GARDEN: Efficient GPU-Accelerated Billion-Scale GNN Training via Caching-Sampling-Batching Co-Design](../../papers/arxiv-2611.11043/) | 2026-11-10 | 46 |
+| [TSFFormer: A Frequency-Domain Spike Transformer for Green Human Activity Recognition](../../papers/arxiv-2611.12090/) | 2026-11-10 | 45 |
+| [Jointly Optimizing Memory, Computing and Offloading for Energy-Efficient DNN Inference](../../papers/arxiv-2611.11106/) | 2026-11-10 | 45 |
+| [Prune, Don't Merge: Expert Compression of Mixture-of-Experts LLMs on Multilingual Production Tasks](../../papers/arxiv-2611.12240/) | 2026-11-10 | 40 |
+| [Sentinel: Decoding Context Utilization via Attention Probing for Efficient LLM Context Compression](../../papers/arxiv-2505.23277/) | 2026-11-10 | 39 |
 | [Towards Fully-fledged GPU Multitasking via Proactive Memory Scheduling](../../papers/arxiv-2512.24637/) | 2026-11-09 | 45 |
 | [MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents](../../papers/arxiv-2602.02474/) | 2026-11-09 | 43 |
 | [MorphSched: Workload-Aware Adaptive Scheduler Generation for Linux](../../papers/arxiv-2611.08509/) | 2026-11-09 | 40 |
@@ -148,4 +153,5 @@ description: "Cache, Offload & Memory Management"
 | [Gecko: Fast Private Inference via Secure Public Encoder Offloading](../../papers/arxiv-2608.02378/) | 2026-08-04 | 45 |
 | [Structured Recurrent Mixers for Massively Parallelized Sequence Generation](../../papers/arxiv-2605.08696/) | 2026-08-04 | 42 |
 | [In-Network Market Prediction Using Machine Learning and Limit Order Books](../../papers/arxiv-2608.02424/) | 2026-08-04 | 42 |
-| [Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training](../../papers/arxiv-2608.02391/) | 2026-08-03 | 46 |
+| [Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training](../../papers/arxiv-2608.02391/) | 2026-08-03 | 44 |
+| [Tevatron Meets Megatron: Expert-Parallel LLM Reranker Training on an Academic Budget](../../papers/arxiv-2608.00916/) | 2026-08-02 | 39 |

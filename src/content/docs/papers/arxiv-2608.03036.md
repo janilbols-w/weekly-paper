@@ -1,5 +1,5 @@
 ---
-title: "LLM Serving in the Wild: An Empirical Study of Frameworks, Methods, and System Designs"
+title: "Understanding Efficient LLM Serving: An Empirical Study of Frameworks, Optimizations Algorithms, and Real-World Adoption"
 description: "Large Language Models (LLMs) are integrated into software systems and AI services, making efficient LLM serving a concern for software engineering."
 ---
 
@@ -39,7 +39,7 @@ Large Language Models (LLMs) are integrated into software systems and AI service
 ## 元数据
 
 - 作者：Forough Majidi, Mohammad Mehdi Morovati, Foutse Khomh, Heng Li
-- 发布：2026-08-04；更新：2026-08-05
+- 发布：2026-08-04；更新：2026-11-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

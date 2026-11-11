@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.28870",
   "title": "When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse",
-  "abstract": "Long-running LLM applications repeatedly send growing context, making prefix caching critical for reducing prefill cost. Yet prefix-cache behavior under agentic workloads remains poorly understood. We study production traces from two companies and evaluate 14 eviction algorithms across HBM-constrained and large memory-pool settings. Despite a large gap to Belady, sophisticated policies designed for traditional caches provide little benefit over LRU. The reason is structural: prefix reuse is dominated by the regular pacing of active sessions, making recency unusually predictive. Prefix caching nevertheless introduces new challenges, including heavy-tailed session footprints and highly variable miss costs as attention computation grows with sequence length. We introduce the compute-savings ratio and two offline oracles to quantify these effects. Our results show that effective prefix-cache management should retain recency as its foundation while selectively adding quick demotion for one-hit prefixes, compute-aware partial eviction for expensive misses, and capacity-dependent eviction granularity. We will release the traces and simulator to support future research.",
+  "abstract": "Long-running LLM applications and autonomous agents repeatedly send growing context, making prefix caching critical for reducing prefill cost. This raises a fundamental question: do decades of traditional cache-management techniques transfer directly to agentic and conversational LLM serving? We analyze production traces comprising over 20 billion processed tokens and evaluate 14 eviction algorithms across capacity-constrained HBM and large memory-pool settings. We find that simple Least Recently Used (LRU) is surprisingly robust, offering competitive performance against sophisticated traditional policies, though substantial headroom to Belady's optimum remains. The reason is structural: prefix reuse is dominated by the steady pacing of active sessions, making recency an unusually strong predictor for eviction. Nevertheless, prefix caching diverges from traditional workloads in ways that recency ignores, notably the prevalence of single-turn requests, extreme session footprint skew, and highly non-uniform miss costs because attention computation scales with token depth. To close the gap to optimality, we establish several design principles for prefix-cache management: keeping recency as the baseline while incorporating quick demotion to filter one-hit prompts, compute-aware eviction to prioritize expensive misses, and capacity-adaptive eviction granularity. Our traces and simulator are publicly available.",
   "url": "https://arxiv.org/abs/2609.28870",
   "pdf_url": "https://arxiv.org/pdf/2609.28870",
   "published": "2026-09-25",
-  "updated": "2026-10-02",
+  "updated": "2026-11-10",
   "authors": [
     "Yiyu Liu",
     "Minlan Yu",
@@ -37,11 +37,11 @@
   "keyword_evidence": [
     "prefix caching"
   ],
-  "score": 41,
+  "score": 42,
   "score_components": {
     "relevance": 12,
-    "novelty": 6,
-    "rigor": 9,
+    "novelty": 5,
+    "rigor": 11,
     "practical_impact": 9,
     "reproducibility": 2,
     "credibility": 3
@@ -51,13 +51,13 @@
     "no quantitative claim in metadata",
     "no code link detected in metadata"
   ],
-  "summary_en": "Long-running LLM applications repeatedly send growing context, making prefix caching critical for reducing prefill cost.",
+  "summary_en": "Long-running LLM applications and autonomous agents repeatedly send growing context, making prefix caching critical for reducing prefill cost.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-25T04:43:38+00:00",
-  "last_seen": "2026-11-10T04:35:28+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
   "featured_weeks": [],
   "source_records": [
     {

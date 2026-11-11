@@ -5,10 +5,12 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **17** 篇。
+累计收录 **19** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FRESCO: A Novel Consistency Control for Asynchronous Pipeline Parallel Training](../../papers/arxiv-2611.11238/) | 2026-11-10 | 44 |
+| [SinAE: A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems](../../papers/arxiv-2607.12380/) | 2026-11-10 | 42 |
 | [flash-comm: Self-Synchronizing Collective Communication for LLM Decoding](../../papers/arxiv-2611.06634/) | 2026-11-05 | 42 |
 | [CHARM+: Cross-Hardware Attention with Re-Merge Multistream Mechanism](../../papers/arxiv-2611.05906/) | 2026-11-05 | 42 |
 | [STLT: A Novel System for Energy-Aware Distributed Inference in the Edge-Cloud-Space Continuum](../../papers/arxiv-2611.01233/) | 2026-11-03 | 48 |

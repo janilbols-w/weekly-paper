@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2605.08553",
+  "title": "VeriContest: A Competitive-Programming Benchmark for Verifiable Code Generation",
+  "abstract": "Large language models can generate useful code from natural language, but their outputs come without correctness guarantees. Verifiable code generation offers a path beyond testing by requiring models to produce not only executable code, but also formal specifications and machine-checkable proofs. Progress in this direction, however, is difficult to measure: existing benchmarks are often small, cover only part of the pipeline, lack ground-truth proofs or rigorous specification validation, or target verification settings far from mainstream software development. We present VeriContest, a benchmark of 1,006 competitive-programming problems from LeetCode and Codeforces for verifiable code generation in Rust with Verus. Each problem includes a natural language description, expert-validated formal specifications, judge-accepted Rust code, Verus-checked proofs, and positive and negative test suites. VeriContest is constructed through a three-phase pipeline that scales from manually verified seed problems to semi-automated expansion with human-in-the-loop review. To strengthen benchmark quality, we also use testing to validate postcondition completeness. VeriContest supports both isolated and compositional evaluation of specification, code, and proof generation, and end-to-end verified program synthesis. Evaluating ten state-of-the-art models reveals a sharp gap between ordinary coding and verifiable code generation: the strongest model reaches 97.51% on natural-language-to-code generation, but only 57.16% on specification generation, 13.82% on proof generation, and 6.76% end-to-end. These results identify proof and specification generation as the central bottlenecks for current models and establish VeriContest as a rigorous platform for evaluating and training future systems that generate code with machine-checkable correctness.",
+  "url": "https://arxiv.org/abs/2605.08553",
+  "pdf_url": "https://arxiv.org/pdf/2605.08553",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Zichen Xie",
+    "Mrigank Pawagi",
+    "Yuxin Liu",
+    "Aaditi Rai",
+    "Lize Shao",
+    "John Berberian Jr.",
+    "Sicong Che",
+    "Wenxi Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.SE",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models can generate useful code from natural language, but their outputs come without correctness guarantees.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.08553",
+      "url": "https://arxiv.org/abs/2605.08553"
+    }
+  ]
+}

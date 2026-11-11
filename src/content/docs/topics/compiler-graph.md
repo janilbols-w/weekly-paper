@@ -5,10 +5,15 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **134** 篇。
+累计收录 **139** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [JURIST: Training Small Data-Reweighted Reasoning Judges for Test-Time Scaling in Code Generation](../../papers/arxiv-2601.22230/) | 2026-11-10 | 45 |
+| [Stabilizing Knowledge, Promoting Reasoning: Dual-Token Constraints for RLVR](../../papers/arxiv-2507.15778/) | 2026-11-10 | 44 |
+| [Simple Test-Time Refinement for Plot-to-Code Generation via Visual-Code Diagnostics](../../papers/arxiv-2611.10840/) | 2026-11-10 | 42 |
+| [Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](../../papers/arxiv-2606.28593/) | 2026-11-10 | 42 |
+| [VeriContest: A Competitive-Programming Benchmark for Verifiable Code Generation](../../papers/arxiv-2605.08553/) | 2026-11-10 | 40 |
 | [In-Context Learning for Diagram Code Generation: What is the Effect on Faithfulness and Quality?](../../papers/arxiv-2601.20476/) | 2026-11-05 | 41 |
 | [HTAM: Hierarchical Transition-Attended Memory for Operator Optimization](../../papers/arxiv-2605.29734/) | 2026-11-04 | 40 |
 | [Grammar-Constrained Decoding Can Jailbreak LLMs into Generating Malicious Code](../../papers/arxiv-2606.11817/) | 2026-11-04 | 39 |

@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.09973",
+  "title": "ReelCache: An Efficient KV Cache Compression and Management System for Multi-Round Video Generation",
+  "abstract": "Autoregressive video diffusion models produce large KV caches during multi-round video generation. Keeping all these KV chunks would consume substantial memory, while rebuilding discarded caches would significantly delay video chunk generation. This paper presents ReelCache, a KV cache compression system for efficient multi-round, long video generation. ReelCache combines an intra-chunk compressor with an inter-chunk cache manager. The compressor applies low-rank decomposition across channels and video coding to the resulting coefficients, predicting the decomposition rank per transformer layer online to meet retained-energy targets. The cache manager shares basis directions across consecutive chunks and organizes chunk states in a tree, allowing generation branches to share historical state while supporting restoration for resume, rewind, and fork. Experiments across five video generation models show that ReelCache reduces KV storage by 14.46-21.13x relative to baselines and accelerates next-chunk generation by 1.25-3.36x, with less than 1% drop in six representative VBench metrics. GitHub: https://github.com/Tianyu9748/ReelCache",
+  "url": "https://arxiv.org/abs/2611.09973",
+  "pdf_url": "https://arxiv.org/pdf/2611.09973",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Tianyu Wang",
+    "Daiyang Yu",
+    "Zhiwei Ren",
+    "Junbo Li",
+    "Jitian Zhang",
+    "Longfei Shangguan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/Tianyu9748/ReelCache",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Autoregressive video diffusion models produce large KV caches during multi-round video generation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.09973",
+      "url": "https://arxiv.org/abs/2611.09973"
+    }
+  ]
+}

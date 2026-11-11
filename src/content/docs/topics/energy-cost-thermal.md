@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **62** 篇。
+累计收录 **64** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AscSpMM: Efficient SpMM on Ascend NPUs via Pipelined Vector-Cube Collaboration](../../papers/arxiv-2611.11823/) | 2026-11-10 | 46 |
+| [Non-intrusive appliance state detection in unseen homes using classical machine learning](../../papers/arxiv-2611.00920/) | 2026-11-10 | 42 |
 | [Workload-Static Optical Circuit Switching For Scalable LLM Inference Decode](../../papers/arxiv-2611.05104/) | 2026-11-04 | 40 |
 | [A Cross-Domain Matrix Engine for Signal Processing and Deep Neural Net Inference](../../papers/arxiv-2611.03503/) | 2026-11-03 | 50 |
 | [Elastic Precision: Software-Hardware Co-Design of a Mixed-Precision Architecture for Long-Context LLM Inference](../../papers/arxiv-2611.00915/) | 2026-11-03 | 45 |

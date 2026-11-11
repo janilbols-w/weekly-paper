@@ -5,10 +5,11 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **33** 篇。
+累计收录 **34** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [dMoE: dLLMs with Learnable Block Experts](../../papers/arxiv-2605.30876/) | 2026-11-10 | 48 |
 | [Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective](../../papers/arxiv-2610.30923/) | 2026-10-23 | 42 |
 | [Towards Looped Models Done Right, Part I: Topology, Input Injection, Recurrent-State Design](../../papers/arxiv-2610.23036/) | 2026-10-19 | 38 |
 | [Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes](../../papers/arxiv-2610.20585/) | 2026-10-14 | 43 |

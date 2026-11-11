@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.17997",
+  "title": "MARR: Module-Adaptive Residual Reconstruction for Low-Bit Post-Training Quantization",
+  "abstract": "Recently, residual reconstruction-based model quantization methods have achieved promising performance in low-bit Post-Training Quantization (PTQ) by introducing cross-module residuals to reduce error accumulated from previous modules. However, these residuals may also introduce additional bias arising from the Hessian-Approximation (HA) assumption, resulting their two-sided effect and potentially leading to suboptimal quantization performance. Therefore, in this work, we propose a residual regulation strategy to mitigate the HA bias associated with residual strength, while preserving accumulated-error correction. Furthermore, we observe that this two-sided effect is module-dependent, we futher propose a Module-Adaptive Residual Reconstruction (MARR), which assigns a module-specific scaling coefficient to adaptively balance accumulated-error correction and residual-related HA bias for each module. To avoid exhaustive per-module coefficient search and obtain a stable coefficient estimate, we design an Proportional-Integral-Derivative (PID)-based update strategy that employs reconstruction error as feedback to progressively refine this coefficient. Experiments on several typical Large Language Models (LLMs) and Vision Transformers (ViTs) demonstrate the effectiveness of MARR under low-bit quantization ($\\leq$4-bit), achieving up to 20.2\\% perplexity reduction on LLMs and up to 4.6\\% accuracy gains on ViTs over the residual reconstruction baselines. Code will be made publicly available upon acceptance.",
+  "url": "https://arxiv.org/abs/2605.17997",
+  "pdf_url": "https://arxiv.org/pdf/2605.17997",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Le Su",
+    "Xing Luo",
+    "Zhi Jin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Recently, residual reconstruction-based model quantization methods have achieved promising performance in low-bit Post-Training Quantization (PTQ) by introducing cross-module residuals to reduce error accumulated from previous modules.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.17997",
+      "url": "https://arxiv.org/abs/2605.17997"
+    }
+  ]
+}

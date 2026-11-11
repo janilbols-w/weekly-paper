@@ -5,10 +5,19 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **400** 篇。
+累计收录 **409** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [How Far Does Second-Order Linear Response Predict Quantization Mismatch? Pre-Registered Measurements on Five Language Models](../../papers/arxiv-2611.12634/) | 2026-11-10 | 49 |
+| [HyPLM Technical Report](../../papers/arxiv-2611.12000/) | 2026-11-10 | 46 |
+| [Multi-Node Transformers for Object Detection and Captioning Across Distributed Edge Networks](../../papers/arxiv-2611.11291/) | 2026-11-10 | 44 |
+| [Edge Computing for Computer Vision in IoT: Feasibility and Directions](../../papers/arxiv-2611.11218/) | 2026-11-10 | 44 |
+| [When Calibration Data Matter in Sub-4-Bit Language Model Quantization](../../papers/arxiv-2611.11079/) | 2026-11-10 | 43 |
+| [What the Loss Curve Misses: FP4 Pretraining Slows the Acquisition of Rare Facts](../../papers/arxiv-2611.12832/) | 2026-11-10 | 42 |
+| [MARR: Module-Adaptive Residual Reconstruction for Low-Bit Post-Training Quantization](../../papers/arxiv-2605.17997/) | 2026-11-10 | 41 |
+| [HiFloat4 Format for End-To-End Reinforcement Learning Post-Training of Large Language Models](../../papers/arxiv-2607.26515/) | 2026-11-10 | 41 |
+| [DASHQuant: Provable Quantization with a Single Randomized Hadamard Transform](../../papers/arxiv-2605.13810/) | 2026-11-10 | 39 |
 | [DiRotQ: Rotation-Aware Quantization for 4-bit Diffusion Transformers](../../papers/arxiv-2605.16732/) | 2026-11-09 | 51 |
 | [BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design](../../papers/arxiv-2611.09825/) | 2026-11-09 | 49 |
 | [End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost](../../papers/arxiv-2509.00031/) | 2026-11-09 | 47 |

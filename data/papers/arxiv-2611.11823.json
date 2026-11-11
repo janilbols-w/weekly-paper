@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2611.11823",
+  "title": "AscSpMM: Efficient SpMM on Ascend NPUs via Pipelined Vector-Cube Collaboration",
+  "abstract": "Neural processing units (NPUs) provide high compute density and energy efficiency through specialized matrix engines and software-managed on-chip memory. However, their libraries primarily target dense computation. Sparse matrix-dense matrix multiplication (SpMM), a key kernel in graph analytics, sparse neural networks, and scientific computing, requires index-driven operand selection, indirect addressing, scattered memory accesses, and load balancing. These requirements conflict with the fixed shapes and contiguous layouts preferred by NPU matrix engines. GPU Tensor Core SpMM methods cannot be directly transferred to NPUs with decoupled vector and matrix engines. We present AscSpMM, which separates irregular operand preparation from regular matrix computation through a parameterized Vector-CSR representation. The vector engine decodes indices and gathers and reorganizes dense operands, while the Cube engine performs matrix multiply-accumulate operations. A double-slot ring buffer enables dependency-aware asynchronous pipelining, while operand reuse and runtime-adaptive tiling reduce cross-engine stalls. On an Ascend 910B3, AscSpMM achieves geometric-mean speedups of 2.36x over GEMM, 19.92x over an existing SpMM implementation, and 5.82x over cuSPARSE on an A100. It reduces matrix-input storage and peak HBM footprint by 48.24% and 22.98% on average, while remaining competitive with specialized GPU Tensor Core SpMM kernels. The code is available at https://github.com/LfLab-AI/Ascend-NPU-SpMM.",
+  "url": "https://arxiv.org/abs/2611.11823",
+  "pdf_url": "https://arxiv.org/pdf/2611.11823",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Fei Li",
+    "Haoxin Li",
+    "Kehong Liu",
+    "Yanzi Zhou",
+    "Weiguo Wu",
+    "Shiqiang Nie",
+    "Jinyu Wang",
+    "Song Liu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/LfLab-AI/Ascend-NPU-SpMM",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 14,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Neural processing units (NPUs) provide high compute density and energy efficiency through specialized matrix engines and software-managed on-chip memory.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [
+    "2026-W46"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.11823",
+      "url": "https://arxiv.org/abs/2611.11823"
+    }
+  ]
+}

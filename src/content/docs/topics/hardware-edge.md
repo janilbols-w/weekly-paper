@@ -5,10 +5,15 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **98** 篇。
+累计收录 **103** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DICOMPUTE: An Economic and Privacy-Aware Framework for Distributed Artificial Intelligence Inference](../../papers/arxiv-2611.10804/) | 2026-11-10 | 52 |
+| [Measure the Deployment, Not Just the Model: Rethinking Hardware-Aware Model Selection for Microcontrollers](../../papers/arxiv-2606.15004/) | 2026-11-10 | 49 |
+| [Network Contention State Aware Dynamic Optimizer for Accelerator Collective Communication Libraries](../../papers/arxiv-2611.10984/) | 2026-11-10 | 46 |
+| [TsetlinKWS: A 65nm 16.58uW, 0.63mm2 State-Driven Convolutional Tsetlin Machine-Based Accelerator For Keyword Spotting](../../papers/arxiv-2510.24282/) | 2026-11-10 | 44 |
+| [PENSA: A Spatial Accelerator for BitNet b1.58 Inference on an HBM-equipped AMD Alveo FPGA](../../papers/arxiv-2611.10648/) | 2026-11-10 | 42 |
 | [Atik: A Shared-Mesh Transformer Accelerator for RISC-V](../../papers/arxiv-2611.09522/) | 2026-11-09 | 47 |
 | [MeshRT: Compile-Time Governed Wafer-Scale Runtime for Low-Latency High-Throughput Inference](../../papers/arxiv-2611.08508/) | 2026-11-09 | 40 |
 | [TileLens: Efficiently Using Large-Granularity Memory Systems with Transparent Two-Dimensional Memory Layout](../../papers/arxiv-2607.04031/) | 2026-11-05 | 44 |

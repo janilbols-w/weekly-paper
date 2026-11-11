@@ -39,7 +39,7 @@ Memory capacity and bandwidth are major bottlenecks in LLM inference, motivating
 ## 元数据
 
 - 作者：Gaurav Kolhe, Cansu Demirkiran, Shubhi Tyagi, Sulaiman Sadiq, Boyao Wang, Richard Wang, Maximiliana Behnke, Shreyas Labhsetwar, Levi Melnick, Matthew Mattina, Partha Maji
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Semantic caching lowers the cost of serving large language models (LLMs) by reus
 ## 元数据
 
 - 作者：Baran Atalar, Selly Beyene, Xutong Liu, Carlee Joe-Wong
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

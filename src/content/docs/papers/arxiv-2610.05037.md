@@ -1,6 +1,6 @@
 ---
 title: "SparseCraft: Agentic Hardware-Software Co-Optimization for Sparse Computing"
-description: "Sparse-accelerator design spaces are usually searched against analytical models, so a design point is admitted on what a model predicts rather than on what the hardware does."
+description: "Sparse-accelerator design spaces are usually searched against analytical models, so a design is judged by a model's prediction rather than by a measurement of the hardware."
 ---
 
 **评分：41/100** · LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理
@@ -9,7 +9,7 @@ description: "Sparse-accelerator design spaces are usually searched against anal
 
 ## 一句话摘要
 
-Sparse-accelerator design spaces are usually searched against analytical models, so a design point is admitted on what a model predicts rather than on what the hardware does.
+Sparse-accelerator design spaces are usually searched against analytical models, so a design is judged by a model's prediction rather than by a measurement of the hardware.
 
 ## 为什么值得关注
 
@@ -17,29 +17,29 @@ Sparse-accelerator design spaces are usually searched against analytical models,
 
 ## 摘要原文
 
-Sparse-accelerator design spaces are usually searched against analytical models, so a design point is admitted on what a model predicts rather than on what the hardware does. SparseCraft closes that gap with a language model inside a closed CHIA loop. In each of 15 iterations the model reads the measured outcome of the previous one and edits the Chisel RTL, the memory configuration and the sparse-kernel schedule of a Gemmini accelerator through MCP tool servers, and no candidate counts until it has been checked for legality, elaborated, simulated cycle-accurately, checked bit-for-bit on every output against a golden reference, and synthesised. The harness turns each measurement into the next work order, a diagnosed bottleneck with matching strategy guidance, the history of tried designs and a score of the model's own prediction, and a second model repairs changes that fail a gate. On a $512 \times 512$ GraphChallenge sparse-DNN layer the loop reaches 2.1x fewer cycles, 9.8x less off-chip traffic and 22.8% less area than the block-sparse Gemmini baseline, with 5.61x higher modelled perf/W and 11.8x lower EDP. The levers span three layers: a schedule that keeps the dense operand resident removes 9.8x of the traffic, a zero-gated MAC and a zero-row skip unit that the model wrote in Chisel cut energy, and resizing the memories cuts area.
+Sparse-accelerator design spaces are usually searched against analytical models, so a design is judged by a model's prediction rather than by a measurement of the hardware. SparseCraft is a closed loop on the CHIA framework in which a large language model (LLM) agent co-designs the configuration, memories and sparse-kernel schedule of a Gemmini accelerator. A candidate counts only after it passes a legality check, cycle-accurate simulation, a bit-for-bit comparison of every output and synthesis. Post-synthesis timing analysis checks its clock, and its energy is computed from measured counters, with per-event energies validated against gate-level and SRAM-macro data. We compare the agent with expert Gemmini configurations and with random, greedy and multi-objective TPE search at the agent's budget of 15 evaluations, all measured by the same flow. On a GraphChallenge sparse-DNN layer, the agent's designs reach 159-164$\times$ the inverse energy-delay-area product of stock Gemmini and 2.07-2.14$\times$ that of the best expert configuration. Their Pareto hypervolume is 0.5557-0.5704, against at most 0.2806 for search. On a power-law graph and a pruned BERT layer, the agent raises perf/W by 11.45$\times$ and 4.43$\times$, and held-out transfer shows that its designs specialise to their workload. The loop is also resilient to faulty designs. When a design fails a check, a repair agent diagnoses the failure from its evidence and fixes it automatically, or declines when the only fix would undo the intended change. In a fault-injection benchmark, it fixed every scorable fault at its first attempt.
 
 ## 质量评分
 
 | 维度 | 得分 |
 |---|---:|
 | relevance | 12 |
-| novelty | 5 |
-| rigor | 7 |
-| practical impact | 12 |
+| novelty | 6 |
+| rigor | 11 |
+| practical impact | 7 |
 | reproducibility | 2 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: accelerator
-- quantitative claim detected
+- no quantitative claim in metadata
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Rajatabha Chakraborty, M P Samartha, Vedant Pahariya, Priyesh Shukla
-- 发布：2026-10-06；更新：2026-10-06
+- 发布：2026-10-06；更新：2026-11-10
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

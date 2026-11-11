@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2606.15004",
+  "title": "Measure the Deployment, Not Just the Model: Rethinking Hardware-Aware Model Selection for Microcontrollers",
+  "abstract": "Selecting an energy-efficient model for periodic sensing requires accounting for time between inferences. Hardware-aware model search typically measures inference alone, even when the application cares about energy per release. We present CREST (Cross-platform Runtime Evaluation and Search Tool), an open-source hardware-in-the-loop experimentation system that evaluates model and hardware configurations under a specified release schedule. Researchers can vary the objective, schedule, target and candidate proposer while reusing evaluation and replay. Records preserve comparison conditions and separate valid measurements from deployable candidates. Three case studies demonstrate the system. First, searches and controlled replay on STM32 N657 show how waiting changes model and clock selection. For one architecture, continuous inference favors 800 MHz over 300 MHz at 8.0 versus 17.1 mJ per inference, but additional waiting offsets 97% of this saving in a fitted decomposition. With STOP between releases, 300 MHz uses about 0.3-0.4% less board energy per release at 100 and 500 ms. At a fixed clock, the preferred architecture changes between release periods, which a model with shared waiting parameters cannot produce. Latency predicts continuous energy within a median 1.7% on held-out observations, yet most release-energy error remains in scheduled terms. In paired replay, one of six randomly selected near-latency pairs reverses its continuous-energy order by 5.8 mJ per release. Second, replay on three Arduino targets shows proxy-selected inertial-odometry candidates can fail to fit or use more energy than measured selections, with only 9 of 16 FLOPs-selected candidates fitting the most memory-constrained board. Third, an audio classification study reuses the evaluator with LLM-based candidate proposers, and cross-target replay moves a selected configuration from third to last in energy rank.",
+  "url": "https://arxiv.org/abs/2606.15004",
+  "pdf_url": "https://arxiv.org/pdf/2606.15004",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Joseph Q. Zales",
+    "Pragya Sharma",
+    "Mani Srivastava"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "eess.SY",
+    "cs.LG",
+    "cs.SY"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "hardware-aware"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: hardware-aware",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Selecting an energy-efficient model for periodic sensing requires accounting for time between inferences.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.15004",
+      "url": "https://arxiv.org/abs/2606.15004"
+    }
+  ]
+}

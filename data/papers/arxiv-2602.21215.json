@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2602.21215",
+  "title": "Inference-time Alignment via Sparse Junction Steering",
+  "abstract": "Token-level steering has emerged as a pivotal approach for inference-time alignment, enabling fine-grained control over large language models (LLMs) by modulating their output distributions without parameter updates. While effective, existing methods rely on dense intervention at every decoding step. This persistent manipulation not only incurs substantial computational overhead but also risks compromising generation quality by excessively drifting from the model's intrinsic distribution. In this work, we show that dense intervention is unnecessary and propose Sparse Inference-time Alignment (SIA), which performs sparse junction steering, intervening only at critical decision points along the generation trajectory. Our key insight is that high-entropy junctions are empirically consistent with pivotal decision points in the generation trajectory and are particularly susceptible to misalignment, suggesting that these points benefit from alignment-related reward signal. Extensive experiments across different model families and alignment objectives show that steering only 20%-80% of tokens achieves the superior alignment-efficiency trade-offs. For strong base models such as Qwen3, intervening on as few as 20% of tokens matches or even surpasses heavily post-trained instruct models. This sparsity enables stronger guidance while better preserving the model's native distribution, integrates seamlessly with search-based methods (e.g., Best-of-N), and improves efficiency by reducing the required sampling budget while yielding practical wall-clock speedups under matched-quality comparisons.",
+  "url": "https://arxiv.org/abs/2602.21215",
+  "pdf_url": "https://arxiv.org/pdf/2602.21215",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Runyi Hu",
+    "Jie Zhang",
+    "Shiqian Zhao",
+    "Jiale Meng",
+    "Jiwei Li",
+    "Jason Zeng",
+    "Ming Wu",
+    "Michael Heinrich",
+    "Yonggang Wen",
+    "Tianwei Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparse inference",
+    "sparsity"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparse inference, sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Token-level steering has emerged as a pivotal approach for inference-time alignment, enabling fine-grained control over large language models (LLMs) by modulating their output distributions without parameter updates.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.21215",
+      "url": "https://arxiv.org/abs/2602.21215"
+    }
+  ]
+}

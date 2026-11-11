@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2611.10984",
+  "title": "Network Contention State Aware Dynamic Optimizer for Accelerator Collective Communication Libraries",
+  "abstract": "Collective Communication Libraries (CCL) are critical for large-scale distributed AI/ML training, yet their configurations are determined by static heuristics that do not account for real-time network conditions. Our empirical study shows that these heuristics perform near-optimally in contention-free environments, but degrade substantially under background traffic. To address this, we present a cooperative multi-agent run-time optimizer for accelerator collective communication. Our approach employs a two-agent architecture: (i) detector- a Long Short Term Memory(LSTM) recurring neural network fed classifier head with a sequential probability ratio test that distinguishes sustained contention from transient spikes; and (ii) selector- a configuration selector built on a Dueling Double DQN (D3QN) with Conservative Q-Learning that adapts configuration parameters in response. We implemented this dynamic tuner over NCCL, a widely used CCL developed by NVIDIA. When evaluated on Chameleon Cloud's isolated bare-metal cluster, this dynamic tuning approach reduces AllReduce latency by 36% over NCCL and 32% over a fully converged AutoCCL. We further evaluated it across six real AI workloads spanning convolutional networks, transformers, and recommendation architectures. Our multi-agent tuner approach delivers up to 65% speedups on Delta cluster with NVIDIA A100 GPUs and Slingshot-11 fabric internode connectivity.",
+  "url": "https://arxiv.org/abs/2611.10984",
+  "pdf_url": "https://arxiv.org/pdf/2611.10984",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Rajat Bisht (Tennessee Technological University)",
+    "Tevfik Kosar (University at Buffalo)",
+    "Anthony Skjellum (Tennessee Technological University)",
+    "Gene Cooperman (Northeastern University)",
+    "MD S Q Zulkar Nine (Arkansas Tech University)"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG",
+    "cs.MA"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [
+    "parallelism-communication"
+  ],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Collective Communication Libraries (CCL) are critical for large-scale distributed AI/ML training, yet their configurations are determined by static heuristics that do not account for real-time network conditions.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.10984",
+      "url": "https://arxiv.org/abs/2611.10984"
+    }
+  ]
+}

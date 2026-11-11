@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2611.11644",
+  "title": "MICE: Multi-animal Interaction Context Encoder - A Hierarchical Foundation Model for Mouse Behavior",
+  "abstract": "Quantifying mouse behavior from pose is a foundational tool in neuroscience, ethology, drug discovery, and animal welfare. Self-supervised foundation models are a natural fit, but a foundation model for mouse behavior must handle social behavior - many behaviors that matter (aggression, courtship, mounting, allogrooming) are inherently multi-animal. Existing self-supervised pose models fall short: they encode each animal independently and discard interaction signal, hard-code the animal count, and pretrain one dataset at a time. We introduce MICE (Multi-animal Interaction Context Encoder), a hierarchical foundation model for mouse behavior that pretrains jointly on six mouse-pose corpora spanning one to four mice and 7 to 27 keypoints. MICE combines a hierarchical individual encoder capturing per-mouse kinematics at multiple temporal scales with a Perceiver-style social encoder whose learned latent codebook decouples parameter count from animal count, so a single checkpoint serves any group size without retraining. Across four evaluation protocols spanning six datasets, MICE matches or exceeds prior keypoint-based baselines, and layer-wise probing shows the social stage incrementally improves discriminability beyond the individual encoder. Code, weights, and data are available at https://github.com/eric0708/MICE.",
+  "url": "https://arxiv.org/abs/2611.11644",
+  "pdf_url": "https://arxiv.org/pdf/2611.11644",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Yen-Shuo Su",
+    "Weihan Li",
+    "Anqi Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "q-bio.NC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/eric0708/MICE",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Quantifying mouse behavior from pose is a foundational tool in neuroscience, ethology, drug discovery, and animal welfare.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.11644",
+      "url": "https://arxiv.org/abs/2611.11644"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2605.13230",
+  "title": "Teacher-Guided Policy Optimization for On-Policy Reasoning Distillation under Large Policy Divergence",
+  "abstract": "On-policy distillation (OPD) has become a promising paradigm for reasoning-oriented post-training of large language models (LLMs), especially when combined with reinforcement learning from verifiable rewards (RLVR). Existing OPD methods rely on reverse KL (RKL)-based teacher supervision over trajectories sampled from the student policy. However, we identify a critical limitation: under large teacher--student policy divergence, RL-driven exploration often produces trajectories outside the teacher distribution, resulting in uninformative negative feedback. To address this, we propose Teacher-Guided Policy Optimization (TGPO), an on-policy reasoning distillation method that remains effective under large policy divergence settings. Rather than relying solely on evaluative supervision, TGPO uses teacher to directly guide token level generation conditioning on student-generated contexts; together with RLVR-style trajectory level rewards, TGPO steers exploration toward improved continuations. Experiments on reasoning benchmarks show that TGPO consistently outperforms existing RKL-based OPD methods and remains robust across different teacher models.",
+  "url": "https://arxiv.org/abs/2605.13230",
+  "pdf_url": "https://arxiv.org/pdf/2605.13230",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Xinyu Liu",
+    "Kechen Jiao",
+    "Chunyang Xiao",
+    "Runsong Zhao",
+    "Junhao Ruan",
+    "Bei Li",
+    "Jiahao Liu",
+    "Qifan Wang",
+    "Xin Chen",
+    "Jingang Wang",
+    "Chenglong Wang",
+    "Tong Xiao",
+    "JingBo Zhu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On-policy distillation (OPD) has become a promising paradigm for reasoning-oriented post-training of large language models (LLMs), especially when combined with reinforcement learning from verifiable rewards (RLVR).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.13230",
+      "url": "https://arxiv.org/abs/2605.13230"
+    }
+  ]
+}

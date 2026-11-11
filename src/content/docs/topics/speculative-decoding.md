@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **133** 篇。
+累计收录 **135** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DAWN: Dependency-Aware Fast Inference for Diffusion LLMs](../../papers/arxiv-2602.06953/) | 2026-11-10 | 49 |
+| [TriSpec: Ternary Speculative Decoding via Lightweight Proxy Verification](../../papers/arxiv-2601.23180/) | 2026-11-10 | 44 |
 | [ChainFlow: Few-Step Latent Flow Matching for Speculative Decoding](../../papers/arxiv-2611.08669/) | 2026-11-09 | 44 |
 | [Teaching Diffusion to Speculate Left-to-Right](../../papers/arxiv-2606.11552/) | 2026-11-05 | 43 |
 | [PACT: Certifying What Is Written in Parallel Decoding of Diffusion Language Models](../../papers/arxiv-2611.04152/) | 2026-11-04 | 49 |
@@ -71,7 +73,7 @@ description: "Speculative Decoding"
 | [TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference](../../papers/arxiv-2602.05145/) | 2026-09-25 | 40 |
 | [NebulaSD: Many-for-Many Speculative Decoding](../../papers/arxiv-2609.29364/) | 2026-09-24 | 46 |
 | [TSS: Target-Side Sparsification for Speculative Decoding in Domain-Specific Large Language Models](../../papers/arxiv-2609.26100/) | 2026-09-23 | 50 |
-| [PACE-dLLM: Elastic Block Decoding via Confidence Cliff Estimation for Diffusion Language Models](../../papers/arxiv-2609.26249/) | 2026-09-23 | 44 |
+| [PACE-dLLM: Elastic Block Decoding via Confidence Cliff Estimation for Diffusion Language Models](../../papers/arxiv-2609.26249/) | 2026-09-23 | 46 |
 | [Optimizing Denoising Trajectories in dLLMs: A Lightweight Evolutionary Heuristic Approach](../../papers/arxiv-2609.26052/) | 2026-09-23 | 44 |
 | [Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs](../../papers/arxiv-2609.26796/) | 2026-09-22 | 55 |
 | [Efficient Mixture-of-Experts with Speculative Decoding via Expert Coactivation](../../papers/arxiv-2609.22471/) | 2026-09-22 | 46 |

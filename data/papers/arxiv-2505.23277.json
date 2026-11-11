@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2505.23277",
+  "title": "Sentinel: Decoding Context Utilization via Attention Probing for Efficient LLM Context Compression",
+  "abstract": "Retrieved contexts are often long, noisy, and redundant, motivating query-aware compression before answer generation. Native attention provides signals for context selection, but heterogeneous head behaviors complicate their direct aggregation into sentence-utility scores. We introduce Sentinel, a sentence-level compressor that learns to combine these signals through a signed linear readout across layers and heads. Only the readout is trained using existing QA evidence annotations, while the backbone remains frozen and sentence scoring requires no autoregressive generation. Across twelve LongBench tasks, Sentinel with a 0.5B backbone outperforms Full Context on multiple tasks under a 2,000-token budget with each of three readers: Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, and DeepSeek V4.1 Flash. Despite English-only QA supervision, the same readout transfers to Chinese tasks without task-specific retraining. Length-stratified profiling further shows lower compression latency and GPU memory usage than LLMLingua-2 and CPC.",
+  "url": "https://arxiv.org/abs/2505.23277",
+  "pdf_url": "https://arxiv.org/pdf/2505.23277",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Yong Zhang",
+    "Heng Li",
+    "Yanwen Huang",
+    "Ning Cheng",
+    "Yang Guo",
+    "Yun Zhu",
+    "Yanmeng Wang",
+    "Shaojun Wang",
+    "Jing Xiao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Retrieved contexts are often long, noisy, and redundant, motivating query-aware compression before answer generation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2505.23277",
+      "url": "https://arxiv.org/abs/2505.23277"
+    }
+  ]
+}

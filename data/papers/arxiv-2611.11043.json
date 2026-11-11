@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.11043",
+  "title": "GARDEN: Efficient GPU-Accelerated Billion-Scale GNN Training via Caching-Sampling-Batching Co-Design",
+  "abstract": "Graph Neural Networks (GNNs) have shown impressive performance in diverse tasks such as social network analysis and recommendation systems. However, scaling their training to billion-edge graphs is hindered by the memory wall: GPU memory capacity falls short of the massive storage requirements for node features and topology. Sampling-based GNN training frameworks mitigate this by streaming subgraphs from CPU to GPU, but they incur prohibitive PCIe data transfers and non-coalesced memory accesses, resulting in bandwidth underutilization and low compute efficiency. We propose GARDEN, a GPU-accelerated sampling-based system that co-designs caching, sampling, and batching to eliminate these bottlenecks. GARDEN introduces three key innovations: (1) an Adaptive High-Fidelity Cache Allocator (AHFCA) that combines offline reuse profiling and online hotness tracking to dynamically cache features and adjacency lists within a fixed GPU memory budget, avoiding static allocation waste; (2) a Grouping-based Parallel Sampler that reorders stochastic neighborhood accesses(GPS) to maximize warp occupancy and hide latency on power-law graphs; and (3) a Super-batch Degree Classifier(SDC) that fuses mini-batches into degree-homogeneous groups, enabling cache-friendly coalesced transfers and high GPU utilization. Evaluations on real-world billion-scale graphs demonstrate that GARDEN achieves 4.54x, 1.27x, and 2.97x end-to-end training speedups over DGL-UVA, DUCATI, and FastGL, respectively, while maintaining model convergence and accuracy.",
+  "url": "https://arxiv.org/abs/2611.11043",
+  "pdf_url": "https://arxiv.org/pdf/2611.11043",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Qingrui Zhu",
+    "Lei Liu",
+    "Yushu Cai",
+    "Kai Sheng",
+    "Zhiwen Chen",
+    "Xin He"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Graph Neural Networks (GNNs) have shown impressive performance in diverse tasks such as social network analysis and recommendation systems.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.11043",
+      "url": "https://arxiv.org/abs/2611.11043"
+    }
+  ]
+}

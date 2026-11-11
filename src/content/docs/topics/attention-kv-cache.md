@@ -5,10 +5,18 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **265** 篇。
+累计收录 **273** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Coordinated Mixed-Precision KV Cache Quantization for Efficient LLM-based Multi-agent Systems](../../papers/arxiv-2611.10096/) | 2026-11-10 | 55 |
+| [ReelCache: An Efficient KV Cache Compression and Management System for Multi-Round Video Generation](../../papers/arxiv-2611.09973/) | 2026-11-10 | 52 |
+| [BridgeKV: Large-Model Prefill and Small-Model Decoding for LLM Inference via KV Cache Translation](../../papers/arxiv-2611.11761/) | 2026-11-10 | 50 |
+| [Demystifying Numerical Instability in LLM Inference: Achieving Reproducible Inference for Mission-Critical Tasks with HEAL](../../papers/arxiv-2606.21023/) | 2026-11-10 | 46 |
+| [The Storage View Of KV Cache: Characterizing Cache Behavior Across LLM Workloads](../../papers/arxiv-2611.10178/) | 2026-11-10 | 45 |
+| [Mosaic: Unlocking Over 30$\times$ Context Length for Diffusion LLMs Inference via Global Memory Planning and Dynamic Peak Taming](../../papers/arxiv-2601.06562/) | 2026-11-10 | 43 |
+| [PACE: Keeping the Right Tokens in the KV Cache Is Not Enough for Long-Horizon LLM Agents](../../papers/arxiv-2611.10240/) | 2026-11-10 | 42 |
+| [Reproducible LoRA Inference Through Deterministic Split-K Reduction](../../papers/arxiv-2611.10334/) | 2026-11-10 | 39 |
 | [Reformulating KV Cache Eviction Problem for Long-Context LLM Inference](../../papers/arxiv-2605.07234/) | 2026-11-09 | 55 |
 | [DARIC: A Position-Independent KV Cache Reuse System with Distribution-Aware Recomputation](../../papers/arxiv-2611.09109/) | 2026-11-09 | 50 |
 | [Transformer-FSQ: Discrete Latents for Extreme KV-Cache Compression](../../papers/arxiv-2611.09598/) | 2026-11-09 | 48 |
@@ -149,7 +157,7 @@ description: "Attention & KV Cache"
 | [Distance-KV: Exploiting Relative Distance for Efficient Long-Context Inference](../../papers/arxiv-2609.32663/) | 2026-09-26 | 45 |
 | [Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs](../../papers/arxiv-2609.32259/) | 2026-09-26 | 41 |
 | [AgentReplay: Token-Wise Trace Replay Is Essential for Fair Serving System Performance Benchmarking](../../papers/arxiv-2609.32283/) | 2026-09-26 | 41 |
-| [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](../../papers/arxiv-2609.28870/) | 2026-09-25 | 41 |
+| [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](../../papers/arxiv-2609.28870/) | 2026-09-25 | 42 |
 | [Omni-Flow: A Unified Workflow Orchestration and Distributed KV Cache Sharing Framework for Multimodal Inference](../../papers/arxiv-2606.31093/) | 2026-09-25 | 40 |
 | [MILO: Efficient Many-shot In-Context Learning with Block-wise Low-rank Compression](../../papers/arxiv-2609.29913/) | 2026-09-24 | 47 |
 | [Decoupled Early Exits for Task-Dependent Compute Allocation in Flow-Matching VLAs](../../papers/arxiv-2609.29382/) | 2026-09-24 | 38 |

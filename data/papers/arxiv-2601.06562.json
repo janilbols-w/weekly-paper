@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2601.06562",
+  "title": "Mosaic: Unlocking Over 30$\\times$ Context Length for Diffusion LLMs Inference via Global Memory Planning and Dynamic Peak Taming",
+  "abstract": "Diffusion-based large language models (dLLMs) have emerged as a promising alternative to autoregressive models, leveraging simultaneous denoising to enable global planning and iterative refinement. These properties make dLLMs attractive for long-context generation. However, deploying dLLMs faces a prohibitive memory barrier, as existing inference systems are inefficient for the diffusion paradigm. We observe that current inference systems are misaligned with dLLMs. Unlike autoregressive models, whose memory footprint is dominated by the KV-Cache, dLLMs are bottlenecked by transient activations rematerialized per step. Moreover, generic memory reuse mechanisms lack the global visibility to handle dynamic memory peaks of dLLMs, which alternate between logits and feed-forward networks. To address these challenges, we present Mosaic, a memory-efficient inference system that shifts dLLM execution from local, static management to a global, dynamic paradigm. Mosaic integrates (i) a mask-only logits kernel eliminating redundant activation materialization, (ii) a lazy chunking optimizer using online heuristics to tame dynamic memory peaks, and (iii) a global memory manager leveraging virtual addressing to mitigate memory fragmentation. Evaluations show that Mosaic reduces the memory peak-to-average ratio by 2.71$\\times$ on average and increases the maximum inference sequence length on identical hardware by 15.30-32.34$\\times$. Crucially, Mosaic is training-free and preserves exact model outputs, while reducing end-to-end latency by 2.5%-55.4%. Our code is publicly available at https://github.com/flashserve/Mosaic.",
+  "url": "https://arxiv.org/abs/2601.06562",
+  "pdf_url": "https://arxiv.org/pdf/2601.06562",
+  "published": "2026-11-10",
+  "updated": "2026-11-10",
+  "authors": [
+    "Liang Zheng",
+    "Bowen Shi",
+    "Yitao Hu",
+    "Jiawei Zhang",
+    "Ruofan Li",
+    "Guotao Yang",
+    "Zhixin Zhao",
+    "Zhengchao Wang",
+    "Sheng Chen",
+    "Wenxin Li",
+    "Dezhi Ran",
+    "Tao Xie",
+    "Keqiu Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/flashserve/Mosaic",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Diffusion-based large language models (dLLMs) have emerged as a promising alternative to autoregressive models, leveraging simultaneous denoising to enable global planning and iterative refinement.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-11T04:36:01+00:00",
+  "last_seen": "2026-11-11T04:36:01+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2601.06562",
+      "url": "https://arxiv.org/abs/2601.06562"
+    }
+  ]
+}

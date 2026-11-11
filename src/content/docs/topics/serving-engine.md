@@ -5,10 +5,14 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **128** 篇。
+累计收录 **132** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Detent: Batch-Invariant LLM Serving and RL Rollouts at Near-Stock Speed](../../papers/arxiv-2611.10611/) | 2026-11-10 | 46 |
+| [Evolving Infra: Agent-Adaptive LLM Serving at Scale](../../papers/arxiv-2611.12304/) | 2026-11-10 | 43 |
+| [RecoGEM: A Serving System for Production-Scale Generative Recommendation](../../papers/arxiv-2611.12296/) | 2026-11-10 | 41 |
+| [Scaling Taxonomy-Free Image Labeling with Generative AI: A Multimodal](../../papers/arxiv-2611.12725/) | 2026-11-10 | 38 |
 | [Nebula: Distributed Position-Independent Caching for LLM Serving](../../papers/arxiv-2611.09474/) | 2026-11-09 | 45 |
 | [Intent-Aware Caching for Efficient LLM Serving](../../papers/arxiv-2611.09715/) | 2026-11-09 | 43 |
 | [A Controlled Experimental Evaluation of Configuration and Cache Architecture in LLM Serving Engines](../../papers/arxiv-2611.05991/) | 2026-11-05 | 53 |
@@ -131,7 +135,7 @@ description: "Serving Engines & Runtimes"
 | [Request-Level Energy Attribution for Batched LLM Serving](../../papers/arxiv-2608.00026/) | 2026-08-04 | 49 |
 | [Heterogeneous LLM Serving with General-Purpose Processing-Near-Memory for Retrieval-Based Sparse Attention](../../papers/arxiv-2608.03555/) | 2026-08-04 | 47 |
 | [TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving](../../papers/arxiv-2607.29678/) | 2026-08-04 | 44 |
-| [LLM Serving in the Wild: An Empirical Study of Frameworks, Methods, and System Designs](../../papers/arxiv-2608.03036/) | 2026-08-04 | 43 |
+| [Understanding Efficient LLM Serving: An Empirical Study of Frameworks, Optimizations Algorithms, and Real-World Adoption](../../papers/arxiv-2608.03036/) | 2026-08-04 | 43 |
 | [T-TAMER: Provably Taming Trade-offs in ML Serving](../../papers/arxiv-2509.22992/) | 2026-08-04 | 42 |
 | [Efficiency and Cost Alignment in Batched LLM Serving via Resource-Fair Scheduling](../../papers/arxiv-2608.02244/) | 2026-08-03 | 46 |
 | [PrefixPlace: Provable Prefix Key-Value Placement for Large Language Model Serving under Heterogeneous Compute and Transfer Costs](../../papers/arxiv-2608.01655/) | 2026-08-03 | 44 |
