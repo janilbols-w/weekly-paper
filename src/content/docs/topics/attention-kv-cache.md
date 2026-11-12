@@ -5,10 +5,15 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **273** 篇。
+累计收录 **278** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Placing LLM Lookup Tables by Per-Layer Prefetch Deadlines](../../papers/arxiv-2611.13413/) | 2026-11-11 | 44 |
+| [Decode Token Parallelism: Memory-Efficient Distributed Attention Parallelism for Scalable LLM Decoding](../../papers/arxiv-2611.13293/) | 2026-11-11 | 44 |
+| [Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders](../../papers/arxiv-2611.13378/) | 2026-11-11 | 43 |
+| [Can KV Cache Be Reused Across Model Updates? A DeepSeek-V4-Flash Case Study](../../papers/arxiv-2611.14051/) | 2026-11-11 | 42 |
+| [Bursts That Outlast Themselves: Persistent Degradation in Prefix-Cached Agent Serving](../../papers/arxiv-2611.13412/) | 2026-11-11 | 39 |
 | [Coordinated Mixed-Precision KV Cache Quantization for Efficient LLM-based Multi-agent Systems](../../papers/arxiv-2611.10096/) | 2026-11-10 | 55 |
 | [ReelCache: An Efficient KV Cache Compression and Management System for Multi-Round Video Generation](../../papers/arxiv-2611.09973/) | 2026-11-10 | 52 |
 | [BridgeKV: Large-Model Prefill and Small-Model Decoding for LLM Inference via KV Cache Translation](../../papers/arxiv-2611.11761/) | 2026-11-10 | 50 |

@@ -39,7 +39,7 @@ Amid the rapid advancement of physical-world intelligence, cloud-edge collaborat
 ## 元数据
 
 - 作者：Victor H. Chen, Hairui Yu, Stella K. Chung, Hong Yan
-- 发布：2026-09-14；更新：2026-11-10
+- 发布：2026-09-14；更新：2026-11-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

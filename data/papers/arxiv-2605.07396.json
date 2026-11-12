@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2605.07396",
+  "title": "Rethinking Black-Box On-Policy Distillation: A Rubric-based Analysis",
+  "abstract": "On-policy distillation (OPD) is a powerful paradigm for LLM post-training, yet its reliance on teacher logits restricts it to white-box teachers. In this paper, we study whether rubric-based supervision can provide a text-only feedback interface for black-box OPD, and what makes it effective. Our instantiation, Rubric-based On-Policy Distillation (ROPD), induces rubrics by contrasting teacher responses with the student's current rollouts and uses them to score these rollouts for on-policy optimization. We find that, under matched settings, text-only ROPD outperforms logit-based OPD methods on four competition-math benchmarks, reaching the best AIME24 accuracy of standard logit-based OPD with 9.6x fewer training samples. Our analysis yields three findings: rubric rewards track correctness far better than teacher log-likelihood (AUC 0.90 vs. 0.35); training with them repairs more failed criteria and regresses fewer passed ones than logit-based supervision; and contrasting teacher responses with student rollouts is central to rubric quality. These results position rubric-based OPD as a flexible, black-box-compatible alternative to logit-based OPD. Our implementation is available at https://github.com/Peregrine123/ROPD_official.",
+  "url": "https://arxiv.org/abs/2605.07396",
+  "pdf_url": "https://arxiv.org/pdf/2605.07396",
+  "published": "2026-11-11",
+  "updated": "2026-11-11",
+  "authors": [
+    "Zhepei Hong",
+    "Yukai Wang",
+    "Mao Zheng",
+    "Mingyang Song",
+    "Gengsheng Li",
+    "Houcheng Jiang",
+    "Dan Zhang",
+    "Haiyun Guo",
+    "Junfeng Fang",
+    "Tat-Seng Chua"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/Peregrine123/ROPD_official",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 8,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "On-policy distillation (OPD) is a powerful paradigm for LLM post-training, yet its reliance on teacher logits restricts it to white-box teachers.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-12T04:35:50+00:00",
+  "last_seen": "2026-11-12T04:35:50+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.07396",
+      "url": "https://arxiv.org/abs/2605.07396"
+    }
+  ]
+}

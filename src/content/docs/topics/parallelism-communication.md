@@ -5,10 +5,11 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **19** 篇。
+累计收录 **20** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Deterministic, Reproducible Inference in Exact Integer Arithmetic, and Verifiable Distributed Inference as Its Consequence](../../papers/arxiv-2611.13730/) | 2026-11-11 | 42 |
 | [FRESCO: A Novel Consistency Control for Asynchronous Pipeline Parallel Training](../../papers/arxiv-2611.11238/) | 2026-11-10 | 44 |
 | [SinAE: A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems](../../papers/arxiv-2607.12380/) | 2026-11-10 | 42 |
 | [flash-comm: Self-Synchronizing Collective Communication for LLM Decoding](../../papers/arxiv-2611.06634/) | 2026-11-05 | 42 |

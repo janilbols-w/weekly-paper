@@ -39,7 +39,7 @@ This technical report presents MNN-Pocket-0.3B, a compact 300M-parameter dense l
 ## 元数据
 
 - 作者：MNN Team
-- 发布：2026-11-10；更新：2026-11-10
+- 发布：2026-11-10；更新：2026-11-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

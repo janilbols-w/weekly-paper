@@ -5,10 +5,11 @@ description: "Batching & Request Scheduling"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > Batching 与请求调度**
 
-累计收录 **10** 篇。
+累计收录 **11** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Scaling Shapley Energy Attribution to Large LLM Batches](../../papers/arxiv-2611.13802/) | 2026-11-11 | 41 |
 | [Inference First, Training Underneath: Layer-Granular LoRA Co-Serving with LayerLoom](../../papers/arxiv-2611.00652/) | 2026-11-03 | 41 |
 | [UniPrefill: Universal Long-Context Prefill Acceleration via Block-wise Dynamic Sparsification](../../papers/arxiv-2605.06221/) | 2026-09-28 | 40 |
 | [TempoKV: Timely Staging of LLM KV Caches for Memory-Semantic Flash](../../papers/arxiv-2609.35065/) | 2026-09-28 | 39 |

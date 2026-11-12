@@ -5,10 +5,18 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **409** 篇。
+累计收录 **417** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [GSQ: Highly-Accurate Low-Precision Scalar Quantization for LLMs via Gumbel-Softmax Sampling](../../papers/arxiv-2604.18556/) | 2026-11-11 | 43 |
+| [Federated Learning of Binary Neural Networks: Enabling Low-Cost Inference](../../papers/arxiv-2603.15507/) | 2026-11-11 | 43 |
+| [Beyond local reconstruction: Geometry-preserving output alignment for binary LLM quantization](../../papers/arxiv-2512.21651/) | 2026-11-11 | 43 |
+| [Sable: A Small-Field Sumcheck Argument for Bit-Exact Inference of Large Language Models](../../papers/arxiv-2611.14083/) | 2026-11-11 | 42 |
+| [Total Variation Distance Estimation in Autoregressive Models](../../papers/arxiv-2607.19510/) | 2026-11-11 | 41 |
+| [SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering](../../papers/arxiv-2611.13410/) | 2026-11-11 | 41 |
+| [Mobile AI Factory: Building Specialized Language Models for Your Mobile Device](../../papers/arxiv-2611.13509/) | 2026-11-11 | 39 |
+| [Bits or permutations? Spending a fixed inference budget on weight precision or on option-order averaging in small local language models](../../papers/arxiv-2611.14413/) | 2026-11-11 | 39 |
 | [How Far Does Second-Order Linear Response Predict Quantization Mismatch? Pre-Registered Measurements on Five Language Models](../../papers/arxiv-2611.12634/) | 2026-11-10 | 49 |
 | [HyPLM Technical Report](../../papers/arxiv-2611.12000/) | 2026-11-10 | 46 |
 | [Multi-Node Transformers for Object Detection and Captioning Across Distributed Edge Networks](../../papers/arxiv-2611.11291/) | 2026-11-10 | 44 |
@@ -353,8 +361,8 @@ description: "Quantization & Low Precision"
 | [Clearing the Underbrush: AI-Enhanced RF Interference Suppression](../../papers/arxiv-2608.24974/) | 2026-08-25 | 38 |
 | [FAMPWQ: Fisher Information-based Adaptive Mixed Precision Weight Quantization for Effective LLM Inference](../../papers/arxiv-2608.24945/) | 2026-08-24 | 53 |
 | [Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs](../../papers/arxiv-2608.20953/) | 2026-08-24 | 48 |
+| [SplitLite: Low-Rank Residual Compression for Split Learning](../../papers/arxiv-2608.23018/) | 2026-08-24 | 43 |
 | [Target-Aware Calibration Data Selection for Preserving Uncertainty in Quantized Language Models](../../papers/arxiv-2608.21019/) | 2026-08-24 | 41 |
-| [SplitLite: Low-Rank Residual Compression for Split Learning](../../papers/arxiv-2608.23018/) | 2026-08-24 | 41 |
 | [TSWAP: A Multilingual Retrieval-Augmented Thai Wellness Advisor](../../papers/arxiv-2608.22917/) | 2026-08-24 | 39 |
 | [Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs](../../papers/arxiv-2608.21134/) | 2026-08-24 | 39 |
 | [Jacobian-guided Noise Injection for Quantization Robustness in Large Language Models](../../papers/arxiv-2608.20988/) | 2026-08-24 | 39 |

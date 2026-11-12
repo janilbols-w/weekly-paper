@@ -5,10 +5,16 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **763** 篇。
+累计收录 **769** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Pruning and Distilling Mixture-of-Experts into Dense Language Models](../../papers/arxiv-2605.28207/) | 2026-11-11 | 47 |
+| [Rethinking Black-Box On-Policy Distillation: A Rubric-based Analysis](../../papers/arxiv-2605.07396/) | 2026-11-11 | 46 |
+| [Beyond Passive Imitation: On-Policy Mid-Training Distillation for Language Models](../../papers/arxiv-2611.13855/) | 2026-11-11 | 43 |
+| [Bootstrapped On-Policy Distillation](../../papers/arxiv-2611.13680/) | 2026-11-11 | 40 |
+| [OpticalRAG: Pixel-Space Compression for Token-Efficient Retrieval-Augmented Generation](../../papers/arxiv-2611.13675/) | 2026-11-11 | 39 |
+| [Compute-Optimal Scaling Laws for Spiking Language Models](../../papers/arxiv-2610.15146/) | 2026-11-11 | 39 |
 | [Advancing Model Refinement: Muon-Optimized Distillation and Quantization for LLM Deployment](../../papers/arxiv-2601.09865/) | 2026-11-10 | 48 |
 | [Weakly Supervised Distillation of Hallucination Signals into Transformer Representations](../../papers/arxiv-2604.06277/) | 2026-11-10 | 47 |
 | [MambaLoc: Lightweight Indoor Localization Using Cross-Modal Knowledge Distillation](../../papers/arxiv-2611.10360/) | 2026-11-10 | 46 |

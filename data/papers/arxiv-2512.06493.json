@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2512.06493",
+  "title": "Programmable GPU-Accelerated dApps for Real-Time Edge Inference and ISAC on NVIDIA Aerial Testbed",
+  "abstract": "The transition of cellular networks to (i) software-based systems on commodity hardware and (ii) platforms for services beyond connectivity introduces critical system-level challenges. As sensing emerges as a key feature toward 6G standardization, supporting Integrated Sensing and Communication (ISAC) with limited bandwidth and piggybacking on communication signals, while maintaining high reliability and performance, remains a fundamental challenge. In this paper, we provide two key contributions. First, we present a programmable, open-source framework for processing PHY signals through real-time, GPU-accelerated Artificial Intelligence (AI) applications on the edge Radio Access Network (RAN) infrastructure. Building on the Open RAN dApp architecture, the framework interfaces with a GPU-accelerated gNB based on NVIDIA Aerial Testbed (ATB), feeding PHY data to custom AI logic with about 84 $\\mu$s of framework latency per slot and control loops with inference in about 123 $\\mu$s for lightweight TensorRT models, multiple inference engines, and support for several AI backends. We evaluate the framework on two GPU platforms, with different GPU sharing modes and an increasing number of cells and dApps. Second, we demonstrate the framework capabilities through cuSense, an indoor localization dApp that consumes uplink DMRS channel estimates, removes static multipath components, and runs a neural network to infer the position of a moving person. Evaluated on a 3GPP-compliant 5G NR deployment, cuSense achieves a mean localization error of 73 cm on runs unseen during training, with 79% of predictions falling within 1 meter, and runs live in 241 $\\mu$s, without dedicated sensing hardware or modifications to the 5G signals. The framework is released as open source, together with the cuSense dataset, providing a reference design for future AI-native RANs and ISAC applications.",
+  "url": "https://arxiv.org/abs/2512.06493",
+  "pdf_url": "https://arxiv.org/pdf/2512.06493",
+  "published": "2026-11-11",
+  "updated": "2026-11-11",
+  "authors": [
+    "Davide Villa",
+    "Mauro Belgiovine",
+    "Nicholas Hedberg",
+    "Michele Polese",
+    "Chris Dick",
+    "Tommaso Melodia"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "edge inference"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 3,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: edge inference",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "The transition of cellular networks to (i) software-based systems on commodity hardware and (ii) platforms for services beyond connectivity introduces critical system-level challenges.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-12T04:35:50+00:00",
+  "last_seen": "2026-11-12T04:35:50+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2512.06493",
+      "url": "https://arxiv.org/abs/2512.06493"
+    }
+  ]
+}

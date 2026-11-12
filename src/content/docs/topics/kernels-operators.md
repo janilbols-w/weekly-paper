@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **45** 篇。
+累计收录 **46** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models](../../papers/arxiv-2611.14515/) | 2026-11-11 | 41 |
 | [Correct First, Fast Second: What a Local 7B Code Model Can and Cannot Do for GPU Kernel Optimization](../../papers/arxiv-2611.12079/) | 2026-11-10 | 54 |
 | [Warpline: Binary-Level Tracing and Unified Evidence for Agentic GPU Kernel Optimization](../../papers/arxiv-2611.04331/) | 2026-11-04 | 44 |
 | [Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization](../../papers/arxiv-2611.03517/) | 2026-11-03 | 46 |

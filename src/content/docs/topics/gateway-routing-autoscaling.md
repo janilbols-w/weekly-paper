@@ -5,10 +5,11 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **45** 篇。
+累计收录 **46** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SHADOWPREFILL: Keeping Your Next Model Warm for Per-Step Model Routing in Agentic LLM Serving](../../papers/arxiv-2611.13176/) | 2026-11-11 | 51 |
 | [ISER-MoE: Dynamic In-Switch Replication of Hot Experts for Load Balancing in Expert-Parallel](../../papers/arxiv-2611.09008/) | 2026-11-09 | 44 |
 | [TokenScale: Timely and Accurate Autoscaling for Disaggregated LLM Serving with Token Velocity](../../papers/arxiv-2512.03416/) | 2026-11-05 | 50 |
 | [Feeling of Knowing in Large Language Models](../../papers/arxiv-2611.04834/) | 2026-11-04 | 39 |

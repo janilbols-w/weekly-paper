@@ -5,10 +5,15 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **146** 篇。
+累计收录 **151** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SplitCom: Communication-efficient Split Federated Fine-tuning of LLMs via Temporal Compression](../../papers/arxiv-2602.10564/) | 2026-11-11 | 42 |
+| [Understanding Mixture-of-Experts Language Models Beyond Expert Boundaries](../../papers/arxiv-2611.13975/) | 2026-11-11 | 41 |
+| [Mobility-Aware Task Offloading in Mobile Edge Computing-Empowered Space-Air-Ground Integrated Internet-of-Things Networks](../../papers/arxiv-2611.14102/) | 2026-11-11 | 40 |
+| [Uncovering the Memory Hierarchy of Modern NVIDIA GPUs for Accurate Simulation](../../papers/arxiv-2611.13860/) | 2026-11-11 | 39 |
+| [Neural Network-Assisted CLEAN for Efficient Multipath Parameter Estimation in MIMO Systems](../../papers/arxiv-2611.13298/) | 2026-11-11 | 38 |
 | [GARDEN: Efficient GPU-Accelerated Billion-Scale GNN Training via Caching-Sampling-Batching Co-Design](../../papers/arxiv-2611.11043/) | 2026-11-10 | 46 |
 | [TSFFormer: A Frequency-Domain Spike Transformer for Green Human Activity Recognition](../../papers/arxiv-2611.12090/) | 2026-11-10 | 45 |
 | [Jointly Optimizing Memory, Computing and Offloading for Energy-Efficient DNN Inference](../../papers/arxiv-2611.11106/) | 2026-11-10 | 45 |

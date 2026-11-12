@@ -39,7 +39,7 @@ Modern cache replacement designs saturate because they operate within fixed repr
 ## 元数据
 
 - 作者：Kaushal Mhapsekar, Bita Aslrousta, Brijesh Kumar Bhayana, Paula Contreras, Azam Ghanbari, Ethan Goodman, Anna Andriiko, Samira Mirbagher Ajorpaz
-- 发布：2026-10-07；更新：2026-10-07
+- 发布：2026-10-07；更新：2026-11-11
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -1,0 +1,45 @@
+---
+title: "Mobile AI Factory: Building Specialized Language Models for Your Mobile Device"
+description: "Small language models (SLMs) running on mobile devices can keep user data private and work without connectivity."
+---
+
+**评分：39/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+
+[论文原文](https://arxiv.org/abs/2611.13509) · [PDF](https://arxiv.org/pdf/2611.13509)
+
+## 一句话摘要
+
+Small language models (SLMs) running on mobile devices can keep user data private and work without connectivity.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Small language models (SLMs) running on mobile devices can keep user data private and work without connectivity. But they perform well only when fine-tuned for the target task and sized for the target device, a process that today requires repeated expert tuning. We present {\it Mobile AI Factory}, an agentic system that builds a fine-tuned, quantized SLM for a given task and phone. Given a task specification and a target phone, an orchestrator LLM chooses whether to tune hyperparameters, mine real data, or generate synthetic examples, while fixed rules roll back changes that hurt accuracy. The factory searches from small to large models across base models and quantizations, adapts its accuracy goal as it searches, and uses real measurements of the target phone across inference engines and backends. We evaluate Mobile AI Factory on ten tasks and four Android phones. On an unseen testset, its on-device models outperform two five-shot frontier models on five tasks, by up to 0.34, and match them on three more. Its search comes within 0.03 of exhaustively training all 27 model variants on an entity extraction task, while using 19$\times$ less GPU time. Phone measurements also matter: the best configuration changes across phones. Without phone measurements, Claude Opus 5.5, given the full hardware and model specifications, misses the app's requirements in 25\% of easy and moderate cases and in 60\% of hard ones. Code is available at: https://github.com/evanly-gh/SLM_Factory.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 5 |
+| rigor | 7 |
+| practical impact | 5 |
+| reproducibility | 7 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: quantized
+- no quantitative claim in metadata
+- code/artifact link detected
+
+## 元数据
+
+- 作者：Evan Li, Krishna Deshpande, Wen Cheng, Shyamnath Gollakota
+- 发布：2026-11-11；更新：2026-11-11
+- 来源：arXiv RSS；Venue：未确认
+- 代码：[https://github.com/evanly-gh/SLM_Factory](https://github.com/evanly-gh/SLM_Factory)
+- 阅读深度：metadata
