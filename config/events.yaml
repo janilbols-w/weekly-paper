@@ -643,6 +643,59 @@ events:
       - 对 5 篇精选逐一核验 PDF 中的方法、关键结果、实验条件、限制和 artifact；AIPerf 的生产测量、DOPS/ATLAS 的模拟与验证、NELSSA/MemLLM 的原型结果均按各自证据类型表述，不跨硬件外推。
       - Distinguished Paper 身份来自官方 session 标题；截至 11 月 6 日没有找到官方 Best Paper 获奖列表，因此不把 Distinguished Paper 等同于 Best Paper，也不采用第三方奖项传闻。
 
+  - id: sc26
+    short_name: SC26
+    name: The International Conference for High Performance Computing, Networking, Storage, and Analysis
+    domain: Architecture / HPC
+    community: ACM SIGHPC / IEEE Computer Society
+    event_type: Conference
+    tier: 1
+    start_date: 2026-11-15
+    end_date: 2026-11-20
+    location: Chicago, Illinois, United States
+    venue: McCormick Place
+    official_url: https://sc26.supercomputing.org/
+    program_url: https://sc26.conference-program.com/
+    schedule_source_url: https://sc26.conference-program.com/wp-content/linklings_snippets/wp_program_view_all_2026-11-17.txt
+    paper_detail_base_url: https://sc26.conference-program.com/presentation/
+    accepted_papers_url: https://sc26.conference-program.com/
+    papers_url: https://sc26.supercomputing.org/program/papers/
+    proceedings_url: https://sc26.supercomputing.org/program/proceedings-archives/
+    awards_url: https://sc26.supercomputing.org/program/awards/
+    collector: sc_program
+    program_released_date: 2026-09-10
+    detail_fetch_workers: 12
+    selection_threshold: 42
+    selection_cap: 10
+    selection_requires_editorial: true
+    official_totals:
+      technical_papers: 99
+    summary_zh: SC26 于 11 月 15 至 20 日在芝加哥举行，官方日程公开 99 篇同行评审技术论文。本站从完整标题、摘要与 session 中筛选 LLM 高效推理和 AI Infra 论文，只对达到证据阈值的候选做全文核验。
+    relevance_zh: 本届最集中的信号是 HPC 与大模型基础设施正在合流：LLM serving 已形成 KV Cache、异构 GPU、推测解码和 PD 混合调度的连续议程；10K-GPU 训练通信、低延迟 collectives、AI workload 能耗建模和 GPU 静默错误则把训练可靠性推进到生产尺度。
+    current_stage_zh: 本次命中 `event_week`：RUN_DATE 为 11 月 13 日，距离 11 月 15 日开幕两天。技术论文于 11 月 17 至 19 日报告，Best Paper、Best Student Paper 与 Best Reproducibility Advancement 获奖者须在 11 月 19 日现场评审后公布；本页只记录官方 finalist 身份，不预判获奖结果。
+    event_stats:
+      - {label: Conference days, value: 6}
+      - {label: Technical papers, value: 99}
+      - {label: Paper presentation days, value: 3}
+      - {label: Official paper finalists, value: 9}
+    key_programs:
+      - {title: "Papers in Conversation — AI Inference Becomes an HPC Systems Problem", date: 2026-11-18 10:30-12:00 CST, url: https://sc26.conference-program.com/, focus_zh: 围绕 PD 聚合/解耦、异构 GPU 推理、推测执行与 serving workload 建模，把单点优化放进 SLO 与系统配置空间。}
+      - {title: Resource-Aware LLM Serving Pipelines, date: 2026-11-18 10:30-12:00 CST, url: https://sc26.conference-program.com/, focus_zh: 覆盖 embedding/KV 显存竞争、agentic workflow 微任务并行、多阶段异构推理与 KV 压力下的抢占调度。}
+      - {title: Speculative and Observable LLM Inference, date: 2026-11-18 15:30-17:00 CST, url: https://sc26.conference-program.com/, focus_zh: 将差分推测解码、MoE 资源预览、自改进 draft engine 与 top-down profiling 放在同一性能诊断链路。}
+      - {title: "Papers in Conversation — Moving AI at Scale: Networks, Collectives, and Compression", date: 2026-11-18 13:30-15:00 CST, url: https://sc26.conference-program.com/, focus_zh: 连接 10K-GPU LLM 训练实测、超大规模 AI 网络与压缩 collective，观察通信如何成为前沿训练的主约束。}
+      - {title: "LLM Systems — Inference, Agents, and HPC Operations", date: 2026-11-18 13:30-15:00 CST, url: https://sc26.conference-program.com/, focus_zh: 聚焦异构 GPU kernel 解耦、分布式 agent、HPC 作业管理与低开销训练 checkpoint。}
+    sources:
+      - {label: SC26 official dates and deadlines, url: https://sc26.supercomputing.org/all-dates-deadlines/, checked_at: 2026-11-13, note_zh: 核验 11 月 15 至 20 日会期和技术论文报告日期}
+      - {label: SC26 official full schedule, url: https://sc26.conference-program.com/, checked_at: 2026-11-13, note_zh: 从公开 Linklings 静态日程采集 99 篇技术论文的标题、作者、session 与 finalist 标记}
+      - {label: SC26 official papers policy, url: https://sc26.supercomputing.org/program/papers/, checked_at: 2026-11-13, note_zh: 核验同行评审、论文报告要求、artifact 机制及奖项现场评审流程}
+      - {label: SC26 official proceedings and archives, url: https://sc26.supercomputing.org/program/proceedings-archives/, checked_at: 2026-11-13, note_zh: 核验正式论文将归档于 ACM Digital Library 与 IEEE Xplore，OpenTOC 在 11 月开放}
+      - {label: SC26 Best Paper and Best Student Paper finalists, url: https://sc26.supercomputing.org/2026/08/announcing-best-paper-and-best-student-paper-finalists/, checked_at: 2026-11-13, note_zh: 核验 finalist 评审机制及获奖结果将在现场 Awards Ceremony 公布}
+    program_methodology_notes_zh:
+      - 官方 Linklings 每个按日静态片段都包含完整日程；采集器读取一个片段，按 pap ID 去重得到 99 篇技术论文，再抓取各自公开详情页的摘要和作者，不纳入 workshop、poster、panel 或 exhibitor forum。
+      - 全体论文只使用标题、官方摘要、session 与 finalist 标签进行三级 taxonomy 召回和元数据评分；正式 ACM/IEEE proceedings 尚未开放时，来源标记为 official accepted program，不伪装成已出版论文。
+      - 只有进入最终精选的高分候选定向核验作者公开 PDF、方法、关键结果、限制和 artifact；摘要中的峰值数字不跨模型、硬件、SLO 或集群规模外推。
+      - Best Paper、Best Student Paper 与 Best Reproducibility Advancement 获奖者将在 11 月 19 日现场评审后公布；本轮不把 finalist 等同于获奖，也不自行预测奖项。
+
   - id: neurips-2026
     short_name: NeurIPS 2026
     name: Conference on Neural Information Processing Systems

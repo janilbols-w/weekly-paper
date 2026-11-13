@@ -1,0 +1,1979 @@
+[
+  {
+    "paper": {
+      "id": "sc:sc26:pap262",
+      "title": "HieraSparse: Hierarchical Semi-Structured Sparse KV Attention",
+      "abstract": "The deployment of long-context LLMs poses significant challenges due to the intense computational cost of self-attention and substantial memory overhead of the KV cache. We introduce HieraSparse, a hierarchical KV cache compression framework with acceleration kernels that leverage GPU Sparse Tensor Cores to speed up semi-structured KV cache attention for both prefill and decode phases. With hierarchical design, our method allows for flexible quality-sparsity trade-off and successfully converts sparsity into efficiency. Compared to state-of-the-art decode method that utilizes unstructured sparsity, HieraSparse achieves 1.2× KV compression ratio and 4.57× attention speedup at the same sparsity level. Furthermore, we extended semi-structured KV cache pruning to the prefill stage, which demonstrated up to 1.85× attention speedup at the highest sparsity. Lastly, we evaluate generation quality of HieraSparse with a simple magnitude-based pruning method, and the results show that 1.37× prefill speedup and 1.77× decode speedup can be achieved without significant quality drop.",
+      "url": "https://arxiv.org/abs/2604.16864",
+      "pdf_url": "https://arxiv.org/pdf/2604.16864",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Haoxuan Wang",
+        "Chen Wang"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Sparse and Low-Precision AI Kernels hierarchical sparse KV cache attention sparse tensor core prefill decode long context GPU kernel compression hierarchical sparse KV cache attention sparse tensor core prefill decode long context GPU kernel compression",
+      "code_url": "https://github.com/psl-ntu/HieraSparse",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression Sparsity & Distillation",
+        "leaf_zh": "压缩 稀疏化与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "pruning",
+        "sparsity"
+      ],
+      "score": 55,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 11,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: pruning, sparsity",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "The deployment of long-context LLMs poses significant challenges due to the intense computational cost of self-attention and substantial memory overhead of the KV cache.",
+      "summary_zh": "HieraSparse 用 block-level 与 element-level 两级稀疏组织 KV Cache，并把 K/V 转置为稀疏 Tensor Core 可直接消费的操作数；专用 prefill/decode kernel 避免把压缩后的 KV 先解压回 dense。",
+      "why_it_matters_zh": "论文在相同稀疏度下报告相对 unstructured decode 方法 1.2× KV 压缩率和 4.57× attention 加速；使用简单 magnitude pruning 时，prefill/decode 分别获得 1.37×/1.77× 加速且质量下降不显著。代码公开并提供 L40S 预调 kernel。",
+      "limitations_zh": "公开实现当前预调目标是 L40S、CUDA 12.8 与特定 Llama attention shape；质量结论来自简单 pruning 和有限任务。扩展到其他 GPU 需要重新调优，细粒度动态稀疏与量化组合仍是后续工作。",
+      "reading_depth": "full_text_and_artifact",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap262",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap262&sess=sess204"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Sparse and Low-Precision AI Kernels",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "同时压缩 KV 容量并把结构化稀疏兑现为硬件加速，且有公开 kernel artifact。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap357",
+      "title": "FastInfer: Breaking the Low-to-Moderate Sparsity Barrier for Efficient LLM Inference",
+      "abstract": "As large language models (LLMs) continue to scale, unstructured pruning has become a key technique for reducing inference cost. However, to preserve model quality, pruning is typically limited to low-to-moderate sparsity (30%–60%), where existing GPU-based sparse inference frameworks often fail to deliver consistent speedups over dense baselines. This paper proposes FastInfer, a new sparse LLM inference framework in the low-to-moderate sparsity regime. FastInfer introduces a novel thread-centric encoding paradigm that rethinks sparse computation on Tensor Core Units from the perspective of per-thread register requirements. Based on this, we design the TFBE format, which enables low-overhead operand reconstruction. FastInfer integrates an affinity-aware data-movement mechanism and a triple-stage pipeline to better exploit modern GPU features and improve pipeline utilization. Compared with the state-of-the-art SpInfer, FastInfer achieves geometric-mean speedups of 1.52x (up to 2.1x) for sparse kernels and 1.27x (up to 1.42x) for end-to-end sparse inference on H100.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap357&sess=sess204",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Jinliang Shi",
+        "Shigang Li"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Sparse and Low-Precision AI Kernels",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "pruning",
+        "sparse inference",
+        "sparsity"
+      ],
+      "score": 59,
+      "score_components": {
+        "relevance": 20,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 14,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: pruning, sparse inference, sparsity",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "As large language models (LLMs) continue to scale, unstructured pruning has become a key technique for reducing inference cost.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap357",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap357&sess=sess204"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Sparse and Low-Precision AI Kernels",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap858",
+      "title": "Pushing the Envelope of LLM Inference with Ultra-Low-Bit Quantized Models",
+      "abstract": "The advent of ultra-low-bit LLM models, approaching the perplexity and task accuracy of their full-precision counterparts, is ushering in a new era of LLM inference. While these advances promise models that are cost-effective in latency, memory, throughput, and energy consumption, the runtime efficiency for deploying ultra-low-bit models remains under-explored. We take a bottom-up approach: we first implement 2-bit microkernels for modern CPUs, achieving close-to-roofline performance. We integrate these microkernels into LLM inference pipelines and present end-to-end results with 2-bit models, outperforming the state-of-the-art (SOTA) bitnet.cpp runtime by 2.2x, and deliver up to 7x speedup over 16-bit inference. We extend this work to Intel Xe2 GPUs where we implement mixed-precision 2-bit kernels, and show their performance to be close-to-optimal. Integrated into the vLLM framework, these kernels deliver up to 6.7x speedup over the 16-bit end-to-end pipeline across a range of models and Xe2 GPUs, thus pushing the envelope of LLM inference.",
+      "url": "https://arxiv.org/abs/2508.06753",
+      "pdf_url": "https://arxiv.org/pdf/2508.06753",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Evangelos Georganas",
+        "Dhiraj Kalamkar",
+        "Alexander Heinecke",
+        "Pradeep Dubey"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Sparse and Low-Precision AI Kernels ultra low bit quantization 2 bit LLM inference CPU Intel Xe2 GPU vLLM kernels latency throughput ultra low bit quantization 2 bit LLM inference CPU Intel Xe2 GPU vLLM kernels latency throughput",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "quantization-low-precision",
+        "leaf": "Quantization & Low Precision",
+        "leaf_zh": "量化与低精度"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "quantization",
+        "quantized"
+      ],
+      "score": 61,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 20,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: quantization, quantized",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "The advent of ultra-low-bit LLM models, approaching the perplexity and task accuracy of their full-precision counterparts, is ushering in a new era of LLM inference.",
+      "summary_zh": "论文从 2-bit CPU microkernel 出发，把同一低比特执行路径扩展到 Intel Xe2 GPU，并接入 vLLM；重点不是再提出一种量化算法，而是让已经训练好的超低比特模型真正获得端到端运行时收益。",
+      "why_it_matters_zh": "作者在所测 CPU 上报告相对 bitnet.cpp 最高 2.2×，相对 16-bit 推理最高 7×；Xe2 GPU 上的 vLLM pipeline 相对 16-bit 最高 6.7×。这说明低比特权重只有与 ISA、packing、microkernel 和 serving runtime 联合设计，才会转化为真实吞吐与延迟收益。",
+      "limitations_zh": "结论绑定于作者使用的 2-bit checkpoint、Intel CPU/Xe2 GPU 与特定 shape；论文摘要没有给出所有模型的任务质量差异，也不能把峰值加速外推到 NVIDIA/AMD GPU 或任意后训练量化模型。",
+      "reading_depth": "targeted_full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap858",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap858&sess=sess204"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Sparse and Low-Precision AI Kernels",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "把 2-bit 模型压缩与 CPU/GPU kernel、vLLM 端到端执行打通，工程路径完整且限制明确。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap287",
+      "title": "BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training Over 10,000 GPUs",
+      "abstract": "Fine-grained Mixture-of-Experts (MoE) is the de facto architecture for scaling large language models. However, dynamic expert load imbalance causes severe memory fluctuations, degrading training efficiency. Existing systems rely on static memory provisioning: they either over-provision, leaving GPU memory idle during normal execution, or under-provision, inviting out-of-memory crashes and costly manual rollbacks when load spikes occur. To address these challenges, we propose BaGuaLu-2, a large-scale MoE training system that eliminates this dilemma through flexible provisioning. By transforming memory allocation from a static, one-time tuning choice into a continuous and fine-grained control, BaGuaLu-2 grants exact activation memory on demand for each training batch. Furthermore, it offsets any dynamic management overhead through system optimizations. BaGuaLu-2 demonstrates exceptional scalability, training a model with 1,040 billion parameters across 12,288 GPUs while sustaining over 2 EFlops at 35% MFU. Compared with state-of-the-art systems, BaGuaLu-2 delivers 1.14× and 1.13× average throughput improvements over Megatron-Kwai and AdaPipe, respectively.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap287&sess=sess211",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Mingshu Zhai",
+        "Minkun Guo",
+        "Hongrui Lian",
+        "Shuangyu Li",
+        "Qi Zhang",
+        "Chen Hu",
+        "Xiawei Du",
+        "Yuyang Jin",
+        "Zan Zong",
+        "Jidong Zhai"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Scaling Complex AI Training Workloads",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "gpu memory"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 13,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu memory",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Fine-grained Mixture-of-Experts (MoE) is the de facto architecture for scaling large language models.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap287",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap287&sess=sess211"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Scaling Complex AI Training Workloads",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap670",
+      "title": "Every Microsecond Matters: Achieving Near-Speed-of-Light Latency in GPU Collectives",
+      "abstract": "GPU collective communication is often optimized for bandwidth, yet many emerging workloads are latency-bound. Long-context LLM inference is a key example, where small collectives lie on the critical path of token generation, making microsecond-scale overheads impactful. In this work, we study how to approach the hardware speed-of-light (SoL) lower bound for GPU collectives within a scale-up network. We identify key design principles, including barrier-free synchronization and efficient use of symmetric memory and multicast. Building on NCCL’s device-side API, we develop low-latency interfaces for constructing custom kernels and implement new symmetric collectives in NCCL. Microbenchmarks show substantial latency reductions, achieving within 10% of the measured SoL bound. Integrated into applications, these kernels reduce inter-token latency and improve throughput in LLM inference, while also accelerating cuSOLVERMp, demonstrating benefits across AI and HPC workloads.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap670&sess=sess195",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Siyuan Shen",
+        "Anton Korzh",
+        "John Bachan",
+        "Tiancheng Chen",
+        "Arnav Goel",
+        "Ludwig Schneider",
+        "Pouya Kousha",
+        "Zhenhao He",
+        "Sylvain Jeaugey",
+        "Kamil Iskra",
+        "Nishank Chandawala",
+        "Jeff Hammond",
+        "Torsten Hoefler"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Best Papers: Accelerator-Centric Scientific Performance",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 49,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "GPU collective communication is often optimized for bandwidth, yet many emerging workloads are latency-bound.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap670",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap670&sess=sess195"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Best Papers: Accelerator-Centric Scientific Performance",
+    "presentation": "Technical Paper",
+    "awards": [
+      "SC26 Best Paper Finalist",
+      "SC26 Best Student Paper Finalist"
+    ],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap104",
+      "title": "CoreFlow: Context-Centric Resource Management for LLM-Based Agentic Workflows",
+      "abstract": "The rise of agentic workflows, which coordinate multiple LLM-based agents to tackle complex tasks, has shifted the LLM serving toward a multi-step, context-driven execution paradigm. This shift introduces highly skewed context-length distributions and agent-specific KV cache-reuse patterns in LLM workloads, challenging existing resource management systems that remain oblivious to these characteristics. This paper introduces CoreFlow, a context-centric resource management system tailored for the distinct execution patterns of agentic workflows. CoreFlow incorporates three key designs: (1) hierarchical performance modeling, which captures the effects of context-length variance and imbalanced cache reuse inherent in context-driven execution; (2) dual-level resource optimization, combining workflow-level allocation to distribute resources across agents with agent-level partitioning to isolate requests with heterogeneous context lengths; and (3) adaptive cache management, which aligns cache placement with resource partitioning while minimizing cache-swap overhead. Evaluations on representative workflows demonstrate that CoreFlow reduces end-to-end latency by 57.6% and improves workflow throughput by 63.1%.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap104&sess=sess235",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Jianxiong Liao",
+        "Tiannan Fu",
+        "Ruibo Fan",
+        "Zhenheng Tang",
+        "Zhi Zhou",
+        "Xu Chen",
+        "Xiaowen Chu"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Papers in Conversation: AI Inference Becomes an HPC Systems Problem",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "The rise of agentic workflows, which coordinate multiple LLM-based agents to tackle complex tasks, has shifted the LLM serving toward a multi-step, context-driven execution paradigm.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap104",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap104&sess=sess235"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Papers in Conversation: AI Inference Becomes an HPC Systems Problem",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap819",
+      "title": "Prefill-Decode Aggregation or Disaggregation? Unifying Both for Goodput-Optimized LLM Serving",
+      "abstract": "Large language model (LLM) serving has long centered on a debate between prefill-decode (PD) aggregation and disaggregation. We systematically compare them under joint time-to-first-token (TTFT) and time-per-output-token (TPOT) service-level objectives (SLOs): aggregation wins when TTFT SLOs are tight and TPOT SLOs relaxed; disaggregation wins in the opposite regime. Under balanced SLOs, however, both are significantly suboptimal in SLO-compliant throughput (goodput), revealing a previously uncharacterized gap. We attribute this gap to unexploited latency slack: many requests complete well within SLOs while others approach violation. We propose latency shifting, a design principle for reallocating SLO slack across requests and phases to maximize goodput. TaiChi, an LLM serving system, unifies aggregation and disaggregation through hybrid-mode inference to realize this principle through flowing decode and length-aware prefill scheduling. TaiChi improves goodput by up to 40% and reduces P90 TTFT and TPOT by up to 5.3× and 1.6×, respectively, over state-of-the-art aggregation and disaggregation systems.",
+      "url": "https://arxiv.org/abs/2508.01989",
+      "pdf_url": "https://arxiv.org/pdf/2508.01989",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Chao Wang",
+        "Pengfei Zuo",
+        "Zhangyu Chen",
+        "Yunkai Liang",
+        "Zhou Yu",
+        "Ming-Chang Yang"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Papers in Conversation: AI Inference Becomes an HPC Systems Problem prefill decode aggregation disaggregation hybrid goodput SLO TTFT TPOT scheduling LLM serving prefill decode aggregation disaggregation hybrid goodput SLO TTFT TPOT scheduling LLM serving",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "prefill-decode-disaggregation",
+        "leaf": "Prefill-Decode Disaggregation",
+        "leaf_zh": "Prefill-Decode 解耦"
+      },
+      "secondary_tags": [
+        "serving-engine"
+      ],
+      "keyword_evidence": [
+        "prefill decode",
+        "prefill-decode"
+      ],
+      "score": 51,
+      "score_components": {
+        "relevance": 18,
+        "novelty": 7,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: prefill decode, prefill-decode",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Large language model (LLM) serving has long centered on a debate between prefill-decode (PD) aggregation and disaggregation.",
+      "summary_zh": "TaiChi 不把 PD 聚合与解耦当成二选一，而是用 prefill-heavy/decode-heavy 实例、flowing decode 和 length-aware prefill 调度，在请求之间重新分配 TTFT/TPOT 的 SLO slack。",
+      "why_it_matters_zh": "SC26 官方版本报告相对现有聚合/解耦方案 goodput 最高提高 40%，P90 TTFT/TPOT 最高降低 5.3×/1.6×；作者版更完整的 workload sweep 显示收益随 SLO 组合显著变化，核心价值是明确何时聚合、何时解耦、何时混合。",
+      "limitations_zh": "收益依赖可预测的输入/输出长度、GPU 角色比例、chunk size、网络和 SLO 分布；论文也把动态调整实例比例与输出长度预测列为后续工作。不能把特定 Qwen/ShareGPT/摘要 workload 的峰值外推到任意线上流量。",
+      "reading_depth": "targeted_full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap819",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap819&sess=sess235"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Papers in Conversation: AI Inference Becomes an HPC Systems Problem",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "用统一调度解释并跨越 PD 聚合/解耦的适用边界，直接对应生产 goodput 与 SLO 决策。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap128",
+      "title": "When KV Meets Embeddings: Dynamic GPU Memory Allocation for Accelerating Generative Recommender Serving",
+      "abstract": "Generative recommender (GR) inference faces a dual memory bottleneck absent in LLM serving. Embedding hot caches and KV caches compete for limited GPU HBM, while existing systems optimize them in isolation, leading to suboptimal tail latency. We observe that (1) the optimal EMB–KV memory allocation ratio shifts by up to 0.35 across workloads, and (2) static allocations leave 20%–30% latency improvement untapped, while continuous reallocation risks cache thrashing and P99 SLO violations. We present RACER, which jointly and adaptively allocates HBM at runtime. It addresses two challenges: (1) adaptive memory allocation via a three-layer PPO controller with online adaptation and burst recovery, achieving 32 μs decision latency; and (2) embedding-KV-aware scheduling that maximizes joint EMB–KV cache reuse across nodes. Evaluations on three production-scale datasets show that RACER reduces P99 latency by 24%–38% over the best static strategy and achieves 93.5%–99.6% SLO satisfaction, outperforming state-of-the-art baselines (67%–94.2%) without sacrificing throughput.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap128&sess=sess210",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Wenjun Yu",
+        "Amelie Chi Zhou",
+        "Shuguang Han"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Resource-Aware LLM Serving Pipelines",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "cache-offload-memory",
+        "leaf": "Cache, Offload & Memory Management",
+        "leaf_zh": "缓存、换入换出与内存管理"
+      },
+      "secondary_tags": [
+        "multitenancy-slo-reliability"
+      ],
+      "keyword_evidence": [
+        "gpu memory"
+      ],
+      "score": 57,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 13,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu memory",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Generative recommender (GR) inference faces a dual memory bottleneck absent in LLM serving.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap128",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap128&sess=sess210"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Resource-Aware LLM Serving Pipelines",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap251",
+      "title": "Efficient Serving for Agentic LLM Workflows via Micro-Task-Level Parallelism",
+      "abstract": "Agentic large language model (LLM) workflows leverage the advanced capabilities of LLMs to instantiate a multi-agent paradigm, where each LLM invocation constitutes an agentic task. Existing optimizations rely on coarse-grained task-level scheduling, which fails to exploit fine-grained parallelism within the workflow, leading to resource underutilization and bursty latency. In this paper, we present Grape, a full-stack LLM system for serving agentic LLM workflows that fully exploits micro-task (μTask)-level parallelism. On the frontend, Grape proposes the TaskFlow abstraction to provide a declarative interface for workflow orchestration. Subsequently, Grape decomposes tasks represented in TaskFlow into fine-grained μTasks that expose the parallelism within the workflow. For the LLM engine, Grape adopts a μTasks-aware scheduling policy with SLO-derived constraints to ensure low-latency execution with improved resource utilization. Moreover, Grape also proposes a dedicated memory management mechanism to alleviate KV Cache memory pressure. The experimental results demonstrate the superiority of Grape over state-of-the-art solutions.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap251&sess=sess210",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Siqi Wang",
+        "Xuezhu Wang",
+        "Hongliang Cao",
+        "Ruihao Gong",
+        "Qingxiao Sun",
+        "Yufan Xu",
+        "Huaitao Zhang",
+        "Wei Li",
+        "Hailong Yang",
+        "Albert Zomaya",
+        "Depei Qian",
+        "Kejie Ma"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Resource-Aware LLM Serving Pipelines",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Agentic large language model (LLM) workflows leverage the advanced capabilities of LLMs to instantiate a multi-agent paradigm, where each LLM invocation constitutes an agentic task.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap251",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap251&sess=sess210"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Resource-Aware LLM Serving Pipelines",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap744",
+      "title": "MIST: A Co-Design Framework for Heterogeneous, Multi-Stage LLM Inference",
+      "abstract": "Modern LLM serving spans multi-stage pipelines, including RAG retrieval and KV cache reuse, with distinct compute, memory, and latency demands. Inference engines expose vast configuration spaces with no systematic navigation methodology, and exhaustive benchmarking can exceed $40K in cloud costs. Meanwhile, hardware is diversifying across AMD GPUs, TPUs, and custom ASICs, yet cross-vendor prefill-decode (PD) disaggregation lacks a unified software stack for end-to-end evaluation. We present MIST, an event-driven simulation framework that models the full serving stack across AI workload, system and software, and hardware layers, with pluggable accelerator models enabling cross-vendor evaluation. MIST achieves end-to-end fidelity within 6% of real deployed systems. In design-space exploration case studies, under stated pricing and hardware assumptions, multi-vendor PD-disaggregated deployments identified by MIST yield up to 49.3% higher tokens/$ than single-vendor PD disaggregation. MIST also enables KV storage co-design, revealing how memory hierarchy choices shape tail latency. MIST is available at https://github.com/MIST-Simulator/MIST.",
+      "url": "https://arxiv.org/abs/2504.09775",
+      "pdf_url": "https://arxiv.org/pdf/2504.09775",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Abhimanyu Bambhaniya",
+        "Hanjiang Wu",
+        "Suvinay Subramanian",
+        "Sudarshan Srinivasan",
+        "Souvik Kundu",
+        "Amir Yazdanbakhsh",
+        "Midhilesh Elavazhagan",
+        "Madhu Kumar",
+        "Minlan Yu",
+        "Arijit Raychowdhury",
+        "Tushar Krishna"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Resource-Aware LLM Serving Pipelines heterogeneous multi stage LLM inference simulator RAG KV cache prefill decode disaggregation accelerator co design heterogeneous multi stage LLM inference simulator RAG KV cache prefill decode disaggregation accelerator co design",
+      "code_url": "https://github.com/MIST-Simulator/MIST",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "运行时与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "prefill decode",
+        "prefill-decode"
+      ],
+      "score": 58,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 5,
+        "rigor": 11,
+        "practical_impact": 11,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: prefill decode, prefill-decode",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "Modern LLM serving spans multi-stage pipelines, including RAG retrieval and KV cache reuse, with distinct compute, memory, and latency demands.",
+      "summary_zh": "MIST 用事件驱动模拟统一描述 RAG、KV retrieval、reasoning、prefill 与 decode，并允许把不同阶段映射到 AMD GPU、TPU 或自定义 accelerator，以替代穷举真实部署的昂贵试验。",
+      "why_it_matters_zh": "官方摘要报告对真实部署的端到端误差在 6% 以内；在论文设定的定价与硬件假设下，跨厂商 PD 解耦方案最高提高 49.3% tokens/$。它把 serving 配置选择从经验调参推进为 workload、内存层级、网络与成本的联合探索。",
+      "limitations_zh": "MIST 的结论依赖输入 trace、硬件模型、价格与网络假设；模拟 fidelity 不等于新硬件和生产流量上的实测保证。峰值 tokens/$ 也不能脱离论文的供应商、SLO 与 KV storage 条件使用。",
+      "reading_depth": "targeted_full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap744",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap744&sess=sess210"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Resource-Aware LLM Serving Pipelines",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "可开源复现的异构多阶段 serving 设计空间工具，直接服务 AI Infra 选型与容量规划。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap1108",
+      "title": "BidKV: Utility-Guided Preemption Scheduling for KV-Pressure LLM Serving",
+      "abstract": "When key-value (KV) cache demand exceeds GPU memory in online large language model (LLM) serving, engines reclaim active requests' cache. Poor victim selection increases recomputation and time to first token (TTFT). We present BidKV, a utility-guided policy that ranks victims by recoverable capacity and estimated disruption cost. BidKV integrates with vLLM and SGLang through a portable adapter that reuses native preemption. With Llama-3.1-8B-Instruct and ShareGPT traces, BidKV reduces 95th-percentile TTFT by over 90% and improves 300 ms service-level objective (SLO) attainment by 14.8 percentage points over vLLM's native policy. On SGLang, it reduces 95th-percentile TTFT by 94.6% and improves SLO attainment by 38.8 percentage points over native least-recently-used eviction. Source code is available at https://github.com/CGCL-codes/BidKV.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap1108&sess=sess210",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Yanbo Chen",
+        "Mingqi Wang",
+        "Shuhao Zhang",
+        "Xiaofei Liao",
+        "Hai Jin"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Resource-Aware LLM Serving Pipelines KV cache pressure preemption request scheduling TTFT SLO vLLM SGLang serving engine KV cache pressure preemption request scheduling TTFT SLO vLLM SGLang serving engine",
+      "code_url": "https://github.com/vLLM-HUST/vllm-ascend-hust-bidkv",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platform",
+        "group_zh": "推理服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engine & Runtime",
+        "leaf_zh": "Serving Engine 与运行时"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 53,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 7,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "code/artifact link detected"
+      ],
+      "summary_en": "When key-value (KV) cache demand exceeds GPU memory in online large language model (LLM) serving, engines reclaim active requests' cache.",
+      "summary_zh": "BidKV 把 KV Cache 不足时的 victim selection 建模为 utility ranking：同时考虑可释放容量与请求被打断的代价，再复用 vLLM/SGLang 原生 preemption 机制执行回收。",
+      "why_it_matters_zh": "在 Llama-3.1-8B-Instruct 与 ShareGPT trace 上，官方摘要报告 vLLM 的 P95 TTFT 降幅超过 90%，300ms SLO 达标率提高 14.8 个百分点；SGLang 上相对原生 LRU 的达标率提高 38.8 个百分点。公开 artifact 表明策略可作为轻量适配层接入两类引擎。",
+      "limitations_zh": "当前公开实现与论文评估集中在单模型、单类 trace 和有限 GPU 配置；artifact 还记录了吞吐与尾延迟之间的权衡。跨模型、多租户和多 NPU 结论仍需独立实验，仓库已归档为只读。",
+      "reading_depth": "full_text_and_artifact",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap1108",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap1108&sess=sess210"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Resource-Aware LLM Serving Pipelines",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "用很小的 runtime 改动处理真实 KV 压力，并同时提供 vLLM/SGLang 证据与公开 artifact。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap292",
+      "title": "Mercury: Practical User-Space API Remoting for Secure Containers in Public Clouds",
+      "abstract": "In public cloud environments, secure containers face challenges in device virtualization due to their micro virtual machine architecture. We introduce Mercury, a user-space API remoting framework co-designed with our secure container RunD. Mercury leverages a dynamic shared memory interface between guest and host, along with KVM hypercalls for efficient notifications. When applied to CUDA, Mercury preserves API semantics across virtualization boundaries, enabling GPU virtualization with under 4% overhead during large language model inference. Mercury also achieves a 20% speedup compared to existing API remoting solutions. Building on Mercury, we deploy GPU sharing and checkpoint/restore in Alibaba Cloud, effectively doubling GPU deployment density and reducing cold start latency by over 95% in practice.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap292&sess=sess212",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Peihao Yang",
+        "Teng Ma",
+        "Tinghe Zhu",
+        "Yang Su",
+        "Ziqu Yu",
+        "Zongyong Wu",
+        "Jiahao Zeng",
+        "Shuo Tan",
+        "Zheng Liu",
+        "Tao Ma"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Secure, Sustainable, and Elastic Cloud HPC",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group": "Cluster & Resource Systems",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "gpu-scheduling-virtualization",
+        "leaf": "GPU Scheduling & Virtualization",
+        "leaf_zh": "GPU 调度与虚拟化"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "gpu sharing",
+        "gpu virtualization"
+      ],
+      "score": 48,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 6,
+        "rigor": 5,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: gpu sharing, gpu virtualization",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "In public cloud environments, secure containers face challenges in device virtualization due to their micro virtual machine architecture.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap292",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap292&sess=sess212"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Secure, Sustainable, and Elastic Cloud HPC",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap189",
+      "title": "DySpin: A Plug-and-Play Library Advancing Dynamic Sparse Long-Context Inference",
+      "abstract": "Long-context LLM inference is constrained by the memory-bandwidth and capacity demands of the key-value (KV) cache. Existing sparse methods typically use fixed per-head token budgets, overlooking variations in runtime demand. Moreover, since they retain all tokens in memory, these methods do not alleviate GPU memory capacity constraints. To overcome these limitations, we present DySpin, a plug-and-play library for dynamic sparse long-context inference. Its training-free runtime allocator dynamically adjusts token budgets to preserve important tokens and improve accuracy. To address the resulting workload imbalance, FastEstimate fuses token-importance evaluation and selection to generate scheduling indices that guide a specialized decoding attention kernel for fine-grained load balancing. DySpin further employs six-bit KV cache quantization and a novel packing format that enables register-level parallel unpacking and dequantization, reducing both dequantization overhead and memory footprint. DySpin integrates with existing sparse frameworks, improving accuracy while reducing long-context inference latency and KV cache memory usage.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap189&sess=sess359",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Chengyu Sun",
+        "Yaqi Xia",
+        "Ruirui Pan",
+        "Donglin Yang",
+        "Xiaobo Zhou",
+        "Dazhao Cheng",
+        "Xiangyu Zhang"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Best Papers: Scalable and Elastic AI Systems",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "attention kernel",
+        "kv cache"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: attention kernel, kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Long-context LLM inference is constrained by the memory-bandwidth and capacity demands of the key-value (KV) cache.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap189",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap189&sess=sess359"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Best Papers: Scalable and Elastic AI Systems",
+    "presentation": "Technical Paper",
+    "awards": [
+      "SC26 Best Paper Finalist",
+      "SC26 Best Student Paper Finalist"
+    ],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap979",
+      "title": "SwarmLoRA: Serverless Shared-Computation Disaggregation for Isolated, High-Throughput Multi-LoRA Serving",
+      "abstract": "Over 100,000 public LoRA adapters now share a small number of base LLMs, and cloud providers increasingly serve them for independent tenants whose private data must stay isolated. Serverful systems co-locate all adapters in one process for efficient batching but sacrifice isolation; serverless systems run each adapter in an isolated function but redundantly recompute the shared base-model projection in every one, wasting GPU memory bandwidth. We present SwarmLoRA, a disaggregated serverless architecture that separates shared computation from per-adapter state. A persistent aggregator batches the base-model projection once across all active functions; isolated worker functions each hold one adapter’s weights and KV cache and scale independently. This design achieves cross-adapter batching without breaking per-adapter isolation. SwarmLoRA achieves 4.1×-4.9× higher throughput on four L40S GPUs than state-of-the-art ServerlessLLM and ServerlessLoRA, while preventing cross-tenant data leakage through malicious adapters. SwarmLoRA shows that multi-tenant LoRA serving need not trade tenant isolation for batching efficiency.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap979&sess=sess359",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Mausam Basnet",
+        "Tong Shu"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Best Papers: Scalable and Elastic AI Systems",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "runtime-memory",
+        "group": "Runtime & Memory Efficiency",
+        "group_zh": "Runtime 与内存效率",
+        "leaf_id": "attention-kv-cache",
+        "leaf": "Attention & KV Cache",
+        "leaf_zh": "Attention 与 KV Cache"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "kv cache"
+      ],
+      "score": 43,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: kv cache",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Over 100,000 public LoRA adapters now share a small number of base LLMs, and cloud providers increasingly serve them for independent tenants whose private data must stay isolated.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap979",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap979&sess=sess359"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Best Papers: Scalable and Elastic AI Systems",
+    "presentation": "Technical Paper",
+    "awards": [
+      "SC26 Best Paper Finalist",
+      "SC26 Best Student Paper Finalist"
+    ],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap144",
+      "title": "CoCoDiff: Optimizing Collective Communications for Distributed Diffusion Transformer Inference Under Ulysses Sequence Parallelism",
+      "abstract": "Diffusion Transformers (DiTs) are increasingly adopted in scientific computing, yet growing model sizes and resolutions make distributed multi-GPU inference essential. Ulysses sequence parallelism scales DiT inference but introduces frequent all-to-all collectives that dominate latency. Overlapping these with computation is difficult due to tight data dependencies, large messages, and asymmetric interconnect bandwidths. We introduce CoCoDiff, a distributed DiT inference engine exploiting two observations: (1) V requires only linear projection while Q/K need additional normalization and RoPE, enabling overlap of V's communication with Q/K computation; (2) adjacent denoising steps produce similar tensors, yielding temporal redundancy. CoCoDiff introduces three mechanisms: Tile-Aware Parallel All-to-all (TAPA) decomposes collectives into topology-aligned phases; V-First scheduling hides V's communication behind Q/K computation; and V-Major selective communication transmits only active projections on slow interconnects. On Aurora with four DiT models across 1–8 nodes (up to 96 Intel GPU tiles), CoCoDiff achieves an average speedup of 3.6×, peaking at 8.4×.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap144&sess=sess207",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Bin Ma",
+        "Xingjian Ding",
+        "Tekin Bicer",
+        "Pengfei Su",
+        "Dong Li"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Compression and Communication for Data-Intensive HPC",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "cluster-resource",
+        "group": "Cluster & Resource Systems",
+        "group_zh": "集群与资源系统",
+        "leaf_id": "network-interconnect",
+        "leaf": "Network, RDMA & Interconnect",
+        "leaf_zh": "网络、RDMA 与互联"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "interconnect"
+      ],
+      "score": 45,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 7,
+        "rigor": 5,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: interconnect",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Diffusion Transformers (DiTs) are increasingly adopted in scientific computing, yet growing model sizes and resolutions make distributed multi-GPU inference essential.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap144",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap144&sess=sess207"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Compression and Communication for Data-Intensive HPC",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap285",
+      "title": "Maze: A Distributed Framework for Large Language Model Agents",
+      "abstract": "LLM agents are transitioning from single-node to large-scale, multi-tenant services. A user request no longer corresponds to a single inference call, but to a long-running workflow interleaving heterogeneous tasks. Existing agent systems struggle with these workloads due to resource-blind, coarse-grained placement or ignore agentic workload awareness. We present Maze, a distributed agent framework bridging the abstraction gap from agentic logic to fine-grained task-level deployment. At its core, Maze anchors task resource semantics and introduces Heterogeneity-Aware Criticality Scheduler, a scheduler leveraging agentic workload features and value-density scoring to prioritize valuable agentic workflows and critical tasks while eliminating cross-resource head-of-line blocking. Coupled with elastic inference engine scaling, zero-VRAM optimizations, and closed-loop fault tolerance, Maze ensures a robust, performant runtime. Evaluation on diverse workloads demonstrates that Maze achieves up to 2.9x higher throughput, reduces P95 latency by 54.2%, and increases GPU utilization by 50% compared to state-of-the-art frameworks.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap285&sess=sess213",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Jing Gu",
+        "Zhuang Xing",
+        "Yiheng Yang",
+        "Bowen Lv",
+        "Jiale Wang",
+        "Shuo Yuan",
+        "Zijin Chen",
+        "Jin Zhao",
+        "Pengfei Zuo",
+        "Long Zheng",
+        "Xiaofei Liao",
+        "Hai Jin",
+        "Qinbin Li"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "LLM Systems: Inference, Agents, and HPC Operations",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "fault-tolerance-elasticity",
+        "leaf": "Fault Tolerance & Elasticity",
+        "leaf_zh": "容错与弹性"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "fault tolerance"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 14,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: fault tolerance",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "LLM agents are transitioning from single-node to large-scale, multi-tenant services.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap285",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap285&sess=sess213"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "LLM Systems: Inference, Agents, and HPC Operations",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap681",
+      "title": "ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning",
+      "abstract": "Zeroth-order (ZO) optimization is an attractive option for memory-efficient LLM fine-tuning, but its fault tolerance remains underexplored. Unlike first-order training, ZO progress can be represented by lightweight seed-and-scalar step logs, yet naive log-only recovery still incurs replay cost that grows with training progress, and shortcut replay does not preserve the executed floating-point trajectory. We present ZOCheck, a fault-tolerant ZO training system that exploits this replayable structure through a CPU shadow process that continuously replays logged updates, materializes consistent recovery images off the GPU critical path, and persists them asynchronously. ZOCheck combines non-blocking checkpointing with fast recovery from a near-current state. We also develop a cost model for choosing the snapshot policy under realistic failure rates. Experiments show that ZOCheck reduces checkpoint overhead by up to 219.7× and recovery latency by 1.55× on average over asynchronous full-state checkpointing, yielding up to 21.3× lower end-to-end wasted time while preserving exact recovery behavior.",
+      "url": "https://arxiv.org/abs/2609.27189",
+      "pdf_url": "https://arxiv.org/pdf/2609.27189",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Minqiu Sun",
+        "Xin Huang",
+        "Luanzheng Guo",
+        "Nathan R. Tallent",
+        "Kento Sato",
+        "Dong Dai"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "LLM Systems: Inference, Agents, and HPC Operations zeroth order LLM fine tuning checkpoint CPU shadow replay fault tolerance recovery distributed training zeroth order LLM fine tuning checkpoint CPU shadow replay fault tolerance recovery distributed training",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "training-datacenter",
+        "group": "Training & Datacenter Infrastructure",
+        "group_zh": "训练与数据中心基础设施",
+        "leaf_id": "distributed-training-checkpoint",
+        "leaf": "Distributed Training & Checkpointing",
+        "leaf_zh": "分布式训练与 Checkpoint"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "checkpoint",
+        "checkpointing",
+        "distributed training"
+      ],
+      "score": 56,
+      "score_components": {
+        "relevance": 20,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: checkpoint, checkpointing, distributed training",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Zeroth-order (ZO) optimization is an attractive option for memory-efficient LLM fine-tuning, but its fault tolerance remains underexplored.",
+      "summary_zh": "ZOCheck 利用 zeroth-order 优化只需 seed 与 scalar step log 即可重放的结构，让 CPU shadow 持续追赶 GPU 训练并异步生成一致恢复镜像，把 checkpoint 移出 GPU critical path。",
+      "why_it_matters_zh": "作者报告 checkpoint overhead 最高降低 219.7×、平均 recovery latency 降低 1.55×，在评估的故障率下端到端 wasted time 最高降低 21.3×，同时保持与原执行轨迹一致的恢复状态。",
+      "limitations_zh": "方法专门利用 ZO 更新的可重放性，不能直接套用到保存 optimizer/gradient state 的常规一阶训练；CPU shadow 必须能跟上 GPU 更新速率，收益也依赖故障率、快照策略、主机资源和持久化带宽。",
+      "reading_depth": "targeted_full_text",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap681",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap681&sess=sess213"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "LLM Systems: Inference, Agents, and HPC Operations",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": true,
+    "selection_reason_zh": "把 ZO 微调的算法结构转化为低干扰容错机制，方法、恢复一致性和适用边界都清楚。",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap224",
+      "title": "Evaluation and Optimization of Communication Compression for 10K-GPU LLM Training",
+      "abstract": "Collective communication is critical for scaling large language model (LLM) training to megascale GPU clusters. However, communication becomes a major bottleneck limiting scalability. Existing approaches improve bandwidth utilization but are constrained by the physical network in large-scale clusters. Communication compression reduces data volume and offers a way to break the communication wall, yet its performance and accuracy at extreme scale remain unclear. To bridge this gap, we present the first systematic study of communication compression across scales up to 10K GPUs, showing that it maintains accuracy but suffers from limited performance gains due to bandwidth hierarchy limitations, weak communication scaling, and limited resource awareness. We enhance the co-design of communication and compression with a hierarchical method that restructures communication compression, adapts communication algorithms to each scale, and tunes network resource allocation. Our approach achieves up to 5.87x communication improvement and 1.73x end-to-end training speedup on Llama3 models at 10,240 GPUs.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap224&sess=sess233",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Xingchen Liu",
+        "Daran Sun",
+        "Xingjian Tian",
+        "Man Liu",
+        "Haoran Kong",
+        "Jingwu Yang",
+        "Shengkai Lyu",
+        "Yiqin Cui",
+        "Shengquan Yin",
+        "Zheng Wei",
+        "Yida Gu",
+        "Wenjing Huang",
+        "Bing Lu",
+        "Zedong Liu",
+        "Hairui Zhao",
+        "Zhenlong Ma",
+        "Xiaosen Shan",
+        "Juan Pang",
+        "Fan Yang",
+        "Zhan Wang",
+        "Zizhong Chen",
+        "Dingwen Tao",
+        "Guangming Tan"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Papers in Conversation: Moving AI at Scale: Networks, Collectives, and Compression",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "parallelism-communication",
+        "leaf": "Parallelism & Communication",
+        "leaf_zh": "并行与通信"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "collective communication"
+      ],
+      "score": 51,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 6,
+        "rigor": 7,
+        "practical_impact": 14,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: collective communication",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Collective communication is critical for scaling large language model (LLM) training to megascale GPU clusters.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap224",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap224&sess=sess233"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Papers in Conversation: Moving AI at Scale: Networks, Collectives, and Compression",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap1104",
+      "title": "Pushing the Limits of Structured Sparse GEMM on Hopper GPUs via Analytical Modeling",
+      "abstract": "Structured sparsity improves performance in LLM inference and scientific computing, yet Hopper 2:4 sparse GEMM remains poorly understood. Published kernel-level optimizations target older architectures, while no prior work investigates how Hopper's Tensor Memory Accelerator (TMA), warpgroup execution, expanded shared memory, and asynchronous pipelines reshape the design space. We present an analytical model that captures roofline bounds, L2 reuse, pipeline overlap, and wave quantization for Hopper sparse GEMM. It serves as a guardrail for configuration search. Guided by the model, we develop an auto-tuned kernel combining warp-specialized TMA pipelining, metadata prepacking, barrier-decomposed overlap, and per-operand swizzles. On an H800 PCIe GPU, it outperforms cuSPARSELt on 80 of 95 shapes (84%) under identical problem configurations, with mean speedup of +16.7% and up to 1.4x. The model identifies memory bottlenecks and narrows the configuration space before compilation, reducing tuning cost while retaining high-performance configurations. This paper bridges both gaps.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap1104&sess=sess225",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Heng Shi",
+        "Qiqi Gu",
+        "Chenpeng Wu",
+        "Xiaofeng Guan",
+        "Sijie Wu",
+        "Enmin Fan",
+        "Guoqing Bao",
+        "Jianguo Yao"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Precision Engineering for Matrix Computation",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "compression-sparsity-distillation",
+        "leaf": "Compression, Sparsity & Distillation",
+        "leaf_zh": "压缩、稀疏与蒸馏"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "sparsity"
+      ],
+      "score": 48,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 5,
+        "practical_impact": 14,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: sparsity",
+        "quantitative claim detected",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Structured sparsity improves performance in LLM inference and scientific computing, yet Hopper 2:4 sparse GEMM remains poorly understood.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap1104",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap1104&sess=sess225"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Precision Engineering for Matrix Computation",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap507",
+      "title": "BatchFlow: Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training",
+      "abstract": "Deep learning training is often limited by data pipeline throughput, reducing accelerator utilization and increasing training time and cost. This is particularly challenging in multi-tenant environments, where jobs compete for storage and CPU resources. We present BatchFlow, a data pipeline service that improves aggregate training throughput by dynamically allocating data pipeline workers across jobs. BatchFlow uses online profiling to estimate how quickly each job consumes mini-batches and how quickly workers can prepare them, then allocates workers to jobs where data supply is most likely to fall behind training demand. BatchFlow also caches prepared mini-batches for reuse across jobs, reducing repeated reads from slow storage and redundant CPU preprocessing. When cache capacity is limited, a benefit-aware policy determines which mini-batches to prefetch and retain. Across multi-job workloads, BatchFlow increases aggregate training throughput by up to 3.8× and cost efficiency by up to 2.1× relative to prior systems.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap507&sess=sess196",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Patrick Watters",
+        "Xiaolong Ma",
+        "Syed Zawad",
+        "Jingyuan Zhang",
+        "Yue Cheng",
+        "Lei Yang",
+        "Feng Yan"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Adaptive Scheduling for Distributed AI",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "serving-distributed",
+        "group": "Serving & Distributed Inference",
+        "group_zh": "Serving 与分布式推理",
+        "leaf_id": "hardware-edge",
+        "leaf": "Hardware-aware & Edge Inference",
+        "leaf_zh": "硬件感知与边缘推理"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "accelerator"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 12,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 11,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: accelerator",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Deep learning training is often limited by data pipeline throughput, reducing accelerator utilization and increasing training time and cost.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap507",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap507&sess=sess196"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Adaptive Scheduling for Distributed AI",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap547",
+      "title": "DiffSpec: Accelerating Long Sequence Generation with Differential Speculative Decoding",
+      "abstract": "Long sequence generation is a critical workload for large language model (LLM) inference, but its high computational cost limits scalable deployment. Existing speculative decoding methods accelerate inference by verifying multiple draft tokens per step, yet uniform speculation concentrates failures in late decoding stages, where marginal payoff is highest, reducing overall speedup. We propose DiffSpec, a differential speculative decoding framework that adapts speculation to position-specific utility. At the algorithmic level, DiffSpec employs utility-guided draft construction with relevance-aware key-value (KV) selection and adaptive draft tree construction, improving candidate quality in high-impact regions. At the system level, a differential speculative execution engine supports utility-adaptive speculation via reuse-aware KV residency and topology-aware fused verification, handling irregular KV cache accesses and heterogeneous workloads. Experiments on four NVIDIA H100 GPUs with sequences up to 128K tokens show end-to-end speedups of 7.72×, 3.45×, and 2.36× over EAGLE-3, TriForce, and MagicDec, respectively.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap547&sess=sess230",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Zhongcheng Du",
+        "Yu Huang",
+        "Qihang Qiu",
+        "Yi Zhang",
+        "Deting Chen",
+        "Chencheng Ye",
+        "Xiaofei Liao",
+        "Hai Jin"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Speculative and Observable LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "speculative decoding"
+      ],
+      "score": 52,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 9,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Long sequence generation is a critical workload for large language model (LLM) inference, but its high computational cost limits scalable deployment.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap547",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap547&sess=sess230"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Speculative and Observable LLM Inference",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap319",
+      "title": "Spec-K: Adaptive Resource Allocation via Speculative Preview for Efficient MoE Inference",
+      "abstract": "Inference serving for large language models (LLMs) often relies on static resource allocation—such as fixed Top-k routing in mixture-of-experts (MoE) models—despite substantial token-level heterogeneity. This mismatch causes systematic over-provisioning, magnified in long reasoning and batched speculative decoding. We introduce Resource Allocation via Speculative Preview (RASP), a framework that leverages predictive signals from a draft model to guide token-level allocation before target-model verification, enabling fine-grained adjustment of compute budgets to match instantaneous demand. As an instantiation, Spec-K applies RASP to MoE routing: it uses speculative preview to estimate token uncertainty and reallocates the Top-k budget dynamically via a minimalist policy, reducing expert computation, communication traffic, and activated expert count in batched verification—thereby improving throughput and even speculative acceptance. Experiments on distributed MoE inference show that Spec-K achieves up to 1.72× end-to-end throughput improvement over a strong baseline, with negligible accuracy loss on complex reasoning and instruction-following tasks.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap319&sess=sess230",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Zhi Ma",
+        "Shigang Li"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Speculative and Observable LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "moe-efficiency",
+        "leaf": "MoE Efficiency",
+        "leaf_zh": "MoE 路由与专家优化"
+      },
+      "secondary_tags": [
+        "speculative-decoding"
+      ],
+      "keyword_evidence": [
+        "moe inference"
+      ],
+      "score": 50,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 6,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: moe inference",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Inference serving for large language models (LLMs) often relies on static resource allocation—such as fixed Top-k routing in mixture-of-experts (MoE) models—despite substantial token-level heterogeneity.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap319",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap319&sess=sess230"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Speculative and Observable LLM Inference",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap577",
+      "title": "TIDE: Temporal Incremental Draft Engine for Self-Improving LLM Inference",
+      "abstract": "Speculative decoding can substantially accelerate LLM inference, but realizing its benefits in practice is challenging due to evolving workloads. We present TIDE (Temporal Incremental Draft Engine), a serving-engine-native framework that integrates online draft adaptation directly into high-performance LLM inference systems. TIDE reuses target model's intermediate hidden states generated during inference as training signals for draft adaptation, thereby avoiding additional target model computation and serving-time overhead. It employs adaptive runtime control to activate speculation and draft model training only when beneficial. TIDE exploits heterogeneous clusters by mapping inference and training to appropriate GPU classes. Across diverse real-world workloads, TIDE achieves up to 1.66× throughput over no-speculation baselines while recovering performance on misaligned workloads where static draft models degrade throughput. TIDE also reduces training time by up to 3.02× and storage requirements by 24× compared to existing draft training approaches, and improves system throughput by up to 1.22× on heterogeneous GPU clusters.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap577&sess=sess230",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Jiyoung Park",
+        "Hankyu Jang",
+        "Changseok Song",
+        "Wookeun Jung"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Speculative and Observable LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "efficient-inference",
+        "domain": "LLM Efficient Inference",
+        "domain_zh": "LLM 高效推理",
+        "group_id": "model-algorithm",
+        "group": "Model & Algorithm Efficiency",
+        "group_zh": "模型与算法效率",
+        "leaf_id": "speculative-decoding",
+        "leaf": "Speculative Decoding",
+        "leaf_zh": "推测解码"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "draft model",
+        "speculative decoding"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 14,
+        "novelty": 5,
+        "rigor": 9,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: draft model, speculative decoding",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Speculative decoding can substantially accelerate LLM inference, but realizing its benefits in practice is challenging due to evolving workloads.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap577",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap577&sess=sess230"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Speculative and Observable LLM Inference",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  },
+  {
+    "paper": {
+      "id": "sc:sc26:pap579",
+      "title": "LLMProf: Identifying Performance Bottlenecks in LLM Serving Systems with Top-Down Profiling",
+      "abstract": "Large language model (LLM) serving systems have become critical cloud workloads, yet their performance diagnosis remains challenging due to rapid software-hardware evolution, dynamic request patterns, and the limitations of existing profiling tools. These gaps force developers to rely on manual heuristics for performance optimization, leading to slow progress and error-prone code. We present LLMProf, a low-overhead profiling framework tailored for various LLM serving systems. LLMProf employs a top-down, multi-level analysis approach that captures only the most relevant metrics at each profiling level to balance detail with minimal performance impact while remaining agnostic to frameworks and hardware. We present case studies that leverage LLMProf to optimize real-world LLM serving workloads, from which we derive a performance diagnosis taxonomy that provides actionable guidance and enables automated postmortem analysis. Our case studies demonstrate that by applying simple optimizations uncovered by LLMProf, we can achieve up to 2.09× throughput improvement.",
+      "url": "https://sc26.conference-program.com/presentation/?id=pap579&sess=sess230",
+      "pdf_url": "",
+      "published": "2026-09-10",
+      "updated": "2026-09-10",
+      "authors": [
+        "Tianle Zhong",
+        "Mao Lin",
+        "Hao Wu",
+        "Keren Zhou",
+        "Geoffrey Fox"
+      ],
+      "source": "SC26 official schedule",
+      "source_type": "accepted_program",
+      "categories": [],
+      "doi": "",
+      "venue": "SC26",
+      "journal_ref": "",
+      "comment": "Speculative and Observable LLM Inference",
+      "code_url": "",
+      "primary_category": {
+        "domain_id": "ai-infrastructure",
+        "domain": "AI Infrastructure",
+        "domain_zh": "AI 基础设施",
+        "group_id": "serving-platform",
+        "group": "Serving Platforms",
+        "group_zh": "服务平台",
+        "leaf_id": "serving-engine",
+        "leaf": "Serving Engines & Runtimes",
+        "leaf_zh": "Serving Engine 与 Runtime"
+      },
+      "secondary_tags": [],
+      "keyword_evidence": [
+        "llm serving"
+      ],
+      "score": 47,
+      "score_components": {
+        "relevance": 16,
+        "novelty": 5,
+        "rigor": 7,
+        "practical_impact": 7,
+        "reproducibility": 2,
+        "credibility": 10
+      },
+      "score_evidence": [
+        "taxonomy keywords: llm serving",
+        "no quantitative claim in metadata",
+        "no code link detected in metadata"
+      ],
+      "summary_en": "Large language model (LLM) serving systems have become critical cloud workloads, yet their performance diagnosis remains challenging due to rapid software-hardware evolution, dynamic request patterns, and the limitations of existing profiling tools.",
+      "summary_zh": "",
+      "why_it_matters_zh": "",
+      "limitations_zh": "",
+      "reading_depth": "metadata",
+      "first_seen": "",
+      "last_seen": "",
+      "featured_weeks": [],
+      "source_records": [
+        {
+          "source": "SC26 official schedule",
+          "id": "pap579",
+          "url": "https://sc26.conference-program.com/presentation/?id=pap579&sess=sess230"
+        }
+      ]
+    },
+    "event_id": "sc26",
+    "track": "Speculative and Observable LLM Inference",
+    "presentation": "Technical Paper",
+    "awards": [],
+    "selected": false,
+    "selection_reason_zh": "",
+    "event_score_evidence": [
+      "official accepted-paper program"
+    ]
+  }
+]

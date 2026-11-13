@@ -22,11 +22,19 @@ from weekly_paper.event_collectors import (
     parse_neurips_detail_html,
     parse_neurips_downloads_html,
     parse_micro_program_html,
+    parse_sc_detail_html,
+    parse_sc_program_html,
     parse_sosp_schedule_html,
     parse_usenix_schedule_html,
 )
 from weekly_paper.event_notify import select_delivery_event
-from weekly_paper.event_pipeline import _in_event_scope, detect_due_events, load_events, run_event
+from weekly_paper.event_pipeline import (
+    _in_event_scope,
+    _in_sc_ai_infra_scope,
+    detect_due_events,
+    load_events,
+    run_event,
+)
 from weekly_paper.models import Paper
 from weekly_paper.notify import select_delivery_week, site_readiness_error
 from weekly_paper.pipeline import run
@@ -275,6 +283,20 @@ class CoreTests(unittest.TestCase):
         self.assertFalse(_in_event_scope(generic))
         self.assertTrue(_in_event_scope(systems))
 
+    def test_sc_scope_requires_direct_ai_infrastructure_evidence(self) -> None:
+        gnn = paper(
+            "sc:gnn",
+            "Scalable Disk-RAM-GPU Pipelined Training for Temporal GNNs",
+            "We accelerate temporal graph neural network training on GPU clusters.",
+        )
+        llm = paper(
+            "sc:llm",
+            "Utility-Guided Preemption Scheduling for KV-Pressure LLM Serving",
+            "We improve large language model inference under KV cache pressure.",
+        )
+        self.assertFalse(_in_sc_ai_infra_scope(gnn))
+        self.assertTrue(_in_sc_ai_infra_scope(llm))
+
     def test_acl_xml_parser_extracts_official_paper(self) -> None:
         payload = b"""<collection id='2026.acl'><volume id='long'><paper id='1'>
         <title>Fast <fixed-case>LLM</fixed-case> Serving</title><author><first>Ada</first><last>Lovelace</last></author>
@@ -484,6 +506,37 @@ Fast LLM Serving<span class="ae-badge ae-badge--available"></span>
             values[0].event_score_evidence,
             ["ACM Artifact Available", "ACM Results Reproduced"],
         )
+
+    def test_parse_sc_official_program_html(self) -> None:
+        event = {
+            "id": "sc26",
+            "short_name": "SC26",
+            "start_date": "2026-11-15",
+            "program_released_date": "2026-09-10",
+            "program_url": "https://sc26.conference-program.com/",
+            "paper_detail_base_url": "https://sc26.conference-program.com/presentation/",
+        }
+        program = b"""
+<tr class="presentation-row" etypes="sstype127 evtt111" psid="sess235">
+  <td><span class="presentation-title">AI Inference Systems</span></td></tr>
+<tr class="agenda-item" psid="sess235" ssid="pap819"><td class="title-speakers-td">
+  <a href="/?post_type=page&p=16&id=pap819&sess=sess235">Fast LLM Serving</a>
+  <div class="speakers-line"><div class="presenter-name">Alice Smith</div></div>
+</td></tr>
+"""
+        values, total = parse_sc_program_html(program, event)
+        self.assertEqual(total, 1)
+        self.assertEqual(values[0].paper.id, "sc:sc26:pap819")
+        self.assertEqual(values[0].track, "AI Inference Systems")
+        self.assertEqual(values[0].awards, ["SC26 Best Paper Finalist"])
+        self.assertEqual(values[0].paper.authors, ["Alice Smith"])
+
+        detail = parse_sc_detail_html(b"""
+<div class="abstract-sect"><span class="abstract">Lower latency for LLM serving.</span></div>
+<div class="presenter-details-sect"><div class="presenter-name">Alice Smith</div></div>
+""")
+        self.assertEqual(detail["abstract"], "Lower latency for LLM serving.")
+        self.assertEqual(detail["authors"], ["Alice Smith"])
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

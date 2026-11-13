@@ -13,6 +13,7 @@ from .event_collectors import (
     collect_colm_program,
     collect_micro_program,
     collect_neurips_program,
+    collect_sc_program,
     collect_sosp_schedule,
     collect_usenix_schedule,
 )
@@ -38,6 +39,13 @@ EVENT_TITLE_RE = re.compile(
     r"memory[- ]efficient)\b",
     re.IGNORECASE,
 )
+SC_AI_INFRA_RE = re.compile(
+    r"\b(?:llm|large language models?|language models?|mixture[- ]of[- ]experts|moe|"
+    r"kv(?:[- ]cache)?|agentic|generative recommender|diffusion transformer|long[- ]context|"
+    r"multi[- ]lora|speculative decoding|ai (?:inference|training|workloads?)|"
+    r"deep learning training)\b",
+    re.IGNORECASE,
+)
 
 
 def _in_event_scope(paper: Paper) -> bool:
@@ -48,6 +56,11 @@ def _in_event_scope(paper: Paper) -> bool:
         for value in EVENT_SYSTEM_RE.findall(f"{paper.title} {paper.abstract} {paper.comment}")
     }
     return len(signals) >= 2
+
+
+def _in_sc_ai_infra_scope(paper: Paper) -> bool:
+    text = f"{paper.title} {paper.abstract} {paper.comment}"
+    return bool(SC_AI_INFRA_RE.search(text))
 
 
 def load_events(path: Path) -> Dict[str, Any]:
@@ -210,11 +223,17 @@ def run_event(
     elif event.get("collector") == "micro_program":
         collected, corpus_total = collect_micro_program(event)
         corpus_source = "MICRO official main program"
+    elif event.get("collector") == "sc_program":
+        collected, corpus_total = collect_sc_program(event)
+        corpus_source = "SC26 official Linklings technical-paper schedule"
     elif event.get("collector") == "official_program":
         collected, corpus_total = [], 0
         corpus_source = event.get("program_source_name", "Official program")
     else:
         raise ValueError(f"event {event_id} has no proceedings collector")
+
+    if event.get("collector") == "sc_program":
+        collected = [item for item in collected if _in_sc_ai_infra_scope(item.paper)]
 
     # Event-specific classification hints recover clearly in-scope systems papers
     # without widening the global weekly-paper taxonomy.

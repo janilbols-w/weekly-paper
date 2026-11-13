@@ -8,6 +8,7 @@ description: "LLM 高效推理与 AI Infra 会议日历及独立精选"
 | 会议 | 日期 | 领域 / 社区 | 地点 | 状态 |
 |---|---|---|---|---|
 | [NeurIPS 2026](./neurips-2026/) | 2026-12-06 — 2026-12-13 | Machine Learning / NeurIPS | Sydney, Australia / Atlanta, United States / Paris, France | <span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> |
+| [SC26](./sc26/) | 2026-11-15 — 2026-11-20 | Architecture / HPC / ACM SIGHPC / IEEE Computer Society | Chicago, Illinois, United States | <span class="event-status event-status--upcoming"><span aria-hidden="true">🟡</span> 即将举行</span> |
 | [MICRO 2026](./micro-2026/) | 2026-10-31 — 2026-11-04 | Architecture / AI Systems / IEEE / ACM SIGMICRO | Athens, Greece | <span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> |
 | [EMNLP 2026](./emnlp-2026/) | 2026-10-24 — 2026-10-29 | LLM / NLP / ACL Family | Budapest, Hungary | <span class="event-status event-status--archived"><span aria-hidden="true">⚪</span> 已归档</span> |
 | [COLM 2026](./colm-2026/) | 2026-10-06 — 2026-10-09 | LLM / NLP / COLM | San Francisco, California, United States | <span class="event-status event-status--active"><span aria-hidden="true">🟢</span> 进行中</span> |

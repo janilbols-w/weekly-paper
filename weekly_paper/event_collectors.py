@@ -672,3 +672,111 @@ def collect_micro_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[Lis
     )
     response.raise_for_status()
     return parse_micro_program_html(response.content, event)
+
+
+def parse_sc_program_html(
+    payload: bytes, event: Dict[str, Any]
+) -> Tuple[List[EventPaper], int]:
+    """Parse the complete SC technical-paper program from a Linklings day snippet.
+
+    Each cached day snippet deliberately contains the full program; rows outside
+    that day are marked ``wrong-date`` by the client.  Reading one snippet is
+    therefore sufficient and avoids three duplicate multi-megabyte downloads.
+    """
+    soup = BeautifulSoup(payload, "html.parser")
+    publication_date = str(event.get("program_released_date", event["start_date"]))
+    schedule_url = str(event["program_url"])
+    detail_base = str(event.get("paper_detail_base_url", schedule_url))
+    by_id: Dict[str, EventPaper] = {}
+
+    for row in soup.select('tr.agenda-item[ssid^="pap"]'):
+        paper_id = str(row.get("ssid", "")).strip()
+        session_id = str(row.get("psid", "")).strip()
+        title_link = row.select_one('td.title-speakers-td a[href*="id=pap"]')
+        if not paper_id or not session_id or title_link is None:
+            continue
+        title = clean_text(title_link.get_text(" ", strip=True))
+        if not title:
+            continue
+        session_row = soup.select_one(f'tr.presentation-row[psid="{session_id}"]')
+        track_node = session_row.select_one(".presentation-title") if session_row else None
+        track = clean_text(track_node.get_text(" ", strip=True)) if track_node else "Technical Papers"
+        etypes = set(str(session_row.get("etypes", "")).split()) if session_row else set()
+        awards: List[str] = []
+        if "evtt111" in etypes:
+            awards.append("SC26 Best Paper Finalist")
+        if "evtt112" in etypes:
+            awards.append("SC26 Best Student Paper Finalist")
+        detail_url = f"{detail_base}?id={paper_id}&sess={session_id}"
+        authors = [
+            clean_text(node.get_text(" ", strip=True))
+            for node in row.select(".speakers-line .presenter-name")
+            if clean_text(node.get_text(" ", strip=True))
+        ]
+        existing = by_id.get(paper_id)
+        if existing is not None:
+            existing.awards = sorted(set(existing.awards + awards))
+            continue
+        paper = Paper(
+            id=f"sc:{event['id']}:{paper_id}",
+            title=title,
+            abstract="",
+            url=detail_url,
+            pdf_url="",
+            published=publication_date,
+            updated=publication_date,
+            authors=authors,
+            source="SC26 official schedule",
+            source_type="accepted_program",
+            venue=event["short_name"],
+            comment=track,
+            source_records=[
+                {"source": "SC26 official schedule", "id": paper_id, "url": detail_url}
+            ],
+        )
+        by_id[paper_id] = EventPaper(
+            paper=paper,
+            event_id=event["id"],
+            track=track,
+            presentation="Technical Paper",
+            awards=awards,
+        )
+    return list(by_id.values()), len(by_id)
+
+
+def parse_sc_detail_html(payload: bytes) -> Dict[str, Any]:
+    soup = BeautifulSoup(payload, "html.parser")
+    abstract_node = soup.select_one(".abstract-sect .abstract")
+    authors = [
+        clean_text(node.get_text(" ", strip=True))
+        for node in soup.select(".presenter-details-sect .presenter-name")
+        if clean_text(node.get_text(" ", strip=True))
+    ]
+    return {
+        "abstract": clean_text(abstract_node.get_text(" ", strip=True)) if abstract_node else "",
+        "authors": authors,
+    }
+
+
+def collect_sc_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[EventPaper], int]:
+    headers = {"User-Agent": "WeeklyPaper/0.2 (+https://github.com/janilbols-w/weekly-paper)"}
+    response = requests.get(event["schedule_source_url"], timeout=timeout, headers=headers)
+    response.raise_for_status()
+    papers, total = parse_sc_program_html(response.content, event)
+
+    workers = int(event.get("detail_fetch_workers", 10))
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {
+            executor.submit(_fetch_with_retries, item.paper.url, timeout, headers): item
+            for item in papers
+        }
+        for future in as_completed(futures):
+            item = futures[future]
+            try:
+                detail = parse_sc_detail_html(future.result())
+            except (requests.RequestException, ValueError):
+                continue
+            item.paper.abstract = str(detail.get("abstract", ""))
+            if detail.get("authors"):
+                item.paper.authors = list(detail["authors"])
+    return papers, total

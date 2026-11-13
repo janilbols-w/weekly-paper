@@ -1,0 +1,67 @@
+sc:sc26:pap858:
+  url: https://arxiv.org/abs/2508.06753
+  pdf_url: https://arxiv.org/pdf/2508.06753
+  classification_hint: ultra low bit quantization 2 bit LLM inference CPU Intel Xe2 GPU vLLM kernels latency throughput
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: quantization-low-precision, leaf: Quantization & Low Precision, leaf_zh: 量化与低精度}
+  summary_zh: 论文从 2-bit CPU microkernel 出发，把同一低比特执行路径扩展到 Intel Xe2 GPU，并接入 vLLM；重点不是再提出一种量化算法，而是让已经训练好的超低比特模型真正获得端到端运行时收益。
+  why_it_matters_zh: 作者在所测 CPU 上报告相对 bitnet.cpp 最高 2.2×，相对 16-bit 推理最高 7×；Xe2 GPU 上的 vLLM pipeline 相对 16-bit 最高 6.7×。这说明低比特权重只有与 ISA、packing、microkernel 和 serving runtime 联合设计，才会转化为真实吞吐与延迟收益。
+  limitations_zh: 结论绑定于作者使用的 2-bit checkpoint、Intel CPU/Xe2 GPU 与特定 shape；论文摘要没有给出所有模型的任务质量差异，也不能把峰值加速外推到 NVIDIA/AMD GPU 或任意后训练量化模型。
+  reading_depth: targeted_full_text
+  selection_reason_zh: 把 2-bit 模型压缩与 CPU/GPU kernel、vLLM 端到端执行打通，工程路径完整且限制明确。
+
+sc:sc26:pap744:
+  url: https://arxiv.org/abs/2504.09775
+  pdf_url: https://arxiv.org/pdf/2504.09775
+  code_url: https://github.com/MIST-Simulator/MIST
+  classification_hint: heterogeneous multi stage LLM inference simulator RAG KV cache prefill decode disaggregation accelerator co design
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: runtime-memory, group: Runtime & Memory Efficiency, group_zh: 运行时与内存效率, leaf_id: attention-kv-cache, leaf: Attention & KV Cache, leaf_zh: Attention 与 KV Cache}
+  summary_zh: MIST 用事件驱动模拟统一描述 RAG、KV retrieval、reasoning、prefill 与 decode，并允许把不同阶段映射到 AMD GPU、TPU 或自定义 accelerator，以替代穷举真实部署的昂贵试验。
+  why_it_matters_zh: 官方摘要报告对真实部署的端到端误差在 6% 以内；在论文设定的定价与硬件假设下，跨厂商 PD 解耦方案最高提高 49.3% tokens/$。它把 serving 配置选择从经验调参推进为 workload、内存层级、网络与成本的联合探索。
+  limitations_zh: MIST 的结论依赖输入 trace、硬件模型、价格与网络假设；模拟 fidelity 不等于新硬件和生产流量上的实测保证。峰值 tokens/$ 也不能脱离论文的供应商、SLO 与 KV storage 条件使用。
+  reading_depth: targeted_full_text
+  selection_reason_zh: 可开源复现的异构多阶段 serving 设计空间工具，直接服务 AI Infra 选型与容量规划。
+
+sc:sc26:pap1108:
+  url: https://sc26.conference-program.com/presentation/?id=pap1108&sess=sess210
+  code_url: https://github.com/vLLM-HUST/vllm-ascend-hust-bidkv
+  classification_hint: KV cache pressure preemption request scheduling TTFT SLO vLLM SGLang serving engine
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: serving-platform, group: Serving Platform, group_zh: 推理服务平台, leaf_id: serving-engine, leaf: Serving Engine & Runtime, leaf_zh: Serving Engine 与运行时}
+  summary_zh: BidKV 把 KV Cache 不足时的 victim selection 建模为 utility ranking：同时考虑可释放容量与请求被打断的代价，再复用 vLLM/SGLang 原生 preemption 机制执行回收。
+  why_it_matters_zh: 在 Llama-3.1-8B-Instruct 与 ShareGPT trace 上，官方摘要报告 vLLM 的 P95 TTFT 降幅超过 90%，300ms SLO 达标率提高 14.8 个百分点；SGLang 上相对原生 LRU 的达标率提高 38.8 个百分点。公开 artifact 表明策略可作为轻量适配层接入两类引擎。
+  limitations_zh: 当前公开实现与论文评估集中在单模型、单类 trace 和有限 GPU 配置；artifact 还记录了吞吐与尾延迟之间的权衡。跨模型、多租户和多 NPU 结论仍需独立实验，仓库已归档为只读。
+  reading_depth: full_text_and_artifact
+  selection_reason_zh: 用很小的 runtime 改动处理真实 KV 压力，并同时提供 vLLM/SGLang 证据与公开 artifact。
+
+sc:sc26:pap681:
+  url: https://arxiv.org/abs/2609.27189
+  pdf_url: https://arxiv.org/pdf/2609.27189
+  classification_hint: zeroth order LLM fine tuning checkpoint CPU shadow replay fault tolerance recovery distributed training
+  primary_category: {domain_id: ai-infrastructure, domain: AI Infrastructure, domain_zh: AI 基础设施, group_id: training-datacenter, group: Training & Datacenter Infrastructure, group_zh: 训练与数据中心基础设施, leaf_id: distributed-training-checkpoint, leaf: Distributed Training & Checkpointing, leaf_zh: 分布式训练与 Checkpoint}
+  summary_zh: ZOCheck 利用 zeroth-order 优化只需 seed 与 scalar step log 即可重放的结构，让 CPU shadow 持续追赶 GPU 训练并异步生成一致恢复镜像，把 checkpoint 移出 GPU critical path。
+  why_it_matters_zh: 作者报告 checkpoint overhead 最高降低 219.7×、平均 recovery latency 降低 1.55×，在评估的故障率下端到端 wasted time 最高降低 21.3×，同时保持与原执行轨迹一致的恢复状态。
+  limitations_zh: 方法专门利用 ZO 更新的可重放性，不能直接套用到保存 optimizer/gradient state 的常规一阶训练；CPU shadow 必须能跟上 GPU 更新速率，收益也依赖故障率、快照策略、主机资源和持久化带宽。
+  reading_depth: targeted_full_text
+  selection_reason_zh: 把 ZO 微调的算法结构转化为低干扰容错机制，方法、恢复一致性和适用边界都清楚。
+
+sc:sc26:pap262:
+  url: https://arxiv.org/abs/2604.16864
+  pdf_url: https://arxiv.org/pdf/2604.16864
+  code_url: https://github.com/psl-ntu/HieraSparse
+  classification_hint: hierarchical sparse KV cache attention sparse tensor core prefill decode long context GPU kernel compression
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: model-algorithm, group: Model & Algorithm Efficiency, group_zh: 模型与算法效率, leaf_id: compression-sparsity-distillation, leaf: Compression Sparsity & Distillation, leaf_zh: 压缩 稀疏化与蒸馏}
+  summary_zh: HieraSparse 用 block-level 与 element-level 两级稀疏组织 KV Cache，并把 K/V 转置为稀疏 Tensor Core 可直接消费的操作数；专用 prefill/decode kernel 避免把压缩后的 KV 先解压回 dense。
+  why_it_matters_zh: 论文在相同稀疏度下报告相对 unstructured decode 方法 1.2× KV 压缩率和 4.57× attention 加速；使用简单 magnitude pruning 时，prefill/decode 分别获得 1.37×/1.77× 加速且质量下降不显著。代码公开并提供 L40S 预调 kernel。
+  limitations_zh: 公开实现当前预调目标是 L40S、CUDA 12.8 与特定 Llama attention shape；质量结论来自简单 pruning 和有限任务。扩展到其他 GPU 需要重新调优，细粒度动态稀疏与量化组合仍是后续工作。
+  reading_depth: full_text_and_artifact
+  selection_reason_zh: 同时压缩 KV 容量并把结构化稀疏兑现为硬件加速，且有公开 kernel artifact。
+
+sc:sc26:pap819:
+  url: https://arxiv.org/abs/2508.01989
+  pdf_url: https://arxiv.org/pdf/2508.01989
+  classification_hint: prefill decode aggregation disaggregation hybrid goodput SLO TTFT TPOT scheduling LLM serving
+  primary_category: {domain_id: efficient-inference, domain: LLM Efficient Inference, domain_zh: LLM 高效推理, group_id: serving-distributed, group: Serving & Distributed Inference, group_zh: Serving 与分布式推理, leaf_id: prefill-decode-disaggregation, leaf: Prefill-Decode Disaggregation, leaf_zh: Prefill-Decode 解耦}
+  summary_zh: TaiChi 不把 PD 聚合与解耦当成二选一，而是用 prefill-heavy/decode-heavy 实例、flowing decode 和 length-aware prefill 调度，在请求之间重新分配 TTFT/TPOT 的 SLO slack。
+  why_it_matters_zh: SC26 官方版本报告相对现有聚合/解耦方案 goodput 最高提高 40%，P90 TTFT/TPOT 最高降低 5.3×/1.6×；作者版更完整的 workload sweep 显示收益随 SLO 组合显著变化，核心价值是明确何时聚合、何时解耦、何时混合。
+  limitations_zh: 收益依赖可预测的输入/输出长度、GPU 角色比例、chunk size、网络和 SLO 分布；论文也把动态调整实例比例与输出长度预测列为后续工作。不能把特定 Qwen/ShareGPT/摘要 workload 的峰值外推到任意线上流量。
+  reading_depth: targeted_full_text
+  selection_reason_zh: 用统一调度解释并跨越 PD 聚合/解耦的适用边界，直接对应生产 goodput 与 SLO 决策。
