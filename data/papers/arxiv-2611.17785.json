@@ -1,0 +1,76 @@
+{
+  "id": "arxiv:2611.17785",
+  "title": "CHARMING: Parallel Edge AI Acceleration Across Tensor Processing and In-Memory Computation",
+  "abstract": "Edge AI increasingly relies on specialized accelerators for low-latency inference under tight resource and energy constraints, yet their efficiency remains limited by data movement. Prior work, CHARM, mitigates this overhead by overlapping data movement with computation. We observe that in-memory computing can further supplement tensor processing as a parallel accelerator while eliminating certain data movements entirely. We present CHARMING, a heterogeneous edge AI architecture that uses accuracy- and quantization-aware partitioning to distribute and concurrently execute inference workloads across tensor processing and in-memory computation. CHARMING partitions attention heads between an AIE array and an in-DRAM compute unit, balancing execution according to model architecture, sequence length, and precision while selecting heads to minimize accuracy degradation. CHARMING also integrates quantization into the AIE projection stage to further reduce data movement. We validate CHARMING end-to-end in hardware on AMD Versal VCK5000 and Alveo U200 platforms and evaluate LLM and video-generation models across multiple precisions using measured hardware results and simulation of the latest in-memory compute hardware. CHARMING improves prefill performance by up to 23.6 percent and decode performance by up to 44 percent over AIE-only acceleration. With int4 x int4 fixed-point in-memory computation, CHARMING reduces per-layer energy by up to 7.6 percent and improves energy-delay product by up to 24.7 percent, while maintaining accuracy similar to a 32-bit floating-point baseline.",
+  "url": "https://arxiv.org/abs/2611.17785",
+  "pdf_url": "https://arxiv.org/pdf/2611.17785",
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "authors": [
+    "Md Omar Faruque",
+    "Jingang Jin",
+    "Jo\\~ao Paulo C. de Lima",
+    "Shouzhi Fang",
+    "William C. Tegge",
+    "Peipei Zhou",
+    "Qinru Qiu",
+    "Alex K. Jones"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int4",
+    "quantization"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int4, quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Edge AI increasingly relies on specialized accelerators for low-latency inference under tight resource and energy constraints, yet their efficiency remains limited by data movement.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-17T04:35:30+00:00",
+  "last_seen": "2026-11-17T04:35:30+00:00",
+  "featured_weeks": [
+    "2026-W47"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.17785",
+      "url": "https://arxiv.org/abs/2611.17785"
+    }
+  ]
+}

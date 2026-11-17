@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **137** 篇。
+累计收录 **138** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Efficiently Aligning Draft Models via Parameter- and Data-Efficient Adaptation](../../papers/arxiv-2603.09527/) | 2026-11-16 | 42 |
 | [REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding](../../papers/arxiv-2611.14399/) | 2026-11-11 | 49 |
 | [ForeSpark: Joint Draft and Verification Budget Scheduling for Parallel Speculative Decoding](../../papers/arxiv-2611.13442/) | 2026-11-11 | 44 |
 | [DAWN: Dependency-Aware Fast Inference for Diffusion LLMs](../../papers/arxiv-2602.06953/) | 2026-11-10 | 49 |

@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2611.17758",
+  "title": "Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance",
+  "abstract": "Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease. MRI-based genotype inference is a potential low-cost complement to genetic testing. However, although many deep learning methods have been developed for classifying various MR images, applying them to ADPKD remains challenging: (1) abdominal MR images are generally too large to be handled by deep learning models designed for smaller images like brain MRI, and (2) the amount of labeled data for ADPKD genetic mutations is insufficient to train deep learning models. In order to address these challenges, we propose E3PN, an efficient 3D MRI-based ADPKD genotype classification network that relies on point sampling and E(3)-invariance. We utilize a point representation of 3D MRI, which consumes less GPU memory than a voxel representation. For further memory efficiency, 3D points are sampled from a mixture distribution over the two kidneys in each image. Since E(3)-invariance has been shown to improve data efficiency, we also incorporate it into our model through coordinate canonicalization. On our ADPKD dataset, E3PN trains 163 times faster and uses 103x less GPU memory than a 3D ResNet, while also improving F1 from 0.165 to 0.226 over both baselines. These results establish a first benchmark for five-way ADPKD genotype classification from 3D MRI and show that point sampling and coordinate canonicalization yield two-orders-of-magnitude efficiency gains with a modest but consistent improvement in F1.",
+  "url": "https://arxiv.org/abs/2611.17758",
+  "pdf_url": "https://arxiv.org/pdf/2611.17758",
+  "published": "2026-11-16",
+  "updated": "2026-11-16",
+  "authors": [
+    "Kwanghee Lee",
+    "Hyeongsub Lee",
+    "Youngwoo Kim",
+    "Hyunji Jeong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "cache-offload-memory",
+    "leaf": "Cache, Offload & Memory Management",
+    "leaf_zh": "缓存、换入换出与内存管理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "gpu memory"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu memory",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-17T04:35:30+00:00",
+  "last_seen": "2026-11-17T04:35:30+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.17758",
+      "url": "https://arxiv.org/abs/2611.17758"
+    }
+  ]
+}

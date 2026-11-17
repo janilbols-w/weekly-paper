@@ -5,10 +5,15 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **769** 篇。
+累计收录 **774** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](../../papers/arxiv-2611.17772/) | 2026-11-16 | 43 |
+| [Folding Language Models into Themselves](../../papers/arxiv-2611.18113/) | 2026-11-16 | 42 |
+| [CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents](../../papers/arxiv-2611.17808/) | 2026-11-16 | 40 |
+| [ScrapeGraphAI-100k: Dataset for Schema-Constrained LLM Generation](../../papers/arxiv-2602.15189/) | 2026-11-16 | 39 |
+| [QVal: Evaluating Dense Supervision Signals for Long-Horizon LLM Agents](../../papers/arxiv-2606.32034/) | 2026-11-16 | 39 |
 | [Pruning and Distilling Mixture-of-Experts into Dense Language Models](../../papers/arxiv-2605.28207/) | 2026-11-11 | 47 |
 | [Rethinking Black-Box On-Policy Distillation: A Rubric-based Analysis](../../papers/arxiv-2605.07396/) | 2026-11-11 | 46 |
 | [Beyond Passive Imitation: On-Policy Mid-Training Distillation for Language Models](../../papers/arxiv-2611.13855/) | 2026-11-11 | 43 |

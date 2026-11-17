@@ -39,7 +39,7 @@ When does a language model acquire a capability? Developmental studies usually a
 ## 元数据
 
 - 作者：Matteo He, William F. Shen, Alex Iacob, Andrej Jovanovic, Xinchi Qiu, Nicholas D. Lane
-- 发布：2026-10-14；更新：2026-10-16
+- 发布：2026-10-14；更新：2026-11-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/hematteo/learning-to-read-out](https://github.com/hematteo/learning-to-read-out)
 - 阅读深度：metadata

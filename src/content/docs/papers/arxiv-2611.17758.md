@@ -1,0 +1,45 @@
+---
+title: "Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance"
+description: "Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease."
+---
+
+**评分：47/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
+
+[论文原文](https://arxiv.org/abs/2611.17758) · [PDF](https://arxiv.org/pdf/2611.17758)
+
+## 一句话摘要
+
+Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease. MRI-based genotype inference is a potential low-cost complement to genetic testing. However, although many deep learning methods have been developed for classifying various MR images, applying them to ADPKD remains challenging: (1) abdominal MR images are generally too large to be handled by deep learning models designed for smaller images like brain MRI, and (2) the amount of labeled data for ADPKD genetic mutations is insufficient to train deep learning models. In order to address these challenges, we propose E3PN, an efficient 3D MRI-based ADPKD genotype classification network that relies on point sampling and E(3)-invariance. We utilize a point representation of 3D MRI, which consumes less GPU memory than a voxel representation. For further memory efficiency, 3D points are sampled from a mixture distribution over the two kidneys in each image. Since E(3)-invariance has been shown to improve data efficiency, we also incorporate it into our model through coordinate canonicalization. On our ADPKD dataset, E3PN trains 163 times faster and uses 103x less GPU memory than a 3D ResNet, while also improving F1 from 0.165 to 0.226 over both baselines. These results establish a first benchmark for five-way ADPKD genotype classification from 3D MRI and show that point sampling and coordinate canonicalization yield two-orders-of-magnitude efficiency gains with a modest but consistent improvement in F1.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 7 |
+| rigor | 11 |
+| practical impact | 12 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: gpu memory
+- quantitative claim detected
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Kwanghee Lee, Hyeongsub Lee, Youngwoo Kim, Hyunji Jeong
+- 发布：2026-11-16；更新：2026-11-16
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

@@ -5,10 +5,12 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **46** 篇。
+累计收录 **48** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs](../../papers/arxiv-2611.17621/) | 2026-11-16 | 55 |
+| [DRTriton: Large-Scale Synthetic Data Driven Reinforcement Learning for Triton Kernel Generation](../../papers/arxiv-2603.21465/) | 2026-11-16 | 47 |
 | [AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models](../../papers/arxiv-2611.14515/) | 2026-11-11 | 41 |
 | [Correct First, Fast Second: What a Local 7B Code Model Can and Cannot Do for GPU Kernel Optimization](../../papers/arxiv-2611.12079/) | 2026-11-10 | 54 |
 | [Warpline: Binary-Level Tracing and Unified Evidence for Agentic GPU Kernel Optimization](../../papers/arxiv-2611.04331/) | 2026-11-04 | 44 |

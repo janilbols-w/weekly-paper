@@ -39,7 +39,7 @@ Deploying Vision Transformers (ViTs) on low-power edge devices is challenging du
 ## 元数据
 
 - 作者：Vishnu PS (University College Dublin, Ireland), Ajay Kumar M (University College Dublin, Ireland), Yike Li (University College Dublin, Ireland), Robert Bogdan Staszewski (University College Dublin, Ireland), Deepu John (University College Dublin, Ireland)
-- 发布：2026-10-05；更新：2026-10-05
+- 发布：2026-10-05；更新：2026-11-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

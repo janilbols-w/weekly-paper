@@ -5,10 +5,15 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **417** 篇。
+累计收录 **422** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [CHARMING: Parallel Edge AI Acceleration Across Tensor Processing and In-Memory Computation](../../papers/arxiv-2611.17785/) | 2026-11-16 | 49 |
+| [User-Schedulable Approximations for Quantized Tensor Programs](../../papers/arxiv-2611.17526/) | 2026-11-16 | 43 |
+| [Choosing Quantized Code LLMs by File Size and Energy per Solved Task](../../papers/arxiv-2611.17605/) | 2026-11-16 | 43 |
+| [MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration](../../papers/arxiv-2611.17931/) | 2026-11-16 | 41 |
+| [LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent](../../papers/arxiv-2611.17780/) | 2026-11-16 | 41 |
 | [GSQ: Highly-Accurate Low-Precision Scalar Quantization for LLMs via Gumbel-Softmax Sampling](../../papers/arxiv-2604.18556/) | 2026-11-11 | 43 |
 | [Federated Learning of Binary Neural Networks: Enabling Low-Cost Inference](../../papers/arxiv-2603.15507/) | 2026-11-11 | 43 |
 | [Beyond local reconstruction: Geometry-preserving output alignment for binary LLM quantization](../../papers/arxiv-2512.21651/) | 2026-11-11 | 43 |

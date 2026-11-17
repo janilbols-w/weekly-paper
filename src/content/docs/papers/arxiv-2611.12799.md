@@ -39,7 +39,7 @@ Reinforcement learning is now the mainstream paradigm for training LLMs on agent
 ## 元数据
 
 - 作者：Tingcheng Bian, Kangye Gong, Jinchang Luo, MingQuan Cheng, Feiran Liu, Ni Li, Xiaoling Xia, Haiwei Wang, Hui Li
-- 发布：2026-11-10；更新：2026-11-10
+- 发布：2026-11-10；更新：2026-11-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

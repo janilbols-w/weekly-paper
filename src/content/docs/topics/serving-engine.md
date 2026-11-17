@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **134** 篇。
+累计收录 **135** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](../../papers/arxiv-2611.18397/) | 2026-11-16 | 44 |
 | [SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving](../../papers/arxiv-2611.14246/) | 2026-11-11 | 43 |
 | [KAIROS: Stateful, Context-Aware Power-Efficient Agentic Inference Serving](../../papers/arxiv-2604.16682/) | 2026-11-11 | 39 |
 | [Detent: Batch-Invariant LLM Serving and RL Rollouts at Near-Stock Speed](../../papers/arxiv-2611.10611/) | 2026-11-10 | 46 |

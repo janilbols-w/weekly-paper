@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **151** 篇。
+累计收录 **154** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [PUMA-Former: Uncertainty-Aware Agentic Computation Offloading in MEO-LEO Satellite Networks With Incomplete Information](../../papers/arxiv-2611.18139/) | 2026-11-16 | 49 |
+| [Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance](../../papers/arxiv-2611.17758/) | 2026-11-16 | 47 |
+| [BPU-SpikeMM:Exact Matrix Multiplication via Spatio-Temporal Spike Encoding on Real Neuromorphic Hardware](../../papers/arxiv-2611.18275/) | 2026-11-16 | 38 |
 | [SplitCom: Communication-efficient Split Federated Fine-tuning of LLMs via Temporal Compression](../../papers/arxiv-2602.10564/) | 2026-11-11 | 42 |
 | [Understanding Mixture-of-Experts Language Models Beyond Expert Boundaries](../../papers/arxiv-2611.13975/) | 2026-11-11 | 41 |
 | [Mobility-Aware Task Offloading in Mobile Edge Computing-Empowered Space-Air-Ground Integrated Internet-of-Things Networks](../../papers/arxiv-2611.14102/) | 2026-11-11 | 40 |

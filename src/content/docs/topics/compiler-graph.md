@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **139** 篇。
+累计收录 **140** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions](../../papers/arxiv-2406.15877/) | 2026-11-16 | 44 |
+| [BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution](../../papers/arxiv-2510.08697/) | 2026-11-16 | 44 |
 | [JURIST: Training Small Data-Reweighted Reasoning Judges for Test-Time Scaling in Code Generation](../../papers/arxiv-2601.22230/) | 2026-11-10 | 45 |
 | [Stabilizing Knowledge, Promoting Reasoning: Dual-Token Constraints for RLVR](../../papers/arxiv-2507.15778/) | 2026-11-10 | 44 |
 | [Simple Test-Time Refinement for Plot-to-Code Generation via Visual-Code Diagnostics](../../papers/arxiv-2611.10840/) | 2026-11-10 | 42 |
@@ -92,7 +94,6 @@ description: "Compiler & Graph Optimization"
 | [Toward Secure Code Generation: Bridging Correctness and Security via Task-Adaptive Vulnerability Modeling and Execution-Based Benchmarking](../../papers/arxiv-2407.02395/) | 2026-09-15 | 46 |
 | [CodeTS: Verifiable Text-to-Time Series Generation via Executable Code](../../papers/arxiv-2609.15393/) | 2026-09-15 | 44 |
 | [To See is Not to Master: Teaching LLMs to Use Private Libraries for Code Generation](../../papers/arxiv-2603.15159/) | 2026-09-15 | 43 |
-| [CIDERS: Cloud-Edge LLM Collaborative Learning via Accelerating Personalized Bilevel Optimization](../../papers/arxiv-2609.15664/) | 2026-09-14 | 41 |
 | [Introspective Uncertainty Estimation for LLM-Based Code Generation](../../papers/arxiv-2609.13975/) | 2026-09-12 | 40 |
 | [Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning](../../papers/arxiv-2604.02007/) | 2026-09-09 | 42 |
 | [Retrofitting Code Using LLMs to Support Exceptional Behavior](../../papers/arxiv-2609.10397/) | 2026-09-09 | 41 |
