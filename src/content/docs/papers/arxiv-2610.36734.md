@@ -39,7 +39,7 @@ Continual learning requires large language models to acquire new knowledge and c
 ## 元数据
 
 - 作者：Jingpu Yang, Tianhao Li, Fengxian Ji, Yufeng Wang, Shuxin Zheng, Xiaoqing Zhang
-- 发布：2026-10-28；更新：2026-10-28
+- 发布：2026-10-28；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

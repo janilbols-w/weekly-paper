@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2611.21216",
+  "title": "MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression",
+  "abstract": "Modern large language models (LLMs) increasingly support longer contexts and serve more concurrent requests, increasing both sequence lengths and batch sizes. Both trends increase KV-cache size and memory traffic during inference. KV-cache quantization reduces these costs, with recent approaches using codebook-based vector quantization to achieve extremely low bit widths. However, hardware constraints limit codebook size, and most methods reconstruct the cache in higher-precision floating-point formats for attention, limiting the computational benefits of quantization. To address these limitations, we introduce MiSTiQ, a drop-in replacement for codebook-based vector quantizers that combines trellis-coded storage with microscaling (MX) formats for low-precision computation. We combine trellis quantization with beam search to encode the KV cache over large reconstruction spaces without large codebooks. To support MX computation, we derive MX-Hash functions that generate reconstruction values directly in the target MX element format. These functions use the scale-conditioned marginal distribution of block-normalized Gaussian inputs. On Llama3 and Qwen3, MiSTiQ achieves lower WikiText perplexity and higher GSM8K accuracy than the evaluated baselines across several block-scale formats at approximately 1.25 effective bits per element. With NVFP4, it also achieves the highest LongBench average on both models.",
+  "url": "https://arxiv.org/abs/2611.21216",
+  "pdf_url": "https://arxiv.org/pdf/2611.21216",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Ofir Gordon",
+    "Lior Dikstein",
+    "Paul Balanca",
+    "Idan Achituve",
+    "Douglas Orr",
+    "Hai Victor Habi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [
+    "attention-kv-cache"
+  ],
+  "keyword_evidence": [
+    "microscaling",
+    "quantization"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: microscaling, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Modern large language models (LLMs) increasingly support longer contexts and serve more concurrent requests, increasing both sequence lengths and batch sizes.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.21216",
+      "url": "https://arxiv.org/abs/2611.21216"
+    }
+  ]
+}

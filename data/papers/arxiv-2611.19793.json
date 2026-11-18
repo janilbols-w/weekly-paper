@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.19793",
+  "title": "IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation",
+  "abstract": "Machine-learning interatomic potentials (MLIPs) now approach density functional theory (DFT) accuracy at a fraction of its cost, but the practical benefit is limited by software fragmentation: each state-of-the-art architecture is released as a separate codebase, with its own data format, configuration system, training loop and molecular-dynamics interface. Comparing two architectures on the same dataset, or moving a trained model into a production simulation, therefore requires substantial re-engineering. We introduce IANN (InterAtomic Neural Network), an open-source PyTorch framework that reimplements equivariant graph neural networks - PaiNN, NequIP, MACE, Allegro, EquiformerV2, EquiformerV3 and UMA - behind a unified data object, a unified trainer and a single deployment route, so that the architecture is a one-word change in a configuration dictionary. Forces, stresses and virials are obtained for every architecture from one analytic differentiation of the energy with respect to the edge vectors of the atomic graph, exact under periodic boundary conditions. Distributed training is configured automatically from the SLURM, PBS or MPI environment, so the same script runs unchanged from a workstation to a multi-node GPU allocation. Self-describing checkpoints serve directly as ASE calculators, as ensembles reporting uncertainties, or as TorchScript models run inside LAMMPS through bundled C++ pair styles with single- and multi-GPU inference. Trained on a common dataset of millions of structures, the architectures can be compared under identical conditions. We further release PaiNN foundation models trained on 41.9 million curated DFT structures from MPtrj, Alexandria, OMat24, MatPES, OC20, OC22, OC25, MPr2SCAN and MatPESr2SCAN, spanning the PBE, RPBE and r2SCAN functionals. Additionally, IANN provides an agent interface to facilitate integration with autonomous agents.",
+  "url": "https://arxiv.org/abs/2611.19793",
+  "pdf_url": "https://arxiv.org/pdf/2611.19793",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Changzhi Ai",
+    "Xueping Qin",
+    "Dimosthenis Sokaras",
+    "Frank Abild-Pedersen",
+    "Johannes Voss"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "cs.LG",
+    "physics.comp-ph"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distributed training"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distributed training",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Machine-learning interatomic potentials (MLIPs) now approach density functional theory (DFT) accuracy at a fraction of its cost, but the practical benefit is limited by software fragmentation: each state-of-the-art architecture is released as a separate codebase, with its own data format, configuration system, training loop and molecular-dynamics interface.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.19793",
+      "url": "https://arxiv.org/abs/2611.19793"
+    }
+  ]
+}

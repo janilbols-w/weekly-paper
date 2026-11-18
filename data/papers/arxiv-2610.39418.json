@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.39418",
+  "title": "LinQuant: Functional Invariances for Low-Precision Linear Recurrences",
+  "abstract": "Linear recurrences are emerging as practical alternatives to softmax attention in large language models, appearing in both standalone and hybrid architectures. However, despite their rapid emergence, low-precision inference remains much less developed for these models than for softmax attention. During prefill, chunkwise-parallel algorithms cast much of the recurrence as dense matrix multiplications, suggesting a natural path to low-precision execution. Simply quantizing these operations in their native form, however, can be fragile. In this work, we identify functional invariances that preserve the full-precision computation while making the operands more amenable to quantization. Building on this observation, we introduce LinQuant, a framework for low-precision recurrent prefill based on seven such invariances, including rotations, diagonal rescalings, and alternative placements of recurrent decay and write factors. We derive when these transformations remain valid across common recurrence families spanning linear, gated, and delta-rule updates, and show that they provide complementary degrees of freedom for improving low-precision accuracy. We implement these transformations in INT8 and INT4 kernels and evaluate them on the recurrences of Nemotron-H, Qwen3.5, and Kimi Linear, recovering most of the accuracy lost to quantization while accelerating recurrent prefill. We also augment SSDi8, an existing low-precision prefill pipeline for Mamba-2, improving perplexity at matched prefill latency on pretrained Mamba-2 and Nemotron-H models. Altogether, these results demonstrate the practical utility of invariance-based quantization for recurrent models.",
+  "url": "https://arxiv.org/abs/2610.39418",
+  "pdf_url": "https://arxiv.org/pdf/2610.39418",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Neehal Tumma",
+    "Philipp Nazari",
+    "Rohan Cherukuri",
+    "Daniela Rus",
+    "T. Konstantin Rusch"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int4",
+    "int8",
+    "quantization"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int4, int8, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Linear recurrences are emerging as practical alternatives to softmax attention in large language models, appearing in both standalone and hybrid architectures.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.39418",
+      "url": "https://arxiv.org/abs/2610.39418"
+    }
+  ]
+}

@@ -5,10 +5,14 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **140** 篇。
+累计收录 **144** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Beyond Synthetic Benchmarks: Evaluating LLM Performance on Real-World Class-Level Code Generation](../../papers/arxiv-2510.26130/) | 2026-11-17 | 42 |
+| [ResBench: Benchmarking LLM-Generated FPGA Designs with Resource Awareness](../../papers/arxiv-2503.08823/) | 2026-11-17 | 40 |
+| [SemMask: Semantic-Prioritized Progressive Masking for Diffusion Language Models](../../papers/arxiv-2611.19560/) | 2026-11-17 | 39 |
+| [OpenClassGen: A Large-Scale Corpus of Real-World Python Classes for LLM Research](../../papers/arxiv-2504.15564/) | 2026-11-17 | 39 |
 | [BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions](../../papers/arxiv-2406.15877/) | 2026-11-16 | 44 |
 | [BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution](../../papers/arxiv-2510.08697/) | 2026-11-16 | 44 |
 | [JURIST: Training Small Data-Reweighted Reasoning Judges for Test-Time Scaling in Code Generation](../../papers/arxiv-2601.22230/) | 2026-11-10 | 45 |

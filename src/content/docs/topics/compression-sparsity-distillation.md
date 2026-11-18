@@ -5,10 +5,27 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **774** 篇。
+累计收录 **791** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HEED: Density-Weighted Residual Alignment for Hybrid Vision-Language Model Distillation](../../papers/arxiv-2605.17093/) | 2026-11-17 | 52 |
+| [Simple yet Effective Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization](../../papers/arxiv-2505.07675/) | 2026-11-17 | 48 |
+| [CD4LM: Consistency Distillation and aDaptive Decoding for Diffusion Language Models](../../papers/arxiv-2601.02236/) | 2026-11-17 | 47 |
+| [Cyber-Secure Wearable, Ultra-Low-Power Networked Sensors for Soldier Health Monitoring: Insights from the CAPSARII project](../../papers/arxiv-2611.20187/) | 2026-11-17 | 46 |
+| [What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation](../../papers/arxiv-2611.16246/) | 2026-11-17 | 44 |
+| [RoShift: Lazy Shift and Weight-aware Rotation for Activation Sparsity in LLM Inference](../../papers/arxiv-2611.20549/) | 2026-11-17 | 44 |
+| [Fidelity Before Structure: Verbatim Chunks Beat Lossy Artifact Extraction in Long-Conversation LLM Memory](../../papers/arxiv-2601.00821/) | 2026-11-17 | 44 |
+| [PoCoAttn: Position-Content Collaborative Sparse Attention for Fast and High-Fidelity Video Generation](../../papers/arxiv-2611.20307/) | 2026-11-17 | 43 |
+| [LEAF-OPD: Learning to Forget from Privileged Contexts via On-Policy Distillation](../../papers/arxiv-2611.20674/) | 2026-11-17 | 43 |
+| [Simplify, Agree, Distill: Label-Free Self-Distillation with Stepping Stones](../../papers/arxiv-2611.18916/) | 2026-11-17 | 42 |
+| [Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity](../../papers/arxiv-2607.07386/) | 2026-11-17 | 41 |
+| [SMELL: Sparsity-aware Memory Efficient Federated Fine-tuning for Long-context LLMs](../../papers/arxiv-2611.19349/) | 2026-11-17 | 41 |
+| [Understanding Layer Patching in Model Size Interpolation](../../papers/arxiv-2607.08170/) | 2026-11-17 | 40 |
+| [SIRI: Self-Internalizing Reinforcement Learning with Intrinsic Skills for LLM Agent Training](../../papers/arxiv-2606.02355/) | 2026-11-17 | 40 |
+| [EfficientSkill: Learning Skills for Token-Efficient Multi-Turn Agents](../../papers/arxiv-2611.19823/) | 2026-11-17 | 40 |
+| [Reward-Weighted On-Policy Distillation with an Open Property-Equivalence Verifier for NL-to-SVA Generation](../../papers/arxiv-2605.13501/) | 2026-11-17 | 39 |
+| [Learning When to Continue and When to Stop: Termination-Aware OPSD](../../papers/arxiv-2611.19925/) | 2026-11-17 | 39 |
 | [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](../../papers/arxiv-2611.17772/) | 2026-11-16 | 43 |
 | [Folding Language Models into Themselves](../../papers/arxiv-2611.18113/) | 2026-11-16 | 42 |
 | [CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents](../../papers/arxiv-2611.17808/) | 2026-11-16 | 40 |
@@ -712,9 +729,9 @@ description: "Compression, Sparsity & Distillation"
 | [Exploring Sparse Matrix Multiplication Kernels on the Cerebras CS-3](../../papers/arxiv-2604.27985/) | 2026-08-11 | 44 |
 | [Dynamic Coalition Formation and Communication Pricing in Skill-Based Agentic AI Systems](../../papers/arxiv-2608.07532/) | 2026-08-11 | 43 |
 | [Adaptive Supervised Anchoring for On-Policy Self-Distillation](../../papers/arxiv-2608.07935/) | 2026-08-11 | 42 |
+| [Proxy OPD: On-Policy Distillation with Transferable Relative Proxy Update for Large Language Models](../../papers/arxiv-2607.11505/) | 2026-08-11 | 41 |
 | [Hybrid Policy Distillation for LLMs](../../papers/arxiv-2604.20244/) | 2026-08-11 | 41 |
 | [UI-MOPD: Multi-Platform On-Policy Distillation for Unified GUI Agents](../../papers/arxiv-2607.04425/) | 2026-08-11 | 40 |
-| [Proxy OPD: On-Policy Distillation with Transferable Relative Proxy Update](../../papers/arxiv-2607.11505/) | 2026-08-11 | 40 |
 | [MoE Proxy Models for Low-Cost Failure Reproduction and Diagnosis in LLM RL Post-Training](../../papers/arxiv-2608.10823/) | 2026-08-11 | 40 |
 | [RSPO: Reward-Swap Policy Optimization for Multi-Turn LLM Agents](../../papers/arxiv-2607.04713/) | 2026-08-11 | 39 |
 | [Memorization Dynamics in Knowledge Distillation for Language Models](../../papers/arxiv-2601.15394/) | 2026-08-11 | 38 |

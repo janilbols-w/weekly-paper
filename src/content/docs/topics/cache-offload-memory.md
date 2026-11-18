@@ -5,10 +5,12 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **154** 篇。
+累计收录 **156** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [A Generative AI-Driven Architecture for Whole-Home Intelligent Services: Edge Models, Memory Management, and Household Applications](../../papers/arxiv-2611.21232/) | 2026-11-17 | 45 |
+| [Contrastive Activation-Guided Zeroth-Order Preference Optimisation for Memory-Efficient LLM Alignment](../../papers/arxiv-2611.20635/) | 2026-11-17 | 42 |
 | [PUMA-Former: Uncertainty-Aware Agentic Computation Offloading in MEO-LEO Satellite Networks With Incomplete Information](../../papers/arxiv-2611.18139/) | 2026-11-16 | 49 |
 | [Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance](../../papers/arxiv-2611.17758/) | 2026-11-16 | 47 |
 | [BPU-SpikeMM:Exact Matrix Multiplication via Spatio-Temporal Spike Encoding on Real Neuromorphic Hardware](../../papers/arxiv-2611.18275/) | 2026-11-16 | 38 |

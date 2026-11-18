@@ -5,10 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **105** 篇。
+累计收录 **109** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Rethinking KV Caching for LLM Decode: Free-Space Optical KV Regeneration for Reduction of Memory Traffic](../../papers/arxiv-2611.19279/) | 2026-11-17 | 48 |
+| [HBF-EventLab: A Discrete-Event Simulator for Studying Host-Device Coordination in High Bandwidth Flash](../../papers/arxiv-2611.19861/) | 2026-11-17 | 46 |
+| [LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States](../../papers/arxiv-2611.20331/) | 2026-11-17 | 39 |
+| [From Sensors to Silicon: Causal Cross-Layer Self-Healing Edge AI for Secure and Energy-Adaptive IoT Systems](../../papers/arxiv-2611.19165/) | 2026-11-17 | 38 |
 | [Mutable Inference: Architecting LLM Accelerators for Inference-Time Learning](../../papers/arxiv-2611.18523/) | 2026-11-16 | 44 |
 | [Programmable GPU-Accelerated dApps for Real-Time Edge Inference and ISAC on NVIDIA Aerial Testbed](../../papers/arxiv-2512.06493/) | 2026-11-11 | 44 |
 | [DICOMPUTE: An Economic and Privacy-Aware Framework for Distributed Artificial Intelligence Inference](../../papers/arxiv-2611.10804/) | 2026-11-10 | 52 |

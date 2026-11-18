@@ -39,7 +39,7 @@ LLM pretraining is increasingly compute-intensive, while substantial inference s
 ## 元数据
 
 - 作者：Mingchuan Ma, Dongqi Cai, Daqian Yang, Zhenyan Lu, Chen Chen, Teresa Lv, Yan Gao, Shangguang Wang, Mengwei Xu, Nicholas D. Lane, Yu Huang
-- 发布：2026-11-03；更新：2026-11-03
+- 发布：2026-11-03；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

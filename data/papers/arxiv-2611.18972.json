@@ -1,0 +1,82 @@
+{
+  "id": "arxiv:2611.18972",
+  "title": "NVFP4-MLA: Unified FP4 KV-Cache Storage and Attention Computation for Multi-Head Latent Attention",
+  "abstract": "Long-context reasoning and agentic workloads make key-value (KV) cache capacity and attention computation the dominant costs of serving frontier large language models. We present NVFP4-MLA, the first design to push both KV-cache storage and attention computation of multi-head latent attention (MLA) to FP4. NVFP4-MLA co-designs the quantization algorithm with the attention kernel and the cache system. Selective residual compensation preserves model accuracy by adding NVFP4 residuals only to the quantization-sensitive channels. Two-dimensional quantization blocks make the shared latent cache compatible with the different reduction directions of the two attention batched matrix multiplications (BMMs), removing requantization between them. On DeepSeek-R1 and Kimi-K3, NVFP4-MLA matches BF16 MLA average accuracy across nine benchmarks while compressing the MLA KV cache by 3.20x and 3.05x relative to BF16 MLA. On NVIDIA Rubin GPUs, NVFP4-MLA speeds up the attention kernel over FP8 MLA by up to 2.82x on DeepSeek-R1 and 2.71x on Kimi-K3, and lowers p90 time to first token in agentic multi-turn serving by up to 3.5x and 2.1x, respectively. In disaggregated DeepSeek-R1 serving, it also raises per-GPU throughput by up to 2.30x.",
+  "url": "https://arxiv.org/abs/2611.18972",
+  "pdf_url": "https://arxiv.org/pdf/2611.18972",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Chao Ni",
+    "Qi Zhang",
+    "Xiao Wang",
+    "Zongfei Jing",
+    "Mingyang Hao",
+    "Binghan Chen",
+    "Kefeng Duan",
+    "Yu-Jung Chen",
+    "Mengdi Wang",
+    "Tijmen Blankevoort",
+    "Jun Yang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "quantization-low-precision"
+  ],
+  "keyword_evidence": [
+    "attention kernel",
+    "kv cache",
+    "kv-cache"
+  ],
+  "score": 52,
+  "score_components": {
+    "relevance": 20,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: attention kernel, kv cache, kv-cache",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Long-context reasoning and agentic workloads make key-value (KV) cache capacity and attention computation the dominant costs of serving frontier large language models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [
+    "2026-W47"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.18972",
+      "url": "https://arxiv.org/abs/2611.18972"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2611.19861",
+  "title": "HBF-EventLab: A Discrete-Event Simulator for Studying Host-Device Coordination in High Bandwidth Flash",
+  "abstract": "High Bandwidth Flash (HBF) combines NAND flash density with high-bandwidth accelerator connectivity, offering additional memory capacity for large language model inference. However, limited hardware availability makes it difficult to evaluate how host behavior and device resource constraints jointly affect HBF request processing. We present HBF-EventLab, an open-source, transaction-level discrete-event simulator based on the Open Compute Project HBF specification. HBF-EventLab connects host request dispatch, command admission, fragmented write assembly, read dispatch, NAND execution, and completion feedback within a shared event loop. It explicitly models distinct resource lifetimes and separates configurable scheduling policies from ordering and resource constraints, enabling controlled exploration of host-device coordination. Experiments show how resource limits, address interleaving, fragment arrival patterns, and scheduling policies affect write completion and request latency. The results highlight the need to consider resource limits and scheduling policies jointly, accounting for their interactions with write assembly and read eligibility. We also integrate HBF-EventLab with real GPU execution of Qwen3-0.6B, combining profiled GPU activity durations with simulated weight-access delays to estimate time to first token and time per output token, with logits and output tokens remaining bitwise identical to those from native GPU execution. HBF-EventLab provides a configurable foundation for studying HBF mechanisms, exploring scheduling policies, and assessing how HBF access delays affect application-level timing. The source code is publicly available at https://github.com/sjtu-epcc/HBF-EventLab.",
+  "url": "https://arxiv.org/abs/2611.19861",
+  "pdf_url": "https://arxiv.org/pdf/2611.19861",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Ziqing Mei",
+    "Yiwei Huang",
+    "Zhiyi Zeng",
+    "Yuhao Xiao",
+    "Pu Pang",
+    "Quan Chen",
+    "Deze Zeng",
+    "Minyi Guo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.ET"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/sjtu-epcc/HBF-EventLab",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 46,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "High Bandwidth Flash (HBF) combines NAND flash density with high-bandwidth accelerator connectivity, offering additional memory capacity for large language model inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.19861",
+      "url": "https://arxiv.org/abs/2611.19861"
+    }
+  ]
+}

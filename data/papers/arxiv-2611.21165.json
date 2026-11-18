@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.21165",
+  "title": "A Matter of Stages: Energy-Latency Trade-offs in Multimodal LLM Serving",
+  "abstract": "Online serving of multimodal large language models requires deciding whether to separate visual encoding (E), prefill (P), and decode (D) across GPUs and how to configure their frequencies. EPD disaggregation enables independent stage control, but it also changes communication and queueing behavior. Lowering one stage's frequency can increase queueing and prolong execution across the EPD pipeline. Consequently, reducing power at one stage does not necessarily reduce total GPU energy per request. In this paper, we systematically characterize fused and EPD-disaggregated serving across four multimodal models under a fixed three-GPU budget, followed by single-stage and uniform downclocking experiments across 18 workload combinations. We find that disaggregation reduces GPU energy per successful request by 13.3-37.0% at nearly identical output-token throughput, but increases mean TTFT. Downclocking exhibits distinct stage sensitivities, and aggressive frequency reductions can offset power savings through queueing and longer execution. Across the evaluated workloads, uniform downclocking to 80% reduces GPU energy by 11.7-18.6% with modest mean-latency changes. Guided by these findings, we develop a budgeted frequency exploration strategy to select energy-efficient configurations under latency constraints. Evaluation shows that four probes can identify the lowest-energy feasible configuration among 25 measured candidates across all 288 evaluated positive-margin SLO scenarios. These results provide practical guidance for energy-efficient multimodal serving.",
+  "url": "https://arxiv.org/abs/2611.21165",
+  "pdf_url": "https://arxiv.org/pdf/2611.21165",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Yifan Sun",
+    "Jiantong Jiang",
+    "Zhexiang Zhang",
+    "Xu Bai",
+    "Feng Liu",
+    "Rajkumar Buyya",
+    "Adel N. Toosi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Online serving of multimodal large language models requires deciding whether to separate visual encoding (E), prefill (P), and decode (D) across GPUs and how to configure their frequencies.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.21165",
+      "url": "https://arxiv.org/abs/2611.21165"
+    }
+  ]
+}

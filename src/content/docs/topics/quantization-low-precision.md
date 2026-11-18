@@ -5,10 +5,21 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **422** 篇。
+累计收录 **433** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression](../../papers/arxiv-2611.21216/) | 2026-11-17 | 51 |
+| [Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments](../../papers/arxiv-2611.20012/) | 2026-11-17 | 49 |
+| [MIAO: Microscaling Intermediate Accumulation Optimization](../../papers/arxiv-2611.19722/) | 2026-11-17 | 49 |
+| [LiteLMGuard: Seamless and Lightweight On-Device Guardrails for Small Language Models against Quantization Vulnerabilities](../../papers/arxiv-2505.05619/) | 2026-11-17 | 43 |
+| [JointQ: Joint Scale-and-Integer Quantization for Large Language Models](../../papers/arxiv-2611.20384/) | 2026-11-17 | 43 |
+| [Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality](../../papers/arxiv-2611.18587/) | 2026-11-17 | 42 |
+| [LinQuant: Functional Invariances for Low-Precision Linear Recurrences](../../papers/arxiv-2610.39418/) | 2026-11-17 | 41 |
+| [Gradient-Guided Hardware-Native MIXFP4](../../papers/arxiv-2611.18769/) | 2026-11-17 | 41 |
+| [Does synthetic pre-training pay off on a microcontroller? Accuracy, latency and energy across two MCUs](../../papers/arxiv-2611.19931/) | 2026-11-17 | 40 |
+| [Adaptive Layer-Wise Transformations for Post-Training Quantization of Large Language Models](../../papers/arxiv-2511.17809/) | 2026-11-17 | 40 |
+| [Cross-Precision Transfer, Non-Local Context, and Capacity-Readout Boundaries of Scale Calibration in Low-Bit LLMs](../../papers/arxiv-2610.22771/) | 2026-11-17 | 38 |
 | [CHARMING: Parallel Edge AI Acceleration Across Tensor Processing and In-Memory Computation](../../papers/arxiv-2611.17785/) | 2026-11-16 | 49 |
 | [User-Schedulable Approximations for Quantized Tensor Programs](../../papers/arxiv-2611.17526/) | 2026-11-16 | 43 |
 | [Choosing Quantized Code LLMs by File Size and Energy per Solved Task](../../papers/arxiv-2611.17605/) | 2026-11-16 | 43 |

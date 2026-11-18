@@ -5,10 +5,16 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **138** 篇。
+累计收录 **144** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SpecRelay: Amortize or Avoid the Round Trip in Edge-Cloud Speculative Decoding](../../papers/arxiv-2611.18963/) | 2026-11-17 | 49 |
+| [Text Speeding Itself Up: Recency and Restraint in Session-Local Drafting](../../papers/arxiv-2611.19455/) | 2026-11-17 | 45 |
+| [LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers](../../papers/arxiv-2611.19649/) | 2026-11-17 | 45 |
+| [LoopSkim: Lossless Multi-Depth Speculative Decoding for Looped Language Models](../../papers/arxiv-2611.19896/) | 2026-11-17 | 43 |
+| [Nemotron 3.5 Bolt E4B 4GB: An Open and Efficient Small Language Model for Fast Conversational Agents](../../papers/arxiv-2611.20771/) | 2026-11-17 | 41 |
+| [Test-Time Speculation](../../papers/arxiv-2605.09329/) | 2026-11-17 | 39 |
 | [Efficiently Aligning Draft Models via Parameter- and Data-Efficient Adaptation](../../papers/arxiv-2603.09527/) | 2026-11-16 | 42 |
 | [REAL Loss: Optimizing Real Expected Acceptance Length for Speculative Decoding](../../papers/arxiv-2611.14399/) | 2026-11-11 | 49 |
 | [ForeSpark: Joint Draft and Verification Budget Scheduling for Parallel Speculative Decoding](../../papers/arxiv-2611.13442/) | 2026-11-11 | 44 |

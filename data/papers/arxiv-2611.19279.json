@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.19279",
+  "title": "Rethinking KV Caching for LLM Decode: Free-Space Optical KV Regeneration for Reduction of Memory Traffic",
+  "abstract": "Long-context large language model (LLM) decoding repeatedly reads the historical key-value (KV) cache, making multi-head attention (MHA) memory-bandwidth-bound. Caching layer-input activations instead halves historical-cache storage and traffic, but requires regenerating KV from each cached activation. On digital accelerators such as GPUs, this regeneration takes far longer than fetching the activation from HBM. The KV regeneration overhead outweighs the savings from reduced memory traffic, shifting decode attention from a memory bottleneck to a compute bottleneck. We present OptiDecode, a hybrid optoelectronic decode-attention accelerator that regenerates historical KV using free-space optics and computes attention digitally. Projection weights remain resident on optical tiles, exploiting reuse across historical tokens for high-throughput optical regeneration. Scaling to large models introduces two challenges. First, distributing weights across tiles requires sending the same activations to every head group, while each readout die produces only partial KV. Activation replay shares one set of electrical-to-optical converters across head groups without costly broadcast. In-situ attention avoids transferring partial KV from readout dies to reducers by computing on them locally and exchanging only partial scores, probabilities, and partial outputs. Second, processing an activation chunk through all dependent stages takes longer than one activation-fetch interval. Chunk pipelining overlaps successive chunks so that OptiDecode sustains the HBM activation-fetch rate. OptiDecode demonstrates 1.92-1.99x decode-attention speedup over an ideal GPU KV-read baseline at equal peak HBM bandwidth (A100-B200), for 32K-token contexts across evaluated 30B-175B MHA models, approaching the 2x upper bound from halving historical memory traffic.",
+  "url": "https://arxiv.org/abs/2611.19279",
+  "pdf_url": "https://arxiv.org/pdf/2611.19279",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Aritra Bagchi",
+    "Bin Gao",
+    "James Spall",
+    "Jakub Pietrak",
+    "Weng-Fai Wong",
+    "Tulika Mitra"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.ET"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Long-context large language model (LLM) decoding repeatedly reads the historical key-value (KV) cache, making multi-head attention (MHA) memory-bandwidth-bound.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.19279",
+      "url": "https://arxiv.org/abs/2611.19279"
+    }
+  ]
+}

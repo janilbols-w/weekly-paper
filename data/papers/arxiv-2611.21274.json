@@ -1,0 +1,82 @@
+{
+  "id": "arxiv:2611.21274",
+  "title": "SURMA: Efficient Fine-Grained Communication Offload for SuperPOD",
+  "abstract": "GPU SuperPODs underpin large language model (LLM) serving, but growing bandwidth and round-trip times make inter-GPU communication consume increasing compute resources. SM-driven remote memory access occupies shared memory or registers for in-flight data and competes for SM-to-NoC bandwidth. Dedicated engines can free these resources, but must handle fine-grained transfers, down to a 576\\,B KV-cache entry. NVIDIA's CopyEngine uses less than 1\\% of NVLink bandwidth at 7\\,KB granularity. We present SURMA, an on-die Scale-Up Remote Memory Access engine. Adapting RDMA requires overcoming slow doorbell submission, excessive per-application connection state, head-of-line blocking of completion notifications on shared connections, and costly ordering for multipath transfers. SURMA uses a credit-based shared send queue to reduce submission latency from 1.2\\,$\\mu$s to 400\\,ns; fused write-with-atomic semantics to share connections while independently notifying each transaction; and Network Per Path Ordering to ensure data arrives before the completion flag without Sender or Receiver Ordering. We implement SURMA in RTL on a two-FPGA prototype and evaluate it with two 8-GPU NVLink servers. At 512\\,B granularity, SURMA saturates attainable bandwidth with a single SM, whereas NVLink needs over 14\\% of the SMs. SURMA occupies under 0.5\\% of GPU area and accelerates inference on four models by 1.05--1.26$\\times$ over NVLink.",
+  "url": "https://arxiv.org/abs/2611.21274",
+  "pdf_url": "https://arxiv.org/pdf/2611.21274",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Haoran Shang",
+    "Weifeng Zhang",
+    "Mengzhu Li",
+    "Huizheng Wang",
+    "Sihan Guan",
+    "Xinyang Huang",
+    "Bowen Liu",
+    "Ran Shu",
+    "Xinru Tang",
+    "Ruoyu Wu",
+    "Yinben Xia",
+    "Xiang Li",
+    "Zekun He",
+    "Yachen Wang",
+    "Xianneng Zou",
+    "Jinyi Deng",
+    "Yang Hu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "GPU SuperPODs underpin large language model (LLM) serving, but growing bandwidth and round-trip times make inter-GPU communication consume increasing compute resources.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.21274",
+      "url": "https://arxiv.org/abs/2611.21274"
+    }
+  ]
+}

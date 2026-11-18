@@ -39,7 +39,7 @@ Non-intrusive load monitoring (NILM) infers, from the aggregate signal of a sing
 ## 元数据
 
 - 作者：Zablon Ombiro
-- 发布：2026-11-10；更新：2026-11-10
+- 发布：2026-11-10；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

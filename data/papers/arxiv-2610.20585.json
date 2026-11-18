@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2610.20585",
   "title": "Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes",
-  "abstract": "Surrogate models approximate the solutions of partial differential equations given a certain geometry and boundary conditions. Traditional transformer-based approaches employ a single mixing mechanism to the whole solution. although the solution fields exhibit variations across multiple spatial scales. We propose a mixture of transformer experts that combines a routing mechanism with multiscale supervision. Specifically, the individual experts are routed through a controller that utilizes learnable Laplacian matrices to compute weights that are subsequently used to define a weighted sum of the experts for the output feature vectors at each point of the domain. Subsequently, a decoder receives the weighted sum of the experts output and predicts the solution fields. During training, the reference fields are decomposed into components at different spatial scales by repeated smoothing with a mesh Laplacian. We evaluate our approach on the official AirFRANS dataset using remeshed solution domains leading to unstructured triangular meshes of $4.9$k vertices. The experimental outcomes reveal lower mean relative $L_2$ error and interior mean squared errors among the compared models of this study.",
+  "abstract": "Surrogate models approximate the solutions of partial differential equations (PDEs) for given geometries and boundary conditions. Conventional Transformer-based approaches typically employ a common feature-mixing mechanism across the solution domain, despite the presence of spatial variations at different scales. In this paper, we propose a mixture of transformer experts that combines a routing mechanism with multiscale supervision. Specifically, the individual experts are routed through a controller that utilizes learnable Laplacian matrices to compute weights, used to define a weighted sum of the experts for the output feature vectors at each point of the domain. Subsequently, a decoder receives the weighted sum of the experts output and predicts the solution fields. During training, the reference fields are decomposed into components at different spatial scales by repeated smoothing with a mesh Laplacian. We evaluate our approach on the official AirFRANS dataset using remeshed solution domains leading to unstructured triangular meshes of $4.9$k vertices. The experimental outcomes reveal lower mean relative $L_2$ error and interior mean squared errors among the compared models of this study. Code and data are publicly available in https://github.com/snousias/hodge-moe-pde",
   "url": "https://arxiv.org/abs/2610.20585",
   "pdf_url": "https://arxiv.org/pdf/2610.20585",
   "published": "2026-10-14",
-  "updated": "2026-11-09",
+  "updated": "2026-11-17",
   "authors": [
     "Stavros Nousias",
     "Akis Nousias",
@@ -21,7 +21,7 @@
   "venue": "",
   "journal_ref": "",
   "comment": "",
-  "code_url": "",
+  "code_url": "https://github.com/snousias/hodge-moe-pde",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -37,27 +37,27 @@
   "keyword_evidence": [
     "mixture of experts"
   ],
-  "score": 43,
+  "score": 48,
   "score_components": {
     "relevance": 16,
     "novelty": 6,
     "rigor": 11,
     "practical_impact": 5,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: mixture of experts",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
-  "summary_en": "Surrogate models approximate the solutions of partial differential equations given a certain geometry and boundary conditions.",
+  "summary_en": "Surrogate models approximate the solutions of partial differential equations (PDEs) for given geometries and boundary conditions.",
   "summary_zh": "",
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-15T04:42:37+00:00",
-  "last_seen": "2026-11-17T04:35:30+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
   "featured_weeks": [],
   "source_records": [
     {

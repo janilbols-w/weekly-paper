@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2611.19722",
+  "title": "MIAO: Microscaling Intermediate Accumulation Optimization",
+  "abstract": "Microscaling (MX) quantization enables lower-precision large language model (LLM) inference with limited accuracy degradation, reducing memory requirement and multiplication cost. However, despite reduced operand precision, accumulation is often retained at high floating-point precisions, leaving a substantial hardware cost that operand quantization alone does not address. In particular, systolic arrays, as used in tensor accelerators such as Google TPU and AWS Trainium, distribute accumulation across distinct processing elements but conventionally use uniform accumulator precision throughout the array. This spatial organization offers an opportunity to reduce hardware cost by tailoring precision to individual accumulation stages. In this work, we present MIAO, a hardware-software co-design framework that jointly selects product precision and stage-dependent accumulator widths to minimize hardware area and energy cost under an end-to-end perplexity constraint. MIAO first calibrates MX block-scale shifts to reduce intermediate magnitudes while preserving operand quantization accuracy, then assigns narrower accumulators to earlier stages and progressively wider accumulators to later stages. To efficiently explore the resulting design space, MIAO combines hardware cost estimates derived from logic synthesis with a calibrated accuracy predictor to identify promising precision configurations, then validates the accuracy of promising candidates through bit-exact end-to-end LLM evaluation. Across MXFP8, MXFP6, and MXFP4, MIAO reduces processing element (PE) array area by up to 38.7% and energy by up to 36.1% relative to the all-BF16 accumulation baseline, with at most 1.60% additional perplexity degradation over operand-only MX quantization across six LLMs.",
+  "url": "https://arxiv.org/abs/2611.19722",
+  "pdf_url": "https://arxiv.org/pdf/2611.19722",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Chloe Wong",
+    "Nicolas Rakela",
+    "Man Shi",
+    "Hansung Kim",
+    "Ruohan Richard Yan",
+    "Coleman Richard Charles Hooper",
+    "Yakun Sophia Shao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "microscaling",
+    "quantization"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: microscaling, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Microscaling (MX) quantization enables lower-precision large language model (LLM) inference with limited accuracy degradation, reducing memory requirement and multiplication cost.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.19722",
+      "url": "https://arxiv.org/abs/2611.19722"
+    }
+  ]
+}

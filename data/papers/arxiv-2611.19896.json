@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2611.19896",
+  "title": "LoopSkim: Lossless Multi-Depth Speculative Decoding for Looped Language Models",
+  "abstract": "Looped language models such as Ouro and Raven apply one weight-shared block several times per token, so autoregressive decoding (AR) runs every loop of every token in sequence. Pipelined self-speculative decoders overlap these loops by drafting tokens from shallow readouts and verifying them at full depth. Yet every loop of a looped LM ends in a readout of the next token, and draft tokens pass through every depth anyway, so each depth can check them without an extra pass. We introduce LoopSkim, in which the depth of the pipeline is the verifier. Draft tokens copied from the context, as in prompt lookup decoding, enter after the first loops, any later readout that contradicts one replaces it at that depth, and only full-depth readouts commit tokens. LoopSkim fixes the random draws of every position in advance, so each check compares two tokens and decoding stays lossless in exact arithmetic under sampling for any number of checks and draft chains. Without training, its speedup over AR averages 1.73x that of LoopSpec across greedy decoding and sampling, and its checks between the first loops and full depth speed it up on every model. An optional draft head adds a second chain and raises this average to 1.99x.",
+  "url": "https://arxiv.org/abs/2611.19896",
+  "pdf_url": "https://arxiv.org/pdf/2611.19896",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Muhan Xiao",
+    "Shijian Li"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "speculative decoding"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: speculative decoding",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Looped language models such as Ouro and Raven apply one weight-shared block several times per token, so autoregressive decoding (AR) runs every loop of every token in sequence.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.19896",
+      "url": "https://arxiv.org/abs/2611.19896"
+    }
+  ]
+}

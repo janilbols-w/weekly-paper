@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.20549",
+  "title": "RoShift: Lazy Shift and Weight-aware Rotation for Activation Sparsity in LLM Inference",
+  "abstract": "Activation sparsity accelerates LLM decoding by skipping unnecessary weight reads and computation. However, SiLU-based LLMs exhibit little natural sparsity, and imposing high sparsity can substantially degrade accuracy. We propose RoShift, a training-free method that transforms activations into sparsity-friendly representations. RoShift introduces lazy shift, which recenters SiLU activation distributions around zero and defers correction to the end of the FFN to obtain additional sparsity. It also reduces sparsification-induced output error through rotation that jointly accounts for activation and weight information. By fusing the corrections required for shifting and rotation, RoShift translates these gains into decoding speedup. At 50% and 60% sparsity, RoShift improves average accuracy over TEAL by 1.60 and 3.29 percentage points, respectively, across five models. It achieves up to $1.72\\times$ decoding speedup over the dense model on an RTX 5090 at 50% sparsity and yields a better accuracy-speedup Pareto frontier than TEAL. Code is available at https://github.com/hulahula3247/RoShift",
+  "url": "https://arxiv.org/abs/2611.20549",
+  "pdf_url": "https://arxiv.org/pdf/2611.20549",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Geunsoo Song",
+    "Jiwon Seo",
+    "Hoeseok Yang",
+    "Youngmin Yi"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/hulahula3247/RoShift",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Activation sparsity accelerates LLM decoding by skipping unnecessary weight reads and computation.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.20549",
+      "url": "https://arxiv.org/abs/2611.20549"
+    }
+  ]
+}

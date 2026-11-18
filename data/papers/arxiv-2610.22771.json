@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2610.22771",
+  "title": "Cross-Precision Transfer, Non-Local Context, and Capacity-Readout Boundaries of Scale Calibration in Low-Bit LLMs",
+  "abstract": "Low-bit post-training quantization freezes integer codes and zero points, leaving groupwise scales as a compact adaptation interface. We study cross-precision transfer, non-local context, optimizer capacity, and readout behavior on Qwen3-1.7B and Llama-3.2-3B. First, transferring relative scale gains between floating-point and INT3 Qwen models with zero recipient training retains 76.9%-90.5% of self-calibration NLL reductions on fresh WikiText and C4, alongside resolved own-source preferences. Group permutation destroys transfer, and norm-matched layer withdrawal degrades all 16 layer-domain comparisons. A Llama control with identical initial tensors at all calibrated projections isolates preferences induced by surrounding network context. Second, expanding Llama calibration from 4 to 196 projections (0.79M to 22.02M scales) makes learning rate 0.01 win a 50-step training-loss pilot. Continuing to 200 steps memorizes the 28-block WikiText pool, inflates unseen perplexity by 2.06-2.28 times relative to 4-site calibration, and degrades mixed-action PIQA accuracy; learning rate 0.001 prevents memorization and restores accuracy. Third, across 24 Qwen ARC readout endpoints, advancing from 200 to 600 steps worsens INT3 teacher KL on plain-text readouts yet improves it under chat wrapping. Cross-fitted four-parameter static option bias explains 71.4%-75.4% of quantized Chat-Space score-shift SSE, versus less than 2.3% on floating point. Subtracting this bias raises INT3 chat teacher agreement from 33.3%-33.9% to 56.6%-57.5% and cuts KL from 4.15-4.42 to 1.18-1.24 nats.",
+  "url": "https://arxiv.org/abs/2610.22771",
+  "pdf_url": "https://arxiv.org/pdf/2610.22771",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Xu Cao",
+    "Wenxuan Xiao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.DB"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Low-bit post-training quantization freezes integer codes and zero points, leaving groupwise scales as a compact adaptation interface.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.22771",
+      "url": "https://arxiv.org/abs/2610.22771"
+    }
+  ]
+}

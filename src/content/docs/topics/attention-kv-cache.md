@@ -5,10 +5,17 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **278** 篇。
+累计收录 **285** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NVFP4-MLA: Unified FP4 KV-Cache Storage and Attention Computation for Multi-Head Latent Attention](../../papers/arxiv-2611.18972/) | 2026-11-17 | 52 |
+| [Exstill: The Most Efficient Single-Chip Processor for the Next Token](../../papers/arxiv-2611.18859/) | 2026-11-17 | 48 |
+| [Multi-Branch Transformer](../../papers/arxiv-2611.19800/) | 2026-11-17 | 44 |
+| [MeltKV: Memory-Aligned KV Cache Compression via Variable-Bit Packed Vector Quantization for Long-Context LLMs](../../papers/arxiv-2611.18652/) | 2026-11-17 | 42 |
+| [SURMA: Efficient Fine-Grained Communication Offload for SuperPOD](../../papers/arxiv-2611.21274/) | 2026-11-17 | 40 |
+| [Latent Lattice Language Models](../../papers/arxiv-2611.21608/) | 2026-11-17 | 40 |
+| [GaugeRoPE: RoPE-Compatible Executable Latent Attention](../../papers/arxiv-2611.20524/) | 2026-11-17 | 40 |
 | [Placing LLM Lookup Tables by Per-Layer Prefetch Deadlines](../../papers/arxiv-2611.13413/) | 2026-11-11 | 44 |
 | [Decode Token Parallelism: Memory-Efficient Distributed Attention Parallelism for Scalable LLM Decoding](../../papers/arxiv-2611.13293/) | 2026-11-11 | 44 |
 | [Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders](../../papers/arxiv-2611.13378/) | 2026-11-11 | 43 |

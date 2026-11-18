@@ -39,7 +39,7 @@ Collaborative edge large language model (LLM) systems often require repeated pre
 ## 元数据
 
 - 作者：Han Shen, Qifu Tyler Sun, Fanyang Meng, Ye Wang, Yongsheng Liang
-- 发布：2026-10-15；更新：2026-11-09
+- 发布：2026-10-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

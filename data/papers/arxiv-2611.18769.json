@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2611.18769",
+  "title": "Gradient-Guided Hardware-Native MIXFP4",
+  "abstract": "Blackwell tensor cores support native inference with 4-bit weights and activations (W4A4), but NVFP4 leaves a perplexity (PPL) gap to BF16. Choosing a format for each 16-element block can improve accuracy, but current matrix multiply instructions cannot execute choices this fine. Applying these rules at hardware-compatible tiles loses most of their benefit. We introduce FlipQuant, which selects E2M1 or E0M3 for each MMA weight tile. It keeps both quantized weight candidates fixed and learns a binary format map from end-to-end gradients of a bucketed KL loss to a BF16 teacher, re-evaluating them after each update. Native kernels execute 16 x 64 tiles on SM120 and 256 x 64 tiles on SM100 with median GEMM overheads of 1.9% and 1.7%, respectively. Across six language models and two corpora, FlipQuant at 16 x 64 closes 42.5% of NVFP4's PPL gap to BF16 on average, compared with 13.3% for FourOverSix. Code is available at https://github.com/brian030128/flipquant.",
+  "url": "https://arxiv.org/abs/2611.18769",
+  "pdf_url": "https://arxiv.org/pdf/2611.18769",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Jian-Jia Chen",
+    "Brian J. Chan",
+    "Wen-Hung Lee",
+    "Yi-Ting Li",
+    "Po-Shen Chen",
+    "Kuan-Te Kuo",
+    "Hsien-Cheng Huang",
+    "Cody Hao Yu",
+    "Chi-Chih Chang",
+    "Mohamed S. Abdelfattah",
+    "Kai-Chiang Wu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/brian030128/flipquant",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 8,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Blackwell tensor cores support native inference with 4-bit weights and activations (W4A4), but NVFP4 leaves a perplexity (PPL) gap to BF16.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.18769",
+      "url": "https://arxiv.org/abs/2611.18769"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2605.13501",
+  "title": "Reward-Weighted On-Policy Distillation with an Open Property-Equivalence Verifier for NL-to-SVA Generation",
+  "abstract": "Specialized language models for translating natural language (NL) into SystemVerilog assertions (SVA) reach approximately 76\\% accuracy on NL2SVA-Human, but aggregate scores obscure errors on bounded-delay and liveness specifications. Models often reuse a small set of implication templates where different temporal behavior is required. Supervised fine-tuning rewards agreement with reference tokens, whereas SVA correctness depends on property equivalence. We propose \\emph{reward-weighted on-policy distillation} (RWOPD), which uses an open SymbiYosys+Z3 property-equivalence checker to select student rollouts and weight their distillation loss. A frozen 14B teacher supplies forward Kullback--Leibler (KL) supervision at each response token; equivalent rollouts receive greater weight than one-sided implications. Starting from curriculum supervised fine-tuning (SFT), RWOPD distills CodeV-SVA-14B into a Qwen2.5-Coder-7B-Instruct student. The student has the highest reported pass@1, pass@5, and pass@10 on NL2SVA-Human and NL2SVA-Machine among the compared models, including specialized baselines and 671B general-purpose models.",
+  "url": "https://arxiv.org/abs/2605.13501",
+  "pdf_url": "https://arxiv.org/pdf/2605.13501",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Qingyun Zou",
+    "Yingze Li",
+    "Tianen Liu",
+    "Bingsheng He",
+    "Weng-Fai Wong"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Specialized language models for translating natural language (NL) into SystemVerilog assertions (SVA) reach approximately 76\\% accuracy on NL2SVA-Human, but aggregate scores obscure errors on bounded-delay and liveness specifications.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.13501",
+      "url": "https://arxiv.org/abs/2605.13501"
+    }
+  ]
+}

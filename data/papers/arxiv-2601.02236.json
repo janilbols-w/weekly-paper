@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2601.02236",
+  "title": "CD4LM: Consistency Distillation and aDaptive Decoding for Diffusion Language Models",
+  "abstract": "Diffusion language models (DLMs) accelerate generation by decoding multiple tokens in parallel, but pushing them to fast decoding often sacrifices accuracy. We attribute this to a static-to-dynamic mismatch: training optimizes local denoising under fixed schedules, while fast inference skips steps and encounters irregular mask patterns. Existing accelerators largely address only one side of this problem. Training-free inference methods speed up decoding without changing the model, leaving the mismatch unresolved; training-side distillation methods adapt the model, but often tie the student to a specific decoding trajectory, limiting composability and still suffering accuracy loss. We propose CD4LM, a composable framework for accurate DLM acceleration. Its core training component, Discrete-Space Consistency Distillation (DSCD) trains a trajectory-invariant student on diverse masked states, reducing the mismatch without fixing a decoding policy. We pair DSCD with a lightweight ConfidenceAdaptive Decoder, while keeping the trained student compatible with external inference-side accelerators. On GSM8K, CD4LM preserves accuracy while achieving a 5.18x speedup; stacking CD4LM with per-step cache accelerators further pushes speedup to 9.73x at teacher-level accuracy, suggesting a scalable path for combining training-side robustness with future decoding advances. Code is available at https://github.com/yihao-liang/CDLM.",
+  "url": "https://arxiv.org/abs/2601.02236",
+  "pdf_url": "https://arxiv.org/pdf/2601.02236",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Yihao Liang",
+    "Ze Wang",
+    "Ximeng Sun",
+    "Jiang Liu",
+    "Jialian Wu",
+    "Hao Chen",
+    "Xiaodong Yu",
+    "Emad Barsoum",
+    "Zicheng Liu",
+    "Niraj K. Jha"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/yihao-liang/CDLM",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 10,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Diffusion language models (DLMs) accelerate generation by decoding multiple tokens in parallel, but pushing them to fast decoding often sacrifices accuracy.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2601.02236",
+      "url": "https://arxiv.org/abs/2601.02236"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2607.08170",
+  "title": "Understanding Layer Patching in Model Size Interpolation",
+  "abstract": "Layer patching is a key technique for model size interpolation in large language models (LLMs), in which a subset of a distilled student model's layers is replaced with corresponding teacher-model layers to construct intermediate-sized models without additional training. Prior work largely ignores the order in which layers are patched, which we show can dramatically affect the performance and reliability of the resulting models. In this work, we study the role of layer patching in model size interpolation. We cast finding the optimal layer subset for each model size as an optimization problem and prove it can be viewed as a shortest-path problem in a certain acyclic graph. In experiments, we show that patching strongly shapes interpolation behavior, with effects that vary substantially across model families. We find that simple sequential strategies---patching either from the first layer to the last or from the last to the first---often achieve surprisingly strong performance in practice. We further introduce KLPatch, a greedy patching algorithm based on KL divergence, which often improves over last-to-first patching and approximately solves the optimization problem. Together, our results provide a principled understanding of how layer patching affects model size interpolation and offer practical guidance for constructing near-optimal interpolated models. The code and models are available at https://github.com/dcml-lab/boomerang-distillation.",
+  "url": "https://arxiv.org/abs/2607.08170",
+  "pdf_url": "https://arxiv.org/pdf/2607.08170",
+  "published": "2026-11-17",
+  "updated": "2026-11-17",
+  "authors": [
+    "Sara Kangaslahti",
+    "Jonathan Geuter",
+    "Nihal V. Nayak",
+    "Marco Fumero",
+    "Francesco Locatello",
+    "David Alvarez-Melis"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/dcml-lab/boomerang-distillation",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Layer patching is a key technique for model size interpolation in large language models (LLMs), in which a subset of a distilled student model's layers is replaced with corresponding teacher-model layers to construct intermediate-sized models without additional training.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-18T04:35:22+00:00",
+  "last_seen": "2026-11-18T04:35:22+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2607.08170",
+      "url": "https://arxiv.org/abs/2607.08170"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ Gradient-based attribution provides input-specific information about model param
 ## 元数据
 
 - 作者：Davide Wiest, Ahanaf Hasan Ariq, Abdul Monaf Chowdhury
-- 发布：2026-10-12；更新：2026-10-12
+- 发布：2026-10-12；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Axym-Labs/kpsa](https://github.com/Axym-Labs/kpsa)
 - 阅读深度：metadata
