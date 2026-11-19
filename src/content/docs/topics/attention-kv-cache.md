@@ -5,10 +5,14 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **285** 篇。
+累计收录 **288** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [HyCoInfer: Cloud-Edge Collaborative Inference for Large Language Models on Heterogeneous GPU-FPGA Architectures](../../papers/arxiv-2611.22086/) | 2026-11-18 | 45 |
+| [KVUse: Reusable-KV User Memory for Efficient LLM Recommenders](../../papers/arxiv-2611.21920/) | 2026-11-18 | 43 |
+| [From Token Changes to Task Failures: Bit Flips in a Shared KV-Cache Block](../../papers/arxiv-2611.22243/) | 2026-11-18 | 40 |
+| [TAILROLL: Tail-Aware Rollout Acceleration for RL-Based LLM Post-Training](../../papers/arxiv-2611.22206/) | 2026-11-18 | 39 |
 | [NVFP4-MLA: Unified FP4 KV-Cache Storage and Attention Computation for Multi-Head Latent Attention](../../papers/arxiv-2611.18972/) | 2026-11-17 | 52 |
 | [Exstill: The Most Efficient Single-Chip Processor for the Next Token](../../papers/arxiv-2611.18859/) | 2026-11-17 | 48 |
 | [Multi-Branch Transformer](../../papers/arxiv-2611.19800/) | 2026-11-17 | 44 |
@@ -127,7 +131,6 @@ description: "Attention & KV Cache"
 | [Refusal-Gated Decoding: Preserving Refusal Behavior Under High-Temperature Sampling](../../papers/arxiv-2607.20791/) | 2026-10-07 | 41 |
 | [KV Cache Translation across Heterogeneous Large Language Models](../../papers/arxiv-2607.28979/) | 2026-10-06 | 52 |
 | [Adaptive KV Cache Reuse for Fast Long-Context LLM Serving](../../papers/arxiv-2605.24022/) | 2026-10-06 | 52 |
-| [OVAL: Output-Aware Local Page Bases for KV Cache Retrieval](../../papers/arxiv-2610.06686/) | 2026-10-06 | 48 |
 | [Request Order Matters: Cache-History Sensitivity in Selective KV-Cache Reuse for Rolling Agents](../../papers/arxiv-2610.05833/) | 2026-10-06 | 46 |
 | [RealtimeWAM: One-Step Asynchronous World Action Models](../../papers/arxiv-2610.06617/) | 2026-10-06 | 44 |
 | [DeferKV: Rethinking Eviction Timing for One-Shot KV Cache Compression](../../papers/arxiv-2610.06286/) | 2026-10-06 | 44 |
@@ -184,7 +187,7 @@ description: "Attention & KV Cache"
 | [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](../../papers/arxiv-2609.24991/) | 2026-09-21 | 52 |
 | [TierKV: Long-Context On-Device LLMs via Predictive Multi-Tier KV Caching](../../papers/arxiv-2609.21172/) | 2026-09-21 | 43 |
 | [Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache](../../papers/arxiv-2609.24635/) | 2026-09-21 | 38 |
-| [SPLASH: Co-Designing Sparse Attention with High-Bandwidth Flash for Efficient Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-20 | 47 |
+| [SPLASH: A Virtualized HBM-HBF Hierarchy with Flash-Aware Sparse Attention for Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-20 | 44 |
 | [ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs](../../papers/arxiv-2609.23314/) | 2026-09-20 | 42 |
 | [Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management](../../papers/arxiv-2609.26828/) | 2026-09-20 | 42 |
 | [Exploring a Layer-Wise Design Space for KV Cache Eviction](../../papers/arxiv-2606.15157/) | 2026-09-18 | 40 |

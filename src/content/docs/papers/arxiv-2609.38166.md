@@ -39,7 +39,7 @@ Recent LLMs increasingly adopt hybrid designs that replace standard attention wi
 ## 元数据
 
 - 作者：Yi Pan, Haocheng Xi, Kan Zhu, Xingyang Li, Yibo Wu, Mayank Mishra, Hongtao Zhang, William X. Zheng, Baris Kasikci, Song Han, Kurt Keutzer, Rishabh Iyer, Ion Stoica
-- 发布：2026-09-29；更新：2026-11-11
+- 发布：2026-09-29；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

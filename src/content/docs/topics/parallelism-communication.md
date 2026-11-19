@@ -5,10 +5,11 @@ description: "Parallelism & Communication"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 并行与通信**
 
-累计收录 **21** 篇。
+累计收录 **22** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Communicate the Change: Efficient Expert Parallelism via Activation Compression](../../papers/arxiv-2611.22215/) | 2026-11-18 | 43 |
 | [Network-Native DNN Architecture Synthesis for Distributed Inference](../../papers/arxiv-2611.20824/) | 2026-11-17 | 48 |
 | [Deterministic, Reproducible Inference in Exact Integer Arithmetic, and Verifiable Distributed Inference as Its Consequence](../../papers/arxiv-2611.13730/) | 2026-11-11 | 42 |
 | [FRESCO: A Novel Consistency Control for Asynchronous Pipeline Parallel Training](../../papers/arxiv-2611.11238/) | 2026-11-10 | 44 |

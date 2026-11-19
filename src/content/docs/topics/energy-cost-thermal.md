@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **67** 篇。
+累计收录 **69** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LaFlash: Capacity-Driven Acceleration for Coding Agent Workflows via QLC-HBF](../../papers/arxiv-2611.22746/) | 2026-11-18 | 47 |
+| [Multicore Quantum Architecture for Scalable and Energy-Aware Green IoT Computing](../../papers/arxiv-2611.21663/) | 2026-11-18 | 45 |
 | [TRACK: Tool-Augmented Reasoning over Time Series for Fault Diagnosis in Power Management System](../../papers/arxiv-2611.21178/) | 2026-11-17 | 43 |
 | [ERGo: Energy-Efficient Hybrid Graph Neural Network Training on Processing-In-Memory Architectures](../../papers/arxiv-2611.17478/) | 2026-11-16 | 47 |
 | [Coordinated Cooling and Compute Management for AI Datacenters](../../papers/arxiv-2601.08113/) | 2026-11-16 | 41 |

@@ -5,10 +5,14 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **109** 篇。
+累计收录 **113** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [StreamingDPD: A 1.28-GSa/s Instantaneous-Power-Gated Depthwise TCN Accelerator for Real-Time 320-MHz Digital Predistortion](../../papers/arxiv-2611.23101/) | 2026-11-18 | 54 |
+| [Chimera: A Configurable LLM Decode Accelerator Architecture with Compute-Memory-Floorplan Co-Design for HBM-Equipped Multi-Die FPGAs](../../papers/arxiv-2611.21677/) | 2026-11-18 | 48 |
+| [SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding](../../papers/arxiv-2611.22296/) | 2026-11-18 | 44 |
+| [The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler](../../papers/arxiv-2611.21852/) | 2026-11-18 | 41 |
 | [Rethinking KV Caching for LLM Decode: Free-Space Optical KV Regeneration for Reduction of Memory Traffic](../../papers/arxiv-2611.19279/) | 2026-11-17 | 48 |
 | [HBF-EventLab: A Discrete-Event Simulator for Studying Host-Device Coordination in High Bandwidth Flash](../../papers/arxiv-2611.19861/) | 2026-11-17 | 46 |
 | [LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States](../../papers/arxiv-2611.20331/) | 2026-11-17 | 39 |

@@ -5,10 +5,13 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **791** 篇。
+累计收录 **794** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LoopPrune: Recurrent Pruning for Looped Diffusion Transformers](../../papers/arxiv-2611.22757/) | 2026-11-18 | 50 |
+| [SilverSpoon-KD: A General-Purpose Toolkit for Knowledge Distillation](../../papers/arxiv-2611.22842/) | 2026-11-18 | 49 |
+| [The Kernel Reality Check: Benchmarking and Distilling Efficient Attention at Scale](../../papers/arxiv-2611.22947/) | 2026-11-18 | 45 |
 | [HEED: Density-Weighted Residual Alignment for Hybrid Vision-Language Model Distillation](../../papers/arxiv-2605.17093/) | 2026-11-17 | 52 |
 | [Simple yet Effective Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization](../../papers/arxiv-2505.07675/) | 2026-11-17 | 48 |
 | [CD4LM: Consistency Distillation and aDaptive Decoding for Diffusion Language Models](../../papers/arxiv-2601.02236/) | 2026-11-17 | 47 |

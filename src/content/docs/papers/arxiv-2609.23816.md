@@ -1,15 +1,15 @@
 ---
-title: "SPLASH: Co-Designing Sparse Attention with High-Bandwidth Flash for Efficient Long-Context Inference"
-description: "The key-value (KV) cache has become the dominant consumer of memory in large language model (LLM) serving systems as context lengths, concurrency, and request lifetimes grow."
+title: "SPLASH: A Virtualized HBM-HBF Hierarchy with Flash-Aware Sparse Attention for Long-Context Inference"
+description: "As context lengths, request lifetimes and concurrency grow, the key-value (KV) cache dominates memory usage in large language model (LLM) inference."
 ---
 
-**评分：47/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：44/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2609.23816) · [PDF](https://arxiv.org/pdf/2609.23816)
 
 ## 一句话摘要
 
-The key-value (KV) cache has become the dominant consumer of memory in large language model (LLM) serving systems as context lengths, concurrency, and request lifetimes grow.
+As context lengths, request lifetimes and concurrency grow, the key-value (KV) cache dominates memory usage in large language model (LLM) inference.
 
 ## 为什么值得关注
 
@@ -17,29 +17,29 @@ The key-value (KV) cache has become the dominant consumer of memory in large lan
 
 ## 摘要原文
 
-The key-value (KV) cache has become the dominant consumer of memory in large language model (LLM) serving systems as context lengths, concurrency, and request lifetimes grow. High-bandwidth memory (HBM) provides the bandwidth attention decode needs but limited capacity, while off-package memory and storage add capacity but lack the bandwidth to sustain attention decode. High-Bandwidth Flash (HBF) is a promising substrate that combines terabyte-scale capacity with near-HBM read bandwidth. Limited write endurance makes read-only model weights its natural use, but we argue that HBF paired with HBM as a hierarchy can also hold the KV cache. Unlike prior hierarchies, whose secondary tiers are bandwidth bottlenecked, the comparable bandwidths let the two act as one logical memory for the long-context KV cache. HBF capacity enables long-context serving, and sparse attention makes it efficient by limiting KV-cache reads during memory-bound decode. Since HBF reads full flash pages and aggregates bandwidth by accessing thousands of parallel flash planes, sparse attention must be co-designed with these physical properties. We present SPLASH, an algorithm and architecture co-design that virtualizes the KV cache across HBM and HBF and adapts sparse attention to HBF's page granularity and plane-level parallelism. Across models and context lengths, SPLASH improves decode throughput per GPU by 3.5x-11.4x over the evaluated baselines under a 100 ms per-token latency objective, while keeping accuracy within 4% of dense attention across long-context suites.
+As context lengths, request lifetimes and concurrency grow, the key-value (KV) cache dominates memory usage in large language model (LLM) inference. High-bandwidth memory (HBM), the memory on contemporary GPUs, achieves far higher bandwidth than off-package memory, yet its capacity, bounded by DRAM density, has not kept pace with this demand. High-Bandwidth Flash (HBF), an emerging memory technology, bridges this gap, combining the advanced packaging of HBM with the density of flash to deliver terabyte-scale capacity at HBM-class read bandwidth. Exploiting this capacity for long-context KV caches, however, requires hiding the vastly different physical characteristics of flash from the GPU while keeping decode interactive. We therefore introduce Splash, an architecture that virtualizes HBM and HBF for the KV cache. We architect custom HBM and HBF base dies with novel memory and flash controllers that handle the access semantics and device management of flash. These controllers keep the GPU agnostic of the underlying memory, allowing the HBM-HBF hierarchy to behave as one logical memory for the KV cache. The added capacity of HBF enables long contexts, but dense attention, which reads the entire KV cache for every generated token, cannot keep decode interactive at these lengths. Splash therefore makes sparse attention flash-aware through query-driven address translation, in which the HBF base die resolves each query into the flash addresses of the relevant KV pages and schedules their reads across flash planes. Since the HBF base die holds the location of every page, this translation hides flash from the GPU and balances the selected reads across flash planes, coupling abstraction with performance. Across five models and up to one million tokens, Splash improves per-GPU decode throughput by up to 4.5x over the strongest baseline under a 100 ms latency budget.
 
 ## 质量评分
 
 | 维度 | 得分 |
 |---|---:|
-| relevance | 14 |
-| novelty | 5 |
-| rigor | 9 |
+| relevance | 12 |
+| novelty | 6 |
+| rigor | 7 |
 | practical impact | 14 |
 | reproducibility | 2 |
 | credibility | 3 |
 
 ## 证据与限制
 
-- taxonomy keywords: kv cache, kv-cache
+- taxonomy keywords: kv cache
 - quantitative claim detected
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Aditya Anirudh Jonnalagadda, Agasthi Haputhanthri, Pranav Dangi, Rohan Juneja, Wenshuo Yue, Aritra Bagchi, Bin Gao, Tulika Mitra
-- 发布：2026-09-20；更新：2026-09-22
+- 发布：2026-09-20；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

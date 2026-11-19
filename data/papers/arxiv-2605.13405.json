@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2605.13405",
+  "title": "When is Warmstarting Effective for Scaling Language Models?",
+  "abstract": "Model growth from a given checkpoint aims to accelerate training of a larger model, offering potential resource savings. Despite recent interest, warmstarting has seen limited practical adoption in large-scale training. We attribute this to two underexplored factors: (1) an overemphasis on preserving the smaller model's performance at initialization, which constrains operator design for new architectures, and (2) insufficient analysis of how growth interacts with hyperparameters and scaling behavior, compounded by inconsistent growth factors across the literature. We show that preserving the base model's initial post-growth performance is not necessary for strong final performance, and that simple, architecture-agnostic growth strategies can outperform more complex warmstarting operators. Crucially, we empirically identify an upper bound on the growth factor $g$ beyond which training from scratch is more efficient. We observe this across multiple ablation setups. Notably, this limit is also present, but unreported, in prior published results. Across our experiments on dense MLPs and dense language models, we find that a $2\\times$ growth factor is the most reliable in yielding convergence speedups, with gains most pronounced under 20 tokens/parameter budgets and diminishing as budget increases. We fit scaling laws over these observations to provide predictive guidance for practitioners deciding when and how much to grow. Together, our analysis provides practical guidelines and empirical limits for model growth.",
+  "url": "https://arxiv.org/abs/2605.13405",
+  "pdf_url": "https://arxiv.org/pdf/2605.13405",
+  "published": "2026-11-18",
+  "updated": "2026-11-18",
+  "authors": [
+    "Neeratyoy Mallik",
+    "Maciej Janowski",
+    "Johannes Hog",
+    "Herilalaina Rakotoarison",
+    "Josif Grabocka",
+    "Frank Hutter",
+    "Aaron Klein"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Model growth from a given checkpoint aims to accelerate training of a larger model, offering potential resource savings.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-19T04:35:46+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.13405",
+      "url": "https://arxiv.org/abs/2605.13405"
+    }
+  ]
+}

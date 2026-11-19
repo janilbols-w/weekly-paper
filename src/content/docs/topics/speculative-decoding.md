@@ -5,10 +5,12 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **144** 篇。
+累计收录 **146** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [VisHead-Spec: Head-Routed Visual Attention for Multimodal Speculative Decoding](../../papers/arxiv-2611.21839/) | 2026-11-18 | 46 |
+| [DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding](../../papers/arxiv-2611.21925/) | 2026-11-18 | 42 |
 | [SpecRelay: Amortize or Avoid the Round Trip in Edge-Cloud Speculative Decoding](../../papers/arxiv-2611.18963/) | 2026-11-17 | 49 |
 | [Text Speeding Itself Up: Recency and Restraint in Session-Local Drafting](../../papers/arxiv-2611.19455/) | 2026-11-17 | 45 |
 | [LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers](../../papers/arxiv-2611.19649/) | 2026-11-17 | 45 |

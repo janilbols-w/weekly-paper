@@ -5,12 +5,13 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **36** 篇。
+累计收录 **37** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference](../../papers/arxiv-2611.19669/) | 2026-11-17 | 52 |
+| [Localized LoRA-MoE: Mixture of Low-Rank Experts With Adaptive Routing](../../papers/arxiv-2607.05114/) | 2026-11-18 | 43 |
 | [CECAR: Cache & Expert Co-Aware Routing Accelerates On-Device Inference of MoE LLMs](../../papers/arxiv-2611.20119/) | 2026-11-17 | 51 |
+| [IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference](../../papers/arxiv-2611.19669/) | 2026-11-17 | 45 |
 | [dMoE: dLLMs with Learnable Block Experts](../../papers/arxiv-2605.30876/) | 2026-11-10 | 48 |
 | [Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective](../../papers/arxiv-2610.30923/) | 2026-10-23 | 42 |
 | [Towards Looped Models Done Right, Part I: Topology, Input Injection, Recurrent-State Design](../../papers/arxiv-2610.23036/) | 2026-10-19 | 38 |

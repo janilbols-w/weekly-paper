@@ -39,7 +39,7 @@ Optical Circuit Switching (OCS) offers high bandwidth density and energy efficie
 ## 元数据
 
 - 作者：Arno Troch, Seyyidahmed Lahmer, Abubakr Nada, Jeroen Famaey, Michael Peeters
-- 发布：2026-09-23；更新：2026-09-23
+- 发布：2026-09-23；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

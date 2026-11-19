@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **140** 篇。
+累计收录 **141** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [When is Warmstarting Effective for Scaling Language Models?](../../papers/arxiv-2605.13405/) | 2026-11-18 | 38 |
 | [IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation](../../papers/arxiv-2611.19793/) | 2026-11-17 | 39 |
 | [DeltaBox: Millisecond-Scale Sandbox Checkpoint and Rollback for Stateful AI Agents](../../papers/arxiv-2605.22781/) | 2026-11-16 | 51 |
 | [G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands](../../papers/arxiv-2611.17814/) | 2026-11-16 | 40 |

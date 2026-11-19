@@ -5,10 +5,11 @@ description: "Fault Tolerance & Elasticity"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 容错与弹性**
 
-累计收录 **29** 篇。
+累计收录 **30** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Gradient Manipulation in Distributed Stochastic Gradient Descent with Strategic Agents: Truthful Incentives with Convergence Guarantees](../../papers/arxiv-2603.27962/) | 2026-11-18 | 44 |
 | [Efficient Collaborative LLM Fine-Tuning over Heterogeneous Mobile Devices via Many Backbones to One Side-Network Tuning](../../papers/arxiv-2508.06765/) | 2026-11-04 | 40 |
 | [Replica-Aware Split Inference for Edge IoT Systems](../../papers/arxiv-2611.04779/) | 2026-11-04 | 38 |
 | [A local orchestration harness for molecular design with foundation models](../../papers/arxiv-2611.03676/) | 2026-11-04 | 38 |

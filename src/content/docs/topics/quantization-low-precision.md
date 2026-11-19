@@ -5,10 +5,17 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **433** 篇。
+累计收录 **440** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BQ-LoRA: Binary-Quantized Low-Rank Adapters as Implicit Regularizers for Parameter-Efficient Fine-Tuning](../../papers/arxiv-2611.22334/) | 2026-11-18 | 50 |
+| [Beyond Bitwidth: Deployment-Constrained Mixed-Precision Quantization for Multilingual LLM Inference on NVIDIA Blackwell](../../papers/arxiv-2611.21974/) | 2026-11-18 | 48 |
+| [Computed Permutation Trellis Coding: Near-Optimal Quantization from Two Multiplications and a 64-Byte Table](../../papers/arxiv-2611.22019/) | 2026-11-18 | 45 |
+| [DAQ: Decision-Aligned Post-Training Quantization for Spiking Transformers](../../papers/arxiv-2611.22611/) | 2026-11-18 | 43 |
+| [TempQuant: Learning Adaptive Temperatures for Quantized Language Models](../../papers/arxiv-2611.22128/) | 2026-11-18 | 41 |
+| [Watermark Evidence under Open-Weight LLM Modification: Exact Bounds for Low-Rank Output Watermarks](../../papers/arxiv-2611.21702/) | 2026-11-18 | 39 |
+| [HADVQ: Hessian Aware Directional Vector Quantization](../../papers/arxiv-2611.22721/) | 2026-11-18 | 38 |
 | [MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression](../../papers/arxiv-2611.21216/) | 2026-11-17 | 51 |
 | [Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments](../../papers/arxiv-2611.20012/) | 2026-11-17 | 49 |
 | [MIAO: Microscaling Intermediate Accumulation Optimization](../../papers/arxiv-2611.19722/) | 2026-11-17 | 49 |

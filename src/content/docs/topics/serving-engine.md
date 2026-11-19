@@ -5,10 +5,12 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **139** 篇。
+累计收录 **141** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [JigSLO: Solving the Resource Puzzle for Efficient Multi-LLM Serving](../../papers/arxiv-2509.06261/) | 2026-11-18 | 51 |
+| [XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools](../../papers/arxiv-2611.22280/) | 2026-11-18 | 45 |
 | [SplitZip: Ultra Fast Lossless KV Compression for Disaggregated LLM Serving](../../papers/arxiv-2605.01708/) | 2026-11-17 | 52 |
 | [A Matter of Stages: Energy-Latency Trade-offs in Multimodal LLM Serving](../../papers/arxiv-2611.21165/) | 2026-11-17 | 50 |
 | [BrownoutMoE: Learning Structure-Aware Expert Grouping for Adaptive Mixture-of-Experts Model Serving](../../papers/arxiv-2607.04164/) | 2026-11-17 | 44 |

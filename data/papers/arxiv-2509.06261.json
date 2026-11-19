@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2509.06261",
+  "title": "JigSLO: Solving the Resource Puzzle for Efficient Multi-LLM Serving",
+  "abstract": "GPU spatial sharing co-locates instances with complementary demands, such as compute-bound prefill and memory-bound decode, promising cost-efficient multi-LLM serving. Prior systems partition compute and coordinate shared memory capacity, but do not model bandwidth contention among co-located instances of heterogeneous LLMs. This contention makes each instance's latency depend on the memory-access patterns of its co-runners, even when its own resource allocation remains unchanged. Drawing on extensive measurements, we find that the latency impact of bandwidth contention can be captured by a time-shared memory-access model with contended and uncontended periods, so the overall latency can be analytically estimated as a time-weighted average of the latency estimates for these periods. We propose JigSLO, a contention-aware multi-LLM serving system that manages memory resources and schedules each model's prefill and decode phases as separate instances, treating their co-location as a placement decision. Its contention-aware predictor estimates per-instance latency under any co-location from standalone profiles alone. Guided by these predictions, its placement algorithm jointly selects each instance's tensor parallelism, compute share, and batch configuration, pairing complementary memory-access patterns to maximize throughput within each model's latency targets. JigSLO's shared resource manager complements this on the capacity side, sharing weights, pooling KV cache, and transferring it between prefill and decode instances. Across three datasets covering chat, code generation, and long-context summarization, JigSLO outperforms state-of-the-art baselines by $2.3\\times$ in SLO attainment and $1.2\\times$ in throughput on average, matching their best attainment with half the GPUs on long-context workloads.",
+  "url": "https://arxiv.org/abs/2509.06261",
+  "pdf_url": "https://arxiv.org/pdf/2509.06261",
+  "published": "2026-11-18",
+  "updated": "2026-11-18",
+  "authors": [
+    "Kyungmin Bin",
+    "Seungbeom Choi",
+    "Jimyoung Son",
+    "Jieun Choi",
+    "Daseul Bae",
+    "Daehyeon Baek",
+    "Kihyo Moon",
+    "Minsung Jang",
+    "Hyojung Lee"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 51,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "GPU spatial sharing co-locates instances with complementary demands, such as compute-bound prefill and memory-bound decode, promising cost-efficient multi-LLM serving.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-19T04:35:46+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2509.06261",
+      "url": "https://arxiv.org/abs/2509.06261"
+    }
+  ]
+}
