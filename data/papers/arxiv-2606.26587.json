@@ -61,10 +61,10 @@
     "code/artifact link detected"
   ],
   "summary_en": "Low-bit floating-point formats and semi-structured sparsity are increasingly supported by modern accelerators, yet combining them for LLM activation compression remains challenging: activations contain input-dependent outliers that dominate block scales in FP4 quantization, and directly applying N:M sparsity masks discards moderate values, coupling sparsific",
-  "summary_zh": "",
-  "why_it_matters_zh": "",
-  "limitations_zh": "",
-  "reading_depth": "metadata",
+  "summary_zh": "SharQ 以在线稀疏—稠密分解处理激活：将离群值为主的 N:M 稀疏骨干量化为 FP4，再用稠密 FP4 残差同时补偿掩码损失与稀疏路径量化误差，并融合准备阶段算子。",
+  "why_it_matters_zh": "该方法无需校准数据、重训练或模型专用调参，尝试把现代加速器已有的半结构化稀疏与 FP4 能力组合起来，直接改善推理延迟和吞吐。",
+  "limitations_zh": "性能结果主要来自 RTX 5090 与文中选定的模型和低精度格式；双路径 GEMM、融合算子及稀疏 FP4 支持对硬件和运行时有明确依赖，跨平台收益仍待验证。",
+  "reading_depth": "abstract",
   "first_seen": "2026-11-20T04:36:12+00:00",
   "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [

@@ -1,6 +1,6 @@
 ---
 title: "IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference"
-description: "In edge-cloud collaborative inference, the layers of a deep neural network (DNN) are placed on edge and cloud virtual machines (VMs) for every request, while the edge load and the cross-cloud bandwidth change over time."
+description: "IA-MoE 面向边云协同 DNN 推理，按端到端时延与能耗为每个层—虚拟机组合评分并逐层放置；以“剩余请求时间”作为训练目标，缓解只看单层收益导致的短视决策。"
 ---
 
 **评分：56/100** · LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化
@@ -9,11 +9,11 @@ description: "In edge-cloud collaborative inference, the layers of a deep neural
 
 ## 一句话摘要
 
-In edge-cloud collaborative inference, the layers of a deep neural network (DNN) are placed on edge and cloud virtual machines (VMs) for every request, while the edge load and the cross-cloud bandwidth change over time.
+IA-MoE 面向边云协同 DNN 推理，按端到端时延与能耗为每个层—虚拟机组合评分并逐层放置；以“剩余请求时间”作为训练目标，缓解只看单层收益导致的短视决策。
 
 ## 为什么值得关注
 
-待编辑增强。
+它展示了在边缘负载和跨云带宽波动时，调度目标的设计会显著影响卸载策略，可为动态边云推理编排提供一种低训练成本的决策思路。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ In edge-cloud collaborative inference, the layers of a deep neural network (DNN)
 - taxonomy keywords: mixture of experts
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：证据来自 CloudSimSDN 仿真、3 个 DNN 和 2 条请求轨迹，并非真实 LLM 服务部署；轻载时该方法相对简单启发式没有优势，泛化范围仍有限。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ In edge-cloud collaborative inference, the layers of a deep neural network (DNN)
 - 发布：2026-11-14；更新：2026-11-18
 - 来源：arXiv RSS；Venue：Proceedings of the 2025 IEEE International Conference on Networking, Sensing and Control (ICNSC), 2025
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract

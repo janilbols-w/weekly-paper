@@ -1,6 +1,6 @@
 ---
 title: "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs"
-description: "Kernel optimization is essential for efficient large language model (LLM) training and inference on Ascend NPUs."
+description: "AscendGYM 是面向昇腾 NPU 现有内核优化的基准，首批包含 48 个、三档难度的内核，测试形状与数据类型来自真实训练和推理负载，并同时支持模型与自定义智能体评测。"
 ---
 
 **评分：55/100** · LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合
@@ -9,11 +9,11 @@ description: "Kernel optimization is essential for efficient large language mode
 
 ## 一句话摘要
 
-Kernel optimization is essential for efficient large language model (LLM) training and inference on Ascend NPUs.
+AscendGYM 是面向昇腾 NPU 现有内核优化的基准，首批包含 48 个、三档难度的内核，测试形状与数据类型来自真实训练和推理负载，并同时支持模型与自定义智能体评测。
 
 ## 为什么值得关注
 
-待编辑增强。
+它把评测重点从“生成可运行内核”推进到“在真实调用环境中优化已有实现”，并用 Speedup-Token Score 联合衡量加速收益与模型调用成本。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Kernel optimization is essential for efficient large language model (LLM) traini
 - taxonomy keywords: kernel generation, kernel optimization
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：当前范围限于昇腾生态和 48 个内核；摘要未给出不同模型或智能体的系统性对比结果，STS 对真实工程投入与可维护性的覆盖程度也有待进一步检验。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Kernel optimization is essential for efficient large language model (LLM) traini
 - 发布：2026-11-16；更新：2026-11-16
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/SLAI-AITP/AscendGYM](https://github.com/SLAI-AITP/AscendGYM)
-- 阅读深度：metadata
+- 阅读深度：abstract

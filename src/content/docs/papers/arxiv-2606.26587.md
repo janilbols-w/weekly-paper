@@ -1,6 +1,6 @@
 ---
 title: "SharQ: Bridging Activation Sparsity and FP4 Quantization for LLM Inference"
-description: "Low-bit floating-point formats and semi-structured sparsity are increasingly supported by modern accelerators, yet combining them for LLM activation compression remains challenging: activations contain input-dependent outliers that dominate block scales in FP4 quantization, and directly applying N:M sparsity masks discards moderate values, coupling sparsific"
+description: "SharQ 以在线稀疏—稠密分解处理激活：将离群值为主的 N:M 稀疏骨干量化为 FP4，再用稠密 FP4 残差同时补偿掩码损失与稀疏路径量化误差，并融合准备阶段算子。"
 ---
 
 **评分：59/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,11 +9,11 @@ description: "Low-bit floating-point formats and semi-structured sparsity are in
 
 ## 一句话摘要
 
-Low-bit floating-point formats and semi-structured sparsity are increasingly supported by modern accelerators, yet combining them for LLM activation compression remains challenging: activations contain input-dependent outliers that dominate block scales in FP4 quantization, and directly applying N:M sparsity masks discards moderate values, coupling sparsific
+SharQ 以在线稀疏—稠密分解处理激活：将离群值为主的 N:M 稀疏骨干量化为 FP4，再用稠密 FP4 残差同时补偿掩码损失与稀疏路径量化误差，并融合准备阶段算子。
 
 ## 为什么值得关注
 
-待编辑增强。
+该方法无需校准数据、重训练或模型专用调参，尝试把现代加速器已有的半结构化稀疏与 FP4 能力组合起来，直接改善推理延迟和吞吐。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ Low-bit floating-point formats and semi-structured sparsity are increasingly sup
 - taxonomy keywords: fp4, fp8, quantization, quantized
 - no quantitative claim in metadata
 - code/artifact link detected
+- 限制：性能结果主要来自 RTX 5090 与文中选定的模型和低精度格式；双路径 GEMM、融合算子及稀疏 FP4 支持对硬件和运行时有明确依赖，跨平台收益仍待验证。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ Low-bit floating-point formats and semi-structured sparsity are increasingly sup
 - 发布：2026-11-19；更新：2026-11-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/actypedef/SharQ](https://github.com/actypedef/SharQ)
-- 阅读深度：metadata
+- 阅读深度：abstract

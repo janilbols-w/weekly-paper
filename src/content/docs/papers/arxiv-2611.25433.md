@@ -1,6 +1,6 @@
 ---
 title: "RoCoKV: Accelerating LLM Inference Serving through Uncertainty and Redundancy Aware KV Cache Compression"
-description: "KV cache compression is critical for large reasoning models, where most of the cost comes from long generated reasoning traces rather than the input prompt."
+description: "RoCoKV 针对长推理轨迹，按模型不确定性动态调整 KV 缓存裁剪强度，并降低近期重复内容的保留优先级；同时以融合 CUDA 解码内核接入 vLLM 的分页 KV 与 CUDA Graph 路径。"
 ---
 
 **评分：55/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
@@ -9,11 +9,11 @@ description: "KV cache compression is critical for large reasoning models, where
 
 ## 一句话摘要
 
-KV cache compression is critical for large reasoning models, where most of the cost comes from long generated reasoning traces rather than the input prompt.
+RoCoKV 针对长推理轨迹，按模型不确定性动态调整 KV 缓存裁剪强度，并降低近期重复内容的保留优先级；同时以融合 CUDA 解码内核接入 vLLM 的分页 KV 与 CUDA Graph 路径。
 
 ## 为什么值得关注
 
-待编辑增强。
+它把压缩策略与服务栈联合设计，目标是在受限 KV 预算下兼顾推理准确率、吞吐与端到端加速，尤其适合生成阶段占主导的推理模型。
 
 ## 摘要原文
 
@@ -35,6 +35,7 @@ KV cache compression is critical for large reasoning models, where most of the c
 - taxonomy keywords: kv cache
 - quantitative claim detected
 - no code link detected in metadata
+- 限制：实验覆盖 3 个推理基准和 2 个模型，摘要中的服务性能重点来自一个 8B 模型；对更大模型、不同任务分布及其他推理引擎的泛化尚未建立。
 
 ## 元数据
 
@@ -42,4 +43,4 @@ KV cache compression is critical for large reasoning models, where most of the c
 - 发布：2026-11-19；更新：2026-11-19
 - 来源：arXiv；Venue：未确认
 - 代码：未发现
-- 阅读深度：metadata
+- 阅读深度：abstract
