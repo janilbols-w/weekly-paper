@@ -39,7 +39,7 @@ GPU SuperPODs underpin large language model (LLM) serving, but growing bandwidth
 ## 元数据
 
 - 作者：Haoran Shang, Weifeng Zhang, Mengzhu Li, Huizheng Wang, Sihan Guan, Xinyang Huang, Bowen Liu, Ran Shu, Xinru Tang, Ruoyu Wu, Yinben Xia, Xiang Li, Zekun He, Yachen Wang, Xianneng Zou, Jinyi Deng, Yang Hu
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-16；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

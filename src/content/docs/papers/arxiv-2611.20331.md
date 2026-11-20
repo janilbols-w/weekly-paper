@@ -3,7 +3,7 @@ title: "LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Nor
 description: "LayerNorm and attention Softmax are critical operations in Transformers."
 ---
 
-**评分：39/100** · LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理
+**评分：44/100** · LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理
 
 [论文原文](https://arxiv.org/abs/2611.20331) · [PDF](https://arxiv.org/pdf/2611.20331)
 
@@ -27,19 +27,19 @@ LayerNorm and attention Softmax are critical operations in Transformers. However
 | novelty | 6 |
 | rigor | 11 |
 | practical impact | 5 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: accelerator
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Yuhao Liu, Salim Ullah, Akash Kumar
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/liuyh-Horizon/LENS](https://github.com/liuyh-Horizon/LENS)
 - 阅读深度：metadata

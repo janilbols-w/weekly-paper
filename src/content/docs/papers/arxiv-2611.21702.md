@@ -39,7 +39,7 @@ Open-weight language models can continue generating after their released weights
 ## 元数据
 
 - 作者：Prashant Shekhar, Dumindu Samaraweera, Caroline Howard
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-16；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

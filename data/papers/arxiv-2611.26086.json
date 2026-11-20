@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.26086",
+  "title": "ScaleWire: An End-to-End Scale-Up Ethernet Simulation Framework for LLM Systems",
+  "abstract": "LLM training and inference rely on scale-up networks for high-bandwidth, low-latency memory-semantic communication among accelerators (XPUs). Ethernet is emerging as an open interconnect for scale-up systems. In Ethernet systems, network-interface (NI) mechanisms across transport, network, and link layers interact, jointly shaping communication performance and on-chip resource requirements. We present ScaleWire, an end-to-end scale-up Ethernet simulation framework for LLM systems. It couples packet-level simulation of cross-layer NI mechanisms with a resource exploration engine that combines analytical estimates and simulation to size on-chip resources. We validate ScaleWire against hardware measurements and nine analytical checks, and evaluate six NI designs across four LLM communication workloads. For DeepSeek-R1 dispatch, NI design choices lead to a 4.5$\\times$ difference in per-XPU on-chip storage budget. In grid-comparison experiments, the exploration engine uses 6-19% of the simulations required by exhaustive search. Using vLLM prefill traces with kernel times measured on GH200 GPUs, ScaleWire further guides resource provisioning under a completion-time constraint for inference execution. ScaleWire thus helps designers select NI mechanisms and provision on-chip resources to balance communication performance and resource cost.",
+  "url": "http://arxiv.org/abs/2611.26086v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.26086v1",
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "authors": [
+    "Kai Ma",
+    "Quanfeng Lv",
+    "Bowei Dai",
+    "Jingguo Ge",
+    "Kefan Ruan",
+    "Ruoqi Li"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.NI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "7 pages, 8 figures",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "network-interconnect",
+    "leaf": "Network, RDMA & Interconnect",
+    "leaf_zh": "网络、RDMA 与互联"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "interconnect"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 11,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: interconnect",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM training and inference rely on scale-up networks for high-bandwidth, low-latency memory-semantic communication among accelerators (XPUs).",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.26086v1",
+      "url": "http://arxiv.org/abs/2611.26086v1"
+    }
+  ]
+}

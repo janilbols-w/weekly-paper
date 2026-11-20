@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2611.19085",
+  "title": "DynaDFlash: Dynamic Feature Projection for Block Diffusion Speculators",
+  "abstract": "DFlash trains a parallel draft model on hidden features from its target model. Inspired by the previous work of DFlare that introduced per layer combinations of target hidden states, we test whether context dependent weighting of these states helps improve acceptance length of block diffusion speculators. We trained both a DFlash baseline for the Qwen 3 of block size 16, and a dynamic model that computes gates for each layer to affect the magnitude of hidden features before projection. While mean acceptance length between the dynamic model and the DFlash baseline didn't significantly differ, we notice that the dynamic model excels for drafting in the context of math. In an evaluation of 700 prompts from the MetaMathQA and Orca-Math datasets, the mean accepted length improves by 5%. We also found this lead to a 4.1% higher throughput for a subset of the same dataset in the context of speculative decoding.",
+  "url": "http://arxiv.org/abs/2611.19085v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.19085v1",
+  "published": "2026-11-14",
+  "updated": "2026-11-14",
+  "authors": [
+    "Aadi Kulshrestha",
+    "Reese Chong"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "Code and trained models available at https://github.com/midas-llm-research/DynaDFlash",
+  "code_url": "https://github.com/midas-llm-research/DynaDFlash",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "draft model",
+    "speculative decoding"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 5,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: draft model, speculative decoding",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "DFlash trains a parallel draft model on hidden features from its target model.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.19085v1",
+      "url": "http://arxiv.org/abs/2611.19085v1"
+    }
+  ]
+}

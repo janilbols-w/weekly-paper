@@ -1,0 +1,77 @@
+{
+  "id": "arxiv:2605.19782",
+  "title": "Prior Knowledge or Search? A Study of LLM Agents in Hardware-Aware Code Optimization",
+  "abstract": "LLM discovery and optimization systems are increasingly applied across domains, implementing a common propose-evaluate-revise loop. Such optimization or discovery progresses via context conditioning on received feedback from an environment. However, as modern LLM agents are increasingly complex in their structure, it is difficult to evaluate which components contribute the most, and when and how this exploration may fail. We answer these questions through three controlled experiments. Our findings: (1) In pure black-box optimization, LLMs act as greedy optimizers. (2) In zero-shot kernel generation, providing explicit input-size information has no measurable effect, models converge to the same kernel parameters regardless of size or temperature, as though the size instruction were invisible. Moreover, when tasked to perform kernel optimization for uncommon kernel sizes, performance sharply degrades regardless of the language used. (3) In feedback-loop kernel optimization, CUDA improves monotonically under iterative feedback, while TVM IR actively degrades, which demonstrates that kernel optimization degrades when models operate with low-density language. Our results conclude that LLMs in code optimization tasks highly depend on pretrained priors rather than provided feedback or agentic structure.",
+  "url": "https://arxiv.org/abs/2605.19782",
+  "pdf_url": "https://arxiv.org/pdf/2605.19782",
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "authors": [
+    "Dmitry Redko (Applied AI Institute)",
+    "Albert Fazlyev (AI Talent Hub",
+    "ITMO University)",
+    "Konstantin Sozykin (Applied AI Institute)",
+    "Maria Ivanova (YSDA",
+    "Applied AI Institute)",
+    "Evgeny Burnaev (Applied AI Institute)",
+    "Egor Shvetsov (Applied AI Institute)"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [
+    "kernels-operators"
+  ],
+  "keyword_evidence": [
+    "hardware-aware"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: hardware-aware",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLM discovery and optimization systems are increasingly applied across domains, implementing a common propose-evaluate-revise loop.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.19782",
+      "url": "https://arxiv.org/abs/2605.19782"
+    }
+  ]
+}

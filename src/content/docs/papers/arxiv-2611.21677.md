@@ -39,7 +39,7 @@ GPUs are widely used for LLM inference, but single-request decoding is memory-bo
 ## 元数据
 
 - 作者：Zhiheng Chen, Yifan Zhang, Yu-An Chou, Ye Qiao, Sitao Huang
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-14；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

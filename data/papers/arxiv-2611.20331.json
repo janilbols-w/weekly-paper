@@ -4,7 +4,7 @@
   "abstract": "LayerNorm and attention Softmax are critical operations in Transformers. However, they cannot be efficiently mapped to General Matrix Multiplication (GEMM) computations on hardware. Therefore, modern hardware accelerator designs, such as NPUs on ASIC/FPGA, consume a large amount of hardware resources or chip area to implement their specific arithmetic units. Building on previous work about LayerNorm, Softmax, and their alternatives, we introduce Learnable Normalization States (LENS), a framework that reformulates LayerNorm as tiny MLPs by abstracting a common structure from related methods and extends this method to Softmax, which moves more of the computation in Transformers to GEMM as a hardware-friendly architecture. We evaluate LENS on image classification with Vision Transformers (ViT) and autoregressive language modeling with Pythia models, including generalization tests on WikiText and LAMBADA. Across these tasks, LENS matches or exceeds baseline performance in several vision settings and retains most of the baseline performance in the remaining vision and language experiments. These findings may suggest that hand-designed normalization and attention functions are not the only choice as alternatives to LayerNorm and Softmax. LENS also provides a basis for exploring Transformer architectures for resource-limited accelerators.",
   "url": "https://arxiv.org/abs/2611.20331",
   "pdf_url": "https://arxiv.org/pdf/2611.20331",
-  "published": "2026-11-17",
+  "published": "2026-11-15",
   "updated": "2026-11-17",
   "authors": [
     "Yuhao Liu",
@@ -21,8 +21,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "Source code is available at: https://github.com/liuyh-Horizon/LENS",
+  "code_url": "https://github.com/liuyh-Horizon/LENS",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -38,19 +38,19 @@
   "keyword_evidence": [
     "accelerator"
   ],
-  "score": 39,
+  "score": 44,
   "score_components": {
     "relevance": 12,
     "novelty": 6,
     "rigor": 11,
     "practical_impact": 5,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: accelerator",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "LayerNorm and attention Softmax are critical operations in Transformers.",
   "summary_zh": "",
@@ -58,9 +58,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-18T04:35:22+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.20331v1",
+      "url": "http://arxiv.org/abs/2611.20331v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.20331",

@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2602.05902",
+  "title": "CoreQ: Mismatch-Corrected Successive Rounding for LLM Quantization",
+  "abstract": "Post-training quantization (PTQ) enables efficient deployment of large language models by mapping pretrained weights to low-bit formats without retraining, typically using a small calibration set to minimize a layer-wise calibration objective. However, this sequential procedure induces a mismatch: errors from earlier quantized layers alter the inputs received by later layers, causing the activations to deviate from those of the full-precision model. Recent approaches introduce mismatch-aware calibration objectives to compensate for this effect, but leave open how much of the observed mismatch should shift each layer's calibration target. We show that fully applying the empirical mismatch correction can overfit finite calibration data, while using a fixed correction coefficient ignores variation in mismatch estimates across layers. To address these limitations, we propose CoreQ, a learning-free PTQ framework that uses a geometric decomposition of the mismatch to compute a closed-form, layer-adaptive correction coefficient. This coefficient controls how much of the observed mismatch enters each layer's calibration target, reducing overfitting to limited calibration data without coefficient tuning. CoreQ then applies efficient greedy successive rounding to the resulting triangular least-squares objective. Its bounded beam-search extension, K-CoreQ, trades modest additional compute for improved performance. Across multiple LLM families, scales, bit-widths, and quantization settings, CoreQ and K-CoreQ achieve lower perplexity and higher downstream accuracy than strong PTQ baselines. Code is available at GitHub.",
+  "url": "https://arxiv.org/abs/2602.05902",
+  "pdf_url": "https://arxiv.org/pdf/2602.05902",
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "authors": [
+    "Seohyeon Cha",
+    "Huancheng Chen",
+    "Dongjun Kim",
+    "Haoran Zhang",
+    "Kevin Chan",
+    "Gustavo de Veciana",
+    "Haris Vikalo"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Post-training quantization (PTQ) enables efficient deployment of large language models by mapping pretrained weights to low-bit formats without retraining, typically using a small calibration set to minimize a layer-wise calibration objective.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2602.05902",
+      "url": "https://arxiv.org/abs/2602.05902"
+    }
+  ]
+}

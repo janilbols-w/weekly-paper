@@ -4,7 +4,7 @@
   "abstract": "GPU SuperPODs underpin large language model (LLM) serving, but growing bandwidth and round-trip times make inter-GPU communication consume increasing compute resources. SM-driven remote memory access occupies shared memory or registers for in-flight data and competes for SM-to-NoC bandwidth. Dedicated engines can free these resources, but must handle fine-grained transfers, down to a 576\\,B KV-cache entry. NVIDIA's CopyEngine uses less than 1\\% of NVLink bandwidth at 7\\,KB granularity. We present SURMA, an on-die Scale-Up Remote Memory Access engine. Adapting RDMA requires overcoming slow doorbell submission, excessive per-application connection state, head-of-line blocking of completion notifications on shared connections, and costly ordering for multipath transfers. SURMA uses a credit-based shared send queue to reduce submission latency from 1.2\\,$\\mu$s to 400\\,ns; fused write-with-atomic semantics to share connections while independently notifying each transaction; and Network Per Path Ordering to ensure data arrives before the completion flag without Sender or Receiver Ordering. We implement SURMA in RTL on a two-FPGA prototype and evaluate it with two 8-GPU NVLink servers. At 512\\,B granularity, SURMA saturates attainable bandwidth with a single SM, whereas NVLink needs over 14\\% of the SMs. SURMA occupies under 0.5\\% of GPU area and accelerates inference on four models by 1.05--1.26$\\times$ over NVLink.",
   "url": "https://arxiv.org/abs/2611.21274",
   "pdf_url": "https://arxiv.org/pdf/2611.21274",
-  "published": "2026-11-17",
+  "published": "2026-11-16",
   "updated": "2026-11-17",
   "authors": [
     "Haoran Shang",
@@ -70,9 +70,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-18T04:35:22+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.21274v1",
+      "url": "http://arxiv.org/abs/2611.21274v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.21274",

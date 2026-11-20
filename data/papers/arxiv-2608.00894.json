@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2608.00894",
+  "title": "Contour: Extensible Mapping Surfaces for Agentic Accelerator Kernel Generation",
+  "abstract": "Emerging accelerators rarely ship with mature compiler backends, so recent work asks LLM agents to write native kernels directly from ISA documentation and simulator feedback. On two such accelerators, this direct workflow returns a correct kernel on only 17 of 38 workload instances, and most of its inference budget is spent re-deriving machine semantics and repairing illegal code rather than optimizing the workload. We present Contour, which consists of two parts. Contour-Explore replaces native-code generation with search over a mapping surface: a typed set of scheduling knobs and their legal domains, generated automatically from the accelerator's ISA description and the workload graph. A compiler-owned resolver completes partial assignments into legal plans and emits native code, so every evaluated candidate is verified against the compiler's default, and any policy can drive the search, including hill climbing, evolutionary search, and LLM agents. Compared with KernelCraft, a state-of-the-art agentic kernel generator, an LLM agent through Contour-Explore returns a verified kernel on every Gemmini and PLENA instance, produces 2.86x and 1.13x faster kernels on the instances where both succeed, and uses 26.3% and 83.4% fewer tokens per verified kernel. Contour-Ext extends the surface when search stalls: an LLM agent implements a new knob and its lowering in the compiler backend, and Contour-Ext accepts the extension only if the default path is byte-identical, every new value is numerically correct and changes the program, and the enlarged surface yields a measured gain. On VTA, Contour-Ext extends the AutoTVM surface of TVM, and AutoTVM's XGBTuner then finds 4.14x faster kernels; on PLENA, the extended surface makes the kernels found by hill climbing 1.20x faster.",
+  "url": "https://arxiv.org/abs/2608.00894",
+  "pdf_url": "https://arxiv.org/pdf/2608.00894",
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "authors": [
+    "Ruijie Gao",
+    "Jirong Yang",
+    "Mengtian Hong",
+    "Youyou Lu",
+    "Barry Lyu",
+    "Haoran Jin",
+    "Nathan Bleier"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [
+    "kernels-operators"
+  ],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Emerging accelerators rarely ship with mature compiler backends, so recent work asks LLM agents to write native kernels directly from ISA documentation and simulator feedback.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.00894",
+      "url": "https://arxiv.org/abs/2608.00894"
+    }
+  ]
+}

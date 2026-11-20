@@ -39,7 +39,7 @@ In LLM serving systems with prefix caching, each KV block of a shared system pro
 ## 元数据
 
 - 作者：Yuji Yamamoto, Satoshi Matsuura
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-17；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

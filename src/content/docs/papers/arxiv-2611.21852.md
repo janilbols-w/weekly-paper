@@ -39,7 +39,7 @@ Masked diffusion language models (dLLMs) decode by iteratively denoising a full 
 ## 元数据
 
 - 作者：Harshit Samrat, Ramakrishna Paramahamsa Kompella
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-16；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

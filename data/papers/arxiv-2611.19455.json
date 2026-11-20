@@ -4,7 +4,7 @@
   "abstract": "Speculative decoding lets a cheap draft model propose tokens that a large language model verifies in a single forward pass. When the verifier keeps a KV cache, verification is cheap and drafting must be nearly free. Session-local drafters, which predict from the prompt and the text generated so far, meet that bar without training. We compare a recency-weighted, backing-off, confidence-gated session memory against prompt lookup decoding in its reference form, which copies from the earliest earlier match, and in a variant that copies from the most recent one, with paired per-prompt bootstrap intervals throughout. On general, medical, and legal text with a Mistral-7B verifier, recency accounts for the speed: most-recent lookup gains up to 0.09 in speedup over earliest-match lookup on 500-token generations, and session memory's weighting and backoff add nothing measurable on top, at 30 to 40 times the drafting cost. Energy tells a different story. On medical and legal text, unselective drafters are 14% faster than plain decoding yet use as much energy per token, while drafters that abstain on weak evidence save 3 to 4 joules per 100 tokens; a three-token minimum match length on prompt lookup matches the confidence-gated session memory. Outputs are token-identical to greedy decoding in 94% of generations, with every divergence at a numerical near-tie. Under a repetition penalty, long-generation speedups shrink from 1.4-1.7x to 1.1-1.2x, but recency still helps and the length floor is the only drafter that saves energy in both domains.",
   "url": "https://arxiv.org/abs/2611.19455",
   "pdf_url": "https://arxiv.org/pdf/2611.19455",
-  "published": "2026-11-17",
+  "published": "2026-11-14",
   "updated": "2026-11-17",
   "authors": [
     "Antal van den Bosch"
@@ -17,8 +17,8 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "10 pages. Code: https://github.com/antalvdb/olifant-speculative",
+  "code_url": "https://github.com/antalvdb/olifant-speculative",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -35,19 +35,19 @@
     "draft model",
     "speculative decoding"
   ],
-  "score": 45,
+  "score": 50,
   "score_components": {
     "relevance": 14,
     "novelty": 5,
     "rigor": 5,
     "practical_impact": 16,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: draft model, speculative decoding",
     "quantitative claim detected",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Speculative decoding lets a cheap draft model propose tokens that a large language model verifies in a single forward pass.",
   "summary_zh": "",
@@ -55,9 +55,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-18T04:35:22+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.19455v1",
+      "url": "http://arxiv.org/abs/2611.19455v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.19455",

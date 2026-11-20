@@ -39,7 +39,7 @@ Looped language models such as Ouro and Raven apply one weight-shared block seve
 ## 元数据
 
 - 作者：Muhan Xiao, Shijian Li
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

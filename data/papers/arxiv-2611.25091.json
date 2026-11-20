@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.25091",
+  "title": "Berth: SLO-Preserving GPU Sharing Without New Preemption",
+  "abstract": "Inference services keep GPUs reserved for their worst-case load, and most of that capacity sits idle. Filling it with best-effort work such as training is the obvious remedy, and latency is why it rarely happens: on a shared GPU, a request that must finish within milliseconds finds the best-effort job's kernels running or queued ahead of it. Spatial sharing cannot evict them, temporal sharing gives the request only its turn, and hardware partitioning protects it by idling what it does not use. Systems that keep both the SLO and the utilization have reached inside the stack (rewriting kernels, patching the driver, instrumenting the framework), which the operator of a closed GPU stack cannot do. This paper argues that reaching inside is unnecessary. The time-slicer built into commodity GPUs already preempts a running kernel within a fraction of a millisecond and switches the moment a context runs out of work; what it lacks is priority, and priority can be created from outside by controlling what the best-effort context has to run. Berth is a user-space system built on this observation: a preloaded shim feeds the best-effort job to the GPU only when no request needs it (feed control), a declared deadline reference extends the rule to continuous-batching LLM engines, and a shortened best-effort time slice, set without privileges, bounds what a long kernel can cost. Berth changes no application, framework, kernel or driver. Across 31 scenario points with MLPerf SLOs and 13 baselines, Berth meets SLOs within a few percentage points of running alone, above every baseline, with 2.7-3.5x the best-effort throughput of the strongest ones; beside LLM serving, it meets per-token targets for nearly every request while training keeps running. Sharing a closed GPU under SLOs needs no new preemption mechanism, only control over what the existing one sees.",
+  "url": "http://arxiv.org/abs/2611.25091v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.25091v1",
+  "published": "2026-11-18",
+  "updated": "2026-11-18",
+  "authors": [
+    "Mohammadali Khodabandehlou",
+    "Mahdi Alizadeh",
+    "Lei Gao",
+    "Murali Annavaram",
+    "Bhaskar Krishnamachari"
+  ],
+  "source": "arXiv",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "16 pages, 15 figures",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "cluster-resource",
+    "group": "Cluster & Resource Systems",
+    "group_zh": "集群与资源系统",
+    "leaf_id": "gpu-scheduling-virtualization",
+    "leaf": "GPU Scheduling & Virtualization",
+    "leaf_zh": "GPU 调度与虚拟化"
+  },
+  "secondary_tags": [
+    "multitenancy-slo-reliability"
+  ],
+  "keyword_evidence": [
+    "gpu sharing"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 16,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: gpu sharing",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Inference services keep GPUs reserved for their worst-case load, and most of that capacity sits idle.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.25091v1",
+      "url": "http://arxiv.org/abs/2611.25091v1"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ High Bandwidth Flash (HBF) combines NAND flash density with high-bandwidth accel
 ## 元数据
 
 - 作者：Ziqing Mei, Yiwei Huang, Zhiyi Zeng, Yuhao Xiao, Pu Pang, Quan Chen, Deze Zeng, Minyi Guo
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/sjtu-epcc/HBF-EventLab](https://github.com/sjtu-epcc/HBF-EventLab)
 - 阅读深度：metadata

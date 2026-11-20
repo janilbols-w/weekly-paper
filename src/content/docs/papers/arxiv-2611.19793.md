@@ -3,7 +3,7 @@ title: "IANN: A Unified Framework for Equivariant InterAtomic Neural Networks wi
 description: "Machine-learning interatomic potentials (MLIPs) now approach density functional theory (DFT) accuracy at a fraction of its cost, but the practical benefit is limited by software fragmentation: each state-of-the-art architecture is released as a separate codebase, with its own data format, configuration system, training loop and molecular-dynamics interface."
 ---
 
-**评分：39/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+**评分：44/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
 
 [论文原文](https://arxiv.org/abs/2611.19793) · [PDF](https://arxiv.org/pdf/2611.19793)
 
@@ -27,19 +27,19 @@ Machine-learning interatomic potentials (MLIPs) now approach density functional 
 | novelty | 6 |
 | rigor | 7 |
 | practical impact | 9 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: distributed training
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Changzhi Ai, Xueping Qin, Dimosthenis Sokaras, Frank Abild-Pedersen, Johannes Voss
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/changzhiai/IANN](https://github.com/changzhiai/IANN)
 - 阅读深度：metadata

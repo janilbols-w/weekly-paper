@@ -5,13 +5,14 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **37** 篇。
+累计收录 **38** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
 | [WATERFALL: Workflow for Adaptive Training with Evolutionary Reward Formulation and Automated Learning Loops](../../papers/arxiv-2611.22854/) | 2026-11-18 | 42 |
-| [Do LLMs Understand Network Traces? A Comparative Study of Reasoning over Raw and Filtered Traffic Data](../../papers/arxiv-2611.22575/) | 2026-11-18 | 39 |
+| [A Survey on RLOps for Large Language Models](../../papers/arxiv-2611.23357/) | 2026-11-17 | 40 |
 | [Isolating Perception for Multi-View Planning under Occlusion-Induced Partial Observability](../../papers/arxiv-2611.19179/) | 2026-11-17 | 39 |
+| [Do LLMs Understand Network Traces? A Comparative Study of Reasoning over Raw and Filtered Traffic Data](../../papers/arxiv-2611.22575/) | 2026-11-17 | 39 |
 | [Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation](../../papers/arxiv-2611.18471/) | 2026-11-16 | 39 |
 | [Mitigating Agentic Deception via Evaluation-Side Partially Observable Games](../../papers/arxiv-2611.12835/) | 2026-11-10 | 45 |
 | [Seeing is believing: The case for hardware-centric inefficiency detection and remediation](../../papers/arxiv-2510.26008/) | 2026-10-28 | 43 |

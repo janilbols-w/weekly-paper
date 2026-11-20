@@ -39,7 +39,7 @@ The migration of artificial intelligence from centralized cloud infrastructure t
 ## 元数据
 
 - 作者：Mostafa Darvishi
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-14；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

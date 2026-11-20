@@ -3,7 +3,7 @@ title: "Benchmarking LLM Inference on Desktop-Scale NVIDIA Grace Blackwell Clust
 description: "Two NVIDIA DGX Spark GB10 systems connect directly over 200 GbE to serve larger language models and increase inference capacity, but the benefits depend on how they are deployed."
 ---
 
-**评分：45/100** · AI 基础设施 > 集群与资源系统 > 网络、RDMA 与互联
+**评分：50/100** · AI 基础设施 > 集群与资源系统 > 网络、RDMA 与互联
 
 [论文原文](https://arxiv.org/abs/2611.20289) · [PDF](https://arxiv.org/pdf/2611.20289)
 
@@ -27,19 +27,19 @@ Two NVIDIA DGX Spark GB10 systems connect directly over 200 GbE to serve larger 
 | novelty | 5 |
 | rigor | 9 |
 | practical impact | 14 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: rdma
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Kevin Bhimani, Christian Escobar, Daniel Mihovch, Rudolf Eigenmann, Sunita Chandrasekaran
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/kevinhbhimani/dgx-spark-llm-serving-benchmark](https://github.com/kevinhbhimani/dgx-spark-llm-serving-benchmark)
 - 阅读深度：metadata

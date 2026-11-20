@@ -39,7 +39,7 @@ Reinforcement learning (RL) has emerged as a critical phase in the post-training
 ## 元数据
 
 - 作者：LoonSage Team, Bowei Song, Caiwei Zhao, Chuwen Liu, Dechuang Gu, Dong Fang, Feiyu Xie, Huaiyu Li, Hui Zhang, Jian Tian, Jian Wang, Jie Zhao, Liguang Li, Maoyun Wang, Meiyan Yang, Minghan Zhu, Pai Liu, Pandeng Yao, Renbao Tian, Ru Yang, Shuai Jia, Shuai Tan, Shuailong Li, Shuliang Li, Teng Jin, Tianze Yang, Wenbo Cui, Wenjing Bai, Wenkang Wu, Xiaowei Jiang, Xiaoyi Dong, Yanpeng Wang, Yanwen Wang, Yaohui Ma, Yawen Wang, Yihang Zhang, Yingjie Yan, Zhanbiao Lian, Zhenyu Lu, Zhida Hu, Zhihui Hao, Zhihui Hu, Zhiwen Xiao, Zhiyi Gao, Zhongwei Qi, Zhuangzhuang Wu, Ziqian Liu, Ziyue Zheng
-- 发布：2026-10-12；更新：2026-10-19
+- 发布：2026-10-12；更新：2026-11-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

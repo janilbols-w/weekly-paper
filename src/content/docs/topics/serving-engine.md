@@ -5,17 +5,21 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **141** 篇。
+累计收录 **145** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Towards Fair Resource Sharing in Agentic LLM Serving](../../papers/arxiv-2611.23558/) | 2026-11-19 | 45 |
+| [eFAIR: Fair LLM Serving under Hourly Electricity Commitments](../../papers/arxiv-2611.24119/) | 2026-11-19 | 44 |
+| [LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices](../../papers/arxiv-2611.24085/) | 2026-11-18 | 56 |
 | [JigSLO: Solving the Resource Puzzle for Efficient Multi-LLM Serving](../../papers/arxiv-2509.06261/) | 2026-11-18 | 51 |
-| [XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools](../../papers/arxiv-2611.22280/) | 2026-11-18 | 45 |
+| [HETEROVLM: Edge Multi-Request Vision-Language Model Serving on a Heterogeneous Versal SoC with AI Engines and Programmable Logic](../../papers/arxiv-2611.23878/) | 2026-11-18 | 48 |
 | [SplitZip: Ultra Fast Lossless KV Compression for Disaggregated LLM Serving](../../papers/arxiv-2605.01708/) | 2026-11-17 | 52 |
-| [A Matter of Stages: Energy-Latency Trade-offs in Multimodal LLM Serving](../../papers/arxiv-2611.21165/) | 2026-11-17 | 50 |
+| [XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools](../../papers/arxiv-2611.22280/) | 2026-11-17 | 45 |
 | [BrownoutMoE: Learning Structure-Aware Expert Grouping for Adaptive Mixture-of-Experts Model Serving](../../papers/arxiv-2607.04164/) | 2026-11-17 | 44 |
-| [Making Preemption Productive in Long-Output LLM Serving](../../papers/arxiv-2611.20106/) | 2026-11-17 | 43 |
+| [A Matter of Stages: Energy-Latency Trade-offs in Multimodal LLM Serving](../../papers/arxiv-2611.21165/) | 2026-11-16 | 50 |
 | [Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](../../papers/arxiv-2611.18397/) | 2026-11-16 | 44 |
+| [Making Preemption Productive in Long-Output LLM Serving](../../papers/arxiv-2611.20106/) | 2026-11-15 | 43 |
 | [SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM Serving](../../papers/arxiv-2611.14246/) | 2026-11-11 | 43 |
 | [KAIROS: Stateful, Context-Aware Power-Efficient Agentic Inference Serving](../../papers/arxiv-2604.16682/) | 2026-11-11 | 39 |
 | [Detent: Batch-Invariant LLM Serving and RL Rollouts at Near-Stock Speed](../../papers/arxiv-2611.10611/) | 2026-11-10 | 46 |

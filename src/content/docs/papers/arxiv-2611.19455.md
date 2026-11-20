@@ -3,7 +3,7 @@ title: "Text Speeding Itself Up: Recency and Restraint in Session-Local Drafting
 description: "Speculative decoding lets a cheap draft model propose tokens that a large language model verifies in a single forward pass."
 ---
 
-**评分：45/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
+**评分：50/100** · LLM 高效推理 > 模型与算法效率 > 推测解码
 
 [论文原文](https://arxiv.org/abs/2611.19455) · [PDF](https://arxiv.org/pdf/2611.19455)
 
@@ -27,19 +27,19 @@ Speculative decoding lets a cheap draft model propose tokens that a large langua
 | novelty | 5 |
 | rigor | 5 |
 | practical impact | 16 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: draft model, speculative decoding
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Antal van den Bosch
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-14；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/antalvdb/olifant-speculative](https://github.com/antalvdb/olifant-speculative)
 - 阅读深度：metadata

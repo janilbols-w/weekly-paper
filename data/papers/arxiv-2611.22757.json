@@ -4,7 +4,7 @@
   "abstract": "Looped diffusion Transformers reuse shared blocks to deepen computation and match larger models with fewer parameters, reducing storage and deployment burdens. Yet repeated attention and MLP computations remain costly. Pruning reduces storage and computation by removing redundant parameters or units. Training-free methods struggle to resolve recurrent contributions, while training-based methods lack explicit constraints on position-specific errors affecting later inputs and final outputs. We propose LoopPrune, a pruning and recovery framework addressing these requirements. Recurrent importance estimation combines shared-removal effects and position variation to select a shared structure; shared reconstruction pools recurrent input statistics to compensate weights. Loop-position recovery compares complete denoising predictions at identical student states and matches text guidance, updating all student parameters against a fixed dense teacher. Extensive experiments across four open-source models, six benchmarks, and three pruning paradigms demonstrate effectiveness. At 30% structured parameter pruning, Looped-DiT B/16 retains 93.14% of dense six-benchmark average accuracy, exceeding the best baseline by 9.49%. Across PyTorch, vLLM-Omni, and SGLang Diffusion, pruned SDXSv3 reduces peak allocated GPU memory by 34.36-44.64% and accelerates denoising 1.46-1.74x over dense models.",
   "url": "https://arxiv.org/abs/2611.22757",
   "pdf_url": "https://arxiv.org/pdf/2611.22757",
-  "published": "2026-11-18",
+  "published": "2026-11-17",
   "updated": "2026-11-18",
   "authors": [
     "Weizhong Huang",
@@ -22,7 +22,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "10 pages, 11 figures",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-19T04:35:46+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.22757v1",
+      "url": "http://arxiv.org/abs/2611.22757v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.22757",

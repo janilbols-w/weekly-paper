@@ -5,21 +5,30 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **288** 篇。
+累计收录 **297** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [HyCoInfer: Cloud-Edge Collaborative Inference for Large Language Models on Heterogeneous GPU-FPGA Architectures](../../papers/arxiv-2611.22086/) | 2026-11-18 | 45 |
-| [KVUse: Reusable-KV User Memory for Efficient LLM Recommenders](../../papers/arxiv-2611.21920/) | 2026-11-18 | 43 |
-| [From Token Changes to Task Failures: Bit Flips in a Shared KV-Cache Block](../../papers/arxiv-2611.22243/) | 2026-11-18 | 40 |
-| [TAILROLL: Tail-Aware Rollout Acceleration for RL-Based LLM Post-Training](../../papers/arxiv-2611.22206/) | 2026-11-18 | 39 |
+| [RoCoKV: Accelerating LLM Inference Serving through Uncertainty and Redundancy Aware KV Cache Compression](../../papers/arxiv-2611.25433/) | 2026-11-19 | 55 |
+| [A Flat KV Cache Storage Architecture for LLM Serving](../../papers/arxiv-2610.38355/) | 2026-11-19 | 45 |
+| [FrontierReplay: Split-Free Exact Prefix Caching for Hybrid Language Models](../../papers/arxiv-2611.26020/) | 2026-11-19 | 44 |
+| [Aggron: Aggressive Compression of Agentic KV Caches during Head-of-Line Stalls in the Request Queue](../../papers/arxiv-2611.26435/) | 2026-11-19 | 42 |
+| [Efficient and Robust Drafting with Multi-Token Prediction](../../papers/arxiv-2611.25813/) | 2026-11-19 | 38 |
+| [TripleKV: Predict, Prefetch, Protect -- KV Cache Management for AI Agents](../../papers/arxiv-2611.25112/) | 2026-11-18 | 47 |
+| [GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits](../../papers/arxiv-2611.24619/) | 2026-11-18 | 41 |
 | [NVFP4-MLA: Unified FP4 KV-Cache Storage and Attention Computation for Multi-Head Latent Attention](../../papers/arxiv-2611.18972/) | 2026-11-17 | 52 |
 | [Exstill: The Most Efficient Single-Chip Processor for the Next Token](../../papers/arxiv-2611.18859/) | 2026-11-17 | 48 |
-| [Multi-Branch Transformer](../../papers/arxiv-2611.19800/) | 2026-11-17 | 44 |
+| [Safe to Omit, Worth Omitting? Keeping the Answer and Cutting Latency When an LLM Agent Skips Another's Message](../../papers/arxiv-2611.23570/) | 2026-11-17 | 46 |
+| [HyCoInfer: Cloud-Edge Collaborative Inference for Large Language Models on Heterogeneous GPU-FPGA Architectures](../../papers/arxiv-2611.22086/) | 2026-11-17 | 45 |
 | [MeltKV: Memory-Aligned KV Cache Compression via Variable-Bit Packed Vector Quantization for Long-Context LLMs](../../papers/arxiv-2611.18652/) | 2026-11-17 | 42 |
-| [SURMA: Efficient Fine-Grained Communication Offload for SuperPOD](../../papers/arxiv-2611.21274/) | 2026-11-17 | 40 |
-| [Latent Lattice Language Models](../../papers/arxiv-2611.21608/) | 2026-11-17 | 40 |
-| [GaugeRoPE: RoPE-Compatible Executable Latent Attention](../../papers/arxiv-2611.20524/) | 2026-11-17 | 40 |
+| [From Token Changes to Task Failures: Bit Flips in a Shared KV-Cache Block](../../papers/arxiv-2611.22243/) | 2026-11-17 | 40 |
+| [TAILROLL: Tail-Aware Rollout Acceleration for RL-Based LLM Post-Training](../../papers/arxiv-2611.22206/) | 2026-11-17 | 39 |
+| [KVUse: Reusable-KV User Memory for Efficient LLM Recommenders](../../papers/arxiv-2611.21920/) | 2026-11-16 | 43 |
+| [Global Importance Estimation for KV Cache Eviction](../../papers/arxiv-2611.24969/) | 2026-11-16 | 43 |
+| [SURMA: Efficient Fine-Grained Communication Offload for SuperPOD](../../papers/arxiv-2611.21274/) | 2026-11-16 | 40 |
+| [Latent Lattice Language Models](../../papers/arxiv-2611.21608/) | 2026-11-16 | 40 |
+| [GaugeRoPE: RoPE-Compatible Executable Latent Attention](../../papers/arxiv-2611.20524/) | 2026-11-16 | 40 |
+| [Multi-Branch Transformer](../../papers/arxiv-2611.19800/) | 2026-11-15 | 44 |
 | [Placing LLM Lookup Tables by Per-Layer Prefetch Deadlines](../../papers/arxiv-2611.13413/) | 2026-11-11 | 44 |
 | [Decode Token Parallelism: Memory-Efficient Distributed Attention Parallelism for Scalable LLM Decoding](../../papers/arxiv-2611.13293/) | 2026-11-11 | 44 |
 | [Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders](../../papers/arxiv-2611.13378/) | 2026-11-11 | 43 |
@@ -187,7 +196,7 @@ description: "Attention & KV Cache"
 | [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](../../papers/arxiv-2609.24991/) | 2026-09-21 | 52 |
 | [TierKV: Long-Context On-Device LLMs via Predictive Multi-Tier KV Caching](../../papers/arxiv-2609.21172/) | 2026-09-21 | 43 |
 | [Written as a Record, Read as an Address: What a Forward Pass Leaves in an Operation's KV Cache](../../papers/arxiv-2609.24635/) | 2026-09-21 | 38 |
-| [SPLASH: A Virtualized HBM-HBF Hierarchy with Flash-Aware Sparse Attention for Long-Context Inference](../../papers/arxiv-2609.23816/) | 2026-09-20 | 44 |
+| [SPLASH: Co-Designing Flash-Aware Sparse Attention with a Virtualized HBM-HBF Hierarchy](../../papers/arxiv-2609.23816/) | 2026-09-20 | 44 |
 | [ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs](../../papers/arxiv-2609.23314/) | 2026-09-20 | 42 |
 | [Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management](../../papers/arxiv-2609.26828/) | 2026-09-20 | 42 |
 | [Exploring a Layer-Wise Design Space for KV Cache Eviction](../../papers/arxiv-2606.15157/) | 2026-09-18 | 40 |

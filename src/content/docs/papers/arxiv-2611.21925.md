@@ -39,7 +39,7 @@ Speculative-diffusion decoding uses a small parallel drafter model to generate b
 ## 元数据
 
 - 作者：Jameson Sandler, Shane Bergsma, Mostafa Elhoushi, Bin Claire Zhang, Gavia Gray, Joel Hestness, Nolan Dey, Ferdinando Fioretto
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-16；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

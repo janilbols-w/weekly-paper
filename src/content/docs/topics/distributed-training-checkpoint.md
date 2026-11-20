@@ -5,14 +5,19 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **141** 篇。
+累计收录 **146** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [One Checkpoint, Many Runs: Recipe Cards for Fine-Tuned Models](../../papers/arxiv-2610.16825/) | 2026-11-19 | 39 |
+| [Towards Scale-Up Networking: Challenges and Open Questions](../../papers/arxiv-2611.26156/) | 2026-11-19 | 38 |
+| [Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need](../../papers/arxiv-2611.23676/) | 2026-11-18 | 40 |
 | [When is Warmstarting Effective for Scaling Language Models?](../../papers/arxiv-2605.13405/) | 2026-11-18 | 38 |
-| [IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation](../../papers/arxiv-2611.19793/) | 2026-11-17 | 39 |
 | [DeltaBox: Millisecond-Scale Sandbox Checkpoint and Rollback for Stateful AI Agents](../../papers/arxiv-2605.22781/) | 2026-11-16 | 51 |
 | [G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands](../../papers/arxiv-2611.17814/) | 2026-11-16 | 40 |
+| [IANN: A Unified Framework for Equivariant InterAtomic Neural Networks with User-Friendly Implementation](../../papers/arxiv-2611.19793/) | 2026-11-15 | 44 |
+| [Cache or Denoise Less? Residual Reuse in a Flow-Matching World Action Model](../../papers/arxiv-2611.19709/) | 2026-11-15 | 44 |
+| [Refinement vs. Replanning: Inference Compute Allocation in Robot Policies](../../papers/arxiv-2611.19034/) | 2026-11-14 | 40 |
 | [MICE: Multi-animal Interaction Context Encoder - A Hierarchical Foundation Model for Mouse Behavior](../../papers/arxiv-2611.11644/) | 2026-11-10 | 44 |
 | [Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards](../../papers/arxiv-2611.12728/) | 2026-11-10 | 39 |
 | [MINE: Entropy-coded Memory-efficient Inference for Large Language Models](../../papers/arxiv-2611.09424/) | 2026-11-09 | 46 |

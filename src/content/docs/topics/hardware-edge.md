@@ -5,19 +5,23 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **113** 篇。
+累计收录 **117** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [StreamingDPD: A 1.28-GSa/s Instantaneous-Power-Gated Depthwise TCN Accelerator for Real-Time 320-MHz Digital Predistortion](../../papers/arxiv-2611.23101/) | 2026-11-18 | 54 |
-| [Chimera: A Configurable LLM Decode Accelerator Architecture with Compute-Memory-Floorplan Co-Design for HBM-Equipped Multi-Die FPGAs](../../papers/arxiv-2611.21677/) | 2026-11-18 | 48 |
-| [SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding](../../papers/arxiv-2611.22296/) | 2026-11-18 | 44 |
-| [The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler](../../papers/arxiv-2611.21852/) | 2026-11-18 | 41 |
-| [Rethinking KV Caching for LLM Decode: Free-Space Optical KV Regeneration for Reduction of Memory Traffic](../../papers/arxiv-2611.19279/) | 2026-11-17 | 48 |
-| [HBF-EventLab: A Discrete-Event Simulator for Studying Host-Device Coordination in High Bandwidth Flash](../../papers/arxiv-2611.19861/) | 2026-11-17 | 46 |
-| [LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States](../../papers/arxiv-2611.20331/) | 2026-11-17 | 39 |
-| [From Sensors to Silicon: Causal Cross-Layer Self-Healing Edge AI for Secure and Energy-Adaptive IoT Systems](../../papers/arxiv-2611.19165/) | 2026-11-17 | 38 |
+| [Kameleo: In-Situ Activation-Precision Selection for Bit-Serial LLM Accelerators](../../papers/arxiv-2611.25971/) | 2026-11-19 | 44 |
+| [Contour: Extensible Mapping Surfaces for Agentic Accelerator Kernel Generation](../../papers/arxiv-2608.00894/) | 2026-11-19 | 43 |
+| [Prior Knowledge or Search? A Study of LLM Agents in Hardware-Aware Code Optimization](../../papers/arxiv-2605.19782/) | 2026-11-19 | 40 |
+| [Hardware Acceleration of Vision-Language-Action Models with Weight Precision Rising over the Flow Steps](../../papers/arxiv-2611.24234/) | 2026-11-18 | 43 |
+| [StreamingDPD: A 1.28-GSa/s Instantaneous-Power-Gated Depthwise TCN Accelerator for Real-Time 320-MHz Digital Predistortion](../../papers/arxiv-2611.23101/) | 2026-11-17 | 54 |
+| [SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding](../../papers/arxiv-2611.22296/) | 2026-11-17 | 44 |
 | [Mutable Inference: Architecting LLM Accelerators for Inference-Time Learning](../../papers/arxiv-2611.18523/) | 2026-11-16 | 44 |
+| [The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler](../../papers/arxiv-2611.21852/) | 2026-11-16 | 41 |
+| [HBF-EventLab: A Discrete-Event Simulator for Studying Host-Device Coordination in High Bandwidth Flash](../../papers/arxiv-2611.19861/) | 2026-11-15 | 46 |
+| [LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States](../../papers/arxiv-2611.20331/) | 2026-11-15 | 44 |
+| [Rethinking KV Caching for LLM Decode: Free-Space Optical KV Regeneration for Reduction of Memory Traffic](../../papers/arxiv-2611.19279/) | 2026-11-14 | 48 |
+| [Chimera: A Configurable LLM Decode Accelerator Architecture with Compute-Memory-Floorplan Co-Design for HBM-Equipped Multi-Die FPGAs](../../papers/arxiv-2611.21677/) | 2026-11-14 | 48 |
+| [From Sensors to Silicon: Causal Cross-Layer Self-Healing Edge AI for Secure and Energy-Adaptive IoT Systems](../../papers/arxiv-2611.19165/) | 2026-11-14 | 38 |
 | [Programmable GPU-Accelerated dApps for Real-Time Edge Inference and ISAC on NVIDIA Aerial Testbed](../../papers/arxiv-2512.06493/) | 2026-11-11 | 44 |
 | [DICOMPUTE: An Economic and Privacy-Aware Framework for Distributed Artificial Intelligence Inference](../../papers/arxiv-2611.10804/) | 2026-11-10 | 52 |
 | [Measure the Deployment, Not Just the Model: Rethinking Hardware-Aware Model Selection for Microcontrollers](../../papers/arxiv-2606.15004/) | 2026-11-10 | 49 |

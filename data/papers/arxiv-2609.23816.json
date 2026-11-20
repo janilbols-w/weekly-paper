@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.23816",
-  "title": "SPLASH: A Virtualized HBM-HBF Hierarchy with Flash-Aware Sparse Attention for Long-Context Inference",
+  "title": "SPLASH: Co-Designing Flash-Aware Sparse Attention with a Virtualized HBM-HBF Hierarchy",
   "abstract": "As context lengths, request lifetimes and concurrency grow, the key-value (KV) cache dominates memory usage in large language model (LLM) inference. High-bandwidth memory (HBM), the memory on contemporary GPUs, achieves far higher bandwidth than off-package memory, yet its capacity, bounded by DRAM density, has not kept pace with this demand. High-Bandwidth Flash (HBF), an emerging memory technology, bridges this gap, combining the advanced packaging of HBM with the density of flash to deliver terabyte-scale capacity at HBM-class read bandwidth. Exploiting this capacity for long-context KV caches, however, requires hiding the vastly different physical characteristics of flash from the GPU while keeping decode interactive. We therefore introduce Splash, an architecture that virtualizes HBM and HBF for the KV cache. We architect custom HBM and HBF base dies with novel memory and flash controllers that handle the access semantics and device management of flash. These controllers keep the GPU agnostic of the underlying memory, allowing the HBM-HBF hierarchy to behave as one logical memory for the KV cache. The added capacity of HBF enables long contexts, but dense attention, which reads the entire KV cache for every generated token, cannot keep decode interactive at these lengths. Splash therefore makes sparse attention flash-aware through query-driven address translation, in which the HBF base die resolves each query into the flash addresses of the relevant KV pages and schedules their reads across flash planes. Since the HBF base die holds the location of every page, this translation hides flash from the GPU and balances the selected reads across flash planes, coupling abstraction with performance. Across five models and up to one million tokens, Splash improves per-GPU decode throughput by up to 4.5x over the strongest baseline under a 100 ms latency budget.",
   "url": "https://arxiv.org/abs/2609.23816",
   "pdf_url": "https://arxiv.org/pdf/2609.23816",
   "published": "2026-09-20",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "authors": [
     "Aditya Anirudh Jonnalagadda",
     "Agasthi Haputhanthri",
@@ -61,7 +61,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-09-22T04:42:07+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
     {

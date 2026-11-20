@@ -39,7 +39,7 @@ Microscaling (MX) quantization enables lower-precision large language model (LLM
 ## 元数据
 
 - 作者：Chloe Wong, Nicolas Rakela, Man Shi, Hansung Kim, Ruohan Richard Yan, Coleman Richard Charles Hooper, Yakun Sophia Shao
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

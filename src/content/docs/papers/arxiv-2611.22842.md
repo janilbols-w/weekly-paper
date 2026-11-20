@@ -3,7 +3,7 @@ title: "SilverSpoon-KD: A General-Purpose Toolkit for Knowledge Distillation"
 description: "Knowledge distillation transfers deep learning representations from a teacher model to a student model, typically reducing model size or inference cost."
 ---
 
-**评分：49/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
+**评分：54/100** · LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏
 
 [论文原文](https://arxiv.org/abs/2611.22842) · [PDF](https://arxiv.org/pdf/2611.22842)
 
@@ -27,19 +27,19 @@ Knowledge distillation transfers deep learning representations from a teacher mo
 | novelty | 6 |
 | rigor | 9 |
 | practical impact | 13 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: distillation
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Xaver R. Davey, David Broman
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-17；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/silverspoon-dev/silverspoon-kd](https://github.com/silverspoon-dev/silverspoon-kd)
 - 阅读深度：metadata

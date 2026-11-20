@@ -1,0 +1,68 @@
+{
+  "id": "arxiv:2610.16825",
+  "title": "One Checkpoint, Many Runs: Recipe Cards for Fine-Tuned Models",
+  "abstract": "Fine-tuned language models are shared with model cards that describe the training setup in detail, often down to the default random seed, but report the score of a single released checkpoint. Such setups are retrained routinely, by fine-tuning services for each customer, by organizations at each update, and by users on their own data, so the model that is deployed comes from a new run of the setup. Some runs fail, and a failed run can go unnoticed and reach the people the model serves. We call such a setup a model recipe and argue that its documentation should state how often a run of the recipe misses a required performance bar. In a survey of the model cards of 300 fine-tuned language models on Hugging Face, none reports this failure probability, and only three report results from more than one training run. Across 2,124 fine-tuning runs, we find that reading the mean, the median, or a bootstrap interval as an approval often approves recipes whose failure rate exceeds a stated failure tolerance, because these summaries do not measure how often a run fails. Model cards do not report how often the runs of a recipe fail, although whoever runs the training is best placed to count them, while those who rely on a retrained model bear the cost of a failed run. To report this failure probability directly, we propose recipe cards, an addendum to model cards that documents the model recipe behind a checkpoint. A recipe card states the bar and the tolerance and who chose them, reports how many runs are made and how many of them miss the bar, gives an upper bound on the failure probability, and warns when this bound exceeds the tolerance. Recipe cards record who set and who accepted this risk, and let deployers and regulators state acceptance criteria for retrained models.",
+  "url": "https://arxiv.org/abs/2610.16825",
+  "pdf_url": "https://arxiv.org/pdf/2610.16825",
+  "published": "2026-11-19",
+  "updated": "2026-11-19",
+  "authors": [
+    "Jaewon Choi",
+    "Jihye Kang",
+    "Namhyuk Ahn"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpoint"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpoint",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Fine-tuned language models are shared with model cards that describe the training setup in detail, often down to the default random seed, but report the score of a single released checkpoint.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.16825",
+      "url": "https://arxiv.org/abs/2610.16825"
+    }
+  ]
+}

@@ -38,8 +38,8 @@ The CAPSARII project advances a cyber-secure, ultra-low-power wearable platform 
 
 ## 元数据
 
-- 作者：Luciano Bozzi, Christian Celidonio, Umberto Nuzzi, Massimo Biagini, Stefano Cherubin, Asbj{\o}rn Djupdal, Tor Andre Haugdahl, Andrea Aliverti, Alessandra Angelucci, Giovanni Agosta, Gerardo Pelosi, Paolo Belluco, Samuele Polistina, Gaia Strada, Luigi Sossi Ortega, Alexandra-Ioana Albu, Riccardo Volpi, Luigi Malag\`o, Michael Schneider, Xabier Eguiluz, Haritz Saiz, Mar\'ia Viqueria
-- 发布：2026-11-17；更新：2026-11-17
+- 作者：Luciano Bozzi, Christian Celidonio, Umberto Nuzzi, Massimo Biagini, Stefano Cherubin, Asbjørn Djupdal, Tor Andre Haugdahl, Andrea Aliverti, Alessandra Angelucci, Giovanni Agosta, Gerardo Pelosi, Paolo Belluco, Samuele Polistina, Gaia Strada, Luigi Sossi Ortega, Alexandra-Ioana Albu, Riccardo Volpi, Luigi Malagò, Michael Schneider, Xabier Eguiluz, Haritz Saiz, María Viqueria
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

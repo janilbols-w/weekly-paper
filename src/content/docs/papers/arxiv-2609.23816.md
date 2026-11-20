@@ -1,5 +1,5 @@
 ---
-title: "SPLASH: A Virtualized HBM-HBF Hierarchy with Flash-Aware Sparse Attention for Long-Context Inference"
+title: "SPLASH: Co-Designing Flash-Aware Sparse Attention with a Virtualized HBM-HBF Hierarchy"
 description: "As context lengths, request lifetimes and concurrency grow, the key-value (KV) cache dominates memory usage in large language model (LLM) inference."
 ---
 
@@ -39,7 +39,7 @@ As context lengths, request lifetimes and concurrency grow, the key-value (KV) c
 ## 元数据
 
 - 作者：Aditya Anirudh Jonnalagadda, Agasthi Haputhanthri, Pranav Dangi, Rohan Juneja, Wenshuo Yue, Aritra Bagchi, Bin Gao, Tulika Mitra
-- 发布：2026-09-20；更新：2026-11-18
+- 发布：2026-09-20；更新：2026-11-19
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

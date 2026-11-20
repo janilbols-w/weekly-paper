@@ -5,33 +5,46 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **440** 篇。
+累计收录 **453** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [BQ-LoRA: Binary-Quantized Low-Rank Adapters as Implicit Regularizers for Parameter-Efficient Fine-Tuning](../../papers/arxiv-2611.22334/) | 2026-11-18 | 50 |
-| [Beyond Bitwidth: Deployment-Constrained Mixed-Precision Quantization for Multilingual LLM Inference on NVIDIA Blackwell](../../papers/arxiv-2611.21974/) | 2026-11-18 | 48 |
-| [Computed Permutation Trellis Coding: Near-Optimal Quantization from Two Multiplications and a 64-Byte Table](../../papers/arxiv-2611.22019/) | 2026-11-18 | 45 |
-| [DAQ: Decision-Aligned Post-Training Quantization for Spiking Transformers](../../papers/arxiv-2611.22611/) | 2026-11-18 | 43 |
-| [TempQuant: Learning Adaptive Temperatures for Quantized Language Models](../../papers/arxiv-2611.22128/) | 2026-11-18 | 41 |
-| [Watermark Evidence under Open-Weight LLM Modification: Exact Bounds for Low-Rank Output Watermarks](../../papers/arxiv-2611.21702/) | 2026-11-18 | 39 |
-| [HADVQ: Hessian Aware Directional Vector Quantization](../../papers/arxiv-2611.22721/) | 2026-11-18 | 38 |
-| [MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression](../../papers/arxiv-2611.21216/) | 2026-11-17 | 51 |
-| [Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments](../../papers/arxiv-2611.20012/) | 2026-11-17 | 49 |
-| [MIAO: Microscaling Intermediate Accumulation Optimization](../../papers/arxiv-2611.19722/) | 2026-11-17 | 49 |
+| [SharQ: Bridging Activation Sparsity and FP4 Quantization for LLM Inference](../../papers/arxiv-2606.26587/) | 2026-11-19 | 59 |
+| [VR-SparseQuant: Accurate FP4 Quantization with 2:4 Sparsity on Vera Rubin](../../papers/arxiv-2611.25717/) | 2026-11-19 | 50 |
+| [Splice-Core: Low-Order-Bit-Splicing GEMM for Highly Energy-Efficient AI Inference Accelerators](../../papers/arxiv-2611.25617/) | 2026-11-19 | 46 |
+| [AscMLA: Unlocking FP4 Efficiency for Long-Context MLA Decoding through Asymmetric Scaling](../../papers/arxiv-2611.26106/) | 2026-11-19 | 45 |
+| [Compression Effects on Low-Resource Multilingual Translation](../../papers/arxiv-2611.24043/) | 2026-11-19 | 43 |
+| [CoreQ: Mismatch-Corrected Successive Rounding for LLM Quantization](../../papers/arxiv-2602.05902/) | 2026-11-19 | 41 |
+| [Zonotopic Analysis of Quantization Error in Neural Networks](../../papers/arxiv-2611.24648/) | 2026-11-18 | 43 |
+| [ICICLE: In-Context Inference for Curve-Learning Extrapolation](../../papers/arxiv-2611.24469/) | 2026-11-18 | 41 |
+| [Hypnos: A Dual-Phase End-to-End Platform for Scalable Continual Learning at the Edge](../../papers/arxiv-2611.24637/) | 2026-11-18 | 41 |
+| [OMNIS+: Semantic RAN Slicing and Quantization for Dynamic Split Neural Networks](../../papers/arxiv-2611.23977/) | 2026-11-18 | 40 |
+| [BQ-LoRA: Binary-Quantized Low-Rank Adapters as Implicit Regularizers for Parameter-Efficient Fine-Tuning](../../papers/arxiv-2611.22334/) | 2026-11-17 | 50 |
+| [Computed Permutation Trellis Coding: Near-Optimal Quantization from Two Multiplications and a 64-Byte Table](../../papers/arxiv-2611.22019/) | 2026-11-17 | 45 |
+| [QDA: Closed-Loop LLM Quantization Design with Agents](../../papers/arxiv-2611.23388/) | 2026-11-17 | 44 |
+| [Implementing Binary Transformers with Approximate Memories with Permutation Invariance Enabled Selective (PIES) Protection](../../papers/arxiv-2611.23358/) | 2026-11-17 | 44 |
 | [LiteLMGuard: Seamless and Lightweight On-Device Guardrails for Small Language Models against Quantization Vulnerabilities](../../papers/arxiv-2505.05619/) | 2026-11-17 | 43 |
-| [JointQ: Joint Scale-and-Integer Quantization for Large Language Models](../../papers/arxiv-2611.20384/) | 2026-11-17 | 43 |
+| [DAQ: Decision-Aligned Post-Training Quantization for Spiking Transformers](../../papers/arxiv-2611.22611/) | 2026-11-17 | 43 |
 | [Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality](../../papers/arxiv-2611.18587/) | 2026-11-17 | 42 |
+| [TempQuant: Learning Adaptive Temperatures for Quantized Language Models](../../papers/arxiv-2611.22128/) | 2026-11-17 | 41 |
 | [LinQuant: Functional Invariances for Low-Precision Linear Recurrences](../../papers/arxiv-2610.39418/) | 2026-11-17 | 41 |
 | [Gradient-Guided Hardware-Native MIXFP4](../../papers/arxiv-2611.18769/) | 2026-11-17 | 41 |
 | [Does synthetic pre-training pay off on a microcontroller? Accuracy, latency and energy across two MCUs](../../papers/arxiv-2611.19931/) | 2026-11-17 | 40 |
 | [Adaptive Layer-Wise Transformations for Post-Training Quantization of Large Language Models](../../papers/arxiv-2511.17809/) | 2026-11-17 | 40 |
+| [HADVQ: Hessian Aware Directional Vector Quantization](../../papers/arxiv-2611.22721/) | 2026-11-17 | 38 |
 | [Cross-Precision Transfer, Non-Local Context, and Capacity-Readout Boundaries of Scale Calibration in Low-Bit LLMs](../../papers/arxiv-2610.22771/) | 2026-11-17 | 38 |
+| [MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression](../../papers/arxiv-2611.21216/) | 2026-11-16 | 51 |
 | [CHARMING: Parallel Edge AI Acceleration Across Tensor Processing and In-Memory Computation](../../papers/arxiv-2611.17785/) | 2026-11-16 | 49 |
+| [Beyond Bitwidth: Deployment-Constrained Mixed-Precision Quantization for Multilingual LLM Inference on NVIDIA Blackwell](../../papers/arxiv-2611.21974/) | 2026-11-16 | 48 |
+| [Memory-Efficient Speculative Decoding with Quantized Draft KV Cache](../../papers/arxiv-2611.20565/) | 2026-11-16 | 44 |
 | [User-Schedulable Approximations for Quantized Tensor Programs](../../papers/arxiv-2611.17526/) | 2026-11-16 | 43 |
+| [JointQ: Joint Scale-and-Integer Quantization for Large Language Models](../../papers/arxiv-2611.20384/) | 2026-11-16 | 43 |
 | [Choosing Quantized Code LLMs by File Size and Energy per Solved Task](../../papers/arxiv-2611.17605/) | 2026-11-16 | 43 |
 | [MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration](../../papers/arxiv-2611.17931/) | 2026-11-16 | 41 |
 | [LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent](../../papers/arxiv-2611.17780/) | 2026-11-16 | 41 |
+| [Watermark Evidence under Open-Weight LLM Modification: Exact Bounds for Low-Rank Output Watermarks](../../papers/arxiv-2611.21702/) | 2026-11-16 | 39 |
+| [Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments](../../papers/arxiv-2611.20012/) | 2026-11-15 | 49 |
+| [MIAO: Microscaling Intermediate Accumulation Optimization](../../papers/arxiv-2611.19722/) | 2026-11-15 | 49 |
 | [GSQ: Highly-Accurate Low-Precision Scalar Quantization for LLMs via Gumbel-Softmax Sampling](../../papers/arxiv-2604.18556/) | 2026-11-11 | 43 |
 | [Federated Learning of Binary Neural Networks: Enabling Low-Cost Inference](../../papers/arxiv-2603.15507/) | 2026-11-11 | 43 |
 | [Beyond local reconstruction: Geometry-preserving output alignment for binary LLM quantization](../../papers/arxiv-2512.21651/) | 2026-11-11 | 43 |

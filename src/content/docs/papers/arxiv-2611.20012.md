@@ -39,7 +39,7 @@ Offline language models could extend access to maternal-health information where
 ## 元数据
 
 - 作者：Okenla AbdulQahhar Abimbola, Maurice Abraham John, Adepoju Jeremiah Moyondafoluwa, Omolaiye Samuel, Oko-Oba Sandra Chioma, Owoo Oluwamayowa Emmanuel, Thanni Adewuyi, Lily Aimas-Love, Benson Eniola, Abdulquddus Ajibade, Sylvia Essessien, Anyanwu Princess Emmanuella, Adereni Abiodun
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

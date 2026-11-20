@@ -38,8 +38,8 @@ We propose Computed Permutation Trellis Coding (CPTC), a low-bit quantization fo
 
 ## 元数据
 
-- 作者：Muhammed Fatih Bal{\i}n
-- 发布：2026-11-18；更新：2026-11-18
+- 作者：Muhammed Fatih Balın
+- 发布：2026-11-17；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

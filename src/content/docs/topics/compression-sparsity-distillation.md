@@ -5,35 +5,44 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **794** 篇。
+累计收录 **802** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [LoopPrune: Recurrent Pruning for Looped Diffusion Transformers](../../papers/arxiv-2611.22757/) | 2026-11-18 | 50 |
-| [SilverSpoon-KD: A General-Purpose Toolkit for Knowledge Distillation](../../papers/arxiv-2611.22842/) | 2026-11-18 | 49 |
+| [FlexMoE: Learning One-for-All Multi-Budget Expert Pruning for Flexible MoE Deployment](../../papers/arxiv-2606.27866/) | 2026-11-19 | 50 |
+| [FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering](../../papers/arxiv-2611.23631/) | 2026-11-19 | 46 |
+| [Probabilistic State Space Enumeration in Neural Network Computation](../../papers/arxiv-2611.15062/) | 2026-11-19 | 41 |
+| [HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs](../../papers/arxiv-2611.26363/) | 2026-11-19 | 40 |
+| [EasyOPD: An Easy-to-use On-Policy Distillation Framework for Large Language Models](../../papers/arxiv-2607.11012/) | 2026-11-19 | 40 |
+| [When Features Beat Noise: A Noise-Driven Hypothesis Testing Method for Feature Selection](../../papers/arxiv-2511.20851/) | 2026-11-19 | 39 |
+| [GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers](../../papers/arxiv-2611.26509/) | 2026-11-19 | 38 |
+| [A Survey on Collaborative Mechanisms Between Large and Small Language Models](../../papers/arxiv-2505.07460/) | 2026-11-19 | 38 |
+| [MoMoVL: Modality-Aware Adaptive Compression for On-Device Sparsely-Activated Vision-Language Models](../../papers/doi-10.1145-3862322.3863775/) | 2026-11-18 | 47 |
 | [The Kernel Reality Check: Benchmarking and Distilling Efficient Attention at Scale](../../papers/arxiv-2611.22947/) | 2026-11-18 | 45 |
+| [SilverSpoon-KD: A General-Purpose Toolkit for Knowledge Distillation](../../papers/arxiv-2611.22842/) | 2026-11-17 | 54 |
 | [HEED: Density-Weighted Residual Alignment for Hybrid Vision-Language Model Distillation](../../papers/arxiv-2605.17093/) | 2026-11-17 | 52 |
+| [LoopPrune: Recurrent Pruning for Looped Diffusion Transformers](../../papers/arxiv-2611.22757/) | 2026-11-17 | 50 |
 | [Simple yet Effective Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization](../../papers/arxiv-2505.07675/) | 2026-11-17 | 48 |
 | [CD4LM: Consistency Distillation and aDaptive Decoding for Diffusion Language Models](../../papers/arxiv-2601.02236/) | 2026-11-17 | 47 |
-| [Cyber-Secure Wearable, Ultra-Low-Power Networked Sensors for Soldier Health Monitoring: Insights from the CAPSARII project](../../papers/arxiv-2611.20187/) | 2026-11-17 | 46 |
 | [What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation](../../papers/arxiv-2611.16246/) | 2026-11-17 | 44 |
-| [RoShift: Lazy Shift and Weight-aware Rotation for Activation Sparsity in LLM Inference](../../papers/arxiv-2611.20549/) | 2026-11-17 | 44 |
 | [Fidelity Before Structure: Verbatim Chunks Beat Lossy Artifact Extraction in Long-Conversation LLM Memory](../../papers/arxiv-2601.00821/) | 2026-11-17 | 44 |
 | [PoCoAttn: Position-Content Collaborative Sparse Attention for Fast and High-Fidelity Video Generation](../../papers/arxiv-2611.20307/) | 2026-11-17 | 43 |
-| [LEAF-OPD: Learning to Forget from Privileged Contexts via On-Policy Distillation](../../papers/arxiv-2611.20674/) | 2026-11-17 | 43 |
 | [Simplify, Agree, Distill: Label-Free Self-Distillation with Stepping Stones](../../papers/arxiv-2611.18916/) | 2026-11-17 | 42 |
 | [Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity](../../papers/arxiv-2607.07386/) | 2026-11-17 | 41 |
-| [SMELL: Sparsity-aware Memory Efficient Federated Fine-tuning for Long-context LLMs](../../papers/arxiv-2611.19349/) | 2026-11-17 | 41 |
 | [Understanding Layer Patching in Model Size Interpolation](../../papers/arxiv-2607.08170/) | 2026-11-17 | 40 |
 | [SIRI: Self-Internalizing Reinforcement Learning with Intrinsic Skills for LLM Agent Training](../../papers/arxiv-2606.02355/) | 2026-11-17 | 40 |
-| [EfficientSkill: Learning Skills for Token-Efficient Multi-Turn Agents](../../papers/arxiv-2611.19823/) | 2026-11-17 | 40 |
 | [Reward-Weighted On-Policy Distillation with an Open Property-Equivalence Verifier for NL-to-SVA Generation](../../papers/arxiv-2605.13501/) | 2026-11-17 | 39 |
 | [Learning When to Continue and When to Stop: Termination-Aware OPSD](../../papers/arxiv-2611.19925/) | 2026-11-17 | 39 |
+| [RoShift: Lazy Shift and Weight-aware Rotation for Activation Sparsity in LLM Inference](../../papers/arxiv-2611.20549/) | 2026-11-16 | 44 |
+| [LEAF-OPD: Learning to Forget from Privileged Contexts via On-Policy Distillation](../../papers/arxiv-2611.20674/) | 2026-11-16 | 43 |
 | [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](../../papers/arxiv-2611.17772/) | 2026-11-16 | 43 |
 | [Folding Language Models into Themselves](../../papers/arxiv-2611.18113/) | 2026-11-16 | 42 |
 | [CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents](../../papers/arxiv-2611.17808/) | 2026-11-16 | 40 |
 | [ScrapeGraphAI-100k: Dataset for Schema-Constrained LLM Generation](../../papers/arxiv-2602.15189/) | 2026-11-16 | 39 |
 | [QVal: Evaluating Dense Supervision Signals for Long-Horizon LLM Agents](../../papers/arxiv-2606.32034/) | 2026-11-16 | 39 |
+| [Cyber-Secure Wearable, Ultra-Low-Power Networked Sensors for Soldier Health Monitoring: Insights from the CAPSARII project](../../papers/doi-10.1016-j.micpro.2026.105355/) | 2026-11-15 | 46 |
+| [EfficientSkill: Learning Skills for Token-Efficient Multi-Turn Agents](../../papers/arxiv-2611.19823/) | 2026-11-15 | 40 |
+| [SMELL: Sparsity-aware Memory Efficient Federated Fine-tuning for Long-context LLMs](../../papers/arxiv-2611.19349/) | 2026-11-14 | 41 |
 | [Pruning and Distilling Mixture-of-Experts into Dense Language Models](../../papers/arxiv-2605.28207/) | 2026-11-11 | 47 |
 | [Rethinking Black-Box On-Policy Distillation: A Rubric-based Analysis](../../papers/arxiv-2605.07396/) | 2026-11-11 | 46 |
 | [Beyond Passive Imitation: On-Policy Mid-Training Distillation for Language Models](../../papers/arxiv-2611.13855/) | 2026-11-11 | 43 |
@@ -494,7 +503,6 @@ description: "Compression, Sparsity & Distillation"
 | [Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation](../../papers/arxiv-2609.20744/) | 2026-09-17 | 46 |
 | [Long-Context Demonstration Selection Using State Space Models](../../papers/arxiv-2609.17888/) | 2026-09-17 | 43 |
 | [Machine Translation between English and Syriac (East Syriac Dialect) using Statistical Machine Learning](../../papers/arxiv-2609.18529/) | 2026-09-17 | 42 |
-| [Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation](../../papers/arxiv-2609.20441/) | 2026-09-17 | 42 |
 | [What Does Privileged Information Add to On-Policy Self-Distillation?](../../papers/arxiv-2609.20612/) | 2026-09-17 | 40 |
 | [Local Sparsity Enables Unsupervised LLM Safety Detection](../../papers/arxiv-2609.20129/) | 2026-09-17 | 39 |
 | [Window-Diffusion: Accelerating Diffusion Language Model Inference with Windowed Token Pruning and Caching](../../papers/arxiv-2601.20332/) | 2026-09-16 | 48 |

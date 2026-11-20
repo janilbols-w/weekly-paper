@@ -39,7 +39,7 @@ LLM unlearning aims to erase targeted knowledge from large language models while
 ## 元数据
 
 - 作者：Zirui Pang, Zhijie Deng, Yuancheng Wang, Qihan Yu, Xin Li, Jiaheng Wei, Zixin Zhong
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-16；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

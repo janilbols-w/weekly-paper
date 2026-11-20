@@ -4,7 +4,7 @@
   "abstract": "Reflective skill optimizers improve multi-turn LLM agents by revising instructions from failed and successful rollouts, yet accumulating edge-case rules bloats prompts, inflates token use, and pushes agents into long, error-prone loops. We introduce EfficientSkill, a two-step framework that first discovers a reliable skill without token penalties, and then warm-starts accuracy-guarded pruning from that skill to compress instructions, bound agent turns, and offload reusable code into workspace utilities with zero implementation prompt cost. Across four frontier, mid-tier, and open-weight models on MATH-500, ALFWorld, and SpreadsheetBench, EfficientSkill cuts output tokens over unconstrained EvoSkill on 11 of 12 configurations (by up to 80%) while raising mean accuracy on every benchmark, including +14.3 and +17.5 percentage-point gains on SpreadsheetBench with Gemini 3.8 Flash and Grok 4.1 Fast by replacing stalled loops with compact workflows. By shrinking both generated tokens and replayed history, EfficientSkill lowers total token usage and serving cost across every evaluated configuration, with or without full-prefix KV caching.",
   "url": "https://arxiv.org/abs/2611.19823",
   "pdf_url": "https://arxiv.org/pdf/2611.19823",
-  "published": "2026-11-17",
+  "published": "2026-11-15",
   "updated": "2026-11-17",
   "authors": [
     "Deep Shah",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-18T04:35:22+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.19823v1",
+      "url": "http://arxiv.org/abs/2611.19823v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.19823",

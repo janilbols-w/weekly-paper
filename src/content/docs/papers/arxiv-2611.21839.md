@@ -39,7 +39,7 @@ Speculative decoding accelerates vision-language models(VLMs) while preserving t
 ## 元数据
 
 - 作者：Xin Guo, Arushi Rai, Xiang Zhou, Qiang Zhang, Siyu Lin, Xiangjun Fan, Lizhu Zhang
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-16；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

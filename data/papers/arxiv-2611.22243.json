@@ -4,7 +4,7 @@
   "abstract": "In LLM serving systems with prefix caching, each KV block of a shared system prompt is held in GPU memory as a single physical copy, which every request with that prompt reads. Our earlier work measured change and showed that one bit flip in such a block changes many later responses without making them visibly degenerate. This paper extends that work by measuring how often the changed responses are wrong. Using software fault injection into vLLM serving Qwen3-8B, we flip the most significant mantissa bit or the sign bit of a value in such a block. We score responses on four tasks: code generation, short-answer questions, multiple-choice reasoning, and refusal under a policy. The fraction of changes that turned a correct response wrong depended strongly on the task: 0.023 on MBPP+ and 0.59 on held-out TriviaQA at the mantissa bit, and 0.019 and 0.60 at the sign bit. Harm fell on requests whose sampled answers are sometimes wrong, so the damage of a flip depends on how common such requests are. Harmed responses looked like ordinary errors, so a flip should be detected by checking cached blocks rather than by monitoring outputs.",
   "url": "https://arxiv.org/abs/2611.22243",
   "pdf_url": "https://arxiv.org/pdf/2611.22243",
-  "published": "2026-11-18",
+  "published": "2026-11-17",
   "updated": "2026-11-18",
   "authors": [
     "Yuji Yamamoto",
@@ -13,13 +13,13 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.CR",
-    "cs.AR"
+    "cs.AR",
+    "cs.CR"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "19 pages, 4 figures. Extended version of arXiv:2604.17249 (SECRYPT 2026, 23rd International Conference on Security and Cryptography). Submitted to Springer Communications in Computer and Information Science (CCIS)",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-19T04:35:46+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.22243v1",
+      "url": "http://arxiv.org/abs/2611.22243v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.22243",

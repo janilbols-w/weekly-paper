@@ -39,7 +39,7 @@ RL post-training of large language models (LLMs) is bottlenecked by rollout: hea
 ## 元数据
 
 - 作者：Niloofar Gholipour, Marcos Assuncao, Timothy Yu, Gursimran Singh, Rajkumar Buyya, Julien Gascon-Samson, Zhenan Fan, Yong Zhang
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-17；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

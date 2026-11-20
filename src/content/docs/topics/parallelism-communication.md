@@ -9,8 +9,8 @@ description: "Parallelism & Communication"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Communicate the Change: Efficient Expert Parallelism via Activation Compression](../../papers/arxiv-2611.22215/) | 2026-11-18 | 43 |
-| [Network-Native DNN Architecture Synthesis for Distributed Inference](../../papers/arxiv-2611.20824/) | 2026-11-17 | 48 |
+| [Communicate the Change: Efficient Expert Parallelism via Activation Compression](../../papers/arxiv-2611.22215/) | 2026-11-17 | 43 |
+| [Network-Native DNN Architecture Synthesis for Distributed Inference](../../papers/arxiv-2611.20824/) | 2026-11-16 | 48 |
 | [Deterministic, Reproducible Inference in Exact Integer Arithmetic, and Verifiable Distributed Inference as Its Consequence](../../papers/arxiv-2611.13730/) | 2026-11-11 | 42 |
 | [FRESCO: A Novel Consistency Control for Asynchronous Pipeline Parallel Training](../../papers/arxiv-2611.11238/) | 2026-11-10 | 44 |
 | [SinAE: A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems](../../papers/arxiv-2607.12380/) | 2026-11-10 | 42 |

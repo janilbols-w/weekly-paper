@@ -39,7 +39,7 @@ Despite growing interest in on-device LLM deployment, large-scale Mixture-of-Exp
 ## 元数据
 
 - 作者：Byeongju Kim, Hoonki Lee, Byungjun Kim, Inyul Ra, Yongjin Kim, Yongseong Lee, Sangyeob Kim
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-15；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/hoonki2002/CECAR](https://github.com/hoonki2002/CECAR)
 - 阅读深度：metadata

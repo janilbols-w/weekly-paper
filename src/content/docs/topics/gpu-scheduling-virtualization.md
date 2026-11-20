@@ -5,11 +5,12 @@ description: "GPU Scheduling & Virtualization"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > GPU 调度与虚拟化**
 
-累计收录 **9** 篇。
+累计收录 **10** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Large Language Models for AI Infrastructure](../../papers/arxiv-2611.19061/) | 2026-11-17 | 47 |
+| [Berth: SLO-Preserving GPU Sharing Without New Preemption](../../papers/arxiv-2611.25091/) | 2026-11-18 | 49 |
+| [Large Language Models for AI Infrastructure](../../papers/arxiv-2611.19061/) | 2026-11-14 | 47 |
 | [Two-Layer Evolutionary Scheduling for Machine Learning Jobs in Multi-Cluster Environments](../../papers/arxiv-2611.09093/) | 2026-11-09 | 43 |
 | [Layer-wise CPU-GPU Scheduling for LLM Inference on Memory-Limited Consumer GPUs](../../papers/arxiv-2611.01393/) | 2026-11-03 | 46 |
 | [Ripple: Deadline-Aware CPU-GPU Sharing for Embodied Inference](../../papers/arxiv-2611.01067/) | 2026-11-03 | 42 |

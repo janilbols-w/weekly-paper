@@ -38,8 +38,8 @@ The effective delivery and monitoring of ICT services rely heavily on network tr
 
 ## 元数据
 
-- 作者：Irene Gos\'alvez-White, Roberto Mag\'an-Carri\'on, Carlota de la Vega-Soriano, Pedro Garc\'ia-Teodoro
-- 发布：2026-11-18；更新：2026-11-18
+- 作者：Irene Gosálvez-White, Roberto Magán-Carrión, Carlota de la Vega-Soriano, Pedro García-Teodoro
+- 发布：2026-11-17；更新：2026-11-18
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Activation sparsity accelerates LLM decoding by skipping unnecessary weight read
 ## 元数据
 
 - 作者：Geunsoo Song, Jiwon Seo, Hoeseok Yang, Youngmin Yi
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-16；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/hulahula3247/RoShift](https://github.com/hulahula3247/RoShift)
 - 阅读深度：metadata

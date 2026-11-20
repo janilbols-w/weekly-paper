@@ -39,7 +39,7 @@ Latent KV cache compression reduces memory footprint by mapping historical keys 
 ## 元数据
 
 - 作者：Yuanhang Gao, Xiangrui Yang, Lingyuan Meng, Yuanfeng Chen, Dongsheng Li
-- 发布：2026-11-17；更新：2026-11-17
+- 发布：2026-11-16；更新：2026-11-17
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

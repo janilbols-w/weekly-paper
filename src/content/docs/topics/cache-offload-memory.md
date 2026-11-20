@@ -5,11 +5,14 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **157** 篇。
+累计收录 **160** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Invertible Transport Between Sample-Only Distributions via Projected Characteristic Functions](../../papers/arxiv-2611.26187/) | 2026-11-19 | 42 |
+| [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](../../papers/arxiv-2611.21478/) | 2026-11-19 | 39 |
 | [LoopZip: Visual Token Compression for Efficient Looped Vision-Language Models](../../papers/arxiv-2611.22728/) | 2026-11-18 | 49 |
+| [Some Memories Must Fade: Persistence and Decay of User Memories in Model Parameters](../../papers/arxiv-2611.25235/) | 2026-11-18 | 43 |
 | [A Generative AI-Driven Architecture for Whole-Home Intelligent Services: Edge Models, Memory Management, and Household Applications](../../papers/arxiv-2611.21232/) | 2026-11-17 | 45 |
 | [Contrastive Activation-Guided Zeroth-Order Preference Optimisation for Memory-Efficient LLM Alignment](../../papers/arxiv-2611.20635/) | 2026-11-17 | 42 |
 | [PUMA-Former: Uncertainty-Aware Agentic Computation Offloading in MEO-LEO Satellite Networks With Incomplete Information](../../papers/arxiv-2611.18139/) | 2026-11-16 | 49 |

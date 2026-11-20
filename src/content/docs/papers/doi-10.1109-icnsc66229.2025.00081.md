@@ -3,7 +3,7 @@ title: "IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference"
 description: "In edge-cloud collaborative inference, the layers of a deep neural network (DNN) are placed on edge and cloud virtual machines (VMs) for every request, while the edge load and the cross-cloud bandwidth change over time."
 ---
 
-**评分：45/100** · LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化
+**评分：56/100** · LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化
 
 [论文原文](https://arxiv.org/abs/2611.19669) · [PDF](https://arxiv.org/pdf/2611.19669)
 
@@ -25,10 +25,10 @@ In edge-cloud collaborative inference, the layers of a deep neural network (DNN)
 |---|---:|
 | relevance | 16 |
 | novelty | 7 |
-| rigor | 7 |
+| rigor | 15 |
 | practical impact | 10 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ In edge-cloud collaborative inference, the layers of a deep neural network (DNN)
 ## 元数据
 
 - 作者：Meiyan Zeng, Sasu Tarkoma, Xiaoli Liu
-- 发布：2026-11-17；更新：2026-11-18
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-11-14；更新：2026-11-18
+- 来源：arXiv RSS；Venue：Proceedings of the 2025 IEEE International Conference on Networking, Sensing and Control (ICNSC), 2025
 - 代码：未发现
 - 阅读深度：metadata

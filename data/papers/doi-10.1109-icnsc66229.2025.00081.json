@@ -1,10 +1,10 @@
 {
-  "id": "arxiv:2611.19669",
+  "id": "doi:10.1109/icnsc66229.2025.00081",
   "title": "IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference",
   "abstract": "In edge-cloud collaborative inference, the layers of a deep neural network (DNN) are placed on edge and cloud virtual machines (VMs) for every request, while the edge load and the cross-cloud bandwidth change over time. We propose IA-MoE, an intensity-aware Mixture of Experts (MoE) framework that scores each layer-VM pair by end-to-end delay and energy and places the layers one at a time on the best-scoring VM. Such greedy placement is myopic when trained on per-layer labels: offloading to the cloud slows the first offloaded layer while the gain appears only in later layers, so the policy keeps too many requests at the edge. Training on the remaining request time after each decision removes this myopia and reduces the mean delay by 12-56% on congested workloads. In CloudSimSDN simulations with three DNNs and two public request traces, IA-MoE has the lowest mean delay of all compared methods on congested VGG16 workloads, across cross-cloud bandwidths of 150-600 Mbps, fluctuating bandwidth and saturated edge servers. A random forest trained on the same label is 5-27% slower, and only a heuristic that sends whole requests to the cloud uses less energy, at up to 20 times the delay. When the edge is lightly loaded, offloading does not pay and simple heuristics perform as well. IA-MoE also beats a Double Deep Q-Network (DQN) agent with the same features in all 19 tested settings, with a mean delay lower by a factor of 1.3 to 10.5, and trains in minutes instead of hours.",
   "url": "https://arxiv.org/abs/2611.19669",
   "pdf_url": "https://arxiv.org/pdf/2611.19669",
-  "published": "2026-11-17",
+  "published": "2026-11-14",
   "updated": "2026-11-18",
   "authors": [
     "Meiyan Zeng",
@@ -16,10 +16,10 @@
   "categories": [
     "cs.DC"
   ],
-  "doi": "",
+  "doi": "10.1109/ICNSC66229.2025.00081",
   "venue": "",
-  "journal_ref": "",
-  "comment": "",
+  "journal_ref": "Proceedings of the 2025 IEEE International Conference on Networking, Sensing and Control (ICNSC), 2025",
+  "comment": "Extended version of the IEEE ICNSC 2025 paper, with a revised training objective, additional baselines, expanded experimental evaluation, ablation studies, and Roofline analysis",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -36,14 +36,14 @@
   "keyword_evidence": [
     "mixture of experts"
   ],
-  "score": 45,
+  "score": 56,
   "score_components": {
     "relevance": 16,
     "novelty": 7,
-    "rigor": 7,
+    "rigor": 15,
     "practical_impact": 10,
     "reproducibility": 2,
-    "credibility": 3
+    "credibility": 6
   },
   "score_evidence": [
     "taxonomy keywords: mixture of experts",
@@ -55,12 +55,17 @@
   "why_it_matters_zh": "",
   "limitations_zh": "",
   "reading_depth": "metadata",
-  "first_seen": "2026-11-18T04:35:22+00:00",
-  "last_seen": "2026-11-19T04:35:46+00:00",
+  "first_seen": "2026-11-20T04:36:12+00:00",
+  "last_seen": "2026-11-20T04:36:12+00:00",
   "featured_weeks": [
     "2026-W47"
   ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.19669v2",
+      "url": "http://arxiv.org/abs/2611.19669v2"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.19669",
