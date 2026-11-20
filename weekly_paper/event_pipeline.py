@@ -225,7 +225,7 @@ def run_event(
         corpus_source = "MICRO official main program"
     elif event.get("collector") == "sc_program":
         collected, corpus_total = collect_sc_program(event)
-        corpus_source = "SC26 official Linklings technical-paper schedule"
+        corpus_source = "SC26 official schedule and IEEE Computer Society proceedings"
     elif event.get("collector") == "official_program":
         collected, corpus_total = [], 0
         corpus_source = event.get("program_source_name", "Official program")

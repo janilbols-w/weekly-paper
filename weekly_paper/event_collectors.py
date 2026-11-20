@@ -747,6 +747,7 @@ def parse_sc_program_html(
 def parse_sc_detail_html(payload: bytes) -> Dict[str, Any]:
     soup = BeautifulSoup(payload, "html.parser")
     abstract_node = soup.select_one(".abstract-sect .abstract")
+    digital_library_link = soup.select_one(".digital-library-link a[href]")
     authors = [
         clean_text(node.get_text(" ", strip=True))
         for node in soup.select(".presenter-details-sect .presenter-name")
@@ -755,6 +756,11 @@ def parse_sc_detail_html(payload: bytes) -> Dict[str, Any]:
     return {
         "abstract": clean_text(abstract_node.get_text(" ", strip=True)) if abstract_node else "",
         "authors": authors,
+        "digital_library_url": (
+            str(digital_library_link.get("href", "")).strip()
+            if digital_library_link is not None
+            else ""
+        ),
     }
 
 
@@ -779,4 +785,16 @@ def collect_sc_program(event: Dict[str, Any], timeout: int = 90) -> Tuple[List[E
             item.paper.abstract = str(detail.get("abstract", ""))
             if detail.get("authors"):
                 item.paper.authors = list(detail["authors"])
+            digital_library_url = str(detail.get("digital_library_url", "")).strip()
+            if digital_library_url:
+                item.paper.source = "IEEE Computer Society Digital Library"
+                item.paper.source_type = "proceedings"
+                item.paper.url = digital_library_url
+                item.paper.source_records.append(
+                    {
+                        "source": "IEEE Computer Society Digital Library",
+                        "id": item.paper.id.rsplit(":", 1)[-1],
+                        "url": digital_library_url,
+                    }
+                )
     return papers, total

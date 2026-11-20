@@ -534,9 +534,16 @@ Fast LLM Serving<span class="ae-badge ae-badge--available"></span>
         detail = parse_sc_detail_html(b"""
 <div class="abstract-sect"><span class="abstract">Lower latency for LLM serving.</span></div>
 <div class="presenter-details-sect"><div class="presenter-name">Alice Smith</div></div>
+<div class="digital-library-link"><span>PDF in IEEE SC Digital Library</span>
+  <a href="https://www.computer.org/csdl/proceedings-article/sc/2026/example">view</a>
+</div>
 """)
         self.assertEqual(detail["abstract"], "Lower latency for LLM serving.")
         self.assertEqual(detail["authors"], ["Alice Smith"])
+        self.assertEqual(
+            detail["digital_library_url"],
+            "https://www.computer.org/csdl/proceedings-article/sc/2026/example",
+        )
 
     def test_official_program_event_generates_briefing_without_papers(self) -> None:
         with TemporaryDirectory() as directory:

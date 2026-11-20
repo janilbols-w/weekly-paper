@@ -103,6 +103,7 @@ def _event_markdown(event: Dict[str, Any], papers: List[EventPaper]) -> str:
             "official_poster_entries": "官方 Poster 条目",
             "best_poster_awards": "Best Poster",
             "distinguished_artifact_evaluators": "Distinguished Artifact Evaluator",
+            "ieee_archived_papers": "IEEE 归档论文",
         }
         hidden = {"main_acceptance_rate", "findings_acceptance_rate"}
         lines.extend(["## 会议规模", "", "| 指标 | 官方数据 |", "|---|---:|"])
