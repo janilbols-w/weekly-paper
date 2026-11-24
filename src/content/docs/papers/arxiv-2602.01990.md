@@ -39,7 +39,7 @@ Multimodal Large Language Models (MLLMs) achieve strong performance through inst
 ## 元数据
 
 - 作者：Zhen-Hao Xie, Jun-Tao Tang, Yu-Cheng Shi, Han-Jia Ye, De-Chuan Zhan, Da-Wei Zhou
-- 发布：2026-08-27；更新：2026-08-27
+- 发布：2026-08-27；更新：2026-11-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/LAMDA-CL/Prism](https://github.com/LAMDA-CL/Prism)
 - 阅读深度：metadata

@@ -5,10 +5,15 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **453** 篇。
+累计收录 **458** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BitPrefill: W1.58A4 Tensor-Core Acceleration for Compute-Bound LLM Prefill](../../papers/arxiv-2611.26657/) | 2026-11-23 | 48 |
+| [The Vulnerability Window: Decision Instability in Quantized Reward Models](../../papers/arxiv-2611.27155/) | 2026-11-23 | 43 |
+| [SaturQ: Saturation-Aware Mixed-Precision Quantization](../../papers/arxiv-2607.12266/) | 2026-11-23 | 43 |
+| [Cruella: A Unified Microscaling and Floating-Point Dot-Product Unit for LLM Inference on FPGAs](../../papers/arxiv-2611.27323/) | 2026-11-23 | 41 |
+| [A Continuous Relaxation of Quantization-Aware Training](../../papers/arxiv-2611.27056/) | 2026-11-23 | 39 |
 | [SharQ: Bridging Activation Sparsity and FP4 Quantization for LLM Inference](../../papers/arxiv-2606.26587/) | 2026-11-19 | 59 |
 | [VR-SparseQuant: Accurate FP4 Quantization with 2:4 Sparsity on Vera Rubin](../../papers/arxiv-2611.25717/) | 2026-11-19 | 50 |
 | [Splice-Core: Low-Order-Bit-Splicing GEMM for Highly Energy-Efficient AI Inference Accelerators](../../papers/arxiv-2611.25617/) | 2026-11-19 | 46 |

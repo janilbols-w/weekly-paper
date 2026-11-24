@@ -5,10 +5,12 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **145** 篇。
+累计收录 **147** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving](../../papers/arxiv-2607.16488/) | 2026-11-23 | 43 |
+| [Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving](../../papers/arxiv-2607.16473/) | 2026-11-23 | 40 |
 | [Towards Fair Resource Sharing in Agentic LLM Serving](../../papers/arxiv-2611.23558/) | 2026-11-19 | 45 |
 | [eFAIR: Fair LLM Serving under Hourly Electricity Commitments](../../papers/arxiv-2611.24119/) | 2026-11-19 | 44 |
 | [LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices](../../papers/arxiv-2611.24085/) | 2026-11-18 | 56 |

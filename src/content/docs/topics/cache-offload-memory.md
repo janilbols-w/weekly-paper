@@ -5,10 +5,11 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **160** 篇。
+累计收录 **161** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction](../../papers/arxiv-2611.07695/) | 2026-11-23 | 39 |
 | [Invertible Transport Between Sample-Only Distributions via Projected Characteristic Functions](../../papers/arxiv-2611.26187/) | 2026-11-19 | 42 |
 | [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](../../papers/arxiv-2611.21478/) | 2026-11-19 | 39 |
 | [LoopZip: Visual Token Compression for Efficient Looped Vision-Language Models](../../papers/arxiv-2611.22728/) | 2026-11-18 | 49 |

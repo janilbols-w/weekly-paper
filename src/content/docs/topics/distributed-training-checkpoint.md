@@ -5,10 +5,11 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **146** 篇。
+累计收录 **147** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [DistDNA: Language Model Fingerprinting under Stochastic Decoding](../../papers/arxiv-2611.27831/) | 2026-11-23 | 38 |
 | [One Checkpoint, Many Runs: Recipe Cards for Fine-Tuned Models](../../papers/arxiv-2610.16825/) | 2026-11-19 | 39 |
 | [Towards Scale-Up Networking: Challenges and Open Questions](../../papers/arxiv-2611.26156/) | 2026-11-19 | 38 |
 | [Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need](../../papers/arxiv-2611.23676/) | 2026-11-18 | 40 |

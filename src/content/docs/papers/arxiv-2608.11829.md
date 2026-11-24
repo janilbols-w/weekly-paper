@@ -39,7 +39,7 @@ On-policy distillation (OPD) has emerged as a promising post-training technique 
 ## 元数据
 
 - 作者：Xinmu Ge, Zizhuo Zhang, Yu Huang, Jianing Zhu, Lin Yuan, Wanli Gu, Weichang Wu, Weiran Huang, Bo Han, Xiaolu Zhang, Jiangchao Yao
-- 发布：2026-09-30；更新：2026-09-30
+- 发布：2026-09-30；更新：2026-11-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

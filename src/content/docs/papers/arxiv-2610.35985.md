@@ -39,7 +39,7 @@ Conditional memory layers, such as DeepSeek's Engram, attach large hashed n-gram
 ## 元数据
 
 - 作者：Tianqi Chen, Xunchao Li, Linchuan Xie, Guanghua Yu, Jianchen Zhu, Peisong Wang, Jian Cheng
-- 发布：2026-10-28；更新：2026-10-28
+- 发布：2026-10-28；更新：2026-11-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

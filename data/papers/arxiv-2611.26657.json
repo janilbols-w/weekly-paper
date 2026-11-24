@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.26657",
+  "title": "BitPrefill: W1.58A4 Tensor-Core Acceleration for Compute-Bound LLM Prefill",
+  "abstract": "Low-bit quantization reduces large language model (LLM) inference cost, yet implementations optimized for memory-bound decode can leave compute-bound prefill on BF16 tensor cores. This gap matters for input-heavy workloads, including long-context and multimodal applications, where prefill can account for a substantial fraction of inference latency. We propose a W1.58A4 operator that quantizes weights to ternary values and activations to 4-bit, while executing the linear projection on native INT4 general matrix multiply (GEMM) tensor cores, turning prefill from a full-precision matrix multiply into a low-bit one. We deploy the operator for BitNet-b1.58 on a single RTX 4090 and a Jetson Orin Nano edge device, and report GEMM-kernel latency, end-to-end LLMs prefill latency, and task accuracy against bf16 and BitNet/BitBLAS baselines. Our proposed kernel achieves ~1.42x acceleration compared to the original BF16 prefill phase, with negligible reduction on model accuracy.",
+  "url": "https://arxiv.org/abs/2611.26657",
+  "pdf_url": "https://arxiv.org/pdf/2611.26657",
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "authors": [
+    "Fang Chen",
+    "Xuming Chen",
+    "Sanmukh Kuppannagari",
+    "Gourav Datta"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "int4",
+    "quantization"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: int4, quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Low-bit quantization reduces large language model (LLM) inference cost, yet implementations optimized for memory-bound decode can leave compute-bound prefill on BF16 tensor cores.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-24T04:35:52+00:00",
+  "featured_weeks": [
+    "2026-W48"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.26657",
+      "url": "https://arxiv.org/abs/2611.26657"
+    }
+  ]
+}

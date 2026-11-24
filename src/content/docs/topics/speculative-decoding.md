@@ -5,10 +5,11 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **149** 篇。
+累计收录 **150** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Cannot Wait to Verify: Parallel Drafting to Eliminate Verifier Idle Time in Speculative Decoding](../../papers/arxiv-2611.27477/) | 2026-11-23 | 45 |
 | [LoopCache: Accelerating Long-Context Self-Speculative Decoding for Looped Transformers](../../papers/arxiv-2611.24301/) | 2026-11-18 | 47 |
 | [NarrowSpec: Draft Hidden Width Need Not Match the Target in Speculative Decoding](../../papers/arxiv-2611.23835/) | 2026-11-18 | 43 |
 | [SpecRelay: Amortize or Avoid the Round Trip in Edge-Cloud Speculative Decoding](../../papers/arxiv-2611.18963/) | 2026-11-17 | 49 |

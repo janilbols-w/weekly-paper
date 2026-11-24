@@ -5,10 +5,17 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **802** 篇。
+累计收录 **809** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](../../papers/arxiv-2601.18734/) | 2026-11-23 | 46 |
+| [Model Carving: Training Transformers That Optimize Their Own Topology](../../papers/arxiv-2611.27962/) | 2026-11-23 | 44 |
+| [Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization](../../papers/arxiv-2611.27035/) | 2026-11-23 | 44 |
+| [A Sparsity Analysis of Traffic Forecasting Architectures: How Much Missing Data is Too Much?](../../papers/arxiv-2611.26847/) | 2026-11-23 | 44 |
+| [Turnout: Adaptive Attention Switching for Efficient Reasoning](../../papers/arxiv-2611.27500/) | 2026-11-23 | 39 |
+| [STARK: Moving towards Personalized Agents That Truly Learn and Remember](../../papers/arxiv-2611.25705/) | 2026-11-23 | 39 |
+| [SAVOR: Score Once, Learn Deeper in On-Policy Distillation](../../papers/arxiv-2609.24141/) | 2026-11-23 | 39 |
 | [FlexMoE: Learning One-for-All Multi-Budget Expert Pruning for Flexible MoE Deployment](../../papers/arxiv-2606.27866/) | 2026-11-19 | 50 |
 | [FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering](../../papers/arxiv-2611.23631/) | 2026-11-19 | 46 |
 | [Probabilistic State Space Enumeration in Neural Network Computation](../../papers/arxiv-2611.15062/) | 2026-11-19 | 41 |
@@ -364,11 +371,11 @@ description: "Compression, Sparsity & Distillation"
 | [Training LLM Judges from Language Feedback via Position-Selective Self-Distillation](../../papers/arxiv-2609.38792/) | 2026-10-01 | 43 |
 | [The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models](../../papers/arxiv-2610.02191/) | 2026-10-01 | 43 |
 | [ReSAIL: Mitigating Collapse in Iterative Agent Self-Distillation](../../papers/arxiv-2609.39306/) | 2026-10-01 | 42 |
+| [Disentangling Self-Distillation: Measuring and Modeling Acquisition and Retention](../../papers/arxiv-2609.39494/) | 2026-10-01 | 42 |
 | [Can Vision-Language Models Stay Helpful When Facing Implicit Risks? Intent-Privilege OPSD for Efficient Safety-Helpfulness Alignment](../../papers/arxiv-2609.37837/) | 2026-10-01 | 42 |
 | [LAURA: Knowledge Distillation for Interpretable Ambiguous Clause Identification in Legal Contracts](../../papers/arxiv-2609.36707/) | 2026-10-01 | 41 |
 | [Less Data Approximates More: Earning Faithful Confidence in High-Stakes Domains](../../papers/arxiv-2604.08454/) | 2026-10-01 | 40 |
 | [Distilling Directional Verification](../../papers/arxiv-2610.00997/) | 2026-10-01 | 40 |
-| [Disentangling Self-Distillation: Measuring and Modeling Acquisition and Retention](../../papers/arxiv-2609.39494/) | 2026-10-01 | 40 |
 | [CrossGMN: Graph Metanetworks for Cross-Architecture Weight-Space Transformations](../../papers/arxiv-2610.01649/) | 2026-10-01 | 40 |
 | [TaxDistill: Improving Metagenomic Taxonomic Annotation via Distilled Genomic Foundation Models](../../papers/arxiv-2605.28868/) | 2026-10-01 | 39 |
 | [Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs](../../papers/arxiv-2609.38106/) | 2026-10-01 | 38 |

@@ -39,7 +39,7 @@ Quantization-aware training (QAT) aims to recover reasoning capabilities in low-
 ## 元数据
 
 - 作者：Boyuan Zheng, Jing Xiong, Chenwei Wu, Hui Shen, Zesen Zhao, Hei Ting Una Chan, Xueshen Liu, Zhen Zhang, Liyue Shen, Zechun Liu, Z. Morley Mao
-- 发布：2026-10-22；更新：2026-10-22
+- 发布：2026-10-22；更新：2026-11-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

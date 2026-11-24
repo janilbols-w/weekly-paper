@@ -40,7 +40,7 @@ Kernel optimization is essential for efficient large language model (LLM) traini
 ## 元数据
 
 - 作者：AI Training Platform Team, Bingwei Zhang, Jing Li, Amir Abdullin, Sihang Chen, Xin Chen, Liangjun Feng, Yingmeng Gao, Tao Guo, Junjie Huang, Dongfang Li, Zhanglian Lin, Jiajun Liu, Zekun Liu, Zhengxuan Lu, Xiaodong Luo, Jian Meng, Ivan Nosov, Linyuan Qiu, Weijian Sun, Wanrui Yan, Binfan Zheng, Zhicheng Zhou, Baotian Hu, Min Zhang, Haizhou Li, Zhiquan Luo
-- 发布：2026-11-16；更新：2026-11-16
+- 发布：2026-11-16；更新：2026-11-23
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/SLAI-AITP/AscendGYM](https://github.com/SLAI-AITP/AscendGYM)
 - 阅读深度：abstract

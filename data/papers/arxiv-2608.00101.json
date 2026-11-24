@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2608.00101",
+  "title": "Agentic Coding in the Wild: Characterizing GitHub Copilot Traces at Production Scale",
+  "abstract": "AI coding agents (e.g., GitHub Copilot, Claude Code, Codex) interleave multi-step LLM inference with tool execution, creating a workload different from chatbots. We present the first production-scale characterization of coding agents using sampled GitHub Copilot traces from June-July 2026, comprising 7.4M users, 819M conversations, 5.7B LLM calls, and 946T tokens. Our analysis reveals distinctive workload properties with unique systems implications: e.g., sparse user-initiated turns unfold into autonomous agent loops with nearly 1:1 coupling between LLM calls and tool execution; parallel LLM calls are rare but exist in turns that trigger subagents; KV cache hit rates average 90% within a turn, but fall to 52% across turn boundaries and to 6% after model switches; workflows and user behaviors exhibit diverse, long-tailed resource footprints. We further distinguish short agentic turnaround times from minutes-long user idle periods between turns, and develop a lightweight idle-time predictor that captures 87-89% of total idle time. We demonstrate two use cases: (1) a harness-side LLM API keep-alive policy that preserves provider-side context KV cache, reducing token costs by 14.9% on turn boundaries; and (2) a serving-side KV cache residency policy that uses predicted idle time to guide DRAM offloading, reducing time to first token (TTFT) by 3-33% compared with LRU during a one-week evaluation with GitHub Copilot traces.",
+  "url": "https://arxiv.org/abs/2608.00101",
+  "pdf_url": "https://arxiv.org/pdf/2608.00101",
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "authors": [
+    "Banruo Liu",
+    "Haoran Qiu",
+    "\\'I\\~nigo Goiri",
+    "Rodrigo Fonseca",
+    "Ricardo Bianchini",
+    "Esha Choukse"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "AI coding agents (e.g., GitHub Copilot, Claude Code, Codex) interleave multi-step LLM inference with tool execution, creating a workload different from chatbots.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-24T04:35:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2608.00101",
+      "url": "https://arxiv.org/abs/2608.00101"
+    }
+  ]
+}

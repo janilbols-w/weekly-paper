@@ -1,0 +1,78 @@
+{
+  "id": "arxiv:2611.27701",
+  "title": "FOREST: Coordinating Tree-based HBF, RRAM, and HBM for Efficient Speculative LLM Inference",
+  "abstract": "Speculative decoding (SD) accelerates large language model (LLM) inference by combining lightweight drafting with parallel target-model verification. However, its stages impose distinct resource demands: target verification requires high-throughput access to large weight sets, sequential drafting executes a compact model under tight latency constraints, and long-context attention processes growing key-value (KV) caches. Conventional GPU-centric SD systems serve these workloads through shared HBM-centric memory and general-purpose compute, creating mismatches in capacity, bandwidth, and computation. These mismatches constrain deployable model-context configurations and limit the efficiency of bandwidth-bound and latency-sensitive operations. We propose FOREST, a heterogeneous memory-centric architecture coordinating HBF, 3D-stacked RRAM, and HBM memory-compute trees for efficient SD. It features: (1) compute-aligned 3D RRAM, combining ultra-wide, low-frequency reads with clock-decoupled interfaces and overlapped SRAM-DCIM weight refills for latency-sensitive drafting; (2) cross-tree numerical co-design, moving block-scaled Q/K/V preprocessing to HBF and RRAM root plates and enabling block-floating-point (BFP) attention with pipelined softmax reduction in the HBM tree; and (3) HBF-aware SD design-space exploration, revealing how bandwidth-compute provisioning and model scale determine performance, energy, and cost trade-offs. Evaluated across six SD configurations spanning 32B-405B target models, FOREST achieves up to 5.5x end-to-end speedup, 11.46x higher decode throughput, and 16.5x higher decode energy efficiency over NVIDIA A800 GPU-based SD baselines. Under a modeled total cost of ownership, FOREST delivers up to 6.73x higher token-generation cost efficiency.",
+  "url": "https://arxiv.org/abs/2611.27701",
+  "pdf_url": "https://arxiv.org/pdf/2611.27701",
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "authors": [
+    "Hao Ding",
+    "Zheng Shi",
+    "Dongxue Zhao",
+    "Huiying Bian",
+    "Meng Li",
+    "Xu Zheng",
+    "Kun Wang",
+    "Nanjian Wu",
+    "Jie Chen",
+    "Yimao Cai"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "energy-cost-thermal",
+    "leaf": "Energy, Cost & Thermal Efficiency",
+    "leaf_zh": "能耗、成本与散热"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "energy efficiency",
+    "total cost of ownership"
+  ],
+  "score": 56,
+  "score_components": {
+    "relevance": 14,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 20,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: energy efficiency, total cost of ownership",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Speculative decoding (SD) accelerates large language model (LLM) inference by combining lightweight drafting with parallel target-model verification.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-24T04:35:52+00:00",
+  "featured_weeks": [
+    "2026-W48"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.27701",
+      "url": "https://arxiv.org/abs/2611.27701"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2609.24141",
+  "title": "SAVOR: Score Once, Learn Deeper in On-Policy Distillation",
+  "abstract": "On-policy distillation (OPD) trains a student on its own samples with token-level scores from a stronger teacher, and it effectively transfers reasoning ability to small language models. Each training step pays for student rollouts and teacher scoring, yet common OPD configurations make a single pass over the scored batch and then discard it. We observe that reusing the batch alone is not enough, because no single fixed teacher target suits every batch. In our runs, a fixed $\\alpha$ of 0.3 exceeds a KL envelope at every training step, while 0.2 leaves over a quarter of it unused. We propose SAVOR, which selects for each batch the strongest teacher target inside the KL envelope, freezes the scored batch, and reuses it for a fixed number of student updates without further teacher calls. On five math reasoning benchmarks with a 1.7B student and a 30B-A3B teacher, SAVOR raises macro accuracy over TOP-D from 15.41 to 17.78 with two passes and to 19.36 with three passes at about the same teacher budget. With three passes, SAVOR nearly matches the final accuracy of TOP-D after one third of training while using 67.2% fewer teacher-scored tokens. These results suggest budgeting reuse depth explicitly in OPD.",
+  "url": "https://arxiv.org/abs/2609.24141",
+  "pdf_url": "https://arxiv.org/pdf/2609.24141",
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "authors": [
+    "Keye Zheng",
+    "Hanyu Li",
+    "Zhan Cheng",
+    "Yuan Gao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "On-policy distillation (OPD) trains a student on its own samples with token-level scores from a stronger teacher, and it effectively transfers reasoning ability to small language models.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-24T04:35:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.24141",
+      "url": "https://arxiv.org/abs/2609.24141"
+    }
+  ]
+}

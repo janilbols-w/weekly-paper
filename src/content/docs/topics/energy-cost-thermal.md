@@ -5,10 +5,12 @@ description: "Energy, Cost & Thermal Efficiency"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 能耗、成本与散热**
 
-累计收录 **70** 篇。
+累计收录 **72** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [FOREST: Coordinating Tree-based HBF, RRAM, and HBM for Efficient Speculative LLM Inference](../../papers/arxiv-2611.27701/) | 2026-11-23 | 56 |
+| [Acceleration of Sparse and Irregular Workloads through Energy-Efficient Stream Extensions](../../papers/arxiv-2611.26939/) | 2026-11-23 | 42 |
 | [FlashX: Scaling Robotic Experience Reuse for Embodied Agents with CBA-Based NAND Flash](../../papers/arxiv-2611.25580/) | 2026-11-19 | 43 |
 | [Multicore Quantum Architecture for Scalable and Energy-Aware Green IoT Computing](../../papers/arxiv-2611.21663/) | 2026-11-18 | 45 |
 | [LaFlash: Capacity-Driven Acceleration for Coding Agent Workflows via QLC-HBF](../../papers/arxiv-2611.22746/) | 2026-11-17 | 47 |

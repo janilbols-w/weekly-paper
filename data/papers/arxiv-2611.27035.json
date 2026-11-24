@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2611.27035",
+  "title": "Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization",
+  "abstract": "Autonomous coding agents powered by large language models (LLMs) now write diverse microarchitectural variants of existing register-transfer level (RTL) designs at high throughput, shifting the primary bottleneck of agentic RTL optimization onto logic synthesis. Commercial toolchains take hours per variant, creating an acute compute asymmetry between proposing and evaluating variants. Existing fast evaluators falter in this regime. Subtle RTL edits trigger nonlinear synthesis shifts that learned predictors and coding agents cannot resolve, while synthesis proxies at reduced effort either alter the optimization trajectory or retain most of its runtime. Selecting a variant, however, does not require regressing absolute quality of results across designs, only identifying when a candidate cannot surpass the best completed feasible implementation. Based on the observation that synthesis trajectories share strong design-specific bias with their base design, we propose DiffScope, a training-free anytime selection framework that races full synthesis runs in parallel. By pairing live area telemetry with the already synthesized base trajectory, DiffScope cancels early mapping inflation, reducing residual variance during initial mapping by 73.6X, and stops uncompetitive runs via a lower bound calibrated on other design lineages. Across 43 design families from small blocks to processors with millions of cells, DiffScope uniquely recovers the optimum of exhaustive synthesis in every family, cuts total evaluation work by 44.9% (1.81X), and reaches 2.18X on L-tier designs.",
+  "url": "https://arxiv.org/abs/2611.27035",
+  "pdf_url": "https://arxiv.org/pdf/2611.27035",
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "authors": [
+    "Siyang Cai",
+    "Cangyuan Li",
+    "Haoyu Gao",
+    "Kun Wang",
+    "Mochen Li",
+    "Yilin Zhong",
+    "Ke Xu",
+    "Yinhe Han",
+    "Ying Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 44,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Autonomous coding agents powered by large language models (LLMs) now write diverse microarchitectural variants of existing register-transfer level (RTL) designs at high throughput, shifting the primary bottleneck of agentic RTL optimization onto logic synthesis.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-24T04:35:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.27035",
+      "url": "https://arxiv.org/abs/2611.27035"
+    }
+  ]
+}

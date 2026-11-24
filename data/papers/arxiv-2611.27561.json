@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2611.27561",
+  "title": "Exploring the Potential of Ultra-Low-Bit Inference on LLM Accelerators",
+  "abstract": "Vector quantization (VQ) enables ultra-low-bit compression of large language models (LLMs) by encoding groups of values as compact codebook indexes. However, reconstructing these values for computation requires frequent codebook lookups, which conflict with the dataflows of conventional LLM accelerators and limit the performance gains from VQ compression. Consequently, prior work has resorted to VQ-specific accelerator designs, which either incur substantial additional hardware overhead or support only a limited range of inference scenarios. In this work, we argue that existing systolic-array-based LLM accelerators already possess the essential hardware resources for efficient VQ inference, but lack the mechanisms to effectively exploit them. To bridge this gap, we present VQACC, an architectural enhancement that jointly redesigns the existing operand buffer's access logic and data mapping to reuse its storage and port resources for codebook lookups, seamlessly integrating dequantization into the normal operand-addressing dataflow. Evaluation shows that VQACC achieves a 2.63$\\times$ speedup over the EVA baseline, with additional hardware occupying only 0.17\\% of the compute array's area.",
+  "url": "https://arxiv.org/abs/2611.27561",
+  "pdf_url": "https://arxiv.org/pdf/2611.27561",
+  "published": "2026-11-23",
+  "updated": "2026-11-23",
+  "authors": [
+    "Hao Wang",
+    "Yang Shi",
+    "Jiageng Shi",
+    "Qiuran Li",
+    "Yaohua Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "hardware-edge",
+    "leaf": "Hardware-aware & Edge Inference",
+    "leaf_zh": "硬件感知与边缘推理"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "accelerator"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: accelerator",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Vector quantization (VQ) enables ultra-low-bit compression of large language models (LLMs) by encoding groups of values as compact codebook indexes.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-24T04:35:52+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.27561",
+      "url": "https://arxiv.org/abs/2611.27561"
+    }
+  ]
+}
