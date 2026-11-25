@@ -5,10 +5,16 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **147** 篇。
+累计收录 **153** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents](../../papers/arxiv-2611.29243/) | 2026-11-24 | 44 |
+| [MolReJev: Decision Models Are In-Context Molecular Predictors](../../papers/arxiv-2611.28965/) | 2026-11-24 | 40 |
+| [Hidden Sensitivity in LLM Pre-training: A Dynamic System View](../../papers/arxiv-2611.28830/) | 2026-11-24 | 40 |
+| [Muon Sublates the Edge of Stability in LLM Pretraining: What Persists and What Changes](../../papers/arxiv-2609.34915/) | 2026-11-24 | 39 |
+| [TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming](../../papers/arxiv-2611.31233/) | 2026-11-24 | 38 |
+| [Model Immunization Cannot Reliably Protect Models from Harmful Adaptation](../../papers/arxiv-2611.29815/) | 2026-11-24 | 38 |
 | [DistDNA: Language Model Fingerprinting under Stochastic Decoding](../../papers/arxiv-2611.27831/) | 2026-11-23 | 38 |
 | [One Checkpoint, Many Runs: Recipe Cards for Fine-Tuned Models](../../papers/arxiv-2610.16825/) | 2026-11-19 | 39 |
 | [Towards Scale-Up Networking: Challenges and Open Questions](../../papers/arxiv-2611.26156/) | 2026-11-19 | 38 |

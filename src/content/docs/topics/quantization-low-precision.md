@@ -5,10 +5,16 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **458** 篇。
+累计收录 **464** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MemVanta: Memory-Efficient CPU Inference for Quantized GGUF Language Models](../../papers/arxiv-2611.27997/) | 2026-11-24 | 50 |
+| [BQDNA: Multi-Head Binary Spherical Quantization for Genomic Sequence Modeling](../../papers/arxiv-2611.29395/) | 2026-11-24 | 47 |
+| [Practical activation sparsity for quantized LLMs on personal devices](../../papers/arxiv-2511.04477/) | 2026-11-24 | 45 |
+| [Selection Policies for Equal-Byte Mixed-Precision Quantization of Small Language Models](../../papers/arxiv-2611.28318/) | 2026-11-24 | 40 |
+| [Estimating Silenced Tokens in Quantized LLMs](../../papers/arxiv-2611.29536/) | 2026-11-24 | 38 |
+| [BitShare: Sensitivity-Aware Binning and Bit Sharing for Compacting LLM Weight Storage](../../papers/arxiv-2611.28607/) | 2026-11-24 | 38 |
 | [BitPrefill: W1.58A4 Tensor-Core Acceleration for Compute-Bound LLM Prefill](../../papers/arxiv-2611.26657/) | 2026-11-23 | 48 |
 | [The Vulnerability Window: Decision Instability in Quantized Reward Models](../../papers/arxiv-2611.27155/) | 2026-11-23 | 43 |
 | [SaturQ: Saturation-Aware Mixed-Precision Quantization](../../papers/arxiv-2607.12266/) | 2026-11-23 | 43 |

@@ -5,10 +5,11 @@ description: "Observability & Benchmarking"
 
 三级分类：**AI 基础设施 > 服务平台 > 可观测性与 Benchmark**
 
-累计收录 **38** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Geospatial foundation models and deep learning for climate resilience: a review of transfer, uncertainty and decision readiness](../../papers/arxiv-2611.30198/) | 2026-11-24 | 42 |
 | [WATERFALL: Workflow for Adaptive Training with Evolutionary Reward Formulation and Automated Learning Loops](../../papers/arxiv-2611.22854/) | 2026-11-18 | 42 |
 | [A Survey on RLOps for Large Language Models](../../papers/arxiv-2611.23357/) | 2026-11-17 | 40 |
 | [Isolating Perception for Multi-View Planning under Occlusion-Induced Partial Observability](../../papers/arxiv-2611.19179/) | 2026-11-17 | 39 |

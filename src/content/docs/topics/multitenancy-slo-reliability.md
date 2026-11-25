@@ -44,7 +44,7 @@ description: "Multi-tenancy, SLO & Reliability"
 | [Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference](../../papers/arxiv-2605.02329/) | 2026-08-12 | 50 |
 | [SAGE: SLO-Aware Adaptive Retrieval for Production RAG Systems](../../papers/arxiv-2608.08237/) | 2026-08-11 | 44 |
 | [Benchmarking LLM-Guided Control-Plane Policies for Backend Fault Isolation in HAProxy](../../papers/arxiv-2608.10532/) | 2026-08-11 | 44 |
-| [Cascade: Exploiting SLO-Aware latency budget for fair and high goodput LLM inference serving](../../papers/arxiv-2608.06557/) | 2026-08-10 | 48 |
+| [Cascade: Exploiting SLO-Aware latency budget for fair and high goodput LLM inference serving](../../papers/arxiv-2608.06557/) | 2026-08-10 | 45 |
 | [SpecBox: Speculative Sandbox Scheduling for Efficient LLM Agent Serving](../../papers/arxiv-2607.23933/) | 2026-08-06 | 47 |
 | [Pin Once, Swap Light: Subspace-Aligned Centroid-Residual Training for Efficient Ultra-LoRA Serving](../../papers/arxiv-2608.03579/) | 2026-08-05 | 46 |
 | [Separating Intelligence from Inference: A Standard for Edge-Native AI Computing](../../papers/arxiv-2608.02608/) | 2026-08-05 | 42 |

@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.27997",
+  "title": "MemVanta: Memory-Efficient CPU Inference for Quantized GGUF Language Models",
+  "abstract": "Deploying large language models on commodity CPUs is often constrained not only by computational throughput but also by the resident memory required to execute quantized models within fixed system budgets. We present MemVanta, an experimental C++20 inference runtime for quantized GGUF language models that treats memory residency as a first-class systems objective. MemVanta combines memory-mapped model access, bounded tensor caching, quantized execution paths, paged key-value state, and explicit memory-pressure validation. We evaluate MemVanta against a pinned llama.cpp baseline using the same OpenLLaMA 7B v2 Q4_0 GGUF under CPU-only execution. Across five measured runs following warm-up, MemVanta records a peak resident set size of 3,983,412 KiB compared with 7,586,960 KiB for llama.cpp, corresponding to a 47.50 percent reduction in peak RSS. This memory reduction involves a substantial throughput trade-off: MemVanta achieves 3.15 +/- 0.04 tokens/s for prompt processing and 1.52 +/- 0.02 tokens/s for token generation, compared with 45.82 +/- 0.96 and 7.76 +/- 0.09 tokens/s, respectively, for llama.cpp. In a separate Linux cgroup-v2 experiment with swap disabled, MemVanta completes execution at a tested 3584 MiB memory ceiling, while llama.cpp is OOM-killed at that ceiling and first succeeds at the tested 3840 MiB level. These results position MemVanta as a memory-efficiency research prototype rather than a throughput competitor. We analyze the architectural mechanisms underlying this trade-off and discuss reproducibility, correctness, limitations, and opportunities for memory-constrained CPU and edge inference.",
+  "url": "https://arxiv.org/abs/2611.27997",
+  "pdf_url": "https://arxiv.org/pdf/2611.27997",
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "authors": [
+    "Saurav Singla",
+    "Aarav Singla",
+    "Advik Gupta",
+    "Parnika Gupta"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 11,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Deploying large language models on commodity CPUs is often constrained not only by computational throughput but also by the resident memory required to execute quantized models within fixed system budgets.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-25T04:36:07+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
+  "featured_weeks": [
+    "2026-W48"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.27997",
+      "url": "https://arxiv.org/abs/2611.27997"
+    }
+  ]
+}

@@ -5,10 +5,26 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **809** 篇。
+累计收录 **823** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action](../../papers/arxiv-2611.31240/) | 2026-11-24 | 48 |
+| [PCC: Pivotal Channel Compensation for Layer Pruning of Large Language Models](../../papers/arxiv-2611.30183/) | 2026-11-24 | 44 |
+| [Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation](../../papers/arxiv-2611.28502/) | 2026-11-24 | 42 |
+| [Reasoning Beyond Imitation: Observation Conditioned Distillation for Video LLMs](../../papers/arxiv-2611.29728/) | 2026-11-24 | 42 |
+| [HME-PFD: Heterogeneous Mixture-of-Experts Privileged Feature Distillation](../../papers/arxiv-2611.29094/) | 2026-11-24 | 42 |
+| [Learning Teacher Output Preferences from Final Responses for Reasoning Distillation](../../papers/arxiv-2611.30338/) | 2026-11-24 | 41 |
+| [Specialized Large Language Models for Markovian Reasoning: Structural Cache Compression, Transition Pretraining, and Dual-Loop Transformers](../../papers/arxiv-2611.28285/) | 2026-11-24 | 40 |
+| [SPARSEBLEED: Bypassing Attribute-Inference Defenses via Sparsity Optimizations](../../papers/arxiv-2610.38110/) | 2026-11-24 | 40 |
+| [HandXFM: Semantic-Structural Distillation for Hand Radiograph Foundation Models](../../papers/arxiv-2611.28283/) | 2026-11-24 | 40 |
+| [Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination](../../papers/arxiv-2611.30639/) | 2026-11-24 | 39 |
+| [Tool-to-Self: Internalizing Visual Tool Capabilities via Scaffolded Reinforcement Learning](../../papers/arxiv-2611.28564/) | 2026-11-24 | 39 |
+| [The KL Divergence Is Never Negative, Except in PyTorch](../../papers/arxiv-2611.30835/) | 2026-11-24 | 39 |
+| [Reducing Permutation Sensitivity in Multimodal Large Language Models via Shared Positions and Attention-Only Distillation](../../papers/arxiv-2611.28612/) | 2026-11-24 | 39 |
+| [Muted Distillation: Sealing Reasoning from Teacher Unlocks Token-Efficient Agents](../../papers/arxiv-2611.28445/) | 2026-11-24 | 39 |
+| [Revisiting Continual Learning in Language Models: A Three-Interface Diagnosis of Stability and Plasticity](../../papers/arxiv-2611.30151/) | 2026-11-24 | 38 |
+| [Lorentz symmetry in self-supervised representation learning](../../papers/arxiv-2611.31011/) | 2026-11-24 | 38 |
 | [Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](../../papers/arxiv-2601.18734/) | 2026-11-23 | 46 |
 | [Model Carving: Training Transformers That Optimize Their Own Topology](../../papers/arxiv-2611.27962/) | 2026-11-23 | 44 |
 | [Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization](../../papers/arxiv-2611.27035/) | 2026-11-23 | 44 |
@@ -18,11 +34,9 @@ description: "Compression, Sparsity & Distillation"
 | [SAVOR: Score Once, Learn Deeper in On-Policy Distillation](../../papers/arxiv-2609.24141/) | 2026-11-23 | 39 |
 | [FlexMoE: Learning One-for-All Multi-Budget Expert Pruning for Flexible MoE Deployment](../../papers/arxiv-2606.27866/) | 2026-11-19 | 50 |
 | [FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering](../../papers/arxiv-2611.23631/) | 2026-11-19 | 46 |
-| [Probabilistic State Space Enumeration in Neural Network Computation](../../papers/arxiv-2611.15062/) | 2026-11-19 | 41 |
 | [HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs](../../papers/arxiv-2611.26363/) | 2026-11-19 | 40 |
 | [EasyOPD: An Easy-to-use On-Policy Distillation Framework for Large Language Models](../../papers/arxiv-2607.11012/) | 2026-11-19 | 40 |
 | [When Features Beat Noise: A Noise-Driven Hypothesis Testing Method for Feature Selection](../../papers/arxiv-2511.20851/) | 2026-11-19 | 39 |
-| [GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers](../../papers/arxiv-2611.26509/) | 2026-11-19 | 38 |
 | [A Survey on Collaborative Mechanisms Between Large and Small Language Models](../../papers/arxiv-2505.07460/) | 2026-11-19 | 38 |
 | [MoMoVL: Modality-Aware Adaptive Compression for On-Device Sparsely-Activated Vision-Language Models](../../papers/doi-10.1145-3862322.3863775/) | 2026-11-18 | 47 |
 | [The Kernel Reality Check: Benchmarking and Distilling Efficient Attention at Scale](../../papers/arxiv-2611.22947/) | 2026-11-18 | 45 |

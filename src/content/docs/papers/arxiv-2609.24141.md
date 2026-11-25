@@ -39,7 +39,7 @@ On-policy distillation (OPD) trains a student on its own samples with token-leve
 ## 元数据
 
 - 作者：Keye Zheng, Hanyu Li, Zhan Cheng, Yuan Gao
-- 发布：2026-11-23；更新：2026-11-23
+- 发布：2026-11-23；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

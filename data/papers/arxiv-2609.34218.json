@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2609.34218",
   "title": "Loop Dropout: Regularizing Shared Updates in Looped Language Models",
-  "abstract": "Looped language models separate computational depth from parameter count by repeatedly applying the same transformer block. Adapting these models requires a shared update that remains effective as hidden states evolve throughout the recurrent computation. Our empirical analysis reveals a pronounced late-loop bias in standard low-rank adaptation (LoRA): the shared update provides limited adaptation at early loop positions. This imbalance motivates training shared updates under varying combinations of their applications. Randomly omitting adapter applications alone, however, does not improve task performance; it reduces expected update strength during training while leaving inference unchanged. We introduce Loop Dropout, which couples stochastic masking of adapter applications with inverse-survival rescaling to preserve expected update strength and promote effective adaptation across loops. Extensive experiments demonstrate improved mathematical reasoning across model sizes, adapter ranks and training recipes, with benefits extending to general instruction tuning and code generation. Loop Dropout outperforms existing LoRA variants and adapter regularizers, while further analysis shows stronger early-loop adaptation. Every backbone loop remains active, and inference applies the adapter at all loops using standard LoRA without additional trainable parameters or inference computation. Code is available at https://github.com/NUS-HPC-AI-Lab/loop-dropout .",
+  "abstract": "Looped language models separate computational depth from parameter count by repeatedly applying the same transformer block. Adapting these models requires a shared update that remains effective as hidden states evolve throughout the recurrent computation. Our empirical analysis reveals a pronounced late-loop bias in standard low-rank adaptation (LoRA): the shared update provides limited adaptation at early loop positions. This imbalance motivates training shared updates under varying combinations of their applications. Randomly omitting adapter applications alone, however, does not improve task performance; it reduces expected update strength during training while leaving inference unchanged. We introduce Loop Dropout, which couples stochastic masking of adapter applications with inverse-survival rescaling to preserve expected update strength and promote effective adaptation across loops. Extensive experiments demonstrate improved mathematical reasoning across model sizes, adapter ranks and training recipes, with benefits extending to general instruction tuning and code generation. Loop Dropout outperforms existing LoRA variants and adapter regularizers, while further analysis shows stronger early-loop adaptation. Every backbone loop remains active, and inference applies the adapter at all loops using standard LoRA without additional trainable parameters or inference computation. Code is available at https://github.com/NUS-HPC-AI-Lab/loop-dropout.",
   "url": "https://arxiv.org/abs/2609.34218",
   "pdf_url": "https://arxiv.org/pdf/2609.34218",
   "published": "2026-10-06",
-  "updated": "2026-10-06",
+  "updated": "2026-11-24",
   "authors": [
     "Zirui Zhu",
     "Hailun Xu",
@@ -62,7 +62,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-10-06T04:45:36+00:00",
-  "last_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
   "featured_weeks": [],
   "source_records": [
     {

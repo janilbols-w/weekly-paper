@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2511.14450",
+  "title": "Hyperion: Hierarchical Scheduling for Parallel LLM Acceleration in Multi-tier Networks",
+  "abstract": "LLMs are increasingly executed at the edge, where limited GPU memory and heterogeneous computation jointly constrain deployment, which motivates model partitioning and request scheduling. In this setting, minimizing latency requires addressing the tight coupling between model placement and request scheduling across heterogeneous nodes, as suboptimal decisions in one domain can negate benefits in the other. In this paper, we propose Hyperion, a hierarchical two-stage framework that coordinates partitioning and scheduling for pipelined LLM inference. Hyperion reduces latency by balancing resources across tiers without requiring model retraining. Leveraging the timescale difference between partitioning and request arrivals, Stage 1 performs offline, inter-tier partitioning via a Hyperion Split with Dynamic Programming (HypSplit-DP) procedure to produce balanced stage times under tier capacity and memory constraints; to adapt to time-varying load, Stage 2 performs online, intra-tier scheduling with a lightweight Hyperion Scheduling for Real-Time (HypSched-RT) that maps each request to a feasible node using real-time estimates of queue length and effective capacity. Experiments with Llama 3 and Phi-3 demonstrate that Hyperion reduces latency by up to 46.9% (vs. GPipe) and 31.1% (vs. HEFT). Furthermore, Hyperion exhibits superior scalability for long-sequence generation, maintaining 25.5% lower latency and higher GPU utilization.",
+  "url": "https://arxiv.org/abs/2511.14450",
+  "pdf_url": "https://arxiv.org/pdf/2511.14450",
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "authors": [
+    "Mulei Ma",
+    "Xinyi Xu",
+    "Minrui Xu",
+    "Zihan Chen",
+    "Yang Yang",
+    "Tony Q. S. Quek"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "serving-distributed",
+    "group": "Serving & Distributed Inference",
+    "group_zh": "Serving 与分布式推理",
+    "leaf_id": "batching-scheduling",
+    "leaf": "Batching & Request Scheduling",
+    "leaf_zh": "Batching 与请求调度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "request scheduling"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: request scheduling",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "LLMs are increasingly executed at the edge, where limited GPU memory and heterogeneous computation jointly constrain deployment, which motivates model partitioning and request scheduling.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-25T04:36:07+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2511.14450",
+      "url": "https://arxiv.org/abs/2511.14450"
+    }
+  ]
+}

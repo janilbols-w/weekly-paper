@@ -1,5 +1,5 @@
 ---
-title: "Mosaic: Efficient CPU-GPU Coordinated Block-Sparse Attention"
+title: "Mosaic: Efficient CPU--GPU Coordinated Block-Sparse Attention for Long-Context Decoding"
 description: "Long-context LLM serving increasingly relies on CPU-resident context KV cache, driven by KV offloading and disaggregated prefill--decode execution."
 ---
 
@@ -39,7 +39,7 @@ Long-context LLM serving increasingly relies on CPU-resident context KV cache, d
 ## 元数据
 
 - 作者：Feiyu Yao, Zhixiong Niu, Xiaqing Li, Yongqiang Xiong, Juan Fang, Qian Wang
-- 发布：2026-11-23；更新：2026-11-23
+- 发布：2026-11-23；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

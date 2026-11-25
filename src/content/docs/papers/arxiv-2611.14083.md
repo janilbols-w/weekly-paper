@@ -39,7 +39,7 @@ We present Sable, an argument system and single-GPU prover for the statement tha
 ## 元数据
 
 - 作者：Tomer Solberg
-- 发布：2026-11-11；更新：2026-11-11
+- 发布：2026-11-11；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/moonmath-ai/Sable](https://github.com/moonmath-ai/Sable)
 - 阅读深度：metadata

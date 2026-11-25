@@ -5,10 +5,14 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **150** 篇。
+累计收录 **154** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [CGSpec: Consistency-Guided Speculative Decoding with Overlap-Aware Verification Scheduling for Edge-Cloud Inference](../../papers/arxiv-2611.30455/) | 2026-11-24 | 45 |
+| [PackLoop: Row-Packed Self-Speculative Decoding for Looped Language Models under Concurrency](../../papers/arxiv-2611.30205/) | 2026-11-24 | 44 |
+| [Feedback Shortcut: Speculative Decoding for Latent Feedback Transformers](../../papers/arxiv-2611.28227/) | 2026-11-24 | 43 |
+| [Quantizing Diffusion LLMs under Parallel Decoding: Commitment Risk and the Parallelism Tax](../../papers/arxiv-2611.30587/) | 2026-11-24 | 41 |
 | [Cannot Wait to Verify: Parallel Drafting to Eliminate Verifier Idle Time in Speculative Decoding](../../papers/arxiv-2611.27477/) | 2026-11-23 | 45 |
 | [LoopCache: Accelerating Long-Context Self-Speculative Decoding for Looped Transformers](../../papers/arxiv-2611.24301/) | 2026-11-18 | 47 |
 | [NarrowSpec: Draft Hidden Width Need Not Match the Target in Speculative Decoding](../../papers/arxiv-2611.23835/) | 2026-11-18 | 43 |

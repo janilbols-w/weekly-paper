@@ -5,10 +5,11 @@ description: "Kernels & Operator Fusion"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Kernel 与算子融合**
 
-累计收录 **50** 篇。
+累计收录 **51** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [KernelShift: Benchmarking Kernel Optimization Across Evolving Hardware](../../papers/arxiv-2611.29590/) | 2026-11-24 | 48 |
 | [Polymorph: Operating System Kernel Optimization Through Artificial Intelligence](../../papers/arxiv-2611.23644/) | 2026-11-18 | 46 |
 | [Dissecting an Unexplored SASS Control-Code Field: Barrier Exemption and Programmable Warp Priority](../../papers/arxiv-2611.24437/) | 2026-11-18 | 41 |
 | [AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs](../../papers/arxiv-2611.17621/) | 2026-11-16 | 55 |

@@ -5,10 +5,12 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **118** 篇。
+累计收录 **120** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [EdgeALM: An Efficient and Unified Edge Accelerator for Large Audio Language Models via Full-Stack Hardware-Software Co-Design and Agent-Driven Recursive Optimization](../../papers/arxiv-2611.30216/) | 2026-11-24 | 44 |
+| [STEdgeFormer: MCU and NPU Deployable Transformer Architecture](../../papers/arxiv-2611.28935/) | 2026-11-24 | 41 |
 | [Exploring the Potential of Ultra-Low-Bit Inference on LLM Accelerators](../../papers/arxiv-2611.27561/) | 2026-11-23 | 38 |
 | [Kameleo: In-Situ Activation-Precision Selection for Bit-Serial LLM Accelerators](../../papers/arxiv-2611.25971/) | 2026-11-19 | 44 |
 | [Contour: Extensible Mapping Surfaces for Agentic Accelerator Kernel Generation](../../papers/arxiv-2608.00894/) | 2026-11-19 | 43 |

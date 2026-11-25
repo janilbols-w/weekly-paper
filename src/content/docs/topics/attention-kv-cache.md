@@ -5,23 +5,28 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **304** 篇。
+累计收录 **309** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs](../../papers/arxiv-2611.29497/) | 2026-11-24 | 52 |
+| [RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds](../../papers/arxiv-2611.28171/) | 2026-11-24 | 48 |
+| [The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates](../../papers/arxiv-2611.28671/) | 2026-11-24 | 46 |
+| [Time Series Foundation Models on the Edge](../../papers/arxiv-2611.30404/) | 2026-11-24 | 40 |
+| [Selective ROM Weight Storage for Responsive LLM Control on Edge Robots](../../papers/arxiv-2611.28563/) | 2026-11-24 | 40 |
 | [TriAxialKV: Toward Extreme Low-Precision KV-Cache Quantization for Agentic Inference Tasks](../../papers/arxiv-2605.17170/) | 2026-11-23 | 46 |
 | [CarrierKV: An Edge LLM Accelerator with Positional Carrier Decomposition for Low-Bit KV Cache](../../papers/arxiv-2611.26857/) | 2026-11-23 | 43 |
 | [MemOnce: A Scalable Memory Architecture for Large Language Models](../../papers/arxiv-2611.27973/) | 2026-11-23 | 41 |
 | [BusemannFormer: Horospherical Self-Attention for Hyperbolic Graph Transformers](../../papers/arxiv-2611.27167/) | 2026-11-23 | 41 |
 | [Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs](../../papers/arxiv-2611.26975/) | 2026-11-23 | 40 |
-| [Mosaic: Efficient CPU-GPU Coordinated Block-Sparse Attention](../../papers/arxiv-2605.07719/) | 2026-11-23 | 40 |
+| [Mosaic: Efficient CPU--GPU Coordinated Block-Sparse Attention for Long-Context Decoding](../../papers/arxiv-2605.07719/) | 2026-11-23 | 40 |
 | [Agentic Coding in the Wild: Characterizing GitHub Copilot Traces at Production Scale](../../papers/arxiv-2608.00101/) | 2026-11-23 | 39 |
 | [RoCoKV: Accelerating LLM Inference Serving through Uncertainty and Redundancy Aware KV Cache Compression](../../papers/arxiv-2611.25433/) | 2026-11-19 | 55 |
 | [A Flat KV Cache Storage Architecture for LLM Serving](../../papers/arxiv-2610.38355/) | 2026-11-19 | 45 |
 | [FrontierReplay: Split-Free Exact Prefix Caching for Hybrid Language Models](../../papers/arxiv-2611.26020/) | 2026-11-19 | 44 |
 | [Aggron: Aggressive Compression of Agentic KV Caches during Head-of-Line Stalls in the Request Queue](../../papers/arxiv-2611.26435/) | 2026-11-19 | 42 |
 | [Efficient and Robust Drafting with Multi-Token Prediction](../../papers/arxiv-2611.25813/) | 2026-11-19 | 38 |
-| [TripleKV: Predict, Prefetch, Protect -- KV Cache Management for AI Agents](../../papers/arxiv-2611.25112/) | 2026-11-18 | 47 |
+| [TripleKV: Predict, Prefetch, Protect - KV Cache Management for AI Agents](../../papers/arxiv-2611.25112/) | 2026-11-18 | 47 |
 | [GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits](../../papers/arxiv-2611.24619/) | 2026-11-18 | 41 |
 | [NVFP4-MLA: Unified FP4 KV-Cache Storage and Attention Computation for Multi-Head Latent Attention](../../papers/arxiv-2611.18972/) | 2026-11-17 | 52 |
 | [Exstill: The Most Efficient Single-Chip Processor for the Next Token](../../papers/arxiv-2611.18859/) | 2026-11-17 | 48 |

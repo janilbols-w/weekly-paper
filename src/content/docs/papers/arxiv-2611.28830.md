@@ -1,0 +1,45 @@
+---
+title: "Hidden Sensitivity in LLM Pre-training: A Dynamic System View"
+description: "In Large Language Model (LLM) pre-training, loss curves can conceal substantial instability, i.e., even small perturbations may lead to dramatically different predictions while leaving loss nearly unchanged."
+---
+
+**评分：40/100** · AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint
+
+[论文原文](https://arxiv.org/abs/2611.28830) · [PDF](https://arxiv.org/pdf/2611.28830)
+
+## 一句话摘要
+
+In Large Language Model (LLM) pre-training, loss curves can conceal substantial instability, i.e., even small perturbations may lead to dramatically different predictions while leaving loss nearly unchanged.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+In Large Language Model (LLM) pre-training, loss curves can conceal substantial instability, i.e., even small perturbations may lead to dramatically different predictions while leaving loss nearly unchanged. To investigate this phenomenon and reveal the underlying mechanisms, we first formulate LLM pre-training as a non-autonomous dynamical system that jointly evolves model weights and Adam optimizer states. Based on this formulation, we introduce a normalized sensitivity score in optimizer-relative coordinates to identify sensitive training checkpoints. At one such checkpoint, a weight perturbation of only 10^(-5) leads to 35.7% disagreement in top-1 predictions and 16.2% disagreement in benchmark answers after 200 training steps, with only 0.8% of greedy generations remaining identical despite similar validation losses. Furthermore, we find that perturbations to Adam's first and second moments induce comparably large effects, with similar sensitivity patterns observed in OLMo-1B. Finally, guided by our diagnostic, targeted stabilization reduces top-1 disagreement to 0.83% and increases generation exact match to 88.3%, at the cost of a 0.11-nat increase in validation loss. Our findings reveal a hidden form of optimizer-state-dependent sensitivity in LLM pre-training that conventional loss-based evaluations may overlook, while demonstrating its potential for diagnosis and mitigation.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 7 |
+| rigor | 9 |
+| practical impact | 7 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: checkpoint
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Bo Liu, Yuan Xie, Junan Chen, Fujun Han
+- 发布：2026-11-24；更新：2026-11-24
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

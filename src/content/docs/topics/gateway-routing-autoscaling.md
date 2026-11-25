@@ -5,10 +5,12 @@ description: "Gateway, Routing & Autoscaling"
 
 三级分类：**AI 基础设施 > 服务平台 > Gateway、路由与弹性**
 
-累计收录 **48** 篇。
+累计收录 **50** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Torcalia.jl: An MPI-based Runtime System for Asynchronous Task Parallelism in Julia](../../papers/arxiv-2611.30776/) | 2026-11-24 | 45 |
+| [Rethinking Edge-Device Collaborative LLM Inference for 6G AI Edge: An Empirical Evaluation](../../papers/arxiv-2611.27994/) | 2026-11-24 | 44 |
 | [Harvesting Expert-Parallel Bubbles for Fine-Tuning](../../papers/arxiv-2611.24496/) | 2026-11-18 | 41 |
 | [Fuse-All MoE Inference Kernel with Load Balancing on TPUs](../../papers/arxiv-2611.17857/) | 2026-11-16 | 50 |
 | [SHADOWPREFILL: Keeping Your Next Model Warm for Per-Step Model Routing in Agentic LLM Serving](../../papers/arxiv-2611.13176/) | 2026-11-11 | 51 |

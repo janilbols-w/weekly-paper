@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **161** 篇。
+累计收录 **164** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [ANOR: Scaling Sparse Attention with a GPU-PNM Computing Hierarchy](../../papers/arxiv-2611.30417/) | 2026-11-24 | 43 |
+| [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](../../papers/arxiv-2611.29252/) | 2026-11-24 | 39 |
+| [Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning](../../papers/arxiv-2611.30025/) | 2026-11-24 | 38 |
 | [Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction](../../papers/arxiv-2611.07695/) | 2026-11-23 | 39 |
 | [Invertible Transport Between Sample-Only Distributions via Projected Characteristic Functions](../../papers/arxiv-2611.26187/) | 2026-11-19 | 42 |
 | [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](../../papers/arxiv-2611.21478/) | 2026-11-19 | 39 |

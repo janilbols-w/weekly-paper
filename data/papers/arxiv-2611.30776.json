@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.30776",
+  "title": "Torcalia.jl: An MPI-based Runtime System for Asynchronous Task Parallelism in Julia",
+  "abstract": "Designed to address the two-language problem, the Julia programming language provides a powerful platform for developing high-performance scientific computing and machine learning applications. Such applications increasingly exhibit irregular, adaptive, or data-driven workloads for which traditional bulk-synchronous parallel (BSP) models often struggle to efficiently exploit the available parallelism. Asynchronous many-task (AMT) runtime systems offer a compelling alternative, decomposing computations into fine-grained tasks that are dynamically scheduled across the hierarchical architecture of modern HPC systems. This paper introduces Torcalia.jl, a Julia package designed to orchestrate the asynchronous execution of tasks across both shared and distributed memory environments. Built on top of MPI.jl and Julia's native multithreading, Torcalia employs a dependency-aware task scheduling scheme that combines the work-sharing and work-stealing paradigms to achieve adaptive load balancing. Tasks can be nested arbitrarily, enabling applications to exploit multiple levels of parallelism, while application-level distributed shared memory (DSM) extends task-based shared-memory programming to multi-node clusters. Beyond task-based programming, the proposed library supports skeletal programming, providing high-level abstractions that facilitate the implementation of parallel applications at scale. Evaluated on the ARIS supercomputer using four diverse workloads, Torcalia demonstrates strong scalability, reducing wall-clock time by up to 18.1% compared with Dagger, a state-of-the-art task-based engine in Julia. The source code of Torcalia.jl is publicly available at https://github.com/CEID-HPCLAB/Torcalia.jl.",
+  "url": "https://arxiv.org/abs/2611.30776",
+  "pdf_url": "https://arxiv.org/pdf/2611.30776",
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "authors": [
+    "Argiris Sofotasios",
+    "Dimitris Metaxakis",
+    "Chrysostomos Stylios",
+    "Panagiotis Hadjidoukas"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/CEID-HPCLAB/Torcalia.jl",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "load balancing"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: load balancing",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Designed to address the two-language problem, the Julia programming language provides a powerful platform for developing high-performance scientific computing and machine learning applications.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-25T04:36:07+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.30776",
+      "url": "https://arxiv.org/abs/2611.30776"
+    }
+  ]
+}

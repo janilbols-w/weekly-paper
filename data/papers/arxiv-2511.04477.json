@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2511.04477",
+  "title": "Practical activation sparsity for quantized LLMs on personal devices",
+  "abstract": "Large language models (LLMs) increasingly run on personal devices, where generating text is slow: producing each token requires reading all of the model's weights from memory. Two techniques reduce this memory traffic. Quantization stores the weights in 4 to 8 bits. Activation sparsity treats near-zero activations as zero and skips the weights they multiply; prior work shows that it skips 40-50% of the weights of modern LLMs without retraining, at little loss in accuracy, also on quantized models. Yet the two do not combine in execution: a quantization format packs the weights that multiply many consecutive activations into one block, and a block can be skipped only if all of these activations are near zero, which rarely happens. Moreover, the near-zero activations change with every token, so balancing the GPU's load and finding them add run-time overhead. We present SpQt, which makes activation sparsity practical for quantized LLMs. SpQt (1) stores each activation's quantized weights contiguously, in a zigzag layout that keeps the quantization formats unchanged; (2) divides the nonzero activations evenly among groups of GPU threads, so the load stays balanced; and (3) finds the nonzero activations inside kernels that each decode step already runs before its matrix products, such as normalization, so that finding them adds no kernel launch. Built into llama.cpp and tested on five devices from a phone to a desktop, with Apple and NVIDIA GPUs and four quantization formats, SpQt generates tokens 1.45-2.15x faster than llama.cpp at 50% sparsity, with up to 2.6x less energy per token. With SpQt, a device can choose a sparsity level in addition to a quantization format, trading a small loss in accuracy for speed and energy.",
+  "url": "https://arxiv.org/abs/2511.04477",
+  "pdf_url": "https://arxiv.org/pdf/2511.04477",
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "authors": [
+    "Rongxiang Wang",
+    "Kangyuan Shu",
+    "Felix Xiaozhu Lin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [
+    "compression-sparsity-distillation"
+  ],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 45,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 12,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Large language models (LLMs) increasingly run on personal devices, where generating text is slow: producing each token requires reading all of the model's weights from memory.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-25T04:36:07+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2511.04477",
+      "url": "https://arxiv.org/abs/2511.04477"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+title: "ANOR: Scaling Sparse Attention with a GPU-PNM Computing Hierarchy"
+description: "Serving large language models with long contexts requires keeping the key-value (KV) cache of every request, which can exceed GPU memory capacity."
+---
+
+**评分：43/100** · LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理
+
+[论文原文](https://arxiv.org/abs/2611.30417) · [PDF](https://arxiv.org/pdf/2611.30417)
+
+## 一句话摘要
+
+Serving large language models with long contexts requires keeping the key-value (KV) cache of every request, which can exceed GPU memory capacity.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Serving large language models with long contexts requires keeping the key-value (KV) cache of every request, which can exceed GPU memory capacity. Sparse attention reads only a small, query-dependent subset of this cache at each decoding step, yet must retain the full cache because later steps may select other entries. Processing-near-memory (PNM) devices attached through Compute Express Link (CXL) can hold the full cache and compute attention where it resides. Prior GPU-PNM systems for sparse attention are PNM-centric, processing most of the attention on the PNM. As existing CXL-PNM devices provide far less memory bandwidth than GPU HBM, this PNM-centric execution makes the PNM the bottleneck and leaves the GPU idle waiting for attention results. We present ANOR, a GPU-PNM joint acceleration system that exploits the selection locality of sparse attention by computing most of the attention on the GPU from a cache of recently selected entries and processing only the misses on the PNM. As the PNM processes cache misses directly, GPU cache updates can be decoupled from current-step execution. We develop a bounded cache-update policy that limits updates to the point where the hit ratio of later steps saturates, reducing GPU-facing link traffic. We add a small on-chip Early Streaming Buffer (ESB) that captures KV data during PNM attention and streams it to the GPU, avoiding most redundant DRAM reads despite the bandwidth mismatch between PNM memory and the GPU-facing link. We also propose an adaptive cache-factor mechanism that adjusts GPU cache size to the serving load, balancing hit ratio and batch size. Across two models and three long-context agentic workloads, ANOR improves decode throughput by 2.3x over HiSparse and 2.0x over a PNM baseline on average. These results show that PNM is most effective not as the primary attention engine but as a computing tier of the GPU memory hierarchy.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 5 |
+| rigor | 9 |
+| practical impact | 12 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: gpu memory
+- quantitative claim detected
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Hyunsu Ye, Hyunmin Choi, Jaehong Cho, Jaeseo Lee, Hyeongseok Gwak, Joohee Lee, Donguk Moon, Woosuk Chung, Hoshik Kim, Kiwan Maeng, Jongse Park
+- 发布：2026-11-24；更新：2026-11-24
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

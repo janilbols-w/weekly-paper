@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2605.07719",
-  "title": "Mosaic: Efficient CPU-GPU Coordinated Block-Sparse Attention",
+  "title": "Mosaic: Efficient CPU--GPU Coordinated Block-Sparse Attention for Long-Context Decoding",
   "abstract": "Long-context LLM serving increasingly relies on CPU-resident context KV cache, driven by KV offloading and disaggregated prefill--decode execution. Although block-sparse attention reduces KV access, existing designs remain inefficient: GPU-centralized execution fetches selected KV blocks from CPU memory at each decoding step, making it PCIe-bound, while CPU--GPU partitioned execution places CPU-side sparse attention on the critical path, leaving substantial GPU time idle. This paper presents Mosaic, a CPU--GPU coordinated block-sparse attention system for efficient long-context decoding with CPU-resident context KV. Mosaic builds on three key insights: output-contribution-aware KV budgeting, head-specific and granularity-aware sparse configuration, and cross-device coordinated scheduling for sparse tasks over CPU-resident KV. Guided by these insights, Mosaic integrates a lightweight head-property predictor, a granularity--budget selector, and a priority-based scheduler to automatically configure and coordinate sparse attention, preserving output quality while improving efficiency on heterogeneous architectures. Across 2 models, 3 benchmarks, and 40 tasks, Mosaic preserves near-FULL quality while achieving a better overall quality--efficiency tradeoff than the evaluated baselines. Compared with the best-quality fixed Quest configuration, Mosaic improves TPOT by up to 3.7$\\times$. We further validate Mosaic across four hardware configurations and in a large-model multi-GPU deployment.",
   "url": "https://arxiv.org/abs/2605.07719",
   "pdf_url": "https://arxiv.org/pdf/2605.07719",
   "published": "2026-11-23",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "authors": [
     "Feiyu Yao",
     "Zhixiong Niu",
@@ -61,7 +61,7 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-24T04:35:52+00:00",
-  "last_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
   "featured_weeks": [],
   "source_records": [
     {

@@ -5,10 +5,15 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **147** 篇。
+累计收录 **152** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](../../papers/arxiv-2611.29255/) | 2026-11-24 | 49 |
+| [HiPerfCC-KVCache: Accelerating Confidential LLM Serving with Hierarchical KV Caching](../../papers/arxiv-2611.28702/) | 2026-11-24 | 49 |
+| [DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving](../../papers/arxiv-2611.28522/) | 2026-11-24 | 49 |
+| [IndexerStage: Staging Indexer-K across Memory Tiers for Sparse-Attention LLM Serving](../../papers/arxiv-2611.28625/) | 2026-11-24 | 45 |
+| [Exact on Paper: Which LLM Serving Shortcuts Flip Graded Answers, Measured Against the Noise of Reordering the Same Requests](../../papers/arxiv-2611.29663/) | 2026-11-24 | 38 |
 | [Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving](../../papers/arxiv-2607.16488/) | 2026-11-23 | 43 |
 | [Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving](../../papers/arxiv-2607.16473/) | 2026-11-23 | 40 |
 | [Towards Fair Resource Sharing in Agentic LLM Serving](../../papers/arxiv-2611.23558/) | 2026-11-19 | 45 |
@@ -138,7 +143,7 @@ description: "Serving Engines & Runtimes"
 | [RL-Index: Reinforcement Learning for Retrieval Index Reasoning](../../papers/arxiv-2606.16316/) | 2026-08-17 | 39 |
 | [Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving](../../papers/arxiv-2608.15762/) | 2026-08-16 | 50 |
 | [P-PAS: Prefill-Pressure Adaptive Scheduling for Long-Context LLM Serving](../../papers/arxiv-2608.15171/) | 2026-08-15 | 47 |
-| [Online Inference for Quantile Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 39 |
+| [Online Inference for Quantile Distributional Reinforcement Learning](../../papers/arxiv-2608.12973/) | 2026-08-14 | 41 |
 | [Potential Applications of HBF in LLM Serving Systems](../../papers/arxiv-2608.13127/) | 2026-08-13 | 41 |
 | [Astrolabe: Balancing Load in LLM Serving with Randomized Prediction-Guided Scheduling](../../papers/arxiv-2508.03611/) | 2026-08-12 | 46 |
 | [HBF Sucks? A Full-Stack Characterization of High-Bandwidth Flash for KV-Centric LLM Serving](../../papers/arxiv-2608.11668/) | 2026-08-12 | 40 |

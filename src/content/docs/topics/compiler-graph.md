@@ -5,10 +5,12 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **147** 篇。
+累计收录 **149** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [BIRD-Persona: A Persona-Aware Benchmark for SQL and pandas Analytics Code Generation](../../papers/arxiv-2611.28542/) | 2026-11-24 | 43 |
+| [Constrained Code Generation with Diffusion Language Models](../../papers/arxiv-2605.16829/) | 2026-11-24 | 40 |
 | [Generalizing Test-time Compute-optimal Scaling as an Optimizable Graph](../../papers/arxiv-2511.00086/) | 2026-11-23 | 40 |
 | [Learning When to Ask: Advisor-Aware Post-Training for SLM Agents](../../papers/arxiv-2611.27443/) | 2026-11-23 | 38 |
 | [Beyond Synthetic Benchmarks: Evaluating LLM Performance on Real-World Class-Level Code Generation](../../papers/arxiv-2510.26130/) | 2026-11-17 | 42 |

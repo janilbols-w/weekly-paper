@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2611.28563",
+  "title": "Selective ROM Weight Storage for Responsive LLM Control on Edge Robots",
+  "abstract": "Edge robots increasingly use large language models (LLMs) for complex tasks, demanding efficient inference alongside timely control. Limited memory capacity constrains model deployment, while repeated weight transfers during decoding compete with activations and KV cache for external bandwidth. Sequential generation of robot actions further delays decisions and periodic control on shared hardware. We present a hybrid memory architecture with heterogeneous scheduling to address these bottlenecks jointly. Banked ROM stores selected fixed weights and supplies a standard compute array through a dedicated datapath. LPDDR retains the remaining weights and mutable state, preserving model flexibility. Coordinated operand delivery and preemption at output slice boundaries accelerate inference while limiting interference with periodic control. A structured decision interface scores candidate phases in a single forward pass, avoiding sequential token generation for routine choices. Together, these mechanisms improve memory service, compute access, and decision execution for edge robotic workloads. Experiments with Qwen3-8B achieve a peak decode speedup of 1.56$\\times$ and reduce P99 task response time by a factor of approximately 227.27$\\times$, while completing 100.00\\% of the tested grasping and transport tasks.",
+  "url": "https://arxiv.org/abs/2611.28563",
+  "pdf_url": "https://arxiv.org/pdf/2611.28563",
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "authors": [
+    "Boxiang Song",
+    "Zhihong Chen",
+    "Xiaoyu Hao",
+    "Jinhong Huang",
+    "Chengkai Zhu",
+    "Jiaqi Yang",
+    "Hongyang Pan",
+    "Changhao Yan",
+    "Keren Zhu"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.RO",
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Edge robots increasingly use large language models (LLMs) for complex tasks, demanding efficient inference alongside timely control.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-25T04:36:07+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.28563",
+      "url": "https://arxiv.org/abs/2611.28563"
+    }
+  ]
+}

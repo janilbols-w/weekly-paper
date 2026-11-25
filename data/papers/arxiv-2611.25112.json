@@ -1,11 +1,11 @@
 {
   "id": "arxiv:2611.25112",
-  "title": "TripleKV: Predict, Prefetch, Protect -- KV Cache Management for AI Agents",
-  "abstract": "LLM agents alternate between inference and tool execution, repeatedly reusing their growing context across calls. Under high concurrency, their combined key-value (KV) cache working set can reach hundreds of GiB, far exceeding GPU memory capacity. As idle KV cache blocks are evicted to slower storage tiers, returning agents incur expensive retrievals that stall inference. To address this problem, we present \\emph{TripleKV}, a three-tier KV cache management system that hides the delays of these retrievals. %exploits tool execution to hide these delays. In agentic workloads, the KV blocks needed by the next inference request are known in advance; only the time of their reuse is uncertain. TripleKV uses a tool-aware latency predictor to estimate when each tool call will complete and prefetches the required KV blocks from SSD into host DRAM ahead of time. Unlike GPU prefetching, this avoids reserving scarce GPU memory and interfering with concurrent inference requests. To further improve DRAM utilization, TripleKV eliminates duplication of GPU-resident blocks in DRAM, and introduces a victim-cache mechanism that refills blocks from SSD upon their eviction from GPU memory. Across data, web, and coding agents, TripleKV reduces the fraction of requests requiring critical-path SSD reads from 45--76\\% to under 10\\%. It also reduces P95 time to first token (TTFT) by up to 49\\% compared with vLLM extended with DRAM and SSD KV-cache tiers, and achieves 1.5-7$\\times$ lower P95 TTFT than recent agent-aware systems.",
-  "url": "http://arxiv.org/abs/2611.25112v1",
-  "pdf_url": "https://arxiv.org/pdf/2611.25112v1",
+  "title": "TripleKV: Predict, Prefetch, Protect - KV Cache Management for AI Agents",
+  "abstract": "LLM agents alternate between inference and tool execution, repeatedly reusing their growing context across calls. Under high concurrency, their combined key-value (KV) cache working set can reach hundreds of GiB, far exceeding GPU memory capacity. As idle KV cache blocks are evicted to slower storage tiers, returning agents incur expensive retrievals that stall inference. To address this problem, we present TripleKV, a three-tier KV cache management system that hides the delays of these retrievals. In agentic workloads, the KV blocks needed by the next inference request are known in advance; only the time of their reuse is uncertain. TripleKV uses a tool-aware latency predictor to estimate when each tool call will complete and prefetches the required KV blocks from SSD into host DRAM ahead of time. Unlike GPU prefetching, this avoids reserving scarce GPU memory and interfering with concurrent inference requests. To further improve DRAM utilization, TripleKV eliminates duplication of GPU-resident blocks in DRAM, and introduces a victim-cache mechanism that refills blocks from SSD upon their eviction from GPU memory. Across data, web, and coding agents, TripleKV reduces the fraction of requests requiring critical-path SSD reads from 45-76% to under 10%. It also reduces P95 time to first token (TTFT) by up to 49% compared with vLLM extended with DRAM and SSD KV-cache tiers, and achieves 1.5-7$\\times$ lower P95 TTFT than recent agent-aware systems.",
+  "url": "https://arxiv.org/abs/2611.25112",
+  "pdf_url": "https://arxiv.org/pdf/2611.25112",
   "published": "2026-11-18",
-  "updated": "2026-11-18",
+  "updated": "2026-11-24",
   "authors": [
     "Shashwat Jaiswal",
     "Chloe Alverti",
@@ -16,11 +16,11 @@
     "Tianyin Xu",
     "Josep Torrellas"
   ],
-  "source": "arXiv",
+  "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.DC",
     "cs.AR",
+    "cs.DC",
     "cs.OS"
   ],
   "doi": "",
@@ -64,13 +64,18 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-20T04:36:12+00:00",
-  "last_seen": "2026-11-24T04:35:52+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
   "featured_weeks": [],
   "source_records": [
     {
       "source": "arXiv",
       "id": "http://arxiv.org/abs/2611.25112v1",
       "url": "http://arxiv.org/abs/2611.25112v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2611.25112",
+      "url": "https://arxiv.org/abs/2611.25112"
     }
   ]
 }

@@ -17,7 +17,7 @@ Data acquisition (DAQ) systems at future particle physics experiments stand to b
 
 ## 摘要原文
 
-Data acquisition (DAQ) systems at future particle physics experiments stand to benefit from the extremes of AI/ML development: large-scale foundation models can enhance the performance of feature extraction algorithms, and small-scale on-detector deployments can enable real-time intelligent data handling. This work provides the first fine-tuning of an industrial foundation model for particle physics DAQ. Starting from the backbone of Google Research's TimesFM (Time Series Foundation Model), we demonstrate fine-tuning on real-time regression tasks for drift chamber trackers and dual-readout calorimeters. Furthermore, the fine-tuned TimesFM model is distilled into a student and co-designed with FPGA implementation to enable these models to run in real-time at future colliders. The fine-tuned distillations meet or exceed the performance of previously published AI/ML solutions for each task. Further, the pipeline of distillation and model compression from TimesFM is generic and can be easily adapted to a variety of 1D waveform tasks across domains.
+Data acquisition (DAQ) systems at future particle physics experiments stand to benefit from the extremes of AI/ML development: large-scale foundation models can enhance the performance of feature extraction algorithms, and small-scale on-detector deployments can enable real-time intelligent data handling. This work provides the first tokenizer fine-tuning of an industrial foundation model for particle physics DAQ. Starting from the backbone of Google Research's TimesFM (Time Series Foundation Model), we address real-time regression tasks for drift chamber trackers and dual-readout calorimeters by jointly training the pretrained tokenizer and a newly initialized residual adapter, then fitting task-specific linear heads while keeping the transformer backbone frozen. Furthermore, the resulting TimesFM teachers can be distilled into students and co-designed with FPGA implementation to support real-time operation at future colliders. The distilled and compressed models achieve competitive performance, while distillation reduces reliance on labeled training data. Further, the pipeline of distillation and model compression from TimesFM is generic and can be easily adapted to a variety of 1D waveform tasks across domains.
 
 ## 质量评分
 
@@ -39,7 +39,7 @@ Data acquisition (DAQ) systems at future particle physics experiments stand to b
 ## 元数据
 
 - 作者：Gia Ancone, Qibin Liu, Liangyu Wu, Julia Gonski
-- 发布：2026-09-22；更新：2026-09-22
+- 发布：2026-09-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

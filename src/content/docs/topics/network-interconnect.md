@@ -5,10 +5,11 @@ description: "Network, RDMA & Interconnect"
 
 三级分类：**AI 基础设施 > 集群与资源系统 > 网络、RDMA 与互联**
 
-累计收录 **16** 篇。
+累计收录 **17** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Making Protocol Effects Explicit: LLM-to-Packet Simulation for Superpod Interconnect Exploration](../../papers/arxiv-2611.30191/) | 2026-11-24 | 44 |
 | [ScaleWire: An End-to-End Scale-Up Ethernet Simulation Framework for LLM Systems](../../papers/arxiv-2611.26086/) | 2026-11-19 | 44 |
 | [Programmable Probabilistic Computer with 1,000,000 p-bits](../../papers/arxiv-2606.25313/) | 2026-11-19 | 38 |
 | [Benchmarking LLM Inference on Desktop-Scale NVIDIA Grace Blackwell Clusters](../../papers/arxiv-2611.20289/) | 2026-11-15 | 50 |

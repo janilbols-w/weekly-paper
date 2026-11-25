@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2610.38110",
+  "title": "SPARSEBLEED: Bypassing Attribute-Inference Defenses via Sparsity Optimizations",
+  "abstract": "When a model trained on sensitive records is exposed through a prediction API, an attribute-inference attack (AIA) plugs each possible value of a missing field into a partially known record to infer which value belonged to the training record. Current defenses mask confidence scores and hide internal activations. We show that sparsity optimizations, software and hardware routines (sparse kernels) that skip arithmetic and memory fetches on zero activations or weights, reopen attribute inference through the execution footprint. We introduce SparseBleed, the first hardware and execution-based AIA on training data. Training makes neuron firing selective to sensitive attributes, so each candidate value activates a different set of neurons and sparse kernels skip the rest; the candidate value therefore sets how many multiply-accumulate operations execute and which weight columns are read, shifting response time and shared-hardware contention even when only a class label is returned. SparseBleed calibrates each candidate's footprint against reference measurements for that value. Across 11 CPU and GPU sparse libraries (e.g., Intel oneDNN-AMX, NVIDIA cuSPARSE), MLPs, and FT-Transformers up to 1.5B parameters, execution time on TACO varies by up to ~25,000 timer ticks across prediction-confidence levels. The strongest SparseBleed variant gains +16.4 points in mean accuracy over label-only LOMIA and +8.9 over confidence-based CSMIA, up to +32 points over random guessing in a single query on CPU and +15 on GPU, reaches 60.5% mean AUC with 50 calibration records, and widens its margin over output-only attacks from +6.0 to +12.9 points as FT-Transformers scale from 288M to 1.5B. Response-time padding leaves co-resident channels open; thus, privacy requires equalizing executed work and memory access (4.8-13.7% overhead in our patches).",
+  "url": "https://arxiv.org/abs/2610.38110",
+  "pdf_url": "https://arxiv.org/pdf/2610.38110",
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "authors": [
+    "Darsh Asher",
+    "Farshad Dizani",
+    "Joshua Kalyanapu",
+    "Ro Cammarota",
+    "Aydin Aysu",
+    "Samira Mirbagher Ajorpaz"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CR",
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "sparsity"
+  ],
+  "score": 40,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: sparsity",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "When a model trained on sensitive records is exposed through a prediction API, an attribute-inference attack (AIA) plugs each possible value of a missing field into a partially known record to infer which value belonged to the training record.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-25T04:36:07+00:00",
+  "last_seen": "2026-11-25T04:36:07+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2610.38110",
+      "url": "https://arxiv.org/abs/2610.38110"
+    }
+  ]
+}

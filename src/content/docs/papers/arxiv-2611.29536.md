@@ -1,0 +1,45 @@
+---
+title: "Estimating Silenced Tokens in Quantized LLMs"
+description: "Quantization is the standard way to shrink large language models, and it is usually judged by perplexity and task accuracy."
+---
+
+**评分：38/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+
+[论文原文](https://arxiv.org/abs/2611.29536) · [PDF](https://arxiv.org/pdf/2611.29536)
+
+## 一句话摘要
+
+Quantization is the standard way to shrink large language models, and it is usually judged by perplexity and task accuracy.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Quantization is the standard way to shrink large language models, and it is usually judged by perplexity and task accuracy. We ask a different question: after quantization, which words can the model still say at all? A token is silenced when no hidden state can make it the top choice of the output layer, so a greedy decoder can never produce it. We give a simple, scalable way to estimate how many tokens a quantized output head silences, combining three checks: a direction that lets a token win (so it is safe), an upper bound on how close a token's row is to being trapped inside the others, and an exact match that proves a token can never win. Each count is therefore a certified range: exact matches give its lower end and flagged tokens can only raise its upper end. In nearly all settings we report down to 3 bits the two ends coincide, so the counts are exact. Across three open models we find that quantization silences tokens: on large-vocabulary models it already appears at 8-bit precision, up to a few hundred previously reachable tokens on a 1B-parameter model, and grows as precision drops, while a small-vocabulary model resists until 3 bits. The loss is far from uniform across languages: on a multilingual vocabulary the silenced tokens are overwhelmingly non-Latin (Korean, Chinese, Thai, Arabic and Hebrew), even though Latin tokens dominate the vocabulary. Silencing is thus a measurable, language-sensitive side effect that standard averages miss, and it should be reported alongside them.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 18 |
+| novelty | 5 |
+| rigor | 5 |
+| practical impact | 5 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: quantization, quantized
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Giuseppe Pappalardo
+- 发布：2026-11-24；更新：2026-11-24
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata
