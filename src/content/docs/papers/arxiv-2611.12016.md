@@ -39,7 +39,7 @@ Many real-world applications require language models to internalize knowledge th
 ## 元数据
 
 - 作者：Shayan Talaei, Agam Bhatia, Arshia Soltani Moakhar, Jonas H\"ubotter, Amin Saberi, Azalia Mirhoseini
-- 发布：2026-11-10；更新：2026-11-10
+- 发布：2026-11-10；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

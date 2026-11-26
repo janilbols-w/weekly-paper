@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.32873",
+  "title": "MXFP4 for LLM Inference: Complementary Post-Training Quantization Techniques and Their Interactions",
+  "abstract": "Recent advances in low-precision representation have introduced several microscaling numerical formats for LLM quantization. By sharing a scale factor across groups of 16 or 32 elements, these formats enable aggressive low-precision quantization with minimal accuracy degradation, particularly when combined with modern PTQ algorithms. Their accuracy depends on how the numerical format interacts with rotation, PTQ, and scale selection. We study the composability of PTQ configurations across six LLMs and three microscaling formats: MXFP6, MXFP4, and NVFP4, systematically varying Hadamard rotation granularity, PTQ algorithm, and scale-selection strategy. Our central finding is that effective quantization recipes are format dependent: both MXFP4 and NVFP4 support accurate 4-bit inference, but techniques that benefit one do not necessarily transfer to the other. MXFP4 benefits substantially from rotation and error-correcting PTQ, whereas NVFP4 gains less from rotation, consistent with its finer-grained scales capturing more within-block variation. Building on these findings, we introduce Midmax, a calibration-free scale-selection strategy that mitigates clipping error in power-of-two block scales and improves accuracy across a majority of the evaluated MXFP4 configurations. We show that pairing MXFP6 activations with MXFP4 weights recovers most of the accuracy lost at 4-bit and, on Llama-3.1-8B, matches or exceeds our in-house BF16 baseline. An additional study finds that augmenting MXFP4 with a per-tensor macroscale, a mechanism intrinsic to NVFP4, does not improve average accuracy, suggesting that global rescaling alone does not address the limitations of E8M0 block scales for MXFP4 quantization. Together, these results provide practical guidance for combining numerical formats, rotation, PTQ, and scale selection for accurate low-precision LLM inference.",
+  "url": "https://arxiv.org/abs/2611.32873",
+  "pdf_url": "https://arxiv.org/pdf/2611.32873",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Natalia Frumkin",
+    "Alireza Khodamoradi",
+    "Kristof Denolf",
+    "Eric Dellinger",
+    "Stuart Biles"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "microscaling",
+    "quantization"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: microscaling, quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Recent advances in low-precision representation have introduced several microscaling numerical formats for LLM quantization.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.32873",
+      "url": "https://arxiv.org/abs/2611.32873"
+    }
+  ]
+}

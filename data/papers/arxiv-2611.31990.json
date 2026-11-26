@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.31990",
+  "title": "How Much Dependency Can a Marginal Rule See? Total Correlation in Diffusion LM Parallel Decoding",
+  "abstract": "A masked diffusion language model is fast because it commits several tokens per step. Each token is sampled from its own marginal, so the dependency between the tokens is lost, and the size of that loss is the conditional total correlation C of the committed set. Most decoders choose the set from per-position marginals, which can bound C but cannot determine it. We ask how well they predict it. We estimate C for fixed candidate sets on four masked diffusion LMs from two families. On three of the four, the best marginal-only predictor is off by about one bit (0.74 to 1.17), 1.8 to 3.7 times less than a baseline that knows only the bound, and most of this accuracy comes from the bound itself. On a subset, our estimate ranks sets like the exact KL cost of a parallel commit, but sits a median 0.4 to 1.1 bits below it on prose and when the rest of the text is still masked. Dream-instruct is the exception, mainly on prose, where its conditionals are least self-consistent. Among six common marginal rules, pooling over the set beats gating on its weakest position in all 24 paired comparisons. The measurement needs a validated readout: Dream and LLaDA place a position's prediction at different logit indices, and the wrong index inflates an inconsistency diagnostic 14 to 41 times. We give three checks that measure the convention. Our results concern predicting C for a fixed set, not what a dependency-aware decoder gains.",
+  "url": "https://arxiv.org/abs/2611.31990",
+  "pdf_url": "https://arxiv.org/pdf/2611.31990",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Dovud Asadov",
+    "Rustambek Urokov",
+    "Qobiljon Toshnazarov",
+    "Abduaziz Kayumov",
+    "Mardon Hazratov",
+    "Husanboy Mansuraliyev"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "parallel decoding"
+  ],
+  "score": 43,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: parallel decoding",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "A masked diffusion language model is fast because it commits several tokens per step.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.31990",
+      "url": "https://arxiv.org/abs/2611.31990"
+    }
+  ]
+}

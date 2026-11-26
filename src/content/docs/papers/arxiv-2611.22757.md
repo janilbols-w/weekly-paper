@@ -39,7 +39,7 @@ Looped diffusion Transformers reuse shared blocks to deepen computation and matc
 ## 元数据
 
 - 作者：Weizhong Huang, Huaijia Kou, Yan Zhang, Fei Chao, Xiawu Zheng, Liujuan Cao
-- 发布：2026-11-17；更新：2026-11-18
+- 发布：2026-11-17；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

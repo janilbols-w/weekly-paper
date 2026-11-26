@@ -39,7 +39,7 @@ Looped vision-language models (VLMs) deepen computation by reusing shared layers
 ## 元数据
 
 - 作者：Weizhong Huang, Zhicheng Liu, Yan Zhang, Fei Chao, Xiawu Zheng, Liujuan Cao
-- 发布：2026-11-18；更新：2026-11-18
+- 发布：2026-11-18；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

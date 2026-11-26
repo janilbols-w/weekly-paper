@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.31937",
+  "title": "Native Block-Quantized Matrix Multiplication and Explicit K/V Residency with Dual-View Access for LLM Inference on RISC-V Vector Processors",
+  "abstract": "Some key execution states in large language model inference persist across multiple instructions and are difficult to express and exploit within RVV semantics centered on individual operations. We define specialization boundaries according to data-state lifetimes and propose Quantized Block Streams (QBS) and Attention/KV Context (AKV) while preserving RVV programmability. QBS organizes native-block format processing, block traversal, integer computation, and ordered FP32 accumulation into a unified execution process, whereas AKV maintains local K/V residency and supplies operand views aligned with the computation direction while leaving Attention arithmetic on RVV. Cycle-accurate RTL evaluation shows that QBS achieves geometric-mean speedups of 35.68x and 51.34x for projection Compute and Matmul, respectively, while AKV achieves a 1.45x geometric-mean speedup over Tiled RVV for Decode Attention. Compared with the baseline, the complete design increases total area by 12.65%; on the evaluated projection workloads, throughput per area and energy efficiency improve by 46.63x and 19.78x, respectively. Further evaluation demonstrates applicability across multiple block-quantization formats and across models with different Attention organizations.",
+  "url": "https://arxiv.org/abs/2611.31937",
+  "pdf_url": "https://arxiv.org/pdf/2611.31937",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Weiying Wang",
+    "Yuanyang Xiang",
+    "Zhiwei Zhang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization",
+    "quantized"
+  ],
+  "score": 55,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 5,
+    "rigor": 13,
+    "practical_impact": 14,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization, quantized",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Some key execution states in large language model inference persist across multiple instructions and are difficult to express and exploit within RVV semantics centered on individual operations.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [
+    "2026-W48"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.31937",
+      "url": "https://arxiv.org/abs/2611.31937"
+    }
+  ]
+}

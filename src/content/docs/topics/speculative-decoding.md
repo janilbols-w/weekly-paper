@@ -5,10 +5,16 @@ description: "Speculative Decoding"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 推测解码**
 
-累计收录 **154** 篇。
+累计收录 **160** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [LEGOSpec: A Composable and Efficient Framework for Speculative Draft Design and Training](../../papers/arxiv-2611.33004/) | 2026-11-25 | 48 |
+| [Directly Maximizing On-policy Expected Accepted Length for Speculative Decoding](../../papers/arxiv-2611.31256/) | 2026-11-25 | 48 |
+| [Pando: Noise-Coupled Parallel Draft Trees for Efficient Edge Speculative Decoding](../../papers/arxiv-2611.32269/) | 2026-11-25 | 47 |
+| [Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions](../../papers/arxiv-2611.33111/) | 2026-11-25 | 46 |
+| [How Much Dependency Can a Marginal Rule See? Total Correlation in Diffusion LM Parallel Decoding](../../papers/arxiv-2611.31990/) | 2026-11-25 | 43 |
+| [UniVer: A Unified Perspective for Multi-step and Multi-draft Speculative Decoding](../../papers/arxiv-2605.04543/) | 2026-11-25 | 40 |
 | [CGSpec: Consistency-Guided Speculative Decoding with Overlap-Aware Verification Scheduling for Edge-Cloud Inference](../../papers/arxiv-2611.30455/) | 2026-11-24 | 45 |
 | [PackLoop: Row-Packed Self-Speculative Decoding for Looped Language Models under Concurrency](../../papers/arxiv-2611.30205/) | 2026-11-24 | 44 |
 | [Feedback Shortcut: Speculative Decoding for Latent Feedback Transformers](../../papers/arxiv-2611.28227/) | 2026-11-24 | 43 |

@@ -39,7 +39,7 @@ Low-bit weight--activation quantization reduces the memory and computation neede
 ## 元数据
 
 - 作者：Ning Yang, Bohan Cui, Zhuowen Liu, Yuting Wang
-- 发布：2026-10-28；更新：2026-10-28
+- 发布：2026-10-28；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

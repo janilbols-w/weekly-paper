@@ -5,10 +5,13 @@ description: "Cache, Offload & Memory Management"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 缓存、换入换出与内存管理**
 
-累计收录 **164** 篇。
+累计收录 **167** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [RePrism: Joint Request and Representation Scheduling for LLM Agent Serving](../../papers/arxiv-2611.32545/) | 2026-11-25 | 42 |
+| [Generalized Tensor Parallelism: Powering Trillion-Parameter LLM Training at 10+ EFLOP/s](../../papers/arxiv-2611.32057/) | 2026-11-25 | 42 |
+| [ViTrail: Transmission-Inference Co-Design for Vision Transformer-Based Mobile Video Analytics](../../papers/arxiv-2601.21362/) | 2026-11-25 | 41 |
 | [ANOR: Scaling Sparse Attention with a GPU-PNM Computing Hierarchy](../../papers/arxiv-2611.30417/) | 2026-11-24 | 43 |
 | [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](../../papers/arxiv-2611.29252/) | 2026-11-24 | 39 |
 | [Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning](../../papers/arxiv-2611.30025/) | 2026-11-24 | 38 |

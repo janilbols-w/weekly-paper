@@ -1,0 +1,74 @@
+{
+  "id": "arxiv:2503.05920",
+  "title": "On the Efficiency of Structured Pruning in Small Language Model Pretraining",
+  "abstract": "Companies that deploy generative language models on edge devices often need to train small models from scratch due to legal, data-governance, or product-customization requirements. An alternative approach is to train an enlarged model and compress it to the target size via structured pruning, but this advantage becomes unclear once the cost of pretraining the enlarged model is included. We introduce the enlarge-and-prune framework to study this question under full-cost accounting, and show that conventional enlarge-and-prune pipelines -- which train the enlarged model, prune it, and recover in separate stages -- do not consistently outperform direct small-model training under the same total token budget. To overcome this limitation, we propose IDEA Prune, an integrated enlarge-and-prune pipeline that unifies enlarged model pretraining, iterative structured pruning, and recovery under a single cosine annealing learning rate schedule. In controlled experiments compressing 2.8B models to 1.3B with up to 2T tokens on the same dataset, IDEA Prune consistently outperforms conventional pipelines and modestly improves overall performance relative to the scratch baseline, improving MMLU accuracy to 46.4%, compared with 31.4-33.4% for conventional pipelines. These advantages are preserved after downstream supervised fine-tuning, where IDEA Prune matches or outperforms all baselines of the same size on instruction following, math reasoning, and code generation. Our analysis further reveals that intermediate checkpoints provide more favorable pruning starting points than fully converged ones, and that an enlargement factor of approximately 2.6x yields the best pruned models in the tested regime.",
+  "url": "https://arxiv.org/abs/2503.05920",
+  "pdf_url": "https://arxiv.org/pdf/2503.05920",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Yixiao Li",
+    "Xianzhi Du",
+    "Ajay Jaiswal",
+    "Tao Lei",
+    "Tuo Zhao",
+    "Chong Wang",
+    "Jianyu Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Companies that deploy generative language models on edge devices often need to train small models from scratch due to legal, data-governance, or product-customization requirements.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2503.05920",
+      "url": "https://arxiv.org/abs/2503.05920"
+    }
+  ]
+}

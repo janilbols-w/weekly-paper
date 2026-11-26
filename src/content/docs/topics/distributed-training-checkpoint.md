@@ -5,10 +5,12 @@ description: "Distributed Training & Checkpointing"
 
 三级分类：**AI 基础设施 > 训练与数据中心基础设施 > 分布式训练与 Checkpoint**
 
-累计收录 **153** 篇。
+累计收录 **155** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TokenJoule: Energy Modeling for Distributed Training and Inference of LLMs](../../papers/arxiv-2611.31509/) | 2026-11-25 | 44 |
+| [Randomized Forward Mode of Automatic Differentiation For Optimization Algorithms](../../papers/arxiv-2310.14168/) | 2026-11-25 | 38 |
 | [Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents](../../papers/arxiv-2611.29243/) | 2026-11-24 | 44 |
 | [MolReJev: Decision Models Are In-Context Molecular Predictors](../../papers/arxiv-2611.28965/) | 2026-11-24 | 40 |
 | [Hidden Sensitivity in LLM Pre-training: A Dynamic System View](../../papers/arxiv-2611.28830/) | 2026-11-24 | 40 |

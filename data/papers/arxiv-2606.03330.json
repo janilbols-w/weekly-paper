@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2606.03330",
+  "title": "FLIPS: Instance-Fingerprinting for LLMs via Pseudo-random Sequences",
+  "abstract": "Literature reveals that a Large Language Model's (LLM) behavior is not only conditioned by its original weights but also its instance-level parameters, such as instructional prompt, sampling configuration or quantization. A model that generates safe outputs under one configuration may produce toxic content under another. However, current LLM identification techniques (such as fingerprinting) focus on intellectual property protection, and their design favors robustness to changes in these instance-level parameters. This poses a critical challenge for AI regulation in which compliance assessments target actual deployed behaviors, not model provenance. In this paper, we introduce instance-level fingerprinting, a regulator-oriented paradigm that distinguishes configurations of the same LLM. Our method, FLIPS, exploits biases in generated binary random sequences. On a benchmark of 237 model instances, it identifies the instance with 77% accuracy from 32 queries to the target, against at most 33% for the adapted LLMmap baseline. Recognizing that a target is unseen, also called open-set challenge, is much harder. When 10% of instances are unseen, FLIPS realises a recall of 41% on the unseen instances, at a precision of 23%, i.e. more than twice better than random. Closed-set instance fingerprinting is thus practical with a few dozen queries, whereas the open-set setting remains an open problem. Code available at https://github.com/GurvanR/FLIPS-LLM-Instance-Fingerprinting.",
+  "url": "https://arxiv.org/abs/2606.03330",
+  "pdf_url": "https://arxiv.org/pdf/2606.03330",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Gurvan Richardeau",
+    "Gohar Dashyan",
+    "Erwan Le Merrer",
+    "Gilles Tredan"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/GurvanR/FLIPS-LLM-Instance-Fingerprinting",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 42,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Literature reveals that a Large Language Model's (LLM) behavior is not only conditioned by its original weights but also its instance-level parameters, such as instructional prompt, sampling configuration or quantization.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2606.03330",
+      "url": "https://arxiv.org/abs/2606.03330"
+    }
+  ]
+}

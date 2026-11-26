@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.32472",
+  "title": "STAR: Counterfactual Dual-World Rollouts and Spatial Target Adaptive Reconstruction for Visual On-Policy Distillation",
+  "abstract": "Vision-language models often rely on global context and language priors while overlooking answer-determining local details. Privileged visual on-policy self-distillation supervises full-image student rollouts using a frozen teacher that views high-resolution evidence crops. Yet our cross-scale diagnostics show that models retain over half of their full-image accuracy when local evidence is completely masked, indicating that single-image correctness does not guarantee reliance on local evidence, while the need for visual correction also varies across tokens with their spatial attention states. We propose STAR, a visual on-policy self-distillation framework combining independent counterfactual dual-world rollouts with spatial-attention-guided target reconstruction. Local image editing constructs paired worlds with identical questions and backgrounds but distinct answer-determining facts, where a shared student samples trajectories independently to expose contextual shortcuts under image-consistent prefixes. Within each world, the teacher contrasts real and mean-color crops to determine the visual correction direction, while the divergence between student image attention and a teacher-centroid spatial reference adaptively controls token-wise target log-probability reconstruction. Without auxiliary attention losses or test-time tool overhead, STAR improves Qwen3.5 across scales by up to 8.04 percentage points in average accuracy over initialization across six fine-grained benchmarks, reaches OPSD's final accuracy $4.7\\times$ faster, and generalizes to out-of-domain reasoning tasks.",
+  "url": "https://arxiv.org/abs/2611.32472",
+  "pdf_url": "https://arxiv.org/pdf/2611.32472",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Yi Zou",
+    "Zhuang Yan",
+    "Yudong Zhang",
+    "Xu Wang",
+    "Yang Wang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CV",
+    "cs.CL"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "distillation"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 5,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: distillation",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Vision-language models often rely on global context and language priors while overlooking answer-determining local details.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.32472",
+      "url": "https://arxiv.org/abs/2611.32472"
+    }
+  ]
+}

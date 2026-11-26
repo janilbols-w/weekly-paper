@@ -5,10 +5,13 @@ description: "Hardware-aware & Edge Inference"
 
 三级分类：**LLM 高效推理 > Serving 与分布式推理 > 硬件感知与边缘推理**
 
-累计收录 **120** 篇。
+累计收录 **123** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [OpenWoud: Vendor-Unlocked Scalable Adaptive Random Forest Accelerator](../../papers/arxiv-2611.32662/) | 2026-11-25 | 51 |
+| [AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design](../../papers/arxiv-2611.33093/) | 2026-11-25 | 41 |
+| [Real-Time AI Acceleration on a 2D Spatial Dataflow Architecture](../../papers/arxiv-2611.31556/) | 2026-11-25 | 40 |
 | [EdgeALM: An Efficient and Unified Edge Accelerator for Large Audio Language Models via Full-Stack Hardware-Software Co-Design and Agent-Driven Recursive Optimization](../../papers/arxiv-2611.30216/) | 2026-11-24 | 44 |
 | [STEdgeFormer: MCU and NPU Deployable Transformer Architecture](../../papers/arxiv-2611.28935/) | 2026-11-24 | 41 |
 | [Exploring the Potential of Ultra-Low-Bit Inference on LLM Accelerators](../../papers/arxiv-2611.27561/) | 2026-11-23 | 38 |

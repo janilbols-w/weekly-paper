@@ -1,0 +1,75 @@
+{
+  "id": "arxiv:2611.32008",
+  "title": "LIBRA: Runtime Co-Tuning of Batch Size and Parallelism for Time-Efficient LLM Training",
+  "abstract": "Training large language models (LLMs) requires choosing both a batch size and a parallel configuration. Existing systems make these decisions in isolation, tuning parallelism for throughput and batch size for convergence, but neither objective alone determines training efficiency. We present LIBRA, a lightweight runtime framework that co-tunes batch size and parallel configuration to minimize end-to-end time. LIBRA treats throughput and convergence as two noisy objectives and searches their joint space using parallel noisy expected hypervolume improvement (qNEHVI). To make this runtime search efficient, we propose hierarchical pruning, which removes infeasible and low-throughput parallel configurations through system-level performance estimation and then narrows batch-size candidates through critical-batch-size-aware convergence monitoring. We further design acquisition-guided parallel evaluation (AGPE), which evaluates surviving candidates concurrently across GPU groups in order of their acquisition values. On clusters of up to 256 GPUs, LIBRA reduces time-to-convergence by 31.1% on average over state-of-the-art methods, while runtime tuning accounts for only 0.3-3.5% of overall time.",
+  "url": "https://arxiv.org/abs/2611.32008",
+  "pdf_url": "https://arxiv.org/pdf/2611.32008",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Shengkai Lyu",
+    "Hairui Zhao",
+    "Daran Sun",
+    "Yida Gu",
+    "Xingchen Liu",
+    "YueYuan Zhou",
+    "Zheng Wei",
+    "Guangming Tan",
+    "Dingwen Tao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning"
+  ],
+  "score": 39,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Training large language models (LLMs) requires choosing both a batch size and a parallel configuration.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.32008",
+      "url": "https://arxiv.org/abs/2611.32008"
+    }
+  ]
+}

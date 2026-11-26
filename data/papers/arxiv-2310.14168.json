@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2310.14168",
+  "title": "Randomized Forward Mode of Automatic Differentiation For Optimization Algorithms",
+  "abstract": "Reverse mode automatic differentiation (AD) computes a gradient in a single sweep, but at a memory cost that grows with the length of the computational graph. That cost becomes the binding constraint when the graph is long, as in parameter identification governed by differential equations or in training on memory-limited hardware. We study a randomized forward mode gradient (RFG) as an alternative to backpropagation in precisely this regime. RFG is a random gradient estimator built from the directional derivative along a random vector, a quantity that forward mode AD computes without storing a tape. Replacing the gradient with RFG yields a class of optimization algorithms; for RFG-based gradient descent (GD) and Polyak's heavy ball (PHB) methods, we establish convergence results on quadratic functions. The analysis reveals that using random vectors from a probability distribution with the smallest kurtosis yields the fastest rate of convergence. Computational experiments demonstrate the performance of the proposed algorithms and verify the theoretical findings, including beyond quadratic functions. We further characterize when RFG is computationally preferable to backpropagation. Since the variance of RFG grows with the parameter dimension $d$ while the memory required by the reverse mode grows with the length $\\ell$ of the computational graph, the relevant figure of merit is the ratio $\\ell/d$. We confirm this by measurement against reverse mode with checkpointing. For a physics-informed neural network, where $d$ is large and $\\ell$ short, RFG is not competitive. For parameter identification governed by differential equations, where a handful of coefficients is recovered from a long time integration, RFG requires one to three orders of magnitude less memory. The price is a larger iteration count, which leaves its time to solution comparable to or worse than a well-tuned reverse mode.",
+  "url": "https://arxiv.org/abs/2310.14168",
+  "pdf_url": "https://arxiv.org/pdf/2310.14168",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Khemraj Shukla",
+    "Yeonjong Shin"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "math.OC",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "training-datacenter",
+    "group": "Training & Datacenter Infrastructure",
+    "group_zh": "训练与数据中心基础设施",
+    "leaf_id": "distributed-training-checkpoint",
+    "leaf": "Distributed Training & Checkpointing",
+    "leaf_zh": "分布式训练与 Checkpoint"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "checkpointing"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 9,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: checkpointing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Reverse mode automatic differentiation (AD) computes a gradient in a single sweep, but at a memory cost that grows with the length of the computational graph.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2310.14168",
+      "url": "https://arxiv.org/abs/2310.14168"
+    }
+  ]
+}

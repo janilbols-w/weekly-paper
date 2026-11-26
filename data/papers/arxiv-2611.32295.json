@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.32295",
+  "title": "Norn: Context-Length-Aware Optimization of Weight and KV Cache Placement for Offloaded LLM Inference",
+  "abstract": "Offloading model weights and the key-value (KV) cache to host memory enables large language models (LLMs) to run on a single memory-constrained GPU. As the KV cache grows during decoding, GPU memory requirements and the costs of KV cache transfers and attention computation change. However, existing offloading methods generally use static computation assignments and placements of model weights and the KV cache, preventing them from adapting to these changes and degrading inference performance. We propose Norn, a context-length-aware offloaded LLM inference method. Based on offline profiling, Norn co-optimizes computation assignments and placements at the sublayer level, precomputing multiple execution plans and their switching points. During decoding, Norn switches plans as context length increases, overlapping computation and data transfers without knowing the output length in advance. For prefill, Norn employs operator-major chunked prefill to avoid repeated weight transfers and automatically selects the chunk size. Experiments with Qwen3-14B and Qwen3-32B on two single-GPU systems show up to a 16.8$\\times$ speedup in end-to-end latency over Pipelined Sharding and a 4.2$\\times$ speedup over its oracle variant with known input and output lengths.",
+  "url": "https://arxiv.org/abs/2611.32295",
+  "pdf_url": "https://arxiv.org/pdf/2611.32295",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Naoto Sugiura",
+    "Hiroki Matsutani"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [
+    "cache-offload-memory"
+  ],
+  "keyword_evidence": [
+    "kv cache"
+  ],
+  "score": 47,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 6,
+    "rigor": 7,
+    "practical_impact": 13,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv cache",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Offloading model weights and the key-value (KV) cache to host memory enables large language models (LLMs) to run on a single memory-constrained GPU.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.32295",
+      "url": "https://arxiv.org/abs/2611.32295"
+    }
+  ]
+}

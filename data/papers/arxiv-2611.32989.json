@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.32989",
+  "title": "AVQ-Attention-2: Adaptive Vector-Quantized Attention with Exact Local Blocks and Linear-Cost Training",
+  "abstract": "Attention costs $\\mathcal{O}(N^2)$ in the number of tokens. Vector-quantized attention reduces this to $\\mathcal{O}(NM)$ by clustering the $N$ keys, attending to the $M$ codewords instead, and its adaptive form, AVQ-attention, concentrates codebook resolution where a query's attention mass actually falls. We present AVQ-Attention-2, a better design that merges it with exact local attention and attends to the mean of each cluster's keys rather than to a codeword. We show three improvements: consistently better quality at comparable cost; training that now also costs $\\mathcal{O}(NM)$ rather than $\\mathcal{O}(N^2)$; and an approximation accurate enough that the layer can be dropped into a pretrained transformer without fine-tuning. Across a variety of sequence lengths the result is competitive not merely with other approximate attention but with exact dense attention, running faster than FlashAttention at little to no loss in quality.",
+  "url": "https://arxiv.org/abs/2611.32989",
+  "pdf_url": "https://arxiv.org/pdf/2611.32989",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Winfried van den Dool",
+    "Patrick Forr\\'e",
+    "Amir Habibian",
+    "Yuki M. Asano",
+    "Max Welling"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.CV"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantized"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantized",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Attention costs $\\mathcal{O}(N^2)$ in the number of tokens.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.32989",
+      "url": "https://arxiv.org/abs/2611.32989"
+    }
+  ]
+}

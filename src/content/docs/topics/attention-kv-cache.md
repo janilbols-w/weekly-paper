@@ -5,10 +5,12 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **309** 篇。
+累计收录 **310** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Norn: Context-Length-Aware Optimization of Weight and KV Cache Placement for Offloaded LLM Inference](../../papers/arxiv-2611.32295/) | 2026-11-25 | 47 |
+| [ModelLess: A Serverless System for Multi-Tier LLM Inference on Shared GPUs](../../papers/arxiv-2611.32634/) | 2026-11-25 | 40 |
 | [Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs](../../papers/arxiv-2611.29497/) | 2026-11-24 | 52 |
 | [RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds](../../papers/arxiv-2611.28171/) | 2026-11-24 | 48 |
 | [The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates](../../papers/arxiv-2611.28671/) | 2026-11-24 | 46 |
@@ -148,7 +150,6 @@ description: "Attention & KV Cache"
 | [Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell](../../papers/arxiv-2610.07782/) | 2026-10-07 | 46 |
 | [Mask-Guided KV Cache Eviction in Block Diffusion Language Models](../../papers/arxiv-2610.06996/) | 2026-10-07 | 45 |
 | [AttSVD:Prompt-Adaptive Low-Rank KV Cache Compression via Attention-Guided SVD](../../papers/arxiv-2610.06927/) | 2026-10-07 | 45 |
-| [Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash](../../papers/arxiv-2610.08378/) | 2026-10-07 | 44 |
 | [Refusal-Gated Decoding: Preserving Refusal Behavior Under High-Temperature Sampling](../../papers/arxiv-2607.20791/) | 2026-10-07 | 41 |
 | [KV Cache Translation across Heterogeneous Large Language Models](../../papers/arxiv-2607.28979/) | 2026-10-06 | 52 |
 | [Adaptive KV Cache Reuse for Fast Long-Context LLM Serving](../../papers/arxiv-2605.24022/) | 2026-10-06 | 52 |

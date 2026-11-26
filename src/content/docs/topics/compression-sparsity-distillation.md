@@ -5,10 +5,19 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **823** 篇。
+累计收录 **832** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [TRIM: Achieving Extreme Sparsity with Targeted Row-wise Iterative Metric-driven Pruning](../../papers/arxiv-2505.16743/) | 2026-11-25 | 49 |
+| [On the Efficiency of Structured Pruning in Small Language Model Pretraining](../../papers/arxiv-2503.05920/) | 2026-11-25 | 49 |
+| [scOPD: Routed On-Policy Self-Distillation for LLM-Based Single-Cell Annotation](../../papers/arxiv-2611.31257/) | 2026-11-25 | 44 |
+| [HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts](../../papers/arxiv-2611.32021/) | 2026-11-25 | 41 |
+| [A Few Teacher Steps Go a Long Way: Efficient SFT Data Collection for LLM Agents](../../papers/arxiv-2607.04574/) | 2026-11-25 | 40 |
+| [STAR: Counterfactual Dual-World Rollouts and Spatial Target Adaptive Reconstruction for Visual On-Policy Distillation](../../papers/arxiv-2611.32472/) | 2026-11-25 | 39 |
+| [RECAP: Training Long-horizon LLM Agents with Context Compaction](../../papers/arxiv-2611.31258/) | 2026-11-25 | 39 |
+| [LIBRA: Runtime Co-Tuning of Batch Size and Parallelism for Time-Efficient LLM Training](../../papers/arxiv-2611.32008/) | 2026-11-25 | 39 |
+| [Rethinking Reasoning Effort Training in Large Language Models: On-Policy Distillation or Reinforcement Learning?](../../papers/arxiv-2611.32131/) | 2026-11-25 | 38 |
 | [Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action](../../papers/arxiv-2611.31240/) | 2026-11-24 | 48 |
 | [PCC: Pivotal Channel Compensation for Layer Pruning of Large Language Models](../../papers/arxiv-2611.30183/) | 2026-11-24 | 44 |
 | [Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation](../../papers/arxiv-2611.28502/) | 2026-11-24 | 42 |
@@ -54,9 +63,9 @@ description: "Compression, Sparsity & Distillation"
 | [SIRI: Self-Internalizing Reinforcement Learning with Intrinsic Skills for LLM Agent Training](../../papers/arxiv-2606.02355/) | 2026-11-17 | 40 |
 | [Reward-Weighted On-Policy Distillation with an Open Property-Equivalence Verifier for NL-to-SVA Generation](../../papers/arxiv-2605.13501/) | 2026-11-17 | 39 |
 | [Learning When to Continue and When to Stop: Termination-Aware OPSD](../../papers/arxiv-2611.19925/) | 2026-11-17 | 39 |
+| [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](../../papers/arxiv-2611.17772/) | 2026-11-16 | 49 |
 | [RoShift: Lazy Shift and Weight-aware Rotation for Activation Sparsity in LLM Inference](../../papers/arxiv-2611.20549/) | 2026-11-16 | 44 |
 | [LEAF-OPD: Learning to Forget from Privileged Contexts via On-Policy Distillation](../../papers/arxiv-2611.20674/) | 2026-11-16 | 43 |
-| [Antidistillation is Cheap: Lightweight Distillation-Resistance via Stylistic Corruption](../../papers/arxiv-2611.17772/) | 2026-11-16 | 43 |
 | [Folding Language Models into Themselves](../../papers/arxiv-2611.18113/) | 2026-11-16 | 42 |
 | [CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents](../../papers/arxiv-2611.17808/) | 2026-11-16 | 40 |
 | [ScrapeGraphAI-100k: Dataset for Schema-Constrained LLM Generation](../../papers/arxiv-2602.15189/) | 2026-11-16 | 39 |
@@ -249,9 +258,9 @@ description: "Compression, Sparsity & Distillation"
 | [Unlocking Structured Pruning for Reasoning Language Models via Attention-Preserving MLP Trimming](../../papers/arxiv-2610.19121/) | 2026-10-13 | 46 |
 | [Agent-Reflex: Teaching Language Agents to Act Reflectively](../../papers/arxiv-2610.17953/) | 2026-10-13 | 45 |
 | [FRACTION: Fraud Explanation Generation via Agentic Graph Context Navigation](../../papers/arxiv-2610.18023/) | 2026-10-13 | 44 |
-| [Just Respect the Semantics: Image-Token Compression via Pre-LLM Semantic Variable-Resolution Tokenization and In-LLM Relevance Pruning](../../papers/arxiv-2610.18690/) | 2026-10-13 | 43 |
 | [Tracing Knowledge Lineage for Federated Unlearning under Mutual Distillation](../../papers/arxiv-2610.19072/) | 2026-10-13 | 41 |
 | [Outcome-Routed Distillation and Reinforcement Learning for Diffusion Language Models](../../papers/arxiv-2610.19271/) | 2026-10-13 | 38 |
+| [Find the Fungible: Variable-Resolution Tokenization that Compacts Semantics with a Granularity Dial as a VLM "Catalyst"](../../papers/arxiv-2610.18690/) | 2026-10-13 | 38 |
 | [Proactive Agentic Orchestration](../../papers/arxiv-2610.13485/) | 2026-10-12 | 46 |
 | [COFFEQA: Counterfactual-Guided Few-Shot Distillation for LLM Question Answering](../../papers/arxiv-2610.12837/) | 2026-10-12 | 44 |
 | [BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation](../../papers/arxiv-2610.13285/) | 2026-10-12 | 44 |

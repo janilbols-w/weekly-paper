@@ -5,10 +5,23 @@ description: "Quantization & Low Precision"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 量化与低精度**
 
-累计收录 **464** 篇。
+累计收录 **477** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Native Block-Quantized Matrix Multiplication and Explicit K/V Residency with Dual-View Access for LLM Inference on RISC-V Vector Processors](../../papers/arxiv-2611.31937/) | 2026-11-25 | 55 |
+| [Shifter Quantization: Compact Representations for Native Integer Computation](../../papers/arxiv-2611.33080/) | 2026-11-25 | 49 |
+| [ReQOR: Operator-Discrepancy Subspace Repair for Quantization-Conditioned Backdoors in Large Language Models](../../papers/arxiv-2611.32755/) | 2026-11-25 | 47 |
+| [HiCal: Offline Calibration for Hierarchical Scale Encoding in Accurate HiF4 Quantization](../../papers/arxiv-2611.32624/) | 2026-11-25 | 46 |
+| [Can a Frontier LLM Repair a Quantized Network by Tool-Free Weight-Space Programming?](../../papers/arxiv-2611.33031/) | 2026-11-25 | 46 |
+| [REAL: Reading Out Transformer Activations for Precise Localization in Language Model Steering](../../papers/arxiv-2506.08359/) | 2026-11-25 | 45 |
+| [Is 4 Bits Enough for EEG Sleep Staging? A Subject-Level Benchmark of MXFP4, NVFP4 and FP8](../../papers/arxiv-2611.31436/) | 2026-11-25 | 45 |
+| [MXFP4 for LLM Inference: Complementary Post-Training Quantization Techniques and Their Interactions](../../papers/arxiv-2611.32873/) | 2026-11-25 | 43 |
+| [FLIPS: Instance-Fingerprinting for LLMs via Pseudo-random Sequences](../../papers/arxiv-2606.03330/) | 2026-11-25 | 42 |
+| [Fractal Neural Synthesis: Constant-Storage Procedural Weight Derivation via Complex Quadratic Boundary Dynamics](../../papers/arxiv-2611.32393/) | 2026-11-25 | 40 |
+| [Bit-Flip Attacks on Quantized Neural Networks without Knowledge of Model Parameters](../../papers/arxiv-2611.32128/) | 2026-11-25 | 40 |
+| [Network-Guided Automated Synthesis of MAC Units for Neural Network Inference](../../papers/arxiv-2611.31986/) | 2026-11-25 | 38 |
+| [AVQ-Attention-2: Adaptive Vector-Quantized Attention with Exact Local Blocks and Linear-Cost Training](../../papers/arxiv-2611.32989/) | 2026-11-25 | 38 |
 | [MemVanta: Memory-Efficient CPU Inference for Quantized GGUF Language Models](../../papers/arxiv-2611.27997/) | 2026-11-24 | 50 |
 | [BQDNA: Multi-Head Binary Spherical Quantization for Genomic Sequence Modeling](../../papers/arxiv-2611.29395/) | 2026-11-24 | 47 |
 | [Practical activation sparsity for quantized LLMs on personal devices](../../papers/arxiv-2511.04477/) | 2026-11-24 | 45 |
@@ -54,8 +67,8 @@ description: "Quantization & Low Precision"
 | [MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration](../../papers/arxiv-2611.17931/) | 2026-11-16 | 41 |
 | [LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent](../../papers/arxiv-2611.17780/) | 2026-11-16 | 41 |
 | [Watermark Evidence under Open-Weight LLM Modification: Exact Bounds for Low-Rank Output Watermarks](../../papers/arxiv-2611.21702/) | 2026-11-16 | 39 |
-| [Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments](../../papers/arxiv-2611.20012/) | 2026-11-15 | 49 |
 | [MIAO: Microscaling Intermediate Accumulation Optimization](../../papers/arxiv-2611.19722/) | 2026-11-15 | 49 |
+| [Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments](../../papers/arxiv-2611.20012/) | 2026-11-15 | 47 |
 | [GSQ: Highly-Accurate Low-Precision Scalar Quantization for LLMs via Gumbel-Softmax Sampling](../../papers/arxiv-2604.18556/) | 2026-11-11 | 43 |
 | [Federated Learning of Binary Neural Networks: Enabling Low-Cost Inference](../../papers/arxiv-2603.15507/) | 2026-11-11 | 43 |
 | [Beyond local reconstruction: Geometry-preserving output alignment for binary LLM quantization](../../papers/arxiv-2512.21651/) | 2026-11-11 | 43 |
@@ -251,10 +264,10 @@ description: "Quantization & Low Precision"
 | [AIR-LLM: Broadcasting AI Weights over Radio for Memory-Free Edge LLM Inference via RF Computing](../../papers/arxiv-2610.00465/) | 2026-09-30 | 41 |
 | [Pushing Toward the Simplex Vertices: A Simple Remedy for Code Collapse in Smoothed Vector Quantization](../../papers/arxiv-2509.22161/) | 2026-09-30 | 40 |
 | [LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text](../../papers/arxiv-2609.31663/) | 2026-09-30 | 40 |
+| [Beyond Accuracy: Prefix-Invariant Realizations of Low-Precision Fast Matrix Multiplication](../../papers/arxiv-2609.39816/) | 2026-09-30 | 40 |
 | [HiFloat4 Format for Language Model Pre-training on Ascend NPUs](../../papers/arxiv-2604.08826/) | 2026-09-30 | 39 |
 | [Depth Laws for the Precision Floor of Trained Neural Networks: Amplification, Residual Scaling, and a Quantization-Aware Training Paradox](../../papers/arxiv-2609.32060/) | 2026-09-30 | 39 |
 | [Scaling Collider Event Generation with Residual-Quantized Tokens](../../papers/arxiv-2610.00569/) | 2026-09-30 | 38 |
-| [Beyond Accuracy: Prefix-Invariant Realizations of Low-Precision Fast Matrix Multiplication](../../papers/arxiv-2609.39816/) | 2026-09-30 | 38 |
 | [Behavioral Capacity Certificates for Quantized Language Models](../../papers/arxiv-2609.37887/) | 2026-09-29 | 50 |
 | [LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization](../../papers/arxiv-2609.38166/) | 2026-09-29 | 48 |
 | [Security-Enhanced Seed-Based Weight Quantization for Large Language Models](../../papers/arxiv-2609.38477/) | 2026-09-29 | 47 |

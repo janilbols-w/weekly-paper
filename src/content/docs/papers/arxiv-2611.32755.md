@@ -1,0 +1,45 @@
+---
+title: "ReQOR: Operator-Discrepancy Subspace Repair for Quantization-Conditioned Backdoors in Large Language Models"
+description: "Quantization-Conditioned Backdoors (QCBs) cause large language models (LLMs) to exhibit malicious behavior after quantization while remaining benign at high precision."
+---
+
+**评分：47/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
+
+[论文原文](https://arxiv.org/abs/2611.32755) · [PDF](https://arxiv.org/pdf/2611.32755)
+
+## 一句话摘要
+
+Quantization-Conditioned Backdoors (QCBs) cause large language models (LLMs) to exhibit malicious behavior after quantization while remaining benign at high precision.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+Quantization-Conditioned Backdoors (QCBs) cause large language models (LLMs) to exhibit malicious behavior after quantization while remaining benign at high precision. Existing defenses often rely on security-guided configuration selection or iterative optimization, but do not identify which quantization-induced changes should be repaired. We isolate module-local quantization effects from upstream drift by evaluating the high-precision and quantized versions of each module on identical states from the quantized inference trajectory, and formulate QCB defense as repairing the resulting same-state operator discrepancies. We propose ReQOR, a training-free defense that identifies the dominant directions of these discrepancies on benign calibration data and restores the full-precision computation along them in closed form, yielding a factorized residual adapter. ReQOR uses neither attack information nor gradient-based optimization and supports both full-span and low-rank repair. Experiments across four LLMs, three PGD-based QCB attacks, three malicious behaviors, and three quantization formats show substantial QCB mitigation while largely preserving benign utility. In additional experiments on a non-PGD outlier-injection attack, existing baselines largely fail, whereas ReQOR remains effective. Further analysis shows that dominant operator-discrepancy directions provide more effective and rank-efficient repair than rank-matched random, low-energy, or raw weight-error directions, while low-rank ReQOR reduces deployment memory overhead.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 18 |
+| novelty | 6 |
+| rigor | 9 |
+| practical impact | 9 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: quantization, quantized
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Wonjune Seo, Minkyung Park, Saerom Park
+- 发布：2026-11-25；更新：2026-11-25
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

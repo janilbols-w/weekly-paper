@@ -5,10 +5,14 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **149** 篇。
+累计收录 **153** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [SWE-Proof: Can Language Models Resolve Real-World Issues with Machine-Checked Proofs?](../../papers/arxiv-2609.21190/) | 2026-11-25 | 41 |
+| [U-Statistics-Powered LLM Reasoning](../../papers/arxiv-2611.33064/) | 2026-11-25 | 39 |
+| [SPARQL-Planned Single-Hop Traversal over a Live Knowledge Graph for Multi-Hop Question Answering](../../papers/arxiv-2611.31771/) | 2026-11-25 | 39 |
+| [CPU-Eval: Evaluating Large Language Models for CPU Hardware Code Generation](../../papers/arxiv-2611.32405/) | 2026-11-25 | 39 |
 | [BIRD-Persona: A Persona-Aware Benchmark for SQL and pandas Analytics Code Generation](../../papers/arxiv-2611.28542/) | 2026-11-24 | 43 |
 | [Constrained Code Generation with Diffusion Language Models](../../papers/arxiv-2605.16829/) | 2026-11-24 | 40 |
 | [Generalizing Test-time Compute-optimal Scaling as an Optimizable Graph](../../papers/arxiv-2511.00086/) | 2026-11-23 | 40 |

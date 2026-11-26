@@ -39,7 +39,7 @@ Continual learning (CL) enables neural networks to adapt to non-stationary data 
 ## 元数据
 
 - 作者：Guilherme Guedes, Marco Apolinario Lainez, Charlotte Frenkel
-- 发布：2026-11-18；更新：2026-11-24
+- 发布：2026-11-18；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

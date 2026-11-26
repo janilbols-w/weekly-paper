@@ -1,0 +1,72 @@
+{
+  "id": "arxiv:2611.31986",
+  "title": "Network-Guided Automated Synthesis of MAC Units for Neural Network Inference",
+  "abstract": "In neural inference accelerators, multiply-accumulate (MAC) datapaths account for the majority of circuit area and critical-path delay, where operator-level numerical formats simultaneously dictate hardware overhead and quantization error. Yet no straightforward mapping exists between hardware cost and end-to-end network accuracy: logic synthesis transforms datapaths in a highly nonlinear manner, while numerical errors propagate and couple across layers. To address this disconnect, we present NAMSI, an automated network-aware MAC synthesis framework tailored for neural inference. NAMSI characterizes heterogeneous data formats using a format-distribution representation (FD) and leverages topology-aware accuracy and hardware-cost modeling (TaH), calibrated with actual post-synthesis Area-Delay Product (ADP) measurements, to jointly estimate coupled full-network accuracy and circuit cost. Furthermore, reversible lattice search (RLS) is introduced to tractably navigate the exponentially scaling design space. Evaluations across five neural networks on ImageNet-1K demonstrate that under post-training quantization (PTQ), NAMSI achieves 54.2%-60.4% reductions in post-synthesis MAC ADP compared with FP32 while retaining at least 99% of full-precision Top-1 accuracy, surpassing baseline approaches in both hardware efficiency and accuracy preservation.",
+  "url": "https://arxiv.org/abs/2611.31986",
+  "pdf_url": "https://arxiv.org/pdf/2611.31986",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Zhouyang Wu",
+    "Hongyang Pan",
+    "Chuyu Wang",
+    "Ji Zhuang",
+    "Keren Zhu",
+    "Xin Zhao",
+    "Xuan Zeng"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AR"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "quantization"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: quantization",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "In neural inference accelerators, multiply-accumulate (MAC) datapaths account for the majority of circuit area and critical-path delay, where operator-level numerical formats simultaneously dictate hardware overhead and quantization error.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.31986",
+      "url": "https://arxiv.org/abs/2611.31986"
+    }
+  ]
+}

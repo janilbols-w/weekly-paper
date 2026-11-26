@@ -5,10 +5,11 @@ description: "MoE Efficiency"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > MoE 路由与专家优化**
 
-累计收录 **38** 篇。
+累计收录 **39** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [MobileMoE: Scaling On-Device Mixture of Experts](../../papers/arxiv-2605.27358/) | 2026-11-25 | 48 |
 | [Training-Free Dynamic Upcycling of Expert Language Models](../../papers/arxiv-2603.29765/) | 2026-11-19 | 42 |
 | [Localized LoRA-MoE: Mixture of Low-Rank Experts With Adaptive Routing](../../papers/arxiv-2607.05114/) | 2026-11-18 | 43 |
 | [CECAR: Cache & Expert Co-Aware Routing Accelerates On-Device Inference of MoE LLMs](../../papers/arxiv-2611.20119/) | 2026-11-15 | 51 |

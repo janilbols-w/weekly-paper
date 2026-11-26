@@ -1,0 +1,79 @@
+{
+  "id": "arxiv:2609.21190",
+  "title": "SWE-Proof: Can Language Models Resolve Real-World Issues with Machine-Checked Proofs?",
+  "abstract": "Ensuring the correctness of LLM-generated code is a core challenge for modern software engineering. Benchmarks for agentic code generation check correctness with held-out test suites, which are inherently incomplete and increasingly susceptible to memorization. Formal verification avoids both problems, but existing work covers only standalone tasks whose specifications are given as input, not real issues, which touch large repositories and state intent in vague natural language. We present BenchProofer, a pipeline that turns a coding task with a known correct patch into a formally verified one: it writes a specification for the new code, summarizes the existing functions that code calls with axioms, and admits an instance only after mechanical and adversarial gates agree. Applying it to SWE-bench Verified yields SWE-Proof, 500 real issues whose correctness is formally verified rather than tested, and it extends to SWE-bench Pro. Evaluating Claude Opus 4.8, we find that verification catches what tests miss: nearly a third of test-passing patches admit counterexamples, which a structured natural-language specification does not fix, while a correct formal one lifts resolution from 85% to 95%. Writing that specification is the hard part: an agent that must write its own gains nothing over an unaided baseline, and only 56% of those specifications pass our audit. The usual failure is faithfulness, where a specification constrains part of the required behavior and leaves the rest free. Specification quality also tracks the outcome, failing on 92% of unresolved instances against 51% of resolved ones, making faithful specification synthesis a concrete open problem. Code is available at https://github.com/amazon-science/BenchProofer.",
+  "url": "https://arxiv.org/abs/2609.21190",
+  "pdf_url": "https://arxiv.org/pdf/2609.21190",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "George Ma",
+    "Benjamin Mikek",
+    "Haoyu Li",
+    "Ferhat Erata",
+    "Yuhao Zhang",
+    "Zeren Shui",
+    "Behrooz Omidvar Tehrani",
+    "Jun Huan",
+    "Murali Krishna Ramanathan",
+    "Somayeh Sojoudi",
+    "Hao Zhou",
+    "Anoop Deoras"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.SE"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/amazon-science/BenchProofer",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "compiler-graph",
+    "leaf": "Compiler & Graph Optimization",
+    "leaf_zh": "编译器与计算图优化"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "code generation"
+  ],
+  "score": 41,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 5,
+    "rigor": 9,
+    "practical_impact": 5,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: code generation",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Ensuring the correctness of LLM-generated code is a core challenge for modern software engineering.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.21190",
+      "url": "https://arxiv.org/abs/2609.21190"
+    }
+  ]
+}

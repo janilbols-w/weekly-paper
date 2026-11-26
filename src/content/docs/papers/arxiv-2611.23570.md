@@ -39,7 +39,7 @@ In multi-agent systems, a receiver agent often waits for a helper agent's messag
 ## 元数据
 
 - 作者：Xinyang Li, Chih-Hsuan Yang, Xiaolong Ma, Anjir Ahmed Chowdhury, Vikram Vasudevan, Rajeev Thakur, Feng Yan
-- 发布：2026-11-17；更新：2026-11-19
+- 发布：2026-11-17；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Piedpiperrr/safe-to-omit](https://github.com/Piedpiperrr/safe-to-omit)
 - 阅读深度：metadata

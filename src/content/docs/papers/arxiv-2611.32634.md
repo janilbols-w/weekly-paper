@@ -1,0 +1,45 @@
+---
+title: "ModelLess: A Serverless System for Multi-Tier LLM Inference on Shared GPUs"
+description: "LLM inference platforms sell online, asynchronous, batch and rollout products on GPUs provisioned per product, so a service's cards sit idle between bursts while other work waits."
+---
+
+**评分：40/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+
+[论文原文](https://arxiv.org/abs/2611.32634) · [PDF](https://arxiv.org/pdf/2611.32634)
+
+## 一句话摘要
+
+LLM inference platforms sell online, asynchronous, batch and rollout products on GPUs provisioned per product, so a service's cards sit idle between bursts while other work waits.
+
+## 为什么值得关注
+
+待编辑增强。
+
+## 摘要原文
+
+LLM inference platforms sell online, asynchronous, batch and rollout products on GPUs provisioned per product, so a service's cards sit idle between bursts while other work waits. We present ModelLess, a serverless system for LLM inference. Users declare model services and the platform owns the instances. An idle service scales to zero: its instances go to sleep with their weights in host memory (release about 1 s, wake about 4 s for GLM-5.2 at TP8, against a cold start of over four minutes). Billing follows the time a service holds GPUs. The GPUs that sleeping instances free are lent to lower tiers. Cluster managers preempt low-priority tasks and treat eviction as all-or-nothing, but an LLM instance's eviction cost depends on which of its weights, execution state, KV cache and in-flight requests survive. ModelLess therefore gives each tier (online, job, flex) eviction semantics that state what it may lose when preempted, and runs a preemption protocol that closes admission before it releases memory, re-enqueues a request durably before it aborts it, and fails closed. Four components (entry, dispatcher, node agent, SGLang plugin) enforce it with sleep/wake, pause/resume of in-flight requests for flex, and a weight-copy path (follow/seal) for RL rollout. Replaying a week of traces from 1,100 H20 cards serving long-tail online models shows that about 38% of GPU-time (417 equivalent GPUs) could be lent under a coarse latency target with one fixed idle threshold. This is an idealized upper bound, and it holds only if recovery takes seconds: with a 240 s cold start under 8% remains even with per-service thresholds. On one node, a single four-hour run per policy shows that pausing yields 22% more borrower tokens per held GPU sample than abort-and-requeue, with the same median online latency. The job tier and follow/seal are not yet evaluated end to end.
+
+## 质量评分
+
+| 维度 | 得分 |
+|---|---:|
+| relevance | 12 |
+| novelty | 5 |
+| rigor | 7 |
+| practical impact | 11 |
+| reproducibility | 2 |
+| credibility | 3 |
+
+## 证据与限制
+
+- taxonomy keywords: kv cache
+- no quantitative claim in metadata
+- no code link detected in metadata
+
+## 元数据
+
+- 作者：Ding Shi (Ant Group), Wei Wu (Ant Group), Jiayuan Chen (Ant Group), Chenghu Yang (Ant Group)
+- 发布：2026-11-25；更新：2026-11-25
+- 来源：arXiv RSS；Venue：未确认
+- 代码：未发现
+- 阅读深度：metadata

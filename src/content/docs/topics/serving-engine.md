@@ -5,10 +5,11 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **152** 篇。
+累计收录 **153** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Scalable Placement for Disaggregated LLM Serving on Heterogeneous Edge Fleets](../../papers/arxiv-2611.32881/) | 2026-11-25 | 42 |
 | [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](../../papers/arxiv-2611.29255/) | 2026-11-24 | 49 |
 | [HiPerfCC-KVCache: Accelerating Confidential LLM Serving with Hierarchical KV Caching](../../papers/arxiv-2611.28702/) | 2026-11-24 | 49 |
 | [DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving](../../papers/arxiv-2611.28522/) | 2026-11-24 | 49 |

@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2611.31256",
+  "title": "Directly Maximizing On-policy Expected Accepted Length for Speculative Decoding",
+  "abstract": "Speculative decoding accelerates large language model inference by using a lightweight draft model to propose tokens for verification by a target model. Draft training commonly optimizes token-level distribution alignment, but this does not directly optimize the length of the accepted prefix: once a draft token is rejected, all subsequent draft tokens are discarded. We propose FreDraft, an on-policy training method that directly maximizes the expected accepted length of drafts sampled from the current draft model. This objective accounts for first-rejection truncation and induces prefix-aware credit assignment, weighting each token by its contribution to the acceptance of the current and subsequent tokens. To optimize the objective efficiently, we analytically marginalize token-level acceptance rate, using the target model's vocabulary distribution to reduce gradient variance. We further redistribute part of this distribution-level gradient into an explicit penalty for sampled tokens whose probabilities are overestimated by the draft model, while preserving the expected gradient. Experiments across multiple benchmarks and target models show that FreDraft improves accepted length and decoding speedup over strong baselines, achieving faster on-policy training convergence.",
+  "url": "https://arxiv.org/abs/2611.31256",
+  "pdf_url": "https://arxiv.org/pdf/2611.31256",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Ziying Zhang",
+    "Yaqing Wang",
+    "Yong Liu",
+    "Quanming Yao"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "speculative-decoding",
+    "leaf": "Speculative Decoding",
+    "leaf_zh": "推测解码"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "draft model",
+    "speculative decoding"
+  ],
+  "score": 48,
+  "score_components": {
+    "relevance": 18,
+    "novelty": 7,
+    "rigor": 11,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: draft model, speculative decoding",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Speculative decoding accelerates large language model inference by using a lightweight draft model to propose tokens for verification by a target model.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.31256",
+      "url": "https://arxiv.org/abs/2611.31256"
+    }
+  ]
+}

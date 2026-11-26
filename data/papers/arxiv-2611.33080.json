@@ -1,0 +1,69 @@
+{
+  "id": "arxiv:2611.33080",
+  "title": "Shifter Quantization: Compact Representations for Native Integer Computation",
+  "abstract": "Groupwise quantization is used in LLM quantization to improve accuracy at low bit widths, but grouping weights keeps standard integer MMA from spanning the full dot product for efficient GPU inference. We develop a new quantization method, Shifter Quantization (SQ), that reconstructs native-width integer operands by appending and shifting shared bits. To further extend the efficiency, we develop a special variant of SQ, Shifter Integer (SHI), to use INT4 kernels. We show that SQ and SHI formats perform better than standard groupwise quantization in quality, as measured by projection error and KL divergence, and in inference speed, as measured during decoding and prefill. For low precision like 2-bit quantization, SQ2 and SHI2 achieve 2.71-3.77x the 4,096-token prefill throughput of llama.cpp on a Q2_K checkpoint and reduce WikiText-2 KL by 6.6-7.8%. For mid precision like 4-bit quantization, SQ4 achieves 1.43-2.47x the prefill throughput of NInfer's groupwise-integer baselines across the tested models and prompt lengths, with 24-40% lower KL than the NInfer baselines. For high precision like 8-bit quantization, SQ8 achieves 27.4% higher batch-one prefill throughput and 72.7% lower KL than vLLM's online FP8.",
+  "url": "https://arxiv.org/abs/2611.33080",
+  "pdf_url": "https://arxiv.org/pdf/2611.33080",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Yufeng Huang"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "quantization-low-precision",
+    "leaf": "Quantization & Low Precision",
+    "leaf_zh": "量化与低精度"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "fp8",
+    "int4",
+    "low precision",
+    "quantization"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 5,
+    "rigor": 7,
+    "practical_impact": 10,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: fp8, int4, low precision, quantization",
+    "quantitative claim detected",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Groupwise quantization is used in LLM quantization to improve accuracy at low bit widths, but grouping weights keeps standard integer MMA from spanning the full dot product for efficient GPU inference.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2611.33080",
+      "url": "https://arxiv.org/abs/2611.33080"
+    }
+  ]
+}

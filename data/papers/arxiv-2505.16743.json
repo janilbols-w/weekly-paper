@@ -1,0 +1,71 @@
+{
+  "id": "arxiv:2505.16743",
+  "title": "TRIM: Achieving Extreme Sparsity with Targeted Row-wise Iterative Metric-driven Pruning",
+  "abstract": "Large language models (LLMs) present substantial computational and memory challenges. Existing one-shot pruning methods often use a uniform sparsity target for all rows within a layer, which can be too coarse at high sparsity. This work introduces TRIM (Targeted Row-wise Iterative Metric-driven pruning), a forward-statistics-based wrapper that allocates different sparsity ratios to individual output rows while keeping model weights frozen. TRIM separates the choice of which weights to prune (scoring) from how many to prune in each row (allocation), and composes with existing scorers and layer-wise allocations. Across Qwen2.5, LLaMA-2, and OPT models, its largest gains occur at 70-80% sparsity. At 80%, adding TRIM to OWL reduces WikiText-2 perplexity from 348.48 to 180.67 for Qwen2.5-14B and from 6461.43 to 324.14 for OPT-13B. We conclude that fine-grained, row-wise allocation is an effective mechanism for substantially improving one-shot pruning quality in the extreme-sparsity regime. Code: https://github.com/flobk/TRIM.",
+  "url": "https://arxiv.org/abs/2505.16743",
+  "pdf_url": "https://arxiv.org/pdf/2505.16743",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "authors": [
+    "Florentin Beck",
+    "William Rudman",
+    "Carsten Eickhoff"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/flobk/TRIM",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "model-algorithm",
+    "group": "Model & Algorithm Efficiency",
+    "group_zh": "模型与算法效率",
+    "leaf_id": "compression-sparsity-distillation",
+    "leaf": "Compression, Sparsity & Distillation",
+    "leaf_zh": "压缩、稀疏与蒸馏"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "pruning",
+    "sparsity"
+  ],
+  "score": 49,
+  "score_components": {
+    "relevance": 22,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: pruning, sparsity",
+    "no quantitative claim in metadata",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Large language models (LLMs) present substantial computational and memory challenges.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-26T04:35:51+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2505.16743",
+      "url": "https://arxiv.org/abs/2505.16743"
+    }
+  ]
+}
