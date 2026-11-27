@@ -1352,11 +1352,48 @@
     "selection_requires_editorial": true,
     "official_totals": {
       "technical_papers": 99,
-      "ieee_archived_papers": 99
+      "ieee_archived_papers": 99,
+      "best_paper_awards": 1,
+      "best_student_paper_awards": 1,
+      "best_reproducibility_advancement_awards": 1,
+      "best_research_poster_awards": 1
     },
-    "summary_zh": "SC26 于 11 月 15 至 20 日在芝加哥举行，官方日程公开 99 篇同行评审技术论文；截至 11 月 20 日，这 99 篇论文的官方详情页均已提供 IEEE Computer Society Digital Library 归档入口。本站从完整标题、摘要与 session 中筛选 LLM 高效推理和 AI Infra 论文，只对达到证据阈值的候选做全文核验。",
-    "relevance_zh": "本届最集中的信号是 HPC 与大模型基础设施正在合流：LLM serving 已形成 KV Cache、异构 GPU、推测解码和 PD 混合调度的连续议程；10K-GPU 训练通信、低延迟 collectives、AI workload 能耗建模和 GPU 静默错误则把训练可靠性推进到生产尺度。",
-    "current_stage_zh": "本次新增命中 `papers_released`，同时仍处于 `event_week`：RUN_DATE 为 11 月 20 日，SC26 当天闭幕。官方 Linklings 详情页已为全部 99 篇技术论文加入 IEEE Computer Society Digital Library 入口，因此本轮把相关论文来源从 accepted program 升级为 proceedings，并保留作者版 PDF 供精选论文做定向核验。Best Paper、Best Student Paper 与 Best Reproducibility Advancement 的现场典礼已于 11 月 19 日举行，但截至本次检查，公开奖项页和日程尚未列出获奖论文，故不触发 `awards_released`，也不根据 finalist 预测结果。",
+    "summary_zh": "SC26 已公开 99 篇同行评审技术论文及正式奖项结果。本站从完整标题、摘要与 session 中保留 24 篇 LLM 高效推理和 AI Infra 相关论文，并对 6 篇高分候选定向核验全文；本轮新增核验 Best Paper、Best Student Paper、Best Reproducibility Advancement 与 Best Research Poster。",
+    "relevance_zh": "本届最集中的工程信号仍是 HPC 与大模型基础设施合流：LLM serving、10K-GPU 训练通信、低延迟 collectives、能耗建模与 GPU 静默错误形成连续议程。新增技术论文奖项均不直接属于本站主题，因此奖项结果不会替换已有 6 篇精选；更邻近 AI Infra 的学生竞赛信号是 serverless inference tensor representation 与 multi-GPU performance modeling，但它们不是主技术论文，也不并入 99 篇论文语料。",
+    "current_stage_zh": "本次新增命中 `awards_released`。11 月 20 日上次核验时，官方奖项页与公开日程尚未列出获奖论文；RUN_DATE 为 11 月 27 日，本轮官方奖项页已明确列出 Best Paper、Best Student Paper、Best Reproducibility Advancement、Best Research Poster 及 Society/Student Program 结果。四项技术项目获奖内容分别聚焦海啸预警传感器布局、Tensor Core stencil、科学粒子数据的 3D Gaussian Splatting 和量子计算 benchmark，均不直接满足本站 LLM efficient inference / AI Infra 精选阈值，因此只记录官方结果，不新增全文精选。",
+    "award_results": [
+      {
+        "award": "Best Paper Award",
+        "winners": [
+          "Sensor Placement for Tsunami Early Warning via Large-Scale Bayesian Optimal Experimental Design"
+        ]
+      },
+      {
+        "award": "Best Student Paper Award",
+        "winners": [
+          "Do We Need Tensor Cores for Stencil Computations?"
+        ]
+      },
+      {
+        "award": "Best Reproducibility Advancement Award",
+        "winners": [
+          "3D Gaussian Splatting for Scientific Particle Data Compression and Rendering"
+        ]
+      },
+      {
+        "award": "Best Research Poster Award",
+        "winners": [
+          "JUNIQ Benchmark Suite: A Decade of Application Benchmarks on Quantum Computers"
+        ]
+      },
+      {
+        "award": "Relevant ACM Student Research Competition signals",
+        "winners": [
+          "Undergraduate 2nd Place — Transit-Layer Tensor Representation for Serverless Inference",
+          "Graduate 3rd Place — Learning Within the Laws of the Hardware: Rethinking Multi-GPU Performance Modeling and Workload Characterization"
+        ]
+      }
+    ],
     "event_stats": [
       {
         "label": "Conference days",
@@ -1377,6 +1414,10 @@
       {
         "label": "Official paper finalists",
         "value": 9
+      },
+      {
+        "label": "Technical program award winners",
+        "value": 4
       }
     ],
     "key_programs": [
@@ -1413,8 +1454,8 @@
       {
         "title": "Awards Ceremony and SC27 Launch",
         "date": "2026-11-19 15:30-17:00 CST",
-        "url": "https://sc26.conference-program.com/presentation/?id=awd105&sess=sess247",
-        "focus_zh": "现场典礼已经结束；截至 11 月 20 日检查时，公开详情页仍未附 Best Paper、Best Student Paper 或 Best Reproducibility Advancement 获奖名单，因此本页继续只保留 finalist 标记。"
+        "url": "https://sc26.supercomputing.org/program/awards/",
+        "focus_zh": "官方奖项页现已列出 Best Paper、Best Student Paper、Best Reproducibility Advancement、Best Research Poster 以及 Society/Student Program 结果；技术论文奖项与本站 LLM/AI Infra 精选主题没有直接重合。"
       }
     ],
     "sources": [
@@ -1453,22 +1494,29 @@
         "url": "https://sc26.conference-program.com/presentation/?id=awd105&sess=sess247",
         "checked_at": "2026-11-20",
         "note_zh": "核验典礼时间与已结束状态；公开详情页和奖项页尚未列出 Best Paper、Best Student Paper 或 Best Reproducibility Advancement 获奖论文"
+      },
+      {
+        "label": "SC26 official awards results",
+        "url": "https://sc26.supercomputing.org/program/awards/",
+        "checked_at": "2026-11-27",
+        "note_zh": "核验 Best Paper、Best Student Paper、Best Reproducibility Advancement、Best Research Poster 及 Society/Student Program 正式结果；不把 finalist 或非主论文竞赛条目混入技术论文语料"
       }
     ],
     "program_methodology_notes_zh": [
       "官方 Linklings 每个按日静态片段都包含完整日程；采集器读取一个片段，按 pap ID 去重得到 99 篇技术论文，再抓取各自公开详情页的摘要、作者与 IEEE Computer Society Digital Library 链接，不纳入 workshop、poster、panel 或 exhibitor forum。",
       "全部 99 篇技术论文在本轮均取得 IEEE 正式归档入口，来源类型升级为 proceedings；全体仍只使用标题、官方摘要、session 与 finalist 标签进行三级 taxonomy 召回和元数据评分，不把 workshop 论文混入主技术论文语料。",
       "只有进入最终精选的高分候选定向核验作者公开 PDF、方法、关键结果、限制和 artifact；摘要中的峰值数字不跨模型、硬件、SLO 或集群规模外推。",
-      "Best Paper、Best Student Paper 与 Best Reproducibility Advancement 的现场典礼已结束，但公开一手页面尚未列出获奖论文；本轮不把 finalist 等同于获奖，也不采用非官方传闻。"
+      "11 月 27 日官方奖项页已列出四项技术项目获奖者；其标题、官方摘要与类型均不直接满足本站 LLM efficient inference / AI Infra 精选阈值，因此只记录奖项事实，不因获奖标签扩大 PDF 深读范围或改动 6 篇精选。",
+      "ACM Student Research Competition 中 serverless inference tensor representation 与 multi-GPU performance modeling 与 AI Infra 相邻，但属于学生竞赛而非 99 篇主技术论文；本页作为活动信号列名，不并入论文评分池。"
     ],
-    "status": "进行中",
-    "trigger_type": "event_week",
+    "status": "已归档",
+    "trigger_type": "awards_released",
     "corpus_source": "SC26 official schedule and IEEE Computer Society proceedings",
     "corpus_total": 99,
     "relevant_total": 24,
     "selected_total": 6,
-    "source_digest": "cbe6a08506fcfb1e1e54569cc1e1cb1aaec03e7153799a292768f33e0a638d89",
-    "generated_at": "2026-11-20T05:02:03+00:00",
+    "source_digest": "d168bcf1dd510d2eee686b4a2f1939c8e91adf47455377e417cdc6d692c25fa1",
+    "generated_at": "2026-11-27T02:06:53+00:00",
     "has_report": true
   },
   {
