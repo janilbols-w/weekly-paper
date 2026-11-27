@@ -3,7 +3,7 @@ title: "DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Servi
 description: "Long-context LLM inference is bottlenecked by the memory demands of the key-value (KV) cache, whose size scales linearly with context length."
 ---
 
-**评分：49/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
+**评分：54/100** · AI 基础设施 > 服务平台 > Serving Engine 与 Runtime
 
 [论文原文](https://arxiv.org/abs/2611.28522) · [PDF](https://arxiv.org/pdf/2611.28522)
 
@@ -27,19 +27,19 @@ Long-context LLM inference is bottlenecked by the memory demands of the key-valu
 | novelty | 5 |
 | rigor | 7 |
 | practical impact | 16 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: llm serving
 - quantitative claim detected
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Nurlan Nazaraliyev, Elaheh Sadredini, Nael Abu-Ghazaleh
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/nnurlan008/DisSparse](https://github.com/nnurlan008/DisSparse)
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ We show that quantization asymmetry concentrates bit-flip vulnerability in small
 ## 元数据
 
 - 作者：Mahmoud Abumandour, Srinija Ramichetty, Guru Venkataramani, Alaa R. Alameldeen
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

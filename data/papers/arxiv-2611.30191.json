@@ -4,7 +4,7 @@
   "abstract": "Large language models (LLMs) have become the foundation of modern AI services. The rapid growth of LLM sizes and context lengths has exceeded the memory capacity of a single GPU or NPU, requiring model partitioning across devices. However, partitioning models across devices introduces costly communication overhead, driving the need for superpods with large-scale, high-bandwidth, low-latency scale-up fabrics. Exploring superpod designs requires accurate interconnect simulation, as communication latency is jointly determined by link technologies, topologies, and scale-up protocol-stack choices. Latency-bandwidth models estimate communication latency using a startup term and a transfer term derived from message size and effective bandwidth. But they fail to capture contention and protocol effects. Packet-level simulators like ns-3 model routing, queueing, and packet timing, but require protocol-specific LLM-to-packet implementations. This paper presents ProtoBridge, an ns-3-based LLM-to-packet simulator for superpod interconnect exploration. To make protocol effects explicit, ProtoBridge introduces two abstraction layers over ns-3: (1) an operation-to-packet (OTP) layer that captures protocol-specific packet exchanges and dependencies, and (2) a packet-execution (PEX) layer that applies shared packet-level mechanisms to the ns-3 event system. ProtoBridge achieves average latency error of 17.8\\% on H200 NVLink4 and 10.3\\% on C500 MetaXLink. To enable faster superpod evaluation for further interconnect exploration, we derive a surrogate model that combines OTP parameters with analytical models of PEX mechanisms. The surrogate reduces evaluation time from 2.38$\\sim$75.70s to 20.5us per operation. We use ProtoBridge to analyze two emerging superpod designs, scale-up memory pool and co-packaged optics (CPO) interconnects, revealing design insights for future LLM superpod architectures.",
   "url": "https://arxiv.org/abs/2611.30191",
   "pdf_url": "https://arxiv.org/pdf/2611.30191",
-  "published": "2026-11-24",
+  "published": "2026-11-23",
   "updated": "2026-11-24",
   "authors": [
     "Yu Zhu",
@@ -29,7 +29,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "15 pages, 18 figures. To be published in HPCA 2027",
   "code_url": "",
   "primary_category": {
     "domain_id": "ai-infrastructure",
@@ -66,9 +66,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-25T04:36:07+00:00",
-  "last_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.30191v1",
+      "url": "http://arxiv.org/abs/2611.30191v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.30191",

@@ -39,7 +39,7 @@ Quantization is the standard way to shrink large language models, and it is usua
 ## 元数据
 
 - 作者：Giuseppe Pappalardo
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

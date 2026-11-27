@@ -39,7 +39,7 @@ Decoding biological information from long, repetitive DNA remains challenging. G
 ## 元数据
 
 - 作者：Xudong Wang, Siwei Cheng, Haozhe Hu
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Sophie10001b/BQDNA](https://github.com/Sophie10001b/BQDNA)
 - 阅读深度：metadata

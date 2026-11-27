@@ -39,7 +39,7 @@ Large language models for longitudinal clinical care must revise their assessmen
 ## 元数据
 
 - 作者：Chao Ding, Yidong Jiang, Junzhi Ning, Juncheng Wu, Yuhan Wang, Renjie Lu, Minjia Yuan, Gaopeng Wang, Liyang Wang, Pengcheng Chen, Dong Yin, Meiping Wang, Jinru Ding, Yuyin Zhou
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/Dingsuper-creator/WARD](https://github.com/Dingsuper-creator/WARD)
 - 阅读深度：metadata

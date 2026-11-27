@@ -39,7 +39,7 @@ Teams enable serving features such as prefix caching, chunked prefill and specul
 ## 元数据
 
 - 作者：Sharven Rane
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

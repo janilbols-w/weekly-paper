@@ -39,7 +39,7 @@ Quantization-Conditioned Backdoors (QCBs) cause large language models (LLMs) to 
 ## 元数据
 
 - 作者：Wonjune Seo, Minkyung Park, Saerom Park
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

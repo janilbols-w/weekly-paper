@@ -39,7 +39,7 @@ Serving large language models with long contexts requires keeping the key-value 
 ## 元数据
 
 - 作者：Hyunsu Ye, Hyunmin Choi, Jaehong Cho, Jaeseo Lee, Hyeongseok Gwak, Joohee Lee, Donguk Moon, Woosuk Chung, Hoshik Kim, Kiwan Maeng, Jongse Park
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-23；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

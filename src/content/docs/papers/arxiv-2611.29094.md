@@ -39,7 +39,7 @@ Knowledge distillation (KD) is widely used to transfer knowledge from large teac
 ## 元数据
 
 - 作者：Wen Xu, Xiaomin Zhang, Yucheng Yang, Danny Liu, Xunlong Gui, Fei Huang, Sha Meng
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

@@ -39,7 +39,7 @@ Autoregressive (AR) decoding emits one token per forward pass, reloading the ful
 ## 元数据
 
 - 作者：Joren Dumoulin, Hyoukjun Kwon, Subhankar Pal, Steven Li, Vignesh Vivekraja, Marian Verhelst
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

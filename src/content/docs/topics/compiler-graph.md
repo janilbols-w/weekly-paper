@@ -5,18 +5,20 @@ description: "Compiler & Graph Optimization"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化**
 
-累计收录 **153** 篇。
+累计收录 **155** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Fast and Scalable Abstract Interpretation for Deep Neural Networks](../../papers/arxiv-2611.33259/) | 2026-11-26 | 52 |
+| [ML-Tool-Bench: Tool-Augmented Planning for ML Tasks](../../papers/arxiv-2512.00672/) | 2026-11-26 | 42 |
 | [SWE-Proof: Can Language Models Resolve Real-World Issues with Machine-Checked Proofs?](../../papers/arxiv-2609.21190/) | 2026-11-25 | 41 |
 | [U-Statistics-Powered LLM Reasoning](../../papers/arxiv-2611.33064/) | 2026-11-25 | 39 |
 | [SPARQL-Planned Single-Hop Traversal over a Live Knowledge Graph for Multi-Hop Question Answering](../../papers/arxiv-2611.31771/) | 2026-11-25 | 39 |
-| [CPU-Eval: Evaluating Large Language Models for CPU Hardware Code Generation](../../papers/arxiv-2611.32405/) | 2026-11-25 | 39 |
-| [BIRD-Persona: A Persona-Aware Benchmark for SQL and pandas Analytics Code Generation](../../papers/arxiv-2611.28542/) | 2026-11-24 | 43 |
 | [Constrained Code Generation with Diffusion Language Models](../../papers/arxiv-2605.16829/) | 2026-11-24 | 40 |
+| [CPU-Eval: Evaluating Large Language Models for CPU Hardware Code Generation](../../papers/arxiv-2611.32405/) | 2026-11-24 | 39 |
 | [Generalizing Test-time Compute-optimal Scaling as an Optimizable Graph](../../papers/arxiv-2511.00086/) | 2026-11-23 | 40 |
 | [Learning When to Ask: Advisor-Aware Post-Training for SLM Agents](../../papers/arxiv-2611.27443/) | 2026-11-23 | 38 |
+| [BIRD-Persona: A Persona-Aware Benchmark for SQL and pandas Analytics Code Generation](../../papers/doi-10.18653-2026.emnlp-industry.138/) | 2026-11-21 | 46 |
 | [Beyond Synthetic Benchmarks: Evaluating LLM Performance on Real-World Class-Level Code Generation](../../papers/arxiv-2510.26130/) | 2026-11-17 | 42 |
 | [ResBench: Benchmarking LLM-Generated FPGA Designs with Resource Awareness](../../papers/arxiv-2503.08823/) | 2026-11-17 | 40 |
 | [SemMask: Semantic-Prioritized Progressive Masking for Diffusion Language Models](../../papers/arxiv-2611.19560/) | 2026-11-17 | 39 |

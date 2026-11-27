@@ -39,7 +39,7 @@ Edge deployment of audio language models (ALMs) is constrained by large model fo
 ## 元数据
 
 - 作者：Chenglin Yang, Feifan Xu, Xingyuan Li, Xinpeng Xing, Dihu Chen
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-23；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

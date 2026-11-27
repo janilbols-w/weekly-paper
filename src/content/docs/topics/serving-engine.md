@@ -5,18 +5,20 @@ description: "Serving Engines & Runtimes"
 
 三级分类：**AI 基础设施 > 服务平台 > Serving Engine 与 Runtime**
 
-累计收录 **153** 篇。
+累计收录 **155** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Scalable Placement for Disaggregated LLM Serving on Heterogeneous Edge Fleets](../../papers/arxiv-2611.32881/) | 2026-11-25 | 42 |
-| [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](../../papers/arxiv-2611.29255/) | 2026-11-24 | 49 |
-| [HiPerfCC-KVCache: Accelerating Confidential LLM Serving with Hierarchical KV Caching](../../papers/arxiv-2611.28702/) | 2026-11-24 | 49 |
-| [DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving](../../papers/arxiv-2611.28522/) | 2026-11-24 | 49 |
-| [IndexerStage: Staging Indexer-K across Memory Tiers for Sparse-Attention LLM Serving](../../papers/arxiv-2611.28625/) | 2026-11-24 | 45 |
-| [Exact on Paper: Which LLM Serving Shortcuts Flip Graded Answers, Measured Against the Noise of Reordering the Same Requests](../../papers/arxiv-2611.29663/) | 2026-11-24 | 38 |
+| [VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?](../../papers/arxiv-2605.06068/) | 2026-11-26 | 50 |
+| [PipeAxes: Decoupling Compute and Communication Granularities for Pipeline-Parallel LLM Serving](../../papers/arxiv-2611.34615/) | 2026-11-25 | 46 |
+| [Scalable Placement for Disaggregated LLM Serving on Heterogeneous Edge Fleets](../../papers/arxiv-2611.32881/) | 2026-11-24 | 42 |
 | [Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving](../../papers/arxiv-2607.16488/) | 2026-11-23 | 43 |
 | [Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving](../../papers/arxiv-2607.16473/) | 2026-11-23 | 40 |
+| [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](../../papers/arxiv-2611.29255/) | 2026-11-22 | 49 |
+| [Exact on Paper: Which LLM Serving Shortcuts Flip Graded Answers, Measured Against the Noise of Reordering the Same Requests](../../papers/arxiv-2611.29663/) | 2026-11-22 | 38 |
+| [DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving](../../papers/arxiv-2611.28522/) | 2026-11-21 | 54 |
+| [HiPerfCC-KVCache: Accelerating Confidential LLM Serving with Hierarchical KV Caching](../../papers/arxiv-2611.28702/) | 2026-11-21 | 49 |
+| [IndexerStage: Staging Indexer-K across Memory Tiers for Sparse-Attention LLM Serving](../../papers/arxiv-2611.28625/) | 2026-11-21 | 45 |
 | [Towards Fair Resource Sharing in Agentic LLM Serving](../../papers/arxiv-2611.23558/) | 2026-11-19 | 45 |
 | [eFAIR: Fair LLM Serving under Hourly Electricity Commitments](../../papers/arxiv-2611.24119/) | 2026-11-19 | 44 |
 | [LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices](../../papers/arxiv-2611.24085/) | 2026-11-18 | 56 |

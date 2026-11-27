@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2609.27373",
+  "title": "Attention Routing Stabilizes Early: Working-Set Inference for Recurrent Language Models",
+  "abstract": "Recurrent-depth language models, such as looped Transformers, repeatedly apply shared network blocks to refine latent representations, enabling additional test-time computation without generating explicit intermediate reasoning tokens. However, recurrent inference repeatedly accesses long contexts: full attention incurs quadratic computation during prefill, while autoregressive decoding repeatedly reads large key-value (KV) caches, introducing substantial memory traffic and capacity pressure. We study how attention routing evolves across recurrent depth and uncover a consistent separation in convergence timescales: routing-related quantities, including the attention support and the attention distribution, stabilize substantially earlier than representation-related quantities such as hidden states and attention outputs. This suggests a two-stage structure in which the model discovers a sparse working set and then refines representations over largely the same routing support. Motivated by this structure, we introduce WISE (Working-set Inference with Support Exploitation), a training-free method that uses unrestricted global attention during early recurrent steps to discover a block-structured working set, and then reuses it as the routing support in later steps while keeping recurrent refinement and within-support attention computation dynamic. By combining sparse recurrent attention with compact KV-cache management, WISE reduces both redundant attention computation and memory movement during inference. Across reasoning and long-context benchmarks, WISE closely approaches full-attention accuracy on key evaluated workloads while outperforming early-static support baselines. At 64K context, our implementation achieves up to a 6.46x decode throughput improvement under GPU memory pressure. Our code is available at https://github.com/tbn5pj/WISE_code.",
+  "url": "https://arxiv.org/abs/2609.27373",
+  "pdf_url": "https://arxiv.org/pdf/2609.27373",
+  "published": "2026-11-26",
+  "updated": "2026-11-26",
+  "authors": [
+    "Ke Wan",
+    "Chen Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/tbn5pj/WISE_code",
+  "primary_category": {
+    "domain_id": "efficient-inference",
+    "domain": "LLM Efficient Inference",
+    "domain_zh": "LLM 高效推理",
+    "group_id": "runtime-memory",
+    "group": "Runtime & Memory Efficiency",
+    "group_zh": "Runtime 与内存效率",
+    "leaf_id": "attention-kv-cache",
+    "leaf": "Attention & KV Cache",
+    "leaf_zh": "Attention 与 KV Cache"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "kv-cache"
+  ],
+  "score": 53,
+  "score_components": {
+    "relevance": 12,
+    "novelty": 6,
+    "rigor": 13,
+    "practical_impact": 12,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: kv-cache",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "Recurrent-depth language models, such as looped Transformers, repeatedly apply shared network blocks to refine latent representations, enabling additional test-time computation without generating explicit intermediate reasoning tokens.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-27T04:36:20+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
+  "featured_weeks": [
+    "2026-W48"
+  ],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2609.27373",
+      "url": "https://arxiv.org/abs/2609.27373"
+    }
+  ]
+}

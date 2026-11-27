@@ -39,7 +39,7 @@ Efficient AI computation depends on hardware that evolves over time, shifting th
 ## 元数据
 
 - 作者：Shuaiwei Huang, Weihua Du, Allen Wu, Ivan Fox, Manupa Karunaratne, Yiming Yang, Sean Welleck
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

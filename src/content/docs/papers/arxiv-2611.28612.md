@@ -39,7 +39,7 @@ In this paper, we conduct a systematic study on improving permutation robustness
 ## 元数据
 
 - 作者：Yifei Cheng, Xiaolin Zhang, Yu-Xuan Qiu
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

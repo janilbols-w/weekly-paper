@@ -4,11 +4,11 @@
   "abstract": "Attention costs $\\mathcal{O}(N^2)$ in the number of tokens. Vector-quantized attention reduces this to $\\mathcal{O}(NM)$ by clustering the $N$ keys, attending to the $M$ codewords instead, and its adaptive form, AVQ-attention, concentrates codebook resolution where a query's attention mass actually falls. We present AVQ-Attention-2, a better design that merges it with exact local attention and attends to the mean of each cluster's keys rather than to a codeword. We show three improvements: consistently better quality at comparable cost; training that now also costs $\\mathcal{O}(NM)$ rather than $\\mathcal{O}(N^2)$; and an approximation accurate enough that the layer can be dropped into a pretrained transformer without fine-tuning. Across a variety of sequence lengths the result is competitive not merely with other approximate attention but with exact dense attention, running faster than FlashAttention at little to no loss in quality.",
   "url": "https://arxiv.org/abs/2611.32989",
   "pdf_url": "https://arxiv.org/pdf/2611.32989",
-  "published": "2026-11-25",
+  "published": "2026-11-24",
   "updated": "2026-11-25",
   "authors": [
     "Winfried van den Dool",
-    "Patrick Forr\\'e",
+    "Patrick Forré",
     "Amir Habibian",
     "Yuki M. Asano",
     "Max Welling"
@@ -16,8 +16,8 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.LG",
-    "cs.CV"
+    "cs.CV",
+    "cs.LG"
   ],
   "doi": "",
   "venue": "",
@@ -59,9 +59,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-26T04:35:51+00:00",
-  "last_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.32989v1",
+      "url": "http://arxiv.org/abs/2611.32989v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.32989",

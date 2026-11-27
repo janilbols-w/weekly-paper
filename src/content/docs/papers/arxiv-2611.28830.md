@@ -39,7 +39,7 @@ In Large Language Model (LLM) pre-training, loss curves can conceal substantial 
 ## 元数据
 
 - 作者：Bo Liu, Yuan Xie, Junan Chen, Fujun Han
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

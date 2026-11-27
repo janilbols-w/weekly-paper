@@ -39,7 +39,7 @@ Long-context sparse-attention serving can remain limited by graphics processing 
 ## 元数据
 
 - 作者：Xin Zhang, Weifeng Zhang, Xianyan Xie, Huijun Shen, Xijin Yin, Zhen He, Yinben Xia, Xiang Li, ZeKun He, Yachen Wang, Xianneng Zou, Guo Chen
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

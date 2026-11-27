@@ -39,7 +39,7 @@ Online Machine Learning (ML) enables real-time decision-making on evolving data 
 ## 元数据
 
 - 作者：Ewout van Nimwegen, Elijah Seth Cishugi, Hendrik Folmer, Marco Ottavi, Kuan-Hsun Chen
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

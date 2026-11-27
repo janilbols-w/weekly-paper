@@ -39,7 +39,7 @@ Large language models (LLMs) have become the foundation of modern AI services. T
 ## 元数据
 
 - 作者：Yu Zhu, Xinhao Yang, Zhaoshi Li, Baodong Wu, Boxun Li, Wenxue Li, Guohao Dai, Hongyang Jia, Shuwen Deng, Huazhong Yang, Yuan Xie, Zhenhua Zhu, Yu Wang
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-23；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

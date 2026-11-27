@@ -38,8 +38,8 @@ Attention costs $\mathcal{O}(N^2)$ in the number of tokens. Vector-quantized att
 
 ## 元数据
 
-- 作者：Winfried van den Dool, Patrick Forr\'e, Amir Habibian, Yuki M. Asano, Max Welling
-- 发布：2026-11-25；更新：2026-11-25
+- 作者：Winfried van den Dool, Patrick Forré, Amir Habibian, Yuki M. Asano, Max Welling
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

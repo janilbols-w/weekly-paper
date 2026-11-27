@@ -39,7 +39,7 @@ Block floating-point (BFP) quantization is widely adopted for efficient low-bit 
 ## 元数据
 
 - 作者：Zhiyuan Zhang, Yanzhao Li, Hui Dong, Sifan Cheng, Mingen Zheng, Hui Wang
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

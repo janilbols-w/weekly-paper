@@ -3,7 +3,7 @@ title: "The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Subst
 description: "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation."
 ---
 
-**评分：46/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
+**评分：53/100** · LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache
 
 [论文原文](https://arxiv.org/abs/2611.28671) · [PDF](https://arxiv.org/pdf/2611.28671)
 
@@ -25,21 +25,21 @@ Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to s
 |---|---:|
 | relevance | 12 |
 | novelty | 7 |
-| rigor | 13 |
+| rigor | 15 |
 | practical impact | 9 |
-| reproducibility | 2 |
+| reproducibility | 7 |
 | credibility | 3 |
 
 ## 证据与限制
 
 - taxonomy keywords: kv-cache
 - no quantitative claim in metadata
-- no code link detected in metadata
+- code/artifact link detected
 
 ## 元数据
 
 - 作者：Haoyuan Zheng, Dongting Li, Hancheng Ye, Qinsi Wang, Mingyuan Ma, Yuncheng Yao, Yifei Wang, Baijun Zhou, Zishan Shao, Tingjun Chen, Hai Helen Li, Danyang Zhuo, Yiran Chen
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
-- 代码：未发现
+- 代码：[https://github.com/MAS-Sys-Bench/MAS-Sys](https://github.com/MAS-Sys-Bench/MAS-Sys)
 - 阅读深度：metadata

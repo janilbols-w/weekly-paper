@@ -39,7 +39,7 @@ Molecular prediction helps prioritize compounds for screening. Specialized predi
 ## 元数据
 
 - 作者：Kaiyuan Lu, Jiatong Li, Yatao Bian
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

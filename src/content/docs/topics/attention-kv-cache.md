@@ -5,24 +5,29 @@ description: "Attention & KV Cache"
 
 三级分类：**LLM 高效推理 > Runtime 与内存效率 > Attention 与 KV Cache**
 
-累计收录 **310** 篇。
+累计收录 **315** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [Norn: Context-Length-Aware Optimization of Weight and KV Cache Placement for Offloaded LLM Inference](../../papers/arxiv-2611.32295/) | 2026-11-25 | 47 |
-| [ModelLess: A Serverless System for Multi-Tier LLM Inference on Shared GPUs](../../papers/arxiv-2611.32634/) | 2026-11-25 | 40 |
-| [Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs](../../papers/arxiv-2611.29497/) | 2026-11-24 | 52 |
+| [Attention Routing Stabilizes Early: Working-Set Inference for Recurrent Language Models](../../papers/arxiv-2609.27373/) | 2026-11-26 | 53 |
+| [SparDA: Sparse Decoupled Attention for Efficient Long-Context LLM Inference](../../papers/arxiv-2606.04511/) | 2026-11-26 | 52 |
+| [State Space Attention: Learning Context-Dependent Memory Retention](../../papers/arxiv-2611.33625/) | 2026-11-25 | 51 |
+| [FlashProve-Next: Verifiable Inference for Production LLM APIs](../../papers/arxiv-2611.33741/) | 2026-11-25 | 41 |
 | [RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds](../../papers/arxiv-2611.28171/) | 2026-11-24 | 48 |
-| [The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates](../../papers/arxiv-2611.28671/) | 2026-11-24 | 46 |
-| [Time Series Foundation Models on the Edge](../../papers/arxiv-2611.30404/) | 2026-11-24 | 40 |
-| [Selective ROM Weight Storage for Responsive LLM Control on Edge Robots](../../papers/arxiv-2611.28563/) | 2026-11-24 | 40 |
+| [Norn: Context-Length-Aware Optimization of Weight and KV Cache Placement for Offloaded LLM Inference](../../papers/arxiv-2611.32295/) | 2026-11-24 | 47 |
+| [Factorized Context Attention: From Emulated to Native Grid Probing](../../papers/arxiv-2611.32423/) | 2026-11-24 | 41 |
+| [ModelLess: A Serverless System for Multi-Tier LLM Inference on Shared GPUs](../../papers/arxiv-2611.32634/) | 2026-11-24 | 40 |
 | [TriAxialKV: Toward Extreme Low-Precision KV-Cache Quantization for Agentic Inference Tasks](../../papers/arxiv-2605.17170/) | 2026-11-23 | 46 |
 | [CarrierKV: An Edge LLM Accelerator with Positional Carrier Decomposition for Low-Bit KV Cache](../../papers/arxiv-2611.26857/) | 2026-11-23 | 43 |
 | [MemOnce: A Scalable Memory Architecture for Large Language Models](../../papers/arxiv-2611.27973/) | 2026-11-23 | 41 |
 | [BusemannFormer: Horospherical Self-Attention for Hyperbolic Graph Transformers](../../papers/arxiv-2611.27167/) | 2026-11-23 | 41 |
+| [Time Series Foundation Models on the Edge](../../papers/arxiv-2611.30404/) | 2026-11-23 | 40 |
 | [Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs](../../papers/arxiv-2611.26975/) | 2026-11-23 | 40 |
 | [Mosaic: Efficient CPU--GPU Coordinated Block-Sparse Attention for Long-Context Decoding](../../papers/arxiv-2605.07719/) | 2026-11-23 | 40 |
 | [Agentic Coding in the Wild: Characterizing GitHub Copilot Traces at Production Scale](../../papers/arxiv-2608.00101/) | 2026-11-23 | 39 |
+| [Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs](../../papers/arxiv-2611.29497/) | 2026-11-22 | 52 |
+| [The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates](../../papers/arxiv-2611.28671/) | 2026-11-21 | 53 |
+| [Selective ROM Weight Storage for Responsive LLM Control on Edge Robots](../../papers/arxiv-2611.28563/) | 2026-11-21 | 40 |
 | [RoCoKV: Accelerating LLM Inference Serving through Uncertainty and Redundancy Aware KV Cache Compression](../../papers/arxiv-2611.25433/) | 2026-11-19 | 55 |
 | [A Flat KV Cache Storage Architecture for LLM Serving](../../papers/arxiv-2610.38355/) | 2026-11-19 | 45 |
 | [FrontierReplay: Split-Free Exact Prefix Caching for Hybrid Language Models](../../papers/arxiv-2611.26020/) | 2026-11-19 | 44 |

@@ -39,7 +39,7 @@ Efficient fine-tuning techniques have substantially reduced the cost of adapting
 ## 元数据
 
 - 作者：Tong Li, Chenru Wang, Chris Thomas, Shengwei An
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-22；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

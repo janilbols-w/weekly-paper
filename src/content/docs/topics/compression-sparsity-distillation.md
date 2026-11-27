@@ -5,42 +5,51 @@ description: "Compression, Sparsity & Distillation"
 
 三级分类：**LLM 高效推理 > 模型与算法效率 > 压缩、稀疏与蒸馏**
 
-累计收录 **832** 篇。
+累计收录 **841** 篇。
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
+| [Luxical: High-Speed Lexical-Dense Text Embeddings](../../papers/arxiv-2512.09015/) | 2026-11-26 | 51 |
+| [db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism](../../papers/arxiv-2511.23113/) | 2026-11-26 | 48 |
+| [SVDP: Training-Free Contextual Sparsity Predictors for Fast LLM Inference](../../papers/arxiv-2603.14110/) | 2026-11-26 | 43 |
+| [Rethinking Knowledge Distillation for Diffusion Language Models](../../papers/arxiv-2611.33670/) | 2026-11-26 | 42 |
+| [Hierarchical Graph Metanetworks](../../papers/arxiv-2611.34726/) | 2026-11-26 | 41 |
+| [InstructTTS-OPD: On-Policy Distillation for Multi-Objective Instruction-Following TTS](../../papers/arxiv-2611.33937/) | 2026-11-26 | 39 |
+| [Scalpel and Brush: Pruning and Targeted Weight Editing of a Small Language Model by a Single LLM Agent](../../papers/arxiv-2611.33426/) | 2026-11-26 | 38 |
 | [TRIM: Achieving Extreme Sparsity with Targeted Row-wise Iterative Metric-driven Pruning](../../papers/arxiv-2505.16743/) | 2026-11-25 | 49 |
 | [On the Efficiency of Structured Pruning in Small Language Model Pretraining](../../papers/arxiv-2503.05920/) | 2026-11-25 | 49 |
 | [scOPD: Routed On-Policy Self-Distillation for LLM-Based Single-Cell Annotation](../../papers/arxiv-2611.31257/) | 2026-11-25 | 44 |
+| [A Differential Computing Accelerator for LLM Inference Leveraging Bit-Slice Transition Sparsity](../../papers/arxiv-2611.34630/) | 2026-11-25 | 43 |
 | [HuluOPD: Unifying Heterogeneous Medical Specialists into One Lightweight Model with Unlabeled Prompts](../../papers/arxiv-2611.32021/) | 2026-11-25 | 41 |
 | [A Few Teacher Steps Go a Long Way: Efficient SFT Data Collection for LLM Agents](../../papers/arxiv-2607.04574/) | 2026-11-25 | 40 |
 | [STAR: Counterfactual Dual-World Rollouts and Spatial Target Adaptive Reconstruction for Visual On-Policy Distillation](../../papers/arxiv-2611.32472/) | 2026-11-25 | 39 |
 | [RECAP: Training Long-horizon LLM Agents with Context Compaction](../../papers/arxiv-2611.31258/) | 2026-11-25 | 39 |
-| [LIBRA: Runtime Co-Tuning of Batch Size and Parallelism for Time-Efficient LLM Training](../../papers/arxiv-2611.32008/) | 2026-11-25 | 39 |
-| [Rethinking Reasoning Effort Training in Large Language Models: On-Policy Distillation or Reinforcement Learning?](../../papers/arxiv-2611.32131/) | 2026-11-25 | 38 |
 | [Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action](../../papers/arxiv-2611.31240/) | 2026-11-24 | 48 |
-| [PCC: Pivotal Channel Compensation for Layer Pruning of Large Language Models](../../papers/arxiv-2611.30183/) | 2026-11-24 | 44 |
-| [Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation](../../papers/arxiv-2611.28502/) | 2026-11-24 | 42 |
 | [Reasoning Beyond Imitation: Observation Conditioned Distillation for Video LLMs](../../papers/arxiv-2611.29728/) | 2026-11-24 | 42 |
-| [HME-PFD: Heterogeneous Mixture-of-Experts Privileged Feature Distillation](../../papers/arxiv-2611.29094/) | 2026-11-24 | 42 |
-| [Learning Teacher Output Preferences from Final Responses for Reasoning Distillation](../../papers/arxiv-2611.30338/) | 2026-11-24 | 41 |
 | [Specialized Large Language Models for Markovian Reasoning: Structural Cache Compression, Transition Pretraining, and Dual-Loop Transformers](../../papers/arxiv-2611.28285/) | 2026-11-24 | 40 |
 | [SPARSEBLEED: Bypassing Attribute-Inference Defenses via Sparsity Optimizations](../../papers/arxiv-2610.38110/) | 2026-11-24 | 40 |
 | [HandXFM: Semantic-Structural Distillation for Hand Radiograph Foundation Models](../../papers/arxiv-2611.28283/) | 2026-11-24 | 40 |
-| [Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination](../../papers/arxiv-2611.30639/) | 2026-11-24 | 39 |
 | [Tool-to-Self: Internalizing Visual Tool Capabilities via Scaffolded Reinforcement Learning](../../papers/arxiv-2611.28564/) | 2026-11-24 | 39 |
-| [The KL Divergence Is Never Negative, Except in PyTorch](../../papers/arxiv-2611.30835/) | 2026-11-24 | 39 |
-| [Reducing Permutation Sensitivity in Multimodal Large Language Models via Shared Positions and Attention-Only Distillation](../../papers/arxiv-2611.28612/) | 2026-11-24 | 39 |
-| [Muted Distillation: Sealing Reasoning from Teacher Unlocks Token-Efficient Agents](../../papers/arxiv-2611.28445/) | 2026-11-24 | 39 |
+| [LIBRA: Runtime Co-Tuning of Batch Size and Parallelism for Time-Efficient LLM Training](../../papers/arxiv-2611.32008/) | 2026-11-24 | 39 |
 | [Revisiting Continual Learning in Language Models: A Three-Interface Diagnosis of Stability and Plasticity](../../papers/arxiv-2611.30151/) | 2026-11-24 | 38 |
+| [Rethinking Reasoning Effort Training in Large Language Models: On-Policy Distillation or Reinforcement Learning?](../../papers/arxiv-2611.32131/) | 2026-11-24 | 38 |
 | [Lorentz symmetry in self-supervised representation learning](../../papers/arxiv-2611.31011/) | 2026-11-24 | 38 |
 | [Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](../../papers/arxiv-2601.18734/) | 2026-11-23 | 46 |
+| [PCC: Pivotal Channel Compensation for Layer Pruning of Large Language Models](../../papers/arxiv-2611.30183/) | 2026-11-23 | 44 |
 | [Model Carving: Training Transformers That Optimize Their Own Topology](../../papers/arxiv-2611.27962/) | 2026-11-23 | 44 |
 | [Mind the Delta: Early Pruning of RTL Variants for Agentic Hardware Optimization](../../papers/arxiv-2611.27035/) | 2026-11-23 | 44 |
 | [A Sparsity Analysis of Traffic Forecasting Architectures: How Much Missing Data is Too Much?](../../papers/arxiv-2611.26847/) | 2026-11-23 | 44 |
+| [Learning Teacher Output Preferences from Final Responses for Reasoning Distillation](../../papers/arxiv-2611.30338/) | 2026-11-23 | 41 |
+| [Uncovering the Tells: Efficient Black-Box Audits for LLM Data Contamination](../../papers/arxiv-2611.30639/) | 2026-11-23 | 39 |
 | [Turnout: Adaptive Attention Switching for Efficient Reasoning](../../papers/arxiv-2611.27500/) | 2026-11-23 | 39 |
+| [The KL Divergence Is Never Negative, Except in PyTorch](../../papers/arxiv-2611.30835/) | 2026-11-23 | 39 |
 | [STARK: Moving towards Personalized Agents That Truly Learn and Remember](../../papers/arxiv-2611.25705/) | 2026-11-23 | 39 |
 | [SAVOR: Score Once, Learn Deeper in On-Policy Distillation](../../papers/arxiv-2609.24141/) | 2026-11-23 | 39 |
+| [Shoonya: Zero-Socket In-Process Small Language Models for Graph Databases with Schema-Epoch KV Caching, Live Catalog Logit Masking, and Verifier-Advantage Distillation](../../papers/arxiv-2611.28502/) | 2026-11-21 | 42 |
+| [HME-PFD: Heterogeneous Mixture-of-Experts Privileged Feature Distillation](../../papers/arxiv-2611.29094/) | 2026-11-21 | 42 |
+| [Reducing Permutation Sensitivity in Multimodal Large Language Models via Shared Positions and Attention-Only Distillation](../../papers/arxiv-2611.28612/) | 2026-11-21 | 39 |
+| [Physical regime changes expose formula misuse in large language models](../../papers/arxiv-2611.28669/) | 2026-11-21 | 39 |
+| [Muted Distillation: Sealing Reasoning from Teacher Unlocks Token-Efficient Agents](../../papers/arxiv-2611.28445/) | 2026-11-21 | 39 |
 | [FlexMoE: Learning One-for-All Multi-Budget Expert Pruning for Flexible MoE Deployment](../../papers/arxiv-2606.27866/) | 2026-11-19 | 50 |
 | [FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering](../../papers/arxiv-2611.23631/) | 2026-11-19 | 46 |
 | [HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs](../../papers/arxiv-2611.26363/) | 2026-11-19 | 40 |

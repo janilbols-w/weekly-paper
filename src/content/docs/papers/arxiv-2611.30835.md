@@ -39,7 +39,7 @@ A Kullback--Leibler (KL) divergence is never negative, yet PyTorch users have re
 ## 元数据
 
 - 作者：Zhen Yang, Wei Tang, Chu Chen, Rui Qian, Yixuan Chen, Fan Yang, Kangning Cui
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-23；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/xi-xiaoran/stablekl](https://github.com/xi-xiaoran/stablekl)
 - 阅读深度：metadata

@@ -4,7 +4,7 @@
   "abstract": "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using five workload families spanning software repair, research synthesis, financial analysis, interactive control, and diagram generation. It records task quality alongside delivery, latency, cost, resource pressure, and failure evidence. In a controlled motivation diagnostic, the Star workflow falls from first to fourth in mean-latency rank under KV-cache pressure, while Chain rises from fourth to first. The substrate sweeps further show that increasing load creates long runtime tails and timeout pressure. In several task families, quality among evaluated outputs changes less than effective quality over submitted jobs: the system delivers fewer usable results even when the surviving outputs remain competitive. Tool and runtime traces reveal that these outcomes involve both model serving and non-model execution. Together, the results motivate evaluating MAS designs over explicit operating conditions and reporting which tasks are delivered, how well they are solved, and where execution breaks down.",
   "url": "https://arxiv.org/abs/2611.28671",
   "pdf_url": "https://arxiv.org/pdf/2611.28671",
-  "published": "2026-11-24",
+  "published": "2026-11-21",
   "updated": "2026-11-24",
   "authors": [
     "Haoyuan Zheng",
@@ -24,15 +24,15 @@
   "source": "arXiv RSS",
   "source_type": "preprint",
   "categories": [
-    "cs.MA",
     "cs.AI",
-    "cs.LG"
+    "cs.LG",
+    "cs.MA"
   ],
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
-  "code_url": "",
+  "comment": "Code: https://github.com/MAS-Sys-Bench/MAS-Sys ; Project page: https://mas-sys-bench.github.io/MAS-Sys-Page/ ; Trace dataset: https://huggingface.co/datasets/MAS-Sys/MAS-Sys-Traces",
+  "code_url": "https://github.com/MAS-Sys-Bench/MAS-Sys",
   "primary_category": {
     "domain_id": "efficient-inference",
     "domain": "LLM Efficient Inference",
@@ -48,19 +48,19 @@
   "keyword_evidence": [
     "kv-cache"
   ],
-  "score": 46,
+  "score": 53,
   "score_components": {
     "relevance": 12,
     "novelty": 7,
-    "rigor": 13,
+    "rigor": 15,
     "practical_impact": 9,
-    "reproducibility": 2,
+    "reproducibility": 7,
     "credibility": 3
   },
   "score_evidence": [
     "taxonomy keywords: kv-cache",
     "no quantitative claim in metadata",
-    "no code link detected in metadata"
+    "code/artifact link detected"
   ],
   "summary_en": "Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation.",
   "summary_zh": "",
@@ -68,9 +68,16 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-25T04:36:07+00:00",
-  "last_seen": "2026-11-26T04:35:51+00:00",
-  "featured_weeks": [],
+  "last_seen": "2026-11-27T04:36:20+00:00",
+  "featured_weeks": [
+    "2026-W48"
+  ],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.28671v1",
+      "url": "http://arxiv.org/abs/2611.28671v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.28671",

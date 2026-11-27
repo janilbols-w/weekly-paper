@@ -9,13 +9,13 @@ description: "Cache, Offload & Memory Management"
 
 | 论文 | 时间 | 评分 |
 |---|---|---:|
-| [RePrism: Joint Request and Representation Scheduling for LLM Agent Serving](../../papers/arxiv-2611.32545/) | 2026-11-25 | 42 |
-| [Generalized Tensor Parallelism: Powering Trillion-Parameter LLM Training at 10+ EFLOP/s](../../papers/arxiv-2611.32057/) | 2026-11-25 | 42 |
 | [ViTrail: Transmission-Inference Co-Design for Vision Transformer-Based Mobile Video Analytics](../../papers/arxiv-2601.21362/) | 2026-11-25 | 41 |
-| [ANOR: Scaling Sparse Attention with a GPU-PNM Computing Hierarchy](../../papers/arxiv-2611.30417/) | 2026-11-24 | 43 |
-| [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](../../papers/arxiv-2611.29252/) | 2026-11-24 | 39 |
-| [Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning](../../papers/arxiv-2611.30025/) | 2026-11-24 | 38 |
+| [RePrism: Joint Request and Representation Scheduling for LLM Agent Serving](../../papers/arxiv-2611.32545/) | 2026-11-24 | 42 |
+| [Generalized Tensor Parallelism: Powering Trillion-Parameter LLM Training at 10+ EFLOP/s](../../papers/arxiv-2611.32057/) | 2026-11-24 | 42 |
+| [ANOR: Scaling Sparse Attention with a GPU-PNM Computing Hierarchy](../../papers/arxiv-2611.30417/) | 2026-11-23 | 43 |
 | [Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction](../../papers/arxiv-2611.07695/) | 2026-11-23 | 39 |
+| [Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning](../../papers/arxiv-2611.30025/) | 2026-11-23 | 38 |
+| [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](../../papers/doi-10.5281-zenodo.23674583/) | 2026-11-22 | 39 |
 | [Invertible Transport Between Sample-Only Distributions via Projected Characteristic Functions](../../papers/arxiv-2611.26187/) | 2026-11-19 | 42 |
 | [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](../../papers/arxiv-2611.21478/) | 2026-11-19 | 39 |
 | [LoopZip: Visual Token Compression for Efficient Looped Vision-Language Models](../../papers/arxiv-2611.22728/) | 2026-11-18 | 49 |

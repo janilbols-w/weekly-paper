@@ -1,6 +1,6 @@
 ---
-title: "SILK: Closing the Time-of-Check-to-Time-of-Use Gap in RoT-Protected AI Systems"
-description: "Root-of-trust (RoT) authentication verifies a DNN model at load time, but weights may subsequently traverse DRAM, DMA, interconnect, and prefetch paths before reaching the compute engine."
+title: "SILK: Streaming Authentication with In-Place Checks for Low-bit LLM Inference"
+description: "A root-of-trust (RoT) supports model authentication at load time but does not guarantee integrity during inference."
 ---
 
 **评分：40/100** · LLM 高效推理 > 模型与算法效率 > 量化与低精度
@@ -9,7 +9,7 @@ description: "Root-of-trust (RoT) authentication verifies a DNN model at load ti
 
 ## 一句话摘要
 
-Root-of-trust (RoT) authentication verifies a DNN model at load time, but weights may subsequently traverse DRAM, DMA, interconnect, and prefetch paths before reaching the compute engine.
+A root-of-trust (RoT) supports model authentication at load time but does not guarantee integrity during inference.
 
 ## 为什么值得关注
 
@@ -17,7 +17,7 @@ Root-of-trust (RoT) authentication verifies a DNN model at load time, but weight
 
 ## 摘要原文
 
-Root-of-trust (RoT) authentication verifies a DNN model at load time, but weights may subsequently traverse DRAM, DMA, interconnect, and prefetch paths before reaching the compute engine. Post-verification tampering along this path can therefore alter the weights actually consumed while leaving the authenticated model image unchanged, creating a time-of-check-to-time-of-use (TOCTOU) integrity gap. We present SILK (Streaming Inline Lightweight Keying), an in-place integrity mechanism that verifies the weight stream at the final pre-compute boundary. SILK repurposes quantized-weight LSBs as secret-keyed integrity bits and chains dependencies across weight bytes, so a local modification perturbs multiple integrity checks. A lightweight streaming checker recomputes these checks without separate authentication tags and uses commit gating to prevent unverified weights from reaching computation. Under a secure pseudorandom function (PRF), the forgery probability decreases exponentially with the number of affected checks, and measured miss rates closely track the analytical bound. SILK detects every stream-modifying instance in our functional attack suite. For INT8, it limits quality loss to at most 0.76 pp across evaluated CNNs and 0.17 perplexity across eight LLMs, while INT4 and MXFP4 provide a configurable security-quality tradeoff through check sparsity. On a Xilinx ZCU102, the synthesized reference pipelined implementation sustains 756 MB/s at only 1.00% of the equivalent area cost of a Caliptra 2.x RoT, while a configuration with a conservative per-attempt forgery bound of 2^-128 still sustains 678 MB/s at 6.15% of the RoT cost.
+A root-of-trust (RoT) supports model authentication at load time but does not guarantee integrity during inference. We present SILK, a quantization-aware in-place integrity framework protecting low-bit large language model (LLM) weights, activations, and KV caches against runtime tampering by embedding keyed checks directly into quantized data. Weight checks are embedded during second-order post-training quantization (GPTQ) to minimize distortion, while runtime tensors use redundant codes or fallback least significant bits (LSBs). An Ascon-based authentication chain absorbs each unit's cover bits into the next unit's authentication state, enabling single-pass verification. A streaming guard permits computation after bounded-strength confirmation and holds results until full authentication. Across evaluated symmetric INT4 models, mean perplexity increases remain below 0.4% with 0.2% weight metadata. Against Dual MAC guards, SILK cuts time overhead on Qwen2.5-0.5B weight reads at 4 B/cycle from 1.95% to 0.41% (Dual MAC-256) and energy-delay product (EDP) overhead at 4-8 B/cycle by 28-69% with DDR (up to 37% with HBM2), with 28% more guard-logic area.
 
 ## 质量评分
 
@@ -32,14 +32,14 @@ Root-of-trust (RoT) authentication verifies a DNN model at load time, but weight
 
 ## 证据与限制
 
-- taxonomy keywords: int4, int8, quantized
+- taxonomy keywords: int4, quantization, quantized
 - no quantitative claim in metadata
 - no code link detected in metadata
 
 ## 元数据
 
 - 作者：Ruichen Qi, Xinting Jiang, Ema Dimitrova, Junyi Luo, Quan Cheng, Mehdi Saligane
-- 发布：2026-08-26；更新：2026-09-02
+- 发布：2026-08-26；更新：2026-11-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

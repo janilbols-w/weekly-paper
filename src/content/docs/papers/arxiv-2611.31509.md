@@ -39,7 +39,7 @@ As large language models (LLMs) scale, energy dictates operating cost, cooling, 
 ## 元数据
 
 - 作者：George Karfakis, Lime Yao, Joyjit Kundu, Debjyoti Bhattacharjee, Puneet Gupta
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-23；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

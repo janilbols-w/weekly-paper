@@ -1,0 +1,73 @@
+{
+  "id": "arxiv:2611.34161",
+  "title": "CoordRoute: Coordinated Multi-Model Routing for Maximum Compute-Budget Utility",
+  "abstract": "Model routing sends each request to one of several large language models (LLMs) of different sizes. In practice, requests share a fixed compute budget: a spending cap on rented model APIs or the capacity of a private GPU cluster. Most existing routers do not account for the total budget: each decides a request on its own, so per-request optima are not optimal overall. We advocate coordinated routing, which allocates the budget across requests to maximize its utility, their total satisfaction, along a predict-plan-rectify route: predict what each model would give and cost, plan the choice against later requests, and rectify it during generation. Each step faces a challenge: a request's gain from each model is uncertain before generation, later arrivals are unknown when a request must start, and observing answers during generation consumes the budget itself. CoordRoute addresses them with relative demand prediction, which compares candidate models through past requests that lead to the same routing choices; a lookahead solver, which charges each choice for what its compute could earn for later requests; and budget-aware runtime correction, which drops or upgrades in-flight requests at the same price, inspecting answers only when it pays off. On Azure Conversation and BurstGPT traces, CoordRoute improves total satisfaction by 18.72% over the strongest existing router.",
+  "url": "https://arxiv.org/abs/2611.34161",
+  "pdf_url": "https://arxiv.org/pdf/2611.34161",
+  "published": "2026-11-25",
+  "updated": "2026-11-26",
+  "authors": [
+    "Boning Huangfu",
+    "Boxiao Du",
+    "Chen Chen"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "20 pages, 20 figures, 10 tables",
+  "code_url": "",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "gateway-routing-autoscaling",
+    "leaf": "Gateway, Routing & Autoscaling",
+    "leaf_zh": "Gateway、路由与弹性"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "model routing"
+  ],
+  "score": 38,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 5,
+    "rigor": 5,
+    "practical_impact": 7,
+    "reproducibility": 2,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: model routing",
+    "no quantitative claim in metadata",
+    "no code link detected in metadata"
+  ],
+  "summary_en": "Model routing sends each request to one of several large language models (LLMs) of different sizes.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-27T04:36:20+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.34161v1",
+      "url": "http://arxiv.org/abs/2611.34161v1"
+    },
+    {
+      "source": "arXiv RSS",
+      "id": "2611.34161",
+      "url": "https://arxiv.org/abs/2611.34161"
+    }
+  ]
+}

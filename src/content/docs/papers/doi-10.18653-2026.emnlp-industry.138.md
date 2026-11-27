@@ -3,7 +3,7 @@ title: "BIRD-Persona: A Persona-Aware Benchmark for SQL and pandas Analytics Cod
 description: "Production text-to-code systems use large language models to turn natural-language analytics requests into executable SQL and pandas code."
 ---
 
-**评分：43/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
+**评分：46/100** · LLM 高效推理 > Runtime 与内存效率 > 编译器与计算图优化
 
 [论文原文](https://arxiv.org/abs/2611.28542) · [PDF](https://arxiv.org/pdf/2611.28542)
 
@@ -28,7 +28,7 @@ Production text-to-code systems use large language models to turn natural-langua
 | rigor | 11 |
 | practical impact | 5 |
 | reproducibility | 2 |
-| credibility | 3 |
+| credibility | 6 |
 
 ## 证据与限制
 
@@ -39,7 +39,7 @@ Production text-to-code systems use large language models to turn natural-langua
 ## 元数据
 
 - 作者：Davin Hill, Pawan Chorasiya, Bhawani S. Leelar, Oren Avram, Robert E. Tillman, Tamer Soliman
-- 发布：2026-11-24；更新：2026-11-24
-- 来源：arXiv RSS；Venue：未确认
+- 发布：2026-11-21；更新：2026-11-24
+- 来源：arXiv RSS；Venue：Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track, pp. 2311-2332 (2026)
 - 代码：未发现
 - 阅读深度：metadata

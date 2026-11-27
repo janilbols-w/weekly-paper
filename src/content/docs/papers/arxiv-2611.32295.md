@@ -39,7 +39,7 @@ Offloading model weights and the key-value (KV) cache to host memory enables lar
 ## 元数据
 
 - 作者：Naoto Sugiura, Hiroki Matsutani
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

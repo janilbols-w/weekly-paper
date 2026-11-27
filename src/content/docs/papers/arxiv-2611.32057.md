@@ -39,7 +39,7 @@ Pretraining state-of-the-art large language models (LLMs) with up to trillions o
 ## 元数据
 
 - 作者：Shiqing Fan, Deepak Narayanan, Jimmy Zhang, Jiangfei Duan, Prajwal Singhania, Haoran Zhang, Wanying Wang, Philip Monk, Xuwen Chen, Jared Casper, Jun Yang, Mohammad Shoeybi, Bryan Catanzaro, Vijay Anand Korthikanti
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/NVIDIA/Megatron-LM](https://github.com/NVIDIA/Megatron-LM)
 - 阅读深度：metadata

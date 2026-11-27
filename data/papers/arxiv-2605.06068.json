@@ -1,0 +1,70 @@
+{
+  "id": "arxiv:2605.06068",
+  "title": "VibeServe: Can AI Agents Build Bespoke LLM Serving Systems?",
+  "abstract": "For years, we have built LLM serving systems like any other critical infrastructure, with a single general-purpose stack hand-tuned over many engineer-years to support every model and workload. In this paper, we instead let coding agents build bespoke serving systems for different usage scenarios. We propose VibeServe, the first agentic loop that generates entire LLM serving stacks end-to-end. VibeServe uses an outer loop to plan and track the search over system designs, and an inner loop to implement candidates, check correctness, and measure performance on the target benchmark. In standard serving settings, VibeServe matches vLLM and SGLang on Llama-3.1-8B, and delivers 2.3x the goodput of a tuned SGLang for a 397B MoE model on four AMD MI300As. In five non-standard scenarios, VibeServe outperforms existing systems by exploiting opportunities that generic systems miss, spanning non-standard model architectures, workload knowledge, and hardware-specific optimizations. Together, these results show that coding agents can construct and specialize competitive serving systems across heterogeneous deployment targets. Code is available at https://github.com/uw-syfi/vibesys.",
+  "url": "https://arxiv.org/abs/2605.06068",
+  "pdf_url": "https://arxiv.org/pdf/2605.06068",
+  "published": "2026-11-26",
+  "updated": "2026-11-26",
+  "authors": [
+    "Keisuke Kamahori",
+    "Shihang Li",
+    "Simon Peter",
+    "Baris Kasikci"
+  ],
+  "source": "arXiv RSS",
+  "source_type": "preprint",
+  "categories": [
+    "cs.AI",
+    "cs.DC"
+  ],
+  "doi": "",
+  "venue": "",
+  "journal_ref": "",
+  "comment": "",
+  "code_url": "https://github.com/uw-syfi/vibesys",
+  "primary_category": {
+    "domain_id": "ai-infrastructure",
+    "domain": "AI Infrastructure",
+    "domain_zh": "AI 基础设施",
+    "group_id": "serving-platform",
+    "group": "Serving Platforms",
+    "group_zh": "服务平台",
+    "leaf_id": "serving-engine",
+    "leaf": "Serving Engines & Runtimes",
+    "leaf_zh": "Serving Engine 与 Runtime"
+  },
+  "secondary_tags": [],
+  "keyword_evidence": [
+    "llm serving"
+  ],
+  "score": 50,
+  "score_components": {
+    "relevance": 16,
+    "novelty": 7,
+    "rigor": 9,
+    "practical_impact": 8,
+    "reproducibility": 7,
+    "credibility": 3
+  },
+  "score_evidence": [
+    "taxonomy keywords: llm serving",
+    "quantitative claim detected",
+    "code/artifact link detected"
+  ],
+  "summary_en": "For years, we have built LLM serving systems like any other critical infrastructure, with a single general-purpose stack hand-tuned over many engineer-years to support every model and workload.",
+  "summary_zh": "",
+  "why_it_matters_zh": "",
+  "limitations_zh": "",
+  "reading_depth": "metadata",
+  "first_seen": "2026-11-27T04:36:20+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
+  "featured_weeks": [],
+  "source_records": [
+    {
+      "source": "arXiv RSS",
+      "id": "2605.06068",
+      "url": "https://arxiv.org/abs/2605.06068"
+    }
+  ]
+}

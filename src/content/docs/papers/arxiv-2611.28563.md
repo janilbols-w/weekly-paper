@@ -39,7 +39,7 @@ Edge robots increasingly use large language models (LLMs) for complex tasks, dem
 ## 元数据
 
 - 作者：Boxiang Song, Zhihong Chen, Xiaoyu Hao, Jinhong Huang, Chengkai Zhu, Jiaqi Yang, Hongyang Pan, Changhao Yan, Keren Zhu
-- 发布：2026-11-24；更新：2026-11-24
+- 发布：2026-11-21；更新：2026-11-24
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

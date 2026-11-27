@@ -39,7 +39,7 @@ A masked diffusion language model is fast because it commits several tokens per 
 ## 元数据
 
 - 作者：Dovud Asadov, Rustambek Urokov, Qobiljon Toshnazarov, Abduaziz Kayumov, Mardon Hazratov, Husanboy Mansuraliyev
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-25；更新：2026-11-26
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

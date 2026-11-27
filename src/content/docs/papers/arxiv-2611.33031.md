@@ -39,7 +39,7 @@ We give four large language models (LLMs) of the Claude family the complete weig
 ## 元数据
 
 - 作者：Steffen Urban
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：[https://github.com/urbste/weight-space-programming-ptq](https://github.com/urbste/weight-space-programming-ptq)
 - 阅读深度：metadata

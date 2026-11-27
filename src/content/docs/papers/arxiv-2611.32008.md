@@ -39,7 +39,7 @@ Training large language models (LLMs) requires choosing both a batch size and a 
 ## 元数据
 
 - 作者：Shengkai Lyu, Hairui Zhao, Daran Sun, Yida Gu, Xingchen Liu, YueYuan Zhou, Zheng Wei, Guangming Tan, Dingwen Tao
-- 发布：2026-11-25；更新：2026-11-25
+- 发布：2026-11-24；更新：2026-11-25
 - 来源：arXiv RSS；Venue：未确认
 - 代码：未发现
 - 阅读深度：metadata

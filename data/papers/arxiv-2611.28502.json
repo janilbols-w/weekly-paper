@@ -4,7 +4,7 @@
   "abstract": "Coupling a property-graph database to an external language-model server imposes a three-part socket tax: serialization overhead dwarfing microsecond graph reads, repeated prefill of verbose schemas, and blind decoding divorced from the live catalog and multi-version concurrency control (MVCC) engine. We present Shoonya, from-scratch commercially clean (0.0% non-commercial or share-alike data) tri-modal (Python, Rust, OpenCypher) small language models (16.8M to 1.07B parameters) co-designed with shoonya-infer, a zero-dependency pure-Rust runtime embedded inside the samyama-graph-enterprise address space. Direct GraphStore references unlock three database-native primitives: (1) an epoch-invalidated SchemaPrefixCache over a copy-on-write PagedKvArena accelerating warm CPU time-to-first-token by 4.91x--13.68x with O(1) DDL invalidation; (2) a 36 us columnar catalog and source-span logit mask enforcing valid ontology identifiers and verbatim spans; and (3) a sub-65 us read-only MVCC gate serving Tier-0 queries inside 389.8 MiB INT8 RSS (59.8--67.9 tok/s) with 0.0% hallucination leak. Rank-factorized tied embeddings (-74.5% vocabulary weights), atomic indentation tokens (0/421 indentation errors), 4:1 grouped-query attention with 2:1 cross-layer KV sharing (-93.75% INT8 KV memory), Warmup-Stable-Decay training, KnOTS SVD merging, Step-GRPO, and Rust Jacobi SVD governance keep 100% of layers heavy-tailed ($\\alpha \\in [1.88, 2.20]$). Finally, we synthesize nine lessons across v0.1--v1.0, resolving a Reverse-Token-Density Distillation Trap via teacher scaling and zero-VRAM Verifier-Advantage-Gated Knowledge Distillation (AdvKD), recovering +13.61 MBPP points (33.07%) while reaching 100% validity on enrichment, grounded extraction, and tool planning.",
   "url": "https://arxiv.org/abs/2611.28502",
   "pdf_url": "https://arxiv.org/pdf/2611.28502",
-  "published": "2026-11-24",
+  "published": "2026-11-21",
   "updated": "2026-11-24",
   "authors": [
     "Madhulatha Mandarapu",
@@ -20,7 +20,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "16 pages, 4 figures, 4 tables. Open weights (Apache-2.0), shard provenance manifests, and Rust Jacobi SVD spectral certificates: https://huggingface.co/VaidhyaMegha/Shoonya",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-25T04:36:07+00:00",
-  "last_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.28502v1",
+      "url": "http://arxiv.org/abs/2611.28502v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.28502",

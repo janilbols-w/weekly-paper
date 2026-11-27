@@ -4,12 +4,12 @@
   "abstract": "Time series foundation models (TSFMs) forecast zero-shot with accuracy exceeding that of task-specific models, and the smaller ones fit on edge devices. Operational deployments must refresh their forecast as new observations arrive, and privacy and latency requirements often force this refresh onto resource-constrained edge devices. To serve as a forecasting system there, a TSFM must refresh quickly, keep latency and peak memory bounded as the stream grows, and retain its accuracy as the observed history accumulates. Refreshing incrementally without altering the forecast requires temporal causality: non-causal models recompute at every update, causal attention admits a KV cache that grows linearly, and causal recurrent models update a fixed-size state in constant time and memory. We make these states persist across refreshes for every causal architecture and verify equivalence to full recomputation. We evaluate nine TSFM configurations on univariate forecasting against all three requirements, measuring accuracy as a function of context length, single-refresh latency, and latency and memory on streams of up to one million time steps on a server-grade GPU and three edge devices. No model gains on average accuracy beyond its trained context and most lose it well before the full history is reached, while KV caches leave latency and memory growing linearly with the retained history. TiRex-2 is the only one of the nine configurations meeting all three requirements: it refreshes in 14 ms on the GPU and 120 ms on a Raspberry Pi 5, keeps latency, energy and peak memory constant over a million steps, and retains its accuracy on the untruncated history.",
   "url": "https://arxiv.org/abs/2611.30404",
   "pdf_url": "https://arxiv.org/pdf/2611.30404",
-  "published": "2026-11-24",
+  "published": "2026-11-23",
   "updated": "2026-11-24",
   "authors": [
     "Marco Pichler",
     "Patrick Podest",
-    "G\\\"unter Klambauer",
+    "Günter Klambauer",
     "Sepp Hochreiter"
   ],
   "source": "arXiv RSS",
@@ -20,7 +20,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "Accepted at the NeurIPS 2026 Workshop TS-LIMITS",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -57,9 +57,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-25T04:36:07+00:00",
-  "last_seen": "2026-11-26T04:35:51+00:00",
+  "last_seen": "2026-11-27T04:36:20+00:00",
   "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.30404v1",
+      "url": "http://arxiv.org/abs/2611.30404v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.30404",

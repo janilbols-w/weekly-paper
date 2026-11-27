@@ -4,7 +4,7 @@
   "abstract": "Transformer-based large language models (LLMs) are increasingly applied to complex reasoning tasks, yet their inference efficiency is fundamentally constrained by the rapid growth of the KV cache. As reasoning contexts extend to hundreds of thousands of tokens, the key-value (KV) cache becomes the dominant contributor to both memory footprint and bandwidth demand, tightly coupling computation with memory utilization and thereby limiting scalability. Existing compression methods, such as quantization and eviction, alleviate capacity pressure but remain purely algorithmic, often introducing additional passes and compute overhead that reduce system efficiency. This paper presents Gossamer, a KV cache compression architecture for reasoning LLMs that bridges the algorithm--system--hardware gap. Gossamer introduces a unified utility-based action framework that dynamically selects compression operations, quantization, merging, or eviction, under a constant KV cache budget. Through cross-domain co-design, we fuse cosine-similarity estimation directly into the attention computation, exploiting idle compute cycles to perform similarity evaluation without latency or bandwidth cost. We call this mechanism Free-Lunch Utilization. This enables real-time, fine-grained KV management with near-constant memory usage and negligible overhead. Under tight memory constraints, Gossamer sustains reasoning quality comparable to uncompressed inference while improving end-to-end throughput by up to 16.7$\\times$ over uncompressed baselines, 5.5$\\times$ and 4.9$\\times$ over the quantization-based Oaken and Ecco, and 1.8$\\times$ over the eviction-based R-KV.",
   "url": "https://arxiv.org/abs/2611.29497",
   "pdf_url": "https://arxiv.org/pdf/2611.29497",
-  "published": "2026-11-24",
+  "published": "2026-11-22",
   "updated": "2026-11-24",
   "authors": [
     "Feng Cheng",
@@ -24,7 +24,7 @@
   "doi": "",
   "venue": "",
   "journal_ref": "",
-  "comment": "",
+  "comment": "MICRO 2026",
   "code_url": "",
   "primary_category": {
     "domain_id": "efficient-inference",
@@ -61,11 +61,14 @@
   "limitations_zh": "",
   "reading_depth": "metadata",
   "first_seen": "2026-11-25T04:36:07+00:00",
-  "last_seen": "2026-11-26T04:35:51+00:00",
-  "featured_weeks": [
-    "2026-W48"
-  ],
+  "last_seen": "2026-11-27T04:36:20+00:00",
+  "featured_weeks": [],
   "source_records": [
+    {
+      "source": "arXiv",
+      "id": "http://arxiv.org/abs/2611.29497v1",
+      "url": "http://arxiv.org/abs/2611.29497v1"
+    },
     {
       "source": "arXiv RSS",
       "id": "2611.29497",
